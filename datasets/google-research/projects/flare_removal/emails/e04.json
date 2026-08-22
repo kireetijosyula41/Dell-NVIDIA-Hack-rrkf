@@ -1,0 +1,45 @@
+{
+  "id": "gr/flare_removal/e04",
+  "thread_id": "gr/flare_removal/t2",
+  "in_reply_to": "gr/flare_removal/e03",
+  "date": "2026-06-23T15:10:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Status: repro validated post-VGG-fix, on-device gap",
+  "body": "Tereza, all — decisions from Friday's review.\n\nThe Jul 3 pre-read proposes shipping flare removal server-side in the imaging pipeline first: quality is there — with Rafael's 600-image lens-profile extension set, streak-flare cases improved visibly in this week's evals — and the on-device variant moves to Q4 as a distillation project with Yusuf's 3x latency gap stated plainly.\n\nScope cut: video flare removal is out entirely this cycle. Frame-consistency is unsolved and I won't hint at it in the review.\n\nFor the pre-read I need: the PSNR table against the released checkpoint, before/after panels on production-lens captures, and the on-device feasibility one-pager. Rafael's July evaluation round is the last gate before the board sees it.\n\nSolid, honest quarter so far — keep it boring.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

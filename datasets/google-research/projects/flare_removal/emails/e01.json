@@ -1,0 +1,45 @@
+{
+  "id": "gr/flare_removal/e01",
+  "thread_id": "gr/flare_removal/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:45:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: flare removal for the imaging pipeline",
+  "body": "Team — kicking off the flare removal track for the vision portfolio.\n\nThe ICCV method trains networks to remove lens flare, and the released code gives us both training and a standalone testing script (remove_flare.py). Product target: a post-capture cleanup feature for the imaging pipeline.\n\nMilestones: (1) repro the released model's behavior by Apr 24 — note the repo's known history: a training-code issue was reported and a VGG-loss fix landed, so we validate that current code trains to published quality rather than assuming it; (2) retrain on our own capture data with our lens profiles through May; (3) on-device feasibility assessment in June; (4) launch-review pre-read by Jul 3.\n\nTereza owns training, Rafael data and quality, Farah infra, Yusuf the on-device path. Alina follows up on resourcing.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

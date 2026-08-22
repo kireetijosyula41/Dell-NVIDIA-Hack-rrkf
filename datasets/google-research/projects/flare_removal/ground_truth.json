@@ -1,0 +1,16 @@
+{
+  "project": "gr/flare_removal",
+  "conflicts": [
+    {
+      "conflict_id": "C093",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "generalized_rates"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Rafael Duran is committed at 60% to this project for July 2026 — the pre-read lands Jul 3 and the quality bar for the imaging pipeline sits with him, so July is exactly when we need his depth on data and perceptual evals."
+    }
+  ]
+}

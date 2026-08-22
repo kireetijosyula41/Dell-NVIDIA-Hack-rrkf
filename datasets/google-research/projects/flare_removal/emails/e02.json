@@ -1,0 +1,45 @@
+{
+  "id": "gr/flare_removal/e02",
+  "thread_id": "gr/flare_removal/t1",
+  "in_reply_to": "gr/flare_removal/e01",
+  "date": "2026-04-08T13:20:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: flare removal for the imaging pipeline",
+  "body": "Lucia — resourcing.\n\nStaffing: Tereza 50%, Farah 40%, Yusuf 30% until June then 50% for the feasibility work. And Rafael Duran is committed at 60% to this project for July 2026 — the pre-read lands Jul 3 and the quality bar for the imaging pipeline sits with him, so July is exactly when we need his depth on data and perceptual evals.\n\nCompute: retraining needs 32 A100s for roughly three weeks in May — titan best-effort should hold, and vulcan's Jun 22-24 maintenance doesn't affect us. Data: capturing our own flare stacks with production lens profiles needs the optics lab for two weeks — booked from Apr 20.\n\nOne flag: the training-code history Lucia mentioned makes the Apr 24 repro milestone genuinely load-bearing. If current code doesn't reach published quality we escalate immediately rather than debugging silently into May.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/flare_removal",
+  "title": "How to Train Neural Networks for Flare Removal",
+  "summary": "Training and inference code for neural lens-flare removal (ICCV 2021), including the standalone remove_flare.py testing script and a repaired VGG loss in the training path after a reported training-code issue.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Tereza Aliyev",
+    "Rafael Duran",
+    "Farah Haddad",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "flare_removal",
+    "url": "https://github.com/google-research/google-research/tree/master/flare_removal",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
