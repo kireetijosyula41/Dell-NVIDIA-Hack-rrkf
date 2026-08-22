@@ -1,0 +1,25 @@
+{
+  "id": "gr/dipper",
+  "title": "DIPPER: A Controllable Discourse Paraphraser",
+  "summary": "Using DIPPER, an 11B-parameter discourse paraphraser with controllable lexical diversity and reordering, to stress-test AI-text detectors and evaluate the retrieval-based defense over generation databases for Meridian's provenance work.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Wei Ivanov",
+    "Katya Silva",
+    "Giannis Sato"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dipper",
+    "url": "https://github.com/google-research/google-research/tree/master/dipper",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

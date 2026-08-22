@@ -1,0 +1,41 @@
+{
+  "id": "gr/dipper/e03",
+  "thread_id": "gr/dipper/t1",
+  "in_reply_to": "gr/dipper/e02",
+  "date": "2026-06-10T09:47:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: DIPPER red-teaming for the provenance features",
+  "body": "Attack results, on time for June 12.\n\nHeadline: our detection stack fares little better than the published baselines. Under DIPPER paraphrase at moderate knob settings (lex=60, order=60), our watermark detector drops from 81% to 11% detection at 1% FPR, and the classifier-based detector to 9%. Turning reordering up further buys the attacker little extra -- lexical diversity does most of the damage. Semantics hold up: human spot-checks confirm the paraphrases preserve meaning, which is what makes this attack realistic.\n\nThe harness made the sweep painless -- 40 attack configurations, 3 domains, fully reproducible. Credit to Giannis and Katya.\n\nRisk for phase two: the retrieval defense's strength depends on the candidate text staying semantically close to a stored generation. Multi-round paraphrase might walk far enough away. Adding a multi-round attack arm to the July evaluation.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

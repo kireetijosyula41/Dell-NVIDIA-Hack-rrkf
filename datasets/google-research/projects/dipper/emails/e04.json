@@ -1,0 +1,46 @@
+{
+  "id": "gr/dipper/e04",
+  "thread_id": "gr/dipper/t2",
+  "in_reply_to": null,
+  "date": "2026-07-22T14:16:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kofi Weber",
+      "email": "kofi.weber@meridian.example",
+      "role": "Privacy Counsel"
+    }
+  ],
+  "subject": "DIPPER: defense results and the recommendation",
+  "body": "Team,\n\nDecisions ahead of the July 31 recommendation.\n\n1. The retrieval defense is our recommendation. Over the 15M-generation index, it detects 97% of single-round DIPPER paraphrases at 1% FPR, and Wei's multi-round arm only degrades that to 88% -- dramatically better than any statistical detector under the same attack.\n2. We recommend against marketing standalone detector accuracy. The red-team numbers (11% and 9% under paraphrase) make current claims indefensible.\n3. Kofi: the defense requires retaining a searchable database of customer-visible generations. Please treat this as a formal Privacy Review request; the recommendation ships with a retention-policy section pending your read, and I have budgeted for your 2-3 week SLA.\n\nPriya",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

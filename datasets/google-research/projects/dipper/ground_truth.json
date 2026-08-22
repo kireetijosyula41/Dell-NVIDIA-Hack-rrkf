@@ -1,0 +1,16 @@
+{
+  "project": "gr/dipper",
+  "conflicts": [
+    {
+      "conflict_id": "C086",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "assemblenet"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are scoping and staffing an internal evaluation harness built from scratch: Giannis Sato at 50% and Katya Silva at 40% will design and build it over the next two months."
+    }
+  ]
+}

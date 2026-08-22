@@ -1,0 +1,41 @@
+{
+  "id": "gr/dipper/e01",
+  "thread_id": "gr/dipper/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T10:31:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: DIPPER red-teaming for the provenance features",
+  "body": "Santiago, team,\n\nKicking off the DIPPER track. Context: the provenance features we are committing to customers claim to identify AI-generated text. DIPPER exists to break exactly those claims -- it is an 11B paraphrase model with scalar knobs for lexical diversity and reordering, and paraphrasing detector inputs with it demolishes current detectors; the published result drops DetectGPT from 70.3% detection accuracy to 4.6% at a 1% false positive rate.\n\nSo the plan is honest red-teaming: run DIPPER against our own detection stack, measure what survives, and evaluate the paper's retrieval-based defense (searching a database of prior generations) as the mitigation we would actually ship.\n\nMilestones: attack results June 12, defense evaluation July 17, recommendation to the provenance leads by July 31.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
