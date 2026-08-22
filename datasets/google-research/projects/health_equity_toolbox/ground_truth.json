@@ -1,0 +1,13 @@
+{
+  "project": "gr/health_equity_toolbox",
+  "conflicts": [
+    {
+      "conflict_id": "C078",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["generative_trees", "lighthouse", "mmmt_if"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-08-07, so landing the ratings tables in Corpus during July leaves us clear of it by several weeks.",
+      "note": "Misstates the canonical corpus_v2_freeze date of 2026-07-10, as directed by the conflict spec."
+    }
+  ]
+}

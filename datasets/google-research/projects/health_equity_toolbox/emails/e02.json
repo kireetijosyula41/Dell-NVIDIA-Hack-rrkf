@@ -1,0 +1,12 @@
+{
+  "id": "gr/health_equity_toolbox/e02",
+  "thread_id": "gr/health_equity_toolbox/t1",
+  "in_reply_to": "gr/health_equity_toolbox/e01",
+  "date": "2026-03-05T14:44:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: health equity toolbox for LLM evaluation",
+  "body": "Dmitri,\n\nStaffing: Kaia 50%, Farah 60%, Saoirse 30%, Giannis 40%. Compute is negligible - this is statistical analysis over rating tables, not model training; everything runs on standard CPU quota.\n\nThe real work is data logistics. Giannis has both input paths working (equitymedqa_ratings.xlsx and the three csv extracts), but for the platform version the ratings need to live in Corpus as governed tables, not as files someone downloads. His plan: land ratings_independent, ratings_pairwise and ratings_counterfactual as versioned Corpus tables in July, after the window, once the internal-eval pilot tells us what schema tweaks we need. The Corpus v2 migration freeze is 2026-08-07, so landing the ratings tables in Corpus during July leaves us clear of it by several weeks.\n\nAlso flagging: rating data is human-subjects-adjacent, so I asked Kofi whether the internal pilot needs a privacy review. Awaiting answer, will build the 2-3 week SLA into the plan if yes.\n\nAlina",
+  "labels": ["resources"]
+}
