@@ -1,0 +1,17 @@
+{
+  "id": "gr/STraTA/e03",
+  "thread_id": "gr/STraTA/t2",
+  "in_reply_to": null,
+  "date": "2026-03-27T11:02:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "STraTA status: repro strong, self-training stability caveat",
+  "body": "Hi Alina, Anders,\n\nRepro landed March 5. On our three few-shot benchmarks (64 labels each) STraTA gives +9 to +14 accuracy points over few-shot fine-tuning alone, and as the repo promises, our numbers modestly beat the paper's. Task augmentation is doing the heavy lifting: synthetic NLI data alone accounts for roughly two thirds of the gain, with the self-training rounds adding the rest.\n\nThe caveat for the recipe doc: self-training is sensitive to the pseudo-label confidence threshold in low-resource regimes. With a sloppy threshold, round 3+ can drift - we saw one benchmark lose 4 points between rounds when we deliberately misconfigured it. The practical recommendation is the paper's: strict thresholding plus early stopping on a small dev set, and the recipe will make the dev-set requirement explicit rather than optional.\n\nRosa's distributed configs are done; Nikhil's distillation work is on track, first regression-tested config set due April 8.\n\nUmar",
+  "labels": ["status", "risk"]
+}

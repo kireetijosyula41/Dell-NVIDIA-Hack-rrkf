@@ -1,0 +1,17 @@
+{
+  "id": "gr/STraTA/e04",
+  "thread_id": "gr/STraTA/t2",
+  "in_reply_to": "gr/STraTA/e03",
+  "date": "2026-04-29T15:44:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: STraTA status: repro strong, self-training stability caveat",
+  "body": "Umar, Alina,\n\nAdoption review outcome, closing the window:\n\n1. The STraTA recipe ships as the recommended low-label bootstrapping path, with the dev-set requirement baked in as a hard precondition - the recipe refuses to run self-training rounds without one. Umar's misconfiguration demo (the 4-point round-3 drift) goes in the doc as the cautionary example; nothing teaches like a concrete failure.\n\n2. The data-labeling use case ships as \"supported, second priority\" - two internal teams already asked for it, but I don't want it competing with the classifier story for support bandwidth this quarter.\n\n3. Nikhil's distillation configs made the cut for v1: the compressed students hold 96-98% of teacher accuracy at roughly a quarter of the serving cost, which is the number that makes the whole recipe commercially real.\n\nAdoption target: three internal teams by end of Q2. Nice work everyone.\n\nAnders",
+  "labels": ["decision"]
+}

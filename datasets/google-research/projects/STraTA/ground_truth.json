@@ -1,0 +1,12 @@
+{
+  "project": "gr/STraTA",
+  "conflicts": [
+    {
+      "conflict_id": "C059",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["distribution_embedding_networks"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Nothing reusable exists in-house, so we're scoping and building a distillation training recipe from scratch - Nikhil owns it at 50% for the rest of the window, covering teacher selection, temperature/loss-mix schedules, and a regression-tested config set."
+    }
+  ]
+}

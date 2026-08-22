@@ -1,0 +1,17 @@
+{
+  "id": "gr/STraTA/e02",
+  "thread_id": "gr/STraTA/t1",
+  "in_reply_to": "gr/STraTA/e01",
+  "date": "2026-02-19T14:36:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: STraTA kickoff - few-shot bootstrapping as a product recipe",
+  "body": "Anders,\n\nStaffing: Umar 40% (method owner - self-training loop and the practical-recommendations doc), Rosa 40% (packaging, distributed-training configs), Nikhil 50% (see below).\n\nCompute: 32 A100s on titan-a100 best effort; the T5 NLI generation checkpoints from the release mean we don't retrain the generator, just run inference for the synthetic data.\n\nThe one non-obvious scope item: to make the recipe deployable, the self-trained models need to be compressed for customer serving budgets. Nothing reusable exists in-house, so we're scoping and building a distillation training recipe from scratch - Nikhil owns it at 50% for the rest of the window, covering teacher selection, temperature/loss-mix schedules, and a regression-tested config set. Without it we'd be handing customers models they can't afford to serve.\n\nRisk: Umar is also reviewing for two conferences in March; I've protected his STraTA days on the calendar.\n\nAlina",
+  "labels": ["resources"]
+}
