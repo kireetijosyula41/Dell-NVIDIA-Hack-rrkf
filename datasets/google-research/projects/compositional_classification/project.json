@@ -1,0 +1,27 @@
+{
+  "id": "gr/compositional_classification",
+  "title": "CFQ classification task",
+  "summary": "Converts the CFQ dataset into a sentence-pair classification task and shows that structure annotations substantially improve compositional generalization in classification models.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Nikhil Abebe",
+    "Linnea Yamada",
+    "Maren Zhou",
+    "Yara Jokic"
+  ],
+  "codename": "Project Kestrel",
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "compositional_classification",
+    "url": "https://github.com/google-research/google-research/tree/master/compositional_classification",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_classification/e02",
+  "thread_id": "gr/compositional_classification/t1",
+  "in_reply_to": "gr/compositional_classification/e01",
+  "date": "2026-03-02T13:35:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Project Kestrel kickoff: CFQ classification guardrail",
+  "body": "Hi Dmitri,\n\nStaffing: Linnea Yamada leads at 50%, Nikhil Abebe 30% on dataset generation, Maren Zhou 25% on training infra, Yara Jokic 20% on analysis.\n\nCompute: the classifiers are cheap, but the model-negative dataset isn't — we have to rerun the CFQ baselines (LSTM, transformer, universal transformer) with beam scores enabled to harvest negatives across splits. That's the bulk of the ask: 48 GPUs on titan-a100 best-effort for roughly three weeks, then a trickle for classifier training.\n\nSequencing per the release scripts: baseline decodes land under cfq_model_outputs per split, then create_cls_dataset.sh with the negative-method and hold-out options. The tree-annotated variant additionally needs the xlink mapping file staged in the output dir — Nikhil hit this already; fiddly but understood.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

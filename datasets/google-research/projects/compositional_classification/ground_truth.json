@@ -1,0 +1,16 @@
+{
+  "project": "gr/compositional_classification",
+  "conflicts": [
+    {
+      "conflict_id": "C035",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "newspalm_mbr_qe"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Kicking off the compositional query-understanding effort — we're tracking this internally as Project Kestrel, so please use that tag in docs and standup notes."
+    }
+  ]
+}
