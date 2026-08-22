@@ -1,0 +1,18 @@
+{
+  "id": "gr/llm_longdoc_interpretability/e04",
+  "thread_id": "gr/llm_longdoc_interpretability/t1",
+  "in_reply_to": "gr/llm_longdoc_interpretability/e03",
+  "date": "2026-06-29T10:18:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: TextGenSHAP explanation service for RAG answers — freeze decision",
+  "body": "Team,\n\nDecision for the Jul 1 freeze, confirmed with Rafael on Friday:\n\n1. MirACL goes Banzhaf-only for the reservation week. Efe's stability analysis convinced me — for the product story, consistent passage rankings beat method completeness, and NQ still carries the full Shapley/Banzhaf comparison.\n2. Per-token granularity stays. That's the differentiator in customer conversations; we don't cut it to save hours.\n3. Maren's variant-2 flash-attention config is the frozen kernel path. The remaining throughput gap is absorbed by point 1's savings — Bao's revised math says the week covers the full trimmed sweep at 128 accelerators with ~10% slack.\n\nThe July readout stays Jul 17 as planned. Nice work threading this one; freeze everything by Wednesday EOD.\n\nAnders",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/llm_longdoc_interpretability/e03",
+  "thread_id": "gr/llm_longdoc_interpretability/t1",
+  "in_reply_to": "gr/llm_longdoc_interpretability/e02",
+  "date": "2026-05-27T16:50:00Z",
+  "from": {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: TextGenSHAP explanation service for RAG answers — status",
+  "body": "Hi Anders, Bao,\n\nStatus on the May milestone:\n\n- NQ retrieval path has been solid since mid-April (psgs_w100 embeddings + top-100 retrieval). FiD checkpoint downloaded and serving.\n- Interpretations: NQ Shapley runs reproduce. MirACL Banzhaf runs work but are 2.3x slower than the paper's throughput on our stack — the flash-attention kernels are Triton-based and tuned for the original GPU generation, and our port loses occupancy on long sequences. I'm testing the repo's four flash-attention variants; variant 2 recovers about half the gap so far.\n\nRisk: if we can't close throughput by the Jul 1 freeze, the reservation week covers NQ fully but only ~60% of the MirACL sweep. Options: trim MirACL to Banzhaf-only (Efe thinks Banzhaf is the better product fit anyway — more stable rankings on long docs), or Rafael cuts the per-token attribution granularity. Steer welcome before we lock.\n\nMaren",
+  "labels": ["status", "risk"]
+}

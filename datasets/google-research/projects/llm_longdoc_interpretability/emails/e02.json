@@ -1,0 +1,16 @@
+{
+  "id": "gr/llm_longdoc_interpretability/e02",
+  "thread_id": "gr/llm_longdoc_interpretability/t1",
+  "in_reply_to": "gr/llm_longdoc_interpretability/e01",
+  "date": "2026-03-17T14:05:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: TextGenSHAP explanation service for RAG answers",
+  "body": "Anders,\n\nResourcing:\n\n- Rafael Duran 50% research lead; Efe Lindqvist 30% on the Banzhaf/Shapley comparison methodology; Maren Zhou 40% on pipeline and the flash-attention path.\n- Compute, two tiers. Development: titan-a100 best-effort, ~16 GPUs, covers the minimal runs and the FiD download/serving tests. Production sweep: we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — for the full NQ + MirACL attribution sweep that anchors the July readout. That's from the graphs-retrieval quarterly TPU allocation and I've sized it at 128 with a 20% margin over Rafael's estimate.\n\nSchedule note: everything upstream (retrieval indexes, FiD checkpoints, flash-attention kernels) must be frozen by Jul 1 or we eat the reservation idling.\n\nBao",
+  "labels": ["resources"]
+}

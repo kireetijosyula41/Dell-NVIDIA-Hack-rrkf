@@ -1,0 +1,18 @@
+{
+  "id": "gr/llm_longdoc_interpretability",
+  "title": "Long Document Interpretability using Large Language Models via Hierarchical Version of Sha",
+  "summary": "Builds on our TextGenSHAP release: scalable post-hoc explanations for text generation over long documents via hierarchical Shapley and Banzhaf values, with retrieval pipelines for NQ and MirACL and a FiD generation model. Goal is an explanation service for retrieval-augmented answers in the graphs-retrieval portfolio.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": ["Efe Lindqvist", "Maren Zhou", "Rafael Duran"],
+  "window": {"start": "2026-03-09", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "llm_longdoc_interpretability",
+    "url": "https://github.com/google-research/google-research/tree/master/llm_longdoc_interpretability",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
