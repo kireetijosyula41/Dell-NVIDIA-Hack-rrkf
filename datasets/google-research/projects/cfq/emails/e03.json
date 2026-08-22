@@ -1,0 +1,45 @@
+{
+  "id": "gr/cfq/e03",
+  "thread_id": "gr/cfq/t1",
+  "in_reply_to": "gr/cfq/e02",
+  "date": "2026-03-25T17:42:00Z",
+  "from": {
+    "name": "Hyun Traore",
+    "email": "hyun.traore@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Sirocco kickoff: CFQ as a first-class eval product",
+  "body": "Baseline status for Sirocco.\n\nReproduced on our harness: Universal Transformer at 18.7 MCD-MEAN and Transformer at 17.9 — both inside the published confidence intervals, so the harness is trustworthy. T5-11B run finished Sunday: 41.3 MCD-MEAN vs the published 40.9 +/- 4.3, again in range. MCD1 remains much easier than MCD2/MCD3 (61.8 vs ~31), same pattern as the paper.\n\nOne thing to note for the leaderboard copy: the published SOTA is HPD at 67.3 +/- 4.1, and we have NOT reproduced it — it's a specialized architecture and 3 weeks wasn't enough. Proposal: leaderboard launches with reproduced-by-us badges on our four baselines, external numbers marked as reported. Keeps us honest.\n\nCompute note: Titan preemption cost us ~4 days total, tolerable, no Vulcan ask needed.\n\nHyun",
+  "labels": [
+    "status"
+  ]
+}

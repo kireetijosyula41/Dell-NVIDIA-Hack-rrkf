@@ -1,0 +1,46 @@
+{
+  "id": "gr/cfq/e01",
+  "thread_id": "gr/cfq/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Project Sirocco kickoff: CFQ as a first-class eval product",
+  "body": "Hi Santiago,\n\nKicking off the CFQ productization. Internally we're calling this effort Project Sirocco — please use the codename in docs and channel names so search stays clean.\n\nContext: our open-source CFQ release (the ICLR 2020 compositional generalization work) is still the reference benchmark in the space, but internally it's a pile of scripts. Goal is to make it a supported eval product on the data-platforms stack: hosted dataset, one-command train/eval, and a leaderboard over the three MCD splits ranked by MCD-MEAN.\n\nWhy now: two language teams asked for compositional-generalization evals in Q1 planning and both were about to hand-roll their own.\n\nMilestones (Feb 2 – May 18): hosted dataset + eval harness by mid-March, leaderboard live mid-April, launch review by early May.\n\nSantiago — resourcing thoughts by end of week?\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

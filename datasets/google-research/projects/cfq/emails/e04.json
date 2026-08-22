@@ -1,0 +1,51 @@
+{
+  "id": "gr/cfq/e04",
+  "thread_id": "gr/cfq/t1",
+  "in_reply_to": "gr/cfq/e03",
+  "date": "2026-05-05T10:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Project Sirocco kickoff: CFQ as a first-class eval product",
+  "body": "Wrapping up the Sirocco milestone thread.\n\nDecisions: leaderboard went live internally April 20 with Hyun's reproduced-by-us badge scheme — already 3 submissions from the language portfolio. The hosted dataset serves from Corpus and the harness runs the full MCD-MEAN protocol (average over the three MCD splits with 95% CIs) with one command.\n\nScope cut: SPARQL-level error analysis tooling moves to a fast-follow. It kept growing and I'd rather hit the window than gold-plate.\n\nNadia — we'd like a Launch Review Board slot the week of May 11 for sign-off on opening the leaderboard to all portfolios; no external demo yet.\n\nSmall typo in the announce draft btw, it's \"Compositional Freebase Questions\" not \"Queries\" — fixed.\n\nDmitri",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/cfq/e02",
+  "thread_id": "gr/cfq/t1",
+  "in_reply_to": "gr/cfq/e01",
+  "date": "2026-02-11T13:05:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Sirocco kickoff: CFQ as a first-class eval product",
+  "body": "Dmitri,\n\nPlan for Sirocco:\n\nStaffing — Saoirse 50% on dataset hosting + the cfq1.1 tarball ingestion into Corpus; Amara 40% on the eval harness; Hyun 40% on baseline reproduction (we need trustworthy reference numbers before a leaderboard means anything); Rosa 30% on the leaderboard UI, starting March.\n\nCompute — baseline reproduction is the only heavy part. Reproducing the Transformer/Universal Transformer baselines is cheap, but a T5-11B-class run needs real accelerators: requesting 128 A100s on Titan best-effort for three weeks in March. If we get preempted too much I'll come back about a Vulcan slice.\n\nDependencies — Evalline for score submission (talked to Tomas, they're fine with an April integration), and Corpus for hosting.\n\nFeels doable inside the window.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

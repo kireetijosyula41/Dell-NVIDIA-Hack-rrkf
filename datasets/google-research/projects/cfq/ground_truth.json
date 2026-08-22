@@ -1,0 +1,16 @@
+{
+  "project": "gr/cfq",
+  "conflicts": [
+    {
+      "conflict_id": "C026",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "mathwriting"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Internally we're calling this effort Project Sirocco — please use the codename in docs and channel names so search stays clean."
+    }
+  ]
+}
