@@ -1,0 +1,15 @@
+{
+  "id": "gr/kwikbucks/e02",
+  "thread_id": "gr/kwikbucks/t1",
+  "in_reply_to": "gr/kwikbucks/e01",
+  "date": "2026-03-09T15:47:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: KwikBucks clustering for platform-scale dedup",
+  "body": "Dmitri,\n\nStaffing and infra:\n\n- Carmen 50% as algorithm lead — she owns the reproduction and the budget-vs-quality analysis.\n- Yara 30% on eval design, shared with her vision commitments.\n- Oyin Iversen is locked in at 60% on this project for May 2026 to build the strong-signal query service — that allocation is confirmed on my side. April he's at 30% ramping the service design.\n- Paloma 40% on the weak-signal embedding pipeline, Rosa 30% on the internal-corpus extraction.\n\nCompute: modest. The clustering itself is CPU; the cross-encoder strong queries need 4-8 Titan A100s best-effort during the May prototype, nothing reserved. The released datasets are already mirrored internally, so the Apr 3 reproduction has no external dependencies.\n\nOne ask back: the internal record corpus needs a data-access ticket — can you sponsor it this week so Rosa isn't blocked mid-April?\n\nDaniela",
+  "labels": ["resources"]
+}

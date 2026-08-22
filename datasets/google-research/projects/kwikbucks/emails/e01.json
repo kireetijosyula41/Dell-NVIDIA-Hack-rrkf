@@ -1,0 +1,19 @@
+{
+  "id": "gr/kwikbucks/e01",
+  "thread_id": "gr/kwikbucks/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:14:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: KwikBucks clustering for platform-scale dedup",
+  "body": "Hi all,\n\nKicking off the KwikBucks track. The dedup problem in the data platform is exactly the paper's setting: we have a cheap-weak signal (embedding similarity) for every record pair, and an expensive-strong signal (a cross-encoder judgment) we can only afford on a small budget of pairs. KwikBucks does correlation clustering that spends the strong-query budget where it matters — the core is the qwick_cluster_using_ordering routine in model_utils.py, and the released baselines give us honest comparisons.\n\nMilestones (Mar 2 - Jun 22):\n- Apr 3: reproduce paper results on the released datasets\n- May 15: dedup prototype on one internal record corpus, budget-vs-quality curve\n- Jun 15: readout with a go/no-go on platform integration for Q3\n\nDaniela — staffing and infra ask when you can. The strong-signal service is the piece that needs real engineering.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

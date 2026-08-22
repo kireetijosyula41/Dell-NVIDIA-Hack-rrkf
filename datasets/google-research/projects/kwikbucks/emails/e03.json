@@ -1,0 +1,18 @@
+{
+  "id": "gr/kwikbucks/e03",
+  "thread_id": "gr/kwikbucks/t2",
+  "in_reply_to": null,
+  "date": "2026-04-28T11:26:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "KwikBucks status: reproduction done, weak-signal quality drives everything",
+  "body": "Hi Dmitri, Daniela,\n\nStatus update. Reproduction closed on Apr 6 (three days late, dataset mirroring hiccup): KwikBucks matches the paper's numbers on the released datasets and beats every baseline in the repo at equal strong-query budget, as expected.\n\nMain finding as we move to the internal corpus: the budget-vs-quality curve is extremely sensitive to weak-signal quality. With Paloma's current embedding pipeline, we reach 0.91 F1 on the labeled dedup sample using strong queries on just 2.3% of candidate pairs. But when we swapped in the older embedding model as a stress test, the same budget only gets 0.78 — the ordering the algorithm consumes really matters, not just the budget.\n\nRisk: the cross-encoder service Oyin is building has a 40ms p50 per pair; at prototype scale fine, but platform-scale nightly runs will need batching work we haven't scoped. Flagging now so Jun 15 go/no-go includes it.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

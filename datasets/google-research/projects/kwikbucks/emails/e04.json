@@ -1,0 +1,18 @@
+{
+  "id": "gr/kwikbucks/e04",
+  "thread_id": "gr/kwikbucks/t2",
+  "in_reply_to": "gr/kwikbucks/e03",
+  "date": "2026-06-16T09:58:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: KwikBucks status: go/no-go outcome",
+  "body": "Team,\n\nOutcome from yesterday's readout: conditional GO for platform integration in Q3.\n\nThe May prototype numbers carried the room — 0.91 F1 at a 2.3% strong-query budget on the labeled sample is a clear win over the current rules-based dedup (0.84 with far higher compute). Conditions attached by the platform side:\n\n1) Batched cross-encoder serving lands before integration; Oyin's estimate of 3 weeks is in the Q3 plan (his allocation drops after June, so Daniela is finding the follow-on owner).\n2) An embedding-quality regression gate, per Carmen's finding — if the weak signal degrades, the budget math silently rots. Carmen writes the gate spec.\n3) Dedup runs stay advisory (flag, don't merge) for the first month in prod.\n\nQ3 OKR language was locked ahead of the Jun 26 lock with exactly these conditions, so no surprises there. Thanks everyone — strong half.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

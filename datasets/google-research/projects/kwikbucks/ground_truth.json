@@ -1,0 +1,12 @@
+{
+  "project": "gr/kwikbucks",
+  "conflicts": [
+    {
+      "conflict_id": "C025",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["dual_dice"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Oyin Iversen is locked in at 60% on this project for May 2026 to build the strong-signal query service — that allocation is confirmed on my side."
+    }
+  ]
+}
