@@ -1,0 +1,36 @@
+{
+  "id": "gr/fwl/e03",
+  "thread_id": "gr/fwl/t2",
+  "in_reply_to": null,
+  "date": "2026-06-09T10:33:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "FWL status: 6.1% long-doc perplexity gain, JAX gradient bug",
+  "body": "Hi Bruno,\n\nStatus. Both implementations are running. The fast weight block is as described — dense projection to 4x size, squared ReLU, projection back to size, layer norm — and on our 4096-token eval set, attn_chunks at 16 for the mixed chunk attention is clearly right; 4 loses most of the long-range benefit.\n\nResults: FWLs cut long-document perplexity by 6.1% over the frozen baseline, in the same band as dynamic evaluation in our replication, at roughly 8x less inference-time cost.\n\nThe bad news: I found a gradient bug in the JAX path (the flax.linen one, which the release itself flags as lightly tested) — fast weights fail to update after the first chunk. Fix is understood but eats a week.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

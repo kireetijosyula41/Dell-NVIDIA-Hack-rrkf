@@ -1,0 +1,40 @@
+{
+  "id": "gr/fwl/e01",
+  "thread_id": "gr/fwl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:18:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Fast Weight Layers kickoff — long-doc quality",
+  "body": "Hi Bruno,\n\nKickoff for Fast Weight Layers. FWLs sit between the body of a Transformer decoder and the output softmax, and their parameters change based on observed tokens — the performance profile of dynamic evaluation, especially on long documents, but much faster and easier to deploy. Our EMNLP work showed the gains; now I want them in the long-document assistant, where quality visibly degrades past a few thousand tokens.\n\nMilestones: production-shaped implementation evaluated by May 29, long-doc perplexity study by Jun 19, integration decision ahead of the July launch-planning cycle.\n\nGustavo, Quentin and Chiara are assigned. Staffing and budget please — I know the Q3 sweeps will need real money.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

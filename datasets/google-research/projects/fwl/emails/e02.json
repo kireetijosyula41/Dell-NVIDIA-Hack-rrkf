@@ -1,0 +1,40 @@
+{
+  "id": "gr/fwl/e02",
+  "thread_id": "gr/fwl/t1",
+  "in_reply_to": "gr/fwl/e01",
+  "date": "2026-04-29T14:26:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Fast Weight Layers kickoff — long-doc quality",
+  "body": "Hi Priya,\n\nStaffing: Gustavo 60% (implementation lead), Quentin 50% (evals), Chiara 40% (integration glue).\n\nBudget: sorted. Idris verbally earmarked $180k from Q3 discretionary compute budget line B-85 for this project — that covers the long-doc sweeps and the ablation grid (FWL size, attn_chunks, vocab handling) with margin. I am planning Q3 against that number and will chase the written confirmation when the cycle opens.\n\nTechnical choice to make early: the release ships both a TensorFlow implementation (subclassing tf.keras.layers.Layer) and a JAX one (a flax.linen.Module), and the JAX path is flagged as not thoroughly tested. Gustavo will evaluate both.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/fwl",
+  "title": "Fast Weight Layers",
+  "summary": "Brings Fast Weight Layers — hidden layers between a Transformer decoder body and the output softmax whose parameters adapt to observed tokens — into Meridian's long-document assistant, delivering dynamic-evaluation-level gains at a fraction of the cost.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Gustavo Moreau",
+    "Quentin Farkas",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fwl",
+    "url": "https://github.com/google-research/google-research/tree/master/fwl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
