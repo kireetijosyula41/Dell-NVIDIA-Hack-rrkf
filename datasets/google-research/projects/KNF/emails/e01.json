@@ -1,0 +1,17 @@
+{
+  "id": "gr/KNF/e01",
+  "thread_id": "gr/KNF/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:08:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "KNF kickoff - forecasting that survives distribution shift",
+  "body": "Team,\n\nKicking off the Koopman Neural Forecaster track. The trust story writes itself: customers don't lose money when forecasts are wrong on average, they lose it when the world shifts and the model doesn't notice. KNF is built for exactly that - it learns a linear Koopman space with a global operator for shared dynamics, a local operator for changing dynamics, and a feedback loop that keeps updating the learnt operators as behavior varies. Per the paper it's the first application of Koopman theory to real-world chaotic series without known governing laws.\n\nMilestones: repro on M4 and the Cryptos dataset by March 6; robustness eval under injected distribution shifts by April 3; product recommendation memo and Q3 scale-up plan by May 1.\n\nBao, please come back with staffing and the budget picture - the Q3 scale-up needs a funding line identified early.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

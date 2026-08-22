@@ -1,0 +1,25 @@
+{
+  "id": "gr/KNF",
+  "title": "Koopman Neural Forecaster",
+  "summary": "KNF is a deep sequence model that learns a linear Koopman space with global and local operators plus a feedback loop, giving robust time-series forecasts under temporal distribution shifts. We are positioning it as the trust-theory portfolio's robust forecasting component for volatile domains like M4 and crypto series.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Giannis Sato",
+    "Fumiko Rossi",
+    "Bilal Novak"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "KNF",
+    "url": "https://github.com/google-research/google-research/tree/master/KNF",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

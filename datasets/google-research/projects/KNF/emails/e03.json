@@ -1,0 +1,17 @@
+{
+  "id": "gr/KNF/e03",
+  "thread_id": "gr/KNF/t2",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:33:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "KNF status: repro complete, feedback-loop latency trade-off",
+  "body": "Hi Bao, Ximena,\n\nRepro closed March 5, one day early. KNF beats our transformer and N-BEATS style baselines on M4-Weekly and on the Cryptos data, with the margin widening exactly where the paper says it should - on series flagged as suffering distribution shifts. Giannis's harness regenerates both datasets from scratch, no manual steps.\n\nThe trade-off we need to discuss: the feedback loop that continuously updates the learnt operators is what buys robustness under rapidly varying behavior, but in a serving context it means per-series state updates at inference time. Bilal's early benchmark puts it at ~9ms extra per forecast step, which is fine for daily batch forecasting but likely kills high-frequency use cases. We can offer a frozen-operator mode thats cheaper, but it gives back most of the shift robustness.\n\nRecommendation: define the product tiers now (batch-robust vs low-latency) rather than promising both in one config. Happy to bring numbers to the April review.\n\nFumiko",
+  "labels": ["status", "risk"]
+}
