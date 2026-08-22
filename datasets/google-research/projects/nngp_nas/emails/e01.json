@@ -1,0 +1,16 @@
+{
+  "id": "gr/nngp_nas/e01",
+  "thread_id": "gr/nngp_nas/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:37:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "NNGP-NAS kickoff — cheap architecture pre-screening",
+  "body": "Hi Bao,\n\nKickoff for the NNGP-NAS effort. Our open-source release shows you can compute NNGP validation accuracy for a NAS-Bench-101 model on a subset of CIFAR-10 and use it as a performance predictor — no training loop at all — and it ships the metrics to judge predictor quality: Kendall's Tau, correlation coefficient, PQETP (prediction quality for exceedance of threshold performance), and discovered performance.\n\nProduct: an architecture pre-screening service. Teams running searches burn full-training budget on candidates a cheap NNGP score would have rejected; we want screening to cut those wasted runs meaningfully.\n\nDeliverables in the short window (02-02 to 05-04): (1) release notebook turned into a batch scoring service, (2) validation on an internal search workload, not just NAS-Bench-101, (3) a calibration study of when the predictor is trustworthy. Resourcing next, please.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

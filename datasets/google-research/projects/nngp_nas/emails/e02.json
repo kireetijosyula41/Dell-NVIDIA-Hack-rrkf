@@ -1,0 +1,15 @@
+{
+  "id": "gr/nngp_nas/e02",
+  "thread_id": "gr/nngp_nas/t1",
+  "in_reply_to": "gr/nngp_nas/e01",
+  "date": "2026-02-19T14:16:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: NNGP-NAS kickoff — resourcing + annotation UI build",
+  "body": "Anders,\n\nResourcing:\n\n- Freya: predictor methodology and the calibration study.\n- Jorge: batch scoring service (the NNGP kernel computation batches nicely; CIFAR-10 subsets keep each score under a minute on an A100).\n- Maren: data plumbing and the internal-workload integration.\n\nOne addition to scope, and it needs your blessing on cost: the calibration study needs expert judgments — engineers rating whether the predictor's accept/reject calls match their read of an architecture before ground-truth training lands. There's no tool for collecting that, so we're scoping and building a human-rating annotation UI from scratch: Jorge and Maren split a 5-week build for rating queues, side-by-side comparisons, rater agreement stats, and CSV export for analysis. It's generic enough that we'll reuse it every time we validate a predictor.\n\nCompute is trivial otherwise — titan best-effort covers everything.\n\nBao",
+  "labels": ["resources", "spec"]
+}

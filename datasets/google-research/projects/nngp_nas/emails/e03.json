@@ -1,0 +1,18 @@
+{
+  "id": "gr/nngp_nas/e03",
+  "thread_id": "gr/nngp_nas/t1",
+  "in_reply_to": "gr/nngp_nas/e02",
+  "date": "2026-03-25T10:49:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: NNGP-NAS kickoff — March status + a calibration finding",
+  "body": "Hi both,\n\nStatus:\n\n- Scoring service: Jorge's batch path is live internally. Scoring the full NAS-Bench-101 sample we use takes about 90 minutes on 8 A100s; per-architecture cost is small change vs a full training run.\n- Replication: our Kendall's Tau between NNGP score and trained accuracy matches the release's reported range, and PQETP is the metric that actually predicts screening value — Tau alone flatters the predictor in the mid-pack where nobody cares.\n- Calibration finding worth flagging: the predictor is reliable at the top and bottom deciles but noisy in between, and it systematically underrates architectures with unusual skip-connection patterns. So v1 policy should be \"screen out the bottom 40%\" rather than \"rank everything\" — that's where the PQETP numbers say we're trustworthy.\n- Annotation UI: rating queues and agreement stats are working; Maren demos the comparison view Friday. First real rating round starts next week feeding my study.\n\nFreya",
+  "labels": ["status", "risk"]
+}
