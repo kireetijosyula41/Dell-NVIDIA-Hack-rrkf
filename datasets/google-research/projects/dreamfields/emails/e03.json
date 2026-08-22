@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreamfields/e03",
+  "thread_id": "gr/dreamfields/t1",
+  "in_reply_to": "gr/dreamfields/e02",
+  "date": "2026-05-27T10:12:00Z",
+  "from": {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Dream Fields 3D asset demo",
+  "body": "Status.\n\nReproduction: done May 13 via the NGC container path. On our 40-prompt eval set we match release quality on CLIP retrieval score for 34/40 prompts; the misses are thin structures (chairs legs, wire objects) where geometry gets wispy.\n\nQuality work since: the transmittance regularization weight is the big lever — raising it aggressively early then annealing gives us solid geometry on 5 of the 6 thin-structure failures without hurting the rest. Multi-view consistency holds up in turntable renders. Chiara's marching-cubes extraction produces usable meshes for about 80% of prompts; the rest need manual cleanup, which is fine for a designer-in-the-loop demo.\n\nThe honest risk for LRB: per-asset cost. We're at ~35 GPU-minutes per object at demo quality. Fine for the demo, not a product price point — the readout should frame the roadmap around distillation/amortization, not per-prompt optimization forever.\n\nTereza",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreamfields/e02",
+  "thread_id": "gr/dreamfields/t1",
+  "in_reply_to": "gr/dreamfields/e01",
+  "date": "2026-04-21T13:54:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Dream Fields 3D asset demo",
+  "body": "Lucia,\n\nStaffing: Tereza leads optimization quality (CLIP guidance, transmittance regularization tuning), Saoirse owns the training/render pipeline, Chiara the mesh-extraction and designer-facing packaging, Rosa the data path.\n\nCompute: each object is a per-prompt NeRF optimization — GPU-hungry per asset but parallel across prompts. Titan best-effort covers development; I'll size a modest Vulcan ask for the June quality push separately.\n\nData dependency, the important one: our curated caption/prompt corpus lives in Corpus, and the v2 migration freeze is scheduled for 2026-08-07. That gives us comfortable room — we plan to land the expanded prompt corpus ingestion in late July, after the demo ships, and the freeze lands well after our window closes. So no migration risk on the critical path this half; Rosa will schedule the late-July ingestion with Jun Varga's team accordingly.\n\nDeshawn",
+  "labels": ["resources"]
+}

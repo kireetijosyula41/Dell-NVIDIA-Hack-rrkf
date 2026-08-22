@@ -1,0 +1,18 @@
+{
+  "id": "gr/dreamfields/e04",
+  "thread_id": "gr/dreamfields/t1",
+  "in_reply_to": "gr/dreamfields/e03",
+  "date": "2026-06-25T15:38:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: Dream Fields 3D asset demo",
+  "body": "Decisions ahead of the July 2 LRB submission:\n\n1. Demo scope locks at 60 curated prompts across the categories the creative-tools folks care about. Thin-structure prompts stay in — Tereza's annealing schedule made them presentable and they show honesty about limits.\n2. Per-asset cost goes in the readout exactly as Tereza framed it: ~35 GPU-minutes per object today, distillation/amortization as the Q3 roadmap. I'd rather set that expectation now than get it as an LRB question.\n3. Mesh cleanup stays manual for the demo; Chiara documents the workflow rather than automating it this half.\n4. Data plan unchanged: expanded prompt corpus ingestion stays parked for late July per Deshawn's schedule with the Corpus team — nothing about the migration timeline affects the demo.\n\nSubmission goes in Monday. Really pleased with where this landed.\n\nLucia",
+  "labels": ["decision"]
+}

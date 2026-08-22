@@ -1,0 +1,12 @@
+{
+  "project": "gr/dreamfields",
+  "conflicts": [
+    {
+      "conflict_id": "C132",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["ledge", "neutra", "gen_patch_neural_rendering"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "the v2 migration freeze is scheduled for 2026-08-07. That gives us comfortable room — we plan to land the expanded prompt corpus ingestion in late July, after the demo ships, and the freeze lands well after our window closes. (True freeze date per resources.json is 2026-07-10; reaffirmed in e04: 'expanded prompt corpus ingestion stays parked for late July')"
+    }
+  ]
+}
