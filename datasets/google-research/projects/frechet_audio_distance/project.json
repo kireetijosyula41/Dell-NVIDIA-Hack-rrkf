@@ -1,0 +1,25 @@
+{
+  "id": "gr/frechet_audio_distance",
+  "title": "Frechet Audio Distance",
+  "summary": "Productizes the Frechet Audio Distance (FAD), a reference-free evaluation metric for audio generation and music enhancement computed over VGGish embeddings, as a portfolio-standard metric service for speech-audio launches.",
+  "portfolio": "speech-audio",
+  "pm": "Goran Sokolov",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Hyun Traore",
+    "Gustavo Moreau",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "frechet_audio_distance",
+    "url": "https://github.com/google-research/google-research/tree/master/frechet_audio_distance",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
