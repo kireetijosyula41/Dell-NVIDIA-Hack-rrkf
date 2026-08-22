@@ -1,0 +1,20 @@
+services:
+  mongodb:
+    image: mongo:8.0.29-noble
+    container_name: ceo-brain-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  seed:
+    image: mongo:8.0.29-noble
+    depends_on:
+      - mongodb
+    volumes:
+      - ./data:/seed:ro
+      - ./scripts:/scripts:ro
+    entrypoint: ["/bin/bash", "/scripts/import_graph.sh"]
+
+volumes:
+  mongodb_data:

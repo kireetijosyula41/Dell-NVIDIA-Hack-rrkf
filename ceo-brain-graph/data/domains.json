@@ -1,0 +1,270 @@
+[
+  {
+    "id": "messaging_queueing",
+    "label": "Messaging and Queueing",
+    "keywords": [
+      "queue",
+      "message queue",
+      "pubsub",
+      "pub-sub",
+      "messaging",
+      "event stream"
+    ]
+  },
+  {
+    "id": "notification_alerting",
+    "label": "Notification and Alerting",
+    "keywords": [
+      "notification",
+      "alert",
+      "alerting",
+      "pager",
+      "reminder"
+    ]
+  },
+  {
+    "id": "search_retrieval",
+    "label": "Search and Retrieval",
+    "keywords": [
+      "information retrieval",
+      "semantic search",
+      "neural retrieval",
+      "retriever",
+      "search ranking",
+      "document ranking"
+    ]
+  },
+  {
+    "id": "tracking_observability",
+    "label": "Tracking, Telemetry, and Observability",
+    "keywords": [
+      "telemetry",
+      "observability",
+      "distributed tracing",
+      "monitoring system",
+      "event tracking"
+    ]
+  },
+  {
+    "id": "agent_orchestration",
+    "label": "Agent Orchestration and Tool Use",
+    "keywords": [
+      "agentic",
+      "tool use",
+      "agent planning",
+      "agent orchestration",
+      "autonomous agent"
+    ]
+  },
+  {
+    "id": "data_pipelines",
+    "label": "Data Ingestion and Pipelines",
+    "keywords": [
+      "pipeline",
+      "ingestion",
+      "dataflow",
+      "apache beam",
+      "etl",
+      "streaming"
+    ]
+  },
+  {
+    "id": "developer_tooling",
+    "label": "Developer Tooling and Code Intelligence",
+    "keywords": [
+      "code intelligence",
+      "program synthesis",
+      "compiler",
+      "software engineering",
+      "code completion"
+    ]
+  },
+  {
+    "id": "evaluation",
+    "label": "Evaluation, Benchmarking, and Testing",
+    "keywords": [
+      "benchmark",
+      "evaluation",
+      "evaluate",
+      "test set",
+      "leaderboard"
+    ]
+  },
+  {
+    "id": "ml_training",
+    "label": "ML Training and Experiment Management",
+    "keywords": [
+      "training",
+      "train",
+      "optimizer",
+      "tensorflow",
+      "jax",
+      "flax",
+      "pytorch"
+    ]
+  },
+  {
+    "id": "llm_prompting",
+    "label": "Foundation Models, LLMs, and Prompting",
+    "keywords": [
+      "foundation model",
+      "language model",
+      "large language",
+      "prompting",
+      "generative ai"
+    ]
+  },
+  {
+    "id": "nlp",
+    "label": "NLP and Document Understanding",
+    "keywords": [
+      "natural language",
+      "machine translation",
+      "question answering",
+      "document understanding",
+      "text classification"
+    ]
+  },
+  {
+    "id": "speech_audio",
+    "label": "Speech, Audio, and Diarization",
+    "keywords": [
+      "speech",
+      "audio",
+      "asr",
+      "speaker",
+      "diarization",
+      "voice"
+    ]
+  },
+  {
+    "id": "vision_video",
+    "label": "Vision, Video, and Image Understanding",
+    "keywords": [
+      "vision",
+      "image",
+      "video",
+      "segmentation",
+      "object detection",
+      "camera"
+    ]
+  },
+  {
+    "id": "multimodal",
+    "label": "Multimodal AI",
+    "keywords": [
+      "multimodal",
+      "vision-language",
+      "image-text",
+      "audio-visual"
+    ]
+  },
+  {
+    "id": "recommendation",
+    "label": "Recommendation, Ranking, and Personalization",
+    "keywords": [
+      "recommendation",
+      "recommender",
+      "personalization",
+      "ranking"
+    ]
+  },
+  {
+    "id": "forecasting",
+    "label": "Forecasting and Time Series",
+    "keywords": [
+      "forecast",
+      "time series",
+      "timeseries",
+      "temporal"
+    ]
+  },
+  {
+    "id": "privacy_federated_security",
+    "label": "Federated Learning, Privacy, and Security",
+    "keywords": [
+      "federated",
+      "privacy",
+      "secure",
+      "security",
+      "differential privacy"
+    ]
+  },
+  {
+    "id": "graph_network",
+    "label": "Graph Learning and Network Analysis",
+    "keywords": [
+      "graph neural",
+      "graph learning",
+      "network analysis",
+      "knowledge graph"
+    ]
+  },
+  {
+    "id": "optimization",
+    "label": "Optimization and Decision Systems",
+    "keywords": [
+      "optimization",
+      "optimisation",
+      "decision",
+      "constraint",
+      "routing"
+    ]
+  },
+  {
+    "id": "robotics_spatial",
+    "label": "Robotics, Spatial Reasoning, and Control",
+    "keywords": [
+      "robot",
+      "robotics",
+      "control",
+      "navigation",
+      "spatial"
+    ]
+  },
+  {
+    "id": "health_bio",
+    "label": "Healthcare and Bioinformatics",
+    "keywords": [
+      "health",
+      "medical",
+      "clinical",
+      "genomic",
+      "protein",
+      "biomedical"
+    ]
+  },
+  {
+    "id": "climate_geospatial",
+    "label": "Climate, Geospatial, and Sustainability",
+    "keywords": [
+      "climate",
+      "geospatial",
+      "weather",
+      "earth",
+      "sustainability"
+    ]
+  },
+  {
+    "id": "education_knowledge",
+    "label": "Education and Knowledge Systems",
+    "keywords": [
+      "education",
+      "learning science",
+      "knowledge",
+      "tutor"
+    ]
+  },
+  {
+    "id": "responsible_ai",
+    "label": "Responsible AI, Safety, Fairness, and Interpretability",
+    "keywords": [
+      "fairness",
+      "bias",
+      "safety",
+      "responsible",
+      "interpretability",
+      "explainability"
+    ]
+  }
+]

@@ -1,0 +1,3436 @@
+[
+  {
+    "repoId": "google-research/timesfm",
+    "fullName": "google-research/timesfm",
+    "name": "timesfm",
+    "url": "https://github.com/google-research/timesfm",
+    "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+    "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+    "defaultBranch": "master",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T15:56:46Z",
+    "pushedAt": "2026-07-14T03:27:18Z",
+    "stars": 28092,
+    "domains": [
+      "agent_orchestration",
+      "forecasting",
+      "llm_prompting",
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "agent_orchestration": [
+        "agentic"
+      ],
+      "ml_training": [
+        "train",
+        "jax",
+        "flax"
+      ],
+      "llm_prompting": [
+        "foundation model"
+      ],
+      "forecasting": [
+        "forecast",
+        "time series"
+      ]
+    },
+    "dependencies": [
+      "anyio",
+      "certifi",
+      "click",
+      "filelock",
+      "flax",
+      "fsspec",
+      "h11",
+      "hf-xet",
+      "httpcore",
+      "httpx",
+      "huggingface-hub",
+      "idna",
+      "jax",
+      "numpy",
+      "packaging",
+      "pytorch",
+      "pyyaml",
+      "safetensors",
+      "shellingham",
+      "sniffio",
+      "torch",
+      "tqdm",
+      "transformers",
+      "typer-slim",
+      "typing-extensions"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2310.10688",
+      "https://github.com/google-research/timesfm#from-pypi",
+      "https://github.com/google-research/timesfm.git",
+      "https://github.com/google-research/timesfm/blob/master/AGENTS.md",
+      "https://github.com/google-research/timesfm/tree/master/timesfm-forecasting",
+      "https://huggingface.co/collections/google/timesfm-release-66e4be5fdb56e960c1e482a6"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/timesfm/blob/master/README.md",
+        "excerpt": "# TimesFM\n\nTimesFM (Time Series Foundation Model) is a pretrained time-series foundation\nmodel developed by Google Research for time-series forecasting.\n\n*   Paper:\n    [A decoder-only foundation model for time-series forecasting](https://arxiv.org/abs/2310.10688),\n    ICML 2024.\n*   All checkpoints:\n    [TimesFM Hugging Face Collection](https://huggingface.co/collections/google/timesfm-release-66e4be5fdb56e960c1e482a6).\n*   [Google Research blog](https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/).\n*   TimesFM in Google 1P Products:\n    *   [BigQuery ML](https://cloud.google.com/bigquery/docs/timesfm-model): Enterprise level SQL queries for scalability and reliability.\n    *   [Google Sheets](https://workspaceupdates.googleblog.com/2026/02/forecast-d"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/tuning_playbook",
+    "fullName": "google-research/tuning_playbook",
+    "name": "tuning_playbook",
+    "url": "https://github.com/google-research/tuning_playbook",
+    "description": "A playbook for systematically maximizing the performance of deep learning models.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": null,
+    "topics": [],
+    "license": "NOASSERTION",
+    "updatedAt": "2026-08-22T15:55:36Z",
+    "pushedAt": "2024-06-18T00:25:53Z",
+    "stars": 30290,
+    "domains": [
+      "data_pipelines",
+      "education_knowledge",
+      "ml_training",
+      "optimization"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "optimizer"
+      ],
+      "optimization": [
+        "optimization"
+      ],
+      "education_knowledge": [
+        "knowledge"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "tensorflow",
+      "transformers"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "http://github.com/google-research/tuning_playbook}",
+      "https://arxiv.org/abs/1403.5607",
+      "https://arxiv.org/abs/1705.08741",
+      "https://arxiv.org/abs/1706.03200",
+      "https://arxiv.org/abs/1803.02021",
+      "https://arxiv.org/abs/1811.03600",
+      "https://arxiv.org/abs/1910.05446",
+      "https://arxiv.org/abs/2003.04887",
+      "https://arxiv.org/abs/2203.15556"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/tuning_playbook/blob/main/README.md",
+        "excerpt": "# Deep Learning Tuning Playbook\n\n*This is not an officially supported Google product.*\n\n**Varun Godbole<sup>&dagger;</sup>, George E. Dahl<sup>&dagger;</sup>, Justin Gilmer<sup>&dagger;</sup>, Christopher J. Shallue<sup>&Dagger;</sup>, Zachary Nado<sup>&dagger;</sup>**\n\n\n&dagger; Google Research, Brain Team\n\n&Dagger; Harvard University\n\n## Table of Contents\n\n-   [Who is this document for?](#who-is-this-document-for)\n-   [Why a tuning playbook?](#why-a-tuning-playbook)\n-   [Guide for starting a new project](#guide-for-starting-a-new-project)\n    -   [Choosing the model architecture](#choosing-the-model-architecture)\n    -   [Choosing the optimizer](#choosing-the-optimizer)\n    -   [Choosing the batch size](#choosing-the-batch-size)\n    -   [Choosing the initial configuration](#choosing-the-"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/google-research",
+    "fullName": "google-research/google-research",
+    "name": "google-research",
+    "url": "https://github.com/google-research/google-research",
+    "description": "Google Research",
+    "homepage": "https://research.google",
+    "defaultBranch": "master",
+    "language": "Jupyter Notebook",
+    "topics": [
+      "ai",
+      "machine-learning",
+      "research"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T15:52:00Z",
+    "pushedAt": "2026-08-21T19:58:51Z",
+    "stars": 38597,
+    "domains": [
+      "robotics_spatial"
+    ],
+    "domainEvidence": {
+      "robotics_spatial": [
+        "navigation"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/google-research/blob/master/README.md",
+        "excerpt": "# Google Research\n\nThis repository contains code released by\n[Google Research](https://research.google).\n\nAll datasets in this repository are released under the CC BY 4.0 International\nlicense, which can be found here:\nhttps://creativecommons.org/licenses/by/4.0/legalcode.  All source files in this\nrepository are released under the Apache 2.0 license, the text of which can be\nfound in the LICENSE file.\n\n---\n\nBecause the repo is large, we recommend you download only the subdirectory of\ninterest:\n\n* Use GitHub editor to open the project. To open the editor change the url from\ngithub.com to github.dev in the address bar.\n* In the left navigation panel, right-click on the folder of interest and select\ndownload.\n\nIf you'd like to submit a pull request, you'll need to clone the repository;\nwe re"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/arxiv-latex-cleaner",
+    "fullName": "google-research/arxiv-latex-cleaner",
+    "name": "arxiv-latex-cleaner",
+    "url": "https://github.com/google-research/arxiv-latex-cleaner",
+    "description": "arXiv LaTeX Cleaner: Easily clean the LaTeX code of your paper to submit to arXiv",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "arxiv",
+      "latex"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T15:46:53Z",
+    "pushedAt": "2026-03-27T21:04:20Z",
+    "stars": 7019,
+    "domains": [
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "vision_video": [
+        "image"
+      ]
+    },
+    "dependencies": [
+      "absl-py",
+      "pillow",
+      "pyyaml",
+      "regex"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/arxiv-latex-cleaner"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/arxiv-latex-cleaner/blob/main/README.md",
+        "excerpt": "# `arxiv_latex_cleaner`\n\nThis tool allows you to easily clean the LaTeX code of your paper to submit to\narXiv. From a folder containing all your code, e.g. `/path/to/latex/`, it\ncreates a new folder `/path/to/latex_arXiv/`, that is ready to ZIP and upload to\narXiv.\n\n## Example call:\n\n```bash\narxiv_latex_cleaner /path/to/latex --resize_images --im_size 500 --images_allowlist='{\"images/im.png\":2000}'\n```\n\nOr simply from a config file\n\n```bash\narxiv_latex_cleaner /path/to/latex --config cleaner_config.yaml\n```\n\n## Installation:\n\n```bash\npip install arxiv-latex-cleaner\n```\n\n| :exclamation: arxiv_latex_cleaner is only compatible with Python >=3.9 :exclamation: |\n| ---------------------------------------------------------------------------------- |\n\nIf using MacOS, you can install using [Homebre"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/tnco",
+    "fullName": "google-research/tnco",
+    "name": "tnco",
+    "url": "https://github.com/google-research/tnco",
+    "description": "TNCO is a heuristic tool that optimizes tensor network contraction paths.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "google-quantum",
+      "optimization",
+      "python",
+      "quantum-circuits",
+      "tensor-networks"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T05:24:46Z",
+    "pushedAt": "2026-07-31T22:18:44Z",
+    "stars": 35,
+    "domains": [
+      "developer_tooling",
+      "ml_training",
+      "optimization"
+    ],
+    "domainEvidence": {
+      "developer_tooling": [
+        "compiler"
+      ],
+      "ml_training": [
+        "train",
+        "optimizer"
+      ],
+      "optimization": [
+        "optimization",
+        "constraint"
+      ]
+    },
+    "dependencies": [
+      "ray"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/tnco\"",
+      "https://github.com/google-research/tnco/actions/workflows/cpp_linter.yml",
+      "https://github.com/google-research/tnco/actions/workflows/cpp_linter.yml/badge.svg",
+      "https://github.com/google-research/tnco/actions/workflows/github-code-scanning/codeql",
+      "https://github.com/google-research/tnco/actions/workflows/github-code-scanning/codeql/badge.svg",
+      "https://github.com/google-research/tnco/actions/workflows/run_tests.yml",
+      "https://github.com/google-research/tnco/actions/workflows/run_tests.yml/badge.svg",
+      "https://github.com/google-research/tnco/archive/refs/heads/main.zip",
+      "https://github.com/google-research/tnco/tags",
+      "https://github.com/google-research/tnco@version\""
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/tnco/blob/main/README.md",
+        "excerpt": "<div align=\"center\">\n\n# Tensor Network Contraction Optimizer (TNCO)\n\nA High-performance tensor network contraction path optimizer for C++ and Python.\n\n[![Licensed under the Apache 2.0\nlicense](https://img.shields.io/badge/License-Apache%202.0-3c60b1.svg?logo=opensourceinitiative&logoColor=white&style=flat-square)](https://github.com/quantumlib/qsim/blob/main/LICENSE)\n![Compatible with C++17 and higher](https://img.shields.io/badge/C%2B%2B17-fcbc2c.svg?logo=c%2B%2B&logoColor=white&style=flat-square&label=C%2B%2B)\n[![Compatible with Python versions 3.10 and\nhigher](https://img.shields.io/badge/Python-3.10+-fcbc2c.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/)<br>\n[![run_tests](https://github.com/google-research/tnco/actions/workflows/run_tests.yml/badg"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/tabfm",
+    "fullName": "google-research/tabfm",
+    "name": "tabfm",
+    "url": "https://github.com/google-research/tabfm",
+    "description": "TabFM (Tabular Foundation Model) is a pretrained tabular foundation model developed by Google Research for tabular data regression and classification. ",
+    "homepage": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T05:20:16Z",
+    "pushedAt": "2026-08-18T17:12:51Z",
+    "stars": 2529,
+    "domains": [
+      "llm_prompting",
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train",
+        "jax",
+        "flax"
+      ],
+      "llm_prompting": [
+        "foundation model"
+      ]
+    },
+    "dependencies": [
+      "--extra-index-url",
+      "absl-py",
+      "aiofiles",
+      "annotated-doc",
+      "anyio",
+      "certifi",
+      "chex",
+      "click",
+      "einops",
+      "etils",
+      "filelock",
+      "flax",
+      "fsspec",
+      "h11",
+      "hf-xet",
+      "httpcore",
+      "httpx",
+      "huggingface-hub",
+      "humanize",
+      "idna",
+      "importlib-resources",
+      "jax",
+      "jaxlib",
+      "jaxtyping",
+      "jinja2",
+      "joblib",
+      "markdown-it-py",
+      "markupsafe",
+      "mdurl",
+      "ml-dtypes",
+      "mpmath",
+      "msgpack",
+      "networkx",
+      "numpy",
+      "opt-einsum",
+      "optax",
+      "orbax-checkpoint",
+      "packaging",
+      "pandas",
+      "prometheus-client",
+      "protobuf",
+      "psutil",
+      "pygments",
+      "python-dateutil",
+      "pytorch",
+      "pytz",
+      "pyyaml",
+      "ray",
+      "rich",
+      "scikit-learn",
+      "scipy",
+      "setuptools",
+      "shellingham",
+      "simplejson",
+      "six",
+      "sympy",
+      "tensorstore",
+      "threadpoolctl",
+      "toolz",
+      "torch",
+      "tqdm",
+      "treescope",
+      "typeguard",
+      "typer",
+      "typing-extensions",
+      "tzdata",
+      "uvloop",
+      "zipp"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/tabfm.git"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/tabfm/blob/main/README.md",
+        "excerpt": "# TabFM: Tabular Foundation Models\n\nTabFM (Tabular Foundation Model) is a scikit-learn compatible tabular foundation model. It allows you to perform zero-shot classification and regression on tabular datasets with mixed column types out-of-the-box.\n\nAt inference time, TabFM does not require training parameters on your dataset; instead, it leverages in-context learning by reading your training data as \"context\" to make instant predictions on new test samples.\n\n*This is not an officially supported Google product.*\n\n---\n\n## Installation\n\nTo install TabFM, clone the repository and install it locally with the backend of your choice:\n\n**JAX (CPU):**\n```bash\ngit clone https://github.com/google-research/tabfm.git\ncd tabfm\npip install -e .[jax]\n```\n\n**JAX (GPU):**\n```bash\ngit clone https://github.c"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/weatherbench2",
+    "fullName": "google-research/weatherbench2",
+    "name": "weatherbench2",
+    "url": "https://github.com/google-research/weatherbench2",
+    "description": "A benchmark for the next generation of data-driven global weather models.",
+    "homepage": "https://weatherbench2.readthedocs.io",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-22T01:09:52Z",
+    "pushedAt": "2026-08-01T21:36:12Z",
+    "stars": 632,
+    "domains": [
+      "climate_geospatial",
+      "data_pipelines",
+      "evaluation",
+      "forecasting"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "dataflow"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation"
+      ],
+      "forecasting": [
+        "forecast"
+      ],
+      "climate_geospatial": [
+        "weather"
+      ]
+    },
+    "dependencies": [
+      "jax",
+      "ray"
+    ],
+    "linkedRepositories": [
+      "weatherbenchX"
+    ],
+    "resources": [
+      "https://arxiv.org/abs/2308.15560",
+      "https://github.com/google-research/weatherbench2/actions/workflows/ci-build.yml",
+      "https://github.com/google-research/weatherbench2/actions/workflows/ci-build.yml/badge.svg",
+      "https://github.com/google-research/weatherbench2/actions/workflows/lint.yml",
+      "https://github.com/google-research/weatherbench2/actions/workflows/lint.yml/badge.svg",
+      "https://github.com/google-research/weatherbench2/issues",
+      "https://github.com/google-research/weatherbenchX"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/weatherbench2/blob/main/README.md",
+        "excerpt": "\n![logo](docs/source/_static/wb2-logo-wide.png)\n\n[![CI](https://github.com/google-research/weatherbench2/actions/workflows/ci-build.yml/badge.svg)](https://github.com/google-research/weatherbench2/actions/workflows/ci-build.yml)\n[![Lint](https://github.com/google-research/weatherbench2/actions/workflows/lint.yml/badge.svg)](https://github.com/google-research/weatherbench2/actions/workflows/lint.yml)\n[![Documentation Status](https://readthedocs.org/projects/weatherbench2/badge/?version=latest)](https://weatherbench2.readthedocs.io/en/latest/?badge=latest)\n<a target=\"_blank\" href=\"https://colab.research.google.com/github/google-research/weatherbench2/blob/main/docs/source/evaluation.ipynb\">\n  <img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/>\n</a>\n\n# We"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/camel-prompt-injection",
+    "fullName": "google-research/camel-prompt-injection",
+    "name": "camel-prompt-injection",
+    "url": "https://github.com/google-research/camel-prompt-injection",
+    "description": "Code for the paper \"Defeating Prompt Injections by Design\"",
+    "homepage": "https://arxiv.org/abs/2503.18813",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T18:11:44Z",
+    "pushedAt": "2025-06-20T13:59:30Z",
+    "stars": 374,
+    "domains": [
+      "privacy_federated_security"
+    ],
+    "domainEvidence": {
+      "privacy_federated_security": [
+        "secure",
+        "security"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2503.18813"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/camel-prompt-injection/blob/main/README.md",
+        "excerpt": "# `CaMeL`: [Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813)\n\nEdoardo Debenedetti<sup>1,3</sup>, Ilia Shumailov<sup>2</sup>, Tianqi Fan<sup>1</sup>, Jamie Hayes<sup>2</sup>, Nicholas Carlini<sup>2</sup>, Daniel Fabian<sup>1</sup>, Christoph Kern<sup>1</sup>, Chongyang Shi<sup>2</sup>, Florian Tram\u00e8r<sup>3</sup>\n\n<sup>1</sup>Google, <sup>2</sup>Google DeepMind, and <sup>3</sup>ETH Zurich\n\n> [!WARNING]\n> This is a research artifact released to reproduce the results in our paper. The interpreter implementation likely contains bugs (e.g., it might throw uncaught exceptions and crash) and the implementation might not be fully secure.\n>\n> This is **not** a Google product, and we are not planning to provide support for and/or maintain this codebase.\n\n## Pre-requisites\n\n1. "
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/kauldron",
+    "fullName": "google-research/kauldron",
+    "name": "kauldron",
+    "url": "https://github.com/google-research/kauldron",
+    "description": "Modular, scalable library to train ML models",
+    "homepage": "https://kauldron.readthedocs.io/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "deep-learning",
+      "jax",
+      "python"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T16:27:16Z",
+    "pushedAt": "2026-08-21T16:26:49Z",
+    "stars": 294,
+    "domains": [
+      "data_pipelines",
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "optimizer",
+        "jax"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "tensorflow"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/kauldron/actions/workflows/pytest_and_autopublish.yml",
+      "https://github.com/google-research/kauldron/actions/workflows/pytest_and_autopublish.yml/badge.svg",
+      "https://github.com/google-research/kauldron/issues",
+      "https://github.com/google-research/kauldron/tree/main/examples/mnist_autoencoder.py",
+      "https://github.com/google-research/kauldron}"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/kauldron/blob/main/README.md",
+        "excerpt": "# kauldron\n\n[![Unittests](https://github.com/google-research/kauldron/actions/workflows/pytest_and_autopublish.yml/badge.svg)](https://github.com/google-research/kauldron/actions/workflows/pytest_and_autopublish.yml)\n[![PyPI version](https://badge.fury.io/py/kauldron.svg)](https://badge.fury.io/py/kauldron)\n[![Documentation Status](https://readthedocs.org/projects/kauldron/badge/?version=latest)](https://kauldron.readthedocs.io/en/latest/?badge=latest)\n\nKauldron is a library for training machine learning models, optimized for\n**research velocity** and **modularity**.\n\n**Modularity**:\n\n*   All parts of Kauldron are self-contained, so can be used independently\n    outside Kauldron.\n*   Use any dataset (TFDS, Grain, SeqIO, your custom pipeline),\n    any (flax) model, any optimizer,... Kauldro"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/dex-lang",
+    "fullName": "google-research/dex-lang",
+    "name": "dex-lang",
+    "url": "https://github.com/google-research/dex-lang",
+    "description": "Research language for array processing in the Haskell/ML family",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Haskell",
+    "topics": [],
+    "license": "BSD-3-Clause",
+    "updatedAt": "2026-08-21T15:19:13Z",
+    "pushedAt": "2026-01-05T14:37:26Z",
+    "stars": 1695,
+    "domains": [
+      "education_knowledge"
+    ],
+    "domainEvidence": {
+      "education_knowledge": [
+        "tutor"
+      ]
+    },
+    "dependencies": [
+      "ray"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2104.05372",
+      "https://github.com/google-research/dex-lang/actions?query=workflow%3ATests",
+      "https://github.com/google-research/dex-lang/blob/main/makefile",
+      "https://github.com/google-research/dex-lang/labels",
+      "https://github.com/google-research/dex-lang/labels/good%20first%20issue",
+      "https://github.com/google-research/dex-lang/workflows/Tests/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/dex-lang/blob/main/README.md",
+        "excerpt": "# Dex [![Test status](https://github.com/google-research/dex-lang/workflows/Tests/badge.svg)](https://github.com/google-research/dex-lang/actions?query=workflow%3ATests)\nDex (named for \"index\") is a research language for typed, functional array\nprocessing. The goal of the project is to explore:\n\n  * Type systems for array programming\n  * Mathematical program transformations like differentiation and integration\n  * User-directed compilation to parallel hardware\n  * Interactive and incremental numerical programming and visualization\n\nTo learn more, check out our\n[paper](https://arxiv.org/abs/2104.05372),\nour [tutorial](https://google-research.github.io/dex-lang/examples/tutorial.html)\nor these example programs:\n\n  * [Dex prelude](https://google-research.github.io/dex-lang/lib/prelude.html)\n "
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/big_vision",
+    "fullName": "google-research/big_vision",
+    "name": "big_vision",
+    "url": "https://github.com/google-research/big_vision",
+    "description": "Official codebase used to develop Vision Transformer, SigLIP, MLP-Mixer, LiT and more.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T14:14:43Z",
+    "pushedAt": "2025-05-19T13:55:52Z",
+    "stars": 3522,
+    "domains": [
+      "data_pipelines",
+      "ml_training",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "tensorflow",
+        "jax"
+      ],
+      "vision_video": [
+        "vision",
+        "image"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "tensorflow",
+      "transformers"
+    ],
+    "linkedRepositories": [
+      "vision_transformer"
+    ],
+    "resources": [
+      "https://arxiv.org/abs/2006.07159",
+      "https://arxiv.org/abs/2010.01412",
+      "https://arxiv.org/abs/2010.11929",
+      "https://arxiv.org/abs/2105.01601",
+      "https://arxiv.org/abs/2106.04560",
+      "https://arxiv.org/abs/2106.05237",
+      "https://arxiv.org/abs/2106.10270",
+      "https://arxiv.org/abs/2111.07991",
+      "https://arxiv.org/abs/2203.08065",
+      "https://arxiv.org/abs/2205.01580",
+      "https://arxiv.org/abs/2205.01580}",
+      "https://arxiv.org/abs/2205.10337",
+      "https://arxiv.org/abs/2209.06794",
+      "https://arxiv.org/abs/2211.09760",
+      "https://arxiv.org/abs/2212.08013",
+      "https://arxiv.org/abs/2212.08045",
+      "https://arxiv.org/abs/2302.01327",
+      "https://arxiv.org/abs/2302.05442",
+      "https://arxiv.org/abs/2302.08242",
+      "https://arxiv.org/abs/2303.15343",
+      "https://arxiv.org/abs/2303.17376",
+      "https://arxiv.org/abs/2305.13035",
+      "https://arxiv.org/abs/2305.16999",
+      "https://arxiv.org/abs/2306.07915",
+      "https://arxiv.org/abs/2309.15505",
+      "https://arxiv.org/abs/2310.09199",
+      "https://arxiv.org/abs/2312.02116",
+      "https://arxiv.org/abs/2403.19596",
+      "https://arxiv.org/abs/2405.13777",
+      "https://arxiv.org/abs/2406.17688",
+      "https://arxiv.org/abs/2407.07726",
+      "https://arxiv.org/abs/2411.19722",
+      "https://arxiv.org/abs/2412.03555",
+      "https://arxiv.org/abs/2412.15129",
+      "https://arxiv.org/abs/2502.14786",
+      "https://github.com/google-research/big_vision",
+      "https://github.com/google-research/big_vision.git",
+      "https://github.com/google-research/big_vision/commit/0cb70881dd33b3343b769347dc19793c4994b8cb",
+      "https://github.com/google-research/big_vision/commit/21bd6ebe253f070f584d8b777ad76f4abce51bef",
+      "https://github.com/google-research/big_vision/commit/2f3f493af048dbfd97555ff6060f31a0e686f17f"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/big_vision/blob/main/README.md",
+        "excerpt": "# Big Vision\n\nThis codebase is designed for training large-scale vision models using\n[Cloud TPU VMs](https://cloud.google.com/blog/products/compute/introducing-cloud-tpu-vms)\nor GPU machines. It is based on [Jax](https://github.com/jax-ml/jax)/[Flax](https://github.com/google/flax)\nlibraries, and uses [tf.data](https://www.tensorflow.org/guide/data) and\n[TensorFlow Datasets](https://www.tensorflow.org/datasets) for scalable and\nreproducible input pipelines.\n\nThe open-sourcing of this codebase has two main purposes:\n1. Publishing the code of research projects developed in this codebase (see a\n   list below).\n2. Providing a strong starting point for running large-scale vision experiments\n   on GPU machines and Google Cloud TPUs, which should scale seamlessly and\n   out-of-the box from a sing"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/kubric",
+    "fullName": "google-research/kubric",
+    "name": "kubric",
+    "url": "https://github.com/google-research/kubric",
+    "description": "A data generation pipeline for creating semi-realistic synthetic multi-object videos with rich annotations such as instance segmentation masks, depth maps, and optical flow.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T05:36:49Z",
+    "pushedAt": "2026-05-21T14:58:48Z",
+    "stars": 2806,
+    "domains": [
+      "data_pipelines",
+      "ml_training",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "ml_training": [
+        "training",
+        "train"
+      ],
+      "vision_video": [
+        "image",
+        "video",
+        "segmentation"
+      ]
+    },
+    "dependencies": [
+      "apache-beam",
+      "bidict",
+      "cloudml-hypertune",
+      "dataclasses",
+      "etils",
+      "google-cloud-storage",
+      "imageio",
+      "munch",
+      "numpy",
+      "pandas",
+      "pypng",
+      "pyquaternion",
+      "python-levenshtein",
+      "scikit-learn",
+      "tensorflow",
+      "tensorflow-datasets",
+      "traitlets",
+      "trimesh"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/kubric.git",
+      "https://github.com/google-research/kubric/actions/workflows/blender.yml",
+      "https://github.com/google-research/kubric/actions/workflows/blender.yml/badge.svg?branch=main",
+      "https://github.com/google-research/kubric/actions/workflows/kubruntu.yml",
+      "https://github.com/google-research/kubric/actions/workflows/kubruntu.yml/badge.svg?branch=main",
+      "https://github.com/google-research/kubric/actions/workflows/test.yml",
+      "https://github.com/google-research/kubric/actions/workflows/test.yml/badge.svg?branch=main",
+      "https://github.com/google-research/kubric/blob/01a08d274234f32f2adc4f7d5666b39490f953ad/docker/Blender.Dockerfile#L48"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/kubric/blob/main/README.md",
+        "excerpt": "# Kubric\n\n[![Blender](https://github.com/google-research/kubric/actions/workflows/blender.yml/badge.svg?branch=main)](https://github.com/google-research/kubric/actions/workflows/blender.yml)\n[![Kubruntu](https://github.com/google-research/kubric/actions/workflows/kubruntu.yml/badge.svg?branch=main)](https://github.com/google-research/kubric/actions/workflows/kubruntu.yml)\n[![Test](https://github.com/google-research/kubric/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/google-research/kubric/actions/workflows/test.yml)\n[![Coverage](https://badgen.net/codecov/c/github/google-research/kubric)](https://codecov.io/github/google-research/kubric)\n[![Docs](https://readthedocs.org/projects/kubric/badge/?version=latest)](https://kubric.readthedocs.io/en/latest/)\n\nA data genera"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/openfst",
+    "fullName": "google-research/openfst",
+    "name": "openfst",
+    "url": "https://github.com/google-research/openfst",
+    "description": "Finite-state Transducer (FST) Library.",
+    "homepage": "https://www.openfst.org",
+    "defaultBranch": "main",
+    "language": "C++",
+    "topics": [
+      "finite-state-automata",
+      "finite-state-transducers"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T05:32:08Z",
+    "pushedAt": "2026-08-21T05:31:51Z",
+    "stars": 50,
+    "domains": [
+      "developer_tooling",
+      "speech_audio",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "developer_tooling": [
+        "compiler"
+      ],
+      "speech_audio": [
+        "speech"
+      ],
+      "vision_video": [
+        "image"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [
+      "nisaba"
+    ],
+    "resources": [
+      "https://github.com/google-research/nisaba/blob/main/LICENSE",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_arm64_macos.yml",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_arm64_macos.yml/badge.svg",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_x64_linux.yml",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_x64_linux.yml/badge.svg",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_x64_windows.yml",
+      "https://github.com/google-research/openfst/actions/workflows/bazel_x64_windows.yml/badge.svg",
+      "https://github.com/google-research/openfst/actions/workflows/cmake_arm64_macos.yml",
+      "https://github.com/google-research/openfst/actions/workflows/cmake_arm64_macos.yml/badge.svg",
+      "https://github.com/google-research/openfst/actions/workflows/cmake_x64_linux.yml",
+      "https://github.com/google-research/openfst/actions/workflows/cmake_x64_linux.yml/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/openfst/blob/main/README.md",
+        "excerpt": "![OpenFst Logo](docs/images/logo.svg)\n\n# OpenFst Library\n\n[![GitHub license](https://img.shields.io/badge/license-Apache2-blue.svg)](https://github.com/google-research/nisaba/blob/main/LICENSE)\n[![C++ version](https://img.shields.io/badge/C++17-blue.svg?style=flat&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)\n[![Bazel (x64 Linux)](https://github.com/google-research/openfst/actions/workflows/bazel_x64_linux.yml/badge.svg)](https://github.com/google-research/openfst/actions/workflows/bazel_x64_linux.yml)\n[![CMake (x64 Linux)](https://github.com/google-research/openfst/actions/workflows/cmake_x64_linux.yml/badge.svg)](https://github.com/google-research/openfst/actions/workflows/cmake_x64_linux.yml)\n[![Bazel (arm64 macOS)](https://github.com/google-research/openfst/actions/workflows/baz"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/paper-orchestra",
+    "fullName": "google-research/paper-orchestra",
+    "name": "paper-orchestra",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "homepage": "https://yiwen-song.github.io/paper_orchestra/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "ai-research-assistant",
+      "multi-agent-systems"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-21T00:48:32Z",
+    "pushedAt": "2026-05-17T16:25:35Z",
+    "stars": 115,
+    "domains": [
+      "data_pipelines",
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "ml_training": [
+        "train"
+      ]
+    },
+    "dependencies": [
+      "google-genai",
+      "json-repair",
+      "matplotlib",
+      "openai",
+      "opencv-python",
+      "pydantic",
+      "pymupdf",
+      "pymupdf4llm",
+      "pyopenssl",
+      "pypdf",
+      "python-dotenv",
+      "rich",
+      "streamlit",
+      "thefuzz",
+      "tqdm"
+    ],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/paper-orchestra/blob/main/README.md",
+        "excerpt": "# <div align=\"center\">\ud83c\udfbb PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing</div>\n<div align=\"center\">Yiwen Song<sup>1</sup>, Yale Song<sup>1</sup>, Tomas Pfister<sup>1</sup>, and Jinsung Yoon<sup>1</sup></div>\n<div align=\"center\"><sup>1</sup>Google Cloud AI Research</div>\n<br><br>\n\nPaperOrchestra is a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials (ideas and experimental logs) into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams.\n\nActing like an orchestrated team of specialized agents, it handles outline generation, literature review, section writing, content refinement, and plotting to close th"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/opengrm",
+    "fullName": "google-research/opengrm",
+    "name": "opengrm",
+    "url": "https://github.com/google-research/opengrm",
+    "description": "Formal grammars and related representations",
+    "homepage": "http://www.opengrm.org",
+    "defaultBranch": "main",
+    "language": "C++",
+    "topics": [
+      "computational-linguistics",
+      "finite-state-automata",
+      "finite-state-transducers",
+      "formal-grammars",
+      "morphology",
+      "natural-language-processing",
+      "ngram-language-model",
+      "stochastic-automata"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-20T23:51:11Z",
+    "pushedAt": "2026-08-20T23:50:48Z",
+    "stars": 3,
+    "domains": [
+      "developer_tooling",
+      "llm_prompting",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "developer_tooling": [
+        "compiler"
+      ],
+      "llm_prompting": [
+        "language model"
+      ],
+      "vision_video": [
+        "image"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [
+      "nisaba",
+      "openfst"
+    ],
+    "resources": [
+      "https://github.com/google-research/nisaba/blob/main/LICENSE",
+      "https://github.com/google-research/openfst",
+      "https://github.com/google-research/opengrm.git",
+      "https://github.com/google-research/opengrm/actions/workflows/bazel_arm64_macos.yml",
+      "https://github.com/google-research/opengrm/actions/workflows/bazel_arm64_macos.yml/badge.svg",
+      "https://github.com/google-research/opengrm/actions/workflows/bazel_x64_linux.yml",
+      "https://github.com/google-research/opengrm/actions/workflows/bazel_x64_linux.yml/badge.svg",
+      "https://github.com/google-research/opengrm/actions/workflows/cmake_arm64_macos.yml",
+      "https://github.com/google-research/opengrm/actions/workflows/cmake_arm64_macos.yml/badge.svg",
+      "https://github.com/google-research/opengrm/actions/workflows/cmake_x64_linux.yml",
+      "https://github.com/google-research/opengrm/actions/workflows/cmake_x64_linux.yml/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/opengrm/blob/main/README.md",
+        "excerpt": "![OpenGrm Logo](docs/images/logo.svg)\n\n# OpenGrm Libraries\n\n[![GitHub license](https://img.shields.io/badge/license-Apache2-blue.svg)](https://github.com/google-research/nisaba/blob/main/LICENSE)\n[![C++ version](https://img.shields.io/badge/C++17-blue.svg?style=flat&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)\n[![Bazel (x64 Linux)](https://github.com/google-research/opengrm/actions/workflows/bazel_x64_linux.yml/badge.svg)](https://github.com/google-research/opengrm/actions/workflows/bazel_x64_linux.yml)\n[![CMake (x64 Linux)](https://github.com/google-research/opengrm/actions/workflows/cmake_x64_linux.yml/badge.svg)](https://github.com/google-research/opengrm/actions/workflows/cmake_x64_linux.yml)\n[![Bazel (arm64 macOS)](https://github.com/google-research/opengrm/actions/workflows/b"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/fooling-feature-visualizations",
+    "fullName": "google-research/fooling-feature-visualizations",
+    "name": "fooling-feature-visualizations",
+    "url": "https://github.com/google-research/fooling-feature-visualizations",
+    "description": "Code for \"Don't trust your eyes: on the (un)reliability of feature visualizations\" (ICML 2024)",
+    "homepage": "https://arxiv.org/abs/2306.04719",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-20T21:15:11Z",
+    "pushedAt": "2023-11-15T16:43:08Z",
+    "stars": 33,
+    "domains": [
+      "responsible_ai",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "vision_video": [
+        "image"
+      ],
+      "responsible_ai": [
+        "interpretability"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2306.04719",
+      "https://arxiv.org/abs/2306.04719}"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/fooling-feature-visualizations/blob/main/README.md",
+        "excerpt": "# Code for \"Don't trust your eyes: on the (un)reliability of feature visualizations\"\n\nThis repository contains code to replicate experiments from [Don't trust your eyes: on the (un)reliability of feature visualizations](https://arxiv.org/abs/2306.04719) by Robert Geirhos*, Roland S. Zimmermann*, Blair Bilodeau*, Wieland Brendel, and Been Kim.\n\n## Fooling feature visualizations\nFeature visualizations are widely used interpretability tools - but can we trust them? We investigate this question from an adversarial, empirical and theoretical perspective. The result: Don\u2019t trust your eyes!\n\n![example-figure](./assets/example_figure.png)\n\nFor instance, from an adversarial perspective we can adapt a model such that it maintains identical behavior on natural image input (e.g., identical ImageNet ac"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/language",
+    "fullName": "google-research/language",
+    "name": "language",
+    "url": "https://github.com/google-research/language",
+    "description": "Shared repository for open-sourced projects from the Google AI Language team.",
+    "homepage": "https://ai.google/research/teams/language/",
+    "defaultBranch": "master",
+    "language": "Python",
+    "topics": [
+      "machine-learning",
+      "natural-language-processing",
+      "research"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-20T21:00:50Z",
+    "pushedAt": "2026-06-10T18:34:36Z",
+    "stars": 1794,
+    "domains": [
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "default: research repository"
+      ]
+    },
+    "dependencies": [
+      "tensorflow"
+    ],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/language/blob/master/README.md",
+        "excerpt": "# Google Research: Language\n\nShared repository for open-sourced projects from the\n[Google Research Language](https://research.google/teams/language/) team.\n\nThis is not an official Google product.\n"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/mozolm",
+    "fullName": "google-research/mozolm",
+    "name": "mozolm",
+    "url": "https://github.com/google-research/mozolm",
+    "description": "MozoLM: A language model (LM) serving library",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "C++",
+    "topics": [
+      "assistive-technology",
+      "augmentative-communication",
+      "language-modeling"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-20T15:18:06Z",
+    "pushedAt": "2026-08-20T15:08:29Z",
+    "stars": 52,
+    "domains": [
+      "llm_prompting"
+    ],
+    "domainEvidence": {
+      "llm_prompting": [
+        "language model"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/mozolm/actions?query=workflow%3A%22android%22",
+      "https://github.com/google-research/mozolm/actions?query=workflow%3A%22ios%22",
+      "https://github.com/google-research/mozolm/actions?query=workflow%3A%22linux%22",
+      "https://github.com/google-research/mozolm/actions?query=workflow%3A%22macos%22",
+      "https://github.com/google-research/mozolm/actions?query=workflow%3A%22windows%22",
+      "https://github.com/google-research/mozolm/blob/main/LICENSE",
+      "https://github.com/google-research/mozolm/workflows/android/badge.svg",
+      "https://github.com/google-research/mozolm/workflows/ios/badge.svg",
+      "https://github.com/google-research/mozolm/workflows/linux/badge.svg",
+      "https://github.com/google-research/mozolm/workflows/macos/badge.svg",
+      "https://github.com/google-research/mozolm/workflows/windows/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/mozolm/blob/main/README.md",
+        "excerpt": "[![GitHub license](https://img.shields.io/badge/license-Apache2-blue.svg)](https://github.com/google-research/mozolm/blob/main/LICENSE)\n[![C++ version](https://img.shields.io/badge/C++17-blue.svg?style=flat&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)\n[![Build Tests (Linux)](https://github.com/google-research/mozolm/workflows/linux/badge.svg)](https://github.com/google-research/mozolm/actions?query=workflow%3A%22linux%22)\n[![Build Tests (macOS)](https://github.com/google-research/mozolm/workflows/macos/badge.svg)](https://github.com/google-research/mozolm/actions?query=workflow%3A%22macos%22)\n[![Build Tests (Windows)](https://github.com/google-research/mozolm/workflows/windows/badge.svg)](https://github.com/google-research/mozolm/actions?query=workflow%3A%22windows%22)\n[![Build Tes"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/android_world",
+    "fullName": "google-research/android_world",
+    "name": "android_world",
+    "url": "https://github.com/google-research/android_world",
+    "description": "AndroidWorld is an environment and benchmark for autonomous agents",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-20T11:22:18Z",
+    "pushedAt": "2026-07-16T20:18:37Z",
+    "stars": 854,
+    "domains": [
+      "agent_orchestration",
+      "data_pipelines",
+      "evaluation",
+      "robotics_spatial",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "agent_orchestration": [
+        "autonomous agent"
+      ],
+      "data_pipelines": [
+        "etl"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation",
+        "leaderboard"
+      ],
+      "vision_video": [
+        "image",
+        "video"
+      ],
+      "robotics_spatial": [
+        "control"
+      ]
+    },
+    "dependencies": [
+      "absl-py",
+      "android-env",
+      "dm-env",
+      "fuzzywuzzy",
+      "google-generativeai",
+      "grpcio-tools",
+      "immutabledict",
+      "ipython",
+      "jsonschema",
+      "matplotlib",
+      "numpy",
+      "opencv-python",
+      "pandas",
+      "protobuf",
+      "pydub",
+      "pytest",
+      "python-levenshtein",
+      "requests",
+      "tenacity",
+      "termcolor"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "http://arxiv.org/abs/1802.08802",
+      "https://arxiv.org/abs/2405.14573}",
+      "https://arxiv.org/pdf/2405.14573\"",
+      "https://github.com/google-research/android_world.git",
+      "https://github.com/google-research/android_world/actions/workflows/pytest.yml",
+      "https://github.com/google-research/android_world/actions/workflows/pytest.yml/badge.svg",
+      "https://github.com/google-research/android_world/assets/162379927/efc33980-8b36-44be-bb2b-a92d4c334a50",
+      "https://github.com/google-research/android_world/blob/15471441ac306ff08bca87454b1b546ae81db7af/run.py#L147",
+      "https://github.com/google-research/android_world/blob/6e4feb00702735c9a7485f4ae714528a058cb2b7/android_world/agents/base_agent.py#L116",
+      "https://github.com/google-research/android_world/blob/6e4feb00702735c9a7485f4ae714528a058cb2b7/android_world/agents/base_agent.py#L26",
+      "https://github.com/google-research/android_world/blob/6e4feb00702735c9a7485f4ae714528a058cb2b7/android_world/agents/base_agent.py#L39C1-L39C44",
+      "https://github.com/google-research/android_world/blob/main/android_world/env/json_action.py",
+      "https://github.com/google-research/android_world/blob/main/docs/tasks_guide.md",
+      "https://github.com/google-research/android_world/blob/main/run.py",
+      "https://github.com/google-research/android_world/tree/main/android_world/agents"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/android_world/blob/main/README.md",
+        "excerpt": "# AndroidWorld\n\n<!-- mdlint off(WHITESPACE_LINE_LENGTH) -->\n\n[![Unittests](https://github.com/google-research/android_world/actions/workflows/pytest.yml/badge.svg)](https://github.com/google-research/android_world/actions/workflows/pytest.yml)\n\n<p align=\"center\">\n<a href=\"https://google-research.github.io/android_world/\">Website</a> \u2022\n<a href=\"https://arxiv.org/pdf/2405.14573\">Paper</a> \u2022\n<a href=\"https://google-research.github.io/android_world/task_list.html\">Tasks</a> \u2022\n<a href=\"https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0\">Leaderboard</a>\n</p>\n\n![Overview](assets/overview.png)\n\n**AndroidWorld** is an environment for building and benchmarking autonomous\ncomputer control agents.\n\nIt runs on a live Android emulator and contains a high"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/remote-sensing",
+    "fullName": "google-research/remote-sensing",
+    "name": "remote-sensing",
+    "url": "https://github.com/google-research/remote-sensing",
+    "description": "A code repository for Google Earth AI Remote Sensing models",
+    "homepage": "https://ai.google/earth-ai/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-19T21:14:07Z",
+    "pushedAt": "2026-08-19T21:12:08Z",
+    "stars": 25,
+    "domains": [
+      "climate_geospatial",
+      "evaluation",
+      "forecasting",
+      "multimodal",
+      "nlp",
+      "privacy_federated_security",
+      "recommendation",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "benchmark"
+      ],
+      "nlp": [
+        "natural language"
+      ],
+      "vision_video": [
+        "image",
+        "object detection"
+      ],
+      "multimodal": [
+        "multimodal"
+      ],
+      "recommendation": [
+        "ranking"
+      ],
+      "forecasting": [
+        "temporal"
+      ],
+      "privacy_federated_security": [
+        "security"
+      ],
+      "climate_geospatial": [
+        "earth"
+      ]
+    },
+    "dependencies": [
+      "torch",
+      "transformers"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2503.08722",
+      "https://arxiv.org/abs/2509.19087",
+      "https://arxiv.org/abs/2510.18318",
+      "https://arxiv.org/abs/2604.08704",
+      "https://arxiv.org/abs/2604.20623",
+      "https://arxiv.org/abs/2607.04750",
+      "https://arxiv.org/pdf/2503.08722",
+      "https://arxiv.org/pdf/2509.19087",
+      "https://arxiv.org/pdf/2604.08704",
+      "https://arxiv.org/pdf/2604.20623",
+      "https://arxiv.org/pdf/2607.04750",
+      "https://huggingface.co/datasets/google/RSRCC"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/remote-sensing/blob/main/README.md",
+        "excerpt": "# \ud83d\udef0\ufe0f Earth AI Remote Sensing Models\n\n*\ud83e\udd1d This is not an officially supported Google product.*\n\nThis project is not eligible for the [Google Open Source Software Vulnerability\nRewards Program](https://bughunters.google.com/open-source-security).\n\nVisit the [Earth AI website](https://ai.google/earth-ai/) and\ncheck the [technical report](https://arxiv.org/abs/2510.18318) for additional\ninformation about Earth AI and the different model families.\n\n## \ud83d\udcd8 Research Papers\n\n* FM-ChangeNet: Learning Change through Pathwise Feature Transport ([abstract](https://arxiv.org/abs/2607.04750), [pdf](https://arxiv.org/pdf/2607.04750))\n* RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking ([abstract](https://arxiv.org/abs/2604.20623), [pdf](htt"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/era",
+    "fullName": "google-research/era",
+    "name": "era",
+    "url": "https://github.com/google-research/era",
+    "description": "Code associated with the paper An AI system to help scientists write expert-level empirical software",
+    "homepage": "https://google-research.github.io/era/",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-19T06:50:42Z",
+    "pushedAt": "2026-08-04T10:52:21Z",
+    "stars": 314,
+    "domains": [
+      "data_pipelines",
+      "llm_prompting"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "llm_prompting": [
+        "language model",
+        "large language"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2509.06503",
+      "https://arxiv.org/abs/2509.06503}"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/era/blob/main/README.md",
+        "excerpt": "# ERA: An AI System to Help Scientists Write Expert-Level Empirical Software\n\n[![arXiv](https://img.shields.io/badge/arXiv-2509.06503-b31b1b.svg)](https://arxiv.org/abs/2509.06503)\n[![Project Page](https://img.shields.io/badge/Project%20Page-google--research.github.io%2Fera-blue)](https://google-research.github.io/era/)\n\nThis repository contains code associated with the paper:\n\n> **[An AI system to help scientists write expert-level empirical software](https://arxiv.org/abs/2509.06503)**\n> Aygun, et al., 2025\n\n## Overview\n\nERA (Empirical Research Assistant) is an AI system that helps scientists write\nhigh-quality empirical software. It combines a large language model with a\ntree-search algorithm \u2014 Flat UCB Tree Search (FUTS) \u2014 to iteratively generate,\nexecute, and score candidate programs,"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/population-dynamics",
+    "fullName": "google-research/population-dynamics",
+    "name": "population-dynamics",
+    "url": "https://github.com/google-research/population-dynamics",
+    "description": "PDFM Embeddings: location-based vectors for geo-spatial analysis.",
+    "homepage": "",
+    "defaultBranch": "master",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-18T18:19:42Z",
+    "pushedAt": "2025-11-13T22:06:38Z",
+    "stars": 423,
+    "domains": [
+      "climate_geospatial",
+      "forecasting",
+      "graph_network",
+      "health_bio",
+      "ml_training",
+      "privacy_federated_security",
+      "robotics_spatial",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train"
+      ],
+      "vision_video": [
+        "video"
+      ],
+      "forecasting": [
+        "forecast"
+      ],
+      "privacy_federated_security": [
+        "privacy"
+      ],
+      "graph_network": [
+        "graph neural"
+      ],
+      "robotics_spatial": [
+        "spatial"
+      ],
+      "health_bio": [
+        "health"
+      ],
+      "climate_geospatial": [
+        "climate",
+        "geospatial",
+        "weather",
+        "earth"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2411.07207"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/population-dynamics/blob/master/README.md",
+        "excerpt": "# \u2728 Population Dynamics Foundations (PD-Foundations) Embeddings\n\nPD-Foundations embeddings are **condensed vector representations** designed to encapsulate the complex, multidimensional interactions among human behaviors, environmental factors, and local contexts at specific locations.\n\nThese embeddings capture patterns in aggregated data such as **search trends, busyness trends, and environmental conditions** (maps, air quality, temperature), providing a rich, location-specific snapshot of how populations engage with their surroundings. Aggregated over space and time, these embeddings ensure **privacy** while enabling nuanced spatial analysis and prediction for applications ranging from public health to socioeconomic modeling.\n\n-----\n\n## \ud83d\udcdd Overview\n\nPD-Foundations embeddings are generated"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/r_u_sure",
+    "fullName": "google-research/r_u_sure",
+    "name": "r_u_sure",
+    "url": "https://github.com/google-research/r_u_sure",
+    "description": "Code accompanying the paper \"R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents\"",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-18T02:58:58Z",
+    "pushedAt": "2026-07-08T08:39:56Z",
+    "stars": 24,
+    "domains": [
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "default: research repository"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2303.00732",
+      "https://github.com/google-research/r_u_sure",
+      "https://github.com/google-research/r_u_sure\"",
+      "https://github.com/google-research/r_u_sure/actions/workflows/unittests.yml",
+      "https://github.com/google-research/r_u_sure/actions/workflows/unittests.yml/badge.svg",
+      "https://github.com/google-research/r_u_sure`"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/r_u_sure/blob/main/README.md",
+        "excerpt": "# R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents\n\n[![Unittests](https://github.com/google-research/r_u_sure/actions/workflows/unittests.yml/badge.svg)](https://github.com/google-research/r_u_sure/actions/workflows/unittests.yml)\n\nThis is the repository accompanying the paper\n[\"R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents\"][rusure].\n\n[rusure]: https://arxiv.org/abs/2303.00732\n\nIf you use the code released through this repository, please cite the following paper:\n\n```\n@article{johnson2023rusure,\ntitle     = {{R-U-SURE?} Uncertainty-Aware Code Suggestions By Maximizing\n             Utility Across Random User Intents},\nauthor    = {Daniel D. Johnson and\n             Daniel Tarlow and\n             Ch"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/weatherbenchx",
+    "fullName": "google-research/weatherbenchX",
+    "name": "weatherbenchX",
+    "url": "https://github.com/google-research/weatherbenchX",
+    "description": "A modular framework for evaluating weather forecasts",
+    "homepage": "https://weatherbench-x.readthedocs.io/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-17T15:03:44Z",
+    "pushedAt": "2026-08-17T22:42:06Z",
+    "stars": 237,
+    "domains": [
+      "climate_geospatial",
+      "data_pipelines",
+      "evaluation",
+      "forecasting"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "apache beam"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation"
+      ],
+      "forecasting": [
+        "forecast"
+      ],
+      "climate_geospatial": [
+        "weather"
+      ]
+    },
+    "dependencies": [
+      "jax",
+      "ray"
+    ],
+    "linkedRepositories": [
+      "weatherbench2"
+    ],
+    "resources": [
+      "https://github.com/google-research/weatherbench2"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/weatherbenchX/blob/main/README.md",
+        "excerpt": "![logo](logos/wbx-logo-wide.png)\n\n# WeatherBench-X: A modular framework for evaluating weather forecasts\n\n## Why WeatherBench-X?\n\nWeatherBench-X is an evaluation framework that enables flexible evaluation of various kinds of forecast and ground truth data, including sparse datasets like those coming from weather stations or satellites. It is the successor to the [WeatherBench 2 evaluation code](https://github.com/google-research/weatherbench2). However, the [WeatherBench 2 benchmark](https://sites.research.google/weatherbench/) remains active (and is now also powered by the WeatherBench-X evaluation framework).\n\nWeatherBench related datasets can be found [here](https://weatherbench2.readthedocs.io/en/latest/data-guide.html).\n\nThe core design principles behind WeatherBench-X are:\n- Modulari"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/swirl-dynamics",
+    "fullName": "google-research/swirl-dynamics",
+    "name": "swirl-dynamics",
+    "url": "https://github.com/google-research/swirl-dynamics",
+    "description": "Swirl-Dynamics is a python repository that provides implementations of models, benchmarks and utilities for dynamical systems.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "NOASSERTION",
+    "updatedAt": "2026-08-17T05:51:50Z",
+    "pushedAt": "2026-08-06T15:24:17Z",
+    "stars": 82,
+    "domains": [
+      "evaluation"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "benchmark"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "ray",
+      "tensorflow"
+    ],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/swirl-dynamics/blob/main/README.md",
+        "excerpt": "# Swirl-Dynamics\n\n*This is not an official Google product*\n\nSwirl-Dynamics is a python repository that provides implementations of models,\nbenchmarks and utilities for dynamical systems.\n"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/text-to-text-transfer-transformer",
+    "fullName": "google-research/text-to-text-transfer-transformer",
+    "name": "text-to-text-transfer-transformer",
+    "url": "https://github.com/google-research/text-to-text-transfer-transformer",
+    "description": "Code for the paper \"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer\"",
+    "homepage": "https://arxiv.org/abs/1910.10683",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-15T21:00:11Z",
+    "pushedAt": "2026-07-08T23:37:09Z",
+    "stars": 6544,
+    "domains": [
+      "evaluation",
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "evaluation",
+        "evaluate"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "tensorflow",
+        "jax"
+      ]
+    },
+    "dependencies": [
+      "apache-beam",
+      "flax",
+      "jax",
+      "pytorch",
+      "tensorflow",
+      "torch",
+      "transformers"
+    ],
+    "linkedRepositories": [
+      "t5x"
+    ],
+    "resources": [
+      "https://arxiv.org/abs/1910.10683",
+      "https://github.com/google-research/t5x",
+      "https://github.com/google-research/text-to-text-transfer-transformer/actions?query=workflow%3Abuild",
+      "https://github.com/google-research/text-to-text-transfer-transformer/blob/a08f0d1c4a7caa6495aec90ce769a29787c3c87c/t5/models/hf_model.py#L38",
+      "https://github.com/google-research/text-to-text-transfer-transformer/blob/main/released_checkpoints.md",
+      "https://github.com/google-research/text-to-text-transfer-transformer/tree/main/t5/models/hf_model.py",
+      "https://github.com/google-research/text-to-text-transfer-transformer/tree/main/t5/models/mtf_model.py",
+      "https://github.com/google-research/text-to-text-transfer-transformer/workflows/build/badge.svg",
+      "https://huggingface.co/transformers/",
+      "https://www.tensorflow.org/datasets",
+      "https://www.tensorflow.org/datasets/beam_datasets",
+      "https://www.tensorflow.org/datasets/catalog/c4",
+      "https://www.tensorflow.org/datasets/gcs"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/text-to-text-transfer-transformer/blob/main/README.md",
+        "excerpt": "# T5: Text-To-Text Transfer Transformer\n\n\n### As of July 2022, we recommend using T5X:\n\n[T5X](https://github.com/google-research/t5x) is the new and improved implementation of T5 (and more) in JAX and Flax.\nT5 on Tensorflow with MeshTF is no longer actively developed. If you are new\nto T5, we recommend starting with [T5X](https://github.com/google-research/t5x).\n\n[![Build Status](https://github.com/google-research/text-to-text-transfer-transformer/workflows/build/badge.svg)](https://github.com/google-research/text-to-text-transfer-transformer/actions?query=workflow%3Abuild)\n\nThe `t5` library serves primarily as code for reproducing the experiments in [_Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer_][paper]. In the paper, we demonstrate how to achieve sta"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/morph-net",
+    "fullName": "google-research/morph-net",
+    "name": "morph-net",
+    "url": "https://github.com/google-research/morph-net",
+    "description": "Fast & Simple Resource-Constrained Learning of Deep Network Structure",
+    "homepage": "",
+    "defaultBranch": "master",
+    "language": "Python",
+    "topics": [
+      "automl",
+      "deep-learning",
+      "machine-learning",
+      "neural-architecture-search",
+      "python",
+      "tensorflow"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-15T20:36:53Z",
+    "pushedAt": "2026-07-02T11:28:00Z",
+    "stars": 1038,
+    "domains": [
+      "ml_training",
+      "optimization",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train",
+        "optimizer",
+        "tensorflow"
+      ],
+      "vision_video": [
+        "vision",
+        "image",
+        "video"
+      ],
+      "optimization": [
+        "optimization",
+        "constraint"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/1711.06798",
+      "https://arxiv.org/pdf/2006.09581.pdf"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/morph-net/blob/master/README.md",
+        "excerpt": "# MorphNet: Fast & Simple Resource-Constrained Learning of Deep Network Structure\n\n[TOC]\n\n## New: FiGS: Fine-Grained Stochastic Architecture Search\nFiGS, is a probabilistic approach to channel regularization that we introduced\nin [Fine-Grained Stochastic Architecture Search](https://arxiv.org/pdf/2006.09581.pdf).\nIt outperforms our previous regularizers and can be used as either a pruning algorithm or\na full fledged Differentiable Architecture Search method. This is the recommended\nway to apply MorphNet. In the below documentation it is\nreferred to as the `LogisticSigmoid` regularizer.\n\n\n## What is MorphNet?\nMorphNet is a method for learning deep network structure during training. The\nkey principle is continuous relaxation of the network-structure learning\nproblem. In short, the MorphNet r"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/proteinfer",
+    "fullName": "google-research/proteinfer",
+    "name": "proteinfer",
+    "url": "https://github.com/google-research/proteinfer",
+    "description": "Deep networks for protein functional inference",
+    "homepage": "https://google-research.github.io/proteinfer/",
+    "defaultBranch": "master",
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-15T12:42:26Z",
+    "pushedAt": "2026-03-11T20:30:53Z",
+    "stars": 192,
+    "domains": [
+      "health_bio"
+    ],
+    "domainEvidence": {
+      "health_bio": [
+        "protein"
+      ]
+    },
+    "dependencies": [
+      "absl-py",
+      "astor",
+      "backports.weakref",
+      "biopython",
+      "enum34",
+      "funcsigs",
+      "gast",
+      "grpcio",
+      "h5py",
+      "keras-applications",
+      "keras-preprocessing",
+      "markdown",
+      "mock",
+      "numpy",
+      "pandas",
+      "pbr",
+      "plotly",
+      "plotnine",
+      "protobuf",
+      "python-dateutil",
+      "pytz",
+      "scikit-learn",
+      "six",
+      "tensorflow-estimator",
+      "tensorflow-gpu",
+      "tensorflow-hub",
+      "termcolor",
+      "tqdm",
+      "werkzeug"
+    ],
+    "linkedRepositories": [
+      "nisaba"
+    ],
+    "resources": [
+      "https://github.com/google-research/nisaba/blob/main/LICENSE",
+      "https://github.com/google-research/proteinfer"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/proteinfer/blob/master/README.md",
+        "excerpt": "[![GitHub license](https://img.shields.io/badge/license-Apache2-blue.svg)](https://github.com/google-research/nisaba/blob/main/LICENSE)\n[![Paper](https://img.shields.io/badge/paper-eLife-blue.svg)](https://elifesciences.org/articles/80942)\n# ProteInfer\n\nProteInfer is an approach for predicting the functional properties of protein\nsequences using deep neural networks.\n\n#### \ud83d\udcdd Read about the method in [our interactive paper](https://google-research.github.io/proteinfer/) (or [in the static version](https://elifesciences.org/articles/80942), published in eLife).\n\n## Usage instructions\n\nGo to https://google-research.github.io/proteinfer/ to use an interactive demo in your\nbrowser, and read the related paper.\n\nOr if you're interested in the command line interface instead, see below.\n\nYou do not"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/skai",
+    "fullName": "google-research/skai",
+    "name": "skai",
+    "url": "https://github.com/google-research/skai",
+    "description": "SKAI is a machine learning based tool for performing automatic building damage assessments on aerial imagery of disaster sites.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-15T07:24:20Z",
+    "pushedAt": "2026-07-03T08:21:53Z",
+    "stars": 165,
+    "domains": [
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "vision_video": [
+        "image"
+      ]
+    },
+    "dependencies": [
+      "absl-py",
+      "apache-beam",
+      "earthengine-api",
+      "fiona",
+      "gcsfs",
+      "geopandas",
+      "google-apitools",
+      "google-cloud-aiplatform",
+      "ml-collections",
+      "numpy",
+      "opencv-python",
+      "openlocationcode",
+      "pandas",
+      "pillow",
+      "pyproj",
+      "pytest",
+      "rasterio",
+      "requests",
+      "rio-cogeo",
+      "rtree",
+      "scikit-learn",
+      "scipy",
+      "shapely",
+      "tensorflow",
+      "tensorflow-datasets",
+      "tensorflow-probability",
+      "tf-keras",
+      "tqdm",
+      "xmanager"
+    ],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/arco-era5",
+    "fullName": "google-research/arco-era5",
+    "name": "arco-era5",
+    "url": "https://github.com/google-research/arco-era5",
+    "description": "Recipes for reproducing Analysis-Ready & Cloud Optimized (ARCO) ERA5 datasets.",
+    "homepage": "https://cloud.google.com/storage/docs/public-datasets/era5",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "cloud-optimized",
+      "ecmwf",
+      "era5",
+      "open-science",
+      "zarr"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-14T21:02:58Z",
+    "pushedAt": "2026-08-06T10:20:36Z",
+    "stars": 498,
+    "domains": [
+      "climate_geospatial",
+      "data_pipelines",
+      "forecasting",
+      "optimization",
+      "robotics_spatial"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "forecasting": [
+        "forecast"
+      ],
+      "optimization": [
+        "optimization"
+      ],
+      "robotics_spatial": [
+        "control"
+      ],
+      "climate_geospatial": [
+        "climate",
+        "weather"
+      ]
+    },
+    "dependencies": [
+      "ray"
+    ],
+    "linkedRepositories": [
+      "neuralgcm",
+      "weatherbench2"
+    ],
+    "resources": [
+      "https://github.com/google-research/arco-era5.git",
+      "https://github.com/google-research/arco-era5/blob/main/Dockerfile",
+      "https://github.com/google-research/arco-era5/blob/main/docs/0-Surface-Reanalysis-Walkthrough.ipynb",
+      "https://github.com/google-research/arco-era5/blob/main/docs/1-Model-Levels-Walkthrough.ipynb",
+      "https://github.com/google-research/arco-era5/issues",
+      "https://github.com/google-research/neuralgcm",
+      "https://github.com/google-research/weatherbench2"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/arco-era5/blob/main/README.md",
+        "excerpt": "# Analysis-Ready, Cloud Optimized ERA5\n\nRecipes for reproducing Analysis-Ready & Cloud Optimized (ARCO) ERA5 datasets.\n\n[Introduction](#introduction) \u2022 [Overview](#overview) \u2022 [Get Started with Colab Notebooks](#get-started-with-colab-notebooks) \u2022 [Analysis Ready Data](#analysis-ready-data)\n\u2022 [Raw Cloud Optimized Data](#raw-cloud-optimized-data) \u2022 [Project roadmap](#project-roadmap) \u2022 [How to reproduce](#how-to-reproduce)\n\u2022 [FAQs](#faqs) \u2022 [How to cite this work](#how-to-cite-this-work) \u2022 [License](#license)\n\n## Introduction\n\nOur goal is to make a global history of the climate highly accessible in the cloud. To that end, we present a curated\ncopy of the ERA5 corpus in [Google Cloud Public Datasets](https://cloud.google.com/storage/docs/public-datasets/era5).\n\n<details>\n<summary>What is ERA"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/budget-aware-agent",
+    "fullName": "google-research/budget-aware-agent",
+    "name": "budget-aware-agent",
+    "url": "https://github.com/google-research/budget-aware-agent",
+    "description": "Budget-Aware Tool-Use Enables Effective Agent Scaling @ COLM 2026",
+    "homepage": "https://arxiv.org/abs/2511.17006",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-14T07:11:18Z",
+    "pushedAt": "2026-08-08T16:20:14Z",
+    "stars": 5,
+    "domains": [
+      "evaluation",
+      "ml_training",
+      "optimization"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "benchmark"
+      ],
+      "ml_training": [
+        "train"
+      ],
+      "optimization": [
+        "constraint"
+      ]
+    },
+    "dependencies": [
+      "aiofiles",
+      "aiohttp",
+      "crawl4ai",
+      "datasets",
+      "litellm",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "python-dotenv",
+      "requests",
+      "tqdm",
+      "wandb"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2511.17006",
+      "https://arxiv.org/abs/2511.17006}",
+      "https://huggingface.co/datasets/cais/hle"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/budget-aware-agent/blob/main/README.md",
+        "excerpt": "# Budget-Aware Tool-Use Enables Effective Agent Scaling\n\n[[\ud83d\udcc4 Paper](https://arxiv.org/abs/2511.17006)]\n\n<p align=\"center\">\n  <img src=\"assets/figure_intro.png\" alt=\"Budget Tracker augments a ReAct agent with continuous awareness of its remaining tool-call budget; BATS adds budget-aware planning, self-verification, and re-planning on verification failure.\" width=\"100%\">\n</p>\n\n## \ud83d\udcdc Overview\n\nScaling test-time computation for tool-augmented agents plateaus when the agent has no awareness of its resource constraints. This repository releases the code for our paper: a **Budget Tracker** that gives the agent continuous awareness of its remaining tool-call budget, and **BATS** (Budget-Aware Test-time Scaling), a framework that dynamically decides \u2014 based on remaining budget \u2014 whether to keep purs"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/sofima",
+    "fullName": "google-research/sofima",
+    "name": "sofima",
+    "url": "https://github.com/google-research/sofima",
+    "description": "Scalable Optical Flow-based Image Montaging and Alignment",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [
+      "2d",
+      "3d",
+      "4d",
+      "alignment-algorithm",
+      "biomedical-image-processing",
+      "connectomics",
+      "electron-microscopy",
+      "jax",
+      "microscopy",
+      "python3",
+      "stitching-algorithm"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-13T15:32:39Z",
+    "pushedAt": "2026-08-06T15:10:50Z",
+    "stars": 100,
+    "domains": [
+      "health_bio",
+      "ml_training",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "jax"
+      ],
+      "vision_video": [
+        "image"
+      ],
+      "health_bio": [
+        "medical",
+        "biomedical"
+      ]
+    },
+    "dependencies": [
+      "jax",
+      "ray"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/sofima"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/sofima/blob/main/README.md",
+        "excerpt": "# SOFIMA\n\nSOFIMA (Scalable Optical Flow-based Image Montaging and Alignment) is a tool\nfor stitching, aligning and warping large 2d, 3d and 4d microscopy datasets.\n\n[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10534541.svg)](https://zenodo.org/records/10534541)\n\nPlease cite as https://zenodo.org/records/10534541\n\nThis is not an officially supported Google product.\n\n# Installation\n\nSOFIMA is implemented purely in Python, and does not require a build step. To\ninstall it directly from the repository, run:\n\n```shell\n  pip install git+https://github.com/google-research/sofima\n```\n\n# Overview\n\nSOFIMA uses optical flow regularized with an elastic mesh to establish\nmaps betwe"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/language-table",
+    "fullName": "google-research/language-table",
+    "name": "language-table",
+    "url": "https://github.com/google-research/language-table",
+    "description": "Suite of human-collected datasets and a multi-task continuous control benchmark for open vocabulary visuolinguomotor learning.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Jupyter Notebook",
+    "topics": [
+      "robotics",
+      "robotics-simulation"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-13T09:12:50Z",
+    "pushedAt": "2026-07-30T10:55:27Z",
+    "stars": 362,
+    "domains": [
+      "evaluation",
+      "robotics_spatial"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "benchmark"
+      ],
+      "robotics_spatial": [
+        "robot",
+        "robotics",
+        "control"
+      ]
+    },
+    "dependencies": [
+      "clu",
+      "dm-reverb-nightly",
+      "git+https://github.com/google-research/scenic.git",
+      "git+https://github.com/openai/clip.git",
+      "gym",
+      "matplotlib",
+      "numpy",
+      "opencv-python",
+      "protobuf",
+      "pybullet",
+      "rlds",
+      "scipy",
+      "six",
+      "tensorflow",
+      "tensorflow-datasets",
+      "tensorflow-text",
+      "tf-agents",
+      "tf-nightly"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/pdf/2210.06407.pdf"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/language-table/blob/main/README.md",
+        "excerpt": "# Language Table\n\nLanguage-Table is a suite of human-collected datasets and a multi-task continuous control benchmark for open vocabulary visuolinguomotor learning.\n\n![](./docs/real.jpeg)      |  ![](./docs/sim.jpeg)\n:-------------------------:|:-------------------------:|\n\n## Installation\n\nInstallation with `pip`. `requirements.txt` contains dependencies for running\nthe environment and simple dataset examples.\n\n```\npython3 -m venv ./ltvenv\nsource ./ltvenv/bin/activate\npip install -r ./requirements.txt\nexport PYTHONPATH=${PWD}:$PYTHONPATH\n```\n\nFor running the full train script, install using `requirements_static.txt`, as\nthis contains pinned versions for running the full train script.\n\n```\npython3 -m venv ./ltvenvtrain\nsource ./ltvenvtrain/bin/activate\npip install --no-deps -r ./requiremen"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/scenic",
+    "fullName": "google-research/scenic",
+    "name": "scenic",
+    "url": "https://github.com/google-research/scenic",
+    "description": "Scenic: A Jax Library for Computer Vision Research and Beyond",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "attention",
+      "computer-vision",
+      "deep-learning",
+      "jax",
+      "research",
+      "transformers",
+      "vision-transformer"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-12T23:53:02Z",
+    "pushedAt": "2026-08-10T09:53:31Z",
+    "stars": 3821,
+    "domains": [
+      "data_pipelines",
+      "education_knowledge",
+      "evaluation",
+      "llm_prompting",
+      "ml_training",
+      "multimodal",
+      "speech_audio",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline",
+        "streaming"
+      ],
+      "evaluation": [
+        "evaluation"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "jax",
+        "flax"
+      ],
+      "llm_prompting": [
+        "language model"
+      ],
+      "speech_audio": [
+        "speech",
+        "audio"
+      ],
+      "vision_video": [
+        "vision",
+        "image",
+        "video",
+        "segmentation"
+      ],
+      "multimodal": [
+        "multimodal"
+      ],
+      "education_knowledge": [
+        "knowledge"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "tensorflow",
+      "transformers"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/1505.04597",
+      "https://arxiv.org/abs/1512.03385",
+      "https://arxiv.org/abs/1807.03819",
+      "https://arxiv.org/abs/1810.04805",
+      "https://arxiv.org/abs/1904.07850",
+      "https://arxiv.org/abs/1912.11370",
+      "https://arxiv.org/abs/2005.12872",
+      "https://arxiv.org/abs/2009.14794",
+      "https://arxiv.org/abs/2010.04159",
+      "https://arxiv.org/abs/2010.11929",
+      "https://arxiv.org/abs/2012.09688",
+      "https://arxiv.org/abs/2103.00020",
+      "https://arxiv.org/abs/2103.01075",
+      "https://arxiv.org/abs/2103.15691",
+      "https://arxiv.org/abs/2105.01601",
+      "https://arxiv.org/abs/2106.10270",
+      "https://arxiv.org/abs/2106.11297",
+      "https://arxiv.org/abs/2107.00135",
+      "https://arxiv.org/abs/2107.05407",
+      "https://arxiv.org/abs/2110.02095",
+      "https://arxiv.org/abs/2110.12894",
+      "https://arxiv.org/abs/2111.06377",
+      "https://arxiv.org/abs/2111.10493",
+      "https://arxiv.org/abs/2111.12993",
+      "https://arxiv.org/abs/2111.15121",
+      "https://arxiv.org/abs/2112.01455",
+      "https://arxiv.org/abs/2112.05692",
+      "https://arxiv.org/abs/2201.04100",
+      "https://arxiv.org/abs/2201.04288",
+      "https://arxiv.org/abs/2202.02200",
+      "https://arxiv.org/abs/2205.06230",
+      "https://arxiv.org/abs/2206.07684",
+      "https://arxiv.org/abs/2212.02400",
+      "https://arxiv.org/abs/2212.05221",
+      "https://arxiv.org/abs/2212.05922",
+      "https://arxiv.org/abs/2301.13195",
+      "https://arxiv.org/abs/2303.08998",
+      "https://arxiv.org/abs/2304.02643",
+      "https://arxiv.org/abs/2304.06708",
+      "https://arxiv.org/abs/2306.11729"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/scenic/blob/main/README.md",
+        "excerpt": "# Scenic\n<div style=\"text-align: left\">\n<img align=\"right\" src=\"https://raw.githubusercontent.com/google-research/scenic/main/images/scenic_logo.png\" width=\"200\" alt=\"Scenic logo\"></img>\n</div>\n\n\n*Scenic* is a codebase with a focus on research around attention-based models\nfor computer vision. Scenic has been successfully used to develop\nclassification, segmentation, and detection models for multiple modalities\nincluding images, video, audio, and multimodal combinations of them.\n\nMore precisely, *Scenic* is a (i) set of shared light-weight libraries solving\ntasks commonly encountered tasks when training large-scale (i.e. multi-device,\nmulti-host) vision models; and (ii) several *projects* containing fully\nfleshed out problem-specific training and evaluation loops using these\nlibraries.\n\nSc"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/perch-hoplite",
+    "fullName": "google-research/perch-hoplite",
+    "name": "perch-hoplite",
+    "url": "https://github.com/google-research/perch-hoplite",
+    "description": "Tooling for agile modeling on large machine perception embedding databases.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-12T19:03:25Z",
+    "pushedAt": "2026-08-12T19:03:10Z",
+    "stars": 121,
+    "domains": [
+      "ml_training",
+      "privacy_federated_security",
+      "speech_audio"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train",
+        "jax"
+      ],
+      "speech_audio": [
+        "audio"
+      ],
+      "privacy_federated_security": [
+        "security"
+      ]
+    },
+    "dependencies": [
+      "--hash",
+      "absl-py",
+      "aiohappyeyeballs",
+      "aiohttp",
+      "aiosignal",
+      "annotated-doc",
+      "anyio",
+      "argon2-cffi",
+      "argon2-cffi-bindings",
+      "arrow",
+      "asttokens",
+      "astunparse",
+      "async-lru",
+      "async-timeout",
+      "attrs",
+      "audioread",
+      "babel",
+      "beautifulsoup4",
+      "bleach",
+      "certifi",
+      "cffi",
+      "charset-normalizer",
+      "click",
+      "comm",
+      "contextlib2",
+      "contourpy",
+      "cycler",
+      "db-dtypes",
+      "debugpy",
+      "decorator",
+      "defusedxml",
+      "etils",
+      "exceptiongroup",
+      "executing",
+      "fastjsonschema",
+      "filelock",
+      "flatbuffers",
+      "flax",
+      "fonttools",
+      "fqdn",
+      "frozenlist",
+      "fsspec",
+      "gast",
+      "gcsfs",
+      "geopandas",
+      "google-api-core",
+      "google-auth",
+      "google-auth-oauthlib",
+      "google-cloud-bigquery",
+      "google-cloud-core",
+      "google-cloud-storage",
+      "google-cloud-storage-control",
+      "google-crc32c",
+      "google-pasta",
+      "google-resumable-media",
+      "googleapis-common-protos",
+      "grpc-google-iam-v1",
+      "grpcio",
+      "grpcio-status",
+      "h11",
+      "h5py",
+      "hf-xet",
+      "httpcore",
+      "httpx",
+      "huggingface-hub",
+      "idna",
+      "imageio",
+      "importlib-resources",
+      "ipykernel",
+      "ipython",
+      "ipywidgets",
+      "isoduration",
+      "jax",
+      "jedi",
+      "jinja2",
+      "joblib",
+      "json5",
+      "jsonpointer",
+      "jsonschema",
+      "jsonschema-specifications",
+      "jupyter-client",
+      "jupyter-core",
+      "jupyter-events",
+      "jupyter-lsp",
+      "jupyter-server",
+      "jupyter-server-terminals",
+      "jupyterlab",
+      "jupyterlab-pygments",
+      "jupyterlab-server",
+      "jupyterlab-widgets",
+      "kagglehub",
+      "keras",
+      "kiwisolver",
+      "lark",
+      "lazy-loader",
+      "libclang",
+      "librosa",
+      "llvmlite",
+      "markdown",
+      "markdown-it-py",
+      "markupsafe",
+      "matplotlib",
+      "matplotlib-inline",
+      "mdurl",
+      "mistune",
+      "ml-collections",
+      "ml-dtypes",
+      "msgpack",
+      "multidict",
+      "namex",
+      "nbclient",
+      "nbconvert",
+      "nbformat",
+      "nest-asyncio",
+      "notebook",
+      "notebook-shim",
+      "numba",
+      "numpy",
+      "oauthlib",
+      "opt-einsum",
+      "optree",
+      "overrides",
+      "packaging",
+      "pandas",
+      "pandas-gbq",
+      "pandocfilters",
+      "parso",
+      "pexpect",
+      "pillow",
+      "platformdirs",
+      "pooch",
+      "prometheus-client",
+      "prompt-toolkit",
+      "propcache",
+      "proto-plus",
+      "protobuf",
+      "psutil",
+      "ptyprocess",
+      "pure-eval",
+      "pyarrow",
+      "pyasn1",
+      "pyasn1-modules",
+      "pycparser",
+      "pydata-google-auth",
+      "pygments",
+      "pyogrio",
+      "pyparsing",
+      "pyproj",
+      "python-dateutil",
+      "python-json-logger",
+      "pytz",
+      "pyyaml",
+      "pyzmq",
+      "referencing",
+      "requests",
+      "requests-oauthlib",
+      "rfc3339-validator",
+      "rfc3986-validator",
+      "rfc3987-syntax",
+      "rich",
+      "rpds-py",
+      "rsa",
+      "s2geometry",
+      "scikit-learn",
+      "scipy",
+      "send2trash",
+      "setuptools",
+      "shapely",
+      "shellingham",
+      "simsimd",
+      "six",
+      "soundfile",
+      "soupsieve",
+      "soxr",
+      "stack-data",
+      "tensorboard",
+      "tensorboard-data-server",
+      "tensorflow",
+      "termcolor",
+      "terminado",
+      "threadpoolctl",
+      "tinycss2",
+      "tomli",
+      "tornado",
+      "tqdm",
+      "traitlets",
+      "typer",
+      "typing-extensions",
+      "tzdata",
+      "uri-template",
+      "urllib3",
+      "usearch",
+      "wcwidth",
+      "webcolors",
+      "webencodings",
+      "websocket-client",
+      "werkzeug",
+      "wheel",
+      "widgetsnbextension",
+      "wrapt",
+      "yarl",
+      "zipp"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2505.03071",
+      "https://github.com/google-research/perch-hoplite.git",
+      "https://github.com/google-research/perch-hoplite/actions/workflows/ci_uv.yml/badge.svg",
+      "https://www.kaggle.com/models/google/bird-vocalization-classifier"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/perch-hoplite/blob/main/README.md",
+        "excerpt": "# Perch Hoplite\n\n![CI](https://github.com/google-research/perch-hoplite/actions/workflows/ci_uv.yml/badge.svg)\n\nHoplite is a system for storing large volumes of embeddings from machine\nperception models. We focus on combining vector search with active learning\nworkflows, aka [agile modeling](https://arxiv.org/abs/2505.03071).\n\nIn brief, agile modeling is a process for rapidly developing classifiers using\nembeddings from a pre-trained 'foundation' model. For bioacoustics work, we\nfind that new classifiers can often be developed for new signals in under\nan hour.\n\n**How does it work?**\n\nWe first use a bioacoustics model to convert your unlabeled audio data into\nembeddings - these are like semantic 'fingerprints' of 5-second audio clips.\nThen, you can *search* the embeddings of your data by pr"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/bleurt",
+    "fullName": "google-research/bleurt",
+    "name": "bleurt",
+    "url": "https://github.com/google-research/bleurt",
+    "description": "BLEURT is a metric for Natural Language Generation based on transfer learning.",
+    "homepage": "https://arxiv.org/abs/2004.04696",
+    "defaultBranch": "master",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-12T07:20:46Z",
+    "pushedAt": "2023-08-04T12:53:10Z",
+    "stars": 794,
+    "domains": [
+      "evaluation",
+      "ml_training",
+      "nlp"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "evaluation"
+      ],
+      "ml_training": [
+        "train",
+        "tensorflow"
+      ],
+      "nlp": [
+        "natural language"
+      ]
+    },
+    "dependencies": [
+      "tensorflow",
+      "transformers"
+    ],
+    "linkedRepositories": [
+      "bert"
+    ],
+    "resources": [
+      "http://arxiv.org/abs/2110.06341",
+      "https://arxiv.org/abs/1810.04805",
+      "https://arxiv.org/abs/1904.09675",
+      "https://arxiv.org/abs/2004.04696",
+      "https://arxiv.org/pdf/2010.12821.pdf",
+      "https://github.com/google-research/bert",
+      "https://github.com/google-research/bleurt.git",
+      "https://github.com/google-research/bleurt/blob/master/checkpoints.md",
+      "https://github.com/google-research/bleurt/blob/master/wmt_experiments.md",
+      "https://www.tensorflow.org/datasets/catalog/c4#c4multilingual"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/bleurt/blob/master/README.md",
+        "excerpt": "# BLEURT: a Transfer Learning-Based Metric for Natural Language Generation\n\nBLEURT is an evaluation metric for Natural Language Generation. It takes a pair of sentences as input, a *reference* and a *candidate*, and it returns a score that indicates to what extent the candidate is fluent and conveys the meaning of the reference. It is comparable to [`sentence-BLEU`](https://en.wikipedia.org/wiki/BLEU), [`BERTscore`](https://arxiv.org/abs/1904.09675), and [`COMET`](https://github.com/Unbabel/COMET).\n\nBLEURT is a *trained metric*, that is, it is a regression model trained on ratings data. The model is based on [`BERT`](https://arxiv.org/abs/1810.04805) and [`RemBERT`](https://arxiv.org/pdf/2010.12821.pdf). This repository contains all the code necessary to use it and/or fine-tune it for your"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/look-back-when-surprised",
+    "fullName": "google-research/look-back-when-surprised",
+    "name": "look-back-when-surprised",
+    "url": "https://github.com/google-research/look-back-when-surprised",
+    "description": "Look Back When Surprised: Stabilizing Reverse Experience Replay for Neural Approximation",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "reinforcement-learning",
+      "replay-buffer"
+    ],
+    "license": "MIT",
+    "updatedAt": "2026-08-11T07:37:54Z",
+    "pushedAt": "2026-06-23T19:23:22Z",
+    "stars": 13,
+    "domains": [
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "default: research repository"
+      ]
+    },
+    "dependencies": [
+      "absl-py",
+      "akro",
+      "ale-py",
+      "appdirs",
+      "astor",
+      "astunparse",
+      "attrs",
+      "autorom",
+      "autorom.accept-rom-license",
+      "backcall",
+      "box2d-py",
+      "cached-property",
+      "cachetools",
+      "certifi",
+      "cffi",
+      "charset-normalizer",
+      "click",
+      "cloudpickle",
+      "cma",
+      "configparser",
+      "cycler",
+      "cython",
+      "debugpy",
+      "decorator",
+      "deprecated",
+      "dm-control",
+      "dm-env",
+      "dm-tree",
+      "docker-pycreds",
+      "dowel",
+      "dppy",
+      "entrypoints",
+      "enum34",
+      "falcon",
+      "fasteners",
+      "filelock",
+      "flatbuffers",
+      "fonttools",
+      "future",
+      "garage",
+      "gast",
+      "gitdb",
+      "gitpython",
+      "glfw",
+      "google-auth",
+      "google-auth-oauthlib",
+      "google-pasta",
+      "grpcio",
+      "gunicorn",
+      "gym",
+      "gym-minigrid",
+      "gym-notices",
+      "h5py",
+      "idna",
+      "imageio",
+      "importlib",
+      "importlib-metadata",
+      "importlib-resources",
+      "iniconfig",
+      "install",
+      "ipykernel",
+      "ipython",
+      "ipython-genutils",
+      "jedi",
+      "jinja2",
+      "joblib",
+      "jsonmerge",
+      "jsonschema",
+      "jupyter-client",
+      "jupyter-core",
+      "jupyterlab-pygments",
+      "kaleido",
+      "keras",
+      "keras-applications",
+      "keras-preprocessing",
+      "kiwisolver",
+      "labmaze",
+      "libclang",
+      "lockfile",
+      "lxml",
+      "lz4",
+      "mako",
+      "markdown",
+      "markupsafe",
+      "matplotlib",
+      "matplotlib-inline",
+      "metaworld",
+      "mistune",
+      "msgpack",
+      "mujoco",
+      "mujoco-py",
+      "nbclient",
+      "nbconvert",
+      "nbformat",
+      "nest-asyncio",
+      "networkx",
+      "notebook",
+      "numpy",
+      "oauthlib",
+      "opencv-python",
+      "opt-einsum",
+      "orion",
+      "packaging",
+      "pandas",
+      "pandocfilters",
+      "parso",
+      "patchelf",
+      "pathtools",
+      "pexpect",
+      "pfrl",
+      "pickleshare",
+      "piglet",
+      "piglet-templates",
+      "pillow",
+      "plotly",
+      "pluggy",
+      "prometheus-client",
+      "promise",
+      "prompt-toolkit",
+      "protobuf",
+      "psutil",
+      "ptyprocess",
+      "py",
+      "pyasn1",
+      "pyasn1-modules",
+      "pybullet",
+      "pycparser",
+      "pygame",
+      "pyglet",
+      "pygments",
+      "pymongo",
+      "pyopengl",
+      "pyparsing",
+      "pyprind",
+      "pyrsistent",
+      "pytest",
+      "python-dateutil",
+      "pytz",
+      "pyvirtualdisplay",
+      "pywavelets",
+      "pyyaml",
+      "pyzmq",
+      "ray",
+      "redis",
+      "requests",
+      "requests-oauthlib",
+      "rsa",
+      "scikit-image",
+      "scikit-learn",
+      "scipy",
+      "send2trash",
+      "sentry-sdk",
+      "setproctitle",
+      "setuptools-scm",
+      "shortuuid",
+      "six",
+      "sklearn",
+      "smmap",
+      "subprocess32",
+      "tabulate",
+      "tenacity",
+      "tensorboard",
+      "tensorboard-data-server",
+      "tensorboard-plugin-wit",
+      "tensorboardx",
+      "tensorflow",
+      "tensorflow-estimator",
+      "tensorflow-gpu",
+      "tensorflow-io-gcs-filesystem",
+      "tensorflow-probability",
+      "termcolor",
+      "terminado",
+      "testpath",
+      "tf-estimator-nightly",
+      "threadpoolctl",
+      "tifffile",
+      "toml",
+      "tomli",
+      "torch",
+      "torchaudio",
+      "torchvision",
+      "tornado",
+      "tqdm",
+      "traitlets",
+      "typing-extensions",
+      "urllib3",
+      "wandb",
+      "wcwidth",
+      "webencodings",
+      "werkzeug",
+      "wrapt",
+      "yaspin",
+      "zipp"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2206.03171"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/look-back-when-surprised/blob/main/README.md",
+        "excerpt": "# Look Back When Surprised: RER++\n\n\nThis repository serves to open-source the code used in the paper: \"[Look Back When Surprised: Stabilizing Reverse Experience Replay for Neural Approximation](https://arxiv.org/abs/2206.03171)\".\n\n### Getting started\n\nTo avoid any conflict with your existing Python setup, it is suggested to work in a virtual environment with [`virtualenv`](https://docs.python-guide.org/dev/virtualenvs/). To install `virtualenv`:\n```bash\npip install --upgrade virtualenv\n```\nCreate a virtual environment, activate it and install the requirements in [`requirements.txt`](requirements.txt).\n```bash\nvirtualenv env\nsource env/bin/activate\npip install -r requirements.txt\n```\n\n### Training & Testing\n\nOur models can be trained as follows:\n```bash\npython -W ignore -m src.main --exp_na"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/e3x",
+    "fullName": "google-research/e3x",
+    "name": "e3x",
+    "url": "https://github.com/google-research/e3x",
+    "description": "E3x is a JAX library for constructing efficient E(3)-equivariant deep learning architectures built on top of Flax.",
+    "homepage": "https://e3x.readthedocs.io/stable/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-10T16:10:20Z",
+    "pushedAt": "2026-07-30T17:06:09Z",
+    "stars": 125,
+    "domains": [
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "jax",
+        "flax"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2401.07595",
+      "https://github.com/google-research/e3x/actions/workflows/pytest_and_autopublish.yml/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/e3x/blob/main/README.md",
+        "excerpt": "<div align=\"center\">\n<img src=\"https://raw.githubusercontent.com/google-research/e3x/main/docs/source/_static/logo.svg\" alt=\"logo\" width=\"200\"></img>\n</div>\n\n# E3x: E(3)-Equivariant Deep Learning Made Easy\n\n![Autopublish Workflow](https://github.com/google-research/e3x/actions/workflows/pytest_and_autopublish.yml/badge.svg)\n![PyPI version](https://img.shields.io/pypi/v/e3x)\n[![Documentation Status](https://readthedocs.org/projects/e3x/badge/?version=stable)](https://e3x.readthedocs.io/stable/?badge=stable)\n\n[E3x](https://e3x.readthedocs.io) is a [JAX](https://jax.readthedocs.io) library\nfor constructing efficient E(3)-equivariant deep learning architectures built on\ntop of [Flax](https://flax.readthedocs.io).\n\nThe goal is to provide common neural network building blocks for\nE(3)-equivarian"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/m2svid",
+    "fullName": "google-research/m2svid",
+    "name": "m2svid",
+    "url": "https://github.com/google-research/m2svid",
+    "description": " This is the official code release for \u201cM2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo Video Conversion\u201d. 3DV 2026",
+    "homepage": "https://m2svid.github.io/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-09T20:47:07Z",
+    "pushedAt": "2026-03-20T15:05:28Z",
+    "stars": 35,
+    "domains": [
+      "ml_training",
+      "privacy_federated_security",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train",
+        "pytorch"
+      ],
+      "vision_video": [
+        "image",
+        "video",
+        "camera"
+      ],
+      "privacy_federated_security": [
+        "security"
+      ]
+    },
+    "dependencies": [
+      "pytorch",
+      "tensorflow",
+      "torch",
+      "transformers"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2505.16565",
+      "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/m2svid/blob/main/README.md",
+        "excerpt": "# M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo Video Conversion\n\n\n[![Project Page](https://img.shields.io/badge/Project%20Page-m2svid.github.io-blue?style=flat&logo=googlechrome)](https://m2svid.github.io/)\n[![arXiv](https://img.shields.io/badge/arXiv-2505.16565-b31b1b.svg?style=flat&logo=arxiv)](https://arxiv.org/abs/2505.16565)\n\n\nby [**Nina Shvetsova**](https://ninatu.github.io/), [**Goutam Bhat**](https://goutamgmb.github.io/), [**Prune Truong**](https://prunetruong.com/), [**Hilde Kuehne**](https://hildekuehne.github.io/), [**Federico Tombari**](https://federicotombari.github.io/)\n\n**Accepted to 3DV 2026!**\n\n<p align=\"center\">\n  <img src=\"teaser.gif\" width=\"600\">\n</p>\n\n**Update:** [March 20, 2026] We have released the pre-trained M2SVid weights! \n\n---\n\n*This is "
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/mt-metrics-eval",
+    "fullName": "google-research/mt-metrics-eval",
+    "name": "mt-metrics-eval",
+    "url": "https://github.com/google-research/mt-metrics-eval",
+    "description": "Tools for evaluating the performance of MT metrics on data from recent WMT metrics shared tasks.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-07T04:23:01Z",
+    "pushedAt": "2026-04-23T10:32:34Z",
+    "stars": 133,
+    "domains": [
+      "evaluation",
+      "nlp"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "evaluation",
+        "evaluate",
+        "test set"
+      ],
+      "nlp": [
+        "machine translation"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2305.14324",
+      "https://arxiv.org/abs/2502.12404",
+      "https://arxiv.org/abs/2502.12404}",
+      "https://github.com/google-research/mt-metrics-eval.git"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/mt-metrics-eval/blob/main/README.md",
+        "excerpt": "# MT Metrics Eval V2\n\nMTME is a simple toolkit to evaluate the performance of Machine Translation\nmetrics on standard test sets such as those from the\n[WMT Metrics Shared Tasks](https://wmt-metrics-task.github.io).\nIt bundles data relevant to metric development and evaluation for a\ngiven test set and language pair, and lets you do the following:\n\n- Access source, reference, and MT output text, along with associated\nmeta-info, for the WMT metrics tasks from 2019 on. This can be done via\nsoftware, or by directly accessing the files in a linux directory\nstructure, in a straightforward format.\n- Access human and automatic metric scores for the above data, and MQM ratings\nfor some language pairs.\n- Reproduce the official results from the WMT metrics tasks. For\nWMT22 on, there are colabs to do t"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/federated",
+    "fullName": "google-research/federated",
+    "name": "federated",
+    "url": "https://github.com/google-research/federated",
+    "description": "A collection of Google research projects related to Federated Learning and Federated Analytics.",
+    "homepage": "",
+    "defaultBranch": "master",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-06T08:05:37Z",
+    "pushedAt": "2026-03-25T19:55:38Z",
+    "stars": 759,
+    "domains": [
+      "data_pipelines",
+      "education_knowledge",
+      "evaluation",
+      "ml_training",
+      "optimization",
+      "privacy_federated_security",
+      "recommendation",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "streaming"
+      ],
+      "evaluation": [
+        "benchmark"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "tensorflow"
+      ],
+      "vision_video": [
+        "image"
+      ],
+      "recommendation": [
+        "personalization"
+      ],
+      "privacy_federated_security": [
+        "federated",
+        "privacy",
+        "differential privacy"
+      ],
+      "optimization": [
+        "optimization"
+      ],
+      "education_knowledge": [
+        "tutor"
+      ]
+    },
+    "dependencies": [
+      "tensorflow"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/1912.04977",
+      "https://arxiv.org/abs/2107.06917",
+      "https://arxiv.org/abs/2206.09262",
+      "https://arxiv.org/abs/2303.00654",
+      "https://github.com/google-research/federated",
+      "https://github.com/google-research/federated/issues"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/federated/blob/master/README.md",
+        "excerpt": "# Federated Research\n\nFederated Research is a collection of research projects related to\n[Federated Learning](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html)\nand\n[Federated Analytics](https://ai.googleblog.com/2020/05/federated-analytics-collaborative-data.html).\nFederated learning is an approach to machine learning where a shared global\nmodel is trained across many participating clients that keep their training data\nlocally. Federated analytics is the practice of applying data science methods to\nthe analysis of raw data that is stored locally on users\u2019 devices.\n\nMany of the projects contained in this repository use\n[TensorFlow Federated (TFF)](https://www.tensorflow.org/federated), an\nopen-source framework for machine learning and other computations on\ndecentraliz"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/zapbench",
+    "fullName": "google-research/zapbench",
+    "name": "zapbench",
+    "url": "https://github.com/google-research/zapbench",
+    "description": "The Zebrafish Activity Prediction Benchmark measures progress on the problem of predicting cellular-resolution neural activity throughout an entire vertebrate brain.",
+    "homepage": "https://google-research.github.io/zapbench",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "benchmark",
+      "calcium-imaging",
+      "forecasting",
+      "light-sheet-microcopy",
+      "machine-learning",
+      "neuroscience",
+      "time-series"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-05T00:10:19Z",
+    "pushedAt": "2026-08-01T21:36:22Z",
+    "stars": 76,
+    "domains": [
+      "data_pipelines",
+      "education_knowledge",
+      "evaluation",
+      "forecasting",
+      "ml_training",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation",
+        "evaluate"
+      ],
+      "ml_training": [
+        "training",
+        "train"
+      ],
+      "vision_video": [
+        "video",
+        "segmentation"
+      ],
+      "forecasting": [
+        "forecast"
+      ],
+      "education_knowledge": [
+        "tutor"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax",
+      "tensorflow"
+    ],
+    "linkedRepositories": [],
+    "resources": [],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/zapbench/blob/main/README.md",
+        "excerpt": "# ZAPBench \u26a1\n\nThe Zebrafish Activity Prediction Benchmark (ZAPBench) measures progress on the\n problem of predicting cellular-resolution neural activity throughout an entire\n vertebrate brain. For more information, refer to [our ICLR paper](https://openreview.net/pdf?id=oCHsDpyawq) and the [companion website](https://google-research.github.io/zapbench).\n\n## Getting started\n\nTo get started with ZAPBench, we provide tutorial-style notebooks in the `colabs/` directory:\n\n- **Datasets:** Overview of various datasets we released and how to access them. [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-research/zapbench/blob/main/colabs/datasets.ipynb)\n- **Training and evaluation:** How to train and evaluate forecasting methods on ZAPB"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/cascades",
+    "fullName": "google-research/cascades",
+    "name": "cascades",
+    "url": "https://github.com/google-research/cascades",
+    "description": "Python library which enables complex compositions of language models such as scratchpads, chain of thought, tool use, selection-inference, and more.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-04T19:51:24Z",
+    "pushedAt": "2026-07-30T23:35:19Z",
+    "stars": 225,
+    "domains": [
+      "agent_orchestration",
+      "llm_prompting"
+    ],
+    "domainEvidence": {
+      "agent_orchestration": [
+        "tool use"
+      ],
+      "llm_prompting": [
+        "language model"
+      ]
+    },
+    "dependencies": [
+      "jax"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2207.10342"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/cascades/blob/main/README.md",
+        "excerpt": "# Cascades\n\n*This is not an officially supported Google product*\n\nPython library which enables complex compositions of language models such as\nscratchpads, chain of thought, tool use, selection-inference, and more.\n\nImplemented as a universal trace-based probabilistic programming library\nembedded in Python.\n\nCode to complement paper: https://arxiv.org/abs/2207.10342."
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/agentic-visualization",
+    "fullName": "google-research/agentic-visualization",
+    "name": "agentic-visualization",
+    "url": "https://github.com/google-research/agentic-visualization",
+    "description": "CoDA is a multi-agent framework that turns natural language queries into publication-quality visualizations. ",
+    "homepage": "https://coda-agent.github.io/CoDA/",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-01T21:42:44Z",
+    "pushedAt": "2026-03-20T03:57:05Z",
+    "stars": 32,
+    "domains": [
+      "agent_orchestration",
+      "data_pipelines",
+      "evaluation",
+      "nlp",
+      "responsible_ai",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "agent_orchestration": [
+        "agentic"
+      ],
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation"
+      ],
+      "nlp": [
+        "natural language"
+      ],
+      "vision_video": [
+        "image"
+      ],
+      "responsible_ai": [
+        "bias"
+      ]
+    },
+    "dependencies": [
+      "aiohttp",
+      "google-cloud-aiplatform",
+      "litellm",
+      "matplotlib",
+      "numpy",
+      "opencv-python",
+      "openpyxl",
+      "pandas",
+      "pillow",
+      "plotly",
+      "pyarrow",
+      "scikit-image",
+      "scipy",
+      "seaborn",
+      "vertexai"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/agentic-visualization\"",
+      "https://github.com/google-research/agentic-visualization.git"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/agentic-visualization/blob/main/README.md",
+        "excerpt": "# CoDA: Agentic Systems for Collaborative Data Visualization\n\n<p align=\"center\">\n  <img src=\"assets/logo.png\" alt=\"CoDA Logo\" width=\"120\">\n</p>\n\n<p align=\"center\">\n  <a href=\"https://coda-agent.github.io/CoDA/static/coda_paper.pdf\">\n    <img src=\"https://img.shields.io/badge/Paper-PDF-b31b1b.svg\" alt=\"Paper\">\n  </a>\n  <a href=\"https://coda-agent.github.io/CoDA/\">\n    <img src=\"https://img.shields.io/badge/Project-Page-blue.svg\" alt=\"Project Page\">\n  </a>\n  <a href=\"https://github.com/google-research/agentic-visualization\">\n    <img src=\"https://img.shields.io/badge/Code-GitHub-black.svg\" alt=\"GitHub\">\n  </a>\n  <img src=\"https://img.shields.io/badge/ICLR-2026-green.svg\" alt=\"ICLR 2026\">\n</p>\n\n> **CoDA: Agentic Systems for Collaborative Data Visualization**\n> Zichen Chen, Jiefeng Chen, Serca"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/falken",
+    "fullName": "google-research/falken",
+    "name": "falken",
+    "url": "https://github.com/google-research/falken",
+    "description": "Falken provides developers with a service that allows them to train AI that can play their games",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "cpp",
+      "games",
+      "imitation-learning",
+      "ml",
+      "unity3d"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-08-01T00:07:44Z",
+    "pushedAt": "2026-06-21T07:05:49Z",
+    "stars": 274,
+    "domains": [
+      "ml_training",
+      "robotics_spatial"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "training",
+        "train"
+      ],
+      "robotics_spatial": [
+        "control"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/falken/actions/workflows/build_on_push.yaml/badge.svg",
+      "https://github.com/google-research/falken/actions/workflows/build_release.yaml/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/falken/blob/main/README.md",
+        "excerpt": "# Falken\n\n![Main branch](https://github.com/google-research/falken/actions/workflows/build_on_push.yaml/badge.svg)\n![Latest release](https://github.com/google-research/falken/actions/workflows/build_release.yaml/badge.svg)\n\n**NOTE**: This is not an officially supported Google product.\n\nFalken provides developers with a service that allows them to train AI that can\nplay their games. Unlike traditional RL frameworks that learn through rewards\nor batches of offline training, Falken is based on training AI via realtime,\nhuman interactions.\n\nBecause human time is precious, the system is designed to seamlessly transition\nbetween humans playing the game (training) and the AI playing the game\n(inference). This allows us to support a variety of training styles, from\nproviding a large batch of demon"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/semivl",
+    "fullName": "google-research/semivl",
+    "name": "semivl",
+    "url": "https://github.com/google-research/semivl",
+    "description": "[ECCV'24] Official Implementation of SemiVL: Semi-Supervised Semantic Segmentation with Vision-Language Guidance",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-07-31T10:38:05Z",
+    "pushedAt": "2026-07-23T21:30:27Z",
+    "stars": 146,
+    "domains": [
+      "education_knowledge",
+      "evaluation",
+      "llm_prompting",
+      "ml_training",
+      "multimodal",
+      "optimization",
+      "robotics_spatial",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "evaluation": [
+        "evaluate"
+      ],
+      "ml_training": [
+        "training",
+        "train"
+      ],
+      "llm_prompting": [
+        "language model"
+      ],
+      "vision_video": [
+        "vision",
+        "image",
+        "segmentation"
+      ],
+      "multimodal": [
+        "vision-language"
+      ],
+      "optimization": [
+        "decision"
+      ],
+      "robotics_spatial": [
+        "spatial"
+      ],
+      "education_knowledge": [
+        "knowledge"
+      ]
+    },
+    "dependencies": [
+      "-f",
+      "clip",
+      "easydict",
+      "einops",
+      "ftfy",
+      "h5py",
+      "matplotlib",
+      "mmcv-full",
+      "mmsegmentation",
+      "notebook",
+      "numpy",
+      "opencv-python",
+      "openmim",
+      "pandas",
+      "pillow",
+      "pyyaml",
+      "regex",
+      "scikit-image",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "setuptools",
+      "tensorboard",
+      "tensorboardx",
+      "timm",
+      "torch",
+      "torchvision"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2311.16241",
+      "https://arxiv.org/pdf/2311.16241.pdf",
+      "https://github.com/google-research/semivl/releases/download/checkpoints/ground_truth_cityscapes.zip",
+      "https://github.com/google-research/semivl/releases/download/checkpoints/ground_truth_coco.zip",
+      "https://github.com/google-research/semivl/releases/download/checkpoints/ground_truth_voc.zip",
+      "https://github.com/google-research/semivl/releases/tag/checkpoints"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/semivl/blob/main/README.md",
+        "excerpt": "# SemiVL: Semi-Supervised Semantic Segmentation with Vision-Language Guidance\n\n**by\n[Lukas Hoyer](https://lhoyer.github.io/),\n[David Joseph Tan](https://scholar.google.de/citations?user=iEwvGPkAAAAJ&hl=en),\n[Muhammad Ferjad Naeem](https://ferjad.github.io/),\n[Luc Van Gool](https://scholar.google.de/citations?user=TwMib_QAAAAJ&hl=en),\nand [Federico Tombari](https://federicotombari.github.io/)**\n\n*This is not an officially supported Google product.*\n\n:bell: **News:** We are happy to announce that SemiVL was accepted at **ECCV24**!\n\n**[[Arxiv]](https://arxiv.org/abs/2311.16241) [[Paper]](https://arxiv.org/pdf/2311.16241.pdf)**\n\n## Overview\n\nIn semi-supervised semantic segmentation, a model is trained with a limited number of labeled images along with a large corpus of unlabeled images to redu"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/project-guideline",
+    "fullName": "google-research/project-guideline",
+    "name": "project-guideline",
+    "url": "https://github.com/google-research/project-guideline",
+    "description": "Project Guideline is a research project that leverages on-device ML to enable people who are blind and low-vision to walk or run for exercise independently.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "C++",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-07-30T09:38:59Z",
+    "pushedAt": "2026-08-07T18:26:25Z",
+    "stars": 104,
+    "domains": [
+      "responsible_ai",
+      "robotics_spatial",
+      "speech_audio",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "speech_audio": [
+        "audio"
+      ],
+      "vision_video": [
+        "vision",
+        "image",
+        "video",
+        "camera"
+      ],
+      "robotics_spatial": [
+        "navigation"
+      ],
+      "responsible_ai": [
+        "safety"
+      ]
+    },
+    "dependencies": [],
+    "linkedRepositories": [],
+    "resources": [
+      "https://github.com/google-research/project-guideline.git"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/project-guideline/blob/main/README.md",
+        "excerpt": "# Project Guideline\n\nProject Guideline is a research project that leverages on-device ML to enable\npeople who are blind and low-vision to walk or run for exercise independently.\nThe project aims to help people move freely and independently in the physical\nworld.\n\nLearn more about the project in our [Blog post][blog-post] and\n[Youtube video][youtube-video].\n\nThis is not an officially supported Google product.\n\n[blog-post]: https://ai.googleblog.com/2021/05/project-guideline-enabling-those-with.html\n[youtube-video]: https://youtu.be/C_h4HnKVptk\n\n## Requirements\n\n1. Pixel 6, Pixel 7, or Pixel 8 Android phone (Android 11+). These devices have\n   a TPU (Tensor Processing Unit) which significantly improves ML model\n   performance.\n2. [Waist harness for phone][harness-docs]\n  - Camera should be h"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/last",
+    "fullName": "google-research/last",
+    "name": "last",
+    "url": "https://github.com/google-research/last",
+    "description": "A JAX library for building lattice-based speech transducer models",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-07-29T23:55:38Z",
+    "pushedAt": "2026-07-29T23:55:33Z",
+    "stars": 48,
+    "domains": [
+      "ml_training",
+      "speech_audio"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "jax"
+      ],
+      "speech_audio": [
+        "speech",
+        "asr"
+      ]
+    },
+    "dependencies": [
+      "flax",
+      "jax"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2205.13674",
+      "https://github.com/google-research/last/actions/workflows/pytest_and_autopublish.yml",
+      "https://github.com/google-research/last/actions/workflows/pytest_and_autopublish.yml/badge.svg"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/last/blob/main/README.md",
+        "excerpt": "# LAttice-based Speech Transducer (LAST)\n\n[![Unittests](https://github.com/google-research/last/actions/workflows/pytest_and_autopublish.yml/badge.svg)](https://github.com/google-research/last/actions/workflows/pytest_and_autopublish.yml)\n[![PyPI version](https://badge.fury.io/py/last-asr.svg)](https://badge.fury.io/py/last-asr)\n\n*This is not an officially supported Google product.*\n\nThe LAttice-based Speech Transducer (LAST) is a JAX library for building\nlattice-based speech transducer models, such as\n[GNAT](https://arxiv.org/abs/2205.13674).\n\nTo start using LAST, simply run `pip install --upgrade last-asr`. For more\ninformation, check out https://last-asr.readthedocs.io.\n"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/dataclass_array",
+    "fullName": "google-research/dataclass_array",
+    "name": "dataclass_array",
+    "url": "https://github.com/google-research/dataclass_array",
+    "description": "Dataclasses manipulated as numpy arrays (with batching, reshape, slicing,...)",
+    "homepage": "https://dataclass-array.readthedocs.io",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [
+      "dataclass",
+      "dataclasses",
+      "jax",
+      "numpy",
+      "tensorflow",
+      "torch"
+    ],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-07-29T18:17:36Z",
+    "pushedAt": "2026-07-29T18:15:12Z",
+    "stars": 54,
+    "domains": [
+      "ml_training"
+    ],
+    "domainEvidence": {
+      "ml_training": [
+        "tensorflow",
+        "jax"
+      ]
+    },
+    "dependencies": [
+      "jax",
+      "ray",
+      "tensorflow",
+      "torch"
+    ],
+    "linkedRepositories": [
+      "visu3d"
+    ],
+    "resources": [
+      "https://github.com/google-research/dataclass_array/actions/workflows/pytest_and_autopublish.yml",
+      "https://github.com/google-research/dataclass_array/actions/workflows/pytest_and_autopublish.yml/badge.svg",
+      "https://github.com/google-research/visu3d"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/dataclass_array/blob/main/README.md",
+        "excerpt": "# Dataclass Array\n\n[![Unittests](https://github.com/google-research/dataclass_array/actions/workflows/pytest_and_autopublish.yml/badge.svg)](https://github.com/google-research/dataclass_array/actions/workflows/pytest_and_autopublish.yml)\n[![PyPI version](https://badge.fury.io/py/dataclass_array.svg)](https://badge.fury.io/py/dataclass_array)\n[![Documentation Status](https://readthedocs.org/projects/dataclass-array/badge/?version=latest)](https://dataclass-array.readthedocs.io/en/latest/?badge=latest)\n\n\n`DataclassArray` are dataclasses which behave like numpy-like arrays (can be\nbatched, reshaped, sliced,...), compatible with Jax, TensorFlow, and numpy (with\ntorch support planned).\n\nThis reduce boilerplate and improve readability. See the\n[motivating examples](#motivating-examples) section "
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  },
+  {
+    "repoId": "google-research/t2j-bench",
+    "fullName": "google-research/t2j-bench",
+    "name": "t2j-bench",
+    "url": "https://github.com/google-research/t2j-bench",
+    "description": "T2J-Bench is a benchmark for semantic-preserving codebase conversion.",
+    "homepage": "",
+    "defaultBranch": "main",
+    "language": "Python",
+    "topics": [],
+    "license": "Apache-2.0",
+    "updatedAt": "2026-07-28T23:17:22Z",
+    "pushedAt": "2026-07-17T20:14:53Z",
+    "stars": 4,
+    "domains": [
+      "data_pipelines",
+      "evaluation",
+      "ml_training",
+      "optimization",
+      "vision_video"
+    ],
+    "domainEvidence": {
+      "data_pipelines": [
+        "pipeline"
+      ],
+      "evaluation": [
+        "benchmark",
+        "evaluation",
+        "evaluate"
+      ],
+      "ml_training": [
+        "training",
+        "train",
+        "jax",
+        "flax"
+      ],
+      "vision_video": [
+        "image"
+      ],
+      "optimization": [
+        "constraint"
+      ]
+    },
+    "dependencies": [
+      "--extra-index-url",
+      "anthropic",
+      "beautifulsoup4",
+      "conda-pack",
+      "flax",
+      "fsspec",
+      "jax",
+      "jedi",
+      "pillow",
+      "pydantic-core",
+      "pytest",
+      "pytorch",
+      "torch",
+      "torchaudio",
+      "torchvision"
+    ],
+    "linkedRepositories": [],
+    "resources": [
+      "https://arxiv.org/abs/2605.29054"
+    ],
+    "evidence": [
+      {
+        "type": "github_readme",
+        "url": "https://github.com/google-research/t2j-bench/blob/main/README.md",
+        "excerpt": "# T2J-Bench\n\nT2J-Bench is a benchmark for semantic-preserving codebase conversion. It tests\nwhether coding agents can convert LLaMA-Factory-style PyTorch training\nrepositories into JAX/Flax repositories while preserving the training behavior\nthat downstream users rely on.\n\nThe benchmark accompanies the paper\n[**\"Converted, Not Equivalent\": Benchmarking Codebase Conversion via\nObservational Equivalence**](https://arxiv.org/abs/2605.29054). Instead of only\nchecking whether a converted repository runs, T2J-Bench evaluates each\nconversion against a fixed equivalence contract derived from the original\nPyTorch codebase.\n\n![T2J-Bench workflow](figs/teaser.png)\n\n## At a Glance\n\n- **Task**: convert `torch_orig/` PyTorch training repos into candidate\n  `jax_repo/` implementations.\n- **Scale**: 45 da"
+      }
+    ],
+    "scannedAt": "2026-08-22T16:42:18.740821+00:00"
+  }
+]

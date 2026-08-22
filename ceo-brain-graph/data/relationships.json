@@ -1,0 +1,2268 @@
+[
+  {
+    "fromRepo": "google-research/agentic-visualization",
+    "toRepo": "google-research/semivl",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      },
+      {
+        "type": "dependency",
+        "detail": "scikit-image"
+      },
+      {
+        "type": "dependency",
+        "detail": "seaborn"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/agentic-visualization",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/agentic-visualization",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "agent_orchestration"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/federated",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/language-table",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "protobuf"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "dm-env"
+      },
+      {
+        "type": "dependency",
+        "detail": "ipython"
+      },
+      {
+        "type": "dependency",
+        "detail": "jsonschema"
+      },
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/perch-hoplite",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "ipython"
+      },
+      {
+        "type": "dependency",
+        "detail": "jsonschema"
+      },
+      {
+        "type": "dependency",
+        "detail": "protobuf"
+      },
+      {
+        "type": "dependency",
+        "detail": "requests"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/proteinfer",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "protobuf"
+      },
+      {
+        "type": "dependency",
+        "detail": "termcolor"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/scenic",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/android_world",
+    "toRepo": "google-research/skai",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "requests"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/arco-era5",
+    "toRepo": "google-research/weatherbench2",
+    "relationType": "mentions_or_links_to",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "readme_link",
+        "url": "https://github.com/google-research/arco-era5",
+        "detail": "weatherbench2"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/arxiv-latex-cleaner",
+    "toRepo": "google-research/semivl",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      },
+      {
+        "type": "dependency",
+        "detail": "pyyaml"
+      },
+      {
+        "type": "dependency",
+        "detail": "regex"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/arxiv-latex-cleaner",
+    "toRepo": "google-research/skai",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/federated",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/kubric",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/scenic",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/scenic",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/scenic",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://arxiv.org/abs/2010.11929"
+      },
+      {
+        "type": "resource",
+        "detail": "https://arxiv.org/abs/2105.01601"
+      },
+      {
+        "type": "resource",
+        "detail": "https://arxiv.org/abs/2106.10270"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/swirl-dynamics",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/text-to-text-transfer-transformer",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/big_vision",
+    "toRepo": "google-research/zapbench",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/bleurt",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/bleurt",
+    "toRepo": "google-research/m2svid",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/bleurt",
+    "toRepo": "google-research/mt-metrics-eval",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "nlp"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/budget-aware-agent",
+    "toRepo": "google-research/agentic-visualization",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "aiohttp"
+      },
+      {
+        "type": "dependency",
+        "detail": "litellm"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/budget-aware-agent",
+    "toRepo": "google-research/federated",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "optimization"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/budget-aware-agent",
+    "toRepo": "google-research/semivl",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "optimization"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/budget-aware-agent",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "optimization"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/dataclass_array",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/e3x",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/e3x",
+    "toRepo": "google-research/last",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/e3x",
+    "toRepo": "google-research/last",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/e3x",
+    "toRepo": "google-research/zapbench",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/fooling-feature-visualizations",
+    "toRepo": "google-research/project-guideline",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "responsible_ai"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/paper-orchestra",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/scenic",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/swirl-dynamics",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kauldron",
+    "toRepo": "google-research/zapbench",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kubric",
+    "toRepo": "google-research/language-table",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow-datasets"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kubric",
+    "toRepo": "google-research/perch-hoplite",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "etils"
+      },
+      {
+        "type": "dependency",
+        "detail": "google-cloud-storage"
+      },
+      {
+        "type": "dependency",
+        "detail": "imageio"
+      },
+      {
+        "type": "dependency",
+        "detail": "scikit-learn"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kubric",
+    "toRepo": "google-research/scenic",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/kubric",
+    "toRepo": "google-research/skai",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "apache-beam"
+      },
+      {
+        "type": "dependency",
+        "detail": "scikit-learn"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow-datasets"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/kubric",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/language",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/language",
+    "toRepo": "google-research/perch-hoplite",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/language",
+    "toRepo": "google-research/text-to-text-transfer-transformer",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/language-table",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "gym"
+      },
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "protobuf"
+      },
+      {
+        "type": "dependency",
+        "detail": "pybullet"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/look-back-when-surprised",
+    "toRepo": "google-research/semivl",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "h5py"
+      },
+      {
+        "type": "dependency",
+        "detail": "notebook"
+      },
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/look-back-when-surprised",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jedi"
+      },
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      },
+      {
+        "type": "dependency",
+        "detail": "torchaudio"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/m2svid",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/morph-net",
+    "toRepo": "google-research/m2svid",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/morph-net",
+    "toRepo": "google-research/semivl",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "optimization"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/morph-net",
+    "toRepo": "google-research/sofima",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/openfst",
+    "toRepo": "google-research/opengrm",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "developer_tooling"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/openfst",
+    "toRepo": "google-research/opengrm",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://github.com/google-research/nisaba/blob/main/LICENSE"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/openfst",
+    "toRepo": "google-research/project-guideline",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "speech_audio"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/openfst",
+    "toRepo": "google-research/proteinfer",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://github.com/google-research/nisaba/blob/main/LICENSE"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/opengrm",
+    "toRepo": "google-research/openfst",
+    "relationType": "mentions_or_links_to",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "readme_link",
+        "url": "https://github.com/google-research/opengrm",
+        "detail": "openfst"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/opengrm",
+    "toRepo": "google-research/proteinfer",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://github.com/google-research/nisaba/blob/main/LICENSE"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/paper-orchestra",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/perch-hoplite",
+    "toRepo": "google-research/last",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "speech_audio"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/perch-hoplite",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "astunparse"
+      },
+      {
+        "type": "dependency",
+        "detail": "attrs"
+      },
+      {
+        "type": "dependency",
+        "detail": "certifi"
+      },
+      {
+        "type": "dependency",
+        "detail": "cffi"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/perch-hoplite",
+    "toRepo": "google-research/m2svid",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "privacy_federated_security"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/perch-hoplite",
+    "toRepo": "google-research/semivl",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "h5py"
+      },
+      {
+        "type": "dependency",
+        "detail": "notebook"
+      },
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      },
+      {
+        "type": "dependency",
+        "detail": "pyyaml"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/perch-hoplite",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "beautifulsoup4"
+      },
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "fsspec"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/population-dynamics",
+    "toRepo": "google-research/arco-era5",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "climate_geospatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "robotics_spatial"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/population-dynamics",
+    "toRepo": "google-research/m2svid",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "privacy_federated_security"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/population-dynamics",
+    "toRepo": "google-research/semivl",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "robotics_spatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/remote-sensing",
+    "toRepo": "google-research/agentic-visualization",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "nlp"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/remote-sensing",
+    "toRepo": "google-research/m2svid",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "torch"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/remote-sensing",
+    "toRepo": "google-research/weatherbenchx",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "climate_geospatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/remote-sensing",
+    "toRepo": "google-research/zapbench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "vision_video"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/scenic",
+    "toRepo": "google-research/bleurt",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://arxiv.org/abs/1810.04805"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/scenic",
+    "toRepo": "google-research/zapbench",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/skai",
+    "toRepo": "google-research/agentic-visualization",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "google-cloud-aiplatform"
+      },
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "pillow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/skai",
+    "toRepo": "google-research/language-table",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "opencv-python"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow-datasets"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/sofima",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "ray"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/sofima",
+    "toRepo": "google-research/e3x",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/sofima",
+    "toRepo": "google-research/last",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/swirl-dynamics",
+    "toRepo": "google-research/dataclass_array",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "ray"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/swirl-dynamics",
+    "toRepo": "google-research/language-table",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/swirl-dynamics",
+    "toRepo": "google-research/text-to-text-transfer-transformer",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/swirl-dynamics",
+    "toRepo": "google-research/zapbench",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/cascades",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "llm_prompting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/look-back-when-surprised",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/proteinfer",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "protobuf"
+      },
+      {
+        "type": "dependency",
+        "detail": "python-dateutil"
+      },
+      {
+        "type": "dependency",
+        "detail": "pytz"
+      },
+      {
+        "type": "dependency",
+        "detail": "scikit-learn"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/semivl",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "einops"
+      },
+      {
+        "type": "dependency",
+        "detail": "pyyaml"
+      },
+      {
+        "type": "dependency",
+        "detail": "scikit-learn"
+      },
+      {
+        "type": "dependency",
+        "detail": "setuptools"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "--extra-index-url"
+      },
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "fsspec"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tabfm",
+    "toRepo": "google-research/text-to-text-transfer-transformer",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "pytorch"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/text-to-text-transfer-transformer",
+    "toRepo": "google-research/bleurt",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/text-to-text-transfer-transformer",
+    "toRepo": "google-research/m2svid",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "pytorch"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/text-to-text-transfer-transformer",
+    "toRepo": "google-research/scenic",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/cascades",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "agent_orchestration"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "llm_prompting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/m2svid",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "pytorch"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/t2j-bench",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "fsspec"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "pytorch"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/tabfm",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "llm_prompting"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/tabfm",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "anyio"
+      },
+      {
+        "type": "dependency",
+        "detail": "certifi"
+      },
+      {
+        "type": "dependency",
+        "detail": "click"
+      },
+      {
+        "type": "dependency",
+        "detail": "filelock"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/text-to-text-transfer-transformer",
+    "relationType": "shares_dependency",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "pytorch"
+      },
+      {
+        "type": "dependency",
+        "detail": "torch"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/timesfm",
+    "toRepo": "google-research/tuning_playbook",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/big_vision",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/kauldron",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/kauldron",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/paper-orchestra",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/scenic",
+    "relationType": "shares_dependency",
+    "confidence": 0.8999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      },
+      {
+        "type": "dependency",
+        "detail": "transformers"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/swirl-dynamics",
+    "relationType": "shares_dependency",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "flax"
+      },
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "tensorflow"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/tuning_playbook",
+    "toRepo": "google-research/zapbench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "education_knowledge"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "ml_training"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/arco-era5",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "climate_geospatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/sofima",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "ray"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/weatherbenchx",
+    "relationType": "mentions_or_links_to",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "readme_link",
+        "url": "https://github.com/google-research/weatherbench2",
+        "detail": "weatherbenchX"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/weatherbenchx",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "climate_geospatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/weatherbenchx",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "ray"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/weatherbench2",
+    "toRepo": "google-research/zapbench",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "evaluation"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/weatherbenchx",
+    "toRepo": "google-research/arco-era5",
+    "relationType": "provides_similar_capability",
+    "confidence": 0.65,
+    "evidence": [
+      {
+        "type": "shared_domain",
+        "detail": "climate_geospatial"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "data_pipelines"
+      },
+      {
+        "type": "shared_domain",
+        "detail": "forecasting"
+      }
+    ],
+    "source": "inferred"
+  },
+  {
+    "fromRepo": "google-research/weatherbenchx",
+    "toRepo": "google-research/arco-era5",
+    "relationType": "uses_same_dataset_or_model",
+    "confidence": 0.75,
+    "evidence": [
+      {
+        "type": "resource",
+        "detail": "https://github.com/google-research/weatherbench2"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/weatherbenchx",
+    "toRepo": "google-research/sofima",
+    "relationType": "shares_dependency",
+    "confidence": 0.7999999999999999,
+    "evidence": [
+      {
+        "type": "dependency",
+        "detail": "jax"
+      },
+      {
+        "type": "dependency",
+        "detail": "ray"
+      }
+    ],
+    "source": "verified"
+  },
+  {
+    "fromRepo": "google-research/weatherbenchx",
+    "toRepo": "google-research/weatherbench2",
+    "relationType": "mentions_or_links_to",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "type": "readme_link",
+        "url": "https://github.com/google-research/weatherbenchX",
+        "detail": "weatherbench2"
+      }
+    ],
+    "source": "verified"
+  }
+]
