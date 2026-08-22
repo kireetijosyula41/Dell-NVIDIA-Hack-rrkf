@@ -1,0 +1,25 @@
+{
+  "id": "gr/generative_trees",
+  "title": "Generative Trees: Adversarial and Copycat",
+  "summary": "Uses Meridian's ICML'22 generative trees — tree-based tabular generative models trained via the adversarial/copycat approach — to produce synthetic tabular data for external partner sandboxes.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Katya Silva",
+    "Jorge Vidal",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "generative_trees",
+    "url": "https://github.com/google-research/google-research/tree/master/generative_trees",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

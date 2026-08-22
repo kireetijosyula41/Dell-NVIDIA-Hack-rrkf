@@ -1,0 +1,36 @@
+{
+  "id": "gr/generative_trees/e03",
+  "thread_id": "gr/generative_trees/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:24:00Z",
+  "from": {
+    "name": "Jorge Vidal",
+    "email": "jorge.vidal@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Generative trees status: Iris repro, high-cardinality risk",
+  "body": "Hi Bruno,\n\nStatus. The Iris reproduction is done — run_example.sh end to end, and our generated samples look right (plausible setosa and versicolor rows with sensible sepal/petal ranges). Katya's fidelity battery on Iris shows per-column marginals within 3% of the real data.\n\nInternal tables: the first (5M rows, 40 columns) trains in 6 hours on one CPU host via the Wrapper copycat path; density plots from Generate look convincing for the analyst use case.\n\nTwo risks: our CI has no Java toolchain, so builds are manual right now — fixing this week. And on high-cardinality categorical columns (10k+ values) tree splits get shallow and fidelity drops; Katya is quantifying that before we commit to table two.\n\nJorge",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

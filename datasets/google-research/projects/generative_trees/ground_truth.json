@@ -1,0 +1,18 @@
+{
+  "project": "gr/generative_trees",
+  "conflicts": [
+    {
+      "conflict_id": "C078",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "health_equity_toolbox",
+        "lighthouse",
+        "mmmt_if"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "the two internal tables need to be in Corpus before the v2 migration freeze on 2026-06-26, so ingestion must complete by Jun 19"
+    }
+  ]
+}

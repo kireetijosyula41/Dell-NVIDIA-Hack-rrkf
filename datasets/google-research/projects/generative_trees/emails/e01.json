@@ -1,0 +1,40 @@
+{
+  "id": "gr/generative_trees/e01",
+  "thread_id": "gr/generative_trees/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:15:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Generative trees — kickoff",
+  "body": "Hi Bruno,\n\nKickoff for the generative trees workstream, from our ICML release on adversarial and copycat training of tree-based generative models. Two components matter: the Wrapper class trains a generative tree via the copycat approach, and the Generate class samples from a pretrained model or produces density plots. Trees give us tabular synthesis that is interpretable and cheap — no GPU training loop at all.\n\nProduct goal for graphs-retrieval: synthetic tabular data for partner sandboxes, so external partners develop against realistic-but-fake tables. Milestones: reproduce the Iris example and validate fidelity metrics by May 22, run on two internal tables by Jun 19, sandbox pilot decision Jul 17.\n\nKatya, Jorge and Yusuf assigned.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}
