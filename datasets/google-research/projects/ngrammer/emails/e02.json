@@ -1,0 +1,15 @@
+{
+  "id": "gr/ngrammer/e02",
+  "thread_id": "gr/ngrammer/t1",
+  "in_reply_to": "gr/ngrammer/e01",
+  "date": "2026-05-12T13:47:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: N-Grammer kickoff — staffing plan",
+  "body": "Priya,\n\nStaffing, with the July crunch in mind:\n\n- Gustavo: C4/SuperGLUE reproduction now, then the FLOP study. 80% through June.\n- Rosa: training-stack integration and benchmark plumbing, 50%.\n- Rafael Duran: committed at 60% to N-Grammer for July 2026 to lead the flax/haiku API release — he wrote our internal Jax API guidelines, so the mid-July library milestone is his to land. Before July he's advisory at ~15% while Gustavo runs the repro.\n\nYou're right that the team is popular, so I've written those numbers into the resourcing sheet — July especially is load-bearing: if Rafael's allocation slips, the API release moves to August past your window.\n\nCompute: repro and FLOP study fit titan-a100 best-effort; the C4 runs are the big line but they serialize fine. No reservation ask.\n\nDaniela",
+  "labels": ["resources"]
+}
