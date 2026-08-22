@@ -1,0 +1,17 @@
+{
+  "id": "gr/EgoSocial/e01",
+  "thread_id": "gr/EgoSocial/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:42:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "EgoSocial kickoff - social awareness eval for assistant products",
+  "body": "Team,\n\nKicking off EgoSocial. The gap we're filling: assistant models are terrible at knowing *when* to intervene in a social situation without being disruptive, and nobody internally can even measure that today. Our open-source release gives us 13,500 egocentric video-question pairs derived from Ego4D, plus EgoSoD, the social-thinking-graph method that integrates audio and visual cues to model participants and pick intervention timing.\n\nGoals for the window: (1) dataset regeneration pipeline running on our infra by March 20 - note the codebase is still marked under development, so expect rough edges; (2) EgoSoD baseline numbers on the full benchmark by April 17; (3) eval onboarded into Evalline with a go/no-go review May 15.\n\nDeshawn, please send staffing and the data-tooling plan. Licensing note: Ego4D access is already cleared for research use.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

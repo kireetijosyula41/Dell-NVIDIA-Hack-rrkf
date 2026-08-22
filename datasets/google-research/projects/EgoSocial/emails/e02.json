@@ -1,0 +1,17 @@
+{
+  "id": "gr/EgoSocial/e02",
+  "thread_id": "gr/EgoSocial/t1",
+  "in_reply_to": "gr/EgoSocial/e01",
+  "date": "2026-03-02T13:55:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: EgoSocial kickoff - social awareness eval for assistant products",
+  "body": "Dmitri,\n\nStaffing: Freya 50% (EgoSoD baseline + social thinking graph work), Quentin 40% (eval design, Evalline onboarding), Wanjiru 60% (data engineering).\n\nTooling plan: the regeneration path is ffmpeg-based frame and audio extraction from the downloaded Ego4D clips, which is straightforward. The bigger problem is coverage - 13,500 pairs is thin for the rarer social configurations (overlapping speakers, >4 participants), and we need controllable training data there. Nothing internal does this, so I'm standing up a synthetic-data generation pipeline from scratch - Wanjiru owns it at 60% through April, building the scenario generator, the audio/visual compositing stage, and the QA sampler. That's the majority of her allocation, but without it the eval has blind spots exactly where assistants fail.\n\nCompute: 32 A100s on titan-a100, best effort, mostly for EgoSoD training runs. No reservations needed.\n\nDeshawn",
+  "labels": ["resources"]
+}

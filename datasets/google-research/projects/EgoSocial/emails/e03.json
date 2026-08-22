@@ -1,0 +1,17 @@
+{
+  "id": "gr/EgoSocial/e03",
+  "thread_id": "gr/EgoSocial/t2",
+  "in_reply_to": null,
+  "date": "2026-04-08T11:18:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "EgoSocial status: baseline running, audio cue risk",
+  "body": "Hi Deshawn, Dmitri,\n\nStatus. Regeneration pipeline landed March 24 (four days late - the under-development warning in the repo was earned, we had to patch the generation script's config handling). EgoSoD baseline is now running: on the first 5k pairs we get 68.2% intervention-timing accuracy with the full social thinking graph, versus 61.5% for a vision-only ablation.\n\nThe risk: audio cues carry a lot of the signal, and about 12% of our extracted audio clips have sync drift from the ffmpeg extraction settings, which silently degrades the multimodal fusion. Quentin caught it because the audio-ablation gap shrank when it shouldn't have. Fix is a re-extraction pass with corrected timestamps, ~1 week of Wanjiru's time, which delays the synthetic pipeline's compositing stage.\n\nProposal: take the week now, keep April 17 for baseline numbers but on the corrected set only.\n\nFreya",
+  "labels": ["status", "risk"]
+}
