@@ -1,0 +1,18 @@
+{
+  "id": "gr/ebp/e03",
+  "thread_id": "gr/ebp/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T15:42:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "EBP status: completion demo done, RNN sampler instability on point clouds",
+  "body": "Hi Alina, Lucia,\n\nWhere we are. The image-completion demo landed in April: MNIST digits conditioned on a subset of pixels, samples look clean, and the energy heatmaps (run_ebp.sh with -epoch_load on the last checkpoint) make a nice visual for the LRB deck.\n\nPoint clouds are harder. Denoising with the learned energy function works well on moderate noise - we're seeing roughly 30% Chamfer distance reduction against our partner-shaped test scans. But the RNN sampler for generation is training unstably: two of five seeds diverge after epoch 60, and the surviving runs are sensitive to the energy-function learning rate. I have a schedule of LR/regularization ablations queued, about ten days of Titan time.\n\nRisk to flag: if the sampler doesn't stabilize by end of May, generation shouldn't go in the June LRB scope. Denoising alone is still a defensible launch story.\n\nKatya",
+  "labels": ["status", "risk"]
+}

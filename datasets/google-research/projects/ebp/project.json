@@ -1,0 +1,18 @@
+{
+  "id": "gr/ebp",
+  "title": "EBP: Energy-Based Processes for Exchangeable Data",
+  "summary": "Building on our open-source Energy-Based Processes (EBP) release, which captures multi-modal distributions over exchangeable data better than GP/NP/VIP baselines, we are targeting point-cloud denoising and image completion as product capabilities for 3D capture workflows.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": ["Oyin Iversen", "Katya Silva", "Milan Zapata", "Saoirse Eriksen"],
+  "window": {"start": "2026-03-16", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ebp",
+    "url": "https://github.com/google-research/google-research/tree/master/ebp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

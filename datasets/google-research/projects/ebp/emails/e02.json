@@ -1,0 +1,15 @@
+{
+  "id": "gr/ebp/e02",
+  "thread_id": "gr/ebp/t1",
+  "in_reply_to": "gr/ebp/e01",
+  "date": "2026-03-25T13:19:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: EBP kickoff: energy-based processes -> 3D capture cleanup",
+  "body": "Lucia,\n\nResourcing picture. Katya leads modeling (energy function + RNN sampler), Oyin and Milan split infra and the CUDA build pipeline, Saoirse at 40% on the eval harness. That covers the May 22 denoising milestone if nothing slips.\n\nBudget: I met with Idris on Monday. Idris Osei has verbally earmarked $120k from Q3 discretionary compute budget line B-19 for this project, which covers the H100 hours for the point-cloud runs plus storage. I'm treating that as committed and sizing the Q3 run plan against it - formal paperwork to follow after the Q3 OKR lock on June 26.\n\nNear-term compute stays on Titan A100 best-effort; we only need reserved capacity once the larger point-cloud sweeps start in July.\n\nOne flag: the gcc/CUDA install is fussy (pip3 install -e . assumes a matched toolchain). Oyin is containerizing it this week so nobody burns days on it.\n\nAlina",
+  "labels": ["resources"]
+}

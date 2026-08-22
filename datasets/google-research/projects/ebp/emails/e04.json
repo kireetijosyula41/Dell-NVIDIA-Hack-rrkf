@@ -1,0 +1,17 @@
+{
+  "id": "gr/ebp/e04",
+  "thread_id": "gr/ebp/t2",
+  "in_reply_to": "gr/ebp/e03",
+  "date": "2026-06-18T09:24:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: EBP status: completion demo done, RNN sampler instability on point clouds",
+  "body": "Katya, Alina,\n\nDecision for the June 25 LRB slot: scope is point-cloud denoising only. Generation via the RNN sampler moves to Q3 - Katya's ablations improved things (four of five seeds now converge) but \"four of five\" is not a launch sentence. The 30% Chamfer reduction on partner scans is, so that's our headline.\n\nWe're also cutting the VIP baseline comparison from the deck; GP and Neural Process baselines are enough to make the multi-modality point and nobody at the board will ask for a third.\n\nNadia - adding you so the pre-read lands in the right pipeline; doc coming by Friday.\n\nAlina, one ask: hold the team shape steady through July 6 so we finish the window clean, then we rebalance for the Q3 generation push per your budget plan.\n\nLucia",
+  "labels": ["decision", "escalation"]
+}
