@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_alternating_minimization/e01",
+  "thread_id": "gr/dp_alternating_minimization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DPAM for private personalization",
+  "body": "Hi all,\n\nKicking off the DPAM productization. The library from our open-source release trains personalized models f_i(x) = <u_i, v(x)> by alternating between exact least-squares solves for the per-user embeddings and differentially private training of the shared item encoder. The product angle: privacy-preserving personalization for the partner-facing recommendation API, where per-user data can't leak into the shared model.\n\nMilestones: DPALS matrix-completion path validated on internal data by end of March, encoder-based DPAM at target privacy budget by end of May, integration handoff to the serving team in June ahead of Q3 planning.\n\nKofi Weber has asked to see our epsilon/delta targets at the March privacy review — 2-3 week SLA, so let's book it now.\n\nAlina will follow up with staffing and the compute plan.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

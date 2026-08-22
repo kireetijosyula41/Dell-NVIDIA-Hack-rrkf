@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_alternating_minimization",
+  "title": "Differentially Private Alternating Minimization",
+  "summary": "Brings our DP alternating minimization (DPAM) library to the personalization stack: personalized models of the form f_i(x) = <u_i, v(x)>, alternating exact least-squares solves for user embeddings with DP training of the shared item encoder, including the DPALS matrix-completion special case.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": ["Wei Ivanov", "Csilla Nassar", "Rosa Mensah", "Saoirse Eriksen"],
+  "window": {"start": "2026-02-02", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dp_alternating_minimization",
+    "url": "https://github.com/google-research/google-research/tree/master/dp_alternating_minimization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

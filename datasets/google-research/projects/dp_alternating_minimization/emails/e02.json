@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_alternating_minimization/e02",
+  "thread_id": "gr/dp_alternating_minimization/t1",
+  "in_reply_to": "gr/dp_alternating_minimization/e01",
+  "date": "2026-03-04T15:40:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DPAM for private personalization",
+  "body": "Dmitri,\n\nStaffing: Wei owns the DP encoder training and privacy accounting, Csilla the DPALS matrix-completion path, Rosa the data plumbing, Saoirse the serving handoff artifacts.\n\nCompute plan. The alternating structure is what drives the ask: step 1 (exact least squares for user embeddings) is embarrassingly parallel across users, step 2 (DP encoder training) needs big batches to keep the noise multiplier workable at our epsilon target. Small runs go to titan-a100. For the final production-scale sweep, we hold the vulcan-h100 reservation for the week of 2026-06-01 — 384 accelerators, booked via the Infra Lead process back in February. That week produces the numbers that go into the serving handoff.\n\nBudget-wise we're inside the portfolio envelope; no discretionary ask this half.\n\nAlina",
+  "labels": ["resources"]
+}

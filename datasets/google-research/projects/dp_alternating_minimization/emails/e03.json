@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_alternating_minimization/e03",
+  "thread_id": "gr/dp_alternating_minimization/t1",
+  "in_reply_to": "gr/dp_alternating_minimization/e02",
+  "date": "2026-04-22T10:15:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DPAM for private personalization",
+  "body": "Status. Csilla's DPALS run on the internal matrix-completion benchmark hit the March milestone late but clean — at epsilon=8 we're within 2.1% of the non-private baseline on held-out RMSE, using DP least squares for the linear encoder per Algorithm 1.\n\nThe risk I want visible: distribution skew. Our partner traffic is heavily skewed — a small set of power users contributes most observations — and the multi-task-under-skew analysis from the second paper says uniform per-user clipping over-penalizes exactly those users. My translation: if we keep naive clipping, encoder quality drops noticeably for the head of the distribution; the skew-aware budget split recovers most of it but adds a preprocessing pass Rosa hasn't scoped yet.\n\nRecommend we accept a one-week slip on the May milestone to land skew-aware clipping properly rather than patch it after handoff.\n\nWei",
+  "labels": ["status", "risk"]
+}
