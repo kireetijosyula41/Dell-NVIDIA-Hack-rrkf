@@ -1,0 +1,19 @@
+{
+  "id": "gr/dql_grasping/e02",
+  "thread_id": "gr/dql_grasping/t1",
+  "in_reply_to": "gr/dql_grasping/e01",
+  "date": "2026-03-10T14:31:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: grasping benchmark revival (dql_grasping)",
+  "body": "Ulla,\n\nStaffing: Efe leads algorithms (he knows the PCL and Corr-MC corners best), Nikhil owns the environment modernization and sim throughput, Wanjiru the data/eval infrastructure, Quentin runs the comparison experiments.\n\nCompute: the small-scale May comparisons run on titan-a100 best-effort — sim is CPU-heavy anyway, so we're renderer-bound more than GPU-bound there. The June grid search is different: six algorithm families x hyperparameter grid x multiple difficulty tiers x 5 seeds. For that we hold the vulcan-h100 reservation for the week of 2026-06-22 — 512 accelerators, locked in through the Infra Lead reservation process. It's a big ask but one intense week beats dribbling it out over six, and the readout date depends on it.\n\nRisk to note early: the release's data-collection scripts assume an old virtualenv/python2-era toolchain; Nikhil is porting rather than patching.\n\nAlina",
+  "labels": ["resources"]
+}

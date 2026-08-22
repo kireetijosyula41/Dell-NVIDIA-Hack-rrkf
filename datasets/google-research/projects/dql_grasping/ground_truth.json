@@ -1,0 +1,12 @@
+{
+  "project": "gr/dql_grasping",
+  "conflicts": [
+    {
+      "conflict_id": "C067",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["cochlear_implant"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "we hold the vulcan-h100 reservation for the week of 2026-06-22 — 512 accelerators, locked in through the Infra Lead reservation process. (reaffirmed in e04: 'Our reservation week is what everything hangs on now — Alina, please reconfirm the booking with Infra today')"
+    }
+  ]
+}
