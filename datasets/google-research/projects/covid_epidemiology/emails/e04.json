@@ -1,0 +1,18 @@
+{
+  "id": "gr/covid_epidemiology/e04",
+  "thread_id": "gr/covid_epidemiology/t2",
+  "in_reply_to": "gr/covid_epidemiology/e03",
+  "date": "2026-05-19T15:44:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status - scope cut agreed, and privacy timing",
+  "body": "Halima - agreed, and thank you for saying it in April rather than in the June retro.\n\nScope cut, effective now: no framework. We deliver (a) the reproduced state-level model as a reference implementation, (b) a design-pattern write-up on wiring learnable encoders into a conservation-constrained model, and (c) exactly one worked port - Milan's queue-depth forecast. If a second team wants the pattern they read the doc and copy the 200 lines. That is a fine outcome.\n\nKofi - the privacy review is on the reference implementation only, since the ported use case touches no health data at all. That should shorten the SLA on your side; can you confirm we're clear before Jun 1?\n\nAlina, no staffing change, I just want Milan's port finished properly rather than three ports done badly.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

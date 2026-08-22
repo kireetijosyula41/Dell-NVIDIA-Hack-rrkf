@@ -1,0 +1,18 @@
+{
+  "id": "gr/covid_epidemiology/e01",
+  "thread_id": "gr/covid_epidemiology/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T08:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - encoder + compartmental forecasting as a platform template",
+  "body": "Morning all,\n\nKicking off the epidemiology forecasting workstream. What we're actually after isn't disease forecasting - it's the architecture. Our open-source release puts learnable encoders inside an extended SEIR compartmental model, so the network learns the rates while the compartmental structure enforces conservation. Forecasts stay physically plausible even when the data is thin.\n\nThat pattern generalizes to half a dozen constrained forecasting problems on the data platform: capacity, inventory, queue depth. Anything where an unconstrained network happily predicts a negative population.\n\nWindow Feb 23 - Jun 1:\n- Mar 20: reproduce the US state-level model, evaluation metrics matching the published notebook.\n- Apr 24: strip out the COVID-specific model definitions and land a reusable BaseModelDefinition-style template.\n- May 22: one platform forecasting use case ported onto the template.\n\nAlina has resourcing. Halima is tech lead. Note we will need privacy review since the source data is health-adjacent - I'll open that with Kofi early.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

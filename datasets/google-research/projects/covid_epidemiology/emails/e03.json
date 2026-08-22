@@ -1,0 +1,17 @@
+{
+  "id": "gr/covid_epidemiology/e03",
+  "thread_id": "gr/covid_epidemiology/t2",
+  "in_reply_to": null,
+  "date": "2026-04-16T11:22:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status - US state model reproduced, the template is harder than it looks",
+  "body": "Status through Apr 15.\n\nReproduction: done, state level. Our numbers track the published evaluation notebook within ~3% on the 14-day horizon. The Japan prefecture model we skipped deliberately - different constructor, no value for us.\n\nThe Apr 24 milestone is the one at risk. \"Strip out the COVID-specific parts and leave a reusable template\" sounded clean in the kickoff, but the compartmental structure isn't a plug-in - the encoders are wired to specific rate parameters, and the shared helper functions in the base definitions assume epidemiological features (population density, mobility). For a queue-depth forecast there is no analogue of an infection rate, so you're not reusing the model, you're reusing a design pattern plus about 200 lines.\n\nMy recommendation: retarget Apr 24 to a written design pattern + a worked port, and stop pretending we're shipping a framework. Maren agrees. It's less impressive and more true.\n\nHalima",
+  "labels": ["status", "risk"]
+}

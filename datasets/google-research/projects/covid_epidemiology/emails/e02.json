@@ -1,0 +1,19 @@
+{
+  "id": "gr/covid_epidemiology/e02",
+  "thread_id": "gr/covid_epidemiology/t1",
+  "in_reply_to": "gr/covid_epidemiology/e01",
+  "date": "2026-03-09T14:05:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: Kickoff - resourcing and the Corpus dependency",
+  "body": "Dmitri,\n\nStaffing:\n- Halima Toure 60%, model definitions and the encoder work.\n- Farah Haddad 40%, data pipeline and feature preprocessing.\n- Maren Zhou 35%, evaluation harness against the published metrics.\n- Milan Zapata 25% from April, porting the platform use case.\n\nCompute: trivial by our standards, ~120 GPU-hours on titan-a100. These are small models; the cost is data wrangling.\n\nWhich brings me to the dependency. The platform use case at the May 22 milestone reads its history from Corpus. Jun's team holds the Corpus v2 migration freeze at 2026-07-10, and I've built the ingest schedule around that date - everything we need from Corpus has to be in before 2026-07-10 or it waits for the other side of the migration. Since our window closes June 1 that's comfortable, but I don't want anyone assuming we can slip into July.\n\nAlina",
+  "labels": ["resources", "risk"]
+}

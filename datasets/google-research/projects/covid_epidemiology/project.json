@@ -1,0 +1,26 @@
+{
+  "id": "gr/covid_epidemiology",
+  "title": "Covid Epidemiology",
+  "summary": "An AI-augmented epidemiological forecaster that embeds learnable encoders inside extended compartmental (SEIR) models, with separate model definitions for US country, state and county levels and Japan prefectures. Meridian is reusing the encoder-plus-compartmental pattern as a template for constrained time-series forecasting on the data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Farah Haddad",
+    "Halima Toure",
+    "Milan Zapata",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "covid_epidemiology",
+    "url": "https://github.com/google-research/google-research/tree/master/covid_epidemiology",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
