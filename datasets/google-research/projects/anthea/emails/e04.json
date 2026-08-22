@@ -1,0 +1,40 @@
+{
+  "id": "gr/anthea/e04",
+  "thread_id": "gr/anthea/t2",
+  "in_reply_to": "gr/anthea/e03",
+  "date": "2026-04-09T15:30:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Anthea status: calibration round, template choice matters more than expected",
+  "body": "Vera, Bao,\n\nDecision: standard MQM template is the single mandated template for all document-level translation evaluation starting with the Q2 cycle. The paragraph and monolingual templates stay available for research use but their scores never go in a quarterly comparison. Hyun signs off on the methodology note.\n\nAlso: no back-filling. We do not re-score historical evaluations against the new template — we mark everything before April 13 as a different measurement regime and move on. Cheaper than pretending we have a continuous series.\n\nPaloma, the deployment is done and it took four days, which is the best schedule surprise I've had this quarter. Readout April 13.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

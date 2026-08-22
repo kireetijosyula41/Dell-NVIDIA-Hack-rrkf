@@ -1,0 +1,26 @@
+{
+  "id": "gr/anthea",
+  "title": "Anthea is a translation quality evaluation tool. It presents source text",
+  "summary": "Anthea is a translation quality evaluation tool that shows source and translated text side by side in a natural, flowing layout with configurable segment sizes, designed for rating under Multidimensional Quality Metrics (MQM) and shipping several exemplary MQM templates.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Hyun Traore",
+    "Paloma Castillo",
+    "Efe Lindqvist",
+    "Vera Egede"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-04-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "anthea",
+    "url": "https://github.com/google-research/google-research/tree/master/anthea",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

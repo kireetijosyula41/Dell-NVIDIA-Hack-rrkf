@@ -1,0 +1,45 @@
+{
+  "id": "gr/anthea/e02",
+  "thread_id": "gr/anthea/t1",
+  "in_reply_to": "gr/anthea/e01",
+  "date": "2026-02-11T13:20:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Anthea — MQM translation quality evaluation",
+  "body": "Anders,\n\nStaffing: Paloma 50% on deployment and template config, Vera 40% on the rater calibration protocol, Hyun 20% advisory on MQM scoring methodology. There is no shared place to publish MQM scores, so we're scoping and staffing a benchmark leaderboard service from scratch — Efe at 45% owns it, first internal version by late March.\n\nInfra is trivially small — anthea.html plus the eval/manager CSS and JS off a static server, no GPUs at all. The one dependency is the Marot files from the sibling project for score visualization; Paloma is mirroring those.\n\nReal cost here is rater time, not compute: the calibration round needs ~120 rater-hours across three language pairs. That's the thing to protect.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/anthea/e01",
+  "thread_id": "gr/anthea/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: Anthea — MQM translation quality evaluation",
+  "body": "Hi Bao, team,\n\nKicking off Anthea. It's a translation quality evaluation tool that presents source and translated text side by side in a natural, flowing layout rather than the artificial tabulated view raters hate, with configurable segment sizes. It's built for Multidimensional Quality Metrics and ships exemplary MQM templates.\n\nWhy now: our current rater workflow produces MQM scores nobody trusts because segmentation is inconsistent between rater cohorts. Anthea makes segmentation a template decision instead of a per-rater habit.\n\nMilestones: internal deployment (it's static files served from a web server, so this should be days not weeks) by late February, template selection and a rater calibration round in March, readout the week of April 13.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
