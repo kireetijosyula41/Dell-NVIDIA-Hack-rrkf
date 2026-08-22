@@ -1,0 +1,41 @@
+{
+  "id": "gr/mucped23/e03",
+  "thread_id": "gr/mucped23/t1",
+  "in_reply_to": "gr/mucped23/e02",
+  "date": "2026-06-08T11:00:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Vantage — bake-off status + a distribution risk",
+  "body": "Hi both,\n\nStatus: Bilal's harness is done and the first bake-off pass ran over the weekend — full bitrate ladders for all three encoders across the mucped23 sources plus Oyin's 2,400-image serving sample. Directionally the public-data result holds on our corpus: at matched perceptual quality, jpegli comes in around 12–14% smaller than MozJPEG in the mid-quality range where most of our traffic sits, and libjpeg-turbo trails both on quality-per-byte (as expected — it optimizes for speed).\n\nThe risk: our serving sample is much heavier on text-in-image and UI screenshots than the CID22-style photographic sources, and on that slice the jpegli advantage shrinks to ~5% with occasional ringing around high-contrast text that the metrics under-penalize. This is exactly the distribution-mismatch trap mucped23 warns about with legacy IQA databases, just one level up.\n\nRecommendation: spend the $12k on the human confirmation batch, weighted toward the text-heavy slice. Without it I can't sign a switch recommendation for all traffic.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

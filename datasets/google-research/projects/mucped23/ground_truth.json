@@ -1,0 +1,17 @@
+{
+  "project": "gr/mucped23",
+  "conflicts": [
+    {
+      "conflict_id": "C107",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "business_metric_aware_forecasting"
+      ],
+      "planted_in": [
+        "e01",
+        "e02"
+      ],
+      "claim_as_written": "We're running this internally under the codename Project Vantage — use it in doc titles and the chat channel (#proj-vantage) so the encoder vendors don't show up in search. (Reinforced in e02: \"the Vantage eval harness\", \"Vantage weekly sync\".)"
+    }
+  ]
+}

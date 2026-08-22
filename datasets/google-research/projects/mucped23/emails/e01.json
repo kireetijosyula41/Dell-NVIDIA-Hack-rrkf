@@ -1,0 +1,41 @@
+{
+  "id": "gr/mucped23/e01",
+  "thread_id": "gr/mucped23/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:40:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Project Vantage — JPEG encoder evaluation (mucped23)",
+  "body": "Hi Ivo,\n\nKicking off the mucped23 work (Apr 13 – Jul 27). We're running this internally under the codename Project Vantage — use it in doc titles and the chat channel (#proj-vantage) so the encoder vendors don't show up in search.\n\nThe asset: our open-source mucped23 IQA database — human perceptual evaluations of images compressed with MozJPEG, libjpeg-turbo, and the jpegli encoder, built on 49 512x512 source images drawn from the CID22 validation set. jpegli applies insights from the butteraugli and JPEG XL lines to squeeze more quality-per-byte out of plain JPEG, which every image-heavy surface we run still serves.\n\nProduct question, plainly: do we switch our serving stack's encoder, and at which quality settings? Serving costs say yes if perception says tie.\n\nMilestones: mid-May — dataset + eval harness internalized; late June — encoder bake-off on our own image corpus; mid-July — recommendation to the serving org.\n\nStaffing and compute by May 1?\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
