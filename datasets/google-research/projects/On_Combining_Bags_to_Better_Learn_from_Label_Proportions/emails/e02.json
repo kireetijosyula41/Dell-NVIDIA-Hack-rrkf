@@ -1,0 +1,17 @@
+{
+  "id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e02",
+  "thread_id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/t1",
+  "in_reply_to": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e01",
+  "date": "2026-04-30T16:12:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: bag-combination LLP - squeezing more signal from proportions",
+  "body": "Dmitri,\n\nStaffing: Yusuf 50% as method owner, Quentin 40% on the pseudo-synthetic experiment matrix and baseline repro, Chiara 60% on tooling and data engineering.\n\nThe tooling call I want on record: the pseudo-synthetic construction is sensitive to duplicate and near-duplicate rows - dupes across bags corrupt the proportion labels and quietly inflate results. No shared service exists for this, so we're scoping and building a dataset de-duplication pipeline from scratch - Chiara at 60% through June, covering exact-hash dedup, near-duplicate detection over feature vectors, and cross-split leakage checks. It's the biggest single line in our staffing but I'd rather pay it than publish gains that turn out to be leakage.\n\nCompute: CPU batch tier mostly; 8 A100s best-effort for the bigger runs. Env setup (pythenv 3.9.2 + the LMMCM conda env at commit adb57fa) is scripted and repeatable as of yesterday.\n\nSantiago",
+  "labels": ["resources"]
+}

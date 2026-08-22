@@ -1,0 +1,25 @@
+{
+  "id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+  "title": "Copyright 2021 The On Combining Bags to Better Learn from Label Proportions Authors. All R",
+  "summary": "Productization of the AISTATS'22 bag-combination method for learning from label proportions, which improves LLP training by combining bags rather than treating them independently, evaluated against almostnolabel and LMMCM baselines on pseudo-synthetic datasets. Target: better bag-level modeling accuracy for the data-platforms LLP stack.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Quentin Farkas",
+    "Chiara Olsen",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+    "url": "https://github.com/google-research/google-research/tree/master/On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

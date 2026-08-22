@@ -1,0 +1,12 @@
+{
+  "project": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+  "conflicts": [
+    {
+      "conflict_id": "C011",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["icetea"],
+      "planted_in": ["e02"],
+      "claim_as_written": "No shared service exists for this, so we're scoping and building a dataset de-duplication pipeline from scratch - Chiara at 60% through June, covering exact-hash dedup, near-duplicate detection over feature vectors, and cross-split leakage checks."
+    }
+  ]
+}
