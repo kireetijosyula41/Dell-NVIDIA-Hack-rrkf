@@ -1,0 +1,41 @@
+{
+  "id": "gr/model_pruning/e01",
+  "thread_id": "gr/model_pruning/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:35:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: pruning toolkit for the efficiency portfolio",
+  "body": "Hi Ivo,\n\nKicking off the pruning-toolkit project (Mar 9 – May 18). The base is our open-source model-pruning library: it injects pruning ops into the training graph so models are pruned while they train — you wrap a layer's weights with apply_mask and get mask and threshold variables that control which weights participate in the forward pass. The extension we care about is the newer gradient-based pruning ops alongside the classic magnitude-based ones.\n\nProduct framing: three model teams asked for a supported \"train sparse\" path this half. Serving cost is the efficiency portfolio's headline OKR, and block sparsity is what actually buys us hardware speedups rather than paper sparsity.\n\nMilestones: end of March — library adopted by first pilot team with masks stripped for deployment; late April — magnitude vs gradient-based comparison on two internal models; mid-May — sparsity-vs-quality recommendation report.\n\nStaffing and compute by Mar 20?\n\nZofia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

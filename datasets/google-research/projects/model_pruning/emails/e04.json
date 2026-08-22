@@ -1,0 +1,50 @@
+{
+  "id": "gr/model_pruning/e04",
+  "thread_id": "gr/model_pruning/t1",
+  "in_reply_to": "gr/model_pruning/e03",
+  "date": "2026-05-12T16:00:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pruning toolkit — closing decisions",
+  "body": "Team,\n\nDecisions to close by May 18:\n\n1) The recommendation report ships with a two-tier guidance: magnitude pruning as the default up to 80% sparsity (simpler, no quality gap), gradient-based for anything above — Vera's 90% comparison with the 1.1-point advantage is the dividing line. Her final report lands Friday.\n2) The warm-restart threshold fix goes into the library defaults before we call the toolkit \"supported.\" Nobody should have to learn that failure mode from a chart in our appendix.\n3) Scope cut: the block-sparsity throughput benchmarks cover the serving hardware we actually run, not the full matrix Jorge sketched. The exotic accelerator column moves to a Q3 item — OKR planning locks Jun 26 and I'd rather propose it there properly.\n\nGood window, team. Pilot 3 starts under the efficiency banner in June.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

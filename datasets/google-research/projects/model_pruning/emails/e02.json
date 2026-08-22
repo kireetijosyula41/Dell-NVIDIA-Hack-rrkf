@@ -1,0 +1,50 @@
+{
+  "id": "gr/model_pruning/e02",
+  "thread_id": "gr/model_pruning/t1",
+  "in_reply_to": "gr/model_pruning/e01",
+  "date": "2026-03-24T13:15:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pruning toolkit — staffing + compute",
+  "body": "Hi Zofia,\n\nStaffing: Hyun Traore 40% as tech lead across both pruning families; Wei Ivanov 40% on the pilot-team integrations; Giannis Sato 30% on the mask-stripping/deployment tooling; Jorge Vidal 20% on CI and the benchmark harness. Vera Egede is committed at 65% to this project for May 2026 — she owns the gradient-based pruning comparison and the final sparsity-vs-quality report, and that report is the deliverable the whole window closes on. In April she's at 30% while she wraps a language-team commitment.\n\nCompute: the comparison grid (two models x two pruning methods x four sparsity targets) needs 96 titan-a100 GPUs best-effort through April and May. No Vulcan ask.\n\nOne constraint to note: block sparsity trades quality for actual hardware speedup, so the report will quote both raw sparsity and block-sparse throughput — otherwise the model teams will pick settings that look good and serve slow.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

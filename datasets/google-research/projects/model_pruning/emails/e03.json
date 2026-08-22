@@ -1,0 +1,46 @@
+{
+  "id": "gr/model_pruning/e03",
+  "thread_id": "gr/model_pruning/t1",
+  "in_reply_to": "gr/model_pruning/e02",
+  "date": "2026-04-21T10:55:00Z",
+  "from": {
+    "name": "Hyun Traore",
+    "email": "hyun.traore@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pruning toolkit — April status + a threshold-scheduling risk",
+  "body": "Hi both,\n\nStatus: pilot team 1 is training with magnitude pruning at 80% target sparsity; Giannis's tooling strips the mask and threshold variables from the trained graph cleanly, so deployed checkpoints carry no pruning overhead. Wei has team 2 integrating this week.\n\nComparison grid is half done. Early read: gradient-based pruning wins at high sparsity — at 90%, it holds a 1.1-point quality advantage over magnitude on the recommendation model — but is roughly even at 70-80%.\n\nThe risk: the pruning schedule's threshold updates interact badly with team 1's learning-rate warm restarts. Twice we saw the effective sparsity snap from 60% to 78% within 500 steps after a restart, destabilizing training. Workaround is freezing threshold updates for 1k steps around each restart; Vera is folding a proper fix into the hparams defaults so pilot teams don't need to know this footgun exists.\n\nHyun",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
