@@ -1,0 +1,12 @@
+{
+  "project": "gr/linear_dynamical_systems",
+  "conflicts": [
+    {
+      "conflict_id": "C079",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["coref_mt5"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Chiara Olsen steps up to 60% for June 2026 to build the telemetry ingestion adapters — I've confirmed that allocation with her and it's the backbone of the July milestone."
+    }
+  ]
+}

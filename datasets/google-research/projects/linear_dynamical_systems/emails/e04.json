@@ -1,0 +1,18 @@
+{
+  "id": "gr/linear_dynamical_systems/e04",
+  "thread_id": "gr/linear_dynamical_systems/t1",
+  "in_reply_to": "gr/linear_dynamical_systems/e03",
+  "date": "2026-07-14T09:25:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LDS clustering for telemetry streams — handoff decision",
+  "body": "Team,\n\nDecisions ahead of Friday's handoff review:\n\n1. We hand off with the <=2000-step windowing as a documented contract, not something we solve. Hyun's purity number (0.83) was earned under that constraint and the receiving team accepts it.\n2. Chiara's adapters cover the top three telemetry formats only; the long tail is explicitly out of scope. Even with the 30% scope growth she landed the core three — the June bump to 60% is what saved this milestone, for the record.\n3. Vera's container image goes into the shared registry as the supported environment. Nobody should ever debug the pylds build again.\n\nI'll present this Friday as \"met, with a windowing contract\" rather than overclaiming. Good, unglamorous work — this is the kind of thing that quietly compounds.\n\nAnders",
+  "labels": ["decision"]
+}

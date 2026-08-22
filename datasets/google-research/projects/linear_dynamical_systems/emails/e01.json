@@ -1,0 +1,16 @@
+{
+  "id": "gr/linear_dynamical_systems/e01",
+  "thread_id": "gr/linear_dynamical_systems/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T10:20:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [{"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}],
+  "subject": "Kickoff: LDS clustering for telemetry streams",
+  "body": "Hi all,\n\nKicking off the LDS clustering track. Our open-source release clusters time series by the linear dynamical systems that generate them — including learning the eigenvalues of the hidden dynamics — and runs fully locally as plain Python scripts. The product bet for graphs-retrieval: group customer telemetry streams by underlying dynamics, not surface shape, feeding anomaly detection and retrieval.\n\nMilestones:\n- Apr 24: reproduce the eigenvalue-learning experiments (experiment_learn_eig.py, e.g. true_eig=0.1,0.8 with hidden_dim=2) and the clustering experiments at hidden_state_dim=3, 100 systems.\n- Jun 5: benchmark on a real telemetry sample — cluster purity target 0.8.\n- Jul 17: pipeline handoff review.\n\nBao will cover staffing. Hyun is research lead. This one is CPU-cheap, so no compute drama for once.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/linear_dynamical_systems/e03",
+  "thread_id": "gr/linear_dynamical_systems/t1",
+  "in_reply_to": "gr/linear_dynamical_systems/e02",
+  "date": "2026-06-09T15:35:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}],
+  "subject": "Re: Kickoff: LDS clustering for telemetry streams — June status",
+  "body": "Anders, Bao,\n\nStatus against the Jun 5 milestone:\n\n- Reproductions landed in April. Eigenvalue recovery matches the release across sequence lengths 20-1000 with 2 sampled lengths, and the clustering runs (100 systems, hidden_state_dim=3, cluster_center_dist_lower_bound=0.1) reproduce cleanly, including the hide_inputs=true setting we'll need since telemetry inputs aren't observable.\n- Telemetry benchmark: purity is 0.83 on the 3-cluster slice, above target — but only after Vera capped sequence length at 2000; raw streams run much longer and estimation degrades badly past that.\n\nRisk: windowing real streams into <=2000-step segments is now a hard preprocessing requirement, which pushes complexity into Chiara's June ingestion adapters. Doable, but her adapter scope just grew maybe 30%. Flagging for the July handoff plan.\n\nHyun",
+  "labels": ["status", "risk"]
+}
