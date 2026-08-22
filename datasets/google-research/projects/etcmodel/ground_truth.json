@@ -1,0 +1,12 @@
+{
+  "project": "gr/etcmodel",
+  "conflicts": [
+    {
+      "conflict_id": "C143",
+      "type": "codename_collision",
+      "counterpart_projects": ["mpi_extrapolation"],
+      "planted_in": ["e01", "e02"],
+      "claim_as_written": "e01: 'Internally this effort is Project Kestrel - please use that name in docs, channels, and cluster job tags so everything rolls up cleanly.' e02: 'All Kestrel jobs are tagged kestrel-* on the cluster side per Dmitri's ask.'"
+    }
+  ]
+}

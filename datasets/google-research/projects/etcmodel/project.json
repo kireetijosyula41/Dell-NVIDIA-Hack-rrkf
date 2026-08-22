@@ -1,0 +1,19 @@
+{
+  "id": "gr/etcmodel",
+  "title": "Extended Transformer Construction (ETC)",
+  "summary": "Turning our ETC release - core layers and fine-tuning code for encoding long and structured inputs in Transformers - into the standard long-document encoder for internal data-platform workloads, with TF1/TF2-compatible Keras layers and TPU fine-tuning recipes.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Jorge Vidal", "Umar Costa", "Tereza Aliyev"],
+  "codename": "Project Kestrel",
+  "window": {"start": "2026-03-02", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "etcmodel",
+    "url": "https://github.com/google-research/google-research/tree/master/etcmodel",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

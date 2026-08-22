@@ -1,0 +1,17 @@
+{
+  "id": "gr/etcmodel/e01",
+  "thread_id": "gr/etcmodel/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:22:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Project Kestrel kickoff: ETC as our long-document encoder",
+  "body": "Team,\n\nKicking off the ETC standardization effort. Internally this effort is Project Kestrel - please use that name in docs, channels, and cluster job tags so everything rolls up cleanly.\n\nThe why: half the portfolio hits the same wall - Transformers that can't encode long or structured inputs. Our open-source ETC release solves exactly that (it's the EMNLP 2020 \"Encoding Long and Structured Inputs in Transformers\" work), and the repo already separates core Keras layers - compatible with both TF1 and TF2 - from the fine-tuning and example-generation code. We make it the paved path.\n\nMilestones for Mar 2 - May 18: layers packaged with the unit-test suite (the discover -s etcmodel -p '*_test.py' set) green in CI by Mar 27, fine-tuning recipe reproduced on one long-document dataset from the release by Apr 24, adoption guide + review by May 15.\n\nSantiago owns staffing and TPU capacity.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
