@@ -1,0 +1,18 @@
+{
+  "id": "gr/lm_fact_tracing/e01",
+  "thread_id": "gr/lm_fact_tracing/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:25:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Project Palisade kickoff: fact tracing for LM assertions",
+  "body": "Hi all,\n\nKicking off our fact-tracing effort. Internally we're calling this Project Palisade — please use the codename in subject lines and docs so search stays clean.\n\nThe basis is our open-source fact-tracing work: given a factual assertion an LM generates, identify which training examples taught it that — the \"proponents\". The release's benchmark compares gradient-based and embedding-based training-data-attribution methods, and notably both trail a BM25 baseline that never touches the model. Product framing: provenance for model assertions, which legal and enterprise customers keep asking for.\n\nMilestones:\n- Mar 6: benchmark reproduced end to end.\n- Apr 10: TDA methods + BM25 baseline evaluated on a slice of our own pretraining corpus.\n- May 8: readout with a go/no-go on productizing provenance.\n\nAlina owns staffing; Linnea is tech lead.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

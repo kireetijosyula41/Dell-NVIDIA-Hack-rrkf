@@ -1,0 +1,19 @@
+{
+  "id": "gr/lm_fact_tracing",
+  "title": "Tracing Factual Knowledge in LMs Back To Their Training Data",
+  "summary": "Internal effort (codename Project Palisade) built on our fact-tracing release: identify which training examples ('proponents') taught a language model a given factual assertion, benchmarking gradient-based and embedding-based training-data-attribution methods against a BM25 retrieval baseline.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Linnea Yamada", "Chiara Olsen", "Amara Okafor"],
+  "codename": "Project Palisade",
+  "window": {"start": "2026-02-09", "end": "2026-05-11"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lm_fact_tracing",
+    "url": "https://github.com/google-research/google-research/tree/master/lm_fact_tracing",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

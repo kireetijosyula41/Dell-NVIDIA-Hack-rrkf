@@ -1,0 +1,18 @@
+{
+  "id": "gr/lm_fact_tracing/e03",
+  "thread_id": "gr/lm_fact_tracing/t1",
+  "in_reply_to": "gr/lm_fact_tracing/e02",
+  "date": "2026-04-14T15:40:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Palisade — April status and a sobering number",
+  "body": "Hi Anders, Alina,\n\nPalisade status:\n\n- Benchmark reproduced on schedule (Mar 5). Our numbers confirm the paper's headline: both gradient-based and embedding-based TDA trail the BM25 baseline on proponent-retrieval precision.\n- Our corpus slice: same ordering. BM25 hits precision@10 of 0.31, embedding-based 0.24, gradient-based 0.19 with the last-layer approximation. Amara checked whether going beyond last-layer closes the gap — gradient saturation appears to be the limiter, exactly as the release flagged, so deeper gradients buy little for 5x the cost.\n\nThe honest takeaway for the May readout: today, \"provenance\" is better served by lexical retrieval over the training corpus than by model-internals attribution. Thats a fine product — it's just not the sexy one. Chiara's index makes BM25-over-pretraining-corpus queryable in ~200ms, which could demo well.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

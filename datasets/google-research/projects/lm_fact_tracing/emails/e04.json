@@ -1,0 +1,18 @@
+{
+  "id": "gr/lm_fact_tracing/e04",
+  "thread_id": "gr/lm_fact_tracing/t1",
+  "in_reply_to": "gr/lm_fact_tracing/e03",
+  "date": "2026-05-06T10:02:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Palisade — readout decision",
+  "body": "Team,\n\nDecision going into Friday's Palisade readout:\n\n1. We recommend productizing the BM25-over-training-corpus provenance path — Chiara's 200ms index is the demo. Framed as \"training-data provenance v1\", with TDA methods positioned as the research roadmap, not vaporware.\n2. Gradient-based TDA work stops at the last-layer approximation writeup. Amara's saturation analysis goes into the readout appendix; it's the clearest justification for not burning the 5x compute.\n3. Follow-on proposal for next window: closing the precision gap (0.31 is a start, not a product) via hybrid lexical+embedding scoring. Linnea drafts one slide on it.\n\nI know BM25-wins wasn't the outcome anyone dreamed of, but a true negative at this cost is a good quarter's work. See everyone Friday.\n\nAnders",
+  "labels": ["decision"]
+}
