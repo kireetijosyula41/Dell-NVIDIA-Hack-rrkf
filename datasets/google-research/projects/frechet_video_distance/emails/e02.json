@@ -1,0 +1,45 @@
+{
+  "id": "gr/frechet_video_distance/e02",
+  "thread_id": "gr/frechet_video_distance/t1",
+  "in_reply_to": "gr/frechet_video_distance/e01",
+  "date": "2026-02-16T15:40:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: FVD workstream kickoff — one metric for video gen",
+  "body": "Hi Lucia,\n\nPlan: Quentin full-time on the metric library, Katya at 50% for model-repo integration, Tereza at 30% for infra.\n\nCompute: day-to-day dev fits on titan-a100 best-effort. For the June calibration sweep we are covered — we hold the vulcan-h100 reservation for the week of 2026-06-08, 256 accelerators, which is sized for the full sweep across model families and seeds. I have put the reservation ID in the tracker; Ines, cc'ing you for awareness.\n\nOne dependency: the reference pipeline assumes clips shaped [NUMBER_OF_VIDEOS, VIDEO_LENGTH, 224, 224, 3] with values in 0-255; our internal stores are float-normalized, so Katya is writing a conversion shim first.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}
