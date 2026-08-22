@@ -1,0 +1,40 @@
+{
+  "id": "gr/felix/e04",
+  "thread_id": "gr/felix/t2",
+  "in_reply_to": "gr/felix/e03",
+  "date": "2026-04-29T15:40:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: DiscoFuse repro done, insertion drift on long rewrites",
+  "body": "Tereza, all — decisions for the pre-read.\n\nRatings from the April round (612 rated pairs, decent inter-rater agreement per Fumiko) confirm the pattern: short rewrites score 4.2+ on both scales, long rewrites drop to 3.4 on meaning preservation.\n\nSo the launch-review pre-read proposes shipping assisted rewrite scoped to short edits — where the tagging-plus-insertion decomposition is demonstrably strong — and holds long-form rewrites for a constrained-insertion variant in Q3. That's a scope cut and I'll own the messaging: better a sharp small feature than a mushy big one.\n\nMaren, include the rating tool's agreement stats in the appendix; they preempt the \"are the ratings real\" question. Pre-read goes out May 6 for the May 8 review.\n\nThank you — this one moved fast and stayed honest.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

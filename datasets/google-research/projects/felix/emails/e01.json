@@ -1,0 +1,40 @@
+{
+  "id": "gr/felix/e01",
+  "thread_id": "gr/felix/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Felix assisted-rewrite track",
+  "body": "Team — kicking off the Felix track.\n\nThe approach decomposes text editing into tagging (choose and order the input tokens to keep) and insertion (in-fill the missing tokens with a bi-directional model), which makes it a strong fit for the assisted-rewrite feature language wants: edits stay close to the user's own words, unlike free generation.\n\nPlan for the window: (1) reproduce the DiscoFuse sentence-fusion pipeline end-to-end — label map construction, data conversion, fine-tuning both models — by Mar 6; (2) adapt to our internal rewrite corpus by early April; (3) quality evaluation, including human ratings, through April; (4) launch-review pre-read by May 8.\n\nTereza owns modeling, Fumiko evaluation, Maren the data pipeline. Bao follows up on staffing and eval logistics.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}
