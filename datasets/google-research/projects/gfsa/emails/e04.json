@@ -1,0 +1,15 @@
+{
+  "id": "gr/gfsa/e04",
+  "thread_id": "gr/gfsa/t2",
+  "in_reply_to": "gr/gfsa/e03",
+  "date": "2026-06-02T09:41:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: Status: static-analysis repro done, new-task port slower than hoped",
+  "body": "Team,\n\nDecisions ahead of the review. Project Quillon goes to the Launch Review Board on 6/11 - Nadia has us on the agenda.\n\n1. Demo scope: static-analysis task plus the retrieval task capped at 20k nodes, per Fumiko's proposal. Sharding is explicitly out of scope for this window; I have written it into the Q3 candidate list.\n2. The Python 3.6 toolchain lift Bilal did stays internal-only for now; we will not advertise the modernized package until it has soaked for a month.\n3. Halima's eval harness is the sign-off gate: I want the automaton-policy accuracy table and memory ceiling documented in the pre-read, not spoken to.\n\nIf 5/20's trainable version regresses this week, tell me by Friday and we present static analysis alone. Rather cut than slip.\n\nAnders",
+  "labels": ["decision"]
+}

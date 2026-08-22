@@ -1,0 +1,19 @@
+{
+  "id": "gr/gfsa",
+  "title": "Learning Graph Structure With A Finite-State Automaton Layer",
+  "summary": "Builds on our open-source GFSA layer, which learns to add derived edges to graphs by training a finite-state automaton policy, with a flagship demo that learns static analyses of Python code in JAX.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": ["Fumiko Rossi", "Halima Toure", "Hyun Traore", "Bilal Novak"],
+  "codename": "Project Quillon",
+  "window": {"start": "2026-03-30", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gfsa",
+    "url": "https://github.com/google-research/google-research/tree/master/gfsa",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

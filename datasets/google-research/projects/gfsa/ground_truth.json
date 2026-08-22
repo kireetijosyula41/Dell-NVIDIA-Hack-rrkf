@@ -1,0 +1,12 @@
+{
+  "project": "gr/gfsa",
+  "conflicts": [
+    {
+      "conflict_id": "C071",
+      "type": "codename_collision",
+      "counterpart_projects": ["bonus_based_exploration"],
+      "planted_in": ["e01", "e04"],
+      "claim_as_written": "Internally we are calling this effort Project Quillon - please use that name in decks and OKR entries so the portfolio roll-up stays consistent. (Reinforced in e04: 'Project Quillon goes to the Launch Review Board on 6/11.')"
+    }
+  ]
+}
