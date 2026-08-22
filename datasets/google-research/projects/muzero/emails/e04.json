@@ -1,0 +1,18 @@
+{
+  "id": "gr/muzero/e04",
+  "thread_id": "gr/muzero/t1",
+  "in_reply_to": "gr/muzero/e03",
+  "date": "2026-05-06T13:58:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MuZero hardening — close-out plan and June staffing",
+  "body": "Ulla, Rafael,\n\nClose-out plan for the 05-18 readout, plus staffing decisions for what comes next:\n\n1. The distributed run starts Monday with the double-buffered batcher. The priority-reset bug is documented as a known issue rather than fixed this half — it self-corrects within an hour and doesn't change end scores measurably.\n2. Post-readout, the follow-on hardening phase (priority-reset fix, preemption soak tests, and the Go/Chess-style board-game env users keep asking for) is staffed now so we don't lose momentum: Paloma Castillo is committed at 60% to MuZero for June 2026, with Rosa picking up her CI duties. Rafael stays advisory at 20%.\n3. Rosa publishes the reference configs and Rafael's planning-knob guide alongside the readout.\n\nUlla — flagging item 2 for your headcount tracking; it's the whole June plan for this workstream.\n\nIvo",
+  "labels": ["decision", "resources"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/muzero/e03",
+  "thread_id": "gr/muzero/t1",
+  "in_reply_to": "gr/muzero/e02",
+  "date": "2026-04-08T10:37:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MuZero hardening — April status",
+  "body": "Hi both,\n\nStatus:\n\n- CI gate landed 03-05: tictactoe converges to perfect play in under 40 min on a fixed seed, and the test fails loudly if the learned-model rollout diverges from the reference trajectories. Already caught one regression from a dependency bump.\n- Single-machine atari validation done on 3 games. Interesting knob finding for the docs: cutting simulations per move from 50 to 24 loses almost nothing on Pong but is a big hit on Ms. Pacman — planning depth matters most where the reward is sparse and delayed. Writing that up properly.\n- Distributed: Paloma's fan-out work found exactly what Ivo predicted — at 300+ actors the inference batcher starves the learner. Her fix (double-buffered batching) gets learner utilization from 61% to 88%. One preemption-recovery bug remains; replay contents survive but priorities reset, which skews sampling for ~1h after restart.\n\nOn track for the May distributed run.\n\nRafael",
+  "labels": ["status", "risk"]
+}
