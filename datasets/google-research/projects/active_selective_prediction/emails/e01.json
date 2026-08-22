@@ -1,0 +1,17 @@
+{
+  "id": "gr/active_selective_prediction/e01",
+  "thread_id": "gr/active_selective_prediction/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:37:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "ASPEST kickoff - abstain smartly, label smartly",
+  "body": "Team,\n\nKicking off the Active Selective Prediction track. The deployment story we keep failing to tell: when a customer's data shifts, their model should (a) know when to abstain and route to a human, and (b) spend the resulting human-labeling budget on the points that fix it fastest. ASPEST, from our open-source release, does both at once - that's the bridge between active learning and selective prediction, and no one else in our stack has it.\n\nThe repo ships six shift benchmarks - mnist->svhn, cifar10->cinic10, fmow, amazon_review, domainnet, and otto - four available via TensorFlow Datasets and the rest downloaded manually, with a build_datasets.sh script to standardize everything.\n\nMilestones: benchmark suite built and repro complete in May; integration design with the human-review routing layer by June 19; pilot-ready eval report by July 24, ahead of an LRB slot in early August.\n\nAlina - staffing and compute please. May is the make-or-break month.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/active_selective_prediction/e03",
+  "thread_id": "gr/active_selective_prediction/t2",
+  "in_reply_to": null,
+  "date": "2026-06-15T10:26:00Z",
+  "from": {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "ASPEST status: repro complete on all six benchmarks, coverage-target risk",
+  "body": "Hi Alina, Dmitri,\n\nMay milestone closed on time: ASPEST reproduced on all six pairs. Headline confirmation - on mnist->svhn with a 100-label budget, ASPEST beats the best pure selective-prediction and pure active-learning baselines on accuracy-coverage tradeoff in our runs, and cifar10->cinic10 shows the same ordering. fmow and domainnet were the fiddly ones (dataset plumbing, not method issues - Wanjiru's containerization saved us there).\n\nThe risk to design around: the accuracy-coverage curve is steep near high coverage. On amazon_review, going from 85% to 95% coverage roughly triples the selective risk. If the pilot customer anchors on \"95% automation\" as the target, the abstention story falls apart on shifted data. Halima and I want the integration design to expose coverage as an explicit SLA knob with the measured risk curve next to it, so the routing layer's staffing model is driven by our numbers rather than wishful defaults.\n\nOn track for the June 19 design review.\n\nOndrej",
+  "labels": ["status", "risk"]
+}
