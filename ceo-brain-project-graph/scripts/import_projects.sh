@@ -13,6 +13,9 @@ mongoimport --uri "mongodb://mongodb:27017/ceo_brain" --collection project_domai
 mongosh "mongodb://mongodb:27017/ceo_brain" --quiet --eval '
   db.projects.createIndex({ projectId: 1 }, { unique: true });
   db.projects.createIndex({ domains: 1 });
+  db.projects.createIndex({ dependencies: 1 });
+  db.projects.createIndex({ imports: 1 });
+  db.projects.createIndex({ githubReferences: 1 });
   db.emails.createIndex({ projectId: 1, date: -1 });
   db.emails.createIndex({ labels: 1 });
   db.project_relationships.createIndex({ fromProject: 1, toProject: 1, relationType: 1 }, { unique: true });

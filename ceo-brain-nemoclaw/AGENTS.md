@@ -22,8 +22,9 @@ Do not inspect `ground_truth.json`; it is an evaluation-only artifact.
 2. Get a graph neighborhood for the best matching projects.
 3. Search emails for the same claim and project IDs.
 4. Get GitHub evidence for the projects that support an intervention.
-5. Return compact JSON with `warning`, `confidence`, `projectIds`, `evidence`,
-   and `recommendedAction`.
+5. Return compact JSON with `auditId`, `claim`, `warning`, `confidence`,
+   `projectIds`, `evidence`, and `recommendedAction`. The `auditId` comes from
+   the broker payload and must not be changed.
 6. Submit the final JSON with `create-audit-warning`; the host validates it before
    it becomes visible in the UI.
 

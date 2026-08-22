@@ -1,11 +1,18 @@
 import asyncio
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
-from app.main import AgentWarningRequest, AuditRequest, DecisionRequest, STORE, ToolQuery, app, audit_graph, create_agent_warning, create_audit, create_decision, search_projects
+from app.main import AgentWarningRequest, AuditRequest, DecisionRequest, STORE, ToolQuery, app, audit_graph, create_agent_warning, create_audit, create_decision, health, search_projects
 
 
 class EvidenceApiTests(unittest.TestCase):
+    def test_health_exposes_reasoner_and_bridge_state(self):
+        result = health()
+        self.assertIn(result["storage"], {"mongodb", "json-fallback"})
+        self.assertIn(result["reasonerMode"], {"deterministic", "nemoclaw"})
+        self.assertIsInstance(result["nemoClawBridgeConfigured"], bool)
+
     def test_laptop_ui_origin_can_call_gb10_api(self):
         messages = []
 
@@ -53,6 +60,20 @@ class EvidenceApiTests(unittest.TestCase):
         self.assertTrue(all(email["projectId"] in project_ids for email in STORE.emails()))
         self.assertTrue(all(edge["fromProject"] in project_ids and edge["toProject"] in project_ids for edge in STORE.relationships()))
         self.assertTrue(all(edge["evidence"] and edge["source"] in {"verified", "inferred"} for edge in STORE.relationships()))
+        keys = {(edge["fromProject"], edge["toProject"], edge["relationType"]) for edge in STORE.relationships()}
+        self.assertEqual(len(keys), len(STORE.relationships()))
+
+    def test_runtime_graph_includes_verified_source_derived_relationships(self):
+        technical_types = {
+            "local_project_import",
+            "github_source_reference",
+            "shared_declared_dependency",
+            "shared_source_import",
+        }
+        technical_edges = [edge for edge in STORE.relationships() if edge["relationType"] in technical_types]
+        self.assertTrue(technical_edges)
+        self.assertTrue(all(edge["source"] == "verified" for edge in technical_edges))
+        self.assertTrue(any(project["sourceScan"]["available"] for project in STORE.projects()))
 
     def test_audit_graph_is_bounded(self):
         audit = create_audit(AuditRequest(claim="We need a benchmark leaderboard and GPU evaluation pipeline."))
@@ -83,6 +104,30 @@ class EvidenceApiTests(unittest.TestCase):
             )
         )
         self.assertEqual(audit["confidence"], "medium")
+
+    def test_agent_warning_updates_the_original_audit(self):
+        original = create_audit(AuditRequest(claim="We need time series forecasting and evaluation benchmarks."))
+        updated = create_agent_warning(
+            AgentWarningRequest(
+                auditId=original["auditId"],
+                claim=original["claim"],
+                warning="Existing project evidence warrants a human overlap review.",
+                confidence="medium",
+                projectIds=["gr/CoDi"],
+                evidence=[{"kind": "github", "projectId": "gr/CoDi", "detail": "Cached source summary"}],
+                recommendedAction="investigate",
+            )
+        )
+        self.assertEqual(updated["auditId"], original["auditId"])
+        self.assertEqual(updated["status"], "warning_ready")
+        self.assertIn("agent_evidence_received", updated["events"])
+
+    def test_nemoclaw_mode_creates_a_pending_audit(self):
+        with patch("app.main.AUDIT_REASONER_MODE", "nemoclaw"), patch("app.main.threading.Thread") as thread:
+            audit = create_audit(AuditRequest(claim="We need time series forecasting and evaluation benchmarks."))
+        self.assertEqual(audit["status"], "pending_agent_review")
+        self.assertEqual(audit["events"], ["claim_received", "queued"])
+        thread.return_value.start.assert_called_once()
 
     def test_decision_is_accepted_for_existing_audit(self):
         audit = create_audit(AuditRequest(claim="We need time series forecasting and evaluation benchmarks."))

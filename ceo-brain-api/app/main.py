@@ -5,10 +5,14 @@ from __future__ import annotations
 import json
 import os
 import re
+import threading
+import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Literal
+from urllib.error import URLError
+from urllib.request import Request, urlopen
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -22,6 +26,8 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = Path(os.getenv("DATA_DIR", ROOT / "ceo-brain-project-graph" / "data"))
 DATABASE = os.getenv("MONGODB_DATABASE", "ceo_brain")
 MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27018")
+AUDIT_REASONER_MODE = os.getenv("AUDIT_REASONER_MODE", "deterministic")
+NEMOCLAW_AUDIT_WEBHOOK_URL = os.getenv("NEMOCLAW_AUDIT_WEBHOOK_URL", "")
 CORS_ALLOW_ORIGINS = [
     origin.strip()
     for origin in os.getenv("CORS_ALLOW_ORIGINS", "").split(",")
@@ -45,6 +51,7 @@ class ToolQuery(BaseModel):
 
 
 class AgentWarningRequest(BaseModel):
+    auditId: str | None = None
     claim: str = Field(min_length=8, max_length=4_000)
     warning: str = Field(min_length=12, max_length=2_000)
     confidence: Literal["low", "medium", "high"]
@@ -84,13 +91,15 @@ class EvidenceStore:
         return list(self.db.project_relationships.find({}, {"_id": 0})) if self.db is not None else self.fallback["project_relationships.json"]
 
     def save_audit(self, audit: dict[str, Any]) -> None:
+        AUDIT_CACHE[audit["auditId"]] = audit
         if self.db is not None:
             self.db.audits.replace_one({"auditId": audit["auditId"]}, audit, upsert=True)
 
     def get_audit(self, audit_id: str) -> dict[str, Any] | None:
         if self.db is None:
             return AUDIT_CACHE.get(audit_id)
-        return self.db.audits.find_one({"auditId": audit_id}, {"_id": 0})
+        audit = self.db.audits.find_one({"auditId": audit_id}, {"_id": 0})
+        return audit or AUDIT_CACHE.get(audit_id)
 
     def save_decision(self, decision: dict[str, Any]) -> None:
         if self.db is not None:
@@ -181,6 +190,45 @@ def make_warning(claim: str, ranked: list[dict[str, Any]], emails: list[dict[str
     return {"warning": warning, "confidence": confidence, "projectIds": sorted(project_ids), "evidence": evidence, "recommendedAction": action, "relationshipCount": len(related_edges)}
 
 
+def add_event(audit: dict[str, Any], event: str) -> None:
+    events = audit.setdefault("events", [])
+    if not events or events[-1] != event:
+        events.append(event)
+
+
+def dispatch_nemoclaw_audit(audit_id: str, claim: str) -> None:
+    """Hand an audit to an operator-configured local NemoClaw bridge."""
+    audit = STORE.get_audit(audit_id)
+    if not audit:
+        return
+    if not NEMOCLAW_AUDIT_WEBHOOK_URL:
+        audit["status"] = "failed"
+        audit["warning"] = "NemoClaw audit bridge is not configured. Switch to deterministic mode or configure NEMOCLAW_AUDIT_WEBHOOK_URL."
+        add_event(audit, "failed")
+        STORE.save_audit(audit)
+        return
+    audit["status"] = "agent_running"
+    add_event(audit, "agent_running")
+    STORE.save_audit(audit)
+    payload = json.dumps({"auditId": audit_id, "claim": claim, "callbackUrl": "/tools/create-audit-warning"}).encode("utf-8")
+    request = Request(NEMOCLAW_AUDIT_WEBHOOK_URL, data=payload, headers={"Content-Type": "application/json"}, method="POST")
+    try:
+        with urlopen(request, timeout=15) as response:
+            if not 200 <= response.status < 300:
+                raise URLError(f"bridge returned {response.status}")
+        audit = STORE.get_audit(audit_id)
+        if audit and audit["status"] == "agent_running":
+            add_event(audit, "evidence_requested")
+            STORE.save_audit(audit)
+    except (OSError, URLError) as error:
+        audit = STORE.get_audit(audit_id)
+        if audit:
+            audit["status"] = "failed"
+            audit["warning"] = f"NemoClaw audit bridge could not be reached: {error}"
+            add_event(audit, "failed")
+            STORE.save_audit(audit)
+
+
 STORE = EvidenceStore()
 AUDIT_CACHE: dict[str, dict[str, Any]] = {}
 app = FastAPI(title="CEO Brain Evidence API", version="0.1.0")
@@ -198,7 +246,13 @@ app.add_middleware(
 
 @app.get("/health")
 def health() -> dict[str, Any]:
-    return {"ok": True, "storage": "mongodb" if STORE.db is not None else "json-fallback", "model": os.getenv("NEMOCLAW_MODEL_ID", "not-configured")}
+    return {
+        "ok": True,
+        "storage": "mongodb" if STORE.db is not None else "json-fallback",
+        "model": os.getenv("NEMOCLAW_MODEL_ID", "not-configured"),
+        "reasonerMode": AUDIT_REASONER_MODE,
+        "nemoClawBridgeConfigured": bool(NEMOCLAW_AUDIT_WEBHOOK_URL),
+    }
 
 
 @app.post("/tools/search-projects")
@@ -237,12 +291,15 @@ def create_agent_warning(request: AgentWarningRequest) -> dict[str, Any]:
     confidence = request.confidence
     if confidence == "high" and (len(project_ids) < 2 or len(request.evidence) < 2):
         confidence = "medium"
+    existing = STORE.get_audit(request.auditId) if request.auditId else None
+    if request.auditId and not existing:
+        raise HTTPException(status_code=404, detail="Audit not found")
     audit = {
-        "auditId": str(uuid.uuid4()),
+        "auditId": request.auditId or str(uuid.uuid4()),
         "claim": request.claim,
         "status": "warning_ready",
         "createdAt": datetime.now(timezone.utc).isoformat(),
-        "events": ["agent_evidence_received", "warning_schema_validated", "warning_ready"],
+        "events": (existing or {}).get("events", []) + ["agent_evidence_received", "warning_schema_validated", "warning_ready"],
         "warning": request.warning,
         "confidence": confidence,
         "projectIds": project_ids,
@@ -257,6 +314,24 @@ def create_agent_warning(request: AgentWarningRequest) -> dict[str, Any]:
 
 @app.post("/audits")
 def create_audit(request: AuditRequest) -> dict[str, Any]:
+    if AUDIT_REASONER_MODE == "nemoclaw":
+        audit = {
+            "auditId": str(uuid.uuid4()),
+            "claim": request.claim,
+            "transcriptSegmentIds": request.transcriptSegmentIds,
+            "status": "pending_agent_review",
+            "createdAt": datetime.now(timezone.utc).isoformat(),
+            "events": ["claim_received", "queued"],
+            "warning": "NemoClaw is collecting project, email, graph, and GitHub evidence.",
+            "confidence": "low",
+            "projectIds": [],
+            "evidence": [],
+            "recommendedAction": "defer",
+            "relationshipCount": 0,
+        }
+        STORE.save_audit(audit)
+        threading.Thread(target=dispatch_nemoclaw_audit, args=(audit["auditId"], request.claim), daemon=True).start()
+        return audit
     projects, emails, relationships = STORE.projects(), STORE.emails(), STORE.relationships()
     ranked = rank_projects(request.claim, projects, emails)
     report = make_warning(request.claim, ranked, emails, relationships)
@@ -266,15 +341,32 @@ def create_audit(request: AuditRequest) -> dict[str, Any]:
     return audit
 
 
+@app.get("/audits/{audit_id}")
+def get_audit(audit_id: str) -> dict[str, Any]:
+    audit = STORE.get_audit(audit_id)
+    if not audit:
+        raise HTTPException(status_code=404, detail="Audit not found")
+    return audit
+
+
 @app.get("/audits/{audit_id}/events")
 def audit_events(audit_id: str):
     audit = STORE.get_audit(audit_id)
     if not audit:
         raise HTTPException(status_code=404, detail="Audit not found")
     def stream():
-        for event in audit["events"]:
-            yield f"event: status\\ndata: {json.dumps({'event': event, 'auditId': audit_id})}\\n\\n"
-        yield f"event: complete\\ndata: {json.dumps({'auditId': audit_id, 'confidence': audit['confidence']})}\\n\\n"
+        sent = 0
+        for _ in range(90):
+            current = STORE.get_audit(audit_id)
+            if not current:
+                return
+            for event in current.get("events", [])[sent:]:
+                yield f"event: status\\ndata: {json.dumps({'event': event, 'auditId': audit_id, 'status': current['status']})}\\n\\n"
+            sent = len(current.get("events", []))
+            if current["status"] in {"warning_ready", "failed"}:
+                yield f"event: complete\\ndata: {json.dumps({'auditId': audit_id, 'confidence': current['confidence'], 'status': current['status']})}\\n\\n"
+                return
+            time.sleep(1)
     return StreamingResponse(stream(), media_type="text/event-stream")
 
 

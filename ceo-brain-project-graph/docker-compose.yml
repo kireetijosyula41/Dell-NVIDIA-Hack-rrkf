@@ -21,13 +21,15 @@ services:
     depends_on:
       - mongodb
     environment:
-      MONGODB_URI: mongodb://mongodb:27017
-      MONGODB_DATABASE: ceo_brain
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongodb:27017}
+      MONGODB_DATABASE: ${MONGODB_DATABASE:-ceo_brain}
       DATA_DIR: /data
       NEMOCLAW_MODEL_ID: ${NEMOCLAW_MODEL_ID:-not-configured}
       CORS_ALLOW_ORIGINS: ${CORS_ALLOW_ORIGINS:-}
       MODEL_API_BASE: ${MODEL_API_BASE:-}
       MODEL_API_KEY: ${MODEL_API_KEY:-}
+      AUDIT_REASONER_MODE: ${AUDIT_REASONER_MODE:-deterministic}
+      NEMOCLAW_AUDIT_WEBHOOK_URL: ${NEMOCLAW_AUDIT_WEBHOOK_URL:-}
     ports:
       - "8080:8080"
     volumes:
