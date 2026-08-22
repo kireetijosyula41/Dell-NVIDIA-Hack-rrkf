@@ -1,0 +1,25 @@
+{
+  "id": "gr/assemblenet",
+  "title": "AssembleNet and AssembleNet++",
+  "summary": "AssembleNet and AssembleNet++ perform neural connectivity search over multi-stream video CNN architectures, learning connection weights between (2+1)D or 3D residual blocks arranged sequentially or in parallel; AssembleNet++ adds peer-attention, and AssembleNet++Lite is a lighter variant sized to fit GPU memory.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Yusuf Keita",
+    "Paloma Castillo",
+    "Csilla Nassar"
+  ],
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "assemblenet",
+    "url": "https://github.com/google-research/google-research/tree/master/assemblenet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

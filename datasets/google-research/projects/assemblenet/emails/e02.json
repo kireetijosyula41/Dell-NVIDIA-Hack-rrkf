@@ -1,0 +1,40 @@
+{
+  "id": "gr/assemblenet/e02",
+  "thread_id": "gr/assemblenet/t1",
+  "in_reply_to": "gr/assemblenet/e01",
+  "date": "2026-04-16T13:55:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: AssembleNet / AssembleNet++ for video understanding",
+  "body": "Lucia,\n\nStaffing: Yusuf leads at 60%, Paloma 50% on the TF1 environment and data pipeline. Nothing we have measures multi-stream video models consistently, so we are scoping and staffing an internal evaluation harness built from scratch — Csilla at 45% owns it, first version by mid-May.\n\nCompute: this is our heaviest ask this quarter. Multi-stream video training on the found architectures from model_structures.py needs 96 H100s, so we need a real Vulcan reservation, not best-effort — I've opened the request with Ines. Note Vulcan maintenance runs 2026-06-22 to 2026-06-24, so the final benchmark runs have to be complete before June 22 or they push past the readout.\n\nThe TF1 dependency is a genuine tax; Paloma is boxing it into a container so it doesn't leak into our TF2 stack.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

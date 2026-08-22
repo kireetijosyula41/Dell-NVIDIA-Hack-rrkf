@@ -1,0 +1,36 @@
+{
+  "id": "gr/assemblenet/e03",
+  "thread_id": "gr/assemblenet/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T10:40:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "AssembleNet status: repro done, memory is the deciding factor",
+  "body": "Hi Lucia, Santiago,\n\nStatus. Repro is done on the found architectures. AssembleNet++ with peer-attention beats our current hand-designed backbone by 3.2 points top-1 on the internal action set, and AssembleNet (no peer-attention) by 1.9.\n\nRisk, and it's the practical one: AssembleNet++ at full width does not fit our serving GPUs. AssembleNet++Lite exists precisely for this — it's the lighter version made to fit better in GPU memory — and it retains 2.4 of the 3.2 points at roughly 40% of the activation memory. My read is Lite is the only variant with a path to production; full ++ is a research artifact for us.\n\nAll benchmark runs are scheduled to finish June 18, ahead of the Vulcan maintenance window.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
