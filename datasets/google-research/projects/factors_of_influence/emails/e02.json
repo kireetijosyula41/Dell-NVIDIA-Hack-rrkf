@@ -1,0 +1,45 @@
+{
+  "id": "gr/factors_of_influence/e02",
+  "thread_id": "gr/factors_of_influence/t1",
+  "in_reply_to": "gr/factors_of_influence/e01",
+  "date": "2026-02-18T13:25:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Basalt — unified dataset interface",
+  "body": "Dmitri — Basalt resourcing.\n\nStaffing: Csilla 50% (taxonomy and feature audit), Rosa 50% (loaders and TFDS packaging), Quentin 30% (MSeg universal mapping QA), Umar 30% (Corpus integration).\n\nCompute is negligible — this is an ingestion project — but storage isn't: mirroring the 19 redistributable datasets runs about 9TB raw plus 4TB in TFDS-prepared form, so I've filed a 15TB Corpus quota request with Jun's team.\n\nDependencies: Corpus integration has to land while the v2 APIs are still moving toward the 2026-07-10 migration freeze. We're well ahead of it, but Umar's prototype should target the v2 write path directly rather than v1 to avoid a rewrite.\n\nAsk from you: a prioritized list of which datasets the first Corpus customers actually need, so Rosa doesn't burn March packaging long-tail sets.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/factors_of_influence/e04",
+  "thread_id": "gr/factors_of_influence/t2",
+  "in_reply_to": "gr/factors_of_influence/e03",
+  "date": "2026-04-15T16:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Status: Basalt feature audit + licensing risk",
+  "body": "Csilla, all — decisions from the Basalt sync.\n\nWe go to launch review (Apr 29 slot) with a tiered scope: v1 exposes the twelve datasets Kofi has cleared unconditionally; the research-only sources ship behind an internal-use flag with the license text surfaced in the loader; WildDash stays out entirely.\n\nQuentin's MSeg mapping QA gets one more week — the universal-taxonomy channel is our headline feature and I don't want mapping bugs in the demo. Umar, the integration prototype targets the cleared twelve only; Rosa, cut the packaging long-tail per the priority list.\n\nOne admin note: keep tagging everything Project Basalt in docs and the tracker — a couple of untagged threads went missing last week.\n\nNice work getting the audit done early.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}
