@@ -1,0 +1,25 @@
+{
+  "id": "gr/frequency_analysis",
+  "title": "Generate Fourier heat maps of image classification models",
+  "summary": "Builds a robustness report card for vision models by generating Fourier heat maps: adding frequency basis vectors to input images and measuring how layer outputs and test error respond across the frequency spectrum.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Milan Zapata",
+    "Katya Silva",
+    "Freya Ruiz"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-10"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "frequency_analysis",
+    "url": "https://github.com/google-research/google-research/tree/master/frequency_analysis",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

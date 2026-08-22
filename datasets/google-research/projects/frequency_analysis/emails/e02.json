@@ -1,0 +1,40 @@
+{
+  "id": "gr/frequency_analysis/e02",
+  "thread_id": "gr/frequency_analysis/t1",
+  "in_reply_to": "gr/frequency_analysis/e01",
+  "date": "2026-05-06T14:10:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Fourier robustness heat maps — kickoff",
+  "body": "Hi Lucia,\n\nStaffing: Freya 60% (analysis lead), Milan 50% (TensorFlowNeuralNetwork wrappers and batching), Katya 40% (eval sets). Compute: 32 A100s on titan best-effort covers heat map generation.\n\nData plan: we need our perturbed eval image sets living in Corpus before the v2 migration freeze. Corpus has the freeze landing 2026-07-24, so I am targeting Jul 17 for the last ingestion batch, one week of slack. Katya owns the ingestion pipeline and will version the Fourier basis perturbations alongside the clean sets.\n\nOne ask: can you confirm which classifiers count as flagship for the readout? Heat map cost scales linearly with the number of models.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}
