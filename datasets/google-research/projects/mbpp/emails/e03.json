@@ -1,0 +1,18 @@
+{
+  "id": "gr/mbpp/e03",
+  "thread_id": "gr/mbpp/t1",
+  "in_reply_to": "gr/mbpp/e02",
+  "date": "2026-05-13T09:41:00Z",
+  "from": {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: MBPP kickoff — status + a scoring trade-off",
+  "body": "Status:\n\n- Saoirse's sandboxed executor passed security review 05-04. All 3 test cases per problem run with per-problem timeouts; full test split executes in under 9 minutes.\n- Kaia reproduced the paper's prompt format exactly — the three-shot prompt with [BEGIN]/[DONE] delimiters using task_ids 2, 3, 4 — and our reference model's pass@1 matches our earlier ad-hoc harness within 0.4 points.\n\nTrade-off we need a ruling on: headline metric from sanitized-mbpp.json (hand-verified, cleaner, but smaller) vs the full 11-510 test split. The two disagree by up to 3 points pass@1 for weaker models, and modeling teams will optimize whatever we bless. My rec: sanitized for headline, full split reported alongside. Fumiko's baseline sweep is prepped for the June compute slot either way.\n\nOndrej",
+  "labels": ["status", "risk"]
+}

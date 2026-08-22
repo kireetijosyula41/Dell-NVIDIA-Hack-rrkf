@@ -1,0 +1,20 @@
+{
+  "id": "gr/mbpp/e01",
+  "thread_id": "gr/mbpp/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "MBPP kickoff — code-gen eval as a platform service",
+  "body": "Hi all,\n\nKicking off the MBPP integration. Every modeling team currently rolls its own code-gen eval; we're making our open-source MBPP release — ~1,000 crowd-sourced Python problems, each with a task description, reference solution, and 3 automated test cases — the standard harness in Evalline.\n\nScope decisions up front: we adopt the published split discipline (task IDs 11-510 for test, 511-600 validation, 601-974 training, IDs 1-10 reserved for few-shot prompting) and we default to the hand-verified sanitized-mbpp.json subset for headline numbers.\n\nMilestones (window closes 06-22):\n- 04-17: sandboxed execution harness running all test cases safely.\n- 05-15: Evalline integration with the three-shot prompt format (task_ids 2, 3, 4).\n- 06-15: two modeling teams onboarded, before the Q3 OKR lock.\n\nDaniela owns staffing; Ondrej is TL. Tomas cc'd since this lands in Evalline.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

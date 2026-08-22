@@ -1,0 +1,16 @@
+{
+  "id": "gr/mbpp",
+  "title": "Mostly Basic Python Problems Dataset",
+  "summary": "Standing up the MBPP benchmark — roughly 1,000 crowd-sourced entry-level Python problems, each with a task description, code solution, and 3 automated test cases — as the standard code-generation eval for our model releases.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Ondrej Bergstrom", "Kaia Wolde", "Saoirse Eriksen", "Fumiko Rossi"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mbpp",
+    "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

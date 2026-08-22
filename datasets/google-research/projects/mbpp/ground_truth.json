@@ -1,0 +1,9 @@
+{
+  "project": "gr/mbpp",
+  "conflicts": [
+    {"conflict_id": "C064", "type": "gpu_double_booking",
+     "counterpart_projects": ["dp_sgd_clipping"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "For that we hold the vulcan-h100 reservation — 128 accelerators for the week of 2026-06-01 — which gives us headroom to finish calibration before onboarding the second modeling team."}
+  ]
+}
