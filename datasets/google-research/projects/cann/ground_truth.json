@@ -1,0 +1,12 @@
+{
+  "project": "gr/cann",
+  "conflicts": [
+    {
+      "conflict_id": "C060",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["behavioral_dispositions", "dissecting_factual_predictions", "mesh_diffusion"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"Heads-up on data timing: the Corpus v2 migration freeze is 2026-07-24, so our indoor capture set needs to be ingested by mid-July at the latest. That's after our window closes, so ingestion can trail the M3 report without risk - I've sequenced Chiara's tickets accordingly.\""
+    }
+  ]
+}

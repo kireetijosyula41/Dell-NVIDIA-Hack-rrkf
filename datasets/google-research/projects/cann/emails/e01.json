@@ -1,0 +1,19 @@
+{
+  "id": "gr/cann/e01",
+  "thread_id": "gr/cann/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T09:50:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: CANN visual localization core",
+  "body": "Hi Daniela, Nikhil,\n\nKickoff for the CANN effort in vision. Our ICCV work on Constrained Approximate Nearest Neighbors is a genuinely strong wedge for indoor visual positioning - malls, airports, warehouses - where GPS dies. Two properties matter commercially: the retrieval scheme is independent of the local feature type (any d-dimensional vectors, so customers aren't locked to our extractor), and the reference results on Baidu-Mall are already competitive.\n\nWindow Apr 13 - Jul 6. M1 (May 8): repro of the released end-to-end run.sh index/query flow on the sample data (FIRE features), then the Baidu-Mall benchmark. M2 (Jun 5): scale test - index a 10x larger internal capture set, measure recall/latency curves. M3 (Jun 29): integration proposal for the vision serving stack + go/no-go on a pilot with the logistics customer.\n\nNikhil is TL (25%, he's still wrapping Vantage follow-ups; Linnea carries the build). Daniela owns staffing.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

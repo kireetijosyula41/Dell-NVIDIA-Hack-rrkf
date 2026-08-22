@@ -1,0 +1,18 @@
+{
+  "id": "gr/cann/e03",
+  "thread_id": "gr/cann/t1",
+  "in_reply_to": "gr/cann/e02",
+  "date": "2026-06-03T11:25:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: CANN - M2 status: scale test in, memory is the story",
+  "body": "M2 status, couple days early since the numbers are stable.\n\nM1 recap: run.sh end-to-end flow reproduced on the sample data (the Mapillary sanity set caught a real path bug, worth keeping in CI), Baidu-Mall results match the paper.\n\nScale test on the 10x internal capture set: recall@1 holds up well - we lose 2.3 points vs. the small-index regime, which Quentin says is in line with ANN scaling folklore. Query latency is fine: p50 41ms, p95 87ms on the 64-vCPU pool.\n\nThe story is memory: the index at 10x is 118GB resident, and the growth looks close to linear in total feature count. For the logistics pilot (their site survey is ~4x our test set again) that's approaching half-a-TB per site, which changes the serving hardware conversation entirely. Options we'll cost out for M3: feature subsampling per image (cheap, recall cost unknown), PQ-style compression on the vectors (CANN is feature-agnostic so nothing structural blocks it), or sharding per mall wing.\n\nNo schedule risk to M3 yet.\n\nLinnea",
+  "labels": ["status", "risk"]
+}
