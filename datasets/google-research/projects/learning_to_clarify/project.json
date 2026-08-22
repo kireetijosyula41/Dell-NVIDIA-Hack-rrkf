@@ -1,0 +1,18 @@
+{
+  "id": "gr/learning_to_clarify",
+  "title": "Learning to Clarify (ACT)",
+  "summary": "Internal productization of ACT (Action-Based Contrastive Self-Training), which teaches assistants when to ask clarifying questions in multi-turn conversations. We adapt the open-source pipeline, including the PACIFIC dataset conversion tooling, into a data-platform service other teams can run.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Maren Zhou", "Linnea Yamada", "Vera Egede"],
+  "window": {"start": "2026-02-23", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "learning_to_clarify",
+    "url": "https://github.com/google-research/google-research/tree/master/learning_to_clarify",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/learning_to_clarify/e01",
+  "thread_id": "gr/learning_to_clarify/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T08:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: ACT clarification-turn service",
+  "body": "Team,\n\nStarting the ACT workstream. Our open-source Learning to Clarify release showed that Action-Based Contrastive Self-Training gets a model to decide between answering and asking a clarifying question in multi-turn conversations. The product angle for data-platforms: package that as a service any assistant team can fine-tune against their own dialogs, instead of every team hand-labeling ambiguity.\n\nRough milestones inside our window:\n- Mar 13: containerized pipeline running end to end on the PACIFIC example (convert_pacific.py for train and validation splits, 20-entry smoke sample first).\n- Apr 10: full PACIFIC training run plus eval report.\n- May 15: internal alpha with one partner team.\n\nBruno will follow up on staffing and the compute ask. Please flag dataset licensing questions early — PACIFIC is external.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
