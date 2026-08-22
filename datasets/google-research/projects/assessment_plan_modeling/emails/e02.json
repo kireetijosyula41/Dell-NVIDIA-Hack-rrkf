@@ -1,0 +1,40 @@
+{
+  "id": "gr/assessment_plan_modeling/e02",
+  "thread_id": "gr/assessment_plan_modeling/t1",
+  "in_reply_to": "gr/assessment_plan_modeling/e01",
+  "date": "2026-05-07T14:15:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Tundra — structured parsing of clinical assessment & plan text",
+  "body": "Dmitri,\n\nStaffing for Tundra: Yara leads at 65%, Wei 45% on the AP-parsing task and eval, Bilal 40% on the Beam data-generation pipeline.\n\nCompute: modest, 16 A100s best-effort. The Beam job for TF example generation is the wall-clock cost, not training.\n\nBlocker to flag now: vocabulary. Because the vocabulary contains note data, it can't be distributed with the code — we have to generate our own from our licensed corpus. The repo ships only a sample_vocab.txt. Bilal estimates a week once access clears, and access is gated on Privacy Review, which is a 2-3 week SLA. Filing this week.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

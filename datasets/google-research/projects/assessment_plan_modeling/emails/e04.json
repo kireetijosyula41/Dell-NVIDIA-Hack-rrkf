@@ -1,0 +1,35 @@
+{
+  "id": "gr/assessment_plan_modeling/e04",
+  "thread_id": "gr/assessment_plan_modeling/t2",
+  "in_reply_to": "gr/assessment_plan_modeling/e03",
+  "date": "2026-07-15T16:05:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Tundra status: parser trained, action-item labels are the weak spot",
+  "body": "Yara, Deshawn,\n\nGoing with the cheap option. Decisions:\n\n1. Merge the two ambiguous action-item label pairs into coarse labels for v1. Wei, please rerun eval on the merged scheme and report the F1 — I expect it lands near 0.75, and that's the number the summarizer team actually needs.\n2. No re-annotation this window. If a partner later needs the fine-grained distinction, we scope the tightened guide then, with their requirements in hand.\n3. Tundra stays internal-only through the readout; nothing external without a Launch Review Board pass, and we aren't asking for one yet.\n\nReadout July 20. Yara, nice work getting through the vocabulary blocker without losing the schedule.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

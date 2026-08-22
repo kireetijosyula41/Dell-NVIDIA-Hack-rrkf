@@ -1,0 +1,26 @@
+{
+  "id": "gr/assessment_plan_modeling",
+  "title": "Assessment and Plan Modeling",
+  "summary": "A pipeline for structured understanding of the assessment-and-plan sections of clinician documentation: a Beam data-generation job over notes in MIMIC-III note_event CSV format plus published annotation ratings, feeding an AP-parsing model that extracts problem clusters and their action items.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Yara Jokic",
+    "Bilal Novak",
+    "Wei Ivanov"
+  ],
+  "codename": "Project Tundra",
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "assessment_plan_modeling",
+    "url": "https://github.com/google-research/google-research/tree/master/assessment_plan_modeling",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

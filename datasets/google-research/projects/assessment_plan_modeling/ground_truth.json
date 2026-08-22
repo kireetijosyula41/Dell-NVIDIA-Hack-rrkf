@@ -1,0 +1,16 @@
+{
+  "project": "gr/assessment_plan_modeling",
+  "conflicts": [
+    {
+      "conflict_id": "C098",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "Uboreshaji_Modeli"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Internally this effort is Project Tundra — Wei set up the shared drive and the run tracker under that name, so please use it in invites and docs."
+    }
+  ]
+}
