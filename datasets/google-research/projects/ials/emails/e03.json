@@ -1,0 +1,18 @@
+{
+  "id": "gr/ials/e03",
+  "thread_id": "gr/ials/t2",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:44:00Z",
+  "from": {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "iALS status: Table 5 reproduced, one methodology risk on repetitions",
+  "body": "Dmitri, Deshawn,\n\nStatus. MovieLens 1M reproduces cleanly with the published settings (embedding_dim 192, 12 epochs, regularization 0.007, unobserved_weight 0.3) - HR@10 and NDCG@10 land within 0.003 of the Table 5 numbers. Pinterest matches too with its own config (16 epochs, regularization 0.02, unobserved_weight 0.007). The py2.7 container worked, so no porting detour needed - good call Oyin.\n\nThe methodology risk: published numbers are means over 10 repetitions, and run-to-run variance on Pinterest is big enough that a single lucky run can look +0.004 over the mean. If Evalline consumes a single-seed baseline, teams will 'beat' it with noise. Linnea's proposal, which I support: the packaged baseline ships as a 10-seed protocol with mean and standard deviation, and Evalline gates on the mean minus one sigma.\n\nRemaining: holdout-generation tooling for hyperparameter tuning, then packaging. On track for April 27.\n\nBilal",
+  "labels": ["status", "risk"]
+}
