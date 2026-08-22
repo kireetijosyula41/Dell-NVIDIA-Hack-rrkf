@@ -1,0 +1,45 @@
+{
+  "id": "gr/clip_as_rnn/e02",
+  "thread_id": "gr/clip_as_rnn/t1",
+  "in_reply_to": "gr/clip_as_rnn/e01",
+  "date": "2026-04-22T15:55:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Zeke Karlsen",
+      "email": "zeke.karlsen@meridian.example",
+      "role": "Serving Lead"
+    }
+  ],
+  "subject": "Re: CaR kickoff — open-vocabulary segmentation without training data",
+  "body": "Lucia,\n\nPlan:\n\nStaffing — Carmen 50% (method owner: the recurrent CLIP loop + mask quality), Bilal 40% (serving + data), Gustavo 40% (eval reproduction on the segmentation benchmarks, config-per-dataset like the release).\n\nInfra — Zeke's team will host the demo endpoint on Shipyard with GPU serving so SAM refinement works, unlike the public CPU demo. Inference-only: 8 A100s for the demo, ~24 for the batch API at target throughput. Titan best-effort, no reservation.\n\nData/platform dependency — eval sets and the concept-vocabulary tables live in Corpus. Corpus v2 freeze is 2026-07-24, so as long as the segmentation eval sets are migrated by mid-July we're clear — Bilal has it planned for the week after release.\n\nSchedule looks safe. Only flag: Carmen is out the last week of May.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

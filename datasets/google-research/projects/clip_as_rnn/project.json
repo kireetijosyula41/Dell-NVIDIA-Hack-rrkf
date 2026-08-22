@@ -1,0 +1,25 @@
+{
+  "id": "gr/clip_as_rnn",
+  "title": "CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor",
+  "summary": "Turns CLIP as RNN (CaR) — training-free open-vocabulary segmentation that recurrently refines CLIP-derived masks — into an internal segmentation service for teams that need arbitrary-concept masks without collecting training data.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Bilal Novak",
+    "Carmen Reyes",
+    "Gustavo Moreau"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "clip_as_rnn",
+    "url": "https://github.com/google-research/google-research/tree/master/clip_as_rnn",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

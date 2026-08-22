@@ -1,0 +1,41 @@
+{
+  "id": "gr/clip_as_rnn/e03",
+  "thread_id": "gr/clip_as_rnn/t1",
+  "in_reply_to": "gr/clip_as_rnn/e02",
+  "date": "2026-05-26T09:30:00Z",
+  "from": {
+    "name": "Carmen Reyes",
+    "email": "carmen.reyes@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: CaR kickoff — open-vocabulary segmentation without training data",
+  "body": "Status before I'm out next week.\n\nDemo endpoint: live on Shipyard since May 14, GPU-backed so full SAM refinement is on. Early users are throwing genuinely weird queries at it (\"scaffolding\", \"wet pavement\") and mask quality is holding up — the training-free pitch is landing.\n\nEvals (Gustavo): reproduced the release configs on three of the five benchmark datasets so far; numbers within 0.5 mIoU of published. Two remaining datasets blocked on data prep, Bilal's on it.\n\nRisk/trade-off for the batch API: the recurrent loop's latency scales with query-set size. At 50 concept queries per image we're at 3.8s/image on an A100 — fine for batch, not for anything interactive. Recommendation: ship batch-only in this window, and I'll write up the loop-truncation experiment (2 iterations vs 3 costs ~0.7 mIoU but halves latency) as the Q3 interactive path.\n\nCarmen",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
