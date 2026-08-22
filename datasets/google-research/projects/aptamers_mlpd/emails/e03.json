@@ -1,0 +1,41 @@
+{
+  "id": "gr/aptamers_mlpd/e03",
+  "thread_id": "gr/aptamers_mlpd/t2",
+  "in_reply_to": null,
+  "date": "2026-05-13T10:45:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Aptamer status: count matrices land, MLPD vs PD gap",
+  "body": "Hi Dmitri, Bruno,\n\nStatus. Count matrices are built end to end from the raw fastq pairs — Saoirse's port produces sequence counts per round and stringency level that match the reference notebooks to within rounding on the shared subset. Model training runs clean on top.\n\nInteresting risk. Models trained on MLPD count data generalize noticeably better than PD-trained ones (about 0.13 higher Spearman on held-out sequences), but our internal assay data looks like PD, not MLPD. So the headline result from the open-source release isn't the result we'd get on our own data without changing how the wet-lab side collects it. That's a conversation with the partner team, not a modeling fix.\n\nWalking runs start next week.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

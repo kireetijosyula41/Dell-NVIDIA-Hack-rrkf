@@ -1,0 +1,41 @@
+{
+  "id": "gr/aptamers_mlpd/e01",
+  "thread_id": "gr/aptamers_mlpd/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T09:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: aptamer model training and sequence walking",
+  "body": "Hi Bruno, team,\n\nKicking off the aptamer modeling work. Four stages: data preprocessing, model training, sequence walking, and the analysis notebooks over PD and MLPD count data. Preprocessing takes raw fastq file pairs and produces a matrix of sequences with counts per pair — that is, per selection round and stringency level — and everything downstream keys off that matrix.\n\nProduct angle: the sequence-walking step is what a partner actually wants, a guided search from a known binder toward better ones.\n\nMilestones: preprocessing and count matrices by early May, trained models plus walking runs late May, figure regeneration from the analysis notebooks in early June, readout the week of June 8.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

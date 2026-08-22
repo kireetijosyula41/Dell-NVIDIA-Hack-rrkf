@@ -1,0 +1,18 @@
+{
+  "project": "gr/aptamers_mlpd",
+  "conflicts": [
+    {
+      "conflict_id": "C087",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "muNet",
+        "ials",
+        "loss_functions_transfer"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Jun has the Corpus v2 migration freeze on 2026-07-10, so all sequence-count ingest has to be through and verified before that date."
+    }
+  ]
+}
