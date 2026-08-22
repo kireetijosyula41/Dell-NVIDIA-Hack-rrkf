@@ -1,0 +1,17 @@
+{
+  "id": "gr/experience_replay/e01",
+  "thread_id": "gr/experience_replay/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T10:11:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Experience replay kickoff: replay-ratio guidance for every RL stack",
+  "body": "Team,\n\nKicking off the experience-replay standardization effort for agents-rl. Our open-source study revisited replay fundamentals - how replay capacity and the ratio of new-to-old experience drive value-based agent performance - and internal teams are still configuring buffers by folklore. We turn the findings into defaults.\n\nConcretely, the released code exposes the levers cleanly: replay_capacity (1M in the reference config) and the replay ratio via oldest_policy_in_buffer (250k default), with the ElephantDQNAgent runner on Atari. Our deliverable is a sweep across those knobs on three internal environments plus Atari references, and a config guide with recommended settings per workload class.\n\nMilestones for Apr 20 - Jun 29: sweep harness running by May 15, full sweep results by Jun 12, published guidance + adoption by two internal RL teams by window close.\n\nJelena owns staffing and data. Q3 OKR ties to adoption, so end date matters.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

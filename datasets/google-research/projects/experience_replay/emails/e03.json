@@ -1,0 +1,18 @@
+{
+  "id": "gr/experience_replay/e03",
+  "thread_id": "gr/experience_replay/t1",
+  "in_reply_to": "gr/experience_replay/e02",
+  "date": "2026-06-16T16:24:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Experience replay kickoff: replay-ratio guidance for every RL stack",
+  "body": "Hi Ulla, Jelena,\n\nSweep results, four days late against Jun 12 (one internal env needed a rerun after an episode-boundary fix - Jelena called that risk in May).\n\nHeadlines: the published finding replicates internally. Increasing replay capacity from 1M upward helps or is neutral in every configuration we tested, and performance is far more sensitive to the replay ratio than to capacity - moving oldest_policy_in_buffer from 250k to 2.5M swings our internal envs by up to 23% final return, dwarfing any capacity effect. Uniform sampling with a well-chosen ratio beat prioritized replay with defaults on two of three internal envs, which will surprise people.\n\nGuidance doc structure: three workload classes, each with a recommended capacity/ratio pair and a \"when to deviate\" note. Draft to Saoirse's tooling Friday; on track for adoption conversations the week of Jun 22.\n\nOne trade-off for the guide: the largest-capacity configs cost 2x memory for <1% return. We recommend against them explicitly.\n\nVera",
+  "labels": ["status", "risk"]
+}
