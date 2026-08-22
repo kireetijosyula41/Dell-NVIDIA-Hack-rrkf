@@ -1,0 +1,15 @@
+{
+  "id": "gr/madlad_400/e03",
+  "thread_id": "gr/madlad_400/t1",
+  "in_reply_to": "gr/madlad_400/e02",
+  "date": "2026-06-03T09:47:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Project Saffron — bake-off results + a trade-off",
+  "body": "Bake-off numbers are in for Saffron.\n\nOn our long-tail slice (90 languages), 10.7b-mt beats 7b-mt by +1.8 chrF on average, but 7b-mt-bt — the backtranslation-finetuned checkpoint — closes to within 0.4 chrF of the 10.7B on the lowest-resource third while being materially cheaper to serve. The 3b-mt is fine as a fallback tier only.\n\nTrade-off for the launch review: serve 7b-mt-bt as primary and accept the 0.4 chrF gap, or serve 10.7b-mt and eat roughly 40% higher serving cost at the latency target Milan measured post-quantization. My recommendation is 7b-mt-bt primary, 10.7B behind a quality-critical flag.\n\nOne risk: a handful of low-resource languages show audit artifacts inherited from the web crawl; Yara is compiling the exclusion list so we don't demo those at LRB.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

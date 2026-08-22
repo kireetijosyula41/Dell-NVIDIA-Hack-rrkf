@@ -1,0 +1,18 @@
+{
+  "id": "gr/madlad_400/e04",
+  "thread_id": "gr/madlad_400/t1",
+  "in_reply_to": "gr/madlad_400/e03",
+  "date": "2026-07-01T14:33:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Saffron — LRB decision",
+  "body": "Team,\n\nDecision for the 07-06 Launch Review Board pre-read, agreed with Nadia today:\n\n1) Project Saffron ships with 7b-mt-bt as the primary serving model; 10.7b-mt goes behind the quality-critical flag exactly per Carmen's recommendation.\n2) The 17 languages on Yara's audit-artifact exclusion list are out of the external demo and documented as a known limitation. Privacy review already signed off on the remaining set.\n3) Scope cut: the 8B LM does not ship in this window. It stays research-only until we have a separate eval story — I've moved it to the Q3 backlog.\n\nMilan, please have the staging endpoint frozen by 07-03 so LRB sees exactly what would ship.\n\nNice work everyone — Saffron is in good shape going into review.\n\nPriya",
+  "labels": ["decision", "escalation"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/madlad_400/e01",
+  "thread_id": "gr/madlad_400/t1",
+  "in_reply_to": null,
+  "date": "2026-04-02T10:10:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Project Saffron kickoff — MADLAD-400 serving plan",
+  "body": "Hi team,\n\nWelcome to Project Saffron — that's the internal codename for the MADLAD-400 productization, so please use it in docs and standups. Goal: take our open-source MADLAD-400 release and stand up a long-tail translation service.\n\nWhat we're working with: MT checkpoints at 3B, 7.2B (plus a backtranslation-finetuned 7b-mt-bt variant) and 10.7B parameters, an 8B parameter LM, and the shared 256k vocabulary they were all trained with.\n\nMilestones inside our window (through 07-20):\n- 04-24: 3b-mt serving on Shipyard staging, inference_example parity confirmed.\n- 05-29: quality bake-off 3B vs 7.2B vs 10.7B on our long-tail eval slice.\n- 07-06: Launch Review Board pre-read; external demo pending sign-off.\n\nBruno will follow up on compute + staffing. Carmen is research lead.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}
