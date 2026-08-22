@@ -1,0 +1,18 @@
+{
+  "id": "gr/mutual_information_representation_learning",
+  "title": "On Mutual Information Maximization and Representation Learning",
+  "summary": "Replicates and extends our open-source study on mutual information maximization for representation learning, turning its experiment suite (batch size 128, results averaged over 20 runs) into practical guidance for how graphs-retrieval teams pick and evaluate representation objectives for retrieval encoders.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": ["Nikhil Abebe", "Halima Toure", "Chiara Olsen"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mutual_information_representation_learning",
+    "url": "https://github.com/google-research/google-research/tree/master/mutual_information_representation_learning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

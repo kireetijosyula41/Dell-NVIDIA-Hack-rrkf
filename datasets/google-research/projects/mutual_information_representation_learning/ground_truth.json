@@ -1,0 +1,12 @@
+{
+  "project": "gr/mutual_information_representation_learning",
+  "conflicts": [
+    {
+      "conflict_id": "C019",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["lm_memorization"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the full matrix (20 runs x estimator x architecture grid, plus the retrieval extension) we hold the cirrus-tpu reservation, 256 accelerators, for the week of 2026-06-08 out of the portfolio's quarterly allocation."
+    }
+  ]
+}
