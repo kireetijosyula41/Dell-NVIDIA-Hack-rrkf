@@ -1,0 +1,19 @@
+{
+  "id": "gr/munchausen_rl/e04",
+  "thread_id": "gr/munchausen_rl/t1",
+  "in_reply_to": "gr/munchausen_rl/e03",
+  "date": "2026-05-12T13:31:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: M-RL kickoff — closing decisions",
+  "body": "Team,\n\nClosing decisions for the half:\n\n1. M-IQN ships with 2 seeds, not 3. The suite's job is to be a dependable baseline, and a week's slip past 05-25 costs us the Evalline publication slot. We annotate the seed count on the reference curves so nobody misreads the variance.\n2. TF1 stays contained per Ivo's March call. A TF2/JAX port is formally out of scope for this half — I've written it into the Q3 candidate list instead, where it can compete on merit.\n3. Yara publishes M-DQN reference curves (full 57 games, 3 seeds) plus the al_dqn ablation to Evalline by 05-20; M-IQN follows by 05-25.\n\nQuentin — the 39-of-41 result is exactly the reproduction story I wanted for the readout. Nice.\n\nUlla",
+  "labels": ["decision"]
+}

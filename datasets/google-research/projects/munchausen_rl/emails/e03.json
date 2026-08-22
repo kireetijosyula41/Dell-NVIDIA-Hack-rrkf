@@ -1,0 +1,19 @@
+{
+  "id": "gr/munchausen_rl/e03",
+  "thread_id": "gr/munchausen_rl/t1",
+  "in_reply_to": "gr/munchausen_rl/e02",
+  "date": "2026-04-15T10:26:00Z",
+  "from": {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: M-RL kickoff — sweep status + replay checkpoint risk",
+  "body": "Hi both,\n\nSweep status: M-DQN Atari run is ~70% through the 57 games. Curves reproduce the release's story so far — M-DQN outperforms our pinned DQN baseline on 39 of the 41 games completed, and on Pong the m_dqn agent trained via the train.py path matches the reference within noise. The al_dqn ablation runs are queued behind it as planned.\n\nTwo issues:\n\n1. Replay-buffer checkpointing under the TF1 graph runner occasionally corrupts on preemption; Rosa added an atomic-rename guard, no losses since 04-06, but we burned about 4 days of re-runs. The re-run headroom in the budget is earning its keep.\n\n2. M-IQN is ~1.6x slower per step than M-DQN on our A100s (quantile head overhead), so the mid-May M-IQN milestone is tight. Options: 2 seeds instead of 3 for M-IQN, or slip a week. Preference?\n\nQuentin",
+  "labels": ["status", "risk"]
+}

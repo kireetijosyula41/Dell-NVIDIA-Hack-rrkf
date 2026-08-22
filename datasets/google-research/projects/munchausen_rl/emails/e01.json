@@ -1,0 +1,17 @@
+{
+  "id": "gr/munchausen_rl/e01",
+  "thread_id": "gr/munchausen_rl/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:12:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "M-RL kickoff: making Munchausen agents our value-based baseline suite",
+  "body": "Hi Ivo,\n\nKickoff for the Munchausen RL effort. Context: our open-source M-RL release ships two agents on top of Dopamine — M-DQN and M-IQN — plus an Advantage Learning implementation used for ablations. Teams keep re-running these ad hoc; the product here is a maintained, reproducible value-based baseline suite for the whole agents-rl portfolio, with pinned configs (the atari.gin path) and published reference curves.\n\nMilestones inside the window (02-16 to 05-25): repo hygiene and the train.py entry point wrapped for our infra by mid-March, full Atari sweep for M-DQN by end of April, M-IQN plus the AL ablation by mid-May, reference curves on Evalline before close.\n\nBiggest known wart: the release is TensorFlow v1, no eager mode. Want your read on whether we port or contain.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}
