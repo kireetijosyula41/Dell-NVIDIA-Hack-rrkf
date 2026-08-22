@@ -1,0 +1,19 @@
+{
+  "project": "gr/cola",
+  "conflicts": [
+    {
+      "conflict_id": "C015",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "gradient_based_tuning",
+        "imghum",
+        "hierarchical_foresight"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "Scheduling constraint that shapes everything: the Corpus v2 migration freeze lands on 2026-06-26, so our audio ingestion and any new dataset registrations have to be on v2 before that date."
+    }
+  ]
+}

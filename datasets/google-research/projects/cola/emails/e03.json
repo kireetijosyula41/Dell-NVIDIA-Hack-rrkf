@@ -1,0 +1,46 @@
+{
+  "id": "gr/cola/e03",
+  "thread_id": "gr/cola/t2",
+  "in_reply_to": null,
+  "date": "2026-05-22T10:15:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "COLA status: probe numbers + pipeline risk",
+  "body": "Hi both,\n\nStatus: SSL pre-training on LibriSpeech (LBS) reproduced cleanly, checkpoints landing under the standard model_dir layout. Downstream: a linear probe on Speech Commands v2 (SPCV2) with freeze_encoder=true gets 93.8%, and full fine-tuning reaches 95.4% — so frozen embeddings sit ~1.6 points off task-specific, inside Dmitri's 2-point success bar.\n\nThe trade-off to discuss: frozen-encoder serving is cheap and one-model-for-everything, but two downstream teams (wake-word and audio events) asked about fine-tuned variants, which multiplies serving cost and breaks the single-backbone story.\n\nRisk: our input pipelines are TFDS-based; re-pointing them at Corpus-registered datasets is where Halima is spending most of her time, and it's slower than planned. She thinks two more weeks.\n\nVera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
