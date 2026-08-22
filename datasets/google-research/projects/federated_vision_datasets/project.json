@@ -1,0 +1,26 @@
+{
+  "id": "gr/federated_vision_datasets",
+  "title": "Federated Vision Datasets",
+  "summary": "Realistic non-IID federated data splits — Landmarks-User-160k, iNaturalist user and geographic partitions, and CIFAR variants — for federated visual classification, with TensorFlow Federated compatibility.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Bilal Novak",
+    "Emeka Pinto",
+    "Gustavo Moreau",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "federated_vision_datasets",
+    "url": "https://github.com/google-research/google-research/tree/master/federated_vision_datasets",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

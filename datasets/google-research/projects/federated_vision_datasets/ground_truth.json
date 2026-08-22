@@ -1,0 +1,16 @@
+{
+  "project": "gr/federated_vision_datasets",
+  "conflicts": [
+    {
+      "conflict_id": "C137",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "bam"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we're scoping and staffing a dataset de-duplication pipeline from scratch: Emeka leads, near-duplicate detection via perceptual hashing plus embedding similarity, batch mode first, about five engineer-weeks with a target of mid-June."
+    }
+  ]
+}

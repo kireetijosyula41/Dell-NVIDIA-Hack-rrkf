@@ -1,0 +1,45 @@
+{
+  "id": "gr/federated_vision_datasets/e01",
+  "thread_id": "gr/federated_vision_datasets/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:25:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: federated vision benchmark suite",
+  "body": "Team — kicking off the federated vision benchmark track for trust-theory.\n\nOur open-source splits give us realistic non-IID client distributions — Landmarks-User-160k with 1,262 users over 2,028 classes, and the iNaturalist splits with both per-user and geographic partitions — which is exactly what our federated-learning claims need to be evaluated against, instead of synthetic CIFAR shards.\n\nGoal: a Meridian-internal federated eval suite on Evalline with these splits as the default benchmark, plus ingestion of partner-contributed imagery into the same user-partitioned format.\n\nMilestones: splits ingested and TFF-compatible by May 8; Evalline harness integration by Jun 5; partner-data pipeline (with de-dup and QA) by early July; readout Jul 17.\n\nBilal and Emeka own ingestion, Gustavo the TFF harness, Halima analysis. Alina follows up on resourcing.\n\nXimena",
+  "labels": [
+    "kickoff"
+  ]
+}

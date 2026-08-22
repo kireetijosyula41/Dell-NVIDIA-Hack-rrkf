@@ -1,0 +1,45 @@
+{
+  "id": "gr/federated_vision_datasets/e04",
+  "thread_id": "gr/federated_vision_datasets/t2",
+  "in_reply_to": "gr/federated_vision_datasets/e03",
+  "date": "2026-07-01T16:10:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Status: Evalline integration live, de-dup throughput risk",
+  "body": "Gustavo, all — decisions.\n\nDe-dup: GPU-batch the embedding stage rather than dropping to hash-only. Cross-client leakage is the one flaw that would invalidate the benchmark, so we spend 8 A100s for a week rather than weaken detection — Emeka confirmed the batching change is two days of work.\n\nReadout scope for Jul 17: public splits fully integrated (Landmarks plus both iNaturalist partitionings); partner imagery included only if it clears de-dup and QA by Jul 13 — otherwise it's a Q3 follow-on and we say so plainly.\n\nHalima, lead the analysis section with the IID-versus-user-partition gap; that's the argument for making this suite the default in Evalline. And book Tomas for the readout — adoption is his call as much as ours.\n\nXimena",
+  "labels": [
+    "decision"
+  ]
+}

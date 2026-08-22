@@ -1,0 +1,45 @@
+{
+  "id": "gr/federated_vision_datasets/e02",
+  "thread_id": "gr/federated_vision_datasets/t1",
+  "in_reply_to": "gr/federated_vision_datasets/e01",
+  "date": "2026-04-22T13:50:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: federated vision benchmark suite",
+  "body": "Ximena — resourcing for the benchmark track.\n\nStaffing: Bilal 40%, Emeka 50%, Gustavo 50%, Halima 30% rising in June for analysis. Compute: federated simulation rounds on the Landmarks split are surprisingly cheap — 16 A100s best-effort covers the baseline matrix. Storage: 6TB for the public splits plus partner imagery.\n\nThe real build is data quality. Partner imagery overlaps heavily with itself and with the public sets, and duplicate leakage across simulated clients would corrupt every non-IID claim we make — so we're scoping and staffing a dataset de-duplication pipeline from scratch: Emeka leads, near-duplicate detection via perceptual hashing plus embedding similarity, batch mode first, about five engineer-weeks with a target of mid-June. I looked for an off-the-shelf internal tool and didn't find one that handles cross-client leakage.\n\nFlag if the five weeks needs a trade.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}
