@@ -1,0 +1,18 @@
+{
+  "id": "gr/capsule_em/e02",
+  "thread_id": "gr/capsule_em/t1",
+  "in_reply_to": "gr/capsule_em/e01",
+  "date": "2026-03-20T13:30:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: EMCAPSNet - staffing + June compute locked",
+  "body": "Anders,\n\nStaffing: Yara 60% (TL, owns the robustness methodology), Gustavo 50% on training runs and the docker path - the repo ships run_local_gpu.sh with NVIDIA docker support, which Giannis has already adapted to our images. Giannis 40% on eval tooling and the checkpoint plumbing (norb_em_checkpoints + smallNORB tfrecords are mirrored internally as of yesterday).\n\nCompute: near-term needs are small - the README's smallNORB training config wants 8 GPUs, fine on titan-a100 best-effort. For M3, compute is sorted: we hold the vulcan-h100 reservation for the week of 2026-06-22 - 512 accelerators for the scale stress-test sweep, with jobs queued to start as soon as the scheduled maintenance wraps on the 24th. It's a short effective window, so Gustavo will have the sweep fully rehearsed on titan beforehand.\n\nOne caveat: the release is marked preliminary/under construction, so expect some code archaeology in M1.\n\nBruno",
+  "labels": ["resources"]
+}

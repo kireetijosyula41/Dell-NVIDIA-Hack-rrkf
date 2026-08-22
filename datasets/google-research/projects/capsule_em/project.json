@@ -1,0 +1,18 @@
+{
+  "id": "gr/capsule_em",
+  "title": "Open source release of [EMCAPSNet](https://openreview.net/pdf?id=HJWLfGWRb)",
+  "summary": "Evaluating EMCAPSNet, our EM-routing capsule network release, as a viewpoint-robust vision backbone: reproducing the smallNORB results (1.8 test error, 1.3 with patching) and stress-testing capsule routing at larger scale for the graphs-retrieval portfolio's pose-sensitive matching problems.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": ["Gustavo Moreau", "Giannis Sato", "Yara Jokic"],
+  "window": {"start": "2026-03-09", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "capsule_em",
+    "url": "https://github.com/google-research/google-research/tree/master/capsule_em",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
