@@ -1,0 +1,19 @@
+{
+  "id": "gr/cubert/e02",
+  "thread_id": "gr/cubert/t1",
+  "in_reply_to": "gr/cubert/e01",
+  "date": "2026-04-27T13:12:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: CuBERT kickoff - resourcing",
+  "body": "Priya,\n\nPlan of record:\n\n- Gustavo Moreau is committed at 70% to cubert for May 2026 - he is running the deduplication rebuild and the first fine-tuning sweep, both of which have to happen in May or the June milestone is dead. He tapers to 40% from June.\n- Katya Silva 45% across the window, label pipeline from review outcomes.\n- Oyin Iversen 40%, corpus extraction from the monorepo.\n- Halima Toure 20% from June, evaluation.\n\nCompute: fine-tuning the released large checkpoint is cheap - about 300 GPU-hours. Pre-training our own is not. Ines has us down for 128 GPUs on vulcan-h100 for the last two weeks of June, and I've told her we can work around the 2026-06-22 to 2026-06-24 maintenance window by starting the run on the 25th.\n\nGustavo's May allocation is the thing I'd defend hardest if anything comes up.\n\nAlina",
+  "labels": ["resources"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/cubert",
+  "conflicts": [
+    {
+      "conflict_id": "C133",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["CIQA"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Gustavo Moreau is committed at 70% to cubert for May 2026 - he is running the deduplication rebuild and the first fine-tuning sweep, both of which have to happen in May or the June milestone is dead."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/cubert",
+  "title": "Update 2021/9/22: Evaluating and Training the Models",
+  "summary": "CuBERT is a family of BERT-style models pre-trained on deduplicated Python and Java source corpora drawn from public GitHub, released with vocabularies, fine-tuned checkpoints and a run_classifier.py harness for code classification tasks such as exception-type prediction. Meridian is evaluating it as the encoder behind internal code-quality and review-triage features.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Gustavo Moreau",
+    "Oyin Iversen",
+    "Katya Silva",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cubert",
+    "url": "https://github.com/google-research/google-research/tree/master/cubert",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

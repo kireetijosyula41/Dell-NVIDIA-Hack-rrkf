@@ -1,0 +1,17 @@
+{
+  "id": "gr/cubert/e03",
+  "thread_id": "gr/cubert/t2",
+  "in_reply_to": null,
+  "date": "2026-06-10T09:38:00Z",
+  "from": {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "CuBERT status - fine-tune result, and a dedup surprise",
+  "body": "Status.\n\nMay milestone hit, just. Fine-tuning the released Python checkpoint on 41k internal review outcomes gives 0.68 F1 on \"needs human review\" vs 0.51 for the keyword baseline. That's the number I'd put in front of anyone right now.\n\nThe surprise is dedup. Running the released deduplication process over our monorepo extraction removed 34% of files. Not 5%, 34% - generated clients, vendored dependencies, copy-pasted test scaffolds. When I evaluated the fine-tune on the pre-dedup split I got 0.79 F1, which would have been a lovely slide and complete fiction: the same file was in train and test.\n\nSo the 0.68 is the honest number and I want to be clear it went *down* because we did this properly.\n\nRisk for June: 34% smaller corpus than I sized the pre-training run against. Either we accept a weaker in-domain model or we widen the extraction to other repos, which is a scope change.\n\nGustavo",
+  "labels": ["status", "risk"]
+}

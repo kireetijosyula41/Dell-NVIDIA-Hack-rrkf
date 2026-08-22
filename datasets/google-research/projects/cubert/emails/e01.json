@@ -1,0 +1,18 @@
+{
+  "id": "gr/cubert/e01",
+  "thread_id": "gr/cubert/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:05:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "CuBERT kickoff - a code encoder for review triage",
+  "body": "Hi team,\n\nKicking off CuBERT. Our open-source release gives us BERT-style models pre-trained on deduplicated Python and Java corpora from public GitHub, plus vocabularies, fine-tuned checkpoints and the run_classifier.py harness for the classification tasks - exception type prediction being the one I keep pointing at in decks.\n\nProduct goal: review triage. Given a diff, predict which reviews need a human immediately. Today that's keyword heuristics and it's embarrassing.\n\nApr 13 - Aug 3:\n- May 22: fine-tune the released Python checkpoint on our internal review-outcome labels, get a first accuracy number.\n- Jun 26: our own pre-training corpus from the internal monorepo, deduplicated with the released process.\n- Jul 24: head-to-head vs the keyword baseline; launch review packet.\n\nAlina will send resourcing this week. Gustavo is tech lead. One thing up front: the deduplication step is not optional - the release is explicit that near-duplicate files inflate results, and I don't want a number we have to retract.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}
