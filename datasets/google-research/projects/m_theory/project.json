@@ -1,0 +1,16 @@
+{
+  "id": "gr/m_theory",
+  "title": "M-Theory Research",
+  "summary": "Numerical exploration of M-Theory / Supergravity questions using TensorFlow as a generic numerical engine — pure-mathematics research with no measurement or user data, driven through the SUGRA colab workflow.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": ["Giannis Sato", "Maren Zhou", "Yara Jokic", "Farah Haddad"],
+  "window": {"start": "2026-03-30", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "m_theory",
+    "url": "https://github.com/google-research/google-research/tree/master/m_theory",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

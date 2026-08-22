@@ -1,0 +1,18 @@
+{
+  "id": "gr/m_theory/e03",
+  "thread_id": "gr/m_theory/t1",
+  "in_reply_to": "gr/m_theory/e02",
+  "date": "2026-05-27T15:48:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: M-Theory numerics — status: small scans done, precision risk",
+  "body": "Status:\n\n- Loader flow shipped 04-22. The SUGRA_Colab notebook now loads the m_theory module from our internal mirror or from an uploaded m_theory.zip archive with the reset_package path working — Farah's demo went smoothly.\n- Small scans reproduce the known critical-point catalogue: 41/41 previously published stationary points recovered, residuals below 1e-9.\n\nRisk for the big scan: float32 on the accelerators loses us stationary points with shallow basins — on the small runs we miss ~8% of points unless we do a float64 polish pass on CPU afterwards. That polish adds roughly 1.5 days of wall-clock to the June scan. I've budgeted it into the schedule, but it means the 256-chip week has zero slack. If the scan slips past 06-26 we report partial results at the OKR lock.\n\nYara",
+  "labels": ["status", "risk"]
+}

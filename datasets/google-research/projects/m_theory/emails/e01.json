@@ -1,0 +1,19 @@
+{
+  "id": "gr/m_theory/e01",
+  "thread_id": "gr/m_theory/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T08:55:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "M-Theory numerics — kickoff and framing",
+  "body": "Hi all,\n\nKicking off the M-Theory numerics project. Framing for anyone new: this is our pure-mathematics track — there is no dependency on measurement or user data at all, we're using our ML stack as a generic numerical engine to hunt for structure in supergravity potentials. The product story is credibility + tooling: the same vectorized optimization machinery generalizes to other stiff numerical searches in the portfolio.\n\nMilestones (window closes 2026-07-06):\n- 04-24: SUGRA_Colab loader flow working against our internal mirror, including the m_theory.zip upload path for modified modules.\n- 05-29: reproduce the known critical-point catalogue on small scans.\n- 06-26: large-scale scan results written up for the Q3 OKR lock that same day.\n\nBruno has staffing; Yara is tech lead. Compute ask coming separately from Bruno — the big scans are accelerator-hungry.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

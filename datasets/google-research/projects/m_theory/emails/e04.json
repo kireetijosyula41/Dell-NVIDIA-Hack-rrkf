@@ -1,0 +1,15 @@
+{
+  "id": "gr/m_theory/e04",
+  "thread_id": "gr/m_theory/t1",
+  "in_reply_to": "gr/m_theory/e03",
+  "date": "2026-06-16T09:05:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Re: M-Theory numerics — decision on the June scan",
+  "body": "Bruno, Yara,\n\nDecision after this morning's check-in: we run the large scan as planned on our cirrus-tpu week starting 06-22, but we cut the scan volume 20% so the float64 polish pass fits inside the reservation with half a day of slack. Better a complete, polished catalogue of a slightly smaller region than a partial sweep of the full one.\n\nFor the 06-26 OKR lock I'll write the key result as \"extended critical-point catalogue, polished residuals < 1e-9\" without committing to a point count. Yara, please send me the two headline numbers you're confident in by 06-24 evening — that gives me a day of buffer.\n\nFarah's loader work is done and she rolls off this week as planned.\n\nThanks all — strong quarter for the weirdest project in my portfolio.\n\nAnders",
+  "labels": ["decision", "status"]
+}
