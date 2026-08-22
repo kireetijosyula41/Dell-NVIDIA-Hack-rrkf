@@ -1,0 +1,15 @@
+{
+  "id": "gr/kobe/e02",
+  "thread_id": "gr/kobe/t1",
+  "in_reply_to": "gr/kobe/e01",
+  "date": "2026-03-02T16:22:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: Kickoff: reference-less MT evaluation (Project Obsidian)",
+  "body": "Priya,\n\nStaffing for Obsidian: Wei 60% as research lead, Saoirse 50% on the Evalline endpoint and serving path, Emeka 40% on data plumbing for the released annotations. Compute is trivial — CPU scoring, a couple of standard VMs.\n\nThe real constraint is the one you named: there's no open-source multilingual KB + entity-linking stack, which is exactly why the release ships pre-computed annotations instead of a linker. So we split the work: the Mar 20 reproduction and the May pilot both run on the released annotation files, while Wei scopes a replacement linker for candidate translations (that's the part we must run live at scoring time; source-side entities can be cached). His current candidate is a lightweight multilingual linker fine-tuned on our own KB snapshot — realistically a Q3 build, not this window.\n\nTomas cc'd: we'd like Evalline to treat KoBE as a metric plugin, same contract as the existing BLEU/chrF runners.\n\nDeshawn",
+  "labels": ["resources"]
+}

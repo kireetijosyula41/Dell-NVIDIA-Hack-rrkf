@@ -1,0 +1,19 @@
+{
+  "id": "gr/kobe",
+  "title": "Data and code for [Knowledge Based Machine Translation Evaluation](https://research.google",
+  "summary": "KoBE is a reference-less machine translation evaluation metric that grounds entity mentions in source sentences and candidate translations against a large-scale multilingual knowledge base, using matched entity counts as a quality signal. The released annotations cover 425k sentences in 18 language pairs from 262 MT systems.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": ["Emeka Pinto", "Saoirse Eriksen", "Wei Ivanov"],
+  "codename": "Project Obsidian",
+  "window": {"start": "2026-02-23", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "kobe",
+    "url": "https://github.com/google-research/google-research/tree/master/kobe",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
