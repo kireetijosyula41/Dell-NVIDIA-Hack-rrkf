@@ -1,0 +1,12 @@
+{
+  "project": "gr/gumbel_max_causal_gadgets",
+  "conflicts": [
+    {
+      "conflict_id": "C012",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["compositional_transformers"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Wei Ivanov is committed at 60% to this project for July 2026 - the counterfactual-audit pilot is scheduled entirely around his availability that month, so please protect the allocation."
+    }
+  ]
+}

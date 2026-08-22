@@ -1,0 +1,18 @@
+{
+  "id": "gr/gumbel_max_causal_gadgets",
+  "title": "JAX code to accompany the NeurIPS paper [\"Learning Generalized Gumbel-max Causal Mechanism",
+  "summary": "Builds counterfactual-simulation tooling on our JAX implementations of generalized Gumbel-max causal mechanisms - Gadget 1 and Gadget 2 - which learn couplings that make counterfactual estimates lower-variance than standard Gumbel-max baselines.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": ["Emeka Pinto", "Wei Ivanov", "Giannis Sato"],
+  "window": {"start": "2026-03-30", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gumbel_max_causal_gadgets",
+    "url": "https://github.com/google-research/google-research/tree/master/gumbel_max_causal_gadgets",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

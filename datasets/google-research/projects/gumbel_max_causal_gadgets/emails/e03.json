@@ -1,0 +1,18 @@
+{
+  "id": "gr/gumbel_max_causal_gadgets/e03",
+  "thread_id": "gr/gumbel_max_causal_gadgets/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T10:42:00Z",
+  "from": {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: repro done, variance wins hold, one scope boundary",
+  "body": "Hi both,\n\nRepro status: done for Section 7.1 and the first two columns of Table 1, using paper_experiments.ipynb as the harness. The learned couplings from both gadgets beat the baseline couplings in coupling_util on counterfactual-estimate variance in our reruns - Gadget 2's advantage is largest exactly where the mechanism distributions are least uniform, matching the paper's story. Training was stable; the only surprise was how sensitive Gadget 1 is to temperature initialization, which Wei documented in the shared config notes.\n\nScope boundary to confirm: the last two Table 1 columns and the Section 7.3 experiments rely on the companion implementation from the second repository, which we deliberately did not port. Emeka's API therefore exposes Gadget 1 and Gadget 2 only. Fine for the pilot, but the review slide should say so explicitly so nobody expects the full table.\n\nAPI integration is tracking to 6/5. Privacy request went to Kofi's queue 5/14.\n\nGiannis",
+  "labels": ["status", "risk"]
+}
