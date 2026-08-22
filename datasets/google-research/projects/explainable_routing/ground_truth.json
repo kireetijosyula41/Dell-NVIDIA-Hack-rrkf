@@ -1,0 +1,12 @@
+{
+  "project": "gr/explainable_routing",
+  "conflicts": [
+    {
+      "conflict_id": "C115",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["evanet"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Rafael Duran is committed at 60% for May 2026 to drive the explanation-quality evaluation and the scenario-generation extensions - I've booked him at that level in the allocation sheet."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/explainable_routing/e01",
+  "thread_id": "gr/explainable_routing/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T10:44:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Explainable routing kickoff: 'why is my route different today?'",
+  "body": "Team,\n\nKicking off the explainable-routing effort. Our open-source release implements the \"Why is My Route Different Today?\" algorithm, generating explanations for route selection over a collection of synthetically-generated traffic scenarios on OSM-derived graphs - the release ships processed Baden and Washington region graphs. Mapping and logistics partners keep telling us the same thing: users don't distrust reroutes because they're wrong, they distrust them because they're unexplained.\n\nDeliverable: an explanation service over our internal routing testbed, with quality evaluation on both released regions plus one partner-shaped scenario set.\n\nMilestones for Apr 6 - Jul 6: C++ build productionized (it's currently a CMake/Abseil research build with hand-run steps) and scenarios reproducing by May 1, explanation-quality eval framework by May 29, partner demo with the plotly-based visualizations replaced by a real front end by Jun 26.\n\nDaniela owns staffing.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}
