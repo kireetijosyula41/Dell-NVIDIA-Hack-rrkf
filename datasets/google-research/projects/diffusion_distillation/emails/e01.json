@@ -1,0 +1,41 @@
+{
+  "id": "gr/diffusion_distillation/e01",
+  "thread_id": "gr/diffusion_distillation/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:36:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: progressive distillation for diffusion serving costs",
+  "body": "Jelena, team,\n\nKicking off the distillation track -- this is the efficiency portfolio's biggest single lever this half. Our image-generation serving cost is dominated by sampling steps, and progressive distillation attacks exactly that: distill a trained deterministic sampler into a student that needs half the steps, then repeat. The paper takes samplers from as many as 8192 steps down to 4 with modest quality loss -- FID 3.0 on CIFAR-10 at 4 steps -- and, crucially, the full distillation procedure costs no more than training the original model.\n\nTarget: our production image model from 256 steps to 8 or fewer, with quality signed off by the model owners. Milestones: recipe reproduced on CIFAR-10 by May 22, production-model distillation through June/July, LRB readout late July.\n\nJelena owns feasibility and the compute plan.\n\nZofia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

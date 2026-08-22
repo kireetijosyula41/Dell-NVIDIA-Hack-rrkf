@@ -1,0 +1,25 @@
+{
+  "id": "gr/diffusion_distillation",
+  "title": "Progressive Distillation for Fast Sampling of Diffusion Models",
+  "summary": "Applying progressive distillation -- repeatedly distilling a deterministic diffusion sampler into a student needing half as many steps, down from 8192 to as few as 4 with FID 3.0 on CIFAR-10 -- to cut Meridian's image-generation serving costs.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Oyin Iversen",
+    "Rosa Mensah",
+    "Paloma Castillo"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "diffusion_distillation",
+    "url": "https://github.com/google-research/google-research/tree/master/diffusion_distillation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

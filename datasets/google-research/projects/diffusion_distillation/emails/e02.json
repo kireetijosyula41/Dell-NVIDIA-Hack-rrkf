@@ -1,0 +1,40 @@
+{
+  "id": "gr/diffusion_distillation/e02",
+  "thread_id": "gr/diffusion_distillation/t1",
+  "in_reply_to": "gr/diffusion_distillation/e01",
+  "date": "2026-04-30T15:12:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: progressive distillation for diffusion serving costs",
+  "body": "Zofia,\n\nPlan.\n\nStaffing: Rosa 60% on the distillation runs, Oyin 40% on the eval battery (FID plus human-pref sampling), Paloma 40% on serving-side integration so the 8-step model has somewhere to land.\n\nCompute: this needs H100s. I have asked Ines for a Vulcan reservation of 128 GPUs for June, and flagged that the pool has scheduled maintenance June 22-24 -- our run plan pauses distillation stages around that window rather than fighting it.\n\nData: The Corpus v2 freeze hits 2026-06-26, so the ImageNet and LSUN training shards have to be migrated and validated before that date. Rosa's schedule puts the CIFAR-10 reproduction on current storage and the production-model stages on migrated shards from June 1, so the freeze should not touch the critical path if migration holds.\n\nMay 22 reproduction milestone looks safe.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}
