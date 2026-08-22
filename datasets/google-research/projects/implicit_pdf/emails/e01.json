@@ -1,0 +1,18 @@
+{
+  "id": "gr/implicit_pdf/e01",
+  "thread_id": "gr/implicit_pdf/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:26:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "IPDF kickoff - pose uncertainty that survives symmetry",
+  "body": "Team,\n\nKicking off the IPDF track. Our release represents probability distributions over the rotation manifold SO(3) implicitly - the model scores (image, rotation) pairs, so a symmetric object naturally gets a multi-modal pose distribution instead of a single wrong answer with high confidence. For data-platforms this slots into the pose-labeling pipeline: calibrated pose uncertainty is what downstream auto-labeling gates on, and current regressors are confidently wrong on symmetric parts.\n\nScope: reproduce the SYMSOL I results from the released configs, benchmark evaluation cost (the dense rotation-grid evaluation is the known expensive bit), and prototype the labeling-pipeline integration on our internal parts set.\n\nMilestones: SYMSOL repro by end of May, cost benchmark and the big eval sweep in June, integration recommendation by 2026-07-06.\n\nYara leads research, Katya experiments, Nikhil integration, Leilani infra. Santiago - resourcing note please, including the June compute booking.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

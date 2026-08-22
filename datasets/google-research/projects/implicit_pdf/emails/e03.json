@@ -1,0 +1,18 @@
+{
+  "id": "gr/implicit_pdf/e03",
+  "thread_id": "gr/implicit_pdf/t2",
+  "in_reply_to": null,
+  "date": "2026-06-10T10:41:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "IPDF status: SYMSOL repro green, eval-grid memory is the risk for next week",
+  "body": "Dmitri, Santiago,\n\nStatus before the big week. SYMSOL I repro is green with the released recipe (random SO(3) sampling, 3 Fourier components, the [256,256,256,256] head, 100k iterations): distributions on the symmetric shapes come out properly multi-modal - the cube's 24-fold symmetry shows up as 24 clean modes - and average log-likelihood matches the published numbers within tolerance. The 4-Fourier-component cube config also reproduces.\n\nThe risk for the sweep: memory. At 2M+ rotation queries per example the eval batches blow past single-GPU memory unless test_batch_size stays at 1 and queries are chunked; Leilani's dry run at 1/10 scale caught a chunking bug that would have OOMed us mid-sweep on the real thing. Fixed, and the dry run now projects the full suite comfortably inside our reserved week - with about 20% headroom, which I'd like to keep as slack rather than adding configs.\n\nIntegration prototype: Nikhil has IPDF uncertainty wired into the labeling gate on a 500-part sample; early precision numbers look promising and go in the next update.\n\nKatya",
+  "labels": ["status", "risk"]
+}

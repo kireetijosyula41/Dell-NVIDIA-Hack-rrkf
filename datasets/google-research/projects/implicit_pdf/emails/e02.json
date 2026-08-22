@@ -1,0 +1,17 @@
+{
+  "id": "gr/implicit_pdf/e02",
+  "thread_id": "gr/implicit_pdf/t1",
+  "in_reply_to": "gr/implicit_pdf/e01",
+  "date": "2026-05-12T14:33:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: IPDF kickoff - staffing + June Vulcan booking",
+  "body": "Dmitri,\n\nResourcing:\n\n- Staffing: Yara 40%, Katya 60%, Nikhil 50%, Leilani 40% through July 6.\n- Day-to-day: training runs are single-GPU-friendly (batch 128 per the released SYMSOL config); 16 titan-a100 best-effort covers the repro matrix.\n- The June booking: we hold the vulcan-h100 reservation - 256 accelerators for the week of 2026-06-15 - for the full evaluation sweep. The driver is evaluation, not training: resolving tightly-focused densities on SO(3) needs the dense rotation grid (2M+ query points per example), and doing that across the whole SYMSOL suite plus our internal parts set is a genuinely large batch job. Placement note: Vulcan's maintenance window is June 22-24, so our week lands us right before it - if we slip the sweep we lose three more days on top, which is why Leilani is doing a dry run at 1/10 scale the week prior.\n\nNo other asks. Budget fits the existing envelope.\n\nSantiago",
+  "labels": ["resources"]
+}

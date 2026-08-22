@@ -1,0 +1,12 @@
+{
+  "project": "gr/implicit_pdf",
+  "conflicts": [
+    {
+      "conflict_id": "C127",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["neural_guided_symbolic_regression"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The June booking: we hold the vulcan-h100 reservation - 256 accelerators for the week of 2026-06-15 - for the full evaluation sweep."
+    }
+  ]
+}

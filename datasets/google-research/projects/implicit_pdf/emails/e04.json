@@ -1,0 +1,19 @@
+{
+  "id": "gr/implicit_pdf/e04",
+  "thread_id": "gr/implicit_pdf/t2",
+  "in_reply_to": "gr/implicit_pdf/e03",
+  "date": "2026-07-01T15:58:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IPDF status: decision - labeling-gate integration recommended",
+  "body": "All,\n\nClosing out for the July 6 memo. The June sweep completed inside the reserved week (the 20% slack got used, for the record - Katya was right to defend it), and the numbers make the case: on the internal parts set, gating auto-labels on IPDF pose uncertainty cuts wrong-pose label acceptance by 71% on symmetric parts at a 9% throughput cost, versus the regressor-confidence gate.\n\nDecision: the memo recommends IPDF as the pose-uncertainty gate for the labeling pipeline, phased in starting with part families where symmetry is documented. The dense-grid evaluation cost stays a batch-mode reality - the memo is explicit that this gate runs offline, not in any interactive path, until someone funds a distillation effort.\n\nSantiago - the dry-run-before-reserved-week practice goes in the memo as a recommended pattern. Cheap insurance that saved us the week, twice.\n\nDmitri",
+  "labels": ["decision"]
+}
