@@ -1,0 +1,17 @@
+{
+  "id": "gr/correct_batch_effects_wdn/e03",
+  "thread_id": "gr/correct_batch_effects_wdn/t2",
+  "in_reply_to": null,
+  "date": "2026-05-21T09:05:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Status - BBBC021 reproduced, transfer is the open question",
+  "body": "Reproduction is done and it was less painful than expected. On the CellProfiler embeddings, after percentile-matching normalization plus factor analysis, the Wasserstein-corrected representation recovers mechanism-of-action clustering at 0.71 vs 0.52 uncorrected. Deep-network embeddings land in the same neighbourhood. Both within noise of the paper.\n\nThe risk is the transfer claim in Anders' kickoff. The imaging case has a clean nuisance variable - the plate - and hundreds of samples per plate. Our text corpus has labeling waves of wildly uneven size, some with 40 documents. The Wasserstein estimate is badly biased at that sample size, and in the first run the correction erased about as much signal as noise: retrieval nDCG moved -0.4 points, i.e. nothing, with wider variance.\n\nLinnea is testing whether pooling small waves into synthetic batches helps. If it doesn't, my honest read is that this is an imaging tool, not a corpus layer.\n\nUmar",
+  "labels": ["status", "risk"]
+}

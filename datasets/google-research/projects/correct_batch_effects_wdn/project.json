@@ -1,0 +1,25 @@
+{
+  "id": "gr/correct_batch_effects_wdn",
+  "title": "Correcting for Batch Effects Using Wasserstein Distance",
+  "summary": "A TensorFlow method that removes batch effects from high-content imaging embeddings by minimizing a Wasserstein distance between batch distributions, demonstrated on CellProfiler and deep-network embeddings of the BBBC021 image set. Meridian wants it as a general de-batching layer for any embedding corpus with plate or run structure.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Linnea Yamada",
+    "Amara Okafor",
+    "Umar Costa"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "correct_batch_effects_wdn",
+    "url": "https://github.com/google-research/google-research/tree/master/correct_batch_effects_wdn",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
