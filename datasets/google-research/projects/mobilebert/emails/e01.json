@@ -1,0 +1,46 @@
+{
+  "id": "gr/mobilebert/e01",
+  "thread_id": "gr/mobilebert/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: MobileBERT on-device NLU",
+  "body": "Hi Bruno,\n\nKicking off the MobileBERT productization (Mar 9 – Jul 20). The asset: our open-source thin BERT_LARGE with bottleneck structures and a carefully balanced split between self-attention and feed-forward capacity. The released artifacts give us a big head start — the uncased_L-24_H-128_B-512_A-4_F-4_OPT checkpoint plus float32 and quantized int8 SavedModels for SQuAD at sequence length 384, ready for tf.lite conversion.\n\nProduct story: the on-device assistant needs question-answering that runs on mid-tier phones without a server round trip. This is the launch-review candidate for the Q3 device release.\n\nMilestones: April — SQuAD V1.1 fine-tune reproduced in-house; May — int8 path validated on our device farm; early July — final quality sweep; Jul 20 — launch-review packet.\n\nSend staffing and the compute reservation plan when ready — the July sweep is the long pole.\n\nThanks,\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
