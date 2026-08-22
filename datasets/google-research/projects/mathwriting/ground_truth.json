@@ -1,0 +1,9 @@
+{
+  "project": "gr/mathwriting",
+  "conflicts": [
+    {"conflict_id": "C026", "type": "codename_collision",
+     "counterpart_projects": ["cfq"],
+     "planted_in": ["e01", "e04"],
+     "claim_as_written": "Starting Project Sirocco — our internal codename for the MathWriting effort, please tag docs and dashboards with it."}
+  ]
+}

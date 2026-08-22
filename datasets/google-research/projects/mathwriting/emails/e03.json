@@ -1,0 +1,18 @@
+{
+  "id": "gr/mathwriting/e03",
+  "thread_id": "gr/mathwriting/t1",
+  "in_reply_to": "gr/mathwriting/e02",
+  "date": "2026-05-21T10:17:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Project Sirocco — status + license risk",
+  "body": "Status on Sirocco:\n\n- Full mathwriting-2024 archive ingested; the 1.5 MB excerpt archive now runs in CI as a smoke test, exactly as planned.\n- Reference recognizer trained; Yara wired the notebook's performance metric into Evalline and we're at 7.9% CER on the held-out split, which is a credible baseline.\n\nRisk, and it's the big one: the ink data is licensed CC BY-NC-SA 4.0 — NonCommercial. Fine for a benchmark and internal research, but it means no model trained on these inks can ship in a commercial feature, and the ShareAlike clause complicates derived-dataset publication. Kofi's preliminary read agrees. The code is Apache 2, so tooling is unaffected.\n\nSuggest we explicitly scope Sirocco as benchmark + tooling and say so on the benchmark page, so nobody downstream assumes the model is shippable.\n\nEfe",
+  "labels": ["status", "risk"]
+}

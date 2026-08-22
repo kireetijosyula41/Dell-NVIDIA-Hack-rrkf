@@ -1,0 +1,17 @@
+{
+  "id": "gr/mathwriting",
+  "title": "The MathWriting Dataset: Online Handwritten Mathematical Expressions",
+  "summary": "Turning the MathWriting release — digital inks of handwritten mathematical expressions from a prompted collection effort — into a benchmark and tooling track for handwritten math recognition inside our data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "codename": "Project Sirocco",
+  "contributors": ["Efe Lindqvist", "Halima Toure", "Yara Jokic", "Tereza Aliyev"],
+  "window": {"start": "2026-04-06", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mathwriting",
+    "url": "https://github.com/google-research/google-research/tree/master/mathwriting",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

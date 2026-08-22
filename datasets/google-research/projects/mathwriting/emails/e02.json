@@ -1,0 +1,15 @@
+{
+  "id": "gr/mathwriting/e02",
+  "thread_id": "gr/mathwriting/t1",
+  "in_reply_to": "gr/mathwriting/e01",
+  "date": "2026-04-15T14:44:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Project Sirocco kickoff — staffing + compute",
+  "body": "Dmitri,\n\nSirocco resourcing:\n\nStaffing — Efe 50% as TL, Halima 40% on the ink-parsing/loader code, Tereza 50% on the reference recognizer, Yara 25% on the Evalline metric integration. Stable through end of June.\n\nCompute — training the reference recognizer is modest: 16 A100s on titan best-effort for ~10 days covers the sweep. No vulcan reservation needed. Storage for the 2.9 GB archive plus derived tensors goes on Corpus; intake filed yesterday.\n\nDependency — the Corpus team is mid-v2-migration, so I asked Jun's team to confirm our new bucket won't be touched by the freeze; we should have everything ingested by late April anyway, well clear of the 2026-07-10 freeze date.\n\nOne ask: can you get the Kofi license conversation moving this week? Tereza doesn't want to train on data we later have to quarantine.\n\nAlina",
+  "labels": ["resources"]
+}
