@@ -1,0 +1,18 @@
+{
+  "project": "gr/fractals_language",
+  "conflicts": [
+    {
+      "conflict_id": "C033",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "meta_learning_without_memorization",
+        "frequency_analysis",
+        "caltrain"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "our five corpus slices come through Corpus, and with the v2 migration freeze on 2026-07-10 we're planning all extraction against v1 now, with a re-validation pass on v2 before that date — Amara has the extraction jobs specced, and Jun Varga's team confirmed the freeze date when we asked last week."
+    }
+  ]
+}

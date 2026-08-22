@@ -1,0 +1,26 @@
+{
+  "id": "gr/fractals_language",
+  "title": "Fractal Patterns in Language",
+  "summary": "Tools for estimating fractal parameters of language — the self-similarity exponent S, Hurst exponent H, and Joseph exponent J — showing language is self-similar and long-range dependent (H around 0.70) and that these parameters improve on bits-per-byte for predicting downstream performance.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Wei Ivanov",
+    "Gustavo Moreau",
+    "Rafael Duran",
+    "Amara Okafor"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fractals_language",
+    "url": "https://github.com/google-research/google-research/tree/master/fractals_language",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

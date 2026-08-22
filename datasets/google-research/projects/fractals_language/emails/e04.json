@@ -1,0 +1,45 @@
+{
+  "id": "gr/fractals_language/e04",
+  "thread_id": "gr/fractals_language/t2",
+  "in_reply_to": "gr/fractals_language/e03",
+  "date": "2026-04-22T15:25:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: estimation pipeline live, H spread across slices",
+  "body": "Wei, all — decisions ahead of the May 1 readout.\n\nTomas came through with fourteen model/eval pairs, and Rafael's analysis holds up: fractal parameters (H and J jointly) predict downstream eval averages better than BPB alone on our internal pairs, consistent with the paper's claim — modest sample, but directionally solid and worth acting on.\n\nThe readout will propose a Q3 pilot: corpus-quality scoring integrated into data-platforms' intake flow, scored on v2 once the migration lands. Scope discipline: we are not claiming fractal metrics replace evals, only that they improve pre-training data triage; I'll keep the language tight.\n\nAmara, please make sure the v1-extracted slices are queued for the v2 re-validation pass per Daniela's plan. Readout deck to me by Apr 29.\n\nExcellent quarter, team.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

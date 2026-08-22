@@ -1,0 +1,45 @@
+{
+  "id": "gr/fractals_language/e02",
+  "thread_id": "gr/fractals_language/t1",
+  "in_reply_to": "gr/fractals_language/e01",
+  "date": "2026-02-11T13:15:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: fractal language metrics track",
+  "body": "Priya — resourcing.\n\nStaffing: Wei 50%, Rafael 40%, Gustavo 40%, Amara 30%.\n\nCompute: parameter estimation needs LLM forward passes over large document collections — no training, but a lot of inference; I've sized it at 48 A100s best-effort on titan for the March runs.\n\nThe scheduling constraint is data access: our five corpus slices come through Corpus, and with the v2 migration freeze on 2026-07-10 we're planning all extraction against v1 now, with a re-validation pass on v2 before that date — Amara has the extraction jobs specced, and Jun Varga's team confirmed the freeze date when we asked last week.\n\nStorage: 2TB for token-level log-likelihood dumps (the estimators need per-token increments, not just aggregate BPB). One ask: the April correlation study needs eval-suite results from Tomas's team — requesting now to avoid the end-of-quarter Evalline crunch.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}
