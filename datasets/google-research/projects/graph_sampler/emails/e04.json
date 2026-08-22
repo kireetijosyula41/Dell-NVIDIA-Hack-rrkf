@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_sampler/e04",
+  "thread_id": "gr/graph_sampler/t2",
+  "in_reply_to": "gr/graph_sampler/e03",
+  "date": "2026-06-05T15:49:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status: pipeline hardened, acceptance curves in, one cap decision needed",
+  "body": "Team,\n\nConfirming decisions ahead of scoring week:\n\n1. The reference library caps at 7 heavy atoms. Yara's acceptance-curve analysis made this easy - we document the cap and the acceptance-rate rationale in the dataset card, and 8+ becomes a Q3 research question (importance distributions tuned per stoichiometry might move it).\n2. Scoring runs next week as scheduled on the Cirrus reservation. Wanjiru, please have the uniform library staged and sharded by EOD Friday 6/5 so the accelerators are never idle - that week is the most expensive line item in this project.\n3. The 6/17 review will present uniformity validation (Yara's importance-weight diagnostics), the C,N,O,F library through 7 heavy atoms, and the scored subset.\n\nIf staging slips even a day, tell Santiago immediately - we cannot shift that week.\n\nAnders",
+  "labels": ["decision"]
+}

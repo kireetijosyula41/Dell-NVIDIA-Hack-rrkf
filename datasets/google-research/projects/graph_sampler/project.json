@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_sampler",
+  "title": "Graph/Molecule sampler",
+  "summary": "Builds a uniform molecular sampling service on our sequential importance sampling work for connected graphs: enumerate stoichiometries, draw importance-weighted molecular graphs per stoichiometry, reject to uniform, and aggregate into a single uniform sample over all molecules with a given number of heavy atoms.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Santiago Vukovic",
+  "contributors": ["Saoirse Eriksen", "Yara Jokic", "Wanjiru Horvat"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "graph_sampler",
+    "url": "https://github.com/google-research/google-research/tree/master/graph_sampler",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

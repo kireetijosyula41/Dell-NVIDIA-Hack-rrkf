@@ -1,0 +1,12 @@
+{
+  "id": "gr/graph_sampler/e02",
+  "thread_id": "gr/graph_sampler/t1",
+  "in_reply_to": "gr/graph_sampler/e01",
+  "date": "2026-04-08T14:16:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}],
+  "subject": "Re: Kickoff: uniform molecule sampling as a screening data product",
+  "body": "Anders,\n\nResourcing.\n\nStaffing: Saoirse 50%, Yara 60%, Wanjiru 70%. Good for all three milestones.\n\nCompute splits in two. The sampling chain itself (stoichiometry enumeration, importance-weighted generation, rejection to uniform) is CPU-bound - we will run it on batch CPU quota, no accelerator ask. The scored library is different: property-scoring hundreds of millions of uniform samples is accelerator-heavy. For the property-scoring pass we hold the cirrus-tpu reservation - 128 accelerators - for the week of 2026-06-08, and I have built the eval schedule around that week. Ines, cc'd for awareness since Cirrus allocations are per-portfolio per quarter.\n\nRisk to note early: rejection-to-uniform efficiency falls off as heavy-atom count grows; if acceptance rates at 8 heavy atoms are as low as Yara fears, the reference library may cap at 7. She will have measured acceptance curves by end of April.\n\nSantiago",
+  "labels": ["resources"]
+}
