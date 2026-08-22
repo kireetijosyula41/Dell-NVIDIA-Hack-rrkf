@@ -1,0 +1,18 @@
+{
+  "id": "gr/CIQA/e01",
+  "thread_id": "gr/CIQA/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:05:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "CIQA kickoff - perceptual compression labels as a product asset",
+  "body": "Team,\n\nKicking off CIQA formally. The open-source release gives us pairwise forced-choice human ratings over AVA images recompressed at two random JPEG quality factors, and I want to turn that into the canonical training signal for our perceptual compression metric. The product hook: media customers keep asking how far they can push bitrate before users notice, and NIMA-style aesthetic scores don't answer that.\n\nRough milestones inside our window: label pipeline reproducible by mid-March, second rater wave in May, launch review before June 1. Note the sampling constraint from the original study - only AVA images at JPEG quality factor 99 or above are usable as near-lossless sources, so the pool is a subset of the ~255k AVA images, not the whole thing.\n\nJelena will follow up on staffing and compute. Please flag conflicts with other commitments this week, not in April.\n\nThanks,\nLucia",
+  "labels": ["kickoff", "spec"]
+}

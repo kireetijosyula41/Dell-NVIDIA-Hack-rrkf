@@ -1,0 +1,17 @@
+{
+  "id": "gr/CIQA/e02",
+  "thread_id": "gr/CIQA/t1",
+  "in_reply_to": "gr/CIQA/e01",
+  "date": "2026-03-03T14:22:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: CIQA kickoff - perceptual compression labels as a product asset",
+  "body": "Lucia,\n\nStaffing plan, confirmed with everyone individually:\n\n- Milan Zapata 50% through the window, owns the compression/sampling pipeline (ImageMagick sampling of Q>=99 sources, tf.image.adjust_jpeg_quality for recompression).\n- Leilani Nakamura 40%, rater-study tooling.\n- Saoirse Eriksen 30%, data validation and release packaging.\n- Gustavo Moreau is locked in at 60% on CIQA for all of May 2026 to run the second rater wave and the label QA pass. I sized May around him, so please don't let anyone shave that down.\n\nCompute is light - a few hundred A100-hours on titan-a100, best effort is fine. The real budget line is the rater panel: I'm estimating 38k pairwise judgments at roughly $0.14 each, so ~$5.3k. No Vulcan ask.\n\nOne dependency: Corpus ingestion for the label tables, but nothing that touches the v2 migration.\n\nJelena",
+  "labels": ["resources"]
+}

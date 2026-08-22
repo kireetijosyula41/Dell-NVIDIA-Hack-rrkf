@@ -1,0 +1,12 @@
+{
+  "project": "gr/CIQA",
+  "conflicts": [
+    {
+      "conflict_id": "C133",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["cubert"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Gustavo Moreau is locked in at 60% on CIQA for all of May 2026 to run the second rater wave and the label QA pass."
+    }
+  ]
+}
