@@ -1,0 +1,18 @@
+{
+  "id": "gr/linear_eval/e03",
+  "thread_id": "gr/linear_eval/t1",
+  "in_reply_to": "gr/linear_eval/e02",
+  "date": "2026-04-28T11:20:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: linear-eval as the portfolio's representation check — status",
+  "body": "Hi Anders, Jelena,\n\nStatus:\n\n- First team migrated Apr 22 (two days early). Their old hand-rolled logistic-regression eval disagreed with linear-eval by up to 1.9pp on the same embeddings — traced to them never tuning L2; our optimal_l2_reg search settles it. Good ammunition for the standardization story.\n- One subtlety worth documenting: when embedding counts aren't divisible by device count, the library zero-pads and relies on the train mask, but the migrating team's custom loader dropped the mask and quietly trained on padding. Linnea added a validation check that hard-fails on unmasked padding.\n\nRisk: the distillation recipe is going slower than the eval work — my first students verify fine on linear eval but the recipe isn't turnkey yet, and 40% of my time is proving thin. May need Jelena to rebalance if Jun 12 is to include a distillation quickstart.\n\nEfe",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/linear_eval/e01",
+  "thread_id": "gr/linear_eval/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T10:10:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [{"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}],
+  "subject": "Kickoff: linear-eval as the portfolio's representation check",
+  "body": "Hi all,\n\nKicking off the linear-eval standardization effort. Our open-source tooling does linear evaluation on fixed embeddings in JAX using L-BFGS, and the one-call convenience function — tune_hparams_and_compute_test_accuracy — handles the train/val split, distributes across devices, retrains at the optimal L2, and reports test accuracy. Right now every embedding team in graphs-retrieval hand-rolls this differently, which makes model comparisons across teams basically meaningless.\n\nGoal: by mid-June, linear-eval is the blessed representation-quality check wired into Evalline, with three embedding teams migrated.\n\nMilestones: Mar 20 library hardened + Evalline integration design; Apr 24 first team migrated; Jun 12 all three, plus a comparison dashboard.\n\nJelena owns staffing; Efe is tech lead. Tomas Fofana's team has the Evalline review slot on Mar 12.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

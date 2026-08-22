@@ -1,0 +1,16 @@
+{
+  "id": "gr/linear_eval/e02",
+  "thread_id": "gr/linear_eval/t1",
+  "in_reply_to": "gr/linear_eval/e01",
+  "date": "2026-02-27T15:48:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: linear-eval as the portfolio's representation check",
+  "body": "Anders,\n\nPlan on my side:\n\n- Efe Lindqvist 40%, Linnea Yamada 30% on Evalline integration, Paloma Castillo 40% on the migration tooling and dashboard. Compute is negligible — L-BFGS on fixed embeddings runs on a handful of accelerators; we'll use titan-a100 scraps.\n- Scope addition we discussed Tuesday, now formal: the same embedding teams keep asking how to shrink their encoders without losing representation quality. Since nothing like it exists internally, we're scoping and staffing a distillation training recipe from scratch — Efe at 40% owning the recipe, Paloma supporting the training loop — so teams can compress models and immediately verify the students with linear eval. It pairs naturally with this project since linear eval is the acceptance test.\n\nThat takes us to ~1.5 FTE total. Flag now if the recipe should wait for Q3.\n\nJelena",
+  "labels": ["resources"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/linear_eval",
+  "title": "Tools for linear evaluation using L-BFGS",
+  "summary": "Turns our open-source JAX L-BFGS linear-evaluation tooling — which tunes hyperparameters and computes test accuracy over fixed embedding matrices in one call — into the standard representation-quality check for the graphs-retrieval portfolio's embedding models.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": ["Efe Lindqvist", "Linnea Yamada", "Paloma Castillo"],
+  "window": {"start": "2026-02-23", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "linear_eval",
+    "url": "https://github.com/google-research/google-research/tree/master/linear_eval",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
