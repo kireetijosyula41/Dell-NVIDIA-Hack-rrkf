@@ -1,0 +1,18 @@
+{
+  "id": "gr/goemotions/e03",
+  "thread_id": "gr/goemotions/t2",
+  "in_reply_to": null,
+  "date": "2026-05-13T09:44:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Status: baseline repro + rare-label risk",
+  "body": "Hi both,\n\nBaseline repro is done. Fine-tuned BERT-base (cased) on the filtered train split gives us macro-F1 in line with the published baseline on the 5,427-comment test set; strong categories are gratitude, amusement and admiration, exactly where annotation agreement is highest.\n\nThe risk is the tail. Grief has only a handful of test examples, and grief, pride and relief all land under 0.3 F1 - the model basically cannot learn them from the data volume available. Quentin's error analysis shows most grief misclassifications land in sadness, which is defensible but not what a 27-category product promises.\n\nRecommendation for the model card: publish per-category F1, and gate the six rarest categories behind an \"experimental\" flag in the endpoint rather than silently underdelivering. Also the Model Card should point users at the recommended-use guidance from the release.\n\nModel card draft to you both Thursday.\n\nKaia",
+  "labels": ["status", "risk"]
+}

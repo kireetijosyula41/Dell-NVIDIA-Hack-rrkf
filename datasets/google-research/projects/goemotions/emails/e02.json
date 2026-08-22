@@ -1,0 +1,12 @@
+{
+  "id": "gr/goemotions/e02",
+  "thread_id": "gr/goemotions/t1",
+  "in_reply_to": "gr/goemotions/e01",
+  "date": "2026-04-07T13:12:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: GoEmotions fine-grained emotion classification",
+  "body": "Dmitri,\n\nStaffing: Umar 60%, Kaia 50%, Quentin 50%, Oyin 80%. Compute is modest - BERT-base fine-tuning with max sequence length 30 fits comfortably on 8 A100s best-effort; call it $15k of burn for the window.\n\nTwo scoping notes. First, the raw corpus needs a fresh privacy pass before it ships as a platform dataset (Reddit-sourced text); I have pinged Kofi's queue, and the 2-3 week Privacy Review SLA is on the critical path for the 5/15 card review.\n\nSecond, we are scoping and staffing a benchmark leaderboard service built from scratch: Oyin leads the build, one more engineer joins in May, and we carry it as a deliverable through Q3. Rationale: once the emotion endpoint is public internally, teams will fine-tune variants, and we need a standing place to rank submissions against the frozen test split. Rough shape: submission API, scoring workers, results UI.\n\nDeshawn",
+  "labels": ["resources"]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/goemotions/e04",
+  "thread_id": "gr/goemotions/t2",
+  "in_reply_to": "gr/goemotions/e03",
+  "date": "2026-06-10T15:28:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}],
+  "subject": "Re: Status: baseline repro + rare-label risk",
+  "body": "Team,\n\nDecisions from the endpoint review:\n\n1. Ship the endpoint with 21 categories GA and the six rarest (incl. grief, pride, relief) behind the experimental flag, per Kaia's proposal. Per-category F1 goes in the model card verbatim.\n2. Privacy: Kofi's review cleared the filtered corpus with two redaction requirements; Oyin folds those into the ingestion job this week. The raw unfiltered data stays internal-only, full stop.\n3. The leaderboard service stays funded into Q3 as planned - Oyin demoed the submission API and scoring workers, and the results UI lands in July. It is in my Q3 OKR draft ahead of the 6/26 lock.\n\nOne miss to own: the 5/15 card review slipped a week on the privacy SLA, which was forseeable. I will pad the next one.\n\nDmitri",
+  "labels": ["decision"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/goemotions",
+  "conflicts": [
+    {
+      "conflict_id": "C047",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["anthea"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Second, we are scoping and staffing a benchmark leaderboard service built from scratch: Oyin leads the build, one more engineer joins in May, and we carry it as a deliverable through Q3."
+    }
+  ]
+}

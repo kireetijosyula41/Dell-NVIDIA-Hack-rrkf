@@ -1,0 +1,18 @@
+{
+  "id": "gr/goemotions",
+  "title": "GoEmotions",
+  "summary": "Turns the GoEmotions corpus - 58k human-annotated Reddit comments labeled across 27 emotion categories plus Neutral - into a fine-grained emotion classification capability for the data platform, with a fine-tuned BERT-base baseline.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Umar Costa", "Quentin Farkas", "Kaia Wolde", "Oyin Iversen"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "goemotions",
+    "url": "https://github.com/google-research/google-research/tree/master/goemotions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
