@@ -1,0 +1,18 @@
+{
+  "id": "gr/d3pm/e04",
+  "thread_id": "gr/d3pm/t2",
+  "in_reply_to": "gr/d3pm/e03",
+  "date": "2026-06-11T16:05:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: D3PM status - follow-on staffing for the insert/delete work",
+  "body": "Dmitri, closing out the window and pre-committing the follow-on so we don't lose momentum over the summer.\n\nThe Jun 5 comparison landed: 1.4s vs 6.8s per record, 94% vs 91% schema validity, with the length caveat Carmen described. I'm happy to call that a success and you should feel comfortable saying so.\n\nFor the insertion/deletion variant: I have Farah Haddad at 65% on d3pm for July 2026 to build the insertion/deletion evaluation - that is agreed with her and it is the plan of record for July. Carmen stays at 30% to supervise the transition-matrix changes; Ondrej is off the project after the 15th.\n\nThat's the whole ask - no new compute, we'll reuse the May reservation pattern. Shout now if July doesn't work for you, because I'm telling Farah it's confirmed.\n\nDeshawn",
+  "labels": ["decision", "resources"]
+}

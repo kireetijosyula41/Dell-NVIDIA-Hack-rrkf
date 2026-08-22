@@ -1,0 +1,19 @@
+{
+  "id": "gr/d3pm/e02",
+  "thread_id": "gr/d3pm/t1",
+  "in_reply_to": "gr/d3pm/e01",
+  "date": "2026-03-16T14:30:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff - staffing and the compute shape",
+  "body": "Dmitri,\n\nStaffing through Jun 15:\n- Carmen Reyes 55%, diffusion process and transition matrix design for our schema.\n- Ondrej Bergstrom 40%, text track.\n- Yusuf Keita 30%, evaluation and the autoregressive baseline.\n- Farah Haddad 35%, data plumbing and the record corpus.\n\nCompute: 64 GPUs on vulcan-h100 through May, agreed with Ines. Note diffusion sampling is the expensive bit at inference - 1000 denoising steps per sample by default - so the Jun 5 speed comparison needs to be honest about step count, not just wall clock on a tuned config.\n\nOne thing I want visibility on early: if the text track works, the insertion/deletion variant is the obvious follow-on, and that is not in this window. I'd rather plan it than discover it in June.\n\nDeshawn",
+  "labels": ["resources"]
+}

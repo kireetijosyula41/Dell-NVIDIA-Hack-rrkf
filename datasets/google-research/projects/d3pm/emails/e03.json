@@ -1,0 +1,18 @@
+{
+  "id": "gr/d3pm/e03",
+  "thread_id": "gr/d3pm/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T11:15:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "D3PM status - text track works, fixed-length is the wall",
+  "body": "Status.\n\nImage track reproduced in March, bits-per-dimension within 0.02 of published, we've left it alone since.\n\nText track on our record corpus: working, and the parallel refinement story is real. Generating a 40-field record takes 1.4s at 200 denoising steps against 6.8s autoregressive, and schema validity is 94% vs 91% - because we can bake schema constraints into the transition matrices rather than hoping the decoder respects them.\n\nThe wall is length. The base D3PM formulation diffuses over a fixed-length sequence. Real records have repeated groups - line items, addresses - so we currently pad to a maximum and the model wastes capacity learning to emit padding. About a third of our validity failures are length-related.\n\nThis is exactly what the insertion/deletion variant in the release addresses, and Ondrej and I both think it's the right next step rather than a hack around padding. Not in this window though.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

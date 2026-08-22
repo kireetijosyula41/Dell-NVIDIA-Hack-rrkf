@@ -1,0 +1,18 @@
+{
+  "id": "gr/d3pm/e01",
+  "thread_id": "gr/d3pm/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T08:45:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - discrete diffusion for structured record generation",
+  "body": "Team,\n\nKicking off D3PM. Our open-source release does denoising diffusion in discrete state spaces, with structured transition matrices rather than Gaussian noise, and it ships three tracks: image space evaluated in bits-per-dimension, text space, and the insertion/deletion variant from the follow-up work.\n\nWhat I want out of it is the text and categorical side. We generate synthetic records constantly - for testing, for privacy-preserving sharing - and autoregressive generation is slow and produces suspiciously fluent garbage. A diffusion process over discrete states can be conditioned on partial records and refines the whole record in parallel.\n\nMar 2 - Jun 15:\n- Mar 27: image track reproduced, bits-per-dimension matching the paper. This is our sanity check, not the goal.\n- Apr 30: text track running on our schema-constrained record corpus.\n- Jun 5: quality + speed comparison vs our autoregressive generator.\n\nDeshawn on staffing, Carmen tech lead. FID/IS are not available in the release, so plan evaluation around bits-per-dimension and our own metrics.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

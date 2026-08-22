@@ -1,0 +1,12 @@
+{
+  "project": "gr/d3pm",
+  "conflicts": [
+    {
+      "conflict_id": "C043",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["cfq_pt_vs_sa"],
+      "planted_in": ["e04"],
+      "claim_as_written": "I have Farah Haddad at 65% on d3pm for July 2026 to build the insertion/deletion evaluation - that is agreed with her and it is the plan of record for July."
+    }
+  ]
+}
