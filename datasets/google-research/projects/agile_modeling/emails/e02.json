@@ -1,0 +1,40 @@
+{
+  "id": "gr/agile_modeling/e02",
+  "thread_id": "gr/agile_modeling/t1",
+  "in_reply_to": "gr/agile_modeling/e01",
+  "date": "2026-05-05T11:25:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Agile Modeling — concept to classifier in minutes",
+  "body": "Dmitri,\n\nResourcing. Maren 60% on the pool pipeline, Vera 50% on the labeling loop, Linnea 50% on model training. We're pinning TensorFlow 2.13.0 to match the release; the Python version drift is the usual pain but manageable.\n\nCompute: For the LAION-400M embedding precompute we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — so the pool is ready well before the alpha. Titan covers everything else best-effort.\n\nAsk: the LAION download and preprocessing (per the Demo.ipynb instructions) needs ~8TB of staging on Corpus — filing the quota this week. If quota slips, pool prep slips a week and the whole back half compresses.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

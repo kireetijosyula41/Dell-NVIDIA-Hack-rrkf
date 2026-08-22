@@ -1,0 +1,40 @@
+{
+  "id": "gr/agile_modeling/e04",
+  "thread_id": "gr/agile_modeling/t2",
+  "in_reply_to": "gr/agile_modeling/e03",
+  "date": "2026-07-14T15:35:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Agile Modeling status: end-to-end flow live, alpha metric needed",
+  "body": "Vera, Alina,\n\nPost-precompute decisions. The embedding run over the unlabeled pool finished on Cirrus during our reserved week, so the pool is live — nice execution.\n\nScope call for the alpha: we go with six concepts, not fourteen. The other eight stay in the regression eval, but the alpha UX only ships the six with mean AP above 0.78. Time-to-first-classifier target stays under 30 minutes.\n\nLinnea owns the alpha build, Maren keeps the pool refresh weekly. Alpha demo for Hana's staff the week of Aug 3, which keeps us inside the window with margin.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

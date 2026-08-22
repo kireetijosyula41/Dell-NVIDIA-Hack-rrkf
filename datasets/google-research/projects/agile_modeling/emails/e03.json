@@ -1,0 +1,36 @@
+{
+  "id": "gr/agile_modeling/e03",
+  "thread_id": "gr/agile_modeling/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:15:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Agile Modeling status: end-to-end flow live, alpha metric needed",
+  "body": "Hi Dmitri, Alina,\n\nStatus. The end-to-end flow works on the internal mirror: concept in, a few labeling rounds, working classifier out — about 20 minutes wall-clock for our test users, which matches the concept-to-classifier-in-minutes pitch. The 14-concept user-labeled data is mirrored and is now our regression eval; we track mean AP across concepts.\n\nRisk for the OKR lock on 2026-06-26: we need to commit to an alpha metric now. I propose mean AP >= 0.75 across the 14 concepts plus time-to-first-classifier under 30 minutes. If we don't lock a number this week we'll get one assigned to us.\n\nVera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
