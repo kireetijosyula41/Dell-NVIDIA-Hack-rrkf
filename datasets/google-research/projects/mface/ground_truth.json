@@ -1,0 +1,16 @@
+{
+  "project": "gr/mface",
+  "conflicts": [
+    {
+      "conflict_id": "C120",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "combiner"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Milan Zapata is committed at 60% to this project for June 2026 to build the scorer-serving path and the batch API — I've already blocked his June on our side, so please don't let anyone else grab him."
+    }
+  ]
+}

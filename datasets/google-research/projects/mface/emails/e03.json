@@ -1,0 +1,41 @@
+{
+  "id": "gr/mface/e03",
+  "thread_id": "gr/mface/t1",
+  "in_reply_to": "gr/mface/e02",
+  "date": "2026-04-07T10:48:00Z",
+  "from": {
+    "name": "Amara Okafor",
+    "email": "amara.okafor@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mFACE factuality scoring for multilingual summaries — status + a risk",
+  "body": "Hi both,\n\nStatus: judgement data is fully loaded in Evalline (Maren landed the schema 3/20). The NLI scorer reproduction is done and I'm mid-calibration. Good news first: correlation between e2e_nli_score and the human q2 (attributability) average is strong on the high-resource languages — Spearman 0.61 on the test split.\n\nThe risk: ROUGE is actively misleading as a factuality proxy. We see summaries with rouge2 above 0.30 that raters scored near the bottom on q2. If any product team keeps ROUGE as their ship gate they will pass hallucinated summaries. I'd like the launch-review packet to explicitly deprecate ROUGE-only gating.\n\nAlso, for 9 of the lower-resource languages the entailment probabilities are badly mis-calibrated (systematically over-confident). I need ~2 more weeks and a per-language temperature fit before I'd trust a threshold there.\n\nAmara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

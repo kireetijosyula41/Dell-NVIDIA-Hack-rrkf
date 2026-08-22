@@ -1,0 +1,41 @@
+{
+  "id": "gr/mface/e01",
+  "thread_id": "gr/mface/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:05:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: mFACE factuality scoring for multilingual summaries",
+  "body": "Hi Santiago,\n\nKicking off the mFACE track for H1. The pitch: our open-source release ships human judgements over XLSum summaries — per-example min/avg/max scores for comprehensibility (q1), full attributability to the article (q2), and overall quality (q3) — plus ROUGE and an NLI entailment score (e2e_nli_score). We want to turn that into an internal factuality gate for the multilingual summarization products.\n\nRough milestones inside our Feb 9 – May 11 window:\n- End of Feb: judgement data loaded into Evalline, schema agreed with Tomas.\n- Early April: NLI scorer reproduced and calibrated against the q2 human labels.\n- Early May: launch-review packet for using the scorer as a pre-ship gate.\n\nProduct framing for OKRs: \"no summary ships in a language where the factuality scorer is uncalibrated.\" Can you send staffing plus compute asks by end of next week?\n\nThanks,\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

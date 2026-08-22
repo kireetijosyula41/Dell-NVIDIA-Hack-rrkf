@@ -1,0 +1,26 @@
+{
+  "id": "gr/mface",
+  "title": "mFACE: Multilingual Summarization with Factual Consistency Evaluation",
+  "summary": "Productize the mFACE human-judgement corpus and NLI-based factual-consistency scoring for multilingual summarization, building on XLSum-derived annotations (comprehensibility, attributability, overall quality) plus ROUGE and entailment signals.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Amara Okafor",
+    "Maren Zhou",
+    "Milan Zapata",
+    "Farah Haddad"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mface",
+    "url": "https://github.com/google-research/google-research/tree/master/mface",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
