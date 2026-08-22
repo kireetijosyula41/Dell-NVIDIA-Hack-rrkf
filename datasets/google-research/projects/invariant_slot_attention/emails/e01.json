@@ -1,0 +1,40 @@
+{
+  "id": "gr/invariant_slot_attention/e01",
+  "thread_id": "gr/invariant_slot_attention/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T10:10:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Invariant Slot Attention kickoff — unsupervised object inventories",
+  "body": "Team, kickoff for Invariant Slot Attention productization. From our release: object discovery with slot-centric reference frames — slots carry their own position/scale frames, so the model discovers objects invariantly to translation and scale, built on the scenic codebase. Data-platforms angle: unsupervised object inventories over partner image feeds, no labels required. The repo ships configs and loaders for six datasets — Tetrominoes, Objects Room, MultiShapeNet-Easy, CLEVR, CLEVRTex, Waymo Open — with the first four runnable without manual downloads, so the ramp is: smallest model on Tetrominoes (the 512-example equiv_transl config) as a smoke test by April 10; CLEVR plus CLEVRTex quality runs in May; Waymo Open scale test in June; productization decision end of June. Ivo owns staffing and the compute ask — the June scale runs are the expensive part. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

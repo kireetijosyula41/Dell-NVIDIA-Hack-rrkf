@@ -1,0 +1,39 @@
+{
+  "id": "gr/invariant_slot_attention/e04",
+  "thread_id": "gr/invariant_slot_attention/t1",
+  "in_reply_to": "gr/invariant_slot_attention/e03",
+  "date": "2026-06-18T09:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Invariant Slot Attention kickoff — unsupervised object inventories",
+  "body": "Decisions from the post-mortem on the June runs. CLEVRTex sweep: landed, results strong — invariant reference frames keep ARI within 2 points of CLEVR performance on textured scenes, while the baseline drops 11. Waymo Open: we got a partial run only; preprocessing finished late (May 31) and the input pipeline underfed the accelerators for the first two days. Decision: Waymo scale validation moves to Q3 with the preprocessing done properly, and it goes into the OKRs before the June 26 lock. Productization: go for the object-inventory pilot on synthetic-plus-CLEVRTex evidence; the pilot partner's feed is closer to CLEVRTex statistics anyway. Chiara owns turning the conversion job into a maintained pipeline. Learning for the file: manual-download datasets get a two-week buffer, no exceptions. — Dmitri",
+  "labels": [
+    "decision"
+  ]
+}

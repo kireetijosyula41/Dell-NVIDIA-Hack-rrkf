@@ -1,0 +1,16 @@
+{
+  "project": "gr/invariant_slot_attention",
+  "conflicts": [
+    {
+      "conflict_id": "C010",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "f_net"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-06-01 — 384 accelerators — and both the CLEVRTex sweep and the Waymo Open scale test are scheduled against that week"
+    }
+  ]
+}
