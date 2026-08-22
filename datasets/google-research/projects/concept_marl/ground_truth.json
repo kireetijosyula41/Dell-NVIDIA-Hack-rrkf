@@ -1,0 +1,16 @@
+{
+  "project": "gr/concept_marl",
+  "conflicts": [
+    {
+      "conflict_id": "C088",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "distracting_control"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Nikhil Abebe is committed at 60% to this project for June 2026 — June is the concept-eval crunch, and he owns the probe suite plus the ablation runs end to end."
+    }
+  ]
+}
