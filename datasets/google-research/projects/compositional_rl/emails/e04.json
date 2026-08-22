@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_rl/e04",
+  "thread_id": "gr/compositional_rl/t2",
+  "in_reply_to": "gr/compositional_rl/e03",
+  "date": "2026-07-21T15:15:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Status: curriculum results + tooling risks",
+  "body": "Team,\n\nDecisions from Monday's review, with the 8/10 go/no-go in sight:\n\n1. We narrow the zero-shot eval to the top three task families — form-filling, search-and-filter, and multi-step login flows — instead of all seven. The +21-point generalization result holds across families, but rater capacity doesn't: with Vera's UI live since 7/6, throughput supports deep human evals on three families, not thin ones on seven. Product only cares about those three anyway.\n2. Curriculum config freezes 7/24; Halima's toolchain pin becomes the blessed build.\n3. For 8/10 I'll present success rates plus the human ratings on task completion and safety — Quentin, please have the rating dashboards exportable by 8/5.\n\nUlla",
+  "labels": [
+    "decision"
+  ]
+}

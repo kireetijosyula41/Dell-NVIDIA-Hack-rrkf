@@ -1,0 +1,26 @@
+{
+  "id": "gr/compositional_rl",
+  "title": "Environment Generation for Zero-Shot Compositional Reinforcement Learning",
+  "summary": "Generates web-navigation environments of increasing compositional difficulty (built on MiniWoB) so RL agents trained on the curriculum generalize zero-shot to unseen compositional tasks.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Yara Jokic",
+    "Quentin Farkas",
+    "Halima Toure",
+    "Vera Egede"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-08-10"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "compositional_rl",
+    "url": "https://github.com/google-research/google-research/tree/master/compositional_rl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
