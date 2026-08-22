@@ -1,0 +1,49 @@
+{
+  "id": "gr/jax_dft/e04",
+  "thread_id": "gr/jax_dft/t1",
+  "in_reply_to": "gr/jax_dft/e03",
+  "date": "2026-06-16T10:25:00Z",
+  "from": {
+    "name": "Viktor Hussain",
+    "email": "viktor.hussain@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: JAX-DFT kickoff — differentiable DFT for materials screening",
+  "body": "Go/no-go outcome from Friday: go. The collaboration signed on for a two-quarter pilot: we deliver the differentiable-DFT harness with the neural-XC training loop, they bring 1D-reducible screening problems, and there is explicit shared understanding (in writing, per Kaia's flag) that 3D is out of scope for the pilot and gets its own decision later. Paloma's harness hit the June 1 milestones — config-driven training runs, KS-solver-in-the-loop as default, H2-curve regression test in CI. Remaining before the window closes June 22: Leilani freezes the v0 API, Maren lands the example-notebook set, and the version-pinning policy goes in the README given the compile-cache fragility. Kudos to the team; the two-separations demo apparently did the selling in the room. — Viktor",
+  "labels": [
+    "decision"
+  ]
+}
