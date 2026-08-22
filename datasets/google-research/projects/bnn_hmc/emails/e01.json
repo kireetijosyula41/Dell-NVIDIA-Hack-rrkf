@@ -1,0 +1,20 @@
+{
+  "id": "gr/bnn_hmc/e01",
+  "thread_id": "gr/bnn_hmc/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: HMC posterior reference for uncertainty calibration",
+  "body": "Hi all,\n\nKickoff for the BNN posterior baseline work. Context: our open-source HMC study showed BNNs can beat standard training and deep ensembles, and - usefully for us - that a single long HMC chain represents the posterior about as well as multiple shorter chains. That makes full-batch HMC viable as a gold-standard reference our platform can score cheaper uncertainty methods against.\n\nProduct framing: an \"uncertainty calibration report\" for data-platforms customers, scoring their deep-ensemble or SGMCMC predictive distributions against HMC references on standard benchmarks.\n\nWindow is tight (Mar 9 - May 18). M1: repro of the JAX HMC pipeline by Apr 3. M2: reference posterior library for 3 benchmark datasets by May 1. M3: scoring API spec by May 15.\n\nEfe is TL; Maren owns the pipeline engineering. Bruno will cover staffing and compute this week.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

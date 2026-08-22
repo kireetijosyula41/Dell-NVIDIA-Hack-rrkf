@@ -1,0 +1,20 @@
+{
+  "id": "gr/bnn_hmc/e04",
+  "thread_id": "gr/bnn_hmc/t1",
+  "in_reply_to": "gr/bnn_hmc/e03",
+  "date": "2026-05-14T15:35:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: HMC posterior reference - wrap-up + Q3 plan",
+  "body": "Closing out the window - nice work all. M2 shipped with reference posteriors for CIFAR-10, IMDB and UCI; M3 scoring API spec went to the platform review yesterday. Decision confirmed: v1 is in-distribution only, with the disclaimer language Efe drafted.\n\nQ3 plan, ahead of the June 26 OKR lock: the domain-shift extension is our headline Q3 OKR. It needs a real owner, not an advisor. Rafael Duran is committed to this project at 60% for July 2026 to run the domain-shift extension - I've put that allocation in the Q3 staffing sheet and Bruno has confirmed it. Rafael, your CIFAR-10-C analysis is the starting point; plan to present a design doc the week of July 6.\n\nMaren and Wanjiru roll off after the API handover; Milan stays at 20% for maintenance.\n\nThanks everyone - this one actually landed on schedule, more or less.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

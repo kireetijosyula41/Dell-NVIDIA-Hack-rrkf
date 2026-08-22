@@ -1,0 +1,18 @@
+{
+  "id": "gr/bnn_hmc/e03",
+  "thread_id": "gr/bnn_hmc/t1",
+  "in_reply_to": "gr/bnn_hmc/e02",
+  "date": "2026-04-21T10:05:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: HMC posterior reference - status + domain-shift caveat",
+  "body": "Status: M1 done, M2 on track. The JAX pipeline reproduces the paper's CIFAR-10 results; consistent with the paper we see no meaningful cold-posterior effect once data augmentation is off, so our reference chains run untempered - one less knob in the product.\n\nTwo findings that shape the scoring API:\n\n1) Reassuring: BMA performance is robust to prior scale, and diagonal Gaussian vs. mixture priors barely move results. Rafael signed off on shipping diagonal Gaussian as the sole v1 prior.\n\n2) The caveat: BNN posteriors generalize surprisingly poorly under domain shift - on CIFAR-10-C our HMC reference gets outperformed by plain deep ensembles on 12 of 16 corruptions. So the calibration report must carry an explicit in-distribution disclaimer, or we'll be scoring customers against a reference that's wrong exactly when they care most.\n\nProposal: v1 scopes to in-distribution only; domain-shift extension becomes a Q3 item.\n\nEfe",
+  "labels": ["status", "risk"]
+}
