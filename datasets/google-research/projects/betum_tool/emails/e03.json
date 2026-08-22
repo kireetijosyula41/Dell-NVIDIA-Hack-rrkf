@@ -1,0 +1,18 @@
+{
+  "id": "gr/betum_tool/e03",
+  "thread_id": "gr/betum_tool/t1",
+  "in_reply_to": "gr/betum_tool/e02",
+  "date": "2026-04-17T11:09:00Z",
+  "from": {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: Betum Tool for the Artemis Workshop (Dakar, June 1-5)",
+  "body": "Status + one metric risk we should settle now.\n\nAll four profiles run end-to-end as of yesterday (alpha milestone hit two weeks late, but hit). Baseline AP@50 on Coffee & Cashew: YOLO26 fine-tuned leads at 0.71, OWL-ViT zero-shot gets 0.52, SAM 3 prompt-to-box lands 0.63, and the DiffusionDet track trails at 0.48.\n\nThe risk: SAM 3's segmentation-to-bounding-box conversion inflates AP@50 on the dense cashew clusters - masks merge touching nuts, and the merged boxes still clear the 0.5 IoU bar. Tereza checked: at AP@75 the SAM 3 number collapses to 0.31 while YOLO26 holds 0.55. If we only report AP@50, the workshop's one-metric story quietly rewards the merge artifact.\n\nProposal: keep AP@50 as THE metric per the design, but the toolkit prints a per-team AP@75 diagnostic footnote. Students learn why the numbers diverge, which is honestly the best lesson in the whole workshp.\n\nChiara",
+  "labels": ["status", "risk"]
+}

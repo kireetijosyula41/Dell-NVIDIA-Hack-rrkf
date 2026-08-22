@@ -1,0 +1,18 @@
+{
+  "id": "gr/betum_tool",
+  "title": "Bëtum Tool",
+  "summary": "A unified computer-vision benchmarking toolkit for the Artemis Workshop (Dakar, June 1-5), letting four teams run the same agricultural detection task on different architectures - OWL-ViT, YOLO26, SAM 3, and generative detectors - and compare them on a single AP@50 metric via COCOEval.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": ["Farah Haddad", "Chiara Olsen", "Tereza Aliyev"],
+  "window": {"start": "2026-02-16", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "betum_tool",
+    "url": "https://github.com/google-research/google-research/tree/master/betum_tool",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,13 @@
+{
+  "project": "gr/betum_tool",
+  "conflicts": [
+    {
+      "conflict_id": "C042",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["enas_lm", "hipi", "correct_batch_effects_wdn"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Jun confirmed the Corpus v2 migration freeze is 2026-07-10, comfortably after the workshop, so we'll host the Coffee & Cashew dataset on legacy Corpus for June and migrate in the first week of July.",
+      "note": "This side of the drift group states the canonical corpus_v2_freeze date (2026-07-10) correctly; counterpart projects misstate it."
+    }
+  ]
+}

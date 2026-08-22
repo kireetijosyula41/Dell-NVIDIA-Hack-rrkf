@@ -1,0 +1,17 @@
+{
+  "id": "gr/betum_tool/e01",
+  "thread_id": "gr/betum_tool/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T10:44:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: Betum Tool for the Artemis Workshop (Dakar, June 1-5)",
+  "body": "Hi team,\n\nKicking off Betum Tool - our benchmarking toolkit for the Artemis Workshop in Dakar, June 1-5. The name comes from the Wolof phrase for \"The Eye of the Field\", which I love.\n\nThe design is deliberately simple: four student teams tackle the same agricultural detection task with four different architectures - OWL-ViT for open-vocabulary zero-shot, YOLO26 for real-time supervised, SAM 3 promptable segmentation converted to boxes, and a generative-perception track - and everyone is compared on exactly one metric, AP@50 via COCOEval. One number, no leaderboard lawyering.\n\nDataset is the Coffee & Cashew set (Sanya et al., 2024). Milestones: toolkit alpha with all four model profiles running by 4/3, dataset hosting + eval harness frozen by 5/1, docs and dry-run complete by window close 5/25 so we ship a stable artifact to Dakar.\n\nBao - staffing and hosting plan please.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
