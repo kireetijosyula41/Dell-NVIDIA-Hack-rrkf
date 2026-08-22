@@ -1,0 +1,15 @@
+{
+  "id": "gr/encyclopedic_vqa/e02",
+  "thread_id": "gr/encyclopedic_vqa/t1",
+  "in_reply_to": "gr/encyclopedic_vqa/e01",
+  "date": "2026-04-29T15:23:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Encyclopedic VQA kickoff: retrieval-augmented visual QA",
+  "body": "Priya,\n\nStaffing and scope from my side.\n\nVera 80% on the eval harness and the retrieval-augmented baseline, Jorge 60% on the knowledge-base serving path (the WikiWeb2M-derived KB needs a proper index, not the CSV downloads), Yara on modeling.\n\nThe piece I want on the record: a retrieval-augmented teacher at 48.8%-class accuracy is too heavy to serve at product latency. We're scoping and staffing a distillation training recipe from scratch - Yara owns it end to end, roughly five weeks of work - to compress the retrieval-augmented teacher into something deployable. Recipe covers teacher-trace collection, loss schedule, and eval gates on the single-hop split. It's the long pole for the July pre-read, so it starts now, in parallel with the baseline.\n\nCompute: Titan best-effort for May, and I'll want ~64 reserved GPUs for the June distillation runs - request going to Ines this week.\n\nDaniela",
+  "labels": ["resources"]
+}

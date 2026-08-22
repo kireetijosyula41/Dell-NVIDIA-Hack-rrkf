@@ -1,0 +1,18 @@
+{
+  "id": "gr/encyclopedic_vqa/e03",
+  "thread_id": "gr/encyclopedic_vqa/t2",
+  "in_reply_to": null,
+  "date": "2026-06-15T16:41:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "EVQA status: baseline at 44.1%, retrieval quality is the ceiling",
+  "body": "Hi Priya, Daniela,\n\nStatus on the June 12 baseline milestone (three days late, apologies - index rebuild ate the buffer).\n\nOur retrieval-augmented baseline scores 44.1% on the single-hop single-answer split, against the published 48.8% for the Lens-augmented reference and 13.0% for the no-retrieval SOTA VLM. The gap to 48.8 is almost entirely retrieval quality: with oracle retrieval (gold evidence passage injected) the same reader hits 61.7%, so the reader is fine and our entity-linking recall (top-5 at 71%) is the ceiling.\n\nRisks: (1) two-hop questions remain far below usable - we're at 9%, and I recommend keeping them out of product scope entirely; (2) Jorge's KB index rebuilds take 14 hours, which makes retrieval iteration slow; he has a sharding plan to get it under 4.\n\nYara's distillation recipe: first student run recovers 91% of teacher accuracy at roughly one-eighth the serving cost. Details in the doc.\n\nVera",
+  "labels": ["status", "risk"]
+}
