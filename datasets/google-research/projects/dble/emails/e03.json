@@ -1,0 +1,17 @@
+{
+  "id": "gr/dble/e03",
+  "thread_id": "gr/dble/t2",
+  "in_reply_to": null,
+  "date": "2026-06-30T10:55:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "dble status - reproduced, but the training cost is the real story",
+  "body": "Status.\n\nJun 5 milestone met (a week late). ResNet-50: expected calibration error 0.021 with DBLE vs 0.068 uncalibrated and 0.034 with temperature scaling. So it beats the cheap baseline meaningfully, which is the bar that matters.\n\nThe caveat Dmitri should hear before the Aug 5 memo: DBLE is not a layer you bolt on. It changes how the classifier is trained - prototypical learning, distance-based decision rule, plus the jointly trained confidence model. You cannot take an existing production classifier and calibrate it this way; you retrain it. Temperature scaling, for all its weakness, needs a validation set and ten minutes.\n\nMaren's numbers on our first internal classifier show ECE 0.019 vs 0.041 temperature-scaled - real, but that cost a full retrain plus two weeks of Efe's rewrite.\n\nSo the honest framing is: DBLE for new classifiers where accuracy of the confidence matters. Not a retrofit.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

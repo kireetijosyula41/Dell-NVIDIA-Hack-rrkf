@@ -1,0 +1,18 @@
+{
+  "id": "gr/gon",
+  "title": "Example code for running Global Optimization Networks (GON) algorithm.",
+  "summary": "Applies Global Optimization Networks - compositions of an invertible function and a unimodal function whose unique global maximizer can be inferred in O(D) time - to trustworthy black-box optimization, using lattice models with linear inequality constraints for the unimodal component.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bruno Mbeki",
+  "contributors": ["Gustavo Moreau", "Chiara Olsen", "Umar Costa", "Yara Jokic", "Linnea Yamada"],
+  "window": {"start": "2026-02-02", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gon",
+    "url": "https://github.com/google-research/google-research/tree/master/gon",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

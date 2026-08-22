@@ -1,0 +1,26 @@
+{
+  "id": "gr/model_swarm",
+  "title": "Model Swarms",
+  "summary": "Adapt the Model Swarms method — collaborative particle-swarm search over LoRA experts to specialize LLMs without gradient training — into an internal expert-adaptation service, starting from the NLGraph graph-reasoning benchmark used in the open-source release.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Fumiko Rossi",
+    "Freya Ruiz",
+    "Leilani Nakamura",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "model_swarm",
+    "url": "https://github.com/google-research/google-research/tree/master/model_swarm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

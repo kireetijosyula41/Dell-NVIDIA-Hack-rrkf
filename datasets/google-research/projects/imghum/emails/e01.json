@@ -1,0 +1,18 @@
+{
+  "id": "gr/imghum/e01",
+  "thread_id": "gr/imghum/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:53:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "imGHUM kickoff - implicit human models for scan completion",
+  "body": "Team,\n\nKicking off imGHUM. Our release gives us implicit generative models of 3D human shape, facial expression, and articulated pose that share the GHUM latent space - with gender-neutral and gender-specific models for full body, head, and both hands. Two properties make it a product candidate: fast differentiable signed-distance queries at arbitrary spatial points, and topology-freedom, which lets imGHUM sit as the inner layer under personalized, clothed, animatable humans.\n\nThe concrete bet for this window: point-cloud reconstruction and completion for our scan-processing pipeline. Partial scans are today's biggest source of manual cleanup, and imGHUM's SDF queries plus semantics should automate a big slice of it.\n\nMilestones: models integrated and SDF-query benchmarks by mid-May, scan-completion evaluation on our internal capture set by mid-June, go/no-go memo by 2026-06-29.\n\nYara leads research, Efe evaluation, Farah and Gustavo the pipeline integration. Daniela - resourcing note please.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

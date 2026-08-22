@@ -1,0 +1,45 @@
+{
+  "id": "gr/combiner/e01",
+  "thread_id": "gr/combiner/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:40:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Combiner for 32k-token serving",
+  "body": "Hi Ivo,\n\nKicking off the long-context serving effort. Base: our open-source Combiner work — full-attention expressiveness at sparse computation cost, with both JAX (axial, mixture, fixed, logn variants) and TF implementations in the release. Product motivation is direct: the language portfolio's long-document features are gated on attention cost, and Combiner's sub-quadratic structure is our best path to 32k-token contexts without a serving-cost blowup.\n\nHalf plan: benchmark the variants against our full-attention baseline through March-April, pick a winner by early May, then hand a serving integration plan to Zeke's Shipyard team. I've put a launch-review checkpoint on 5/8.\n\nStaffing and compute proposal by early March? I expect this one is engineer-heavy rather than compute-heavy.\n\nThanks,\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

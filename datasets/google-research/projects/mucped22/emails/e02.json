@@ -1,0 +1,40 @@
+{
+  "id": "gr/mucped22/e02",
+  "thread_id": "gr/mucped22/t1",
+  "in_reply_to": "gr/mucped22/e01",
+  "date": "2026-03-03T13:30:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mucped22 — staffing + tooling plan",
+  "body": "Hi Lucia,\n\nPlan:\n\n- Gustavo Moreau 50% owns ingestion and the metric-correlation baselines; Ondrej Bergstrom 40% designs the rating methodology (rater qualification, session length, pair sampling) so we don't recreate the crowdsourcing weaknesses the release critiques.\n- Since nothing suitable exists in-house, we're building a human-rating annotation UI from scratch — Emeka Pinto owns it at 50% (pairwise comparison views, rater qualification flow, session quality checks), roughly seven weeks of work for a v1 we can run study batches through.\n- Compute: negligible; this is a data and tooling project. Storage ask to Corpus for the image sets is in.\n\nBudget note: expert raters aren't free — Ondrej estimates ~$18k for the April pilot batch at the session lengths he wants. I'd rather pay for experienced raters than re-import the exact problem this dataset exists to fix.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

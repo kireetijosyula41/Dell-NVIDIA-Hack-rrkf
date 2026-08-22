@@ -1,0 +1,15 @@
+{
+  "id": "gr/mbpp/e02",
+  "thread_id": "gr/mbpp/t1",
+  "in_reply_to": "gr/mbpp/e01",
+  "date": "2026-04-01T15:18:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: MBPP kickoff — staffing + the June compute slot",
+  "body": "Dmitri,\n\nResourcing for MBPP:\n\nStaffing — Ondrej 50% (TL, harness design), Saoirse 50% on the sandboxed executor, Kaia 30% on prompt-format parity with the paper, Fumiko 25% on baseline sweeps. Holds through 06-22.\n\nCompute — day-to-day eval traffic is small (titan best-effort). The exception is the baseline calibration sweep in June: running our current model family plus two externals across the full 11-510 test split at multiple sampling temperatures. For that we hold the vulcan-h100 reservation — 128 accelerators for the week of 2026-06-01 — which gives us headroom to finish calibration before onboarding the second modeling team.\n\nI double-checked with the reservation sheet this morning; we're good.\n\nOne flag: sandbox escape review for the executor is with security, 1-week turnaround expected.\n\nDaniela",
+  "labels": ["resources"]
+}

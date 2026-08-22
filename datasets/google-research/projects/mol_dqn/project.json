@@ -1,0 +1,26 @@
+{
+  "id": "gr/mol_dqn",
+  "title": "described in Zhou Z, Kearnes S, Li L, Zare RN, Riley P. Optimization of",
+  "summary": "Revive the MolDQN molecule-optimization stack — deep Q-learning over an MDP of chemically valid edit actions (the molecules.py MDP definition) — as a lead-optimization tool for external chemistry partners, covering single-property QED optimization with naive and bootstrap DQN variants.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Giannis Sato",
+    "Wei Ivanov",
+    "Oyin Iversen",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mol_dqn",
+    "url": "https://github.com/google-research/google-research/tree/master/mol_dqn",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/gradient_based_tuning/e04",
+  "thread_id": "gr/gradient_based_tuning/t2",
+  "in_reply_to": "gr/gradient_based_tuning/e03",
+  "date": "2026-05-15T14:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Status: lt-en repro green, production-size comparison running",
+  "body": "Team,\n\nAdoption decision, settled a few days early:\n\n1. ADOPT for optimizer hyperparameters (learning rate, warmup, decay) on the seq2seq stack. Csilla's token-budget accounting shows the learned arm reaching baseline BLEU with 28% less total compute once you charge the baseline for its search runs. That number goes to the portfolio review.\n2. HOLD on learning regularization hyperparameters - the early-training spikes Kaia chased are mostly gone with the larger tuning-loss batch, but 1 in 5 seeds still restarts, and I will not put that into other teams' pipelines yet. Revisit as a Q3 item with the corpus regeneration work Bruno scheduled.\n3. Rosa's container becomes the supported entry point; the raw pip route gets a deprecation note in the internal README.\n\nGood, quantified work - this is the kind of decision memo I like writing.\n\nDmitri",
+  "labels": ["decision"]
+}

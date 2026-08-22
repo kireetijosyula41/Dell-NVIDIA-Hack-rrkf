@@ -1,0 +1,12 @@
+{
+  "project": "gr/implicit_constrained_optimization",
+  "conflicts": [
+    {
+      "conflict_id": "C134",
+      "type": "codename_collision",
+      "counterpart_projects": ["aloe"],
+      "planted_in": ["e01", "e02", "e03", "e04"],
+      "claim_as_written": "Kicking off what we're calling Project Sirocco internally - our trust-theory effort built on the Implicit Constrained Optimization (ICO) release. (The 'Project Sirocco' / 'Sirocco' codename is used throughout all four emails, including subjects and doc-tagging references.)"
+    }
+  ]
+}

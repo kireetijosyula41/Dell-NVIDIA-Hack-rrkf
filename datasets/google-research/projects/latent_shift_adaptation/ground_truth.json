@@ -1,0 +1,12 @@
+{
+  "project": "gr/latent_shift_adaptation",
+  "conflicts": [
+    {
+      "conflict_id": "C081",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["charformer"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-57 for our production-scale validation runs — I'm treating that line as committed to us."
+    }
+  ]
+}

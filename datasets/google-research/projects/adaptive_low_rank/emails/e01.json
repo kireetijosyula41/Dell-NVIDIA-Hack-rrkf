@@ -1,0 +1,46 @@
+{
+  "id": "gr/adaptive_low_rank/e01",
+  "thread_id": "gr/adaptive_low_rank/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Project Basalt kickoff — AdaRank adaptive-rank LoRA",
+  "body": "Hi Bruno, all,\n\nKicking off our adaptive-rank finetuning effort. Internally we refer to this effort as Project Basalt — please use the codename on decks, calendar invites, and doc titles so tracking stays consistent.\n\nQuick framing: LoRA is almost always applied with one rank across every layer, but the transfer-learning evidence says later layers diverge more from pretrained weights during finetuning. AdaRank predicts a per-module rank from model disagreement, and because it leaves pretraining and adaptation completely intact — no extra objectives or regularizers — it can drop straight into our finetuning service without touching customer workflows.\n\nMilestones inside the window: repro of TREC and yelp_polarity results by Feb 27, adapter-service integration spike through March, internal design review the week of Apr 20. I want us in the platform roadmap conversation before Q2 planning starts.\n\nThanks,\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

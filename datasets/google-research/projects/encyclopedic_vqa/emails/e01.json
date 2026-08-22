@@ -1,0 +1,17 @@
+{
+  "id": "gr/encyclopedic_vqa/e01",
+  "thread_id": "gr/encyclopedic_vqa/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T08:47:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Encyclopedic VQA kickoff: retrieval-augmented visual QA",
+  "body": "Hi team,\n\nKicking off the Encyclopedic VQA effort. The dataset from our open-source release is the asset: 221k unique question+answer pairs about detailed properties of fine-grained categories, matched to images for 1M VQA samples, plus a controlled knowledge base derived from Wikipedia with evidence for every answer.\n\nThe product story writes itself from the published numbers: a state-of-the-art vision+language model gets only 13.0% accuracy on the single-hop single-answer part, while augmenting a large LM with knowledge-base retrieval reaches 48.8%. Retrieval is the product, not model scale.\n\nMilestones (Apr 20 - Jul 20): eval harness on the single-hop split by May 15, our own retrieval-augmented baseline by June 12, launch review pre-read with a deployable-model plan by mid-July.\n\nDaniela has staffing. One early flag: the knowledge base touches Wikipedia-derived content, so I'll start the privacy/licensing review conversation early given the 2-3 week SLA.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

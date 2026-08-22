@@ -1,0 +1,17 @@
+{
+  "id": "gr/CardBench_zero_shot_cardinality_training/e02",
+  "thread_id": "gr/CardBench_zero_shot_cardinality_training/t1",
+  "in_reply_to": "gr/CardBench_zero_shot_cardinality_training/e01",
+  "date": "2026-02-12T15:04:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: CardBench kickoff - benchmark backbone for learned cardinality estimation",
+  "body": "Dmitri,\n\nPlan:\n\n- Kaia Wolde 40%: reference model + eval methodology on the training query graphs.\n- Emeka Pinto 50%: ingestion of the query graphs and internal docs (milestone 1).\n- Wanjiru Horvat 50% from March: the re-generation pipeline - downsampling databases, table stats collection, workload generation.\n\nCompute is CPU-heavy, not GPU: I've asked for 800 vCPU on the batch tier. No Vulcan or Cirrus ask.\n\nOn the Corpus dependency: the stats-collection and workload tables land in Corpus, and some of that work stretches past our window. I checked the timeline - Corpus has the v2 migration freeze on 2026-07-24, so even our slowest re-generation pass clears the platform well before the freeze window. I'm planning the post-May maintenance runs around that date and not building any contingency for an earlier cutoff.\n\nDaniela",
+  "labels": ["resources"]
+}

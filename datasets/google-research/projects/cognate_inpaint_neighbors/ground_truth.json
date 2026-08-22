@@ -1,0 +1,16 @@
+{
+  "project": "gr/cognate_inpaint_neighbors",
+  "conflicts": [
+    {
+      "conflict_id": "C034",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "floatseg"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Katya Silva is committed at 60% to this project for June 2026 — she'll drive the head-to-head training runs and the lexicon-sample deliverable, which is the crunch month before launch review."
+    }
+  ]
+}

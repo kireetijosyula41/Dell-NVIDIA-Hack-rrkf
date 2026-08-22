@@ -1,0 +1,19 @@
+{
+  "id": "gr/automatic_structured_vi/e04",
+  "thread_id": "gr/automatic_structured_vi/t1",
+  "in_reply_to": "gr/automatic_structured_vi/e03",
+  "date": "2026-07-07T14:40:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"}
+  ],
+  "subject": "[Project Nimbus] Decision: v1 API ships with diagnostics, arch review 7/10",
+  "body": "Team,\n\nWrapping up Nimbus decisions before window close:\n\n1. v1 ships as \"automatic and safe\": build_asvi_surrogate_posterior behind our paved-path API, with Tereza's structure-gap diagnostic on by default. The 7-of-9 Inference Gym result plus the warning story got a strong reception from Hana.\n2. Nadia confirmed internal-API scope means architecture review only, no full LRB. We're booked for 7/10.\n3. Cross-plate correlation handling is officially out of scope for v1; Umar writes it up as a Q3 research item.\n\nRosa - please make sure the API docs use the Nimbus name consistently, a couple of drafts still say \"the ASVI project\" and it confuses the planning tooling.\n\nThanks all - clean, low-drama execution.\n\nAnders",
+  "labels": ["decision"]
+}

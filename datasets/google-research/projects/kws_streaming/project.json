@@ -1,0 +1,19 @@
+{
+  "id": "gr/kws_streaming",
+  "title": "Streaming Aware neural network models",
+  "summary": "Keras streaming wrappers and streaming-aware layers for keyword spotting: train a non-streaming architecture, then run streaming inference that processes incremental chunks (e.g. 20ms of audio) instead of whole 1-second utterances. Meridian is building it into an on-device wake-word stack.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": ["Rafael Duran", "Linnea Yamada", "Vera Egede", "Giannis Sato"],
+  "codename": "Project Riverbed",
+  "window": {"start": "2026-04-27", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "kws_streaming",
+    "url": "https://github.com/google-research/google-research/tree/master/kws_streaming",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "project": "gr/muNet",
+  "conflicts": [
+    {
+      "conflict_id": "C087",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "ials",
+        "aptamers_mlpd",
+        "loss_functions_transfer"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On the Corpus side we have breathing room: the v2 migration freeze is 2026-08-07, so the task-suite datasets can stay on v1 pipelines through our whole window and the v2 port is a leisurely June/July item after we close."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/euphonia_spice/e04",
+  "thread_id": "gr/euphonia_spice/t2",
+  "in_reply_to": "gr/euphonia_spice/e03",
+  "date": "2026-05-28T10:44:00Z",
+  "from": {"name": "Goran Sokolov", "email": "goran.sokolov@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: SpICE status: eval battery reproduced, realistic speech is the hard part",
+  "body": "Team,\n\nDecisions before the retrain window:\n\n1. Confidence bands are in: the API ships predicted class + adjacent-class confidence, per Linnea's recommendation. The within-one-class >95% figure becomes our headline clinical metric, and we say plainly that exact-class on unprompted speech is weaker.\n2. Retrain is a GO: our cirrus-tpu week (128 accelerators, week of June 1) starts Monday, and the retraining configs are frozen tonight. Linnea's freeze discipline made this easy - thank you.\n3. Privacy: Kofi's review cleared May 20 with one condition, on-device redaction of any transcribable content in partner uploads. Paloma owns the implementation; it gates the launch review, not the retrain.\n\nIf the retrained model holds the eval battery, we walk into the June 12 launch-review checkpoint with a complete story.\n\nGoran",
+  "labels": ["decision", "status"]
+}

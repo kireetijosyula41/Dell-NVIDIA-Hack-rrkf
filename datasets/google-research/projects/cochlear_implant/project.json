@@ -1,0 +1,25 @@
+{
+  "id": "gr/cochlear_implant",
+  "title": "Cochlear Implant Hackathon Code",
+  "summary": "Extends our cochlear implant hackathon pipeline — speech enhancement gated by YAMNet music detection, producing electrodograms from input audio — into a polished internal demo and evaluation workflow for the speech-audio accessibility roadmap.",
+  "portfolio": "speech-audio",
+  "pm": "Goran Sokolov",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Efe Lindqvist",
+    "Milan Zapata",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cochlear_implant",
+    "url": "https://github.com/google-research/google-research/tree/master/cochlear_implant",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

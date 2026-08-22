@@ -1,0 +1,40 @@
+{
+  "id": "gr/jaxbarf/e01",
+  "thread_id": "gr/jaxbarf/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:45:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "JaxBARF kickoff — pose refinement without SfM",
+  "body": "Team — kickoff for JaxBARF in the vision portfolio. From our release: a JAX implementation of BARF — bundle-adjusting neural radiance fields — built on JaxNeRF, modified for trainable camera poses and the BARF-style MLP changes. Why vision cares: our capture partners deliver imagery with noisy or missing camera poses, and BARF's joint pose-refinement-plus-NeRF training is the cleanest path to reconstruction without a separate SfM stage. The release already reports rotation-error parity with the PyTorch BARF implementation across the Blender scenes, so the repro bar is concrete. Milestones: Blender-scene training repro (the install.sh/train.sh path) with pose-error parity by March 27; a noisy-pose robustness study on partner-style captures through April; handoff recommendation by mid-May (window closes May 18). Bruno owns staffing and the data-platform coordination. — Lucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

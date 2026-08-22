@@ -1,0 +1,16 @@
+{
+  "project": "gr/alx",
+  "conflicts": [
+    {
+      "conflict_id": "C102",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "dense_representations_for_entity_retrieval"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Rafael Duran is committed at 60% to ALX for May 2026 — he owns the sharded ALS solver work and that allocation is what the May milestone is built on."
+    }
+  ]
+}

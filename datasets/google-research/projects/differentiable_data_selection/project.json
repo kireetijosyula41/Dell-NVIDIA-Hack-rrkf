@@ -1,0 +1,25 @@
+{
+  "id": "gr/differentiable_data_selection",
+  "title": "Differential Data Selection",
+  "summary": "Evaluating Differentiable Data Selection (DDS) -- a learned scorer that reweights training examples, demonstrated on CIFAR-10 with Wide-ResNet-28-10 on TPU -- as a data-curation lever for Meridian's vision training pipelines.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Quentin Farkas",
+    "Bilal Novak",
+    "Amara Okafor"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "differentiable_data_selection",
+    "url": "https://github.com/google-research/google-research/tree/master/differentiable_data_selection",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/clip_as_rnn/e04",
+  "thread_id": "gr/clip_as_rnn/t1",
+  "in_reply_to": "gr/clip_as_rnn/e03",
+  "date": "2026-06-24T13:45:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: CaR kickoff — open-vocabulary segmentation without training data",
+  "body": "Decisions ahead of the Jul 6 close.\n\n1) Batch-only for v1, per Carmen's latency analysis. Interactive mode goes on the Q3 roadmap with the loop-truncation experiment as the opening move. This matched what the OKR lock settled on June 26 anyway.\n\n2) All five benchmark reproductions are now green (thanks Bilal for unblocking the data prep) — Gustavo's numbers go in the launch review pack as-is.\n\n3) Launch Review Board: Nadia has us on the Jul 1 agenda. Internal-only launch, so privacy review is a lightweight pass, already filed.\n\nScope note: we are NOT committing to per-team concept-vocabulary curation — teams bring their own query lists, we document the prompt patterns that work. Support load stays sane that way.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

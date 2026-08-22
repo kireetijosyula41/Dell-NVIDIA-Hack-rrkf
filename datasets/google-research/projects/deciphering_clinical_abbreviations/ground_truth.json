@@ -1,0 +1,12 @@
+{
+  "project": "gr/deciphering_clinical_abbreviations",
+  "conflicts": [
+    {
+      "conflict_id": "C050",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["frechet_audio_distance"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We are building an internal evaluation harness from scratch - dataset registry, per-example scoring with pluggable metrics, run comparison, and regression alerts when a metric moves more than a configured threshold. Oyin Iversen owns it at 50% from March 16, first version by April 3."
+    }
+  ]
+}

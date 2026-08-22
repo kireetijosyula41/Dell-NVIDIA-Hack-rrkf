@@ -1,0 +1,15 @@
+{
+  "id": "gr/neural_guided_symbolic_regression/e02",
+  "thread_id": "gr/neural_guided_symbolic_regression/t1",
+  "in_reply_to": "gr/neural_guided_symbolic_regression/e01",
+  "date": "2026-05-01T13:29:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: symbolic regression — resourcing",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing — Tereza reproduces the expression-generating NN training (the models folder path), Yusuf owns the constraint-conditioning eval and the baseline comparisons against the empirical-distribution models, Leilani builds the service wrapper and the grammar tooling (we extend the univariate_one_constant_grammar production rules for customer feature vocabularies).\n\nCompute — individual models are small but the June evaluation is a large matrix: beam widths x constraint settings x the three holdout tiers (M<=4, M=5, M=6), with enough sampled expressions per cell for the novelty metrics to be meaningful. We're consolidating that into our reserved slot: we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-06-15, which runs the full eval matrix plus Tereza's retraining ablations in one pass. Before that, titan best-effort suffices.\n\nGrammar tooling is the sleeper risk — customer vocabularies blow up the production-rule set fast. Leilani is prototyping caps.\n\nBruno",
+  "labels": ["resources"]
+}

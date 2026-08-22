@@ -1,0 +1,36 @@
+{
+  "id": "gr/anthea/e03",
+  "thread_id": "gr/anthea/t2",
+  "in_reply_to": null,
+  "date": "2026-03-17T10:20:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Anthea status: calibration round, template choice matters more than expected",
+  "body": "Hi Anders, Bao,\n\nCalibration round one is done across three language pairs. Headline: the flowing side-by-side presentation cut rater time per segment by 22% versus our old tabulated tool, and raters reported much less context-loss on long documents.\n\nBut template choice dominates the scores. The paragraph template and the standard MQM template disagree on severity assignment often enough that overall MQM scores shift by up to 0.4 points on the same translations — same raters, same texts. That's larger than most of the system differences we're trying to measure.\n\nRisk: if we don't standardize one template per evaluation program, we'll ship numbers that aren't comparable across quarters. Recommend we pick before the readout.\n\nVera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/hyperbolic_discount",
+  "title": "Hyperbolic Agent",
+  "summary": "Extends our Hyperbolic Agent release - RL agents that learn over multiple discount horizons simultaneously (Hyperbolic/Multi-DQN, Multi-C51, Multi-Rainbow, configured via gin bindings) - to test whether multi-horizon value heads improve exploration-heavy Atari performance.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Bao Ndiaye",
+  "contributors": ["Leilani Nakamura", "Halima Toure", "Gustavo Moreau"],
+  "window": {"start": "2026-03-02", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hyperbolic_discount",
+    "url": "https://github.com/google-research/google-research/tree/master/hyperbolic_discount",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

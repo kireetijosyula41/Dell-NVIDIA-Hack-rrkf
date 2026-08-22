@@ -1,0 +1,19 @@
+{
+  "id": "gr/dql_grasping/e03",
+  "thread_id": "gr/dql_grasping/t1",
+  "in_reply_to": "gr/dql_grasping/e02",
+  "date": "2026-05-05T10:47:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: grasping benchmark revival (dql_grasping)",
+  "body": "Status on the small-scale comparisons.\n\nOn the easy-tier environment with random-policy bootstrap data, early numbers: DQL reaches 78% grasp success, plain MC returns trail at 71% but are the most stable across seeds, DDPG is sample-efficient early then plateaus at 74%, and supervised is the floor at 66%. Corr-MC with eligibility traces is the interesting one — the biased-returns trick from the paper closes most of the MC-vs-DQL gap on the medium tier. PCL still has a divergence issue Quentin is chasing; likely a learning-rate interaction with our ported replay buffer.\n\nRisk for the June sweep: sim throughput. Nikhil's port is functionally done but we're at about 60% of the frames/sec we budgeted, renderer-side. If we can't close it by June 12, the grid needs a trim — I'd cut the hardest difficulty tier before cutting seeds; five seeds is the minimum for the readout to mean anything.\n\nEfe",
+  "labels": ["status", "risk"]
+}

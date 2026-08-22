@@ -1,0 +1,41 @@
+{
+  "id": "gr/assessment_plan_modeling/e03",
+  "thread_id": "gr/assessment_plan_modeling/t2",
+  "in_reply_to": null,
+  "date": "2026-06-17T11:00:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Tundra status: parser trained, action-item labels are the weak spot",
+  "body": "Hi Dmitri, Deshawn,\n\nStatus. The AP-parsing task trains end to end on our generated vocabulary and the annotation ratings. Problem-cluster segmentation is strong — 0.84 F1 on held-out notes. Action-item typing is much weaker at 0.61, and the confusion is concentrated in two label pairs that the annotation guide itself describes ambiguously.\n\nRisk: this isn't a modeling gap we can train away. Two annotators disagree on those pairs about a quarter of the time, so our ceiling is roughly where we already are. Options are to merge the two ambiguous label pairs into single coarse labels, or to re-annotate a subset with a tightened guide. Merging is cheap and probably enough for the summarizer use case; re-annotation is weeks.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

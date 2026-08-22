@@ -1,0 +1,18 @@
+{
+  "id": "gr/large_scale_voting",
+  "title": "Efficient Large Scale Inlier Voting for Geometric Vision Problems",
+  "summary": "A general inlier-voting algorithm (general_voter) for geometric vision problems, with a worked 6DoF camera-posing example for calibrated cameras and 2D line fitting, built with bazel and OpenCV. Meridian is evaluating it as the localization core for its mapping and AR anchoring pipeline.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Ivo Umeh",
+  "contributors": ["Yara Jokic", "Farah Haddad", "Umar Costa", "Ondrej Bergstrom"],
+  "window": {"start": "2026-03-30", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "large_scale_voting",
+    "url": "https://github.com/google-research/google-research/tree/master/large_scale_voting",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_enas/e03",
+  "thread_id": "gr/es_enas/t2",
+  "in_reply_to": null,
+  "date": "2026-03-25T14:27:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "ES-ENAS status: edge-mode suite running, controller swap cost us",
+  "body": "Hi Anders, Santiago,\n\nStatus for the Mar 27 milestone. The edge-mode benchmark suite is running end to end on Rosa's gRPC layer - 2,000 workers, stable for 72-hour runs, aggregator restarts are clean. On our three locomotion benchmarks, edge-mode search (aggregate_edges space) finds policies matching the dense-baseline reward with 64% fewer edges on average. That's the compact-controller story we wanted.\n\nThe honest part: swapping the non-open-sourced proposal library for our internal evolutionary controller took three weeks, not two. Suggest/feedback semantics were easy; matching the weight-sharing behavior during topology updates was not - early runs regressed reward by ~15% until we fixed update ordering.\n\nRisk for the partition-mode milestone: partition search spaces are larger and my current runs are converging slowly. May need to cap v1 at edge mode and document partitions as experimental. Will have a firm recommendation by Apr 10.\n\nFreya",
+  "labels": ["status", "risk"]
+}

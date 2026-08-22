@@ -1,0 +1,46 @@
+{
+  "id": "gr/class_balanced_distillation/e01",
+  "thread_id": "gr/class_balanced_distillation/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T10:05:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "CBD kickoff — fixing tail-class accuracy on long-tailed workloads",
+  "body": "Hi Santiago,\n\nKicking off the Class-Balanced Distillation effort. Three internal classification workloads have textbook long-tail problems — great head-class numbers, embarrassing tail. Our published CBD recipe (BMVC 2021) is a two-stage approach: stage one trains teachers with vanilla and augmented setups, stage two distills into a student with class-balanced sampling. It beat prior long-tail methods on ImageNet-LT and iNaturalist18, so we have a strong prior it transfers.\n\nGoal for Feb 16 – Jun 1: reproduce published numbers to validate our harness, then apply to the two highest-priority internal workloads with a go/no-go quality bar of +5 tail accuracy at <1 head regression.\n\nEfficiency angle for the OKR: better tail accuracy means fewer manual review escalations, which is a measurable cost line.\n\nSantiago — staffing + compute plan when ready.\n\nZofia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/coltran/e03",
+  "thread_id": "gr/coltran/t1",
+  "in_reply_to": "gr/coltran/e02",
+  "date": "2026-06-10T11:05:00Z",
+  "from": {
+    "name": "Hyun Traore",
+    "email": "hyun.traore@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: ColTran archive colorization",
+  "body": "Hi both,\n\nStatus: fine-tuning on the first archival dataset is done using the release's custom-dataset path (pretrained ImageNet checkpoint via pretrain_dir, dataset=custom). FID on the held-out archive split: 21.3 for the fine-tuned model vs 27.8 zero-shot — a clear win for fine-tuning. Per Efe's harness we report FID only; the SSIM numbers people keep asking for are meaningless here and I keep deleting them from decks.\n\nDistillation student v0 trains, but the first checkpoint underperforms: FID 31.5. The autoregressive colorizer's sampling diversity is exactly what the feed-forward student loses. Trying a multi-sample distillation target next.\n\nRisk: the second archival dataset is still in privacy review (filed 5/8, so due imminently). If it clears past 6/19 the two-dataset claim for LRB gets thin.\n\nHyun",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

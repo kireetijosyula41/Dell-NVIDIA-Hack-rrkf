@@ -1,0 +1,49 @@
+{
+  "id": "gr/distracting_control/e04",
+  "thread_id": "gr/distracting_control/t2",
+  "in_reply_to": null,
+  "date": "2026-06-26T16:22:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: robustness gate design locked",
+  "body": "Team,\n\nDecisions, timed with today's OKR lock so the Q3 commitment is precise:\n\n1. Fixed-seed benchmarking is approved. Amara's patch ships in our fork with the divergence documented; comparability beats fidelity to the released default here.\n2. The gate is defined on two cells: background-video at medium difficulty and camera-pose at low difficulty. Hyun's argument carried the day -- camera-medium is currently so destructive (55-70% return loss in the pilot) that gating on it would just block everything; we ratchet difficulty up over time instead.\n3. The Q3 OKR reads: every promoted agent reports distracting-control scores, and new agents must retain 60% of clean return on the two gate cells.\n\nSweep results and the full proposal go to portfolio leads July 8 as planned.\n\nUlla",
+  "labels": [
+    "decision"
+  ]
+}

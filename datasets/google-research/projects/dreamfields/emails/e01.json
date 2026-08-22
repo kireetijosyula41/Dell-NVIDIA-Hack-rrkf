@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreamfields/e01",
+  "thread_id": "gr/dreamfields/t1",
+  "in_reply_to": null,
+  "date": "2026-04-08T09:26:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Dream Fields 3D asset demo",
+  "body": "Team,\n\nKicking off the Dream Fields effort for vision. The method from our open-source release generates 3D object geometry and color from a text prompt alone — no 3D supervision — by optimizing a NeRF so that renders from many camera views score highly against the caption under a pre-trained CLIP model, with sparsity-inducing transmittance regularization and scene bounds keeping the geometry clean.\n\nProduct target: an internal demo where a designer types a prompt and gets a usable textured mesh for prototyping. The creative-tools group is the sponsor.\n\nMilestones: reproduce release quality in our environment by mid-May (the NGC-container Docker path should make this quick), quality/latency improvements through June, demo assets and Launch Review Board submission early July.\n\nDeshawn follows up on staffing, compute, and the data-platform dependency for the caption set.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

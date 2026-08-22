@@ -1,0 +1,27 @@
+{
+  "id": "gr/cfq",
+  "title": "Compositional Freebase Questions (CFQ)",
+  "summary": "Stands up the CFQ compositional-generalization benchmark — dataset, training/eval code, and a maintained leaderboard over the MCD splits — as an internal evaluation product for language teams. Builds on our open-source CFQ release (ICLR 2020).",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Rosa Mensah",
+    "Hyun Traore",
+    "Saoirse Eriksen",
+    "Amara Okafor"
+  ],
+  "codename": "Project Sirocco",
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cfq",
+    "url": "https://github.com/google-research/google-research/tree/master/cfq",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

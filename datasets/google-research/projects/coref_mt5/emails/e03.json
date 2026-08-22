@@ -1,0 +1,17 @@
+{
+  "id": "gr/coref_mt5/e03",
+  "thread_id": "gr/coref_mt5/t2",
+  "in_reply_to": null,
+  "date": "2026-06-04T11:58:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "coref_mt5 status - accuracy is fine, the decoder is the problem",
+  "body": "Status.\n\nAccuracy: 82.9 F1 on CoNLL-2012 with our own fine-tune, against 83.3 published. Close enough that I'm calling English parity done. Katya has the first non-English set through and it looks encouraging, no numbers I'd defend yet.\n\nThe problem is decoding cost. The transition system emits one action sequence per document and long documents mean long output sequences - a 40-page contract decodes in 190 seconds on a single accelerator. Search over spans was expensive but it parallelized; seq2seq decoding is inherently serial. For batch document processing that's tolerable, for anything interactive it is not.\n\nTwo options: chunk documents and stitch entity chains across chunk boundaries (accuracy risk on long-range links, which is exactly what we're selling), or scope the product to batch-only. Chiara is prototyping chunking this month but I'd rather we decide on positioning than engineer around it.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

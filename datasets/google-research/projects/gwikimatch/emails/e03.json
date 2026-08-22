@@ -1,0 +1,15 @@
+{
+  "id": "gr/gwikimatch/e03",
+  "thread_id": "gr/gwikimatch/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:37:00Z",
+  "from": {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [{"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}],
+  "subject": "Status: dedup numbers, protocol draft, rater-agreement caveat",
+  "body": "Hi both,\n\nStatus. Bilal's de-dup pipeline is in dry-run and the numbers justify the schedule slip: 3.1% of candidate pairs are mirror/redirect duplicates, and they are heavily concentrated in the label-2 (most similar) bucket - exactly where inflation would have hurt most. Production run lands 6/19 as planned.\n\nEval protocol draft is circulating: we report accuracy and AUC on the majority-vote labels, with the 0/1/2 scale collapsed to binary at two operating points so teams cannot cherry-pick a threshold.\n\nCaveat I want on record: rater agreement is solid on 0-vs-2 but noticeably weaker between adjacent labels (0-vs-1, 1-vs-2). Where the 3 raters split three ways there is no majority at all - about 2% of pairs - and we drop those, documented. Teams should treat small deltas on the middle band as noise, and the protocol doc says so.\n\nBaselines on track for 7/3; dual-encoder one is already running.\n\nQuentin",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gr/muller/e02",
+  "thread_id": "gr/muller/t1",
+  "in_reply_to": "gr/muller/e01",
+  "date": "2026-04-14T13:45:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: MULLER learned resizer — staffing + budget",
+  "body": "Hi Anders,\n\nStaffing: Yara Jokic 30% leads the integration and the offline A/B (she's also carrying the muNet close this spring, hence the modest slice); Oyin Iversen 30% on the preprocessing plumbing and serving parity checks; Hyun Traore 20% consulting on the training-side interactions, since a learned resizer changes what the towers see during fine-tuning.\n\nFunding is settled: Idris verbally earmarked $120k from the Q3 discretionary compute budget line B-77 for this project, which covers the retraining sweeps for the retrieval towers with MULLER in the input path. The April single-tower work fits in our existing best-effort allocation (24 titan-a100 GPUs); the May sweep is what the earmark actually pays for.\n\nOne caution so we don't oversell: MULLER's wins in the paper come when the downstream model is trained (or at least fine-tuned) with the resizer in the loop. A pure drop-in with frozen towers may show nothing — that's precisely what Yara's April A/B will settle before we spend the sweep money.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

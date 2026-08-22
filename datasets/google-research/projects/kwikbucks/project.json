@@ -1,0 +1,18 @@
+{
+  "id": "gr/kwikbucks",
+  "title": "Cheap-Weak and Expensive-Strong signals](https://openreview.net/forum?id=p0JSSa1AuV)\". The",
+  "summary": "Reference implementation of the KwikBucks correlation-clustering algorithm, which combines cheap-weak similarity signals with a limited budget of expensive-strong queries (e.g. a cross-encoder) to cluster at scale. Meridian is applying it to record deduplication in the data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Paloma Castillo", "Yara Jokic", "Rosa Mensah", "Carmen Reyes", "Oyin Iversen"],
+  "window": {"start": "2026-03-02", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "kwikbucks",
+    "url": "https://github.com/google-research/google-research/tree/master/kwikbucks",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

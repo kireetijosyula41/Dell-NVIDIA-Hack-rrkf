@@ -1,0 +1,16 @@
+{
+  "project": "gr/muller",
+  "conflicts": [
+    {
+      "conflict_id": "C054",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "bustle"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Funding is settled: Idris verbally earmarked $120k from the Q3 discretionary compute budget line B-77 for this project, which covers the retraining sweeps for the retrieval towers with MULLER in the input path."
+    }
+  ]
+}

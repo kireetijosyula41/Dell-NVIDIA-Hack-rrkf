@@ -1,0 +1,16 @@
+{
+  "project": "gr/agile_modeling",
+  "conflicts": [
+    {
+      "conflict_id": "C130",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "cold_posterior_bnn"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "For the LAION-400M embedding precompute we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — so the pool is ready well before the alpha."
+    }
+  ]
+}

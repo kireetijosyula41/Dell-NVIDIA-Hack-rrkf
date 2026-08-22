@@ -1,0 +1,35 @@
+{
+  "id": "gr/arithmetic_sampling/e04",
+  "thread_id": "gr/arithmetic_sampling/t2",
+  "in_reply_to": "gr/arithmetic_sampling/e03",
+  "date": "2026-06-10T15:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Arithmetic sampling status: diversity confirmed, variance win is the real story",
+  "body": "Farah, Daniela,\n\nRepositioning based on your numbers. The readout leads with variance reduction, not diversity: 40% fewer samples for the same confidence interval is a cost story every eval owner in the building understands, and it doesn't depend on the temperature question.\n\nDecisions:\n\n1. Primary pitch is arithmetic sampling as the default sampler for our offline eval and reward-estimation jobs. Maren, scope that with Tomas's group after the readout.\n2. Production decoding integration is deferred — the low-temperature result means it needs a temperature study we haven't budgeted.\n3. Farah writes up the reproducibility property (precomputed codes, fixed seed, batch-invariant outputs) as a standalone note. That may be more valuable to us than either headline.\n\nReadout June 15.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

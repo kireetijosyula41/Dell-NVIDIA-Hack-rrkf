@@ -1,0 +1,12 @@
+{
+  "project": "gr/EgoSocial",
+  "conflicts": [
+    {
+      "conflict_id": "C122",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["clay"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Nothing internal does this, so I'm standing up a synthetic-data generation pipeline from scratch - Wanjiru owns it at 60% through April, building the scenario generator, the audio/visual compositing stage, and the QA sampler."
+    }
+  ]
+}

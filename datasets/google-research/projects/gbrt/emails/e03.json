@@ -1,0 +1,36 @@
+{
+  "id": "gr/gbrt/e03",
+  "thread_id": "gr/gbrt/t2",
+  "in_reply_to": null,
+  "date": "2026-04-01T10:26:00Z",
+  "from": {
+    "name": "Fumiko Rossi",
+    "email": "fumiko.rossi@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Red teaming status: pipeline live, mode collapse risk",
+  "body": "Hi Ivo,\n\nStatus. The pipeline runs end to end on the internal 8B PAX LM: prompt probabilities feed the LM, simple_decode runs the differentiable decoding, and safety scoring works through the SAFETY token path in a single decode when there is no separate classifier input.\n\nFindings from the first partial sweep: the optimizer reliably finds prompts that flip the safety score, but they collapse into two low-diversity modes — near-duplicate token patterns. A diversity penalty in loss_fn helps, and the Gumbel temperature matters a lot (0.7 much better than 1.0 for us).\n\nRisk: mode collapse means coverage claims for a launch gate are weaker than raw prompt counts suggest. Halima's harness will report distinct-mode counts, not just prompt counts.\n\nFumiko",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

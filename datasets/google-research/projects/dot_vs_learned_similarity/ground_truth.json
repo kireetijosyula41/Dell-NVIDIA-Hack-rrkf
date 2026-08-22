@@ -1,0 +1,12 @@
+{
+  "project": "gr/dot_vs_learned_similarity",
+  "conflicts": [
+    {
+      "conflict_id": "C100",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["dp_alternating_minimization"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We have the vulcan-h100 reservation locked for the week of 2026-06-01: 384 accelerators, confirmed through Ines Uzun's reservation process."
+    }
+  ]
+}

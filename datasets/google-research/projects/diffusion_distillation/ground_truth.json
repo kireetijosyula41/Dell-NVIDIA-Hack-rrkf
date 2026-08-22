@@ -1,0 +1,18 @@
+{
+  "project": "gr/diffusion_distillation",
+  "conflicts": [
+    {
+      "conflict_id": "C105",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "OpenMSD",
+        "behavior_regularized_offline_rl",
+        "non_decomp"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The Corpus v2 freeze hits 2026-06-26, so the ImageNet and LSUN training shards have to be migrated and validated before that date."
+    }
+  ]
+}

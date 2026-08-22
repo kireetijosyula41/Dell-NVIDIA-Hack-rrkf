@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_maml",
+  "title": "ES-MAML Variant of Blackbox Optimization.",
+  "summary": "Productizing ES-MAML, our Hessian-free meta-learning library built on blackbox optimization, with its zero-order and first-order algorithms and gRPC aggregator/worker architecture, targeting rapid adaptation for robotics-style control workloads.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Umar Costa", "Halima Toure", "Maren Zhou"],
+  "window": {"start": "2026-03-16", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "es_maml",
+    "url": "https://github.com/google-research/google-research/tree/master/es_maml",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

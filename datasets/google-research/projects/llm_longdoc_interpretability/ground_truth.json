@@ -1,0 +1,12 @@
+{
+  "project": "gr/llm_longdoc_interpretability",
+  "conflicts": [
+    {
+      "conflict_id": "C022",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["infinite_nature_zero"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — for the full NQ + MirACL attribution sweep that anchors the July readout."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/euphonia_spice",
+  "title": "SpICE: Speech Intelligibility Classifiers from Euphonia",
+  "summary": "Bringing SpICE - classifiers trained on 551,176 disordered-speech samples from 468 speakers that rate intelligibility on a five-point scale from typical to profound - to a clinically-usable assessment service, building on strong published generalization to TORGO, UASpeech, and ALS-TDI PMP.",
+  "portfolio": "speech-audio",
+  "pm": "Goran Sokolov",
+  "em": "Ivo Umeh",
+  "contributors": ["Milan Zapata", "Linnea Yamada", "Paloma Castillo", "Emeka Pinto"],
+  "window": {"start": "2026-03-09", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "euphonia_spice",
+    "url": "https://github.com/google-research/google-research/tree/master/euphonia_spice",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

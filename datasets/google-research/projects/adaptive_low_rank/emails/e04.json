@@ -1,0 +1,35 @@
+{
+  "id": "gr/adaptive_low_rank/e04",
+  "thread_id": "gr/adaptive_low_rank/t2",
+  "in_reply_to": "gr/adaptive_low_rank/e03",
+  "date": "2026-04-21T16:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Basalt status: TREC repro + generalization deltas",
+  "body": "Wei, thanks — good numbers.\n\nDecisions from yesterday's sync so we're all on one page:\n\n1. v1 scope is text-classification adapters with value-module replacement only; multimodal adapters move to a Q3 conversation.\n2. Probe-output caching is in scope for v1 — the 30% overhead is not sellable to the platform team without it.\n3. Design review is Apr 29; Bruno owns the deck, I'll cover the roadmap slide.\n\nNo Launch Review Board pass needed since this stays internal for now. Nice work getting the repro locked before the yelp numbers even landed.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

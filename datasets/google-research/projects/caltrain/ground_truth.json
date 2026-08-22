@@ -1,0 +1,12 @@
+{
+  "project": "gr/caltrain",
+  "conflicts": [
+    {
+      "conflict_id": "C033",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["meta_learning_without_memorization", "fractals_language", "frequency_analysis"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"On data: the Corpus v2 migration freeze is 2026-08-07, so we have comfortable runway - our benchmark logit sets can be ingested any time before early August, well after this window closes. No need to rush Corpus tickets for this project.\""
+    }
+  ]
+}

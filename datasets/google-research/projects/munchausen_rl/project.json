@@ -1,0 +1,18 @@
+{
+  "id": "gr/munchausen_rl",
+  "title": "Munchausen Reinforcement Learning",
+  "summary": "Hardens Munchausen RL from our open-source release — the M-DQN and M-IQN agents built on the Dopamine framework, plus the Advantage Learning ablation — into agents-rl's standard value-based baseline suite, with reproducible Atari sweeps and a maintained training entry point.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Ivo Umeh",
+  "contributors": ["Rosa Mensah", "Farah Haddad", "Yara Jokic", "Quentin Farkas"],
+  "window": {"start": "2026-02-16", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "munchausen_rl",
+    "url": "https://github.com/google-research/google-research/tree/master/munchausen_rl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

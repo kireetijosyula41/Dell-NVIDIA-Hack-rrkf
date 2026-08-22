@@ -1,0 +1,18 @@
+{
+  "id": "gr/menger_rl/e03",
+  "thread_id": "gr/menger_rl/t1",
+  "in_reply_to": "gr/menger_rl/e02",
+  "date": "2026-06-03T11:52:00Z",
+  "from": {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Menger-RL kickoff — status: replay throughput is the bottleneck",
+  "body": "Status before the soak:\n\n- Actor fleet: 1,000 workers stable since 04-28; we've burst-tested to 2,400. Milan's autoscaler recovers from batch-pool preemptions cleanly.\n- Learner bridge: Vera has the learner training on our stack; end-to-end on the toy env converges to reference in 6.5h.\n\nBottleneck: replay ingest. At 3,000 simulated actors, the learner-side replay buffer saturates at ~78% of the sample throughput we need to keep 512 chips fed — the actors produce fast enough on CPU (as the framework promised), but our storage-layer hop adds latency the original in-memory design didn't have. Vera's fix is sharding the replay across 8 ingest nodes; prototype shows 1.35x, which clears the bar with margin.\n\nRisk: the sharded ingest lands ~06-15, two days before soak-readiness. If it slips, options are (a) soak at 384 chips, or (b) accept learner idle time. Will flag by 06-12.\n\nLeilani",
+  "labels": ["status", "risk"]
+}

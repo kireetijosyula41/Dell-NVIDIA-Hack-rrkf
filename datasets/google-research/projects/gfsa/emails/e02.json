@@ -1,0 +1,15 @@
+{
+  "id": "gr/gfsa/e02",
+  "thread_id": "gr/gfsa/t1",
+  "in_reply_to": "gr/gfsa/e01",
+  "date": "2026-04-14T11:36:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff - Project Quillon (GFSA graph-structure layer)",
+  "body": "Anders,\n\nStaffing confirmed: Fumiko 60%, Hyun 40%, Bilal 100%, Halima 25% for evals. That is enough for the 6/11 target if scope holds.\n\nCompute: the GFSA layer itself is light - training the static-analysis task fits on 16 A100s on titan-a100 best-effort, and I do not expect us to need a Vulcan reservation at all this quarter. Budget ask is small: ~$25k of best-effort burn through mid-June.\n\nTwo constraints to flag. First, the reference code targets Python 3.6 and pins old JAX versions; Bilal will spend the first sprint lifting it onto our standard toolchain image before anyone builds on top. Second, Halima is shared with another team through April, so eval harness work starts 5/1, not before.\n\nJelena",
+  "labels": ["resources"]
+}

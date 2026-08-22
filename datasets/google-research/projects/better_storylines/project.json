@@ -1,0 +1,18 @@
+{
+  "id": "gr/better_storylines",
+  "title": "[Toward Better Storylines with Sentence-Level Language Models](https://www.aclweb.org/anth",
+  "summary": "Trains sentence-level language models over mean BERT embeddings of ROC Stories sentences (~400k sentences stored as a TFDS dataset) to predict plausible next sentences, powering storyline coherence scoring; the internal effort applies the approach to long-form draft assistance.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Gustavo Moreau", "Wanjiru Horvat", "Paloma Castillo", "Halima Toure"],
+  "window": {"start": "2026-03-02", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "better_storylines",
+    "url": "https://github.com/google-research/google-research/tree/master/better_storylines",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

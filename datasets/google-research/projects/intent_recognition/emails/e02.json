@@ -1,0 +1,45 @@
+{
+  "id": "gr/intent_recognition/e02",
+  "thread_id": "gr/intent_recognition/t2",
+  "in_reply_to": null,
+  "date": "2026-05-11T13:30:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Intent recognition — resourcing for the pilot",
+  "body": "Dmitri — resourcing for the pilot phase. People: Nikhil 60% (pipeline + training), Fumiko 40% (modeling/metrics), Oyin 50%, Carmen 15% (advisory on eval design; she's heavily committed elsewhere). The new scope item: partner labels are too noisy to trust, so quality review needs humans in the loop, and there's no existing internal tool that supports span-level rating of sensor traces — so we're scoping and staffing a human-rating annotation UI from scratch: timeline visualization of recording collections, span labeling, and rater-agreement dashboards. Oyin owns it, design pass in June, first raters on it mid-July. Compute is trivial (CPU training, a few titan GPUs). Platform note: we'll host rater data in Corpus, and I've confirmed our schema lands before the v2 migration freeze on 2026-07-10. — Alina",
+  "labels": [
+    "resources"
+  ]
+}

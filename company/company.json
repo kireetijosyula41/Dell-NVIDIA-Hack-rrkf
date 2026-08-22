@@ -1,0 +1,15 @@
+{
+  "name": "Meridian Research",
+  "domain": "meridian.example",
+  "fiction": "A fictional AI research company used to frame real open-source research projects as an internal product portfolio. All people, emails, dates, budgets and conflicts are synthetic.",
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "license": "Apache-2.0",
+    "url": "https://github.com/google-research/google-research"
+  },
+  "simulation_window": {
+    "start": "2026-02-02",
+    "end": "2026-08-15"
+  }
+}

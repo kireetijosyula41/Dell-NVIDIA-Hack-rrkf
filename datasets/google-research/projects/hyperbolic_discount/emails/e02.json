@@ -1,0 +1,18 @@
+{
+  "id": "gr/hyperbolic_discount/e02",
+  "thread_id": "gr/hyperbolic_discount/t1",
+  "in_reply_to": "gr/hyperbolic_discount/e01",
+  "date": "2026-03-24T13:44:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Hyperbolic Agent kickoff - staffing, compute, Corpus timing",
+  "body": "Ulla,\n\nResourcing:\n\n- Staffing: Halima 60%, Leilani 40%, Gustavo 50% through mid-June. No hiring ask.\n- Compute: Atari sweeps sized at 48 titan-a100 GPUs best-effort. Multi-Rainbow with number_of_gammas=10 costs us roughly 1.4x a vanilla Rainbow run, so the May sweep is ~220 GPU-weeks total. Fits best-effort if we queue smartly; no Vulcan reservation.\n- Platform: replay logs and eval episodes sit on Corpus v1 paths today. The Corpus v2 freeze is 2026-08-07, so we have headroom to keep replay logs on v1 through July and do the v2 migration as a post-project cleanup rather than burning sweep time on it now. Leilani will schedule that migration for early August.\n\nOne practical note: gin-binding sprawl bit us in week one (two runs silently used gamma_max=0.99 with different exponents), so Leilani is adding config hashing to the run metadata.\n\nBao",
+  "labels": ["resources"]
+}

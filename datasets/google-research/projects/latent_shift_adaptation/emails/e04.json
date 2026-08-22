@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_shift_adaptation/e04",
+  "thread_id": "gr/latent_shift_adaptation/t2",
+  "in_reply_to": "gr/latent_shift_adaptation/e03",
+  "date": "2026-06-22T10:09:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Latent-shift status: readout framing + Q3 commitment",
+  "body": "Team,\n\nLocking the Jun 24 readout framing.\n\nRecommendation going in: productionize as a monitoring/alerting layer first, not an auto-adaptation layer. The \"9 days before on-call\" result is the story — we sell early detection, and the adaptation step stays human-approved for at least two quarters. Freya's proxy-strength diagnostic is a hard gate in the design: no proxy signal, no subgroup claims, and the dashboard says so explicitly.\n\nQ3 OKR language (lock is Jun 26, so this is final by Wednesday): \"Latent-shift monitoring live on three platform model families with replay-validated detection.\" Sized against the validation plan Santiago costed — the readout includes that budget line as already socialized with finance.\n\nKaia/Freya — one joint slide on the eigendecomposition-vs-WAE choice please; leadership will ask why we picked the interpretable one and the answer is good.\n\nDmitri",
+  "labels": ["decision"]
+}

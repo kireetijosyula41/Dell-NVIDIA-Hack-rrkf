@@ -1,0 +1,18 @@
+{
+  "id": "gr/imp/e01",
+  "thread_id": "gr/imp/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "IMP kickoff - one multimodal encoder for retrieval",
+  "body": "Team,\n\nKicking off the IMP track for graphs-retrieval. Our open-source MAX & IMP release (alternating gradient descent plus mixture-of-experts for integrated multimodal perception) trains a single model across image, video, and audio - IMP-MoE-B at 90M params posts 83.2 on IN1k, 68.2 on K400 and 88.7 on UCF101, which for one shared encoder is remarkable. For us the prize is multimodal retrieval: one embedding space over all modalities instead of three bolted-together towers.\n\nScope this window: reproduce IMP-B and IMP-MoE-B from the released experiment configs, then run an IMP-MoE-L-scale training to test whether the retrieval-relevant representations keep improving with scale. Milestones: base repros by end of May, the MoE-L run in early July, findings memo by 2026-07-20.\n\nCsilla leads research, Tereza and Vera experiments, Jorge infra. Bruno - resourcing note please; the MoE-L run is the big compute item and needs booking early.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/multimodalchat/e01",
+  "thread_id": "gr/multimodalchat/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T08:58:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MultimodalChat kickoff — photo suggestion in conversation",
+  "body": "Hi Alina,\n\nKickoff for MultimodalChat. Base asset is the PhotoChat dataset from our open-source release: dialogues where every turn carries a share_photo boolean and user_id, plus a photo_description with object labels and the photo's Open Image ID. That gives us two trainable tasks out of the box — (1) predict the turn where a photo share is appropriate, (2) retrieve the right photo given dialogue context.\n\nProduct framing: rich-content suggestion (photos/GIFs/stickers) inside the language portfolio's chat surfaces. The share-intent trigger is the differentiator; retrieval alone is table stakes.\n\nMilestones: Open Image data pulled and indexed by mid-May, intent + retrieval baselines by end of June, end-to-end demo for Launch Review Board in late July. Window closes 08-03 so there's not much slack after that demo.\n\nStaffing plan from you when ready?\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

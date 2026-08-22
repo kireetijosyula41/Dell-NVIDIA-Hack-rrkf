@@ -1,0 +1,17 @@
+{
+  "id": "gr/multi_annotator/e01",
+  "thread_id": "gr/multi_annotator/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: multi-annotator disagreement modeling for Corpus labeling",
+  "body": "Hi Daniela,\n\nKicking off the multi-annotator effort formally. Goal: bring the approach from our open-source release (train on every annotator's label instead of the majority vote) into the Corpus labeling pipeline for hate-speech detection, so downstream teams see disagreement rather than a fake single ground truth.\n\nScope for this half: (1) adapt the data format — N annotator columns named 0 to N-1 plus a text column, values 0/1/NaN — to Corpus export schemas; (2) extend preprocess.py beyond the two datasets it currently reformats; (3) a pilot eval against the majority-vote baseline.\n\nMilestones I want to socialize at the next Launch Review Board: format validator by 04-03, pilot model trained by 04-24, integration readout before 05-25. If we land the pilot, this becomes the Q3 OKR anchor for data-platforms.\n\nCan you confirm staffing this week?\n\nThanks,\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

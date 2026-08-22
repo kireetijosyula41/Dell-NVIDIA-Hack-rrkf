@@ -1,0 +1,46 @@
+{
+  "id": "gr/irregular_timeseries_pretraining/e03",
+  "thread_id": "gr/irregular_timeseries_pretraining/t1",
+  "in_reply_to": "gr/irregular_timeseries_pretraining/e01",
+  "date": "2026-05-06T15:30:00Z",
+  "from": {
+    "name": "Freya Ruiz",
+    "email": "freya.ruiz@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: pretraining for irregular time series",
+  "body": "Status. PhysioNet-2012 repro: done, and the headline result holds — pretraining with geometric masking lifts mortality-prediction AUROC to 0.852 vs 0.839 for the scratch-trained baseline, with the gain widening (+2.5 AUROC points) in the 10%-labels regime, which is the story that matters for adoption. The cached mask banks work as advertised: sampling from the pre-generated set instead of generating per-iteration cut step time about 35%. Dataset status: MIMIC-III access cleared April 28 and Maren's pipeline is converting it now; eICU is still in the approval queue (as predicted), so the mid-May comparison will run PhysioNet + MIMIC-III + H&M. One technical wrinkle: the imported STraTS modules needed the smart_cond shim from TF 2.12 to run on our stack — Kaia has the fix documented. Leaderboard: Saoirse has ingestion working end-to-end against the eval harness; ranking UI in review. — Freya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

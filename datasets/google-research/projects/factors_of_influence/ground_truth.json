@@ -1,0 +1,17 @@
+{
+  "project": "gr/factors_of_influence",
+  "conflicts": [
+    {
+      "conflict_id": "C017",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "fvlm"
+      ],
+      "planted_in": [
+        "e01",
+        "e04"
+      ],
+      "claim_as_written": "kicking off what we're calling Project Basalt internally ... Please use the Basalt name on docs and threads so search works. (e01); keep tagging everything Project Basalt in docs and the tracker (e04)"
+    }
+  ]
+}

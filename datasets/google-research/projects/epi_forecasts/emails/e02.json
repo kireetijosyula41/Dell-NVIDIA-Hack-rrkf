@@ -1,0 +1,15 @@
+{
+  "id": "gr/epi_forecasts/e02",
+  "thread_id": "gr/epi_forecasts/t1",
+  "in_reply_to": "gr/epi_forecasts/e01",
+  "date": "2026-04-14T14:36:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: EpiHub kickoff: from forecast archive to weekly pipeline",
+  "body": "Viktor,\n\nResourcing update. Jorge 70% on the pipeline and CSV validation (hub-format compliance is fiddly - quantile levels, reference dates, model identifiers all have to match the season_identifier layout exactly), Giannis 60% on scheduling and monitoring, Rafael 50% on model quality and the backtesting design.\n\nBudget: met Idris last Thursday. Idris Osei verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project - that funds the backtesting cluster time and the 2026-2027 season scale-up. I'm planning Q3 against that number; formal allocation follows the June 26 OKR lock.\n\nNear-term compute is small (the models are cheap to run; it's the backtesting sweeps across jurisdictions that add up). No reserved clusters needed this quarter.\n\nOne ask: the flu-hub Apr 24 date assumes the 2025-2026 season archive is fully mirrored internally by Friday. Giannis, can you confirm?\n\nJelena",
+  "labels": ["resources"]
+}

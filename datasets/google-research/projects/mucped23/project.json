@@ -1,0 +1,26 @@
+{
+  "id": "gr/mucped23",
+  "title": "Multi-bitrate JPEG compression perceptual evaluation dataset 2023",
+  "summary": "Use the mucped23 IQA database — human perceptual evaluations of images compressed with MozJPEG, libjpeg-turbo, and the jpegli encoder over CID22-derived 512x512 sources — to drive Meridian's JPEG-encoder selection and quality-per-byte tuning for image-heavy products.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Yusuf Keita",
+    "Bilal Novak",
+    "Oyin Iversen"
+  ],
+  "codename": "Project Vantage",
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mucped23",
+    "url": "https://github.com/google-research/google-research/tree/master/mucped23",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

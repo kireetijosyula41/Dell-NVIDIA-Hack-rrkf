@@ -1,0 +1,41 @@
+{
+  "id": "gr/cmmd/e03",
+  "thread_id": "gr/cmmd/t1",
+  "in_reply_to": "gr/cmmd/e02",
+  "date": "2026-04-08T10:50:00Z",
+  "from": {
+    "name": "Katya Silva",
+    "email": "katya.silva@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CMMD kickoff — replacing FID in Evalline",
+  "body": "Status.\n\nImplementation: done and validated — our production CMMD matches the reference implementation to 4 decimal places on the paper's test cases. The unbiased MMD estimator means no more \"FID needs 50k samples\" folklore: CMMD is stable at a few thousand images, which alone will save teams real eval compute. Also handled the offline case: CLIP ViT-L/14@336px weights are mirrored internally so air-gapped eval jobs don't attempt the auto-download.\n\nEvalline integration (Amara): metric endpoint merged, side-by-side CMMD/FID reporting works in staging.\n\nOne finding worth surfacing: on our internal gen-model leaderboard, CMMD and FID disagree on the #2/#3 ordering. We expected this (it's the paper's whole point — FID can contradict human raters) but expect noise from affected teams. Suggest we pre-brief them rather than let them find out on the dashboard.\n\nKatya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

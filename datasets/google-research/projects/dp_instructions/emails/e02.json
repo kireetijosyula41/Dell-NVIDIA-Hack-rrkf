@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_instructions/e02",
+  "thread_id": "gr/dp_instructions/t1",
+  "in_reply_to": "gr/dp_instructions/e01",
+  "date": "2026-04-02T14:12:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: private instruction data for alignment (dp_instructions)",
+  "body": "Staffing and compute, as promised.\n\nHyun leads DP fine-tuning and owns the epsilon accounting. Yara takes the synthetic-instruction sampling and the DP histogram resampling stage. Linnea handles the labeling/annotation leg and the SFT data assembly. Amara owns the training infrastructure end to end — the DP fine-tuning jobs, the TRL-based PPO pipeline for the RLHF leg, and the serving of eval checkpoints. To be explicit for resource planning: Amara is committed at 60% to this project for June 2026, rising from 40% in May, since June is when the RLHF runs and handoff hardening land. I've confirmed with her and blocked it in the allocation sheet.\n\nCompute: DP fine-tuning of the 13B fits on 64 titan-a100 GPUs with gradient accumulation; no Vulcan ask this half.\n\nDaniela",
+  "labels": ["resources"]
+}

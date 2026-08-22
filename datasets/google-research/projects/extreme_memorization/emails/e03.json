@@ -1,0 +1,36 @@
+{
+  "id": "gr/extreme_memorization/e03",
+  "thread_id": "gr/extreme_memorization/t2",
+  "in_reply_to": null,
+  "date": "2026-03-12T11:40:00Z",
+  "from": {
+    "name": "Rafael Duran",
+    "email": "rafael.duran@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: alignment-metric repro + one risk",
+  "body": "Quick status.\n\nRepro is in decent shape: the MLP with relu at 1024 hidden units matches the paper's memorization curve on CIFAR-10, and the sin-activation runs reproduce the extreme-memorization regime once we push the custom_init stddev high. Gradient alignment scalars are flowing into TensorBoard from every run, and Bilal's exporter maps them into the API draft schema.\n\nRisk worth flagging: on shuffled-labels CIFAR-100 the alignment signal goes noisy late in training, so the early-warning threshold we pitch to Corpus customers will likely need per-dataset calibration — call it two extra weeks of sweeps. Also, SVHN ingestion is behind; the extracted archive layout differs from the cifar sets and Amara had to rewrite the loader.\n\nPropose we hold the Apr 20 dogfood date but decide on SVHN by end of March.\n\nRafael",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

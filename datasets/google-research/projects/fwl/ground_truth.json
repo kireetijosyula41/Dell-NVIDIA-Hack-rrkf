@@ -1,0 +1,16 @@
+{
+  "project": "gr/fwl",
+  "conflicts": [
+    {
+      "conflict_id": "C135",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "dpok"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris verbally earmarked $180k from Q3 discretionary compute budget line B-85 for this project — that covers the long-doc sweeps and the ablation grid (FWL size, attn_chunks, vocab handling) with margin."
+    }
+  ]
+}

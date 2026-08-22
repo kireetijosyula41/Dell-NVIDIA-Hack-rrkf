@@ -1,0 +1,12 @@
+{
+  "project": "gr/linear_eval",
+  "conflicts": [
+    {
+      "conflict_id": "C005",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["dnn_predict_accuracy"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Since nothing like it exists internally, we're scoping and staffing a distillation training recipe from scratch — Efe at 40% owning the recipe, Paloma supporting the training loop — so teams can compress models and immediately verify the students with linear eval."
+    }
+  ]
+}

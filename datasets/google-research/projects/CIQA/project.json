@@ -1,0 +1,26 @@
+{
+  "id": "gr/CIQA",
+  "title": "Compression Image Quality Assessment Dataset (CIQA)",
+  "summary": "CIQA is an open dataset of human perceptual-quality labels over AVA images recompressed at varying JPEG quality factors, collected via forced-choice pairwise comparisons. We are productizing it as the ground truth for Meridian's perceptual compression quality metric.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Milan Zapata",
+    "Leilani Nakamura",
+    "Saoirse Eriksen",
+    "Gustavo Moreau"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "CIQA",
+    "url": "https://github.com/google-research/google-research/tree/master/CIQA",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

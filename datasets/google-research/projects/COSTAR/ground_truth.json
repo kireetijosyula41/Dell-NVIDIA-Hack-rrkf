@@ -1,0 +1,12 @@
+{
+  "project": "gr/COSTAR",
+  "conflicts": [
+    {
+      "conflict_id": "C075",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["infinite_uncertainty"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Carmen Reyes is committed to COSTAR at 60% for the whole of July 2026 - she owns the MIMIC-III semi-synthetic evaluation and the final ablation grid, and July is exactly when that lands."
+    }
+  ]
+}

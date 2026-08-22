@@ -1,0 +1,15 @@
+{
+  "id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e04",
+  "thread_id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/t2",
+  "in_reply_to": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e03",
+  "date": "2026-07-21T15:36:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [],
+  "subject": "Re: Bag-combination status: gains replicate, but shrink on realistic bags",
+  "body": "Yusuf, Santiago,\n\nIntegration decision, closing the window:\n\n1. SHIP IT, framed honestly. +1.8 AUC points that never goes negative is exactly the kind of free, low-risk improvement the LLP stack should absorb. The integration recommendation goes to the platform team this week with \"consistent modest gains\" language - I've stripped every superlative out of the draft myself.\n\n2. The bag-combination step lands as an opt-out default in the LLP training path, not opt-in. If it's never negative in our testing, defaulting off just means nobody benefits.\n\n3. Scope note: we are NOT pursuing the adaptive bag-weighting extension Yusuf sketched - promising, but it's new research, and this track was about harvesting a published result. It goes on the Q4 candidate list.\n\nAnd yes, the dedup catch goes in the retro as the save of the quarter.\n\nDmitri",
+  "labels": ["decision"]
+}

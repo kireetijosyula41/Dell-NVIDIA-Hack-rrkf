@@ -1,0 +1,12 @@
+{
+  "project": "gr/imghum",
+  "conflicts": [
+    {
+      "conflict_id": "C015",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["gradient_based_tuning", "cola", "hierarchical_foresight"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-07-10, and our window closes June 29 - so Gustavo migrates the capture set to v2 in the first half of May, before the evaluation runs start."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/c_learning/e04",
+  "thread_id": "gr/c_learning/t1",
+  "in_reply_to": "gr/c_learning/e03",
+  "date": "2026-07-06T15:40:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: C-Learning - decision: guardrail in, unconditional OPE claims out",
+  "body": "All,\n\nSweep results reviewed with Jelena this morning. Decisions:\n\n1) The ablation confirms the theory-driven goal-sampling ratio: the predicted optimum was within one grid step of the empirical best on all 6 tasks. That's the headline for the M3 spec and it's a clean story - \"principled, not folklore\".\n\n2) On off-policy evaluation: Halima's trust-radius data settles it. The integration spec ships WITH the policy-divergence guardrail - OPE results outside the trusted region get flagged, not reported. I'm cutting the \"evaluate any policy, zero new data\" phrasing from the customer-facing material; it becomes \"evaluate nearby policies without new data collection\", which the 18-point miss makes non-negotiable.\n\n3) Scope cut: the image-observation variant moves out of this window entirely. State-based observations only for M3 on Jul 24.\n\nOyin, please have the spec skeleton to Halima by Friday.\n\nThanks all - the reserved week paid for itself.\n\nUlla",
+  "labels": ["decision"]
+}

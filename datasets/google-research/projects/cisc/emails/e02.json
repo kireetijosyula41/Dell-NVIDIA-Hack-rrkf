@@ -1,0 +1,45 @@
+{
+  "id": "gr/cisc/e02",
+  "thread_id": "gr/cisc/t1",
+  "in_reply_to": "gr/cisc/e01",
+  "date": "2026-03-04T14:45:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CISC kickoff — cheaper self-consistency for reasoning endpoints",
+  "body": "Priya,\n\nStaffing:\n\n- Katya 50% Mar–Apr: paper reproduction on prod models, owns the eval methodology.\n- Umar 40% throughout: confidence-extraction methods (the within-question confidence evaluation from the paper is the part I trust least to transfer, he'll pressure-test it).\n- Nikhil 30% Apr: offline A/B harness on logged traffic.\n- Jorge Vidal is committed at 60% to this project for May 2026 — he owns the serving-path integration with Zeke's Shipyard team, and I've blocked his calendar accordingly. Shadow deployment can't slip, so I wanted a named owner with real allocation, not spare cycles.\n\nCompute: sampling-heavy but inference-only. Requesting 64 A100s best-effort on Titan for March/April evals; serving-side capacity comes from Shipyard's existing pool.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

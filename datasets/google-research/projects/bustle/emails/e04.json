@@ -1,0 +1,18 @@
+{
+  "id": "gr/bustle/e04",
+  "thread_id": "gr/bustle/t1",
+  "in_reply_to": "gr/bustle/e03",
+  "date": "2026-06-18T09:50:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BUSTLE - decision: 2s timeout, ship the prototype",
+  "body": "Decision: option (a). Hard 2s timeout, return the best partial program with a \"couldn't finish\" affordance in the UI. 54% solve rate inside the budget is enough for a flag-gated prototype, and honestly the 61%-vs-44% retraining story is the number I'm taking into Q3 planning - OKRs lock Jun 26 and \"formula suggestion GA decision by end of Q3\" goes in as our committed item, funded from the B-77 earmark Bao lined up.\n\nOne scope cut with it: the 200-task mined benchmark stays internal-only for now. Kofi hasn't finished the privacy review of using customer formula history, even anonymized, and the 2-3 week SLA means we don't block M3 on it - the SyGuS numbers carry the external story until then.\n\nSaoirse, July 20 M3 stands. Nice work team, the p95 analysis was exactly the right level of detail.\n\nDmitri",
+  "labels": ["decision"]
+}

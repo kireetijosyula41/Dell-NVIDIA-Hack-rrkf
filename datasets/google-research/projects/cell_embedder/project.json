@@ -1,0 +1,25 @@
+{
+  "id": "gr/cell_embedder",
+  "title": "Generating embeddings for cell painting microscopy images.",
+  "summary": "Productionizes our open-source pipeline for embedding cell painting microscopy images (5-stain assays) so drug-screening partners can run high-content image analysis without training their own models. Based on the deep-network embedding approach from our SLAS Discovery work.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Maren Zhou",
+    "Giannis Sato",
+    "Amara Okafor"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cell_embedder",
+    "url": "https://github.com/google-research/google-research/tree/master/cell_embedder",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

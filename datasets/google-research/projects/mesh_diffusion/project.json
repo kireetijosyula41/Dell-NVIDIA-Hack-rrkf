@@ -1,0 +1,16 @@
+{
+  "id": "gr/mesh_diffusion",
+  "title": "Single Mesh Diffusion Models with Field Latents for Texture Generation",
+  "summary": "Building a texture-generation tool from our field-latent mesh diffusion work (FLVAE + FLDM checkpoints), which samples new textures for a labeled mesh directly on the surface — targeted at internal 3D-asset workflows.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": ["Maren Zhou", "Oyin Iversen", "Linnea Yamada", "Hyun Traore"],
+  "window": {"start": "2026-03-16", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mesh_diffusion",
+    "url": "https://github.com/google-research/google-research/tree/master/mesh_diffusion",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

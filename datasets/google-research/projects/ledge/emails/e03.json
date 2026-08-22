@@ -1,0 +1,15 @@
+{
+  "id": "gr/ledge/e03",
+  "thread_id": "gr/ledge/t1",
+  "in_reply_to": "gr/ledge/e02",
+  "date": "2026-05-19T15:02:00Z",
+  "from": {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Kickoff: Ledge interpretable-commands evaluation — May status",
+  "body": "Hi Dmitri, Ivo,\n\nStatus:\n\n- Demo reproduced in March as planned (approximate_20 target, refit output matches the release).\n- Internal targets: 2 of 3 are through. On the pricing-curve function, step 4 extracts 14 commands and the fine-tuned command set (step 5) gets refit error within 8% of the raw expert — genuinely readable output, Kaia has a nice writeup.\n\nRisk/trade-off: the third target has sharp discontinuities and the residual-correction pass (step 3) is eating most of the error budget before commands are even extracted, so the \"interpretable\" story gets weaker exactly where customers would want it most. Options: constrain that target's domain, or present interpretability coverage honestly as partial. We'd like a steer before the June review — recommend we discuss at the decision review rather than expanding scope now.\n\nTereza",
+  "labels": ["status", "risk"]
+}

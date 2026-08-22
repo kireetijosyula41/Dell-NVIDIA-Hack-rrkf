@@ -1,0 +1,18 @@
+{
+  "id": "gr/dql_grasping",
+  "title": "Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparison of O",
+  "summary": "Revives our simulated vision-based grasping benchmark — off-policy comparisons of DQL, Monte Carlo, supervised, Corr-MC, DDPG, and PCL learners across grasping environments of varying difficulty — as the evaluation bed for the agents-rl portfolio's manipulation roadmap.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Alina Larsen",
+  "contributors": ["Efe Lindqvist", "Wanjiru Horvat", "Nikhil Abebe", "Quentin Farkas"],
+  "window": {"start": "2026-02-16", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dql_grasping",
+    "url": "https://github.com/google-research/google-research/tree/master/dql_grasping",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

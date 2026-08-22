@@ -1,0 +1,19 @@
+{
+  "id": "gr/ledge/e01",
+  "thread_id": "gr/ledge/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T10:12:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: Ledge interpretable-commands evaluation",
+  "body": "Hi all,\n\nKicking off the Ledge track. Our Interpretable Actions release (AAAI-21) controls expert models with understandable commands, and the shipped Function Approximator example walks steps 3 through 5: correct the residual error, extract the interpretable commands to console, then fine-tune the extracted commands. The product question for data-platforms: can that command-extraction loop become an interpretability layer we offer alongside model hosting, so customers see *why* an expert did what it did?\n\nPlan: reproduce the 1-D reconstruction demo (targets/approximate_20) by Apr 3, then swap in three internal target functions and measure refit error by mid-May, decision review in late June.\n\nIvo owns staffing; Tereza is tech lead. First working session Thursday.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

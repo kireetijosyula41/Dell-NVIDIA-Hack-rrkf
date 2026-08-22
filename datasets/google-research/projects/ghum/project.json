@@ -1,0 +1,18 @@
+{
+  "id": "gr/ghum",
+  "title": "GHUM & GHUML: Generative 3D Human Shape and Articulated Pose Models",
+  "summary": "Wraps our generative 3D human body models - the 10,168-vertex GHUM and the 3,194-vertex GHUML(ite) - trained on over 60,000 dynamic scans with VAE shape spaces, pose-space deformation and blend skinning, into a synthetic-human data asset for the platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": ["Saoirse Eriksen", "Quentin Farkas", "Paloma Castillo"],
+  "window": {"start": "2026-03-23", "end": "2026-06-08"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ghum",
+    "url": "https://github.com/google-research/google-research/tree/master/ghum",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

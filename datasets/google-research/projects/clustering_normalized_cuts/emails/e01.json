@@ -1,0 +1,46 @@
+{
+  "id": "gr/clustering_normalized_cuts/e01",
+  "thread_id": "gr/clustering_normalized_cuts/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CNC kickoff — learned normalized cuts for corpus clustering",
+  "body": "Hi Jelena,\n\nKicking off the CNC adoption. Today the retrieval side clusters corpus shards with spectral clustering — Laplacian eigenspace embedding, then k-means — and it's both slow at our scale and awkward to update incrementally. Our CNC work replaces that with a model trained to directly minimize a continuous relaxation of the expected normalized cuts objective, unsupervised, outputting cluster probabilities directly. In the paper's motivating example CNC converges to the optimal cut value (0.286 on the toy CIFAR-10 affinity graph), matching spectral clustering without the eigendecomposition.\n\nGoal (Feb 23 – May 25): reproduce published behavior on reference datasets, then a bake-off vs the spectral pipeline on one production corpus shard — quality parity at materially lower cost is the bar.\n\nJelena, staffing + platform dependencies when ready.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

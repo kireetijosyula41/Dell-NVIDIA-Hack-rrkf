@@ -1,0 +1,12 @@
+{
+  "project": "gr/automl_zero",
+  "conflicts": [
+    {
+      "conflict_id": "C138",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["factorize_a_city"],
+      "planted_in": ["e04"],
+      "claim_as_written": "Staffing for the extension phase is settled: Oyin Iversen stays committed at 60% to AutoML-Zero for all of July 2026 to harden the search infrastructure, with Katya at 30% for reviews."
+    }
+  ]
+}

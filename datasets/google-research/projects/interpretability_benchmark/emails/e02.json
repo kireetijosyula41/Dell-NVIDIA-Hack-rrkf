@@ -1,0 +1,30 @@
+{
+  "id": "gr/interpretability_benchmark/e02",
+  "thread_id": "gr/interpretability_benchmark/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T11:35:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "subject": "ROAR sweep — vulcan compute plan",
+  "body": "Ines — compute plan for the ROAR sweep; want to make sure the books agree with ours. The sweep is 5 estimators × 6 removal fractions × 3 seeds = 90 ImageNet retrainings, plus the base models. We hold the vulcan-h100 reservation for the week of 2026-06-01 — 256 GPUs — and the whole sweep is scheduled against that week: 90 trainings at ~14 h each on 16-GPU slices fits with margin if we keep utilization above 85%. Two asks: (1) confirm no preemption windows that week; (2) confirm the maintenance window we should plan around is still 2026-06-22 to 06-24 — we're deliberately a full three weeks ahead of it, but if June 1 slips we start eating into it. Dev work stays on titan best-effort meanwhile. — Bruno",
+  "labels": [
+    "resources"
+  ]
+}

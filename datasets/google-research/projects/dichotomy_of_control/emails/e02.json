@@ -1,0 +1,40 @@
+{
+  "id": "gr/dichotomy_of_control/e02",
+  "thread_id": "gr/dichotomy_of_control/t1",
+  "in_reply_to": "gr/dichotomy_of_control/e01",
+  "date": "2026-03-03T14:05:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Dichotomy of Control for reliable automation agents",
+  "body": "Ulla,\n\nSizing is done. This is CPU-and-small-GPU work, so no cluster reservations needed -- a handful of Titan A100s best-effort covers the neural runs.\n\nStaffing March-May: Jorge 50% on environment setup and the dice_rl dependency (the offline datasets for Bandit and FrozenLake come from create_dataset.sh once dice_rl is installed, but its pinned deps fight our base image -- he is containerizing it). Carmen 40% on reproducing the tabular results and the DoC-vs-DT comparison. Linnea 30% ramping on the neural DT path, scaling up in the final month.\n\nOne feasibility note: the ops simulator is much noisier than FrozenLake, so if DoC's advantage does not transfer, that is a legitimate finding, not a failure. Framing it that way now so June is not a fire drill.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

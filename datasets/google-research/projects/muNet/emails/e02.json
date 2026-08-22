@@ -1,0 +1,40 @@
+{
+  "id": "gr/muNet/e02",
+  "thread_id": "gr/muNet/t1",
+  "in_reply_to": "gr/muNet/e01",
+  "date": "2026-03-17T14:00:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: muNet multitask evolution — staffing + dependencies",
+  "body": "Hi Anders,\n\nStaffing: Yara Jokic 50% leads the method port and owns the evolution runs; Hyun Traore 30% (he's also on a pruning project this window) advising on the parameter-sharing and mutation mechanics; Milan Zapata 40% through May on porting the notebook code into our training stack — note he's spoken for by other teams from June, so anything serving-side that slips past our window loses him.\n\nCompute: evolution is search-shaped, so it's many medium jobs rather than one big one — I've sized it at 64 titan-a100 GPUs best-effort sustained through April.\n\nOn the Corpus side we have breathing room: the v2 migration freeze is 2026-08-07, so the task-suite datasets can stay on v1 pipelines through our whole window and the v2 port is a leisurely June/July item after we close.\n\nOne honest flag: the mutation search can grow the parameter footprint per added task; Yara will track parameters-per-task as a first-class metric so the cost comparison vs the fork farm stays fair.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/experience_replay",
+  "title": "Revisiting Fundamentals of Experience Replay",
+  "summary": "Applying the findings from our experience-replay study - how replay capacity and the replay ratio (controlled via oldest_policy_in_buffer) shape value-based agent performance - to standardize replay-buffer configuration across our RL training stacks.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Jelena Vasquez",
+  "contributors": ["Milan Zapata", "Saoirse Eriksen", "Vera Egede"],
+  "window": {"start": "2026-04-20", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "experience_replay",
+    "url": "https://github.com/google-research/google-research/tree/master/experience_replay",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

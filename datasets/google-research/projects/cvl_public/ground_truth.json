@@ -1,0 +1,12 @@
+{
+  "project": "gr/cvl_public",
+  "conflicts": [
+    {
+      "conflict_id": "C116",
+      "type": "codename_collision",
+      "counterpart_projects": ["automatic_structured_vi"],
+      "planted_in": ["e01", "e02", "e04"],
+      "claim_as_written": "e01: \"Internally this is Project Nimbus - use that on decks, calendar invites and the tracker, not 'the CVL thing'.\" e02: \"Everything below is filed under Project Nimbus in the tracker.\" e04: \"The Project Nimbus recommendation memo goes out Friday\""
+    }
+  ]
+}

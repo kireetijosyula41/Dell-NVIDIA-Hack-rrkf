@@ -1,0 +1,44 @@
+{
+  "id": "gr/ged_tts/e04",
+  "thread_id": "gr/ged_tts/t2",
+  "in_reply_to": "gr/ged_tts/e03",
+  "date": "2026-06-30T16:20:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: GED-TTS status: repulsive term is load-bearing",
+  "body": "Team,\n\nDecisions for the production run:\n\n1. Config locks Jul 2: multi-scale repulsive term on, same-speaker batching, Jorge's utterance-length curriculum included — the long-utterance gap closed to noise in the last test.\n2. The run executes in our vulcan-h100 week starting Jul 6 on the 512-accelerator reservation: main model plus the two ablations, nothing else rides along.\n3. MOS panel is booked for Jul 27; if we match the released MOS 4.25 on internal voices, Chiara starts serving integration in August.\n\nScope cut: vocoder-variant ablations are out; the energy-distance model is the story.\n\nGoran",
+  "labels": [
+    "decision"
+  ]
+}

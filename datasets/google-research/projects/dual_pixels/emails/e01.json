@@ -1,0 +1,19 @@
+{
+  "id": "gr/dual_pixels/e01",
+  "thread_id": "gr/dual_pixels/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T10:15:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: dual-pixel depth for the imaging pipeline",
+  "body": "Hi all,\n\nKicking off the dual-pixel depth effort. Our open-source release showed you can learn single-camera depth estimation from dual-pixel data — the DPNet model with affine invariance is the reference — and the released dataset (95G train, 29G test, with RGB, dual-pixel images, and depth maps) is big enough to train production-grade models.\n\nProduct target: depth-driven features in the on-device imaging pipeline — portrait relighting and defocus effects — without any additional hardware, since dual-pixel sensors are already in the camera stack.\n\nMilestones: reproduce the paper's metrics on the released test split by end of April, mobile-feasible model by end of May, integration decision with the imaging platform team at the June 15 review.\n\nThe affine-invariant eval matters here: depth up to affine transform is fine for defocus, trickier for relighting — Fumiko, let's dig into that early.\n\nBruno owns staffing/compute.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

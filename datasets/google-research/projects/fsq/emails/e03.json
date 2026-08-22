@@ -1,0 +1,36 @@
+{
+  "id": "gr/fsq/e03",
+  "thread_id": "gr/fsq/t2",
+  "in_reply_to": null,
+  "date": "2026-06-03T10:20:00Z",
+  "from": {
+    "name": "Carmen Reyes",
+    "email": "carmen.reyes@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "FSQ repro status: FID parity, 99% codebook utilization",
+  "body": "Hi Santiago,\n\nRepro status. MaskGIT with FSQ matches the VQ baseline within 1.2 FID at the same effective codebook size — consistent with the paper's claim that the much simpler scheme stays competitive. The striking number is codebook utilization: FSQ sits near 99% while our VQ baseline idles at 71% with visible dead codes. No commitment loss, no reseeding, and training just runs.\n\nUViM: depth estimation and colorization repro are done and within noise of the VQ numbers. Panoptic segmentation is behind — the head is trained but eval is two weeks out.\n\nRisk: our chosen config (8 dimensions) underperforms on 512x512 inputs; we may need the larger-dimensionality variant for high-res work.\n\nCarmen",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

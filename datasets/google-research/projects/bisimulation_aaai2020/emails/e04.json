@@ -1,0 +1,19 @@
+{
+  "id": "gr/bisimulation_aaai2020/e04",
+  "thread_id": "gr/bisimulation_aaai2020/t1",
+  "in_reply_to": "gr/bisimulation_aaai2020/e03",
+  "date": "2026-05-07T15:20:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: state-similarity service - decision on sweep scope",
+  "body": "Decision: we go with Efe's proposal. 20 games, full pair sampling, quality over coverage. The service pitch depends on the metric being trustworthy, not on the game count - 20 is plenty for the API draft.\n\nTwo follow-ups:\n\n1) The June sweep on our reserved week stays the plan of record. Fumiko, you're at 40% from next week specifically to have the sweep harness dry-run by Jun 5. One clean dry run on 8 accelerators before we spend the big reservation, please.\n\n2) For Q3 planning (OKRs lock Jun 26): I'm writing the state-similarity API as a Q3 deliverable, with the June sweep results as evidence. Ivo, send me your Q3 headcount ask by Jun 12 so I can fold it in.\n\nAnd thanks Carmen for the 40x40 validation - that went straight into the leadership deck.\n\nDmitri",
+  "labels": ["decision"]
+}

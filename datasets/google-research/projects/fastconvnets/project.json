@@ -1,0 +1,26 @@
+{
+  "id": "gr/fastconvnets",
+  "title": "Fast Sparse ConvNets",
+  "summary": "Sparse MobileNetV1/V2 and EfficientNet TF-Lite models from the Fast Sparse ConvNets paper, trading structured sparsity (e.g. 90% sparse MobileNetV1 at 68.4% top-1) for large latency wins on mobile hardware such as the Snapdragon 835.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Vera Egede",
+    "Freya Ruiz",
+    "Paloma Castillo",
+    "Nikhil Abebe"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fastconvnets",
+    "url": "https://github.com/google-research/google-research/tree/master/fastconvnets",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/implicit_constrained_optimization",
+  "title": "Implicit Constrained Optimization",
+  "summary": "Applies our Implicit Constrained Optimization (ICO) release - which optimizes thresholded, non-decomposable rate metrics such as FNR at fixed FPR or AUC-PR by expressing the decision threshold as a function of model parameters via the implicit function theorem - to fairness- and safety-critical classifiers.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Ivo Umeh",
+  "contributors": ["Wanjiru Horvat", "Fumiko Rossi", "Nikhil Abebe"],
+  "codename": "Project Sirocco",
+  "window": {"start": "2026-02-02", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "implicit_constrained_optimization",
+    "url": "https://github.com/google-research/google-research/tree/master/implicit_constrained_optimization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

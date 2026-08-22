@@ -1,0 +1,17 @@
+{
+  "id": "gr/dual_dice/e04",
+  "thread_id": "gr/dual_dice/t1",
+  "in_reply_to": "gr/dual_dice/e03",
+  "date": "2026-04-22T14:29:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DualDICE for off-policy evaluation",
+  "body": "Closing decisions before Monday's handoff:\n\n1. Pilot verdict: on the internal logged dataset, DualDICE estimates for the two candidate policies agreed with the (expensive) holdout A/B directionally and within the stated confidence bands. The variance caveat fired on the longest-horizon slice, exactly as designed. This is a credible OPE story.\n2. The toolkit module ships April 27 with Halima's defaults (reference nu/zeta learning rates, prominent gamma, divergence warning).\n3. Deferred to the May productionization phase: batched estimation for policy sweeps and the deterministic_env stabilization path. That phase is staffed per Bruno's plan — Oyin at 60% through May carries it, so please protect her allocation; the handoff note names her as owner.\n4. Privacy review cleared April 6, for the record.\n\nGood, tight project. Thank you all.\n\nXimena",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/multi_game_dt",
+  "title": "Multi-Game Decision Transformers",
+  "summary": "Scales our Multi-Game Decision Transformer line into a generalist-agent milestone: a single transformer with one set of weights, trained purely offline, playing up to 46 Atari games at close-to-human level, with performance scaling by model size and rapid fine-tuning to new games. Aim is an internal generalist-agent checkpoint plus a fine-tuning recipe other teams can adopt.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Jelena Vasquez",
+  "contributors": ["Vera Egede", "Wanjiru Horvat", "Yara Jokic"],
+  "window": {"start": "2026-03-02", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "multi_game_dt",
+    "url": "https://github.com/google-research/google-research/tree/master/multi_game_dt",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

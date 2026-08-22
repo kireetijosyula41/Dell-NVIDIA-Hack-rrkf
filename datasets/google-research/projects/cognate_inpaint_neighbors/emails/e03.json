@@ -1,0 +1,41 @@
+{
+  "id": "gr/cognate_inpaint_neighbors/e03",
+  "thread_id": "gr/cognate_inpaint_neighbors/t1",
+  "in_reply_to": "gr/cognate_inpaint_neighbors/e02",
+  "date": "2026-05-20T10:33:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cognate reflex prediction for low-resource lexicons",
+  "body": "Hi both,\n\nReproduction status: the Neighbors model matches the shared-task submissions. The per-language mockingbird-n1 configs at 25k, 30k, and 100k steps line up with the released numbers, and the 100k run is the best of the three on most languages. The per-language-group n2 variant is close behind at a fraction of the training cost — one model per family instead of one per language.\n\nThe inpainting model (mockingbird-i1) is the concern: it reproduces, but it degrades badly on families where the cognate table is sparse, which is precisely our low-resource product case. Neighbors handles sparsity better because it conditions on whatever neighbors exist.\n\nRisk/trade-off to settle in June: n1 quality vs n2 operational simplicity. Katya's head-to-head runs will decide it.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

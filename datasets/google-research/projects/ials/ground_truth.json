@@ -1,0 +1,12 @@
+{
+  "project": "gr/ials",
+  "conflicts": [
+    {
+      "conflict_id": "C087",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["muNet", "aptamers_mlpd", "loss_functions_transfer"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Planning note: the Corpus v2 migration freeze is 2026-06-26, so Rosa will register everything as v2-native from the start - our project closes in April, but I don't want the packaged baseline to be one of those things that breaks in late June because it pointed at v1 paths."
+    }
+  ]
+}

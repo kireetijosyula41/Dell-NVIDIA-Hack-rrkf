@@ -1,0 +1,18 @@
+{
+  "id": "gr/aux_tasks/e01",
+  "thread_id": "gr/aux_tasks/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:15:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: principal-subspace aux tasks for retrieval",
+  "body": "Hi all,\n\nKicking off the aux-tasks workstream. Basis: our open-source SGD algorithm for learning principal subspaces. The bet is that subspace features learned as auxiliary tasks give our retrieval models better representations than the PCA-style preprocessing we run today, and that the LISSA-based estimator makes it cheap enough to run at full corpus scale.\n\nPlan: reproduce the synthetic-matrix and MNIST experiments in May (the 50x50 synthetic configs with d=10 are the sanity bar); scale the estimator to our retrieval embedding matrices in June; full-scale pretraining sweep plus eval readout in July; launch review before window close on 8/10.\n\nAlina - staffing and the compute reservation are the long poles, can you kick those off this week?\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gr/generalized_rates",
+  "title": "Optimizing Generalized Rate Metrics with Three Players",
+  "summary": "Integrates Meridian's three-player algorithms for optimizing generalized rate metrics — F-measure and KLD-based objectives with rate constraints — into the data platform as constrained-metric training options.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Gustavo Moreau",
+    "Fumiko Rossi",
+    "Halima Toure",
+    "Oyin Iversen",
+    "Rafael Duran"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "generalized_rates",
+    "url": "https://github.com/google-research/google-research/tree/master/generalized_rates",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

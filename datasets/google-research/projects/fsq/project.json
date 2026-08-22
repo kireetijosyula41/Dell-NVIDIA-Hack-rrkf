@@ -1,0 +1,25 @@
+{
+  "id": "gr/fsq",
+  "title": "Finite Scalar Quantization: VQ-VAE Made Simple",
+  "summary": "Replaces vector quantization in Meridian's VQ-VAE tokenizer stack with Finite Scalar Quantization (FSQ), which quantizes a low-dimensional projection to fixed per-dimension values and avoids codebook collapse without commitment losses or reseeding.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Leilani Nakamura",
+    "Carmen Reyes",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fsq",
+    "url": "https://github.com/google-research/google-research/tree/master/fsq",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

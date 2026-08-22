@@ -1,0 +1,26 @@
+{
+  "id": "gr/cola",
+  "title": "Contrastive learning of general purpose audio representations",
+  "summary": "COLA pre-trains general-purpose audio embeddings with a simple contrastive objective, then reuses them via linear probes or fine-tuning on downstream audio classification tasks.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Leilani Nakamura",
+    "Vera Egede",
+    "Wei Ivanov",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cola",
+    "url": "https://github.com/google-research/google-research/tree/master/cola",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

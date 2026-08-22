@@ -1,0 +1,17 @@
+{
+  "id": "gr/enas_lm/e01",
+  "thread_id": "gr/enas_lm/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:33:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "ENAS-LM kickoff: architecture search for small on-device LMs",
+  "body": "Team,\n\nKicking off the ENAS-LM revival. Our open-source ENAS language-model implementation searches for recurrent cells and, in the published runs, the discovered architecture hits 56.1 +/- 0.1 test perplexity on Penn Treebank on TPU (57.3 +/- 0.1 on the GPU path). The product angle: several partner teams want small on-device language models and nobody wants to hand-design cells - we turn this into an internal architecture-search service.\n\nMilestones for the Apr 6 - Jul 6 window: PTB preprocessing and search reproduction by May 1, fixed-architecture evaluation on both TPU and GPU paths by May 29, service-shaped API and a DARTS-comparison writeup by end of window.\n\nDaniela owns staffing and the compute story - note the TPU eval wants a 1x1 TPUv2-equivalent donut on Cirrus, so quarterly allocation matters here.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

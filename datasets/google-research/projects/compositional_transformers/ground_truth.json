@@ -1,0 +1,16 @@
+{
+  "project": "gr/compositional_transformers",
+  "conflicts": [
+    {
+      "conflict_id": "C012",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "gumbel_max_causal_gadgets"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "For the extended phase: Wei Ivanov is committed at 60% to this project for July 2026 to run the full repetition matrix — the paper-style num_repetitions sweeps across all dataset/model combinations that give us error bars worth publishing internally."
+    }
+  ]
+}

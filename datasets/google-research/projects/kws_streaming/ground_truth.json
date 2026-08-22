@@ -1,0 +1,12 @@
+{
+  "project": "gr/kws_streaming",
+  "conflicts": [
+    {
+      "conflict_id": "C080",
+      "type": "codename_collision",
+      "counterpart_projects": ["dselect_k_moe"],
+      "planted_in": ["e01"],
+      "claim_as_written": "We're tracking this internally as Project Riverbed — that's the codename on the roadmap and in the OKR tooling."
+    }
+  ]
+}

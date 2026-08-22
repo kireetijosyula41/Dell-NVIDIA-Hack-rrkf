@@ -1,0 +1,17 @@
+{
+  "id": "gr/active_selective_prediction/e02",
+  "thread_id": "gr/active_selective_prediction/t1",
+  "in_reply_to": "gr/active_selective_prediction/e01",
+  "date": "2026-04-23T14:08:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: ASPEST kickoff - abstain smartly, label smartly",
+  "body": "Dmitri,\n\nPlan for the window:\n\n- Ondrej Bergstrom is committed at 60% to this project for May 2026 - he owns the ASPEST repro across all six benchmark pairs, which is the whole May milestone. I've structured the month so nothing else touches him.\n- Halima Toure 50% through July: integration design with the human-review routing layer, then the pilot eval methodology.\n- Wanjiru Horvat 40%: dataset engineering - the manual downloads (cinic10, the two wilds sets fmow and amazon_review, otto from the competition dump) plus build_datasets.sh runs on our infra, all landing in a shared $DATA_DIR by May 8.\n\nCompute: 48 A100s on titan-a100 best effort; the active-learning loops are many small jobs rather than big ones, so scheduling matters more than raw capacity.\n\nFlag: the repo pins an old Python 3.7 environment; Wanjiru is containerizing it rather than fighting our base image.\n\nAlina",
+  "labels": ["resources"]
+}

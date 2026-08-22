@@ -1,0 +1,18 @@
+{
+  "project": "gr/finance_harness",
+  "conflicts": [
+    {
+      "conflict_id": "C096",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "cell_mixer",
+        "hypertransformer",
+        "keypose"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "our licensed market-data corpus is being migrated under Corpus v2, and the migration freeze is 2026-06-26 — so although our window closes May 11, any follow-on ingestion work we hand to Q3 has to be specced assuming no corpus changes after Jun 26."
+    }
+  ]
+}

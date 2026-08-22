@@ -1,0 +1,12 @@
+{
+  "project": "gr/kobe",
+  "conflicts": [
+    {
+      "conflict_id": "C044",
+      "type": "codename_collision",
+      "counterpart_projects": ["cluster_gcn"],
+      "planted_in": ["e01"],
+      "claim_as_written": "Codename for this effort is Project Obsidian — please tag docs and dashboards with it."
+    }
+  ]
+}

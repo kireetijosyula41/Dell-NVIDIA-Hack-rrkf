@@ -1,0 +1,46 @@
+{
+  "id": "gr/ciw_label_noise/e01",
+  "thread_id": "gr/ciw_label_noise/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:40:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CIW kickoff — robust training under label noise as a shared component",
+  "body": "Hi Jelena,\n\nKicking off the CIW effort. Our Constrained Instance and Class reWeighting work formulates label-noise handling as constrained optimization problems with simple closed-form updates for instance and class weights, solved per mini-batch — no need to store weights over the full dataset. That last property is why it can be a drop-in component rather than a research artifact.\n\nDemand is real: three teams flagged noisy-label pain in Q2 planning (weak supervision, crowdsourced labels, scraped data). Goal: a supported library + recommended recipes, validated on the standard CIFAR-10 noise benchmarks and two internal datasets.\n\nMilestones (Apr 13 – Jul 20): library extraction by mid-May; benchmark validation June; big validation sweep early July; docs + internal release by Jul 20.\n\nJelena — staffing and the compute ask for the July sweep are the open items.\n\nXimena",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

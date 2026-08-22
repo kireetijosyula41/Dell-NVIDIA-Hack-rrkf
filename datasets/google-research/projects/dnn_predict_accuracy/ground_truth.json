@@ -1,0 +1,12 @@
+{
+  "project": "gr/dnn_predict_accuracy",
+  "conflicts": [
+    {
+      "conflict_id": "C005",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["linear_eval"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we are scoping and staffing a distillation training recipe built from scratch — Katya leads it at 50% starting mid-April, with a design doc due April 24. Nothing in-house exists for this today, so we're budgeting roughly six engineer-weeks to stand up the recipe end to end"
+    }
+  ]
+}

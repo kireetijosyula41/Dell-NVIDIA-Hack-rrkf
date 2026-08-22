@@ -1,0 +1,18 @@
+{
+  "id": "gr/logic_inference_dataset",
+  "title": "LogicInference Dataset",
+  "summary": "Operationalizes our LogicInference release — a generated dataset for evaluating logical inference over propositional logic and a small first-order subset, in both semi-formal notation and natural language — as a standard reasoning benchmark and training-data source on the Meridian data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Gustavo Moreau", "Paloma Castillo", "Yara Jokic", "Quentin Farkas"],
+  "window": {"start": "2026-02-02", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "logic_inference_dataset",
+    "url": "https://github.com/google-research/google-research/tree/master/logic_inference_dataset",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

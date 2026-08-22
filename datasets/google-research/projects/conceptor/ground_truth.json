@@ -1,0 +1,17 @@
+{
+  "project": "gr/conceptor",
+  "conflicts": [
+    {
+      "conflict_id": "C046",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "interpretability_benchmark"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "For the final sweep we hold the vulcan-h100 reservation for the week of 2026-06-01, 256 accelerators, confirmed through Ines' reservation process — that week covers the full concept vocabulary at multiple sparsity levels, which is what the bias-audit claims need for launch review."
+    }
+  ]
+}

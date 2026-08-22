@@ -1,0 +1,45 @@
+{
+  "id": "gr/fastconvnets/e01",
+  "thread_id": "gr/fastconvnets/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:05:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: sparse convnets on-device track",
+  "body": "Team — kicking off the sparse convnets on-device track.\n\nOur open-source release ships TF-Lite models where sparse MobileNetV1 at width 1.0 hits 68.4% top-1 at 90% sparsity with 31ms latency on a Snapdragon 835 — numbers that make an edge-inference tier credible.\n\nGoals this window: (1) validate the published latency table on our current device-lab hardware by May 15; (2) stand up the conversion pipeline for customer models with the paper's sparsity recipe — block size 4 in the last inverted-residual block for V1; (3) run a human-rating study on perceived quality of on-device classifications versus the dense baseline, since top-1 deltas undersell perceived regressions; (4) go/no-go readout by Jul 24.\n\nVera owns models, Freya the sparsity recipe, Paloma tooling, Nikhil evals. Alina follows up on staffing.\n\nZofia",
+  "labels": [
+    "kickoff"
+  ]
+}

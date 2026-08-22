@@ -1,0 +1,46 @@
+{
+  "id": "gr/isl/e03",
+  "thread_id": "gr/isl/t1",
+  "in_reply_to": "gr/isl/e01",
+  "date": "2026-06-16T16:15:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: ISL kickoff — causal explainability for tabular models",
+  "body": "Status. Repro: complete on all three real datasets plus the synthetic grids. On Sachs, ISL's supervised setting recovers the consensus network at SHD 12 vs 19 for our NOTEARS baseline, and on synthetic graphs (3 envs × 100 samples) the invariance penalty reliably kills the spurious edges that single-environment fitting keeps. Self-supervised mode: running on the partner tabular dataset since June 9; early edge-F1 is promising (0.71) but stability across bootstrap resamples is worse than on the shipped datasets — Rafael suspects the partner data violates the environment-separation assumption (their environments are time slices with drift). Mitigation being tested: coarser environment binning. Leaderboard: Jorge demoed submission-to-ranking end-to-end Friday; per-environment breakdown views land this week. Privacy review cleared June 11. On track for the go/no-go. — Csilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

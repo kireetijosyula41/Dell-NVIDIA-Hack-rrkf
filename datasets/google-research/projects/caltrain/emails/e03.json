@@ -1,0 +1,18 @@
+{
+  "id": "gr/caltrain/e03",
+  "thread_id": "gr/caltrain/t1",
+  "in_reply_to": "gr/caltrain/e02",
+  "date": "2026-03-27T11:00:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: debiased calibration reporting - status + an uncomfortable finding",
+  "body": "Status: M1 done (Yusuf reproduced the intro reliability diagram, the ECE-distribution figure, and the TCE-controlled curves; pixel-level match after sorting out the cached data_dir). M2 is mid-flight - Katya has the debiased estimator API working with bootstrap CIs.\n\nThe uncomfortable finding: we ran the debiased estimator over 14 of our own recent model cards. For 9 of them, the debiased calibration error is 1.3-2.1x the ECE number we published - the bias the paper warns about was flattering us, especially on small eval sets where binning bias is worst. Two agent-confidence models move from \"well-calibrated\" to \"borderline\".\n\nThat makes M3 slightly political: when Evalline flips to debiased-by-default, historical comparisons will look like regressions. Recommend we ship with both numbers side by side for two quarters plus a one-pager explaining the estimator change, rather than silently replacing the metric.\n\nRisk to M3 date: none currently - Tomas's review slot is booked for Apr 14.\n\nKaia",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/kip/e01",
+  "thread_id": "gr/kip/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T08:40:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: dataset distillation (KIP) as a data-platform service",
+  "body": "Hi all,\n\nKicking off the dataset-distillation track for the data-platforms portfolio. The core tech is the Kernel Inducing Points (KIP) and Label Solve (LS) algorithms from our open-source release — meta-learn a tiny synthetic training set from kernel ridge-regression, so downstream teams can iterate on models against a few hundred distilled examples instead of hauling full corpora around. Two product angles: fast CI-style training loops, and a data-minimization story for datasets we'd rather not replicate broadly.\n\nMilestones (Apr 20 - Jul 27):\n- May 22: reproduce the released distilled-set results using the infinitely-wide ConvNet kernels; finite ConvNet transfer check\n- Jun 19: distill one internal tabular corpus end to end, quality delta documented\n- Jul 20: platform integration readout — distilled sets as first-class Corpus artifacts\n\nBao — resourcing please. Kernel computations at this scale are not cheap, so let's get the compute ask right early.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

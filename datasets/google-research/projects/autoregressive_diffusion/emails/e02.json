@@ -1,0 +1,17 @@
+{
+  "id": "gr/autoregressive_diffusion/e02",
+  "thread_id": "gr/autoregressive_diffusion/t1",
+  "in_reply_to": "gr/autoregressive_diffusion/e01",
+  "date": "2026-03-02T14:19:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: ARDMs for budget-adaptive generation and compression",
+  "body": "Zofia,\n\nStaffing: Efe 70% on modeling, Saoirse 50% on training infra, through the window.\n\nThe bigger item is data readiness. The compression benchmark is only meaningful if the training corpora are clean - duplicate examples inflate compression numbers and quietly leak into eval splits. To get there we're scoping and building a dataset de-duplication pipeline from scratch - MinHash/LSH near-dup detection over the text and audio corpora, with exact-dup hashing as a first stage. Halima leads it at 50% with Tereza at 40%; there's no existing internal pipeline that does this, so we're treating it as new shared infrastructure we'll own.\n\nCompute: 64-128 titan-a100 GPUs best-effort for training; no Vulcan reservation needed at ARDM scale.\n\nDe-dup pipeline MVP by 3/27, which keeps the compression numbers on track for end of March... realistically first week of April.\n\nAlina",
+  "labels": ["resources"]
+}

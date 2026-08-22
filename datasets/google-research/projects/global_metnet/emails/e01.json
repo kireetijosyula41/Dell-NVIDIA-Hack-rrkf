@@ -1,0 +1,17 @@
+{
+  "id": "gr/global_metnet/e01",
+  "thread_id": "gr/global_metnet/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: Global MetNet nowcasting as a platform data product",
+  "body": "Hi Jelena,\n\nKicking off Global MetNet. The pitch: our precipitation nowcasting model produces probabilistic forecasts at 5km spatial and 15-minute temporal resolution out to 12 hours, with real-time forecasts initialized every 30 minutes - logistics and agriculture customers on the platform have asked for exactly this, and today they buy it from third parties.\n\nTwo deliverables this window: (1) stand up the historical reforecast archive (2020 to present, 3-hour cadence, 8 initializations/day) as a queryable platform dataset, including the optimal probability thresholds for converting to categorical rain/no-rain; (2) a scoped serving plan for the real-time feed, with Shipyard.\n\nMilestones: archive schema by 2/27, eval report by 3/27, go/no-go on the real-time feed 4/15.\n\nMilan on serving, Tereza data pipeline, Wei and Vera on eval. Jelena - compute and staffing by Friday?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

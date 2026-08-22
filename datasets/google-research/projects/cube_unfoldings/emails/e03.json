@@ -1,0 +1,18 @@
+{
+  "id": "gr/cube_unfoldings/e03",
+  "thread_id": "gr/cube_unfoldings/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T14:15:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Status - counts verified through n=9, and a trade-off on labels",
+  "body": "Status before the Jun 19 checkpoint.\n\nRafael has verified the published counts through n=9 on our build; n=10 is running and will take another nine days of wall clock. Vera got nauty and gtest into CI, which sounds boring and was the single biggest time sink of the quarter.\n\nOn my side the canonicalization library works, with a caveat Dmitri should hear before Jul 17. The hypercube setting has unlabeled, uncolored nodes - that's what makes the tree-plus-matching equivalence clean. Our lineage graphs have typed nodes and edge attributes. Canonicalizing with full labels means we almost never find duplicates (0.4% of pairs); canonicalizing on structure alone finds 11% but a chunk of those are structurally identical graphs doing genuinely different things.\n\nSo the honest answer is that automorphism-aware dedup is a *candidate generator*, not a decision procedure. It needs a cheap second-stage check on attributes. That's a real design, just not the one in the kickoff.\n\nKaia",
+  "labels": ["status", "risk"]
+}

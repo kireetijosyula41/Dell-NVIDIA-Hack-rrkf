@@ -1,0 +1,26 @@
+{
+  "id": "gr/instruction_following_eval",
+  "title": "IFEval: Instruction Following Eval",
+  "summary": "Integrates IFEval — verifiable-instruction evaluation with strict and loose accuracy over jsonl prompt/response pairs — into Meridian's Evalline harness as a release gate, with a distillation stretch goal for small models.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Yusuf Keita",
+    "Gustavo Moreau",
+    "Oyin Iversen",
+    "Rafael Duran"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "instruction_following_eval",
+    "url": "https://github.com/google-research/google-research/tree/master/instruction_following_eval",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

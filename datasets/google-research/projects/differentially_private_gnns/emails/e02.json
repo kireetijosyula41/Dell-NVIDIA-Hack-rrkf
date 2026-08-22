@@ -1,0 +1,40 @@
+{
+  "id": "gr/differentially_private_gnns/e02",
+  "thread_id": "gr/differentially_private_gnns/t1",
+  "in_reply_to": "gr/differentially_private_gnns/e01",
+  "date": "2026-04-15T13:44:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: node-level DP GNNs for interaction-graph features",
+  "body": "Dmitri,\n\nStaffing: Maren 50% on the DP-GCN training and the epsilon sweeps, Emeka 40% on the interaction-subgraph extraction and anonymization, Bilal 30% on eval tooling and the utility metrics.\n\nCompute is light -- these graphs fit on single hosts, a few Titan A100s best-effort.\n\nData timeline is the real planning constraint. The interaction subgraph and both benchmark graphs get ingested through Corpus, and the pipelines we build now need to be re-run once on migrated v2 storage. The Corpus v2 migration freeze is 2026-07-24, which gives us headroom to re-ingest ogbn-arxiv and the reddit-disjoint graph through mid-July. Emeka will schedule the v2 re-ingest for the week of July 13 so we hit the freeze window with everything already staged.\n\nAlso queuing the Privacy Review with Kofi's team early -- their SLA is 2-3 weeks and we should not discover that in June.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/camp_zipnerf",
+  "title": "CamP Zip-NeRF: A Code Release for CamP and Zip-NeRF",
+  "summary": "Standing up a high-fidelity neural-rendering pipeline from our JAX code release covering Zip-NeRF (anti-aliased grid-based NeRF) and CamP (camera pose preconditioning), targeting the NeRF Blender and Mip-NeRF 360 datasets as the quality reference for a scene-capture product track.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Milan Zapata", "Yusuf Keita", "Katya Silva"],
+  "window": {"start": "2026-02-16", "end": "2026-04-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "camp_zipnerf",
+    "url": "https://github.com/google-research/google-research/tree/master/camp_zipnerf",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

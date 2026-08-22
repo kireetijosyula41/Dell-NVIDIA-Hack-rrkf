@@ -1,0 +1,9 @@
+{
+  "project": "gr/m_layer",
+  "conflicts": [
+    {"conflict_id": "C016", "type": "shared_person_overcommit",
+     "counterpart_projects": ["activation_clustering"],
+     "planted_in": ["e02"],
+     "claim_as_written": "Fumiko Rossi is committed at 60%+ to this project for June 2026 — she'll drive the adversarial sweep and the periodicity demo through the final push to 06-22."}
+  ]
+}

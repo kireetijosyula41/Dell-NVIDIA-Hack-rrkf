@@ -1,0 +1,50 @@
+{
+  "id": "gr/distracting_control/e02",
+  "thread_id": "gr/distracting_control/t1",
+  "in_reply_to": "gr/distracting_control/e01",
+  "date": "2026-04-30T13:37:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Distracting Control as our RL robustness gate",
+  "body": "Ulla,\n\nStaffing and setup.\n\nMay: Amara 40% on integration -- suite.load with the dm_control domain/task plus difficulty and the DAVIS dataset path slots into our training stack cleanly, and she has the DAVIS 2017 480p images staged. Farah 30% on CI wiring so the benchmark runs nightly. Hyun 20% advising on which difficulty tiers matter for the gate.\n\nJune is the heavy benchmarking month: Nikhil Abebe is committed at 60% to this project for June 2026 to run the full difficulty-sweep benchmark. That sweep is every current agent across all difficulty tiers and all three distraction types, so it needs a committed owner, not spare cycles. Tereza supports at 30% on analysis.\n\nCompute: benchmark evals are cheap individually but the matrix is large -- estimating 20k GPU-hours on Titan spread over June.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

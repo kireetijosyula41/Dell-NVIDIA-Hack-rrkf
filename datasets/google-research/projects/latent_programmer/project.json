@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_programmer",
+  "title": "Latent Programmer",
+  "summary": "Latent Programmer is a program-synthesis model that first predicts discrete latent codes as a coarse plan, then decodes the program — trained in two stages (latent pretraining then joint training) on top of a Transformer baseline. Meridian is evaluating it for auto-generating data-transformation pipelines from examples.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Efe Lindqvist", "Ondrej Bergstrom", "Farah Haddad"],
+  "window": {"start": "2026-02-23", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "latent_programmer",
+    "url": "https://github.com/google-research/google-research/tree/master/latent_programmer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

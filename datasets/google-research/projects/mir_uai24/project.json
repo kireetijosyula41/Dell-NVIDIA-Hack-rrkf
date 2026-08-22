@@ -1,0 +1,26 @@
+{
+  "id": "gr/mir_uai24",
+  "title": "Generalization and Learnability in Multiple Instance Regression",
+  "summary": "Bring the UAI 2024 multiple-instance-regression work — the wtd-Assign training approach for learning from bagged labels — onto Meridian's data platform, validating on synthetic bags and the 1940 US Census benchmark for privacy-preserving aggregate learning.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Bilal Novak",
+    "Gustavo Moreau",
+    "Maren Zhou",
+    "Emeka Pinto"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mir_uai24",
+    "url": "https://github.com/google-research/google-research/tree/master/mir_uai24",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

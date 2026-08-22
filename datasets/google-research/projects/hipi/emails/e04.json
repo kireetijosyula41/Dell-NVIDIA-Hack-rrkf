@@ -1,0 +1,18 @@
+{
+  "id": "gr/hipi/e04",
+  "thread_id": "gr/hipi/t2",
+  "in_reply_to": "gr/hipi/e03",
+  "date": "2026-05-06T16:02:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: HIPI status: decision - demo scopes to goal-reaching + discrete rewards",
+  "body": "All,\n\nDecision, so we stop re-litigating this in standups: the May 14 internal demo covers goal-reaching and discrete-reward-set results only. Linear reward families move to a stretch appendix - Nikhil's cheaper estimator got the sample cost down to ~1.8x budget, which is progress but not demo-grade.\n\nWhat we show: the 71% vs 58% goal-reaching result, plus discrete-reward acceleration on 7 of 9 configs. Framing for leadership is the data-flywheel story from kickoff - relabeling with inverse RL lets one buffer serve many tasks.\n\nFor Q3 OKR planning I'll propose 'HIPI relabeling available as a library for two partner agent teams' as the follow-on. Bruno, please sanity-check the staffing implication before I submit.\n\nNice work getting here inside the window.\n\nUlla",
+  "labels": ["decision"]
+}

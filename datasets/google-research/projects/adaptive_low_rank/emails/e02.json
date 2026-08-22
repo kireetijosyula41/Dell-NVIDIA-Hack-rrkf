@@ -1,0 +1,45 @@
+{
+  "id": "gr/adaptive_low_rank/e02",
+  "thread_id": "gr/adaptive_low_rank/t1",
+  "in_reply_to": "gr/adaptive_low_rank/e01",
+  "date": "2026-02-10T14:05:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Basalt kickoff — AdaRank adaptive-rank LoRA",
+  "body": "Dmitri,\n\nStaffing for Basalt: Wei 80% (lead), Tereza 50% on the rank-prediction probes, Emeka 40% on the training harness, Umar advising at 20%. That mix holds through the design review.\n\nCompute: the disagreement probes need multi-seed runs per module, so we'll burst to ~48 A100s on titan-a100 — best-effort is fine, no Vulcan reservation needed. The 12-module rank vectors themselves (e.g. 1,3,7,9,9,8,8,8,8,10,10,8 on value modules) are cheap to train once predicted; the cost is all in the probe sweeps.\n\nOne constraint: Emeka rolls off mid-April for an infra rotation, so any harness work needs to land before then.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

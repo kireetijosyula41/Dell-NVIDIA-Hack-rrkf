@@ -1,0 +1,19 @@
+{
+  "id": "gr/explainable_routing/e04",
+  "thread_id": "gr/explainable_routing/t2",
+  "in_reply_to": "gr/explainable_routing/e03",
+  "date": "2026-06-17T09:47:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Explainable routing status: both regions reproducing, eval design question",
+  "body": "All,\n\nDecisions:\n\n1. Rater study approved - Wei's argument won on contact. To protect the Jun 26 demo date we run it at 200 explanations instead of 300 and in parallel with demo prep, results folded in by Jul 2. The demo itself leads with faithfulness numbers (Rafael's framework scores 96% faithful on Baden, 93% on Washington) and cites the rater study as \"in flight\".\n2. Scope cut: the partner-shaped scenario set covers one partner density profile, not both. Gustavo's generator handles the denser urban profile first; the sparse-rural profile becomes a Q3 item. Sequencing risk from April basically forced this and I'd rather cut it cleanly.\n3. Front end: Milan's replacement for the plotly flow is good enough - we're not polishing further before the demo.\n\nQ3 OKR framing lands next week; flag conflicts before Friday.\n\nAnders",
+  "labels": ["decision"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/OpenMSD/e01",
+  "thread_id": "gr/OpenMSD/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:16:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "OpenMSD kickoff - the multilingual science corpus, at full scale",
+  "body": "Team,\n\nKicking off the OpenMSD build. Retrieval and science-QA teams keep asking for a multilingual scientific corpus with real citation structure, and our open-source OpenMSD release is exactly that: papers joined across OpenCitations, CrossRef metadata, and full-text sources, producing citation, co-citation, and bibliographic-couple pairs. The quick-start path (run.sh producing example papers and citation relations) is verified on Python 3.10.9; now we do the full-scale build.\n\nBe clear-eyed about the input sizes: the extracted COCI CSVs alone are ~240 GB and the CrossRef metadata dump is another ~185 GB of json.gz, before any processing. This is a storage-and-pipeline project more than a modeling one.\n\nMilestones: raw sources landed and validated by April 10; full join + relation extraction by May 8; corpus handed to Corpus platform with a datasheet by May 29.\n\nBruno - staffing, storage ask, and the Corpus coordination plan please.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

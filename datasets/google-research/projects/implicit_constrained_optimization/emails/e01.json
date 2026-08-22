@@ -1,0 +1,17 @@
+{
+  "id": "gr/implicit_constrained_optimization/e01",
+  "thread_id": "gr/implicit_constrained_optimization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:18:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Project Sirocco kickoff - training to the metric that actually ships",
+  "body": "Team,\n\nKicking off what we're calling Project Sirocco internally - our trust-theory effort built on the Implicit Constrained Optimization (ICO) release. The problem it attacks: production classifiers are judged on rate metrics with a thresholded form - false negative rate at a fixed false positive rate, precision at fixed recall, AUC-PR - but trained on proxies. ICO's trick is expressing the threshold as a function of the model parameters via the implicit function theorem, so you can optimize the deployed metric directly, constraint and all.\n\nScope for Sirocco: reproduce the FNR-at-fixed-FPR results on the CelebA attribute tasks, then evaluate on two internal screening classifiers where the FPR budget is contractual.\n\nMilestones: CelebA repro by mid-March, internal-classifier evaluation through April, recommendation memo by 2026-05-25.\n\nFumiko owns methodology, Wanjiru implementation, Nikhil experiments. Ivo - staffing and compute note please. Use the Sirocco tag on docs so things stay findable.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

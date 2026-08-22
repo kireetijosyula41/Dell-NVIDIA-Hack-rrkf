@@ -1,0 +1,18 @@
+{
+  "id": "gr/bigg/e03",
+  "thread_id": "gr/bigg/t1",
+  "in_reply_to": "gr/bigg/e02",
+  "date": "2026-04-20T10:37:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BiGG - synthetic sparse graphs for the index teams",
+  "body": "Status + one honest trade-off.\n\nRepro: done. Benchmarks match the released results on the DD and G2SAT datasets, and the featured-generation extension (per customized_models.py) runs end-to-end - Jorge's run_featured.sh port generates graphs with node/edge features fully autoregressively.\n\nSanitized-stats training: Kofi signed off 4/7. On the index team's target profile, generated graphs match degree distribution within 2% KS distance and clustering coefficient within tolerance, but component-size distribution is off in the tail - BiGG under-produces the rare giant components that dominate capacity-test behavior.\n\nTrade-off: we can oversample large-component training examples (Rosa has the reweighting ready, cheap fix, slightly distorts other marginals) or condition generation on component-size targets, which is cleaner but a ~3 week extension Jorge would have to build in May on top of integration.\n\nRecommend we decide at Friday's sync.\n\nVera",
+  "labels": ["status", "risk"]
+}

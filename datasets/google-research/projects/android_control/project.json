@@ -1,0 +1,25 @@
+{
+  "id": "gr/android_control",
+  "title": "AndroidControl",
+  "summary": "AndroidControl is a dataset of over 15,000 human demonstrations across 833 Android apps in 40 categories, structured to measure whether device-control agents generalize beyond the apps and tasks they were trained on. Episodes include screenshots, accessibility trees, high-level and low-level instructions, and JSON actions.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Freya Ruiz",
+    "Wanjiru Horvat",
+    "Ondrej Bergstrom"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "android_control",
+    "url": "https://github.com/google-research/google-research/tree/master/android_control",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

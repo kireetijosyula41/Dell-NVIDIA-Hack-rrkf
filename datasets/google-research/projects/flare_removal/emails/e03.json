@@ -1,0 +1,41 @@
+{
+  "id": "gr/flare_removal/e03",
+  "thread_id": "gr/flare_removal/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T10:35:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Status: repro validated post-VGG-fix, on-device gap",
+  "body": "Status.\n\nRepro: good news — with the VGG-loss fix in place, training converges to quality consistent with the published results; our retrained checkpoint matches the released one within 0.4dB PSNR on the flare test images, so the historical training-code issue is behind us. The testing path (remove_flare.py) was never affected and we use it as the reference implementation for evals.\n\nOwn-data retraining: the semi-synthetic compositing recipe transfers, but our production lenses produce flare geometries — long radial streaks — underrepresented in the released flare library, so Rafael is capturing an extension set in the optics lab, about 600 additional flare images.\n\nRisk: model size. Yusuf's first look suggests the full network misses the on-device latency budget by ~3x, so June feasibility likely lands on a distilled or tiled variant. Flagging so the pre-read doesn't promise on-device this year.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/kws_streaming/e02",
+  "thread_id": "gr/kws_streaming/t1",
+  "in_reply_to": "gr/kws_streaming/e01",
+  "date": "2026-05-01T14:09:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Re: Kickoff: streaming keyword spotting for the wake-word stack (Project Riverbed)",
+  "body": "Priya,\n\nRiverbed resourcing:\n\nStaffing: Linnea 60% as tech lead on the streaming wrappers and conversion path; Vera 50% on training runs and eval; Giannis 40% on the device-lab harness; Rafael 15% advisory only — he's spread across two other language efforts, so please don't route review load his way.\n\nCompute: training is small-model work — 8-16 Titan A100s best-effort covers the model-family sweeps. No reservations. The scarce resource is the device lab: we need recurring slots on the DSP-class boards for the July latency readout. Zeke, cc'd — can Shipyard give us two half-days a week from mid-June?\n\nTechnical constraint to note: the functional Keras API path doesn't support the dynamic train/inference topologies, so we standardize on the subclassing route the release recommends. That constrains how we export to the on-device runtime, and Linnea wants a spike week in May to de-risk the conversion before we promise bit-exactness.\n\nAlina",
+  "labels": ["resources"]
+}

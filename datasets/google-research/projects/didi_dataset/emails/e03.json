@@ -1,0 +1,46 @@
+{
+  "id": "gr/didi_dataset/e03",
+  "thread_id": "gr/didi_dataset/t1",
+  "in_reply_to": "gr/didi_dataset/e02",
+  "date": "2026-04-07T11:33:00Z",
+  "from": {
+    "name": "Amara Okafor",
+    "email": "amara.okafor@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Didi digital-ink benchmark hosting",
+  "body": "Status for the April 10 milestone.\n\nPipeline: done. NDJSON to TFRecord conversion is a supported scheduled job, and the paper's train/validation/test split is materialized as fixed manifests so every consumer trains on identical data.\n\nBaseline: Katya's model trains end to end; recognition accuracy on the validation split is 71.8%, which is in the plausible range given we have not tuned.\n\nRisk worth escalating: prompt-to-ink alignment. About 4% of drawings reference dot/xdot prompt files with node labels that do not match what the participant actually drew -- prompted collection is messy like that. If we score strictly against the xdot graph structure, those samples systematically penalize honest submissions. Proposal: flag the 4% as an 'alignment-noisy' subset and exclude them from the headline leaderboard metric. Need a decision before submissions open.\n\nAmara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

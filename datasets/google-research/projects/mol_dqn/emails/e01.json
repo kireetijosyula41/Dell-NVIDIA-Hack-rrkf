@@ -1,0 +1,46 @@
+{
+  "id": "gr/mol_dqn/e01",
+  "thread_id": "gr/mol_dqn/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:50:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: MolDQN lead-optimization pilot",
+  "body": "Hi Bao,\n\nKicking off MolDQN (Apr 20 – Jul 27). Our open-source release frames molecule optimization as an MDP — the definition in chemgraph/mcts/molecules.py — where every action is a chemically valid edit, and a DQN learns to walk molecules toward a property target. The starter task is QED optimization with both naive and bootstrap DQN configs.\n\nWhy now: two chemistry partners want interpretable lead optimization where every intermediate structure is valid by construction — that's the trust story this portfolio exists for, and it's a differentiator against black-box generative baselines.\n\nMilestones: mid-May — QED reproduction on both configs; mid-June — partner property targets encoded as reward functions; mid-July — pilot report with a go/no-go on a Q4 engagement.\n\nKnown limitation to scope honestly: the MDP doesn't support modifying aromatic bonds or multiple oxidation states, so some partner chemotypes are out of reach. I want that in the pilot agreement, not discovered later.\n\nStaffing + budget by May 8?\n\nXimena",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

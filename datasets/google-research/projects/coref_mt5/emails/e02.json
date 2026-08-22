@@ -1,0 +1,19 @@
+{
+  "id": "gr/coref_mt5/e02",
+  "thread_id": "gr/coref_mt5/t1",
+  "in_reply_to": "gr/coref_mt5/e01",
+  "date": "2026-04-29T14:10:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Re: Kickoff - seq2seq coref as the multilingual backbone",
+  "body": "Priya,\n\nStaffing for the window:\n\n- Yusuf Keita 60%, transition system, evaluation against CoNLL-2012 and our internal sets.\n- Katya Silva 45%, fine-tuning runs and the non-English data prep.\n- Chiara Olsen is at 65% on coref_mt5 for the whole of June 2026 - she owns the decoder service and the transition-state serialization, and June is when both have to be production-shaped. She's at 30% in April/May ramping in.\n\nInfra: the XXL checkpoint needs a real server, not a notebook. Zeke has us penciled in on Shipyard for a June serving slot. Inference is the cost driver here, not training - we are fine-tuning, not pre-training, so 32 GPUs on vulcan-h100 covers us.\n\nOne caveat I want on record: 65% of Chiara in June is the plan of record. If that slips the serving benchmark slips with it.\n\nDaniela",
+  "labels": ["resources"]
+}

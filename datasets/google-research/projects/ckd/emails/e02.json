@@ -1,0 +1,45 @@
+{
+  "id": "gr/ckd/e02",
+  "thread_id": "gr/ckd/t1",
+  "in_reply_to": "gr/ckd/e01",
+  "date": "2026-05-06T15:30:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CKD kickoff — hallucination-resistant captioning via contrastive distillation",
+  "body": "Lucia,\n\nSizing done, here's the plan.\n\nThe long pole is exactly what you suspected. We're scoping and staffing a synthetic-data generation pipeline from scratch — negative-object mining over the image corpora plus cached model-generated descriptions — since nothing reusable exists in the org for this. Concretely: stage 1 mines plausible negative objects per image (the vg_sample_negatives path), stage 2 generates and caches descriptions from our strongest internal model so training never blocks on inference. Wanjiru and Chiara own it, both at 50% for six weeks starting next week.\n\nRest of staffing: Wei 40% (distillation objective + training), Fumiko 40% (POPE eval harness + analysis).\n\nCompute: pipeline is inference-heavy, ~20 A100s sustained on Titan through June. Distillation runs in July need ~64 A100s; still best-effort class, no reservation.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

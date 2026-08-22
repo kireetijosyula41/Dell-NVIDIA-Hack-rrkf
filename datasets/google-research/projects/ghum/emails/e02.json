@@ -1,0 +1,12 @@
+{
+  "id": "gr/ghum/e02",
+  "thread_id": "gr/ghum/t1",
+  "in_reply_to": "gr/ghum/e01",
+  "date": "2026-04-02T13:48:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}],
+  "subject": "Re: Kickoff: GHUM synthetic-human asset for the data platform",
+  "body": "Dmitri,\n\nStaffing: Quentin owns the model retraining, Saoirse the sampling API, Paloma the scan-data pipeline. All three at 60-80% through the window.\n\nCompute: retraining the VAE shape spaces against the gender-specific scan sets (4,329 male and female body scans) plus the pose-space deformation correctives is the expensive part. I am budgeting a Vulcan H100 reservation for three weeks in May - note Vulcan needs reservation through Ines, and there is a maintenance window 6/22-6/24 we should stay clear of anyway.\n\nMoney: Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project, and my reservation plan assumes the full amount. Idris, cc'd so the paperwork follows the verbal.\n\nOne gap: hand-articulation closeup scans are thinner than body scans; Paloma is auditing coverage now.\n\nAlina",
+  "labels": ["resources"]
+}

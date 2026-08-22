@@ -1,0 +1,45 @@
+{
+  "id": "gr/factoring_sqif/e02",
+  "thread_id": "gr/factoring_sqif/t1",
+  "in_reply_to": "gr/factoring_sqif/e01",
+  "date": "2026-03-19T11:05:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: SQIF factoring evaluation (Q2)",
+  "body": "Lucia — resourcing for the plan.\n\nStaffing: Rosa 50%, Farah 40%, Giannis 40%, Halima 60% through June.\n\nCompute: bruteforce baselines are CPU-bound and run on standard pools. The June QAOA sweeps are the expensive part — we simulate circuits across qaoa_depth 1-8 with num_samples up to 10k per configuration — and we've sized that to the big accelerator slice: we hold the cirrus-tpu reservation for the week of 2026-06-15, 384 accelerators, which covers the full sweep grid with margin.\n\nAsk: freeze the sweep configs by Jun 8 so we don't burn reserved capacity on config churn. One more line item — 5TB object storage for sampled low-energy states.\n\nIf the harness slips past Mar 16 the whole tail compresses, so flag early.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

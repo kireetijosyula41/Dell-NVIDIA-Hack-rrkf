@@ -1,0 +1,25 @@
+{
+  "id": "gr/jaxbarf",
+  "title": "Citation",
+  "summary": "Evaluates the JAX implementation of BARF (bundle-adjusting NeRF with trainable camera poses, built on JaxNeRF) for pose-noisy partner captures, targeting rotation-error parity with the PyTorch reference on Blender scenes.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Csilla Nassar",
+    "Vera Egede",
+    "Kaia Wolde"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jaxbarf",
+    "url": "https://github.com/google-research/google-research/tree/master/jaxbarf",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

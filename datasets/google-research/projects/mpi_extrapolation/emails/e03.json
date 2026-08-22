@@ -1,0 +1,46 @@
+{
+  "id": "gr/mpi_extrapolation/e03",
+  "thread_id": "gr/mpi_extrapolation/t1",
+  "in_reply_to": "gr/mpi_extrapolation/e02",
+  "date": "2026-06-02T10:35:00Z",
+  "from": {
+    "name": "Rafael Duran",
+    "email": "rafael.duran@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Kestrel — status + extrapolation-range trade-off",
+  "body": "Hi both,\n\nStatus: the pretrained model is reproduced and Rosa's demo path renders the sway trajectory from our own dual-lens captures — it genuinely impresses in person. Maren's intrinsics-refinement pass works; calibration drift on the capture rigs is now correctable in preprocessing.\n\nThe trade-off we need a decision on: extrapolation range. Within ~4x the input baseline, renders are clean. The capture team's product spec asks for wider sweeps (~8x), and out there the MPI's fixed depth planes show their limits — we get visible stack-of-cards artifacts and edge smearing on foreground occluders in roughly a quarter of test scenes. Retraining on internal captures (starting next week on the 128-GPU allocation) should help texture realism but won't change the geometry limits; that's inherent to the plane parameterization.\n\nOptions for the Jun 29 review: (a) demo locked at 4x — reliably beautiful; (b) 8x with a scene-screening step. I lean (a).\n\nRafael",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

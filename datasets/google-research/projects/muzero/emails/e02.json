@@ -1,0 +1,15 @@
+{
+  "id": "gr/muzero/e02",
+  "thread_id": "gr/muzero/t1",
+  "in_reply_to": "gr/muzero/e01",
+  "date": "2026-02-25T15:45:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MuZero hardening — staffing + compute",
+  "body": "Ulla,\n\nPlan:\n\nStaffing — Rafael owns agent correctness and the planning-knob documentation; Paloma owns the SEED RL infra path (learner/actor split, preemption recovery); Rosa takes the CI convergence gate and reference configs. That's a lean three, but the scope is hardening, not research.\n\nCompute — single-machine work runs on titan-a100 best-effort. The April distributed atari validation needs about 64 A100s for two weeks; I've sized that within our standing agents-rl share, no special reservation needed. We deliberately stay off vulcan for this one.\n\nSequencing note: SEED's actor fan-out is where I expect the bodies to be buried — the pseudocode-faithful agent plus a few hundred actors has queue-depth interactions the release never had to care about. Paloma starts there next week.\n\nCI gate on track for 03-06.\n\nIvo",
+  "labels": ["resources"]
+}

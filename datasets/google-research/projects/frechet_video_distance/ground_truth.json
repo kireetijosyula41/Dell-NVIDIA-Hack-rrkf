@@ -1,0 +1,17 @@
+{
+  "project": "gr/frechet_video_distance",
+  "conflicts": [
+    {
+      "conflict_id": "C055",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "logic_inference_dataset"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "we hold the vulcan-h100 reservation for the week of 2026-06-08, 256 accelerators, which is sized for the full sweep across model families and seeds"
+    }
+  ]
+}

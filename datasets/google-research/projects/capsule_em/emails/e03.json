@@ -1,0 +1,18 @@
+{
+  "id": "gr/capsule_em/e03",
+  "thread_id": "gr/capsule_em/t1",
+  "in_reply_to": "gr/capsule_em/e02",
+  "date": "2026-05-27T10:45:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: EMCAPSNet - M2 status: robustness real, cost curve ugly",
+  "body": "M2 status.\n\nM1 recap: repro clean. Eval on the released checkpoint gives 1.8 test error on smallNORB with patching off and 1.3 with --patching=True, exactly matching the README (paper says 1.4, we and the README get 1.3 - noted in the log).\n\nM2 results: on held-out azimuth splits, EMCAPSNet degrades 3.1 points vs. 8.7 for our CNN baseline at matched params - the viewpoint-robustness claim is real, at least on smallNORB-class data. Novel-elevation is similar (2.8 vs. 7.9).\n\nThe concern going into M3: EM routing cost. Per-step time grows much faster than input resolution - our 96x96 prototype is ~9x slower per step than 32x32, and memory scales worse. Gustavo's projection says anything ImageNet-sized is off the table without serious kernel work. So the June stress-test is genuinely decisive: if the cost curve doesn't bend with the optimizations Gustavo is testing, my memo will be \"no for the general stack, maybe for small pose-critical verticals\".\n\nSweep rehearsal on titan is scheduled for Jun 12.\n\nYara",
+  "labels": ["status", "risk"]
+}

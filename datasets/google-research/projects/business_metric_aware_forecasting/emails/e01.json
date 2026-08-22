@@ -1,0 +1,19 @@
+{
+  "id": "gr/business_metric_aware_forecasting/e01",
+  "thread_id": "gr/business_metric_aware_forecasting/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:00:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Project Vantage - metric-aware inventory forecasting",
+  "body": "Team,\n\nKickoff for the inventory forecasting effort. We're branding this internally as Project Vantage - use that name on all decks, OKR entries and the demo booking.\n\nThe product story writes itself: customers optimize MAPE and then wonder why stockouts and holding costs don't improve. Our research showed optimizing conventional forecasting metrics does not necessarily improve downstream business performance, and it gives us an efficient procedure to optimize common inventory metrics end-to-end differentiably even though they aren't differentiable in general. That's the differentiator versus every off-the-shelf forecaster.\n\nWindow is short (Feb 2 - Apr 13), so scope is a customer-shaped pilot: M1 (Feb 27) repro on the favorita multivariate dataset using the existing embedding code; M2 (Mar 20) cost trade-off study - the method adapts to different cost regimes and we need those curves for sales; M3 (Apr 10) pilot readout deck.\n\nNikhil is TL. Daniela owns staffing.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

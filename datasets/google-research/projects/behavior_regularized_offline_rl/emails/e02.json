@@ -1,0 +1,17 @@
+{
+  "id": "gr/behavior_regularized_offline_rl/e02",
+  "thread_id": "gr/behavior_regularized_offline_rl/t1",
+  "in_reply_to": "gr/behavior_regularized_offline_rl/e01",
+  "date": "2026-03-10T14:53:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BRAC - offline RL from logged interactions",
+  "body": "Ulla,\n\nResourcing and data logistics:\n\n- Staffing: Carmen 70% (research lead), Nikhil 40% (algorithms), Wanjiru 50% (training infra), Rosa 30% (data plumbing).\n- Compute: MuJoCo-scale offline runs are cheap; titan-a100 best-effort covers the reproduction. The internal-domain study needs maybe 32 GPUs for two weeks in April - still best-effort territory.\n- Data: the logged-interaction datasets live on legacy Corpus, and since the Corpus v2 migration freeze is 2026-08-07 we have the whole summer to migrate - I'm sequencing that after our window closes rather than spending team time on it now.\n- Privacy: logged user interactions mean Kofi's review is mandatory before the feasibility study touches real data. Filed today given the 2-3 week SLA; Rosa will run anonymization in parallel.\n\nDaniela",
+  "labels": ["resources"]
+}

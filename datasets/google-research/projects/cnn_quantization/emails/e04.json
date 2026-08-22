@@ -1,0 +1,41 @@
+{
+  "id": "gr/cnn_quantization/e04",
+  "thread_id": "gr/cnn_quantization/t1",
+  "in_reply_to": "gr/cnn_quantization/e03",
+  "date": "2026-06-09T15:40:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CNN quantization kickoff — 4-bit training as a serving-cost lever",
+  "body": "Pre-sweep checkpoint + one decision.\n\nDecision (made with Zofia this morning): op coverage for model family #3 didn't make it — Maren's risk from April materialized. Rather than gamble the reserved week, we cut family #3 from the matrix and run families #1/#2 with an extra seed and the full 8/4/2 grid. Family #3 becomes a Q3 item.\n\nLogistics: our cirrus-tpu week — the 384-accelerator reservation for the week of 2026-06-15 — starts Monday. Jorge's automation queues the full matrix Sunday night; Farah's dashboards go live same time. Daily 10am checkpoint during the week, 15 minutes, no slides.\n\nIf the sweep lands clean we write the recipe doc the following week and close out by Jun 29 as planned.\n\nBao",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}

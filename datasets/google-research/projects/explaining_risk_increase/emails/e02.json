@@ -1,0 +1,15 @@
+{
+  "id": "gr/explaining_risk_increase/e02",
+  "thread_id": "gr/explaining_risk_increase/t1",
+  "in_reply_to": "gr/explaining_risk_increase/e01",
+  "date": "2026-04-01T14:29:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Risk-explanation kickoff: explaining why risk went up, not just that it did",
+  "body": "Dmitri,\n\nStaffing and dependencies.\n\nPeople: Vera 60% on the observation-sequence model and explanation weights, Bilal 70% on ingestion and the TFRecord/SequenceExample pipeline (batch sizes 64 train / 128 eval per the reference input_fn setup carry over fine), Gustavo 40% on eval tooling and the clinical-review packet.\n\nPlatform dependencies: our reference and partner-shaped data flows through Corpus. On timing - Corpus v2 migration freeze is 2026-07-24, which gives us two clear weeks after window close to port our SequenceExample ingestion to the v2 path - so no migration work lands inside this project's schedule. I've planned Bilal's quarter on that basis.\n\nCompute: light. Training the observation sequence model is a single-node job; a dozen Titan A100 slots at peak for the hyperparameter passes.\n\nPrivacy: filed Mar 26 with Kofi, so the 2-3 week SLA has sign-off landing around mid-April, well before any partner data touches us.\n\nJelena",
+  "labels": ["resources"]
+}

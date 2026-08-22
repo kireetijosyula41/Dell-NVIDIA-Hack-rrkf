@@ -1,0 +1,16 @@
+{
+  "project": "gr/mol_dqn",
+  "conflicts": [
+    {
+      "conflict_id": "C036",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "dp_transfer"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On money: Idris has verbally earmarked $240k from the Q3 discretionary compute budget line B-58 for this project, which covers the bootstrap-DQN ensemble sweeps plus the partner pilot runs, so treat the compute plan below as funded."
+    }
+  ]
+}

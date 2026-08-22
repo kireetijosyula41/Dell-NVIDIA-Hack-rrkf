@@ -1,0 +1,36 @@
+{
+  "id": "gr/frequency_analysis/e03",
+  "thread_id": "gr/frequency_analysis/t2",
+  "in_reply_to": null,
+  "date": "2026-06-18T10:45:00Z",
+  "from": {
+    "name": "Freya Ruiz",
+    "email": "freya.ruiz@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Heat map status: first results + cost risk",
+  "body": "Hi Alina,\n\nStatus: heat maps are done for the first two classifiers. Clear signal — test error is flat for low-frequency basis vectors but spikes above 30% for a band of high-frequency perturbations on the smaller model; the larger model is robust across most of the spectrum but has a narrow mid-frequency weakness we did not expect.\n\nCost risk: a full heat map means one clean-vs-corrupted evaluation per Fourier basis vector, comparing the tensor_list layer outputs each time, so a 224x224 input grid is tens of thousands of forward passes per model. Right now that is about 40 GPU-hours per model even with Milan's batched evaluation. If the flagship list grows past four models we blow the July timeline.\n\nFreya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/gon",
+  "conflicts": [
+    {
+      "conflict_id": "C106",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["dichotomy_of_control"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the hardening phase I have Linnea Yamada committed at 60% to this project for June 2026 - she is the only one of the five with production lattice-model experience, so please treat that allocation as load-bearing."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/ime/e01",
+  "thread_id": "gr/ime/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:36:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "IME kickoff - forecasts you can explain to an auditor",
+  "body": "Team,\n\nKicking off IME. Our open-source Interpretable Mixture of Experts work gives us a forecasting architecture where the experts themselves are interpretable models and an assignment module (interpretable linear, or black-box LSTM) routes each sample - crucially, to a single expert at inference time, so every prediction comes with a readable explanation of which regime produced it.\n\nProduct motivation: internal forecasting consumers (capacity planning, spend forecasting) keep asking for explanations their reviewers will accept. IME is the credible middle ground between 'linear model everywhere' and 'trust the LSTM'.\n\nScope: reproduce the released results on the Electricity (ECL) and Rossmann datasets with both IME_WW and IME_BW variants at num_experts=20, then evaluate on one internal forecasting workload. Milestones: repro by mid-June, internal-workload eval by mid-July, recommendation by 2026-07-27.\n\nKaia leads modeling, Amara infra, Efe evaluation methodology. Jelena - resourcing note please.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

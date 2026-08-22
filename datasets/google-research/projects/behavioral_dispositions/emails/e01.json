@@ -1,0 +1,17 @@
+{
+  "id": "gr/behavioral_dispositions/e01",
+  "thread_id": "gr/behavioral_dispositions/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T10:18:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: behavioral dispositions eval for the assistant",
+  "body": "Hi team,\n\nKicking off the behavioral-dispositions workstream. This is our framework that adapts established psychological questionnaires into Situational Judgment Tests - realistic user-assistant scenarios instead of self-report statements - and measures whether a model's recommended actions match the distribution of human preferences.\n\nThe asset is real: 2,500 SJTs, each validated by three annotators, with preferred actions from 10 annotators per SJT drawn from a 550-person pool. The headline finding (models overconfident in low-consensus scenarios, and frontier models missing high-consensus answers 15-20% of the time) is exactly what our assistant team needs as a pre-launch gate.\n\nGoal: productize this as a standing eval in Evalline, run against every assistant model candidate. Milestones: corpus + harness onboarding by early June, first gated model report mid-July, launch review by 8/3.\n\nBao - staffing and platform plan please.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

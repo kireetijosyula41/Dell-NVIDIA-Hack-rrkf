@@ -1,0 +1,18 @@
+{
+  "id": "gr/hypertransformer/e03",
+  "thread_id": "gr/hypertransformer/t2",
+  "in_reply_to": null,
+  "date": "2026-06-09T11:37:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "HyperTransformer status: repro green, semi-supervised gains real but size-dependent",
+  "body": "Lucia, Deshawn,\n\nStatus. Supervised repro is green on all three benchmarks - omniglot essentially saturated, miniImageNet and tieredImageNet 5-way results within 0.4 pts of the released numbers, off the rebuilt Corpus caches.\n\nSemi-supervised: adding unlabeled support samples gives us +2.3 pts on miniImageNet 5-way 1-shot with our smallest target CNN. That's the regime the release predicted - the win concentrates where the target CNN is too small for a fixed universal embedding to do the work, and the transformer modulating all generated weights actually matters.\n\nThe catch, and it's the key feasibility finding so far: at our largest target size the semi-supervised gain shrinks to +0.5 pts and supervised parity with a plain fine-tuning baseline gets close. So the product story is specifically small-model personalization, not a general few-shot win. Carmen is mapping the crossover curve (accuracy delta vs target-CNN params) for the memo - that plot will carry the July recommendation.\n\nVera",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gr/behavior_regularized_offline_rl/e04",
+  "thread_id": "gr/behavior_regularized_offline_rl/t1",
+  "in_reply_to": "gr/behavior_regularized_offline_rl/e03",
+  "date": "2026-05-13T15:17:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Mateo Kowalski", "email": "mateo.kowalski@meridian.example", "role": "VP Research"}
+  ],
+  "subject": "Go/no-go outcome: conditional go, gated on a guarded live A/B",
+  "body": "Team,\n\nOutcome of Monday's go/no-go with Mateo: conditional go.\n\nThe condition: before H2 funding is confirmed, we run a guarded live A/B on 1% of pilot traffic to validate Carmen's off-policy estimates - value-penalty KL config, hard guardrails, automatic rollback on any regression in the safety metrics. Kofi's privacy sign-off came through last week so nothing blocks the design work.\n\nDecisions:\n1. Carmen + Nikhil write the A/B design doc by 5/18 (window close). The A/B itself runs under the H2 program's banner.\n2. Wanjiru packages the training stack for handoff - whoever staffs H2 inherits clean infra.\n3. The +4% offline estimate goes in the memo with its confidence interval, not as a headline number. We are not overselling this one.\n\nRealistic, evidence-shaped bet. Thanks everyone.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

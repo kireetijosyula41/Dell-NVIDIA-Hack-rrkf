@@ -1,0 +1,12 @@
+{
+  "project": "gr/dreg_estimators",
+  "conflicts": [
+    {
+      "conflict_id": "C131",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["mucped22"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we're scoping and staffing a human-rating annotation UI built from scratch. Saoirse leads it at 50% starting March 16: pairwise sample comparison, rater queues, agreement stats, export to the eval store. There's no existing internal tool for this, so I've budgeted five engineer-weeks with a target of April 20"
+    }
+  ]
+}

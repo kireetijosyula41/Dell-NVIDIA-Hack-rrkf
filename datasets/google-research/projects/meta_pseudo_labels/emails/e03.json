@@ -1,0 +1,18 @@
+{
+  "id": "gr/meta_pseudo_labels/e03",
+  "thread_id": "gr/meta_pseudo_labels/t1",
+  "in_reply_to": "gr/meta_pseudo_labels/e02",
+  "date": "2026-04-08T10:51:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MPL kickoff — status: both benchmarks in, one cost flag",
+  "body": "Status:\n\n- CIFAR-10-4000: reproduced 03-04 with the wrn-28-2 config; we landed within 0.3% of the published accuracy. The UDA settings matter — Ondrej confirmed sensitivity to uda_threshold=0.6 and uda_weight=8; drifting those cost us a point in early runs.\n- ImageNet-10%: resnet-50 run finished 04-05, accuracy within 0.5% of published. But the cost profile is the story: the teacher-student loop means every step trains two models plus the UDA batch, and our measured cost came in ~1.4x my original estimate for the full 300k-step schedule (the mpl_student_lr_wait_steps warmup interacts badly with our preemption rate — Chiara has a checkpoint-cadence fix that recovers most of it).\n\nFlag: at measured cost, the Q3 scaled-run proposal lands right at the top of the budget envelope we discussed, with no room for reruns. Options in the 04-27 proposal: trim to 2 datasets, or seek headroom.\n\nUmar",
+  "labels": ["status", "risk"]
+}

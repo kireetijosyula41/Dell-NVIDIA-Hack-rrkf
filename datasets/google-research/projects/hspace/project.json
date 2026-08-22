@@ -1,0 +1,18 @@
+{
+  "id": "gr/hspace",
+  "title": "HSPACE: Synthetic Parametric Humans Animated in Complex Environments",
+  "summary": "Builds the HSPACE large-scale photo-realistic dataset of animated parametric humans - GHUM-fitted scans with re-targeting, body-shape variation, and multi-person scene placement - totaling 1,600 humans and over one million frames for 3D human sensing research.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": ["Farah Haddad", "Milan Zapata", "Freya Ruiz"],
+  "window": {"start": "2026-02-23", "end": "2026-06-08"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hspace",
+    "url": "https://github.com/google-research/google-research/tree/master/hspace",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/behavior_regularized_offline_rl/e03",
+  "thread_id": "gr/behavior_regularized_offline_rl/t1",
+  "in_reply_to": "gr/behavior_regularized_offline_rl/e02",
+  "date": "2026-04-21T11:31:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BRAC - offline RL from logged interactions",
+  "body": "Status + the risk that will shape the go/no-go.\n\nReproduction: complete. SAC partial policies collected data as in the paper, and our offline BRAC runs on HalfCheetah-class tasks match the published pattern - the value-penalty variant with a KL divergence is the most robust config, and the Q-ensemble mainly helps on the noisier datasets.\n\nInternal feasibility: early runs on the anonymized pilot logs are mixed. The regularization does its job - policies stay near the behavior distribution - but that's also the problem: our logs are narrow, so the learned policy improves modestly (+4% on the offline evaluation metric) and won't discover anything the pilots never tried.\n\nRisk to state plainly for the go/no-go: offline eval itself. Our off-policy estimates have wide confidence intervals, and without a small live A/B we can't validate them. That's a product/policy question more than a research one.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

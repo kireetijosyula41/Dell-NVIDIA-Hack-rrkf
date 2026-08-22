@@ -1,0 +1,41 @@
+{
+  "id": "gr/diffusion_distillation/e03",
+  "thread_id": "gr/diffusion_distillation/t1",
+  "in_reply_to": "gr/diffusion_distillation/e02",
+  "date": "2026-06-02T11:07:00Z",
+  "from": {
+    "name": "Rosa Mensah",
+    "email": "rosa.mensah@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: progressive distillation for diffusion serving costs",
+  "body": "Status.\n\nReproduction: done May 20, two days early. Our CIFAR-10 chain runs the full halving schedule and we measure FID 3.2 at 4 steps against the paper's 3.0 -- close enough that I trust the recipe.\n\nProduction model: the first two halvings (256 to 128 to 64 steps) are done and quality is visually indistinguishable; FID moved by less than 0.1. The interesting part is stability at low step counts. The paper's point about parameterization is real: with the standard epsilon-prediction target, our 16-step students degraded badly, and switching the student to the paper's stable parameterization recovered it.\n\nRisk: each remaining halving costs a full training stage on Vulcan, and our reservation ends June 30 with the maintenance pause inside it. If the 8-step stage slips past the reservation, we deliver 16 steps this half. Flagging early.\n\nRosa",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

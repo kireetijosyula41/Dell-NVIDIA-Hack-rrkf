@@ -1,0 +1,35 @@
+{
+  "id": "gr/al_for_fep/e04",
+  "thread_id": "gr/al_for_fep/t2",
+  "in_reply_to": "gr/al_for_fep/e03",
+  "date": "2026-07-08T15:05:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: AL-for-FEP status: baseline cycles + selection strategy risk",
+  "body": "Ondrej, Santiago,\n\nDecisions ahead of the readout:\n\n1. Shipped default becomes greedy-with-diversity, not plain greedy. The novel-chemotype degradation is the exact failure a screening partner would notice first.\n2. Neural model baselines are cut from the July readout — the ElasticNet + fingerprint story is complete and the neural runs aren't ready. They move to the Q3 backlog.\n3. Paloma publishes the reference ConfigDict for both selection modes so partners can diff them.\n\nReadout July 13 as planned. Ondrej, the 6-vs-11 cycle number is the slide; everything else is supporting.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

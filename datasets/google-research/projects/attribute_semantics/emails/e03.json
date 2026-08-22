@@ -1,0 +1,17 @@
+{
+  "id": "gr/attribute_semantics/e03",
+  "thread_id": "gr/attribute_semantics/t1",
+  "in_reply_to": "gr/attribute_semantics/e02",
+  "date": "2026-05-11T10:05:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: soft-attribute semantics for recommender search",
+  "body": "Status + one risk.\n\nPipeline reproduction is done: tags lowercased, filtered to user-item-tags with ratings >= 4, 0.75/0.25 split with a third of train held out for validation, matching our open-source release. CAVs trained on the linear movie embeddings look sane; on the SoftAttributes test set we're within 1.5 points of the paper's ranking accuracy on the top-tag subset.\n\nThe risk: coverage. When we restrict training to top tags by unique tagged movies, tail attributes (roughly 40% of SoftAttributes vocabulary) have too few tagged items to fit a stable CAV. Yara is testing whether pooling near-synonym tags recovers them; if not, v1 ships with head attributes only.\n\nWill have the full readout Thursday.\n\nKatya",
+  "labels": ["status", "risk"]
+}

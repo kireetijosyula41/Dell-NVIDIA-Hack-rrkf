@@ -1,0 +1,18 @@
+{
+  "id": "gr/brush_splat",
+  "title": "Overview",
+  "summary": "Maturing Brush, our portable 3D reconstruction engine built on Gaussian splatting, from proof of concept to a demo-ready product. Brush trains and renders on desktop, browser, and Android using the Burn framework with custom WGSL kernels, ingesting NeRF-style or COLMAP datasets from zip archives.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bao Ndiaye",
+  "contributors": ["Bilal Novak", "Hyun Traore", "Rafael Duran"],
+  "window": {"start": "2026-04-13", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "brush_splat",
+    "url": "https://github.com/google-research/google-research/tree/master/brush_splat",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

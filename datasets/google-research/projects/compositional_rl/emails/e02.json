@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_rl/e02",
+  "thread_id": "gr/compositional_rl/t1",
+  "in_reply_to": "gr/compositional_rl/e01",
+  "date": "2026-05-01T14:00:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: environment generation for robust web agents",
+  "body": "Hi Ulla,\n\nStaffing: Yara Jokic leads at 50%, Quentin Farkas 40% on the environment-generation pipeline, Halima Toure 30% on agent training.\n\nOn human judgments: we're scoping and staffing a human-rating annotation UI from scratch — Vera Egede owns the build at 50%, with Quentin supporting on the trajectory-replay backend — so raters can watch agent episodes and grade them on task completion, efficiency, and safety. I looked and there's nothing in our current tooling that does trajectory-level rating, so we're budgeting it as a ground-up build: first usable version end of June.\n\nCompute: titan-a100 best-effort, 24 GPUs; these agents are small but the curriculum means many parallel environment instances — the cost is CPU-side env serving more than accelerators.\n\nAlso filing privacy review early since raters may see generated page content.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

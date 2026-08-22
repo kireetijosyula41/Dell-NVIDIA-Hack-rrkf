@@ -1,0 +1,45 @@
+{
+  "id": "gr/extreme_memorization/e01",
+  "thread_id": "gr/extreme_memorization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:05:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: extreme-memorization diagnostics track (Feb-May)",
+  "body": "Hi Ivo, team,\n\nKicking off the extreme-memorization workstream under data-platforms. Goal: turn the initialization-scale findings into a training-diagnostics feature for Corpus customers — specifically, surface the representation and gradient alignment scalars our open-source release already logs to TensorBoard as an early-warning signal for memorization.\n\nMilestones: repro on CIFAR-10 and SVHN by end of Feb; alignment-metric API draft mid-March; internal dogfood by Apr 20; launch review before May 4.\n\nOwnership: Amara and Saoirse take the tfrecord ingestion path, Rafael the MLP/convnet sweeps, Bilal the TensorBoard plumbing. I'll send a milestone doc Friday — flag anything that makes the end-of-Feb repro unrealistic.\n\nThanks,\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

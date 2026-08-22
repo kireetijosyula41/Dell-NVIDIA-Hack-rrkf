@@ -1,0 +1,17 @@
+{
+  "id": "gr/contrack/e03",
+  "thread_id": "gr/contrack/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T11:05:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Contrack status - plural mentions are the long pole",
+  "body": "Status through May 25.\n\nGood: the incremental repository update holds. 60-turn session, p95 update latency 31ms, memory flat at ~4MB per session because we never re-encode the full history. Entity recognition and attribute classification are both within a point of the published numbers.\n\nBad: resolving plural mentions. Anything of the form \"both of them\" or \"the two engineers\" where the antecedents were introduced 8+ turns apart drops to 0.58 F1 against 0.79 for singular coreference. The synthetic generator makes plenty of plural cases but they are too clean - the ambiguity distribution doesn't look like real dialogue, so we're overfitting to easy ones.\n\nTrade-off for you Anders: I can either spend two weeks widening the generator's ambiguity model, or we ship the Jun 12 integration spike with plural mentions behind a flag and fix it in Q3. I lean flag-it, but it's your call on what the demo needs to show.\n\nFumiko",
+  "labels": ["status", "risk"]
+}

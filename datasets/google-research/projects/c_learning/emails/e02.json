@@ -1,0 +1,18 @@
+{
+  "id": "gr/c_learning/e02",
+  "thread_id": "gr/c_learning/t1",
+  "in_reply_to": "gr/c_learning/e01",
+  "date": "2026-05-08T13:10:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: C-Learning - staffing + compute reservation",
+  "body": "Ulla,\n\nStaffing: Halima 70% (TL), Gustavo 60% on the classifier training loop and ablations, Oyin 40% on the sim-platform integration path. That holds through the window.\n\nCompute: we hold the cirrus-tpu reservation for the week of 2026-06-22 - 512 accelerators from the agents-rl quarterly allocation. The full goal-sampling-ratio ablation runs that week, so the sweep configs must be frozen by Jun 17. Before then, M1 repro runs fine on titan-a100 best-effort; the MuJoCo environments are the bottleneck, not the networks.\n\nOne infra note: the mujoco200 install with the libGL symlink dance is fragile on our base images. Oyin is baking a container this week so the whole team stops fighting it - budget half a day each to migrate.\n\nAlso: if the ablation slips past June, we run into Q3 allocation negotiations and I can't promise the same accelerator count. Jun 17 freeze is the real deadline here.\n\nJelena",
+  "labels": ["resources"]
+}

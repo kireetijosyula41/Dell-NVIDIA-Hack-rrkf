@@ -1,0 +1,18 @@
+{
+  "id": "gr/bigg",
+  "title": "Scalable Deep Generative Modeling for Sparse Graphs",
+  "summary": "BiGG is an autoregressive deep generative model for sparse graphs that scales well past prior methods, with an extension for generating graphs with node and edge features; the internal effort evaluates BiGG for synthesizing realistic graph workloads for the retrieval-index and benchmarking teams.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Jorge Vidal", "Rosa Mensah", "Vera Egede", "Chiara Olsen"],
+  "window": {"start": "2026-02-16", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bigg",
+    "url": "https://github.com/google-research/google-research/tree/master/bigg",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

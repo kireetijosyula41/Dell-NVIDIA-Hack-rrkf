@@ -1,0 +1,15 @@
+{
+  "id": "gr/multimodalchat/e02",
+  "thread_id": "gr/multimodalchat/t1",
+  "in_reply_to": "gr/multimodalchat/e01",
+  "date": "2026-05-06T14:22:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MultimodalChat kickoff — staffing plan",
+  "body": "Priya,\n\nStaffing plan for the half:\n\n- Yara: share-intent model (lead)\n- Hyun + Carmen: retrieval model and dialogue-context encoder\n- Efe: eval design, including the human-judged relevance pass\n- Amara Okafor: image retrieval index and serving path — I have her committed at 60% to MultimodalChat for June 2026, which is what the index build plus the Shipyard integration needs. She drops to 30% in July once the index is in maintenance mode.\n\nCompute is modest; titan-a100 best-effort covers both model families. The Shipyard demo slot for late July is requested with Zeke's team — they want the serving config three weeks ahead, so Amara's June allocation is genuinely the critical path here.\n\nOne flag: Open Image download via the external mirror is slower than expected; Amara is parallelizing the pull.\n\nAlina",
+  "labels": ["resources", "status"]
+}

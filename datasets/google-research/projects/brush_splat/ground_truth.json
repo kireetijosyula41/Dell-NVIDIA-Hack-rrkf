@@ -1,0 +1,12 @@
+{
+  "project": "gr/brush_splat",
+  "conflicts": [
+    {
+      "conflict_id": "C119",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["drjax"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"There is no shared tooling for this, so we're scoping and building an internal evaluation harness from scratch - Bilal will own it at 50% for roughly six weeks, covering dataset loading, metric computation (PSNR/SSIM), and regression tracking across commits.\""
+    }
+  ]
+}

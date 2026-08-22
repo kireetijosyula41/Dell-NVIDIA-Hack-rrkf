@@ -1,0 +1,41 @@
+{
+  "id": "gr/cmmd/e01",
+  "thread_id": "gr/cmmd/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:10:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CMMD kickoff — replacing FID in Evalline",
+  "body": "Hi Daniela,\n\nKicking off the CMMD rollout. Our \"Rethinking FID\" work showed FID's weaknesses as a generation metric — Inception features and the normality assumption chief among them — and proposed CMMD: MMD distance computed on CLIP embeddings (ViT-L/14@336px), distribution-free and better aligned with human judgment. Every image-gen team here still reports FID because that's what Evalline serves. Let's fix that.\n\nGoal (Mar 2 – May 11): CMMD as a first-class Evalline metric — JAX implementation productionized, reference sets hosted, side-by-side CMMD/FID reporting during a transition period, then CMMD as the default gate for generation launches.\n\nCoordination with Tomas's team is the critical path; the math is done, the plumbing isn't.\n\nDaniela — staffing + dependency plan please.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

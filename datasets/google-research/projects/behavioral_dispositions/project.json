@@ -1,0 +1,18 @@
+{
+  "id": "gr/behavioral_dispositions",
+  "title": "Evaluating Alignment of Behavioral Dispositions in LLMs",
+  "summary": "Builds a framework that converts psychological self-report statements into Situational Judgment Tests to measure how closely the behavioral dispositions expressed by LLMs match human preference distributions, using 2,500 human-validated SJTs and responses from a 550-participant pool.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bao Ndiaye",
+  "contributors": ["Csilla Nassar", "Saoirse Eriksen", "Ondrej Bergstrom"],
+  "window": {"start": "2026-04-27", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "behavioral_dispositions",
+    "url": "https://github.com/google-research/google-research/tree/master/behavioral_dispositions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

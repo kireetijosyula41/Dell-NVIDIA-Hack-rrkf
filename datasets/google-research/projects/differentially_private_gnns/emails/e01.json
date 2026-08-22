@@ -1,0 +1,41 @@
+{
+  "id": "gr/differentially_private_gnns/e01",
+  "thread_id": "gr/differentially_private_gnns/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:22:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: node-level DP GNNs for interaction-graph features",
+  "body": "Deshawn, team,\n\nKicking off the DP-GNN track. The problem: our recommendation and abuse teams want features computed over the user-interaction graph, and Legal will only sign off if we can bound what any single node contributes. The node-level DP-GNN work gives us exactly that -- a JAX DP-GCN with per-node privacy guarantees, with a clean training setup driven by config files under configs/ and config_flags overrides for sweeps.\n\nPlan: reproduce on ogbn-arxiv first (the download script handles it), then re-run on an anonymized interaction subgraph. Deliverable is an epsilon-vs-utility curve Legal and the feature teams can negotiate over.\n\nMilestones: ogbn-arxiv reproduction May 1, interaction-graph runs mid-June, recommendation doc July 10.\n\nDeshawn to size staffing and data needs.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/brush_splat/e01",
+  "thread_id": "gr/brush_splat/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T08:45:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: Brush - portable Gaussian splatting to demo-ready",
+  "body": "Hi both,\n\nKicking off the Brush maturation effort for the vision portfolio. Brush is our 3D reconstruction engine using Gaussian splatting, and its differentiator is portability: it renders AND trains on macOS/Windows/Linux, in a browser, and on Android, via the Burn framework and custom WGSL kernels. Nobody else in the space demos on-device training - that's the wedge.\n\nThe README says it plainly: today it's a proof of concept, basic training only, none of the newer extensions. Goal for Apr 13 - Aug 3 is demo-ready, not feature-complete.\n\nMilestones: M1 (May 15) stable ingestion of both zip formats - synthetic-NeRF-style with transform_train.json, and COLMAP with images + sparse folders. M2 (Jun 26) quality bar vs. reference implementation on standard scenes. M3 (Jul 24) browser + Android demo for the Launch Review Board.\n\nHyun is TL. Bao, staffing and the eval question are yours.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

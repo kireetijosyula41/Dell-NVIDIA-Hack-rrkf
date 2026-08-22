@@ -1,0 +1,19 @@
+{
+  "id": "gr/demogen/e02",
+  "thread_id": "gr/demogen/t1",
+  "in_reply_to": "gr/demogen/e01",
+  "date": "2026-04-14T14:05:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff - resourcing and the B-81 funding",
+  "body": "Dmitri,\n\nStaffing:\n- Umar Costa 50%, predictor and the margin/total-variation feature work.\n- Ondrej Bergstrom 40%, model zoo training harness.\n- Hyun Traore 20%, evaluation and the cost model.\n\nThe expensive part is our own zoo. Training ~200 internal configs to convergence is roughly 41,000 GPU-hours. That does not fit in best-effort titan capacity without pushing everyone else out, so it needs real money.\n\nIdris has verbally earmarked the full $120k available on Q3 discretionary compute budget line B-81 for demogen - that is the whole line, and it covers the model-zoo training in May and June. I have not seen it in writing yet but he was unambiguous on the call.\n\nIf that funding moves, the Jun 5 milestone moves with it and we fall back to a 60-config zoo, which weakens the predictor evaluation considerably.\n\nDaniela",
+  "labels": ["resources", "risk"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/darc/e04",
+  "thread_id": "gr/darc/t2",
+  "in_reply_to": "gr/darc/e03",
+  "date": "2026-06-11T16:55:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: DARC status - closing out, and a checklist I want kept",
+  "body": "Closing the window on the 15th. Where we land:\n\nDARC works for us, conditional on the simulator not leaking trivial signal. Rated plausibility on the corrected policy is 3.9/5 vs 2.7/5 uncorrected, 4 raters, agreement 0.72 - that is a result I'm happy to take forward.\n\nThe durable output is not the policy though, it's Yara's clock-artifact lesson. Before any future DARC-style run: check classifier accuracy first, and if it's above ~95% assume you have an artifact rather than a triumph. Yara, please write that as a short checklist, three bullets max.\n\nTomas - Paloma's rating tool has rater agreement tracking built in and worked well; worth a look for Evalline.\n\nNo extension. Q3 OKRs lock on 2026-06-26 and if we want the second-artifact hunt funded it goes in as its own line, not as a quiet rollover.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

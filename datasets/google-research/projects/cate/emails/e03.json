@@ -1,0 +1,18 @@
+{
+  "id": "gr/cate/e03",
+  "thread_id": "gr/cate/t1",
+  "in_reply_to": "gr/cate/e02",
+  "date": "2026-06-16T11:05:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: CATE - M2 status: distillation works, one transfer surprise",
+  "body": "Status ahead of the M3 review.\n\nM1 recap: UCF-101 nearest-neighbor repro from the Kinetics-400 checkpoint matched the released demo, and Saoirse's batch API has been embedding internal test libraries since May 20.\n\nM2: Jorge's distillation grid landed its first defensible point - a student at roughly a quarter of the teacher's FLOPs holds within 2.1 points of the teacher on UCF-101 nearest-neighbor top-1, which puts serving cost per embedded minute inside the platform's budget with room to spare. Loss schedule mattered more than architecture; details in his writeup.\n\nThe surprise: on the Something-Something v2 checkpoint transfer test, the same recipe loses 6.8 points - temporally-sensitive representations distill much worse than appearance-heavy ones. For M3 this means the endpoint's v1 claim should be scoped to appearance-style similarity (dedup, near-duplicate search) and NOT fine-grained action similarity, or we'll overpromise.\n\nRecommend go, with that scoping. Slides by Jun 26.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

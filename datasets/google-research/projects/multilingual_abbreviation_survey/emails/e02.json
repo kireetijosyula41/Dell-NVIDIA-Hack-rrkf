@@ -1,0 +1,15 @@
+{
+  "id": "gr/multilingual_abbreviation_survey/e02",
+  "thread_id": "gr/multilingual_abbreviation_survey/t1",
+  "in_reply_to": "gr/multilingual_abbreviation_survey/e01",
+  "date": "2026-04-08T13:55:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: abbreviation-aware normalization — resourcing",
+  "body": "Priya,\n\nResourcing summary for the half:\n\nStaffing — Nikhil on the survey-to-features pipeline, Paloma on data tooling, Efe on the rule baselines, Umar leading the multilingual model. All four hold through July.\n\nCompute — the rule baselines are CPU-only. For the multilingual normalization model we're doing one big consolidated sweep rather than dribbling runs out: we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-07-06, which covers the full training sweep across locale groupings plus the ablations Umar wants (script-family transfer, with/without stump-compound features). Reservation is squared away with the infra process, so the only date risk on the run itself is our own data readiness.\n\nAsk: can you confirm the target locale list by 04-24? The sweep config keys off it.\n\nBao",
+  "labels": ["resources"]
+}

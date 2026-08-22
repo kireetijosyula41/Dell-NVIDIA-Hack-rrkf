@@ -1,0 +1,18 @@
+{
+  "id": "gr/correct_batch_effects_wdn/e04",
+  "thread_id": "gr/correct_batch_effects_wdn/t2",
+  "in_reply_to": "gr/correct_batch_effects_wdn/e03",
+  "date": "2026-06-25T16:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: Status - go/no-go call: scoped yes",
+  "body": "Go/no-go, as promised for the 26th.\n\nIt's a scoped yes. We productize the correction as an opt-in Corpus pipeline stage with a hard guardrail: minimum 200 samples per batch, otherwise the stage refuses to run rather than silently destroying signal. Umar's -0.4 nDCG result is the reason the guardrail exists and I want that in the doc, not buried.\n\nWe are NOT claiming this as a general de-batching layer. That was my framing in March and Umar's numbers didn't support it.\n\nAlina - the re-ingest with per-run metadata still needs to happen for the pilot corpus. You've got it planned against the 2026-07-24 Corpus v2 freeze, which leaves float, so let's use some of it: I'd rather Amara land it in the first half of July than sprint. Jun, flagging you for visibility on the ingest ask.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

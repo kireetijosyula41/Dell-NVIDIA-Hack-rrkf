@@ -1,0 +1,26 @@
+{
+  "id": "gr/action_angle_networks",
+  "title": "Learning Physical Dynamics with Action-Angle Networks",
+  "summary": "Action-Angle Networks learn physical dynamics by mapping systems into action-angle coordinates, implemented in JAX with fully config-driven training. We are evaluating it as the physics-simulation surrogate for the graphs-retrieval portfolio's scientific-computing customers.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Saoirse Eriksen",
+    "Nikhil Abebe",
+    "Bilal Novak",
+    "Wanjiru Horvat"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "action_angle_networks",
+    "url": "https://github.com/google-research/google-research/tree/master/action_angle_networks",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

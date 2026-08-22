@@ -1,0 +1,40 @@
+{
+  "id": "gr/code_as_policies/e04",
+  "thread_id": "gr/code_as_policies/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T16:03:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Nimbus: LRB demo scope decision",
+  "body": "Team,\n\nDecision after yesterday's review with Jelena: we're cutting trajectory-based control from the LRB demo and going with vision-based pick and place plus the reactive impedance behaviors only. The trajectory work continues, it just doesn't gate the demo.\n\nRationale: the gain-clamping change Freya proposed passed safety review, but only for the clamped primitive set. Rather than rush a second review before 5/4, we show the narrower slice confidently.\n\nLRB is confirmed for 4/29, Shipyard slot booked. Nadia's office needs the demo script by 4/24 — Freya, can you own that? Maren, please freeze the API surface Thursday; no new primitives after that.\n\nNice work getting Nimbus this far this fast.\n\nUlla",
+  "labels": [
+    "decision"
+  ]
+}

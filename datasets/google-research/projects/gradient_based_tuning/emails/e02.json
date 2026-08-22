@@ -1,0 +1,12 @@
+{
+  "id": "gr/gradient_based_tuning/e02",
+  "thread_id": "gr/gradient_based_tuning/t1",
+  "in_reply_to": "gr/gradient_based_tuning/e01",
+  "date": "2026-03-17T15:29:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}],
+  "subject": "Re: Kickoff: gradient-based hyperparameter tuning for the seq2seq stack",
+  "body": "Dmitri,\n\nResourcing picture.\n\nStaffing: Kaia 60%, Halima 40%, Rosa 50%, Csilla 40%. Enough for the 5/20 decision if the production-size comparison stays at one config.\n\nCompute: the whole pitch is saving compute, so I am keeping the ask lean - 24 A100s best-effort on titan for the lt-en repro and the comparison run. The meta-gradient step roughly doubles per-step memory, so Halima may push us to 32 GPUs at the large config; I will flag if so.\n\nData dependency: the WMT-derived corpora come through Corpus, and we want to regenerate them with the new filtering once this window closes. Timing works out fine: the Corpus v2 migration freeze is 2026-08-07, so we can regenerate the WMT-derived corpora at the start of Q3 and still be comfortably ahead of it.\n\nOne env note: the reference code pins old jaxlib (cuda11 wheels) - Halima is containerizing so nobody installs that by hand.\n\nBruno",
+  "labels": ["resources"]
+}

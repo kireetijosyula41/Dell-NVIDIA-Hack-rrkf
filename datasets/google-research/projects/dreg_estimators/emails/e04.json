@@ -1,0 +1,18 @@
+{
+  "id": "gr/dreg_estimators/e04",
+  "thread_id": "gr/dreg_estimators/t1",
+  "in_reply_to": "gr/dreg_estimators/e03",
+  "date": "2026-05-19T14:07:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DReG estimators in the LVM training toolkit",
+  "body": "Release decisions:\n\n1. Toolkit ships May 22 (four days late — I'll own that upward) with DReG as the default inference-network estimator and the variance telemetry on by default. The order-of-magnitude variance reduction chart is the first thing in the docs.\n2. Adopter two makes the release. The human-rating round on the compressed window came back 62/38 preferring the DReG-trained samples with decent inter-rater agreement (0.71) — enough to publish internally alongside the +0.9 nats number from adopter one.\n3. Scope cut: the jackknife variant of the estimator stays out of v1. Csilla documents it as experimental.\n4. The annotation UI graduates to a maintained tool under Saoirse — the rater-queue piece is obviously reusable for future evals, and I want it in our OKR story for the half.\n\nThanks all, genuinely tidy execution.\n\nZofia",
+  "labels": ["decision"]
+}

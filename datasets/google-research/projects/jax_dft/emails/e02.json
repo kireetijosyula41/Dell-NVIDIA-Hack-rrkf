@@ -1,0 +1,50 @@
+{
+  "id": "gr/jax_dft/e02",
+  "thread_id": "gr/jax_dft/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T14:30:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Viktor Hussain",
+      "email": "viktor.hussain@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "JAX-DFT staffing for the harness push",
+  "body": "Viktor — staffing for the harness push. Current: Kaia 50% (physics validation), Linnea 40% (JAX internals), Maren 30% (pipelines), Leilani 25% (API). The key commitment for the decisive month: Paloma Castillo is committed at 60% to this project for June 2026 — she owns the neural-XC training harness build-out, which is the deliverable the go/no-go hangs on. I've entered it in the allocation sheet through June 30. Compute: modest — 1D DFT is cheap, and even the training loops fit comfortably on titan best-effort; no reservations requested. One constraint to note: JIT compile times balloon on the batched Kohn-Sham solver (Linnea measured 11-minute cold compiles), which is a developer-velocity tax more than a compute cost — she's testing persistent-cache options. — Jelena",
+  "labels": [
+    "resources"
+  ]
+}

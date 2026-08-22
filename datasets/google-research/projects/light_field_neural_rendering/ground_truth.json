@@ -1,0 +1,12 @@
+{
+  "project": "gr/light_field_neural_rendering",
+  "conflicts": [
+    {
+      "conflict_id": "C099",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["fsq"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Good news on money: Idris Osei has verbally earmarked the $180k in Q3 discretionary compute budget line B-36 for this project, so the H100 hours for the full shiny-dataset training grid are covered without touching the portfolio baseline."
+    }
+  ]
+}

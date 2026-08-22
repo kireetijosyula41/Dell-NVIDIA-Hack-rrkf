@@ -1,0 +1,36 @@
+{
+  "id": "gr/aptamers_mlpd/e04",
+  "thread_id": "gr/aptamers_mlpd/t2",
+  "in_reply_to": "gr/aptamers_mlpd/e03",
+  "date": "2026-06-03T15:50:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Aptamer status: count matrices land, MLPD vs PD gap",
+  "body": "Yara, Bruno,\n\nEscalating the MLPD/PD gap to Hana ahead of the June 8 readout — it's a collection-protocol decision, above our line, and burying it in a status slide would be the wrong call.\n\nDecisions on our side:\n\n1. The readout reports both PD and MLPD trained models with the 0.13 Spearman delta stated plainly.\n2. Sequence walking demos on MLPD only; we say so on the slide rather than letting people assume it transfers.\n3. Ingest closes June 26 regardless of walking progress, comfortably ahead of the Corpus freeze. Saoirse, no late additions after that.\n\nDmitri",
+  "labels": [
+    "escalation",
+    "decision"
+  ]
+}

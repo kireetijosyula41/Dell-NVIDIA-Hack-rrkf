@@ -1,0 +1,46 @@
+{
+  "id": "gr/clustering_normalized_cuts/e03",
+  "thread_id": "gr/clustering_normalized_cuts/t1",
+  "in_reply_to": "gr/clustering_normalized_cuts/e02",
+  "date": "2026-04-15T11:25:00Z",
+  "from": {
+    "name": "Quentin Farkas",
+    "email": "quentin.farkas@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CNC kickoff — learned normalized cuts for corpus clustering",
+  "body": "Status.\n\nReproduction: done. On the reference setups our CNC loss converges to the expected normalized cuts values and the cluster assignments match spectral clustering's, as in the paper. The end-to-end differentiable formulation trains stably once we got the learning-rate schedule right (it's sensitive early — Umar's warmup fix in the repo).\n\nBake-off, first pass on the production shard: quality is at parity (within 0.3 on our internal cluster-coherence metric) and inference is where the win is — assigning new documents to clusters is a forward pass, vs re-running the eigenspace embedding. Incremental updates go from a nightly batch job to near-online.\n\nRisk/trade-off: full-graph training on the shard's affinity graph is memory-hungry; we're training on sampled subgraphs and there's a quality wobble (~0.5) depending on sampling rate. Umar wants one more sweep before we lock the recommendation.\n\nQuentin",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

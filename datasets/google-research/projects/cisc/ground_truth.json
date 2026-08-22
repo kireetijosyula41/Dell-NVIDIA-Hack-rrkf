@@ -1,0 +1,16 @@
+{
+  "project": "gr/cisc",
+  "conflicts": [
+    {
+      "conflict_id": "C142",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "bigg"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Jorge Vidal is committed at 60% to this project for May 2026 — he owns the serving-path integration with Zeke's Shipyard team, and I've blocked his calendar accordingly."
+    }
+  ]
+}

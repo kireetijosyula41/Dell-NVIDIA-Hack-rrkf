@@ -1,0 +1,25 @@
+{
+  "id": "gr/demogen",
+  "title": "DEep MOdel GENeralization dataset (DEMOGEN)",
+  "summary": "DEMOGEN is a dataset of 756 trained CNN and ResNet-32 models on CIFAR-10/100 with their train and test performance, spanning weight decay, dropout, normalization, width and learning-rate variations, released with utilities for computing margin distributions and total variation. Meridian is using it to build an internal predictor of generalization gap that can rank model configs before we pay to train them.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Umar Costa",
+    "Hyun Traore",
+    "Ondrej Bergstrom"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "demogen",
+    "url": "https://github.com/google-research/google-research/tree/master/demogen",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

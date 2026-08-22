@@ -1,0 +1,12 @@
+{
+  "project": "gr/dual_dice",
+  "conflicts": [
+    {
+      "conflict_id": "C025",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["kwikbucks"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "Oyin is committed at 60% to this project for May 2026 to carry the productionization phase, with the remaining 40% on her platform maintenance duties. I've logged that in the allocation sheet so nobody grabs her for Q2 firefighting. (reaffirmed in e04: 'Oyin at 60% through May carries it, so please protect her allocation')"
+    }
+  ]
+}

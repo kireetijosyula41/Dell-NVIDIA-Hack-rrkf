@@ -1,0 +1,36 @@
+{
+  "id": "gr/frechet_video_distance/e03",
+  "thread_id": "gr/frechet_video_distance/t2",
+  "in_reply_to": null,
+  "date": "2026-04-20T09:55:00Z",
+  "from": {
+    "name": "Quentin Farkas",
+    "email": "quentin.farkas@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "FVD status: variance study + memory risk",
+  "body": "Hi Daniela,\n\nStatus: the FVD library is integrated in both target repos and matches the open-source reference to four decimals on the smoke suite.\n\nFinding from the variance study: at 512 videos per side, FVD moves about 3% across seeds — enough to flip rankings between checkpoints that are close. At 2048 videos the spread drops under 1%. Recommendation: standardize on 2048.\n\nRisk: the I3D embedding step is memory-hungry for clips beyond 64 frames because the whole [N, T, 224, 224, 3] tensor is materialized before create_id3_embedding runs. I am chunking along the batch dimension, which drops peak memory roughly 4x, but the sweep budget needs to assume the slower chunked path.\n\nQuentin",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

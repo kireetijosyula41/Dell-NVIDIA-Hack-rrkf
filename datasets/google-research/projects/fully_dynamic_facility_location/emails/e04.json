@@ -1,0 +1,44 @@
+{
+  "id": "gr/fully_dynamic_facility_location/e04",
+  "thread_id": "gr/fully_dynamic_facility_location/t2",
+  "in_reply_to": "gr/fully_dynamic_facility_location/e03",
+  "date": "2026-07-01T16:30:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Facility location benchmarks: 40x fewer recomputations, memory risk",
+  "body": "Team,\n\nDecisions from Monday's review:\n\n1. Benchmarks run on the 256GB hosts — sharding is a Q3 optimization, not a blocker.\n2. The integration prototype consumes the fresh embeddings coming out of our 384-GPU vulcan week that started Jun 29; Emeka, target Jul 8 for the first end-to-end run against the production update stream so we hit the Jul 10 go/no-go.\n3. Tereza's 40x recomputation result with beta 3 and lambda 0.1 goes in the go/no-go packet as the headline, alongside the stability numbers.\n\nIf the prototype holds up, Q3 adoption goes to Hana for sign-off the following week.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

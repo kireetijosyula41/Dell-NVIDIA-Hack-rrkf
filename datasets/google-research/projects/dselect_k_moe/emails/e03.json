@@ -1,0 +1,19 @@
+{
+  "id": "gr/dselect_k_moe/e03",
+  "thread_id": "gr/dselect_k_moe/t1",
+  "in_reply_to": "gr/dselect_k_moe/e02",
+  "date": "2026-05-28T10:36:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Riverbed (DSelect-k for multi-task ranking)",
+  "body": "Riverbed status ahead of the readout.\n\nRanker A: DSelect-k selecting 2 of 6 experts matches the dense-gate baseline on all four task heads (largest delta 0.15% AUC, within noise) at 41% lower gate-side serving FLOPs per Bilal's rig. Offline parity milestone: met.\n\nRanker B is the tricky one and the risk to flag: with 8 experts and the same num_nonzeros=2 setting, training is sensitive to the gate's initialization — two of five seeds collapse to a single expert early and never recover. The paper's smoothness knobs help; what worked best is a brief dense warmup then annealing into sparse selection, which recovers 5/5 seeds but adds ~8% training time. Recommend we ship the warmup schedule as the default and document the trade-off rather than chase a cleverer init before June 15.\n\nOne ask: can the readout deck use the Riverbed name only? Easier for the LRB paper trail.\n\nWei",
+  "labels": ["status", "risk"]
+}

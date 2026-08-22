@@ -1,0 +1,17 @@
+{
+  "id": "gr/CIQA/e03",
+  "thread_id": "gr/CIQA/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:47:00Z",
+  "from": {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "CIQA status: sampling pipeline done, one distribution risk",
+  "body": "Hi both,\n\nStatus: the sampling pipeline is reproducible end to end. We filter AVA to sources with JPEG quality factor >= 99 and recompress each at two random quality factors, matching the original study. Good news is the semantic balance holds - the eight classes (animal, architecture, cityscape, floral, food/drink, landscape, portrait, still life) each land at roughly 6.25% after sampling, so no reweighting needed.\n\nThe risk: the near-lossless filter is stricter than I expected and our usable pool came out at ~41k images. If Lucia wants per-class metric confidence intervals under +/-2%, the May rater wave needs to cover more pairs per image than we budgeted - I estimate 15-20% more judgments. Options: eat the cost, or drop the two weakest classes from the launch claim.\n\nAlso flagging that rater tooling had a two week slip, Leilani has it back on track.\n\nMilan",
+  "labels": ["status", "risk"]
+}

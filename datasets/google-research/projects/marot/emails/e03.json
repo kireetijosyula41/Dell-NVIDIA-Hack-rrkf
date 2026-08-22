@@ -1,0 +1,15 @@
+{
+  "id": "gr/marot/e03",
+  "thread_id": "gr/marot/t1",
+  "in_reply_to": "gr/marot/e02",
+  "date": "2026-05-20T11:14:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Marot kickoff — status + data-format risk",
+  "body": "Status:\n\n- Hosted deployment shipped 04-15 (we went with the marot-lite.html approach serving JS/CSS from our own static host rather than asking users to download six files).\n- Evalline bridge is in review; BLEURT columns render next to MQM scores on the pilot language pair.\n\nRisk: the ingestion format. Marot expects tab-separated UTF-8 with ten fixed columns, one line per marked error — and two of the three pilot teams export from tooling that emits per-segment rows instead. Ondrej wrote a converter, but severity/category mappings are lossy for one team's legacy taxonomy, which shifts their MQM scores by up to 0.7 points per segment on spot checks. If we silently convert, the numbers won't match their old spreadsheets and we lose trust on day one.\n\nProposal: publish the mapping table in the app's Settings menu and flag converted rows visibly. Yara agrees. ok to proceed?\n\nFreya",
+  "labels": ["status", "risk"]
+}

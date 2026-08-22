@@ -1,0 +1,45 @@
+{
+  "id": "gr/mface/e02",
+  "thread_id": "gr/mface/t1",
+  "in_reply_to": "gr/mface/e01",
+  "date": "2026-02-24T14:32:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mFACE factuality scoring for multilingual summaries",
+  "body": "Hi Priya,\n\nStaffing plan: Maren Zhou 50% on the Evalline ingestion and schema work, Amara Okafor 40% on reproducing the NLI scorer, Farah Haddad 30% on the per-language calibration dashboards. Milan Zapata is committed at 60% to this project for June 2026 to build the scorer-serving path and the batch API — I've already blocked his June on our side, so please don't let anyone else grab him.\n\nCompute is light: the NLI scorer fine-tunes fit on 16 titan-a100 GPUs best-effort, no reservation needed. Main platform dependency is Evalline; Tomas's team owns the harness and I'd like the schema review on their calendar before March 6.\n\nOne flag: the judgement data has three raters per example (hence min/avg/max), and inter-rater spread on q2 is wide for the lower-resource languages. Calibration there will take longer than the roadmap implies.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "gr/fwl/e04",
+  "thread_id": "gr/fwl/t2",
+  "in_reply_to": "gr/fwl/e03",
+  "date": "2026-07-07T15:41:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: FWL status: 6.1% long-doc perplexity gain, JAX gradient bug",
+  "body": "Team,\n\nIntegration decision, made with Bruno this morning: the TensorFlow implementation ships. It subclasses tf.keras.layers.Layer, drops cleanly into the assistant's serving stack, and it is the thoroughly tested path. Gustavo's JAX fix lands upstream as a contribution, but JAX productization waits for Q4.\n\nThe 6.1% long-doc perplexity gain at 8x less cost than dynamic evaluation is the number for the launch-planning review — Quentin, one-pager by Jul 10 please.\n\nScope cut: vocabulary-resizing experiments are out for Q3; we ship at the current vocab size.\n\nThanks all — clean milestone.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

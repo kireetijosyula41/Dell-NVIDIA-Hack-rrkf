@@ -1,0 +1,41 @@
+{
+  "id": "gr/al_for_fep/e01",
+  "thread_id": "gr/al_for_fep/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:20:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: active learning for free-energy prediction",
+  "body": "Hi Santiago, team,\n\nKicking off the active-learning-for-FEP work. The nice property of this codebase is that the whole active learning cycle is defined by a single ConfigDict configuration file — model_config, features, targets, selection_config — and you can override any parameter from the command line. That means the loop is a config artifact, not a codebase fork, which is exactly what our screening partners need.\n\nProduct framing: a configurable screening loop where a partner points at a CSV of SMILES and gets an acquisition-ranked list back.\n\nMilestones: baseline cycles reproduced by mid-May, greedy vs. alternative selection comparison in June, internal readout the week of July 6.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

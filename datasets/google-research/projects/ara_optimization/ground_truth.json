@@ -1,0 +1,16 @@
+{
+  "project": "gr/ara_optimization",
+  "conflicts": [
+    {
+      "conflict_id": "C072",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "KNF"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris confirmed verbally that the full $120k on Q3 discretionary compute budget line B-60 is earmarked for this project, so we can plan the parameter sweeps against it."
+    }
+  ]
+}

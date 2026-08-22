@@ -1,0 +1,18 @@
+{
+  "id": "gr/meta_learning_without_memorization/e03",
+  "thread_id": "gr/meta_learning_without_memorization/t1",
+  "in_reply_to": "gr/meta_learning_without_memorization/e02",
+  "date": "2026-03-18T11:34:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Meta-reg kickoff — status + the beta-tuning wrinkle",
+  "body": "Status:\n\n- Reproduction landed 02-25, two days early. On the non-mutually-exclusive few-shot setup, the unregularized meta-learner does exactly what the paper warns: it collapses to a zero-shot solution that ignores task training data. With the meta-regularization objective on, adaptation is restored and we match the published accuracy within 0.7%.\n- Amara's drop-in packaging is in review; API is one extra loss term plus a strength coefficient.\n\nWrinkle for the A/B: the regularization strength matters more than we'd like. Too low and memorization creeps back on the vision team's task distribution; too high and we underfit the amortized component. We're shipping a default tuned on their held-out task split, but the honest position is teams with very different task structure will need a short sweep — Wanjiru is adding a 3-point auto-sweep option (~2x meta-training cost when enabled) to the harness.\n\nStill on track for the 04-13 A/B.\n\nFreya",
+  "labels": ["status", "risk"]
+}

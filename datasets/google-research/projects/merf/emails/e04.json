@@ -1,0 +1,15 @@
+{
+  "id": "gr/merf/e04",
+  "thread_id": "gr/merf/t1",
+  "in_reply_to": "gr/merf/e03",
+  "date": "2026-07-02T16:21:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: MERF kickoff — LRB scope decision",
+  "body": "Team,\n\nDecisions locked with Nadia for the 07-10 Launch Review Board:\n\n1) Demo is desktop-first; the mobile profile ships as a clearly-labeled \"preview\" tier exactly per Yara's option (b). The 0.8 PSNR / 24 fps mobile numbers go in the pre-read so nobody is surprised.\n2) The June sweep results carry the story: all 9 scenes retrained and baked in our reservation week, bake-vs-train delta held under 0.05 PSNR at final settings — the \"lossless baking\" claim survives contact with production settings, which is the headline.\n3) Scope cut: partner-scene ingestion tooling (custom capture -> MERF) moves to next window; LRB sees mipnerf360 scenes plus our two office captures only.\n\nAlso flagging: Leilani's embed API drew interest from two partner teams already. Good problem.\n\nZofia",
+  "labels": ["decision", "status"]
+}

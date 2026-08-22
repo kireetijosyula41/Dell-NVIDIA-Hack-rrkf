@@ -1,0 +1,17 @@
+{
+  "id": "gr/logic_inference_dataset/e02",
+  "thread_id": "gr/logic_inference_dataset/t1",
+  "in_reply_to": "gr/logic_inference_dataset/e01",
+  "date": "2026-02-12T15:14:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: LogicInference as a platform reasoning benchmark",
+  "body": "Dmitri,\n\nStaffing and compute:\n\n- Yara Jokic 40% research lead; Gustavo Moreau 50% on the generation pipeline and Corpus versioning; Paloma Castillo 30% Evalline task registration; Quentin Farkas 20% baseline configs.\n- Compute in two phases. Generation is CPU-only — the README warns generation takes a while, so Gustavo will parallelize across the batch pool rather than one big machine. For the fine-tuning grid we hold the vulcan-h100 reservation for the week of 2026-06-08 — 256 GPUs — confirmed for our exclusive use that week. Grid is 4 model sizes x 3 data mixes x 2 seeds; my sizing says the week covers it with ~15% slack.\n\nNote: Vulcan's maintenance window is Jun 22-24, safely after our week. But it means no spillover runs that week, so the grid config freezes Jun 1.\n\nDeshawn",
+  "labels": ["resources"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/lighthouse/e01",
+  "thread_id": "gr/lighthouse/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T08:40:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: Lighthouse relighting primitive",
+  "body": "Hi all,\n\nKicking off Lighthouse. Our open-source release predicts incident illumination at any 3D location in a scene: a narrow-baseline stereo pair of RGB images goes in, a multiscale RGBA lighting volume comes out, and spatially-varying lighting falls out of standard volume rendering. Product framing for data-platforms: a relighting primitive in the imaging pipeline, so downstream teams can composite objects into customer scenes with plausible lighting.\n\nMilestones:\n- Mar 27: pretrained model running on the InteriorNet test set via interiornet_test.py (checkpoint_dir/data_dir/output_dir flags wired to our storage).\n- Apr 24: retraining path validated with train.py on our own interior captures.\n- May 22: integration demo with the imaging pipeline team.\n\nSantiago owns staffing. Yusuf is research lead. Flag: the release notes say parts of the original code depend on non-Apache external codebases — Yusuf, please scope that first, it may constrain what we ship.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

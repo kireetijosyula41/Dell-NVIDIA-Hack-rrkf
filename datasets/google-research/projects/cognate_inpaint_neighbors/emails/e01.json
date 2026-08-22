@@ -1,0 +1,40 @@
+{
+  "id": "gr/cognate_inpaint_neighbors/e01",
+  "thread_id": "gr/cognate_inpaint_neighbors/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T09:20:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: cognate reflex prediction for low-resource lexicons",
+  "body": "Hi Jelena,\n\nKicking off the cognate reflexes project. Basis is our open-source SIGTYP 2022 shared-task work: two systems, a Cognate Neighbors model (the mockingbird-n1/n2 configurations) and a Cognate Inpainting model that treats reflex prediction like filling in missing cells of a cognate table.\n\nProduct framing: predicted reflexes let us bootstrap lexicons for low-resource languages where we have related-language data — the language portfolio's coverage OKR depends on exactly this kind of leverage. Milestones: reproduce shared-task numbers by end of April, pick a winning architecture by early June, hand a scored lexicon sample to the translation team by launch review in July.\n\nCan you get me staffing plus a compute sketch by mid-April? Nothing exotic expected — these models are small.\n\nThanks,\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

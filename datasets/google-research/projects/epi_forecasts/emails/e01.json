@@ -1,0 +1,17 @@
+{
+  "id": "gr/epi_forecasts/e01",
+  "thread_id": "gr/epi_forecasts/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:12:00Z",
+  "from": {"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "EpiHub kickoff: from forecast archive to weekly pipeline",
+  "body": "Team,\n\nKicking off the EpiHub operationalization. Today our open-source archive holds prospective quantile forecasts for three public-health targets - US jurisdiction-level weekly influenza, COVID-19, and RSV hospitalizations - organized by target hub and season, with files named YYYY-MM-DD-[model_name].csv in the hub-standard format. What partners actually need is a pipeline that produces those files every week without a human in the loop.\n\nMilestones for the Mar 30 - Jun 15 window: automated weekly generation for flu-hub by Apr 24, all three hubs (flu, covid19, RSV) plus backtesting against the 2025-2026 season by May 22, reliability review and partner handoff decision by Jun 12.\n\nSuccess metric: 8 consecutive weekly submissions with zero manual fixes and weighted interval score at or better than our archived 2025-2026 baseline.\n\nJelena owns staffing and budget.\n\nViktor",
+  "labels": ["kickoff", "spec"]
+}

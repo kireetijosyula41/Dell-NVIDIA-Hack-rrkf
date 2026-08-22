@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_classification/e01",
+  "thread_id": "gr/compositional_classification/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Project Kestrel kickoff: CFQ classification guardrail",
+  "body": "Hi Ivo,\n\nKicking off the compositional query-understanding effort — we're tracking this internally as Project Kestrel, so please use that tag in docs and standup notes. Base is our open-source CFQ classification work: convert CFQ into a sentence-pair classification task and train models with structure annotations, which measurably improves compositional generalization.\n\nWhy data-platforms cares: our query-understanding services fail on exactly the compositional patterns CFQ measures. A classifier that reliably scores query/parse pairs becomes a guardrail in front of the semantic parser.\n\nMilestones: datasets built by mid-March (including the model-negative variants, which need CFQ baseline beam outputs), trained classifiers with structure annotations by mid-April, integration recommendation by the 5/25 end of window.\n\nStaffing and compute by end of Feb?\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/attribute_with_prefixlm/e01",
+  "thread_id": "gr/attribute_with_prefixlm/t1",
+  "in_reply_to": null,
+  "date": "2026-04-08T08:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: ArtVLM attribute recognition for catalog enrichment",
+  "body": "Team,\n\nStarting the ArtVLM workstream. The pitch: our prefix language modeling approach to attribute recognition can auto-tag product and image catalogs with fine-grained attributes (color, material, state) far better than the classifier zoo we run today.\n\nPlan for the quarter: stand up training on VGARank, which extends Visual Genome with attribute_prompts (object fixed, attribute varied) and object_prompts (attribute fixed, object varied) at the bounding-box instance level. That ranking formulation is exactly what we need for catalog-scale scoring.\n\nMilestones: data loaders and baselines by 5/1, VGARank-Attribute eval readout by mid-June, launch review in July before window close on 7/27.\n\nDaniela, can you confirm allocations this week? Csilla and Kaia lead modeling, Vera the scoring/eval path, Saoirse the ingestion side.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

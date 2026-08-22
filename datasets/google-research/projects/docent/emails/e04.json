@@ -1,0 +1,18 @@
+{
+  "id": "gr/docent/e04",
+  "thread_id": "gr/docent/t1",
+  "in_reply_to": "gr/docent/e03",
+  "date": "2026-05-06T15:22:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: Reviews2Movielens as a first-class internal benchmark",
+  "body": "Wrapping decisions ahead of internal GA on May 15.\n\n1. Leaderboard went live April 20 (three days late, fine) and already has four teams submitting. Nice work Leilani.\n2. Baselines: Yusuf's entity-representation model posts 0.412 mean average precision on tag prediction over the scored split; that's our published reference number for GA.\n3. Scope cut: we will NOT ship the review-level sentiment labels this half. The extra label pass would push us past mid-May and nobody has a committed use case. Revisit at Q3 planning — note OKRs lock June 26.\n4. Docs: Freya to fold the mapping-accuracy caveat (97% on a 200-sample audit) into the dataset card so downstream teams stop re-asking.\n\nGA announcement goes out May 15. Thanks everyone — this one's been smooth.\n\nDmitri",
+  "labels": ["decision"]
+}

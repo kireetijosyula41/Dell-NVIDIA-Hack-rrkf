@@ -1,0 +1,17 @@
+{
+  "id": "gr/hyperbolic_discount/e01",
+  "thread_id": "gr/hyperbolic_discount/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:16:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Hyperbolic Agent kickoff - multi-horizon value learning",
+  "body": "Team,\n\nKicking off the Hyperbolic Agent effort for agents-rl. Basis is our open-source release on hyperbolic discounting and learning over multiple horizons: instead of one exponential discount, the agent maintains value heads across many gammas and combines them hyperbolically. The interesting product question isn't the discounting itself - it's the repeated finding that the multi-horizon auxiliary task makes the base agent stronger, especially on exploration-heavy games.\n\nScope: reproduce Hyperbolic/Multi-Rainbow from the shipped gin configs, then sweep the head count and exponent to find the cheapest configuration that keeps the gains. Milestones: repro by early April, sweep through May, recommendation memo by 2026-06-15 feeding the Q3 agent-training-stack decisions.\n\nHalima leads experiments, Leilani infra, Gustavo analysis. Bao - staffing and compute note please, the Atari sweeps are the cost center here.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

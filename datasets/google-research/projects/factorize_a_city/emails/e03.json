@@ -1,0 +1,41 @@
+{
+  "id": "gr/factorize_a_city/e03",
+  "thread_id": "gr/factorize_a_city/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:10:00Z",
+  "from": {
+    "name": "Carmen Reyes",
+    "email": "carmen.reyes@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: repro clean, alignment on our stacks is harder",
+  "body": "Status.\n\nRepro: the pretrained checkpoint reproduces the paper's decomposition on the NYC sample — reflectance layers are stable across the stack and shading captures the illumination variation. Bilal's harness scores reconstruction PSNR within 0.3dB of reference.\n\nOur own stacks are harder. Capture intervals are longer than the NYC data, and the stock twenty alignment steps with frozen weights aren't always enough — on 4 of our 15 pilot stacks, alignment settles into a visibly wrong local minimum. Wanjiru is testing 40-step schedules plus a coarse pre-align; early signs are good but it doubles per-stack cost.\n\nRisk: if we end up needing manual QA per stack, the July demo shrinks to a curated subset. Recommend we decide demo scope by Jul 1.\n\nCarmen",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

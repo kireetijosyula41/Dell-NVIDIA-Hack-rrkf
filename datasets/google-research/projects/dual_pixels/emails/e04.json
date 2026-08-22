@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_pixels/e04",
+  "thread_id": "gr/dual_pixels/t1",
+  "in_reply_to": "gr/dual_pixels/e03",
+  "date": "2026-06-10T15:41:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: dual-pixel depth for the imaging pipeline",
+  "body": "Decisions for Monday's integration review:\n\n1. We take the slightly larger student. Linnea's inverse-depth weighting closed most of the far-range gap, but the last bit costs 1.8ms over the original latency budget — and Saoirse's runtime numbers show we can absorb that by moving the preprocessing to the ISP path. 11x smaller than DPNet, quality within tolerance on all affine-invariant metrics.\n2. Relighting scopes to confident-anchor captures per Fumiko's proposal; defocus is unconditional. This is the story we take to the imaging platform team.\n3. Scope cut: no low-light specialization this half. The dataset skews well-lit and I won't promise what we haven't measured.\n4. Distillation recipe gets written up as a reusable asset under Linnea's name — it's the piece I expect other vision teams to come asking for.\n\nSee you Monday.\n\nLucia",
+  "labels": ["decision"]
+}

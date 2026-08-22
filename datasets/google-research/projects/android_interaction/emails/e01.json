@@ -1,0 +1,46 @@
+{
+  "id": "gr/android_interaction/e01",
+  "thread_id": "gr/android_interaction/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:40:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: AndroidInteraction — when should an agent ask the user?",
+  "body": "Hi Daniela, team,\n\nKicking off AndroidInteraction. The dataset is 772 episodes, 3,605 steps, across more than 250 Android apps, and each step is annotated for whether user interaction is required plus the natural language message the agent should send when it is. That's a question we've had no data for: not what the agent should do, but when it should stop and ask.\n\nIt adopts the AndroidControl data structure — screenshots, accessibility trees, high-level and low-level instructions, JSON actions — so our existing ingest mostly carries over.\n\nMilestones: ingest and interaction-classifier baseline by end of March, message-quality eval in April, readout the week of May 11.\n\nUlla",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

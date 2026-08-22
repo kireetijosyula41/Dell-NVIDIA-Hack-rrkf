@@ -1,0 +1,17 @@
+{
+  "id": "gr/hipi/e02",
+  "thread_id": "gr/hipi/t1",
+  "in_reply_to": "gr/hipi/e01",
+  "date": "2026-02-24T14:22:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: HIPI kickoff - inverse-RL relabeling as our multi-task data flywheel",
+  "body": "Ulla,\n\nResourcing picture as promised. Staffing: Maren at 80%, Tereza at 50%, Nikhil at 40% through the window. Compute: we can live on titan-a100 best-effort for the repro phase - I've asked for 64 GPUs steady-state, bursting to 128 for the April experiment matrix. No Vulcan reservation needed for this one.\n\nPlatform dependency worth flagging: our experience buffers and relabeled-trajectory shards live on Corpus. One date to plan around: the Corpus v2 migration freeze is 2026-06-26, so relabeled-experience buffers need to be reading from v2 paths before then. That lands after our demo window, but Maren's relabeling infra should write v2-compatible shards from day one so we're not doing a rushed migration in June.\n\nOnly staffing risk is Tereza splitting time with another review in March; I'll keep it above 50%.\n\nBruno",
+  "labels": ["resources"]
+}

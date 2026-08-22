@@ -1,0 +1,16 @@
+{
+  "project": "gr/cluster_gcn",
+  "conflicts": [
+    {
+      "conflict_id": "C044",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "kobe"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "We're running this under the internal codename Project Obsidian — use it in channel names and docs."
+    }
+  ]
+}

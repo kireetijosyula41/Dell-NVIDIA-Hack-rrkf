@@ -1,0 +1,12 @@
+{
+  "project": "gr/multilingual_abbreviation_survey",
+  "conflicts": [
+    {
+      "conflict_id": "C118",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["investigating_m4"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-07-06, which covers the full training sweep across locale groupings plus the ablations Umar wants"
+    }
+  ]
+}

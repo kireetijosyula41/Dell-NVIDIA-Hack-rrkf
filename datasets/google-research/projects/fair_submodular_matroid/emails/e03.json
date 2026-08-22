@@ -1,0 +1,41 @@
+{
+  "id": "gr/fair_submodular_matroid/e03",
+  "thread_id": "gr/fair_submodular_matroid/t2",
+  "in_reply_to": null,
+  "date": "2026-04-08T11:20:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Status: Pokec repro matches, internal logs bind harder",
+  "body": "Status.\n\nThe port compiles clean under C++17 and the oracle interfaces (SubmodularFunction / Matroid subclasses) mapped onto our retrieval scoring with less than a day of glue.\n\nRepro: on Pokec maximum coverage we match the paper's pattern — the fair streaming algorithm gives up single-digit-percent coverage versus unconstrained greedy while satisfying the per-group constraints exactly; our runs land within noise of the reference implementation.\n\nInternal-logs pilot (Fumiko): early replays show the fairness constraint binds much harder on our data than on Pokec — group skew is worse — so the utility cost is closer to 8-9% on some surfaces. That's the number product will care about; we should present it per-surface, not averaged.\n\nRisk: partition-matroid config per surface is manual right now. Freya's config-generation tool is the fix but adds a week.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

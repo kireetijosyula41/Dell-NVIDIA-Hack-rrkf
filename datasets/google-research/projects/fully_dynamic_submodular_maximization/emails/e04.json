@@ -1,0 +1,39 @@
+{
+  "id": "gr/fully_dynamic_submodular_maximization/e04",
+  "thread_id": "gr/fully_dynamic_submodular_maximization/t2",
+  "in_reply_to": "gr/fully_dynamic_submodular_maximization/e03",
+  "date": "2026-06-24T14:05:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Submodular status: enron replication done, influence-max 20x slower",
+  "body": "Team,\n\nDecision: Q3 scope is coverage-only, per Csilla's recommendation. Influence maximization stays a research thread with no OKR attached — I have written it out of the draft OKRs before Friday's lock.\n\nTimeline: the June graph snapshot comes out of our cirrus-tpu week starting Jun 29; Bilal, please have the A/B harness ready to consume it the following week so the freshness experiment design is credible in the Q3 OKR review.\n\nGiannis — nice work getting the port to match oracle-call counts bit-for-bit; put a short note on the deterministic-randomness trick in the team wiki.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

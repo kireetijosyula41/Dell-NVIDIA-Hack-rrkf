@@ -1,0 +1,49 @@
+{
+  "id": "gr/invariant_explanations/e04",
+  "thread_id": "gr/invariant_explanations/t1",
+  "in_reply_to": "gr/invariant_explanations/e03",
+  "date": "2026-06-24T11:05:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: invariant explanations / meta-model audits",
+  "body": "Decision from Monday's review: the audit-tool prototype is a go, X,H covariates only. Rationale: X,H at train_fraction 0.8 delivers 87.9% with trivial storage, while W@epoch adds under a point at the epochs worth using but drags the 2 TB snapshot problem into every customer conversation — so W@epoch is cut from the product path and stays a research question. Q3 scope (locked in OKRs before June 26): prototype serving one pilot vision team, meta-model retrained weekly, audit report rendered through Evalline. Vera owns productionizing the covariate-pipeline handoff from Bilal as he rolls off; Fumiko's calibration section made the LRB pre-read and Nadia flagged no blockers. Nice work — this went from paper mechanics to a fundable tool in a quarter. — Lucia",
+  "labels": [
+    "decision"
+  ]
+}

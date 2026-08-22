@@ -1,0 +1,36 @@
+{
+  "id": "gr/gen_patch_neural_rendering/e03",
+  "thread_id": "gr/gen_patch_neural_rendering/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:40:00Z",
+  "from": {
+    "name": "Milan Zapata",
+    "email": "milan.zapata@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "GPNR status: repro converging, reflective assets weak",
+  "body": "Hi Alina,\n\nStatus. The CUDA rebuild is behind us — we are on current JAX after fixing two API breaks the 0.2.19 pin was hiding. Training repro on the IBRNet scenes is converging: PSNR on held-out scenes is within 0.3dB of the paper at 80% of the training schedule, and dataset.ff_base_dir now points at our internal store instead of the drive downloads.\n\nQuality read: on catalog-like scenes (textured objects, controlled lighting), generalization is genuinely good with no per-scene tuning. Reflective assets are the weak spot — noticeable artifacts on glass and chrome.\n\nRisk: eval renders are slow, about 11s per 756x1008 frame — fine for previews, not for anything interactive. Flagging so the Q3 framing stays honest.\n\nMilan",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

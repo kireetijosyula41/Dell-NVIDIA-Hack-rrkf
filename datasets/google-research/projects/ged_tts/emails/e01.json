@@ -1,0 +1,45 @@
+{
+  "id": "gr/ged_tts/e01",
+  "thread_id": "gr/ged_tts/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:33:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Spectral energy distance TTS — kickoff",
+  "body": "Hi Santiago,\n\nKickoff for the spectral energy distance TTS workstream. The method trains highly parallel speech models without an analytical likelihood: a generalized energy distance over magnitude-spectrogram distributions, a proper scoring rule that can be estimated without bias from minibatches, with a repulsive term over multi-scale spectrogram distances. Our release hit MOS 4.25 — competitive with autoregressive systems that need tens of thousands of sequential ops per second of generated audio.\n\nProduct goal: low-latency TTS on our serving hardware, where autoregressive sampling is the cost driver today. Milestones: training repro by Apr 24, internal-voice dataset run by Jun 12, production-scale training in July, MOS panel late July.\n\nKaia, Jorge, Gustavo and Chiara assigned.\n\nGoran",
+  "labels": [
+    "kickoff"
+  ]
+}

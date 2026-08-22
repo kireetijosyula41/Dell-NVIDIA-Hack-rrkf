@@ -1,0 +1,12 @@
+{
+  "project": "gr/RevThink",
+  "conflicts": [
+    {
+      "conflict_id": "C062",
+      "type": "codename_collision",
+      "counterpart_projects": ["lm_fact_tracing"],
+      "planted_in": ["e01", "e02"],
+      "claim_as_written": "We're running this internally under the codename Project Palisade - please use it in subject lines and planning docs so the threads are easy to track. (Reinforced in e02: 'Palisade staffing below' and continued use of the codename.)"
+    }
+  ]
+}

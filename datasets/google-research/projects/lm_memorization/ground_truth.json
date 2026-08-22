@@ -1,0 +1,12 @@
+{
+  "project": "gr/lm_memorization",
+  "conflicts": [
+    {
+      "conflict_id": "C019",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["mutual_information_representation_learning"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the capacity-sweep generation runs we hold the cirrus-tpu reservation for the week of 2026-06-08 — 256 accelerators — which is enough to prompt all four model sizes across the full duplication grid in one week."
+    }
+  ]
+}

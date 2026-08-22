@@ -1,0 +1,17 @@
+{
+  "id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e03",
+  "thread_id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:44:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Bag-combination status: gains replicate, but shrink on realistic bags",
+  "body": "Hi Santiago, Dmitri,\n\nStatus. Baseline repro closed May 21 - almostnolabel (commit 4de5f54) and LMMCM both reproduce, and on the paper's pseudo-synthetic datasets the bag-combination method beats both, matching the AISTATS'22 tables.\n\nNow the honest part: on our internal-shaped data the gains shrink. The paper's constructions have relatively clean, balanced bags; with the skewed bag-size distributions and noisier proportions our customers actually have, the improvement over the best single-bag baseline drops from ~4.5 points to ~1.8 points of AUC. Still positive everywhere we tested, never negative - but the pitch should say \"consistent modest gains,\" not \"large gains.\"\n\nWorth noting Chiara's dedup pipeline earned its keep: the leakage checks caught a cross-split contamination in our first internal construction that would have shown a fake +6 points. That number would have been embarrassing.\n\nQuentin is expanding the matrix to the June 26 checkpoint.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/Uboreshaji_Modeli",
+  "conflicts": [
+    {
+      "conflict_id": "C098",
+      "type": "codename_collision",
+      "counterpart_projects": ["assessment_plan_modeling"],
+      "planted_in": ["e01", "e02"],
+      "claim_as_written": "Internal codename is Project Tundra - use it on all planning artifacts and in the budget tool. (Reinforced in e02: 'Tundra staffing and compute below' and continued use of the codename.)"
+    }
+  ]
+}

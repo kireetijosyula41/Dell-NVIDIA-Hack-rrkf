@@ -1,0 +1,26 @@
+{
+  "id": "gr/gaternet",
+  "title": "You Look Twice: GaterNet for Dynamic Filter Selection in CNNs",
+  "summary": "Explores GaterNet — a separate gater network that performs input-conditional filter selection in a backbone CNN, with released ResNet-20-Gated and ResNet-56-Gated CIFAR-10 checkpoints — as input-conditional compute for Meridian's inference tiers.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Rafael Duran",
+    "Vera Egede",
+    "Rosa Mensah",
+    "Umar Costa"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gaternet",
+    "url": "https://github.com/google-research/google-research/tree/master/gaternet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

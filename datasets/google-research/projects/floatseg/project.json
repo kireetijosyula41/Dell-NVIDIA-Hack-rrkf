@@ -1,0 +1,27 @@
+{
+  "id": "gr/floatseg",
+  "title": "FLOAT: Factorized Learning of Object Attributes for Improved Multi-object Multi-part Scene",
+  "summary": "FLOAT factorizes the learning of object attributes to improve multi-object multi-part scene parsing (CVPR 2022), shipping training and inference notebooks with preset settings and datasets hosted on Zenodo.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Csilla Nassar",
+    "Gustavo Moreau",
+    "Tereza Aliyev",
+    "Wei Ivanov",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "floatseg",
+    "url": "https://github.com/google-research/google-research/tree/master/floatseg",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

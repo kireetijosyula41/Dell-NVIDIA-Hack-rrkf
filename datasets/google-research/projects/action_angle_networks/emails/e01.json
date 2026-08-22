@@ -1,0 +1,18 @@
+{
+  "id": "gr/action_angle_networks/e01",
+  "thread_id": "gr/action_angle_networks/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:11:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Action-Angle Networks kickoff - physics surrogates that respect structure",
+  "body": "Team,\n\nKicking off the Action-Angle Networks evaluation. Scientific-computing prospects keep telling us generic neural surrogates drift on long rollouts because they ignore the physics. Our open-source JAX implementation attacks this by learning dynamics in action-angle coordinates, where the structure of integrable motion is built in rather than hoped for.\n\nWhat I like operationally: the whole thing is config-driven via ml_collections config_flags - training runs from main.py with a config like configs/action_angle_flow.py, and hyperparameters (num_train_steps, batch_size) override from the command line. That makes systematic benchmarking cheap.\n\nPlan for the window: repro of the paper's systems by March 27; a long-horizon rollout benchmark versus two baseline surrogate families in May; go/no-go on a customer pilot at the June 1 review.\n\nDeshawn - staffing note and compute ask when you can. This is small-compute, the leverage is in careful evaluation.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/hypertransformer",
+  "title": "HyperTransformer: Single-Shot CNN Model Generation with a Transformer",
+  "summary": "Builds on our HyperTransformer release: a transformer that generates the weights of a small CNN directly from few-shot support samples, decoupling task-space complexity from the target model, with a semi-supervised regime that exploits unlabeled support examples.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Vera Egede", "Saoirse Eriksen", "Carmen Reyes"],
+  "window": {"start": "2026-04-13", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hypertransformer",
+    "url": "https://github.com/google-research/google-research/tree/master/hypertransformer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

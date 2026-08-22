@@ -1,0 +1,17 @@
+{
+  "id": "gr/demogen/e01",
+  "thread_id": "gr/demogen/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:35:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - predicting generalization gap before we pay for training",
+  "body": "Team,\n\nKicking off DEMOGEN. The dataset is 756 trained models - CNN variants and ResNet-32, across weight decay, dropout, normalization, width and learning rate - each with its train and test performance. Test accuracies span 60% to 90.5% and generalization gaps span 1% to 35%, which is exactly the spread you need to learn a predictor. The release also ships the margin-distribution and total-variation utilities from the original work.\n\nThe product question: can we rank candidate configs by predicted generalization gap using only quantities measurable early in training? If yes, we stop burning cluster time on configs that were never going to generalize. That is a straight cost argument, which is why I expect it to get funded.\n\nMar 30 - Jul 6:\n- Apr 30: margin-distribution predictor reproduced on DEMOGEN.\n- Jun 5: our own model zoo - ~200 internal configs trained and measured.\n- Jun 30: predictor evaluated on our zoo, cost-saving estimate.\n\nDaniela on resourcing and the budget. Umar tech lead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

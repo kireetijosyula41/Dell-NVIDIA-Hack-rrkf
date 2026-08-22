@@ -1,0 +1,16 @@
+{
+  "project": "gr/didi_dataset",
+  "conflicts": [
+    {
+      "conflict_id": "C101",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "docent"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are scoping and staffing a benchmark leaderboard service built from scratch: Chiara Olsen at 60% and Farah Haddad at 40% through April to design and build it."
+    }
+  ]
+}

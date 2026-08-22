@@ -1,0 +1,19 @@
+{
+  "id": "gr/bitempered_loss/e02",
+  "thread_id": "gr/bitempered_loss/t1",
+  "in_reply_to": "gr/bitempered_loss/e01",
+  "date": "2026-04-29T13:40:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: bi-tempered loss - staffing and the Corpus deadline",
+  "body": "Ximena,\n\nStaffing: Yara 70%, Gustavo 60% (owns the benchmark harness), Fumiko 50%, Rafael 30% for theory review through June. Compute is modest - titan-a100 best-effort covers the benchmark matrix; no reservation needed.\n\nThe binding constraint is data, not compute. Corpus v2 migration freeze is 2026-06-26, so every noisy-label benchmark set we need has to be ingested and labeled before that date - I've built the schedule backwards from June 26. That means Gustavo's ingestion requests go to the Corpus team by May 22 at the latest, and our M2 benchmark matrix effectively cannot slip.\n\nOne ask: can you confirm with the LRB calendar that a mid-July slot exists? If they're booked out we should know now, not in June.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gr/compositional_transformers",
+  "title": "Making Transformers Solve Compositional Tasks",
+  "summary": "Systematic study of transformer design choices — position encodings, copy decoders, weight sharing — that make transformers solve compositional generalization tasks like SCAN, PCFG, COGS, and CFQ.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Carmen Reyes",
+    "Fumiko Rossi",
+    "Katya Silva",
+    "Nikhil Abebe",
+    "Wei Ivanov"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-08"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "compositional_transformers",
+    "url": "https://github.com/google-research/google-research/tree/master/compositional_transformers",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

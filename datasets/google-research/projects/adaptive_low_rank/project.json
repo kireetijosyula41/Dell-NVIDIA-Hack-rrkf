@@ -1,0 +1,27 @@
+{
+  "id": "gr/adaptive_low_rank",
+  "title": "AdaRank: Disagreement Based Module Rank Prediction for Low-rank Adaptation",
+  "summary": "AdaRank predicts per-module LoRA ranks from model disagreement instead of using one uniform rank, on the evidence that later layers diverge more from pretrained weights during finetuning. It generalizes better than uniform ranks on unseen data while leaving pretraining and adaptation untouched — no extra objectives or regularizers.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Wei Ivanov",
+    "Umar Costa",
+    "Tereza Aliyev",
+    "Emeka Pinto"
+  ],
+  "codename": "Project Basalt",
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "adaptive_low_rank",
+    "url": "https://github.com/google-research/google-research/tree/master/adaptive_low_rank",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

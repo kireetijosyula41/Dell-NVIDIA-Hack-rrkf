@@ -1,0 +1,15 @@
+{
+  "id": "gr/jslm/e03",
+  "thread_id": "gr/jslm/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T17:05:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}],
+  "subject": "[Project Basalt] Status: PPM integrated, memory ceiling on long sessions",
+  "body": "Hi Priya, Alina,\n\nUpdate on Basalt. The PPM character language model is integrated into the input-surface prototype — hit the May 8 date, and prediction latency is comfortably under 8ms per keystroke on mid-tier hardware, so the on-the-fly training story holds.\n\nEarly adaptation numbers are encouraging: per-user training in-session cuts keystrokes-per-character by 11% versus the static baseline after ~15 minutes of typing. Kneser-Ney-style smoothing on top of the base PPM backoff gave us another point; Yara has the full curves.\n\nRisk: context-trie memory growth. On long dictation-style sessions (2h+) the PPM trie for a max-order-5 model crosses 190MB in the browser tab, and low-end devices start evicting. Options are capping the model order at 4 or pruning low-count nodes on a timer. Pruning is the better quality trade but it's ~1.5 weeks of work, which puts mild pressure on the Jun 12 study date.\n\nHyun",
+  "labels": ["status", "risk"]
+}

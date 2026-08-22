@@ -1,0 +1,40 @@
+{
+  "id": "gr/muNet/e04",
+  "thread_id": "gr/muNet/t1",
+  "in_reply_to": "gr/muNet/e03",
+  "date": "2026-05-05T15:45:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: muNet multitask evolution — closing decisions",
+  "body": "Team,\n\nDecisions for the May 11 close:\n\n1) The adoption proposal goes forward with a phased plan: migrate 4 of the 11 forks in Q3 using the clean-to-noisy curriculum heuristic, which held up in Yara's follow-up runs (freeze-then-branch also helped — thanks Hyun — and it's in the proposal as the isolation mechanism for the noisiest task).\n2) Headline numbers for the proposal: fork-level quality at 41% fewer added parameters per task, and one serving artifact instead of four.\n3) Scope cut: full 11-fork migration is explicitly not proposed for Q3. The ordering-sensitivity result means we earn trust four tasks at a time.\n4) Milan's port is done and documented, so his roll-off at end of May is clean; serving integration lands with the platform team in Q3.\n\nProposal draft to this thread by Friday for review before I take it to Hana.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

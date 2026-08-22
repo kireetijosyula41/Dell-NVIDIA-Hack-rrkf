@@ -1,0 +1,17 @@
+{
+  "id": "gr/gfsa/e01",
+  "thread_id": "gr/gfsa/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T08:58:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff - Project Quillon (GFSA graph-structure layer)",
+  "body": "Hi Jelena,\n\nKickoff for the GFSA workstream. Internally we are calling this effort Project Quillon - please use that name in decks and OKR entries so the portfolio roll-up stays consistent.\n\nThe pitch: our open-source GFSA layer learns new edge types for a graph by training a finite-state automaton policy over the base graph, end to end. The demo notebook already learns a simple static analysis of Python code, and the new-task guide shows how to attach the layer to other graphs and graph-based MDPs. For graphs-retrieval, that becomes a differentiable edge-inference module customers can drop into their own graph stacks.\n\nMilestones inside our window: static-analysis repro by 4/24, one new retrieval-flavored task by 5/22, LRB pre-read targeting 6/11.\n\nFumiko leads research, Hyun on modeling, Bilal on infra, Halima part-time on evals. Jelena - staffing confirmation and a compute sketch by Thursday?\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

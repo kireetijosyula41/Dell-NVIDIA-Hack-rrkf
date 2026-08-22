@@ -1,0 +1,18 @@
+{
+  "id": "gr/hmc_swindles",
+  "title": "Hamiltonian Monte Carlo Swindles",
+  "summary": "Builds on our Hamiltonian Monte Carlo Swindles release: variance-reduction tricks for HMC with a four-step pipeline - training a NeuTra preconditioner, tuning the sampler, benchmarking, and evaluation - to make posterior inference cheaper and more reliable.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Paloma Castillo", "Wei Ivanov", "Leilani Nakamura", "Oyin Iversen"],
+  "window": {"start": "2026-02-09", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hmc_swindles",
+    "url": "https://github.com/google-research/google-research/tree/master/hmc_swindles",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

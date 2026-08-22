@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_classification/e04",
+  "thread_id": "gr/compositional_classification/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T15:55:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kestrel: integration recommendation decisions",
+  "body": "Team,\n\nKestrel decisions from today's review:\n\n1. The integration recommendation goes forward on flat structure annotations only. Linnea's numbers (79.8% vs 71.4%, with trees adding barely a point at real pipeline cost) make this easy — the brittle xlink-dependent tree path moves to a Q3 research item, not a launch dependency.\n2. Model-negative training is mandatory in the recommended recipe; rule-based-only configs are documented as a fast-start option.\n3. Handoff: Yara writes the recommendation memo with Linnea by 5/20; I'll walk it into the query-understanding team's planning ahead of Q3 OKR lock on 6/26.\n\nThis one lands inside the window with room to spare — nice work.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

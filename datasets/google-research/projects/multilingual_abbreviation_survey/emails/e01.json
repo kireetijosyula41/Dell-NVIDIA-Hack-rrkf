@@ -1,0 +1,17 @@
+{
+  "id": "gr/multilingual_abbreviation_survey/e01",
+  "thread_id": "gr/multilingual_abbreviation_survey/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T09:30:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: abbreviation-aware normalization from the survey release",
+  "body": "Hi Bao,\n\nKicking off the abbreviation project. We're building on our open-source survey release: survey.tsv has consultant-level responses across 19 columns per locale — whether a locale has first-character abbreviations (NATO-style), stump compounds (FiDi < Financial District), truncations (Col. < Colonel), augmented truncations (footie < football), word-internal deletions (Blvd.), plus examples for each. Locale codes like ru, ja, pt-br.\n\nProduct goal: an abbreviation-aware text normalization model for the language portfolio's keyboard and TTS pipelines — expand or preserve abbreviations per locale conventions instead of today's one-size-fits-all rules.\n\nRough milestones: survey-to-features pipeline by mid-April, per-locale rule baselines by end of May, multilingual model trained in early July, readout before 07-20. Compute ask comes from your side once the model config settles.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

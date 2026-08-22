@@ -1,0 +1,27 @@
+{
+  "id": "gr/factorize_a_city",
+  "title": "Learning to Factorize and Relight a City",
+  "summary": "Learns to decompose stacks of city panoramas into intrinsic components — log reflectance and log shading — and relight them, shipping a pretrained checkpoint, an NYC sample stack, and an alignment procedure that runs twenty gradient-descent steps with frozen weights.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Bilal Novak",
+    "Wanjiru Horvat",
+    "Chiara Olsen",
+    "Carmen Reyes",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "factorize_a_city",
+    "url": "https://github.com/google-research/google-research/tree/master/factorize_a_city",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

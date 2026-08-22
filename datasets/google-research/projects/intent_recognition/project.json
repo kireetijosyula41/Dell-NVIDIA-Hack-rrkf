@@ -1,0 +1,26 @@
+{
+  "id": "gr/intent_recognition",
+  "title": "Intent recognition",
+  "summary": "Productizes the sensor-ML tooling for inferring user activities: AnnotatedRecordingCollections through mediapipe processing, SequenceExample conversion and TensorFlow training, toward an activity-signal API for internal partners.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Carmen Reyes",
+    "Nikhil Abebe",
+    "Fumiko Rossi",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "intent_recognition",
+    "url": "https://github.com/google-research/google-research/tree/master/intent_recognition",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

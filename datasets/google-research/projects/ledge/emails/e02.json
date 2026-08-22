@@ -1,0 +1,17 @@
+{
+  "id": "gr/ledge/e02",
+  "thread_id": "gr/ledge/t1",
+  "in_reply_to": "gr/ledge/e01",
+  "date": "2026-03-13T11:47:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Ledge interpretable-commands evaluation",
+  "body": "Dmitri,\n\nStaffing and constraints:\n\n- Tereza Aliyev 50% (tech lead), Kaia Wolde 30% on the command-extraction analysis, Chiara Olsen 30% on packaging, Quentin Farkas 20% floating for eval support.\n- Compute is trivial — this runs on a workstation; the demo literally ends with inspecting /tmp/refit.png. No cluster ask.\n\nThe real constraint is data. Our three internal target functions come out of Corpus, and Jun Varga's Corpus v2 migration freeze lands 2026-07-10, so every target-function dataset we need has to be re-ingested and validated before that date; I've set our internal cutoff at July 3. Chiara will file the ingestion tickets this week so we're not queuing behind everyone else in late June.\n\nIvo",
+  "labels": ["resources"]
+}

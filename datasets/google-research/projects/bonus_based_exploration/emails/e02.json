@@ -1,0 +1,18 @@
+{
+  "id": "gr/bonus_based_exploration/e02",
+  "thread_id": "gr/bonus_based_exploration/t1",
+  "in_reply_to": "gr/bonus_based_exploration/e01",
+  "date": "2026-02-10T14:25:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Project Quillon - staffing + compute",
+  "body": "Dmitri,\n\nStaffing: Yusuf 60% as TL, Tereza 50% on the harness (she'll extend the dqn_rnd.gin config pattern so each bonus is a gin swap, nothing hard-coded), Ondrej 50% on analysis. That's lean but this is benchmarking, not research.\n\nCompute: the sweep is 3 methods x 8 ALE games x 5 seeds at 200M frames, roughly 120 runs. PixelCNN pseudo-counts is the expensive one - the density model roughly doubles per-step cost vs. RND. I'm budgeting 48 titan-a100 GPUs best-effort through mid-April; no reservation needed, but if the shared pool gets crowded our Apr 17 sweep-complete date slips a week and I'd rather flag that now.\n\nOne scope check: Montezuma's Revenge is in the game set, yes? It's the sparse-reward poster child and the sales one-pager is weaker without it.\n\nJelena",
+  "labels": ["resources"]
+}

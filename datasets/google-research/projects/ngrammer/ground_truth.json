@@ -1,0 +1,12 @@
+{
+  "project": "gr/ngrammer",
+  "conflicts": [
+    {
+      "conflict_id": "C048",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["bnn_hmc"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Rafael Duran: committed at 60% to N-Grammer for July 2026 to lead the flax/haiku API release — he wrote our internal Jax API guidelines, so the mid-July library milestone is his to land."
+    }
+  ]
+}

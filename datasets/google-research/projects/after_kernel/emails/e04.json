@@ -1,0 +1,35 @@
+{
+  "id": "gr/after_kernel/e04",
+  "thread_id": "gr/after_kernel/t2",
+  "in_reply_to": "gr/after_kernel/e03",
+  "date": "2026-05-06T15:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: After-kernel status: MNIST 3-vs-8 invariance results",
+  "body": "Freya, Santiago,\n\nDecision on scope, following Monday's sync: rotation invariance is out of report v1. We keep translation, zoom, and quadrant-swap — those three already tell the diagnostics story, and the rotation grid would push the readout past the window. Rotations go on the backlog together with the seed stopping-criterion fix.\n\nThe harness stays in scope; it's the piece that makes this repeatable for every future finetune, and it's most of the reason this becomes a product surface rather than a one-off repro.\n\nReadout confirmed for May 14, Hana's staff. Freya, send me the three headline plots by May 11 and I'll build the deck around them.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

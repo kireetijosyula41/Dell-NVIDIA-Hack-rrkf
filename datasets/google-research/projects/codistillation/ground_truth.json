@@ -1,0 +1,16 @@
+{
+  "project": "gr/codistillation",
+  "conflicts": [
+    {
+      "conflict_id": "C052",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "dictionary_learning"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Saoirse Eriksen is committed at 65% to this project for May 2026 to build the two-worker prediction-exchange layer — that's the long pole, and May is when it has to land."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/kobe/e04",
+  "thread_id": "gr/kobe/t2",
+  "in_reply_to": "gr/kobe/e03",
+  "date": "2026-05-12T09:49:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Obsidian status: pilot decision",
+  "body": "Team,\n\nDecision on the pilot, based on Wei's coverage analysis.\n\nWe run the May 18 pilot on the two catalog localization pairs only, and KoBE ships as part of a composite: entity-grounding score from KoBE plus the existing fluency metric, never KoBE alone. The conversational-support domain is explicitly out of scope — 31% zero-entity segments means we'd be selling noise, and I'd rather tell the localization team that plainly now.\n\nAlso agreed with Deshawn: the in-house linker build goes into Q3 planning as Obsidian phase 2, since the live candidate-side linking is what unlocks arbitrary customer content instead of pre-annotated sets. Wei, please write the half-page scoping note by Friday so it lands before OKR discussions heat up.\n\nSaoirse — endpoint to prod behind the pilot flag by Thursday, please.\n\nThanks all,\nPriya",
+  "labels": ["decision"]
+}

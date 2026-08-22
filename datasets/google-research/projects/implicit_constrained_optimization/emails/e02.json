@@ -1,0 +1,17 @@
+{
+  "id": "gr/implicit_constrained_optimization/e02",
+  "thread_id": "gr/implicit_constrained_optimization/t1",
+  "in_reply_to": "gr/implicit_constrained_optimization/e01",
+  "date": "2026-02-19T13:55:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Project Sirocco kickoff - staffing and compute",
+  "body": "Ximena,\n\nResourcing for Sirocco:\n\n- Staffing: Wanjiru 60%, Fumiko 50%, Nikhil 40% through late May. No hiring ask.\n- Compute: light - CelebA attribute classifiers train on single GPUs, so a 12-16 GPU slice of titan-a100 best-effort covers the repro matrix (attributes x target FPRs x sigmoid temperatures). The internal-classifier phase runs on the owning teams' existing training setups, we just bring the ICO loss.\n- Data access: the two internal screening classifiers involve sensitive data, so I've filed the Privacy Review paperwork already - their 2-3 week SLA means clearance should land just as the CelebA repro finishes. Filed under the Sirocco codename per your doc-tagging note.\n\nOne planning caution: the second internal classifier's owning team is mid-reorg; if their eval infra isn't stable by early April I'd rather drop to one internal case than rush two. Flagging now so it's not a surprise in the memo.\n\nIvo",
+  "labels": ["resources"]
+}

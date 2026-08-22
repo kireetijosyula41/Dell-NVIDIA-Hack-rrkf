@@ -1,0 +1,18 @@
+{
+  "id": "gr/automated_feature_engineering",
+  "title": "Automated Feature Engineering (AFE)",
+  "summary": "Builds an automated feature engineering system that uses local and global feature importance masks to learn which transformations of which input features most improve a downstream ML task, aiming to remove hand-crafted feature work from tabular modeling.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": ["Linnea Yamada", "Rosa Mensah", "Giannis Sato", "Yusuf Keita"],
+  "window": {"start": "2026-04-27", "end": "2026-08-10"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "automated_feature_engineering",
+    "url": "https://github.com/google-research/google-research/tree/master/automated_feature_engineering",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

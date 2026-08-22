@@ -1,0 +1,26 @@
+{
+  "id": "gr/COSTAR",
+  "title": "COSTAR: COunterfactual Self-supervised TrAnsformeR",
+  "summary": "COSTAR is a self-supervised transformer for counterfactual estimation over temporal treatment sequences, evaluated on tumor growth, semi-synthetic MIMIC-III, and M5 benchmarks. We are hardening the open-source release into a treatment-effect forecasting component for the data-platforms portfolio.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Linnea Yamada",
+    "Jorge Vidal",
+    "Carmen Reyes",
+    "Amara Okafor"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "COSTAR",
+    "url": "https://github.com/google-research/google-research/tree/master/COSTAR",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

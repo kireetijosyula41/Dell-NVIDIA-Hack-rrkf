@@ -1,0 +1,30 @@
+{
+  "id": "gr/invariant_slot_attention/e02",
+  "thread_id": "gr/invariant_slot_attention/t2",
+  "in_reply_to": null,
+  "date": "2026-04-27T13:20:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "subject": "ISA scale runs — cirrus reservation details",
+  "body": "Ines — compute plan for the ISA scale runs. The small stuff (Tetrominoes/CLEVR configs) fits titan best-effort and is already running. The June push is the real ask: we hold the cirrus-tpu reservation for the week of 2026-06-01 — 384 accelerators — and both the CLEVRTex sweep and the Waymo Open scale test are scheduled against that week. The plan packs the sweep (12 configs × 3 seeds) into the first half of the week and the Waymo run into the back half, with checkpoints to Corpus every 2 h. Asks: (1) confirm the pod slice is contiguous — the Waymo input pipeline saturates host RAM if we're scattered; (2) a heads-up contact for that week in case we need a topology change on short notice. Dmitri's end-of-June decision depends directly on these runs landing. — Ivo",
+  "labels": [
+    "resources"
+  ]
+}

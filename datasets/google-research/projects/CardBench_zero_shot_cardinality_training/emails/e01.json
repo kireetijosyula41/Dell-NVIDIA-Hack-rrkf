@@ -1,0 +1,17 @@
+{
+  "id": "gr/CardBench_zero_shot_cardinality_training/e01",
+  "thread_id": "gr/CardBench_zero_shot_cardinality_training/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:20:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "CardBench kickoff - benchmark backbone for learned cardinality estimation",
+  "body": "Team,\n\nKicking off CardBench adoption. Goal: make our open-source benchmark for learned cardinality estimation the standard eval for the query-optimizer track, so model teams stop inventing their own workloads. CardBench has two halves - the pre-built training datasets and the code that produces them - and the paper's key convenience is that the training query graphs can be consumed directly without running any CardBench code. That's the fast path I want most internal users on.\n\nMilestones: (1) Feb 27 - query graphs ingested and documented for internal use; (2) Mar 27 - one reference cardinality model trained and evaluated end to end; (3) May 15 - the full re-generation pipeline (downsampled databases, table stats collection, workload generation) running on our infra, ahead of a Q2 review.\n\nDaniela, over to you for staffing and the Corpus dependency plan.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

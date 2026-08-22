@@ -1,0 +1,16 @@
+{
+  "project": "gr/moment_advice",
+  "conflicts": [
+    {
+      "conflict_id": "C037",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "m_theory"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22 — for training the advice models at full telemetry scale, and the June milestones are sequenced around that week."
+    }
+  ]
+}

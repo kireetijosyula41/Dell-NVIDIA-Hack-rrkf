@@ -1,0 +1,45 @@
+{
+  "id": "gr/fm4tlp/e01",
+  "thread_id": "gr/fm4tlp/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:50:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: FM4TLP transfer benchmark track",
+  "body": "Team — kicking off the FM4TLP track for graphs-retrieval.\n\nThe work benchmarks transferring an inductive temporal link prediction model from a training graph to a test graph with zero node overlap — precisely the cold-start problem our graph products hit whenever we onboard a new domain: no shared nodes, only structure. Goal: establish whether transfer-based TLP can replace per-domain training in our recommendation stack.\n\nMilestones: (1) env bring-up by Mar 20 — nontrivial, the repo needs a conda graph-tool environment with a pinned torch 2.3.0/cu118 stack and some documented python-binary oddities; (2) reproduce the benchmark transfer results by end of April; (3) run the transfer protocol on two internal graph domains in June; (4) recommendation readout by Jul 10.\n\nRosa owns infra, Ondrej modeling, Gustavo experiments, Bilal data plumbing. Daniela follows up on resourcing.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/factors_of_influence/e01",
+  "thread_id": "gr/factors_of_influence/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:00:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: Project Basalt — unified dataset interface",
+  "body": "Team — kicking off what we're calling Project Basalt internally: productizing our unified TFDS interface that fronts 20 segmentation and detection datasets (ADE20K, COCO, CityScapes, Mapillary, and the rest) behind standardized feature names.\n\nThe pitch for data-platforms: one loader, one schema — image, segmentation, boxes, person_keypoints — so experiment code runs unchanged across datasets, including the MSeg universal-taxonomy channel where every dataset shares one label space.\n\nMilestones: feature-parity audit against fids_features.py by Feb 27; licensing review of all 20 sources by mid-March (WildDash is already excluded from redistribution; Kofi should confirm the others); Corpus integration prototype in April; launch review by May 4.\n\nBruno owns the resourcing follow-up. Please use the Basalt name on docs and threads so search works.\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "gr/informally_romanized_lang_id/e04",
+  "thread_id": "gr/informally_romanized_lang_id/t1",
+  "in_reply_to": "gr/informally_romanized_lang_id/e03",
+  "date": "2026-05-21T09:50:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: romanized language ID for ingestion routing",
+  "body": "Decision from Thursday's review: we integrate LID v1 into the ingestion router for the 12 languages where we have both Aksharantar lexicons and Dakshina supervision, and we hold the remaining languages behind a quality gate rather than shipping the ~6-point-worse tier. Milan's router spike showed the swap is low-risk (shadow mode first, two-week bake). Timeline: shadow deployment by May 29, decision review June 4, full cutover before the window closes June 8 — comfortably ahead of the Corpus v2 freeze on July 10. The B-A macro-F1 gains (+3.4) go in the OKR readout. Carmen, please finalize the eval dashboard so the shadow-mode diff is readable by non-team folks. Nice work all — this one's been unusually smooth. Dmitri",
+  "labels": [
+    "decision"
+  ]
+}

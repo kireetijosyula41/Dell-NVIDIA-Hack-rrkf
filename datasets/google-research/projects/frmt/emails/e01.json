@@ -1,0 +1,40 @@
+{
+  "id": "gr/frmt/e01",
+  "thread_id": "gr/frmt/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:00:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "FRMT kickoff — dialect quality as a launch gate",
+  "body": "Hi Ivo,\n\nKickoff for the FRMT workstream. FRMT is our benchmark for region-aware machine translation: a few thousand English Wikipedia sentences human-translated into Brazilian vs European Portuguese and Mainland vs Taiwan Mandarin. The clever part is the bucket design — the lexical bucket targets terms that translate differently by region, and the entity bucket is adversarial: a model should not switch to Portugal Portuguese just because Lisbon is mentioned.\n\nProduct framing: this becomes the dialect-quality gate for our translation features. Milestones: baseline evals by Mar 20, regional quality dashboard by Apr 24, Launch Review Board on May 15.\n\nMilan, Vera and Yara are assigned. Ivo — staffing and budget when you can.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

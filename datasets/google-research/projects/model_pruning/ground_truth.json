@@ -1,0 +1,16 @@
+{
+  "project": "gr/model_pruning",
+  "conflicts": [
+    {
+      "conflict_id": "C021",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "language_model_uncertainty"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Vera Egede is committed at 65% to this project for May 2026 — she owns the gradient-based pruning comparison and the final sparsity-vs-quality report, and that report is the deliverable the whole window closes on."
+    }
+  ]
+}

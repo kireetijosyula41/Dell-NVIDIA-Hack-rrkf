@@ -1,0 +1,18 @@
+{
+  "id": "gr/causal_evaluation/e02",
+  "thread_id": "gr/causal_evaluation/t1",
+  "in_reply_to": "gr/causal_evaluation/e01",
+  "date": "2026-03-27T13:50:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: fairness evaluation module - staffing + July compute",
+  "body": "Dmitri,\n\nStaffing: Freya 70% (TL), Umar 40% on causal methodology review, Carmen 50% on the guardrail heuristics, Amara 50% on pipeline engineering - she owns scaling the simulation + bootstrap machinery, since the released run_evaluate.sh is single-node and M3 needs orders of magnitude more runs.\n\nCompute: M1/M2 are cheap - the notebooks and bootstrap runs are CPU-class; a 32-vCPU pool covers it. M3 is the big one: the power study sweeps dataset size x subgroup imbalance x effect size with thousands of bootstrap iterations per cell. For the large-scale power study we hold the vulcan-h100 reservation for the week of 2026-07-06 - 512 accelerators, which I confirmed in the infra tracker last week. Amara should have the simulation sharding ready well before then.\n\nOne process note: since this module will gate launch reviews eventually, I want Nadia's PMO looped in at M2, not M3 - fewer surprises later.\n\nBruno",
+  "labels": ["resources"]
+}

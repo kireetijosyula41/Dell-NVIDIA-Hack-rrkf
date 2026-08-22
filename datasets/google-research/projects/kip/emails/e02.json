@@ -1,0 +1,15 @@
+{
+  "id": "gr/kip/e02",
+  "thread_id": "gr/kip/t1",
+  "in_reply_to": "gr/kip/e01",
+  "date": "2026-04-24T15:28:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: Kickoff: dataset distillation (KIP) as a data-platform service",
+  "body": "Dmitri,\n\nResourcing picture:\n\nCompute: KIP with convolutional kernels was originally done with large-scale distributed resources, and that's what our reproduction needs too. Ask is 64 Titan A100s in sustained best-effort for the kernel computations through May, then bursts for the internal-corpus distillation in June. If Titan preemption bites we escalate to a small Vulcan slice, but I'd rather not burn a reservation on this.\n\nStaffing: Kaia 60% (kernel methods lead), Yara 40% (eval + finite-network transfer, she'll own the ConvNet training checks), Chiara 50% (pipeline + Corpus artifact plumbing).\n\nPlatform dependency: we're planning around the Corpus v2 migration freeze on 2026-07-10 — all distilled-set artifacts have to be registered in v2 before that date, or the Jul 20 integration readout demos against a frozen platform. Jun, cc'd so you can flag if the artifact-registration API won't be stable in time.\n\nBao",
+  "labels": ["resources"]
+}

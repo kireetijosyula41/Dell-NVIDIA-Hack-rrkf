@@ -1,0 +1,45 @@
+{
+  "id": "gr/constrained_language_typology/e02",
+  "thread_id": "gr/constrained_language_typology/t1",
+  "in_reply_to": "gr/constrained_language_typology/e01",
+  "date": "2026-03-11T14:35:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: typology prediction for coverage planning",
+  "body": "Hi Priya,\n\nStaffing: Umar Costa leads at 40%, Oyin Iversen 35% on the data tooling (the shared-task setup wants a clean WALS staging area — she's building it properly), Quentin Farkas 25% on modeling, Maren Zhou 20% on infra.\n\nCompute: development is trivial — NEMO is classical frequentist machinery, laptops-and-CPUs territory. The exception is the full-matrix imputation sweep with the neural comparison arms: for that we hold the cirrus-tpu reservation for the week of 2026-06-22, 256 accelerators. Timing works out — vulcan is down for maintenance 6/22-6/24 anyway, so cirrus that week is the right home for it, and results land two weeks before window close.\n\nFlag: WALS licensing is CC-BY, but Kofi should still glance at the service proposal before it leaves the building.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

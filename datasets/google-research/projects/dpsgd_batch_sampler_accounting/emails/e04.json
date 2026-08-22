@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpsgd_batch_sampler_accounting/e04",
+  "thread_id": "gr/dpsgd_batch_sampler_accounting/t1",
+  "in_reply_to": "gr/dpsgd_batch_sampler_accounting/e03",
+  "date": "2026-06-10T15:19:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: honest privacy accounting for our DP-SGD pipelines",
+  "body": "Post-validation decisions, for the record before the leadership readout June 18:\n\n1. Validation runs completed in the reserved week. Headline: balls-and-bins matches Poisson-level bounds with under 0.4% utility delta on both production jobs. That kills P2's main objection.\n2. Decision: P1 and P2 migrate to balls-and-bins sampling in Q3, with epsilon reported from our accountants. Kofi is aligned and wants the corrected epsilon figures in the next privacy review cycle — the 1.9x gap on P2 goes in the readout, framed as \"found and fixed.\"\n3. The library is now the mandated accounting path for new DP pipelines; Farah publishes the integration guide Friday.\n4. Deferred: extending the audit to the two federated pipelines. Q3 candidate, not committed.\n\nThis is exactly the kind of result trust-theory should be known for. Well done.\n\nXimena",
+  "labels": ["decision", "escalation"]
+}

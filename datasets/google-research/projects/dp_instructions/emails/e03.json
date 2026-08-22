@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_instructions/e03",
+  "thread_id": "gr/dp_instructions/t1",
+  "in_reply_to": "gr/dp_instructions/e02",
+  "date": "2026-05-07T11:25:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: private instruction data for alignment (dp_instructions)",
+  "body": "Status. End-to-end pipeline milestone: hit, three days late. DP fine-tuning of the 7B at epsilon=8 converged cleanly; the 13B needed the batch size doubled to keep the signal-to-noise workable, which Amara absorbed with gradient accumulation on the existing titan allocation.\n\nQuality signal so far: after the DP histogram resampling step, the synthetic instruction distribution matches the real corpus much better on topic coverage — the initial (unresampled) synthetic set over-represents short generic requests, exactly what the resampling is designed to fix. SFT on the labeled pairs recovers 94% of the instruction-following win-rate of the non-private baseline.\n\nRisk: the labeling stage is our schedule long pole. Linnea's annotation throughput is capped and the label queue for the eval set is 9 days deep. If it's still backed up next week we should discuss trimming the eval set before the RLHF leg starts in June.\n\nHyun",
+  "labels": ["status", "risk"]
+}

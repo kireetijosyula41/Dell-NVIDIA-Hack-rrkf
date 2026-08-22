@@ -1,0 +1,41 @@
+{
+  "id": "gr/cold_posterior_bnn/e03",
+  "thread_id": "gr/cold_posterior_bnn/t1",
+  "in_reply_to": "gr/cold_posterior_bnn/e02",
+  "date": "2026-05-28T11:25:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cold posteriors & calibrated serving",
+  "body": "Hi both,\n\nStatus: figures 1-3 reproduce. Our SG-MCMC chains confirm the headline: at temperature T=1 (the true Bayes posterior) the posterior predictive underperforms the SGD point estimate on CIFAR-10 ResNet-20, and cooling to T around 1e-3 gives the best accuracy — the cold-posterior effect is robust on our stack.\n\nHypothesis experiments underway: prior misspecification looks like the strongest explanation on our internal models; the data-augmentation hypothesis also moves the effect noticeably.\n\nTrade-off for the memo: cold posteriors give better point accuracy but shrink predictive diversity, which is what our calibration story leans on. We may end up recommending different temperatures for accuracy-critical vs calibration-critical serving.\n\nRisk: chain mixing on the internal models is slower than on CIFAR; the July sweep sizing assumed CIFAR-like mixing. Paloma is profiling.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gr/coltran/e02",
+  "thread_id": "gr/coltran/t1",
+  "in_reply_to": "gr/coltran/e01",
+  "date": "2026-05-07T14:15:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: ColTran archive colorization",
+  "body": "Hi Lucia,\n\nStaffing: Hyun Traore leads at 60%, Maren Zhou 40% on the fine-tuning pipeline and datasets, Efe Lindqvist 30% on eval and the FID harness.\n\nCompute: titan-a100 best-effort, 48 GPUs for fine-tuning runs — the three stages train separately so we can pipeline them through a modest allocation.\n\nOn serving cost: we're scoping and staffing a distillation training recipe from scratch to compress the autoregressive colorizer into a feed-forward student for cheap serving — Hyun owns the recipe design inside his 60%, Maren supports on training infra. There's nothing on the shelf internally we can reuse for this, so I've budgeted it as a fresh build with a first student checkpoint targeted mid-June.\n\nFlag: archive-customer data likely needs privacy review before fine-tuning; filing this week given the 2-3 week SLA.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

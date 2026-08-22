@@ -1,0 +1,12 @@
+{
+  "project": "gr/infinite_nature",
+  "conflicts": [
+    {
+      "conflict_id": "C103",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["graph_sampler"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the final full retraining run on the licensed corpus, we hold the cirrus-tpu reservation - 128 accelerators for the week of 2026-06-08 - out of the vision portfolio's quarterly allocation."
+    }
+  ]
+}

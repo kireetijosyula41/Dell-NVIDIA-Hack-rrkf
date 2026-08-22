@@ -1,0 +1,15 @@
+{
+  "id": "gr/lasagna_mt/e04",
+  "thread_id": "gr/lasagna_mt/t2",
+  "in_reply_to": "gr/lasagna_mt/e03",
+  "date": "2026-06-02T09:46:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Lasagna status: sweep week + readout framing",
+  "body": "Team,\n\nQuick alignment now that the sweep week is underway.\n\nDecision on scope, confirming what we discussed: decoder-focused sweep, 16 configs, both pairs — encoder mixing is formally deferred to a Q3 exploration if the readout lands adoption. I'll own writing that deferral into the readout so nobody reads it as a finding of \"encoder mixing doesn't work.\"\n\nFraming for Jun 12: if the sweep confirms the +0.4/+0.1 BLEU at 18% faster decode, the recommendation is staged adoption on pair A first (bigger quality delta, higher traffic), pair B follows once serving telemetry from A looks clean for two weeks. Milan's harness numbers become the before/after baseline of record.\n\nSantiago — please confirm mid-week that all runs will clear the reservation window; if anything looks like it slips past Friday I want to know before it does, not after.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gr/mechanic/e01",
+  "thread_id": "gr/mechanic/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:12:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Mechanic kickoff — kill manual LR tuning",
+  "body": "Team,\n\nKicking off the Mechanic rollout. The pitch is simple: our open-source Mechanic tuner learns the learning-rate scale factor of any base optimizer automatically — in the paper's evaluations across large-scale deep learning tasks it comes close to, matches, or beats manual tuning. Internally, teams burn real GPU-weeks on LR sweeps. The integration is genuinely two lines: keep your schedule at base LR 1.0 and wrap the optimizer with mechanic.mechanize(adamw).\n\nMilestones (window closes 2026-05-04):\n- 02-27: exact jax/optax implementation vendored into the training stack behind a flag.\n- 03-27: A/B across 3 internal workloads with different batch sizes and schedules.\n- 04-24: rollout recommendation + docs for the platform review.\n\nSantiago owns staffing; Rafael is TL. If the A/B holds up, this is the cheapest win of the half.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

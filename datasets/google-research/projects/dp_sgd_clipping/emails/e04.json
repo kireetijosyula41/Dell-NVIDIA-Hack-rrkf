@@ -1,0 +1,17 @@
+{
+  "id": "gr/dp_sgd_clipping/e04",
+  "thread_id": "gr/dp_sgd_clipping/t1",
+  "in_reply_to": "gr/dp_sgd_clipping/e03",
+  "date": "2026-06-11T13:57:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DP-SGD clipping library hardening",
+  "body": "Wrap-up from the benchmark week and decisions:\n\n1. fp16 handling: we shipped Umar's selector-side fix — grad_norm_computation_selector routes fp16 workloads away from the FFT path. Clean, and the matrix reflects shipping behavior as he wanted.\n2. Headline numbers for the report: 40-55% peak-memory reduction across the conv architectures tested, with ghost norm the winner on 7 of 11 configs. That clears the OKR target.\n3. Adoption: the two DP training pipelines we courted have both committed; Leilani's integration branch merges this week for the first one.\n4. Slight annoyance for the retro — our reservation week started with ~6 hours of queue churn Monday morning before jobs placed cleanly. Flagging to Ines's team separately.\n\nBenchmark report goes out June 12. This one's done — nice work.\n\nZofia",
+  "labels": ["decision", "status"]
+}

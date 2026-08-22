@@ -1,0 +1,17 @@
+{
+  "id": "gr/automated_feature_engineering/e03",
+  "thread_id": "gr/automated_feature_engineering/t1",
+  "in_reply_to": "gr/automated_feature_engineering/e02",
+  "date": "2026-06-24T10:52:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: AFE - automated feature engineering as a platform play",
+  "body": "Status ahead of the OKR lock.\n\nGood news: the discovery-model trainer reproduces cleanly on the housing-price regression task (airbnb2023_float table, price target, 10-step config from our open-source release). On the two alpha partners' tasks, AFE-selected transforms beat their hand-built feature sets by 3.2% and 1.8% on their primary metrics.\n\nThe trade-off we need to discuss: global masking picks transforms that generalize across the dataset, but for one partner the win comes almost entirely from local masks on a handful of high-cardinality categoricals. Serving local masks means per-segment feature pipelines, which roughly doubles the serving-side work Rosa scoped. Options: ship global-only for v1 (smaller win, simpler), or slip the August review by two weeks.\n\nYusuf and I lean global-only. Flagging now so it's a decision, not a surprise.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

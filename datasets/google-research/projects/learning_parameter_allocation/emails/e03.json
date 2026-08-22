@@ -1,0 +1,15 @@
+{
+  "id": "gr/learning_parameter_allocation/e03",
+  "thread_id": "gr/learning_parameter_allocation/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T16:40:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}],
+  "subject": "Status: MNIST suite reproduced, Omniglot risk",
+  "body": "Hi Priya, Deshawn,\n\nMNIST milestone is done, a week late but clean. All four variants run: no_sharing, shared_bottom, gumbel_matrix, and gumbel_matrix with budget=0.75 / budget_penalty=1.0. The budgeted variant lands within 0.3pp of unconstrained test accuracy while sharing meaningfully fewer parameters, which is the headline we wanted for the product story.\n\nRisk for Omniglot: the training job only evals accuracies at the end of training, so picking checkpoints depends entirely on the separate validation process. Quentin's sweep wrapper found that our first two runs reused a dirty logdir and the summaries were garbage — we lost ~4 days of Titan time. Wrapper now force-empties the logdir, but I'd like to pad the May 8 Omniglot date by one week.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

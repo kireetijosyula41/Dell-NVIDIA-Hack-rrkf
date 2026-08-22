@@ -1,0 +1,19 @@
+{
+  "id": "gr/docent/e03",
+  "thread_id": "gr/docent/t1",
+  "in_reply_to": "gr/docent/e02",
+  "date": "2026-03-26T09:47:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Reviews2Movielens as a first-class internal benchmark",
+  "body": "Status + one risk.\n\nDone: benchmark spec v0.9 is out for comment. We settled the ambiguity question — ASINs that map to collections of multiple titles are excluded from the scored split, which drops about 3% of the 130,026 Amazon IDs but keeps label noise well-bounded. Yusuf's DocEnt-style baseline (self-supervised entity representations over the review documents) is training; first tag-prediction numbers land next week.\n\nRisk: ingestion into Corpus slipped a week. The v2 migration means the labeling pipeline only accepts the new schema, and our join table needed a rewrite of the ID columns. Halima has it re-running; ETA March 31. This squeezes the baseline-on-leaderboard milestone but April 17 still looks doable if the service lands on time.\n\nFreya",
+  "labels": ["status", "risk"]
+}

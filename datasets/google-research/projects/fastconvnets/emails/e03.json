@@ -1,0 +1,41 @@
+{
+  "id": "gr/fastconvnets/e03",
+  "thread_id": "gr/fastconvnets/t2",
+  "in_reply_to": null,
+  "date": "2026-06-09T11:15:00Z",
+  "from": {
+    "name": "Nikhil Abebe",
+    "email": "nikhil.abebe@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: latency table doesn't transfer 1:1, accuracy does",
+  "body": "Status.\n\nLatency validation: on current device-lab hardware the sparse models are consistently faster than dense equivalents, but the published SD835 table doesn't transfer linearly — on newer SoCs the sparse MobileNetV2 1.15 (85% sparsity) shows a smaller relative win because dense baselines got better silicon support. We'll publish our own table rather than quoting the paper's.\n\nAccuracy repro is clean: mbv1 at width 1.0 and 90% sparsity lands at 68.4% top-1 as documented. Conversion pipeline: Freya's recipe reproduces the block-sparse structure (block size 2 from inverted-residual block 11 onward for V2), and Paloma's tooling now converts a customer model end-to-end.\n\nRisk: the annotation UI is a week behind — rater-queue auth took longer than scoped — which squeezes the July rating round to two weeks. Recommend holding scope: pairs-only rating, no free-text.\n\nNikhil",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

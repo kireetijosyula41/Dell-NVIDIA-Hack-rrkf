@@ -1,0 +1,46 @@
+{
+  "id": "gr/dissecting_factual_predictions/e03",
+  "thread_id": "gr/dissecting_factual_predictions/t1",
+  "in_reply_to": "gr/dissecting_factual_predictions/e02",
+  "date": "2026-05-14T11:21:00Z",
+  "from": {
+    "name": "Fumiko Rossi",
+    "email": "fumiko.rossi@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: factual-recall dissection as a debugging tool",
+  "body": "Status.\n\nReproduction: complete on GPT2-xl. Attention knockout reproduces the reference information-flow picture -- blocking attention from the subject positions to the last position in the critical layer band collapses factual recall, while equivalent knockouts elsewhere barely move it. Attribute extraction via vocabulary projection also reproduces: the expected attribute becomes decodable from the subject representation in the upper-middle layers.\n\nThe risk is in Yusuf's port. Our internal 7B uses parallel attention/MLP blocks, and the reference analysis assumes sequential sublayers -- so 'which sublayer promoted the attribute' does not carry over one-to-one. Yusuf has a decomposition he believes preserves the interpretation; we are validating it by checking that GPT2-xl conclusions survive a reimplementation in his formalism before trusting it on the 7B.\n\nJune 12 is tight but holding.\n\nFumiko",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/m_layer/e04",
+  "thread_id": "gr/m_layer/t1",
+  "in_reply_to": "gr/m_layer/e03",
+  "date": "2026-06-10T16:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: M-layer kickoff — decision: scope the robustness claim",
+  "body": "All,\n\nDecision from yesterday's review with Nadia: we ship the M-layer toolkit component with the robustness claim scoped to the small-epsilon regime, exactly per Umar's one-pager. The periodicity extrapolation demo becomes the headline instead — it demos better anyway and the matrix-exponentiation story is easy to tell.\n\nCut: the higher-epsilon adversarial hardening workstream moves out of this window entirely. We are not chasing it before 06-22.\n\nFumiko, you're the DRI for the demo through launch review on 06-19 — I know June is your heavy month on this, so shout if anything else lands on your plate. Daniela, please confirm the June allocation sheet still reflects the plan.\n\nAdding this to the Q3 OKR draft before the 06-26 lock.\n\nAnders",
+  "labels": ["decision"]
+}

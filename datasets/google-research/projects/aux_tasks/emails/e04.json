@@ -1,0 +1,18 @@
+{
+  "id": "gr/aux_tasks/e04",
+  "thread_id": "gr/aux_tasks/t1",
+  "in_reply_to": "gr/aux_tasks/e03",
+  "date": "2026-07-15T15:56:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Sweep results + decision on launch review scope",
+  "body": "Team,\n\nSweep retro and decisions:\n\nThe full-scale run confirmed the slice results: +1.9% recall@10 over PCA baseline at full corpus scale, and the enlarged covariance batches held the LISSA noise down as Wei predicted. Cost came in under the reserved envelope.\n\nDecisions:\n1. Launch review on 8/6 covers the retrieval integration only. The RL-flavored applications (Puddle World-style successor features) stay research-track - interesting, not a product this half.\n2. Nikhil owns the integration runbook for the retrieval serving team; Gustavo pairs on the snapshot-reader path since Corpus v2 cutover is now behind us.\n3. Kaia to finalize the eval methodology doc - the recall@10 methodology got questions from Tomas's team and I want that airtight before LRB.\n\nGreat execution on a genuinely gnarly estimator.\n\nAnders",
+  "labels": ["decision", "status"]
+}

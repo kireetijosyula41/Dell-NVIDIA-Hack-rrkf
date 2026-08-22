@@ -1,0 +1,15 @@
+{
+  "id": "gr/lego/e03",
+  "thread_id": "gr/lego/t1",
+  "in_reply_to": "gr/lego/e02",
+  "date": "2026-04-28T16:25:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: LEGO multi-hop KGQA on the entity graph — status + risk",
+  "body": "Priya, Deshawn,\n\nStatus for the April milestone:\n\n- Build is stable. The smore submodule needed pinning to a specific commit or pip install -e . breaks — documented in our setup notes.\n- Baseline numbers on the frozen entity-graph slice: 71.4% answer accuracy on 2-hop queries, dropping to 52.8% on 3-hop. Bilal's harness gives us the per-hop breakdown, which is how we caught that most 3-hop misses happen at the second traversal step, not the last one.\n\nRisk for the go/no-go: latent execution keeps intermediate reasoning in embedding space, so when a traversal goes wrong we can't show a customer *where*. For support-facing use that's a real explainability gap. Proposal: scope v1 to 2-hop queries only and present 3-hop as research-continuing. I'll bring eval plots to the May 29 review.\n\nRafael",
+  "labels": ["status", "risk"]
+}

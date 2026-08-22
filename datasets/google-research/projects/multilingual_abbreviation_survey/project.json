@@ -1,0 +1,18 @@
+{
+  "id": "gr/multilingual_abbreviation_survey",
+  "title": "Supporting Materials for \"Abbreviation across the world's languages and scripts\"",
+  "summary": "Turns the consultant-level abbreviation survey from our CAWL/LREC-COLING open-source release (survey.tsv, 19 columns covering first-character abbreviations, stump compounds, truncations and more per locale) into training signal for an abbreviation-aware text normalization model across scripts.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bao Ndiaye",
+  "contributors": ["Nikhil Abebe", "Paloma Castillo", "Efe Lindqvist", "Umar Costa"],
+  "window": {"start": "2026-03-16", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "multilingual_abbreviation_survey",
+    "url": "https://github.com/google-research/google-research/tree/master/multilingual_abbreviation_survey",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

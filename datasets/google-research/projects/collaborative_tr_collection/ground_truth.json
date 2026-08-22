@@ -1,0 +1,16 @@
+{
+  "project": "gr/collaborative_tr_collection",
+  "conflicts": [
+    {
+      "conflict_id": "C104",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "cate"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On your compression ask: we're scoping and staffing a distillation training recipe from scratch — Gustavo owns the recipe build within his 50%, with Efe supporting — to distill the expensive post-editing teacher setup into a student model we can run continuously. I checked around and nothing in-house covers this, so we're budgeting it as a ground-up build: roughly six engineer-weeks, first trainable version mid-June."
+    }
+  ]
+}

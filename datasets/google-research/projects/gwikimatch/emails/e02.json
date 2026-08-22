@@ -1,0 +1,15 @@
+{
+  "id": "gr/gwikimatch/e02",
+  "thread_id": "gr/gwikimatch/t1",
+  "in_reply_to": "gr/gwikimatch/e01",
+  "date": "2026-05-12T14:08:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: GWikiMatch as the standard long-document matching eval",
+  "body": "Anders,\n\nStaffing: Quentin 50%, Bilal 60%, Oyin 50%. Compute is minor - scoring two baselines on long-document pairs needs maybe 16 A100s best-effort for a week each.\n\nThe real engineering item surfaced in Bilal's audit of the raw pairs: Wikipedia mirrors, redirects and near-identical revisions create pairs that are effectively the same document twice. If those leak into the benchmark, similarity scores inflate and the eval loses credibility. So: we are scoping and staffing a dataset de-duplication pipeline, built from scratch - Bilal owns the design (shingling + MinHash over document text, plus URL-normalization rules), Oyin the batch infrastructure, working version by 6/19. I am carrying it as a first-class deliverable, since every dataset this portfolio hosts after GWikiMatch will need the same pass.\n\nThat pushes the hosted-dataset milestone from 5/29 to 6/26. Baselines and the 8/5 adoption review still hold.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/madlad_400",
+  "title": "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset",
+  "summary": "Internal productization of the MADLAD-400 release: multilingual MT and LM checkpoints (3B to 10.7B MT models plus an 8B LM) trained on a document-level audited dataset, served with the shared 256k vocabulary.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bruno Mbeki",
+  "codename": "Project Saffron",
+  "contributors": ["Carmen Reyes", "Milan Zapata", "Paloma Castillo", "Yara Jokic"],
+  "window": {"start": "2026-03-30", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "madlad_400",
+    "url": "https://github.com/google-research/google-research/tree/master/madlad_400",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

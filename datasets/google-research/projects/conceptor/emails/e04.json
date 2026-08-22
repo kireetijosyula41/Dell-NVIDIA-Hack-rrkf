@@ -1,0 +1,40 @@
+{
+  "id": "gr/conceptor/e04",
+  "thread_id": "gr/conceptor/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T16:00:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Pre-sweep decisions: sparsity, LRB scope",
+  "body": "Team,\n\nDecisions from today's pre-sweep review:\n\n1. Sweep design: we cover both sparsity regimes (10 and 50 tokens) across the full concept set, per Giannis' trade-off. Farah re-sized the job: it fits our vulcan-h100 week of 6/1 at 256 accelerators, at about 85% utilization — tight but no descoping needed.\n2. Launch review scope: bias audit is the headline, single-image decomposition is the live demo, semantic manipulation is out (trust review flagged it needs its own privacy pass; not before 6/15).\n3. Katya's 31 flagged profession concepts go to Kofi for counsel review in parallel — findings, not conclusions, in the LRB packet.\n\nSweep kicks off Monday 6/1, LRB on 6/15. Bring it home.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

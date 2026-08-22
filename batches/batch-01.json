@@ -1,0 +1,589 @@
+{
+  "batch": 1,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "CIQA",
+      "title": "Compression Image Quality Assessment Dataset (CIQA)",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Compression Image Quality Assessment Dataset (CIQA)\n\n## Overview\n\nThe CIQA dataset is an open-sourced collection of labels to the popular\n[Aesthetic Visual Analysis (AVA)](https://paperswithcode.com/dataset/aesthetic-visual-analysis)\ndataset. Images from AVA were sampled, compressed to different JPEG quality\nfactors using the Tensorflow tf.image.adjust_jpeg_quality method and rated by\nhuman raters in a forced choice pairwise comparison study.\nThis dataset is the result of the work in [Deep Perceptual Image Quality\nAssessment for Compression](https://arxiv.org/abs/2103.01114)\n\n## AVA Image Sampling\n\nThe [Aesthetic Visual Analysis dataset (AVA)](https://ieeexplore.ieee.org/document/6247954)\nis well suited for deep learning applied to aesthetic Image Quality Assessment\n(IQA) proven by its successful implementation in the\n[NIMA](https://arxiv.org/abs/1709.05424) model.\nAVA contains \u223c 255,000 images rated based on aesthetic qualities by amateur\nphotographers. Because these images are stored using JPEG compression, only the\nsubset of images with a JPEG quality factor, Q, of 99 or more (near lossless)\nwere sampled using the ImageMagick imaging tool software.\n\n## Sampled Image Compression\nThe sampled images are compressed at two random\nJPEG quality factors. The AVA dataset contains semantic labels in addition\nto perceptual quality rating. It is worth noting our sampling preserves the\ndistribution of semantic classes. Semantic labels for each class of animal,\narchitecture, cityscape, floral, food/drink, landscape, portrait, and still life\nhave almost equal occurrence (\u223c 6.25%). Al",
+      "contributors": [
+        "Milan Zapata",
+        "Leilani Nakamura",
+        "Saoirse Eriksen",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C133",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "cubert",
+            "CIQA"
+          ],
+          "shared_object": "Gustavo Moreau at >=60% allocation",
+          "canonical": {
+            "person": "Gustavo Moreau",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Gustavo Moreau is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "COSTAR",
+      "title": "COSTAR: COunterfactual Self-supervised TrAnsformeR",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# COSTAR: COunterfactual Self-supervised TrAnsformeR\n\n## Environment Setup\n\n```bash\nconda env create -f environment.yml\nconda activate costar\n# For compatibility with saved data\nconda install -c conda-forge pandas==1.5.3\n\n# Setup wandb for logging experiments\nwandb login\n```\n\n## Dataset Setup\n\nDownload the\n[pre-generated data](https://zenodo.org/record/8412226/files/all_needed_data.tar.gz)\nand extract in the project root directory:\n\n```bash\ntar xzvf all_needed_data.tar.gz\n```\n\nTo add customized datasets, follow instructions specified [here](dataset_instructions.md).\n\n### Tumor growth\n\nNo further setup needed. All data will be generated on the fly.\n\n### Semi-synthetic MIMIC-III\n\nNo further setup needed. The pre-generated data will be loaded. To re-run the\nsimulation process (can be slow), use:\n\n```bash\nPYTHONPATH=. python runnables/train_enc_dec.py -m +dataset/mimic3_syn_age=\"0-3_all\" +backbone=crn_noncausal_troff +'backbone/crn_noncausal_troff_hparams/mimic3_synthetic=\"all\"' dataset.data_gen_n_jobs=8 exp.gen_data_only=True exp.seed=17,43,44,91,95 exp.tags=230814_mimicsyn_all_data\nPYTHONPATH=. python runnables/train_enc_dec.py -m +dataset/mimic3_syn_age=\"0-3_all_srctest\" +backbone=crn_noncausal_troff +'backbone/crn_noncausal_troff_hparams/mimic3_synthetic=\"all\"' dataset.data_gen_n_jobs=8 exp.gen_data_only=True exp.seed=17,43,44,91,95 exp.tags=230910_mimicsyn_all_data\n```\n\n### M5\n\nNo further setup needed. All data will be generated on the fly.\n\n## Experiments\n\nWe list the detailed commands of running experiments and metrics to report in\nthe following script files.\n\n### COSTAR",
+      "contributors": [
+        "Linnea Yamada",
+        "Jorge Vidal",
+        "Carmen Reyes",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C075",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "COSTAR",
+            "infinite_uncertainty"
+          ],
+          "shared_object": "Carmen Reyes at >=60% allocation",
+          "canonical": {
+            "person": "Carmen Reyes",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Carmen Reyes is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "CardBench_zero_shot_cardinality_training",
+      "title": "CardBench: A Benchmark for Learned Cardinality Estimation in Relational Databases",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## CardBench: A Benchmark for Learned Cardinality Estimation in Relational Databases\n\nThis repository contains CardBench, a benchmark for learned cardinality\nestimation. There are two parts in CardBench: a) the training datasets and b)\nthe code to produce training datasets. The training datasets can be found in the\n``training_datasets`` directory. The code to produce new training datasets or\nre-produce the existing ones is in this directory.\n\n### CardBench paper\n\nYou can find more details about CardBench in our [paper](https://arxiv.org/abs/2408.16170).\n\n## How to use CardBench\n\n### Create or Evaluate Cardinality Estimation Models\n\nUsing the generated query training graphs is the simplest way to train or\nevaluate cardinality estimation models and does not require the use of the\nCardBench code. You can find more information on the query graphs on\nTrainingQueryGraphs.md.\n\nWe expect this to be the most common use of CardBench. The training query graphs\nwe provide are generated from queries of different complexities.\n\n### Generate new workloads/Use different datasets\n\nTo generate new workloads on existing or new datasets and create query graphs\nthe CardBench Code needs to be used. Please refer the next section for more\ndetails.\n\n## CardBench Workloads (SQL Queries)\nPlease refer to TrainingQueryGraphs.md on how to access the CardBench workloads\n(sql queries).\n\n## CardBench Code\n\nThe CardBench code can be used to produce training datasets for\ncardinality estimation. This is a multi-step process:\n\n* Create down sampled versions of databases, if needed\n* Calculate table (collect ta",
+      "contributors": [
+        "Kaia Wolde",
+        "Emeka Pinto",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C024",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cell_embedder",
+            "experience_replay",
+            "covid_epidemiology",
+            "CardBench_zero_shot_cardinality_training"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "CoDi",
+      "title": "CoDi: Conditional Diffusion Distillation",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "#  CoDi: Conditional Diffusion Distillation\n\nThis repository contains the official implementation of the following paper:\n\n> CoDi: Conditional Diffusion Distillation for Higher-Fidelity and Faster Image Generation \n> Kangfu Mei 1, 2, Mauricio Delbracio 2, Hossein Talebi 2, Zhengzhong Tu 2, Vishal M. Patel 1, Peyman Milanfar 2 \n> 1Johns Hopkins University \n> 2Google Research \n\n[\\[Paper\\]](https://arxiv.org/abs/2310.01407)\n\n## Introduction\n\nCoDi can efficiently distill the sampling steps of a conditional diffusion model\nfrom an unconditional one (e.g. StableDiffsusion), enabling rapid generation of\nhigh-quality images (i.e. 1-4 steps) under various conditional settings (e.g.\nInpainting, InstructPix2Pix, etc.).\n\nCompared with previous (two-stage) distillation methods---either distillation-first or fine-tuning-first, our CoDi presents the first *single-stage* distillation strategy that directly distills a diffusion model from a text-to-image pretraining with new conditions, yiedling a fully distilled conditional diffusion model.\n\nOn the standard real-world image super-resolution benchmark, we show that CoDi\nis capable of achieving 50 steps sampling performance in terms of FID and LPIPS\nwith 4 steps only. It largely outperforms previous guided-distillation and\nconsistency model. On the less challenge tasks such text-guided inpainting, we\nshow that a new parameter-efficient distillation first proposed by us can even\nbeat the original 50 steps sampling in the FID and LPIPS metrics.\n\n## News\n\n-   Dec-02-2023 We relase the training script of CoDi. \ud83c\udfc1\n\n## Detail Contents\n\n1.  [Trainin",
+      "contributors": [
+        "Csilla Nassar",
+        "Tereza Aliyev",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C020",
+          "type": "duplicate_effort",
+          "projects": [
+            "CoDi",
+            "irregular_timeseries_pretraining"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+      "title": "Copyright 2022 The Domain-Agnostic Contrastive Representations for Learning from Label Pro",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Copyright 2022 The Domain-Agnostic Contrastive Representations for Learning from Label Proportions Authors. All Rights Reserved.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\n# Domain-Agnostic Contrastive Representations for Learning from Label Proportions\n\nAuthors: Jay Nandy, Rishi Saket, Prateek Jain, Jatin Chauhan, Aravindan Raghuveer, Balaraman Ravindran\n\nTo Appear in CIKM'22.\n\n## Criteo-Kaggle dataset::\n1. Download Criteo Kaggle dataset from http://labs.criteo.com/2014/02/kaggle-display-advertising-challenge-dataset/.\n2. We download and keep the original Criteo dataset (train.txt) in the same directory as the codes. `preprocessing.py' creates './data/train/', './data/test/' and './data/val/' for training set, test set and validation set respectively. We divide the dataset as training:test:val :: 75:20:5.\n3. Train SelfCLR-LLP, DLLP and supervised classification models using selfclr_llp_main.py, dllp_main.py and supervised_main.py respectively. This will run the code with default sets of hyper-parameters. For changing the hyper-parameters, please update inside the code.\n\n## MovieLens-1M dataset::\n1. Down",
+      "contributors": [
+        "Efe Lindqvist",
+        "Linnea Yamada",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C139",
+          "type": "gpu_double_booking",
+          "projects": [
+            "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+            "capsule_em"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "EgoSocial",
+      "title": "EgoSocial",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# EgoSocial\n\n**Note:** This codebase is currently under development. Some parts may be incomplete or require modification to function as expected.\n\n## Overview\n\nCurrent language models often lack the social awareness needed to function effectively as AI assistants in augmented and virtual reality (AR/VR) environments. Specifically, they struggle to determine the right moment to intervene in a social situation without disrupting natural human interaction.\n\nTo address this challenge, we developed EgoSocial, a large-scale egocentric dataset containing 13,500 video-question pairs focused on social interactions derived from Ego4D. This dataset serves as a benchmark for evaluating how well AI can perceive social dynamics and identify appropriate intervention timing. We also present a new method called EgoSoD (EgoSocial Detection), which uses a social thinking graph to integrate multimodal cues like audio and visuals. This approach models participants and their interactions to determine precisely when an AI assistant should intervene.\n\n## Dataset\n\nThe EgoSocial dataset is constructed by extracting video frames and audio clips from the [Ego4D](https://ego4d-data.org/) dataset based on the provided annotations.\n\n### Data Generation\n\nTo generate the dataset, you will need to first download the Ego4D video clips. Then, use the provided script to process the videos.\n\n1.  **Prerequisites**:\n*   `ffmpeg`: Make sure `ffmpeg` is installed and accessible in your system's PATH. It is used to extract frames and audio from videos.\n*   Downloaded Ego4D clips.\n\n2.  **Configure the generation scr",
+      "contributors": [
+        "Freya Ruiz",
+        "Quentin Farkas",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C122",
+          "type": "duplicate_effort",
+          "projects": [
+            "clay",
+            "EgoSocial"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "KNF",
+      "title": "Koopman Neural Forecaster",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Koopman Neural Forecaster\n\nRui Wang, Yihe Dong, Sercan O. Arik, Rose Yu; [Koopman Neural  Forecaster for  Time Series with Temporal Distribution Shifts](https://arxiv.org/abs/2210.03675)\n\n## Abstract\nTemporal distributional shifts, with underlying dynamics changing over time, frequently occur in real-world time series, and pose a fundamental challenge for deep neural networks (DNNs). In this paper, we propose a novel deep sequence model based on the Koopman theory  for time series forecasting: Koopman Neural Forecaster (KNF) that leverages DNNs to learn the linear Koopman space and the coefficients of chosen measurement functions. KNF imposes appropriate inductive biases for improved robustness against distributional shifts, employing both a global operator to learn shared characteristics, and a local operator to capture changing dynamics, as well as a specially-designed feedback loop to continuously update the learnt operators over time for rapidly varying behaviors. To the best of our knowledge, this is the first time that Koopman theory is applied to real-world chaotic time series without known governing laws. We demonstrate that KNF achieves the superior performance compared to the alternatives, on multiple time series datasets that are shown to suffer from distribution shifts.\n\n## Requirements\nTo install requirements\n```\npip install -r requirements.txt\n```\n\n## Description of Folders\n1. data/: download raw datasets and preprocess raw data.\n- M4/m4_data_gen.py: download M4 data from the M4 git repo and generate M4 train/test sets.\n- Cryptos/cryptos_data_gen.py: generat",
+      "contributors": [
+        "Giannis Sato",
+        "Fumiko Rossi",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C072",
+          "type": "budget_overallocation",
+          "projects": [
+            "KNF",
+            "ara_optimization"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-60",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-60",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-60 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "LLP_Bench",
+      "title": "LLP-Bench: A Large Scale Tabular Benchmark for Learning from Label Proportions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## LLP-Bench: A Large Scale Tabular Benchmark for Learning from Label Proportions\n\nInside the ```data/bag_ds``` directory create the following directory structure.\n\n```\n\u251c\u2500\u2500 data\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 bag_ds\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 split_0\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 test\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 train\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 split_1\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 test\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 train\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 split_2\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 test\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 train\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 split_3\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 test\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 train\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 split_4\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0     \u251c\u2500\u2500 test\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0     \u2514\u2500\u2500 train\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 preprocessed_dataset\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 raw_dataset\n```\n\nInside the ```results``` directory create the following directory structure.\n\n```\n\u251c\u2500\u2500 results\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 autoint_embeddings\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 dist_dicts\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 mean_map_vectors\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 metrics_dicts\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 training_dicts\n\u2502\u00a0\u00a0     \u251c\u2500\u2500 feature_bags_ds\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 dllp_bce\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 dllp_mse\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 easy_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 genbags\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 hard_erot_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 mean_map\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 ot_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 sim_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u2514\u2500\u2500 soft_erot_llp\n\u2502\u00a0\u00a0     \u251c\u2500\u2500 fixed_size_feature_bags_ds\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 dllp_bce\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 dllp_mse\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 easy_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 genbags\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 hard_erot_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 mean_map\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 ot_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u251c\u2500\u2500 sim_llp\n\u2502\u00a0\u00a0     \u2502\u00a0\u00a0 \u2514\u2500\u2500 soft_erot_llp\n\u2502\u00a0\u00a0     \u2514\u2500\u2500 random_bags_ds\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 dllp_bce\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 dllp_mse\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 easy_llp\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 genbags\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 hard_erot_llp\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 mean_map\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 ot_llp\n\u2502\u00a0\u00a0         \u251c\u2500\u2500 sim_llp\n\u2502\u00a0\u00a0         \u2514\u2500\u2500 soft_erot_llp\n```\n\nThe following code implements the cr",
+      "contributors": [
+        "Csilla Nassar",
+        "Freya Ruiz",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C065",
+          "type": "duplicate_effort",
+          "projects": [
+            "contrack",
+            "LLP_Bench"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+      "title": "Copyright 2021 The On Combining Bags to Better Learn from Label Proportions Authors. All R",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Copyright 2021 The On Combining Bags to Better Learn from Label Proportions Authors. All Rights Reserved.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\n# On Combining Bags to Better Learn from Label Proportions\n\nAuthors: Rishi Saket, Aravindan Raghuveer, Balaraman Ravindran\n\nTo Appear in AISTATS'22.\n\n# For Pseudo-synthetic datasets experiments\n1. Collect code for previous work:\n* Git pull `https://github.com/giorgiop/almostnolabel` (commit `4de5f54`) as folder `almostnolabel-main` in directory containing this README.\n* Git pull `https://github.com/Z-Jianxin/Learning-from-Label-Proportions-A-Mutual-Contamination-Framework` (commit `adb57fa`) and copy the contents of the LMMCM directory to ./Code/PythCode/.\n2. Create virtual environment `pythenv` with python 3.9.2.\n* `cd ./Code`, `python -m venv pythenv`\n* `source pythenv/bin/activate`, `pip install -r requirements.txt`, `deactivate`.\n3. Create virtual environment `LLP` using conda. See instructions in `https://github.com/Z-Jianxin/Learning-from-Label-Proportions-A-Mutual-Contamination-Framework` (commit `adb57fa`).\n4. Download, Preprocess original datasets, ",
+      "contributors": [
+        "Quentin Farkas",
+        "Chiara Olsen",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C011",
+          "type": "duplicate_effort",
+          "projects": [
+            "icetea",
+            "On_Combining_Bags_to_Better_Learn_from_Label_Proportions"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "OpenMSD",
+      "title": "OpenMSD: Open-access Multilingual Scientific Documents dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# OpenMSD: Open-access Multilingual Scientific Documents dataset\n\nThis repository has the scripts to build the OpenMSD dataset.\n\n##\u00a0Quick start\n\nRun the command below\n\n```python\nbash run.sh\n```\n\nIt will set up a virtual environment, download the necessary libraries, and create example papers and citation relations. The created papers can be found under *processed_data/example_papers/*, and the created citation, co-citation, and bibliographic-couple pairs can be found under *processed_data/example_citation_relations*. All scripts are tested with Python 3.10.9.\n\nTo build the full OpenMSD dataset, follow the steps below.\n\n## Step 1: Download data\n\nOpenMSD uses data from three sources.\n\n* OpenCitations\n* Download the CSV files from [the COCI dataset](http://opencitations.net/download#coci), unzip the downloaded files and put the extracted CSV files under *raw_data/open_citations*. The total size of the extracted files is 240 GB (as of the December 2022 dump).\n* License: [CC0](http://opencitations.net/datasets)\n* CrossRef Metadata\n* Download data from [this link](https://academictorrents.com/details/d9e554f4f0c3047d9f49e448a7004f7aa1701b69) using BitTorrent tools, and put the downloaded files under *raw_data/crossref_metadata*. The downloaded files are in the format of json.gz, and the total size is 185 GB (as of the April 2023 version). For more download options, please refer to [this page](https://www.crossref.org/blog/2023-public-data-file-now-available-with-new-and-improved-retrieval-options/).\n* License: [Facts or CC0](https://www.crossref.org/documentation/retrieve-metadat",
+      "contributors": [
+        "Rosa Mensah",
+        "Saoirse Eriksen",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C105",
+          "type": "dependency_date_drift",
+          "projects": [
+            "OpenMSD",
+            "behavior_regularized_offline_rl",
+            "non_decomp",
+            "diffusion_distillation"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "RevThink",
+      "title": "RevThink",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# RevThink\n\nThis repository includes the source code for our paper [Reverse Thinking Makes LLMs Stronger Reasoners](https://arxiv.org/abs/2411.19865).\n\n# Installation\n\nThis repository has been tested with Python 3.10.14. We recommend using Conda for environment management. You can set up the Conda environment using the following commands:\n\n```\nconda create --name revthink python=3.10.14 -y\nconda activate revthink\npip install -r requirements.txt\n```\n\n# Run Experiments\n### Args usages\n* `--task`: which dataset to use, can be: `SQA`, `CSQA`, `ARC`, `MATH`, `GSM8K`, `TabMWP`, `ANLI`, `Date`.\n* `--n`: the proportion of training data to use, can be `1-100`. Default: `100`.\n* `--model`: the student model to train, can be: `mistral-7b`, `gemma-7b`.\n\n### Extract data\nAll data files can be download from `https://drive.google.com/file/d/1zoi4KNb9vzl8vd8Xh0dHfJ7DwSQDiiK7/view?usp=share_link`,\nwhich includes a `data.zip` with two directories: `/training_data` and `/test_data`. Extract them using the following command:\n\n```\nunzip data.zip\n```\n\nWe use the dataset Date as an example below.\n\n### Run\n\n**Step 1 (Optional):** Use the following script to augment the original dataset by generating forward reasoning, backward questions, and backward reasoning using the teacher model, Gemini-1.5-Pro:\n```\npython augment_data.py --task SQA\n```\nIf you wish to generate the data by yourself, you will need to set up Vertex AI following this [tutorial](https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal), and fill in the `project_id` and `location` in `utils.py`.",
+      "codename": "Project Palisade",
+      "contributors": [
+        "Freya Ruiz",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C062",
+          "type": "codename_collision",
+          "projects": [
+            "RevThink",
+            "lm_fact_tracing"
+          ],
+          "shared_object": "Project Palisade",
+          "canonical": {
+            "codename": "Project Palisade"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Palisade."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "STraTA",
+      "title": "STraTA: Self-Training with Task Augmentation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# STraTA: Self-Training with Task Augmentation\n\nThis repository contains data and code for our [EMNLP 2021](https://2021.emnlp.org/) paper: [STraTA: Self-Training with Task Augmentation for Better Few-shot Learning](https://arxiv.org/abs/2109.06270). Our new implementation of STraTA typically yields better results than what reported in our paper.\n\n**Note**: Our code can be used as a tool for automatic data labeling.\n\n## Table of Contents\n\n* [Installation](#installation)\n* [Self-training](#self-training)\n* [Running self-training with a base model](#running-self-training-with-a-base-model)\n* [Hyperparameters for self-training](#hyperparameters-for-self-training)\n* [Distributed training](#distributed-training)\n* [Practical recommendations](#practical-recommendations)\n* [Task augmentation](#task-augmentation)\n* [T5 NLI data generation model checkpoints](#t5-nli-data-generation-model-checkpoints)\n* [Generating synthetic NLI data](#generating-synthetic-nli-data)\n* [Practical recommendations](#practical-recommendations)\n* [Comparison to our work](#comparison-to-our-work)\n* [Demo](#demo)\n* [FAQ](#faq)\n* [How to cite](#how-to-cite)\n\n## Installation\nThis repository is tested on Python 3.8+, PyTorch 1.10+, and the \ud83e\udd17 Transformers 4.16+.\n\nYou should install all necessary Python packages in a [virtual environment](https://docs.python.org/3/library/venv.html). If you are unfamiliar with Python virtual environments, please check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).\n\nBelow, we create a virtual environment with the [Anacond",
+      "contributors": [
+        "Umar Costa",
+        "Rosa Mensah",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C059",
+          "type": "duplicate_effort",
+          "projects": [
+            "distribution_embedding_networks",
+            "STraTA"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "Uboreshaji_Modeli",
+      "title": "Uboreshaji Modeli \u2013 Multi-Modal Fine-Tuning Framework",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Uboreshaji Modeli \u2013 Multi-Modal Fine-Tuning Framework\n\nThis is not an officially supported Google product. This project is not eligible\nfor the\n[Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).\n\n**Uboreshaji Modeli** (Kiswahili for \"model fine-tuning\") is a modular PyTorch\nframework for fine-tuning vision, vision-language, text, and speech foundation\nmodels on specialized downstream tasks.\n\n--------------------------------------------------------------------------------\n\n## \ud83c\udf1f What's New: Multi-Modal Architectural Extension\n\nThe framework has been significantly expanded beyond its original OWL-v2 object\ndetection roots to support a rich suite of multimodal foundation models. By\nadopting the **Composable Strategy Pattern**, the framework achieves clean\nseparation of concerns and configuration-driven workflows.\n\n### Intended Modalities & Workflows\n\n*   **Vision VLM (Gemma 3 / 4)**: Detection and Instance Segmentation via\nlocation tokenization (`` to ``).\n\n*   **Text SFT (Gemma 3 / 4)**: Text-to-text instructional fine-tuning (e.g.,\nSwahili translation) with chat templating and prompt masking (`-100`).\n\n*   **Audio ASR (e.g. Gemma Audio, Whisper, MMS)**: Automatic Speech Recognition\nfine-tuning, featuring Universal Speech Model (USM) encoder integration and\n`Seq2SeqTrainer` support.\n\n*   **Vision Detection (OWL-v2)**: DETR-style bounding box object detection with\nbipartite matching (`HungarianMatcher`) and `SetCriterion` focal loss.\n\n--------------------------------------------------------------------------------\n",
+      "codename": "Project Tundra",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Linnea Yamada",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C098",
+          "type": "codename_collision",
+          "projects": [
+            "Uboreshaji_Modeli",
+            "assessment_plan_modeling"
+          ],
+          "shared_object": "Project Tundra",
+          "canonical": {
+            "codename": "Project Tundra"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Tundra."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "action_angle_networks",
+      "title": "Learning Physical Dynamics with Action-Angle Networks",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "## Learning Physical Dynamics with Action-Angle Networks\n\nThe official JAX implementation of Action-Angle Networks.\n\n### Instructions\n\nClone the repository:\n\n```shell\ngit clone https://github.com/google-research/google-research.git\ncd google-research/action_angle_networks\n```\n\nCreate and activate a virtual environment:\n\n```shell\npython -m venv .venv && source .venv/bin/activate\n```\n\nInstall dependencies with:\n\n```shell\npip install --upgrade pip && pip install -r requirements.txt\n```\n\nStart training with a configuration defined under `configs/`:\n\n```shell\npython main.py --workdir=./tmp --config=configs/action_angle_flow.py\n```\n\n#### Changing Hyperparameters\n\nSince the configuration is defined using\n[config_flags](https://github.com/google/ml_collections/tree/master#config-flags),\nyou can override hyperparameters. For example, to change the number of training\nsteps and the batch size:\n\n```shell\npython main.py --workdir=./tmp --config=configs/action_angle_flow.py \\\n--config.num_train_steps=10 --config.batch_size=100\n```\n\nFor more extensive changes, you can directly edit the configuration files, and\neven add your own.\n\n## Code Authors\n\nAmeya Daigavane",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Nikhil Abebe",
+        "Bilal Novak",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C066",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "action_angle_networks",
+            "invariant_explanations"
+          ],
+          "shared_object": "Bilal Novak at >=60% allocation",
+          "canonical": {
+            "person": "Bilal Novak",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Bilal Novak is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "activation_clustering",
+      "title": "Activation Clustering",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Activation Clustering\n\n## Overview\n\nThis is an implementation of the Activation Clustering model used in [Explaining Deep Neural Networks using Unsupervised Clustering](https://arxiv.org/abs/2007.07477).\n\n## Instructions\n\n1. Clone the repository:\n\n```\ngit clone https://github.com/google-research/google-research.git --depth=1\n```\n\n1. Build the docker image (includes downloading example model and notebooks):\n\n```\ncd google-research/activation_clustering && docker build -t activation_clustering .\n```\n\n1. Run the docker image as follows, which starts a jupyter server in the docker container and allows access from the host machine:\n\n```\ndocker run -it -p 8888:8888 activation_clustering\n```\n\n1. In a web browser, navigate to the address shown by the docker run command above, it should look something like `http://127.0.0.1:8888/?token=1234abcd...`.\n\n1. Follow the example notebooks in `examples/cifar10/` for training an activation clustering model from a baseline model, and for visualizing similar images and concepts.",
+      "contributors": [
+        "Rafael Duran",
+        "Kaia Wolde",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C016",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "activation_clustering",
+            "m_layer"
+          ],
+          "shared_object": "Fumiko Rossi at >=60% allocation",
+          "canonical": {
+            "person": "Fumiko Rossi",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Fumiko Rossi is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "active_selective_prediction",
+      "title": "Active Selective Prediction",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Active Selective Prediction\n\nThis is the official repository for the paper --\n[ASPEST: Bridging the Gap Between Active Learning and Selective Prediction](https://arxiv.org/abs/2304.03870).\n\n## Requirements\n\n*   It is tested under Debian 4.19.260-1 (2022-09-29) x86_64 GNU/Linux and\nPython 3.7.12 environment.\n*   To install requirements: `pip install -r requirements.txt`.\n\n## Datasets\n\nWe create six benchmark datasets: `mnist->svhn`, `cifar10->cinic10`, `fmow`,\n`amazon_review`, `domainnet`, and `otto`. The following datasets are already\nincluded in TensorFlow Datasets: `mnist`, `svhn`, `cifar10`, and `domainnet`.\nThe following datasets need to be downloaded manually:\n* `cinic10`: can be downloaded from [cinic10](https://datashare.is.ed.ac.uk/handle/10283/3192).\nPlace the downloaded data in `$RAW_DATASET_DIR/cinic10`.\n* `fmow`: can be downloaded from [wilds](https://wilds.stanford.edu/get_started/).\nPlace the downloaded data in `$RAW_DATASET_DIR/wilds_data/fmow_v1.1`.\n* `amazon_review`: can be downloaded from [wilds](https://wilds.stanford.edu/get_started/).\nPlace the downloaded data in `$RAW_DATASET_DIR/wilds_data/amazon_v2.1`.\n* `otto`: can be downloaded from\n[otto](https://www.kaggle.com/competitions/otto-group-product-classification-challenge/data).\nPlace the downloaded data in `$RAW_DATASET_DIR/otto-group-product-classification`.\n\nRun the following command to build Tensorflow datasets:\n\n`./active_selective_prediction/build_datasets.sh $RAW_DATASET_DIR $DATA_DIR`.\n\nwhere `$RAW_DATASET_DIR` is the directory to store the raw datasets and\n`$DATA_DIR` is the directory to sto",
+      "contributors": [
+        "Halima Toure",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C124",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "active_selective_prediction",
+            "graph_temporal_ai"
+          ],
+          "shared_object": "Ondrej Bergstrom at >=60% allocation",
+          "canonical": {
+            "person": "Ondrej Bergstrom",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Ondrej Bergstrom is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    }
+  ]
+}

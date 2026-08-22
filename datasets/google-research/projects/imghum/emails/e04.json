@@ -1,0 +1,19 @@
+{
+  "id": "gr/imghum/e04",
+  "thread_id": "gr/imghum/t2",
+  "in_reply_to": "gr/imghum/e03",
+  "date": "2026-06-24T16:41:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: imGHUM status: decision - flag-and-ship, go for scan cleanup v1",
+  "body": "All,\n\nDecision for the June 29 memo: it's a GO for scan-cleanup v1, flag-and-ship on hands. The 83% vs 61% completion result carries the case on its own, and Efe's framing is right - a flagged low-confidence hand region keeps a human in the loop exactly where the model is guessing. Silent completion would have been the version that erodes trust.\n\nScope notes for the memo: hand-specific fitting is the first v1.1 item, and the surface-semantics labeling goes in as an explicit bonus deliverable since the cleanup tooling team is already building against it. External-facing anything remains gated on the licensing-note review plus Launch Review Board - internal pipeline use only until both clear.\n\nGustavo - thanks for the early v2 migration; handing off eval manifests that are already freeze-proof is the quiet kind of competence I appreciate.\n\nLucia",
+  "labels": ["decision"]
+}

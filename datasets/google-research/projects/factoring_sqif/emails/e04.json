@@ -1,0 +1,45 @@
+{
+  "id": "gr/factoring_sqif/e04",
+  "thread_id": "gr/factoring_sqif/t2",
+  "in_reply_to": "gr/factoring_sqif/e03",
+  "date": "2026-06-24T09:40:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: baselines done, QAOA pilot read",
+  "body": "Halima, all — decisions after yesterday's readout.\n\nWe frame the June results exactly as measured: the QAOA path does not demonstrate scaling beyond small bitsizes, and the classical bruteforce baseline remains the stronger method at every size we tested. The report title drops \"quantum advantage\" entirely.\n\nScope cut: no sweeps beyond depth 6 — the depth-5/6 grids already show the null pattern Halima predicted, and burning more reserved time doesn't change the conclusion.\n\nRemaining work: Giannis finalizes the seed-variance appendix; Rosa tags the harness release so external folks can reproduce our numbers with the documented main.py flags. Launch Review Board sign-off is booked for Jun 26; Kofi has already seen the claims language.\n\nThanks for keeping this one honest.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

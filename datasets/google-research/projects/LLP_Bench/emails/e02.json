@@ -1,0 +1,16 @@
+{
+  "id": "gr/LLP_Bench/e02",
+  "thread_id": "gr/LLP_Bench/t1",
+  "in_reply_to": "gr/LLP_Bench/e01",
+  "date": "2026-02-25T15:41:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: LLP-Bench kickoff - one benchmark for all bag-level learning",
+  "body": "Dmitri,\n\nStaffing: Csilla 40% running the method matrix (all nine trainers across the three bag constructions), Freya 30% on results analysis and the metrics dictionaries, Saoirse 50% on infrastructure - she's already stood up the data/bag_ds directory tree with split_0 through split_4 and the results tree for training_dicts and autoint_embeddings.\n\nOne real tooling gap: the public benchmark is static, but method reviews will need stress cases - controlled bag-size distributions, noisy proportions, covariate drift. We have no internal tool for this, so we're scoping and building a synthetic-data generation pipeline from scratch - Saoirse owns it end to end at 50%, covering configurable bag construction, label-proportion noise models, and drift injection. First usable version March 27.\n\nCompute: CPU batch tier plus 16 A100s best-effort for the heavier erot_llp runs. No reservation ask.\n\nBao",
+  "labels": ["resources"]
+}

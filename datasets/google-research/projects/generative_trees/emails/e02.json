@@ -1,0 +1,40 @@
+{
+  "id": "gr/generative_trees/e02",
+  "thread_id": "gr/generative_trees/t1",
+  "in_reply_to": "gr/generative_trees/e01",
+  "date": "2026-05-07T14:30:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Generative trees — kickoff",
+  "body": "Hi Anders,\n\nStaffing: Jorge 60% (implementation and CI), Katya 50% (fidelity evals), Yusuf 30% (privacy analysis with Kofi's team).\n\nCompute: refreshingly boring — Java Wrapper training runs on standard CPU hosts; no accelerator ask this quarter.\n\nThe data plan is the critical path: the two internal tables need to be in Corpus before the v2 migration freeze on 2026-06-26, so ingestion must complete by Jun 19 — same date as our internal-tables milestone, not a coincidence, I aligned them. Katya owns the ingestion tickets.\n\nAlso starting the privacy review now given the 2-3 week SLA; synthetic-data products always get extra scrutiny from Kofi.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/deplot/e02",
+  "thread_id": "gr/deplot/t1",
+  "in_reply_to": "gr/deplot/e01",
+  "date": "2026-04-21T11:15:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: DePlot chart QA for the analytics suite",
+  "body": "Anders,\n\nFeasibility and resourcing:\n\nStaffing: Maren leads modeling at 50%, Bilal on the data pipeline at 50%, Vera 30% on evals, Giannis 40% on the Shipyard demo path.\n\nCompute: this trains on TPU, so I am requesting a Cirrus slice from the graphs-retrieval quarterly allocation -- one v5 slice for fine-tuning is plenty since we start from released checkpoints. The gin configs come from Pix2Struct, so environment setup is mostly cloning that repo and exporting PIX2STRUCT.\n\nData: We are planning around the Corpus v2 migration freeze on 2026-06-26, so the chart-table pretraining shards have to be fully ingested before that date. Bilal's ingestion plan works backward from there: synthetic chart corpus in by May 29, human-annotated dashboards by June 12.\n\nFirst checkpoint review May 8 stands.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

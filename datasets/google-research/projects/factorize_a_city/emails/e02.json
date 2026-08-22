@@ -1,0 +1,50 @@
+{
+  "id": "gr/factorize_a_city/e02",
+  "thread_id": "gr/factorize_a_city/t1",
+  "in_reply_to": "gr/factorize_a_city/e01",
+  "date": "2026-05-06T12:35:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: city relighting track (May-Aug)",
+  "body": "Dmitri — staffing and infra for the relighting track.\n\nAllocations: Carmen 50% throughout; Wanjiru 40% May-June rising to 60% in July for the demo push; Chiara 30%; Bilal 30% from June. And Oyin Iversen is committed at 60% to this project for July 2026 — she's the only person here who has run the alignment optimization at scale, so the July demo critically depends on that allocation holding.\n\nCompute is light: decomposition and alignment fit on 8-16 A100s best-effort on titan. Storage: 12TB for panorama stacks.\n\nOne dependency — our own capture stacks come through Corpus ingestion, and with the v2 migration freeze on 2026-07-10 I want our stack imports done by early July so we're not importing during the freeze.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

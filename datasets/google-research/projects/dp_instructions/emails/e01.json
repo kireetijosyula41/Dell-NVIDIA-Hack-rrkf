@@ -1,0 +1,19 @@
+{
+  "id": "gr/dp_instructions/e01",
+  "thread_id": "gr/dp_instructions/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T09:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: private instruction data for alignment (dp_instructions)",
+  "body": "Team,\n\nKicking off the privacy-preserving instruction pipeline. The recipe from our open-source release: DP fine-tune a 7B/13B model on real user instructions, sample synthetic instructions from it, then resample with a DP histogram so the synthetic distribution tracks the real one — all under a formal privacy guarantee. The product goal is an alignment data pipeline we can run on partner conversation logs without their instructions ever entering training directly.\n\nMilestones: pipeline stood up end-to-end on the Chatbot Arena-style corpus by end of April, quality gate (instruction-following evals on the SFT'd model) by late May, privacy review sign-off and handoff by June 8.\n\nKofi's team should see the DP histogram accounting early — the resampling step is the novel bit for them.\n\nDaniela owns staffing; note we'll need real infra help on the RLHF leg.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

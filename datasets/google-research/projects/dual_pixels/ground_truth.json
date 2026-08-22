@@ -1,0 +1,12 @@
+{
+  "project": "gr/dual_pixels",
+  "conflicts": [
+    {
+      "conflict_id": "C041",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["learning_to_clarify"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we are scoping and staffing a distillation training recipe built from scratch — Linnea leads it at 70% starting April 20. Teacher-student setup against DPNet, affine-invariant distillation losses, quantization-aware fine-tuning at the end. Nothing exists in-house to reuse for this, so I've budgeted seven engineer-weeks"
+    }
+  ]
+}

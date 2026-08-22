@@ -1,0 +1,36 @@
+{
+  "id": "gr/frmt/e03",
+  "thread_id": "gr/frmt/t2",
+  "in_reply_to": null,
+  "date": "2026-04-07T11:35:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "FRMT baselines: entity bucket catches real drift",
+  "body": "Hi Ivo,\n\nBaseline results are in. On the lexical bucket, our production model handles pt-BR vs pt-PT lexical choice reasonably (about 85% preferred-variant agreement) but the entity bucket exposes exactly the failure FRMT was designed to catch: on pages strongly tied to Portugal, the model drifts into European Portuguese for 18% of pt-BR requests. Mandarin shows the same pattern between Mainland and Taiwan variants, slightly milder.\n\nFew-shot helps a lot — ten exemplars sampled at the document level cut entity-bucket drift roughly in half — but results are sensitive to which exemplar documents we pick, which is a reproducibility risk for the dashboard.\n\nProposal: fix a frozen exemplar set per language pair for dashboard runs.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

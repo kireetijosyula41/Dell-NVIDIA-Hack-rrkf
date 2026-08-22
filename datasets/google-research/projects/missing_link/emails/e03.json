@@ -1,0 +1,41 @@
+{
+  "id": "gr/missing_link/e03",
+  "thread_id": "gr/missing_link/t1",
+  "in_reply_to": "gr/missing_link/e02",
+  "date": "2026-05-19T11:10:00Z",
+  "from": {
+    "name": "Efe Lindqvist",
+    "email": "efe.lindqvist@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cross-dataset label harmonization — May status + relation-direction risk",
+  "body": "Hi both,\n\nStatus: Linnea's ingestion is done — all three mapping files are queryable in Corpus, and the API stub returns relation triples in under 10 ms. My ADE20k+COCO harmonized training run finished Friday: +1.8 mIoU over training on either dataset alone, which is the validation signal we wanted.\n\nRisk: direction handling. The mappings encode asymmetric relations (a BDD label can be a strict parent of a COCO label), and I found 14 cases where naive symmetric merging silently collapses parent/child into equivalence — \"rider\" vs \"person\" being the ugly one. Kaia is re-auditing those rows against the original MSEG-derived annotations; her call is that maybe 5 need manual correction, consistent with how the release itself was built (auto-derive, then hand-fix).\n\nThis doesn't move the June sweep, but the query API needs a direction-aware mode before anyone builds on it. Linnea estimates 1 week.\n\nEfe",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

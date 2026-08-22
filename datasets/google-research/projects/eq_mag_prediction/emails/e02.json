@@ -1,0 +1,15 @@
+{
+  "id": "gr/eq_mag_prediction/e02",
+  "thread_id": "gr/eq_mag_prediction/t1",
+  "in_reply_to": "gr/eq_mag_prediction/e01",
+  "date": "2026-02-18T13:07:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MAGNET kickoff: magnitude estimation as a service",
+  "body": "Dmitri,\n\nStaffing and compute locked in.\n\nPeople: Tereza 80% on features/benchmarks and the caching layer, Ondrej 60% on the model and evaluation-vs-benchmarks work, Paloma 50% on catalog ingestion and the conda/pip packaging (the current env setup is fragile; she's pinning it properly).\n\nCompute: small through April - feature and benchmark computation is CPU-bound and cached, training runs fit on a handful of Titan A100s. The June sweep is the exception. Ines has us down for the vulcan-h100 reservation - 128 accelerators for the week of 2026-06-15 - which is when the full catalog-scale training sweep runs. That's the only reserved capacity we need all window, and it's the schedule anchor for everything upstream: features and benchmarks for all catalogs must be cached by June 12.\n\nFlag: Vulcan maintenance is June 22-24, right after our week, so there's zero slack for a rerun. If the sweep slips, it slips to July.\n\nDaniela",
+  "labels": ["resources"]
+}

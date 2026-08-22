@@ -1,0 +1,18 @@
+{
+  "id": "gr/hitnet",
+  "title": "The scripts will download the models and install prerequisites, however datasets have to b",
+  "summary": "Wraps our HITNet release - a Hierarchical Iterative Tile Refinement Network for real-time stereo matching - with pretrained models for FlyingThings, Middlebury, and ETH3D and evaluation scripts that compute PSM EPE and related metrics.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Wei Ivanov", "Umar Costa", "Rosa Mensah", "Bilal Novak", "Farah Haddad"],
+  "window": {"start": "2026-03-23", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hitnet",
+    "url": "https://github.com/google-research/google-research/tree/master/hitnet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

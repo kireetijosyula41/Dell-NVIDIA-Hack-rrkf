@@ -1,0 +1,15 @@
+{
+  "id": "gr/jaxnerf/e02",
+  "thread_id": "gr/jaxnerf/t1",
+  "in_reply_to": "gr/jaxnerf/e01",
+  "date": "2026-04-24T14:32:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff: neural view synthesis for immersive previews (Project Meltwater)",
+  "body": "Lucia,\n\nResourcing picture as promised. Compute: overnight scene fits need a steady slice of Cirrus — I'm asking Ines for 128 TPU v5 cores, 6 nights/week through mid-June. Project Meltwater gets first call on my vision-portfolio TPU quota through June; anything left over goes to exploratory work. For interactive rendering tests we'll grab best-effort Titan A100s, no reservation needed.\n\nStaffing: Katya 80% on modeling, Leilani 60% on the capture/ingest pipeline, Emeka 50% on the demo harness. That covers your May 15 pipeline milestone with a little slack.\n\nOne flag: multi-host TPU eval is supported in the codebase but our capture rigs output 800x800, and single-V100 rendering sits around 20.77s/frame — fine for offline, not for live manipulation. Let's keep the demo expectations aligned with that.\n\nIvo",
+  "labels": ["resources"]
+}

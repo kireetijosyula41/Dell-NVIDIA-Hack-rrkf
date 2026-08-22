@@ -1,0 +1,15 @@
+{
+  "id": "gr/gfsa/e03",
+  "thread_id": "gr/gfsa/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T15:04:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}],
+  "subject": "Status: static-analysis repro done, new-task port slower than hoped",
+  "body": "Hi both,\n\nStatus for the week. The static-analysis repro is done: the GFSA layer trained end to end recovers the reference analysis on the demo-notebook task, matching the open-source result. Automaton-policy training is stable once we adopted the initialization from the new-task guide notebook.\n\nThe retrieval-flavored task is where time is going. Porting our hyperlink-style graphs into the GFSA input format needed more schema work than planned - Hyun estimates the first trainable version lands 5/20, two days behind the 5/22 milestone gate, so tight but ok.\n\nRisk: on graphs above ~50k nodes the automaton unrolling blows past device memory on a single A100; we either shard or cap graph size for the LRB demo. I propose capping at 20k nodes for 6/11 and treating sharding as post-review work.\n\nFumiko",
+  "labels": ["status", "risk"]
+}

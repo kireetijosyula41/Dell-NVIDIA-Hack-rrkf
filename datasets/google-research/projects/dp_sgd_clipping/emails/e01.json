@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_sgd_clipping/e01",
+  "thread_id": "gr/dp_sgd_clipping/t1",
+  "in_reply_to": null,
+  "date": "2026-03-05T09:15:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DP-SGD clipping library hardening",
+  "body": "Hi Santiago, Umar,\n\nKicking off the clipping-library effort for the efficiency portfolio. Today every internal DP training pipeline pays the per-example gradient memory tax; our open-source release gives three fast, memory-efficient clipping algorithms for conv models — in-place direct norm, ghost norm, and an FFT-based norm — plus a selector (grad_norm_computation_selector) that picks per layer configuration since none of the three dominates.\n\nProduct goal: a hardened internal package that the DP pipelines adopt as a drop-in, with a benchmark report they can cite. OKR framing is \"cut DP-SGD training memory overhead by 40% for conv workloads.\"\n\nMilestones: API freeze end of March, benchmark matrix across our standard conv architectures by mid-May, adoption by two pipelines before Q3 OKR lock (June 26).\n\nSantiago — staffing and compute next, please.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

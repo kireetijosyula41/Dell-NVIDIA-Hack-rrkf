@@ -1,0 +1,18 @@
+{
+  "id": "gr/nngp_nas",
+  "title": "Towards NNGP-guided Neural Architecture Search",
+  "summary": "Turns our NNGP-guided NAS release — using NNGP validation accuracy on NAS-Bench-101 models over CIFAR-10 subsets as a cheap performance predictor, with quality metrics like Kendall's Tau and PQETP — into an architecture pre-screening service that cuts wasted full-training runs in search workflows.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": ["Jorge Vidal", "Freya Ruiz", "Maren Zhou"],
+  "window": {"start": "2026-02-02", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "nngp_nas",
+    "url": "https://github.com/google-research/google-research/tree/master/nngp_nas",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

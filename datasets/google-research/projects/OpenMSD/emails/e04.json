@@ -1,0 +1,17 @@
+{
+  "id": "gr/OpenMSD/e04",
+  "thread_id": "gr/OpenMSD/t2",
+  "in_reply_to": "gr/OpenMSD/e03",
+  "date": "2026-05-27T16:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: OpenMSD status: sources landed, join-key quality risk",
+  "body": "Rosa, Bruno,\n\nClosing out the window. The normalization layer was the right call - final join retains 99.1% of citation edges versus 96.2% naive, and the language-skew problem is gone from Gustavo's QA sample. Relation extraction finished May 16; citation, co-citation, and bibliographic-couple pair sets are all built and counts are in the datasheet.\n\nDecisions:\n\n1. Handoff to Corpus slips two business days to June 1, the last day of our window, to include the fuzzy-recovery documentation in the datasheet. Jun, Bruno will send the transfer manifest today so your side can prep.\n\n2. Scope cut: the full-text enrichment pass (beyond metadata + abstracts) is out for v1. It roughly doubles storage and the retrieval teams confirmed metadata-level records unblock them.\n\n3. The July rerun schedule Bruno set up stands; Rosa owns the rerun runbook so it isn't head-knowledge.\n\nGood work - this one was quietly hard.\n\nDmitri",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "project": "gr/distinguishing_romanized_hindi_urdu",
+  "conflicts": [
+    {
+      "conflict_id": "C006",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "covid_vhh_design",
+        "hyperbolic_discount",
+        "mentormix"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-06-26, so the mc4 hi-Latn refresh needs to be ingested well before that date."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/jslm/e01",
+  "thread_id": "gr/jslm/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T10:12:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "[Project Basalt] Kickoff: in-browser adaptive LMs for accessibility input",
+  "body": "Hi team,\n\nKicking off our on-device predictive-text effort. We're running this under the internal codename Project Basalt — use it in subject lines so the filters catch everything.\n\nWhy this matters: the adaptive language models in our open-source JS release are cheap enough, memory- and processor-wise, to train in the browser on the fly. No server round-trips, no data leaving the device — that is exactly the privacy story our accessibility input surface needs, in the tradition of Dasher-style continuous text entry.\n\nPlan for the window (Apr 6 - Jul 27):\n- May 8: PPM character model integrated into the input-surface prototype\n- Jun 12: adaptation quality study — does per-user on-the-fly training beat the static baseline within one session?\n- Jul 15: privacy review complete (I'll file with Kofi this week given the 2-3 week SLA) and LRB packet drafted\n\nAlina, over to you for staffing and any compute needs — should be tiny for this one.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

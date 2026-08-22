@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_shift_adaptation",
+  "title": "Latent shift adaptation",
+  "summary": "Implements 'Adapting to Latent Subgroup Shifts via Concepts and Proxies' (AISTATS 2023): methods for keeping classifiers reliable when an unobserved subgroup's prevalence shifts between training and deployment, using concept and proxy variables, with a discrete eigendecomposition approach and continuous spectral/WAE variants. Meridian wants it as a drift-robustness layer for platform models.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Kaia Wolde", "Freya Ruiz", "Giannis Sato", "Quentin Farkas"],
+  "window": {"start": "2026-03-30", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "latent_shift_adaptation",
+    "url": "https://github.com/google-research/google-research/tree/master/latent_shift_adaptation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/cell_mixer/e04",
+  "thread_id": "gr/cell_mixer/t1",
+  "in_reply_to": "gr/cell_mixer/e03",
+  "date": "2026-06-30T13:25:00Z",
+  "from": {
+    "name": "Viktor Hussain",
+    "email": "viktor.hussain@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Cell Mixer kickoff — ground-truth scRNA-seq benchmarks",
+  "body": "Decisions from today's checkpoint:\n\n1) Ondrej confirmed the mito-filter bias on CD14+ monocytes is real but small (label purity 97.2% vs 99.1% elsewhere). We keep the population in v1 but flag it in the benchmark card. No scope cut.\n\n2) v1 ships with three canonical mixture presets (balanced, rare-population, doublet-heavy) plus the QC-defaults doc. Custom mixtures stay a power-user path.\n\n3) Wanjiru starts Evalline integration next week; internal release target Jul 15, which keeps us inside our window with a few days' buffer.\n\nThis also lines up with the Q3 OKRs we locked on June 26 — the benchmark-adoption KR references Cell Mixer explicitly, so the July date matters.\n\nViktor",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}

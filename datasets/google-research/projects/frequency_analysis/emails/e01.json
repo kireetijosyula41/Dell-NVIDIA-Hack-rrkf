@@ -1,0 +1,41 @@
+{
+  "id": "gr/frequency_analysis/e01",
+  "thread_id": "gr/frequency_analysis/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T09:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Fourier robustness heat maps — kickoff",
+  "body": "Hi Alina,\n\nKicking off the Fourier robustness work. The method generates Fourier heat maps of image classifiers: we add frequency basis vectors to input images and visualize how layer outputs and test error respond across the frequency spectrum. Product angle: a robustness report card that becomes part of the model release checklist for the vision portfolio — today we have no systematic view of which models fall over on high-frequency perturbations.\n\nMilestones: wrap our classifiers behind the TensorFlowNeuralNetwork interface by Jun 12, heat maps for the flagship classifiers by mid-July, robustness readout to Hana's staff in early August.\n\nMilan, Katya and Freya are assigned. Alina, over to you for staffing and the data plan.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

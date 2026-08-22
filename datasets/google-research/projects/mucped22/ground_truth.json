@@ -1,0 +1,16 @@
+{
+  "project": "gr/mucped22",
+  "conflicts": [
+    {
+      "conflict_id": "C131",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "dreg_estimators"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Since nothing suitable exists in-house, we're building a human-rating annotation UI from scratch — Emeka Pinto owns it at 50% (pairwise comparison views, rater qualification flow, session quality checks), roughly seven weeks of work for a v1 we can run study batches through."
+    }
+  ]
+}

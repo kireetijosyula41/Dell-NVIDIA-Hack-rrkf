@@ -1,0 +1,18 @@
+{
+  "id": "gr/bustle",
+  "title": "BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided Exploration",
+  "summary": "Turning BUSTLE - our learning-guided bottom-up program synthesis system that efficiently synthesizes spreadsheet programs - into a formula-suggestion capability for data-platforms customers, with the learned guidance model retrained on internal task distributions and benchmarked on SyGuS tasks.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": ["Giannis Sato", "Oyin Iversen", "Saoirse Eriksen"],
+  "window": {"start": "2026-04-06", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bustle",
+    "url": "https://github.com/google-research/google-research/tree/master/bustle",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

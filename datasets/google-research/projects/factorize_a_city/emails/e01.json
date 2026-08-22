@@ -1,0 +1,50 @@
+{
+  "id": "gr/factorize_a_city/e01",
+  "thread_id": "gr/factorize_a_city/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: city relighting track (May-Aug)",
+  "body": "Team — kicking off the city relighting track.\n\nThe research decomposes stacks of street panoramas into intrinsic components — log reflectance and log shading — and can relight the same scene under new illumination. Product-wise that's the missing piece for consistent map imagery across capture times.\n\nPlan: (1) repro the pretrained checkpoint on the NYC sample stack by May 15 — note the code pins Python 3.7-era deps, so environments are their own task; (2) alignment pipeline for our own capture stacks by end of June — the release runs twenty gradient-descent steps with frozen weights per new stack; (3) internal relighting demo mid-July; (4) launch review before Aug 3.\n\nDaniela follows up on staffing. Carmen owns decomposition quality, Wanjiru and Oyin the pipeline, Chiara env/tooling, Bilal the eval harness.\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

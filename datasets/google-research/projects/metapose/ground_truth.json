@@ -1,0 +1,9 @@
+{
+  "project": "gr/metapose",
+  "conflicts": [
+    {"conflict_id": "C097", "type": "shared_person_overcommit",
+     "counterpart_projects": ["fisher_brc"],
+     "planted_in": ["e04"],
+     "claim_as_written": "Linnea Yamada is committed at 60%+ to this project for July 2026 — she anchors the occlusion-robustness work and the sports-team onboarding, with Rosa continuing at 40%."}
+  ]
+}

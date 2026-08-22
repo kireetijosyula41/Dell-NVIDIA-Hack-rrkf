@@ -1,0 +1,18 @@
+{
+  "id": "gr/health_equity_toolbox",
+  "title": "Analytic code to support \"A toolbox for surfacing health equity harms and biases in large ",
+  "summary": "Operationalizes our analytic toolbox for surfacing health equity harms and biases in large language models, reproducing the published rate and confidence-interval estimates over the EquityMedQA independent, pairwise and counterfactual rating datasets.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": ["Saoirse Eriksen", "Giannis Sato", "Farah Haddad", "Kaia Wolde"],
+  "window": {"start": "2026-02-16", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "health_equity_toolbox",
+    "url": "https://github.com/google-research/google-research/tree/master/health_equity_toolbox",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/dnn_predict_accuracy/e03",
+  "thread_id": "gr/dnn_predict_accuracy/t1",
+  "in_reply_to": "gr/dnn_predict_accuracy/e02",
+  "date": "2026-05-14T10:41:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: weight-space accuracy prediction (dnn-predict-accuracy)",
+  "body": "Status update. The v1 predictor trained on the Small CNN Zoo is looking solid on in-distribution checkpoints: mean absolute error of 1.8 accuracy points when predicting from the flattened 4,970-dim weight vectors, and it degrades gracefully on early checkpoints (epoch 1-3) where signal is weakest.\n\nThe risk I want on the record: the Zoo matrices are not the full 30k x 9 rows per dataset — a small number of training runs crashed or got stuck, so the row counts are uneven across the four source datasets. Our loader currently assumes rectangular shapes and Leilani had to patch two silent truncation bugs this week. If we extend to customer-submitted checkpoints, ragged inputs will be the norm, not the exception.\n\nProposal: freeze the v1 feature spec on flattened weights only, defer per-layer statistics to v2. thoughts?\n\nYara",
+  "labels": ["status", "risk"]
+}

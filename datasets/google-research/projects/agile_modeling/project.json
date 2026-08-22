@@ -1,0 +1,25 @@
+{
+  "id": "gr/agile_modeling",
+  "title": "Agile Modeling",
+  "summary": "A system that takes users without ML experience from a concept in their head to a working image classifier in minutes, selecting images to label from a large unlabeled pool such as LAION-400M. The release includes user-labeled data for the 14 concepts studied in the paper.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Maren Zhou",
+    "Vera Egede",
+    "Linnea Yamada"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-08-10"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "agile_modeling",
+    "url": "https://github.com/google-research/google-research/tree/master/agile_modeling",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

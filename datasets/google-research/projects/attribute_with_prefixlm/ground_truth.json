@@ -1,0 +1,12 @@
+{
+  "project": "gr/attribute_with_prefixlm",
+  "conflicts": [
+    {
+      "conflict_id": "C061",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["fast_gradient_clipping"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Vera Egede is locked in at 70% on ArtVLM for all of June 2026 - she owns the prefix-LM scoring path and the VGARank eval harness, and I have no backfill for her."
+    }
+  ]
+}

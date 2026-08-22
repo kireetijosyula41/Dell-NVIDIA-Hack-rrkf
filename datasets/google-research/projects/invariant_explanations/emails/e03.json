@@ -1,0 +1,51 @@
+{
+  "id": "gr/invariant_explanations/e03",
+  "thread_id": "gr/invariant_explanations/t1",
+  "in_reply_to": "gr/invariant_explanations/e01",
+  "date": "2026-05-26T16:10:00Z",
+  "from": {
+    "name": "Linnea Yamada",
+    "email": "linnea.yamada@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: invariant explanations / meta-model audits",
+  "body": "Status at the end of the heavy month. Full-zoo training is done for the X,H covariate setting: at train_fraction 0.8, the meta-model hits 87.9% test accuracy predicting base-model predictions, and accuracy is stable (±0.4) across the instance-split iterations — the invariance property we hoped to see. The X,W@epoch setting is running now; early epochs (≤10) barely beat X,H, which supports the cheap-covariates story for the audit tool. Per config.py conventions, every setup's train/test accuracy is saved out, so the aggregate plots regenerate automatically. Issues: the W@epoch extraction hit a snag — snapshot layouts differ across zoo generations, and Bilal lost most of a week normalizing them (this is the risk we flagged; his May allocation is what's absorbing it). The fast-scratch mirror from Corpus landed May 12 and I/O stopped being the bottleneck. On track for the June decision. — Linnea",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

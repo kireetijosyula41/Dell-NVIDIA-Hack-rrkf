@@ -1,0 +1,58 @@
+{
+  "gpu_clusters": [
+    {
+      "id": "titan-a100",
+      "name": "Titan (A100 pool)",
+      "capacity": "2048 GPUs, shared, best-effort"
+    },
+    {
+      "id": "vulcan-h100",
+      "name": "Vulcan (H100 pool)",
+      "capacity": "1024 GPUs, reservation required via Infra Lead"
+    },
+    {
+      "id": "cirrus-tpu",
+      "name": "Cirrus (TPU v5 pod)",
+      "capacity": "quarterly allocation per portfolio"
+    }
+  ],
+  "platform_teams": [
+    {
+      "id": "corpus",
+      "name": "Corpus",
+      "what": "data ingestion/labeling platform; v2 migration in flight"
+    },
+    {
+      "id": "evalline",
+      "name": "Evalline",
+      "what": "shared evaluation & benchmark harness"
+    },
+    {
+      "id": "shipyard",
+      "name": "Shipyard",
+      "what": "model serving & demo deployment"
+    }
+  ],
+  "processes": [
+    {
+      "id": "lrb",
+      "name": "Launch Review Board",
+      "cadence": "biweekly; sign-off required before external demo"
+    },
+    {
+      "id": "privacy",
+      "name": "Privacy Review",
+      "cadence": "2-3 week SLA"
+    },
+    {
+      "id": "q3-okrs",
+      "name": "Q3 OKR planning",
+      "cadence": "locked 2026-06-26"
+    }
+  ],
+  "canonical_facts": {
+    "corpus_v2_freeze": "2026-07-10",
+    "q3_okr_lock": "2026-06-26",
+    "vulcan_maintenance": "2026-06-22 to 2026-06-24"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/dense_representations_for_entity_retrieval/e03",
+  "thread_id": "gr/dense_representations_for_entity_retrieval/t1",
+  "in_reply_to": "gr/dense_representations_for_entity_retrieval/e02",
+  "date": "2026-05-26T10:41:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: dense entity retrieval for the knowledge assistant",
+  "body": "Status as of this morning: baseline is reproduced. Rafael's dual-encoder runs land at recall@1 of 86.4 on our regenerated Wikinews set, against 87.1 published, so we are inside the 2-point envelope Anders set.\n\nTwo things to watch. First, parse_wikinews.py needed patching for template changes in the wikitext, so our eval set differs from the paper's by roughly 3% of mentions -- Tereza is auditing a sample to confirm it is not biased toward easy entities. Second, hard-negative mining is the biggest lever we have left before the June 12 review; it needs about a week of dedicated GPU time on Titan and the pool has been congested afternoons.\n\nRisk if congestion holds: June 12 shows baseline-only numbers.\n\nVera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

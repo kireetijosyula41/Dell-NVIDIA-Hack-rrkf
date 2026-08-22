@@ -1,0 +1,41 @@
+{
+  "id": "gr/finance_harness/e03",
+  "thread_id": "gr/finance_harness/t2",
+  "in_reply_to": null,
+  "date": "2026-04-07T10:40:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: eval results + backbone variance risk",
+  "body": "Status on evaluation.\n\nResearch mode: on our 40-question internal benchmark the agent's cited reports check out well — citation-support rate (does the cited page actually support the sentence) is 91% with the primary backbone profile, and the search-visit-cite loop rarely dead-ends now that Halima capped revisits.\n\nEquity slice: DCF outputs are reproducible run-to-run once we pinned the WACC assumptions in the profile. Comps selection is the weak spot — it occasionally pulls a peer from the wrong sector — so Paloma is encoding sector guardrails as a bundled skill, which the discovery precedence picks up with no code changes.\n\nRisk: backbone variance. The same prompt through the two configured profiles differs materially in report depth; for the pilot we should pin one profile and say so, or Idris's team will read variance as unreliability.\n\nServing: the SSE endpoint is stable on staging.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

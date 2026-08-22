@@ -1,0 +1,19 @@
+{
+  "id": "gr/drjax/e01",
+  "thread_id": "gr/drjax/t1",
+  "in_reply_to": null,
+  "date": "2026-03-26T10:08:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DrJAX as our parallel-computation authoring layer",
+  "body": "Hi Jelena, Yusuf,\n\nKicking off DrJAX adoption for the efficiency portfolio. The library embeds a MapReduce programming model directly into JAX: a simple authoring surface for map/reduce computations, execution that leans on JAX's sharding machinery for datacenter-scale efficiency, and — the differentiator — full differentiability through the communication primitives themselves, broadcasts and reductions included. That last part is what our large-scale training teams keep hand-rolling badly.\n\nProduct goal: DrJAX becomes the sanctioned way to author these computations internally, replacing three divergent homegrown wrappers I know of.\n\nMilestones: internal wheel + CI green by mid-April, two pilot teams migrated by end of May, adoption guide and readout by end of June, ahead of Q3 OKR lock on the 26th.\n\nJelena — staffing and platform asks to you.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

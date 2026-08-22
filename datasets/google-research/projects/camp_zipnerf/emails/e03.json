@@ -1,0 +1,18 @@
+{
+  "id": "gr/camp_zipnerf/e03",
+  "thread_id": "gr/camp_zipnerf/t1",
+  "in_reply_to": "gr/camp_zipnerf/e02",
+  "date": "2026-03-31T10:50:00Z",
+  "from": {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: CamP Zip-NeRF - M2 status: 360 repro green, CamP earns its keep",
+  "body": "Status.\n\nM1 recap: unit tests green, Blender repro matched published PSNR within 0.1 dB. M2: the Mip-NeRF 360 repro finished Sunday - we're within noise on 6 of 7 scenes, one (bicycle) is 0.3 dB under and Yusuf suspects a train-schedule difference; rerunning with the release's exact config.\n\nCamP ablation on Katya's synthetic scenes is the interesting bit: with clean poses, CamP preconditioning changes nothing (expected). At synthetic pose noise matching what we measured from phone-capture COLMAP runs, Zip-NeRF alone drops 4-6 dB PSNR; with CamP the drop is 0.8-1.4 dB. That's the product story in one chart - casual capture is unusable without pose refinement and fine with it.\n\nRisks for M3: training cost. ~14 A100-hours per scene at our settings is fine for a quality reference, not for an ingestion product. The report will say that plainly: the product track needs a distillation/acceleration phase before any customer-facing latency promise. Also titan contention did bite twice; thanks Deshawn for the vulcan bridge.\n\nMilan",
+  "labels": ["status", "risk"]
+}

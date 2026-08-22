@@ -1,0 +1,15 @@
+{
+  "id": "gr/evanet/e02",
+  "thread_id": "gr/evanet/t1",
+  "in_reply_to": "gr/evanet/e01",
+  "date": "2026-04-28T14:56:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: EvaNet kickoff: evolved video architectures for activity recognition",
+  "body": "Lucia,\n\nStaffing plan against the milestones.\n\nYusuf 70% on ensemble reproduction and eval methodology, Giannis 60% on serving, Halima 40% on partner-data ingestion. On the hard part you flagged: Rafael Duran is committed at 60% for May 2026 to own the optical-flow pipeline and the ensemble-evaluation work - that allocation is in the sheet and it's what makes the June milestone possible. Flow computation at partner-archive scale is the schedule driver, so his May is the whole ballgame.\n\nCompute: inference reproduction is cheap (checkpoints run on a handful of Titan A100s). The June partner-data evaluation is bigger - flow precompute across ~40k archive videos - but still batch-friendly on Titan best-effort. No reservations requested.\n\nOne watch item: checkpoint download and the label_map/data assets moved when we mirrored the release internally; Giannis is checksumming everything so we don't silently eval with mismatched weights.\n\nDeshawn",
+  "labels": ["resources"]
+}

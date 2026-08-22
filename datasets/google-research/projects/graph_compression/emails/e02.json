@@ -1,0 +1,12 @@
+{
+  "id": "gr/graph_compression/e02",
+  "thread_id": "gr/graph_compression/t1",
+  "in_reply_to": "gr/graph_compression/e01",
+  "date": "2026-03-10T13:58:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: matrix compression for the serving fleet",
+  "body": "Zofia,\n\nStaffing: Yusuf 70%, Linnea 50%, Emeka 60%. Compute: retraining the flagship model with compression ops in the graph costs roughly 1.3x a normal training run, so I am asking for 48 A100s on titan best-effort for the March and April training cycles.\n\nOne scoping addition. Automated metrics will not settle the rollout question - for the ranking model especially, we need humans judging whether compressed-model outputs actually degrade. To close that gap we are scoping and staffing a human-rating annotation UI, built from scratch: Emeka owns it end to end (rater queue, side-by-side comparison view, rating storage), with a working version by end of April. I am budgeting Emeka's 60% around it, plus a rater pool booked through the vendor program.\n\nThat makes the 4/17 curves milestone automated-metrics-only, with human ratings following by 5/8. Still compatible with your 5/15 recommendation date.\n\nDeshawn",
+  "labels": ["resources"]
+}

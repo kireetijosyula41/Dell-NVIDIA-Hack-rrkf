@@ -1,0 +1,18 @@
+{
+  "id": "gr/muzero",
+  "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+  "summary": "Hardens our MuZero pseudocode implementation — a planning agent with a learned model, built on SEED RL for scalable training — into a supported agents-rl capability, validating on the bundled tictactoe environment and scaling to the atari environment via distributed training.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Ivo Umeh",
+  "contributors": ["Rafael Duran", "Paloma Castillo", "Rosa Mensah"],
+  "window": {"start": "2026-02-02", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "muzero",
+    "url": "https://github.com/google-research/google-research/tree/master/muzero",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

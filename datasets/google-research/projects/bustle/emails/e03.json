@@ -1,0 +1,18 @@
+{
+  "id": "gr/bustle/e03",
+  "thread_id": "gr/bustle/t1",
+  "in_reply_to": "gr/bustle/e02",
+  "date": "2026-06-10T11:35:00Z",
+  "from": {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BUSTLE - M2 status: retrained model wins, latency tail is the risk",
+  "body": "M2 status, two days ahead of the checkpoint.\n\nResults: the retrained guidance model solves 61% of our 200 mined internal tasks within the search budget, vs. 44% for the released model - the internal task distribution (lots of date munging and string normalization) really is different from the published benchmarks. On SyGuS we're at parity with the released model, so no regression. Giannis's rig runs the whole benchmark suite in 40 min, which has been great for iteration.\n\nThe risk for M3: latency. Median synthesis is 380ms, but p95 is 4.1s on tasks where the learned model ranks the right string primitives poorly and the bottom-up search blows up the candidate pool. Options: (a) hard timeout at 2s and return best partial - solves ~54% within budget, (b) prune the value pool harder, which Oyin estimates costs 3-4 points of solve rate but tames the tail.\n\nRecommend (a) for the flag-gated prototype and revisit after real usage data. Need a call by Jun 19.\n\nSaoirse",
+  "labels": ["status", "risk"]
+}

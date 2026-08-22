@@ -1,0 +1,51 @@
+{
+  "id": "gr/mobilebert/e04",
+  "thread_id": "gr/mobilebert/t1",
+  "in_reply_to": "gr/mobilebert/e03",
+  "date": "2026-06-30T15:05:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Kickoff: MobileBERT on-device NLU — decisions before the July sweep",
+  "body": "Team,\n\nDecisions locked before next week's sweep:\n\n1) We go with option (b): quantization-aware fine-tuning is in scope for the July run on Vulcan, with Vera owning the grid. Amara's option (a) float16 fallback is the contingency if QAT doesn't close the 1.9-point F1 gap — Milan, please have the capability check for the fallback path ready either way.\n2) The 250 ms latency budget stands. If the two cheapest devices can't hit it post-QAT, they route to Milan's server fallback rather than degrading the on-device bar.\n3) Launch-review packet moves from Jul 20 to Jul 17 at Nadia's request — LRB calendar is packed that week, and sign-off is required before the device team's external demo.\n\nEfe — please pre-register the eval plan for the sweep so we're not arguing metrics after the fact.\n\nThanks,\nPriya",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}

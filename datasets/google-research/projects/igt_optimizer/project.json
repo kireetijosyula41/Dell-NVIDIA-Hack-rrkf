@@ -1,0 +1,18 @@
+{
+  "id": "gr/igt_optimizer",
+  "title": "Reducing the variance in online optimization by transporting past gradients",
+  "summary": "Evaluates our Implicit Gradient Transport (IGT) optimizer with Anytime Average - which reduces variance in online optimization by extrapolating gradients, storing true parameters in slots while variables hold shifted ones - on ResNet-scale training.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": ["Emeka Pinto", "Efe Lindqvist", "Halima Toure", "Bilal Novak"],
+  "window": {"start": "2026-02-02", "end": "2026-04-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "igt_optimizer",
+    "url": "https://github.com/google-research/google-research/tree/master/igt_optimizer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

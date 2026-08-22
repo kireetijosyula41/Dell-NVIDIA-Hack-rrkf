@@ -1,0 +1,18 @@
+{
+  "id": "gr/learning_to_clarify/e04",
+  "thread_id": "gr/learning_to_clarify/t1",
+  "in_reply_to": "gr/learning_to_clarify/e03",
+  "date": "2026-05-12T09:48:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: ACT clarification-turn service — alpha decision",
+  "body": "Team,\n\nDecision for the May 15 gate: we ship the alpha with the full-size ACT model and mark the distilled student as beta. Maren's regenerated contrastive pairs recovered most of the gap (now -1.8pp on clarification-action accuracy vs teacher), but I don't want a partner team's first impression to carry a known regression.\n\nSo:\n- Alpha on May 15 with the teacher model, partner team confirmed.\n- Distillation recipe keeps its staffing into next quarter — it's still the path to a hostable service, and I'll carry it as a named deliverable in the Q3 planning doc.\n- Vera, please make sure the Evalline suite includes the ambiguous-turn slice so we can track the student catching up.\n\nGood quarter, folks — this went from repo to partner-facing in eleven weeks.\n\nDmitri",
+  "labels": ["decision"]
+}

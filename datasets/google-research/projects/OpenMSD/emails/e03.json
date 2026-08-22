@@ -1,0 +1,17 @@
+{
+  "id": "gr/OpenMSD/e03",
+  "thread_id": "gr/OpenMSD/t2",
+  "in_reply_to": null,
+  "date": "2026-04-29T11:21:00Z",
+  "from": {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "OpenMSD status: sources landed, join-key quality risk",
+  "body": "Hi Bruno, Dmitri,\n\nStatus. Raw sources landed April 9: full COCI CSV set and the CrossRef torrent both validated against checksums. The decode path chews through the json.gz shards at about 40 GB/hour on our batch allocation, so the full CrossRef pass is a ~5 hour job, fine.\n\nThe risk is join quality, not throughput. DOI normalization mismatches between OpenCitations and CrossRef (case differences, trailing punctuation, a small population of malformed DOIs) mean a naive join drops about 3.8% of citation edges. Worse, the loss isn't uniform - non-English venues are overrepresented in the dropped set, which directly undercuts the \"multilingual\" pitch. Gustavo's QA sample confirms the skew.\n\nFix: a normalization + fuzzy-recovery layer before the join, ~2 weeks of my time. That pushes relation extraction from May 8 to around May 15 but recovers an estimated 80% of the dropped edges. I think its clearly worth it - flagging since it eats the milestone buffer.\n\nRosa",
+  "labels": ["status", "risk"]
+}

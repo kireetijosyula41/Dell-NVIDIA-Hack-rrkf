@@ -1,0 +1,18 @@
+{
+  "id": "gr/cann",
+  "title": "CANN: Constrained Approximate Nearest Neighbors",
+  "summary": "Productizing CANN, our constrained approximate nearest neighbor method for local feature-based visual localization, as the indexing and retrieval core of a visual-positioning capability. The framework is feature-agnostic - any d-dimensional vectors work - with FIRE features and the Baidu-Mall benchmark as the reference setup.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": ["Quentin Farkas", "Linnea Yamada", "Chiara Olsen", "Nikhil Abebe"],
+  "window": {"start": "2026-04-13", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cann",
+    "url": "https://github.com/google-research/google-research/tree/master/cann",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

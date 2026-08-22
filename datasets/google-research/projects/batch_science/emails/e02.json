@@ -1,0 +1,17 @@
+{
+  "id": "gr/batch_science/e02",
+  "thread_id": "gr/batch_science/t1",
+  "in_reply_to": "gr/batch_science/e01",
+  "date": "2026-03-05T15:22:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: batch-size science for our training fleet",
+  "body": "Anders,\n\nResourcing and dependencies:\n\n- Staffing: Kaia 50% (methodology), Gustavo 60% (workload instrumentation), Nikhil 50% (sweep automation), Giannis 40% (tooling/UI for the recommender).\n- Compute: the sweeps are wide but shallow - many short runs across batch sizes. Titan-a100 best-effort absorbs this fine if we keep individual runs under 4 hours; no Vulcan reservation needed.\n- Data platform: our sweep telemetry lands in legacy Corpus tables for now. Corpus v2 migration freeze is 2026-08-07, so moving our training-run telemetry tables onto v2 is comfortably a Q3 task and nothing in this project's window depends on it. I've told the team to not spend any cycles on migration this half.\n\nOne heads-up: the reference archive checksum verified (sha256 6460ab86...), and Kaia already reproduced two of the paper's steps-to-result plots.\n\nBruno",
+  "labels": ["resources", "status"]
+}

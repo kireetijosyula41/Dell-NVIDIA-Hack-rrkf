@@ -1,0 +1,26 @@
+{
+  "id": "gr/dimensions_of_motion",
+  "title": "Dimensions of Motion: Monocular Prediction through Flow Subspaces",
+  "summary": "Monocular motion prediction via flow subspaces from our 3DV 2022 release -- generating flow bases for camera rotation and translation from disparity, with an SVD solver projecting observed flow into the subspace -- targeted at motion-aware video editing features.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Csilla Nassar",
+    "Wei Ivanov",
+    "Yara Jokic",
+    "Vera Egede"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dimensions_of_motion",
+    "url": "https://github.com/google-research/google-research/tree/master/dimensions_of_motion",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

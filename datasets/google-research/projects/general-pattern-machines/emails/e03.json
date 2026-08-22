@@ -1,0 +1,36 @@
+{
+  "id": "gr/general-pattern-machines/e03",
+  "thread_id": "gr/general-pattern-machines/t2",
+  "in_reply_to": null,
+  "date": "2026-04-15T10:16:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Saffron status: replication green, honest limits",
+  "body": "Hi Jelena,\n\nSaffron status. Replication is green: our internal models complete PCFG-generated sequences and a meaningful slice of ARC-style ASCII patterns in-context, and — the result that keeps surprising people — proficiency is partially retained when we remap sequences onto randomly sampled tokens from the vocabulary.\n\nRobotics-format evals: state-sequence extrapolation produces usable simple motions, and with least-to-most prompting of reward-conditioned trajectories we get a stabilizing CartPole controller in-context after roughly 50 episodes of context.\n\nThe honest risks, same ones the paper flags: latency (seconds per action), context limits (50 episodes barely fits), and token cost. This is a prototyping tool, not a control stack.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

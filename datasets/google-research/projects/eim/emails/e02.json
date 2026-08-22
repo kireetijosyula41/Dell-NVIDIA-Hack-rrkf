@@ -1,0 +1,15 @@
+{
+  "id": "gr/eim/e02",
+  "thread_id": "gr/eim/t1",
+  "in_reply_to": "gr/eim/e01",
+  "date": "2026-02-11T11:36:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: EIM kickoff: energy-inspired models as a platform library",
+  "body": "Dmitri,\n\nStaffing plan. Fumiko and Ondrej carry the modeling work (reproduction plus API design), full time through March.\n\nFor adoption we need more than docs - teams won't trust a probabilistic-modeling library without comparable numbers. So I'm scoping and staffing a benchmark leaderboard service from scratch - Nikhil at 50% on the backend, Tereza at 50% on the submission/scoring flow - so every EIM variant gets a ranked, reproducible score the whole org can browse. Rough shape: result submission API, a scoring worker that re-runs configs, and a ranked web view. Four to five weeks of build, MVP by mid-March.\n\nCompute is light: the small_problems targets run on CPU, MNIST variants need a handful of Titan A100 slots, nothing reserved.\n\nOne dependency: Corpus ingestion for the static MNIST splits so scoring runs are hermetic. Filing that request today.\n\nSantiago",
+  "labels": ["resources"]
+}

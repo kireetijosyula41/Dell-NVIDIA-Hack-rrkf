@@ -1,0 +1,27 @@
+{
+  "id": "gr/jax_dft",
+  "title": "Overview",
+  "summary": "Builds on JAX-DFT's differentiable one-dimensional DFT and the Kohn-Sham-regularizer result (H2 dissociation within chemical accuracy from two separations) toward a neural-XC training harness for a materials-screening pilot.",
+  "portfolio": "health-science",
+  "pm": "Viktor Hussain",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Maren Zhou",
+    "Leilani Nakamura",
+    "Kaia Wolde",
+    "Linnea Yamada",
+    "Paloma Castillo"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jax_dft",
+    "url": "https://github.com/google-research/google-research/tree/master/jax_dft",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

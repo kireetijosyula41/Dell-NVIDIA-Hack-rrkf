@@ -1,0 +1,41 @@
+{
+  "id": "gr/assemblenet/e01",
+  "thread_id": "gr/assemblenet/t1",
+  "in_reply_to": null,
+  "date": "2026-04-08T09:05:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: AssembleNet / AssembleNet++ for video understanding",
+  "body": "Hi Santiago, team,\n\nKicking off the AssembleNet work. Both AssembleNet and AssembleNet++ do neural connectivity search over multi-stream video CNN architectures — they learn the weights of connections between convolutional blocks built from (2+1)D or 3D residual modules, arranged sequentially or in parallel, so the architecture itself is optimized for the data and task. AssembleNet++ adds peer-attention on top.\n\nThe code builds three model types via assemblenet_mode: AssembleNet, AssembleNet++, and AssembleNet++Lite, the lighter variant made to fit GPU memory.\n\nProduct framing: our video content-understanding pipeline needs a stronger backbone; this gives us searched architectures rather than hand-tuned ones.\n\nMilestones: TF1 environment and repro by early May, Lite variant benchmarking in late May, readout the week of June 29.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

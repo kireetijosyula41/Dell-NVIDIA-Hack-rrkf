@@ -1,0 +1,19 @@
+{
+  "id": "gr/bitempered_loss/e01",
+  "thread_id": "gr/bitempered_loss/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:05:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: bi-tempered loss as the default robust training loss",
+  "body": "Team,\n\nKicking off the bi-tempered loss productization for trust-theory. The pitch: customers keep training on noisy labels and blaming the platform. The bi-tempered logistic loss gives us a bounded per-sample loss plus a heavy-tail softmax, and since it recovers plain cross entropy at t1 = t2 = 1.0, we can ship it as a drop-in default with zero regression risk when temperatures are neutral.\n\nGoal for the window (Apr 20 - Jul 20): a vetted implementation + temperature-tuning guidance, benchmarked on our noisy-label suites, ready for a Launch Review Board slot in mid-July.\n\nMilestones: M1 (May 15) implementation parity with the open-source release incl. the bias-correction term; M2 (Jun 19) benchmark matrix across label-noise levels; M3 (Jul 13) LRB packet.\n\nYara is TL, Rafael co-leads the theory review. Bao will follow with staffing.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

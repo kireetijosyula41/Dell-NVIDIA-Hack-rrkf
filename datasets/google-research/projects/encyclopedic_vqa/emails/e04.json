@@ -1,0 +1,18 @@
+{
+  "id": "gr/encyclopedic_vqa/e04",
+  "thread_id": "gr/encyclopedic_vqa/t2",
+  "in_reply_to": "gr/encyclopedic_vqa/e03",
+  "date": "2026-07-09T09:58:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: EVQA status: baseline at 44.1%, retrieval quality is the ceiling",
+  "body": "Team,\n\nDecisions for the July 16 launch-review pre-read:\n\n1. Product scope is single-hop only. Vera's 9% two-hop number settles it; we say so explicitly in the doc rather than letting the board discover it.\n2. Headline metrics: 44.1% baseline, 61.7% oracle ceiling, and the distillation student at 91% teacher recovery at ~1/8 serving cost. That combination - a clear ceiling plus a deployable path - is the strongest story in the portfolio right now.\n3. Entity-linking recall becomes the top Q3 investment; retrieval, not the reader, is where the next ten points live.\n\nKofi - the privacy/licensing review on the Wikipedia-derived KB kicked off June 24; can you confirm the 2-3 week SLA still holds so sign-off lands before the board date? That's the one open dependency.\n\nNadia, pre-read to you by EOD Monday.\n\nPriya",
+  "labels": ["decision", "escalation"]
+}

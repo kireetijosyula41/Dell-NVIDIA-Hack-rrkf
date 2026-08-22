@@ -1,0 +1,19 @@
+{
+  "id": "gr/capsule_em/e04",
+  "thread_id": "gr/capsule_em/t1",
+  "in_reply_to": "gr/capsule_em/e03",
+  "date": "2026-07-02T15:55:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Eleni Quispe", "email": "eleni.quispe@meridian.example", "role": "Director, Foundational Research"}
+  ],
+  "subject": "Re: Kickoff: EMCAPSNet - decision memo: no for the general stack",
+  "body": "All,\n\nClosing the study. The stress-test sweep ran (compressed week, but Gustavo's rehearsal discipline meant we used the reservation efficiently) and the answer is clear, so the memo I'm sending to Eleni says:\n\nDECISION: No for the general matching stack. The cost curve did not bend - even with Gustavo's routing-iteration cap and fused-op experiments, EM routing at retrieval-relevant resolutions costs 6-11x our CNN baseline per training step, and inference latency lands outside the serving budget by a wide margin.\n\nBUT: the viewpoint-robustness numbers (3.1 vs. 8.7 azimuth degradation) are too good to shelve entirely. Recommendation: a narrow follow-up for the warehouse-inventory vertical, where images are small, poses vary wildly, and latency budgets are loose. That's a Q3 proposal for Eleni's review, sized at ~1.5 FTE.\n\nYara, Gustavo, Giannis - a clean negative with a documented boundary is a good outcome. The memo credits the study design.\n\nAnders",
+  "labels": ["decision"]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/cola/e02",
+  "thread_id": "gr/cola/t1",
+  "in_reply_to": "gr/cola/e01",
+  "date": "2026-04-09T13:55:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: COLA audio embeddings as a platform backbone",
+  "body": "Hi Dmitri,\n\nStaffing: Vera Egede leads at 50%, Leilani Nakamura 40% on the serving/platform side, Wei Ivanov 30% on eval design, Halima Toure 20% for the TFDS input pipelines.\n\nCompute is light — titan-a100 best-effort, 16 GPUs for SSL pre-training runs; COLA is deliberately a simple contrastive setup, no giant batches needed.\n\nScheduling constraint that shapes everything: the Corpus v2 migration freeze lands on 2026-06-26, so our audio ingestion and any new dataset registrations have to be on v2 before that date. I've sequenced Halima's pipeline work first so we're not registering datasets against a frozen system in July, and the platform integration decision needs to happen by mid-June for the same reason.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

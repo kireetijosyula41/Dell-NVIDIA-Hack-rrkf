@@ -1,0 +1,12 @@
+{
+  "project": "gr/eim",
+  "conflicts": [
+    {
+      "conflict_id": "C128",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["automated_feature_engineering"],
+      "planted_in": ["e02"],
+      "claim_as_written": "I'm scoping and staffing a benchmark leaderboard service from scratch - Nikhil at 50% on the backend, Tereza at 50% on the submission/scoring flow - so every EIM variant gets a ranked, reproducible score the whole org can browse."
+    }
+  ]
+}

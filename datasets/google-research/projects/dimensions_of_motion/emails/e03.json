@@ -1,0 +1,46 @@
+{
+  "id": "gr/dimensions_of_motion/e03",
+  "thread_id": "gr/dimensions_of_motion/t1",
+  "in_reply_to": "gr/dimensions_of_motion/e02",
+  "date": "2026-06-03T10:56:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: flow subspaces for motion-aware video editing",
+  "body": "Status.\n\nReproduction landed May 21. The loss functions apply cleanly to predicted disparity and object embeddings per the reference notebook, and our basis flow field visualizations match the release examples.\n\nOne genuine technical risk to flag: SVD conditioning. The solver that projects flow into the subspace gets ill-conditioned on low-texture regions -- sky, blank walls -- where the flow basis vectors are nearly parallel. On our internal clips that shows up as motion-segmentation flicker in about 6% of frames, which would be visible artifacts in an editing feature. We are testing Tikhonov regularization in the solve plus temporal smoothing of the embedding; early runs cut flicker to about 2% without hurting quality elsewhere.\n\nYara's first student candidates start training this week off our reproduced teacher.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

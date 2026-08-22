@@ -1,0 +1,46 @@
+{
+  "id": "gr/dense_representations_for_entity_retrieval/e01",
+  "thread_id": "gr/dense_representations_for_entity_retrieval/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:05:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: dense entity retrieval for the knowledge assistant",
+  "body": "Team,\n\nKicking off the entity retrieval track. The plan is to take the dense-representations work from our open-source release and make it the linking backbone for the internal knowledge assistant. Concretely: a dual encoder that retrieves entities directly in embedding space, evaluated against the 2018 Wikinews annotations we regenerate with parse_wikinews.py from the Jan 1, 2019 dump.\n\nMilestones I want to socialize: baseline reproduction by May 15, retrieval quality review June 12, and an LRB pre-read the week of July 6. Success metric for the quality review is recall@1 on Wikinews within 2 points of the published numbers.\n\nIvo, can you come back with staffing and a compute ask this week? OKR language due to Hana by Friday.\n\nThanks,\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/missing_link",
+  "title": "The missing link: Finding label relations across datasets",
+  "summary": "Turn the ECCV 2022 cross-dataset label-relation annotations (ADE20k-COCO, ADE20k-BDD, BDD-COCO mappings built via MSEG) into a label-harmonization service for Meridian's vision corpora, so segmentation datasets can be trained and evaluated jointly.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Kaia Wolde",
+    "Efe Lindqvist",
+    "Linnea Yamada"
+  ],
+  "window": {
+    "start": "2026-03-09",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "missing_link",
+    "url": "https://github.com/google-research/google-research/tree/master/missing_link",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/nngp_nas/e04",
+  "thread_id": "gr/nngp_nas/t1",
+  "in_reply_to": "gr/nngp_nas/e03",
+  "date": "2026-04-22T15:55:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: NNGP-NAS kickoff — close-out decisions",
+  "body": "Team,\n\nDecisions for the 05-04 close:\n\n1. v1 ships as a bottom-40% screening filter, per Freya's calibration study. We are explicitly not shipping a ranker — the mid-pack noise and the skip-connection blind spot make that a credibility risk. The service docs state the operating envelope in exactly those terms.\n2. The internal-workload validation stays in scope: Maren's integration shows screening would have saved roughly a third of full-training runs in the last search the graphs team ran, at zero missed top-decile candidates. That's the adoption pitch, and it goes in the readout.\n3. The annotation UI ships as an internal tool alongside the service — the rater-agreement data made Freya's study materially stronger, and I want it maintained, not orphaned. Jorge owns it through Q3.\n\nReadout to Eleni's staff 04-30. Good, tight project.\n\nAnders",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/eq_mag_prediction",
+  "title": "MAGNET: MAGnitude Neural EsTimation model",
+  "summary": "Scaling MAGNET, our neural model for earthquake magnitude prediction, into a benchmarked estimation service - covering catalog ingestion, cached feature and benchmark computation, and reproducible training runs per the compute-features/train/examine workflow.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Tereza Aliyev", "Ondrej Bergstrom", "Paloma Castillo"],
+  "window": {"start": "2026-02-02", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "eq_mag_prediction",
+    "url": "https://github.com/google-research/google-research/tree/master/eq_mag_prediction",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

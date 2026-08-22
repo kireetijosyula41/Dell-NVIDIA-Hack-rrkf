@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_enas/e01",
+  "thread_id": "gr/es_enas/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T11:18:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "ES-ENAS kickoff: compact RL controllers without extra cost",
+  "body": "Team,\n\nKicking off ES-ENAS hardening. The headline from our open-source release: combining evolution strategies with neural architecture search costs nothing extra - the controller proposes topologies (edges or partitions) to the same workers that evaluate ES perturbations, collecting rewards under weight sharing. For partners who need compact RL policies on constrained hardware, that's the pitch: smaller controllers, same training bill.\n\nWhat's missing is production plumbing. The release ships client.py (aggregator) and server.py (workers) but leaves client-server communication as an exercise. We build the gRPC layer properly, plus repeatable experiment configs for edge mode (NumpyEdgeSparsityPolicy with the aggregate_edges search space) as the default.\n\nMilestones for Feb 2 - May 4: gRPC comms layer by Feb 27, edge-mode benchmark suite by Mar 27, partition-mode + writeup and a follow-on plan by window close.\n\nSantiago has staffing. Freya leads research side.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

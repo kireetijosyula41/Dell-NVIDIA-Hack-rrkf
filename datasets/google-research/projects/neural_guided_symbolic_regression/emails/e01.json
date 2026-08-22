@@ -1,0 +1,16 @@
+{
+  "id": "gr/neural_guided_symbolic_regression/e01",
+  "thread_id": "gr/neural_guided_symbolic_regression/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T09:44:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: neural-guided symbolic regression as a formula-discovery service",
+  "body": "Hi Bruno,\n\nKickoff for the symbolic regression effort. Base: our open-source release on neural-guided symbolic regression with asymptotic constraints — an expression-generating network that respects a formula's leading power at 0 and at infinity. Training set is 28,837 rational expressions with complexity M <= 4; the release also ships holdout sets at M=5 and M=6 specifically to test generalization beyond training complexity, plus metrics code for success rate, L1-distance, and syntactic/semantic novelty.\n\nProduct: data-platforms customers who want closed-form, auditable relationships out of tabular data instead of black-box regressors. Constraint-conditioning is our differentiator — analysts usually know the asymptotics even when they don't know the formula.\n\nMilestones in our short window (04-13 to 06-29): training pipeline reproduced by mid-May, constraint-conditioning eval by mid-June, go/no-go readout 06-25.\n\nResourcing thoughts?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

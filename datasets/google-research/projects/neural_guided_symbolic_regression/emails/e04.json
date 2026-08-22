@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_guided_symbolic_regression/e04",
+  "thread_id": "gr/neural_guided_symbolic_regression/t1",
+  "in_reply_to": "gr/neural_guided_symbolic_regression/e03",
+  "date": "2026-06-25T15:36:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: symbolic regression — go/no-go decision",
+  "body": "Team,\n\nGo/no-go outcome from this morning, with last week's full eval matrix in hand:\n\nGO, scoped. Decisions:\n\n1. v1 ships as a formula-discovery service for M<=5-class problems, exactly per Leilani's framing. The M=6 tier results from the eval week confirmed the mid-May trend, so the product label says what the model can actually do. No heroics chasing M=6 this half.\n2. Constraint input is required, not optional, in the v1 API. The unconstrained mode's numbers don't meet the quality bar, and making it required keeps the differentiator front and center.\n3. Tereza's retraining ablation (larger training set with M<=5 expressions synthesized via the grammar) is the headline Q3 investment — it's the clearest path to lifting the ceiling.\n\nReadout deck to Hana's staff going out tomorrow, inside the window. Well run, everyone — tight timeline, clean landing.\n\nDmitri",
+  "labels": ["decision"]
+}

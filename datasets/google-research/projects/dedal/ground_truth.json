@@ -1,0 +1,12 @@
+{
+  "project": "gr/dedal",
+  "conflicts": [
+    {
+      "conflict_id": "C113",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["android_control"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We are building a benchmark leaderboard service from scratch - task registry, submission endpoint, automatic scoring against held-out pairs, versioned result tables and a browsable ranking view. Wei Ivanov owns it at 45% from March 30 with a first cut live by May 8."
+    }
+  ]
+}

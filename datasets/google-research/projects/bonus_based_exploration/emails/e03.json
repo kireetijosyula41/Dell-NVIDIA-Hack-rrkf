@@ -1,0 +1,18 @@
+{
+  "id": "gr/bonus_based_exploration/e03",
+  "thread_id": "gr/bonus_based_exploration/t1",
+  "in_reply_to": "gr/bonus_based_exploration/e02",
+  "date": "2026-04-20T10:40:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Project Quillon - sweep results + one risk for the report",
+  "body": "Sweeps finished Apr 16, a day early. Headlines from Ondrej's analysis:\n\n- On hard-exploration games (Montezuma's included), pseudo-counts with PixelCNN and RND clearly beat NoisyNets; RND wins on cost since it avoids the density model overhead.\n- On the easy-exploration games, the bonuses mostly don't help and occasionally hurt - NoisyNets DQN is within noise of vanilla on 5 of 8 games.\n\nThe risk for the report: our matched-budget framing makes RND look like the default answer, but its bonus is notoriously sensitive to observation normalization - Tereza had to re-run 9 RND jobs after a normalization bug produced garbage bonuses. If customers deploy it naively they will hit the same cliff. I want the recommendation to be \"RND, with our normalization checklist\" rather than bare RND.\n\nDraft report to you both by May 1 for the May 8 readout.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

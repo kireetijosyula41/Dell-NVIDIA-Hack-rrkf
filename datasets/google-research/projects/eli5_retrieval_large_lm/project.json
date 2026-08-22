@@ -1,0 +1,18 @@
+{
+  "id": "gr/eli5_retrieval_large_lm",
+  "title": "GPT2 and Retrieval",
+  "summary": "Testing whether a reasonably large causal language model (GPT2-XL, 1.5B parameters) can actually exploit retrieved context from a REALM-style retriever on the KILT version of the ELI5 long-form QA task, with a product angle on factual consistency in generation.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": ["Quentin Farkas", "Wei Ivanov", "Saoirse Eriksen", "Emeka Pinto", "Rosa Mensah"],
+  "window": {"start": "2026-04-27", "end": "2026-08-17"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "eli5_retrieval_large_lm",
+    "url": "https://github.com/google-research/google-research/tree/master/eli5_retrieval_large_lm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

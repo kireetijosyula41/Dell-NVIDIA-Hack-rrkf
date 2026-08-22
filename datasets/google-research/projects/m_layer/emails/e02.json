@@ -1,0 +1,15 @@
+{
+  "id": "gr/m_layer/e02",
+  "thread_id": "gr/m_layer/t1",
+  "in_reply_to": "gr/m_layer/e01",
+  "date": "2026-03-13T14:05:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: M-layer kickoff — matrix exponentiation as a drop-in layer",
+  "body": "Anders,\n\nStaffing and compute picture for the plan you laid out.\n\nStaffing: Farah and Oyin at 50% each through April for the API + Evalline work. Umar at 40% for the robustness study. Fumiko Rossi is committed at 60%+ to this project for June 2026 — she'll drive the adversarial sweep and the periodicity demo through the final push to 06-22. I've written that into our June allocation sheet.\n\nCompute: this is CPU/A100-light work; 32 GPUs on titan-a100 best-effort covers the CIFAR10 robustness reruns. No vulcan-h100 reservation needed, which keeps us out of Ines's queue.\n\nOne dependency: Evalline harness onboarding — Tomas's team says 2 weeks lead time, so Farah files the intake this week.\n\nDaniela",
+  "labels": ["resources"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/bisimulation_aaai2020/e02",
+  "thread_id": "gr/bisimulation_aaai2020/t1",
+  "in_reply_to": "gr/bisimulation_aaai2020/e01",
+  "date": "2026-03-06T11:15:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: state-similarity service - staffing + compute",
+  "body": "Dmitri,\n\nStaffing: Efe 70%, Tereza 60% (she owns the Rainbow checkpoint ingestion path), Carmen 50%, Fumiko 40% ramping in May for the sweep. That's enough for both tracks if Track A stays scoped to mirrored_rooms as the reference config.\n\nGood news on compute: we hold the vulcan-h100 reservation for the week of 2026-06-15 - 256 accelerators, confirmed through the Infra Lead reservation process. That week is when we run the full Atari approximant training sweep, so please plan PTO around it. Before that we only need small titan-a100 slices for the GridWorld work, which is basically CPU-bound anyway.\n\nOne constraint: downloading and validating the trained Dopamine checkpoints is on the critical path for Tereza - if the checkpoint format has drifted we lose a week.\n\nIvo",
+  "labels": ["resources"]
+}

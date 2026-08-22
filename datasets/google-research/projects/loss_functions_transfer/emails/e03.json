@@ -1,0 +1,18 @@
+{
+  "id": "gr/loss_functions_transfer/e03",
+  "thread_id": "gr/loss_functions_transfer/t1",
+  "in_reply_to": "gr/loss_functions_transfer/e02",
+  "date": "2026-05-21T15:44:00Z",
+  "from": {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: loss-function guidance for transferable embeddings — status",
+  "body": "Hi Anders, Alina,\n\nStatus:\n\n- Loading path done Apr 21. We went the TF2 route — running the released SavedModels directly rather than the TF1-compat checkpoint loader — which gives us every block's activations plus final_avg_pool in one forward pass. Background-class drop is handled in the loader as planned.\n- Transfer evals: 9 of 12 internal tasks done. The paper's pattern replicates clearly so far — the loss variants with the best source accuracy sit at the bottom of our transfer ranking on 7 of 9 tasks, with penultimate-layer (final_avg_pool) features telling the same story as the block-level probes.\n\nRisk: the 3 remaining tasks are the graph-structured ones, and linear probes may understate transfer there — Ondrej wants to add a small non-linear probe as a check, which adds ~1 week. We can still hold May 29 if we accept linear-only on those three; otherwise Jun 5. Preference?\n\nRosa",
+  "labels": ["status", "risk"]
+}

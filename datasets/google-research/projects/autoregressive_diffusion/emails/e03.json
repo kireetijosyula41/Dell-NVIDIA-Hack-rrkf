@@ -1,0 +1,18 @@
+{
+  "id": "gr/autoregressive_diffusion/e03",
+  "thread_id": "gr/autoregressive_diffusion/t1",
+  "in_reply_to": "gr/autoregressive_diffusion/e02",
+  "date": "2026-04-10T10:26:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: ARDMs for budget-adaptive generation and compression",
+  "body": "Status and one trade-off to decide.\n\nCompression pilot: on the de-duplicated audio corpus, the ARDM compressor beats our baseline by 0.21 bits/dim, and because ARDMs don't rely on bits-back coding the advantage holds even for single-example compression - that's the differentiator for on-device use. De-dup mattered: numbers on the raw corpus were ~0.05 bits/dim rosier, exactly the inflation we feared.\n\nLatency study: parallel generation lets us cut network calls roughly 4x on images with negligible quality loss; text is more sensitive, closer to 2x before degradation.\n\nTrade-off for the review: dynamic per-request step budgets complicate Shipyard's serving path (batching gets messy). Options are fixed budget tiers vs. Zeke's team building dynamic batching support, which they'd want headcount for.\n\nDetails in the doc, comments welcome.\n\nEfe",
+  "labels": ["status", "risk"]
+}

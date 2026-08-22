@@ -1,0 +1,12 @@
+{
+  "project": "gr/c_learning",
+  "conflicts": [
+    {
+      "conflict_id": "C040",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["label_bias"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"Compute: we hold the cirrus-tpu reservation for the week of 2026-06-22 - 512 accelerators from the agents-rl quarterly allocation. The full goal-sampling-ratio ablation runs that week, so the sweep configs must be frozen by Jun 17.\""
+    }
+  ]
+}

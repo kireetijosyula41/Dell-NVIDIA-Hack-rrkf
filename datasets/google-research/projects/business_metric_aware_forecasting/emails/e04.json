@@ -1,0 +1,19 @@
+{
+  "id": "gr/business_metric_aware_forecasting/e04",
+  "thread_id": "gr/business_metric_aware_forecasting/t1",
+  "in_reply_to": "gr/business_metric_aware_forecasting/e03",
+  "date": "2026-04-09T15:45:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Vantage - readout decision + what's next",
+  "body": "Wrap-up ahead of tomorrow's readout.\n\nDecision on positioning: we go with Nikhil's honest framing - \"metric-aware training pays off most when your cost structure is asymmetric\", with the 9-14% holding-cost-regime result as the headline and the crossover chart as the second slide. I'd rather under-promise at the readout than walk back claims in a pilot.\n\nOne scope cut to log: the real-time reforecasting demo Jorge prototyped is out - it's cool but the pilot customer runs weekly batch, and Legal's favorita clearance came through for static charts only, pending one wording change from Kofi. Jorge, park the prototype in the repo with a README.\n\nNext step: if the readout lands, Vantage graduates to a Q2/Q3 pilot with the customer's own data, which means a fresh scoping round for ingestion. Daniela, hold Amara's and Nikhil's allocations until that decision - I'll know within two weeks.\n\nGood sprint, everyone. Short window, real result.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

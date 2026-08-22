@@ -1,0 +1,18 @@
+{
+  "id": "gr/hipi/e03",
+  "thread_id": "gr/hipi/t2",
+  "in_reply_to": null,
+  "date": "2026-03-27T11:47:00Z",
+  "from": {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "HIPI status: goal-reaching repro done, linear-reward inference is the risk",
+  "body": "Ulla, Bruno,\n\nStatus through week 7. Goal-reaching repro is done: inverse-RL relabeling hits 71% success at 1M steps vs. 58% for the goal-relabeling baseline on our hardest reaching task, matching the published direction. Discrete-reward-set domains are running now; Tereza has 6 of 9 configs finished and the acceleration effect is visible in 5.\n\nThe risk is the linear reward family. Inferring the hindsight task there means normalizing over the reward-parameter space, and our current estimator needs roughly 3x the samples we budgeted to stay stable. Nikhil is testing a cheaper approximation; if it's not converged by April 10 we should consider demoing discrete rewards only and keeping linear as a stretch.\n\nCompute is fine - titan-a100 best-effort has been giving us ~70 GPUs.\n\nMaren",
+  "labels": ["status", "risk"]
+}

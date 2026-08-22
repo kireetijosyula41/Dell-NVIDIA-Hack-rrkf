@@ -1,0 +1,15 @@
+{
+  "id": "gr/graph_compression/e03",
+  "thread_id": "gr/graph_compression/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:21:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}],
+  "subject": "Status: compression curves ahead of the 4/17 gate",
+  "body": "Hi both,\n\nCurves land on time. Headline: on the flagship ranking model, low-rank compression via ApplyCompression reaches 4x weight reduction at 0.4% metric loss when the ops run during training; the same ratio applied post-training costs 2.1%. That delta is the whole argument for the in-graph approach, so it goes on slide one.\n\nSmoothed compression matters more than expected: ramping the compression fraction over the first third of training avoids the loss cliff we saw with an abrupt schedule. Linnea has the schedule hyperparameters documented in the shared config.\n\nRisk: the embedding tables dominate memory but tolerate compression worst - past 2x, retrieval recall drops fast. Recommendation will likely be tiered: 4x on dense layers, 2x on embeddings. Also flagging that our second target model still runs TF1-style sessions and the CompressionOpInterface wiring there is fiddly; Emeka lost a week to it.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

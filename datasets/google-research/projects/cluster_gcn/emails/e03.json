@@ -1,0 +1,46 @@
+{
+  "id": "gr/cluster_gcn/e03",
+  "thread_id": "gr/cluster_gcn/t1",
+  "in_reply_to": "gr/cluster_gcn/e02",
+  "date": "2026-03-11T09:55:00Z",
+  "from": {
+    "name": "Efe Lindqvist",
+    "email": "efe.lindqvist@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Obsidian kickoff — Cluster-GCN on our entity graphs",
+  "body": "Obsidian status.\n\nReproduction: green on both benchmarks. PPI micro-F1 matches the published Cluster-GCN result within noise, Reddit likewise — and the headline property holds: peak GPU memory stays flat as we scale batch count, exactly what the cluster-induced subgraph batching promises. A 5-layer model on Reddit trains on a single A100 where full-batch would OOM.\n\nInternal graph (Csilla): first METIS partitioning of the entity graph done — 1,400 partitions, partition quality looks reasonable (6.2% edge cut). First training runs this week.\n\nRisk to flag: our entity graph's degree distribution is much more skewed than Reddit's. A handful of hub nodes end up with most of their edges cut across partitions, which the paper's stochastic multiple-partition trick mitigates but maybe not fully at our skew. Wei is designing an ablation; if hub-node accuracy lags we may need a hybrid batching scheme for the top 0.1% of nodes.\n\nEfe",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

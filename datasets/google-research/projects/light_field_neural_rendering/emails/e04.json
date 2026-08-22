@@ -1,0 +1,18 @@
+{
+  "id": "gr/light_field_neural_rendering/e04",
+  "thread_id": "gr/light_field_neural_rendering/t1",
+  "in_reply_to": "gr/light_field_neural_rendering/e03",
+  "date": "2026-05-26T10:44:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: Kickoff: Light Field Neural Rendering productization — LRB decision",
+  "body": "Team,\n\nOutcome from Friday's quality review and decision for the Launch Review Board:\n\n- We hit 7 of 8 scenes at paper PSNR after the full-res re-mirror, above the 6-scene bar. The last scene (the CD scene, worst-case reflections) stays flagged as a known limitation in the LRB packet.\n- Decision: we present at the June 4 LRB with the partner-capture demo, not the public dataset, as the headline. Ondrej's side-by-sides on the partner rig are more convincing than benchmark tables.\n- Spend: approving Katya's full-res training grid retroactively — it was the right call. Santiago, please make sure the burn is booked against the discretionary line, not the portfolio baseline, so my OKR math stays honest.\n\nNadia, adding you so the June 4 slot is locked.\n\nLucia",
+  "labels": ["decision"]
+}

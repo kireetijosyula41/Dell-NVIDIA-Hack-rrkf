@@ -1,0 +1,25 @@
+{
+  "id": "gr/cmmd",
+  "title": "Rethinking FID: Towards a Better Evaluation Metric for Image Generation",
+  "summary": "Rolls out CMMD — our CLIP-embedding + MMD alternative to FID for evaluating image generation (from 'Rethinking FID') — as the standard generation metric in Evalline, replacing FID's Inception-and-normality assumptions with a distribution-free estimator.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Katya Silva",
+    "Amara Okafor",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cmmd",
+    "url": "https://github.com/google-research/google-research/tree/master/cmmd",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

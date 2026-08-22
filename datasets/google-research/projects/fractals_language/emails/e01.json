@@ -1,0 +1,45 @@
+{
+  "id": "gr/fractals_language/e01",
+  "thread_id": "gr/fractals_language/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:00:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: fractal language metrics track",
+  "body": "Team — kicking off the fractal language metrics track.\n\nThe research establishes that language is self-similar and long-range dependent — Hurst parameter around H=0.70 — and, more usefully for us, that fractal parameters improve on perplexity-based bits-per-byte for predicting downstream performance. Product angle: a corpus-quality scoring service. If the self-similarity exponent S, Hurst exponent H, and Joseph exponent J computed over a candidate data mix predict downstream evals better than BPB, that changes how data-platforms prices and prioritizes corpora.\n\nPlan: (1) reproduce the parameter-estimation pipeline from the released colab by Feb 27; (2) compute fractal parameters across five internal corpus slices in March; (3) a correlation study against our existing downstream eval suite in April; (4) readout and Q3 proposal by May 1.\n\nWei owns estimation, Rafael the correlation study, Gustavo pipelines, Amara data access. Daniela follows up on resourcing.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

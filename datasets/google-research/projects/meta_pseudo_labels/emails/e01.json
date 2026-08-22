@@ -1,0 +1,19 @@
+{
+  "id": "gr/meta_pseudo_labels/e01",
+  "thread_id": "gr/meta_pseudo_labels/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:08:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MPL kickoff — squeezing accuracy out of 10% of the labels",
+  "body": "Team,\n\nKicking off the Meta Pseudo Labels integration. Why: several vision customers have huge unlabeled pools and tiny labeled sets, and our open-source MPL work is the strongest teacher-student recipe we own for that regime — the released implementation covers the two low-resource benchmarks, CIFAR-10-4000 and ImageNet-10%.\n\nMilestones (window closes 05-04):\n- 03-06: CIFAR-10-4000 reproduction with the wrn-28-2 config on our accelerator quota, matching published accuracy.\n- 04-03: ImageNet-10% reproduction with resnet-50; training-cost profile documented.\n- 04-27: proposal for the Q3 scaled run on the internal low-label datasets, with a real budget attached — this thing is compute-hungry and I don't want a surprise in July.\n\nNote the released code is TPU-only, so we run on our cirrus quota — Santiago will confirm feasibility. Umar is TL.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

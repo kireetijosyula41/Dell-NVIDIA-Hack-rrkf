@@ -1,0 +1,45 @@
+{
+  "id": "gr/concept_marl/e04",
+  "thread_id": "gr/concept_marl/t2",
+  "in_reply_to": null,
+  "date": "2026-07-01T15:05:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Concept MARL: demo scope decisions",
+  "body": "Team,\n\nDecisions from Monday's review, aimed at the 7/20 close:\n\n1. Demo environment: Collaborative Cooking only. Nikhil's June probe results (87% concept recovery on cooking vs 78% on Clean Up) make cooking the defensible showcase; Clean Up and Capture the Flag move to the Q3 backlog.\n2. Rewards: we demo the sparse-reward agents. Quentin's concern was right — the interpretability story is the whole product pitch, and an asterisk kills it. Dense-reward runs stay as a training-efficiency appendix.\n3. The LRB packet leads with the concept-probe dashboard; Umar owns the eval card in Evalline by 7/15, Nadia's office gets the packet 7/16.\n\nGood half, team — this went from paper to demo in fifteen weeks.\n\nUlla",
+  "labels": [
+    "decision"
+  ]
+}

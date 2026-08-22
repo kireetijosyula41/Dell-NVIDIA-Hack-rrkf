@@ -1,0 +1,45 @@
+{
+  "id": "gr/fast_gradient_clipping/e01",
+  "thread_id": "gr/fast_gradient_clipping/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:10:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: fast gradient clipping for DP-SGD",
+  "body": "Team — kicking off the fast gradient clipping adoption track.\n\nContext: DP-SGD's per-example gradient clipping is the tax every privacy-sensitive training job pays, and our open-source release of the unified fast gradient clipping framework shows how to cut it substantially. Goal for the window: land the framework in the internal DP training stack and publish before/after cost numbers privacy teams can budget against.\n\nMilestones: repro the paper's runtime-profiling experiments (fully connected, embedding, and BERT targets) by May 1; integration behind a flag by May 29; adoption guide plus a cost memo to the privacy council by Jun 19, ahead of the Q3 OKR lock on Jun 26.\n\nLeilani owns integration, Bilal profiling, Csilla the correctness review, Vera the BERT-scale runs. Bruno follows up on staffing.\n\nZofia",
+  "labels": [
+    "kickoff"
+  ]
+}

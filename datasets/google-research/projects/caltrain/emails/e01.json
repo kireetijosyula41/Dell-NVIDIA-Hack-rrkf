@@ -1,0 +1,18 @@
+{
+  "id": "gr/caltrain/e01",
+  "thread_id": "gr/caltrain/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:35:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: debiased calibration reporting (caltrain)",
+  "body": "Hi Santiago, Kaia,\n\nKickoff for the calibration-reporting module. Context: every model card we publish quotes ECE, and our own research showed those estimates carry systematic bias - binning choices can make a model look better- or worse-calibrated than it is. Our open-source release has the debiased estimators plus the reliability-diagram tooling; agents-rl wants this productized because calibration is the first question customers ask about agent confidence scores.\n\nScope for Feb 16 - Apr 27: M1 (Mar 13) reproduce the paper's figures from the released scripts - including the reliability diagrams and the curves controlling true calibration error - as our correctness reference. M2 (Apr 3) wrap the debiased estimators in a clean API with bootstrap confidence intervals. M3 (Apr 24) integrate into the Evalline harness so every eval run reports debiased calibration by default.\n\nKaia is TL. Santiago, staffing and the Evalline coordination are yours.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

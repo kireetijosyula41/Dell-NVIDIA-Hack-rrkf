@@ -1,0 +1,35 @@
+{
+  "id": "gr/ara_optimization/e04",
+  "thread_id": "gr/ara_optimization/t2",
+  "in_reply_to": "gr/ara_optimization/e03",
+  "date": "2026-07-16T15:25:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: ARA optimization status: synthetic baselines, generalization risk",
+  "body": "Umar, Daniela,\n\nDecisions for the July 20 readout:\n\n1. We lead with the real-slice number, 12%, and show 31% synthetic as context only. Umar's instinct is right — a number we can't reproduce on partner data is a liability.\n2. Chiara extends the synthetic generator with heavy-tailed count distributions in Q3, so the gap closes or we learn why it doesn't.\n3. Partner-facing recommender is deferred out of this window. We have a method, not yet a product, and saying so now costs less than saying it in a launch review.\n\nNikhil, please attach the RMSRE-tau tables for both settings to the deck appendix.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

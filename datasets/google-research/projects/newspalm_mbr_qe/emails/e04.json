@@ -1,0 +1,19 @@
+{
+  "id": "gr/newspalm_mbr_qe/e04",
+  "thread_id": "gr/newspalm_mbr_qe/t1",
+  "in_reply_to": "gr/newspalm_mbr_qe/e03",
+  "date": "2026-05-14T14:03:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Kestrel — memo decision + scope call",
+  "body": "Team,\n\nDecisions for the Kestrel close-out:\n\n1. The decision memo recommends replacing 30% of the web-crawled de-en training slice with MBR-decoded NewsPaLM data, blob-level where the downstream task is document translation. The +2.1 BLEURT with a dedup-hardened baseline is a defensible number, and Ondrej's methodology section makes that case explicitly.\n2. Scope call: the en-de direction ships in the memo as preliminary (the dedup delay means only half its ablation cells finish by 05-25). I'd rather flag it than pad the timeline. Full en-de results become a Q3 fast-follow.\n3. The beyond-en/de recipe ships as an appendix — Kaia's granularity finding is the piece I want quoted when other portfolios pick this up.\n\nMemo review Tuesday, final to Hana's staff by 05-22, closing Kestrel on schedule.\n\nExcellent work, all.\n\nDmitri",
+  "labels": ["decision"]
+}

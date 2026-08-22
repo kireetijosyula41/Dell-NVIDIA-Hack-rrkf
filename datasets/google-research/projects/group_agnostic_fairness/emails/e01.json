@@ -1,0 +1,17 @@
+{
+  "id": "gr/group_agnostic_fairness/e01",
+  "thread_id": "gr/group_agnostic_fairness/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:41:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: ARL - fairness without demographic labels",
+  "body": "Hi Ivo,\n\nKicking off the group-agnostic fairness workstream. The platform problem: customers want worst-group performance guarantees, but most of them cannot legally or practically collect demographic labels. Adversarially Reweighted Learning attacks exactly that - an adversary learns to upweight regions where the learner underperforms, improving the worst-off groups without ever seeing group membership.\n\nDeliverables: ARL integrated into the model-quality tooling as an opt-in training mode, validated against the three benchmarks from the release (COMPAS, UCI Adult, and the Law School LSAC dataset), each of which has its own preprocessing notebook we need to port into the platform's ingestion path.\n\nMilestones: benchmark repro by 4/17, tooling integration by 5/29, launch decision by 6/24 - I want this in front of the LRB before Q3 OKRs lock on 6/26.\n\nYara leads modeling, Kaia evals, Paloma ingestion, Emeka tooling. Staffing and compute from you next week?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

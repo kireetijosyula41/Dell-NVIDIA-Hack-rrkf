@@ -1,0 +1,18 @@
+{
+  "id": "gr/correct_batch_effects_wdn/e02",
+  "thread_id": "gr/correct_batch_effects_wdn/t1",
+  "in_reply_to": "gr/correct_batch_effects_wdn/e01",
+  "date": "2026-04-13T13:47:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Wasserstein batch-effect correction as a corpus-wide layer",
+  "body": "Anders,\n\nResourcing:\n- Umar Costa 55%, method work and the transfer study.\n- Linnea Yamada 35%, preprocessing - percentile-matching normalization and the factor analysis step, i.e. the ljosa path end to end.\n- Amara Okafor 30%, pipeline integration.\n\nCompute is small, ~250 GPU-hours on titan-a100. The TensorFlow implementation is old but it runs.\n\nSchedule dependency worth flagging: the non-imaging corpus we want for the May 29 milestone has to be re-ingested with per-run metadata attached, otherwise we have no batch labels to correct against. The Corpus v2 migration freeze is 2026-07-24, so we have the whole of July to land the re-ingest before anything locks; I've planned the embedding re-export backwards from 2026-07-24. That gives Amara comfortable float and means I don't need to fight anyone for priority in May.\n\nAlina",
+  "labels": ["resources", "risk"]
+}

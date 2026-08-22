@@ -1,0 +1,18 @@
+{
+  "id": "gr/behavior_regularized_offline_rl",
+  "title": "Behavior Regularized Actor Critic for Offline Reinforcement Learning.",
+  "summary": "Implements the BRAC framework for offline RL on continuous-control tasks, with configurable divergences for behavior regularization, value penalty vs. policy regularization, and Q-ensembles; the internal effort evaluates BRAC for training agents from logged interaction data without live exploration.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Daniela Oduya",
+  "contributors": ["Carmen Reyes", "Wanjiru Horvat", "Rosa Mensah", "Nikhil Abebe"],
+  "window": {"start": "2026-02-16", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "behavior_regularized_offline_rl",
+    "url": "https://github.com/google-research/google-research/tree/master/behavior_regularized_offline_rl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

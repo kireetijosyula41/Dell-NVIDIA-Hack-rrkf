@@ -1,0 +1,18 @@
+{
+  "id": "gr/lasagna_mt/e03",
+  "thread_id": "gr/lasagna_mt/t2",
+  "in_reply_to": null,
+  "date": "2026-04-20T13:11:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Lasagna status: first head-to-heads in, decoder is where the win lives",
+  "body": "Hi Dmitri, Santiago,\n\nStatus. Training path has been stable since mid-March (fp32 auto-regressive, matching the release's supported configuration — we deliberately didn't stray into mixed precision to keep comparisons clean).\n\nFirst head-to-head results on the two internal pairs, at matched parameter count and the release's inverse_sqrt schedule with 4k warmup:\n- A Lasagna config with conv layers in the lower decoder and attention on top gets +0.4 BLEU on pair A and +0.1 on pair B versus the production transformer, with 18% faster decode.\n- Encoder-side mixing has been neutral-to-negative for us so far. The win concentrates in the decoder, which is convenient — decode cost dominates serving.\n\nRisk/trade-off for the sweep: Kaia's config space is now decoder-focused (16 configs, down from 24). That fits the reserved week with more retries slack, but means if encoder mixing matters for other pairs we won't know this window. We think that's the right cut — flagging for visibility.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,605 @@
+{
+  "batch": 13,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "genomics_ood",
+      "title": "Out-of-Distribution Detection for Genomics Sequences",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Out-of-Distribution Detection for Genomics Sequences\n\nThis directory contains implementation of the generative model and the classification model for the bacteria genomic dataset that are used in the paper of [Ren J, Liu PJ, Fertig E, Snoek J, Poplin R, DePristo MA, Dillon JV, Lakshminarayanan B. Likelihood Ratios for Out-of-Distribution Detection. arXiv preprint arXiv:1906.02845.](https://arxiv.org/abs/1906.02845)\n\n## Installation\n\n```bash\nvirtualenv -p python3 .\nsource ./bin/activate\n\npip install -r genomics_ood/requirements.txt\n```\n\n## Usage\n\nThis directory contains two python scripts:\ngenerative.py: build an autoregressive generative model for DNA sequences using LSTM.\nclassifier.py: build a classifier for DNA sequences using ConvNets.\n\nTo test the models on a toy dataset,\n\n```bash\nDATA_DIR=./genomics_ood/test_data\nOUT_DIR=./genomics_ood/test_out\npython -m genomics_ood.generative \\\n--hidden_lstm_size=30 \\\n--val_freq=100 \\\n--num_steps=1000 \\\n--in_tr_data_dir=$DATA_DIR/before_2011_in_tr \\\n--in_val_data_dir=$DATA_DIR/between_2011-2016_in_val \\\n--ood_val_data_dir=$DATA_DIR/between_2011-2016_ood_val \\\n--out_dir=$OUT_DIR\n\npython -m genomics_ood.classifier \\\n--num_motifs=30 \\\n--val_freq=100 \\\n--num_steps=1000 \\\n--in_tr_data_dir=$DATA_DIR/before_2011_in_tr \\\n--in_val_data_dir=$DATA_DIR/between_2011-2016_in_val \\\n--ood_val_data_dir=$DATA_DIR/between_2011-2016_ood_val \\\n--label_dict_file=$DATA_DIR/label_dict.json \\\n--out_dir=$OUT_DIR\n```\n\n## Real Bacteria Dataset\n\nThe real bacteria dataset with 10 in-distribtution classes, 60 validation out-of-distribution (OOD) classes, and 60",
+      "contributors": [
+        "Nikhil Abebe",
+        "Yara Jokic",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C090",
+          "type": "budget_overallocation",
+          "projects": [
+            "genomics_ood",
+            "munchausen_rl"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-44",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-44",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-44 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gfsa",
+      "title": "Learning Graph Structure With A Finite-State Automaton Layer",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learning Graph Structure With A Finite-State Automaton Layer\n\nThis directory contains the implementation of the Graph Finite-State Automaton\nlayer described in\n\n[\"Learning Graph Structure With A Finite-State Automaton Layer\"](https://arxiv.org/abs/2007.04929)\n\nDaniel D. Johnson, Hugo Larochelle, Daniel Tarlow (2020).\n\nIf you use the code, models, or data in this repository, please cite the following paper:\n```\n@inproceedings{gfsa,\nauthor    = {Daniel D. Johnson and\nHugo Larochelle and\nDaniel Tarlow},\ntitle     = {Learning graph structure with a finite-state automaton layer},\nbooktitle = {Advances in Neural Information Processing Systems},\nyear      = {2020}\n}\n```\n\n## Interactive demo notebooks\n\nWant to see the GFSA layer in action? A good starting point is the interactive\ndemo notebook, which shows how to train the GFSA layer to do a simple static\nanalysis of Python code:\n\nYou may also be interested in the [new task guide notebook][notebook_new_task_guide],\nwhich describes how to use the GFSA layer for new types of graphs and graph-based\nMDPs.\n\n[notebook_demo]: https://colab.research.google.com/github/google-research/google-research/blob/master/gfsa/notebooks/demo_learning_static_analyses.ipynb\n[notebook_new_task_guide]: https://colab.research.google.com/github/google-research/google-research/blob/master/gfsa/notebooks/guide_for_new_tasks.ipynb\n\n## Setting up the environment\n\nThe code in this repository is written for Python 3.6. We recommend creating\na virtual environment and then installing the requirements in\n`requirements.txt`. You may also want to configure your JAX ",
+      "codename": "Project Quillon",
+      "contributors": [
+        "Fumiko Rossi",
+        "Halima Toure",
+        "Hyun Traore",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C071",
+          "type": "codename_collision",
+          "projects": [
+            "bonus_based_exploration",
+            "gfsa"
+          ],
+          "shared_object": "Project Quillon",
+          "canonical": {
+            "codename": "Project Quillon"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Quillon."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ghum",
+      "title": "GHUM & GHUML: Generative 3D Human Shape and Articulated Pose Models",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# GHUM & GHUML: Generative 3D Human Shape and Articulated Pose Models\n\n## Introduction\n\nbody scans of humans, captured in various poses, together with additional closeups of their head and facial expressions, as well as hand articulation, and given initial, artist designed, gender neutral rigged quad-meshes, we train all model parameters including non-linear shape spaces based on variational auto-encoders, pose-space deformation correctives, skeleton joint center predictors, and blend skinning functions, in a single consistent learning loop. The models are simultaneously trained with all the 3d dynamic scan data (over 60, 000 diverse human configurations in our new dataset) in order to capture correlations and ensure consistency of various components. Models support facial expression analysis, as well as body (with detailed hand) shape and pose estimation. We provide two fully trained generic human models of different resolutions \u2013 the moderate-resolution GHUM consisting of 10,168 vertices and the low-resolution GHUML(ite) of 3,194 vertices.\n\n## Features\n\n \n16-dimensional body shape latent spaces, represented as both linear PCA bases and nonlinear variational autoencoders. We provide low-dimensional gender-neutral shape spaces, as well as gender-specific ones, trained based on 4,329 male and female body shape scans. \n\n \n20-dimensional facial expressions latent spaces, with options for both linear/PCA bases and nonlinear variational autoencoders.  \n\n \nArticulated full body representations (including head and hands) with optimized blend skinning, joint centers, and  pose-spac",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Quentin Farkas",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C126",
+          "type": "budget_overallocation",
+          "projects": [
+            "fair_submodular_matroid",
+            "ghum"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-74",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-74",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-74 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gift",
+      "title": "Gradual Domain Adaptation in the Wild: When Intermediate Distributions are Absent",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Gradual Domain Adaptation in the Wild: When Intermediate Distributions are Absent\n==\n\nThis repository contains implementation of GIFT (Gradual Interpolation of Features toward Target), and other self-training based approaches to shift the model towards the target distribution. It has been shown that under the following two assumptions: (a) access to samples from intermediate distributions, and (b) samples being annotated with the amount of change from the source distribution, self-training can be successfully applied on gradually shifted samples to adapt the model toward the target distribution. We hypothesize having (a) is enough to enable iterative self-training to slowly adapt the model to the target distribution, by making use of an implicit curriculum. In the case where (a) does not hold, we observe that iterative self-training falls short. We propose GIFT, a method that creates virtual samples from intermediate distributions by interpolating representations of examples from source and target domains. We evaluate an iterative-self-training method on datasets with natural distribution shifts, and show that when applied on top of other domain adaptation methods, it improves the performance of the model on the target dataset. We run an analysis on a synthetic dataset to show that in the presence of (a) iterative-self-training naturally forms a curriculum of samples. Furthermore, we show that when (a) does not hold, GIFT performs better than iterative self-training.\nDetails can be found in the [paper](https://arxiv.org/abs/2106.06080).\n\n## Getting Started\n\nThis project is ",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Amara Okafor",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C045",
+          "type": "budget_overallocation",
+          "projects": [
+            "frmt",
+            "gift"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-75",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-75",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-75 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "global_metnet",
+      "title": "Global MetNet: Precipitation Nowcasting Model",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Global MetNet: Precipitation Nowcasting Model\n\nThis directory contains the open-sourced code for our global precipitation\nnowcasting model.\n\nFor more details on the model architecture, training, and evaluation, please\nrefer to our paper available at: \n\n## Global MetNet Precipitation Nowcasting Dataset\n\nThe complete Global MetNet precipitation nowcasting data is made publicly\navailable for researchers. The dataset offers:\n\n-   **Historical Reforecasts**: High-resolution precipitation nowcasts\navailable from 2020 to present. These reforecasts have a cadence of 3\nhours (8 initializations per day).\n-   **Real-time Forecasts**: Real-time production forecasts are also available\nand initialized every 30 minutes.\n\nThis data product provides high-resolution (5km spatial, 15 min temporal, up\nto 12 hr ahead) probabilistic precipitation forecasts, including optimal\nprobability thresholds for conversion to categorical values. The dataset is\naccessible via a [Google Earth Engine Catalog][gee-catalog] provided the user\nagrees to the terms and conditions outlined in this [Google form][google-form].\n\n## System Requirements\nThis code is tested on Linux. The python dependencies are listed in\n`requirements.txt`.\n\n* absl-py\n* flax\n* jax\n* ml_collections\n* numpy\n* optax\n* tensorflow\n* tensorflow-probability\n\nSpecific versions are not pinned, and you might need to adjust them based on\nyour environment. We recommend using a virtual environment to manage\ndependencies. The current model was trained on TPUs though a GPU may also\nwork by reducing the dimensions of each training example than what we ",
+      "contributors": [
+        "Milan Zapata",
+        "Tereza Aliyev",
+        "Wei Ivanov",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C114",
+          "type": "dependency_date_drift",
+          "projects": [
+            "global_metnet",
+            "group_agnostic_fairness",
+            "clustering_normalized_cuts",
+            "mir_uai24"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "goemotions",
+      "title": "GoEmotions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# GoEmotions\n\n**GoEmotions** is a corpus of 58k carefully curated comments extracted from Reddit,\nwith human annotations to 27 emotion categories or Neutral.\n\n* Number of examples: 58,009.\n* Number of labels: 27 + Neutral.\n* Maximum sequence length in training and evaluation datasets: 30.\n\nOn top of the raw data, we also include a version filtered based on reter-agreement, which contains a train/test/validation split:\n\n* Size of training dataset: 43,410.\n* Size of test dataset: 5,427.\n* Size of validation dataset: 5,426.\n\nThe emotion categories are: _admiration, amusement, anger, annoyance, approval,\ncaring, confusion, curiosity, desire, disappointment, disapproval, disgust,\nembarrassment, excitement, fear, gratitude, grief, joy, love, nervousness,\noptimism, pride, realization, relief, remorse, sadness, surprise_.\n\nThis directory includes the data and code for data analysis scripts. We also\ninclude code for our baseline model, which involves fine-tuning a pre-trained\n[BERT-base model](https://github.com/google-research/bert).\n\nFor more details on the design and content of the dataset, please see our\n[paper](https://arxiv.org/abs/2005.00547).\n\nRefer to our [GoEmotions Model Card](goemotions_model_card.pdf) for recommended\nuses of models built with this data, as well as considerations and limitations\nrelating to the GoEmotions data.\n\n## Requirements\n\nSee `requirements.txt`\n\n## Setup\n\nDownload the pre-trained BERT model from\n[here](https://github.com/google-research/bert) and unzip them inside the\n`bert` directory. In the paper, we use the cased base model.\n\n## Data\n\nOur raw d",
+      "contributors": [
+        "Umar Costa",
+        "Quentin Farkas",
+        "Kaia Wolde",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C047",
+          "type": "duplicate_effort",
+          "projects": [
+            "anthea",
+            "goemotions"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gon",
+      "title": "Example code for running Global Optimization Networks (GON) algorithm.",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "Example code for running Global Optimization Networks (GON) algorithm.\n\nPaper: https://arxiv.org/abs/2202.01277 (ICML'22)\n\nAbstract: We consider the problem of estimating a good maximizer of a black-box\nfunction given noisy examples. We propose to fit a new type of function called a\nglobal optimization network (GON), defined as any composition of an invertible\nfunction and a unimodal function, whose unique global maximizer can be inferred\nin O(D) time, and used as the estimate. As an example way to construct GON\nfunctions, and interesting in its own right, we give new results for specifying\nmulti-dimensional unimodal functions using lattice models with linear inequality\nconstraints. We extend to conditional GONs that find a global maximizer\nconditioned on specified inputs of other dimensions. Experiments show the GON\nmaximizers are statistically significantly better predictions than those\nproduced by convex fits, GPR, or DNNs, and form more reasonable predictions for\nreal-world problems.\n\nExample run:\n\n`python -m gon.simulation`",
+      "contributors": [
+        "Gustavo Moreau",
+        "Chiara Olsen",
+        "Umar Costa",
+        "Yara Jokic",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C106",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dichotomy_of_control",
+            "gon"
+          ],
+          "shared_object": "Linnea Yamada at >=60% allocation",
+          "canonical": {
+            "person": "Linnea Yamada",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Linnea Yamada is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gradient_based_tuning",
+      "title": "Simple and Effective Gradient-Based Tuning of Sequence-to-Sequence Models",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Simple and Effective Gradient-Based Tuning of Sequence-to-Sequence Models\n\nThis repository contains the code used in the paper \"[Simple and Effective Gradient-Based Tuning of Sequence-to-Sequence Models](https://automl.cc/wp-content/uploads/2022/07/simple_and_effective_gradient_.pdf)\"\nby Jared Lichtarge, Chris Alberti, and Shankar Kumar, to be presented at AutoML 2022.\n\nWe describe a simple approach to tuning the hyper-parameters during training by\nupdating them with the gradient on the tuning-loss. This code implements this\napproach in JAX. The code allows for the easy specification of any subset of\nhyper-parameters to be learned during training. Specifically, it trains\nTransformer models on translation data from WMT.\n\n## Dependencies\n\nAll dependencies are listed in requirements.txt. Models are implemented in flax.\nThe WMT data is sourced from Tensorflow Datasets (https://www.tensorflow.org/datasets/api_docs/python/tfds).\n\n### Python Environment\nWe suggest installing the library in a virtual environment as our code requires older versions of libraries. To do so, run the following on a path created to host this enviroment:\n\n`python3 -m venv .\nsource bin/activate\n`\n\nTo install libraries using pip, run: \\\n`pip3 install -r requirements.txt`\n\nTo run on GPU, additionally run: \\\n`pip3 install https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.1.75+cuda11.cudnn82-cp37-none-manylinux2010_x86_64.whl`\n\n## Usage\n\nTo download and format data, then train a model, run: \\\n`./run.sh`\n\nBy default this will use language pair Lithuanian-English (lt-en), and train a tiny model for d",
+      "contributors": [
+        "Kaia Wolde",
+        "Halima Toure",
+        "Rosa Mensah",
+        "Csilla Nassar"
+      ],
+      "conflicts": [
+        {
+          "id": "C015",
+          "type": "dependency_date_drift",
+          "projects": [
+            "gradient_based_tuning",
+            "imghum",
+            "cola",
+            "hierarchical_foresight"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "graph_compression",
+      "title": "Matrix Compression Library",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Matrix Compression Library\n\nThis document describes an experimental API that facilitates matrix compression\nof a neural network's weight tensors. The API helps inject the necessary\ntensorflow operations into the training graph so the model can be compressed\nwhile it is being trained.\n\nFull documentation can be found\n[here](https://drive.google.com/file/d/1843aNpKx_rznpuh9AmEshgAKmISVdpJY/view).\n\n## Table of contents\n\n1.  [Library Overview](#library-overview)\n2.  [Model creation](#model-creation)\n3.  [Hyperparameters for compression](#hyperparameters)\n-   [Smoothed compression](#smoothed-compression)\n4.  [Adding compression ops to the training graph](#adding-compression-ops)\n5.  [Example](#example)\n\n### Library overview \n\n1.  **MatrixCompressorInterface** - used to implement any matrix compression\nalgorithm in the method\n2.  **CompressionOpInterface** - used to create a tensorflow operator-like\nobject that injects any matrix compression method dynamically into a\ntensorflow layer.\n3.  **ApplyCompression** - convenience wrapper class that can be used directly\nor extended for novel compression operator types; used to repeatedly invoke\nthe compression operator to different layers in a model.\n4.  **CompressionWrapper** - wrapper module used to create the proper\nApplyCompression implementation for the compression_option (method) of\nchoice.\n\n### Model creation \n\nThe first step involves creating an ApplyCompression object, with the desired\ncompression parameters. This object then is used to compress the model weights\nand use these compressed weights during the forward execution of",
+      "contributors": [
+        "Yusuf Keita",
+        "Emeka Pinto",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C056",
+          "type": "duplicate_effort",
+          "projects": [
+            "graph_compression",
+            "locoprop"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "graph_sampler",
+      "title": "Graph/Molecule sampler",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Graph/Molecule sampler\n\n## Overview\n\nThis project implements sequential importance sampling for connected graphs,\nwith a particular focus on molecular graphs.\n\nIt was built to sample small molecules *uniformly* at random without being able\nto explicitly enumerate them. For example, suppose we want a uniform sampling of\nmolecules with a given number of heavy (i.e. non-hydrogen) atoms any any number\nof hydrogens.\n\nWe first enumerate all possible choices of heavy atoms and numbers of hydrogens\n(i.e. stoichiometries). For each stoichiometry, we generate importance-weighted\nsamples, and then use rejection to get to a uniform sampling. Finally, we\naggregate those uniform samples to a single uniform sampling of the space of all\nmolecules with the given number of heavy atoms.\n\n```\nvirtualenv -p python3 .\nsource ./bin/activate\npip install -e .\n\nHEAVY_ELEMENTS=C,N,O,F\nNUM_HEAVY=3\n\nmkdir outputs\ncd outputs\nmkdir stoichs weighted uniform\n\npython -m enumerate_stoichiometries --output_prefix=stoichs/ \\\n--num_heavy=$NUM_HEAVY --heavy_elements=$HEAVY_ELEMENTS\n\nfor stoich_file in $(ls stoichs); do\nprefix=${stoich_file%.*}\npython -m sample_molecules --stoich_file=stoichs/$prefix.stoich \\\n--out_file=weighted/$prefix.graphml\npython -m reject_to_uniform --in_file=weighted/$prefix.graphml \\\n--out_file=uniform/$prefix.graphml\ndone\npython -m stats_to_csv --output=weighted/stats.csv weighted/*.graphml\npython -m stats_to_csv --output=uniform/stats.csv uniform/*.graphml\n\nmerged_filename=\"${NUM_HEAVY}_${HEAVY_ELEMENTS}_uniform\"\npython -m aggregate_uniform_samples --output=${merged_filename}.graphml ",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Yara Jokic",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C103",
+          "type": "gpu_double_booking",
+          "projects": [
+            "graph_sampler",
+            "infinite_nature"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "graph_temporal_ai",
+      "title": "*** This readme was adapted from Best-README-Template.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "<!--\n*** This readme was adapted from Best-README-Template.\nhttps://github.com/othneildrew/Best-README-Template\n-->\n\n<!--\n*** I'm using markdown \"reference style\" links for readability.\n*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).\n*** See the bottom of this document for the declaration of the reference variables\n*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.\n*** https://www.markdownguide.org/basic-syntax/#reference-style-links\n-->\n\nTable of Contents\n\nAbout The Project\n\nBuilt With\n\nGetting Started\n\nPrerequisites\nInstallation\nNew Dataset\n\nProject Structure\nUsage\nLicense\nContact\n\n## About The Project\n\nA novel deep learning framework that empowers users to use cloud forecasting services with their domain knowledge.\n\nBackground:\n* Existing forecasting solutions for industry partners are very passive: massive amounts of time series data being fed into complex AI models to generate future predictions.\n* Users receive predictions from the model but have no way to provide their domain knowledge, or interact with the AI models in any meaningful way.\n* When providing forecasting solutions to our industry partners across sectors, it is critical that we recognize users from different sections carry their unique domain knowledge (e.g., association rules, market principles, operation logistics).\n\nObjective:\n* This project aims to integrate meta-data and user feedback as knowledge graphs into deep learning, leading to intelligent, adaptive, domain-specific forecasting solutions.\n\n### Built With\n\nThis section should",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Hyun Traore",
+        "Emeka Pinto",
+        "Paloma Castillo",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C124",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "active_selective_prediction",
+            "graph_temporal_ai"
+          ],
+          "shared_object": "Ondrej Bergstrom at >=60% allocation",
+          "canonical": {
+            "person": "Ondrej Bergstrom",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Ondrej Bergstrom is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "group_agnostic_fairness",
+      "title": "Fairness without Demographics through Adversarially Reweighted Learning",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fairness without Demographics through Adversarially Reweighted Learning\nThis repository contains the code for the paper \"Fairness without Demographics through Adversarially Reweighted Learning\".\n\n## Installation\n\nRun the following:\n```bash\nvirtualenv -p python3 .\nsource ./bin/activate\n\npip3 install -r group_agnostic_fairness/requirements.txt\n```\n\n## Data Preparation\n\nThe data provided in the './group_agnostic_fairness/data/toy_data directory is dummy, and is only for testing the code.\nFor meaningful results, please follow the steps below.\n\n### Pre-process COMPAS dataset and create train and test files:\n\nDownload the COMPAS dataset from:\nhttps://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv\nand save it in the './group_agnostic_fairness/data/compas' folder.\n\nRun './group_agnostic_fairness/data_utils/CreateCompasDatasetFiles.ipynb' notebook to process the dataset, and create files required for training.\n\n### Pre-process UCI Adult (Census Income) dataset and create train and test files:\n\nDownload the Adult train and test data files can be downloaded from: https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test and save them in the './group_agnostic_fairness/data/uci_adult' folder.\n\nRun './group_agnostic_fairness/data_utils/CreateLawSchoolDatasetFiles.ipynb' notebook to process the dataset, and create files required for training.\n\n### Pre-process Law School Admissions Council (LSAC) Dataset and create train and test files:\n\nDownload the Law School datas",
+      "contributors": [
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Kaia Wolde",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C114",
+          "type": "dependency_date_drift",
+          "projects": [
+            "global_metnet",
+            "group_agnostic_fairness",
+            "clustering_normalized_cuts",
+            "mir_uai24"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gumbel_max_causal_gadgets",
+      "title": "JAX code to accompany the NeurIPS paper [\"Learning Generalized Gumbel-max Causal Mechanism",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "JAX code to accompany the NeurIPS paper [\"Learning Generalized Gumbel-max Causal Mechanisms\"](https://arxiv.org/abs/2111.06888), with authors Guy Lorberbom*, Daniel D. Johnson*, Chris J. Maddison, Daniel Tarlow, and Tamir Hazan.\n\nThis directory contains implementations of both Gadget 1 and Gadget 2 in JAX,\nalong with code to reproduce the experiments in Section 7.1 and the first two\ncolumns of Table 1.\n\nFor the implementation used in the last two columns of Table 1 and for the experiments in Section 7.3, see https://github.com/GuyLor/gumbel_max_causal_gadgets_part2.\n\nContents:\n- `tutorial.ipynb` gives an overview of the two gadgets\nand shows how they can be trained.\n- `paper_experiments.ipynb` contains code to reproduce the\nresults of the experiments.\n- `coupling_util.py` contains various helper functions for constructing\ncouplings, including the baselines we compare against.\n- `gadget_1.py` contains an implementation of our first gadget.\n- `gadget_2.py` contains an implementation of our second gadget.\n- `experiment_util.py` contains helper functions and classes to support training\nour couplings. These were used to conduct our experiments.\n\n---\n\nIf you use the code in this repository, please cite the following paper:\n```\n@inproceedings{lorberbom2021generalized,\nauthor    = {Guy Lorberbom and\nDaniel D. Johnson and\nChris J. Maddison and\nDaniel Tarlow and\nTamir Hazan},\ntitle     = {Learning Generalized Gumbel-max Causal Mechanisms},\nbooktitle = {Advances in Neural Information Processing Systems},\nyear      = {2021}\n}\n```",
+      "contributors": [
+        "Emeka Pinto",
+        "Wei Ivanov",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C012",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "gumbel_max_causal_gadgets",
+            "compositional_transformers"
+          ],
+          "shared_object": "Wei Ivanov at >=60% allocation",
+          "canonical": {
+            "person": "Wei Ivanov",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Wei Ivanov is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gwikimatch",
+      "title": "GWikiMatch: A Benchmark Dataset for Long-Form Document Matching",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# GWikiMatch: A Benchmark Dataset for Long-Form Document Matching\n\n## Dataset Description\nGWikiMatch is a benchmark dataset for the long-form document matching task, which\nis to estimate the content semantic similarity between document pairs. All\nthe documents are from English Wikipedia. The creation of this\ndataset includes the following steps:\n\n* Candidate document pair generation. We first build a\nhyperlink graph based on the linking relations between different Wiki documents.\nThen we apply [label propagation](https://research.google/pubs/pub44639/) on the\ngraph to generate candidate pairs of similar documents. The nodes in the graph\nrepresent documents. There is an undirected edge between two documents if there\nis at least one linking relationship between two documents. The existence of an\nedge between two nodes indicates that two nodes should end up learning similar\nlabels. The weights are based on the number of directed hyperlinks between the\ntwo Wikipedia documents. Following the intuition that a document should be\nsimilar to itself, we set the initial label of each node as the URL of the\ndocument. After label propagation, candidate positive document pairs are\ngenerated using documents and their top 100 ranked labels.\n\n* Human annotation on content similarity. The candidate document pairs are\nfurther annotated by humans with content similarity labels. Each\ndocument pair is annotated by 3 human raters on an internal crowdsourcing\nplatform. We use the majority vote rating\nas the final document content similarity label. The rating scale is 0 (not\nsimilar), 1 (somewhat s",
+      "contributors": [
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C092",
+          "type": "duplicate_effort",
+          "projects": [
+            "gwikimatch",
+            "agile_deliberation"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "health_equity_toolbox",
+      "title": "Analytic code to support \"A toolbox for surfacing health equity harms and biases in large ",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "## Analytic code to support \"A toolbox for surfacing health equity harms and biases in large language models\"\n\nThis repository contains code to reproduce the primary analyses of Pfohl and Cole-Lewis et al. \"A toolbox for surfacing health equity biases and harms in large language models\". Available at https://arxiv.org/abs/2403.12025.\n\nBefore executing code in this repository, please extract the supplementary data file(s) from the links provided in the article.\n\nThe code can be executed using either (1) the xlsx workbook linked in the article (`equitymedqa_ratings.xlsx`)\nor (2) the csv files extracted from the Figshare repository\n(`ratings_independent.csv`, `ratings_pairwise.csv`, and\n`ratings_counterfactual.csv`) (to be made available with the published version of the article).\n\nAs of this version of the code, this repository implements the estimates of the rates and confidence intervals used to generate Figures 2, 3, and 4. Analyses reflected in Extended Data or Supplementary figures and tables are not implemented at this time.",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Giannis Sato",
+        "Farah Haddad",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C078",
+          "type": "dependency_date_drift",
+          "projects": [
+            "health_equity_toolbox",
+            "generative_trees",
+            "lighthouse",
+            "mmmt_if"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hierarchical_foresight",
+      "title": "Hierarchical Visual Foresight (HVF)",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Hierarchical Visual Foresight (HVF)\n\nThis directory contains code for the paper\n\"Hierarchical Foresight: Self-Supervised Learning of Long-Horizon Tasks via Visual Subgoal Generation\" Suraj Nair, Chelsea Finn\n\n## Usage\nFrom the google_research directory, run:\n\n```\nvirtualenv -p python3.6 hvf\n```\n\n```\nsource hvf/bin/activate\n```\n\n```\npip install -r hierarchical_foresight/requirements.txt\n```\n\n## Generate Data\nRun `python -m hierarchical_foresight.generate_data --savepath=SAVEPATH`\n\n## Train SV2P\nTrain a video prediction model using the open source tensor2tensor library.\nRun `git clone https://github.com/tensorflow/tensor2tensor` and follow instructions\nunder \"Adding a Dataset\".\n\nOnce you have a trained model on your problem, modify `hierarchical_foresight/env/subgoal_env.py` to use your model/problem.\n\n## Train VAE, TDM, TAP\nTrain the conditional variation autoencoder\n`python -m hierarchical_foresight.train_vae --datapath=DATAPATH --savedir=SAVEDIR`\n\nTrain the temporal distance cost function\n`python -m hierarchical_foresight.train_tdm --datapath=DATAPATH --savedir=SAVEDIR`\n\nTrain the time agnostic prediction baseline\n`python -m hierarchical_foresight.train_tap --datapath=DATAPATH --savedir=SAVEDIR`\n\n## Run HVF\n`python -m hierarchical_foresight.meta_cem --difficulty=m --cost=pixel --numsg=1 --horizon=50 --gt_goals=1 --phorizon=15 --envtype=maze --vaedir=VAEDIR --tdmdir=TDMDIR --tapdir=TAPDIR`",
+      "contributors": [
+        "Bilal Novak",
+        "Saoirse Eriksen",
+        "Carmen Reyes",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C015",
+          "type": "dependency_date_drift",
+          "projects": [
+            "gradient_based_tuning",
+            "imghum",
+            "cola",
+            "hierarchical_foresight"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    }
+  ]
+}

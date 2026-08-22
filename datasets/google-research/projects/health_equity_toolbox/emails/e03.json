@@ -1,0 +1,18 @@
+{
+  "id": "gr/health_equity_toolbox/e03",
+  "thread_id": "gr/health_equity_toolbox/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T11:18:00Z",
+  "from": {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: repro validated, pilot running, scope caveat for the review",
+  "body": "Hi both,\n\nStatus. The repro is validated: our pipeline regenerates the rate and confidence-interval estimates behind Figures 2, 3 and 4 from both input paths, and Kaia diffed our outputs against the published values - everything matches to the reported precision. The xlsx and csv paths now share one normalization layer, so future ratings only need to hit that schema.\n\nThe internal pilot (wrapping one model eval's ratings through the toolbox) started 4/13 and the counterfactual analysis is already surfacing a rater-disagreement pattern the eval team had not noticed. Good sign for usefulness.\n\nCaveat to state at the 5/13 review: the open-source code implements the primary analyses only - the Extended Data and Supplementary figures are explicitly not implemented. If health-side teams expect the full paper's analysis surface, that is a Q3 build, not a config flag. Kaia sized it at roughly 6 engineer-weeks.\n\nKofi's answer on privacy came back: pilot is fine under the existing eval program approval; the Corpus tables in July will need a lightweight review.\n\nFarah",
+  "labels": ["status", "risk"]
+}

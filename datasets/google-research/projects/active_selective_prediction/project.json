@@ -1,0 +1,25 @@
+{
+  "id": "gr/active_selective_prediction",
+  "title": "Active Selective Prediction",
+  "summary": "ASPEST bridges active learning and selective prediction: under distribution shift it spends a small labeling budget on the most useful points so the model knows both when to abstain and where to improve, evaluated on six shift benchmarks like mnist->svhn and cifar10->cinic10. We are building it into the platform's human-in-the-loop deployment offering.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Halima Toure",
+    "Wanjiru Horvat",
+    "Ondrej Bergstrom"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "active_selective_prediction",
+    "url": "https://github.com/google-research/google-research/tree/master/active_selective_prediction",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

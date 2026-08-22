@@ -1,0 +1,18 @@
+{
+  "id": "gr/dvrl/e04",
+  "thread_id": "gr/dvrl/t2",
+  "in_reply_to": "gr/dvrl/e03",
+  "date": "2026-07-08T10:47:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: DVRL status: corrupted-sample numbers in, domain adaptation lagging",
+  "body": "Team,\n\nDecision from yesterday's review: we're cutting the image transfer-learning application from v1 entirely, not just deprioritizing it. The LRB pre-read goes in with data valuation and corrupted-sample discovery as the launch scope, domain adaptation as a fast-follow once Wei's seed-variance issue is under 1.5 points.\n\nRationale: the demo landed well (the 87%-at-20%-noise number did the work), and the feedback was uniformly \"ship the tabular story first.\" Adding an image pipeline now buys us risk, not signal.\n\nDeshawn - please rebalance Gustavo toward hardening the data tooling for pilot customers, and keep Rosa on the eval harness through the Aug 3 decision point. I'll draft the LRB doc this week and circulate for comments by Friday.\n\nGood work everyone, this one's in decent shape.\n\nLucia",
+  "labels": ["decision"]
+}

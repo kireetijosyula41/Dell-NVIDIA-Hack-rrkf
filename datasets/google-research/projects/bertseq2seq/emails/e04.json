@@ -1,0 +1,20 @@
+{
+  "id": "gr/bertseq2seq/e04",
+  "thread_id": "gr/bertseq2seq/t1",
+  "in_reply_to": "gr/bertseq2seq/e03",
+  "date": "2026-04-15T14:36:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}
+  ],
+  "subject": "Handoff decision: typing-pause trigger for v1, distillation in Q3",
+  "body": "Team,\n\nHandoff decision, made with the editor team yesterday:\n\n1. V1 ships with the typing-pause trigger and server-side batching - 380ms is invisible behind a natural pause, and the 68% vs 17% preference number is too good to sit on for a quarter.\n2. Decoder distillation is the headline Q3 item, funded from the B-24 earmark. Idris, looping you in so the writeup lands in your Q3 cycle - Deshawn will send the breakdown (roughly $70k fine-tuning runs, $30k human evals, $20k distillation compute).\n3. Quentin runs a second eval round post-integration so we have fresh numbers for the editor team's own launch review.\n\nGustavo - the rewrite-pair data doc goes to the editor team with the handoff, incl. the known coverage gaps.\n\nGreat sprint, everyone.\n\nPriya",
+  "labels": ["decision"]
+}

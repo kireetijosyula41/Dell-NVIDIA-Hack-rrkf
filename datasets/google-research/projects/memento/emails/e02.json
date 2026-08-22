@@ -1,0 +1,15 @@
+{
+  "id": "gr/memento/e02",
+  "thread_id": "gr/memento/t1",
+  "in_reply_to": "gr/memento/e01",
+  "date": "2026-04-02T13:10:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Memento kickoff — compute plan",
+  "body": "Ulla,\n\nStaffing: Carmen 50% (TL), Efe 40% on the interference analysis, Rosa 50% on packaging the two-stage training flow into a recipe. That covers the milestones.\n\nCompute: the April baseline reproduction fits titan-a100 best-effort — Rainbow on 3 games plus Memento agents is about 20 GPUs for three weeks given the several-days-per-game training cost. The June diagnostic on the internal team's agent is the heavy piece: their agent is much larger than an Atari Rainbow, so for that we hold the vulcan-h100 reservation — 256 accelerators for the week of 2026-06-15 — enough to run original + Memento retrains side by side and land the report by 06-19.\n\nThe reservation is in the sheet; I sized it with 20% headroom over the agents team's own training footprint.\n\nAlina",
+  "labels": ["resources"]
+}

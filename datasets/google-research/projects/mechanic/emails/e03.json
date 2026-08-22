@@ -1,0 +1,15 @@
+{
+  "id": "gr/mechanic/e03",
+  "thread_id": "gr/mechanic/t1",
+  "in_reply_to": "gr/mechanic/e02",
+  "date": "2026-04-01T11:22:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Mechanic kickoff — A/B results, one workload is stubborn",
+  "body": "A/B status across the three workloads:\n\n- Retrieval encoder (batch 4096, cosine schedule): mechanized adamw matches the hand-tuned baseline within 0.1% eval loss, zero sweep cost. Clear win.\n- Ranking model (batch 512, linear warmup): Mechanic beats the production LR by 0.8% — turns out prod was under-tuned for a year. Slightly awkward, very persuasive.\n- Small-batch fine-tune (batch 64): the scale factor oscillates early and we land 1.2% worse unless we extend warmup. Quentin traced it to the schedule interaction — remember Mechanic tunes the scale, so a base_learning_rate left at 1e-4 instead of 1.0 silently double-scales; one team hit exactly that misconfiguration in dogfood.\n\nRisk: rollout doc must make the \"set base LR to 1.0\" contract impossible to miss, ideally with a startup assertion. Wanjiru is adding one.\n\nRecommendation stays: default-on for large-batch, opt-in for batch < 128.\n\nRafael",
+  "labels": ["status", "risk"]
+}

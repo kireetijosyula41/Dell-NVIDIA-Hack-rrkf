@@ -1,0 +1,18 @@
+{
+  "id": "gr/ials",
+  "title": "Reproducing iALS benchmark results",
+  "summary": "Reproduces our iALS and iALS++ benchmark results on the NCF evaluation protocol (MovieLens 1M, Pinterest), validating that carefully tuned implicit alternating least squares remains a strong, cheap baseline for item recommendation.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Bilal Novak", "Linnea Yamada", "Rosa Mensah", "Oyin Iversen"],
+  "window": {"start": "2026-02-02", "end": "2026-04-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ials",
+    "url": "https://github.com/google-research/google-research/tree/master/ials",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

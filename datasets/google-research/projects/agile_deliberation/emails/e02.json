@@ -1,0 +1,45 @@
+{
+  "id": "gr/agile_deliberation/e02",
+  "thread_id": "gr/agile_deliberation/t1",
+  "in_reply_to": "gr/agile_deliberation/e01",
+  "date": "2026-03-10T14:20:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: Agile Deliberation — concept deliberation for subjective visual classification",
+  "body": "Dmitri,\n\nStaffing: Yusuf leads at 70%, Nikhil 50% on the deliberation loop, Quentin 30% on rater UX. The Laion400M slice is full of near-duplicates, which poisons the borderline-example queue, so we are scoping and staffing a dataset de-duplication pipeline built from scratch — Giannis owns the build at 50% through April.\n\nCompute: faiss-gpu on 4 A100s for index build and retrieval; the faiss-cpu fallback is fine for notebook demos. Storage ask into Corpus for the index shards is ~3TB — quota request is filed.\n\nSequencing note: dedup has to finish before the pilot, otherwise raters see the same borderline image four times and the agreement numbers are garbage.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/deciphering_clinical_abbreviations/e04",
+  "thread_id": "gr/deciphering_clinical_abbreviations/t2",
+  "in_reply_to": "gr/deciphering_clinical_abbreviations/e03",
+  "date": "2026-05-06T16:10:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status - decision for the May 8 write-up",
+  "body": "Decision, so Halima can finish the write-up:\n\n1. Team context becomes a required input. 61% -> 79% on ambiguous acronyms is too big to argue with, and any caller who can't tell us which team authored the text probably shouldn't be expanding their jargon anyway.\n2. This does not become a service this quarter. It becomes a library plus the dictionary, which the ticket-search team can call. A service means an SLA and an on-call rotation for an 88% feature.\n3. Dictionary maintenance is the real long-term cost. Amara should hand over an owner per team before we close out, otherwise it rots in six months.\n\nKofi - confirming for the record that we never trained on the sensitive corpus, only on reverse-substituted ordinary text, so no further review is expected. Correct me this week if that's wrong.\n\nGood project. Short, honest, done on time.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

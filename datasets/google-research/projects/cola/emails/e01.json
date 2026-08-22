@@ -1,0 +1,45 @@
+{
+  "id": "gr/cola/e01",
+  "thread_id": "gr/cola/t1",
+  "in_reply_to": null,
+  "date": "2026-03-26T09:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: COLA audio embeddings as a platform backbone",
+  "body": "Hi Deshawn,\n\nKickoff for the audio embeddings track. We're standing up COLA — our open-source contrastive audio pre-training method — as the shared audio backbone for data-platforms. The library already supports the three modes we need: SSL pre-training, downstream fine-tuning (DS), and a supervised-from-scratch baseline (SUP), so this is productionizing rather than inventing.\n\nPlan of record: pre-train on LibriSpeech, validate with a linear probe on Speech Commands, then offer frozen-encoder embeddings as a platform service. Success metric for the half: downstream teams get within 2 points of a task-specific supervised model using our frozen embeddings.\n\nMilestones: pre-training reproduced by end of April, downstream evals in May, platform integration decision mid-June. Staffing and compute ask by 4/10?\n\nThanks,\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

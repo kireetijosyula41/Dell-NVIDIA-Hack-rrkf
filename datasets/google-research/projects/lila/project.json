@@ -1,0 +1,18 @@
+{
+  "id": "gr/lila",
+  "title": "Disclaimer: This is not an officially supported Google product.",
+  "summary": "Builds on LILA, our open-source method for featurising pixels from dynamic 3D scenes with linear in-context learners: dense visual representations learned from video using optical flow and monocular depth cues, evaluated on DAVIS, COCO-Stuff, and NYUv2. We are scaling the released DINOv2-based checkpoints toward a vision-portfolio dense-feature service.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bao Ndiaye",
+  "contributors": ["Csilla Nassar", "Emeka Pinto", "Freya Ruiz", "Amara Okafor"],
+  "window": {"start": "2026-03-23", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lila",
+    "url": "https://github.com/google-research/google-research/tree/master/lila",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

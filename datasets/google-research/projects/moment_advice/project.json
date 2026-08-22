@@ -1,0 +1,25 @@
+{
+  "id": "gr/moment_advice",
+  "title": "Experiments in estimating frequency moments with advice. This is an ongoing",
+  "summary": "Productize advice-based frequency-moment estimation for streaming workloads — sampling guided by learned advice, benchmarked against perfect advice, PPSWOR (ell_1) and ell_2 sampling — targeting graph-degree and network-traffic telemetry pipelines.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Vera Egede",
+    "Umar Costa",
+    "Freya Ruiz"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "moment_advice",
+    "url": "https://github.com/google-research/google-research/tree/master/moment_advice",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

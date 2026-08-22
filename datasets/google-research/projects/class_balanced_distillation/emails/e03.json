@@ -1,0 +1,46 @@
+{
+  "id": "gr/class_balanced_distillation/e03",
+  "thread_id": "gr/class_balanced_distillation/t1",
+  "in_reply_to": "gr/class_balanced_distillation/e02",
+  "date": "2026-04-09T11:40:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: CBD kickoff — fixing tail-class accuracy on long-tailed workloads",
+  "body": "Reproduction status.\n\nImageNet-LT: done. Our two-stage runs land within 0.4 of the published CBD overall accuracy, with the expected pattern — big tail-class gains from the class-balanced distillation stage, head classes held by the teacher ensemble. Teacher diversity matters as advertised: dropping the SimCLR-augmented teacher costs 1.9 on tail accuracy.\n\niNaturalist18: running, ETA next week. No surprises so far.\n\nInternal workload #1 (Linnea): adaptation started. One real trade-off to surface — our internal taxonomy has ~6x more classes than ImageNet-LT, and stage-two class-balanced sampling gets noticeably slower per epoch (input pipeline, not compute). Wanjiru has a sharded sampler prototype that recovers most of it; if it holds, no schedule impact. If not, we may need to trim the go/no-go to one workload by Jun 1.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

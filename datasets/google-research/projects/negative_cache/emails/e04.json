@@ -1,0 +1,19 @@
+{
+  "id": "gr/negative_cache/e04",
+  "thread_id": "gr/negative_cache/t1",
+  "in_reply_to": "gr/negative_cache/e03",
+  "date": "2026-06-24T15:27:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Negative cache kickoff — decision + readout plan",
+  "body": "Team,\n\nWith the production-scale numbers in from last week's run, decisions ahead of Friday's Q3 OKR lock:\n\n1. We adopt the negative cache as the default negative-mining path for new dual-encoder training in graphs-retrieval, starting Q3. Final numbers: quality parity on benchmark A, +1.6 recall@10 on benchmark B at full corpus, 35% accelerator-time saving — slightly below the mid-scale 38% because the staggered brute-force arm ate some of the week, but the story holds.\n2. Existing production retrievers migrate opportunistically at their next scheduled retrain, not on a forced schedule. Chiara's adoption guide plus Oyin's trainer config are the migration kit.\n3. Q3 OKR filed as: 3 production retrievers migrated, portfolio retrieval-training spend down 25%.\n\nReadout to Hana's staff on 06-29, closing out the window on time. Thanks all — this one delivered exactly what it said on the tin.\n\nAnders",
+  "labels": ["decision"]
+}

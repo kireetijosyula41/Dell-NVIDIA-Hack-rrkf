@@ -1,0 +1,45 @@
+{
+  "id": "gr/cmmd/e04",
+  "thread_id": "gr/cmmd/t1",
+  "in_reply_to": "gr/cmmd/e03",
+  "date": "2026-05-05T14:20:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tomas Fofana",
+      "email": "tomas.fofana@meridian.example",
+      "role": "Evaluation Lead"
+    }
+  ],
+  "subject": "Re: CMMD kickoff — replacing FID in Evalline",
+  "body": "Wrap-up decisions.\n\n1) CMMD went live in Evalline Apr 27, side-by-side with FID. The pre-briefing worked — the team affected by the #2/#3 flip re-ran their human-preference study and CMMD's ordering matched raters, which turned our loudest potential critic into the reference customer. Couldn't have scripted it better.\n\n2) Decision: FID is deprecated for launch gates effective with the Q3 cycle; side-by-side reporting continues through end of Q3 for continuity, then FID becomes opt-in. Tomas is aligned.\n\n3) Scope cut: video-generation support (frame-sampling scheme) was floated and is explicitly out — it needs its own design, punting to a Q3 proposal.\n\nChiara's docs + reference-set hosting are done. Nice tight project, thanks all.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

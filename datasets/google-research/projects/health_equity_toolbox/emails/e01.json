@@ -1,0 +1,17 @@
+{
+  "id": "gr/health_equity_toolbox/e01",
+  "thread_id": "gr/health_equity_toolbox/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:27:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: health equity toolbox for LLM evaluation",
+  "body": "Hi Alina,\n\nKicking off the health equity toolbox workstream. Health-side teams evaluating LLM outputs currently have no standard way to surface equity harms and biases; our open-source analytic toolbox gives us one, and I want it running as a platform capability rather than a one-off paper artifact.\n\nScope: reproduce the primary published analyses - the rate and confidence-interval estimates behind Figures 2, 3 and 4 - over the EquityMedQA rating data, supporting both input paths the code allows (the xlsx workbook and the three Figshare csv extracts: ratings_independent, ratings_pairwise, ratings_counterfactual). Then wrap it so any internal eval run can produce the same figures over its own ratings.\n\nMilestones: repro validated against published outputs by 3/20, wrapped pipeline on one internal model eval by 4/24, review 5/13.\n\nKaia leads analysis, Farah the pipeline, Saoirse integration, Giannis data handling. Staffing from you this week?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

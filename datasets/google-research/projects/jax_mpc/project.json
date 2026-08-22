@@ -1,0 +1,26 @@
+{
+  "id": "gr/jax_mpc",
+  "title": "JAX Particles",
+  "summary": "Hardens the JAX Particles MPPI controller — vmap-parallelized monte-carlo MPC rollouts — into a standard control stack for agents-rl simulation benchmarks, with a sample-count scaling study.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Quentin Farkas",
+    "Gustavo Moreau",
+    "Wanjiru Horvat",
+    "Ondrej Bergstrom"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jax_mpc",
+    "url": "https://github.com/google-research/google-research/tree/master/jax_mpc",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

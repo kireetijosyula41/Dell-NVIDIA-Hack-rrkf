@@ -1,0 +1,26 @@
+{
+  "id": "gr/cube_unfoldings",
+  "title": "Generating unfoldings of the hypercube",
+  "summary": "A C++ enumerator for all unfoldings of the n-dimensional hypercube, representing each unfolding as a (tree, perfect matching) pair up to isomorphism and using nauty to generate trees and their automorphism groups, computed out to dimension 10. Meridian is mining it for a reusable canonicalize-and-dedup pattern for graph-structured records at scale.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Kaia Wolde",
+    "Rafael Duran",
+    "Vera Egede",
+    "Efe Lindqvist"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cube_unfoldings",
+    "url": "https://github.com/google-research/google-research/tree/master/cube_unfoldings",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

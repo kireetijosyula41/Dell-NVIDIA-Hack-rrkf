@@ -1,0 +1,18 @@
+{
+  "id": "gr/cate/e01",
+  "thread_id": "gr/cate/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: CATE video embeddings for the platform",
+  "body": "Hi Bruno, Yusuf,\n\nKickoff for the CATE video-embedding effort. Our ICCV work on Composable Augmentation Encoding gives us self-supervised video representations with no labeling cost, and the released assets are unusually product-ready: a Kinetics-400-pretrained model with a working inference colab, nearest-neighbor classification demo on UCF-101, and Something-Something v1/v2 checkpoints in the same storage layout for transfer studies.\n\nProduct shape: a video-embedding endpoint for data-platforms customers - similarity search and dedup over video libraries without asking anyone to label anything.\n\nMilestones for Apr 20 - Jul 6: M1 (May 15) repro of the UCF-101 nearest-neighbor demo from the released checkpoint, embeddings behind an internal batch API. M2 (Jun 12) cost + quality study for serving - this is where the model-size question bites. M3 (Jun 30) go/no-go on a customer-facing endpoint.\n\nYusuf is TL. Bruno: staffing plus the serving-cost plan.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

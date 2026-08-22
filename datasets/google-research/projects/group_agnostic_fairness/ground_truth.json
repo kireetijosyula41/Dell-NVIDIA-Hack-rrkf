@@ -1,0 +1,13 @@
+{
+  "project": "gr/group_agnostic_fairness",
+  "conflicts": [
+    {
+      "conflict_id": "C114",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["global_metnet", "clustering_normalized_cuts", "mir_uai24"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Per my notes the Corpus v2 migration freeze is 2026-07-24, so re-ingesting the benchmark datasets in mid-July still clears it with two weeks of slack.",
+      "note": "Misstates the canonical corpus_v2_freeze date of 2026-07-10, as directed by the conflict spec."
+    }
+  ]
+}

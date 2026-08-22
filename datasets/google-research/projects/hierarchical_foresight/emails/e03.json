@@ -1,0 +1,18 @@
+{
+  "id": "gr/hierarchical_foresight/e03",
+  "thread_id": "gr/hierarchical_foresight/t2",
+  "in_reply_to": null,
+  "date": "2026-04-01T10:24:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: maze repro done, subgoals earn their keep, SV2P is the bottleneck",
+  "body": "Hi both,\n\nRepro status: the full chain runs - generate_data, SV2P training through tensor2tensor, then train_vae, train_tdm and train_tap, finishing with meta_cem on the medium-difficulty maze at horizon 50. Results match the release qualitatively: with one generated subgoal (numsg=1) planning success on medium mazes roughly doubles versus flat CEM with pixel cost, and TDM cost outperforms pixel cost on the harder layouts. That's the headline for the 5/6 review.\n\nBottleneck: SV2P. Training it for our own simulation env is 5x the maze data volume, and on best-effort titan we keep getting preempted - Bilal estimates the run loses a third of its throughput to restarts. Either we accept an April 24 -> May 1 slip on the env port, or Bruno escalates for a short reserved slice.\n\nAlso, teh conditional VAE occasionally generates subgoals behind walls; filtering candidates through the TDM cost before planning fixes it cheaply. Writing that up as a recommended default.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

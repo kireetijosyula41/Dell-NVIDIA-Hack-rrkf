@@ -1,0 +1,18 @@
+{
+  "project": "gr/jaxbarf",
+  "conflicts": [
+    {
+      "conflict_id": "C141",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "context_aware_transliteration",
+        "kip",
+        "deplot"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Jun's team confirmed the Corpus v2 freeze lands on 2026-07-24, so we're planning the partner-capture backfill around a July 24 freeze"
+    }
+  ]
+}

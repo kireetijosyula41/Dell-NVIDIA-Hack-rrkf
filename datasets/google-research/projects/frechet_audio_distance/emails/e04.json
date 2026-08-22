@@ -1,0 +1,39 @@
+{
+  "id": "gr/frechet_audio_distance/e04",
+  "thread_id": "gr/frechet_audio_distance/t2",
+  "in_reply_to": "gr/frechet_audio_distance/e03",
+  "date": "2026-05-12T16:02:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: FAD status: Beam Python 2 blocker + panel validation",
+  "body": "Team,\n\nDecision from this morning's sync: we take the two weeks. The Python 2 pipeline does not go to Launch Review Board; Maren's Python 3 Beam rewrite is now on the critical path, with the LRB slot moving from May 22 to Jun 5 pending Nadia's confirmation.\n\nSecond decision: we ship v1 on the VGGish embedding model as-is. Swapping the embedding backbone is a Q3 conversation — it changes every historical score and the harness needs stable baselines first.\n\nHyun, please write up the 9/10 vs 6/10 panel-agreement result for the review packet; that is our headline number.\n\nThanks all — good, fast work this cycle.\n\nGoran",
+  "labels": [
+    "decision"
+  ]
+}

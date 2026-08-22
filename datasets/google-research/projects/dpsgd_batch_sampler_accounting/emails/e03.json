@@ -1,0 +1,19 @@
+{
+  "id": "gr/dpsgd_batch_sampler_accounting/e03",
+  "thread_id": "gr/dpsgd_batch_sampler_accounting/t1",
+  "in_reply_to": "gr/dpsgd_batch_sampler_accounting/e02",
+  "date": "2026-05-12T09:58:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: honest privacy accounting for our DP-SGD pipelines",
+  "body": "Audit results are in, and they're spicy.\n\nOf the four internal DP pipelines: two shuffle but report Poisson-subsampling epsilon. For pipeline P2 the honest shuffling bound puts effective epsilon at roughly 1.9x the reported value at their noise multiplier — that's a compliance conversation, not a rounding error. P1's gap is smaller but real. The other two genuinely Poisson-subsample; their reports stand.\n\nRecommendation shaping up: migrate P1/P2 to balls-and-bins sampling — implementation-wise it's close to what their input pipelines already do, and our accounting for it gives bounds close to Poisson. Farah's dp_accounting integration passed review last week, so the accountants they'd need are already importable.\n\nRisk: P2's team will push back on any noise increase before their July launch. The June validation runs matter precisely to show the utility cost is small — please keep that reservation week protected.\n\nYara",
+  "labels": ["status", "risk"]
+}

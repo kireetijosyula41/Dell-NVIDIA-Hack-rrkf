@@ -1,0 +1,45 @@
+{
+  "id": "gr/ml_debiaser/e04",
+  "thread_id": "gr/ml_debiaser/t1",
+  "in_reply_to": "gr/ml_debiaser/e03",
+  "date": "2026-05-04T16:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kofi Weber",
+      "email": "kofi.weber@meridian.example",
+      "role": "Privacy Counsel"
+    }
+  ],
+  "subject": "Re: Kickoff: black-box debiasing service — rollout decision",
+  "body": "Team,\n\nClosing decisions ahead of the May 11 window end:\n\n1) The service goes to general availability for binary classifiers now; Team A's 11.2% -> 2.1% parity-gap result headlines the rollout note.\n2) Csilla's certification floor is adopted: groups below the empirical sample-size threshold get \"insufficient data,\" never a certified badge. Kofi is comfortable with that language from a review standpoint — a false certification is the worst outcome for everyone.\n3) Multiclass stays in pilot through Q3 until we've seen one more team with healthier group sizes.\n4) Quentin's Corpus write-back plan is approved as scoped in March; no changes to the July port timing.\n\nThanks all — this is the rare fairness project that ends with a number we can defend.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

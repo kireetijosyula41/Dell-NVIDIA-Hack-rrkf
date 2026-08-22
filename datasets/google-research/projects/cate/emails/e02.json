@@ -1,0 +1,18 @@
+{
+  "id": "gr/cate/e02",
+  "thread_id": "gr/cate/t1",
+  "in_reply_to": "gr/cate/e01",
+  "date": "2026-05-01T14:15:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: CATE - staffing + the distillation recipe",
+  "body": "Dmitri,\n\nStaffing: Yusuf 50% (TL - note he's also closing out the caltrain repro track through mid-May, hence the late M1 date). Saoirse 40% on the batch API and checkpoint serving (she rolls up from 20% when BUSTLE M3 wraps). Jorge 60% - see below.\n\nThe serving-cost plan is the crux: the pretrained CATE backbone is too heavy to serve at video-library scale, so the M2 answer is distillation into a smaller student. There's no existing recipe to borrow here, so we're scoping and staffing a distillation training recipe from scratch - Jorge owns it at 60%: teacher-student setup, loss schedule, and the ablation grid to find how small the student can go before retrieval quality craters. Rough sizing: 5-6 weeks to a defensible recipe, GPU cost ~30 titan-a100 days for the grid.\n\nData note: Kinetics/UCF mirrors are already internal (vision team's copies), so no Corpus dependency this window.\n\nBruno",
+  "labels": ["resources"]
+}

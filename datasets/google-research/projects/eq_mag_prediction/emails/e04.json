@@ -1,0 +1,18 @@
+{
+  "id": "gr/eq_mag_prediction/e04",
+  "thread_id": "gr/eq_mag_prediction/t2",
+  "in_reply_to": "gr/eq_mag_prediction/e03",
+  "date": "2026-06-10T09:31:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MAGNET status: benchmarks reproduced, cache invalidation bite",
+  "body": "Team,\n\nGo/no-go for the June sweep, decided: GO.\n\nTereza confirms all catalogs have features and benchmarks cached as of June 8, four days ahead of the June 12 gate. And our 128-GPU vulcan-h100 reservation for the week of June 15 is confirmed, so the final sweep lands just before the June 22-24 Vulcan maintenance window. Ondrej's sweep configs are frozen tonight; no changes after that, given there is zero rerun slack.\n\nTwo decisions from Monday's review:\n1. The service-readiness review moves from Jun 26 to Jun 29 (last day of window) so we have the sweep results fully examined, not just landed.\n2. Scope cut: real-time streaming ingestion is out for this phase. Batch catalog updates only; Paloma documents the streaming design as a Q3 proposal instead.\n\nAppreciate the disciplined run-up - this is what a boring, on-schedule big run should look like.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

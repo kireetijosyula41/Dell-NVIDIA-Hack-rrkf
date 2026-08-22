@@ -1,0 +1,18 @@
+{
+  "id": "gr/behavioral_dispositions/e03",
+  "thread_id": "gr/behavioral_dispositions/t1",
+  "in_reply_to": "gr/behavioral_dispositions/e02",
+  "date": "2026-06-25T13:44:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: behavioral dispositions eval for the assistant",
+  "body": "Status + one methodological risk to settle before the first gated report.\n\nDone: migration finished ahead of Bao's deadline, harness onboarded 6/12 as replanned, and we've run four assistant candidates through the full 2,500-SJT battery. Results mirror the paper: all four are overconfident in low-consensus scenarios (they concentrate probability on one action where humans split), and the two smaller candidates deviate hard from high-consensus answers - one misses them 19% of the time, right in the paper's 15-20% band. The emotion-expression vs. composure pattern shows up too.\n\nThe risk: what counts as \"failing\" the gate. If we gate on matching the human preference distribution, we're baking 550 annotators' demographics into a launch blocker. I'd rather gate only on high-consensus misses and report distributional divergence as informational. This needs a product decision, not a stats one.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

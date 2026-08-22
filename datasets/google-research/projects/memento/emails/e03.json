@@ -1,0 +1,18 @@
+{
+  "id": "gr/memento/e03",
+  "thread_id": "gr/memento/t1",
+  "in_reply_to": "gr/memento/e02",
+  "date": "2026-05-19T10:28:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Memento kickoff — status: effect reproduced, one caveat",
+  "body": "Status:\n\n- Baseline done. Rainbow via rainbow.gin on Montezuma's Revenge, Breakout and Q*bert, then the Memento agent launched from each original checkpoint per the two-stage flow. Effect reproduces clearly on two of three: +31% and +18% score past the plateau. Breakout shows a much smaller +4%, consistent with the paper's framing that the gains concentrate where interference (not exploration) is the binding constraint.\n- Rosa's recipe packaging is ahead of schedule; the dqn.gin stretch variant also runs.\n\nCaveat for the June diagnostic: the internal team's agent uses a recurrent core, and the checkpoint-handoff assumes a feedforward value net. Efe has a workaround (freeze + re-init the recurrent state pathway) but it adds ~2 days of engineering and slightly muddies attribution. We still fit the June compute week, but the report should carry the caveat explicitly.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

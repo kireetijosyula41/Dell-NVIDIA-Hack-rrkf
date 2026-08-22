@@ -1,0 +1,16 @@
+{
+  "id": "gr/llm_longdoc_interpretability/e01",
+  "thread_id": "gr/llm_longdoc_interpretability/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:40:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}],
+  "subject": "Kickoff: TextGenSHAP explanation service for RAG answers",
+  "body": "Hi all,\n\nKicking off the long-doc interpretability track. Our TextGenSHAP release computes scalable post-hoc explanations for text generation over long documents using hierarchical Shapley and Banzhaf values. Product angle for graphs-retrieval: when our retrieval-augmented systems answer from a 100-passage context, customers ask \"which passage made it say that?\" — this is that answer, per token if needed.\n\nMilestones:\n- Apr 10: minimal experiment green (run.sh) plus the NQ embedding/retrieval path (psgs_w100, top-100).\n- May 22: FiD model loaded, NQ Shapley interpretations and MirACL Banzhaf interpretations reproduced.\n- Jul 17: attribution-quality readout on our production RAG traffic sample.\n\nBao owns staffing and the compute reservation — the hierarchical attribution sweeps are accelerator-hungry. Rafael is research lead.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

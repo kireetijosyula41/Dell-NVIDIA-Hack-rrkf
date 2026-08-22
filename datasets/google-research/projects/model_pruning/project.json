@@ -1,0 +1,27 @@
+{
+  "id": "gr/model_pruning",
+  "title": "Model pruning: Training tensorflow models to have masked connections",
+  "summary": "Turn the model-pruning library — magnitude-based and gradient-based pruning ops injected into the training graph via apply_mask, with mask and threshold variables per layer — into a supported efficiency toolkit for Meridian model teams, including block sparsity and mask-stripping for deployment.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Hyun Traore",
+    "Wei Ivanov",
+    "Giannis Sato",
+    "Jorge Vidal",
+    "Vera Egede"
+  ],
+  "window": {
+    "start": "2026-03-09",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "model_pruning",
+    "url": "https://github.com/google-research/google-research/tree/master/model_pruning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

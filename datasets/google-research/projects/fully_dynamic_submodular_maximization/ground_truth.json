@@ -1,0 +1,17 @@
+{
+  "project": "gr/fully_dynamic_submodular_maximization",
+  "conflicts": [
+    {
+      "conflict_id": "C136",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "fm4tlp"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-06-29 — 256 accelerators from the portfolio's quarterly allocation — which produces the June graph snapshot the A/B design needs"
+    }
+  ]
+}

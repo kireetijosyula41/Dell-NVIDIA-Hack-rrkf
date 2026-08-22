@@ -1,0 +1,12 @@
+{
+  "project": "gr/large_scale_voting",
+  "conflicts": [
+    {
+      "conflict_id": "C082",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["gaternet"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We hold the cirrus-tpu reservation — 256 accelerators — for the week of 2026-06-01 to run the full localization benchmark sweep before the readout."
+    }
+  ]
+}

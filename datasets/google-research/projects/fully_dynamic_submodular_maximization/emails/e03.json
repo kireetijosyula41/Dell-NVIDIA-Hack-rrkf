@@ -1,0 +1,36 @@
+{
+  "id": "gr/fully_dynamic_submodular_maximization/e03",
+  "thread_id": "gr/fully_dynamic_submodular_maximization/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T09:48:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Submodular status: enron replication done, influence-max 20x slower",
+  "body": "Hi Bruno,\n\nReplication is done. On the enron graph we match the paper's oracle-call counts exactly — the cross-platform-deterministic randomness makes this satisfying to verify — and the dynamic algorithm tracks the greedy baseline's objective within 5% across cardinality constraints k from 10 to 100, at a fraction of the oracle calls in the sliding-window setting.\n\nThe internal port is where the risk sits: the influence-maximization oracle is roughly 20x slower than plain coverage on our graph because of the sampling requirement. Coverage-only gets us the freshness win we actually care about for retrieval.\n\nRecommendation: drop influence maximization from Q3 scope and keep it as a research thread.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

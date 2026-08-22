@@ -1,0 +1,17 @@
+{
+  "id": "gr/bisimulation_aaai2020/e03",
+  "thread_id": "gr/bisimulation_aaai2020/t1",
+  "in_reply_to": "gr/bisimulation_aaai2020/e02",
+  "date": "2026-04-22T09:48:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: state-similarity service - April status",
+  "body": "Status update.\n\nTrack A done: compute_metric reproduces the paper numbers on the mirrored_rooms grid (we run with --nosample_distance_pairs, matching the paper setup). Carmen also validated a programmatically constructed 40x40 square grid, so the exact path scales further than we promised.\n\nTrack B: Tereza got the trained Rainbow checkpoints loading cleanly, and the on-policy approximant trains on the state representations. The risk: approximant quality degrades noticeably when we subsample fewer than ~10M state pairs per game - our current estimate says the June sweep at 256 accelerators covers 20 games at full pair counts, not the 40 we pitched. Trade-off is fewer games vs. noisier metrics.\n\nProposal: cut to 20 games for the June sweep, keep full pair sampling. Need a decision by May 8 to lock the sweep configs.\n\nEfe",
+  "labels": ["status", "risk"]
+}

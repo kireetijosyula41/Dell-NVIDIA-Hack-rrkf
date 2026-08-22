@@ -1,0 +1,19 @@
+{
+  "id": "gr/m_layer/e01",
+  "thread_id": "gr/m_layer/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:20:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "M-layer kickoff — matrix exponentiation as a drop-in layer",
+  "body": "Team,\n\nKicking off the M-layer effort formally. The pitch: our open-source \"Intelligent Matrix Exponentiation\" work gives us a single Keras layer (MLayer) that can learn periodic and multiplicative structure that stacked ReLUs handle badly. The product angle is a robustness-friendly building block we can offer inside our modeling toolkit.\n\nMilestones I want to hold for the window ending 2026-06-22:\n1) By 04-10: MLayer API hardened, unit tests, import path stable.\n2) By 05-15: reproduce the CIFAR10 robustness results from M_layer_Robustness.ipynb against our internal harness (Evalline).\n3) By 06-12: periodicity extrapolation demo for the launch review pre-read.\n\nDaniela owns staffing; Umar and Fumiko own the robustness study; Farah and Oyin own the API and Evalline integration. Flag risks early — I'd rather cut scope in April than in June.\n\nThanks,\nAnders",
+  "labels": ["kickoff", "spec"]
+}

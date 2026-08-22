@@ -1,0 +1,15 @@
+{
+  "id": "gr/mathwriting/e04",
+  "thread_id": "gr/mathwriting/t1",
+  "in_reply_to": "gr/mathwriting/e03",
+  "date": "2026-06-17T15:26:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}],
+  "subject": "Re: Project Sirocco — decision: benchmark-only scope",
+  "body": "All,\n\nClosing this out ahead of the benchmark launch. Decision, confirmed with Kofi:\n\n1) Project Sirocco is formally scoped as benchmark + tooling only. The CC BY-NC-SA license on the inks means the reference recognizer is research-only; the benchmark page will carry a banner saying exactly that.\n2) The Apache-2 tooling (loaders, metric code, CI harness) is unrestricted and becomes part of the platform SDK.\n3) Cut: the \"handwriting input demo\" idea some folks floated is out of scope for this window and would need differently-licensed data anyway.\n\nBenchmark page goes live 06-19 as planned, and Sirocco lands in the Q3 OKR draft as a completed platform deliverable before the 06-26 lock. 7.9% CER baseline is the number on the leaderboard.\n\nGreat execution, team.\n\nDmitri",
+  "labels": ["decision"]
+}

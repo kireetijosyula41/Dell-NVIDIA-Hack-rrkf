@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_sgd_clipping/e02",
+  "thread_id": "gr/dp_sgd_clipping/t1",
+  "in_reply_to": "gr/dp_sgd_clipping/e01",
+  "date": "2026-03-19T15:44:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DP-SGD clipping library hardening",
+  "body": "Zofia,\n\nStaffing: Umar owns the algorithmic side and the selector heuristics; Chiara does the packaging, tests, and API hardening; Leilani is on the pipeline-integration work at 40% (she's shared with another data-platforms effort this half).\n\nCompute: day-to-day benchmarking is single-node on titan-a100. The one big ask is the full benchmark matrix — every algorithm x conv architecture x batch-size point, plus H100-specific kernels since that's where adopters will run. For that we hold the vulcan-h100 reservation for the week of 2026-06-01: 128 accelerators, confirmed via the Infra Lead reservation queue. One week at 128 covers the matrix with headroom for reruns.\n\nThat sequencing means benchmark-report publication lands ~June 10, after which the adoption conversations have real numbers.\n\nSantiago",
+  "labels": ["resources"]
+}

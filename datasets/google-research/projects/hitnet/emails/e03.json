@@ -1,0 +1,18 @@
+{
+  "id": "gr/hitnet/e03",
+  "thread_id": "gr/hitnet/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T10:14:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "HITNet status: EPE repro green, latency is the open risk",
+  "body": "Dmitri, Deshawn,\n\nStatus. Eval harness reproduces published-direction numbers on both FlyingThings passes - finalpass EPE within 2% of the reference, cleanpass within 1% - and the three Middlebury half-resolution models (160/288/400 max disparity) all evaluate cleanly. ETH3D done too.\n\nThe risk is exactly what Deshawn called out: with default TF ops we're measuring ~92 ms/frame on our target GPU, which is roughly 3x too slow for the real-time story. Farah's custom CUDA op port has the tile-hypothesis propagation kernel working; warp/refinement kernels are in review. Realistic ETA for an end-to-end custom-op model is first week of June, which leaves one week of margin before the LRB slot.\n\nOne more trade-off to flag: the released models are fixed disparity range. If LRB asks about arbitrary-range scenes we should say 'later release', not promise it.\n\nWei",
+  "labels": ["status", "risk"]
+}

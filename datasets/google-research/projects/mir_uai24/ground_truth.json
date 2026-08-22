@@ -1,0 +1,18 @@
+{
+  "project": "gr/mir_uai24",
+  "conflicts": [
+    {
+      "conflict_id": "C114",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "global_metnet",
+        "group_agnostic_fairness",
+        "clustering_normalized_cuts"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On the Corpus dependency: the v2 migration freeze is 2026-08-07, so our bag-generation jobs on the v1 pipelines can run through the whole project window and well past it — no migration work needs to land before we close in May."
+    }
+  ]
+}

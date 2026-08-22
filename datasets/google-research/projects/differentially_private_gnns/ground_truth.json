@@ -1,0 +1,18 @@
+{
+  "project": "gr/differentially_private_gnns",
+  "conflicts": [
+    {
+      "conflict_id": "C051",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "extreme_memorization",
+        "cmmd",
+        "mave"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-07-24, which gives us headroom to re-ingest ogbn-arxiv and the reddit-disjoint graph through mid-July."
+    }
+  ]
+}

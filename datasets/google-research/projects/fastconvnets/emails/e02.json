@@ -1,0 +1,45 @@
+{
+  "id": "gr/fastconvnets/e02",
+  "thread_id": "gr/fastconvnets/t1",
+  "in_reply_to": "gr/fastconvnets/e01",
+  "date": "2026-04-29T14:00:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: sparse convnets on-device track",
+  "body": "Zofia — resourcing.\n\nStaffing: Vera 40% (heavily committed elsewhere in June, so her model-validation work front-loads into May), Freya 50%, Nikhil 40%, Paloma 50%.\n\nDevice lab: two weeks of exclusive time on the Snapdragon rigs in May — booked. Compute for retraining sparse variants: 32 A100s best-effort, fine on titan.\n\nThe biggest new line item is the human-rating study: there's no shared tool for side-by-side image-classification ratings, so we're scoping and building a human-rating annotation UI from scratch. Paloma has the design doc — roughly six engineer-weeks covering rater queues, pair presentation, and agreement stats — targeting a working tool by mid-June for a July rating round. Raters come through the vendor pool Nadia's PMO manages.\n\nFlag if six weeks feels heavy, but I'd rather own the tool than bodge spreadsheets.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

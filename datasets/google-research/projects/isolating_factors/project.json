@@ -1,0 +1,25 @@
+{
+  "id": "gr/isolating_factors",
+  "title": "Learn your ABCs: Approximate Bijective Correspondence for isolating factors of variation",
+  "summary": "Uses approximate bijective correspondence (ABC) with set supervision to isolate factors of variation, quantified with MINE mutual-information estimates on Shapes3D and validated on pose-estimation scenarios.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Giannis Sato",
+    "Carmen Reyes",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "isolating_factors",
+    "url": "https://github.com/google-research/google-research/tree/master/isolating_factors",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

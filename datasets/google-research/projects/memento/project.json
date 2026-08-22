@@ -1,0 +1,16 @@
+{
+  "id": "gr/memento",
+  "title": "On Catastrophic Interference in Atari 2600 Games",
+  "summary": "Applying the Memento work on catastrophic interference — training a fresh agent from the original agent's checkpoint position — to diagnose and mitigate interference-driven plateaus in our internal RL training runs, starting from Rainbow/DQN Atari baselines.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Alina Larsen",
+  "contributors": ["Carmen Reyes", "Efe Lindqvist", "Rosa Mensah"],
+  "window": {"start": "2026-03-23", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "memento",
+    "url": "https://github.com/google-research/google-research/tree/master/memento",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

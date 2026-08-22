@@ -1,0 +1,50 @@
+{
+  "id": "gr/factorize_a_city/e04",
+  "thread_id": "gr/factorize_a_city/t2",
+  "in_reply_to": "gr/factorize_a_city/e03",
+  "date": "2026-07-08T15:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: repro clean, alignment on our stacks is harder",
+  "body": "Carmen, all — decision from Monday's review: the July demo runs on a curated set of 40 stacks that pass automatic alignment cleanly. The 40-step schedule with coarse pre-align becomes the default, and full no-touch automation moves to next quarter. Nobody outside the team sees the four bad-minimum examples until we can show the fix.\n\nFor the Aug launch review I need: the demo reel, the PSNR table against the open-source checkpoint, and a cost slide — the doubled per-stack alignment cost matters for the productization story.\n\nOyin and Wanjiru, the demo pipeline is yours through July as staffed. Bilal — freeze the eval harness by Jul 24 so the numbers in the deck are final.\n\nGood trajectory, everyone.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

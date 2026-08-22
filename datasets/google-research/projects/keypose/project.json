@@ -1,0 +1,18 @@
+{
+  "id": "gr/keypose",
+  "title": "KeyPose: Pose Estimation with Keypoints",
+  "summary": "TensorFlow 2 models and labeled data for predicting 3D keypoints on transparent objects from stereo imagery: 600 sequences (~48k stereo and depth images at 720p) covering 15 transparent objects in 5 categories. Meridian is adapting it for robotic bin-picking of glassware and clear packaging.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": ["Yara Jokic", "Leilani Nakamura", "Wanjiru Horvat", "Rosa Mensah"],
+  "window": {"start": "2026-04-27", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "keypose",
+    "url": "https://github.com/google-research/google-research/tree/master/keypose",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

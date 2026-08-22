@@ -1,0 +1,44 @@
+{
+  "id": "gr/dictionary_learning/e04",
+  "thread_id": "gr/dictionary_learning/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T10:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: compression scope for Q3 OKRs",
+  "body": "All,\n\nDecisions, so we are clean before the June 26 OKR lock:\n\n1. We commit Table A compression to the Q3 serving-cost OKR. Saoirse's sweeps confirmed Efe's May numbers hold at full table scale: 0.14 error, -0.4 recall@10, roughly 55% memory reduction on the biggest table in the retrieval fleet.\n2. Table B is explicitly out of the OKR. The col_percentage=0.5 / n_iterations=64 configs erase most of the sparsity benefit. It stays as an exploration item with no committed number.\n3. Saoirse's serving integration spike showed decode overhead is negligible at query time, so Wanjiru writes the integration plan with the serving leads by July 3.\n\nGood, boring, shippable result. My favorite kind.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

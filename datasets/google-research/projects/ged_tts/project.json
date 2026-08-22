@@ -1,0 +1,26 @@
+{
+  "id": "gr/ged_tts",
+  "title": "A Spectral Energy Distance for Parallel Speech Synthesis",
+  "summary": "Trains highly parallel TTS models using Meridian's spectral energy distance — a proper scoring rule over magnitude-spectrogram distributions, estimated unbiased from minibatches with a multi-scale repulsive term — targeting low-latency speech serving at MOS 4.25 quality.",
+  "portfolio": "speech-audio",
+  "pm": "Goran Sokolov",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Gustavo Moreau",
+    "Jorge Vidal",
+    "Kaia Wolde",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-03-09",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ged_tts",
+    "url": "https://github.com/google-research/google-research/tree/master/ged_tts",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

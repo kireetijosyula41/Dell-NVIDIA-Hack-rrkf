@@ -1,0 +1,12 @@
+{
+  "project": "gr/activation_clustering",
+  "conflicts": [
+    {
+      "conflict_id": "C016",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["m_layer"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Fumiko Rossi is committed at 60% to this project for June 2026 for the productization sprint - concept-quality metrics and the customer-facing notebook flow - and I've already booked her time with her and put it in the resourcing sheet."
+    }
+  ]
+}

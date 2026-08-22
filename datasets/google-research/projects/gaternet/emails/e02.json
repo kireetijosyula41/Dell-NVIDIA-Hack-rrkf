@@ -1,0 +1,45 @@
+{
+  "id": "gr/gaternet/e02",
+  "thread_id": "gr/gaternet/t1",
+  "in_reply_to": "gr/gaternet/e01",
+  "date": "2026-03-05T14:02:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: GaterNet kickoff — input-conditional compute",
+  "body": "Hi Lucia,\n\nStaffing: Rosa 60% (repro and eval), Vera 50% (internal workload port), Rafael 40% (analysis), Umar 20% (advisory).\n\nCompute: the CIFAR-10 work is trivial, titan best-effort covers it. The June scale decision is the real ask — for the ImageNet-scale gating sweep we hold the cirrus-tpu reservation for the week of 2026-06-01, 256 accelerators from the vision portfolio's quarterly allocation. The sweep covers backbone depths and gate-sparsity targets.\n\nDependency: the released checkpoints download from external storage; Vera is mirroring ResNet-20-Gated.pth and ResNet-56-Gated.pth internally this week so CI does not depend on an external URL.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

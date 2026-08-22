@@ -1,0 +1,12 @@
+{
+  "project": "gr/ghum",
+  "conflicts": [
+    {
+      "conflict_id": "C126",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["fair_submodular_matroid"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project, and my reservation plan assumes the full amount."
+    }
+  ]
+}

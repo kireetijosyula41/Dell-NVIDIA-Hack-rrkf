@@ -1,0 +1,16 @@
+{
+  "id": "gr/lm_fact_tracing/e02",
+  "thread_id": "gr/lm_fact_tracing/t1",
+  "in_reply_to": "gr/lm_fact_tracing/e01",
+  "date": "2026-02-13T13:58:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Palisade kickoff: fact tracing for LM assertions",
+  "body": "Anders,\n\nPalisade staffing and compute:\n\n- Linnea Yamada 50% tech lead, owns the benchmark reproduction and methodology.\n- Chiara Olsen 40% Feb-Apr on the corpus-slice indexing (BM25 side plus the embedding index).\n- Amara Okafor 30% on gradient-computation infra — the gradient-based TDA methods need per-example gradients, which is the expensive part.\n\nCompute: 24 A100s on titan-a100 best-effort for the gradient extraction runs in March; embedding and BM25 passes are cheap. No reservation-class ask this window.\n\nOne flag: per-example gradients on the corpus slice will dominate our budget — Amara estimates ~9k GPU-hours if we do the full slice naively. She's implementing the release's suggested last-layer approximation first, and we only go deeper if precision demands it.\n\nAlina",
+  "labels": ["resources"]
+}

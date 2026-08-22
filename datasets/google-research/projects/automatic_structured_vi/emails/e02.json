@@ -1,0 +1,17 @@
+{
+  "id": "gr/automatic_structured_vi/e02",
+  "thread_id": "gr/automatic_structured_vi/t1",
+  "in_reply_to": "gr/automatic_structured_vi/e01",
+  "date": "2026-05-06T15:02:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: [Project Nimbus] Kickoff: ASVI for the probabilistic modeling stack",
+  "body": "Anders,\n\nProject Nimbus staffing and resource plan:\n\n- Umar 60% (research lead, owns the Inference Gym comparison design)\n- Tereza 50% (pipeline + reproducibility)\n- Rosa 30% (API surface, ramping to 50% in June once her other commitments taper)\n\nCompute is light - VI fits are single-node, so titan-a100 best-effort covers us; the full posterior-comparison sweep across Inference Gym models is a few hundred GPU-hours total. No Vulcan ask, which keeps us out of the reservation queue entirely.\n\nOne process note: since Nimbus targets an internal API rather than an external demo, I'd like to confirm with Nadia whether we still need full LRB sign-off or just an architecture review. Can you take that?\n\nBrownian-motion repro already matches: final ELBO within 0.3 nats of the released run.\n\nSantiago",
+  "labels": ["resources", "status"]
+}

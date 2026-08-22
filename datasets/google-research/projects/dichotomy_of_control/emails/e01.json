@@ -1,0 +1,41 @@
+{
+  "id": "gr/dichotomy_of_control/e01",
+  "thread_id": "gr/dichotomy_of_control/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:24:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: Dichotomy of Control for reliable automation agents",
+  "body": "Deshawn, team,\n\nKicking off the DoC evaluation track. Why it matters for us: return-conditioned agents like Decision Transformer quietly take credit for lucky outcomes in stochastic environments, which is exactly the failure mode we cannot afford in the ops-automation agents. Dichotomy of Control separates what the policy controls from what the environment decides, and the released code makes the contrast easy to demonstrate -- flipping algo_name from doc to dt in run_tabular.sh shows the dramatic performance drop on the tabular benchmarks.\n\nScope for the half: reproduce the Bandit and FrozenLake results from the offline datasets, then a neural DoC run on one internal ops simulator, wrapping by June 8 with a go/no-go recommendation for Q3 adoption.\n\nDeshawn to size staffing and infra.\n\nUlla",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

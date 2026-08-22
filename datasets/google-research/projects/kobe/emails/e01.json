@@ -1,0 +1,17 @@
+{
+  "id": "gr/kobe/e01",
+  "thread_id": "gr/kobe/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:31:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: reference-less MT evaluation (Project Obsidian)",
+  "body": "Hi team,\n\nKicking off the KoBE productization. Codename for this effort is Project Obsidian — please tag docs and dashboards with it.\n\nThe product problem: our localization customers want translation quality scores for language pairs where no human references exist. KoBE is reference-less — it links entity mentions in the source and the candidate translation against a large-scale multilingual knowledge base and uses matched entity counts as the quality signal. The released annotations give us a serious eval base: 425k sentences across 18 language pairs from 262 MT systems, with 1.8M entity mentions over 28k distinct entities.\n\nMilestones (window ends May 25):\n- Mar 20: reproduce the WMT19 metrics-track correlations from the released annotations\n- Apr 17: KoBE scoring behind an internal Evalline endpoint\n- May 18: pilot with the localization team on two no-reference language pairs\n\nDeshawn — staffing and the entity-linking dependency question are yours. That's the piece we don't have in-house today.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

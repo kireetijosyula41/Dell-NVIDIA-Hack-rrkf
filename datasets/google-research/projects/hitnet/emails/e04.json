@@ -1,0 +1,18 @@
+{
+  "id": "gr/hitnet/e04",
+  "thread_id": "gr/hitnet/t2",
+  "in_reply_to": "gr/hitnet/e03",
+  "date": "2026-06-04T15:40:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: HITNet status: decision for LRB on June 11",
+  "body": "All,\n\nDecisions for the June 11 Launch Review Board:\n\n1. We demo the custom-CUDA-op model. Farah landed the full kernel set on June 2 and we're at 31 ms/frame - inside the real-time budget. Great work.\n2. Variable disparity range is explicitly out of scope; the LRB one-pager says 'fixed-range models (128-400), variable range in a later release'. No verbal promises beyond that please.\n3. Middlebury half-resolution models are what we show for high-detail scenes; we do not upsample and imply full-res quality.\n\nRemaining ask before the 11th: Wei to freeze the eval table (EPE + latency, all three datasets), Umar to write the two-paragraph limitations section. Deshawn keeps Farah's June allocation as planned through demo hardening.\n\nIf LRB signs off, Q3 goal becomes onboarding two internal consumers.\n\nDmitri",
+  "labels": ["decision"]
+}

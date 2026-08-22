@@ -1,0 +1,35 @@
+{
+  "id": "gr/android_in_the_wild/e04",
+  "thread_id": "gr/android_in_the_wild/t2",
+  "in_reply_to": "gr/android_in_the_wild/e03",
+  "date": "2026-05-05T15:20:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: AitW status: per-subset baselines, instruction-source skew",
+  "body": "Fumiko, Santiago,\n\nDecisions before the May 11 readout:\n\n1. Headline metric is stratified by instruction source, always. The aggregate number goes in an appendix. If we normalize on the model-written phrasing we'll ship something that works in demos and fails for users.\n2. WebShopping gets a dedicated action-head workstream in Q3; it's the biggest single gap and it maps to a real customer flow.\n3. The resolution-robustness study stays in scope but reports v10-13 pooled rather than per-version — per-version splits are too thin to be meaningful.\n\nFumiko, send the stratified table Friday. Thanks — this was a genuinely clarifying quarter.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

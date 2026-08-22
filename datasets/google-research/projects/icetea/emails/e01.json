@@ -1,0 +1,18 @@
+{
+  "id": "gr/icetea/e01",
+  "thread_id": "gr/icetea/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T10:08:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "ICETEA kickoff - causal benchmarks where images are the confounder",
+  "body": "Team,\n\nKicking off ICETEA. The gap our release identified: benchmarking causal-inference methods is genuinely hard, and existing benchmarks rarely have both a plausible causal story and a real need for ML models. Our answer is a semi-synthetic benchmark where retinal fundus images act as covariates - there's decent evidence they correlate with general vascular condition, so adjusting on them for confounding is scientifically defensible, and you can't do that adjustment without an image model.\n\nFor data-platforms the deliverable is a benchmark suite: IHDP and ACIC as the standard baselines, plus our fundus-image semi-synthetic benchmark with the beam pipeline to regenerate it at scale.\n\nMilestones: IHDP/ACIC estimators reproduced by mid-March, image benchmark generation pipeline running by mid-April, benchmark v1 plus docs by 2026-05-11.\n\nHalima leads estimators, Tereza the image pipeline, Nikhil experiments, Linnea data engineering. Alina - staffing/compute note please.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

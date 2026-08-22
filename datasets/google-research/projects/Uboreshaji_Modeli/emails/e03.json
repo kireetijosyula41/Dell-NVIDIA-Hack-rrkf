@@ -1,0 +1,17 @@
+{
+  "id": "gr/Uboreshaji_Modeli/e03",
+  "thread_id": "gr/Uboreshaji_Modeli/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T10:58:00Z",
+  "from": {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Tundra status: detection + SFT hardened, ASR risk materializing",
+  "body": "Hi Daniela, Lucia,\n\nStatus. The May 15 milestone landed on time: the OWL-v2 detection path (HungarianMatcher + focal loss) passes the full regression suite, and the location-tokenization VLM path matches our old stack's mAP within 0.3 on the internal detection benchmark while cutting per-engagement setup from about two weeks to two days thanks to the config-driven strategy layer. Carmen's Swahili SFT demo trains end to end with the chat template and prompt masking working exactly as designed - the loss curves are clean.\n\nThe risk Daniela called is materializing: the USM encoder integration for ASR has awkward interactions with Seq2SeqTrainer's batching when audio lengths vary widely - padding blows up memory on long-tail clips. Linnea has a bucketing-sampler fix half-working, but honest estimate is June 26 for a hardened ASR path, not June 12.\n\nNo ask yet, just early warning so the customer-engagement date doesn't get promised against ASR.\n\nOndrej",
+  "labels": ["status", "risk"]
+}

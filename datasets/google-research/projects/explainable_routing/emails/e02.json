@@ -1,0 +1,15 @@
+{
+  "id": "gr/explainable_routing/e02",
+  "thread_id": "gr/explainable_routing/t1",
+  "in_reply_to": "gr/explainable_routing/e01",
+  "date": "2026-04-15T15:12:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Explainable routing kickoff: 'why is my route different today?'",
+  "body": "Anders,\n\nResourcing for the window.\n\nMilan 60% on the build productionization and service scaffolding, Gustavo 50% on the scenario tooling and the subgraph caching (cached subgraphs are what make repeated runs fast, so that layer needs to be solid), Wei 30% advising on eval methodology. The anchor: Rafael Duran is committed at 60% for May 2026 to drive the explanation-quality evaluation and the scenario-generation extensions - I've booked him at that level in the allocation sheet. The May 29 eval-framework milestone is his deliverable.\n\nCompute: trivial by portfolio standards - this is CPU-bound graph computation. The one infra ask is a beefy-memory batch tier for the Washington-region runs; loading is much faster with compiler optimizations (Release build) but memory is the constraint.\n\nRisk: the partner-shaped scenario set doesn't exist yet, and Rafael can't start eval design against it until Gustavo's generator handles partner road-network densities. Sequencing is tight in early May.\n\nDaniela",
+  "labels": ["resources"]
+}

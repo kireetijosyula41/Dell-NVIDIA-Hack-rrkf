@@ -1,0 +1,45 @@
+{
+  "id": "gr/concept_marl/e02",
+  "thread_id": "gr/concept_marl/t1",
+  "in_reply_to": "gr/concept_marl/e01",
+  "date": "2026-04-16T14:20:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: concept bottleneck policies for auditable agents",
+  "body": "Hi Ulla,\n\nStaffing: Quentin Farkas leads at 50%, Maren Zhou 30% on the environment wrappers and pixels pipeline, Umar Costa 25% on the concept-quality eval design. Nikhil Abebe is committed at 60% to this project for June 2026 — June is the concept-eval crunch, and he owns the probe suite plus the ablation runs end to end.\n\nCompute: titan-a100 best-effort, 24 GPUs. Multi-agent PPO with the concept loss is sample-hungry but the networks are small; the miniature cooking environments keep iteration cheap.\n\nSequencing note: the concept-extraction wrapper parses concept values from observation prefixes, so Maren's wrapper work gates everything — she's first in, and Quentin stubs against her interface in the meantime.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

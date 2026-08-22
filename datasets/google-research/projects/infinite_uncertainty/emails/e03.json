@@ -1,0 +1,51 @@
+{
+  "id": "gr/infinite_uncertainty/e03",
+  "thread_id": "gr/infinite_uncertainty/t1",
+  "in_reply_to": "gr/infinite_uncertainty/e01",
+  "date": "2026-04-06T17:05:00Z",
+  "from": {
+    "name": "Halima Toure",
+    "email": "halima.toure@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: infinite-width uncertainty & calibration audit",
+  "body": "Status on the repro milestone. The ESS sampler is running under jax.vmap across 32 parallel chains; on the precomputed Myrtle-10 kernels we reproduce the paper's qualitative result — the NNGP posterior is markedly better calibrated than its finite-width analogue. On our CIFAR-10 subset (10k test) we're seeing ECE 0.019 for the NNGP with the softmax link vs 0.041 for the finite-width ensemble baseline. Two flags: (1) chain mixing degrades on the 45k-example kernel — we need roughly 3x more ESS iterations than budgeted, which pushes the full grid to ~4 days on best-effort titan; (2) the kernel mirror is 78 GB and the storage quota request is still pending with Corpus. Neither blocks the late-April report if the quota clears this week. — Halima",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/bitempered_loss",
+  "title": "Robust Bi-Tempered Logistic Loss Based on Bregman Divergences.",
+  "summary": "Hardening the bi-tempered logistic loss - a generalized cross-entropy with bounded per-sample loss and a heavy-tail softmax - into Meridian's default training loss for noisy-label customer datasets. Recovers standard cross entropy at t1 = t2 = 1.0 and generalizes prior robust losses.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": ["Yara Jokic", "Gustavo Moreau", "Fumiko Rossi", "Rafael Duran"],
+  "window": {"start": "2026-04-20", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bitempered_loss",
+    "url": "https://github.com/google-research/google-research/tree/master/bitempered_loss",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/assemblenet",
+  "conflicts": [
+    {
+      "conflict_id": "C086",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "dipper"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Nothing we have measures multi-stream video models consistently, so we are scoping and staffing an internal evaluation harness built from scratch — Csilla at 45% owns it, first version by mid-May."
+    }
+  ]
+}

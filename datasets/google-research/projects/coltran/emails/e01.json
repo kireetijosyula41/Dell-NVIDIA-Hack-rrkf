@@ -1,0 +1,40 @@
+{
+  "id": "gr/coltran/e01",
+  "thread_id": "gr/coltran/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: ColTran archive colorization",
+  "body": "Hi Santiago,\n\nKicking off the colorization product effort for the vision portfolio. Base is our open-source Colorization Transformer: a three-stage stack — autoregressive colorizer, color upsampler, spatial upsampler — pointed at the photo-archive restoration market. The custom-dataset fine-tuning path already exists in the release, which is exactly what archive customers need.\n\nHalf goals: (1) fine-tune on two customer-like archival datasets, (2) hit the quality bar — remembering evaluation must be distribution-level (FID), not per-image SSIM/LPIPS, since any single plausible colorization won't match ground truth — and (3) a Shipyard-hosted demo for Launch Review Board in mid-July.\n\nI'd also like a low-cost serving story; the autoregressive stage worries me for latency. Staffing and compute plan by 5/8?\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

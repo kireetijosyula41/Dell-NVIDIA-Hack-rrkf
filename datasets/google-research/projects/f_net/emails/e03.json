@@ -1,0 +1,36 @@
+{
+  "id": "gr/f_net/e03",
+  "thread_id": "gr/f_net/t2",
+  "in_reply_to": null,
+  "date": "2026-05-06T10:30:00Z",
+  "from": {
+    "name": "Nikhil Abebe",
+    "email": "nikhil.abebe@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Status: FNet GLUE dry runs + eval harness quirk",
+  "body": "Status on evals.\n\nUsing the small-scale checkpoint Kaia pre-trained on the C4 sample, GLUE dry runs look consistent with the paper's story: we're within about 2.5 points of our BERT-size baseline on the dev average while training steps run roughly 6x faster on the same hardware.\n\nTwo flags. First, the released test harness assumes the working directory is the parent of the f_net folder — Evalline's runner doesn't do that by default, so Tomas's team gave us a shim; fine for now, but our numbers aren't yet in the shared leaderboard format. Second, the MNLI fine-tunes are the long pole (~4h each on best-effort A100s); if titan is congested in late May the matrix slips. Mitigation: run MNLI and QQP first.\n\nNikhil",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/KNF/e02",
+  "thread_id": "gr/KNF/t1",
+  "in_reply_to": "gr/KNF/e01",
+  "date": "2026-02-13T14:47:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: KNF kickoff - forecasting that survives distribution shift",
+  "body": "Ximena,\n\nStaffing: Fumiko Rossi 50% as method owner (operators + feedback loop), Giannis Sato 40% on the data generation scripts (M4 via m4_data_gen.py, Cryptos via cryptos_data_gen.py) and training harness, Bilal Novak 40% on the shift-injection eval framework.\n\nCompute for the window itself is modest - 24 A100s on titan-a100, best effort covers it.\n\nOn funding for the Q3 scale-up: I met with Idris on Tuesday. Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-60 for KNF, which covers the full scale-up sweep, so I'm treating the Q3 compute question as closed. I'll get it papered when the Q3 budget cycle opens, but I'm confident enough to plan hiring-adjacent decisions around it.\n\nOne flag: Bilal is fielding requests from another team, I've told him KNF eval framework comes first through April.\n\nBao",
+  "labels": ["resources"]
+}

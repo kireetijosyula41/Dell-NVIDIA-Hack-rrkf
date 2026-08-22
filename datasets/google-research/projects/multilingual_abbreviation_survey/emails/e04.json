@@ -1,0 +1,19 @@
+{
+  "id": "gr/multilingual_abbreviation_survey/e04",
+  "thread_id": "gr/multilingual_abbreviation_survey/t1",
+  "in_reply_to": "gr/multilingual_abbreviation_survey/e03",
+  "date": "2026-06-25T15:40:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: abbreviation-aware normalization — decision on locale scope",
+  "body": "Team,\n\nDecision, confirmed at yesterday's checkpoint just under the Q3 OKR lock:\n\n1. The July training sweep targets 12 dedicated high-priority locales; the remaining single-consultant locales get script-family grouped heads per Umar's proposal. We are not shipping per-locale rules learned from one consultant's examples.\n2. TTS integration is the launch surface for Q3; keyboard follows in Q4. Nadia has pencilled us for the Launch Review Board on 07-16, so the sweep output needs eval numbers by 07-13.\n3. Paloma to prep the sweep data drops the week before the run so we walk in with everything staged.\n\nQ3 OKR is filed as: normalization model beating rule baselines on 12 locales, measured on Evalline.\n\nThanks all,\nPriya",
+  "labels": ["decision"]
+}

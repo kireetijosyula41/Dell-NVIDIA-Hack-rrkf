@@ -1,0 +1,41 @@
+{
+  "id": "gr/muller/e03",
+  "thread_id": "gr/muller/t1",
+  "in_reply_to": "gr/muller/e02",
+  "date": "2026-05-12T10:30:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: MULLER learned resizer — A/B results + sweep status",
+  "body": "Hi both,\n\nResults from the April A/B, and Deshawn's caution was exactly right: pure drop-in on the frozen tower moved retrieval precision@10 by +0.05, statistically indistinguishable from zero. With a light fine-tune (2 epochs, resizer in the loop), tower 1 gains +0.42 precision@10 and +0.31 recall@50 on the offline eval — consistent with the paper's claim that the multilayer Laplacian filtering sharpens detail the model learns to exploit. Latency delta in Oyin's serving parity check: under 0.3 ms per image, effectively free as promised.\n\nThe May sweep across all three towers is running on the B-77-funded allocation; towers 2 and 3 finish this week. One trade-off to flag for the Jun 1 recommendation: the fine-tune requirement means MULLER rides along with each tower's regular retraining cadence rather than shipping instantly — tower 3 doesn't retrain until July, so full rollout completes next quarter regardless of our decision.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/CardBench_zero_shot_cardinality_training/e04",
+  "thread_id": "gr/CardBench_zero_shot_cardinality_training/t2",
+  "in_reply_to": "gr/CardBench_zero_shot_cardinality_training/e03",
+  "date": "2026-05-08T14:41:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: CardBench status: reference model up, complexity-bucket gap",
+  "body": "Kaia, Daniela,\n\nTwo decisions ahead of the May 15 review:\n\n1. Per-complexity-bucket reporting is now the required format. I agree the aggregate hides too much - a 40x tail q-error on complex joins is exactly the case the optimizer team cares about. Kaia, please write it into the benchmark doc as a hard requirement, headline numbers only alongside the buckets.\n\n2. Scope cut: the re-generation pipeline ships at May 15 with downsampling and table-stats collection working, but workload generation for *new* datasets moves to Q3. Wanjiru hit a wall with schema edge cases and I'd rather land two steps solidly than three badly. Existing workloads and query graphs are unaffected, so no downstream user is blocked.\n\nDaniela, please reflect the Q3 carry-over in the OKR draft before the June lock.\n\nDmitri",
+  "labels": ["decision"]
+}

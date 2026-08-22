@@ -1,0 +1,46 @@
+{
+  "id": "gr/informally_romanized_lang_id/e03",
+  "thread_id": "gr/informally_romanized_lang_id/t1",
+  "in_reply_to": "gr/informally_romanized_lang_id/e01",
+  "date": "2026-04-22T16:30:00Z",
+  "from": {
+    "name": "Rafael Duran",
+    "email": "rafael.duran@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: romanized language ID for ingestion routing",
+  "body": "Status, week of April 20. Baseline repro done on B-A — our reimplementation matches the paper's reported setup within noise. The lexicon-augmented models are where the gains are: adding the Aksharantar romanization lexicons as training signal lifts macro-F1 by 3.4 points over the baseline, with the biggest jumps on the Hindi/Marathi/Nepali confusable cluster. Grunt-work note: the tooling assumes shared file root names (Assamese.tsv rather than asm.tsv), so Leilani wrote a normalization layer mapping B-A identifiers to Aksharantar codes and, where they exist, Dakshina codes. Open risk: Dakshina covers only a subset of the languages (no Bodo, Kashmiri, Maithili, Manipuri), so for those we have lexicons but no romanized supervision — accuracy there trails by ~6 F1. Proposal for the May review: a two-tier quality bar. — Rafael",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

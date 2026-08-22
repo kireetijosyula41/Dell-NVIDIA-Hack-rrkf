@@ -1,0 +1,40 @@
+{
+  "id": "gr/cognate_inpaint_neighbors/e02",
+  "thread_id": "gr/cognate_inpaint_neighbors/t1",
+  "in_reply_to": "gr/cognate_inpaint_neighbors/e01",
+  "date": "2026-04-08T14:10:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cognate reflex prediction for low-resource lexicons",
+  "body": "Hi Priya,\n\nStaffing: Wei Ivanov leads modeling at 40%, Nikhil Abebe at 30% on the data and eval harness. Katya Silva is committed at 60% to this project for June 2026 — she'll drive the head-to-head training runs and the lexicon-sample deliverable, which is the crunch month before launch review.\n\nCompute: these are small sequence models; we'll run inside our existing cirrus-tpu portfolio allocation, well under quota. No reservation needed.\n\nOne constraint: the shared-task data pipeline assumes an svn export plus the ST2022 repo layout, so Nikhil will spend the first week getting a clean internal mirror with checksums before anyone trains. I'd rather eat that week than debug data drift in May.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

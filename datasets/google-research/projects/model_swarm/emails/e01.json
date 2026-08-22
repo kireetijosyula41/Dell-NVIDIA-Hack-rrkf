@@ -1,0 +1,46 @@
+{
+  "id": "gr/model_swarm/e01",
+  "thread_id": "gr/model_swarm/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:45:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Model Swarms expert adaptation",
+  "body": "Hi Bao,\n\nKicking off Model Swarms (Mar 23 – Jun 22). The method from our open-source release: treat a pool of LLM experts as particles in a swarm search and collaboratively adapt them to a target task — no gradient training, just utility-guided search that tracks a global best. The release ships a starter pipeline on the NLGraph graph-reasoning dataset, which is conveniently on-portfolio for us.\n\nProduct thesis: retrieval customers keep asking for domain-adapted experts without the cost and data-governance overhead of fine-tuning. If swarm search gets us 80% of fine-tuning quality at a fraction of the compute, that's a service.\n\nMilestones: mid-April — NLGraph reproduction with the released search scripts; late May — swarm search on two internal retrieval tasks; mid-June — final validation sweep and a go/no-go for a Q3 service beta.\n\nStaffing, compute, and the data-migration picture by Apr 10, please.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

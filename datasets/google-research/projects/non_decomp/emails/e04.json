@@ -1,0 +1,18 @@
+{
+  "id": "gr/non_decomp/e04",
+  "thread_id": "gr/non_decomp/t1",
+  "in_reply_to": "gr/non_decomp/e03",
+  "date": "2026-06-17T15:44:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: worst-case recall — decisions for close-out",
+  "body": "Team,\n\nDecisions from today's review, ahead of the OKR lock next week:\n\n1. The trainer integration ships with TWO presets: \"balanced\" (the logit-adjusted baseline) and \"worst-case\" (Algorithm 1 with Umar's damped multiplier updates). The 0.12 → 0.41 worst-case recall result is the headline, and offering the milder preset answers the average-accuracy objection without a custom-config support burden.\n2. Umar's damping lands in the defaults; the 15% epoch overhead is acceptable and we document it.\n3. Paloma confirmed the v2 re-registration of the long-tail tfrecords completed 06-09, so we're fully clear of the Corpus freeze and Q3 retraining is unblocked.\n4. Q3 OKR filed: worst-case preset adopted by 2 platform customers, with a published trade-off note.\n\nReadout on 06-25; window closes clean on 06-29. Thanks all.\n\nDmitri",
+  "labels": ["decision"]
+}

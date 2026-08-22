@@ -1,0 +1,18 @@
+{
+  "id": "gr/multi_game_dt/e04",
+  "thread_id": "gr/multi_game_dt/t1",
+  "in_reply_to": "gr/multi_game_dt/e03",
+  "date": "2026-05-27T09:20:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: MGDT kickoff — decision ahead of the June run",
+  "body": "Team,\n\nDecision from this morning's pre-run review. The dress rehearsal got the loader to 91% utilization — good but not the 95% bar. Rather than gamble the reserved week, we're cutting scope:\n\n1. The June run trains the large config plus ONE replication of the mid point. The online-RL comparison arm is dropped; the open-source paper already establishes that offline decision transformers scale better, and we don't need to re-prove it on our dime.\n2. Yara's fine-tuning recipe ships with the medium checkpoint first; the large-checkpoint version follows after the run.\n\nThat keeps us comfortably inside the week and protects the scaling-curve deliverable for the H1 readout on 06-18. Wanjiru, please freeze the loader config by Friday.\n\nThanks all — tight but doable.\n\nUlla",
+  "labels": ["decision", "risk"]
+}

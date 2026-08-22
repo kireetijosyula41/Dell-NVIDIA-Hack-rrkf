@@ -1,0 +1,18 @@
+{
+  "id": "gr/multi_annotator/e03",
+  "thread_id": "gr/multi_annotator/t2",
+  "in_reply_to": null,
+  "date": "2026-04-22T10:18:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Pilot results: per-annotator heads vs majority vote",
+  "body": "Hi both,\n\nPilot is trained, two days ahead of the 04-24 milestone. Numbers on the held-out Corpus hate-speech slice:\n\n- Majority-vote baseline: F1 0.66\n- Multi-annotator model (one head per annotator, NaN-masked where an annotator skipped an item): F1 0.71 when we aggregate heads, and we additionally get per-item disagreement scores for free.\n\nThe NaN masking matters — in our pilot pool each item is only annotated by 2 of 4 annotators, exactly the sparse pattern the release code expects.\n\nRisk to flag: disagreement scores are well calibrated on political-speech items but noisy on slang-heavy ones, where annotator pools are small. Maren is pulling more annotations for those slices via Corpus before we call it robust. Also re-confirming: binary labels only for now.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

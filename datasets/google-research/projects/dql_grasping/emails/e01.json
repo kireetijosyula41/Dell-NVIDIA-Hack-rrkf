@@ -1,0 +1,19 @@
+{
+  "id": "gr/dql_grasping/e01",
+  "thread_id": "gr/dql_grasping/t1",
+  "in_reply_to": null,
+  "date": "2026-02-19T09:12:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: grasping benchmark revival (dql_grasping)",
+  "body": "Hi all,\n\nKicking off the grasping-benchmark revival. Context: the manipulation roadmap needs a common yardstick before we commit Q3 OKRs, and our open-source grasping release is the right starting point — simulated grasping environments at several difficulty levels, with customizable DQL, MC, Supervised, Corr-MC, DDPG, and PCL learners, plus ready-made scripts for off-policy data collection and hyperparameter grid search.\n\nWhat product gets out of it: an apples-to-apples comparison of the six algorithm families on our environments, so the roadmap picks a lane on evidence instead of vibes.\n\nMilestones: environments and data-collection pipeline modernized by end of March, small-scale comparisons through May, the full grid-search sweep in late June, readout the first week of July.\n\nAlina owns staffing and the compute reservation for the big sweep.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

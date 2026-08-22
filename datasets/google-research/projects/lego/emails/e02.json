@@ -1,0 +1,17 @@
+{
+  "id": "gr/lego/e02",
+  "thread_id": "gr/lego/t1",
+  "in_reply_to": "gr/lego/e01",
+  "date": "2026-03-03T14:10:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: LEGO multi-hop KGQA on the entity graph",
+  "body": "Priya,\n\nStaffing for the window:\n\n- Rafael Duran 50% research lead, owns method adaptation and the accuracy bar.\n- Freya Ruiz 30% on query-template design for the entity-graph slice.\n- Emeka Pinto 30% infra.\n\nOne scoping call I want on record: there's no existing tooling that covers multi-hop QA scoring the way we need it, so we're standing up an internal evaluation harness from scratch — Bilal at 50% through May with Emeka pairing on the runner infrastructure. Per-hop accuracy, latency percentiles, and regression tracking across graph snapshots. It's roughly 40% of our eng budget this quarter but everything downstream depends on trustworthy evals.\n\nCompute: 8 A100s on titan-a100, best-effort is fine.\n\nDeshawn",
+  "labels": ["resources"]
+}

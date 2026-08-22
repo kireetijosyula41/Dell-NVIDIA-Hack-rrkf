@@ -1,0 +1,12 @@
+{
+  "project": "gr/experience_replay",
+  "conflicts": [
+    {
+      "conflict_id": "C024",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["cell_embedder", "covid_epidemiology", "CardBench_zero_shot_cardinality_training"],
+      "planted_in": ["e02"],
+      "claim_as_written": "the Corpus v2 migration freeze is 2026-08-07, so our trajectory-dataset ingestion stays on the v1 path for the whole window and the migration lands after we're done."
+    }
+  ]
+}

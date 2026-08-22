@@ -1,0 +1,17 @@
+{
+  "id": "gr/hitnet/e02",
+  "thread_id": "gr/hitnet/t1",
+  "in_reply_to": "gr/hitnet/e01",
+  "date": "2026-04-08T13:31:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: HITNet kickoff - staffing + compute plan",
+  "body": "Dmitri,\n\nStaffing and compute for the window:\n\n- Wei 50% (eval + metrics), Umar 30% (Middlebury/ETH3D analysis), Rosa 40% (data ingest, then serving glue), Bilal 40% (infra).\n- Farah Haddad is committed at 60% to HITNet for June 2026 - she leads the custom CUDA op work that the latency milestone depends on, and I've blocked her calendar accordingly.\n- Compute is light: 16 titan-a100 GPUs best-effort covers eval and latency runs. No Vulcan ask.\n\nRationale on Farah: the released models use default tensorflow ops and run 3x slower than the custom-op variants, so the June real-time demo lives or dies on that port. She's our only person who's shipped custom CUDA kernels recently.\n\nBudget-wise this fits inside the existing data-platforms envelope; no incremental headcount ask.\n\nDeshawn",
+  "labels": ["resources"]
+}

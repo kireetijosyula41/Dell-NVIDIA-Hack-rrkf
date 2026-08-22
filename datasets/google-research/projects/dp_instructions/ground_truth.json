@@ -1,0 +1,12 @@
+{
+  "project": "gr/dp_instructions",
+  "conflicts": [
+    {
+      "conflict_id": "C007",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["multimodalchat"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "Amara is committed at 60% to this project for June 2026, rising from 40% in May, since June is when the RLHF runs and handoff hardening land. I've confirmed with her and blocked it in the allocation sheet. (reaffirmed in e04: 'Amara's June capacity is the constraint we planned for, so no new asks on her time from other teams')"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/kobe/e03",
+  "thread_id": "gr/kobe/t2",
+  "in_reply_to": null,
+  "date": "2026-04-08T12:07:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}],
+  "subject": "Obsidian status: correlations reproduced, entity-sparsity caveat",
+  "body": "Hi Priya, Deshawn,\n\nStatus. Reproduction is done — we match the published WMT19 metrics-track system-level correlations from the released annotations across the 18 language pairs. Saoirse has the Evalline endpoint in staging as of Monday, slightly ahead of the Apr 17 date; scoring 10k segments takes ~40s on one VM.\n\nThe caveat we need to carry into the pilot: KoBE's signal comes from matched entity counts, so it degrades on entity-sparse text. On our internal conversational-support sample, 31% of segments have zero linked entities and the metric is essentially uninformative there. On entity-rich domains (news, product catalogs) segment coverage is 85%+ and correlations hold. Recommendation: pilot on the catalog localization pairs, and report KoBE alongside a fluency-oriented metric rather than alone.\n\nAlso, small thing — the annotation files use the release's per-system file layout, and Emeka's loader now handles all 262 systems without the manual renames we were doing in March.\n\nWei",
+  "labels": ["status", "risk"]
+}

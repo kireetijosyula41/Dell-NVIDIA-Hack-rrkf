@@ -1,0 +1,16 @@
+{
+  "id": "gr/logit_adjustment/e04",
+  "thread_id": "gr/logit_adjustment/t1",
+  "in_reply_to": "gr/logit_adjustment/e03",
+  "date": "2026-06-03T10:26:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [{"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}],
+  "subject": "Re: Kickoff: logit adjustment for long-tail classifiers — rollout decision",
+  "body": "Team,\n\nPilot wrapped Friday; decision time.\n\n- Result: on the partner's workload the adjusted trainer improved tail-class accuracy 7.8pp with a 0.4pp overall dip — inside their tolerance. Carmen's smoothed-frequency variant was needed for the <20-example classes exactly as she predicted; without it the raw estimates were too noisy.\n- Decision: rollout approved. The flag goes to generally-available in the platform trainer this month, default-off, with the smoothed variant as the documented recommendation for extreme tails. Linnea's Evalline long-tail metrics ship alongside so teams can see per-class effects instead of a single top-1 number.\n- Farah — the May push made the pilot; the integration issue list (11 filed, 11 closed) tells the story. Please write the two-page rollout note by Jun 5 and we'll close this one out.\n\nDmitri",
+  "labels": ["decision"]
+}

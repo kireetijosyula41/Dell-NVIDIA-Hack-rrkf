@@ -1,0 +1,41 @@
+{
+  "id": "gr/frechet_audio_distance/e01",
+  "thread_id": "gr/frechet_audio_distance/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:05:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "FAD productization — kickoff and Q2 milestones",
+  "body": "Hi Santiago,\n\nKicking off our productization of Frechet Audio Distance (FAD). The pitch: FAD is a reference-free evaluation metric for audio generation, particularly music enhancement, so we can score enhancement models without paired ground truth. I want this wrapped as a portfolio-standard metric service that every speech-audio launch review can cite.\n\nProposed milestones inside the Q2 window: port the Beam scoring pipeline by Apr 17, validate FAD against our internal listening-test panels by May 8, and take the metric service to Launch Review Board on May 22 (I have pinged Nadia to hold a slot).\n\nTeam: Hyun, Gustavo and Maren are the assigned contributors; Santiago owns feasibility. Can you come back with staffing fractions and compute asks by end of next week?\n\nThanks,\nGoran",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

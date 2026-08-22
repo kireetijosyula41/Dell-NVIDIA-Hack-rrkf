@@ -1,0 +1,45 @@
+{
+  "id": "gr/fm4tlp/e02",
+  "thread_id": "gr/fm4tlp/t1",
+  "in_reply_to": "gr/fm4tlp/e01",
+  "date": "2026-03-11T14:30:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: FM4TLP transfer benchmark track",
+  "body": "Anders — resourcing.\n\nStaffing: Rosa 40% front-loaded for the env work, Ondrej 50%, Gustavo 50%, Bilal 30% from April. The conda/graph-tool environment is as fiddly as advertised — Rosa already hit the documented issue where the activated env doesn't pick up the right python binary, so she's baking the working alias into a container image for everyone.\n\nCompute: the April repro runs on titan best-effort (single-node, the pinned torch 2.3.0+cu118 stack). The June internal-domain runs are the heavy part — full transfer matrices across both domains with per-epoch retraining — and for that we hold the cirrus-tpu reservation for the week of 2026-06-29, 256 accelerators, which Ines's team confirmed against our portfolio's quarterly allocation.\n\nStorage: 4TB for temporal graph snapshots. Constraint: the June experiment grid must be final by Jun 19 so the reserved week is fully productive.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_shift_adaptation/e03",
+  "thread_id": "gr/latent_shift_adaptation/t2",
+  "in_reply_to": null,
+  "date": "2026-05-19T15:58:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Latent-shift status: replication done, incident study needs proxy quality",
+  "body": "Hi Dmitri, Santiago,\n\nStatus. Replication closed Apr 22 — Quentin reproduced the synthetic-data results from the released notebooks: the discrete eigendecomposition numbers match Table 1, and the 10-seed model comparison matches Table 2 within seed noise. His shift-strength sweeps also reproduce the figures for both the WAE method and the continuous spectral method, so we trust the codebase end to end.\n\nIncident study (the interesting part): on the historical incident, the method recovers the latent subgroup structure and — had it been running — would have flagged the prevalence shift 9 days before our on-call did. That's the headline for Jun 24.\n\nThe caveat: it only works when the proxy variables actually carry subgroup signal. Freya ran an ablation degrading proxy quality; below a measurable threshold the recovered subgroups go to mush, silently. So the productionization story must include a proxy-strength diagnostic as a gate — otherwise we'd be shipping false confidence, which is worse than the status quo.\n\nKaia",
+  "labels": ["status", "risk"]
+}

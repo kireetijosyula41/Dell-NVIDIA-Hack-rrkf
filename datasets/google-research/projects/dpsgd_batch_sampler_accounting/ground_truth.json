@@ -1,0 +1,12 @@
+{
+  "project": "gr/dpsgd_batch_sampler_accounting",
+  "conflicts": [
+    {
+      "conflict_id": "C076",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["euphonia_spice"],
+      "planted_in": ["e02", "e03"],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-06-01 — 128 accelerators from the trust-theory portfolio allocation, confirmed with the Infra side. (reaffirmed in e03: 'The June validation runs matter precisely to show the utility cost is small — please keep that reservation week protected.')"
+    }
+  ]
+}

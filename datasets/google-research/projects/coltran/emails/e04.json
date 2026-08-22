@@ -1,0 +1,40 @@
+{
+  "id": "gr/coltran/e04",
+  "thread_id": "gr/coltran/t2",
+  "in_reply_to": null,
+  "date": "2026-07-10T15:35:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "ColTran: LRB scope decisions",
+  "body": "Team,\n\nDecisions for the 7/16 Launch Review Board slot:\n\n1. Demo scope: hosted colorization with the fine-tuned three-stage stack only. The distillation student stays out of the demo — v1 improved to FID 26.9 with the multi-sample target, but that's still visibly behind the teacher, and I won't show it against customer archives yet. It remains our serving-cost path for Q3.\n2. Dataset claim: privacy review cleared the second archive 6/22, and Maren got the fine-tune done — we present both datasets, FID 21.3 and 22.7.\n3. Latency: we demo the batch (non-interactive) flow and are explicit about it; the interactive story arrives with the student model.\n\nEfe, please get the eval card into Evalline by 7/14 for Nadia's packet.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

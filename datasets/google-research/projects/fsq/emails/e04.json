@@ -1,0 +1,39 @@
+{
+  "id": "gr/fsq/e04",
+  "thread_id": "gr/fsq/t2",
+  "in_reply_to": "gr/fsq/e03",
+  "date": "2026-06-29T15:44:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: FSQ repro status: FID parity, 99% codebook utilization",
+  "body": "Team,\n\nDecision from today's review: FSQ is adopted for tokenizer v2. The 99% vs 71% codebook utilization result plus FID parity settles it — we drop the VQ training machinery from the stack.\n\nScope call: panoptic segmentation moves to Q3 and rides on the budgeted comparison sweeps; depth and colorization parity is enough for the adoption decision. Carmen, please file the high-res dimensionality question as the first Q3 experiment.\n\nLeilani owns the migration plan for downstream teams — draft by Jul 3, and we hold current VQ checkpoints frozen for rollback through end of Q3.\n\nNice work everyone, this was a clean result.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

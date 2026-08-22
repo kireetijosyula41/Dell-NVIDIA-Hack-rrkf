@@ -1,0 +1,18 @@
+{
+  "id": "gr/explainable_routing",
+  "title": "An Algorithm for Explaining Route Selection.\" The experiment generates",
+  "summary": "Building a route-explanation capability from our \"Why is My Route Different Today?\" release, which generates explanations for route selection across synthetically-generated traffic scenarios on OSM-derived graphs (Baden and Washington regions).",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": ["Milan Zapata", "Wei Ivanov", "Gustavo Moreau", "Rafael Duran"],
+  "window": {"start": "2026-04-06", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "explainable_routing",
+    "url": "https://github.com/google-research/google-research/tree/master/explainable_routing",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/COSTAR/e02",
+  "thread_id": "gr/COSTAR/t1",
+  "in_reply_to": "gr/COSTAR/e01",
+  "date": "2026-04-21T13:10:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: COSTAR kickoff: counterfactual forecasting for the platform",
+  "body": "Dmitri,\n\nStaffing and compute, as promised:\n\n- Linnea Yamada 50% April-July, repro and training infrastructure (the conda env pin to pandas 1.5.3 for saved-data compatibility is annoying but handled; wandb logging is set up for all runs).\n- Jorge Vidal 40%, feature-store integration spike.\n- Amara Okafor 30%, data tooling - she's re-running the MIMIC-III semi-synthetic generation with data_gen_n_jobs=8 across seeds 17/43/44/91/95 so we're not blocked on the Zenodo tarball.\n- Carmen Reyes is committed to COSTAR at 60% for the whole of July 2026 - she owns the MIMIC-III semi-synthetic evaluation and the final ablation grid, and July is exactly when that lands. I've told her to treat that as fixed.\n\nCompute: ~96 A100s on titan-a100 in bursts, no reservation needed. I'll put the allocations in the OKR tool before the June 26 lock.\n\nAlina",
+  "labels": ["resources"]
+}

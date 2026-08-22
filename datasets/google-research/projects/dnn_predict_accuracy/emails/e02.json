@@ -1,0 +1,16 @@
+{
+  "id": "gr/dnn_predict_accuracy/e02",
+  "thread_id": "gr/dnn_predict_accuracy/t1",
+  "in_reply_to": "gr/dnn_predict_accuracy/e01",
+  "date": "2026-04-09T14:05:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [{"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: weight-space accuracy prediction (dnn-predict-accuracy)",
+  "body": "Dmitri,\n\nStaffing plan: Yara owns the predictor modeling, Leilani takes the Evalline integration, Katya is on training pipelines. Compute is modest — the Zoo models are tiny, so titan-a100 best-effort covers us.\n\nOne addition to scope we agreed in eng review: to make the predictor useful beyond the Zoo architecture, we are scoping and staffing a distillation training recipe built from scratch — Katya leads it at 50% starting mid-April, with a design doc due April 24. Nothing in-house exists for this today, so we're budgeting roughly six engineer-weeks to stand up the recipe end to end (teacher selection, temperature schedules, checkpoint capture at the same 9-epoch grid we used for the Zoo).\n\nThat puts v1 predictor risk mostly on data breadth, not compute. More at Thursday's sync.\n\nIvo",
+  "labels": ["resources", "spec"]
+}

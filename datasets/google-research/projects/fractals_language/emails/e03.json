@@ -1,0 +1,41 @@
+{
+  "id": "gr/fractals_language/e03",
+  "thread_id": "gr/fractals_language/t2",
+  "in_reply_to": null,
+  "date": "2026-03-27T10:20:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Status: estimation pipeline live, H spread across slices",
+  "body": "Status.\n\nThe estimation pipeline is reproduced and productionized from the colab: we compute the self-similarity exponent S, Hurst exponent H, and Joseph exponent J per corpus slice using per-token log-likelihood increments from our reference model. Sanity checks pass — on general web text we estimate H around 0.70, right where the paper puts it.\n\nThe interesting spread: our five slices range from H of about 0.61 (transactional/short-form text) to 0.74 (long-form technical), matching the intuition that long-range dependence tracks document coherence. Gustavo's pipeline runs a full slice overnight on the current allocation.\n\nRisk for April: the correlation study's power depends on how many model/eval pairs Tomas's team can supply — with fewer than a dozen pairs the BPB-versus-fractal comparison won't be conclusive and we'd frame the readout as directional. Rafael is drafting the analysis plan to make that call explicit.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

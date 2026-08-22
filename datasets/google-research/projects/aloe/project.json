@@ -1,0 +1,27 @@
+{
+  "id": "gr/aloe",
+  "title": "Implementation of ALOE: Learning Discrete Energy-based Models via Auxiliary-variable Local",
+  "summary": "ALOE learns discrete energy-based models using auxiliary-variable local exploration, with a synthetic evaluation track (training, sampling, heat-map visualization, and MMD checks under linear or hamming kernels) and an applied fuzzing track that models structured seed inputs.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Hyun Traore",
+    "Yusuf Keita",
+    "Bilal Novak",
+    "Kaia Wolde"
+  ],
+  "codename": "Project Sirocco",
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "aloe",
+    "url": "https://github.com/google-research/google-research/tree/master/aloe",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

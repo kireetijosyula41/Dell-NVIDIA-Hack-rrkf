@@ -1,0 +1,19 @@
+{
+  "id": "gr/cube_unfoldings/e02",
+  "thread_id": "gr/cube_unfoldings/t1",
+  "in_reply_to": "gr/cube_unfoldings/e01",
+  "date": "2026-05-05T12:26:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: Kickoff - staffing, CPU not GPU, and one schema deadline",
+  "body": "Dmitri,\n\nStaffing:\n- Kaia Wolde 50%, canonicalization library.\n- Rafael Duran 40%, the enumeration port and the n=8..10 verification.\n- Vera Egede 30%, build system - nauty, gtest and GNU parallel all have to work in our CI, which is not free.\n- Efe Lindqvist 25%, lineage-graph benchmark.\n\nNo GPU ask at all, which will make a change for you. This is CPU and memory: the n=10 run needs roughly 900 core-hours and about 60GB peak, and we'll shard it with parallel like the original does.\n\nDeadline that does bind us: writing canonical forms alongside the lineage records means a new column. Corpus v2 migration freeze is 2026-07-10 per Jun's platform note, so the canonical-form column has to be written into the graph tables before 2026-07-10; after that date the schema is closed until the migration completes. That pulls Kaia's library milestone forward, not the Jul 17 recommendation.\n\nBruno",
+  "labels": ["resources", "risk"]
+}

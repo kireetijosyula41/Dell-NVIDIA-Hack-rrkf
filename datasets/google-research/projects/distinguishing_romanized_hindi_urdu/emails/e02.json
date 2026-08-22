@@ -1,0 +1,40 @@
+{
+  "id": "gr/distinguishing_romanized_hindi_urdu/e02",
+  "thread_id": "gr/distinguishing_romanized_hindi_urdu/t1",
+  "in_reply_to": "gr/distinguishing_romanized_hindi_urdu/e01",
+  "date": "2026-02-12T14:41:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: romanized Hindi/Urdu routing",
+  "body": "Priya,\n\nResourcing for the short window.\n\nStaffing Feb-April: Nikhil 50% on training and the source-comparison experiments, Rafael 40% on the seed-word pipeline and data QA, Katya 30% on integration with the language-ID service.\n\nCompute: trivial -- these are small classifiers, a couple of Titan A100s.\n\nData logistics: the released tarball reassembles from its 65 chunks cleanly and is staged. The forward-looking item is the refresh cadence, since mc4-derived training data goes stale. The Corpus v2 migration freeze is 2026-06-26, so the mc4 hi-Latn refresh needs to be ingested well before that date. Rafael will file the ingestion request in March so we are not scrambling; after the freeze we would be stuck on the old snapshot for a quarter.\n\nFeb 20 data-staging milestone is effectively done already.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/jax_mpc/e03",
+  "thread_id": "gr/jax_mpc/t1",
+  "in_reply_to": "gr/jax_mpc/e01",
+  "date": "2026-06-10T15:50:00Z",
+  "from": {
+    "name": "Wanjiru Horvat",
+    "email": "wanjiru.horvat@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: JAX-MPC kickoff — a standard control stack for sim benchmarks",
+  "body": "Status ahead of the adopt/park decision. Interface: hardened — the MPPI class now runs unmodified against all three internal sim envs behind the step/reward protocol, with scan=True as default (Ondrej measured 2.1× wall-clock improvement over the unscanned loop at the reference 5×16×16 config). Baselines: MPPI beats our existing hand-tuned planners on two of three envs; the third (contact-heavy) needs longer horizons than the 16-step config plus reward tuning we haven't done. Scaling study: vmap scales near-linearly to 2048 samples on a single titan A100 slice, then host-transfer overheads bite; Quentin's writeup lands Friday. Risk for the decision: the contact-heavy result could be read as a method limit — Gustavo argues it's a horizon/reward-shaping issue, and a 64-step run this week should settle it before Ulla's end-of-June review. — Wanjiru",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

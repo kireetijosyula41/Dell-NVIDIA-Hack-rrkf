@@ -1,0 +1,12 @@
+{
+  "project": "gr/non_decomp",
+  "conflicts": [
+    {
+      "conflict_id": "C105",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["OpenMSD", "behavior_regularized_offline_rl", "diffusion_distillation"],
+      "planted_in": ["e02"],
+      "claim_as_written": "confirmed with Jun's team — the Corpus v2 migration freeze is 2026-07-10. Our window closes 06-29, but the internal workload's long-tail tfrecords must be re-registered under the v2 schema before that freeze or the Q3 retraining pipeline inherits a broken path."
+    }
+  ]
+}

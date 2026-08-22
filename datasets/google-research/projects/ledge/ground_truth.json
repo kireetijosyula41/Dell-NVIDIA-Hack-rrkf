@@ -1,0 +1,12 @@
+{
+  "project": "gr/ledge",
+  "conflicts": [
+    {
+      "conflict_id": "C132",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["neutra", "gen_patch_neural_rendering", "dreamfields"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Jun Varga's Corpus v2 migration freeze lands 2026-07-10, so every target-function dataset we need has to be re-ingested and validated before that date; I've set our internal cutoff at July 3."
+    }
+  ]
+}

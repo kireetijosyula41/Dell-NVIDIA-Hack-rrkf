@@ -1,0 +1,18 @@
+{
+  "id": "gr/dreg_estimators",
+  "title": "Doubly Reparameterized Gradient (DReG) Estimators",
+  "summary": "Packages doubly reparameterized gradient (DReG) estimators — which remove the bias in IWAE-style inference-network gradients via a second application of the reparameterization trick and cut gradient variance as sample counts grow — into our internal latent-variable-model training toolkit.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Bao Ndiaye",
+  "contributors": ["Csilla Nassar", "Efe Lindqvist", "Katya Silva", "Saoirse Eriksen"],
+  "window": {"start": "2026-02-23", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dreg_estimators",
+    "url": "https://github.com/google-research/google-research/tree/master/dreg_estimators",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

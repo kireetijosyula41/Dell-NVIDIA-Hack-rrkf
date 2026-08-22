@@ -1,0 +1,39 @@
+{
+  "id": "gr/gen_patch_neural_rendering/e04",
+  "thread_id": "gr/gen_patch_neural_rendering/t2",
+  "in_reply_to": "gr/gen_patch_neural_rendering/e03",
+  "date": "2026-05-06T15:15:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: GPNR status: repro converging, reflective assets weak",
+  "body": "Team,\n\nQ2 wrap decisions:\n\n1. Milestone met — repro within 0.3dB and the on-demand preview quality bar passes for standard catalog assets. Reflective assets are explicitly out of scope for v1; the Q3 proposal lists them as the research risk.\n2. Q3 proposal (to Hana May 15): a limited preview service behind the catalog UI, batch-rendered — 11s per frame is acceptable there.\n3. Ingestion stays on Alina's plan — final IBRNet and catalog captures land the week of Jun 15, ahead of the Jun 26 corpus freeze. Carmen, please confirm validation coverage this week.\n\nNice quarter, everyone.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

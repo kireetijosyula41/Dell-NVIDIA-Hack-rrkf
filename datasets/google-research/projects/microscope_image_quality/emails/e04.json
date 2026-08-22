@@ -1,0 +1,46 @@
+{
+  "id": "gr/microscope_image_quality/e04",
+  "thread_id": "gr/microscope_image_quality/t1",
+  "in_reply_to": "gr/microscope_image_quality/e03",
+  "date": "2026-07-14T15:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Kickoff: microscope focus-quality QC — decisions to close the window",
+  "body": "Team,\n\nDecisions so we close cleanly by Jul 27:\n\n1) We go with Halima's option (a) — tiled montage assembly with downsampled previews. Partner 2's bench-side story is the differentiator; we're not giving it up to save two weeks.\n2) Consequence: the leaderboard service ships as v0.9 — Jorge's ingestion and per-dataset leaderboards are done, corp-directory auth done, but public submissions open in August instead of mid-July. Comms to partners go out this week.\n3) Katya's consolidated master script is now the only supported entry point; the two legacy macros are frozen.\n\nNadia — we'd like a Launch Review Board slot the week of Jul 20 for the partner-facing QC gate; sign-off before any external demo per process.\n\nThanks all,\nLucia",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

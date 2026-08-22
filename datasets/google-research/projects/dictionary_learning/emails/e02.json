@@ -1,0 +1,45 @@
+{
+  "id": "gr/dictionary_learning/e02",
+  "thread_id": "gr/dictionary_learning/t1",
+  "in_reply_to": "gr/dictionary_learning/e01",
+  "date": "2026-04-07T13:28:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: dictionary learning for embedding-table compression",
+  "body": "Anders,\n\nPlan and staffing.\n\nApril: Efe characterizes the method on synthetic tables -- error vs. row_percentage/col_percentage curves, plus sensitivity to n_iterations (the default 32 may be low for our table sizes). Wanjiru pulls anonymized copies of the two production tables.\n\nMay is the heavy month: Saoirse Eriksen is committed at 65% to this project for May 2026 to own the factorization sweeps and the serving integration spike. Leilani supports at 25% on the eval side, measuring retrieval quality (not just reconstruction error) on compressed tables.\n\nJune: integration plan and writeup before the Q3 OKR lock on June 26.\n\nCompute is trivial for once -- this is CPU/NumPy work, no cluster ask. The scarce resource here is people, hence the explicit May allocations.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

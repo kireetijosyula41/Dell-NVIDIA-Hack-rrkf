@@ -1,0 +1,18 @@
+{
+  "id": "gr/euphonia_spice/e03",
+  "thread_id": "gr/euphonia_spice/t2",
+  "in_reply_to": null,
+  "date": "2026-05-05T16:02:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Goran Sokolov", "email": "goran.sokolov@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "SpICE status: eval battery reproduced, realistic speech is the hard part",
+  "body": "Hi Goran, Ivo,\n\nStatus.\n\nEval battery: reproduced on schedule in April. Our serving-wrapped model matches the published generalization numbers - TORGO at 100%, UASpeech correlation 0.93, ALS-TDI PMP 0.81 AUC - so Milan's wrapper isn't distorting anything.\n\nRealistic speech is where it gets honest. On our unprompted-speech validation set (built to mirror the ~2,300-sample realistic set from the release, with dysarthric and control speakers), exact five-class agreement drops meaningfully versus prompted utterances - most confusion is between adjacent classes, mild vs moderate especially. Within-one-class agreement stays above 95%, which clinicians tell us is the operationally meaningful bar.\n\nRecommendation: the API reports the predicted class plus an adjacent-class confidence band rather than a bare 0-4 score. Emeka has a mock partners liked.\n\nRisk: pooled-corpus retraining configs need to freeze by May 29 for the June run. Any eval-battery change after that waits for the next cycle.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

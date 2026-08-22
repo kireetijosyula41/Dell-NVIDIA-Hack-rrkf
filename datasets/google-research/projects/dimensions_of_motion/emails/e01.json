@@ -1,0 +1,46 @@
+{
+  "id": "gr/dimensions_of_motion/e01",
+  "thread_id": "gr/dimensions_of_motion/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:18:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: flow subspaces for motion-aware video editing",
+  "body": "Alina, team,\n\nKicking off the dimensions-of-motion track. The idea from our 3DV release: instead of predicting optical flow directly, predict a scene structure (disparity plus object embedding) that spans a subspace of possible flows -- flow_basis.py generates the bases for camera rotation and translation from disparity, and the SVD solver in solvers.py projects observed flow into that subspace. The flow projection loss means we learn motion structure from unlabeled video.\n\nProduct target: the motion-aware editing features in the video tools -- object-consistent selection and motion-plausible fill. Those need per-pixel motion structure at interactive speed, which is the hard constraint.\n\nMilestones: model reproduced and evaluated May 22, mobile-feasible variant June 26, LRB pre-read the week of July 6.\n\nAlina to staff it.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

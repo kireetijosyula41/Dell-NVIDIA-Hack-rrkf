@@ -1,0 +1,18 @@
+{
+  "id": "gr/ledge",
+  "title": "Controlling Experts with Understandable Commands\" by Shumeet Baluja,",
+  "summary": "Builds on our Ledge open-source release (Interpretable Actions, AAAI-21): expert models are controlled through human-readable commands, demonstrated by reconstructing a 1-D function, correcting residual error, extracting interpretable commands, and fine-tuning them. We are evaluating the command-extraction pipeline as an interpretability layer for data-platform models.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Tereza Aliyev", "Kaia Wolde", "Chiara Olsen", "Quentin Farkas"],
+  "window": {"start": "2026-03-09", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ledge",
+    "url": "https://github.com/google-research/google-research/tree/master/ledge",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

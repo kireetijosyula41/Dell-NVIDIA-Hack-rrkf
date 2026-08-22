@@ -1,0 +1,18 @@
+{
+  "id": "gr/enas_lm/e03",
+  "thread_id": "gr/enas_lm/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T15:09:00Z",
+  "from": {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "ENAS-LM status: GPU path reproduced, TPU slice slipped",
+  "body": "Hi Daniela, Anders,\n\nStatus for the May 29 milestone. The GPU evaluation path is fully reproduced: running the published fixed_arc string ('0 2 1 0 2 1 2 2 4 0 5 0 3 2 6 2') we get 57.4 test perplexity on PTB, within noise of the published 57.3 +/- 0.1. Ondrej's search runs also rediscover cells in the same perplexity band, so the controller is healthy.\n\nThe TPU side slipped - our Cirrus 1x1 slice got bumped a week, so the 56.1-class TPU numbers land ~June 5 instead of May 29. Not blocking the writeup skeleton but worth noting, since GPU eval is much slower per-config (about 3.1x wall-clock on our runs), which is exactly why the service needs the TPU path for anything interactive.\n\nOne more thing: the DARTS-comparison harness is up; first side-by-side numbers next week.\n\nWanjiru",
+  "labels": ["status", "risk"]
+}

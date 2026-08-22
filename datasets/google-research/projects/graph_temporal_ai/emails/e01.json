@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_temporal_ai/e01",
+  "thread_id": "gr/graph_temporal_ai/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:24:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: knowledge-graph-driven forecasting (graph temporal AI)",
+  "body": "Hi Bao,\n\nKicking off the graph temporal AI workstream. The gap we are attacking: existing forecasting offerings are passive - partners feed massive time-series data into complex models and get predictions back, with no way to inject what they actually know. Sector partners carry real domain knowledge (association rules, market principles, operation logistics) and today it goes unused.\n\nOur approach integrates meta-data and user feedback as knowledge graphs inside the deep learning model, so the forecaster becomes adaptive and domain-specific rather than one-size-fits-all. Two partners in logistics have already agreed to pilot conversations if we can show a working feedback loop.\n\nMilestones for this window: knowledge-graph encoder integrated with the base forecaster by 3/6, feedback-ingestion demo by 3/27, pilot-readiness review 4/15. Partner pilots themselves start in May, after the window.\n\nOndrej leads modeling, Hyun the graph encoder, Saoirse/Emeka/Paloma platform. Staffing from you this week?\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

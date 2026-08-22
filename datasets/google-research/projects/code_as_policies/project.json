@@ -1,0 +1,26 @@
+{
+  "id": "gr/code_as_policies",
+  "title": "Code as Policies: Language Model Programs for Embodied Control",
+  "summary": "Repurposes code-writing LLMs to generate robot policy code (language model programs) from natural language commands, composing perception APIs and control primitives into reactive and waypoint-based policies for real robot platforms.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Freya Ruiz",
+    "Maren Zhou",
+    "Halima Toure"
+  ],
+  "codename": "Project Nimbus",
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "code_as_policies",
+    "url": "https://github.com/google-research/google-research/tree/master/code_as_policies",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

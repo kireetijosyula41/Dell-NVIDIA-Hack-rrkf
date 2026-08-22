@@ -1,0 +1,26 @@
+{
+  "id": "gr/android_interaction",
+  "title": "AndroidInteraction",
+  "summary": "AndroidInteraction is a dataset of 772 episodes and 3,605 steps across more than 250 Android apps, annotated for whether agent-initiated user interaction is required at each step and what natural language message the agent should send. It follows the AndroidControl data structure.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Rosa Mensah",
+    "Csilla Nassar",
+    "Wei Ivanov",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "android_interaction",
+    "url": "https://github.com/google-research/google-research/tree/master/android_interaction",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_temporal_ai",
+  "title": "*** This readme was adapted from Best-README-Template.",
+  "summary": "Develops a deep learning forecasting framework that integrates meta-data and user feedback as knowledge graphs, so industry partners can inject domain knowledge (association rules, market principles, operation logistics) into otherwise passive time-series forecasting services.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": ["Saoirse Eriksen", "Hyun Traore", "Emeka Pinto", "Paloma Castillo", "Ondrej Bergstrom"],
+  "window": {"start": "2026-02-02", "end": "2026-04-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "graph_temporal_ai",
+    "url": "https://github.com/google-research/google-research/tree/master/graph_temporal_ai",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

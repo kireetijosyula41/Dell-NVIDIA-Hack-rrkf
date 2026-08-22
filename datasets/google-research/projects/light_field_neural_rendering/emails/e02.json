@@ -1,0 +1,17 @@
+{
+  "id": "gr/light_field_neural_rendering/e02",
+  "thread_id": "gr/light_field_neural_rendering/t1",
+  "in_reply_to": "gr/light_field_neural_rendering/e01",
+  "date": "2026-03-06T13:38:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Light Field Neural Rendering productization",
+  "body": "Lucia,\n\nResourcing:\n\n- Katya Silva 60% tech lead; Ondrej Bergstrom 40% on quality evals; Emeka Pinto 30% and Chiara Olsen 30% on infra + dataset plumbing.\n- The repo pins jax[cuda110]==0.2.19, which fights our cluster CUDA image — Emeka is validating the version bump this week before we burn real GPU hours.\n\nGood news on money: Idris Osei has verbally earmarked the $180k in Q3 discretionary compute budget line B-36 for this project, so the H100 hours for the full shiny-dataset training grid are covered without touching the portfolio baseline. I'll get it in writing when the Q3 books open, but I'm planning against it now.\n\nAsk: dataset mirroring from the external NeX drives to our storage needs ~2TB; Chiara files the ticket today.\n\nSantiago",
+  "labels": ["resources"]
+}

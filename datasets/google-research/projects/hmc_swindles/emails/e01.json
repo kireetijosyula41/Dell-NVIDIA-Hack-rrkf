@@ -1,0 +1,18 @@
+{
+  "id": "gr/hmc_swindles/e01",
+  "thread_id": "gr/hmc_swindles/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:20:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "HMC Swindles kickoff - cheaper posterior inference for the platform",
+  "body": "Team,\n\nKicking off the HMC Swindles workstream. Our open-source release showed you can substantially cut the variance of Hamiltonian Monte Carlo estimates with a couple of well-chosen 'swindles', and it ships a clean four-step pipeline: train the NeuTra preconditioner, tune the sampler, benchmark, evaluate. The product angle for data-platforms: a hardened posterior-inference service that internal teams can use for calibrated uncertainty on pipeline metrics without hand-tuning samplers.\n\nMilestones across our (long) window: pipeline repro on the shipped tune_outputs hyperparameters by end of March, our own tuning loop by mid-May, then a full benchmark sweep in late June and a decision memo by 2026-07-13.\n\nWei owns methodology, Paloma the pipeline hardening, Leilani and Oyin infra and the benchmark harness hookup. Deshawn - resourcing note when you can; the June sweep is the only big compute item.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/cnn_quantization",
+  "title": "Quantization Techniques for Convolutional Neural Networks",
+  "summary": "Matures our CNN quantization codebase — low bit-precision techniques built on tf_cnn_benchmarks, including 4-bit fixed-point weight and activation quantized training — into a vetted recipe for shrinking Meridian's vision-model serving costs.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Jorge Vidal",
+    "Farah Haddad",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cnn_quantization",
+    "url": "https://github.com/google-research/google-research/tree/master/cnn_quantization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

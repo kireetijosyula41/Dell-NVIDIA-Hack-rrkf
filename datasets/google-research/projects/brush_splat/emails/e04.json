@@ -1,0 +1,19 @@
+{
+  "id": "gr/brush_splat/e04",
+  "thread_id": "gr/brush_splat/t1",
+  "in_reply_to": "gr/brush_splat/e03",
+  "date": "2026-06-18T16:05:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: Kickoff: Brush - decision: indoor-first demo, exposure work continues",
+  "body": "Decision, so we stop burning cycles on this:\n\nThe Jul 24 LRB demo is scoped to indoor scenes plus the on-device Android training story - 11 minutes to train a scene on a phone is the demo, honestly; nobody in the room will ask about outdoor PSNR. Nadia, adding us to the LRB agenda for Jul 24 on that basis.\n\nBUT we don't drop the outdoor gap: Rafael and Hyun start the exposure-compensation work now, targeting end of window (Aug 3). If it lands early and the harness shows we've closed to within ~0.8 dB on outdoor, we add one outdoor scene to the demo as an upside surprise. Bilal, please add the two outdoor scenes to the nightly harness dashboard so we can watch the gap close.\n\nAlso locking this into the Q3 OKR narrative before the Jun 26 lock: \"portable splatting demo through LRB\" is the committed item; outdoor parity is stretch.\n\nLucia",
+  "labels": ["decision"]
+}

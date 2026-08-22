@@ -1,0 +1,36 @@
+{
+  "id": "gr/fully_dynamic_facility_location/e03",
+  "thread_id": "gr/fully_dynamic_facility_location/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T11:05:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Facility location benchmarks: 40x fewer recomputations, memory risk",
+  "body": "Hi Alina,\n\nBenchmark status. The library compiles clean with -O2 and we replicated the paper's headline: against greedy recomputation, the agreement-based algorithm gives comparable clustering cost with roughly 40x fewer recomputations on our sliding-window instances (sliding_window_size 100k, 10% of points as facilities, random_order on).\n\nParameter picks so far: num_levels_slack (the paper's beta) at 3 and epsilon (the lambda parameter) at 0.1 are the stability sweet spot; below that, assignments churn.\n\nRisk: memory. At target_num_nodes of 10M points in 128 dimensions the resident set hits 92GB, over our standard benchmark hosts. Options: sharding, or the 256GB hosts Emeka found. Recommend the latter for now.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

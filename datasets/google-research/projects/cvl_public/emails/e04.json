@@ -1,0 +1,18 @@
+{
+  "id": "gr/cvl_public/e04",
+  "thread_id": "gr/cvl_public/t2",
+  "in_reply_to": "gr/cvl_public/e03",
+  "date": "2026-07-28T14:40:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Eleni Quispe", "email": "eleni.quispe@meridian.example", "role": "Director, Foundational Research"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Nimbus status - memo landing Friday, one scope cut",
+  "body": "Wrapping up. The Project Nimbus recommendation memo goes out Friday and says: adopt for offline evaluation and candidate ranking, do not put it on a robot yet.\n\nRationale is Rafael's coverage finding. Reward-free training on 1.9TB of unlabeled logs is genuinely valuable to us and the benchmark reproduction is solid. But 12% of proposed steps landing outside the data's support is a safety conversation, not a metrics conversation, and the uncertainty gate is a Q3 item with its own owner.\n\nScope cut: the Jul 3 \"run on our own logs\" milestone shipped as a measurement study, not a deployed policy. I've already told the robotics folks, so nobody is expecting a demo.\n\nEleni - the reward-free stability result is the part I think is worth a broader read.\n\nThanks all, this was a well-run one.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/coref_mt5/e01",
+  "thread_id": "gr/coref_mt5/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T09:40:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - seq2seq coref as the multilingual backbone",
+  "body": "Hi all,\n\nFormally kicking off coref_mt5. The pitch: instead of searching over candidate spans, we treat coreference as a text-to-text transition system on mT5 and predict mentions and links jointly. Our open-source version reports 83.3 F1 on CoNLL-2012, which is state of the art, and because the backbone is multilingual T5 we get non-English for free-ish rather than as a separate model per language.\n\nProduct angle: document understanding has been asking for entity threading across long contracts and support transcripts in six languages. One model instead of six is the whole business case.\n\nWindow is Apr 13 - Jul 27. Checkpoints:\n- May 15: decoder running against our own checkpoint server, English parity with the published F1.\n- Jun 26: two non-English languages measured, serving path benchmarked.\n- Jul 20: launch review packet.\n\nDaniela has staffing. Yusuf is tech lead.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

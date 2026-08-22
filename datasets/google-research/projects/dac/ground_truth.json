@@ -1,0 +1,12 @@
+{
+  "project": "gr/dac",
+  "conflicts": [
+    {
+      "conflict_id": "C013",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["layout-blt"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "e02: \"We hold the cirrus-tpu reservation for the week of 2026-07-06 - 128 accelerators, the full week, booked for the final imitation sweep.\" e04: \"the 128 accelerators on cirrus-tpu for the week of 2026-07-06 are ours and the sweep starts Monday morning.\""
+    }
+  ]
+}

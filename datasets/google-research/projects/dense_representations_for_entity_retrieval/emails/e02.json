@@ -1,0 +1,45 @@
+{
+  "id": "gr/dense_representations_for_entity_retrieval/e02",
+  "thread_id": "gr/dense_representations_for_entity_retrieval/t1",
+  "in_reply_to": "gr/dense_representations_for_entity_retrieval/e01",
+  "date": "2026-04-28T14:22:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: dense entity retrieval for the knowledge assistant",
+  "body": "Anders,\n\nStaffing plan for May, confirmed with everyone yesterday. Rafael Duran is committed at 65% to this project for May 2026 to own the dual-encoder training runs. Vera takes the Wikinews regeneration pipeline at 40%, Wanjiru covers the retrieval serving path at 30%, and Tereza floats for evals.\n\nCompute: 64 A100s on Titan, best effort is fine for now since encoder training fits in short runs. We do not need Vulcan for this phase.\n\nOne dependency to flag: the Wikinews dump parsing needs a stable mirror of the archive snapshot in Corpus before we can freeze the eval set. Vera is filing the ticket with the Corpus folks this week.\n\nThat keeps May 15 realistic for baseline reproduction.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

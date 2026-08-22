@@ -1,0 +1,18 @@
+{
+  "id": "gr/cache_replacement/e01",
+  "thread_id": "gr/cache_replacement/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:40:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Project Meltwater - learned cache replacement",
+  "body": "Hi Ivo, Milan,\n\nKickoff for the learned cache-replacement effort. We're running this under the codename Project Meltwater - use it in decks, OKR entries and standups so the graphs-retrieval reviews can track us.\n\nWhy: our retrieval serving spends real money on cache misses. Our ICML work showed an imitation learning approach to cache replacement beats heuristic policies, and the released code gives us the full training loop over LLC access traces.\n\nPlan for Mar 2 - May 25: since we can't use the original paper's traces (never released), we follow the README's recommended path - the 2nd Cache Replacement Championship (CRC2) traces, collected by patching ChampSim. M1 (Mar 27): trace pipeline + repro of published-quality policies on CRC2. M2 (Apr 24): traces captured from our own retrieval-serving cache and a first learned policy trained on them. M3 (May 22): offline eval report vs. our production LRU variant, go/no-go for a serving experiment.\n\nMilan is TL. Ivo has staffing.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

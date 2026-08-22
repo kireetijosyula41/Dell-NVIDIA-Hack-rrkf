@@ -1,0 +1,12 @@
+{
+  "project": "gr/muzero",
+  "conflicts": [
+    {
+      "conflict_id": "C084",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["jax_dft"],
+      "planted_in": ["e04"],
+      "claim_as_written": "Paloma Castillo is committed at 60% to MuZero for June 2026, with Rosa picking up her CI duties."
+    }
+  ]
+}

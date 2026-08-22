@@ -1,0 +1,25 @@
+{
+  "id": "gr/microscope_image_quality",
+  "title": "Focus_check script generates whole-plate montages per channel for inspecting",
+  "summary": "Harden the microscope focus-quality tooling — the deep-learning focus classifier plus the Focus_check script that renders whole-plate montages per channel — into a QC step for imaging partners, including Fiji macro packaging for lab workflows.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Jorge Vidal",
+    "Halima Toure",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "microscope_image_quality",
+    "url": "https://github.com/google-research/google-research/tree/master/microscope_image_quality",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

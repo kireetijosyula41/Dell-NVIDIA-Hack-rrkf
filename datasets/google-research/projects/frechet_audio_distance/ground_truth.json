@@ -1,0 +1,16 @@
+{
+  "project": "gr/frechet_audio_distance",
+  "conflicts": [
+    {
+      "conflict_id": "C050",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "deciphering_clinical_abbreviations"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "for scoring, tracking and dashboards we are going to scope and staff an internal evaluation harness from scratch — batch scoring jobs, a metric registry, and regression dashboards"
+    }
+  ]
+}

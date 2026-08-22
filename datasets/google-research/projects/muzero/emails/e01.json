@@ -1,0 +1,16 @@
+{
+  "id": "gr/muzero/e01",
+  "thread_id": "gr/muzero/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:02:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MuZero hardening — kickoff",
+  "body": "Hi Ivo,\n\nKickoff for the MuZero hardening effort. Our open-source implementation of the MuZero pseudocode runs on SEED RL and ships two environments — tictactoe and atari — plus a muzero agent that plugs into the standard seed_rl scripts. Today it's research-grade; several teams want planning-with-a-learned-model as a capability but nobody trusts the current state of the harness for anything load-bearing.\n\nGoal for the half: a supported MuZero that (1) passes a deterministic tictactoe convergence test in CI, (2) trains distributed on the atari environment with published reference configs, (3) documents the learned-model planning knobs (simulations per move, unroll depth) so users don't cargo-cult them.\n\nMilestones: CI gate by 03-06, single-machine atari validation by early April, distributed run and readout by 05-18.\n\nStaffing and compute from you, please.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

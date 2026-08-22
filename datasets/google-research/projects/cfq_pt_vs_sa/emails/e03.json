@@ -1,0 +1,46 @@
+{
+  "id": "gr/cfq_pt_vs_sa/e03",
+  "thread_id": "gr/cfq_pt_vs_sa/t1",
+  "in_reply_to": "gr/cfq_pt_vs_sa/e02",
+  "date": "2026-06-04T11:05:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pre-training vs specialized architectures study",
+  "body": "Mid-study status.\n\nHarness and data prep done (Linnea). CGPS reproduction done (Halima) — matches published behavior: strong on the random split, collapses on MCD-style splits. T5 lanes: fine-tuned T5-base already beats CGPS on every MCD split we've run, consistent with the original paper's headline that pre-training closes most of the gap that specialized architectures were built for.\n\nInteresting wrinkle: on our hardest internal split the specialized model wins at small data sizes (<10k examples), crossover around 25k. If that holds it changes the recommendation from \"always pre-train\" to a data-budget rule.\n\nRisk: the crossover finding needs the full sweep to be trustworthy — 5 seeds x 8 configs x 4 splits. That's the July work Farah is set up to run. Schedule holds.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

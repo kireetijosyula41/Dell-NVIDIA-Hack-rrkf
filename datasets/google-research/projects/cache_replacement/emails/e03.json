@@ -1,0 +1,18 @@
+{
+  "id": "gr/cache_replacement/e03",
+  "thread_id": "gr/cache_replacement/t1",
+  "in_reply_to": "gr/cache_replacement/e02",
+  "date": "2026-04-27T10:15:00Z",
+  "from": {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Meltwater - M2 status + a distribution-shift risk",
+  "body": "Status: M1 landed on time - Jorge's ChampSim patch produces clean CRC2-style LLC traces and Quentin's policies reproduce the expected gains over LRU/heuristics on the championship workloads.\n\nM2 is a week late (trace tap went live Apr 20, thanks Zeke's team) but data is flowing: 240M accesses captured from retrieval serving so far. First learned policy on our traces shows an 11.4% miss-rate reduction vs. production LRU in offline replay.\n\nThe risk: our production access patterns shift hard around index rebuilds - the every-6-hours rebuild causes a burst pattern CRC2 never sees, and during those windows the learned policy's advantage drops to ~2% and briefly goes negative on one shard. Quentin wants to add rebuild-window traces to the training mix; that's a ~2 week add and would push M3 from May 22 to Jun 5, outside our window.\n\nOptions for the go/no-go: (a) report as-is with the rebuild caveat, (b) extend. Preference from us is (a) - the caveat is honest and the serving experiment would surface it anyway.\n\nMilan",
+  "labels": ["status", "risk"]
+}

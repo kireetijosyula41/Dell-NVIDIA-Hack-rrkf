@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_programmer/e03",
+  "thread_id": "gr/latent_programmer/t2",
+  "in_reply_to": null,
+  "date": "2026-05-05T11:28:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Latent Programmer status: internal-DSL results + what the readout should say",
+  "body": "Hi Dmitri, Bruno,\n\nStatus rolling into the readout.\n\nReproduction closed in March: latent model beats the baseline Transformer on the released benchmark, consistent with the paper. On our internal transformation DSL (Ondrej's 40k-task dataset): top-1 synthesis accuracy 34% for the latent model vs 27% baseline, top-10 is 61% vs 52%. The latent codes are doing real work — inspection shows they cluster by transformation family (joins vs aggregations vs string ops), which also gives us a plausible UI hook: show the user the plan before the program.\n\nThe honest trade-off: at top-10, a user still has to pick among candidates, and 39% of tasks have no correct candidate at all. So the readout should pitch this as an assist with example-checking in the loop (we auto-run candidates against the user's examples and only surface ones that pass — that filter takes effective accuracy to 71% of tasks with at least one verified program).\n\nRecommend scale-up: more data helps monotonically in our ablations, and the May 20 memo will size the Q3 ask against exactly that curve.\n\nEfe",
+  "labels": ["status", "decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/hmc_swindles/e04",
+  "thread_id": "gr/hmc_swindles/t2",
+  "in_reply_to": "gr/hmc_swindles/e03",
+  "date": "2026-07-08T16:35:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: HMC Swindles status: decision memo direction after the benchmark week",
+  "body": "All,\n\nClosing the loop after the benchmark week. Headline numbers held up: 2.1x median ESS-per-flop improvement across the full target suite, and the checkpoint-and-retry wrapper meant zero human intervention over the whole sweep - exactly what we wanted before recommending this as a platform service.\n\nDecision for the July 13 memo: we recommend productizing the preconditioned-HMC-plus-swindles pipeline as an internal inference service, phase 1 limited to the target families we benchmarked. The heavy-tailed divergence issue is mitigated, not solved, so those targets ship behind a 'best effort' flag with the retry wrapper mandatory.\n\nOne process note: Q3 OKRs locked on June 26, and this is in there as a data-platforms commitment, so the memo mostly formalizes what leadership already expects.\n\nThanks all - long window, well run.\n\nDmitri",
+  "labels": ["decision"]
+}

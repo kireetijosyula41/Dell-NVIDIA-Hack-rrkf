@@ -1,0 +1,45 @@
+{
+  "id": "gr/compositional_rl/e01",
+  "thread_id": "gr/compositional_rl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:45:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: environment generation for robust web agents",
+  "body": "Hi Jelena,\n\nKicking off the web-agents robustness effort. Base: our open-source environment-generation work for zero-shot compositional RL — instead of training agents on a fixed set of web tasks, we generate environments of growing compositional difficulty (on the MiniWoB stack) so agents generalize to task combinations they've never seen.\n\nProduct motivation: our form-filling agent prototypes are brittle on exactly the compositional cases — new page layouts recombining familiar widgets. Half plan: environment-generation pipeline running by end of May, curriculum-trained agents with zero-shot evals through June and July, and a go/no-go for the agents roadmap at the 8/10 review.\n\nWe'll also need a way to get human judgments on agent behavior beyond raw success rate — please scope that with the team.\n\nStaffing and platform asks by early May?\n\nUlla",
+  "labels": [
+    "kickoff"
+  ]
+}

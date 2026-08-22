@@ -1,0 +1,36 @@
+{
+  "id": "gr/gaternet/e03",
+  "thread_id": "gr/gaternet/t2",
+  "in_reply_to": null,
+  "date": "2026-04-27T11:22:00Z",
+  "from": {
+    "name": "Rosa Mensah",
+    "email": "rosa.mensah@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "GaterNet status: exact repro, edge latency concern",
+  "body": "Hi Deshawn,\n\nStatus. Repro is exact: our eval of the released ResNet-20-Gated and ResNet-56-Gated checkpoints on CIFAR-10 matches the paper numbers, running main.py with backbone-depth 20 and 56 respectively.\n\nGating analysis on the internal workload port: the gater deactivates about 35% of filters on average, and the selection is genuinely input-dependent — easy inputs gate off up to 50%.\n\nThe risk Rafael flagged: the architecture literally looks twice — the gater network runs a full forward pass before the backbone does, so wall-clock latency on our edge tier is worse than the static baseline even when FLOPs drop. Unless the gater can run on a downsampled input, the edge story does not close.\n\nRosa",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

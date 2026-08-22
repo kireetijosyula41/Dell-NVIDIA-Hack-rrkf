@@ -1,0 +1,46 @@
+{
+  "id": "gr/mpi_extrapolation/e01",
+  "thread_id": "gr/mpi_extrapolation/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Project Kestrel — MPI view extrapolation",
+  "body": "Hi Ivo,\n\nKicking off the view-extrapolation project (Apr 20 – Jun 29). Internally we're calling this effort Project Kestrel — please use the codename on invites and docs so search stays clean.\n\nThe asset is our CVPR open-source release: predict a multiplane image (MPI) from a narrow-baseline pair of RGB images, then render novel camera views from the predicted MPI. It builds on the Stereo Magnification training approach but pushes extrapolation well beyond the input baseline. The release includes a pretrained model and a render_sway.py path that makes for a killer demo.\n\nProduct story: the capture team wants parallax-rich \"living photos\" from dual-lens stills — no depth sensor, no multi-shot capture.\n\nMilestones: mid-May — pretrained model reproduced, sway demo on our own captures; mid-June — retraining on internal capture data; Jun 29 — demo-readiness review (LRB sign-off needed before anything external).\n\nStaffing and compute when you can.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/moment_advice/e04",
+  "thread_id": "gr/moment_advice/t1",
+  "in_reply_to": "gr/moment_advice/e03",
+  "date": "2026-06-29T15:15:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: advice-based moment estimation — post-run decisions",
+  "body": "Team,\n\nWith last week's full-scale run in hand, decisions for the Jul 6 close:\n\n1) Adoption recommendation is a yes, with Umar's blended mode as the default: advice-guided sampling with the ell_1 fallback engaging automatically on divergence. The full-scale numbers held up — error at one-third of the current pipeline's at equal budget, and the drain-event replay stayed safely above the plain-sampling floor with the blend on.\n2) Weekly advice refresh is a hard operational requirement in the recommendation, with the N+4 staleness curve as the justification. Vera, please write the refresh runbook before rolling off — the telemetry on-call inherits this.\n3) Scope cut: the unweighted_elements and weighted input types are documented but not productized; graph and net_traffic are what the customer runs.\n\nHandoff review with the telemetry team is Jul 2. Thanks all — tidy project.\n\nAnders",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}

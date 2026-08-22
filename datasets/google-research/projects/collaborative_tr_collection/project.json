@@ -1,0 +1,26 @@
+{
+  "id": "gr/collaborative_tr_collection",
+  "title": "Beyond Human-Only: Evaluating Human-Machine Collaboration for Collecting High-Quality Tran",
+  "summary": "Releases and analyzes a collaborative translation dataset collected via 11 human-machine workflows — from-scratch human translation, post-editing, and LLM-assisted variants — with MQM error annotations over WMT source sentences.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Gustavo Moreau",
+    "Efe Lindqvist",
+    "Amara Okafor",
+    "Leilani Nakamura"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "collaborative_tr_collection",
+    "url": "https://github.com/google-research/google-research/tree/master/collaborative_tr_collection",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

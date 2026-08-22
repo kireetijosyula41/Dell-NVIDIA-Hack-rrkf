@@ -1,0 +1,15 @@
+{
+  "id": "gr/label_bias/e04",
+  "thread_id": "gr/label_bias/t2",
+  "in_reply_to": "gr/label_bias/e03",
+  "date": "2026-06-17T11:12:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}],
+  "subject": "Re: Label-bias status: decisions before the sweep week",
+  "body": "Team,\n\nLocking decisions before next week's validation sweep so nothing changes mid-flight.\n\n1) Weight-cap option: approved, ship it in the stage API with the warning in the report artifact. Rosa's imbalance finding is exactly the kind of thing the trust portfolio exists to catch — I'd rather ship a capped, explained method than an uncapped surprising one. The one-week slip is absorbed; pilots start Jul 1 instead of Jun 24.\n\n2) Sweep config freezes Friday: all model families, both fairness notions in the pilot scope (demographic parity, equalized odds), with/without re-weighting, capped and uncapped. Anything not in Friday's config waits for Q3.\n\n3) Kofi — cc'ing you because the report artifact surfaces per-group statistics; want your read on whether that needs privacy review before pilot teams see it. The 2-3 week SLA means we need your answer routed this week.\n\nDecision memo drafts right after sweep results land.\n\nXimena",
+  "labels": ["decision", "risk"]
+}

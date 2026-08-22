@@ -1,0 +1,12 @@
+{
+  "project": "gr/latent_programmer",
+  "conflicts": [
+    {
+      "conflict_id": "C063",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["demogen"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-81 for this project's scale-up runs."
+    }
+  ]
+}

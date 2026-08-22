@@ -1,0 +1,12 @@
+{
+  "project": "gr/camp_zipnerf",
+  "conflicts": [
+    {
+      "conflict_id": "C023",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["ckd"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"Nothing exists in-house for this, so we're scoping and staffing a synthetic-data generation pipeline built from scratch - Katya owns it at 60%: procedurally generated scenes, randomized camera trajectories, and rendered ground truth we control end to end.\""
+    }
+  ]
+}

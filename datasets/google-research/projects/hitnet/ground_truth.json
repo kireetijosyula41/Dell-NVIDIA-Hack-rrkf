@@ -1,0 +1,12 @@
+{
+  "project": "gr/hitnet",
+  "conflicts": [
+    {
+      "conflict_id": "C003",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["hspace"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Farah Haddad is committed at 60% to HITNet for June 2026 - she leads the custom CUDA op work that the latency milestone depends on, and I've blocked her calendar accordingly."
+    }
+  ]
+}

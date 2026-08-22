@@ -1,0 +1,20 @@
+{
+  "id": "gr/automl_zero/e04",
+  "thread_id": "gr/automl_zero/t1",
+  "in_reply_to": "gr/automl_zero/e03",
+  "date": "2026-05-27T15:45:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"}
+  ],
+  "subject": "Decision: AutoML-Zero graduates to a scoped H2 extension",
+  "body": "Team,\n\nDecision from the 5/20 review, confirmed with Hana today: AutoML-Zero graduates, but as a scoped extension rather than a full program. The \"batch lottery\" framing landed - we fund discovery sprints per task family at ~$9k per useful candidate, not a standing service.\n\nStaffing for the extension phase is settled: Oyin Iversen stays committed at 60% to AutoML-Zero for all of July 2026 to harden the search infrastructure, with Katya at 30% for reviews. Freya rotates to advisory. Paloma rolls off entirely at end of May - thank you for the tooling work, it's what made 20-seed sweeps cheap.\n\nJelena will file the H2 headcount plan before the Q3 OKR lock on 6/26. I'll write the one-page graduation memo this week.\n\nAnders",
+  "labels": ["decision"]
+}

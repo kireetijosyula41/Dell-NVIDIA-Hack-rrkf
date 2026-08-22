@@ -1,0 +1,18 @@
+{
+  "id": "gr/ime/e04",
+  "thread_id": "gr/ime/t2",
+  "in_reply_to": "gr/ime/e03",
+  "date": "2026-07-21T15:39:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: IME status: decision - IME_WW recommended for the pilot",
+  "body": "All,\n\nDecision for the July 27 close: we recommend IME_WW - the fully interpretable variant with linear assignment - for the internal forecasting pilot. On the internal-workload eval it finished within 1.5% RMSE of IME_BW (the clean-regime story held), and a linear assignment module means the whole prediction path is explainable, which is the actual product requirement. IME_BW goes in the memo as the fallback if pilot accuracy disappoints.\n\nFlap-rate ships as a first-class metric next to RMSE, with the smoothness_hp=0.01 guidance baked into the default config. Efe was right to push on this - an explanation that changes every timestep is worse than none.\n\nJelena - please make sure Amara's synthetic-generation pipeline gets documented and kept; dialing regime overlap to find the failure boundary is a trick the whole portfolio should steal.\n\nPilot kickoff with the capacity-planning team targeted for August.\n\nDmitri",
+  "labels": ["decision"]
+}

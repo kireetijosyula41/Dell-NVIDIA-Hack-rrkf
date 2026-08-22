@@ -1,0 +1,16 @@
+{
+  "id": "gr/mave",
+  "title": "Multi-source Attribute Value Extraction (MAVE)",
+  "summary": "Building a product-catalog attribute extraction service on the MAVE benchmark work — Apache Beam splitting pipelines over the MAVE product dataset and models for multi-source attribute value extraction.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": ["Kaia Wolde", "Nikhil Abebe", "Farah Haddad", "Jorge Vidal"],
+  "window": {"start": "2026-02-09", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mave",
+    "url": "https://github.com/google-research/google-research/tree/master/mave",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

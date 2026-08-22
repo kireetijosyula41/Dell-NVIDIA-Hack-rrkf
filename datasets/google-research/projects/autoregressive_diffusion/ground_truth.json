@@ -1,0 +1,12 @@
+{
+  "project": "gr/autoregressive_diffusion",
+  "conflicts": [
+    {
+      "conflict_id": "C074",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["android_in_the_wild"],
+      "planted_in": ["e02"],
+      "claim_as_written": "To get there we're scoping and building a dataset de-duplication pipeline from scratch - MinHash/LSH near-dup detection over the text and audio corpora, with exact-dup hashing as a first stage. Halima leads it at 50% with Tereza at 40%; there's no existing internal pipeline that does this, so we're treating it as new shared infrastructure we'll own."
+    }
+  ]
+}

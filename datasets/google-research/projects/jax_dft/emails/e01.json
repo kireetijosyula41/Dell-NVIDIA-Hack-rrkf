@@ -1,0 +1,50 @@
+{
+  "id": "gr/jax_dft/e01",
+  "thread_id": "gr/jax_dft/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:50:00Z",
+  "from": {
+    "name": "Viktor Hussain",
+    "email": "viktor.hussain@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "JAX-DFT kickoff — differentiable DFT for materials screening",
+  "body": "Team — kickoff for JAX-DFT in health-science. From our release: one-dimensional density functional theory implemented in JAX — JIT compilation, autodiff, GPU execution — providing building blocks to write DFT calculations as differentiable programs. The scientific hook is the Kohn-Sham-regularizer result: solving the Kohn-Sham equations during training acts as implicit regularization, and two H2 separations suffice to learn the entire dissociation curve within chemical accuracy, including the strongly correlated region, with generalization to unseen molecule types. Product angle: a differentiable-DFT training harness for the materials-screening collaboration — they want neural XC functionals trained on small-molecule data that generalize. Milestones: repro the H2 curve by April 24; harness API draft by mid-May; collaboration go/no-go by mid-June (window closes June 22). Jelena owns staffing. — Viktor",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/better_storylines",
+  "conflicts": [
+    {
+      "conflict_id": "C111",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["mechanic"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Paloma Castillo is committed at 65% to better_storylines for all of May 2026 - she owns the TFDS embedding pipeline and the coherence-scoring service, and both land in May."
+    }
+  ]
+}

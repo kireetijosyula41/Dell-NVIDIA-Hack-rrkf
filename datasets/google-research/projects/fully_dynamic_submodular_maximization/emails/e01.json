@@ -1,0 +1,40 @@
+{
+  "id": "gr/fully_dynamic_submodular_maximization/e01",
+  "thread_id": "gr/fully_dynamic_submodular_maximization/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T10:00:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Dynamic submodular maximization — kickoff",
+  "body": "Hi Bruno,\n\nKickoff for dynamic submodular maximization. Our open-source release implements fully dynamic algorithms for constrained submodular optimization with oracle access — the reference setting is graph coverage and influence maximization, which maps directly onto candidate selection freshness in the retrieval stack: we want the selected set to stay near-optimal as the underlying graph gets edge insertions and deletions, without recomputing from scratch.\n\nMilestones: replicate the paper's experiments by Apr 24, port the oracle to our internal graph by Jun 5, freshness A/B design ready ahead of Q3 OKRs.\n\nGiannis, Csilla and Bilal are assigned; Csilla is our submodularity depth. Staffing and compute over to you.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}

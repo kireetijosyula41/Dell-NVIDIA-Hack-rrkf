@@ -1,0 +1,40 @@
+{
+  "id": "gr/cold_posterior_bnn/e01",
+  "thread_id": "gr/cold_posterior_bnn/t1",
+  "in_reply_to": null,
+  "date": "2026-03-30T09:18:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: cold posteriors & calibrated serving",
+  "body": "Hi Ivo,\n\nKicking off the uncertainty-quantification study for the efficiency portfolio. Base is our open-source cold-posterior work: careful SG-MCMC sampling shows the Bayes posterior predictive in deep nets can be systematically worse than plain SGD point estimates, while \"cold\" posteriors that overcount evidence do better. That result has direct product value — our deployed classifiers need calibrated confidence, and this tells us which posterior to actually serve.\n\nDeliverables this half: reproduce the paper's figures 1-3 on our stack, run the hypothesis experiments on our internal image models, and produce a recommendation memo on temperature selection for serving. Launch-review-adjacent but mostly a research deliverable; final sweeps in July, memo by 7/17.\n\nStaffing and compute by mid-April please — I expect the MCMC chains to be the expensive part.\n\nZofia",
+  "labels": [
+    "kickoff"
+  ]
+}

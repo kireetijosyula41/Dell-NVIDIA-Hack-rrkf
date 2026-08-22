@@ -1,0 +1,41 @@
+{
+  "id": "gr/fisher_brc/e03",
+  "thread_id": "gr/fisher_brc/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T11:00:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Status: D4RL repro matches, tuning caveat for the memo",
+  "body": "Status.\n\nRepro: the D4RL locomotion suite matches the paper within seed noise — on hopper-medium-expert-v0 we hit the reported score band on 4 of 5 seeds, and the Fisher divergence penalty clearly does the work: ablating it collapses the critic exactly as described. Mujoco licensing cleared with only a few days' delay.\n\nInternal port (Freya): first runs on our logged navigation dataset are promising but expose a gap — our behavior data is much narrower than D4RL's medium-expert mixtures, and with narrow data the regularizer strength needs retuning per dataset; default hyperparameters underfit noticeably. That tuning burden is the honest caveat for the memo: Fisher-BRC works, but it isn't config-free on real logs.\n\nLinnea is building the evaluation grid so the July round quantifies tuning sensitivity properly. On track for the Jun 12 memo.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

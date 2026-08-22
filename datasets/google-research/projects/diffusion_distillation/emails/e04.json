@@ -1,0 +1,39 @@
+{
+  "id": "gr/diffusion_distillation/e04",
+  "thread_id": "gr/diffusion_distillation/t1",
+  "in_reply_to": "gr/diffusion_distillation/e03",
+  "date": "2026-07-07T09:44:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: progressive distillation for diffusion serving costs",
+  "body": "Decisions for the close of the half.\n\n1. We ship the 8-step model. Rosa landed the final stage on June 29, inside the reservation, and Oyin's eval battery shows FID within 0.4 of the 256-step teacher with human-pref parity on 3 of 4 prompt categories.\n2. The 4-step push moves to Q3. The remaining category gap (fine text rendering) is exactly where aggressive step reduction hurts, and I will not spend LRB credibility on it.\n3. Paloma's serving integration goes to the Launch Review Board on July 23 -- projected serving cost reduction is 31x on sampling compute vs. the 256-step baseline.\n\nExcellent half. This is the poster child for the efficiency portfolio and I intend to use it that way.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

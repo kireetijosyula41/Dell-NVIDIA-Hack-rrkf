@@ -1,0 +1,40 @@
+{
+  "id": "gr/missing_link/e02",
+  "thread_id": "gr/missing_link/t1",
+  "in_reply_to": "gr/missing_link/e01",
+  "date": "2026-03-31T13:55:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cross-dataset label harmonization — staffing + compute",
+  "body": "Hi Dmitri,\n\nPlan:\n\n- Kaia Wolde 50% owns the relation semantics and the hand-verification of any new pairs we add; Efe Lindqvist 40% on the joint-training experiments; Linnea Yamada 40% on the Corpus ingestion and query API.\n- Good news on compute: we hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22 — which is exactly when the joint-training validation sweep needs to run, so the schedule works backward from that week. Everything before that fits on titan-a100 best-effort (64 GPUs for the May ADE20k+COCO run).\n\nOne dependency flag: Linnea's API work assumes the relation triples stay in the released CSV format. If Corpus wants them re-modeled into the v2 label graph schema, add two weeks.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

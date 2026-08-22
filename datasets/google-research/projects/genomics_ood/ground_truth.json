@@ -1,0 +1,12 @@
+{
+  "project": "gr/genomics_ood",
+  "conflicts": [
+    {
+      "conflict_id": "C090",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["munchausen_rl"],
+      "planted_in": ["e02"],
+      "claim_as_written": "On budget: Idris, our finance partner, has verbally earmarked $120k from the Q3 discretionary compute budget line B-44 for this project."
+    }
+  ]
+}

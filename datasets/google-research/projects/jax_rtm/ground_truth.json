@@ -1,0 +1,16 @@
+{
+  "project": "gr/jax_rtm",
+  "conflicts": [
+    {
+      "conflict_id": "C009",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "meta_pseudo_labels"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris verbally earmarked the $120k from Q3 discretionary compute budget line B-88 for this project"
+    }
+  ]
+}

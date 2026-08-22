@@ -1,0 +1,40 @@
+{
+  "id": "gr/dipper/e02",
+  "thread_id": "gr/dipper/t1",
+  "in_reply_to": "gr/dipper/e01",
+  "date": "2026-05-07T13:58:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: DIPPER red-teaming for the provenance features",
+  "body": "Priya,\n\nResourcing.\n\nStaffing: Wei 50% on the attack runs and detector analysis. Serving an 11B paraphraser for batch attacks needs 8 A100s on Titan sustained through May-June -- requested.\n\nThe bigger structural need: measuring detectors under paraphrase attack is not a one-off script. We need repeatable runs across detectors, attack strengths (the lex diversity and reordering knobs), and text domains, with results comparable across weeks. We are scoping and staffing an internal evaluation harness built from scratch: Giannis Sato at 50% and Katya Silva at 40% will design and build it over the next two months. Scope: attack-configuration matrix, detector adapters, per-domain scoring, and versioned result storage.\n\nFor the defense phase we will also need to stand up a retrieval index over roughly 15M of our own API generations, mirroring the paper's setup -- storage request goes in this week.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

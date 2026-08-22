@@ -1,0 +1,17 @@
+{
+  "id": "gr/bam/e02",
+  "thread_id": "gr/bam/t1",
+  "in_reply_to": "gr/bam/e01",
+  "date": "2026-04-23T16:11:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: BAM - one multi-task NLU model to replace the classifier fleet",
+  "body": "Priya,\n\nStaffing: Linnea 60% (multi-task training), Rafael 50% (distillation), through mid-July.\n\nOn data hygiene - this is the part I want funded properly. Merging eleven tasks' training sets into one multi-task corpus means cross-task contamination becomes a real evaluation risk: near-duplicate utterances show up in one task's train and another's test. That means building a dataset de-duplication pipeline from scratch: exact-hash first pass, then n-gram overlap detection between every task's training set and every other task's eval set. Maren scopes and owns it at 50% for the next two months; nothing internal exists for this today, so we're designing it as reusable infrastructure rather than a one-off script.\n\nCompute: multi-task fine-tuning is TPU-friendly, so I'm requesting a cirrus-tpu slice from the language portfolio's quarterly allocation rather than fighting for GPU reservations.\n\nIvo",
+  "labels": ["resources"]
+}

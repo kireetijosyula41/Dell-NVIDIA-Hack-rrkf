@@ -1,0 +1,17 @@
+{
+  "id": "gr/bangbang_qaoa/e01",
+  "thread_id": "gr/bangbang_qaoa/t1",
+  "in_reply_to": null,
+  "date": "2026-04-09T09:08:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: bang-bang QAOA protocol search",
+  "body": "Hi all,\n\nKicking off the bang-bang QAOA workstream. Context: our open-source study showed that QAOA under bang-bang protocols, optimized with stochastic descent over binary protocol schedules, finds protocols whose effective p-value (~2 in the reference runs) matches the published analysis - and the search itself is a classical, embarrassingly parallel workload.\n\nWhy Meridian cares: the protocol-search machinery doubles as a general discrete-schedule optimizer, and the graphs-retrieval group has two combinatorial subproblems (index partition scheduling, cache eviction windows) where we want to benchmark it against simulated annealing.\n\nMilestones: single-machine reproduction in April (the num_literals=10, num_clauses=10 configs), distributed search at paper scale in late June, benchmark verdict vs. annealing by 7/13.\n\nAlina owns staffing and compute.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

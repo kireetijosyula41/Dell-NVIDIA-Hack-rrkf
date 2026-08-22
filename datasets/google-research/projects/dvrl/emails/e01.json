@@ -1,0 +1,17 @@
+{
+  "id": "gr/dvrl/e01",
+  "thread_id": "gr/dvrl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:05:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "DVRL kickoff - data valuation as a product surface",
+  "body": "Team,\n\nKicking off the DVRL productization effort today. The pitch: our open-source DVRL release scores individual training examples with a reinforcement-learned data value estimator, and customers keep asking us which 10% of their data is hurting their models. We ship that answer.\n\nScope for this half covers three of the four applications in the codebase: data valuation, corrupted sample discovery with robust learning on tabular data, and domain adaptation. The image transfer-learning variant is a stretch goal.\n\nRough milestones: internal demo on a customer-shaped tabular dataset by June 8, Launch Review Board pre-read by July 6, decision on external pilot by end of window (Aug 3). Deshawn will follow up on staffing and compute; Wei owns the modeling track.\n\nOKR framing for Q2: \"identify 80%+ of injected corrupted labels at 20% noise on two tabular benchmarks.\" We beat that in the paper setting, now we need it repeatable.\n\nThanks,\nLucia",
+  "labels": ["kickoff", "spec"]
+}

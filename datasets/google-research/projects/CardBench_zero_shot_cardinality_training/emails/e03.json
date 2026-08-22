@@ -1,0 +1,15 @@
+{
+  "id": "gr/CardBench_zero_shot_cardinality_training/e03",
+  "thread_id": "gr/CardBench_zero_shot_cardinality_training/t2",
+  "in_reply_to": null,
+  "date": "2026-03-31T10:12:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [],
+  "subject": "CardBench status: reference model up, complexity-bucket gap",
+  "body": "Hi both,\n\nMilestone 2 is done, four days late but done. The reference GNN-based estimator trains directly on the provided query graphs, no CardBench code needed, exactly as the repo promises - that path is smooth and the internal docs Emeka wrote are already getting used by two optimizer folks.\n\nOne finding worth flagging as a risk: the provided training query graphs are generated from queries of different complexities, and our reference model's error is fine on the simple buckets but degrades badly on the highest-complexity joins - q-error at the 95th percentile is ~40x there versus ~4x overall. If the optimizer team evals only on the aggregate, they'll overestimate model quality. I want to publish per-complexity-bucket numbers as the required reporting format before anyone cites a single headline number.\n\nWanjiru starts the re-generation pipeline this week, on schedule.\n\nKaia",
+  "labels": ["status", "risk"]
+}

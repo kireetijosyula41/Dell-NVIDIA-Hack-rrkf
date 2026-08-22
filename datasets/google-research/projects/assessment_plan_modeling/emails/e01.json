@@ -1,0 +1,41 @@
+{
+  "id": "gr/assessment_plan_modeling/e01",
+  "thread_id": "gr/assessment_plan_modeling/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T09:25:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: Project Tundra — structured parsing of clinical assessment & plan text",
+  "body": "Hi Deshawn, team,\n\nKicking off structured understanding of assessment and plans in clinician documentation. Internally this effort is Project Tundra — Wei set up the shared drive and the run tracker under that name, so please use it in invites and docs.\n\nThe task: take the free-text assessment-and-plan section of a clinical note and produce structure — problem clusters and the action items attached to them. The released pipeline runs a Beam job over notes in the MIMIC-III note_event CSV format plus the published annotation ratings, then trains the AP-parsing model.\n\nProduct framing: structured A&P is the input our care-coordination summarizer has been missing.\n\nMilestones: data generation and vocabulary build by late May, model training and eval in June, readout the week of July 20. Privacy Review must be filed before any note data moves.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

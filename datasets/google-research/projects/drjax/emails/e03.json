@@ -1,0 +1,19 @@
+{
+  "id": "gr/drjax/e03",
+  "thread_id": "gr/drjax/t1",
+  "in_reply_to": "gr/drjax/e02",
+  "date": "2026-06-09T11:30:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DrJAX as our parallel-computation authoring layer",
+  "body": "Status + one risk before the readout.\n\nPilot one (Tereza, the federated-analytics style workload) migrated fully: authoring went from ~700 lines of hand-rolled pmap orchestration to ~120 lines of DrJAX map/reduce, and differentiating through the reduction — previously a custom-VJP minefield — is now just jax.grad. Performance within 3% of the tuned original on the same sharding.\n\nPilot two (Rosa's) surfaced the real risk: their computation mixes DrJAX reductions with manual collective ops, and the sharding annotations fight each other — we saw a 2.2x slowdown until we rewrote the offending block DrJAX-native. Lesson for the adoption guide: incremental mixed-mode migration is a trap; migrate whole computation blocks or don't.\n\nThe regression harness has caught two numerical diffs since going live June 2, both benign accumulation-order issues, both now documented. Readout drafting starts next week.\n\nYusuf",
+  "labels": ["status", "risk"]
+}

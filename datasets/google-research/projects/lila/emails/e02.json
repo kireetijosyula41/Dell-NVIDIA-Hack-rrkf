@@ -1,0 +1,17 @@
+{
+  "id": "gr/lila/e02",
+  "thread_id": "gr/lila/t1",
+  "in_reply_to": "gr/lila/e01",
+  "date": "2026-04-02T14:31:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LILA dense-feature service",
+  "body": "Lucia,\n\nStaffing and compute, confirmed:\n\n- Csilla Nassar 50% research lead; Freya Ruiz 40% on the flow/depth training-signal pipeline; Emeka Pinto 40% Torch Hub + serving path; Amara Okafor 30% eval infra.\n- Compute: eval reproduction runs on titan-a100 best-effort (8 GPUs). For the retraining: we hold the vulcan-h100 reservation for the week of 2026-06-01 — 512 accelerators — which covers the ViT-L/14 retraining sweep in one shot. I sized it from the release's training config; one week at 512 gives us the main run plus two seed replicas.\n\nNote: Vulcan has scheduled maintenance 2026-06-22 to 06-24, which doesn't touch our week but rules out a late-June retry. So protect the June 1 slot — data pipeline must be frozen by May 22.\n\nBao",
+  "labels": ["resources"]
+}

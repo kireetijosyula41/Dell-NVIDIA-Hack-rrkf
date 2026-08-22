@@ -1,0 +1,26 @@
+{
+  "id": "gr/cvl_public",
+  "title": "Contrastive Value Learning code",
+  "summary": "Contrastive Value Learning (CVL) learns an implicit, multi-step model of environment dynamics without reward labels, and uses it to estimate action values directly without TD learning, which lets it scale to high-dimensional offline control tasks. Meridian is trialling it as the offline planner for robotics-style continuous control.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Rafael Duran",
+    "Rosa Mensah",
+    "Vera Egede"
+  ],
+  "codename": "Project Nimbus",
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cvl_public",
+    "url": "https://github.com/google-research/google-research/tree/master/cvl_public",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

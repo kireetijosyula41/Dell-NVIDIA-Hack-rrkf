@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_additive_models",
+  "title": "Neural Additive Models: Interpretable Machine Learning with Neural Nets",
+  "summary": "Turns our Neural Additive Models open-source release — a tf.keras model combining neural nets with per-feature additive structure for interpretable classification and regression — into a supported interpretable-modeling library for data-platforms customers in regulated settings, with large hyperparameter sweeps to publish tuned defaults per dataset family.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Wanjiru Horvat", "Jorge Vidal", "Oyin Iversen"],
+  "window": {"start": "2026-02-16", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "neural_additive_models",
+    "url": "https://github.com/google-research/google-research/tree/master/neural_additive_models",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

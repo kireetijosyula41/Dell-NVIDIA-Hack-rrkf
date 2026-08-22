@@ -1,0 +1,26 @@
+{
+  "id": "gr/d3pm",
+  "title": "Code to accompany the NeurIPS paper",
+  "summary": "D3PM brings denoising diffusion to discrete state spaces with structured transition matrices, with separate implementations for image space (evaluated in bits-per-dimension), text space, and a follow-on variant augmented with insertion and deletion operations. Meridian is assessing it as a non-autoregressive generator for structured text and categorical records.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Carmen Reyes",
+    "Farah Haddad",
+    "Ondrej Bergstrom",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "d3pm",
+    "url": "https://github.com/google-research/google-research/tree/master/d3pm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

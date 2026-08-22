@@ -1,0 +1,25 @@
+{
+  "id": "gr/felix",
+  "title": "Felix is flexible text-editing approach for generation, designed to derive",
+  "summary": "Felix is a flexible text-editing approach that decomposes generation into a tagging sub-task (choosing and ordering kept input tokens) and an insertion sub-task (in-filling missing tokens), built on Tensorflow 2 and BERT and demonstrated on DiscoFuse sentence fusion.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Tereza Aliyev",
+    "Fumiko Rossi",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "felix",
+    "url": "https://github.com/google-research/google-research/tree/master/felix",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

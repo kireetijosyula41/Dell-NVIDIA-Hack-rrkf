@@ -1,0 +1,15 @@
+{
+  "id": "gr/metapose/e04",
+  "thread_id": "gr/metapose/t1",
+  "in_reply_to": "gr/metapose/e03",
+  "date": "2026-06-11T15:49:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MetaPose kickoff — pilot outcome + Q3 staffing decision",
+  "body": "Lucia,\n\nClosing the window:\n\nPilot outcome — the robotics lab accepted the results 06-09. With Maren's confidence gate, their eval rig filters the double-occlusion frames (about 11% of footage) and the remaining coverage beats their old manually-calibrated setup on accuracy while requiring zero calibration. They want the double-occlusion problem solved properly in Q3.\n\nQ3 staffing, for the allocation sheet ahead of the 06-26 OKR lock: Linnea Yamada is committed at 60%+ to this project for July 2026 — she anchors the occlusion-robustness work and the sports-team onboarding, with Rosa continuing at 40%. I've entered both in the July allocation sheet today.\n\nDecision also taken: the sports demo team's request for real-time skeleton streaming ships in Q3 behind the confidence gate, not before.\n\nA genuinely good pilot. Details in the report attached to the OKR draft.\n\nDaniela",
+  "labels": ["decision", "status"]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/felix",
+  "conflicts": [
+    {
+      "conflict_id": "C077",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "nngp_nas"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we have no tool for side-by-side sentence ratings, so we're scoping and staffing a human-rating annotation UI from scratch — Maren leads the build at roughly 50% for four weeks: paired original/rewrite presentation, 5-point fluency and meaning-preservation scales, rater-agreement tracking."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/clustering_normalized_cuts/e02",
+  "thread_id": "gr/clustering_normalized_cuts/t1",
+  "in_reply_to": "gr/clustering_normalized_cuts/e01",
+  "date": "2026-03-04T14:50:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CNC kickoff — learned normalized cuts for corpus clustering",
+  "body": "Anders,\n\nPlan:\n\nStaffing — Umar 40% (method owner, loss + training); Quentin 50% (reproduction and the bake-off harness — good growth project for him with Umar reviewing); Farah 35% through April (training infra); Wanjiru 30% (affinity-graph construction from the production shard, plus the Corpus work below).\n\nCompute — small models, the cost is in affinity-graph construction, which is CPU/data work. 8 A100s best-effort covers all training.\n\nHeads-up on the one platform dependency: the Corpus v2 migration freeze is 2026-06-26, so the affinity-graph tables must be migrated before our window even ends — Wanjiru will run that migration in late May so we're not scrambling. I'd rather eat the week now than discover in July that we're pinned to v1 tables nobody maintains.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

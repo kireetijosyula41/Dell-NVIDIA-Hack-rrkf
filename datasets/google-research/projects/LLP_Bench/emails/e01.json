@@ -1,0 +1,17 @@
+{
+  "id": "gr/LLP_Bench/e01",
+  "thread_id": "gr/LLP_Bench/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T10:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "LLP-Bench kickoff - one benchmark for all bag-level learning",
+  "body": "Team,\n\nKicking off LLP-Bench adoption. Bag-level learning is turning into a real product surface for privacy-constrained customers, and right now every internal effort evals differently. LLP-Bench fixes that: it's our open-source large-scale tabular benchmark with three bag constructions (feature bags, fixed-size feature bags, random bags), five train/test splits, and nine methods already wired in - the DLLP variants (BCE and MSE), easy_llp, genbags, mean_map, ot_llp, sim_llp, and both soft and hard erot_llp.\n\nGoal for our short window: (1) full harness reproducing published numbers by March 13; (2) benchmark packaged with docs + AutoInt embedding assets by April 3; (3) adopted as the required eval in the portfolio's method reviews by April 24.\n\nBao - staffing and any tooling gaps this week please. This one is about execution speed, the research risk is low.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

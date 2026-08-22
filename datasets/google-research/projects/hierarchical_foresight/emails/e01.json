@@ -1,0 +1,17 @@
+{
+  "id": "gr/hierarchical_foresight/e01",
+  "thread_id": "gr/hierarchical_foresight/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:36:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Hierarchical Visual Foresight for long-horizon planning",
+  "body": "Hi Bruno,\n\nKicking off the HVF workstream in vision. The capability: self-supervised long-horizon task learning via visual subgoal generation - instead of planning pixel-by-pixel to a distant goal, HVF generates intermediate visual subgoals and plans between them. For the robotics-simulation customers this is the difference between demos that reach across a table and demos that tidy a room.\n\nThe stack per the release: an SV2P video prediction model trained via tensor2tensor, a conditional VAE for subgoal generation, plus the temporal distance cost function (TDM) and the time-agnostic prediction (TAP) baseline. Evaluation runs through the meta_cem planner on maze environments at horizon 50.\n\nMilestones: full pipeline repro (generate_data through meta_cem) by 3/13, our simulation-env port by 4/17, review 5/6.\n\nCarmen leads research, Hyun the video model, Bilal training infra, Saoirse env integration. Staffing and compute from you by Friday?\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/f_net",
+  "conflicts": [
+    {
+      "conflict_id": "C010",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "invariant_slot_attention"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We hold the cirrus-tpu reservation for the week of 2026-06-01 — 384 accelerators — and Ines's team has it in the books, so the full pre-train fits in that window with roughly 20% headroom."
+    }
+  ]
+}

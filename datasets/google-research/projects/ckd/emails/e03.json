@@ -1,0 +1,46 @@
+{
+  "id": "gr/ckd/e03",
+  "thread_id": "gr/ckd/t1",
+  "in_reply_to": "gr/ckd/e02",
+  "date": "2026-06-18T11:12:00Z",
+  "from": {
+    "name": "Fumiko Rossi",
+    "email": "fumiko.rossi@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CKD kickoff — hallucination-resistant captioning via contrastive distillation",
+  "body": "Status.\n\nData pipeline: stage 1 (negative-object mining) complete for VG and COCO; GQA lands this week. Stage 2 description caching is at 78% of VG — Chiara's retry logic sorted out the rate-limit stalls. The cache design is paying off, reruns are basically free.\n\nEval: POPE harness is live. Baseline numbers on our current captioner: 84.6 F1 on the random split but only 71.2 on the adversarial split — that adversarial gap IS the hallucination problem, so it's our primary metric.\n\nRisk/trade-off: pilot distillation on 10% data moves adversarial POPE +2.9 but costs 0.8 CIDEr on caption fluency. Wei thinks the fluency dip shrinks with the full dataset and a lower distillation weight; if it doesn't, we'll need a product call on the trade-off. Flagging now so its not a surprise in July.\n\nFumiko",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

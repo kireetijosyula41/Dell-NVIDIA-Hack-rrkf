@@ -1,0 +1,18 @@
+{
+  "id": "gr/ials/e04",
+  "thread_id": "gr/ials/t2",
+  "in_reply_to": "gr/ials/e03",
+  "date": "2026-04-21T15:12:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: iALS status: decision - 10-seed protocol adopted, closing April 27",
+  "body": "All,\n\nDecision: the 10-seed protocol is adopted as proposed - the baseline ships with mean and standard deviation over 10 repetitions, and the Evalline gate is mean minus one sigma. I'd rather have teams grumble about a strict gate than have the platform bless noise as progress.\n\nClose-out plan for April 27: Rosa finishes packaging (both dataset configs plus the holdout-generation script), Linnea writes the two-page tuning recipe, Bilal freezes the final numbers table. Handoff meeting with Tomas Fofana's Evalline team is booked for the last week of April.\n\nOne caveat for the write-up: the py2.7 container is a reproduction artifact, not a supported dependency - the packaged baseline itself is py3-only. Please make that unmissable so nobody cargo-cults a 2.7 runtime into production.\n\nGood, unglamorous work - this is what platform credibility is made of.\n\nDmitri",
+  "labels": ["decision"]
+}

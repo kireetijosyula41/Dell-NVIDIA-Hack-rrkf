@@ -1,0 +1,17 @@
+{
+  "project": "gr/cfq_pt_vs_sa",
+  "conflicts": [
+    {
+      "conflict_id": "C043",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "d3pm"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "Farah Haddad is committed at 60% here for all of July 2026 to carry the final sweep infrastructure."
+    }
+  ]
+}

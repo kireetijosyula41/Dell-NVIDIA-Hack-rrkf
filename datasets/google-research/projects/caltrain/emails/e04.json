@@ -1,0 +1,19 @@
+{
+  "id": "gr/caltrain/e04",
+  "thread_id": "gr/caltrain/t1",
+  "in_reply_to": "gr/caltrain/e03",
+  "date": "2026-04-16T16:20:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: Kickoff: debiased calibration reporting - decision: dual reporting for two quarters",
+  "body": "All,\n\nDecision, agreed with Tomas at Tuesday's review: Evalline ships debiased-by-default on Apr 24 as planned, with Kaia's dual-reporting proposal adopted - both the legacy ECE and the debiased number appear side by side through Q3, then legacy drops. Kaia's one-pager goes out with the release notes; I've asked her to include the 14-model-card comparison as the motivating example, because nothing sells \"the old metric was biased\" like our own numbers moving.\n\nOne escalation to be transparent about: the two borderline agent-confidence models belong to teams with launches in flight, and their PMs will see the new numbers before their launch reviews. I'm giving those PMs a heads-up this week rather than letting the dashboard surprise them - Tomas agreed. If either pushes back on the Apr 24 flip, it comes to me, not the team.\n\nNice, clean project. This is what a research-to-platform handoff should look like.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

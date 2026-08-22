@@ -1,0 +1,26 @@
+{
+  "id": "gr/deciphering_clinical_abbreviations",
+  "title": "Deciphering Clinical Abbreviations",
+  "summary": "Data processing and evaluation code for expanding clinical abbreviations with a privacy-protecting ML system, built around a curated abbreviation-expansion dictionary, a reverse-substitution technique for generating training text, and a small clinician-written evaluation set. Meridian is adapting the reverse-substitution trick for domain jargon expansion without touching sensitive records.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Amara Okafor",
+    "Halima Toure",
+    "Milan Zapata",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "deciphering_clinical_abbreviations",
+    "url": "https://github.com/google-research/google-research/tree/master/deciphering_clinical_abbreviations",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

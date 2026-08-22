@@ -1,0 +1,19 @@
+{
+  "id": "gr/causal_evaluation/e01",
+  "thread_id": "gr/causal_evaluation/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T09:45:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: disaggregated fairness evaluation module",
+  "body": "Hi all,\n\nKickoff for the fairness-evaluation module. Context: customers (and our own launch reviews) increasingly demand subgroup-disaggregated metrics, and the naive version is actively misleading - our 2025 study showed subgroup gaps can appear or vanish for reasons that have nothing to do with model performance differences. The released code gives us the simulation machinery to do this right: simulated data generation with model fitting in the notebooks, then metrics with bootstrap confidence intervals via the run_evaluate.sh pipeline.\n\nProduct shape: a platform module that reports disaggregated evals WITH interpretation guardrails - flags for when a gap is confounded rather than causal.\n\nMilestones (Mar 16 - Jul 20): M1 (Apr 17) repro of the simulation experiments end to end. M2 (May 29) guardrail heuristics validated against the simulation's known ground truth. M3 (mid-July) large-scale statistical power study + Evalline integration proposal.\n\nFreya is TL; Umar owns the causal methodology. Bruno: staffing and the July compute.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

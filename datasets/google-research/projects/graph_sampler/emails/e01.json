@@ -1,0 +1,16 @@
+{
+  "id": "gr/graph_sampler/e01",
+  "thread_id": "gr/graph_sampler/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:38:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: uniform molecule sampling as a screening data product",
+  "body": "Hi Santiago,\n\nKicking off the graph sampler workstream. Screening partners keep asking for unbiased molecule libraries, and \"unbiased\" is the hard part: you cannot enumerate all molecules at a given size, so everyone samples from generative models with unknown bias. Our sequential importance sampling approach sidesteps that - enumerate stoichiometries for a given heavy-atom count, draw importance-weighted connected graphs per stoichiometry, reject to uniform, then aggregate into one provably uniform sample. Uniformity is the product.\n\nDeliverables this window: pipeline hardened as a service (the enumerate_stoichiometries -> sample_molecules -> reject_to_uniform -> aggregate_uniform_samples chain), a reference library at C,N,O,F with up to 8 heavy atoms, and a scored variant using our property-prediction models.\n\nMilestones: hardened pipeline 4/24, reference library 5/22, scored library + review 6/17.\n\nSaoirse infra, Yara sampling correctness, Wanjiru pipeline. Compute plan from you when ready.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

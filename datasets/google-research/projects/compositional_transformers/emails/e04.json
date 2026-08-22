@@ -1,0 +1,50 @@
+{
+  "id": "gr/compositional_transformers/e04",
+  "thread_id": "gr/compositional_transformers/t2",
+  "in_reply_to": null,
+  "date": "2026-06-01T16:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Recipe card: two-profile decision",
+  "body": "Team,\n\nDecisions from Friday's review, ahead of window close on 6/8:\n\n1. Recipe card ships with two profiles, per Carmen's finding: \"small-data compositional\" (relative positions, copy decoder, weight sharing) and \"large-data semantic parsing\" (relative positions, copy decoder, no sharing). One-default was the goal, but the COGS/CFQ split is real and the card should say so.\n2. Card v1 publishes to platform docs 6/5, marked provisional pending error bars.\n3. The July repetition matrix is confirmed as the follow-through: Wei runs the full num_repetitions grid and we stamp v1.1 \"evidence-final\" by end of July. PCFG gets double repetitions given the variance Carmen flagged.\n\nThanks all — this is the kind of boring-but-load-bearing work the platform exists for.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

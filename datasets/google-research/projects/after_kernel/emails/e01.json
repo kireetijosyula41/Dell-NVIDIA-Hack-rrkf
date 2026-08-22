@@ -1,0 +1,46 @@
+{
+  "id": "gr/after_kernel/e01",
+  "thread_id": "gr/after_kernel/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T10:05:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: after-kernel invariance diagnostics",
+  "body": "Hi Santiago, team,\n\nKicking off the after-kernel study. The one-liner: the after kernel is like the neural tangent kernel, but computed after training — and comparing the two tells us which invariances a trained network actually acquired versus inherited. The experiment suite measures invariance to translations, zooms, quadrant swaps of the input image, and rotations.\n\nWhy product cares: if this holds up, it becomes a model-diagnostics report we can attach to every finetuned model — a trust signal customers keep asking for.\n\nMilestones: MNIST 3-vs-8 binary study complete by end of March, invariance report template mid-April, readout to Hana's staff the week of May 11.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "project": "gr/m_theory",
+  "conflicts": [
+    {"conflict_id": "C037", "type": "gpu_double_booking",
+     "counterpart_projects": ["moment_advice"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "For the large-scale critical-point scan we hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22, confirmed in the quarterly allocation for graphs-retrieval."}
+  ]
+}

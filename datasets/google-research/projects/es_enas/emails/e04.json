@@ -1,0 +1,19 @@
+{
+  "id": "gr/es_enas/e04",
+  "thread_id": "gr/es_enas/t2",
+  "in_reply_to": "gr/es_enas/e03",
+  "date": "2026-04-27T10:36:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: ES-ENAS status: edge-mode suite running, controller swap cost us",
+  "body": "All,\n\nClose-out decisions for May 4, plus the follow-on plan.\n\n1. Accepting Freya's recommendation: v1 ships edge mode only. The 64%-fewer-edges-at-parity result is the release headline; partition mode is documented as experimental with her convergence notes attached.\n2. The writeup goes out as an internal tech report plus a refresh of our open-source release notes.\n\nFollow-on: the worker fleet and controller integration need another six weeks of hardening before partner teams can self-serve. Rosa Mensah stays committed at 60% for June 2026 to carry the gRPC worker-fleet hardening and the controller-integration follow-on - I've already logged that allocation with Santiago. Bilal drops to 20% advisory in June; Freya and Quentin roll off at window close as planned.\n\nSantiago - anything that breaks before the June plan starts, route to me, since the team shape gets thin in May.\n\nNice work all. This one ended where the kickoff said it would, which is rarer than it should be.\n\nAnders",
+  "labels": ["decision"]
+}

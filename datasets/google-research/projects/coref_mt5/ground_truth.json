@@ -1,0 +1,12 @@
+{
+  "project": "gr/coref_mt5",
+  "conflicts": [
+    {
+      "conflict_id": "C079",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["linear_dynamical_systems"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Chiara Olsen is at 65% on coref_mt5 for the whole of June 2026 - she owns the decoder service and the transition-state serialization, and June is when both have to be production-shaped."
+    }
+  ]
+}

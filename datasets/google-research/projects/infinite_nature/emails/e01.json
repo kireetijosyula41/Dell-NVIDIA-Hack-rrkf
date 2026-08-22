@@ -1,0 +1,18 @@
+{
+  "id": "gr/infinite_nature/e01",
+  "thread_id": "gr/infinite_nature/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:44:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Infinite Nature kickoff - perpetual scenes from a single photo",
+  "body": "Team,\n\nKicking off Infinite Nature. Our open-source release does perpetual view generation - fly into a single RGB image of a natural scene and keep generating plausible landscape forever. It's the most demo-able thing in the vision portfolio, and that's the plan: a polished interactive experience (built off the release's HTML frontend concept) as the centerpiece of our June external demo slot, pending Launch Review Board.\n\nScope: get the released model running in our serving environment, retrain on our licensed aerial-coastline corpus so the external demo isn't leaning on third-party data, and harden the interactive frontend. Umar owns the model work, Kaia generation quality, Farah serving integration, Oyin the frontend.\n\nMilestones: local pipeline reproduced by early April, retraining through May, LRB submission and demo freeze by 2026-06-22.\n\nDeshawn - resourcing note please, including the TPU ask for retraining.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

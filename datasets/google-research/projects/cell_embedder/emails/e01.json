@@ -1,0 +1,41 @@
+{
+  "id": "gr/cell_embedder/e01",
+  "thread_id": "gr/cell_embedder/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:05:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: cell painting embedding service (H1)",
+  "body": "Hi Jelena,\n\nKicking off the cell painting embeddings effort formally. Goal: turn the notebook we open-sourced into an internal embedding service for high-content screening. The method is proven — it backed our SLAS Discovery paper — and the pipeline is simple: 5-stain input images, deep network features, then a random projection matrix to get the final embedding.\n\nProduct framing: partners upload plates, we return per-well embeddings they can cluster for mechanism-of-action calls. No model training on their side.\n\nRough milestones inside our window (Feb 16 – May 4): parity with the published notebook by mid-March, batch API on Titan by early April, launch review before end of April. Sample data stays BBBC025 until Legal clears partner plates.\n\nCan you send a staffing + compute sketch by Friday?\n\nThanks,\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

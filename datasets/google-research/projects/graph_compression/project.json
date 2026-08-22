@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_compression",
+  "title": "Matrix Compression Library",
+  "summary": "Productizes our matrix compression library, which injects TensorFlow compression ops into the training graph so weight tensors are compressed while the model trains, via the MatrixCompressorInterface / ApplyCompression API family.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Deshawn Pavic",
+  "contributors": ["Yusuf Keita", "Emeka Pinto", "Linnea Yamada"],
+  "window": {"start": "2026-02-23", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "graph_compression",
+    "url": "https://github.com/google-research/google-research/tree/master/graph_compression",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

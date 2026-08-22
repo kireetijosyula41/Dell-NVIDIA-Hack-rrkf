@@ -1,0 +1,18 @@
+{
+  "id": "gr/etcmodel/e04",
+  "thread_id": "gr/etcmodel/t2",
+  "in_reply_to": "gr/etcmodel/e03",
+  "date": "2026-05-12T11:03:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kestrel status: CI green, fine-tune under way, one packaging trade-off",
+  "body": "Team,\n\nKestrel close-out decisions ahead of the May 15 review:\n\n1. TF2-only paved path approved, exactly as Jorge framed it. TF1 layers stay in the package, documented as unsupported.\n2. Umar's reproduction landed Apr 23: fine-tuning on the long-document dataset from the release matches the published setup within our eval tolerance, and the 4k-token runs on Cirrus came in 20% under the memory budget we'd assumed. That number goes in the adoption guide.\n3. Adoption: three teams signed up at Thursday's demo. We onboard two in Q2 and hold the third for Q3 rather than stretch Tereza's support capacity - she's the only one covering example generation.\n\nSantiago, please make sure the review doc is filed under the Kestrel program entry so leadership reporting picks it up.\n\nStrong finish, everyone.\n\nDmitri",
+  "labels": ["decision"]
+}

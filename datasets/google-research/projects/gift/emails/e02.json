@@ -1,0 +1,12 @@
+{
+  "id": "gr/gift/e02",
+  "thread_id": "gr/gift/t1",
+  "in_reply_to": "gr/gift/e01",
+  "date": "2026-04-13T14:55:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}],
+  "subject": "Re: Kickoff: GIFT - drift-resistant models for platform customers",
+  "body": "Dmitri,\n\nStaffing confirmed: Katya 70%, Amara 60%, Saoirse 40%. Workable for the 6/17 review.\n\nCompute: the iterative self-training loops are the cost center - every adaptation run is effectively N retrains, and the interpolation-step sweep (how far we push virtual samples toward target per iteration) multiplies that. I am estimating ~40 A100s sustained on titan-a100 through May, spiking for the benchmark repro.\n\nBudget: Idris has verbally earmarked $120k from Q3 discretionary compute budget line B-75 for this project; the adaptation sweeps below are costed against that line. Idris - cc'd, would be good to get that confirmed in writing before Q3 OKRs lock on 6/26.\n\nDependency: the pilot needs a stable snapshot of the customer corpus before the Corpus v2 freeze on 7/10, so Amara will cut it in June.\n\nIvo",
+  "labels": ["resources"]
+}

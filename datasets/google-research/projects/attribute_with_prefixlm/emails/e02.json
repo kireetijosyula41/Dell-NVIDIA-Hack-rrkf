@@ -1,0 +1,17 @@
+{
+  "id": "gr/attribute_with_prefixlm/e02",
+  "thread_id": "gr/attribute_with_prefixlm/t1",
+  "in_reply_to": "gr/attribute_with_prefixlm/e01",
+  "date": "2026-04-24T13:10:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: ArtVLM attribute recognition for catalog enrichment",
+  "body": "Dmitri,\n\nAllocations confirmed. Csilla 60%, Kaia 50%, Saoirse 40% through July. Vera Egede is locked in at 70% on ArtVLM for all of June 2026 - she owns the prefix-LM scoring path and the VGARank eval harness, and I have no backfill for her. If anyone comes asking for her time in June the answer is no.\n\nCompute is modest: fine-tuning fits on titan-a100 best-effort, 32-64 GPUs per run. No Vulcan reservation needed this half.\n\nDependencies: catalog ingestion goes through Corpus, and I want us fully migrated before the v2 freeze on 7/10 so we're not scrambling. Saoirse is already talking to Jun's team.\n\nOne ask: budget for ~200 hours of human verification on auto-generated attribute labels. Can you find that in the portfolio budget?\n\nDaniela",
+  "labels": ["resources"]
+}

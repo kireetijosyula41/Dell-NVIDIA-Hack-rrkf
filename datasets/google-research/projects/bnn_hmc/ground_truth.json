@@ -1,0 +1,12 @@
+{
+  "project": "gr/bnn_hmc",
+  "conflicts": [
+    {
+      "conflict_id": "C048",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["ngrammer"],
+      "planted_in": ["e04"],
+      "claim_as_written": "e04: \"Rafael Duran is committed to this project at 60% for July 2026 to run the domain-shift extension - I've put that allocation in the Q3 staffing sheet and Bruno has confirmed it.\""
+    }
+  ]
+}

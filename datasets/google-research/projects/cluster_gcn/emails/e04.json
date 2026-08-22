@@ -1,0 +1,45 @@
+{
+  "id": "gr/cluster_gcn/e04",
+  "thread_id": "gr/cluster_gcn/t1",
+  "in_reply_to": "gr/cluster_gcn/e03",
+  "date": "2026-04-07T14:15:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Obsidian kickoff — Cluster-GCN on our entity graphs",
+  "body": "Closing out Obsidian's window — decisions from this morning's review.\n\nResults: internal entity-graph model beats retrieval's sampled-GCN baseline by +3.1 on their ranking eval at 0.45x the GPU cost. Under half. The hub-node concern turned out manageable — Wei's ablation showed stochastic multiple partitions recovers most of it; hub accuracy trails by only 0.8 and retrieval considers that acceptable for v1.\n\nDecisions:\n1) Hand off to retrieval as planned. Csilla owns the transition doc; Jorge packages the training pipeline (with the METIS_DLL fix baked in) as a reusable recipe.\n2) The hybrid batching scheme for hub nodes is NOT pursued now — parked with Wei's ablation data attached for whoever picks it up.\n3) Wei writes a short internal tech note comparing depth: 5-layer vs 2-layer gains on our graph.\n\nThanks all — textbook project.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

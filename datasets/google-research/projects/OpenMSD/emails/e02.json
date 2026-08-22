@@ -1,0 +1,17 @@
+{
+  "id": "gr/OpenMSD/e02",
+  "thread_id": "gr/OpenMSD/t1",
+  "in_reply_to": "gr/OpenMSD/e01",
+  "date": "2026-03-26T14:53:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: OpenMSD kickoff - the multilingual science corpus, at full scale",
+  "body": "Dmitri,\n\nPlan:\n\nStaffing - Rosa 60% (pipeline lead: the OpenCitations COCI ingest and the CrossRef json.gz decode path), Saoirse 40% (validation + datasheet tooling), Gustavo 30% (relation extraction QA - he's stretched across teams this spring so I've scoped him narrowly).\n\nStorage - I've requested 1.5 TB working space on the batch tier: ~425 GB raw inputs, the rest for intermediates and the joined output. CPU-only, no GPU ask at all.\n\nCorpus coordination - the handoff lands May 29, but we'll want two heavy ingestion reruns after that as the upstream dumps refresh. I checked the migration calendar: Corpus v2's migration freeze is 2026-07-24, so scheduling the two heavy ingestion reruns for early July still leaves us two clear weeks of margin before the freeze. I've booked the batch capacity for the weeks of July 6 and July 13 accordingly.\n\nBruno",
+  "labels": ["resources"]
+}

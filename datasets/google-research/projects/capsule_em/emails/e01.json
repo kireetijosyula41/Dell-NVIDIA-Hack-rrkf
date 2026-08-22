@@ -1,0 +1,18 @@
+{
+  "id": "gr/capsule_em/e01",
+  "thread_id": "gr/capsule_em/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:15:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: EMCAPSNet viability study for pose-sensitive matching",
+  "body": "Hi Bruno, Yara,\n\nKickoff for the EMCAPSNet study. Motivation: graphs-retrieval keeps hitting viewpoint sensitivity in visual matching - the same object from a new angle tanks retrieval quality. Capsules with EM routing are explicitly built for viewpoint robustness, and our open-source release ships the model with smallNORB training and eval.\n\nThis is a viability study, not a committed product: I want a clear yes/no by early July on whether capsule routing earns a place in the matching stack.\n\nMilestones for Mar 9 - Jul 6: M1 (Apr 10) repro the released checkpoints - the README's eval flow should give 1.8 test error on smallNORB, and 1.3 with patching enabled. M2 (May 22) viewpoint-robustness comparison vs. our CNN baseline under held-out azimuth/elevation splits. M3 (late June) scale stress-test: does EM routing's cost stay sane beyond smallNORB-sized inputs? Then the yes/no memo.\n\nYara is TL. Bruno: staffing + the June compute ask.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

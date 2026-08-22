@@ -1,0 +1,18 @@
+{
+  "id": "gr/dreamfields",
+  "title": "Zero-Shot Text-Guided Object Generation with Dream Fields",
+  "summary": "Brings Dream Fields — text-to-3D object synthesis that optimizes a Neural Radiance Field from many camera views so renders score highly against a caption under a pre-trained CLIP model, with transmittance regularization and scene-bound priors for fidelity — toward an internal 3D asset-generation demo.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Saoirse Eriksen", "Chiara Olsen", "Tereza Aliyev", "Rosa Mensah"],
+  "window": {"start": "2026-04-06", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dreamfields",
+    "url": "https://github.com/google-research/google-research/tree/master/dreamfields",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

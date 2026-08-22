@@ -1,0 +1,39 @@
+{
+  "id": "gr/frechet_video_distance/e04",
+  "thread_id": "gr/frechet_video_distance/t2",
+  "in_reply_to": "gr/frechet_video_distance/e03",
+  "date": "2026-06-02T13:20:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: FVD status: variance study + memory risk",
+  "body": "Team,\n\nLocking the calibration sweep plan: 4 model families x 3 seeds x 2048 videos per side, running in our vulcan-h100 week of Jun 8 on the 256-accelerator reservation. Quentin's chunked embedding path is the default.\n\nDecision: 2048 videos per side is the portfolio standard from here on; any FVD number reported at launch review below that sample size gets flagged.\n\nNote the vulcan maintenance window Jun 22-24 lands after our week, so no exposure there, but do not let the sweep slip — there is no second reservation this quarter.\n\nResults readout Jun 16, invite to follow.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

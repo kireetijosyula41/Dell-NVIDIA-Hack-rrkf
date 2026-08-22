@@ -1,0 +1,19 @@
+{
+  "id": "gr/bitempered_loss/e04",
+  "thread_id": "gr/bitempered_loss/t1",
+  "in_reply_to": "gr/bitempered_loss/e03",
+  "date": "2026-06-19T16:10:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: bi-tempered loss - decision: conservative preset for v1",
+  "body": "Decision time, since Q3 OKRs lock June 26 and I need this settled in the narrative.\n\nWe ship v1 with the conservative preset (t1=0.8, t2=1.2) and document the sensitivity envelope from Yara's matrix. The auto-tuning heuristic moves to Q3 as its own OKR with Rafael's 3-week estimate as the sizing - I am not risking the mid-July LRB slot on it. The +4.8 point result at 40% noise is the headline; the preset still captures most of it (+3.9 in Yara's rerun).\n\nFumiko, please write the temperature-tuning guidance doc as the customer-facing companion.\n\nBao - flag today if you disagree, otherwise this is the plan of record. And push Corpus on those last two ingestion tickets; nothing else on our critical path is outside our control.\n\nXimena",
+  "labels": ["decision"]
+}

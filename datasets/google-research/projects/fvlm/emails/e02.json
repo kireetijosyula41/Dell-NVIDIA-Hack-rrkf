@@ -1,0 +1,45 @@
+{
+  "id": "gr/fvlm/e02",
+  "thread_id": "gr/fvlm/t1",
+  "in_reply_to": "gr/fvlm/e01",
+  "date": "2026-04-21T13:37:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Project Basalt kickoff — open-vocabulary detection",
+  "body": "Hi Lucia,\n\nBasalt staffing: Umar 60% (research lead), Farah 50% (serving path), Katya 30% (evals), Ondrej 40% (training infra).\n\nCompute: modest by detection standards precisely because the VLM backbone is frozen — detector-head training fits on 128 A100s on titan best-effort, no vulcan reservation needed this quarter. We will pull the released r50, r50x4 and r50x16 checkpoints and restore from the FLAX versions rather than the tf.SavedModel path.\n\nDependency: Shipyard capacity for the demo endpoint — I have asked Zeke for a slot ahead of the Jun 17 LRB demo.\n\nFlag: the r50x16 restore wants 80GB cards; Ondrej is checking our host mix.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

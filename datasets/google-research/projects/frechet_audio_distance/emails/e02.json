@@ -1,0 +1,40 @@
+{
+  "id": "gr/frechet_audio_distance/e02",
+  "thread_id": "gr/frechet_audio_distance/t1",
+  "in_reply_to": "gr/frechet_audio_distance/e01",
+  "date": "2026-03-24T14:32:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: FAD productization — kickoff and Q2 milestones",
+  "body": "Hi Goran,\n\nStaffing: Hyun 60%, Maren 50%, Gustavo 40% through May. Compute is modest — the VGGish embedding extraction runs comfortably on 64 A100s on titan-a100 best-effort, no reservation needed.\n\nOne structural call: for scoring, tracking and dashboards we are going to scope and staff an internal evaluation harness from scratch — batch scoring jobs, a metric registry, and regression dashboards. Maren will own the harness design doc, due Apr 3. Building it ourselves keeps us unblocked and gives us full control of the FAD-specific plumbing (VGGish checkpoint pinning, Beam pipeline configs).\n\nRisks to flag early: the pinned apache-beam version still wants Python 2 for the pipeline, which is going to bite us during the port.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/bustle",
+  "conflicts": [
+    {
+      "conflict_id": "C054",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["muller"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"Budget: Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-77 for this project, which covers the model retraining sweeps and the synthesis benchmark farm through September. I'm treating that as committed and building the Q3 plan on it.\""
+    }
+  ]
+}

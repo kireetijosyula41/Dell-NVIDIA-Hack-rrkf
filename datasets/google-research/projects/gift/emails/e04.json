@@ -1,0 +1,15 @@
+{
+  "id": "gr/gift/e04",
+  "thread_id": "gr/gift/t2",
+  "in_reply_to": "gr/gift/e03",
+  "date": "2026-06-09T15:37:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [],
+  "subject": "Re: Status: benchmark repro done; where GIFT wins and where it doesn't",
+  "body": "Katya, Ivo,\n\nDecision from yesterday's review: we go forward with the GIFT-on-top-of-DA config for the pilot, scoped to one customer pipeline, and we publish the cost-vs-shift table as part of the offering rather than hiding it. The +2.3 point delta without intermediate data is the sales story; the 5x worst-case cost is the fine print, and I would rather put it in the contract than in an apology later.\n\nScope cut: the auto-scheduling idea (detect drift, trigger adaptation automatically) is out for this window. It is a Q3 OKR candidate but it needs the corpus snapshot tooling to mature first.\n\nIvo - please have the pilot snapshot cut by 6/19 so we are clean of the freeze. Katya - two-slide summary for my portfolio review on 6/18, numbers only, no adjectives.\n\nDmitri",
+  "labels": ["decision"]
+}

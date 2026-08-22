@@ -1,0 +1,16 @@
+{
+  "id": "gr/graph_compression/e01",
+  "thread_id": "gr/graph_compression/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:47:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: matrix compression for the serving fleet",
+  "body": "Hi Deshawn,\n\nKicking off the matrix compression workstream for efficiency. The library injects compression ops into the TensorFlow training graph so weight tensors are compressed while the model is being trained - not as a lossy afterthought at export time. The API surface is in good shape: MatrixCompressorInterface for the algorithm, CompressionOpInterface for the graph injection, and the ApplyCompression wrapper that walks layers and applies the chosen compression_option. Smoothed compression gives us a knob to trade accuracy against ratio during training.\n\nProduct target: cut serving memory for the three biggest internal models by 3-4x with under 1% quality loss, which Zeke's team can turn directly into fleet capacity.\n\nMilestones: library integrated with one flagship model by 3/20, compression-vs-quality curves by 4/17, rollout recommendation by 5/15.\n\nYusuf leads research, Emeka tooling, Linnea training integration. Staffing and compute from you by Friday?\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

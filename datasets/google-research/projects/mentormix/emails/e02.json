@@ -1,0 +1,15 @@
+{
+  "id": "gr/mentormix/e02",
+  "thread_id": "gr/mentormix/t1",
+  "in_reply_to": "gr/mentormix/e01",
+  "date": "2026-03-18T14:47:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}
+  ],
+  "subject": "Re: MentorMix kickoff — staffing + Corpus v2 alignment",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing — Ondrej 50% (TL), Quentin 50% on benchmark reproduction, Wanjiru 40% on the platform API, Oyin 40% on the pilot-team integration. Stable through 06-15.\n\nCompute — reproduction sweeps need 32 A100s on titan best-effort through April; the pilot training runs are smaller. No vulcan ask.\n\nCorpus v2 alignment, per Jun: the team plans around a Corpus v2 freeze date of 2026-07-10, which is comfortably after our window closes on 06-15 — so all our pilot ingestion runs on v1 paths, and Wanjiru writes the API against the v1 interface with a documented v2 shim to hand over post-freeze. Jun's team signed off on that sequencing yesterday.\n\nOnly real dependency risk is pilot-team availability in early June; Oyin is lining up a backup team just in case.\n\nBruno",
+  "labels": ["resources"]
+}

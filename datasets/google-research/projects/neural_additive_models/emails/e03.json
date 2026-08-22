@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_additive_models/e03",
+  "thread_id": "gr/neural_additive_models/t1",
+  "in_reply_to": "gr/neural_additive_models/e02",
+  "date": "2026-05-06T10:12:00Z",
+  "from": {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: NAM kickoff — library status + TF version risk",
+  "body": "Hi both,\n\nStatus:\n\n- Library alpha shipped 03-27. Two internal teams are already importing it for prototyping.\n- Benchmark reproduction: on the public datasets from gs://nam_datasets we match the paper's reported AUCs within 0.005 on 8 of 9 sets; the credit dataset needed the ExU feature-net variant to close the gap. Shape-function plots are in the library as a first-class API — that's the feature customers actually screenshot into their model-risk docs.\n- Jorge's sweep harness is done and dress-rehearsed at 1/50th scale on titan.\n\nRisk: the release code targets tensorflow>=1.15 via tf.compat.v1 in places, and our serving stack is TF2-only. The tf.keras.Model path is clean but the graph-mode helpers aren't. Recommendation: library v1 supports the tf.keras path only, and we document the compat helpers as unsupported. Affects one prospective customer whose pipeline is graph-mode; Oyin is checking whether they can move.\n\nMIMIC-II DUA still with Legal.\n\nWanjiru",
+  "labels": ["status", "risk"]
+}

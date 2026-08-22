@@ -1,0 +1,46 @@
+{
+  "id": "gr/didi_dataset/e01",
+  "thread_id": "gr/didi_dataset/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T10:08:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Didi digital-ink benchmark hosting",
+  "body": "Ivo, team,\n\nKicking off the Didi benchmark track. The dataset gives us digital ink drawings of diagrams with full dynamic drawing information -- stroke timing included -- collected via prompted drawing sessions, with the prompts available in png, dot, and xdot form. That combination (ink + ground-truth graph structure) is rare, and it is the right substrate for the interactive diagram-understanding features the notes product wants.\n\nGoal for this short window: host the dataset internally on Corpus, ship the TFRecord conversion path from the reference notebook as a supported pipeline, train a baseline model on the paper's train/validation/test split, and give researchers a standard way to compare results.\n\nMilestones: data hosted March 13, pipeline + baseline April 10, wrap May 8.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

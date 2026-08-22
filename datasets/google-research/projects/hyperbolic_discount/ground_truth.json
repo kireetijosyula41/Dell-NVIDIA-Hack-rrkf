@@ -1,0 +1,12 @@
+{
+  "project": "gr/hyperbolic_discount",
+  "conflicts": [
+    {
+      "conflict_id": "C006",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["covid_vhh_design", "mentormix", "distinguishing_romanized_hindi_urdu"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The Corpus v2 freeze is 2026-08-07, so we have headroom to keep replay logs on v1 through July and do the v2 migration as a post-project cleanup rather than burning sweep time on it now."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/android_in_the_wild",
+  "conflicts": [
+    {
+      "conflict_id": "C074",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "autoregressive_diffusion"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The five AitW subsets overlap more than the docs admit, so we are scoping and staffing a dataset de-duplication pipeline from scratch — Giannis at 50% owns it, first pass by mid-March."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "project": "gr/frequency_analysis",
+  "conflicts": [
+    {
+      "conflict_id": "C033",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "meta_learning_without_memorization",
+        "fractals_language",
+        "caltrain"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "Corpus has the freeze landing 2026-07-24, so I am targeting Jul 17 for the last ingestion batch, one week of slack."
+    }
+  ]
+}

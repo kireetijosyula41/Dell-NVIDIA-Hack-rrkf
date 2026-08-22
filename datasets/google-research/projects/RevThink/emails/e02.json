@@ -1,0 +1,17 @@
+{
+  "id": "gr/RevThink/e02",
+  "thread_id": "gr/RevThink/t1",
+  "in_reply_to": "gr/RevThink/e01",
+  "date": "2026-03-04T13:28:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Palisade kickoff - reverse thinking for small reasoners",
+  "body": "Dmitri,\n\nPalisade staffing below:\n\n- Freya Ruiz 50%: method owner - the augmentation stage (forward reasoning, backward questions, backward reasoning) and data quality filters.\n- Quentin Farkas 40%: student training + eval across the task suite.\n- Giannis Sato 40%: pipeline engineering; he's scripting the augment_data.py flow per task so reruns are one command.\n\nCompute: teacher-side generation is the expensive part - I've budgeted ~$18k of teacher-model inference for the full eight-task augmentation at n=100 (full training data). We'll pilot at n=10 on Date and GSM8K first to validate quality before burning the budget. Student fine-tuning fits on 16 A100s on titan-a100, best effort.\n\nRisk to flag early: teacher generations for MATH look noticeably weaker in the pilot sample; may need a filtered second pass there.\n\nAlina",
+  "labels": ["resources"]
+}

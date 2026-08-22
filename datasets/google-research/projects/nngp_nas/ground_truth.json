@@ -1,0 +1,12 @@
+{
+  "project": "gr/nngp_nas",
+  "conflicts": [
+    {
+      "conflict_id": "C077",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["felix"],
+      "planted_in": ["e02"],
+      "claim_as_written": "There's no tool for collecting that, so we're scoping and building a human-rating annotation UI from scratch: Jorge and Maren split a 5-week build for rating queues, side-by-side comparisons, rater agreement stats, and CSV export for analysis."
+    }
+  ]
+}

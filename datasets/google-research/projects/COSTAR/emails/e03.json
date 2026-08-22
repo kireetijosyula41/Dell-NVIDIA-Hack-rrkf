@@ -1,0 +1,15 @@
+{
+  "id": "gr/COSTAR/e03",
+  "thread_id": "gr/COSTAR/t2",
+  "in_reply_to": null,
+  "date": "2026-06-02T11:35:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [],
+  "subject": "COSTAR status: repro done, M5 scaling risk",
+  "body": "Hi Alina, Dmitri,\n\nRepro milestone closed May 14: we match the paper's counterfactual estimation numbers on tumor growth and on semi-synthetic MIMIC-III within noise across the five seeds. Jorge's feature-store spike is about 70% done.\n\nThe risk is M5. Tumor growth and M5 both generate data on the fly, but M5 at our target horizon blows past the memory budget on a single A100 node - the encoder-decoder runs OOM above batch 64 unless we shard, and sharding the on-the-fly generator is real work, maybe 3 engineer-weeks. Options: (a) pre-generate M5 to disk like the MIMIC-III path and accept ~2TB of storage, or (b) cut M5 from the July eval sweep and ship with tumor + MIMIC-III only.\n\nMy lean is (a), its boring and it works. Need a call by June 12 or the ablation grid slips out of July.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

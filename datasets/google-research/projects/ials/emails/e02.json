@@ -1,0 +1,17 @@
+{
+  "id": "gr/ials/e02",
+  "thread_id": "gr/ials/t1",
+  "in_reply_to": "gr/ials/e01",
+  "date": "2026-02-17T13:58:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: iALS kickoff - resourcing + Corpus migration timing",
+  "body": "Dmitri,\n\nResourcing, short version because this really is a small footprint:\n\n- Staffing: Bilal 50%, Linnea 40%, Rosa 30%, Oyin 20%.\n- Compute: CPU-dominant; a handful of titan-a100 GPUs best-effort for the sweep weeks. Nothing to reserve.\n- Data: the NCF benchmark datasets (MovieLens 1M, Pinterest) are getting registered on Corpus so Evalline can consume the baseline reproducibly. Planning note: the Corpus v2 migration freeze is 2026-06-26, so Rosa will register everything as v2-native from the start - our project closes in April, but I don't want the packaged baseline to be one of those things that breaks in late June because it pointed at v1 paths.\n\nOne genuine annoyance: the upstream NCF evaluation code needs a Python 2.7 runtime. Oyin is isolating it in a container; if security pushes back on py2.7 we may need Bilal to port the eval loop instead, which would cost ~2 weeks.\n\nDeshawn",
+  "labels": ["resources"]
+}

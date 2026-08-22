@@ -1,0 +1,41 @@
+{
+  "id": "gr/fsq/e01",
+  "thread_id": "gr/fsq/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:12:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "FSQ kickoff — simplifying the tokenizer stack",
+  "body": "Hi Santiago,\n\nKicking off the FSQ workstream. Finite Scalar Quantization replaces vector quantization in our VQ-VAE tokenizer stack: project the latent down to fewer than 10 dimensions, quantize each to a small fixed set of values, and the implicit codebook is the product of those sets. Same codebook sizes as VQ, but no codebook collapse and none of the machinery — no commitment losses, no reseeding, no entropy penalties.\n\nWhy the efficiency portfolio cares: a simpler tokenizer means fewer training pathologies across every downstream model. Milestones: MaskGIT image-generation repro by May 22, UViM dense-prediction repro by Jun 12, adopt/hold decision Jun 30.\n\nLeilani, Carmen and Saoirse assigned. Staffing plan when you can.\n\nZofia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/merf",
+  "title": "MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes",
+  "summary": "Productizing MERF — a memory-efficient radiance field combining a sparse feature grid with high-resolution 2D feature planes and a novel contraction function — to deliver real-time browser rendering of large unbounded scenes via the lossless baking procedure.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Jelena Vasquez",
+  "contributors": ["Milan Zapata", "Yara Jokic", "Leilani Nakamura"],
+  "window": {"start": "2026-04-20", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "merf",
+    "url": "https://github.com/google-research/google-research/tree/master/merf",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

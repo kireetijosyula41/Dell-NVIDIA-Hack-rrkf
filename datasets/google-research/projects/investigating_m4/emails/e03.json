@@ -1,0 +1,46 @@
+{
+  "id": "gr/investigating_m4/e03",
+  "thread_id": "gr/investigating_m4/t1",
+  "in_reply_to": "gr/investigating_m4/e01",
+  "date": "2026-05-28T16:25:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: multilingual NMT representation analysis at scale",
+  "body": "Status. Repro milestone: done — Quentin regenerated the release plots from model_scores.csv and finetuned_model_scores.csv, and our reading matches the paper: encoder representations cluster by linguistic family, and the clustering sharpens with depth. Extension to the production model: the SVCCA pipeline now runs on our checkpoints; on the 12-pair pilot grid, high-resource pairs show layer-5 encoder similarity above 0.86 within family, and Nikhil's probe finetunes reproduce the expected asymmetry — finetuning a high-resource pair barely moves related-pair representations, while low-resource pairs shift broadly (matching the relative-BLEU-change pattern in the release data). Risks: (1) full activation dumps for the July grid project to ~38 TB — Csilla is negotiating retention with Corpus (dump, compute SVCCA, delete within 72 h); (2) checkpoint selection — production checkpoints aren't evenly spaced like the release data, which complicates the across-checkpoint axis. — Vera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

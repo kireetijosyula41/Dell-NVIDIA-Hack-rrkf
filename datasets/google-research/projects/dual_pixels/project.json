@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_pixels",
+  "title": "Learning Single Camera Depth Estimation using Dual-Pixels",
+  "summary": "Productizes single-camera depth estimation from dual-pixel data — the DPNet model with affine invariance, trained and evaluated on the released dual-pixel dataset (95G train / 29G test) — for Meridian's on-device imaging pipeline.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bruno Mbeki",
+  "contributors": ["Fumiko Rossi", "Linnea Yamada", "Saoirse Eriksen", "Kaia Wolde"],
+  "window": {"start": "2026-03-30", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dual_pixels",
+    "url": "https://github.com/google-research/google-research/tree/master/dual_pixels",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

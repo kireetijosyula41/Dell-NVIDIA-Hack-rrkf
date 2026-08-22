@@ -1,0 +1,18 @@
+{
+  "id": "gr/learning_to_clarify/e03",
+  "thread_id": "gr/learning_to_clarify/t1",
+  "in_reply_to": "gr/learning_to_clarify/e02",
+  "date": "2026-04-07T15:30:00Z",
+  "from": {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: ACT clarification-turn service — April status",
+  "body": "Hi both,\n\nStatus ahead of Friday:\n\n- Pipeline milestone hit. convert_pacific.py runs cleanly on both train.json and validation.json, emitting train.jsonl / validation.jsonl, and the 20-entry sampled smoke run finishes in under an hour in the container.\n- Full PACIFIC fine-tune is mid-flight. Early eval: the ACT model asks a clarifying question on 41% of ambiguous turns vs 17% for the SFT baseline, at equal answer quality on unambiguous turns.\n\nRisk: the distillation recipe is behind. My first student run lost 6.2pp on the clarification-action accuracy, which is too much for the alpha. I think the contrastive pairs need to be re-generated from the student's own rollouts, thats another ~2 weeks of my time. Would push the May 15 alpha to the very end of the window.\n\nMaren",
+  "labels": ["status", "risk"]
+}

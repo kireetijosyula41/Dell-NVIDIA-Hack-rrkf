@@ -1,0 +1,607 @@
+{
+  "batch": 14,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "hipi",
+      "title": "Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement\n\npaper\n\nThis repository provides an implementation of Hindsight Inference for Policy Improvement [HIPI] from \"Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement.\"\n\n**Abstract**: Multi-task reinforcement learning (RL) aims to simultaneously learn policies for solving many tasks. Several prior works have found that relabeling past experience with different reward functions can improve sample efficiency. Relabeling methods typically pose the question: if, in hindsight, we assume that our experience was optimal for some task, for what task was it optimal? Inverse RL answers this question. In this paper we show that inverse RL is a principled mechanism for reusing experience across tasks. We use this idea to generalize goal-relabeling techniques from prior work to arbitrary types of reward functions. Our experiments confirm that relabeling data using inverse RL outperforms prior relabeling methods on goal-reaching tasks, and accelerates learning on more general multi-task settings where prior methods are not applicable, such as domains with discrete sets of rewards and those with linear reward functions.\n\nIf you use this code, please consider adding the corresponding citation:\n\n```\n@inproceedings{eysenbach2020hindsight,\ntitle={Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement},\nauthor={Eysenbach, Benjamin and Geng, Young and Levine, Sergey and Salakhutinov, Ruslan},\nbooktitle={Advances in Neural Information Processing Systems},\nyear={2020}\n}\n\n```",
+      "contributors": [
+        "Maren Zhou",
+        "Tereza Aliyev",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C042",
+          "type": "dependency_date_drift",
+          "projects": [
+            "enas_lm",
+            "hipi",
+            "betum_tool",
+            "correct_batch_effects_wdn"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hitnet",
+      "title": "The scripts will download the models and install prerequisites, however datasets have to b",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# HITNET\nThis package includes the code used to run the experiments in the HITNET paper [HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching](https://arxiv.org/abs/2007.12140).\n\n## Setup\nThe scripts will download the models and install prerequisites, however datasets have to be downloaded manually and scripts have to be modified to point at the download location. Currently models for 3 datasets are shared.\n\n## FlyingThings\nTwo models are provided with maximum disparity set to 320: one for cleanpass, one for finalpass version of the dataset. The scripts will run in evaluation mode by default and will compute PSM EPE and other metrics.\n\n## Middlebury\nThree models are provided, with maximum disparity set to 160, 288, 400. The models are trained and designed to run on half-resolution input images.\n\n## ETH3D\nA model is provided with maximum disparity set to 128.\n\n## Performance\nThe released models are using default tensoflow ops which causes them to be 3X slower than the same models that use custom CUDA ops. The custom CUDA ops and a version of the models that use them may be released later.\n\n## Disparity Range\nA version of the models with a variable disparity range may be released later.",
+      "contributors": [
+        "Wei Ivanov",
+        "Umar Costa",
+        "Rosa Mensah",
+        "Bilal Novak",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C003",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "hspace",
+            "hitnet"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hmc_swindles",
+      "title": "Hamiltonian Monte Carlo Swindles",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Hamiltonian Monte Carlo Swindles\n\nThis repository contains the code for the [Hamiltonian Monte Carlo Swindles](https://arxiv.org/abs/2001.05033).\n\n## Setup\n\nFrom the parent directory, run these commands:\n\n```bash\nsudo apt-get install r-base\npip install -r hmc_swindles/requirements.txt\nrm -rf probability\ngit clone --depth 1 https://github.com/tensorflow/probability.git\ncp -R probability/discussion discussion\n./hmc_swindles/scripts/fetch_datasets.sh\n```\n\n## Experiment Pipeline\n\nThe experiment proceeds in 4 steps.\n\n1. Training the pre-conditioner\n\nThis will train the preconditioner and place the checkpoints + statistics inside\nthe log directory.\n\n```bash\npython3 -m hmc_swindles.neutra_runner --mode train --neutra_log_dir /tmp/hmc_swindles/train --hparams \"${HPARAMS}\"\n```\n\n2. Tuning the sampler\n\nThis would typically be called by some external optimization framework (not\nincluded), but you can also do manual tuning. We provide the best HMC\nhyperparameters in the `tune_outputs` directory in case you don't want to do\nthis step.\n\n```bash\npython3 -m hmc_swindles.neutra_runner --mode objective --checkpoint_log_dir /tmp/hmc_swindles/train --neutra_log_dir /tmp/hmc_swindles/tune --hparams \"${HPARAMS}, tune_objective.step_size: 0.1, tune_objective.num_leapfrog_steps: 1\"\n```\n\n3. Benchmarking the sampler\n\n```bash\npython3 -m hmc_swindles.neutra_runner --mode benchmark --checkpoint_log_dir /tmp/hmc_swindles/train --neutra_log_dir /tmp/hmc_swindles/eval --tune_outputs_name $(pwd)/hmc_swindles/tune_outputs/${TUNE_OUTPUTS} --hparams \"${HPARAMS}\"\n```\n\n4. Evaluating the sampler\n\n```bash\npython",
+      "contributors": [
+        "Paloma Castillo",
+        "Wei Ivanov",
+        "Leilani Nakamura",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C121",
+          "type": "gpu_double_booking",
+          "projects": [
+            "fully_dynamic_facility_location",
+            "hmc_swindles"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hspace",
+      "title": "HSPACE: Synthetic Parametric Humans Animated in Complex Environments",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# HSPACE: Synthetic Parametric Humans Animated in Complex Environments\n\n## Introduction\n\nAdvances in the state of the art for 3d human sensing are currently limited by\nthe lack of visual datasets with 3d ground truth, including multiple people,\nin motion, operating in real-world environments, with complex illumination or\nocclusion, and potentially observed by a moving camera. Sophisticated scene\nunderstanding would require estimating human pose and shape as well as gestures,\ntowards representations that ultimately combine useful metric and behavioral\nsignals with free-viewpoint photo-realistic visualisation capabilities. To\nsustain progress, we build a largescale photo-realistic dataset,\nHuman-SPACE (HSPACE), of animated humans placed in complex synthetic indoor and\noutdoor environments. We combine a hundred diverse individuals of varying ages,\ngender, proportions, and ethnicity, with hundreds of motions and scenes, as well\nas parametric variations in body shape (for a total of 1,600 different humans),\nin order to generate an initial dataset of over 1 million frames. Human\nanimations are obtained by fitting an expressive human body model, GHUM, to\nsingle scans of people, followed by novel re-targeting and positioning\nprocedures that support the realistic animation of dressed humans,\nstatistical variation of body proportions, and jointly consistent scene\nplacement of multiple moving people. Assets are generated automatically, at\nscale, and are compatible with existing real time rendering and game engines.\nThe dataset with evaluation server will be made available for research",
+      "contributors": [
+        "Farah Haddad",
+        "Milan Zapata",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C003",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "hspace",
+            "hitnet"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hyperbolic_discount",
+      "title": "Hyperbolic Agent",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Hyperbolic Agent\n\nThis is the code for the paper\n[Hyperbolic Discounting and Learning Over Multiple Horizons](https://arxiv.org/abs/1902.06865)\nby William Fedus, Carles Gelada, Yoshua Bengio, Marc Bellemare and Hugo\nLarochelle (2019).\n\nYou may cite us at\n\n```\n@article{fedus2019hyperbolic,\ntitle={Hyperbolic discounting and learning over multiple horizons},\nauthor={Fedus, William and Gelada, Carles and Bengio, Yoshua and Bellemare, Marc G and Larochelle, Hugo},\njournal={arXiv preprint arXiv:1902.06865},\nyear={2019}\n}\n```\n\n## Agent Configuration\nThe agent configuration is handled via gin-bindings. The subdirectory\n`hyperbolic_discount/configs` holds the gin-files for the base agents we\nconsidered in the paper:\n\n*   Hyperbolic/Multi-DQN\n*   Hyperbolic/Multi-C51\n*   Hyperbolic/Multi-Rainbow\n\n### Setup\nAll of the commands below are run from the parent `google_research` directory.\nStart a virtualenv with these commands:\n\n```\nvirtualenv -p python3 .\nsource ./bin/activate\n```\n\nThen install necessary packages:\n\n```\npip install -r hyperbolic_discount/requirements.txt\n```\n\n## Running the Code\nTo train the agent execute,\n\n```\npython -m hyperbolic_discount.train \\\n--agent_name=hyperbolic_rainbow \\\n--gin_files=configs/hyperbolic_rainbow_agent.gin \\\n--base_dir=/tmp/hyperbolic_base_dir \\\n--gin_bindings=\"HyperRainbowAgent.acting_policy='largest_gamma'\" \\\n--gin_bindings=HyperRainbowAgent.number_of_gammas=10 \\\n--gin_bindings=HyperRainbowAgent.hyp_exponent=0.01 \\\n--gin_bindings=HyperRainbowAgent.gamma_max=0.99 \\\n--atari_roms_path=/tmp/roms\" \\\n--gin_bindings=\"Runner.game_name='MontezumaRevenge",
+      "contributors": [
+        "Leilani Nakamura",
+        "Halima Toure",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C006",
+          "type": "dependency_date_drift",
+          "projects": [
+            "covid_vhh_design",
+            "hyperbolic_discount",
+            "mentormix",
+            "distinguishing_romanized_hindi_urdu"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "hypertransformer",
+      "title": "HyperTransformer: Single-Shot CNN Model Generation with a Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# HyperTransformer: Single-Shot CNN Model Generation with a Transformer\n\nThis code implements the HyperTransformer model as described in the\n[HyperTransformer](https://arxiv.org/abs/2201.04182) paper (_HyperTransformer:\nModel Generation for Supervised and Semi-Supervised Few-Shot Learning_).\n\nThis a transformer-based model for few-shot learning that generates weights of\na convolutional neural network (CNN) directly from support samples.\nSince the dependence of a small generated CNN model on a specific task is\nencoded by a high-capacity transformer model, the complexity of the large task\nspace is effectively decoupled from the complexity of individual tasks.\nThis method is particularly effective for small target CNN architectures where\nlearning a fixed universal task-independent embedding is not optimal and better\nperformance is attained when the information about the task can modulate all\nmodel parameters. The implementation also supports a semi-supervised regime\nutilizing unlabeled samples in the support set and further improving few-shot\nperformance.\n\n## Dataset NumPy Files\n\nDatasets that are most widely used for model training (`omniglot`,\n`miniImageNet` and `tieredImageNet`) are provided to the trainer as saved NumPy\narrays.\n\n`Omniglot` data can be downloaded\n[from here](https://drive.google.com/file/d/1rmxwmCZwEJxuYGajYqFOaVUB7flmM4zI/view?usp=sharing).\n`miniImageNet` and `tieredImageNet` cache files can be obtained using utilities\nfound in `utils`. Raw pickle files for `miniImageNet` can be downloaded\n[here](https://www.kaggle.com/datasets/whitemoon/miniimagenet)\nand ",
+      "contributors": [
+        "Vera Egede",
+        "Saoirse Eriksen",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C096",
+          "type": "dependency_date_drift",
+          "projects": [
+            "finance_harness",
+            "cell_mixer",
+            "hypertransformer",
+            "keypose"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ials",
+      "title": "Reproducing iALS benchmark results",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Reproducing iALS benchmark results\n\nThis code reproduces the results from the papers:\n\n* Revisiting the Performance of IALS on Item Recommendation Benchmarks\n* iALS++: Speeding up Matrix Factorization with Subspace Optimization\n\n## NCF benchmarks\n\nThis follows the evaluation protocol and uses the datasets from\n[He et al., Neural Collaborative Filtering, WWW '17](https://dl.acm.org/doi/10.1145/3038912.3052569).\n\nNote: This requires the code and datasets from https://github.com/hexiangnan/neural_collaborative_filtering, which requires a Python 2.7 runtime.\n\n### Instructions\n\n1) Navigate to `ncf_benchmarks/` and install packages `pip install -r requirements.txt`\n\n2) Download the NCF code and data.\n\n```\nwget https://github.com/hexiangnan/neural_collaborative_filtering/archive/master.zip\nunzip master.zip\nmv neural_collaborative_filtering-master/* ./\n```\n\n3) Run the code. Example usage:\n\n**MovieLens 1M**\n\n```\npython ials_simple.py --data Data/ml-1m --epochs 12 --embedding_dim 192 \\\n--regularization 0.007 --unobserved_weight 0.3 --stddev 0.1\n```\n\n**Pinterest**\n\n```\npython ials_simple.py --data Data/pinterest-20 --epochs 16 --embedding_dim 192 \\\n--regularization 0.02 --unobserved_weight 0.007 --stddev 0.1\n```\nThis will reproduce the iALS numbers in Table 5 of the paper \"Revisiting the\nPerformance of iALS on Item Recommendation Benchmarks\". Note that the table\nreports the mean over 10 repetitions of the experiment.\n\n### Hyperparameter tuning\n\nTo generate a holdout set for hyper-parameter tuning, we use the script provided\nin https://github.com/google-research/google-research/tree/",
+      "contributors": [
+        "Bilal Novak",
+        "Linnea Yamada",
+        "Rosa Mensah",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C087",
+          "type": "dependency_date_drift",
+          "projects": [
+            "muNet",
+            "ials",
+            "aptamers_mlpd",
+            "loss_functions_transfer"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "icetea",
+      "title": "Images as Covariates in Estimation of Treatment Effects Analysis (ICETEA)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Images as Covariates in Estimation of Treatment Effects Analysis (ICETEA)\n\nIn this project, we investigated the use of ML models for estimating treatment\neffects. Benchmarking causal inference methods is challenging, and after our\ninitial analysis, we identified a need for a new benchmark with a reasonable\ncausal story and a clear need for ML models. Thus, we proposed a new\nsemi-synthetic benchmark based on images and performed experiments using retinal\nfundus images. Recent evidence suggests retinal fundus images are\ncorrelated with general vascular conditions, which affects several medical\nconditions. Therefore, it is reasonable to consider include retinal\nimages to make a confounder adjustment to study causal effects.\n\n## Summary\n\nThis repo contains:\n\n-   A `README.md` that contains the current status, list of existing files, and\nexample on how to run the code.\n-   file/directory structure:\n\n-   `train.py` : Code for training/evaluating the model.\n-   `utils.py' : Code for data simulation, and to run the experiments.\n-   `estimators.py': Implementation of the estimators.\n-   `config.py`: Organize the parameters.\n-   `beam_utils.py': Functions to run beam pipeline.\n-   `ukb.py`: Functions to pre process the UK Biobank Retinal Image data.\n-   `ukb_utils.py`: Auxiliary methods of the ukb.py\n\n-   Datasets:\n\n-   IHDP: We adopt the same datasets from CEVAE's paper.\n[Source url](https://github.com/AMLab-Amsterdam/CEVAE/tree/master/datasets/IHDP/csv)\n-   ACIC: Download datasets\n[link](https://sites.google.com/corp/view/acic2019datachallenge/home)\n\nNote: The ukb.py has dependen",
+      "contributors": [
+        "Halima Toure",
+        "Tereza Aliyev",
+        "Nikhil Abebe",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C011",
+          "type": "duplicate_effort",
+          "projects": [
+            "icetea",
+            "On_Combining_Bags_to_Better_Learn_from_Label_Proportions"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ieg",
+      "title": "-   IEG:",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Source Code of Meta Sample Re-weighting for Robust Training\n\nThis repository contains tensorflow code for the following works\n\n-   IEG:\n[Distilling Effective Supervision from Severe Label Noise](https://arxiv.org/pdf/1910.00701.pdf),\nCVPR2020\n\n-   FSR:\n[Learning Fast Sample Re-weighting Without Reward Data](https://arxiv.org/pdf/2109.03216.pdf),\nICCV2021\n\nThis is not an officially supported Google product.\n\n## Install\n\n-   Use a virtual environment\n\n```\nvirtualenv -p python3 --system-site-packages iegenv\nsource iegenv/bin/activate\n```\n\n-   Install packages\n\n```\npip3 install -r requirements.txt\n```\n\n## Run Experiments of IEG\n\n### Train on CIFAR\n\nTrain the model with 20%, 40, and 80% uniform noise ratios on CIFAR100. You can\ngo to higher noise ratio, e.g. 95%, with the following command.\n\n```bash\nSAVEPATH=./ieg/checkpoints\n\nGPU=0\nfor ratio in 0.2 0.4 0.8; do\nCUDA_VISIBLE_DEVICES=${GPU} python -m ieg.main --dataset=cifar100_uniform_${ratio}\\\n--network_name=wrn28-10 --checkpoint_path=$SAVEPATH &\nGPU=$((GPU + 1))\ndone\n```\n\n#### Useful training setting options\n\n-   CIFAR10 with uniform noise: `--dataset=cifar10_uniform_${ratio}`.\n\n-   CIFAR10 with asymmetric noise: `--dataset=cifar10_asymmetric_${ratio}`.\n\n-   ResNet29 architecture, set `--network_name=resnet29`.\n\n-   Data augmentation. The default strong augmentation is AutoAugment. You can\nchange to RandAugment by `--aug_type=randaug`. The performance should be on\npar. See discussion in the paper.\n\n-   MultiGPU is supported by simply `CUDA_VISIBLE_DEVICES=,,...`.\n\n-   The two key hyperparameters for unsupervsied losses is con",
+      "contributors": [
+        "Tereza Aliyev",
+        "Bilal Novak",
+        "Chiara Olsen",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C032",
+          "type": "duplicate_effort",
+          "projects": [
+            "ieg",
+            "lego"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "igt_optimizer",
+      "title": "Reducing the variance in online optimization by transporting past gradients",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Reducing the variance in online optimization by transporting past gradients\n\nThis directory contains a TensorFlow implementation of an Implicit Gradient\nTransport optimizer using Anytime Average. For details, see [Reducing the\nvariance in online optimization by transporting past gradients](https://arxiv.org/abs/1906.03532).\n\n## Implementation details\nThe optimizer relies on a gradient extrapolation (the gradient is not computed\nas the parameter values). The present implementation relies on the variables\ncontaining the shifted parameters. The true parameters are instead contained in\nassociated slots. This is an important distinction, especially when considering\nwhether the learning curves are for the true or the shifted paramemeters.\n\n## Code overview\nThe experimental framework is centered on a fork of the\n[Cloud TPU resnet code](https://github.com/tensorflow/tpu/tree/master/models/official/resnet)\nfrom May 2019.\n\n`resnet_main.py` is the main executable. Important flags are:\n\n* `mode`, which offers a special `eval_igt` mode for evaluating an IGT model at\nthe true parameters (vs shifted ones). This value should be used in conjunction\nwith the `igt_eval_mode` and `igt_eval_set` flags.\n* `optimizer`, for setting the optimizer\n* `igt_optimizer`, for setting the optimizer to use in conjunction with IGT\n* `tail_fraction`, for setting IGT's any time average data window\n* `lr_decay` and `lr_decay_step_fraction`\n\n`dump_metrics_to_csv.py` is used to convert the learning curves from their\nTensorFlow summary format to an easier to consume csv format.\n\n## Citation\nIf you use this code ",
+      "contributors": [
+        "Emeka Pinto",
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C002",
+          "type": "duplicate_effort",
+          "projects": [
+            "depth_and_motion_learning",
+            "igt_optimizer"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ime",
+      "title": "IME: Interpretable Mixture of Experts",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# IME: Interpretable Mixture of Experts\n\nIME consists of a group of interpretable experts and an assignment module which puts weights on different experts.\nThe assignment module can either be an interpretable model like a linear model or a black box model like an LSTM.\nDuring inference time each sample is assigned to a single expert.\n\n## Data\n\nThe datasets can be obtained and put into `data/` folder in the following way:\n* [Electricity dataset] in \"data/ECL\" run `process_ecl.py`\n* [Rossmann dataset] download train.csv and store.csv from https://www.kaggle.com/c/rossmann-store-sales/data insert dataset in folder \"data/Rossmann\" and than run `process_rossmann.py` in \"data/Rossmann\"\n\n## Requirements\n\n- Python 3.6\n- numpy == 1.21.4\n- pandas == 1.3.5\n- scipy == 1.7.3\n- scikit-learn == 1.0.1\n- torch == 1.4.0\n- torchvision == 0.5.0 -f https://download.pytorch.org/whl/cu100/torch_stable.html\n- matplotlib == 3.5.1\n\nDependencies can be installed using the following command:\n```bash\npip install -r requirements.txt\n```\n## Usage\n- Commands for training and testing the model IME with white box assignment module and black box assignment module respectively on Rossman:\n\n```bash\npython main.py --model IME_WW --data Rossmann --num_experts 20 --learning_rate 0.0001 --learning_rate_gate 0.001 --utilization_hp 1 --smoothness_hp 0.01 --diversity_hp 0\n\npython main.py --model IME_BW --data Rossmann --num_experts 20 --learning_rate 0.0001 --learning_rate_gate 0.001 --utilization_hp 1 --smoothness_hp 0.01 --diversity_hp 0\n\n```\n- Scripts for Rossmann and electricity experiments can be found in `scrip",
+      "contributors": [
+        "Kaia Wolde",
+        "Amara Okafor",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C110",
+          "type": "duplicate_effort",
+          "projects": [
+            "ime",
+            "dvrl"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "imghum",
+      "title": "imGHUM: Implicit Generative Models of 3D Human Shape and Articulated Pose",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# imGHUM: Implicit Generative Models of 3D Human Shape and Articulated Pose\n\n*The first two authors contributed equally.\n\n## Introduction\n\n## Features and Applications\n### Implicit Generative 3D Human Shape, Facial Expression and Articulated Pose\nimGHUM generalizes well to novel shapes and poses, sharing the generative latent space with GHUM for 3D human shape, facial expression, articulated body and hand pose. We provide gender-neutral and gender-specific imGHUM models of the full body, head, left and right hand. The implicit semantics returned by imGHUM allows e.g. for surface coloring or texturing.\n\n### Point Cloud Reconstruction and Completion\nimGHUM enables differential and fast signed distance query for arbitrary spatial points.\n\n### imGHUM supports Inclusive Modeling as well as Clothing\nimGHUM is topology free which allows us to leverage it as an inner layer for building personalized and animatable human models.\n\n### imGHUM-based Differential Rendering for 3D Human Pose and Shape Reconstruction\nThe signed distance values and the spatial semantics returned from imGHUM support image reconstruction based on differentiable silhouette and landmark losses.\n\n## Paper\n[Paper and supplementary material](https://arxiv.org/abs/2108.10842)\n\n[Video](https://drive.google.com/file/d/1FOnjVMYc6abPg39BR7tM6hf3Z4JtgWhn/view?usp=sharing)\n\n## Model Download\n\n[imGHUM request form](https://docs.google.com/forms/d/e/1FAIpQLSduGNoQUQxaIwna944hdgsX7m9bSM4aqh2YDXD02V2VfNnP9g/viewform)\n\n## Citations\nIf you use this model or code for your publication, please cite the following papers [1](https:",
+      "contributors": [
+        "Yara Jokic",
+        "Efe Lindqvist",
+        "Farah Haddad",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C015",
+          "type": "dependency_date_drift",
+          "projects": [
+            "gradient_based_tuning",
+            "imghum",
+            "cola",
+            "hierarchical_foresight"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "imp",
+      "title": "MAX & IMP",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MAX & IMP\n\nThis is the official code release for [Alternating Gradient Descent and Mixture-of-Experts for Integrated Multimodal Perception](https://arxiv.org/abs/2305.06324), published in NeurIPS 2023.\n\nSee [this notebook](https://github.com/google-research/google-research/blob/master/imp/max/notebooks/examples.ipynb) for comprehensive examples.\n\n## Running Instructions\nTo run any experiment (train/evaluation/inference) from terminal, simply run the following:\n\n```\npython3 -m max.projects.imp.main --config_name=name_of_the_config_of_interest\n```\n\n### Reproducing the Main IMP Experiments\nTo reproduce the main experiments (Table 1), please refer to the corresponding configuration files [here](https://github.com/google-research/google-research/blob/master/imp/max/projects/imp/config/experiment.py):\n\nModel      |   PPT   |   IN1k   |   C100   |   K400   |   K600   |     K700   |   UCF101   |   HMDB51   |   ESC50    |          Train Config Name         |          Eval Config Name\n:--------: | :-----: | :------: | :------: | :------: | :------: | :--------: | :--------: | :--------: | :--------: | :--------------------------------: | :---------------------------------:\nIMP-B      |   86M   |   80.5   |   82.4   |   63.6   |   62.1   |    49.9    |    64.2    |    39.7    |    32.8    |        `imp_base.all.train`        |        `imp_base.all.eval`\nIMP-MoE-B  |   90M   |   83.2   |   84.9   |   68.2   |   65.7   |    52.1    |    88.7    |    46.6    |    47.8    |  `sparse_moe_imp_base.all.train`   |   `sparse_moe_imp_base.all.eval`\nIMP-MoE-L  |  350M   | **83.9** | **87.0** |",
+      "contributors": [
+        "Csilla Nassar",
+        "Jorge Vidal",
+        "Tereza Aliyev",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C109",
+          "type": "gpu_double_booking",
+          "projects": [
+            "imp",
+            "marot"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "implicit_constrained_optimization",
+      "title": "Implicit Constrained Optimization",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Implicit Constrained Optimization\nCode for Implicit Constrained Optimization (ICO) as proposed in [Implicit rate-constrained optimization of non-decomposable objectives](https://arxiv.org/abs/2107.10960) by Abhishek Kumar, Harikrishna Narasimhan, and Andrew Cotter:\n```\n@inproceedings{kumar2021implicit,\ntitle={Implicit rate-constrained optimization of non-decomposable objectives},\nauthor={Kumar, Abhishek and Narasimhan, Harikrishna and Cotter, Andrew},\nbooktitle={International Conference on Machine Learning},\npages={5861--5871},\nyear={2021},\norganization={PMLR}\n}\n```\n\nThe paper proposes a method for optimizing non-decomposable rate metrics with a certain thresholded form, while constraining another metric of interest. Such problems include optimizing the false negative rate (FNR) at a fixed false positive rate (FPR), optimizing precision at a fixed recall, optimizing the area under the precision-recall (AUC-PR) or ROC curves (AUC-ROC), etc. The key idea in the method is to formulate a rate-constrained optimization that expresses the threshold parameter (that acts on the model predictions to classify positive vs negative class) as a function of the model parameters via the Implicit Function theorem.\n\n## Example Usage\n\n### Optimizing FNR at a fixed FPR\n\nTo optimize for false negative rate (FNR) at a fixed false positive rate (FPR) for a CelebA attribute (binary classification problem) using the proposed method, run\n\n```\npython -m implicit_constrained_optimization.train_celeba_fnr_at_fpr --logtostderr --method ico \\\n--attr $ATTR --sigmoid_temp $SIG_TEMP --target_fpr $TARGET_F",
+      "codename": "Project Sirocco",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Fumiko Rossi",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C134",
+          "type": "codename_collision",
+          "projects": [
+            "aloe",
+            "implicit_constrained_optimization"
+          ],
+          "shared_object": "Project Sirocco",
+          "canonical": {
+            "codename": "Project Sirocco"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Sirocco."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "implicit_pdf",
+      "title": "Implicit Representation of Probability Distributions on the Rotation Manifold",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Implicit Representation of Probability Distributions on the Rotation Manifold\n\n[Project Page](https://implicit-pdf.github.io/) |\n[Paper](https://arxiv.org/abs/2106.05965)\n\nThis code accompanies the paper\n\n**Implicit Representation of Probability Distributions on the Rotation Manifold**\n\nKieran Murphy*, Carlos Esteves*, Varun Jampani, Srikumar Ramalingam, Ameesh Makadia\n\nICML 2021 ([arxiv](https://arxiv.org/abs/2106.05965))\n\n## Repository Contents\n\n## Python environment\nThe code was run successfully with Python 3.6.12.  The necessary libraries may\nbe installed using pip with the following line:\n\n`pip install -r implicit_pdf/requirements.txt`\n\n## Training a pose estimator from scratch\n\nThe following example call\n\n`python -m implicit_pdf.train --symsol_shapes cube --so3_sampling_mode random --number_fourier_components 4`\n\ntrains an IPDF pose estimator from scratch on the cube from the SYMSOL I dataset, with four positional encoding frequencies on the rotation query.\n\n## Reproducing SYMSOL results\nTo reproduce the SYMSOL1 results from the paper, use the following command line:\n\n`python -m implicit_pdf.train --symsol_shapes symsol1 --so3_sampling_mode random --num_fourier_components 3 --head_network_specs [256,256,256,256] --number_training_iterations 100000 --batch_size 128 --test_batch_size 1 --number_eval_queries 2000000`\n\nNote the resolution of the evaluation grid must be very high (more than 2 million points) to resolve the tightly-focused probability density well enough for correct evaluation.  For speed and memory considerations, you may want to evaluate with such a lar",
+      "contributors": [
+        "Yara Jokic",
+        "Nikhil Abebe",
+        "Katya Silva",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C127",
+          "type": "gpu_double_booking",
+          "projects": [
+            "implicit_pdf",
+            "neural_guided_symbolic_regression"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "infinite_nature",
+      "title": "Infinite Nature",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Infinite Nature\n[Project Page](https://infinite-nature.github.io/) |\n[Paper](https://arxiv.org/abs/2012.09855)\n\nThis code accompanies the paper\n\n**Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image** \\\nAndrew Liu, Richard Tucker, Varun Jumpani, Ameesh Makadia,\nNoah Snavely, Angjoo Kanazawa\n\n*Please note that this is not an officially supported Google product.*\n\n## Colab example\nThe notebook `infinite_nature_demo.ipynb`\n[[click to open in Google Colab](https://colab.research.google.com/github/google-research/google-research/blob/master/infinite_nature/infinite_nature_demo.ipynb)]\nshows how to setup and run our trained model, and includes a demo\nwith an interactive HTML frontend.\n\n## Instructions for running locally\n### Python Environment\n\nThe following code base was successfully run with Python 3.8.7. We suggest\ninstalling the library in a vitual environment as our code requires older\nversions of libraries. We recommend creating a virtualenv (or conda).\n\nTo install libraries using pip, run: \\\n`pip3 install -r requirements.txt`\n\n### BUILDING TF Mesh Renderer\n\nWe use the differentiable renderer from [here]\n(https://github.com/google/tf_mesh_renderer). We use gcc to build\nthe library instead of their Bazel instructions to make it compatible with\nTensorflow 2.0. To download and build:\\\n`source download_tf_mesh_renderer.sh`\n\n`tf_mesh_renderer` was originally built for Tensorflow \\< 2.0.0, however we have\nprepared a small patch which upgrades the functions we use to work in\nTensorflow 2.2.0. This means that the other parts of tf_mesh_renderer are st",
+      "contributors": [
+        "Farah Haddad",
+        "Oyin Iversen",
+        "Kaia Wolde",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C103",
+          "type": "gpu_double_booking",
+          "projects": [
+            "graph_sampler",
+            "infinite_nature"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    }
+  ]
+}

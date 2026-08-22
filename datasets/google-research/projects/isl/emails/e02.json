@@ -1,0 +1,45 @@
+{
+  "id": "gr/isl/e02",
+  "thread_id": "gr/isl/t2",
+  "in_reply_to": null,
+  "date": "2026-05-19T14:40:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "ISL staffing + leaderboard scope",
+  "body": "Dmitri — staffing and scope. Core: Csilla 50% (ISL modeling), Linnea 40% (partner-dataset evaluation), Rafael 30% through June (self-supervised setting). The addition we agreed: adoption needs a visible comparison surface — there's no internal service for this, so we're scoping and staffing a benchmark leaderboard service from scratch for structure-learning evals: run submission, SHD and edge-F1 rankings per dataset, and per-environment breakdowns. Jorge owns it at 60%. Compute: negligible (CPU plus occasional titan GPUs). Dependencies: partner tabular data goes through Corpus, and their schema intake pauses for the v2 migration freeze on 2026-07-10 — Linnea's ingestion request is filed this week to stay ahead of it. Privacy review for the partner dataset started Monday; the 2-3 week SLA fits if nothing bounces. — Alina",
+  "labels": [
+    "resources"
+  ]
+}

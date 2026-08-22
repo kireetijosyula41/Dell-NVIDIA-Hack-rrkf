@@ -1,0 +1,12 @@
+{
+  "project": "gr/language_model_uncertainty",
+  "conflicts": [
+    {
+      "conflict_id": "C021",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["model_pruning"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Vera Egede is allocated at 60% to this project for May 2026 — she owns the calibration-set construction and the conformal threshold tuning, and I've locked that in the staffing plan."
+    }
+  ]
+}

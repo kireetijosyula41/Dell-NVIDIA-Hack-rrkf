@@ -1,0 +1,12 @@
+{
+  "project": "gr/demogen",
+  "conflicts": [
+    {
+      "conflict_id": "C063",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["latent_programmer"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "e02: \"Idris has verbally earmarked the full $120k available on Q3 discretionary compute budget line B-81 for demogen - that is the whole line, and it covers the model-zoo training in May and June.\" e04: \"the $120k on Q3 discretionary compute budget line B-81 is ours for Q3, as you confirmed verbally back in April.\""
+    }
+  ]
+}

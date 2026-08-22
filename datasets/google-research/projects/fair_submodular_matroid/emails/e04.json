@@ -1,0 +1,40 @@
+{
+  "id": "gr/fair_submodular_matroid/e04",
+  "thread_id": "gr/fair_submodular_matroid/t2",
+  "in_reply_to": "gr/fair_submodular_matroid/e03",
+  "date": "2026-05-13T15:55:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Status: Pokec repro matches, internal logs bind harder",
+  "body": "Umar, all — wrapping decisions for the window.\n\nWe take the integration proposal to the May 21 pre-read as per-surface opt-in: surfaces adopt the fair selector where the measured utility cost clears their quality bar, with the 8-9% worst-case number stated up front rather than the blended average. Freya's config-generation tool is in scope — manual matroid config would kill adoption, worth the extra week.\n\nFumiko, the pre-read needs the per-surface table plus the Pokec repro as an external-validity anchor.\n\nTwo carries into Q3: the shadow test on live traffic and the log-replay benchmark at full scale, both funded from the discretionary line Ivo secured. I'll ask Nadia for a Launch Review Board slot early in Q3.\n\nGood, disciplined quarter.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

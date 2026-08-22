@@ -1,0 +1,19 @@
+{
+  "id": "gr/dot_vs_learned_similarity/e01",
+  "thread_id": "gr/dot_vs_learned_similarity/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: dot-product vs learned similarity for the recs scorer",
+  "body": "Team,\n\nKicking off the scorer bake-off. Motivation: our open-source release showed that a well-tuned matrix factorization with plain dot-product scoring matches or beats learned MLP similarity under the standard NCF evaluation protocol — and dot products let us serve retrieval with ANN indexes, which learned similarity can't do cheaply. If the result holds on our internal traffic, we simplify the serving stack considerably.\n\nPlan: reproduce on MovieLens ml-1m and Pinterest first (embedding dims 16 through 192, 8 repeats each, mean reported), then rerun the sweep on the internal engagement corpus in early June. Decision memo to leadership before Q3 OKR lock on June 26.\n\nDaniela owns feasibility and the compute ask — over to her.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

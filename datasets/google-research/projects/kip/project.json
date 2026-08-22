@@ -1,0 +1,18 @@
+{
+  "id": "gr/kip",
+  "title": "Dataset Metalearning from Kernel Ridge-Regression",
+  "summary": "Implements the Kernel Inducing Points (KIP) and Label Solve (LS) algorithms for distilling datasets down to tiny synthetic training sets, plus released distilled datasets built with infinitely wide convolutional networks. Meridian wants distilled corpora as a fast-iteration and data-minimization layer in the data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": ["Kaia Wolde", "Yara Jokic", "Chiara Olsen"],
+  "window": {"start": "2026-04-20", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "kip",
+    "url": "https://github.com/google-research/google-research/tree/master/kip",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/layout-blt/e03",
+  "thread_id": "gr/layout-blt/t2",
+  "in_reply_to": null,
+  "date": "2026-06-08T15:14:00Z",
+  "from": {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "BLT status: RICO/PubLayNet reproduced, refinement-loop latency trade-off",
+  "body": "Hi Dmitri, Deshawn,\n\nStatus. Reproduction milestone closed May 13: training from the released configs matches published layout-quality metrics on both RICO and PubLayNet. Emeka's JSON converters handle all four datasets now; Magazine was the fiddly one.\n\nConstraint-conditioned generation is working on the internal template schema ahead of the Jun 19 demo. Qualitatively it's exactly the pitch: fix the logo and table positions, BLT drafts the rest, then iterative refinement cleans up overlaps. Oyin's schema mapping covers 87% of production template elements; the rest fall back to a generic box type.\n\nTrade-off to decide before the demo: refinement depth. At 8 refinement iterations we get clean layouts in ~180ms; at 20 iterations quality metrics improve another ~6% but latency hits 450ms, which feels laggy in the interactive editor. Recommend 8 for interactive with a \"polish\" button running 20 — but that's a product call, Dmitri.\n\nRisk: none blocking for Jun 19. Sweep configs on track to freeze Jun 30.\n\nWanjiru",
+  "labels": ["status", "risk"]
+}

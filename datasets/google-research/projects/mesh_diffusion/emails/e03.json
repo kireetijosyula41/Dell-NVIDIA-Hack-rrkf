@@ -1,0 +1,18 @@
+{
+  "id": "gr/mesh_diffusion/e03",
+  "thread_id": "gr/mesh_diffusion/t1",
+  "in_reply_to": "gr/mesh_diffusion/e02",
+  "date": "2026-05-06T14:19:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Mesh Diffusion kickoff — status + preprocessing bottleneck",
+  "body": "Status:\n\n- End-to-end sampling worked on 04-08: FLVAE + FLDM checkpoint dirs wired per the released config (trainer_checkpoint_dir / model_checkpoint_dir), labels read from the ply file, textures land in the output dir. Linnea's samples on the demo meshes look genuinely production-quality.\n- The catch: preprocessing. Artist meshes are messier than the curated ones — non-manifold edges and degenerate triangles break the field-latent preprocessing step on 2 of the first 6 meshes we tried. Maren has a repair pass (remeshing + label reprojection) that fixes one; the other needs manual cleanup, which artists won't tolerate at scale.\n\nRisk for the 06-08 pilot: we can hit it if we pre-screen meshes and are upfront that ~1 in 5 needs manual prep. Longer-term fix is a robust remesher, which is real engineering — proposing it as the Q3 follow-on rather than cramming it in.\n\nAlso: single-mesh training means each new mesh family wants its own FLDM — worth setting artist expectations now.\n\nHyun",
+  "labels": ["status", "risk"]
+}

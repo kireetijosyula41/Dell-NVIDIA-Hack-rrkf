@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_instructions",
+  "title": "Privacy-preserving Instructions for Aligning LLMs",
+  "summary": "Applies our privacy-preserving instruction pipeline to alignment: DP fine-tuning of LLaMA-class models on Chatbot Arena instructions, sampling synthetic instructions, resampling them with a DP histogram, and supervised fine-tuning on the resulting (instruction, response) pairs.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Amara Okafor", "Linnea Yamada", "Yara Jokic", "Hyun Traore"],
+  "window": {"start": "2026-03-16", "end": "2026-06-08"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dp_instructions",
+    "url": "https://github.com/google-research/google-research/tree/master/dp_instructions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

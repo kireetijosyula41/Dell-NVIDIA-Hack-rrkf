@@ -1,0 +1,16 @@
+{
+  "id": "gr/loss_functions_transfer/e01",
+  "thread_id": "gr/loss_functions_transfer/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:35:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [{"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}],
+  "subject": "Kickoff: loss-function guidance for transferable embeddings",
+  "body": "Hi all,\n\nKicking off the loss-functions-transfer study. Background: our open-source release showed that loss functions which improve a model's own accuracy often make its features *less* transferable, with checkpoints and SavedModels published for every loss variant. That tension is exactly the trap our embedding teams keep walking into — they tune the training loss for the source task and then wonder why downstream retrieval transfer degrades.\n\nGoal: turn the released models + loss implementations into concrete guidance (\"use loss X when the embedding must transfer, loss Y when it's single-task\") validated on our own transfer suite.\n\nMilestones: Apr 24 released SavedModels loaded and penultimate-layer features extracted; May 29 transfer evals across our internal task suite; Jun 26 guidance doc + readout.\n\nAlina owns staffing. Yusuf is research lead.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

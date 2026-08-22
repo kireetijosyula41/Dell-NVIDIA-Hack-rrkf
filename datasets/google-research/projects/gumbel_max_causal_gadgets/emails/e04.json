@@ -1,0 +1,18 @@
+{
+  "id": "gr/gumbel_max_causal_gadgets/e04",
+  "thread_id": "gr/gumbel_max_causal_gadgets/t2",
+  "in_reply_to": "gr/gumbel_max_causal_gadgets/e03",
+  "date": "2026-06-29T15:31:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status: repro done, variance wins hold, one scope boundary",
+  "body": "Team,\n\nDecisions going into pilot month:\n\n1. Pilot is GO for July. Privacy review cleared 6/24 with one condition - counterfactual queries run against a hashed snapshot, not live logs - which Emeka says costs us a day of plumbing. Acceptable.\n2. Pilot scope: Gadget 2 only. Giannis's reruns show it dominating on the non-uniform mechanisms that actually occur in the decision system, and one gadget keeps Wei's July hours focused. Gadget 1 stays available in the API but out of the pilot report.\n3. The audit report template will state the two-gadget scope boundary and cite the companion-repo limitation, per Giannis's note.\n4. Review moves from 7/9 to 7/10 to avoid colliding with the portfolio all-hands.\n\nWei - the pilot is yours to run; everyone else protects your calendar. Let's find out if the variance numbers survive contact with a real audit question.\n\nXimena",
+  "labels": ["decision"]
+}

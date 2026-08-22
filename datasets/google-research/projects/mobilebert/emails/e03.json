@@ -1,0 +1,46 @@
+{
+  "id": "gr/mobilebert/e03",
+  "thread_id": "gr/mobilebert/t1",
+  "in_reply_to": "gr/mobilebert/e02",
+  "date": "2026-05-20T10:40:00Z",
+  "from": {
+    "name": "Amara Okafor",
+    "email": "amara.okafor@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MobileBERT on-device NLU — May status + int8 risk",
+  "body": "Hi both,\n\nStatus: Vera's SQuAD V1.1 fine-tune reproduction matches the released numbers (F1 within 0.2 of reference). The float32 SavedModel converts to tf.lite cleanly at sequence length 384 and runs on the full device farm.\n\nThe risk is the int8 path. Quantized conversion works, but on the 6 new mid-tier handsets we see an F1 drop of 1.9 points versus float32 — double what the release notes led us to expect — and latency on the two cheapest devices is 340 ms per query against our 250 ms budget. Efe traced most of the quality gap to the bottleneck layers being sensitive to per-tensor quantization; per-channel helps but isn't supported by one of the target delegates.\n\nOptions: (a) ship float16 on low-end and int8 elsewhere, (b) quantization-aware fine-tune in the July sweep. (b) is better long-term and Vera says the sweep has capacity for it.\n\nAmara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

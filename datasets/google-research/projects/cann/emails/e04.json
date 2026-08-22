@@ -1,0 +1,19 @@
+{
+  "id": "gr/cann/e04",
+  "thread_id": "gr/cann/t1",
+  "in_reply_to": "gr/cann/e03",
+  "date": "2026-06-25T16:00:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: CANN - decision: pilot yes, compression first",
+  "body": "Decisions ahead of the M3 writeup, and locking these into Q3 OKRs today given the planning deadline:\n\n1) Pilot: GO with the logistics customer, but scoped to two site wings, not the full survey - that keeps us inside one serving node at current index sizes while the memory work lands.\n\n2) Of Linnea's three options, compression first. Quentin's quick experiment (PQ at 8x on the vectors) cost only 0.9 recall@1 points on Baidu-Mall, and since the framework is feature-type-agnostic it slots in cleanly. Subsampling stays as the fallback; sharding-per-wing is the deployment pattern regardless.\n\n3) M3 report includes the half-TB-per-site math prominently. I want the serving-hardware conversation to happen with real numbers, not vibes, when we bring Zeke's team in next quarter.\n\nQ3 committed OKR: pilot live at two wings with recall@1 within 3 points of the uncompressed reference. Stretch: full-site index under 150GB.\n\nGreat window so far, team.\n\nLucia",
+  "labels": ["decision"]
+}

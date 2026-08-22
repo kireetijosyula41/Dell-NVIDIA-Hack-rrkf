@@ -1,0 +1,18 @@
+{
+  "id": "gr/multi_game_dt/e03",
+  "thread_id": "gr/multi_game_dt/t1",
+  "in_reply_to": "gr/multi_game_dt/e02",
+  "date": "2026-04-29T11:33:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: MGDT kickoff — April status + a data loader risk",
+  "body": "Hi both,\n\nStatus: offline dataset ingest is done for 41 of 46 games; the last five have replay logs with a schema quirk I'm normalizing this week. Medium-scale training started Monday and the early curve looks healthy — we're tracking the offline-RL vs behavioral-cloning comparison from the paper and, as expected, the decision-transformer objective is the most stable of the three at this scale.\n\nYara's first fine-tuning probe: adapting the medium checkpoint to a held-out game with ~1% of its data recovers 78% of the single-game specialist's score. Encouraging for the recipe pitch.\n\nRisk: loader throughput. At the June config the current pipeline feeds about 60% of what 256 accelerators will eat. Wanjiru is sharding the trajectory decode; if we don't hit 95%+ utilization in the May dress rehearsal, the scaling run needs either more days or fewer ablations.\n\nVera",
+  "labels": ["status", "risk"]
+}

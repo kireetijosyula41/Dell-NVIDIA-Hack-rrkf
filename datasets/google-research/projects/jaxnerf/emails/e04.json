@@ -1,0 +1,15 @@
+{
+  "id": "gr/jaxnerf/e04",
+  "thread_id": "gr/jaxnerf/t2",
+  "in_reply_to": "gr/jaxnerf/e03",
+  "date": "2026-06-10T10:15:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: Meltwater status: pipeline live, render latency is the open risk",
+  "body": "Decision made — thanks for laying out the options crisply, Katya.\n\nWe go with (a): pre-rendered camera paths with video-scrub interaction for the June 24 Launch Review Board dry run. Free-viewpoint rendering moves to a fast-follow investigation; I'm not putting a 2.65s/frame interaction in front of the board and calling it immersive. Please budget the extra Cirrus night-slots to pre-render 12 hero scenes at 800x800.\n\nScope cut to make room: the glossy-SKU capture expansion (120-photo protocol) slips past this window — we demo the 20 matte scenes that already meet the PSNR bar.\n\nNadia, adding you so the LRB packet reflects this: demo is scripted-path view synthesis, training story is the 2.5-hour TPU fit time, and the interactivity roadmap is listed as future work.\n\nLucia",
+  "labels": ["decision", "escalation"]
+}

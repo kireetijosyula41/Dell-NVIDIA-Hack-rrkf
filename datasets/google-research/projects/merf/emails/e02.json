@@ -1,0 +1,15 @@
+{
+  "id": "gr/merf/e02",
+  "thread_id": "gr/merf/t1",
+  "in_reply_to": "gr/merf/e01",
+  "date": "2026-04-29T13:12:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: MERF kickoff — compute + staffing",
+  "body": "Zofia,\n\nAs requested, the resourcing picture:\n\nStaffing — Yara 50% (TL, training + quality), Milan 40% on the baking pipeline and viewer, Leilani 30% on the serving/embedding side via Shipyard. Lean but sufficient for three milestones.\n\nCompute — May reproduction runs fit titan-a100 best-effort (16 GPUs per scene, 9 mipnerf360 scenes, staggered). The crunch is June: the full baking-validation sweep needs concentrated capacity, so we hold the vulcan-h100 reservation — 128 accelerators for the week of 2026-06-15 — to retrain + bake all scenes at final settings in one pass ahead of the 06-19 milestone. Reservation is confirmed in the sheet.\n\nStorage is trivial by our standards (baked scenes are the whole point — tens of MB each).\n\nOne flag: browser viewer perf testing needs real consumer GPUs, not datacenter cards; Leilani is procuring two test rigs.\n\nJelena",
+  "labels": ["resources"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/lego",
+  "conflicts": [
+    {
+      "conflict_id": "C032",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["ieg"],
+      "planted_in": ["e02"],
+      "claim_as_written": "there's no existing tooling that covers multi-hop QA scoring the way we need it, so we're standing up an internal evaluation harness from scratch — Bilal at 50% through May with Emeka pairing on the runner infrastructure."
+    }
+  ]
+}

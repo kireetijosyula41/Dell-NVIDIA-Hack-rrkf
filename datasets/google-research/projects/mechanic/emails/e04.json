@@ -1,0 +1,18 @@
+{
+  "id": "gr/mechanic/e04",
+  "thread_id": "gr/mechanic/t1",
+  "in_reply_to": "gr/mechanic/e03",
+  "date": "2026-04-27T15:40:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Mechanic kickoff — rollout decision",
+  "body": "Team,\n\nPlatform review outcome, so we're all working from the same page:\n\n1) Approved: Mechanic ships default-on for workloads with batch size >= 128, opt-in below that, exactly per Rafael's recommendation. The startup assertion on base LR = 1.0 is a launch blocker — Wanjiru's check goes in before the flag flips.\n2) The small-batch oscillation gets a Q3 research follow-up under Efe; we're not holding rollout for it.\n3) May is execution month: Paloma runs the integration through the platform release train at her committed 60%+ allocation, with Wanjiru backing her up. Santiago, please keep her calendar defended — the ranking-team result means everyone suddenly wants a piece of this.\n\nI'll present the sweep-compute savings estimate (~2,100 GPU-hours/quarter) at the portfolio review.\n\nGreat half, team.\n\nXimena",
+  "labels": ["decision"]
+}

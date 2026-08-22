@@ -1,0 +1,12 @@
+{
+  "project": "gr/covid_epidemiology",
+  "conflicts": [
+    {
+      "conflict_id": "C024",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["cell_embedder", "experience_replay", "CardBench_zero_shot_cardinality_training"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Jun's team holds the Corpus v2 migration freeze at 2026-07-10, and I've built the ingest schedule around that date - everything we need from Corpus has to be in before 2026-07-10 or it waits for the other side of the migration."
+    }
+  ]
+}

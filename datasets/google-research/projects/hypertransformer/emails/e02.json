@@ -1,0 +1,18 @@
+{
+  "id": "gr/hypertransformer/e02",
+  "thread_id": "gr/hypertransformer/t1",
+  "in_reply_to": "gr/hypertransformer/e01",
+  "date": "2026-04-28T14:11:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: HyperTransformer kickoff - staffing, compute, dataset caches",
+  "body": "Lucia,\n\nResourcing:\n\n- Staffing: Vera 60%, Saoirse 40%, Carmen 50%. Stable through July 13.\n- Compute: transformer training runs fit on 32 titan-a100 best-effort; the semi-supervised sweeps in June push us to ~64 for three weeks. I don't think we need a Vulcan reservation; will revisit if best-effort queues get ugly.\n- Data: the trainer consumes datasets as saved NumPy caches (omniglot, miniImageNet, tieredImageNet). Saoirse is rebuilding those caches on Corpus rather than using ad-hoc copies. Timing matters: per Jun Varga, the Corpus v2 migration freeze is 2026-07-10, so all three dataset caches must be regenerated on v2 paths before that date - I've put the cache work at the front of Saoirse's queue, target end of May, so we're not touching migration anywhere near our July close.\n\nNo budget asks. One risk: miniImageNet raw pickles come from an external mirror; Saoirse is archiving them internally this week.\n\nDeshawn",
+  "labels": ["resources"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/attribute_with_prefixlm/e03",
+  "thread_id": "gr/attribute_with_prefixlm/t1",
+  "in_reply_to": "gr/attribute_with_prefixlm/e02",
+  "date": "2026-06-05T09:47:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: ArtVLM attribute recognition for catalog enrichment",
+  "body": "Status on eval, plus a risk.\n\nVGARank-Attribute harness is live in Evalline. Prefix-LM scoring beats our contrastive baseline by 4.1 points mean average precision on attribute ranking; on VGARank-Object we're up 2.8. Csilla's ablation confirms most of the gain comes from modeling the object-attribute dependency directly rather than scoring them independently, consistent with the paper.\n\nRisk: instance-level annotation density. Because VGARank annotates per bounding box, one image can contribute many instances, and our catalog images average far fewer boxes per image than Visual Genome. On a held-out catalog sample the transfer gap is ~7 points. Kaia is testing whether pseudo-labeling with the negative prompts ([obj, att, 0] entries) closes it.\n\nMore after next week's run.\n\nVera",
+  "labels": ["status", "risk"]
+}

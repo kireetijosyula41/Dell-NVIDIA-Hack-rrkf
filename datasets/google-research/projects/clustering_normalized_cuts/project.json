@@ -1,0 +1,26 @@
+{
+  "id": "gr/clustering_normalized_cuts",
+  "title": "Clustering by learning to optimize expected Normalized Cuts (CNC)",
+  "summary": "Applies CNC — clustering by learning to directly minimize a differentiable relaxation of the expected normalized cuts objective — to Meridian's retrieval-side corpus clustering, replacing the spectral clustering + k-means pipeline with an end-to-end trained model.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Farah Haddad",
+    "Umar Costa",
+    "Quentin Farkas",
+    "Wanjiru Horvat"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "clustering_normalized_cuts",
+    "url": "https://github.com/google-research/google-research/tree/master/clustering_normalized_cuts",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

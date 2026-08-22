@@ -1,0 +1,19 @@
+{
+  "id": "gr/cann/e02",
+  "thread_id": "gr/cann/t1",
+  "in_reply_to": "gr/cann/e01",
+  "date": "2026-04-23T14:10:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: CANN - staffing + data timing",
+  "body": "Lucia,\n\nStaffing confirmed: Linnea 70% carrying the implementation, Quentin 50% on the recall/latency methodology, Chiara 50% on data plumbing (feature extraction jobs and the Eigen binary matrix format the index expects - one matrix per image, rows as d-dim vectors), Nikhil 25% TL as you said.\n\nCompute: CPU-heavy indexing, not GPU. I've requested a 64-vCPU pool; the only GPU use is FIRE feature extraction for the internal set, maybe 10 titan-a100 days total.\n\nHeads-up on data timing: the Corpus v2 migration freeze is 2026-07-24, so our indoor capture set needs to be ingested by mid-July at the latest. That's after our window closes, so ingestion can trail the M3 report without risk - I've sequenced Chiara's tickets accordingly.\n\nOne flag: the sample data download comes from an external Drive link; Chiara is mirroring it internally today so CI doesn't depend on it.\n\nDaniela",
+  "labels": ["resources"]
+}

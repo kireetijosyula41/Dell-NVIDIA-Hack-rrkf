@@ -1,0 +1,44 @@
+{
+  "id": "gr/general-pattern-machines/e04",
+  "thread_id": "gr/general-pattern-machines/t2",
+  "in_reply_to": "gr/general-pattern-machines/e03",
+  "date": "2026-05-12T15:50:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Saffron status: replication green, honest limits",
+  "body": "Team,\n\nSaffron scope decision for the Q3 pitch, agreed with Jelena:\n\nWe pitch offline trajectory augmentation for the robotics prototyping group — generating and extending candidate trajectories in batch, where seconds-per-action latency does not matter and context limits are manageable. We explicitly do not pitch online control; Yusuf's numbers make that case honestly and I want credibility with the robotics leads.\n\nEmeka's service prototype narrows to the batch API accordingly. Maren, the eval harness should report extrapolation quality against held-out trajectories — that is the pitch's proof point.\n\nPitch is May 20, 25 minutes with Hana. Draft to this thread by May 15.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

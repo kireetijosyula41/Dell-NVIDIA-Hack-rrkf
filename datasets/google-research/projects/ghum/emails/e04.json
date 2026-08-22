@@ -1,0 +1,15 @@
+{
+  "id": "gr/ghum/e04",
+  "thread_id": "gr/ghum/t2",
+  "in_reply_to": "gr/ghum/e03",
+  "date": "2026-05-28T16:33:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: Status: shape-space retraining + hand articulation risk",
+  "body": "Team,\n\nDecision: option (a). The launch asset ships body + face; hands are labeled experimental with the coverage caveat from Paloma's audit in the model card. Corrective training for hand articulation goes on the Q3 list - it is a better Q3 OKR than a rushed June feature.\n\nRationale: the 8% VAE-over-PCA reconstruction win plus joint shape/pose/expression sampling is already a clear story for the Launch Review Board, and Nadia confirmed we have the 6/4 slot. Adding a known-artifacty hand model risks the whole sign-off.\n\nQuentin, please get the eval table into the pre-read by 6/1. Alina, release the last week of the Vulcan reservation if we are not using it - no point burning the line down for idle GPUs.\n\nThanks all, good sprint.\nDmitri",
+  "labels": ["decision"]
+}

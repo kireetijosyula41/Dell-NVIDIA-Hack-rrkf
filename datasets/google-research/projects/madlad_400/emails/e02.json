@@ -1,0 +1,15 @@
+{
+  "id": "gr/madlad_400/e02",
+  "thread_id": "gr/madlad_400/t1",
+  "in_reply_to": "gr/madlad_400/e01",
+  "date": "2026-04-09T13:25:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Re: Project Saffron kickoff — resourcing",
+  "body": "Priya,\n\nSaffron resourcing:\n\nStaffing — Carmen 50% (research lead, bake-off design), Yara 30% (eval slices), Milan 50% and Paloma 40% on Shipyard serving + quantization. That mix holds through the LRB pre-read.\n\nCompute — bake-off inference for the 10.7B MT model needs 64 A100s on titan best-effort for roughly two weeks in May; no reservation required. If we later fine-tune the 7b-mt-bt variant on internal parallel data, that becomes a vulcan-h100 ask and I'll go through Ines with at least three weeks notice.\n\nServing — Zeke's team confirmed Shipyard staging capacity for one model at a time; the bake-off runs offline, so that's fine.\n\nOne flag: the 256k vocab makes naive int8 quantization of the embedding table painful; Milan is scoping it this sprint before we commit to latency numbers.\n\nBruno",
+  "labels": ["resources"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/jslm",
+  "title": "Adaptive Language Models in JavaScript",
+  "summary": "A collection of simple adaptive language models — headlined by a Prediction by Partial Matching (PPM) character model — cheap enough in memory and compute to train in a browser on the fly. Meridian is packaging it as on-device predictive text for accessibility input surfaces.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": ["Rafael Duran", "Hyun Traore", "Yara Jokic"],
+  "codename": "Project Basalt",
+  "window": {"start": "2026-04-06", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jslm",
+    "url": "https://github.com/google-research/google-research/tree/master/jslm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

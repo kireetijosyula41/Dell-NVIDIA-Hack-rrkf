@@ -1,0 +1,19 @@
+{
+  "id": "gr/camp_zipnerf/e04",
+  "thread_id": "gr/camp_zipnerf/t1",
+  "in_reply_to": "gr/camp_zipnerf/e03",
+  "date": "2026-04-23T15:10:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"}
+  ],
+  "subject": "Re: Kickoff: CamP Zip-NeRF - M3 decision: quality reference adopted, product track gated",
+  "body": "Closing the window. Decisions from the M3 review (Hana attended, cc'ing for the record):\n\n1) The CamP+Zip-NeRF stack is adopted as our scene-quality reference - the capture-robustness chart (4-6 dB loss without pose preconditioning vs. under 1.4 dB with CamP) was the deciding evidence.\n\n2) The customer-facing ingestion product is GATED, not green-lit. Milan's 14 A100-hours/scene number makes the unit economics unworkable; the product track only opens once an acceleration phase gets us under ~1 A100-hour/scene. That goes to Q3 planning as a proposal, not a commitment.\n\n3) Katya's synthetic-scene pipeline is explicitly called out in the report as reusable infrastructure - it stays maintained at 20% of her time next quarter.\n\nBicycle-scene rerun matched after the config fix, for the record, so the repro is fully clean.\n\nThanks all. Exactly what a reference-quality window should produce.\n\nDmitri",
+  "labels": ["decision"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/invariant_slot_attention",
+  "title": "Invariant Slot Attention",
+  "summary": "Applies Invariant Slot Attention — object discovery with slot-centric reference frames — across Tetrominoes through CLEVRTex and Waymo Open, toward unsupervised object inventories for partner image feeds.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Maren Zhou",
+    "Chiara Olsen",
+    "Bilal Novak"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "invariant_slot_attention",
+    "url": "https://github.com/google-research/google-research/tree/master/invariant_slot_attention",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/fisher_brc",
+  "conflicts": [
+    {
+      "conflict_id": "C097",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "metapose"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Linnea Yamada is committed at 60% to this project for July 2026 — the recommendation memo will trigger a follow-on evaluation round against our internal baselines, and July is when that lands, so I've locked her allocation now before Q3 planning eats everyone."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/class_balanced_distillation",
+  "title": "Class-Balanced Distillation for Long-Tailed Visual Recognition",
+  "summary": "Applies our Class-Balanced Distillation (CBD) two-stage training recipe to long-tailed internal image classification workloads, validated against the published ImageNet-LT and iNaturalist18 results, to lift tail-class accuracy without hurting head classes.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Linnea Yamada",
+    "Wanjiru Horvat",
+    "Tereza Aliyev",
+    "Fumiko Rossi"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "class_balanced_distillation",
+    "url": "https://github.com/google-research/google-research/tree/master/class_balanced_distillation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

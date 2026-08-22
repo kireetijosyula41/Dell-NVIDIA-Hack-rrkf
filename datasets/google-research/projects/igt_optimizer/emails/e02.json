@@ -1,0 +1,17 @@
+{
+  "id": "gr/igt_optimizer/e02",
+  "thread_id": "gr/igt_optimizer/t1",
+  "in_reply_to": "gr/igt_optimizer/e01",
+  "date": "2026-02-18T14:41:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IGT optimizer kickoff - staffing + evaluation harness build",
+  "body": "Ximena,\n\nResourcing:\n\n- Staffing: Efe 50%, Halima 40%, Emeka 60%, Bilal 40% through April 13.\n- Compute: multi-seed ResNet runs are the cost - 5 seeds x 4 optimizer configs. We'll use 32 titan-a100 best-effort; the released framework is a fork of TPU-era resnet code, and Emeka has it running fine on GPU.\n\nOne build item to be upfront about: we're standing up an internal evaluation harness from scratch for optimizer comparisons - multi-seed orchestration, variance-across-seeds metrics, and curve alignment that correctly handles IGT's true-vs-shifted parameter distinction (eval_igt mode evaluates at the true parameters stored in slots, and naive comparisons silently plot the shifted ones - we nearly got burned by that in week one). Nothing we have does seed-variance reporting properly, so Emeka owns the build at 60% with Bilal at 40%, about five weeks.\n\nThat harness is most of Emeka's allocation, but it's also the reusable artifact this project leaves behind.\n\nBao",
+  "labels": ["resources"]
+}

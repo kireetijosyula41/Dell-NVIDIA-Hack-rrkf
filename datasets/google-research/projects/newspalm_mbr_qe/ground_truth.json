@@ -1,0 +1,12 @@
+{
+  "project": "gr/newspalm_mbr_qe",
+  "conflicts": [
+    {
+      "conflict_id": "C035",
+      "type": "codename_collision",
+      "counterpart_projects": ["compositional_classification"],
+      "planted_in": ["e01"],
+      "claim_as_written": "Kicking off the NewsPaLM effort — internal codename is Project Kestrel, please use it in docs and OKR entries so the workstream is trackable across the portfolio."
+    }
+  ]
+}

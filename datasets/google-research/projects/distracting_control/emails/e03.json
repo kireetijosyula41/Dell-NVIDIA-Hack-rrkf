@@ -1,0 +1,51 @@
+{
+  "id": "gr/distracting_control/e03",
+  "thread_id": "gr/distracting_control/t1",
+  "in_reply_to": "gr/distracting_control/e02",
+  "date": "2026-05-27T11:14:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Distracting Control as our RL robustness gate",
+  "body": "Status, and one design question that needs an answer before the June sweep.\n\nIntegration: validated May 14. The demo generates correct sample images across tasks and difficulties, backgrounds pull from DAVIS as expected, and our agents run unmodified against the suite's dm_control-compatible API. Farah's nightly CI job is live on two smoke-test configurations.\n\nEarly signal from pilot runs: camera-pose distraction is by far the most damaging for our current agents -- at medium difficulty it costs 55-70% of clean-environment return, versus 20-30% for background video and under 15% for color changes.\n\nThe design question: dynamic backgrounds sample DAVIS videos, and seed handling determines whether two agents see identical distraction sequences. For a fair gate we need fixed seeds per benchmark cell. Amara has a patch; needs sign-off since it diverges from the released default behavior.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

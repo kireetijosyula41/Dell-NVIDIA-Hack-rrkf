@@ -1,0 +1,19 @@
+{
+  "id": "gr/imp/e04",
+  "thread_id": "gr/imp/t2",
+  "in_reply_to": "gr/imp/e03",
+  "date": "2026-07-15T16:29:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IMP status: decision - retrieval prototype goes ahead on MoE-B",
+  "body": "All,\n\nWrapping up ahead of the July 20 memo. The Vulcan week was bumpier than hoped - we lost roughly a day and a half at the start to allocation churn on the cluster, so the MoE-L run went out with the reduced-token-budget fallback. Even so: scaling held, with the L-scale checkpoint adding +2.1 cross-modal recall@10 over MoE-B on the internal set.\n\nDecisions:\n1. The multimodal retrieval prototype for Q3 builds on IMP-MoE-B - reproducible, well-characterized, cheap to serve. The L-scale result goes in the memo as scaling evidence, not as the serving target.\n2. AGD schedule sensitivity gets its own section; anyone scaling this further needs Csilla's ablation table first.\n3. Jorge writes up the allocation-churn incident for Ines's team - if we book full-week reservations we need them to actually start on day one.\n\nGood recovery under compute pressure. Memo draft to me by the 17th please.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

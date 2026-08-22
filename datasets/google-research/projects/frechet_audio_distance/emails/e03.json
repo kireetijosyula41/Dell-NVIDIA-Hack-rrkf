@@ -1,0 +1,36 @@
+{
+  "id": "gr/frechet_audio_distance/e03",
+  "thread_id": "gr/frechet_audio_distance/t2",
+  "in_reply_to": null,
+  "date": "2026-04-28T11:18:00Z",
+  "from": {
+    "name": "Hyun Traore",
+    "email": "hyun.traore@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "FAD status: Beam Python 2 blocker + panel validation",
+  "body": "Hi Santiago,\n\nStatus on the FAD port. The embedding path is done: we mirror the vggish_model.ckpt checkpoint internally and extraction matches the reference implementation bit-for-bit on our smoke set.\n\nThe blocker is the Beam pipeline: apache-beam at our pinned version does not support Python 3, so the whole scoring job runs in a Python 2 virtualenv. That is an EOL runtime and security will flag it at launch review.\n\nValidation is encouraging — on our enhancement distortion suite, FAD ranks systems in agreement with the listening panel on 9 of 10 pairs, versus 6 of 10 for the SDR baseline.\n\nProposal: budget two extra weeks to rewrite the pipeline against a Python 3 capable Beam release. Maren has a spike branch already.\n\nHyun",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

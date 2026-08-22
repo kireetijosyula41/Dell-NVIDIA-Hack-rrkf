@@ -1,0 +1,41 @@
+{
+  "id": "gr/microscope_image_quality/e01",
+  "thread_id": "gr/microscope_image_quality/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:15:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: microscope focus-quality QC for imaging partners",
+  "body": "Hi Daniela,\n\nKicking off the microscope image-quality track (window: Apr 20 – Jul 27). The asset is our open-source deep-learning focus-quality classifier (the BMC Bioinformatics method) plus the Focus_check script, which renders whole-plate montages per channel so a lab tech can eyeball data quality in one screen instead of clicking through thousands of sites.\n\nWhat the research unlocks as a product: an automated QC gate for the two imaging partners in the pipeline — bad-focus plates get flagged before anyone wastes a week of analysis on them.\n\nRough milestones: mid-May, Fiji macro packaging cleaned up (install flow is still \"edit the macro by hand\"); end of June, the montage pipeline running on partner plates; mid-July, public-facing benchmark of focus classifiers so partners can compare methods.\n\nCan you come back with staffing and any platform asks by May 1?\n\nThanks,\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

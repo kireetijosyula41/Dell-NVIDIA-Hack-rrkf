@@ -1,0 +1,18 @@
+{
+  "id": "gr/neutra/e04",
+  "thread_id": "gr/neutra/t1",
+  "in_reply_to": "gr/neutra/e03",
+  "date": "2026-05-27T15:19:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: NeuTra kickoff — release decisions",
+  "body": "Team,\n\nDecisions for the 06-08 release, from today's review:\n\n1. Ship with Umar's pilot-chain auto-banding as the default tuner path. The 10% runtime tax is the right trade for not exposing step-size bounds to users; power users can still set the band manually via config.\n2. Benchmark suite ships with funnel + calibration posterior #1. Posterior #2 goes in as \"experimental\" — the tuner fix works but has only a week of soak on it, and I'd rather label honestly than slip the date.\n3. Tereza's final data refresh is confirmed for this week per the March plan, so we release against the current pre-freeze Corpus snapshot with plenty of runway before the migration freeze.\n\nDocs review Thursday; Vera and Tereza, please have the affine-vs-IAF guidance section ready by then.\n\nNice quarter for a small team.\n\nZofia",
+  "labels": ["decision"]
+}

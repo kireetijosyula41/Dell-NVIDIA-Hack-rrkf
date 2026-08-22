@@ -1,0 +1,18 @@
+{
+  "id": "gr/hipi",
+  "title": "Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement",
+  "summary": "Implements Hindsight Inference for Policy Improvement (HIPI), which uses inverse RL to relabel past experience across tasks, generalizing goal-relabeling to arbitrary reward functions and accelerating multi-task RL sample efficiency.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Bruno Mbeki",
+  "contributors": ["Maren Zhou", "Tereza Aliyev", "Nikhil Abebe"],
+  "window": {"start": "2026-02-09", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hipi",
+    "url": "https://github.com/google-research/google-research/tree/master/hipi",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

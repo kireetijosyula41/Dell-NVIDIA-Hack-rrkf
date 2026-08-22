@@ -1,0 +1,16 @@
+{
+  "project": "gr/compositional_rl",
+  "conflicts": [
+    {
+      "conflict_id": "C095",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "darc"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On human judgments: we're scoping and staffing a human-rating annotation UI from scratch — Vera Egede owns the build at 50%, with Quentin supporting on the trajectory-replay backend — so raters can watch agent episodes and grade them on task completion, efficiency, and safety. I looked and there's nothing in our current tooling that does trajectory-level rating, so we're budgeting it as a ground-up build: first usable version end of June."
+    }
+  ]
+}

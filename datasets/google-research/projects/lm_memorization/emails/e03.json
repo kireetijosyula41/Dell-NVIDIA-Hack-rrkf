@@ -1,0 +1,18 @@
+{
+  "id": "gr/lm_memorization/e03",
+  "thread_id": "gr/lm_memorization/t1",
+  "in_reply_to": "gr/lm_memorization/e02",
+  "date": "2026-04-29T16:33:00Z",
+  "from": {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}
+  ],
+  "subject": "Re: Kickoff: memorization audit for our LMs — status + privacy process",
+  "body": "Hi Priya, Santiago,\n\nStatus:\n\n- Methodology reproduced in early March on the released prompt set; our extraction curves show the same log-linear shape in context length (memorization roughly doubles going from 50 to 200 prompt tokens on the largest public model we tested).\n- Vera's duplication pipeline finished Apr 27 — slightly late, but the counts are validated. Notable: 0.9% of our corpus appears 10+ times, and those examples are exactly where early spot-checks show verbatim continuations.\n\nProcess risk: Kofi (cc'd) points out the audit outputs will themselves contain memorized training text, so the readout artifacts need privacy review, and that SLA is 2-3 weeks. Counting back from the Jun 19 readout, the sweep outputs must be locked and submitted by May 29 — before the June reservation week produces the final numbers. Proposal: submit the report template + March sample outputs for review now, then the June numbers drop into an approved format. Kofi's tentatively ok with this, confirming this week.\n\nNikhil",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/marot/e01",
+  "thread_id": "gr/marot/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T09:02:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Marot kickoff — one eval console for human + automated MT quality",
+  "body": "Hi both,\n\nKicking off the Marot workstream. The goal: make our open-source Marot app the standard console every language team uses to analyze MQM human-eval data, side by side with automated metrics like BLEURT. Today teams pass around spreadsheets; the app already computes per-segment MQM scores by averaging rater scores with severity/category weights, so the win is integration, not invention.\n\nMilestones (window through 07-20):\n- 04-17: internal hosted deployment (no more downloading marot.html by hand), self-serve file upload preserved.\n- 05-22: Evalline integration so BLEURT columns land automatically next to MQM.\n- 07-13: adoption target — 3 language teams using it for their weekly QA reviews.\n\nDeshawn owns staffing and the hosting plan; Freya is tech lead. Resource asks to me by end of next week please.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

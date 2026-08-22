@@ -1,0 +1,39 @@
+{
+  "id": "gr/frequency_analysis/e04",
+  "thread_id": "gr/frequency_analysis/t2",
+  "in_reply_to": "gr/frequency_analysis/e03",
+  "date": "2026-07-21T16:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Heat map status: first results + cost risk",
+  "body": "Team,\n\nDecisions from the review with Hana:\n\n1. Flagship list is capped at three classifiers for the August readout. The long tail moves to Q4.\n2. Freya's mid-frequency finding on the large model is the headline — please turn it into a one-pager with the heat maps.\n3. Ingestion: we are tracking to the Jul 17 target Alina set against the Jul 24 corpus freeze; Katya confirmed the final perturbed sets go in this week.\n\nReadout is Aug 6, 30 minutes. I will circulate the deck by Aug 3 for comments.\n\nThanks — this is shaping into the strongest robustness story in the portfolio.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/genomics_ood/e01",
+  "thread_id": "gr/genomics_ood/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:05:00Z",
+  "from": {"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: genomics OOD detection (likelihood ratios)",
+  "body": "Hi Deshawn,\n\nKicking off the genomics OOD workstream officially. Goal: turn our open-source likelihood-ratio OOD work into a contamination-screening feature for the sequencing partners in the health-science portfolio. The method pairs an autoregressive LSTM generative model over DNA sequences with a ConvNet classifier, and flags inputs via a likelihood ratio against a background model - that is the piece partners cannot get from an off-the-shelf classifier.\n\nProposed milestones: repro the bacteria benchmark (10 in-distribution classes, 60 OOD validation classes, before-2011 training split) by May 29; internal eval review June 19; LRB pre-read week of July 13. Nikhil leads modeling, Yara owns evals, Halima owns data plumbing.\n\nCan you confirm staffing and send a compute estimate by Friday?\n\nThanks,\nViktor",
+  "labels": ["kickoff", "spec"]
+}

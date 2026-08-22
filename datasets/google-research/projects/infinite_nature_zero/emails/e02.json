@@ -1,0 +1,30 @@
+{
+  "id": "gr/infinite_nature_zero/e02",
+  "thread_id": "gr/infinite_nature_zero/t2",
+  "in_reply_to": null,
+  "date": "2026-05-06T14:22:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "subject": "INZ compute plan — cirrus week + storage",
+  "body": "Hi Ines, quick note on compute for InfiniteNature-Zero so nothing surprises us in Q3. Dev iterations (softmax-splatting renderer port, StyleGAN2 patch validation) stay on titan-a100 best-effort; we're averaging 24 GPUs there and that's fine. The big item is the retrain: we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — and the full LHQ retrain is scheduled against it. Plan is about ten days of wall-clock packed into that week with checkpointing every 4 hours, so if the pod has any planned interrupts those days please flag now. Separately, can you confirm our storage quota can absorb the LHQ mirror plus checkpoints (~9 TB)? Dmitri is holding a mid-July Launch Review slot, so the retrain week is on the critical path. Thanks, Santiago",
+  "labels": [
+    "resources"
+  ]
+}

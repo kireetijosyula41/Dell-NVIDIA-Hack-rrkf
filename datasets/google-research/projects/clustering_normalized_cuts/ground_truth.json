@@ -1,0 +1,18 @@
+{
+  "project": "gr/clustering_normalized_cuts",
+  "conflicts": [
+    {
+      "conflict_id": "C114",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "global_metnet",
+        "group_agnostic_fairness",
+        "mir_uai24"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Heads-up on the one platform dependency: the Corpus v2 migration freeze is 2026-06-26, so the affinity-graph tables must be migrated before our window even ends — Wanjiru will run that migration in late May so we're not scrambling."
+    }
+  ]
+}

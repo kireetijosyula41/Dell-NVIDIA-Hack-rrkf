@@ -1,0 +1,26 @@
+{
+  "id": "gr/mobilebert",
+  "title": "MobileBERT",
+  "summary": "Ship MobileBERT — a thin BERT_LARGE variant with bottleneck structures and a tuned balance of self-attention and feed-forward capacity — as Meridian's on-device NLU stack, covering SQuAD fine-tuning, int8 quantization, and tf.lite conversion for resource-limited devices.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Milan Zapata",
+    "Vera Egede",
+    "Amara Okafor",
+    "Efe Lindqvist"
+  ],
+  "window": {
+    "start": "2026-03-09",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mobilebert",
+    "url": "https://github.com/google-research/google-research/tree/master/mobilebert",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

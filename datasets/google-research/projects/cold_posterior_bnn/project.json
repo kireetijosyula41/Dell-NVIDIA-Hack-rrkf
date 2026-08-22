@@ -1,0 +1,25 @@
+{
+  "id": "gr/cold_posterior_bnn",
+  "title": "How Good is the Bayes Posterior in Deep Neural Networks Really?",
+  "summary": "A careful SG-MCMC study showing that the true Bayes posterior predictive in deep networks can underperform SGD point estimates, while 'cold' posteriors that overcount evidence predict better — with hypothesis experiments to explain why.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Umar Costa",
+    "Paloma Castillo",
+    "Nikhil Abebe"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cold_posterior_bnn",
+    "url": "https://github.com/google-research/google-research/tree/master/cold_posterior_bnn",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

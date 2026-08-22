@@ -1,0 +1,41 @@
+{
+  "id": "gr/federated_vision_datasets/e03",
+  "thread_id": "gr/federated_vision_datasets/t2",
+  "in_reply_to": null,
+  "date": "2026-06-10T10:55:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Status: Evalline integration live, de-dup throughput risk",
+  "body": "Status.\n\nEvalline integration: the TFF-compatible loaders are wired into the harness and the baseline matrix ran end-to-end last week. Numbers behave as the paper leads you to expect — models that look fine on IID shards drop hard under real user partitioning; on Landmarks-User-160k our FedAvg baseline loses double-digit accuracy versus centralized training, and the iNaturalist-Geo partition is harsher still at the extreme client sizes (down to 11 examples per client at the small end). That gap is the point of the benchmark, so the harness reports both partitionings side by side.\n\nRisk: Emeka's de-dup pipeline works but throughput is about 4x slower than planned on the embedding-similarity stage; at current speed partner ingestion finishes Jul 10, leaving one week of slack before readout. Options: GPU-batch the embedding stage, or drop to hash-only for this round.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/contrack",
+  "title": "Contrack",
+  "summary": "Contrack does end-to-end context tracking in conversations: it maintains an entity repository of the entities mentioned so far, their properties and their relationships, updated incrementally turn by turn. We are productizing it as the shared memory layer behind Meridian's long-running assistant sessions.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Fumiko Rossi",
+    "Linnea Yamada",
+    "Csilla Nassar"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "contrack",
+    "url": "https://github.com/google-research/google-research/tree/master/contrack",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

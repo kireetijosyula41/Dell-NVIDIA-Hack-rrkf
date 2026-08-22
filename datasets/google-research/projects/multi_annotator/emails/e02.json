@@ -1,0 +1,15 @@
+{
+  "id": "gr/multi_annotator/e02",
+  "thread_id": "gr/multi_annotator/t1",
+  "in_reply_to": "gr/multi_annotator/e01",
+  "date": "2026-03-19T14:41:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: multi-annotator disagreement modeling for Corpus labeling",
+  "body": "Dmitri,\n\nStaffing confirmed: Csilla leads modeling, Emeka owns the Corpus export adapter, Maren and Tereza split preprocessing and the validator. That covers the 04-03 milestone.\n\nOn compute and money: pilot training fits on titan-a100 best-effort, but the annotator-pool scaling runs (we want to sweep pools of 20 to 80 annotators) won't. Good news there — Idris verbally earmarked the full $120k from Q3 discretionary compute budget line B-13 for this project, so the scaling sweep is covered without touching the portfolio baseline. I'd still like it in writing before Q3 OKRs lock on 06-26, but he was unambiguous on the call.\n\nOne constraint: current code is binary-only. If Corpus wants multi-class toxicity tiers, that's a head refactor we have not scoped.\n\nDaniela",
+  "labels": ["resources", "status"]
+}

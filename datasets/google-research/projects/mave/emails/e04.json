@@ -1,0 +1,18 @@
+{
+  "id": "gr/mave/e04",
+  "thread_id": "gr/mave/t1",
+  "in_reply_to": "gr/mave/e03",
+  "date": "2026-05-26T16:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MAVE kickoff — pilot decision + wrap-up",
+  "body": "Team,\n\nWrapping the window. Decisions:\n\n1) The slip was the right call. The 05-22 pilot report with the mined hard negatives shows 91.3 precision / 88.1 recall on the pilot vertical — the catalog team accepted it and wants a second vertical in Q3.\n2) Scope cut confirmed: multi-vertical rollout and the negatives-mining automation both move to Q3. I'm writing them into the OKR draft this week so they're in before the planning lock.\n3) Jorge's pinned container (tf-models-official 2.7.0) becomes the blessed image for any Q3 follow-on — nobody re-fights that dependency.\n\nAs discussed, any post-window extraction re-runs wait for the Corpus v2 migration to complete; our schedule already assumed the pre-freeze cutoff, so nothing changes there.\n\nThanks all — clean landing.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

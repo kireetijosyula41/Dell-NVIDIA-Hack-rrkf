@@ -1,0 +1,19 @@
+{
+  "id": "gr/dselect_k_moe",
+  "title": "DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-T",
+  "summary": "Applies DSelect-k — a differentiable, sparse gate for mixture-of-experts models that selects a fixed number of experts (e.g., 2 of 4) while remaining trainable end to end — to Meridian's multi-task ranking models, packaged as a drop-in Keras layer.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "codename": "Project Riverbed",
+  "contributors": ["Wei Ivanov", "Bilal Novak", "Maren Zhou", "Giannis Sato"],
+  "window": {"start": "2026-03-02", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dselect_k_moe",
+    "url": "https://github.com/google-research/google-research/tree/master/dselect_k_moe",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

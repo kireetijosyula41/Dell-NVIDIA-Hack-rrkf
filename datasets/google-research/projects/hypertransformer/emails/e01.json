@@ -1,0 +1,17 @@
+{
+  "id": "gr/hypertransformer/e01",
+  "thread_id": "gr/hypertransformer/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:02:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "HyperTransformer kickoff - few-shot personalization for small models",
+  "body": "Team,\n\nKicking off HyperTransformer. Core idea from our open-source release: a high-capacity transformer generates the weights of a small CNN directly from the support samples of a task, so the complexity of the task space lives in the transformer, not the tiny deployed model. That's a natural fit for on-device personalization: ship a small CNN, generate its weights per user/task in one shot, no on-device fine-tuning loop.\n\nScope this window: reproduce the supervised few-shot results on omniglot, miniImageNet and tieredImageNet; then evaluate the semi-supervised regime (unlabeled support samples) since real personalization data is mostly unlabeled; and produce a feasibility read on target-CNN sizes where the method actually wins.\n\nMilestones: repro by mid-May, semi-supervised evaluation by late June, feasibility memo at the July 13 close. Deshawn owns staffing/compute; Carmen methodology; Vera experiments; Saoirse data tooling.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

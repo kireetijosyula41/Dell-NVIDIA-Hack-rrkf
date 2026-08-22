@@ -1,0 +1,17 @@
+{
+  "id": "gr/correct_batch_effects_wdn/e01",
+  "thread_id": "gr/correct_batch_effects_wdn/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T10:15:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: Wasserstein batch-effect correction as a corpus-wide layer",
+  "body": "Team,\n\nStarting this one today. Our open-source release corrects batch effects in high-content imaging embeddings by minimizing a Wasserstein distance between batch distributions, validated on the BBBC021 set with both CellProfiler embeddings and deep-network embeddings.\n\nMy interest is broader than cell imaging. Every embedding corpus we own has nuisance structure - collection run, labeling wave, vendor - and today teams paper over it with ad hoc normalization. If the Wasserstein approach transfers, it becomes a standard de-batching step in the corpus pipeline rather than a biology trick.\n\nMar 30 - Jul 6. Milestones:\n- Apr 24: reproduce the paper on BBBC021, both embedding types, using the ljosa preprocessing path.\n- May 29: apply to one non-imaging Meridian corpus, measure whether downstream retrieval improves.\n- Jun 26: go/no-go on productizing as a Corpus pipeline stage.\n\nAlina on resourcing, Umar tech lead.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

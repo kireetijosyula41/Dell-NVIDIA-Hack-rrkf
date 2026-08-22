@@ -1,0 +1,18 @@
+{
+  "id": "gr/menger_rl/e04",
+  "thread_id": "gr/menger_rl/t1",
+  "in_reply_to": "gr/menger_rl/e03",
+  "date": "2026-06-18T09:26:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Menger-RL kickoff — soak decision",
+  "body": "Team,\n\nDecision for next week, since the sharded ingest landed 06-16 (thank you Vera):\n\n1) We soak at the full 512 accelerators on our vulcan-h100 reservation week of 2026-06-22, starting Wednesday 06-24 after the maintenance window clears, per Bao's plan. 3,000 actors, placement-style workload, 4-day burn.\n2) Fallback stays defined: if replay throughput regresses in the first 12 hours, we drop to 384 chips rather than idle the learner — Leilani has the call authority overnight.\n3) I present interim soak numbers at the OKR review on 06-26; final report 07-01. The adoption guide and first team migration stay on 07-17 as planned.\n\nScope cut: the dqn-style single-machine compat mode some folks asked about is out of this window entirely.\n\nGo get it.\n\nUlla",
+  "labels": ["decision"]
+}

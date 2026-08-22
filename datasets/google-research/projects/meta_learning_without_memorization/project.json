@@ -1,0 +1,16 @@
+{
+  "id": "gr/meta_learning_without_memorization",
+  "title": "Meta-Learning without Memorization",
+  "summary": "Applying our meta-regularization work — an information-theoretic objective that stops meta-learners from memorizing training tasks — so internal few-shot pipelines no longer require hand-designed mutually-exclusive task construction.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bao Ndiaye",
+  "contributors": ["Oyin Iversen", "Freya Ruiz", "Amara Okafor", "Wanjiru Horvat"],
+  "window": {"start": "2026-02-02", "end": "2026-04-20"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "meta_learning_without_memorization",
+    "url": "https://github.com/google-research/google-research/tree/master/meta_learning_without_memorization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

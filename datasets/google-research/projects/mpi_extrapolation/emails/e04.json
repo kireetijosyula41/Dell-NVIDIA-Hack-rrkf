@@ -1,0 +1,50 @@
+{
+  "id": "gr/mpi_extrapolation/e04",
+  "thread_id": "gr/mpi_extrapolation/t1",
+  "in_reply_to": "gr/mpi_extrapolation/e03",
+  "date": "2026-06-23T16:10:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Kestrel — decision for the demo review",
+  "body": "Team,\n\nDecision for next Monday's review: we go with Rafael's option (a). The Kestrel demo locks extrapolation at 4x baseline, and the capture team's 8x ask moves to an H2 investigation with the stack-of-cards artifact examples attached so nobody relitigates this from a slide.\n\nSupporting decisions:\n1) Retrained checkpoint (internal captures) is the demo model — Freya's eval shows it beats the released pretrained model on our capture distribution, especially on texture realism at the extrapolation edge.\n2) Rosa's screening heuristic ships anyway as a capture-time warning — flagging deep-parallax scenes at capture is useful even at 4x.\n3) Nadia — requesting LRB sign-off at the Jun 26 board for a partner-facing demo in July. Materials will be under the Kestrel name in the shared drive by Thursday.\n\nGreat half, everyone. This one demos itself.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

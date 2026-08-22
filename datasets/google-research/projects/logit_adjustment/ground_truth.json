@@ -1,0 +1,12 @@
+{
+  "project": "gr/logit_adjustment",
+  "conflicts": [
+    {
+      "conflict_id": "C070",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["lamp"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Farah Haddad is committed at 60% to this project for May 2026 to drive the trainer integration and the partner-team pilot — I've locked that with her directly."
+    }
+  ]
+}

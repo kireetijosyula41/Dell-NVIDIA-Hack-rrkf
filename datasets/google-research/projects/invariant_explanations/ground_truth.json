@@ -1,0 +1,16 @@
+{
+  "project": "gr/invariant_explanations",
+  "conflicts": [
+    {
+      "conflict_id": "C066",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "action_angle_networks"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Bilal Novak is committed at 60% to this project for May 2026"
+    }
+  ]
+}

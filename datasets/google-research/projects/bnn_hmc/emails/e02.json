@@ -1,0 +1,18 @@
+{
+  "id": "gr/bnn_hmc/e02",
+  "thread_id": "gr/bnn_hmc/t1",
+  "in_reply_to": "gr/bnn_hmc/e01",
+  "date": "2026-03-17T11:50:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff: HMC posterior reference - staffing + compute reality check",
+  "body": "Dmitri,\n\nStaffing: Efe 60%, Maren 70%, Wanjiru 50%, Milan 40%, Rafael 25% (he's spread thin this quarter, so he's advisory on prior choice and chain diagnostics only).\n\nCompute is the honest problem. Full-batch HMC is brutal - the published CIFAR-10 chains burned tens of thousands of TPU-hours. We cannot reserve at that scale, so the plan: run single long chains (which the paper itself justifies) on our cirrus-tpu quarterly allocation, budget ~40% of the portfolio's Q2 allocation, and scope M2 to CIFAR-10, IMDB, and UCI - not ImageNet-class anything.\n\nInes, cc'ing so you're aware data-platforms will be leaning hard on the cirrus allocation in April.\n\nIf the allocation math doesn't close by Friday I'll come back with a descoped M2.\n\nBruno",
+  "labels": ["resources"]
+}

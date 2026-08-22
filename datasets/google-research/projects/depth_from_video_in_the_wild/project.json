@@ -1,0 +1,27 @@
+{
+  "id": "gr/depth_from_video_in_the_wild",
+  "title": "Depth from Video in the Wild: Unsupervised Monocular Depth Learning from Unknown Cameras",
+  "summary": "Unsupervised monocular depth and motion learning from uncalibrated video: the model trains on triplets of RGB frames with moving objects masked out, predicts 6-DoF camera motion plus a dense translation field, and can learn camera intrinsics -- enabling depth from arbitrary user-uploaded video.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Wanjiru Horvat",
+    "Katya Silva",
+    "Rosa Mensah",
+    "Quentin Farkas",
+    "Rafael Duran"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "depth_from_video_in_the_wild",
+    "url": "https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

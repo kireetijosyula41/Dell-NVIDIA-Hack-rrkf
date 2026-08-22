@@ -1,0 +1,18 @@
+{
+  "id": "gr/hyperbolic_discount/e04",
+  "thread_id": "gr/hyperbolic_discount/t2",
+  "in_reply_to": "gr/hyperbolic_discount/e03",
+  "date": "2026-06-10T15:28:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Hyperbolic Agent status: decision for the June 15 memo",
+  "body": "All,\n\nDecision for the memo: we recommend the 5-gamma configuration as the default multi-horizon auxiliary task for the agent training stack - ~90% of the benefit at 1.15x cost is the right trade, and it's the version other teams will actually adopt. The 10-gamma largest_gamma config gets documented as the 'exploration mode' for sparse-reward domains like Montezuma, not as the default.\n\nOn the dense-reward regression: we accept the -3% median with the default acting policy rather than shipping per-game policies. One config, one story. Gustavo, please make sure the memo shows the regression honestly next to the exploration gains.\n\nBao - the memo went into the Q3 OKR discussion ahead of the June 26 lock, so numbers need to be final by June 15, no slips.\n\nThanks all, clean execution on this one.\n\nUlla",
+  "labels": ["decision"]
+}

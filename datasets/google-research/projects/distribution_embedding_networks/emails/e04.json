@@ -1,0 +1,39 @@
+{
+  "id": "gr/distribution_embedding_networks/e04",
+  "thread_id": "gr/distribution_embedding_networks/t1",
+  "in_reply_to": "gr/distribution_embedding_networks/e03",
+  "date": "2026-06-10T15:27:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DEN for small-data tabular classification",
+  "body": "Go/no-go, ahead of the June 26 lock.\n\nIt is a go, with scope discipline:\n\n1. Umar's revised task synthesizer paid off -- the rerun benchmark has DEN ahead on 8 of 9 tasks, and the remaining loss is within half a point. That is a clear accuracy case.\n2. The Q3 OKR commits the per-customer fine-tuning pilot with two design partners, on the teacher model. The distilled student from Umar and Vera's recipe is currently at 1.8 points off teacher -- promising but not at the 1-point bar -- so distillation ships as a Q3 stretch goal, not a commitment.\n3. Farah writes the benchmark methodology note before pilot start; design partners will ask.\n\nGood recovery on the slip, everyone. june felt tight but the result is solid.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

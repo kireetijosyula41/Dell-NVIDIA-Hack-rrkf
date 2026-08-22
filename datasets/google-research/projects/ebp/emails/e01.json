@@ -1,0 +1,18 @@
+{
+  "id": "gr/ebp/e01",
+  "thread_id": "gr/ebp/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T08:58:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "EBP kickoff: energy-based processes -> 3D capture cleanup",
+  "body": "Hi all,\n\nKicking off the EBP effort. Our open-source Energy-Based Processes release showed EBPs capture multi-modality on exchangeable data where GPs, Neural Processes, and Variational Implicit Processes flatten it out. The product thesis: point-cloud denoising with the learned energy function is exactly what our 3D capture partners need for cleaning noisy scans, with point-cloud generation via the RNN sampler as a second act.\n\nMilestones inside our window (Mar 16 - Jul 6): image-completion sanity demo on MNIST-style conditioning by mid-April, point-cloud denoising eval on partner-shaped data by May 22, Launch Review Board slot in the second half of June.\n\nAlina owns staffing and the compute plan - note the codebase needs gcc plus CUDA builds, so let's get the toolchain sorted early rather than the night before a run.\n\nQuestions welcome, otherwise let's move.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

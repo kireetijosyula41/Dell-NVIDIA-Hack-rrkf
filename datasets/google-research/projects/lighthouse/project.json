@@ -1,0 +1,18 @@
+{
+  "id": "gr/lighthouse",
+  "title": "Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination",
+  "summary": "Adapts our Lighthouse release, which predicts a multiscale RGBA lighting volume from a narrow-baseline stereo pair so spatially-varying illumination can be computed at any 3D point by volume rendering. Goal is a relighting primitive for data-platform imaging pipelines.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Yusuf Keita", "Wanjiru Horvat", "Linnea Yamada", "Hyun Traore"],
+  "window": {"start": "2026-03-09", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lighthouse",
+    "url": "https://github.com/google-research/google-research/tree/master/lighthouse",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

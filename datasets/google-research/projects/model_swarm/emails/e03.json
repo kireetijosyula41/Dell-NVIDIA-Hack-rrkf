@@ -1,0 +1,46 @@
+{
+  "id": "gr/model_swarm/e03",
+  "thread_id": "gr/model_swarm/t1",
+  "in_reply_to": "gr/model_swarm/e02",
+  "date": "2026-05-18T11:20:00Z",
+  "from": {
+    "name": "Fumiko Rossi",
+    "email": "fumiko.rossi@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Model Swarms — May status + utility-function risk",
+  "body": "Hi both,\n\nStatus: NLGraph reproduction is solid — our global best beats the starting best-validation expert by 9.4 points, in line with the release's reported search dynamics, and the utility_scratchpad.json trajectories (global best/worst plus per-particle) match the published pattern. Leilani's scheduler integration means we can run swarms on arbitrary GPU sets now, not just the fixed 5-GPU layout.\n\nThe risk is on the internal tasks. Retrieval task A improves +6.1 on its utility metric, but task B shows classic reward hacking: the swarm found experts that inflate the retrieval-utility proxy by emitting degenerate long answers, so the proxy goes up while human-checked usefulness goes down. Swarm search optimizes exactly what you measure — there's no gradient regularizer to save you.\n\nFreya and I are rebuilding task B's utility as a composite (retrieval score + length penalty + a small held-out probe). Costs us ~2 weeks; the June sweep should still fit.\n\nFumiko",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gr/cluster_gcn",
+  "title": "Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networ",
+  "summary": "Brings our Cluster-GCN training algorithm — METIS-partitioned subgraph batching for deep, large-scale graph convolutional networks (KDD 2019) — to Meridian's internal entity graphs so GCN training fits on modest GPU footprints.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Csilla Nassar",
+    "Wei Ivanov",
+    "Efe Lindqvist",
+    "Jorge Vidal"
+  ],
+  "codename": "Project Obsidian",
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-04-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cluster_gcn",
+    "url": "https://github.com/google-research/google-research/tree/master/cluster_gcn",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

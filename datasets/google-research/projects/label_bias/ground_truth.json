@@ -1,0 +1,12 @@
+{
+  "project": "gr/label_bias",
+  "conflicts": [
+    {
+      "conflict_id": "C040",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["c_learning"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We hold the cirrus-tpu reservation — 512 accelerators — for the week of 2026-06-22, which covers the full re-weighting sweep across all model families."
+    }
+  ]
+}

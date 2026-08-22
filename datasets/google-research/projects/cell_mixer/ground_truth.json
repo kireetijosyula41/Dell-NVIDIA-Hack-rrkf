@@ -1,0 +1,18 @@
+{
+  "project": "gr/cell_mixer",
+  "conflicts": [
+    {
+      "conflict_id": "C096",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "finance_harness",
+        "hypertransformer",
+        "keypose"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The Corpus v2 migration freeze lands 2026-08-07, so we have until early August to move the 10X-derived mixture tables over — comfortable margin after the July release."
+    }
+  ]
+}

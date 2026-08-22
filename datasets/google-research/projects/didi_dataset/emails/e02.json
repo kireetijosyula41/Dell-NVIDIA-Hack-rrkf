@@ -1,0 +1,45 @@
+{
+  "id": "gr/didi_dataset/e02",
+  "thread_id": "gr/didi_dataset/t1",
+  "in_reply_to": "gr/didi_dataset/e01",
+  "date": "2026-03-09T15:26:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Didi digital-ink benchmark hosting",
+  "body": "Dmitri,\n\nResourcing update. Data hosting is on track: Amara has the raw NDJSON ink mirrored into Corpus and the TFRecord conversion running as a scheduled pipeline; the png/dot/xdot prompt files land this week.\n\nOn 'a standard way to compare results' -- that needs real software, not a spreadsheet. We are scoping and staffing a benchmark leaderboard service built from scratch: Chiara Olsen at 60% and Farah Haddad at 40% through April to design and build it. Feature set: submission upload, automatic scoring against the held-out test split, per-task breakdowns, and an internal results page. Katya stays 30% on the baseline model so the leaderboard has a reference entry on day one.\n\nCompute ask is minimal, a few Titan A100s for the baseline.\n\nOne watch item: scoring rules need to be nailed down before submissions open, else early numbers wont be comparable.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

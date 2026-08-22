@@ -1,0 +1,12 @@
+{
+  "project": "gr/LLP_Bench",
+  "conflicts": [
+    {
+      "conflict_id": "C065",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["contrack"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We have no internal tool for this, so we're scoping and building a synthetic-data generation pipeline from scratch - Saoirse owns it end to end at 50%, covering configurable bag construction, label-proportion noise models, and drift injection."
+    }
+  ]
+}

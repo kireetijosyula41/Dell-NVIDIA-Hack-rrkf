@@ -1,0 +1,18 @@
+{
+  "project": "gr/model_swarm",
+  "conflicts": [
+    {
+      "conflict_id": "C069",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "clip_as_rnn",
+        "ml_debiaser",
+        "android_interaction"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Heads-up on the hard date: the Corpus v2 migration freeze is 2026-06-26, the same week Q3 OKRs lock, so the swarm-search validation corpora have to be fully migrated onto v2 before our final sweep or we lose data access mid-run."
+    }
+  ]
+}

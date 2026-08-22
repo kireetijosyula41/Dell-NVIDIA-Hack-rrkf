@@ -1,0 +1,50 @@
+{
+  "id": "gr/comisr/e02",
+  "thread_id": "gr/comisr/t1",
+  "in_reply_to": "gr/comisr/e01",
+  "date": "2026-03-09T14:40:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: COMISR for user-upload enhancement",
+  "body": "Hi Zofia,\n\nFractions: Tereza Aliyev leads at 40%, Leilani Nakamura 30% on the training/eval loop, Emeka Pinto 30% on the ffmpeg compression pipeline, Saoirse Eriksen 20% on serving prep through April. Jorge Vidal is committed at 60% to this project for June 2026 — he owns the eval-and-deployment phase that runs past the May code-complete date, including the Shipyard demo and the post-LRB fixes.\n\nCompute: titan-a100 best-effort, 16 GPUs; this is inference-heavy eval, no reservation.\n\nDependency: the vid4 test data and pretrained checkpoint come from our public release buckets; Emeka is mirroring them internally with checksums this week so eval is hermetic.\n\nOne flag: five people at small fractions is coordination-heavy. If anything slips I'd rather consolidate onto Tereza and Jorge than add people.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

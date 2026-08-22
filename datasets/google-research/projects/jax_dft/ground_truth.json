@@ -1,0 +1,16 @@
+{
+  "project": "gr/jax_dft",
+  "conflicts": [
+    {
+      "conflict_id": "C084",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "muzero"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Paloma Castillo is committed at 60% to this project for June 2026"
+    }
+  ]
+}

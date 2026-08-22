@@ -1,0 +1,17 @@
+{
+  "id": "gr/EgoSocial/e04",
+  "thread_id": "gr/EgoSocial/t2",
+  "in_reply_to": "gr/EgoSocial/e03",
+  "date": "2026-05-12T16:24:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: EgoSocial status: baseline running, audio cue risk",
+  "body": "Freya, Deshawn,\n\nClosing this out ahead of Friday's go/no-go. The re-extraction call was right - corrected-set baseline came in at 67.8% timing accuracy, and more importantly the audio ablation gap is now stable, so the numbers are defensible.\n\nDecisions:\n\n1. GO on Evalline onboarding. Tomas, Quentin will hand over the eval spec Thursday; we'd like it in the shared harness before the Q3 OKR lock on June 26 so assistant teams can adopt it in planning.\n\n2. Scope cut: the synthetic pipeline ships with the scenario generator and QA sampler only; the audio/visual compositing stage slips to Q3 since the re-extraction ate Wanjiru's April. Rare-configuration coverage stays a known gap in the v1 dataset card.\n\n3. No external claims about EgoSoD until we've run the full 13,500-pair benchmark - one more compute burst, Deshawn has it queued.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

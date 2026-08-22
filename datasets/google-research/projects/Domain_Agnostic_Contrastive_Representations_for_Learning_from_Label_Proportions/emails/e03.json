@@ -1,0 +1,15 @@
+{
+  "id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e03",
+  "thread_id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/t2",
+  "in_reply_to": null,
+  "date": "2026-06-08T10:53:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [],
+  "subject": "SelfCLR-LLP status: repro done, bag-size sensitivity risk",
+  "body": "Hi both,\n\nRepro milestone hit May 28. SelfCLR-LLP beats DLLP on both datasets in our runs - on Criteo we see a ~2.1% AUC lift over DLLP and we land within 1.5% of the fully supervised upper bound; MovieLens-1M is tighter but still positive. Farah's preprocessing pipeline is deterministic now, same splits every run.\n\nRisk for the June sweep: bag-size sensitivity. The public benchmarks use fairly small bags, but the customer scenarios we care about have bags of 500-1000 instances, and in a quick pilot the contrastive representation quality degrades noticeably past bag size ~256. I've added a bag-size axis to the sweep grid, which is exactly why we need every one of those 512 H100s for the full five days.\n\nIf large-bag results are weak, the honest product story becomes \"strong up to bag size 256,\" and we should decide before the July memo how to frame that.\n\nEfe",
+  "labels": ["status", "risk"]
+}

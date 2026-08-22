@@ -1,0 +1,16 @@
+{
+  "id": "gr/mutual_information_representation_learning/e01",
+  "thread_id": "gr/mutual_information_representation_learning/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T09:18:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: MI-maximization study → objective guidance for retrieval encoders",
+  "body": "Hi Daniela,\n\nKickoff for the MI representation-learning effort. Our open-source companion study showed that mutual information maximization alone doesn't explain representation quality — estimator and architecture choices dominate. Teams across graphs-retrieval still pick contrastive objectives by folklore. The deliverable: replicate the study at scale, extend it to our retrieval-encoder setups, and publish an opinionated internal guide (\"use this objective/estimator for this data regime\") backed by numbers.\n\nPlan: the original suite ran at batch size 128 averaged over 20 runs — a single run takes ~2 hours, so the notebook path is fine for smoke tests, but the full 20-run replication plus our retrieval extensions needs a standalone job on real accelerators. Milestones: harness stood up by end of April, replication done by mid-June, guide published before window close 06-22.\n\nCompute plan from your side when ready.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

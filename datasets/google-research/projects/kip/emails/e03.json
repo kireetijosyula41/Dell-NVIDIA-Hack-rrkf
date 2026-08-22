@@ -1,0 +1,15 @@
+{
+  "id": "gr/kip/e03",
+  "thread_id": "gr/kip/t2",
+  "in_reply_to": null,
+  "date": "2026-06-02T13:19:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}],
+  "subject": "KIP status: reproduction done, transfer gap on finite networks",
+  "body": "Hi Dmitri, Bao,\n\nStatus. Reproduction milestone closed May 26: we regenerate distilled sets with the infinitely-wide ConvNet kernels and match the released numbers within 0.3% test accuracy. The Label Solve variant is also wired in — it's much cheaper when we only re-solve labels on a fixed support set, which is likely the mode platform users actually want.\n\nThe honest caveat: the kernel-to-finite-network transfer gap. Training a finite ConvNet on a distilled set (per the release's nn_training flow) costs us 4-6% accuracy versus the kernel regime, and on our internal tabular corpus the early gap is nearer 8%. For CI-loop use that's fine; for the data-minimization pitch it needs to be front and center in the quality-delta doc.\n\nOn track for Jun 19 on the internal corpus. Chiara's artifact schema went to Jun's team for review last week — no response yet, gentle nudge needed given the freeze.\n\nKaia",
+  "labels": ["status", "risk"]
+}

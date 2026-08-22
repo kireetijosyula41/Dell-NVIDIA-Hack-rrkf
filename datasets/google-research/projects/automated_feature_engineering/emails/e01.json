@@ -1,0 +1,18 @@
+{
+  "id": "gr/automated_feature_engineering/e01",
+  "thread_id": "gr/automated_feature_engineering/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T09:05:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: AFE - automated feature engineering as a platform play",
+  "body": "Hi team,\n\nKicking off AFE. The product thesis: every tabular ML team at Meridian burns weeks hand-crafting features. AFE learns which engineered features help a downstream task, using feature importance masks - local and global masking to pick the best transform functions per feature. If we get this right it becomes a self-serve service, not a library.\n\nMilestones inside our window (4/27 - 8/10):\n- Reproduce the discovery-model trainer on the housing-price regression benchmark by end of May.\n- Internal alpha with two partner teams in June.\n- Service-ized version plus launch review by early August.\n\nIvo owns the staffing plan and the buy-vs-build calls on serving infra. Linnea and Yusuf on the masking/selection research, Rosa and Giannis on the service.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

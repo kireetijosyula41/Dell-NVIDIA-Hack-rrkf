@@ -1,0 +1,18 @@
+{
+  "id": "gr/enas_lm",
+  "title": "Language Model Implementation of [ENAS](https://arxiv.org/abs/1802.03268).",
+  "summary": "Reviving our ENAS language-model implementation - efficient neural architecture search for recurrent cells on Penn Treebank, with both TPU and GPU evaluation paths - as an internal architecture-search service for small on-device language models.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": ["Paloma Castillo", "Wanjiru Horvat", "Ondrej Bergstrom"],
+  "window": {"start": "2026-04-06", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "enas_lm",
+    "url": "https://github.com/google-research/google-research/tree/master/enas_lm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

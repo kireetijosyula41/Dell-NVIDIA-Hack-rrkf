@@ -1,0 +1,18 @@
+{
+  "id": "gr/automl_zero/e01",
+  "thread_id": "gr/automl_zero/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T10:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: AutoML-Zero as an internal algorithm-discovery tool",
+  "body": "Team,\n\nKicking off the AutoML-Zero workstream. The premise from our open-source release still holds up: evolutionary search over programs built from basic math ops can rediscover linear regression with gradient descent, two-layer networks with backprop, and occasionally beat hand-designed baselines of comparable complexity - with minimal human bias.\n\nThe product angle isn't \"replace our researchers\", it's a discovery service: point the evolver at a narrow task family and let it surface interpretable algorithmic tricks (the paper found bilinear interactions, weight averaging, normalized gradients on its own).\n\nMilestones for our short window (3/16 - 6/1): reproduce the linear-regression demo and search baselines by mid-April; run one internal task family end-to-end in May; decide by 6/1 whether this graduates to a funded H2 program.\n\nJelena, over to you on staffing.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

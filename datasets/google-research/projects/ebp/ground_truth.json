@@ -1,0 +1,12 @@
+{
+  "project": "gr/ebp",
+  "conflicts": [
+    {
+      "conflict_id": "C027",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["al_for_fep"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris Osei has verbally earmarked $120k from Q3 discretionary compute budget line B-19 for this project, which covers the H100 hours for the point-cloud runs plus storage."
+    }
+  ]
+}

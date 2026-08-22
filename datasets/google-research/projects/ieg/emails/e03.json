@@ -1,0 +1,18 @@
+{
+  "id": "gr/ieg/e03",
+  "thread_id": "gr/ieg/t2",
+  "in_reply_to": null,
+  "date": "2026-06-11T10:33:00Z",
+  "from": {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "IEG status: 80% noise result reproduced, meta-step cost is the trade-off",
+  "body": "Dmitri, Bruno,\n\nStatus. IEG repro is done on CIFAR100 with wrn28-10 across 20/40/80% uniform noise - at 80% noise we hold within 1.2 pts of the released accuracy, which is the number that makes people sit up. Also confirmed the augmentation note from the release: switching AutoAugment to RandAugment is on par, within noise, so we'll standardize on RandAugment for the platform since it's simpler to serve. Asymmetric-noise CIFAR10 configs are queued on Chiara's harness this week - the noise-injection module made spinning those up trivial.\n\nThe trade-off for the memo: IEG's meta-step roughly doubles training cost versus standard training. Early FSR runs recover most of the benefit at low noise for a fraction of the overhead, but degrade faster at 80%. So the likely recommendation shape is tiered: FSR as the default noise-robust option, IEG reserved for known-bad label sources. Bilal is filling in the cost/accuracy frontier now.\n\nOn track for July 13.\n\nTereza",
+  "labels": ["status", "risk"]
+}

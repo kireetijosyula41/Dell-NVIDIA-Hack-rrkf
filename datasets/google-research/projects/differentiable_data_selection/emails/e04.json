@@ -1,0 +1,40 @@
+{
+  "id": "gr/differentiable_data_selection/e04",
+  "thread_id": "gr/differentiable_data_selection/t1",
+  "in_reply_to": "gr/differentiable_data_selection/e03",
+  "date": "2026-06-17T15:41:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: Differentiable Data Selection for vision training",
+  "body": "Decisions ahead of the June 26 OKR lock.\n\n1. The pilot ran on the partial budget we had confirmed in writing: two of the four planned internal-corpus configurations. Result: +1.1 accuracy on the noisy-label corpus, which supports Quentin's hypothesis that DDS earns more where data quality is worse.\n2. Q3 recommendation: adopt DDS for the two noisiest training corpora only. I am writing a scoped OKR around those, not a blanket rollout.\n3. The remaining two pilot configurations run in Q3 only if the B-13 funding is confirmed in writing -- Bao, please push to close that with Finance this week; it has been pending too long.\n\nThanks all. Solid, evidence-shaped half.\n\nLucia",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

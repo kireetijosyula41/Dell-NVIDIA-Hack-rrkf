@@ -1,0 +1,18 @@
+{
+  "id": "gr/better_storylines/e03",
+  "thread_id": "gr/better_storylines/t1",
+  "in_reply_to": "gr/better_storylines/e02",
+  "date": "2026-04-22T10:16:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: sentence-level LMs for storyline coherence",
+  "body": "Status + a risk on the transfer.\n\nReproduction: done on schedule. Downloaded checkpoints reproduce the paper's Table 1/2 accuracy numbers on ROC Stories, and our retrained model from the released mean-BERT embedding dataset lands within 0.4 points.\n\nDrafting corpus: Gustavo's Beam job finished - 1.1M sentences embedded. First fine-tunes show the coherence signal transfers, but weaker: next-sentence ranking accuracy drops from 72% (ROC) to 61% on held-out drafts. Root cause looks structural - ROC Stories are five tight sentences; real drafts have digressions that aren't incoherence.\n\nThe risk: if we score raw next-sentence plausibility, the service will flag every intentional digression. Mitigation in test: score at the paragraph level and flag only sustained drops across 3+ sentences. Early precision on Wanjiru's labeled set improved from 0.44 to 0.71 with that windowing.\n\nDemo still on for mid-May.\n\nHalima",
+  "labels": ["status", "risk"]
+}

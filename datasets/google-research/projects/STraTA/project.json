@@ -1,0 +1,25 @@
+{
+  "id": "gr/STraTA",
+  "title": "STraTA: Self-Training with Task Augmentation",
+  "summary": "STraTA combines self-training with task augmentation - generating synthetic NLI data with a T5-based generator - to get strong few-shot learners, and doubles as an automatic data-labeling tool. We are packaging it as the low-label bootstrapping recipe for retrieval and classification customers.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Umar Costa",
+    "Rosa Mensah",
+    "Nikhil Abebe"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "STraTA",
+    "url": "https://github.com/google-research/google-research/tree/master/STraTA",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/lamp/e01",
+  "thread_id": "gr/lamp/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:44:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: LAMP as an interpretable sequential-recs baseline",
+  "body": "Hi all,\n\nKicking off the LAMP evaluation track. Context: platform customers keep asking why their sequential recommendations do what they do, and our neural stack can't answer cheaply. Linear Additive Markov Processes are the counter-bet — a model that combines history states through an explicit linear mixture, so every prediction decomposes into readable per-step contributions. If LAMP holds up within a few points of the neural baseline, we ship it as the default interpretable tier.\n\nMilestones (Feb 9 - May 25):\n- Mar 13: reproduce the paper's experiments, starting with the Brightkite check-ins dataset per the released setup\n- Apr 17: LAMP vs neural baseline on one internal sequential corpus, quality and cost side by side\n- May 18: recommendation memo — adopt, adapt, or drop\n\nBao — staffing and any build-infra needs. It's a C++ codebase with gflags, so someone needs to own getting it into our bazel monorepo cleanly.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

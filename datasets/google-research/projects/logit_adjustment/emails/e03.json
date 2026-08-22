@@ -1,0 +1,18 @@
+{
+  "id": "gr/logit_adjustment/e03",
+  "thread_id": "gr/logit_adjustment/t1",
+  "in_reply_to": "gr/logit_adjustment/e02",
+  "date": "2026-04-15T16:21:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: logit adjustment for long-tail classifiers — status",
+  "body": "Hi Dmitri, Jelena,\n\nStatus:\n\n- Reproduction done Mar 18. On cifar10-lt (EXP-100 profile) the adjusted model beats the baseline by 4.1pp overall, and the win concentrates where it should: tail-class accuracy improves by double digits while head classes hold. cifar100-lt shows the same pattern. We sanity-checked with the release's dummy-dataset test mode before every real run, which caught one bad data path early.\n- Farah's trainer flag merged Apr 10, ahead of schedule. Post-hoc adjustment mode included, so teams can fix already-trained models without retraining.\n\nRisk for the pilot: the partner's label distribution is more extreme than EXP-100 (their tail classes have <20 examples), and the adjustment's gains shrink when frequency estimates get that noisy. I'm preparing a smoothed-frequency variant as a fallback. Partner dataset confirmation slipped a week to Apr 24 — Farah's May depth just got more important.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/cfq_pt_vs_sa/e01",
+  "thread_id": "gr/cfq_pt_vs_sa/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: pre-training vs specialized architectures study",
+  "body": "Hi Alina,\n\nKicking off the semantic parsing generalization study. Basis is our published comparison of pre-training vs. specialized architectures for compositional generalization; the ask from leadership is an updated, internal-model version: does scale-plus-pre-training still beat purpose-built parsers (CGPS and friends) on MCD-style splits, and by how much?\n\nProduct angle: this directly informs whether the parsing features in two roadmap items use a fine-tuned general model or a bespoke architecture. A clear answer saves a team-quarter either way.\n\nMilestones (Apr 20 – Jul 13): harness + data prep by mid-May, main sweep done end of June, write-up and recommendation by Jul 10. The original experiments ran on single V100s, so per-run cost is small — it's the sweep breadth that adds up.\n\nAlina, over to you for staffing + compute.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

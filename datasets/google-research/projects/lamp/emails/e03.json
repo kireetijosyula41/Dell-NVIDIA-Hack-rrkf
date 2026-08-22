@@ -1,0 +1,18 @@
+{
+  "id": "gr/lamp/e03",
+  "thread_id": "gr/lamp/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:58:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "LAMP status: reproduction done, internal-corpus gap is real but small",
+  "body": "Hi Dmitri, Bao,\n\nStatus. Reproduction closed Mar 11 — on the Brightkite check-ins data our runs match the paper's perplexity curves, and Nikhil's bazel wrapper builds clean on linux; the mac gflags dylib dance from the README is thankfully not our problem in CI.\n\nInternal-corpus results (first cut, Apr 10): LAMP sits 4.2% behind the neural baseline on hit@10 for next-item prediction, at roughly 1/40th the serving cost and with fully decomposable predictions — the mixture weights over history positions are exactly the explanation surface we hoped for. Interesting detail: learned weights put 71% of mass on the last 3 positions for this corpus, which itself is a finding product can use.\n\nRisk/trade-off: LAMP degrades on long-gap sessions (users returning after 30+ days), where the linear history mixture can't capture the reset. If those sessions matter for the platform tier, we should scope a hybrid fallback rather than stretch LAMP.\n\nFumiko",
+  "labels": ["status", "risk"]
+}

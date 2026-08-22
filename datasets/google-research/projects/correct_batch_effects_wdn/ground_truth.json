@@ -1,0 +1,12 @@
+{
+  "project": "gr/correct_batch_effects_wdn",
+  "conflicts": [
+    {
+      "conflict_id": "C042",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["enas_lm", "hipi", "betum_tool"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "e02: \"The Corpus v2 migration freeze is 2026-07-24, so we have the whole of July to land the re-ingest before anything locks; I've planned the embedding re-export backwards from 2026-07-24.\" e04: \"You've got it planned against the 2026-07-24 Corpus v2 freeze, which leaves float, so let's use some of it\""
+    }
+  ]
+}

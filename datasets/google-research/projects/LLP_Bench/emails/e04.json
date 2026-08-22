@@ -1,0 +1,17 @@
+{
+  "id": "gr/LLP_Bench/e04",
+  "thread_id": "gr/LLP_Bench/t2",
+  "in_reply_to": "gr/LLP_Bench/e03",
+  "date": "2026-04-20T14:29:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: LLP-Bench status: harness green, ranking instability risk",
+  "body": "Csilla, Bao,\n\nWrapping the window. Decisions:\n\n1. Csilla's reporting format is adopted as-is: full 3x5 matrix required, aggregate rank secondary. I presented the ot_llp / soft_erot_llp rank-flip example at the portfolio review and it landed - nobody argued for cherry-picking after seeing it.\n\n2. LLP-Bench is now the required eval for bag-level method reviews effective April 24. Tomas, Bao will send you the harness handover doc so Evalline can host the canonical runs rather than each team self-reporting.\n\n3. The synthetic stress-case pipeline made its first usable drop April 8 (drift injection came in behind noise models, which was the right order). Remaining hardening continues under Saoirse into May under platform maintenance, outside this project's window.\n\nGood, boring, on time. My favorite kind.\n\nDmitri",
+  "labels": ["decision"]
+}

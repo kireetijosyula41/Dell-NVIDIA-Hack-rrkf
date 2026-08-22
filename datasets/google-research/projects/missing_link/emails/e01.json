@@ -1,0 +1,41 @@
+{
+  "id": "gr/missing_link/e01",
+  "thread_id": "gr/missing_link/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T09:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: cross-dataset label harmonization (missing_link)",
+  "body": "Hi Deshawn,\n\nKicking off label harmonization for the vision corpora (window Mar 9 – Jul 6). The asset is our open-source ECCV release: manually verified label relations across three dataset pairs — ade_coco_mapping.csv, ade_bdd_mapping.csv, bdd_coco_mapping.csv — built automatically over MSEG annotations and then hand-corrected. Each row is a simple (label_a, relation, label_b) triple.\n\nWhy this matters as a product: Corpus hosts segmentation sets with incompatible label vocabularies, and every team re-derives their own crosswalk. A blessed relation service means joint training and joint eval come for free.\n\nMilestones: April — relation files ingested into Corpus with a query API stub; late May — harmonized ADE20k+COCO training run validating the mappings; late June — full joint-training validation sweep across all three pairs; sign-off by Jul 6.\n\nStaffing and compute asks to me by end of March, please.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

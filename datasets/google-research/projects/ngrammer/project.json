@@ -1,0 +1,18 @@
+{
+  "id": "gr/ngrammer",
+  "title": "N-Grammer: Augmenting Transformers with latent n-grams",
+  "summary": "Applies N-Grammer — our open-source Transformer variant augmented with n-grams built from a discrete latent representation of the text sequence — to cut training and inference cost in the language portfolio, validated on C4 language modeling and SuperGLUE classification against Transformer and Primer baselines, with a Jax API release for flax and haiku.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": ["Gustavo Moreau", "Rafael Duran", "Rosa Mensah"],
+  "window": {"start": "2026-04-20", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ngrammer",
+    "url": "https://github.com/google-research/google-research/tree/master/ngrammer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

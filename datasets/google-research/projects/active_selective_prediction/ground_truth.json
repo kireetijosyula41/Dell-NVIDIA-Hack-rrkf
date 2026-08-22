@@ -1,0 +1,12 @@
+{
+  "project": "gr/active_selective_prediction",
+  "conflicts": [
+    {
+      "conflict_id": "C124",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["graph_temporal_ai"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Ondrej Bergstrom is committed at 60% to this project for May 2026 - he owns the ASPEST repro across all six benchmark pairs, which is the whole May milestone."
+    }
+  ]
+}

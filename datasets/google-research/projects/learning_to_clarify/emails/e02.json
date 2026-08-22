@@ -1,0 +1,16 @@
+{
+  "id": "gr/learning_to_clarify/e02",
+  "thread_id": "gr/learning_to_clarify/t1",
+  "in_reply_to": "gr/learning_to_clarify/e01",
+  "date": "2026-02-26T13:05:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: ACT clarification-turn service",
+  "body": "Dmitri,\n\nResourcing picture:\n\n- Linnea Yamada 40%: owns the Docker/staging setup and the PACIFIC conversion path.\n- Vera Egede 40%: eval harness integration with Evalline.\n- Compute: 16 A100s on titan-a100 best-effort covers the fine-tuning runs; nothing reservation-class.\n\nBiggest gap is serving cost. The alpha needs a student model small enough for partner teams to host, which means distilling the ACT-tuned model down. Nothing reusable exists in-house for this, so we're scoping a distillation training recipe built from scratch: Maren owns it at 50% through May, with Vera backing her up on the data loaders. That's the single most expensive line item in the plan, but I don't see a way around it.\n\nHeadcount total works out to 1.3 FTE. Fine to proceed?\n\nBruno",
+  "labels": ["resources"]
+}

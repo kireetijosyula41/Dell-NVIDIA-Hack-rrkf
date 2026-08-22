@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_maml/e04",
+  "thread_id": "gr/es_maml/t2",
+  "in_reply_to": "gr/es_maml/e03",
+  "date": "2026-05-19T10:41:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: ES-MAML status: distributed runs green, zero-order adaptation wins",
+  "body": "Team,\n\nDecisions from yesterday's partner-readiness review, ahead of the May 22 gate:\n\n1. We lead with Zero Order. Maren's staleness cutoff improved First Order noticeably but it's still behind Zero Order at matched compute, so First Order ships as \"available, tuning guidance included\" rather than recommended default. The 25-rollout adaptation number carried the room.\n2. Partner pilot is a GO with both robotics-adjacent teams, starting week of June 1 on the benchmark configs Maren froze.\n3. Scope note: the sim-to-real study stays a Q3 item per Deshawn's budget plan - we are not squeezing it into the last week of the window.\n\nDeshawn, please keep Halima at current allocation through May 25 so the fleet docs land finished, not abandoned. Retro May 27.\n\nGood quarter, folks.\n\nDmitri",
+  "labels": ["decision"]
+}

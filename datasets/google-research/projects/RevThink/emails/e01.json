@@ -1,0 +1,17 @@
+{
+  "id": "gr/RevThink/e01",
+  "thread_id": "gr/RevThink/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T08:47:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Project Palisade kickoff - reverse thinking for small reasoners",
+  "body": "Team,\n\nKicking off the RevThink productization. We're running this internally under the codename Project Palisade - please use it in subject lines and planning docs so the threads are easy to track.\n\nThe method, from our open-source release: a teacher model generates forward reasoning, backward questions, and backward reasoning for each training item; students fine-tuned on that augmented data become measurably stronger reasoners. The repo covers eight tasks (SQA, CSQA, ARC, MATH, GSM8K, TabMWP, ANLI, Date), which gives us a broad eval out of the box.\n\nWhy it matters: our small-model line loses deals on reasoning quality, and Palisade is the cheapest credible fix - data augmentation, not architecture work.\n\nMilestones: augmentation pipeline reproduced by March 13; mistral-7b student trained on at least four tasks by April 17; go/no-go for the full student refresh by May 29.\n\nAlina - staffing and teacher-compute plan please.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

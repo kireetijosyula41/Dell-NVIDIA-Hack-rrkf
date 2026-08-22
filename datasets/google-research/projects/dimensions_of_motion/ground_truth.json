@@ -1,0 +1,16 @@
+{
+  "project": "gr/dimensions_of_motion",
+  "conflicts": [
+    {
+      "conflict_id": "C029",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "encyclopedic_vqa"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are scoping and staffing a distillation training recipe built from scratch: Yara Jokic leads at 50% with Wei Ivanov at 40% to design the student architecture, loss schedule, and training pipeline."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "gr/isl/e04",
+  "thread_id": "gr/isl/t1",
+  "in_reply_to": "gr/isl/e03",
+  "date": "2026-07-07T09:55:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: ISL kickoff — causal explainability for tabular models",
+  "body": "Go/no-go outcome: go, with one scope adjustment. The toolkit ships in Q3 for supervised ISL plus the leaderboard — that combination is defensible today (Sachs SHD 12, partner edge-F1 0.71, and a comparison surface teams can check). The self-supervised setting is held back from the toolkit until the environment-binning work stabilizes bootstrap variance; it stays a research track. This matches what we wrote into the Q3 OKRs before the June 26 lock, so no re-litigation needed. Assignments: Jorge hardens the leaderboard for a second team's datasets; Linnea documents the environment-construction requirements (the time-slice caveat goes in bold); Csilla owns the v1 API surface. Launch Review pre-read due to Nadia by July 23 for the early-August board. Solid quarter's work, everyone. — Dmitri",
+  "labels": [
+    "decision"
+  ]
+}

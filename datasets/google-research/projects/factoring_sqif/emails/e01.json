@@ -1,0 +1,45 @@
+{
+  "id": "gr/factoring_sqif/e01",
+  "thread_id": "gr/factoring_sqif/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:15:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: SQIF factoring evaluation (Q2)",
+  "body": "Team — kicking off the SQIF factoring assessment.\n\nContext: our open-source release implements the Schnorr-plus-quantum-optimization factoring approach, with a QAOA method and a classical bruteforce method for finding low-energy states of the hamiltonian. Leadership wants a sober internal read on how far this actually scales before anyone quotes it externally.\n\nDeliverables inside the window: reproducible conda environment and CLI harness by Mar 16; bruteforce baselines across bitsizes through April; qaoa_depth and lattice-parameter sweeps in June; a written evaluation with Launch Review Board sign-off by Jun 29.\n\nOwnership: Rosa the harness, Farah the baselines, Giannis sweep automation, Halima the analysis. Bruno follows up on staffing and compute.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

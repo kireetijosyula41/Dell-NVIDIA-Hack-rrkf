@@ -1,0 +1,16 @@
+{
+  "project": "gr/coltran",
+  "conflicts": [
+    {
+      "conflict_id": "C014",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "instruction_following_eval"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "On serving cost: we're scoping and staffing a distillation training recipe from scratch to compress the autoregressive colorizer into a feed-forward student for cheap serving — Hyun owns the recipe design inside his 60%, Maren supports on training infra. There's nothing on the shelf internally we can reuse for this, so I've budgeted it as a fresh build with a first student checkpoint targeted mid-June."
+    }
+  ]
+}

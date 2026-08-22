@@ -1,0 +1,25 @@
+{
+  "id": "gr/distribution_embedding_networks",
+  "title": "Example code for running Distribution Embedding Networks (DEN) algorithm.",
+  "summary": "Evaluating Distribution Embedding Networks (DEN) -- a three-block architecture (covariate transformation, distribution embedding, classification) that pre-trains on diverse tasks and fine-tunes only the covariate block -- for small-data tabular classification in Meridian's enterprise offerings.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Farah Haddad",
+    "Vera Egede",
+    "Umar Costa"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "distribution_embedding_networks",
+    "url": "https://github.com/google-research/google-research/tree/master/distribution_embedding_networks",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

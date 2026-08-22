@@ -1,0 +1,15 @@
+{
+  "id": "gr/light_field_neural_rendering/e03",
+  "thread_id": "gr/light_field_neural_rendering/t1",
+  "in_reply_to": "gr/light_field_neural_rendering/e02",
+  "date": "2026-04-22T17:05:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Kickoff: Light Field Neural Rendering productization — April status",
+  "body": "Hi Lucia, Santiago,\n\nStatus:\n\n- Toy task ran green Mar 18; the JAX/CUDA bump cost us four days but the image is now standard.\n- Shiny reproduction: 5 of 8 scenes at or above paper PSNR. The remaining three are the hardest reflective scenes; Ondrej traced most of the gap to our downsampled mirror of the dataset — we mirrored at half resolution to save the 2TB. Re-mirroring full-res now, ETA next week.\n\nTrade-off to flag: full-res training roughly doubles per-scene GPU hours (about 190 H100-hours per scene at current settings). If the budget line is as covered as we think, I'd rather spend the hours than ship a softer quality bar to the LRB. But that's your call, not mine.\n\nAlso, heads-up that captures from the commerce partner arrive May 4, so eval infra needs to accept their capture rig format by then.\n\nKatya",
+  "labels": ["status", "risk"]
+}

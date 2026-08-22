@@ -1,0 +1,45 @@
+{
+  "id": "gr/mucped23/e04",
+  "thread_id": "gr/mucped23/t1",
+  "in_reply_to": "gr/mucped23/e03",
+  "date": "2026-07-13T15:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Zeke Karlsen",
+      "email": "zeke.karlsen@meridian.example",
+      "role": "Serving Lead"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Vantage — final recommendation",
+  "body": "Team,\n\nThe human confirmation batch came back Thursday, so locking decisions for the Jul 27 close:\n\n1) Recommendation to serving: switch photographic traffic to jpegli — raters confirmed the metric story, and 12–14% at matched quality is real money at our volume. Zeke, the handoff doc is in the Vantage drive folder.\n2) Text-heavy and UI-screenshot traffic stays on MozJPEG for now. Raters penalized the text ringing harder than any metric did, which validates Yusuf's caution; a tuned jpegli config for that slice is the natural Q4 follow-up.\n3) Kofi's licensing review cleared with no redistribution concerns for our serving use.\n4) The Vantage eval harness and the routing-by-content-type criteria transfer to Zeke's team as maintained artifacts.\n\nThat's a clean, defensible split recommendation. Thanks all — especially for insisting on the confirmation batch.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

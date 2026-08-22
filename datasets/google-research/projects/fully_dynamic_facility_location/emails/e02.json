@@ -1,0 +1,50 @@
+{
+  "id": "gr/fully_dynamic_facility_location/e02",
+  "thread_id": "gr/fully_dynamic_facility_location/t1",
+  "in_reply_to": "gr/fully_dynamic_facility_location/e01",
+  "date": "2026-04-09T14:15:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: Dynamic facility location — kickoff",
+  "body": "Hi Anders,\n\nStaffing: Tereza 60% (algorithm and benchmarks), Emeka 50% (integration), Carmen 30% (analysis), Freya 20% (review).\n\nCompute: the C++ side is CPU-only, but the benchmark instances come from our retrieval embeddings, and the quarterly embedding refresh that feeds them is GPU-heavy. We hold the vulcan-h100 reservation for the week of 2026-06-29 — 384 accelerators — for that refresh, so benchmark and integration data get regenerated in that window. Ines, keeping you cc'd for awareness.\n\nNote vulcan's maintenance window is Jun 22-24, safely before our week.\n\nFlag: at target_num_nodes around 10M the memory profile is unknown; Tereza is instrumenting early.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

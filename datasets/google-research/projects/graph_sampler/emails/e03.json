@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_sampler/e03",
+  "thread_id": "gr/graph_sampler/t2",
+  "in_reply_to": null,
+  "date": "2026-05-11T11:03:00Z",
+  "from": {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Status: pipeline hardened, acceptance curves in, one cap decision needed",
+  "body": "Hi both,\n\nStatus. The hardened pipeline shipped on time: the full chain from enumerate_stoichiometries through reject_to_uniform and aggregate_uniform_samples now runs as a managed batch workflow with checkpointing per stoichiometry, and the stats_to_csv outputs feed a dashboard so we can watch acceptance rates live. Saoirse also added graphml validation between stages, which already caught two malformed batches.\n\nYara's acceptance curves are in: at C,N,O,F, rejection-to-uniform acceptance is comfortable through 6 heavy atoms, marginal at 7 (about 5x the CPU cost of 6), and genuinely bad at 8 - her projection says 8-heavy-atom uniformity would eat the entire remaining CPU budget for maybe 4% of the library.\n\nDecision needed by 5/15: cap the reference library at 7 heavy atoms and document the cap, or descope elsewhere. Team recommendation is the cap.\n\nWanjiru",
+  "labels": ["status", "risk"]
+}

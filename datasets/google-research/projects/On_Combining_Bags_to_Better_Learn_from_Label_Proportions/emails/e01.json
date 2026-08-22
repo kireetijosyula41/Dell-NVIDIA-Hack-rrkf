@@ -1,0 +1,17 @@
+{
+  "id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/e01",
+  "thread_id": "gr/On_Combining_Bags_to_Better_Learn_from_Label_Proportions/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:26:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: bag-combination LLP - squeezing more signal from proportions",
+  "body": "Team,\n\nKicking off the bag-combination track. This is the AISTATS'22 method from our open-source release: instead of treating label-proportion bags independently, it combines bags to construct better training signal, and the paper shows consistent gains over prior LLP approaches on the pseudo-synthetic benchmarks. It slots directly above our existing LLP stack - if the gains replicate, every bag-level customer model gets better for free.\n\nMilestones: baselines reproduced by May 22 (this includes wiring up the two external baseline codebases, almostnolabel and the LMMCM mutual-contamination framework, at their pinned commits); bag-combination gains verified on our internal-shaped data by June 26; integration recommendation by July 24.\n\nSantiago, you own staffing and tooling - flag anything the repro path needs. Heads up the env setup is fiddly (separate pythenv on Python 3.9.2 plus a conda env for LMMCM).\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

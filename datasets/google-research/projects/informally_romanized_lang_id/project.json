@@ -1,0 +1,26 @@
+{
+  "id": "gr/informally_romanized_lang_id",
+  "title": "Improving Informally Romanized Language Identification",
+  "summary": "Improves language identification for informally romanized South Asian text by combining the Bhasha-Abhijnaanam benchmark, Aksharantar romanization lexicons and the Dakshina dataset, feeding data-platforms' ingestion routing.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Rafael Duran",
+    "Leilani Nakamura",
+    "Carmen Reyes",
+    "Milan Zapata"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-08"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "informally_romanized_lang_id",
+    "url": "https://github.com/google-research/google-research/tree/master/informally_romanized_lang_id",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

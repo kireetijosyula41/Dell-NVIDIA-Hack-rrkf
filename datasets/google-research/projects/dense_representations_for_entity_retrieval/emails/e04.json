@@ -1,0 +1,44 @@
+{
+  "id": "gr/dense_representations_for_entity_retrieval/e04",
+  "thread_id": "gr/dense_representations_for_entity_retrieval/t2",
+  "in_reply_to": null,
+  "date": "2026-06-18T16:03:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: scope for entity retrieval LRB pre-read",
+  "body": "All,\n\nFollowing the June 12 review, decisions for the LRB pre-read the week of July 6:\n\n1. We ship the English-only linker. The multilingual extension moves to a Q3 stretch goal -- I will write it into OKR planning before the June 26 lock.\n2. Hard-negative mining stays in scope; the +1.9 recall@1 it bought us is the headline of the pre-read.\n3. Wanjiru's serving path demo runs against the frozen Wikinews eval snapshot, not live Corpus data, to keep the demo reproducible.\n\nNadia has us tentatively on the Launch Review Board agenda for the July 9 session. Please get slides to me by July 2.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

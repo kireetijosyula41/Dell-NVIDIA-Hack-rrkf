@@ -1,0 +1,12 @@
+{
+  "project": "gr/hmc_swindles",
+  "conflicts": [
+    {
+      "conflict_id": "C121",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["fully_dynamic_facility_location"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The big item: for the full benchmark sweep we hold the vulcan-h100 reservation - 384 accelerators for the week of 2026-06-29."
+    }
+  ]
+}

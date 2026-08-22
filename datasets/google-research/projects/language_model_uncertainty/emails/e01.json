@@ -1,0 +1,18 @@
+{
+  "id": "gr/language_model_uncertainty/e01",
+  "thread_id": "gr/language_model_uncertainty/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:22:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: KnowNo-style uncertainty alignment for agent workflows",
+  "body": "Hi team,\n\nKicking off the uncertainty-alignment track. The pain point: our agent workflows either barrel through ambiguous instructions (bad) or ask clarifying questions constantly (worse). The KnowNo framework from our open-source release is the principled middle path — conformal prediction over the planner's options gives statistical guarantees on task completion while minimizing how often we ask a human for help. Crucially it works with LLMs out of the box, no fine-tuning, which keeps us off the training-compute treadmill.\n\nMilestones (Apr 6 - Jul 13):\n- May 8: reproduce the released calibration flow on the demo settings\n- Jun 12: KnowNo wrapped around one production agent workflow in shadow mode, with our own calibration set\n- Jul 8: readout — help-rate vs completion-rate curves, and a ship/hold call\n\nIvo — staffing and any serving-side needs, please. The calibration-set build is the real work here.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

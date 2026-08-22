@@ -1,0 +1,45 @@
+{
+  "id": "gr/finance_harness/e02",
+  "thread_id": "gr/finance_harness/t1",
+  "in_reply_to": "gr/finance_harness/e01",
+  "date": "2026-02-26T13:30:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: FinanceHarness analyst-assist pilot",
+  "body": "Anders — resourcing.\n\nStaffing: Halima 50%, Wei 40%, Leilani 40% (serving plus the SSE deployment on Shipyard staging), Paloma 50% for the skills library. Compute is light — this is orchestration, not training; the cost line is backbone inference, budgeted at $9k/month during the pilot.\n\nThe dependency that worries me is data: our licensed market-data corpus is being migrated under Corpus v2, and the migration freeze is 2026-06-26 — so although our window closes May 11, any follow-on ingestion work we hand to Q3 has to be specced assuming no corpus changes after Jun 26. I've told Paloma to treat the corpus schema as fixed from that date in the skills design.\n\nAlso: privacy review for the pilot (internal data, but agent logs cite external pages) has a 2-3 week SLA — filing this week.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

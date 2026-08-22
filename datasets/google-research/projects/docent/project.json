@@ -1,0 +1,18 @@
+{
+  "id": "gr/docent",
+  "title": "*Reviews2Movielens* Dataset",
+  "summary": "Internal launch of the Reviews2Movielens multi-document multi-label dataset, joining Amazon Movies and TV reviews with MovieLens tags via an NER-based many-to-one ID mapping (130,026 Amazon IDs to 33,099 MovieLens IDs, 97% verified accuracy), accompanying the DocEnt self-supervised entity-representation work.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Freya Ruiz", "Leilani Nakamura", "Yusuf Keita", "Halima Toure"],
+  "window": {"start": "2026-02-02", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "docent",
+    "url": "https://github.com/google-research/google-research/tree/master/docent",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

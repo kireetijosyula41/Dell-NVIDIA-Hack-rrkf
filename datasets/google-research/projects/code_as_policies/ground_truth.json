@@ -1,0 +1,16 @@
+{
+  "project": "gr/code_as_policies",
+  "conflicts": [
+    {
+      "conflict_id": "C008",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "bigger_better_faster"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Quick admin note: internally we refer to this effort as Project Nimbus — please tag docs and threads accordingly."
+    }
+  ]
+}

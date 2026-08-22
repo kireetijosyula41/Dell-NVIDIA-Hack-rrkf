@@ -1,0 +1,16 @@
+{
+  "project": "gr/al_for_fep",
+  "conflicts": [
+    {
+      "conflict_id": "C027",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "ebp"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris walked me through it and verbally earmarked the full $120k from Q3 discretionary compute budget line B-19 for this project, so the retraining cycles are funded."
+    }
+  ]
+}

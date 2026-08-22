@@ -1,0 +1,45 @@
+{
+  "id": "gr/fvlm/e01",
+  "thread_id": "gr/fvlm/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Project Basalt kickoff — open-vocabulary detection",
+  "body": "Hi Deshawn,\n\nKicking off Project Basalt — that is our internal codename for the open-vocabulary detection effort, so please use it in trackers and docs. Basalt productizes F-VLM: open-vocabulary object detection built on frozen vision and language models. Because the backbone stays frozen, we train only the detector head, which makes both training and iteration dramatically cheaper than full fine-tuning.\n\nProduct goal: a detection API that accepts arbitrary text category lists, no per-category retraining. Milestones: JAX/FLAX training repro by May 8, internal category benchmark by May 29, Launch Review Board demo Jun 17.\n\nUmar, Farah, Katya and Ondrej assigned. Staffing plan when you can.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

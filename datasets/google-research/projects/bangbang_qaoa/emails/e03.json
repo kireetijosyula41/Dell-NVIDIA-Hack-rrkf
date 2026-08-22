@@ -1,0 +1,18 @@
+{
+  "id": "gr/bangbang_qaoa/e03",
+  "thread_id": "gr/bangbang_qaoa/t1",
+  "in_reply_to": "gr/bangbang_qaoa/e02",
+  "date": "2026-06-11T13:29:00Z",
+  "from": {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: bang-bang QAOA protocol search",
+  "body": "Status before the sweep week.\n\nReproduction: done. Random-init stochastic descent on 10 literals / 10 clauses converges in ~74 epochs to protocols with eval ~0.93, and the recovered schedules have effective QAOA p of about 2, matching the published figure. The 100-chunk discretization behaves as described.\n\nDistributed implementation is ready: protocol evaluations batched across accelerators, descent moves coordinated by a lightweight parameter server. Dry run on 32 GPUs scaled at 91% efficiency.\n\nOne risk for the benchmark verdict: on our cache-eviction instances, early results suggest stochastic descent gets stuck on plateaus where annealing escapes - the bang-bang structure helps on MAX-SAT-like landscapes but maybe not ours. If the paper-scale sweep confirms this, the honest recommendation may be \"annealing wins for our workloads,\" and we should be OK publishing that internally.\n\nOndrej",
+  "labels": ["status", "risk"]
+}

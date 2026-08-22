@@ -1,0 +1,18 @@
+{
+  "id": "gr/large_scale_voting/e03",
+  "thread_id": "gr/large_scale_voting/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T11:49:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Voting status: tables reproduced, memory scaling is the watch item",
+  "body": "Hi Zofia, Ivo,\n\nStatus. Reproduction closed Apr 22: tables 2 and 3 regenerate from the released scripts and match the paper, and the 2D line-fitting example (the paper's Figure 2 setup) is our smoke test in CI. Farah's bazel pinning means builds are hermetic now — c++17 flag and all.\n\nOur-data results are promising: on the mid-density map region, the 6DoF voter matches the RANSAC stack's pose accuracy (median error 3.1cm vs 3.3cm) and is 2.7x faster at the 80% outlier ratio. At 90%+ outliers RANSAC's accuracy collapses while the voter degrades gracefully — that's the headline.\n\nThe watch item Ivo predicted: memory. The voting structure on our largest map tile peaks at 41GB, versus ~6GB for the paper-scale problems. Ondrej has a tile-partitioning scheme that trades ~4% recall on tile-boundary anchors for a 4x memory cut. We need a call on whether that trade is acceptable before the sweep configs freeze May 27.\n\nUmar",
+  "labels": ["status", "risk"]
+}

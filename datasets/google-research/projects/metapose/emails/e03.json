@@ -1,0 +1,18 @@
+{
+  "id": "gr/metapose/e03",
+  "thread_id": "gr/metapose/t1",
+  "in_reply_to": "gr/metapose/e02",
+  "date": "2026-05-13T11:06:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MetaPose kickoff — status + occlusion risk for the pilot",
+  "body": "Status:\n\n- Reproduction: done 04-08 from the released metapose.tar data + checkpoints; Human3.6M and Ski-Pose PTZ numbers match the paper in our harness (PMPJPE within 1mm on H36M).\n- Latency: Rosa's optimized path runs the full multi-view model in 31ms on a single A100 — comfortably real-time for the sports use case, and consistent with the minimal-latency-overhead claim.\n\nRisk for the 06-08 pilot: the model's uncertainty handling for occluded joints is a strength on Ski-Pose, but the robotics rig is worse than anything in the papers — two of four cameras are frequently blocked by the robot arm itself, simultaneously. In our synthetic-occlusion stress test, PMPJPE degrades ~2.2x when two views drop together. Maren is adding a per-frame confidence gate so downstream consumers can filter; I'd rather ship honest confidence than smoothed garbage.\n\nWe're on track, but the pilot report will need an occlusion-regime section.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

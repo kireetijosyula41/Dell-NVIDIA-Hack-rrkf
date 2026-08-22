@@ -1,0 +1,18 @@
+{
+  "id": "gr/implicit_pdf",
+  "title": "Implicit Representation of Probability Distributions on the Rotation Manifold",
+  "summary": "Builds on our IPDF release: implicitly representing probability distributions over the rotation manifold SO(3) for pose estimation, handling symmetric objects gracefully, with training and evaluation on the SYMSOL datasets using dense rotation-query grids.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Yara Jokic", "Nikhil Abebe", "Katya Silva", "Leilani Nakamura"],
+  "window": {"start": "2026-04-27", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "implicit_pdf",
+    "url": "https://github.com/google-research/google-research/tree/master/implicit_pdf",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/after_kernel/e02",
+  "thread_id": "gr/after_kernel/t1",
+  "in_reply_to": "gr/after_kernel/e01",
+  "date": "2026-02-24T13:30:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: after-kernel invariance diagnostics",
+  "body": "Priya,\n\nResourcing picture. Freya leads at 60%; Umar advises at 15% on the kernel-alignment methodology. Nothing on the shelf covers kernel-level invariance metrics, so we are scoping and staffing an internal evaluation harness built from scratch — Jorge at 50% and Saoirse at 40% own it, first cut end of March.\n\nCompute is modest by our standards — the kernel computations batch well, so 8 A100s on titan-a100 best-effort covers the sweeps; no reservation request needed.\n\nOne dependency: the invariance sweeps (num_translations=1000 per model, plus the zoom and swap grids) multiply quickly across seeds, so the harness needs to land before the full grid or Freya ends up serializing runs by hand.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

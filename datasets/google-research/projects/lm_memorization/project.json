@@ -1,0 +1,18 @@
+{
+  "id": "gr/lm_memorization",
+  "title": "Quantifying Memorization Across Neural Language Models",
+  "summary": "Applies our memorization-quantification release — which established log-linear growth of verbatim memorization with model capacity, example duplication, and prompting-context length — to Meridian's own language models, building a memorization audit that feeds privacy review before launches.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Santiago Vukovic",
+  "contributors": ["Nikhil Abebe", "Vera Egede", "Oyin Iversen", "Bilal Novak"],
+  "window": {"start": "2026-02-02", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lm_memorization",
+    "url": "https://github.com/google-research/google-research/tree/master/lm_memorization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

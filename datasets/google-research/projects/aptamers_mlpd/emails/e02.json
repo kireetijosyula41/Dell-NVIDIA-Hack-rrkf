@@ -1,0 +1,40 @@
+{
+  "id": "gr/aptamers_mlpd/e02",
+  "thread_id": "gr/aptamers_mlpd/t1",
+  "in_reply_to": "gr/aptamers_mlpd/e01",
+  "date": "2026-04-08T14:00:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: aptamer model training and sequence walking",
+  "body": "Dmitri,\n\nStaffing: Yara leads at 70%, Saoirse 50% on preprocessing and the count-matrix pipeline, Yusuf 25% on the walking search.\n\nTwo platform notes. The published code assumes internal parallel-processing and scalable-matching libraries we don't have — Saoirse is porting the fastq preprocessing to our Beam-equivalent, roughly two weeks of work, and the similarity clustering to our own ANN index.\n\nSchedule dependency: Jun has the Corpus v2 migration freeze on 2026-07-10, so all sequence-count ingest has to be through and verified before that date. Saoirse is planning backwards from that.\n\nCompute: 24 A100s best-effort for training; the walking search is CPU-bound on the clustering.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/adaptive_low_rank",
+  "conflicts": [
+    {
+      "conflict_id": "C125",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "jslm"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Internally we refer to this effort as Project Basalt — please use the codename on decks, calendar invites, and doc titles so tracking stays consistent."
+    }
+  ]
+}

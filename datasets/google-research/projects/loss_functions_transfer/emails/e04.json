@@ -1,0 +1,18 @@
+{
+  "id": "gr/loss_functions_transfer/e04",
+  "thread_id": "gr/loss_functions_transfer/t1",
+  "in_reply_to": "gr/loss_functions_transfer/e03",
+  "date": "2026-06-23T10:07:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: loss-function guidance for transferable embeddings — readout decisions",
+  "body": "Team,\n\nAhead of Friday's readout (and with Q3 OKRs locking the same day), decisions:\n\n1. We took the Jun 5 slip for Ondrej's non-linear probes — right call. On the graph-structured tasks the non-linear probe reversed one of the three rankings, which would have made our guidance wrong exactly where the portfolio cares most.\n2. The guidance doc ships Friday: softmax cross-entropy variants for single-task embedding models; the transfer-friendly losses from the release when embeddings feed multiple downstream tasks; and a mandatory transfer-eval before any embedding model is declared portfolio-shared. Yusuf has the final ranking tables.\n3. Rosa's loader (TF2 SavedModel path, background-class drop included) becomes a shared utility.\n\nJuly ingestion milestone stands as scheduled. Nice work — this is the rare study that ends with a one-page answer.\n\nAnders",
+  "labels": ["decision"]
+}

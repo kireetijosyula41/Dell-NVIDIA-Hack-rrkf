@@ -1,0 +1,18 @@
+{
+  "id": "gr/contrastive_rl/e04",
+  "thread_id": "gr/contrastive_rl/t2",
+  "in_reply_to": "gr/contrastive_rl/e03",
+  "date": "2026-07-14T17:05:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Eleni Quispe", "email": "eleni.quispe@meridian.example", "role": "Director, Foundational Research"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Contrastive RL status - recommendation and scope cut",
+  "body": "Recommendation, going into the Jul 17 memo: adopt for state-based goal-conditioned tasks, hold on image.\n\nThe +8 points on state-based with no augmentation and no auxiliary loss is a real simplification win and I want it in the default agent config for Q3. Image-based, a 22-point seed swing is not something I can put in front of a customer, even with the temperature schedule cutting collapse rate to roughly 1 in 20.\n\nScope cut: we are dropping the third image environment from the memo entirely rather than reporting it half-measured. Hyun, please write the collapse analysis up as its own note - Eleni, this is the piece I think is genuinely publishable, separate from whether we adopt.\n\nDeshawn, keep Carmen at 40% through the end of the window to finish the schedule ablation. Everything else winds down after the 17th.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

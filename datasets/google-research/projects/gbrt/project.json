@@ -1,0 +1,25 @@
+{
+  "id": "gr/gbrt",
+  "title": "Implementation",
+  "summary": "Builds an automated red-teaming gate from Meridian's gradient-based language model red teaming work, which finds unsafe-response-inducing prompts by making decoding differentiable with Gumbel softmax sampling and scoring safety through dedicated SAFETY tokens.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Chiara Olsen",
+    "Fumiko Rossi",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gbrt",
+    "url": "https://github.com/google-research/google-research/tree/master/gbrt",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

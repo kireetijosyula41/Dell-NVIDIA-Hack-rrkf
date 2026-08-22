@@ -1,0 +1,18 @@
+{
+  "id": "gr/demogen/e04",
+  "thread_id": "gr/demogen/t2",
+  "in_reply_to": "gr/demogen/e03",
+  "date": "2026-06-29T16:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: demogen status - shipping it as a filter, and closing the budget loop",
+  "body": "Decision for the Jun 30 write-up: we ship it as a coarse filter, not a ranker. Drop the bottom quartile of candidate configs before training. On last quarter's actual sweep volume that would have saved about 9,000 GPU-hours with one config wrongly dropped out of 84. I can defend that trade; I could not defend claiming a ranking at 0.61.\n\nUmar - please state the DEMOGEN 0.87 and our 0.61 side by side, with the data-mixture explanation. The gap between them is the most useful paragraph in the doc.\n\nIdris, closing a loop: the $120k on Q3 discretionary compute budget line B-81 is ours for Q3, as you confirmed verbally back in April. We've spent about $74k of it on the zoo, 176 configs trained in the end. I'd like the remaining ~$46k held on the same line for the filter's integration work rather than returned. Can you confirm in writing this week - Q3 OKRs locked Friday and I don't want this floating.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

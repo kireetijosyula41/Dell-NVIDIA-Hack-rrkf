@@ -1,0 +1,18 @@
+{
+  "id": "gr/brush_splat/e02",
+  "thread_id": "gr/brush_splat/t1",
+  "in_reply_to": "gr/brush_splat/e01",
+  "date": "2026-04-24T13:15:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Brush - staffing + eval harness scoping",
+  "body": "Lucia,\n\nStaffing: Hyun 70% (TL, owns the WGSL kernel work and the Burn upgrade), Bilal 50%, Rafael 30% on splat-quality methodology through June.\n\nOn the eval question: to hit M2 we need systematic quality tracking, not eyeballing renders in the desktop app. There is no shared tooling for this, so we're scoping and building an internal evaluation harness from scratch - Bilal will own it at 50% for roughly six weeks, covering dataset loading, metric computation (PSNR/SSIM), and regression tracking across commits. Rerun integration stays for interactive debugging (training stats visualize there already), but the harness is what gates merges.\n\nCompute: modest - single-GPU training runs; a dozen titan-a100 slots best-effort suffices. The Android CI devices are the scarcer resource; I've asked for 4 test phones.\n\nRisk to flag early: Burn is a fast-moving dependency and the custom WGSL kernels break on upgrades. Hyun wants to pin versions until after LRB.\n\nBao",
+  "labels": ["resources"]
+}

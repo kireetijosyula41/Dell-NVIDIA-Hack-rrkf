@@ -1,0 +1,12 @@
+{
+  "id": "gr/graph_temporal_ai/e02",
+  "thread_id": "gr/graph_temporal_ai/t1",
+  "in_reply_to": "gr/graph_temporal_ai/e01",
+  "date": "2026-02-17T13:37:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Kickoff: knowledge-graph-driven forecasting (graph temporal AI)",
+  "body": "Anders,\n\nStaffing for the window: Ondrej 70%, Hyun 40%, Saoirse 30%, Emeka 50%, Paloma 40%. That covers the encoder integration and the feedback-ingestion demo.\n\nLooking past the window: Ondrej Bergstrom is committed at 60% to this project for May 2026 to carry the knowledge-graph encoder into the partner pilot, and my pilot plan assumes that allocation holds. He is the only person who understands both the encoder internals and the partner's association-rule format, so I want that in writing now rather than discovered in May.\n\nCompute: modest - 16 A100s best-effort on titan for encoder training. The heavier cost is data engineering: partner meta-data arrives as three different graph schemas and Paloma needs to normalize them before Hyun can encode anything.\n\nOne calendar note: I want the pilot-readiness review before 4/15 if possible, since Q2 planning eats the following week.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,599 @@
+{
+  "batch": 9,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "dnn_predict_accuracy",
+      "title": "dnn-predict-accuracy",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# dnn-predict-accuracy\n\nThis is the source code accompanying the paper \"Predicting Neural Network\nAccuracy from Weights\", living at https://github.com/google-research/google-research/tree/master/dnn_predict_accuracy\nIf you find it useful, please cite:\n\n```\n@misc{unterthiner2020predicting,\ntitle={Predicting Neural Network Accuracy from Weights},\nauthor={Thomas Unterthiner and Daniel Keysers and Sylvain Gelly and Olivier Bousquet and Ilya Tolstikhin},\nyear={2020},\neprint={2002.11448},\narchivePrefix={arXiv},\nprimaryClass={stat.ML}\n}\n```\n\n## Small DNN Zoo dataset\n\nWe release the dataset used in this study under the name \"Small CNN Zoo dataset\". It consists of instances of a specific Convolutional Neural Net (CNN) architecture that takes 1-channel input images as input, with 3 conv layers of 16 hidden units each, followed by global average pooling and 10-output nodes dense layer, using a total of 4970 parameters.\n\nWe trained 30k instances of this network on each of the four mentioned datasets, each one with different hyperparameters. We trained for a total of 86 epochs, and collected intermediate checkpoints at epoch 0 (initialization), 1, 2, 3, 20, 40, 60, 80 and 86 (end of training). For each of these 9 checkpoints, we take all the parameters of the network and flatten it to obtain a vector of length 4970. We then concatenate these into a large matrix (one per dataset), which we provide here in Numpy Matrix Format. Since a small number of training processes crashed/got stuck, we don\u2019t have the full (30k * 9) rows in these matrices. The exact sizes are:\n\n* [Cifar10](https://sto",
+      "contributors": [
+        "Yara Jokic",
+        "Katya Silva",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C005",
+          "type": "duplicate_effort",
+          "projects": [
+            "dnn_predict_accuracy",
+            "linear_eval"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "docent",
+      "title": "*Reviews2Movielens* Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# *Reviews2Movielens* Dataset\n\nA new multi-document multi-label dataset created by **joining two other existing datasets:** the _Movies and TV_ subset of [Amazon Reviews](https://nijianmo.github.io/amazon/index.html) [2, 3, 4, 5] and [MovieLens](https://grouplens.org/datasets/movielens/) [1], a rich source of crowdsourced movie tags.\nThis dataset accompanies a paper entitled _DocEnt: Learning Self-Supervised Entity Representations from Large Document Collections_ ([preprint](http://storage.googleapis.com/gresearch/docent/docent_eacl2021_final_v3.pdf)).\n\n#### Introduction\n\nThe key challenge in joining the above datasets was establishing correspondences between their respective movie IDs, which turns out to be a many-to-one mapping.\nIn particular, each Amazon ID (ASIN) matches a canonical product URL (e.g., `B06XGG4FFD` maps to https://www.amazon.com/dp/B06XGG4FFD).\nHowever, these IDs correspond to specific product editions (typically DVDs) rather than unique titles, causing duplication issues.\nMoreover, some ASINs are collections of several titles.\n\nWe have identified a subset of high-precision, many-to-one correspondences by applying [Named Entity Recognition](https://cloud.google.com/natural-language/docs/basics\\#entity\\%20analysis) techniques to both Amazon product titles (incl. release years) and their product pages.\n\nThe resulting mapping consists of 130026 unique Amazon IDs and 33099 unique MovieLens IDs.\nThe mapping accuracy was manually verified to be 97% based on 200 random samples.\nUltimately, the joined dataset contains nearly 8.8 million reviews, significantly mo",
+      "contributors": [
+        "Freya Ruiz",
+        "Leilani Nakamura",
+        "Yusuf Keita",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C101",
+          "type": "duplicate_effort",
+          "projects": [
+            "docent",
+            "didi_dataset"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dot_vs_learned_similarity",
+      "title": "Neural Collaborative Filtering vs. Matrix Factorization Revisited",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Neural Collaborative Filtering vs. Matrix Factorization Revisited\nCode to reproduce the experiments from the paper:\nRendle, Krichene, Zhang, Anderson (2020): [Neural Collaborative Filtering vs.\nMatrix Factorization Revisited](https://arxiv.org/abs/2005.09683)\n\n## Experiment 1: \"Revisiting NCF Experiments\"\n\nImplementation of a simple matrix factorization model using the datasets and\nevaluation protocol from the NCF paper.\n\nRequires the code and datasets from\nhttps://github.com/hexiangnan/neural_collaborative_filtering\n(this code assumes a Python 2 runtime)\n\n### Instructions\n- Download https://github.com/hexiangnan/neural_collaborative_filtering/archive/master.zip\n- Copy mf_simple.py into the same directory\n\n### Final experiments\n\nThe results in the plots of Figure 2 were created with the following\nhyperparameters.\n\nMovielens:\n\n```\npython mf_simple.py --data Data/ml-1m --epochs 256 --embedding_dim 16 \\\n--regularization 0.005 --negatives 8 --learning_rate 0.002 --stddev 0.1\n```\n\nPinterest:\n\n```\npython mf_simple.py --data Data/pinterest-20 --epochs 256 --embedding_dim 16 \\\n--regularization 0.01 --negatives 10 --learning_rate 0.007 --stddev 0.1\n```\n\n* We varied the embedding dimension from 16 to 192. Running the larger embedding\ndimension takes the longest but results in the highest quality.\n* We repeated each experiment 8 times and report the mean value.\n* The code is not optimized for speed but rather for simplicity.\n\n### Hyperparameter tuning\nThe hyperparameters above were tuned on a holdout set. The holdout set for\nhyperparameter tuning can be created with:\n\n```\n./create_h",
+      "contributors": [
+        "Freya Ruiz",
+        "Carmen Reyes",
+        "Milan Zapata",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C100",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dp_alternating_minimization",
+            "dot_vs_learned_similarity"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dp_alternating_minimization",
+      "title": "Differentially Private Alternating Minimization",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Differentially Private Alternating Minimization\n\nThis code accompanies the papers\n\n- [Private Alternating Least Squares](https://proceedings.mlr.press/v139/chien21a.html), ICML 2021 ([talk](https://icml.cc/virtual/2021/oral/10124))\n- [Multi-Task Differential Privacy Under Distribution Skew](https://arxiv.org/abs/2302.07975), ICML 2023.\n\n### Algorithms\nThis library provides algorithms for training personalized models with\ndifferentially private alternating minimization (DPAM).\n\n[DP personalized models](https://proceedings.neurips.cc/paper/2021/hash/f8580959e35cb0934479bb007fb241c2-Abstract.html)\nare of the form\n\n$$f_i(x) = \\langle u_i, v(x) \\rangle$$\n\nwhere $u_i$ is a user embedding (specific to each user i), and $v(x)$ is an\nitem encoder shared among all users. (Notice that each user i has a different\nprediction $f_i$.) Applications include recommendation systems, where the\nencoder $v(x)$ learns a (shared) representation of the items to recommend,\nthe user embedding $u_i$ encodes the user-specific preferences, and the dot\nproduct $\\langle u_i, v(x) \\rangle$ captures the relevance of item $x$ to\nuser $i$. These models are also known as multi-encoder models and are important\nin [federated learning](https://arxiv.org/abs/2102.03448).\n\nDP alternating minimization alternates between:\n\n1. Solving for the user embeddings $u_i$, using (exact) least squares\n2. Training the shared encoder $v(x)$, using DP.\n- An important special case is matrix completion, where the encoder $v(x)$ is\nlinear. In this case, step 2) is solved using DP least squares, see\nAlgorithm 1 in [DPALS](https://p",
+      "contributors": [
+        "Wei Ivanov",
+        "Csilla Nassar",
+        "Rosa Mensah",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C100",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dp_alternating_minimization",
+            "dot_vs_learned_similarity"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dp_instructions",
+      "title": "Privacy-preserving Instructions for Aligning LLMs",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Privacy-preserving Instructions for Aligning LLMs\n\nThis repo contains code for reproducing the results in [Privacy-preserving Instructions for Aligning Large Language Models](https://arxiv.org/abs/2402.13659).\n\n## Overview\n\nThis repo implements:\n1. DP fine-tuning of LLaMA 7B/13B models on Chatbot Arena instructions.\n2. Sample from fine-tuned models to generate initial synthetic instructions.\n3. Resample the initial synthetic instructions with DP histogram.\n4. Query OpenAI's API to label real/synthetic instructions.\n5. Supervised fine-tuning of LLaMA 7B/13B models with (instruction, response) pairs.\n\nFor running Reinforcement Learning with Human Feedback (RLHF) with PPO, we use the off-the-shelf implementation from [Huggingface TRL](https://github.com/huggingface/trl).\n\n## Pointers to the Main Components\n\n### Setup\n\nPlease first install the required packages.\n```\npip install -r requirements.txt\n```\n\n### Pre-process LMSYS-1M dataset\n\nThis step helps you build the Chatbot Arena instructions used in our paper. Please first apply access for the [LMSYS-Chat-1M dataset](https://huggingface.co/datasets/lmsys/lmsys-chat-1m).\n\nThen, simply run the following script. The dataset is a huggingface ```DatasetDict``` object and will be saved in ```dp_finetuning/data/```.\n```\npython data_preprocess.py\n```\n\n### Running Experiments\n\nFor 1, 2, and 5, please follow the README.md in ```dp_finetuning```.\n\nFor 3, please follow the README.md in ```resample_with_dp_histogram```.\n\nFor 4, please follow the README.md in ```query_gpt35_for_annotation```.",
+      "contributors": [
+        "Amara Okafor",
+        "Linnea Yamada",
+        "Yara Jokic",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C007",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dp_instructions",
+            "multimodalchat"
+          ],
+          "shared_object": "Amara Okafor at >=60% allocation",
+          "canonical": {
+            "person": "Amara Okafor",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Amara Okafor is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dp_sgd_clipping",
+      "title": "Python implementation of fast and memory-efficient DP-SGD clipping",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Python implementation of fast and memory-efficient DP-SGD clipping\n\nThis directory contains a Python implementation of fast and memory-efficient\nDP-SGD clipping.\n\n## Overview\n\nThe implementation is based on the paper \"Efficient Gradient Clipping Methods in\nDP-SGD for Convolution Models\" by W. Kong, M. Ribero, and G. Velegkas.\n\nThe paper provides three fast and memory-efficient algorithm for DP-SGD clipping\nfor convolutional neural networks.\n\n## Notes\nThe 'fast_cnn_grad_norm.py' file contains the implementation of all the three\nalgorithms for fast and memory efficient norm computation that can be used as\npart of the DP-SGD algorithm.\n\nThe 'in_place_fast_grad_norm' function implements the direct norm computation\nalgorithm in an in-place manner.\n\nThe 'in_place_ghost_norm' function implements the ghost norm clipping algorithm\nin an in-place manner.\n\nThe 'in_place_norm_fft' function implements the norm computation algorithm that\nis based on FFT.\n\nThe 'naive_fast_grad_norm' function implements the direct norm computation\nalgorithm in a non-in-place manner, as proposed by\nhttps://arxiv.org/pdf/2205.10683.\n\nThe 'naive_ghost_norm' function implements the ghost norm computation\nalgorithm in a non-in-place manner, as proposed by\nhttps://arxiv.org/pdf/2205.10683.\n\nSince all these algorithms are incomparable in terms of runtime efficiency, we\nhave implemented the function 'grad_norm_computation_selector' that selects the\nalgorithm based on the underlying parameters.",
+      "contributors": [
+        "Chiara Olsen",
+        "Leilani Nakamura",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C064",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dp_sgd_clipping",
+            "mbpp"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dp_transfer",
+      "title": "Large Scale Transfer Learning for Differential Privacy",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Large Scale Transfer Learning for Differential Privacy\n\nWe empirically illustrate that transfer learning is an extremely effective\ntechnique for training high-utility and large classification models with\ndifferential privacy constraints. In fact, we show that it is indeed possible\nto achieve a new state of the art and obtain ~88% top-1 accuracy on challenging\nImageNet-1k benchmark with $$(\\epsilon=8, \\delta=8e-7)$$ privacy constraints\nby employing our proposed recommendations.\n\nMore details can be found in https://arxiv.org/abs/2205.02973 and\nhttps://arxiv.org/abs/2211.13403.\n\n# Usage\n\nWe provide 4 methods and DP sanitization mechanisms for private finetuning using\npre-trained features.\n\nNamely,\n\n* ```DP-Adam```\n* ```DP-Newton```\n* DP-Least Squares (```DP-LS```) or DP-Linear Regression (```DP-LR```)\n* DP-SGD with Feature Covariance (```DP-FC```)\n\nThese can be configured and used using config files found in the ```configs``` dir.\nWe configure datasets using separate set of configs found in the ```data_configs```\ndir.\n\nThe code is meant to have self-contained privacy sanitizers and trainers for\nall 4 methods, so that they can be easily imported or used in another\ncodebase. Even though, most of the code can be used as a reference for your own\nimplementation, we also provide a binary which can be used to run our methods.\n\nFor instance, following command can be used for DP-FC:\n\n```sh\npython main.py \\\n--config=experimental/users/harshm/dp/configs/fc_regression.py \\\n--workdir=/tmp/dp_fc\n```\n\nThe computational constraints are not much since we are only\ntraining the last layer, al",
+      "contributors": [
+        "Leilani Nakamura",
+        "Milan Zapata",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C036",
+          "type": "budget_overallocation",
+          "projects": [
+            "mol_dqn",
+            "dp_transfer"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-58",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-58",
+            "available": "$240k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $240k from Q3 discretionary compute budget line B-58 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dpok",
+      "title": "Env Installation",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# DPOK\nCode for paper: [DPOK: Reinforcement Learning for Fine-tuning Text-to-Image Diffusion Models](https://arxiv.org/abs/2305.16381).\n\n## Env Installation\n\nWe recommend the Anaconda version Anaconda3-2022.10.\n\n```bash\nwget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh\nbash /tmp/Anaconda3-2022.10-Linux-x86_64.sh\nconda init bash\nsource ~/.bashrc\n```\n\nCreate a conda environment and install required modules.\n\n```bash\nconda env create -f environment.yaml\nconda activate dpok\n```\n\nInstall ImageReward module.\n\n```bash\nbash install_image_reward.sh\n```\n\nIf training gets stuck, try uninstall torch_xla and reinstall accelerate:\n\n```bash\npip uninstall torch_xla\npip uninstall accelerate\npip install accelerate==0.17.0\n```\n\n## Training\n\n### For a single prompt\n\n```bash\naccelerate launch train_online_pg.py --p_batch_size 4 --reward_weight 10 --kl_weight 0.01  --learning_rate 1e-5 --single_flag 1 --single_prompt \"A green colored rabbit.\" --gradient_accumulation_steps 12 --clip_norm 0.1 --g_batch_size 10 --multi_gpu 0 --v_flag 1\n```\n\nExplanation of the arguments:\n- `p_batch_size`: batch size for policy training. Batch size 4 can be used for a single A100 GPU. If multiple GPUs are used, we need to share the entire unet which is more memory-consuming. In this case, we need to use a smaller batch size for policy training (2 for each A100).\n- `reward_weight`: weight for the reward term in the policy loss\n- `kl_weight`: weight for the KL term in the policy loss\n- `learning_rate`: learning rate for the policy network\n- `single_flag`: whether to train on a single prom",
+      "contributors": [
+        "Tereza Aliyev",
+        "Rosa Mensah",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C135",
+          "type": "budget_overallocation",
+          "projects": [
+            "dpok",
+            "fwl"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-85",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-85",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-85 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dpsgd_batch_sampler_accounting",
+      "title": "Privacy Accounting for DP-SGD with Batch Samplers",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Privacy Accounting for DP-SGD with Batch Samplers\n\nThis directory contains code for obtaining bounds on privacy accounting of\nDifferentially Private Stochastic Gradient Descent (DP-SGD) for various\nbatch samplers, as developed in the following papers:\n\n> **Title:** How Private are DP-SGD implementations?\\\n> **Authors:** Lynn Chua, Badih Ghazi, Pritish Kamath, Ravi Kumar,\nPasin Manurangsi, Amer Sinha, Chiyuan Zhang\\\n> **Link:** https://arxiv.org/abs/2403.17673 (Appeared at ICML 2024)\n\n> **Title:** Scalable DP-SGD: Shuffling vs. Poisson Subsampling\\\n> **Authors:** Lynn Chua, Badih Ghazi, Pritish Kamath, Ravi Kumar,\nPasin Manurangsi, Amer Sinha, Chiyuan Zhang\\\n> **Link:** https://arxiv.org/abs/2411.04205 (Appeared at NeurIPS 2024)\n\n> **Title:** Balls-and-Bins Sampling for DP-SGD\\\n> **Authors:** Lynn Chua, Badih Ghazi, Charlie Harrison, Ethan Leeman,\nPritish Kamath, Ravi Kumar, Pasin Manurangsi, Amer Sinha,\nChiyuan Zhang\\\n> **Link:** https://arxiv.org/abs/2412.16802 (To appear at AISTATS 2025)\n\nNote: This is not an officially supported Google product.\n\n## Requirements\nThe codebase depends on common Python packages of\n[numpy](https://pypi.org/project/numpy/),\n[scipy](https://pypi.org/project/scipy/) and\n[pandas](https://pypi.org/project/pandas/) (for pretty printing of outputs in\nthe demonstration example). In addition, it depends on the Google\n[dp_accounting](https://pypi.org/project/dp-accounting/) package.\n\nYou can install the dependencies using:\n\n```\npip install -r requirements.txt\n```\n\n## Getting Started\n\nThe `example.py` file provides a simple example for using all the d",
+      "contributors": [
+        "Amara Okafor",
+        "Leilani Nakamura",
+        "Farah Haddad",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C076",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dpsgd_batch_sampler_accounting",
+            "euphonia_spice"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dql_grasping",
+      "title": "Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparison of O",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparison of Off-Policy Methods\n\nThis codebase implements learning algorithms and experiments from [Deep\nReinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparison\nof Off-Policy Methods (ICRA 2018)](https://arxiv.org/abs/1802.10264).\n\nIf you use this codebase for your research, please cite the paper:\n\n```\n@article{quillen2018deep,\ntitle={Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparative Evaluation of Off-Policy Methods},\nauthor={Quillen, Deirdre and Jang, Eric and Nachum, Ofir and Finn, Chelsea and Ibarz, Julian and Levine, Sergey},\njournal={IEEE International Conference on Robotics and Automation},\nyear={2018}\n}\n```\n\n## Features\n\n*   Several grasping environments with varying degrees of grasping difficulty.\n*   Customizable DQL, MC, Supervised, Corr-MC, DDPG, PCL algorithms.\n*   MC returns and elibility traces for biased returns.\n*   Bash scripts for gathering data from random policies and running synchronous\non-policy or off-policy experiments that alternate between training and\nevaluation.\n*   Scripts to run grid search over hyperparameters.\n\n## Getting Started\n\nThe recommended way to set up these experiments is via a virtualenv\n\n```\nsudo apt-get install python-pip\npython -m pip install --user virtualenv\npython -m virtualenv ~/env\nsource ~/env/bin/activate\n```\n\nThen install the project dependencies in that virtualenv:\n\n```\npip install -r dql_grasping/requirements.txt\n```\n\nThe first step is then to collect off-policy grasping data with a",
+      "contributors": [
+        "Efe Lindqvist",
+        "Wanjiru Horvat",
+        "Nikhil Abebe",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C067",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dql_grasping",
+            "cochlear_implant"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dreamfields",
+      "title": "Zero-Shot Text-Guided Object Generation with Dream Fields",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Zero-Shot Text-Guided Object Generation with Dream Fields\nby **Ajay Jain**, **Ben Mildenhall**, **Jonathan T. Barron**, **Pieter Abbeel**, and **Ben Poole**\n\n[Project website](https://ajayj.com/dreamfields) | [arXiv paper](https://arxiv.org/abs/2112.01455)\n\n## Overview\nThis code implements Dream Fields, a way to synthesize 3D objects from natural language prompts.\n\n**Abstract:** We combine neural rendering with multi-modal image and text representations to synthesize diverse 3D objects solely from natural language descriptions. Our method, Dream Fields, can generate the geometry and color of a wide range of objects without 3D supervision. Due to the scarcity of diverse, captioned 3D data, prior methods only generate objects from a handful of categories, such as ShapeNet. Instead, we guide generation with image-text models pre-trained on large datasets of captioned images from the web. Our method optimizes a Neural Radiance Field from many camera views so that rendered images score highly with a target caption according to a pre-trained CLIP model. To improve fidelity and visual quality, we introduce simple geometric priors, including sparsity-inducing transmittance regularization, scene bounds, and new MLP architectures. In experiments, Dream Fields produce realistic, multi-view consistent object geometry and color from a variety of natural language captions.\n\n## Running with Docker\nWe provide a Dockerfile based on a NVIDIA NGC container. Pull the base container:\n```\ndocker pull nvcr.io/nvidia/tensorflow:21.11-tf2-py3\n```\nRun at low quality on all GPUs:\n```\nbash run_docke",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Chiara Olsen",
+        "Tereza Aliyev",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C132",
+          "type": "dependency_date_drift",
+          "projects": [
+            "ledge",
+            "neutra",
+            "gen_patch_neural_rendering",
+            "dreamfields"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dreg_estimators",
+      "title": "Doubly Reparameterized Gradient (DReG) Estimators",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Doubly Reparameterized Gradient (DReG) Estimators\n*Implemention of DReG estimators as described in [Doubly Reparameterized Gradient Estimators for Monte Carlo Objectives](https://drive.google.com/open?id=1XmNbCn4-AuzobofdHzFaAwb1nLTHX-s-) by George Tucker (gjt@google.com), Dieterich Lawson, Shixiang Gu, Chris J. Maddison.*\n\nDeep latent variable models have become a popular model choice due to the scalable learning algorithms introduced by (Kingma & Welling, 2013; Rezende et al., 2014). These approaches maximize a variational lower bound on the intractable log likelihood of the observed data. Burda et al. (2015) introduced a multi-sample variational bound, IWAE, that is at least as tight as the standard variational lower bound and becomes increasingly tight as the number of samples increases.  Counterintuitively, the typical inference network gradient estimator for the IWAE bound performs poorly as the number of samples increases (Rainforth et al., 2018; Le et al., 2018). Roeder et al. (2017) propose an improved gradient estimator, however, are unable to show it is unbiased. We show that it is in fact biased and that the bias can be estimated efficiently with a second application of the reparameterization trick. The doubly reparameterized gradient (DReG) estimator does not suffer as the number of samples increases, resolving the previously raised issues.  The same idea can be used to improve many recently introduced training techniques for latent variable models. In particular, we show that this estimator reduces the variance of the IWAE gradient, the reweighted wake-sleep",
+      "contributors": [
+        "Csilla Nassar",
+        "Efe Lindqvist",
+        "Katya Silva",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C131",
+          "type": "duplicate_effort",
+          "projects": [
+            "mucped22",
+            "dreg_estimators"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "drjax",
+      "title": "DrJAX - Differentiable MapReduce Primitives in JAX",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# DrJAX - Differentiable MapReduce Primitives in JAX\n\nDrJAX is a library designed to embed a MapReduce programming model into JAX. DrJAX has\nmultiple objectives.\n\n1.  Create a simple JAX-based authoring surface for MapReduce computations.\n1.  Leverage JAX's sharding mechanisms to enable highly optimized execution of\nMapReduce computations, especially in large-scale datacenter settings.\n1.  Full differentiability of DrJAX computations, including differentiating\nthrough communication primitives like broadcasts and reductions.\n\nDrJAX is designed to make it easy to author and execute parallel computations in\nthe datacenter. DrJAX is tailored towards **large-scale** parallel and distributed computations,\nincluding computations involving larger models, and ensuring that they can be\nrun efficiently.\n\n## Building a new wheel\n\nRun `python -m build` to build a new `drjax` wheel.\n\n## Run tests\n\nExecute the `run_test.sh` script.\n\n## Disclaimers\n\nThis is not an officially supported Google product. If you're interested in learning more about responsible AI practices, please see\nGoogle AI's\n[Responsible AI Practices](https://ai.google/education/responsible-ai-practices).",
+      "contributors": [
+        "Paloma Castillo",
+        "Tereza Aliyev",
+        "Yusuf Keita",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C119",
+          "type": "duplicate_effort",
+          "projects": [
+            "drjax",
+            "brush_splat"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dselect_k_moe",
+      "title": "DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-T",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-Task Learning\n\nCode for DSelect-k as described in [DSelect-k: Differentiable Selection in the\nMixture of Experts with Applications to Multi-Task Learning](https://arxiv.org/abs/2106.03760).\nHussein Hazimeh, Zhe Zhao, Aakanksha Chowdhery, Maheswaran Sathiamoorthy, Yihua Chen, Rahul Mazumder, Lichan Hong, Ed H. Chi\n\nIf you use this codebase for your research, please cite the paper:\n\n```\n@article{hazimeh2021dselectk,\ntitle={DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-Task Learning},\nauthor={Hussein Hazimeh and Zhe Zhao and Aakanksha Chowdhery and Maheswaran Sathiamoorthy and Yihua Chen and Rahul Mazumder and Lichan Hong and Ed H. Chi},\nyear={2021},\neprint={2106.03760},\narchivePrefix={arXiv},\nprimaryClass={cs.LG}\n}\n```\n\n# Example usage of the tf.keras.layers.Layer implementation.\n\nConstruct a DSelectKGate to select 2 out of 4 experts.\n```\ngate = DSelectKGate(num_nonzeros=2)\n```\nOutput_tensor is a sparse mixture of the 4 tensors in the inputs.\n```\noutput_tensor = gate(inputs)\n```",
+      "codename": "Project Riverbed",
+      "contributors": [
+        "Wei Ivanov",
+        "Bilal Novak",
+        "Maren Zhou",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C080",
+          "type": "codename_collision",
+          "projects": [
+            "dselect_k_moe",
+            "kws_streaming"
+          ],
+          "shared_object": "Project Riverbed",
+          "canonical": {
+            "codename": "Project Riverbed"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Riverbed."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dual_dice",
+      "title": "DualDICE",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# DualDICE\n\nCode for DualDICE as described in `DualDICE: Behavior-Agnostic Estimation of\nDiscounted Stationary Distribution Corrections' by Ofir Nachum, Yinlam Chow, Bo\nDai, Lihong Li.\n\nPaper available at https://arxiv.org/abs/1906.04733\n\nIf you use this codebase for your research, please cite the paper:\n\n```\n@article{nachum2019dualdice,\ntitle={DualDICE: Behavior-Agnostic Estimation of Discounted Stationary\nDistribution Corrections},\nauthor={Nachum, Ofir and Chow, Yinlam and Dai, Bo and Li, Lihong},\njournal={NeurIPS},\nyear={2019}\n}\n```\n\n## Basic Commands\n\nRun DualDICE on a tabular version of GridWalk:\n\n```\npython -m dual_dice.run --logtostderr --env_name=grid --tabular_obs --tabular_solver\n```\n\nRun DualDICE on a non-tabular version of GridWalk:\n\n```\npython -m dual_dice.run --logtostderr --env_name=grid --notabular_obs --notabular_solver \\\n--nu_learning_rate=0.0001 --zeta_learning_rate=0.001\n```\n\n## Additional Information\n\nWhen tuning DualDICE, some things to keep in mind:\n*   Optimization of nu and zeta at the same time can be unstable. Try utilizing\nthe --deterministic_env flag, which trains nu on its own (without\napplication of Fenchel duality).\n*   Lower gamma can make optimization easier.\n*   Otherwise, nu and zeta learning rate have the biggest impact on performance.\n\nWhen evaluating DualDICE, keep in mind that the print-out of the Target (oracle)\nrewards is an estimate! In a perfect world this would be calculated with\nnum_trajectories=\\infty and max_trajectory_length=\\infty. In practice, to get a\nbetter estimate, just set these to a large value (e.g., 1000).\n\nThis is ",
+      "contributors": [
+        "Halima Toure",
+        "Farah Haddad",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C025",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dual_dice",
+            "kwikbucks"
+          ],
+          "shared_object": "Oyin Iversen at >=60% allocation",
+          "canonical": {
+            "person": "Oyin Iversen",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Oyin Iversen is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dual_pixels",
+      "title": "Learning Single Camera Depth Estimation using Dual-Pixels",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learning Single Camera Depth Estimation using Dual-Pixels\n\nReference code for the paper [Learning Single Camera Depth Estimation using Dual-Pixels](https://arxiv.org/abs/1904.05822).\nRahul Garg, Neal Wadhwa, Sameer Ansari & Jonathan T. Barron, ICCV 2019. If you use this code or our dataset, please cite our paper:\n```\n@article{GargDualPixelsICCV2019,\nauthor    = {Rahul Garg and Neal Wadhwa and Sameer Ansari and Jonathan T. Barron},\ntitle     = {Learning Single Camera Depth Estimation using Dual-Pixels},\njournal   = {ICCV},\nyear      = {2019},\n}\n```\n\nIf you have any questions about our app, dataset or code, please email\n. We are more likely to respond if you email us\nthan if you open an issue on GitHub.\n\n## Dataset\n\nThe dataset containing the RGB images, dual-pixel images, and the depth maps\ncan be downloaded from the links below:\n\n[Train (95G)](https://storage.googleapis.com/iccv2019-data/train.tgz)\n\n[Test (29G)](https://storage.googleapis.com/iccv2019-data/test.tgz)\n\nThe dataset linked above is slightly smaller than the one used in the paper.\nPlease see the dataset [README](https://storage.googleapis.com/iccv2019-data/README.pdf) for more details about the dataset.\n\n## Results and Evaluation.\n\n### Results\nSince the dataset above is slightly smaller than the one used in the paper,\nwe trained and evaluated our best performing model (DPNet with Affine\nInvariance) on the data above. The metrics are similar to those reported in the\npaper:\n\nPredictions from the model corresponding to the center image in the test dataset\nare available [here](https://storage.googleapis.com/iccv20",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Saoirse Eriksen",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C041",
+          "type": "duplicate_effort",
+          "projects": [
+            "dual_pixels",
+            "learning_to_clarify"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/gwikimatch",
+  "conflicts": [
+    {
+      "conflict_id": "C092",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["agile_deliberation"],
+      "planted_in": ["e02"],
+      "claim_as_written": "So: we are scoping and staffing a dataset de-duplication pipeline, built from scratch - Bilal owns the design (shingling + MinHash over document text, plus URL-normalization rules), Oyin the batch infrastructure, working version by 6/19."
+    }
+  ]
+}

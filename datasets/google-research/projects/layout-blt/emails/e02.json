@@ -1,0 +1,15 @@
+{
+  "id": "gr/layout-blt/e02",
+  "thread_id": "gr/layout-blt/t1",
+  "in_reply_to": "gr/layout-blt/e01",
+  "date": "2026-04-21T13:57:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BLT auto-layout for report and dashboard templates",
+  "body": "Dmitri,\n\nPlan:\n\nStaffing: Efe 35% as modeling lead (he ramps in June when his other commitment tapers; until then Wanjiru fronts the training runs), Wanjiru 50% on training + the conda/pip environment pinning, Emeka 40% on the JSON dataset preparation — RICO, PubLayNet, COCO and Magazine all need converting to the release's JSON format — and Oyin 30% on the internal template-schema mapping.\n\nCompute: reproduction runs fit on 16 Titan A100s best-effort. For the endgame we're set: we hold the cirrus-tpu reservation — 128 accelerators for the week of 2026-07-06 — for the final training sweep across the four public datasets. Sized for all dataset/config combinations with two retries each.\n\nOne planning note: that sweep week starts right after the Corpus v2 freeze on Jul 10 hits mid-week — our datasets are all public-side so we're unaffected, but if you want internal template data in the training mix, it must be ingested before the freeze, i.e. decision by Jun 26.\n\nDeshawn",
+  "labels": ["resources"]
+}

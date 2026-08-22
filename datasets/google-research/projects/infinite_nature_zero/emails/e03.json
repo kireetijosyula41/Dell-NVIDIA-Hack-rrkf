@@ -1,0 +1,41 @@
+{
+  "id": "gr/infinite_nature_zero/e03",
+  "thread_id": "gr/infinite_nature_zero/t1",
+  "in_reply_to": "gr/infinite_nature_zero/e01",
+  "date": "2026-06-10T16:40:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: InfiniteNature-Zero kickoff — perpetual view generation",
+  "body": "Status through June 9. Repro: done — the pretrained LHQ checkpoint runs end-to-end and our flythroughs match the project-page examples qualitatively; FID on our held-out LHQ split is 14.6 vs 14.2 reported. The pain point is the environment: the codebase pins Python 3.8 / CUDA 11.3, and the StyleGAN2 upgrade patch (stylegan2_upgrade.patch) doesn't apply cleanly against the newer rosinality revision, so Saoirse froze a known-good commit in our image. Softmax splatting also needed a rebuild for our driver stack. Risk for the retrain: our licensed corpus skews coastal; early finetunes drift toward water textures after ~200 steps of autoregressive generation. Csilla is testing a resampled mix. Nothing blocking the July plan yet. — Gustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

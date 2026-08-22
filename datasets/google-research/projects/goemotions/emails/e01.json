@@ -1,0 +1,17 @@
+{
+  "id": "gr/goemotions/e01",
+  "thread_id": "gr/goemotions/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T10:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: GoEmotions fine-grained emotion classification",
+  "body": "Hi Deshawn,\n\nKicking off GoEmotions. The asset: 58,009 human-annotated comments labeled across 27 emotion categories plus Neutral - far finer-grained than the positive/negative/neutral APIs customers use today. We ship two things this window: the curated corpus (reter-agreement filtered split: 43,410 train / 5,427 test / 5,426 validation) as a platform dataset, and a classification endpoint based on the fine-tuned BERT-base cased baseline.\n\nProduct hook: support and community teams want to distinguish gratitude from relief from admiration in customer text. Nobody differentiates at that granularity today.\n\nMilestones: baseline repro by 4/17, dataset card + model card review by 5/15, endpoint decision review by 6/12.\n\nUmar leads modeling, Kaia evals, Quentin error analysis, Oyin serving. Deshawn - staffing and compute by end of week?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

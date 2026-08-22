@@ -1,0 +1,25 @@
+{
+  "id": "gr/aptamers_mlpd",
+  "title": "Aptamer model training and walking code",
+  "summary": "A four-stage pipeline for aptamer sequence modeling: preprocessing raw fastq pairs into a matrix of sequences with counts per selection round and stringency level, model training, sequence walking to search for improved binders, and analysis notebooks over PD and MLPD count data.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Yara Jokic",
+    "Saoirse Eriksen",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-08"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "aptamers_mlpd",
+    "url": "https://github.com/google-research/google-research/tree/master/aptamers_mlpd",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

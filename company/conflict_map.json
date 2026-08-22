@@ -1,0 +1,3140 @@
+{
+  "conflicts": [
+    {
+      "id": "C001",
+      "type": "gpu_double_booking",
+      "projects": [
+        "neural_additive_models",
+        "menger_rl"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "neural_additive_models": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        },
+        "menger_rl": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C002",
+      "type": "duplicate_effort",
+      "projects": [
+        "depth_and_motion_learning",
+        "igt_optimizer"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "depth_and_motion_learning": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "igt_optimizer": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C003",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "hspace",
+        "hitnet"
+      ],
+      "shared_object": "Farah Haddad at >=60% allocation",
+      "canonical": {
+        "person": "Farah Haddad",
+        "month": "June"
+      },
+      "per_project": {
+        "hspace": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for June 2026."
+        },
+        "hitnet": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C004",
+      "type": "gpu_double_booking",
+      "projects": [
+        "constrained_language_typology",
+        "missing_link"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "constrained_language_typology": {
+          "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+        },
+        "missing_link": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C005",
+      "type": "duplicate_effort",
+      "projects": [
+        "dnn_predict_accuracy",
+        "linear_eval"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "dnn_predict_accuracy": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "linear_eval": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C006",
+      "type": "dependency_date_drift",
+      "projects": [
+        "covid_vhh_design",
+        "hyperbolic_discount",
+        "mentormix",
+        "distinguishing_romanized_hindi_urdu"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "covid_vhh_design": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "hyperbolic_discount": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "mentormix": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "distinguishing_romanized_hindi_urdu": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        }
+      }
+    },
+    {
+      "id": "C007",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "dp_instructions",
+        "multimodalchat"
+      ],
+      "shared_object": "Amara Okafor at >=60% allocation",
+      "canonical": {
+        "person": "Amara Okafor",
+        "month": "June"
+      },
+      "per_project": {
+        "dp_instructions": {
+          "claim": "Amara Okafor is committed at 60%+ to this project for June 2026."
+        },
+        "multimodalchat": {
+          "claim": "Amara Okafor is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C008",
+      "type": "codename_collision",
+      "projects": [
+        "code_as_policies",
+        "bigger_better_faster"
+      ],
+      "shared_object": "Project Nimbus",
+      "canonical": {
+        "codename": "Project Nimbus"
+      },
+      "per_project": {
+        "code_as_policies": {
+          "claim": "Team refers to this effort internally as Project Nimbus."
+        },
+        "bigger_better_faster": {
+          "claim": "Team refers to this (different) effort internally as Project Nimbus."
+        }
+      }
+    },
+    {
+      "id": "C009",
+      "type": "budget_overallocation",
+      "projects": [
+        "meta_pseudo_labels",
+        "jax_rtm"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-88",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-88",
+        "available": "$120k"
+      },
+      "per_project": {
+        "meta_pseudo_labels": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-88 for this project."
+        },
+        "jax_rtm": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-88 for this project."
+        }
+      }
+    },
+    {
+      "id": "C010",
+      "type": "gpu_double_booking",
+      "projects": [
+        "f_net",
+        "invariant_slot_attention"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 384
+      },
+      "per_project": {
+        "f_net": {
+          "claim": "Believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-01."
+        },
+        "invariant_slot_attention": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C011",
+      "type": "duplicate_effort",
+      "projects": [
+        "icetea",
+        "On_Combining_Bags_to_Better_Learn_from_Label_Proportions"
+      ],
+      "shared_object": "a dataset de-duplication pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "icetea": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        },
+        "On_Combining_Bags_to_Better_Learn_from_Label_Proportions": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C012",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "gumbel_max_causal_gadgets",
+        "compositional_transformers"
+      ],
+      "shared_object": "Wei Ivanov at >=60% allocation",
+      "canonical": {
+        "person": "Wei Ivanov",
+        "month": "July"
+      },
+      "per_project": {
+        "gumbel_max_causal_gadgets": {
+          "claim": "Wei Ivanov is committed at 60%+ to this project for July 2026."
+        },
+        "compositional_transformers": {
+          "claim": "Wei Ivanov is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C013",
+      "type": "gpu_double_booking",
+      "projects": [
+        "dac",
+        "layout-blt"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "dac": {
+          "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        },
+        "layout-blt": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C014",
+      "type": "duplicate_effort",
+      "projects": [
+        "instruction_following_eval",
+        "coltran"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "instruction_following_eval": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "coltran": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C015",
+      "type": "dependency_date_drift",
+      "projects": [
+        "gradient_based_tuning",
+        "imghum",
+        "cola",
+        "hierarchical_foresight"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "gradient_based_tuning": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "imghum": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "cola": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "hierarchical_foresight": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C016",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "activation_clustering",
+        "m_layer"
+      ],
+      "shared_object": "Fumiko Rossi at >=60% allocation",
+      "canonical": {
+        "person": "Fumiko Rossi",
+        "month": "June"
+      },
+      "per_project": {
+        "activation_clustering": {
+          "claim": "Fumiko Rossi is committed at 60%+ to this project for June 2026."
+        },
+        "m_layer": {
+          "claim": "Fumiko Rossi is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C017",
+      "type": "codename_collision",
+      "projects": [
+        "fvlm",
+        "factors_of_influence"
+      ],
+      "shared_object": "Project Basalt",
+      "canonical": {
+        "codename": "Project Basalt"
+      },
+      "per_project": {
+        "fvlm": {
+          "claim": "Team refers to this effort internally as Project Basalt."
+        },
+        "factors_of_influence": {
+          "claim": "Team refers to this (different) effort internally as Project Basalt."
+        }
+      }
+    },
+    {
+      "id": "C018",
+      "type": "budget_overallocation",
+      "projects": [
+        "es_maml",
+        "epi_forecasts"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-58",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-58",
+        "available": "$180k"
+      },
+      "per_project": {
+        "es_maml": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project."
+        },
+        "epi_forecasts": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-58 for this project."
+        }
+      }
+    },
+    {
+      "id": "C019",
+      "type": "gpu_double_booking",
+      "projects": [
+        "lm_memorization",
+        "mutual_information_representation_learning"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-08",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "lm_memorization": {
+          "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-08."
+        },
+        "mutual_information_representation_learning": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-08."
+        }
+      }
+    },
+    {
+      "id": "C020",
+      "type": "duplicate_effort",
+      "projects": [
+        "CoDi",
+        "irregular_timeseries_pretraining"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "CoDi": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "irregular_timeseries_pretraining": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C021",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "language_model_uncertainty",
+        "model_pruning"
+      ],
+      "shared_object": "Vera Egede at >=60% allocation",
+      "canonical": {
+        "person": "Vera Egede",
+        "month": "May"
+      },
+      "per_project": {
+        "language_model_uncertainty": {
+          "claim": "Vera Egede is committed at 60%+ to this project for May 2026."
+        },
+        "model_pruning": {
+          "claim": "Vera Egede is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C022",
+      "type": "gpu_double_booking",
+      "projects": [
+        "llm_longdoc_interpretability",
+        "infinite_nature_zero"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "llm_longdoc_interpretability": {
+          "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        },
+        "infinite_nature_zero": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C023",
+      "type": "duplicate_effort",
+      "projects": [
+        "camp_zipnerf",
+        "ckd"
+      ],
+      "shared_object": "a synthetic-data generation pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "camp_zipnerf": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        },
+        "ckd": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C024",
+      "type": "dependency_date_drift",
+      "projects": [
+        "cell_embedder",
+        "experience_replay",
+        "covid_epidemiology",
+        "CardBench_zero_shot_cardinality_training"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "cell_embedder": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "experience_replay": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "covid_epidemiology": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "CardBench_zero_shot_cardinality_training": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C025",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "dual_dice",
+        "kwikbucks"
+      ],
+      "shared_object": "Oyin Iversen at >=60% allocation",
+      "canonical": {
+        "person": "Oyin Iversen",
+        "month": "May"
+      },
+      "per_project": {
+        "dual_dice": {
+          "claim": "Oyin Iversen is committed at 60%+ to this project for May 2026."
+        },
+        "kwikbucks": {
+          "claim": "Oyin Iversen is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C026",
+      "type": "codename_collision",
+      "projects": [
+        "mathwriting",
+        "cfq"
+      ],
+      "shared_object": "Project Sirocco",
+      "canonical": {
+        "codename": "Project Sirocco"
+      },
+      "per_project": {
+        "mathwriting": {
+          "claim": "Team refers to this effort internally as Project Sirocco."
+        },
+        "cfq": {
+          "claim": "Team refers to this (different) effort internally as Project Sirocco."
+        }
+      }
+    },
+    {
+      "id": "C027",
+      "type": "budget_overallocation",
+      "projects": [
+        "ebp",
+        "al_for_fep"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-19",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-19",
+        "available": "$120k"
+      },
+      "per_project": {
+        "ebp": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-19 for this project."
+        },
+        "al_for_fep": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-19 for this project."
+        }
+      }
+    },
+    {
+      "id": "C028",
+      "type": "gpu_double_booking",
+      "projects": [
+        "ciw_label_noise",
+        "mobilebert"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "ciw_label_noise": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+        },
+        "mobilebert": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C029",
+      "type": "duplicate_effort",
+      "projects": [
+        "dimensions_of_motion",
+        "encyclopedic_vqa"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "dimensions_of_motion": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "encyclopedic_vqa": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C030",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "es_enas",
+        "eli5_retrieval_large_lm"
+      ],
+      "shared_object": "Rosa Mensah at >=60% allocation",
+      "canonical": {
+        "person": "Rosa Mensah",
+        "month": "June"
+      },
+      "per_project": {
+        "es_enas": {
+          "claim": "Rosa Mensah is committed at 60%+ to this project for June 2026."
+        },
+        "eli5_retrieval_large_lm": {
+          "claim": "Rosa Mensah is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C031",
+      "type": "gpu_double_booking",
+      "projects": [
+        "lasagna_mt",
+        "lila"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "lasagna_mt": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-01."
+        },
+        "lila": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C032",
+      "type": "duplicate_effort",
+      "projects": [
+        "ieg",
+        "lego"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "ieg": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "lego": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C033",
+      "type": "dependency_date_drift",
+      "projects": [
+        "meta_learning_without_memorization",
+        "fractals_language",
+        "frequency_analysis",
+        "caltrain"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "meta_learning_without_memorization": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "fractals_language": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "frequency_analysis": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "caltrain": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        }
+      }
+    },
+    {
+      "id": "C034",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "cognate_inpaint_neighbors",
+        "floatseg"
+      ],
+      "shared_object": "Katya Silva at >=60% allocation",
+      "canonical": {
+        "person": "Katya Silva",
+        "month": "June"
+      },
+      "per_project": {
+        "cognate_inpaint_neighbors": {
+          "claim": "Katya Silva is committed at 60%+ to this project for June 2026."
+        },
+        "floatseg": {
+          "claim": "Katya Silva is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C035",
+      "type": "codename_collision",
+      "projects": [
+        "newspalm_mbr_qe",
+        "compositional_classification"
+      ],
+      "shared_object": "Project Kestrel",
+      "canonical": {
+        "codename": "Project Kestrel"
+      },
+      "per_project": {
+        "newspalm_mbr_qe": {
+          "claim": "Team refers to this effort internally as Project Kestrel."
+        },
+        "compositional_classification": {
+          "claim": "Team refers to this (different) effort internally as Project Kestrel."
+        }
+      }
+    },
+    {
+      "id": "C036",
+      "type": "budget_overallocation",
+      "projects": [
+        "mol_dqn",
+        "dp_transfer"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-58",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-58",
+        "available": "$240k"
+      },
+      "per_project": {
+        "mol_dqn": {
+          "claim": "Finance partner verbally earmarked $240k from Q3 discretionary compute budget line B-58 for this project."
+        },
+        "dp_transfer": {
+          "claim": "Finance partner verbally earmarked the same $240k from Q3 discretionary compute budget line B-58 for this project."
+        }
+      }
+    },
+    {
+      "id": "C037",
+      "type": "gpu_double_booking",
+      "projects": [
+        "moment_advice",
+        "m_theory"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "moment_advice": {
+          "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+        },
+        "m_theory": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C038",
+      "type": "duplicate_effort",
+      "projects": [
+        "gbrt",
+        "after_kernel"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "gbrt": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "after_kernel": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C039",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "jaxsel",
+        "dble"
+      ],
+      "shared_object": "Efe Lindqvist at >=60% allocation",
+      "canonical": {
+        "person": "Efe Lindqvist",
+        "month": "May"
+      },
+      "per_project": {
+        "jaxsel": {
+          "claim": "Efe Lindqvist is committed at 60%+ to this project for May 2026."
+        },
+        "dble": {
+          "claim": "Efe Lindqvist is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C040",
+      "type": "gpu_double_booking",
+      "projects": [
+        "c_learning",
+        "label_bias"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "c_learning": {
+          "claim": "Believes it holds the cirrus-tpu reservation (512 accelerators) for the week of 2026-06-22."
+        },
+        "label_bias": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (512 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C041",
+      "type": "duplicate_effort",
+      "projects": [
+        "dual_pixels",
+        "learning_to_clarify"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "dual_pixels": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "learning_to_clarify": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C042",
+      "type": "dependency_date_drift",
+      "projects": [
+        "enas_lm",
+        "hipi",
+        "betum_tool",
+        "correct_batch_effects_wdn"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "enas_lm": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "hipi": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "betum_tool": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "correct_batch_effects_wdn": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C043",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "d3pm",
+        "cfq_pt_vs_sa"
+      ],
+      "shared_object": "Farah Haddad at >=60% allocation",
+      "canonical": {
+        "person": "Farah Haddad",
+        "month": "July"
+      },
+      "per_project": {
+        "d3pm": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for July 2026."
+        },
+        "cfq_pt_vs_sa": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C044",
+      "type": "codename_collision",
+      "projects": [
+        "kobe",
+        "cluster_gcn"
+      ],
+      "shared_object": "Project Obsidian",
+      "canonical": {
+        "codename": "Project Obsidian"
+      },
+      "per_project": {
+        "kobe": {
+          "claim": "Team refers to this effort internally as Project Obsidian."
+        },
+        "cluster_gcn": {
+          "claim": "Team refers to this (different) effort internally as Project Obsidian."
+        }
+      }
+    },
+    {
+      "id": "C045",
+      "type": "budget_overallocation",
+      "projects": [
+        "frmt",
+        "gift"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-75",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-75",
+        "available": "$120k"
+      },
+      "per_project": {
+        "frmt": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-75 for this project."
+        },
+        "gift": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-75 for this project."
+        }
+      }
+    },
+    {
+      "id": "C046",
+      "type": "gpu_double_booking",
+      "projects": [
+        "conceptor",
+        "interpretability_benchmark"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "conceptor": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+        },
+        "interpretability_benchmark": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C047",
+      "type": "duplicate_effort",
+      "projects": [
+        "anthea",
+        "goemotions"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "anthea": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "goemotions": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C048",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "ngrammer",
+        "bnn_hmc"
+      ],
+      "shared_object": "Rafael Duran at >=60% allocation",
+      "canonical": {
+        "person": "Rafael Duran",
+        "month": "July"
+      },
+      "per_project": {
+        "ngrammer": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        },
+        "bnn_hmc": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C049",
+      "type": "gpu_double_booking",
+      "projects": [
+        "multi_game_dt",
+        "isolating_factors"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "multi_game_dt": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+        },
+        "isolating_factors": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C050",
+      "type": "duplicate_effort",
+      "projects": [
+        "frechet_audio_distance",
+        "deciphering_clinical_abbreviations"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "frechet_audio_distance": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "deciphering_clinical_abbreviations": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C051",
+      "type": "dependency_date_drift",
+      "projects": [
+        "extreme_memorization",
+        "differentially_private_gnns",
+        "cmmd",
+        "mave"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "extreme_memorization": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "differentially_private_gnns": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "cmmd": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "mave": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        }
+      }
+    },
+    {
+      "id": "C052",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "dictionary_learning",
+        "codistillation"
+      ],
+      "shared_object": "Saoirse Eriksen at >=60% allocation",
+      "canonical": {
+        "person": "Saoirse Eriksen",
+        "month": "May"
+      },
+      "per_project": {
+        "dictionary_learning": {
+          "claim": "Saoirse Eriksen is committed at 60%+ to this project for May 2026."
+        },
+        "codistillation": {
+          "claim": "Saoirse Eriksen is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C053",
+      "type": "codename_collision",
+      "projects": [
+        "cache_replacement",
+        "jaxnerf"
+      ],
+      "shared_object": "Project Meltwater",
+      "canonical": {
+        "codename": "Project Meltwater"
+      },
+      "per_project": {
+        "cache_replacement": {
+          "claim": "Team refers to this effort internally as Project Meltwater."
+        },
+        "jaxnerf": {
+          "claim": "Team refers to this (different) effort internally as Project Meltwater."
+        }
+      }
+    },
+    {
+      "id": "C054",
+      "type": "budget_overallocation",
+      "projects": [
+        "bustle",
+        "muller"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-77",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-77",
+        "available": "$120k"
+      },
+      "per_project": {
+        "bustle": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-77 for this project."
+        },
+        "muller": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-77 for this project."
+        }
+      }
+    },
+    {
+      "id": "C055",
+      "type": "gpu_double_booking",
+      "projects": [
+        "frechet_video_distance",
+        "logic_inference_dataset"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-08",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-08",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "frechet_video_distance": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-08."
+        },
+        "logic_inference_dataset": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-08."
+        }
+      }
+    },
+    {
+      "id": "C056",
+      "type": "duplicate_effort",
+      "projects": [
+        "graph_compression",
+        "locoprop"
+      ],
+      "shared_object": "a human-rating annotation UI",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "graph_compression": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        },
+        "locoprop": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        }
+      }
+    },
+    {
+      "id": "C057",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "learning_parameter_allocation",
+        "comisr"
+      ],
+      "shared_object": "Jorge Vidal at >=60% allocation",
+      "canonical": {
+        "person": "Jorge Vidal",
+        "month": "June"
+      },
+      "per_project": {
+        "learning_parameter_allocation": {
+          "claim": "Jorge Vidal is committed at 60%+ to this project for June 2026."
+        },
+        "comisr": {
+          "claim": "Jorge Vidal is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C058",
+      "type": "gpu_double_booking",
+      "projects": [
+        "aux_tasks",
+        "bangbang_qaoa"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-29",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "aux_tasks": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-29."
+        },
+        "bangbang_qaoa": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-29."
+        }
+      }
+    },
+    {
+      "id": "C059",
+      "type": "duplicate_effort",
+      "projects": [
+        "distribution_embedding_networks",
+        "STraTA"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "distribution_embedding_networks": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "STraTA": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C060",
+      "type": "dependency_date_drift",
+      "projects": [
+        "cann",
+        "behavioral_dispositions",
+        "dissecting_factual_predictions",
+        "mesh_diffusion"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "cann": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "behavioral_dispositions": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "dissecting_factual_predictions": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "mesh_diffusion": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        }
+      }
+    },
+    {
+      "id": "C061",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "fast_gradient_clipping",
+        "attribute_with_prefixlm"
+      ],
+      "shared_object": "Vera Egede at >=60% allocation",
+      "canonical": {
+        "person": "Vera Egede",
+        "month": "June"
+      },
+      "per_project": {
+        "fast_gradient_clipping": {
+          "claim": "Vera Egede is committed at 60%+ to this project for June 2026."
+        },
+        "attribute_with_prefixlm": {
+          "claim": "Vera Egede is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C062",
+      "type": "codename_collision",
+      "projects": [
+        "RevThink",
+        "lm_fact_tracing"
+      ],
+      "shared_object": "Project Palisade",
+      "canonical": {
+        "codename": "Project Palisade"
+      },
+      "per_project": {
+        "RevThink": {
+          "claim": "Team refers to this effort internally as Project Palisade."
+        },
+        "lm_fact_tracing": {
+          "claim": "Team refers to this (different) effort internally as Project Palisade."
+        }
+      }
+    },
+    {
+      "id": "C063",
+      "type": "budget_overallocation",
+      "projects": [
+        "latent_programmer",
+        "demogen"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-81",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-81",
+        "available": "$120k"
+      },
+      "per_project": {
+        "latent_programmer": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-81 for this project."
+        },
+        "demogen": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-81 for this project."
+        }
+      }
+    },
+    {
+      "id": "C064",
+      "type": "gpu_double_booking",
+      "projects": [
+        "dp_sgd_clipping",
+        "mbpp"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "dp_sgd_clipping": {
+          "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-01."
+        },
+        "mbpp": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C065",
+      "type": "duplicate_effort",
+      "projects": [
+        "contrack",
+        "LLP_Bench"
+      ],
+      "shared_object": "a synthetic-data generation pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "contrack": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        },
+        "LLP_Bench": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C066",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "action_angle_networks",
+        "invariant_explanations"
+      ],
+      "shared_object": "Bilal Novak at >=60% allocation",
+      "canonical": {
+        "person": "Bilal Novak",
+        "month": "May"
+      },
+      "per_project": {
+        "action_angle_networks": {
+          "claim": "Bilal Novak is committed at 60%+ to this project for May 2026."
+        },
+        "invariant_explanations": {
+          "claim": "Bilal Novak is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C067",
+      "type": "gpu_double_booking",
+      "projects": [
+        "dql_grasping",
+        "cochlear_implant"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "dql_grasping": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        },
+        "cochlear_implant": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C068",
+      "type": "duplicate_effort",
+      "projects": [
+        "musiq",
+        "microscope_image_quality"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "musiq": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "microscope_image_quality": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C069",
+      "type": "dependency_date_drift",
+      "projects": [
+        "model_swarm",
+        "clip_as_rnn",
+        "ml_debiaser",
+        "android_interaction"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "model_swarm": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "clip_as_rnn": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "ml_debiaser": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "android_interaction": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        }
+      }
+    },
+    {
+      "id": "C070",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "logit_adjustment",
+        "lamp"
+      ],
+      "shared_object": "Farah Haddad at >=60% allocation",
+      "canonical": {
+        "person": "Farah Haddad",
+        "month": "May"
+      },
+      "per_project": {
+        "logit_adjustment": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for May 2026."
+        },
+        "lamp": {
+          "claim": "Farah Haddad is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C071",
+      "type": "codename_collision",
+      "projects": [
+        "bonus_based_exploration",
+        "gfsa"
+      ],
+      "shared_object": "Project Quillon",
+      "canonical": {
+        "codename": "Project Quillon"
+      },
+      "per_project": {
+        "bonus_based_exploration": {
+          "claim": "Team refers to this effort internally as Project Quillon."
+        },
+        "gfsa": {
+          "claim": "Team refers to this (different) effort internally as Project Quillon."
+        }
+      }
+    },
+    {
+      "id": "C072",
+      "type": "budget_overallocation",
+      "projects": [
+        "KNF",
+        "ara_optimization"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-60",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-60",
+        "available": "$120k"
+      },
+      "per_project": {
+        "KNF": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-60 for this project."
+        },
+        "ara_optimization": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-60 for this project."
+        }
+      }
+    },
+    {
+      "id": "C073",
+      "type": "gpu_double_booking",
+      "projects": [
+        "negative_cache",
+        "attribute_semantics"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-15",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "negative_cache": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        },
+        "attribute_semantics": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        }
+      }
+    },
+    {
+      "id": "C074",
+      "type": "duplicate_effort",
+      "projects": [
+        "autoregressive_diffusion",
+        "android_in_the_wild"
+      ],
+      "shared_object": "a dataset de-duplication pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "autoregressive_diffusion": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        },
+        "android_in_the_wild": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C075",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "COSTAR",
+        "infinite_uncertainty"
+      ],
+      "shared_object": "Carmen Reyes at >=60% allocation",
+      "canonical": {
+        "person": "Carmen Reyes",
+        "month": "July"
+      },
+      "per_project": {
+        "COSTAR": {
+          "claim": "Carmen Reyes is committed at 60%+ to this project for July 2026."
+        },
+        "infinite_uncertainty": {
+          "claim": "Carmen Reyes is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C076",
+      "type": "gpu_double_booking",
+      "projects": [
+        "dpsgd_batch_sampler_accounting",
+        "euphonia_spice"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "dpsgd_batch_sampler_accounting": {
+          "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-01."
+        },
+        "euphonia_spice": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C077",
+      "type": "duplicate_effort",
+      "projects": [
+        "felix",
+        "nngp_nas"
+      ],
+      "shared_object": "a human-rating annotation UI",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "felix": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        },
+        "nngp_nas": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        }
+      }
+    },
+    {
+      "id": "C078",
+      "type": "dependency_date_drift",
+      "projects": [
+        "health_equity_toolbox",
+        "generative_trees",
+        "lighthouse",
+        "mmmt_if"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "health_equity_toolbox": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "generative_trees": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "lighthouse": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "mmmt_if": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        }
+      }
+    },
+    {
+      "id": "C079",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "linear_dynamical_systems",
+        "coref_mt5"
+      ],
+      "shared_object": "Chiara Olsen at >=60% allocation",
+      "canonical": {
+        "person": "Chiara Olsen",
+        "month": "June"
+      },
+      "per_project": {
+        "linear_dynamical_systems": {
+          "claim": "Chiara Olsen is committed at 60%+ to this project for June 2026."
+        },
+        "coref_mt5": {
+          "claim": "Chiara Olsen is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C080",
+      "type": "codename_collision",
+      "projects": [
+        "dselect_k_moe",
+        "kws_streaming"
+      ],
+      "shared_object": "Project Riverbed",
+      "canonical": {
+        "codename": "Project Riverbed"
+      },
+      "per_project": {
+        "dselect_k_moe": {
+          "claim": "Team refers to this effort internally as Project Riverbed."
+        },
+        "kws_streaming": {
+          "claim": "Team refers to this (different) effort internally as Project Riverbed."
+        }
+      }
+    },
+    {
+      "id": "C081",
+      "type": "budget_overallocation",
+      "projects": [
+        "charformer",
+        "latent_shift_adaptation"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-57",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-57",
+        "available": "$180k"
+      },
+      "per_project": {
+        "charformer": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-57 for this project."
+        },
+        "latent_shift_adaptation": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-57 for this project."
+        }
+      }
+    },
+    {
+      "id": "C082",
+      "type": "gpu_double_booking",
+      "projects": [
+        "gaternet",
+        "large_scale_voting"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "gaternet": {
+          "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-01."
+        },
+        "large_scale_voting": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C083",
+      "type": "duplicate_effort",
+      "projects": [
+        "fastconvnets",
+        "intent_recognition"
+      ],
+      "shared_object": "a human-rating annotation UI",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "fastconvnets": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        },
+        "intent_recognition": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        }
+      }
+    },
+    {
+      "id": "C084",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "muzero",
+        "jax_dft"
+      ],
+      "shared_object": "Paloma Castillo at >=60% allocation",
+      "canonical": {
+        "person": "Paloma Castillo",
+        "month": "June"
+      },
+      "per_project": {
+        "muzero": {
+          "claim": "Paloma Castillo is committed at 60%+ to this project for June 2026."
+        },
+        "jax_dft": {
+          "claim": "Paloma Castillo is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C085",
+      "type": "gpu_double_booking",
+      "projects": [
+        "cnn_quantization",
+        "factoring_sqif"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-15",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-15",
+        "capacity_requested_each": 384
+      },
+      "per_project": {
+        "cnn_quantization": {
+          "claim": "Believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-15."
+        },
+        "factoring_sqif": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-15."
+        }
+      }
+    },
+    {
+      "id": "C086",
+      "type": "duplicate_effort",
+      "projects": [
+        "dipper",
+        "assemblenet"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "dipper": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "assemblenet": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C087",
+      "type": "dependency_date_drift",
+      "projects": [
+        "muNet",
+        "ials",
+        "aptamers_mlpd",
+        "loss_functions_transfer"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "muNet": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "ials": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "aptamers_mlpd": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "loss_functions_transfer": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C088",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "concept_marl",
+        "distracting_control"
+      ],
+      "shared_object": "Nikhil Abebe at >=60% allocation",
+      "canonical": {
+        "person": "Nikhil Abebe",
+        "month": "June"
+      },
+      "per_project": {
+        "concept_marl": {
+          "claim": "Nikhil Abebe is committed at 60%+ to this project for June 2026."
+        },
+        "distracting_control": {
+          "claim": "Nikhil Abebe is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C089",
+      "type": "codename_collision",
+      "projects": [
+        "madlad_400",
+        "general-pattern-machines"
+      ],
+      "shared_object": "Project Saffron",
+      "canonical": {
+        "codename": "Project Saffron"
+      },
+      "per_project": {
+        "madlad_400": {
+          "claim": "Team refers to this effort internally as Project Saffron."
+        },
+        "general-pattern-machines": {
+          "claim": "Team refers to this (different) effort internally as Project Saffron."
+        }
+      }
+    },
+    {
+      "id": "C090",
+      "type": "budget_overallocation",
+      "projects": [
+        "genomics_ood",
+        "munchausen_rl"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-44",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-44",
+        "available": "$120k"
+      },
+      "per_project": {
+        "genomics_ood": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-44 for this project."
+        },
+        "munchausen_rl": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-44 for this project."
+        }
+      }
+    },
+    {
+      "id": "C091",
+      "type": "gpu_double_booking",
+      "projects": [
+        "ged_tts",
+        "causal_evaluation"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "ged_tts": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+        },
+        "causal_evaluation": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C092",
+      "type": "duplicate_effort",
+      "projects": [
+        "gwikimatch",
+        "agile_deliberation"
+      ],
+      "shared_object": "a dataset de-duplication pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "gwikimatch": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        },
+        "agile_deliberation": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C093",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "flare_removal",
+        "generalized_rates"
+      ],
+      "shared_object": "Rafael Duran at >=60% allocation",
+      "canonical": {
+        "person": "Rafael Duran",
+        "month": "July"
+      },
+      "per_project": {
+        "flare_removal": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        },
+        "generalized_rates": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C094",
+      "type": "gpu_double_booking",
+      "projects": [
+        "eq_mag_prediction",
+        "merf"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-15",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "eq_mag_prediction": {
+          "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-15."
+        },
+        "merf": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-15."
+        }
+      }
+    },
+    {
+      "id": "C095",
+      "type": "duplicate_effort",
+      "projects": [
+        "compositional_rl",
+        "darc"
+      ],
+      "shared_object": "a human-rating annotation UI",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "compositional_rl": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        },
+        "darc": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        }
+      }
+    },
+    {
+      "id": "C096",
+      "type": "dependency_date_drift",
+      "projects": [
+        "finance_harness",
+        "cell_mixer",
+        "hypertransformer",
+        "keypose"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "finance_harness": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "cell_mixer": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "hypertransformer": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "keypose": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C097",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "metapose",
+        "fisher_brc"
+      ],
+      "shared_object": "Linnea Yamada at >=60% allocation",
+      "canonical": {
+        "person": "Linnea Yamada",
+        "month": "July"
+      },
+      "per_project": {
+        "metapose": {
+          "claim": "Linnea Yamada is committed at 60%+ to this project for July 2026."
+        },
+        "fisher_brc": {
+          "claim": "Linnea Yamada is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C098",
+      "type": "codename_collision",
+      "projects": [
+        "Uboreshaji_Modeli",
+        "assessment_plan_modeling"
+      ],
+      "shared_object": "Project Tundra",
+      "canonical": {
+        "codename": "Project Tundra"
+      },
+      "per_project": {
+        "Uboreshaji_Modeli": {
+          "claim": "Team refers to this effort internally as Project Tundra."
+        },
+        "assessment_plan_modeling": {
+          "claim": "Team refers to this (different) effort internally as Project Tundra."
+        }
+      }
+    },
+    {
+      "id": "C099",
+      "type": "budget_overallocation",
+      "projects": [
+        "fsq",
+        "light_field_neural_rendering"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-36",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-36",
+        "available": "$180k"
+      },
+      "per_project": {
+        "fsq": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-36 for this project."
+        },
+        "light_field_neural_rendering": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-36 for this project."
+        }
+      }
+    },
+    {
+      "id": "C100",
+      "type": "gpu_double_booking",
+      "projects": [
+        "dp_alternating_minimization",
+        "dot_vs_learned_similarity"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-01",
+        "capacity_requested_each": 384
+      },
+      "per_project": {
+        "dp_alternating_minimization": {
+          "claim": "Believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-01."
+        },
+        "dot_vs_learned_similarity": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-01."
+        }
+      }
+    },
+    {
+      "id": "C101",
+      "type": "duplicate_effort",
+      "projects": [
+        "docent",
+        "didi_dataset"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "docent": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "didi_dataset": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C102",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "dense_representations_for_entity_retrieval",
+        "alx"
+      ],
+      "shared_object": "Rafael Duran at >=60% allocation",
+      "canonical": {
+        "person": "Rafael Duran",
+        "month": "May"
+      },
+      "per_project": {
+        "dense_representations_for_entity_retrieval": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+        },
+        "alx": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C103",
+      "type": "gpu_double_booking",
+      "projects": [
+        "graph_sampler",
+        "infinite_nature"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-08",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "graph_sampler": {
+          "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-08."
+        },
+        "infinite_nature": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-08."
+        }
+      }
+    },
+    {
+      "id": "C104",
+      "type": "duplicate_effort",
+      "projects": [
+        "collaborative_tr_collection",
+        "cate"
+      ],
+      "shared_object": "a distillation training recipe",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "collaborative_tr_collection": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        },
+        "cate": {
+          "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+        }
+      }
+    },
+    {
+      "id": "C105",
+      "type": "dependency_date_drift",
+      "projects": [
+        "OpenMSD",
+        "behavior_regularized_offline_rl",
+        "non_decomp",
+        "diffusion_distillation"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "OpenMSD": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "behavior_regularized_offline_rl": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "non_decomp": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "diffusion_distillation": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        }
+      }
+    },
+    {
+      "id": "C106",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "dichotomy_of_control",
+        "gon"
+      ],
+      "shared_object": "Linnea Yamada at >=60% allocation",
+      "canonical": {
+        "person": "Linnea Yamada",
+        "month": "June"
+      },
+      "per_project": {
+        "dichotomy_of_control": {
+          "claim": "Linnea Yamada is committed at 60%+ to this project for June 2026."
+        },
+        "gon": {
+          "claim": "Linnea Yamada is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C107",
+      "type": "codename_collision",
+      "projects": [
+        "business_metric_aware_forecasting",
+        "mucped23"
+      ],
+      "shared_object": "Project Vantage",
+      "canonical": {
+        "codename": "Project Vantage"
+      },
+      "per_project": {
+        "business_metric_aware_forecasting": {
+          "claim": "Team refers to this effort internally as Project Vantage."
+        },
+        "mucped23": {
+          "claim": "Team refers to this (different) effort internally as Project Vantage."
+        }
+      }
+    },
+    {
+      "id": "C108",
+      "type": "budget_overallocation",
+      "projects": [
+        "differentiable_data_selection",
+        "multi_annotator"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-13",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-13",
+        "available": "$120k"
+      },
+      "per_project": {
+        "differentiable_data_selection": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-13 for this project."
+        },
+        "multi_annotator": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-13 for this project."
+        }
+      }
+    },
+    {
+      "id": "C109",
+      "type": "gpu_double_booking",
+      "projects": [
+        "imp",
+        "marot"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "imp": {
+          "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-07-06."
+        },
+        "marot": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C110",
+      "type": "duplicate_effort",
+      "projects": [
+        "ime",
+        "dvrl"
+      ],
+      "shared_object": "a synthetic-data generation pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "ime": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        },
+        "dvrl": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C111",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "better_storylines",
+        "mechanic"
+      ],
+      "shared_object": "Paloma Castillo at >=60% allocation",
+      "canonical": {
+        "person": "Paloma Castillo",
+        "month": "May"
+      },
+      "per_project": {
+        "better_storylines": {
+          "claim": "Paloma Castillo is committed at 60%+ to this project for May 2026."
+        },
+        "mechanic": {
+          "claim": "Paloma Castillo is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C112",
+      "type": "gpu_double_booking",
+      "projects": [
+        "bisimulation_aaai2020",
+        "memento"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-15",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "bisimulation_aaai2020": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        },
+        "memento": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        }
+      }
+    },
+    {
+      "id": "C113",
+      "type": "duplicate_effort",
+      "projects": [
+        "dedal",
+        "android_control"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "dedal": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "android_control": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C114",
+      "type": "dependency_date_drift",
+      "projects": [
+        "global_metnet",
+        "group_agnostic_fairness",
+        "clustering_normalized_cuts",
+        "mir_uai24"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "global_metnet": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "group_agnostic_fairness": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "clustering_normalized_cuts": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "mir_uai24": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        }
+      }
+    },
+    {
+      "id": "C115",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "evanet",
+        "explainable_routing"
+      ],
+      "shared_object": "Rafael Duran at >=60% allocation",
+      "canonical": {
+        "person": "Rafael Duran",
+        "month": "May"
+      },
+      "per_project": {
+        "evanet": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+        },
+        "explainable_routing": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C116",
+      "type": "codename_collision",
+      "projects": [
+        "cvl_public",
+        "automatic_structured_vi"
+      ],
+      "shared_object": "Project Nimbus",
+      "canonical": {
+        "codename": "Project Nimbus"
+      },
+      "per_project": {
+        "cvl_public": {
+          "claim": "Team refers to this effort internally as Project Nimbus."
+        },
+        "automatic_structured_vi": {
+          "claim": "Team refers to this (different) effort internally as Project Nimbus."
+        }
+      }
+    },
+    {
+      "id": "C117",
+      "type": "budget_overallocation",
+      "projects": [
+        "bertseq2seq",
+        "jax_mpc"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-24",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-24",
+        "available": "$120k"
+      },
+      "per_project": {
+        "bertseq2seq": {
+          "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-24 for this project."
+        },
+        "jax_mpc": {
+          "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-24 for this project."
+        }
+      }
+    },
+    {
+      "id": "C118",
+      "type": "gpu_double_booking",
+      "projects": [
+        "multilingual_abbreviation_survey",
+        "investigating_m4"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "multilingual_abbreviation_survey": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-07-06."
+        },
+        "investigating_m4": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C119",
+      "type": "duplicate_effort",
+      "projects": [
+        "drjax",
+        "brush_splat"
+      ],
+      "shared_object": "an internal evaluation harness",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "drjax": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        },
+        "brush_splat": {
+          "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+        }
+      }
+    },
+    {
+      "id": "C120",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "mface",
+        "combiner"
+      ],
+      "shared_object": "Milan Zapata at >=60% allocation",
+      "canonical": {
+        "person": "Milan Zapata",
+        "month": "June"
+      },
+      "per_project": {
+        "mface": {
+          "claim": "Milan Zapata is committed at 60%+ to this project for June 2026."
+        },
+        "combiner": {
+          "claim": "Milan Zapata is committed at 60%+ to this project for June 2026."
+        }
+      }
+    },
+    {
+      "id": "C121",
+      "type": "gpu_double_booking",
+      "projects": [
+        "fully_dynamic_facility_location",
+        "hmc_swindles"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-29",
+        "capacity_requested_each": 384
+      },
+      "per_project": {
+        "fully_dynamic_facility_location": {
+          "claim": "Believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-29."
+        },
+        "hmc_swindles": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-29."
+        }
+      }
+    },
+    {
+      "id": "C122",
+      "type": "duplicate_effort",
+      "projects": [
+        "clay",
+        "EgoSocial"
+      ],
+      "shared_object": "a synthetic-data generation pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "clay": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        },
+        "EgoSocial": {
+          "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C123",
+      "type": "dependency_date_drift",
+      "projects": [
+        "explaining_risk_increase",
+        "bitempered_loss",
+        "batch_science",
+        "cube_unfoldings"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "explaining_risk_increase": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "bitempered_loss": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "batch_science": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "cube_unfoldings": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        }
+      }
+    },
+    {
+      "id": "C124",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "active_selective_prediction",
+        "graph_temporal_ai"
+      ],
+      "shared_object": "Ondrej Bergstrom at >=60% allocation",
+      "canonical": {
+        "person": "Ondrej Bergstrom",
+        "month": "May"
+      },
+      "per_project": {
+        "active_selective_prediction": {
+          "claim": "Ondrej Bergstrom is committed at 60%+ to this project for May 2026."
+        },
+        "graph_temporal_ai": {
+          "claim": "Ondrej Bergstrom is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C125",
+      "type": "codename_collision",
+      "projects": [
+        "adaptive_low_rank",
+        "jslm"
+      ],
+      "shared_object": "Project Basalt",
+      "canonical": {
+        "codename": "Project Basalt"
+      },
+      "per_project": {
+        "adaptive_low_rank": {
+          "claim": "Team refers to this effort internally as Project Basalt."
+        },
+        "jslm": {
+          "claim": "Team refers to this (different) effort internally as Project Basalt."
+        }
+      }
+    },
+    {
+      "id": "C126",
+      "type": "budget_overallocation",
+      "projects": [
+        "fair_submodular_matroid",
+        "ghum"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-74",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-74",
+        "available": "$180k"
+      },
+      "per_project": {
+        "fair_submodular_matroid": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project."
+        },
+        "ghum": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-74 for this project."
+        }
+      }
+    },
+    {
+      "id": "C127",
+      "type": "gpu_double_booking",
+      "projects": [
+        "implicit_pdf",
+        "neural_guided_symbolic_regression"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-15",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "implicit_pdf": {
+          "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        },
+        "neural_guided_symbolic_regression": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+        }
+      }
+    },
+    {
+      "id": "C128",
+      "type": "duplicate_effort",
+      "projects": [
+        "automated_feature_engineering",
+        "eim"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "automated_feature_engineering": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "eim": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C129",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "informally_romanized_lang_id",
+        "depth_from_video_in_the_wild"
+      ],
+      "shared_object": "Rafael Duran at >=60% allocation",
+      "canonical": {
+        "person": "Rafael Duran",
+        "month": "July"
+      },
+      "per_project": {
+        "informally_romanized_lang_id": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        },
+        "depth_from_video_in_the_wild": {
+          "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C130",
+      "type": "gpu_double_booking",
+      "projects": [
+        "agile_modeling",
+        "cold_posterior_bnn"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-07-06",
+        "capacity_requested_each": 128
+      },
+      "per_project": {
+        "agile_modeling": {
+          "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        },
+        "cold_posterior_bnn": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+        }
+      }
+    },
+    {
+      "id": "C131",
+      "type": "duplicate_effort",
+      "projects": [
+        "mucped22",
+        "dreg_estimators"
+      ],
+      "shared_object": "a human-rating annotation UI",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "mucped22": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        },
+        "dreg_estimators": {
+          "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+        }
+      }
+    },
+    {
+      "id": "C132",
+      "type": "dependency_date_drift",
+      "projects": [
+        "ledge",
+        "neutra",
+        "gen_patch_neural_rendering",
+        "dreamfields"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "ledge": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "neutra": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        },
+        "gen_patch_neural_rendering": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "dreamfields": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        }
+      }
+    },
+    {
+      "id": "C133",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "cubert",
+        "CIQA"
+      ],
+      "shared_object": "Gustavo Moreau at >=60% allocation",
+      "canonical": {
+        "person": "Gustavo Moreau",
+        "month": "May"
+      },
+      "per_project": {
+        "cubert": {
+          "claim": "Gustavo Moreau is committed at 60%+ to this project for May 2026."
+        },
+        "CIQA": {
+          "claim": "Gustavo Moreau is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C134",
+      "type": "codename_collision",
+      "projects": [
+        "aloe",
+        "implicit_constrained_optimization"
+      ],
+      "shared_object": "Project Sirocco",
+      "canonical": {
+        "codename": "Project Sirocco"
+      },
+      "per_project": {
+        "aloe": {
+          "claim": "Team refers to this effort internally as Project Sirocco."
+        },
+        "implicit_constrained_optimization": {
+          "claim": "Team refers to this (different) effort internally as Project Sirocco."
+        }
+      }
+    },
+    {
+      "id": "C135",
+      "type": "budget_overallocation",
+      "projects": [
+        "dpok",
+        "fwl"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-85",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-85",
+        "available": "$180k"
+      },
+      "per_project": {
+        "dpok": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-85 for this project."
+        },
+        "fwl": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-85 for this project."
+        }
+      }
+    },
+    {
+      "id": "C136",
+      "type": "gpu_double_booking",
+      "projects": [
+        "fully_dynamic_submodular_maximization",
+        "fm4tlp"
+      ],
+      "shared_object": "cirrus-tpu reservation, week of 2026-06-29",
+      "canonical": {
+        "cluster": "cirrus-tpu",
+        "week_of": "2026-06-29",
+        "capacity_requested_each": 256
+      },
+      "per_project": {
+        "fully_dynamic_submodular_maximization": {
+          "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-29."
+        },
+        "fm4tlp": {
+          "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-29."
+        }
+      }
+    },
+    {
+      "id": "C137",
+      "type": "duplicate_effort",
+      "projects": [
+        "bam",
+        "federated_vision_datasets"
+      ],
+      "shared_object": "a dataset de-duplication pipeline",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "bam": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        },
+        "federated_vision_datasets": {
+          "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+        }
+      }
+    },
+    {
+      "id": "C138",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "automl_zero",
+        "factorize_a_city"
+      ],
+      "shared_object": "Oyin Iversen at >=60% allocation",
+      "canonical": {
+        "person": "Oyin Iversen",
+        "month": "July"
+      },
+      "per_project": {
+        "automl_zero": {
+          "claim": "Oyin Iversen is committed at 60%+ to this project for July 2026."
+        },
+        "factorize_a_city": {
+          "claim": "Oyin Iversen is committed at 60%+ to this project for July 2026."
+        }
+      }
+    },
+    {
+      "id": "C139",
+      "type": "gpu_double_booking",
+      "projects": [
+        "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+        "capsule_em"
+      ],
+      "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+      "canonical": {
+        "cluster": "vulcan-h100",
+        "week_of": "2026-06-22",
+        "capacity_requested_each": 512
+      },
+      "per_project": {
+        "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions": {
+          "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        },
+        "capsule_em": {
+          "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+        }
+      }
+    },
+    {
+      "id": "C140",
+      "type": "duplicate_effort",
+      "projects": [
+        "contrastive_rl",
+        "isl"
+      ],
+      "shared_object": "a benchmark leaderboard service",
+      "canonical": {
+        "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+      },
+      "per_project": {
+        "contrastive_rl": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        },
+        "isl": {
+          "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+        }
+      }
+    },
+    {
+      "id": "C141",
+      "type": "dependency_date_drift",
+      "projects": [
+        "context_aware_transliteration",
+        "kip",
+        "deplot",
+        "jaxbarf"
+      ],
+      "shared_object": "Corpus v2 migration freeze",
+      "canonical": {
+        "true_date": "2026-07-10",
+        "owner": "Data Platform Lead"
+      },
+      "per_project": {
+        "context_aware_transliteration": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+        },
+        "kip": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+        },
+        "deplot": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+        },
+        "jaxbarf": {
+          "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+        }
+      }
+    },
+    {
+      "id": "C142",
+      "type": "shared_person_overcommit",
+      "projects": [
+        "bigg",
+        "cisc"
+      ],
+      "shared_object": "Jorge Vidal at >=60% allocation",
+      "canonical": {
+        "person": "Jorge Vidal",
+        "month": "May"
+      },
+      "per_project": {
+        "bigg": {
+          "claim": "Jorge Vidal is committed at 60%+ to this project for May 2026."
+        },
+        "cisc": {
+          "claim": "Jorge Vidal is committed at 60%+ to this project for May 2026."
+        }
+      }
+    },
+    {
+      "id": "C143",
+      "type": "codename_collision",
+      "projects": [
+        "etcmodel",
+        "mpi_extrapolation"
+      ],
+      "shared_object": "Project Kestrel",
+      "canonical": {
+        "codename": "Project Kestrel"
+      },
+      "per_project": {
+        "etcmodel": {
+          "claim": "Team refers to this effort internally as Project Kestrel."
+        },
+        "mpi_extrapolation": {
+          "claim": "Team refers to this (different) effort internally as Project Kestrel."
+        }
+      }
+    },
+    {
+      "id": "C144",
+      "type": "budget_overallocation",
+      "projects": [
+        "class_balanced_distillation",
+        "arithmetic_sampling"
+      ],
+      "shared_object": "Q3 discretionary compute budget line B-28",
+      "canonical": {
+        "line": "Q3 discretionary compute budget line B-28",
+        "available": "$180k"
+      },
+      "per_project": {
+        "class_balanced_distillation": {
+          "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-28 for this project."
+        },
+        "arithmetic_sampling": {
+          "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-28 for this project."
+        }
+      }
+    }
+  ]
+}

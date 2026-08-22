@@ -1,0 +1,45 @@
+{
+  "id": "gr/general-pattern-machines/e01",
+  "thread_id": "gr/general-pattern-machines/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:52:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Project Saffron kickoff — LLMs as pattern machines",
+  "body": "Hi Jelena,\n\nKicking off Project Saffron — our internal codename for the LLMs-as-general-pattern-machines effort; please use Saffron on trackers and docs. The research result: pretrained LLMs autoregressively complete complex token sequences with no additional training — procedurally generated PCFG sequences, spatial patterns from the ARC benchmark prompted as ASCII art, even sequences expressed in tokens randomly sampled from the vocabulary. In-context learning is doing all the work.\n\nProduct hypothesis: a sequence-extrapolation service for the robotics prototyping group — extrapolating state sequences into simple motions, and least-to-most prompting of reward-conditioned trajectories.\n\nMilestones: replicate the released colab results internally by Mar 20, robotics-format eval by Apr 24, Q3 pitch by May 20. Staffing over to you.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

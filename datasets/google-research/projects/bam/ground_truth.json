@@ -1,0 +1,12 @@
+{
+  "project": "gr/bam",
+  "conflicts": [
+    {
+      "conflict_id": "C137",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["federated_vision_datasets"],
+      "planted_in": ["e02"],
+      "claim_as_written": "That means building a dataset de-duplication pipeline from scratch: exact-hash first pass, then n-gram overlap detection between every task's training set and every other task's eval set. Maren scopes and owns it at 50% for the next two months; nothing internal exists for this today, so we're designing it as reusable infrastructure rather than a one-off script."
+    }
+  ]
+}

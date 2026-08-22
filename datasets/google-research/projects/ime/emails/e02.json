@@ -1,0 +1,17 @@
+{
+  "id": "gr/ime/e02",
+  "thread_id": "gr/ime/t1",
+  "in_reply_to": "gr/ime/e01",
+  "date": "2026-05-13T14:02:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: IME kickoff - staffing + synthetic-data pipeline build",
+  "body": "Dmitri,\n\nResourcing:\n\n- Staffing: Kaia 60%, Amara 60%, Efe 30% through the window.\n- Compute: trivial by portfolio standards - these train on single GPUs, so a small titan-a100 best-effort slice covers everything including sweeps over utilization_hp and smoothness_hp.\n\nThe substantial build: for the internal-workload eval we can't move the real forecasting data across privacy boundaries on our timeline (Kofi's review SLA is 2-3 weeks and the data owner wants scoping first). So we're scoping and staffing a synthetic-data generation pipeline from scratch - regime-switching time series with configurable seasonality, trend breaks, and covariate structure that mimics the internal workload's statistics without containing any real records. Amara owns the build at 60% for about six weeks, with Kaia specifying the regime structure. It doubles as the stress-test bed: we can dial regime overlap and see exactly where single-expert assignment breaks.\n\nNothing else exotic. Budget-neutral.\n\nJelena",
+  "labels": ["resources"]
+}

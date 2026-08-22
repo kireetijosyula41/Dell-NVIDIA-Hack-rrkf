@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_dice/e03",
+  "thread_id": "gr/dual_dice/t1",
+  "in_reply_to": "gr/dual_dice/e02",
+  "date": "2026-03-27T11:02:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DualDICE for off-policy evaluation",
+  "body": "Validation status, two weeks in.\n\nTabular GridWalk: estimates match the oracle within 1% across the policy pairs we tested — remembering the release's caveat that the printed target rewards are themselves estimates, so we bumped num_trajectories to 1000 for a fair oracle.\n\nNon-tabular is where the practical lessons live. Joint optimization of nu and zeta is unstable exactly as documented; the nu/zeta learning-rate pair dominates everything else (we landed on 0.0001/0.001, same as the reference), and lower gamma makes optimization noticeably easier. For the toolkit defaults I'm encoding: start from the reference learning rates, expose gamma prominently, and surface a divergence warning when the nu loss oscillates.\n\nRisk for the pilot: our logged partner data has much longer horizons than GridWalk; at gamma close to 1 the correction estimates get high-variance. Farah and I are adding a variance-based confidence caveat to every estimate the module emits — better to say \"low confidence\" than be quietly wrong.\n\nHalima",
+  "labels": ["status", "risk"]
+}

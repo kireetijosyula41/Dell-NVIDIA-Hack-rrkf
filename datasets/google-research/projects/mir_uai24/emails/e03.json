@@ -1,0 +1,41 @@
+{
+  "id": "gr/mir_uai24/e03",
+  "thread_id": "gr/mir_uai24/t1",
+  "in_reply_to": "gr/mir_uai24/e02",
+  "date": "2026-04-14T10:30:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MIR / wtd-Assign — April status + bag-size risk",
+  "body": "Hi both,\n\nStatus: synthetic-bag results reproduced across all released bag sizes; the census benchmark matches the paper within noise using the reference config (batch_size 100, embedding_dim 0, 1024 hidden units). Emeka has both benchmarks reporting into Evalline nightly.\n\nThe risk for the design note: wtd-Assign degrades faster than I expected as bags get large. On synthetic data, instance-level MSE at bag size 32 is roughly 2.4x the bag-size-8 number, and the partner aggregates Dmitri has in mind are mostly 50-to-200-person bags. The paper's learnability guarantees are honest about this regime being hard — it's not a bug, it's the problem.\n\nProposal: the May design note recommends MIR for partners with bag sizes <=32 and flags larger bags as needing either auxiliary features or a different formulation. Better to scope it now then over-promise for Q3.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

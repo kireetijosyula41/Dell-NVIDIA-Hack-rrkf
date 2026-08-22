@@ -1,0 +1,15 @@
+{
+  "id": "gr/keypose/e02",
+  "thread_id": "gr/keypose/t1",
+  "in_reply_to": "gr/keypose/e01",
+  "date": "2026-05-04T14:55:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: KeyPose for transparent-object bin picking",
+  "body": "Lucia,\n\nResourcing and the data-platform picture you asked for.\n\nStaffing: Yara 60% on modeling, Leilani 50% on the stereo capture rig integration, Wanjiru 50% on the Corpus ingest pipeline, Rosa 40% on eval tooling. Compute is light — TF2 training for these models fits on 8 Titan A100s best-effort; no Vulcan reservation needed.\n\nOn the Corpus dependency: Wanjiru synced with the platform side on the v2 migration timeline. Corpus v2 migration freeze is 2026-07-24, so if we land our re-ingest by Jul 17 we're a clean week ahead of the freeze. Plan is: pilot captures ingested to v2 schema directly (skip v1 entirely), registered stereo pairs plus depth, camera parameters as sidecar metadata exactly like the public release format.\n\nOne watch item: the released labels assume pixel-registered RGB/depth; our lab rig needs a calibration pass before that holds.\n\nIvo",
+  "labels": ["resources"]
+}

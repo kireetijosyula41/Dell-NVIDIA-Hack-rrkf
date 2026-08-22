@@ -1,0 +1,17 @@
+{
+  "id": "gr/cvl_public/e03",
+  "thread_id": "gr/cvl_public/t2",
+  "in_reply_to": null,
+  "date": "2026-06-18T10:25:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Nimbus status - benchmarks reproduced, coverage is the catch",
+  "body": "Status.\n\nMay milestone done. On the continuous control suite we're within 2 points of the published offline returns, averaged over 4 seeds, and training genuinely used no reward labels. Not having a TD bootstrap in the loop makes these runs boringly stable compared to what we're used to - the training curves are almost dull, which I mean as a compliment.\n\nThe catch is on our own logs. CVL's implicit model estimates action value from what the data shows is reachable. Our manipulation logs are ~85% successful demonstrations of six routine motions. So the model is confident and roughly correct in a narrow tube and confidently wrong outside it, and the policy proposes actions in that outside region far more often than I'd like - 12% of steps in the first eval.\n\nWe either need coverage (deliberate exploration data we don't have) or an uncertainty gate on the value estimate. I'd like Vera's tooling time redirected to measuring the gate before we promise Jul 3.\n\nRafael",
+  "labels": ["status", "risk"]
+}

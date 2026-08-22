@@ -1,0 +1,46 @@
+{
+  "id": "gr/differentially_private_gnns/e04",
+  "thread_id": "gr/differentially_private_gnns/t2",
+  "in_reply_to": null,
+  "date": "2026-06-18T14:27:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kofi Weber",
+      "email": "kofi.weber@meridian.example",
+      "role": "Privacy Counsel"
+    }
+  ],
+  "subject": "DP-GNN: negotiation framing and July plan",
+  "body": "Team (and Kofi, looping you deliberately),\n\nDecisions from yesterday's review:\n\n1. We present the epsilon-vs-utility curve as a joint session with Legal and the two feature teams in the room, per Maren's recommendation. Nobody anchors alone. Scheduling for the week of June 29.\n2. The recommendation doc will propose a two-tier deployment: stricter epsilon for abuse-adjacent features, a moderate budget for ranking features where the 9-point utility loss is unacceptable. Kofi, flagging now so the Privacy Review (already in your queue) can consider both tiers in one pass.\n3. Emeka's staged v2 re-ingest plan is approved as scheduled.\n\nJuly 10 remains the doc deadline. Good work getting the science ahead of the politics.\n\nDmitri",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gr/frechet_video_distance/e01",
+  "thread_id": "gr/frechet_video_distance/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T10:12:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "FVD workstream kickoff — one metric for video gen",
+  "body": "Hi Daniela,\n\nKickoff for the Fréchet Video Distance workstream. FVD gives us a single number for generative video quality: we embed real and generated clips with an I3D network (preprocessed to 224x224, loaded via tensorflow-hub) and compute the Fréchet distance between the two embedding distributions. Every video-gen effort in the vision portfolio is currently rolling its own eval, and I want FVD as the standard gate.\n\nMilestones: metric library integrated with two internal model repos by Mar 13, variance and calibration study through the spring, and a large calibration sweep in early June so scores are comparable across model families before Q3 OKRs.\n\nQuentin, Katya and Tereza are assigned. Daniela — staffing and compute plan when you can.\n\nBest,\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

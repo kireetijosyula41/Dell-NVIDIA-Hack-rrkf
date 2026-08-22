@@ -1,0 +1,16 @@
+{
+  "project": "gr/distracting_control",
+  "conflicts": [
+    {
+      "conflict_id": "C088",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "concept_marl"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Nikhil Abebe is committed at 60% to this project for June 2026 to run the full difficulty-sweep benchmark."
+    }
+  ]
+}

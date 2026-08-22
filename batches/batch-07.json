@@ -1,0 +1,597 @@
+{
+  "batch": 7,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "contrack",
+      "title": "Contrack",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Contrack\n\nIn human-human conversations, Context Tracking deals with identifying important\nentities and keeping track of their properties and relationships. This is a challenging\nproblem involving several subtasks such as entity recognition, attribute classification,\ncoreference resolution and resolving plural mentions. The Contrack tool approaches\nthis problem as an end-to-end modeling task where the conversational context is\nrepresented by an entity repository containing the entities mentioned so far, their properties and relationships between them. The repository is updated incrementally turn-by-turn,\nthus making it computationally efficient and capable of handling long conversations.\n\nContributions to the codebase are welcome and we would love to hear back from\nyou if you find this codebase useful. Finally if you use Contrack for a research publication, please consider citing:\n\n* Towards a Unified Approach to Entity-Centric Context Tracking in Conversations,\nUlrich R\u00fcckert, Srinivas Sunkara, Abhinav Rastogi, Sushant Prakash, Pranav Khaitan\n\n# Installation\n\nThe following instructions are for installing on Ubuntu 18.04.\n\n1. Make sure you have python3 and bazel installed. Follow the instructions [here](https://docs.bazel.build/versions/4.0.0/install.html) to install bazel.\n\n1. Download the contrack subdirectory:\n\n```bash\nsvn export https://github.com/google-research/google-research/trunk/contrack\n# Or\ngit clone https://github.com/google-research/google-research.git\n```\n\n1.  Create and enter a virtual environment (optional but preferred):\n\n```bash\nvirtualenv -p python3 con",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Csilla Nassar"
+      ],
+      "conflicts": [
+        {
+          "id": "C065",
+          "type": "duplicate_effort",
+          "projects": [
+            "contrack",
+            "LLP_Bench"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "contrastive_rl",
+      "title": "[Contrastive Learning as Goal-Conditioned Reinforcement Learning](https://arxiv.org/pdf/22",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# [Contrastive Learning as Goal-Conditioned Reinforcement Learning](https://arxiv.org/pdf/2206.07568.pdf)\n\nPaper: https://arxiv.org/pdf/2206.07568.pdf\n\n*Abstract*: In reinforcement learning (RL), it is easier to solve a task if given a good representation. While _deep_ RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning, and then use the idea to propose a much simpler method that achieves similar performance. Across a range of goal-conditioned RL tasks, we demonstrate that contrastive RL methods achieve higher success rates than prior non-contrastive methods. We also show that contrastive RL outperforms prior methods on image-based tasks, without using data augmentation or auxiliary objectives.\n\nThis repository contains the new algorithms, some of the baselines, and the asso",
+      "contributors": [
+        "Hyun Traore",
+        "Jorge Vidal",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C140",
+          "type": "duplicate_effort",
+          "projects": [
+            "contrastive_rl",
+            "isl"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "coref_mt5",
+      "title": "Coreference Resolution through a seq2seq Transition-Based System",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Coreference Resolution through a seq2seq Transition-Based System\n\nThis repository contains a reference mT5 model of the paper 'Coreference Resolution through a seq2seq Transition-Based System'.\n\nMost recent coreference resolution systems use search algorithms over possible spans to identify mentions and resolve coreference. We instead present a coreference resolution system that uses a text-to-text (seq2seq) paradigm to predict mentions and links jointly, which simplifies the coreference resolution by eliminating both the search for mentions and coreferences. We implemented the coreference system as a transition system and use multilingual T5 as language model. We obtained state-of-the-art accuracy with 83.3 F1-score on the CoNLL-2012 data set.\n\n@article{\ntitle\t= {Coreference Resolution through a seq2seq Transition-Based System},\nauthor\t= {Bernd Bohnet and Michael Collins and Chris Alberti},\njournal\t= {TACL}\n}\n\n## Model\n\nThe top performing mT5-model described in the paper can be downloaded following the link below.\n[Coref-mT5-XXL model](https://console.cloud.google.com/storage/browser/gresearch/correference_seq2seq/checkpoint_1140000).\n\n## Decoder\n\nWe provide a Colab notebook that runs the seq2seq transition-based model. The notebook contains code to resolve coreferences in documents. The user needs to start a mT5 server and load the provided checkpoint. The interface to the server needs to be implemented depending on the used infrastructure. It is possible to emulate the decoding of a document without running a server, which might be useful to understand the procedure in",
+      "contributors": [
+        "Yusuf Keita",
+        "Chiara Olsen",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C079",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "linear_dynamical_systems",
+            "coref_mt5"
+          ],
+          "shared_object": "Chiara Olsen at >=60% allocation",
+          "canonical": {
+            "person": "Chiara Olsen",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Chiara Olsen is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "correct_batch_effects_wdn",
+      "title": "Correcting for Batch Effects Using Wasserstein Distance",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Correcting for Batch Effects Using Wasserstein Distance\n\nThis directory contains reference code for the paper\n[Correcting for Batch Effects Using Wasserstein Distance](https://arxiv.org/abs/1711.00882).\n\nThe code is implemented in Tensorflow and the required packages are listed in\n`requirements.txt`.\n\n## Datasets\nThe datasets are two different types of embeddings derived from the raw image\ndataset: https://data.broadinstitute.org/bbbc/BBBC021/. They are CellProfiler\nembeddings and deep neural network embeddings.\n\n### CellProfiler Embeddings\nThe original CellProfiler embeddings were downloaded from\nhttp://pubs.broadinstitute.org/ljosa_jbiomolscreen_2013/ as csv files.\n\nTo convert it into a dataframe and save it as an h5 file:\n\n```\npython -m correct_batch_effects_wdn.ljosa_embeddings_to_h5 \\\n--ljosa_data_directory=${LJOSA_DATA_DIRECTORY}\n```\n\nThe h5 file would be saved at\n\n`${LJOSA_DATA_DIRECTORY}/ljosa_embeddings_462.h5`\n\nWe follow the paper https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3884769/ to\npreprocess the CellProfiler embeddings:\n\n```\npython -m correct_batch_effects_wdn.ljosa_preprocessing \\\n--original_df=${LJOSA_DATA_DIRECTORY}/ljosa_embeddings_462.h5 \\\n--post_normalization_path=${LJOSA_DATA_DIRECTORY}/ljosa_embeddings_post_normalized.h5 \\\n--post_fa_path=${LJOSA_DATA_DIRECTORY}/ljosa_embeddings_post_fa.h5\n```\n\nThis would generate two h5 files. The first file is at\n\n`${LJOSA_DATA_DIRECTORY}/ljosa_embeddings_post_normalized.h5`,\n\nwhere each dimension of the embeddings has been normalized by percentile\nmatching.\n\nThe second file is at\n\n`${LJOSA_DATA_DIRECTORY}/ljosa_e",
+      "contributors": [
+        "Linnea Yamada",
+        "Amara Okafor",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C042",
+          "type": "dependency_date_drift",
+          "projects": [
+            "enas_lm",
+            "hipi",
+            "betum_tool",
+            "correct_batch_effects_wdn"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "covid_epidemiology",
+      "title": "Covid Epidemiology",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Covid Epidemiology\n\nThis repository corresponds to the\npaper [A prospective evaluation of AI-augmented epidemiology to forecast COVID-19 in the USA and Japan](https://www.researchsquare.com/article/rs-312419/v1)\n.\n\n### Contacts\n\nFor question, please reach out to soarik@google.com or joelshor@google.com.\n\n# Overview\n\n* The tf_seir.py file contains the main functions to define, train and evaluate\nthe proposed model, which integrates learnable encoders into compartmental\n(SEIR-extended) models. We have separate models for US country, state and\ncountry level models, as well as Japan prefecture-level model. Each of these\nhave specific functions and config files, with names\n'generic_seir_XXX_constructor.py' and 'generic_seir_specs_XXX.py'. The\nencoder-related functions are in the 'encoders' directory.\n\n* To see how evaluation metrics were calculation, please see [evaluation_metrics.ipynb](https://github.com/google-research/google-research/blob/master/covid_epidemiology/evaluation_metrics.ipynb).\n\n# Compartmental Modeling\n\nThe compartmental model's configuration, rates, and dynamics are defined via the\n`ModelDefinition`. A new custom model definition should inherit from\n`models.definitions.base_model_definition.BaseModelDefinition` and extra helper\nfunctions for common tasks like pre-processing features can be used by\ninheriting from the\n`models.definitions.base_model_definition.BaseCovidModelDefinition` instead.\nFurther code pertaining to the compartmental dynamics can also be shared amoung\nmultiple models by inheriting from the classes defined in\n`models.definitions.compartmen",
+      "contributors": [
+        "Farah Haddad",
+        "Halima Toure",
+        "Milan Zapata",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C024",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cell_embedder",
+            "experience_replay",
+            "covid_epidemiology",
+            "CardBench_zero_shot_cardinality_training"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "covid_vhh_design",
+      "title": "System requirements",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code for \"High-throughput ML-guided design of diverse single-domain antibodies against SARS-CoV-2\"\n\n## System requirements\nNo particular requirements; we recommend downloading the files and then loading\nthe notebook in the free Google colab environment. Alternatively, users can\nchoose to install python 3.11+ and a notebook viewer of their choice on their\nmachine.\n\n## Installation\nInstall via pip from github:\n\n```bash\npip install git+https://github.com/google-research/google-research.git#subdirectory=covid_vhh_design\n```\n\nAlternatively, clone the repository and install the module from there.\n\n```bash\ngit clone https://github.com/google-research/google-research.git\ncd google-research/covid_vhh_design/\npip install .\n```\n\nTypical install time on a \"normal\" desktop computer: none required if using\nGoogle colab.\n\n## Content\n* `colab/covid_paper_plots.ipynb`: Code used to create the figures of the paper.\n* `colab/data.ipynb`: Describes the data.\n* `colab/model.ipynb`: Shows how to score sequences with the model that we used\nto design the 3rd library.\n* `covid.py`: COVID-related code.\n* `helper.py`: Helper functions.\n* `utils.py`: Data pre-processing functions.\n* `plotting.py`: Helper functions for making plots.\n\n## Disclaimer\n\nThis is not an officially supported Google product.\n\nContact christofa@google.com, lcolwell@google.com, or zmariet@google.com for\nquestions.",
+      "contributors": [
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C006",
+          "type": "dependency_date_drift",
+          "projects": [
+            "covid_vhh_design",
+            "hyperbolic_discount",
+            "mentormix",
+            "distinguishing_romanized_hindi_urdu"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cube_unfoldings",
+      "title": "Generating unfoldings of the hypercube",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Generating unfoldings of the hypercube\n\nWe provide an open source C++ implementation which can be used to generate\nall unfoldings of the $n$-dimensional hypercube. Those unfoldings correspond\nto pairs $(T, P)$, where $T$ is a tree on $2n$ nodes and $P$ is a perfect\nmatching in the complement of the tree. Two such pairs $(T, P)$ and\n$(T', P')$ are considered equivalent if there is an isomorphism between\n$T$ and $T'$ which is simultaneously an isomorphism between $P$ and $P'$.\n\nThis correspondence is explained in\n[*Unfolding the Tesseract*](https://unfolding.apperceptual.com/) by Peter\nTurney.\n\nWe rely on [nauty](https://pallini.di.uniroma1.it/) by Brendan McKay and Adolfo\nPiperno to generate the trees and their automorphism group.\n\nThe code is used to calculate the terms of [A091159](https://oeis.org/A091159)\nup to dimension 10; see below for the results.\n\nCheck out a [video by Matt Parker on unfolding the 4d-cube](https://www.youtube.com/watch?v=Yq3P-LhlcQo).\n\n# Compiling\nUse `./compile.sh` to compile the source code. You can then use `./test.sh` to\nrun tests, or `./compute.sh N` to run the computation for a given value of `N`.\n\nCompiling the code requires `nauty` and `gtest`. Running requires the\n`nauty-gtreeng` executable, as well as `parallel`.\n\nTo install these dependencies on a Debian-based system, you can run\n\n```\nsudo apt-get install libnauty2-dev nauty libgtest-dev parallel\n```\n\n# Results\n\nFor each $n \\in \\{2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ we provide a file `n.cnt.txt`\nwhich contains in each line a decimal number and a graph given in [sparse6\nformat](https://users.ce",
+      "contributors": [
+        "Kaia Wolde",
+        "Rafael Duran",
+        "Vera Egede",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C123",
+          "type": "dependency_date_drift",
+          "projects": [
+            "explaining_risk_increase",
+            "bitempered_loss",
+            "batch_science",
+            "cube_unfoldings"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cubert",
+      "title": "Update 2021/9/22: Evaluating and Training the Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CuBERT\n\n## Update 2021/9/22: Evaluating and Training the Models\n\nA `run_classifier.py` script (forked from the original BERT version) is provided\nto use the finetuned models for the classification tasks above.\n\nTo use it, you first need to download the relevant files above (i.e., the\ncorresponding vocabulary, dataset, and model checkpoint) and then need to create\na BERT configuration file matching the chosen model.\n\nAssuming the downloaded data are stored in `$DATA_DIR`, you can then use the\nfollowing command line to evaluate a model (note that it requires access to the\n`bert` module in your python library path):\n\n```\npython cubert/run_classifier.py\n--do_train=False\n--bert_config_file=$DATA_DIR/bert_large_config.json\n--vocab_file=$DATA_DIR/github_python_minus_ethpy150open_deduplicated_vocabulary.txt\n--task_name=exception\n--init_checkpoint=$DATA_DIR/exception__epochs_20__pre_trained_epochs_1/model.ckpt-378\n--data_dir=$DATA_DIR/exception_datasets\n--output_dir=exception_results\n--do_eval=True\n```\n\nThis example file was contributed by Marc Brockschmidt . We are grateful for his help!\n\n## Update 2021/7/11: Fresh Pre-trained Python and Java Models\n\nWe are releasing a fresh set of Python and Java pre-training corpus and models, drawn from the BigQuery version of GitHub as of July 11, 2021. These pre-training corpora were deduplicated with the updated process described in [Collection Query](https://github.com/google-research/google-research/tree/master/cubert#collection-query) below. Note that for the Python corpus, files similar to ETH Py150 Open are also extracted from pre-trai",
+      "contributors": [
+        "Gustavo Moreau",
+        "Oyin Iversen",
+        "Katya Silva",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C133",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "cubert",
+            "CIQA"
+          ],
+          "shared_object": "Gustavo Moreau at >=60% allocation",
+          "canonical": {
+            "person": "Gustavo Moreau",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Gustavo Moreau is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cvl_public",
+      "title": "Contrastive Value Learning code",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Contrastive Value Learning code\nLink to paper: https://arxiv.org/abs/2211.02100\n\n*Abstract*: Model-based reinforcement learning (RL) methods are appealing in the\noffline setting because they allow an agent to reason about the consequences of\nactions without interacting with the environment. Prior methods learn a 1-step\ndynamics model, which predicts the next state given the current state and\naction. These models do not immediately tell the agent which actions to take,\nbut must be integrated into a larger RL framework. Can we model the environment\ndynamics in a different way, such that the learned model does directly indicate\nthe value of each action? In this paper, we propose Contrastive Value Learning\n(CVL), which learns an implicit, multi-step model of the environment dynamics.\nThis model can be learned without access to reward functions, but nonetheless\ncan be used to directly estimate the value of each action, without requiring any\nTD learning. Because this model represents the multi-step transitions\nimplicitly, it avoids having to predict high-dimensional observations and thus\nscales to high-dimensional tasks. Our experiments demonstrate that CVL\noutperforms prior offline RL methods on complex continuous control benchmarks.\n\nIf you use this repository, please consider adding the following citation:\n\n```\n@article{mazoure2022contrastive,\ntitle={Contrastive Value Learning: Implicit Models for Simple Offline RL},\nauthor={Mazoure, Bogdan and Eysenbach, Benjamin and Nachum, Ofir and Tompson, Jonathan},\njournal={Deep Reinforcement Learning Workshop, NeurIPS 2022},\nyear={202",
+      "codename": "Project Nimbus",
+      "contributors": [
+        "Rafael Duran",
+        "Rosa Mensah",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C116",
+          "type": "codename_collision",
+          "projects": [
+            "cvl_public",
+            "automatic_structured_vi"
+          ],
+          "shared_object": "Project Nimbus",
+          "canonical": {
+            "codename": "Project Nimbus"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Nimbus."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "d3pm",
+      "title": "Code to accompany the NeurIPS paper",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Code to accompany the NeurIPS paper\n\"Structured Denoising Diffusion Models in Discrete State-Spaces\".\n\n```\n@inproceedings{austin2021structured,\nauthor    = {Jacob Austin and\nDaniel D. Johnson and\nJonathan Ho and\nDaniel Tarlow and\nRianne van den Berg},\ntitle     = {Structured Denoising Diffusion Models in Discrete State-Spaces},\nbooktitle = {Advances in Neural Information Processing Systems},\nyear      = {2021}\n}\n```\n\nThe `images` subdirectory contains the code for D3PMs in image space, which can\nbe used to to reproduce our experiments from Section 6.\nIt contains code for evaluating bits-per-dimension metrics, but\nthe FID and IS metric evaluation code is not currently available.\n\nThe `text` subdirectory contains our code for D3PMs in text space, corresponding\nto our experiments in Section 5.\n\nThe `insertdelete` subdirectory contains code for D3PMs augmented with insertion\nand deletion operations, as described in the follow-up paper \"Beyond In-Place\nCorruption: Insertion and Deletion In Denoising Probabilistic Models\".\n\n```\n@inproceedings{johnson2021beyond,\nauthor    = {Daniel D. Johnson and\nJacob Austin and\nRianne van den Berg and\nDaniel Tarlow},\ntitle     = {Beyond In-Place Corruption: Insertion and Deletion In Denoising Probabilistic Models},\nbooktitle = {ICML Workshop on Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models},\nyear      = {2021}\n}\n```",
+      "contributors": [
+        "Carmen Reyes",
+        "Farah Haddad",
+        "Ondrej Bergstrom",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C043",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "d3pm",
+            "cfq_pt_vs_sa"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dac",
+      "title": "Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial ",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial Imitation Learning\n============================================================================================================\nIlya Kostrikov, Kumar Krishna Agrawal, Debidatta Dwibedi, Sergey Levine, Jonathan Tompson\n-----------------------------------------------------------------------------------------\n\nSource code to accompany our [paper](https://arxiv.org/abs/1809.02925).\n\nInstall Dependencies\n--------------------\n\nWe use Python 3.5.4rc1. You may also need to install a number of dependencies.\n\npip3 install gym\npip3 install --upgrade tensorflow tensorflow_probability\npip3 install absl-py\n\nYou will also need to install Mujoco and use a valid license. Follow the install\ninstructions [here](https://github.com/openai/mujoco-py).\n\nGenerating / Downloading Expert Trajectories:\n-------------------------------\n\nClone the repo of expert trajectories:\n\ncd /data/dac/  # We will assume access to this directory.\ngit clone git@github.com:ikostrikov/gail-experts.git\n\nThen use our import script to turn them into checkpoints (~1-2 hours):\n\npython3 generate_expert_data.py \\\n--src_data_dir /data/dac/gail-experts/ \\\n--dst_data_dir /data/dac/gail-experts/\n\nRunning Training\n----------------\n\nLaunch run_training_worker.sh to start the training worker. Then in another\nterminal, launch run_evaluation_worker.sh. Training takes approximately 1 to 2\nhours.\n\nTo change the environment, number of expert trajectories, etc, edit the\nvariables defined in the bash scripts above.\n\nTo see reward results live during t",
+      "contributors": [
+        "Rosa Mensah",
+        "Carmen Reyes",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C013",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dac",
+            "layout-blt"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "darc",
+      "title": "Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers\n\npaper blog post -->\n\nThis repository provides an implementation of Domain Adaptation with Rewards from Classifiers [DARC] from \"Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers.\" In this work, we propose a simple, practical, and intuitive approach for domain adaptation in reinforcement learning. Our approach stems from the idea that the agent's experience in the source domain should look similar to its experience in the target domain. Building off of a probabilistic view of RL, we formally show that we can achieve this goal by _compensating for the difference in dynamics by modifying the reward function_ (see figure). This modified reward function is simple to estimate by learning auxiliary classifiers that distinguish source-domain transitions from target-domain transitions. Intuitively, the modified reward function penalizes the agent for visiting states and taking actions in the source domain which are not possible in the target domain. Said another way, the agent is penalized for transitions that would indicate that the agent is interacting with the source domain, rather than the target domain.\n\nIf you use this code, please consider adding the corresponding citation:\n\n```\n@article{eysenbach2020off,\ntitle={Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers},\nauthor={Eysenbach, Benjamin and Asawa, Swapnil and Chaudhari, Shreyas and Salakhutinov, Ruslan and Levine, Sergey},\njournal={arXiv preprint arXiv:2006.13916},\nyear={2",
+      "contributors": [
+        "Milan Zapata",
+        "Chiara Olsen",
+        "Paloma Castillo",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C095",
+          "type": "duplicate_effort",
+          "projects": [
+            "compositional_rl",
+            "darc"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dble",
+      "title": "Codebase for \"Distance-Based Learning from Errors for Confidence Calibration.\"",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Codebase for \"Distance-Based Learning from Errors for Confidence Calibration.\"\n\nAuthors: Chen Xing, Sercan O. Arik, Zizhao Zhang, Tomas Pfister\n\nLink: https://arxiv.org/abs/1912.01730\n\nWe propose distance-based learning from errors (DBLE) to improve confidence\ncalibration of DNNs. DBLE bases its confidence estimation on distances in the\nrepresentation space.  We first adapt prototypical learning for training of a\nclassification model for DBLE. It yields a representation space where the\ndistance from a test sample to its ground-truth class center can calibrate the\nmodel performance. At inference, however, these distances are not available due\nto the lack of ground-truth labels. To circumvent this by approximately\ninferring the distance for every test sample, we propose to train a confidence\nmodel jointly with the classification model by merely learning from\nmis-classified training samples, which we show to be highly beneficial for\neffective learning. On multiple datasets and architectures, we demonstrate that\nDBLE outperforms alternative single-modal confidence calibration approaches.\n\n## Model architectures\n\nDBLE is model agnostic and can be applied to classification task on any\ndatasets. In this directory, we provide example implemetations for 3\nwidely-used neural network architectures:\n* MLP\n* VGG\n* ResNet\n\nDetailed model architectures can be specified by modifying hyper-parameters of\nevery model architecture. For example, in dble.py, we initialize ResNet-50 for\nCIFAR dataset as,\n\n```\nresnet_model = resnet.Model( wd=flags.weight_decay,\nresnet_size=50, bottleneck=True, n",
+      "contributors": [
+        "Carmen Reyes",
+        "Gustavo Moreau",
+        "Maren Zhou",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C039",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "jaxsel",
+            "dble"
+          ],
+          "shared_object": "Efe Lindqvist at >=60% allocation",
+          "canonical": {
+            "person": "Efe Lindqvist",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Efe Lindqvist is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "deciphering_clinical_abbreviations",
+      "title": "Deciphering Clinical Abbreviations",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Deciphering Clinical Abbreviations\n\nThis repository contains data processing and evaluation code for the following\npaper:\n\n> Rajkomar, A., Loreaux, E., Liu, Y. *et al.* Deciphering clinical abbreviations with a privacy protecting machine learning system. *Nat Commun* **13**, 7456 (2022). https://doi.org/10.1038/s41467-022-35007-9\n\n**Prerequisites:**\n\n* To run the code, `conda` distribution must be installed on your computer. The\ncode in this repository was tested with `conda 4.9.1`.\n* To access the released datasets, `gsutil` must be installed on your computer. Follow the installation instructions at [https://cloud.google.com/storage/docs/gsutil_install](https://cloud.google.com/storage/docs/gsutil_install).\n\n**Setup**\n\n1.  Clone the repository to a local directory and cd into the directory directly above it.\n2.  Allow conda to be activated from a shell script by running `$ conda init bash`, swapping bash for the relevant shell name if necessary (e.g. fish, tcsh, etc.). You may need to close and restart your shell after running this.\n3.  To download the data required to carry out reverse substitution and model evaluation, run `$ sh deciphering_clinical_abbreviations/download_datasets.sh`. This will download the following files to the `deciphering_clinical_abbreviations/datasets` folder:\n* `abbreviation_expansion_dictionary.csv`: The multi-source, manually curated abbreviation expansion dictionary from the paper. This dictionary is used for both reverse substitution and model evaluation.\n* `synthetic_snippets.csv`: 302 text snippets containing abbreviations written by clin",
+      "contributors": [
+        "Amara Okafor",
+        "Halima Toure",
+        "Milan Zapata",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C050",
+          "type": "duplicate_effort",
+          "projects": [
+            "frechet_audio_distance",
+            "deciphering_clinical_abbreviations"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dedal",
+      "title": "Dedal: Deep embedding and alignment of protein sequences.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Dedal: Deep embedding and alignment of protein sequences.\nThis package contains all the necessary tools to reproduce the experiments presented in the [dedal paper](https://www.biorxiv.org/content/10.1101/2021.11.15.468653v2).\n\n## Install\nTo install dedal, it is necessary to clone the google-research repo:\n```\ngit clone https://github.com/google-research/google-research.git\n```\nFrom the `google_research` folder, you may install the necessary requirements by executing:\n```\npip install -r dedal/requirements.txt\n```\n## Pre-trained model\n\nDEDAL is available in [TensorFlow Hub](https://tfhub.dev/google/dedal/3).\n\nThe model expects a `tf.Tensor[2B, 512]` as inputs, representing a batch of B sequence pairs to be aligned right-padded to a maximum length of 512, including the special EOS token. Pairs are expected to be arranged consecutively in this batch, that is, `inputs[2*b]` and `inputs[2*b + 1]` represent the b-th sequence pair with b ranging from 0 up to B - 1 (inclusive).\n\nBy default, the model runs in \"alignment\" mode and its output is a Python dict containing:\n+ 'sw_scores': a `tf.Tensor[B]` with the alignment scores\n+ 'homology_logits': a `tf.Tensor[B]` with the homology detection logits\n+ 'paths': a `tf.Tensor[B, 512, 512, 9]` representing the predicted alignments\n+ 'sw_params': a tuple of three `tf.Tensor[B, 512, 512]` containing the contextual Smith-Waterman parameters (substitution scores, gap open and gap extend penalties)\n\nAdditional signatures are provided to run the model in \"embedding\" mode, in which case it returns a single `tf.Tensor[2B, 512, 768]` with the emb",
+      "contributors": [
+        "Wei Ivanov",
+        "Rosa Mensah",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C113",
+          "type": "duplicate_effort",
+          "projects": [
+            "dedal",
+            "android_control"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "demogen",
+      "title": "DEep MOdel GENeralization dataset (DEMOGEN)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# DEep MOdel GENeralization dataset (DEMOGEN)\n\nThis codebase contains code necessary for using the generalization dataset used\nin \"Predicting the Generalization Gap in Deep Networks with Margin\nDistributions\" (ICLR 2019) [https://arxiv.org/abs/1810.00113](https://arxiv.org/abs/1810.00113)\n\nDisclaimer: This is not an official Google product.\n\n## OVERVIEW\nThe DEMOGEN dataset consists of 756 trained deep models, along with their training and test performance on the CIFAR-10 and CIFAR-100 datasets. The models are variants of CNNs (with architectures that resemble Network-in-Network) and ResNet-32 with different regularization techniques and hyperparameter settings.\n\n## VARIATIONS\nThe variations available in DEMOGEN are among the most common techniques used by practitioners. For example, we apply weight decay and dropout with different strengths; we use networks with and without batch normalization (and group normalization for ResNet) and data augmentation; we change the width or the number of hidden units in the hidden layers; we explore different initial learning rates (for ResNet). These variations induce a wide spectrum of generalization behaviors. For example, the models of CNNs trained on CIFAR-10 have the test accuracies ranging from 60% to 90.5%, and the generalization gaps ranging from 1% to 35%.\n\n## USAGE\nA typical use case can be found in `example.py`. Run this by `python -m demogen.example`.\n\nExamples of computing the margin and total variation on the dataset can be found\nin the docstring of `margin_utils.py` and `total_variation_util.py`.\n\n## DATASET\nDataset *(15.57",
+      "contributors": [
+        "Umar Costa",
+        "Hyun Traore",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C063",
+          "type": "budget_overallocation",
+          "projects": [
+            "latent_programmer",
+            "demogen"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-81",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-81",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-81 for this project."
+          }
+        }
+      ]
+    }
+  ]
+}

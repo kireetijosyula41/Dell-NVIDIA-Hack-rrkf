@@ -1,0 +1,19 @@
+{
+  "id": "gr/bonus_based_exploration",
+  "title": "Bonus based exploration",
+  "summary": "A benchmarking effort around our open-source bonus-based exploration release for the Arcade Learning Environment, covering NoisyNetworks, pseudo-counts with PixelCNN, and Random Network Distillation, to give Meridian a vetted exploration-method recommendation for sparse-reward customers.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Yusuf Keita", "Tereza Aliyev", "Ondrej Bergstrom"],
+  "codename": "Project Quillon",
+  "window": {"start": "2026-02-02", "end": "2026-05-11"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bonus_based_exploration",
+    "url": "https://github.com/google-research/google-research/tree/master/bonus_based_exploration",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

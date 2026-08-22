@@ -1,0 +1,25 @@
+{
+  "id": "gr/mucped22",
+  "title": "Multi-bitrate compression perceptual evaluation dataset 2022",
+  "summary": "Build an internal image-quality-assessment capability around mucped22 — a compression-distortion IQA database designed to fix the gaps in databases like KADID-10k and TID2013, whose crowdsourced raters and unrepresentative distortions mislead codec tuning — including a rigorous human-rating pipeline of our own.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Gustavo Moreau",
+    "Ondrej Bergstrom",
+    "Emeka Pinto"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mucped22",
+    "url": "https://github.com/google-research/google-research/tree/master/mucped22",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/kip/e04",
+  "thread_id": "gr/kip/t2",
+  "in_reply_to": "gr/kip/e03",
+  "date": "2026-07-08T10:03:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: KIP status: positioning decision + freeze-week logistics",
+  "body": "Team,\n\nTwo calls ahead of the Jul 20 readout.\n\n1) Positioning: v1 is the fast-iteration/CI story only. With a 4-6% finite-network gap (8% on our tabular corpus), I'm not standing behind data-minimization claims this quarter — that pitch returns when the gap narrows or when Label Solve on a curated support set closes it for specific corpora. Yara, one slide quantifying LS-vs-KIP cost and quality would really help here.\n\n2) Freeze logistics: Chiara got the schema approved and registered the first three distilled sets in Corpus v2 yesterday — one day inside the freeze, closer than I'd like but done. Remaining sets are read-only demos so they can wait out the freeze window.\n\nReadout invite going out today; Bao, please sanity-check the compute-cost appendix, the A100-hour numbers are doing a lot of work in the ROI slide.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

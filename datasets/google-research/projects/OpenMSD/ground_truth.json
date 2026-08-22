@@ -1,0 +1,12 @@
+{
+  "project": "gr/OpenMSD",
+  "conflicts": [
+    {
+      "conflict_id": "C105",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["behavior_regularized_offline_rl", "non_decomp", "diffusion_distillation"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2's migration freeze is 2026-07-24, so scheduling the two heavy ingestion reruns for early July still leaves us two clear weeks of margin before the freeze."
+    }
+  ]
+}

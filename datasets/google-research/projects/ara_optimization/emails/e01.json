@@ -1,0 +1,46 @@
+{
+  "id": "gr/ara_optimization/e01",
+  "thread_id": "gr/ara_optimization/t1",
+  "in_reply_to": null,
+  "date": "2026-04-08T09:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: summary report optimization for attribution reporting",
+  "body": "Hi Daniela, team,\n\nKicking off the attribution-reporting optimization work, based on our open-source release on summary report optimization in the privacy-sandbox attribution API.\n\nThe problem in plain terms: advertisers query aggregate values over slices of conversion data under a privacy budget, and the way you allocate that budget across slices and value columns changes the error a lot. The codebase optimizes exactly that, scoring with RMSRE-tau error metrics over train/test dataframes.\n\nProduct framing: a budget-allocation recommender that our measurement partners run before they configure a campaign.\n\nMilestones: synthetic dataset regeneration and baseline metrics by early May, real-slice study in June, readout the week of July 20.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

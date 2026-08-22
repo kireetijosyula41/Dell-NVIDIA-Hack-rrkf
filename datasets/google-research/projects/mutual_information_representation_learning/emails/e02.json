@@ -1,0 +1,15 @@
+{
+  "id": "gr/mutual_information_representation_learning/e02",
+  "thread_id": "gr/mutual_information_representation_learning/t1",
+  "in_reply_to": "gr/mutual_information_representation_learning/e01",
+  "date": "2026-04-16T14:34:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: MI-maximization study — compute + staffing",
+  "body": "Anders,\n\nCompute and staffing:\n\nStaffing — Halima leads the replication and the estimator comparisons, Nikhil the retrieval-encoder extension, Chiara converts the Colab suite into a standalone runner (the RUN_EXPERIMENTS path is not built for 20-run batches, as the release itself warns).\n\nCompute — smoke tests fit anywhere. For the full matrix (20 runs x estimator x architecture grid, plus the retrieval extension) we hold the cirrus-tpu reservation, 256 accelerators, for the week of 2026-06-08 out of the portfolio's quarterly allocation. That single week covers the entire consolidated batch, which is why I want everything staged and dress-rehearsed by 06-01 — if we miss the week, there is no second cirrus window before your 06-22 close.\n\nRisk noted accordingly: the schedule has one hard pivot point and it's that week.\n\nDaniela",
+  "labels": ["resources", "risk"]
+}

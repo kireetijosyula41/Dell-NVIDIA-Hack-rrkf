@@ -1,0 +1,16 @@
+{
+  "id": "gr/dnn_predict_accuracy/e01",
+  "thread_id": "gr/dnn_predict_accuracy/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T09:20:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [{"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}],
+  "subject": "Kickoff: weight-space accuracy prediction (dnn-predict-accuracy)",
+  "body": "Team,\n\nKicking off the productization of our accuracy-from-weights work. The pitch for the platform org: given only the flattened parameter vector of a trained model, predict its test accuracy without running a single eval batch. Our open-source release ships the Small CNN Zoo — 30k trained instances per source dataset of a 4,970-parameter CNN, with checkpoints at 9 points from initialization through epoch 86 — which gives us the supervision we need for a v1 estimator service.\n\nMilestones I want to socialize before OKR lock: v1 predictor trained on the Zoo by mid-May, internal API behind Evalline by late June, launch review in the first half of July. Ivo will follow up on staffing and compute.\n\nQuestions welcome, otherwise let's move.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

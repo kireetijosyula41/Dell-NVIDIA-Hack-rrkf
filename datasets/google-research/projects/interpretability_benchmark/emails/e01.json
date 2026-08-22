@@ -1,0 +1,40 @@
+{
+  "id": "gr/interpretability_benchmark/e01",
+  "thread_id": "gr/interpretability_benchmark/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:20:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "ROAR benchmark kickoff — scoring interpretability methods",
+  "body": "Team, kickoff on the explainability-methods benchmark for data-platforms. We're standing up ROAR — RemOve And Retrain — as an internal service: it evaluates feature-importance estimators by removing the fraction of inputs each estimator ranks most important, retraining, and measuring the accuracy drop; the best estimator is the one whose removals hurt the most. Why it matters: three product teams are choosing interpretability methods for sensitive-domain work right now and are picking by vibes. Target: ROAR scores for our five candidate estimators on ImageNet-scale classification, delivered as an Evalline report. Milestones: pipeline repro by mid-April; full estimator sweep in early June; readout before end of June. Bruno — the retraining requirement is the whole cost story here (every estimator × removal fraction × seeds is a fresh ImageNet training), so let's get the compute plan pinned this month. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

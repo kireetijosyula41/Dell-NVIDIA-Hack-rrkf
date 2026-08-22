@@ -1,0 +1,18 @@
+{
+  "id": "gr/lasagna_mt",
+  "title": "Lasagna: Stacking Diverse Architectures to Improve Machine Translation",
+  "summary": "Lasagna improves machine translation by stacking diverse layer types — choosing which kind of layer (e.g. Light/Dynamic convolutions vs attention) sits at each position in the encoder and decoder — implemented on top of fairseq for auto-regressive fp32 training. Meridian is testing it to cut serving cost on its translation tier.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Linnea Yamada", "Kaia Wolde", "Milan Zapata"],
+  "window": {"start": "2026-02-09", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lasagna_mt",
+    "url": "https://github.com/google-research/google-research/tree/master/lasagna_mt",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

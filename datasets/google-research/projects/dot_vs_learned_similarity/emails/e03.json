@@ -1,0 +1,19 @@
+{
+  "id": "gr/dot_vs_learned_similarity/e03",
+  "thread_id": "gr/dot_vs_learned_similarity/t1",
+  "in_reply_to": "gr/dot_vs_learned_similarity/e02",
+  "date": "2026-05-13T09:36:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: dot-product vs learned similarity for the recs scorer",
+  "body": "Reproduction status: ml-1m matches the published curves. With embedding dim 16, regularization 0.005, 8 negatives, learning rate 0.002 over 256 epochs, the simple MF model lands within 0.4 points of HR@10 of the learned-similarity baseline, and at dim 192 it's clearly ahead. Freya sees the same shape on pinterest-20 (reg 0.01, 10 negatives, lr 0.007). We repeat each config 8 times and report means, same as the paper.\n\nRisk to flag: the reference NCF code assumes a Python 2 runtime, and Milan's port of the evaluation protocol found an off-by-one in how we'd been sampling the 100 negatives for the hit-rate metric. Fixed now, but it invalidated two weeks of early comparison numbers. Lesson: everything for the June memo runs through the ported evaluator only.\n\nOn track for the Vulcan week.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

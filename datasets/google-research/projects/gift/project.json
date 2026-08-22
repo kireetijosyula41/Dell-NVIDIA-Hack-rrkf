@@ -1,0 +1,18 @@
+{
+  "id": "gr/gift",
+  "title": "Gradual Domain Adaptation in the Wild: When Intermediate Distributions are Absent",
+  "summary": "Applies GIFT (Gradual Interpolation of Features toward Target) and iterative self-training to keep platform models accurate under distribution shift, creating virtual intermediate samples by interpolating source and target representations when no intermediate data exists.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Saoirse Eriksen", "Amara Okafor", "Katya Silva"],
+  "window": {"start": "2026-03-30", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gift",
+    "url": "https://github.com/google-research/google-research/tree/master/gift",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

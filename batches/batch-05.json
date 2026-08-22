@@ -1,0 +1,608 @@
+{
+  "batch": 5,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "cell_embedder",
+      "title": "Generating embeddings for cell painting microscopy images.",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Generating embeddings for cell painting microscopy images.\n\nThis python notebook generates embeddings for microscopy images stained\nusing cell painting assays.\n\nThis was used in papers:\n\n1. [Applying Deep Neural Network Analysis to High-Content Image-Based Assays. (in SLAS Discovery)][slas_paper]\n2. [It's easy to fool yourself: Case studies on identifying bias and confounding in bio-medical datasets. (in NeurIPS 2019 workshops)][neurips_lmrl_paper]\n\n## Download the sample data and weights.\n\nTo run the accompanying colab, you need:\n\n1. A sample image (5 stains), and\n2. weights to the random projection matrix.\n\nThese files are available for [download here][colab_downloads]. We use sample\nimages from [BBBC025][bbbc025_link] in this notebook.\n\nOther data accompanying the [paper][slas_paper] are [here][paper_downloads]\n\n## Running the notebook\n\n1. Run the cells in **Install + Imports**.\n\n2. [Download the weights and sample images here][colab_downloads]. You should be\nable to select \"Add shortcut to drive\" to run this notebook. Note that you\ncan use your own images, but you'll likely need the weights to get an\nembedding identical to the ones in the paper.\n\n3. Set the `DATA_DIR` variable to the location where the images and weights\nlive, and make sure to run that cell to initialize the paths to the images\nand the model weights.\n\n4. Run the subsequent cells: **Helper functions** and **Load Images (sorted by\nstain names)**. You should be able to see the sample images. Also run\n**Build model and initialize weights**.\n\n5. Now run the cell under **Get Embeddings** section. It should ",
+      "contributors": [
+        "Maren Zhou",
+        "Giannis Sato",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C024",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cell_embedder",
+            "experience_replay",
+            "covid_epidemiology",
+            "CardBench_zero_shot_cardinality_training"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cell_mixer",
+      "title": "Cell Mixer",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Cell Mixer\n\n## Requirements\n\nFor this package to work you will need to install the following python3\npackages:\n\n```bash\npip3 install pandas anndata absl-py\n```\n\nYou will also need to install the following R/Biocinductor packages\n\n```R\ninstall.packages(\"devtools\")\ninstall.packages(\"argparse\")\ninstall.packages(\"Seurat\")\ninstall.packages(\"purrr\")\ndevtools::install_github(repo = \"hhoeflin/hdf5r\")\ndevtools::install_github(repo = \"mojaveazure/loomR\", ref = \"develop\")\n\nif (!requireNamespace(\"BiocManager\", quietly = TRUE))\ninstall.packages(\"BiocManager\")\n\nBiocManager::install(\"SingleCellExperiment\")\nBiocManager::install(\"scater\")\nBiocManager::install(\"scran\")\nBiocManager::install(\"DropletUtils\")\n```\n\n## Use\n\n### Downloading the data\n\nThe current data comes from\n[Zheng et al](https://www.nature.com/articles/ncomms14049) and was downloaded\nfrom the\n[10X website](https://support.10xgenomics.com/single-cell-gene-expression/datasets).\n\nTo download the data, simply run `fetch_data.sh` and specify the path to which\nyou want to save the data to.\n\n```bash\nexport DATA_PATH=/tmp/data\nbash fetch_data.sh $DATA_PATH\n```\n\nNote that the raw data only needs to be fetched once.\n\n### Generating a mixture\n\nThe script to generate the mixtures is `cell_mixer.R`, it allows for standard QC\nsteps:\n\n-   `--qc_counts_mad_lower`: Removing cells with low read count, filtered based\non the number of MADs under the median read counts.\n-   `--qc_feature_count_mas_lower`: Removing cells with few genes expressed,\nfiltered based on the number of MADs under the median number of genes\nexpressed.\n-   `--qc_mito_mad_up",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Rosa Mensah",
+        "Csilla Nassar",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C096",
+          "type": "dependency_date_drift",
+          "projects": [
+            "finance_harness",
+            "cell_mixer",
+            "hypertransformer",
+            "keypose"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cfq",
+      "title": "Compositional Freebase Questions (CFQ)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Compositional Freebase Questions (CFQ)\n\nThis repository contains a leaderboard and code for training and evaluating ML\narchitectures on the Compositional Freebase Questions (CFQ) dataset.\n\nThe dataset can be downloaded from the following URL:\n\n[Download the CFQ dataset](https://storage.cloud.google.com/cfq_dataset/cfq1.1.tar.gz)\n\nThe dataset and details about its construction and use are described in this ICLR 2020 paper: [Measuring Compositional Generalization: A Comprehensive Method on Realistic Data](https://openreview.net/forum?id=SygcCnNKwr).\n\n## Leaderboard\n\nArchitectures are ranked by accuracy on MCD-MEAN, which is the average over the\naccuracy of the three MCD splits. We also report average accuracy results and\n95% confidence intervals on the individual MCD splits.\n\nIf you submit papers on CFQ, please consider sending a pull request to merge\nyour results onto the leaderboard.\n\n|                             | MCD-MEAN      | MCD1         | MCD2         | MCD3         |\n|-----------------------------|---------------|--------------|--------------|--------------|\n| **HPD [3]**       | **67.3 +/- 4.1**  | **72.0 +/- 7.5**  | **66.1 +/- 6.4**   | **63.9 +/- 5.7**     |\n| T5-11B-mod [2]              | 42.1 +/- 9.1  | 61.6 +/- 12.4| 31.3 +/ 12.8 | 33.3 +/- 2.3 |\n| T5-11B [2]                  | 40.9 +/- 4.3  | 61.4 +/- 4.8 | 30.1 +/- 2.2 | 31.2 +/- 5.7 |\n| Evolved Transformer [2]     | 20.8 +/- 0.7  | 42.4 +/- 1.0 | 9.3 +/- 0.8  | 10.8 +/- 0.2 |\n| Universal Transformer [1]   | 18.9 +/- 1.4  | 37.4 +/- 2.2 | 8.1 +/- 1.6  | 11.3 +/- 0.3 |\n| Transformer [1]             | 17.9",
+      "codename": "Project Sirocco",
+      "contributors": [
+        "Rosa Mensah",
+        "Hyun Traore",
+        "Saoirse Eriksen",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C026",
+          "type": "codename_collision",
+          "projects": [
+            "mathwriting",
+            "cfq"
+          ],
+          "shared_object": "Project Sirocco",
+          "canonical": {
+            "codename": "Project Sirocco"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Sirocco."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cfq_pt_vs_sa",
+      "title": "Compositional Generalization in Semantic Parsing",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Compositional Generalization in Semantic Parsing\n\nCode and details for reproducing results for the paper [\"Compositional\nGeneralization in Semantic Parsing: Pre-training vs. Specialized Architectures\"]\n(https://arxiv.org/abs/2007.08970)\n\n## Instructions for most experiments\n\nThis section describes how most experiments of the paper can be reproduced. For\nCGPS and T5 see the separate sections further down.\n\n### Prerequisites\n\nIf you want to get started quickly you can use the\n`tf-1-15-cu100` image from `deeplearning-platform-release` which comes with some of the right dependencies preinstalled. The following command starts a VM with this image and a V100 GPU on Google Cloud:\n\n```\ngcloud config set project ${YOUR_PROJECT}\ngcloud config set compute/zone europe-west4-a\n\nVM_NAME=run-cfq\ngcloud compute instances create $VM_NAME \\\n--image-project=deeplearning-platform-release \\\n--image-family=tf-1-15-cu100 \\\n--machine-type=n1-standard-8 \\\n--boot-disk-size=120GB \\\n--maintenance-policy=TERMINATE \\\n--accelerator=\"type=nvidia-tesla-v100,count=1\" \\\n--metadata=\"install-nvidia-driver=True\"\n```\n\nNext, on that machine, get code with:\n\n```\nsudo apt-get install subversion -y\nsvn export https://github.com/google-research/google-research/trunk/cfq\n```\n\nYou can then install the necessary Python dependencies using:\n\n```\npython3.7 -m pip install -r cfq/requirements.txt --user\n# Also make sure the installed binaries are in the path.\nexport PATH=\"$HOME/.local/bin:$PATH\"\n```\n\n### Running the experiment\n\nThis command will download the dataset, preprocess it, train a model and finally evaluate it and",
+      "contributors": [
+        "Gustavo Moreau",
+        "Linnea Yamada",
+        "Halima Toure",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C043",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "d3pm",
+            "cfq_pt_vs_sa"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "charformer",
+      "title": "Charformer",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Charformer\n\nThis repository contains the Mesh-Tensorflow implementation of Charformer:\nFast Character Transformers via Gradient-based Subword Tokenization.\n\nThis implementation works with the [T5-codebase](https://github.com/google-research/text-to-text-transfer-transformer).\n\n# Usage\n\nCurrently this codebase contains the modules/layers that can be plugged into T5 codebase. We are working on a JAX/FLAX implementation that will be later available in this repository. For now, the Mesh-TF implementation exists as a reference implementation.\n\nOne would need to modify `transformer.py` in https://github.com/tensorflow/mesh to use\nthe provided Charformer layers. The code to inject Charformer layers can be found at\n`https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/transformer.py`.\n\n### Integration Steps\n\nStep 1: Add the following lines to the `__init__` function of Unitransformer class.\n\n```\nif self.gradient_subwords:\ntf.logging.info(\"Using gradient subwords..\")\nself.grad_layer = [gradient_subword_layer()] * self.num_gsw_layers\n```\nalong with new args `gradient_subwords`, `gradient_subword_layer` to the class.\n\nStep 2: Right after the positional embeddings, add\n\n```\nif self.gradient_subwords and self.grad_layer:\ntf.logging.info(\"Using Charformer before computing layer stack.\")\n# tensor should be batch x char_length x dim]\nfor grad_layer in self.grad_layer:\nx, context = grad_layer.call(context, x)\n```\nStep 3:\nCreate a gin config (similar to the one provided in `configs/cf_v2_d3_dv_base.gin` which you may use in place of any other gin configs in the T5 cod",
+      "contributors": [
+        "Wei Ivanov",
+        "Milan Zapata",
+        "Emeka Pinto",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C081",
+          "type": "budget_overallocation",
+          "projects": [
+            "charformer",
+            "latent_shift_adaptation"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-57",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-57",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-57 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cisc",
+      "title": "Official implementation for the",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code for \"Confidence Improves Self-Consistency in LLMs\"\n\nOfficial implementation for the\n**Confidence Improves Self-Consistency in LLMs** paper, which is\n **Accepted to ACL Finding 2025.** \n\n**Authors:** Amir Taubenfeld\\*, Tom Sheffer\\*, Eran Ofek, Amir Feder, Ariel\nGoldstein, Zorik Gekhman, Gal Yona (\\* Equal contribution)\n\n**Paper:** [https://arxiv.org/abs/2502.06233](https://arxiv.org/abs/2502.06233)\n\n**Abstract:**\nSelf-consistency decoding enhances LLMs\u2019 performance on reasoning tasks by sampling diverse reasoning paths and selecting the most frequent answer. However, it is computationally expensive, as sampling many of these (lengthy) paths is required to increase the chances that the correct answer emerges as the most frequent one. To address this, we introduce Confidence-Informed Self-Consistency (CISC). CISC performs a weighted majority vote based on confidence scores obtained directly from the model. By prioritizing high-confidence paths, it can identify the correct answer with a significantly smaller sample size. When tested on nine models and four datasets, CISC outperforms self-consistency in nearly all configurations, reducing the required number of reasoning paths by over 40% on average. In addition, we introduce the notion of within-question confidence evaluation, after showing that standard evaluation methods are poor predictors of success in distinguishing correct and incorrect answers to the same question. In fact, the most calibrated confidence method proved to be the least effective for CISC. Lastly, beyond these practical implications, our results and",
+      "contributors": [
+        "Katya Silva",
+        "Umar Costa",
+        "Nikhil Abebe",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C142",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "bigg",
+            "cisc"
+          ],
+          "shared_object": "Jorge Vidal at >=60% allocation",
+          "canonical": {
+            "person": "Jorge Vidal",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Jorge Vidal is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ciw_label_noise",
+      "title": "Constrained Instance and Class reWeighting (CIW)",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Constrained Instance and Class reWeighting (CIW)\nCode for Constrained Instance and Class reWeighting (CIW / CICW) for learning with noisy labels as proposed in [Constrained Instance and Class Reweighting for Robust Learning under Label Noise\n](https://arxiv.org/abs/2111.05428) by Abhishek Kumar and Ehsan Amid:\n```\n@article{kumar2021constrained,\ntitle={Constrained Instance and Class Reweighting for Robust Learning under Label Noise},\nauthor={Kumar, Abhishek and Amid, Ehsan},\njournal={arXiv preprint arXiv:2111.05428},\nyear={2021}\n}\n```\nThe performance of deep neural nets is largely dependent on the quality of the training data and often degrades in the presence of noise. We propose a principled approach for tackling label noise with the aim of assigning importance weights to individual instances and class labels. Our method works by formulating a class of constrained optimization problems that yield simple closed form updates for these importance weights. The proposed optimization problems are solved per mini-batch which obviates the need of storing and updating the weights over the full dataset. Our optimization framework also provides a theoretical perspective on existing label smoothing heuristics for addressing label noise (such as label bootstrapping [1]). We also propose the use of our instance weights to do mixup [2] which results in further performance gains in the presence of label noise.\n\n## Example Usage\n\nTraining CIW on CIFAR-10 with 40\\% symmetric label noise:\n\n```\npython -m ciw_label_noise.train --logtostderr --dataset cifar10 --num_classes 10 \\\n--noise_type r",
+      "contributors": [
+        "Emeka Pinto",
+        "Farah Haddad",
+        "Leilani Nakamura",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C028",
+          "type": "gpu_double_booking",
+          "projects": [
+            "ciw_label_noise",
+            "mobilebert"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ckd",
+      "title": "clone this repo",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CKD\n\nThis repo is a work in progress. More details are coming soon.\n\n## Setup\n\n```\n# clone this repo\nSUBDIR=ckd\nsvn export https://github.com/google-research/google-research/trunk/$SUBDIR\n\n# create conda environment\nconda env create --name ckd --file=ckd.yml\nconda activate ckd\n\n# install pytorch separately, e.g.,\npip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117\n\n# clone lavis repo\ngit clone https://github.com/salesforce/LAVIS.git\n\n# create a copy of source files\ncp -r LAVIS/lavis ./\n\n# optional\nrm -rf LAVIS\n\n# apply patches\ngit apply --whitespace=fix ckd.patch\n```\n\n## Datasets\n\nPlease go [here](lavis/configs/default.yaml) and update `cache_root` as you wish, this cache location will be used to store all the datasets.\n\n### Download images\n\nRun the following commands to download the images of the respective dataset.\n\n```\nmkdir path/to/cache/ # update with cache_root\npython download_vg.py\npython download_coco.py\npython download_gqa.py\n```\n\n### Training files\n\nWe will upload the training annotation files soon.\n\n```\n# create a separate env to use Gemini based on pyhon 3.10.\n# a lower python version may encounter error.\n\nconda env create --name py310 --file=py310.yml\nconda activate py310\n\n# we extract reposne from gemini following below steps\n# please make sure to update paths based on your directory\n\n# step 1: mine the negative objects for all images\npython vg_sample_negatives.py\n\n# step 2: cache response from gemini\npython vg_cache_desc.py\n\n```\n\n### Evaluation files\n\nPope evaluation annotatio",
+      "contributors": [
+        "Wei Ivanov",
+        "Fumiko Rossi",
+        "Wanjiru Horvat",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C023",
+          "type": "duplicate_effort",
+          "projects": [
+            "camp_zipnerf",
+            "ckd"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "class_balanced_distillation",
+      "title": "Class-Balanced Distillation for Long-Tailed Visual Recognition",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Class-Balanced Distillation for Long-Tailed Visual Recognition\n\nThis repository contains the official Tensorflow code for the following paper:\n[Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/abs/2104.05279).\nAhmet Iscen, Andr\u00e9 Araujo, Boqing Gong, Cordelia Schmid\nBMVC 2021.\n\n## Running the code\n\n#### Setting up the Python environment\n\nThe code has been tested with Python 3.7.2. We added ImageNet-LT and iNaturalist18 datasets to the official TFDS repository as a part of this release. Therefore, we recommend using `tfds-nightly` and `tf-nightly-gpu` libraries for this code.\n\nThe following commands installs all the required libraries for this project:\n```\n# from google-research/\npip install -r class_balanced_distillation/requirements.txt\n```\n\nIn addition to these requirements, the data-augmentation part also requires\n[SimCLR](https://github.com/google-research/simclr)\nto be installed and present in the `PYTHONPATH` environment variable.\n\n#### Running the code for CBD on ImageNet-LT\n\nThe training is composed of two stages. We include pre-defined config files to faciliate running the experiments.\n\nTo reproduce the results for `CBD`, the first stage is run with the following command:\n\n```\n# from google-research/\npython -m class_balanced_distillation.run --config class_balanced_distillation/configs/stage_one_vanilla_seed1.py --workdir /home/user/class_balanced_distillation/data/models/\n```\n\nOnce the training for the first stage finishes, you can run the following command for the second stage:\n\n```\n# from google-research/\npython -m class_balance",
+      "contributors": [
+        "Linnea Yamada",
+        "Wanjiru Horvat",
+        "Tereza Aliyev",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C144",
+          "type": "budget_overallocation",
+          "projects": [
+            "class_balanced_distillation",
+            "arithmetic_sampling"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-28",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-28",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-28 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "clay",
+      "title": "CLAY: Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# CLAY: Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale\nThis repository will contain the model code and the experimental framework for \"Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale\" by Gang Li, Gilles Baechler, Manuel Tragut, Yang Li, which is conditionally accepted by CHI 2022.\n\nThe CLAY dataset used by the paper can be downloaded from https://github.com/google-research-datasets/clay.\n\nThe Transformer-based object typing model can be found [here](https://github.com/google-research/scenic/tree/main/scenic/projects/layout_denoise).\n\nBibTex for citation:\n\n```\n@InProceedings{clay,\ntitle     = \"Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale\",\nbooktitle = \"Proceedings of the 2022 {CHI} Conference on Human Factors in\nComputing Systems\",\nauthor    = \"Li, Gang and Baechler, Gilles and Tragut, Manuel and Li, Yang\",\npublisher = \"Association for Computing Machinery\",\npages     = \"1--13\",\nmonth     =  may,\nyear      =  2022,\naddress   = \"New Orleans, LA, USA\",\nurl = {https://doi.org/10.1145/3491102.3502042}\n}\n```",
+      "contributors": [
+        "Katya Silva",
+        "Wanjiru Horvat",
+        "Saoirse Eriksen",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C122",
+          "type": "duplicate_effort",
+          "projects": [
+            "clay",
+            "EgoSocial"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "clip_as_rnn",
+      "title": "CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor\n\n[Shuyang Sun*](https://kevin-ssy.github.io/),\n[Runjia Li*](https://runjiali-rl.github.io/),\n[Philip Torr](https://eng.ox.ac.uk/people/philip-torr/),\n[Xiuye Gu](https://laoreja.github.io/),\n[Siyang Li](https://siyangl.github.io/)\n\n[[`arXiv`](https://arxiv.org/abs/2312.07661)]\n[[`Project`](https://torrvision.com/clip_as_rnn/)]\n[[`Code`](https://github.com/google-research/google-research/tree/master/clip_as_rnn)]\n[[`Demo`](https://huggingface.co/spaces/kevinssy/CLIP_as_RNN?logs=container)]\n\nThe code is fully released at\n[Google Research](https://github.com/google-research/google-research/tree/master/clip_as_rnn).\n\n## Installation\n\n### Requirements\n- Anaconda 3\n- PyTorch \u2265 1.7 and [torchvision](https://github.com/pytorch/vision/) that\nmatches the PyTorch installation. Install them together at\n[pytorch.org](https://pytorch.org) to make sure of this.\n- `conda env create --name ENV_NAME --file=env.yml`\n\n## Getting Started\n\n### Demo\n\nWe have set up an online demo. Currently, the web demo does not support SAM\nsince it's just a CPU-only server. You can check it out at\n[Hugging Face](https://huggingface.co/spaces/kevinssy/CLIP_as_RNN?logs=container).\n\n### Run Demo Locally\n\nIf you want to test an image locally, you can simply run\n\n`python3 demo.py --cfg-path=YOUR_CFG_PATH --output_path=SAVE_PATH`\n\n### Evaluation with Benchmarks\n\n- Data preparation: See [Preparing Datasets for CaR](DATA.md)\n- Evaluate: `python3 evaluate.py --cfg-path=CFG_PATH`. The configs for each dataset can be found under `configs`.\n\n## Citin",
+      "contributors": [
+        "Bilal Novak",
+        "Carmen Reyes",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C069",
+          "type": "dependency_date_drift",
+          "projects": [
+            "model_swarm",
+            "clip_as_rnn",
+            "ml_debiaser",
+            "android_interaction"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cluster_gcn",
+      "title": "Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networ",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks\nThis repository contains a TensorFlow implementation of \"Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks\" by Wei-Lin Chiang, Xuanqing Liu, Si Si, Yang Li, Samy Bengio, and Cho-Jui Hsieh (accepted as ORAL presentation in ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2019).\n\nPaper link: https://arxiv.org/pdf/1905.07953.pdf\n\n## Requirements\n\n* install clustering toolkit: metis and its Python interface.\n\ndownload and install metis: http://glaros.dtc.umn.edu/gkhome/metis/metis/download\n\nMETIS - Serial Graph Partitioning and Fill-reducing Matrix Ordering ([official website](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview))\n\n```\n1) Download metis-5.1.0.tar.gz from http://glaros.dtc.umn.edu/gkhome/metis/metis/download and unpack it\n2) cd metis-5.1.0\n3) make config shared=1 prefix=~/.local/\n4) make install\n5) export METIS_DLL=~/.local/lib/libmetis.so\n```\n\n* install required Python packages\n\n```\npip install -r requirements.txt\n```\n\nquick test to see whether you install metis correctly:\n\n```\n>>> import networkx as nx\n>>> import metis\n>>> G = metis.example_networkx()\n>>> (edgecuts, parts) = metis.part_graph(G, 3)\n```\n\n* We follow [GraphSAGE](https://github.com/williamleif/GraphSAGE#input-format)'s input format and its code for pre-processing the data.\n\n* This repository includes scripts for reproducing our experimental results on PPI and Reddit. Both datasets can be downloaded from this [website](http://snap.stanford.edu/",
+      "codename": "Project Obsidian",
+      "contributors": [
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Efe Lindqvist",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C044",
+          "type": "codename_collision",
+          "projects": [
+            "kobe",
+            "cluster_gcn"
+          ],
+          "shared_object": "Project Obsidian",
+          "canonical": {
+            "codename": "Project Obsidian"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Obsidian."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "clustering_normalized_cuts",
+      "title": "Clustering by learning to optimize expected Normalized Cuts (CNC)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Clustering by learning to optimize expected Normalized Cuts (CNC)\n\nThe code for the experimentation made for the CNC.\n\n## About the CNC\n\nCNC is a framework for Clustering by learning to optimize expected Normalized Cuts. We show that by directly minimizing a continuous relaxation of the normalized cuts problem, CNC outperforms the traditional spectral clustering approach. Here is a motivational example that how CNC works.\n\nLet us assume that we want to partition 6 images from the CIFAR-10 dataset (Figure 1) into two clusters. Given the affinity graph in this example, the optimal clustering is the result of cutting the edge connecting the two triangles. Cutting this edge, is exactly the the optimal solution for the normalized cuts. In CNC, we define a new differentiable loss function equivalent to the expected normalized cuts objective. We train a deep learning model to minimize the proposed loss in an unsupervised manner without the need for any labeled datasets. Our trained model directly returns the clustering probabilities. In this example, the optimal normalized cuts is 0.286, and as we can see, the CNC loss also converges to this value. Note that spectral clustering is also able to come up with the same cluster assignments by embedding the affinity of each pair of data points in Laplacian\u2019s eigenspace and then uses k-means to generate clusters. The advantage of our work is in a new end to end differentiable method that directly minimizes a continuous relaxation of the normalized cuts.\n\nFigure 1. Motivational Example.\n\n## Understanding the code\n\nFor more detailed info",
+      "contributors": [
+        "Farah Haddad",
+        "Umar Costa",
+        "Quentin Farkas",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C114",
+          "type": "dependency_date_drift",
+          "projects": [
+            "global_metnet",
+            "group_agnostic_fairness",
+            "clustering_normalized_cuts",
+            "mir_uai24"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cmmd",
+      "title": "Rethinking FID: Towards a Better Evaluation Metric for Image Generation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Rethinking FID: Towards a Better Evaluation Metric for Image Generation\n\nThis code accompanies the paper:\n\n[Rethinking FID: Towards a Better Evaluation Metric for Image Generation](https://arxiv.org/abs/2401.09603).\nSadeep Jayasumana, Srikumar Ramalingam, Andreas Veit, Daniel Glasner, Ayan Chakrabarti, Sanjiv Kumar.\n\nThe code has been tested with Python 3.11.4 on Linux and macOS.\n\n## Instructions to Run\n\n### 1. Setting things up\n\n#### a. Install JAX\n\nFollow the [JAX installation guide](https://jax.readthedocs.io/en/latest/installation.html)\nto install the appropriate JAX distribution (with the correct GPU/TPU support) for your platform.\n\n#### b. Set up Scenic\n\n```\ngit clone https://github.com/google-research/scenic.git\nexport PYTHONPATH=$PYTHONPATH:/path/to/scenic\n```\n\nScenic will automatically download CLIP model weights when you run the code as\ndescribed in the next section. If your network does not allow that, manually\ndownload the ViT-L/14@336px CLIP model weights from [here](https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt)\nand place them in `~/.cache/scenic/clip/`. See [here](https://github.com/openai/CLIP/blob/main/clip/clip.py#L30)\nfor more information on CLIP model weight download locations.\n\n#### c. Install other dependencies\n\nOther required libraries can be installed with the following command:\n\n```\n# from google-research/\npip install -r cmmd/requirements.txt\n```\n\n#### 2. CMMD calculation\nRun the following command to calculate the CMMD between a reference set of images (such as COC",
+      "contributors": [
+        "Katya Silva",
+        "Amara Okafor",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C051",
+          "type": "dependency_date_drift",
+          "projects": [
+            "extreme_memorization",
+            "differentially_private_gnns",
+            "cmmd",
+            "mave"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cnn_quantization",
+      "title": "Quantization Techniques for Convolutional Neural Networks",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Quantization Techniques for Convolutional Neural Networks\n\nThis directory contains implementation of various techniques for quantizing\nconvolutional neural network models into low bit-precision.\n\nWork in progress.\n\nThe quantization codes are implemented on top of [`tf_cnn_benchmarks`](https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks),\nwhich requires the latest nightly version of TensorFlow.\n\nTo run ResNet50 4-bit fixed-point quantized training with synthetic data\nwith a single GPU (from the google_research directory), run\n\n```\npython -m cnn_quantization.tf_cnn_benchmarks.tf_cnn_benchmarks --num_gpus=1 \\\n--batch_size=32 --model=resnet50_v2 --variable_update=parameter_server \\\n--quant_weight=true --quant_weight_bits=4 --use_relu_x=true --quant_act=true \\\n--quant_act_bits=4\n```\n\nTo run on CPU, run\n\n```\npython -m cnn_quantization.tf_cnn_benchmarks.tf_cnn_benchmarks \\\n--data_format=NHWC --batch_size=32 --model=resnet50_v2 \\\n--variable_update=parameter_server --quant_weight=true --quant_weight_bits=4 \\\n--use_relu_x=true --quant_act=true --quant_act_bits=4\n```\n\nTo see the full list of flags, run\n\n```\npython -m cnn_quantization.tf_cnn_benchmarks.tf_cnn_benchmarks --help\n```",
+      "contributors": [
+        "Jorge Vidal",
+        "Farah Haddad",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C085",
+          "type": "gpu_double_booking",
+          "projects": [
+            "cnn_quantization",
+            "factoring_sqif"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cochlear_implant",
+      "title": "Cochlear Implant Hackathon Code",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Cochlear Implant Hackathon Code\n\nThis directory contains Python Colab notebooks for taking input audio (wav files of music, speech in noise, etc.), applying speech enhancement (primarily when music is not detected), and generating electrodograms for cochlear implants.\n\nThese were developed as a submission for [https://cihackathon.com/](https://cihackathon.com/).\n\nTo listen to the audio corresponding to the electrodograms, you will need to use a vocoder simulation (e.g., the one provided by cihackathon organizers [here](https://github.com/jabeim/AB-Generic-Python-Toolbox)).\n\n## Input data\n\nTo run the notebooks, you need a set of audio waveform files to process. Sample audio files for cihackathon are available for at [https://cihackathon.com/](https://cihackathon.com/).\n\nStore these audio files in a folder in your Google Drive. The default folder in notebooks is `cihack_audio`.\n\n## Running the notebooks\n\nThese notebooks read and write audio to/from Google Drive. Make sure you update the paths in the notebooks.\n\n### speech_enhancement_inference.ipynb\nThis notebook loads a pre-trained model that separates speech from other non-speech sounds (e.g. noise, music).\n\n### yamnet_speech_enhancement_mixing.ipynb\nBecause enhanced speech audio often removes portions of music (i.e. music is often treated as noise-to-be-removed), this notebook uses [YAMNet](https://www.tensorflow.org/hub/tutorials/yamnet) to determine the predicted music content and causally mix the original and speech enhanced audio. Also included is a baseline mixing strategy which mixes a fixed fraction of noise (musi",
+      "contributors": [
+        "Efe Lindqvist",
+        "Milan Zapata",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C067",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dql_grasping",
+            "cochlear_implant"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    }
+  ]
+}

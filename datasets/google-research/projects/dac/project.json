@@ -1,0 +1,25 @@
+{
+  "id": "gr/dac",
+  "title": "Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial ",
+  "summary": "Discriminator-Actor-Critic (DAC) fixes the reward bias and sample inefficiency of adversarial imitation learning by using off-policy training with a discriminator-derived reward, learning from a handful of expert trajectories in a training-worker/evaluation-worker setup. Meridian is trialling it to clone operator behaviour from demonstration logs without hand-written reward functions.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Rosa Mensah",
+    "Carmen Reyes",
+    "Hyun Traore"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dac",
+    "url": "https://github.com/google-research/google-research/tree/master/dac",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

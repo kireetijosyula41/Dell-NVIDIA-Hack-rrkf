@@ -1,0 +1,16 @@
+{
+  "id": "gr/learning_parameter_allocation/e02",
+  "thread_id": "gr/learning_parameter_allocation/t1",
+  "in_reply_to": "gr/learning_parameter_allocation/e01",
+  "date": "2026-03-19T14:22:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: learned parameter allocation for multi-task models",
+  "body": "Priya,\n\nStaffing plan through the window:\n\n- Csilla Nassar: 50% Mar-May, owns the MNIST/Omniglot reproductions and the budget-penalty ablations.\n- Quentin Farkas: 40%, validation tooling and checkpoint eval sweeps.\n- I have Jorge Vidal committed at 60% to us for all of June 2026 to land the routing library refactor, with the remainder of his time on interview load. That's confirmed on my side, so plan the design review follow-through around him.\n\nCompute: the reproductions are small, so titan-a100 best-effort covers us — I'm budgeting 32 A100s peak in April. No vulcan-h100 ask.\n\nOne process note: the training code requires the logdir to be emptied between runs or summaries bleed across experiments, so Quentin is adding a wrapper before we do sweeps.\n\nDeshawn",
+  "labels": ["resources"]
+}

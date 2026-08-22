@@ -1,0 +1,12 @@
+{
+  "project": "gr/dvrl",
+  "conflicts": [
+    {
+      "conflict_id": "C110",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["ime"],
+      "planted_in": ["e02"],
+      "claim_as_written": "I want us to scope and staff a synthetic-data generation pipeline from scratch: Gustavo owns the design, Rosa pairs on the serving path, and I'm budgeting six weeks of build time before the DVRL reward loop can consume it."
+    }
+  ]
+}

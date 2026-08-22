@@ -1,0 +1,46 @@
+{
+  "id": "gr/ckd/e01",
+  "thread_id": "gr/ckd/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CKD kickoff — hallucination-resistant captioning via contrastive distillation",
+  "body": "Hi Ivo,\n\nKicking off CKD. Problem statement: our VLM captioning features still hallucinate objects, and it's the top complaint from the two internal product surfaces using them. CKD is our contrastive knowledge distillation recipe built on the LAVIS stack (patched — the ckd.patch approach from our open-source release) that trains the model to distinguish grounded objects from plausible-but-absent ones.\n\nWhat it unlocks: measurably lower hallucination rates, scored on POPE-style object-presence evals, without retraining the base VLM.\n\nMilestones (Apr 27 – Aug 3): environment + data downloads (VG, COCO, GQA) by mid-May; training data pipeline by end of June; distillation runs + POPE evals in July; go/no-go for product integration Aug 3.\n\nIvo — resourcing plan please, the data pipeline is the part I can't size myself.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

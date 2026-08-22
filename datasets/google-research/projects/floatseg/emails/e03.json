@@ -1,0 +1,41 @@
+{
+  "id": "gr/floatseg/e03",
+  "thread_id": "gr/floatseg/t2",
+  "in_reply_to": null,
+  "date": "2026-05-13T11:25:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Status: repro done, taxonomy mapping is the critical path",
+  "body": "Status.\n\nRepro: done via the released notebooks with preset settings — our runs reproduce the paper's part-parsing results on the Zenodo benchmark data within normal variance, and the factorized attribute heads behave as described: the object/part factorization is where the gains come from, and ablating it drops part mIoU noticeably.\n\nGustavo's pipeline conversion is about 80% there — training now runs headless under the scheduler in the containerized 3.7 environment, with checkpointing the notebooks lacked.\n\nThe real issue is our internal part-annotated set: our part taxonomy doesn't align one-to-one with the paper's — we split some parts finer and merge others — so Katya is building a mapping layer plus adjudication rules for the ambiguous classes before the June evals can be trusted.\n\nRisk: that mapping work is the critical path. If it slips past Jun 1, the Jun 12 recommendation slips with it.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

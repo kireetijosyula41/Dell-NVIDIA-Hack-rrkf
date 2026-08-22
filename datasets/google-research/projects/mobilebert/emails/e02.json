@@ -1,0 +1,45 @@
+{
+  "id": "gr/mobilebert/e02",
+  "thread_id": "gr/mobilebert/t1",
+  "in_reply_to": "gr/mobilebert/e01",
+  "date": "2026-04-02T14:20:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: MobileBERT on-device NLU — staffing + compute",
+  "body": "Hi Priya,\n\nStaffing: Vera Egede 40% leads the fine-tuning and distillation work; Efe Lindqvist 30% on eval quality; Amara Okafor 40% on the tf.lite conversion and device-farm automation; Milan Zapata 30% on the serving-side fallback path for devices below the memory floor.\n\nCompute is locked: we hold the vulcan-h100 reservation — 512 accelerators for the week of 2026-07-06 — for the final distillation-and-finetune sweep, and I've built the July schedule backward from that week. Everything earlier (SQuAD V1.1 reproduction at learning rate 4e-05, doc stride 128, per the released config) runs on titan-a100 best-effort, 64 GPUs.\n\nNote I kept us clear of the Vulcan maintenance window in late June — reservation starts the week after.\n\nOne ask: the device farm needs 6 more mid-tier handsets to make the int8 latency numbers representative. ~$4k, coming to you for signoff.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

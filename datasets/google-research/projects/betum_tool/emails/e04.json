@@ -1,0 +1,19 @@
+{
+  "id": "gr/betum_tool/e04",
+  "thread_id": "gr/betum_tool/t1",
+  "in_reply_to": "gr/betum_tool/e03",
+  "date": "2026-05-20T14:12:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Decision: Betum Tool v1.0 frozen for Dakar",
+  "body": "Team,\n\nDecisions to close out before we ship to Dakar:\n\n1. Chiara's proposal is adopted: AP@50 stays the single official metric, with the AP@75 diagnostic footnote printed on every team's results card. The merge-artifact explanation goes in the technical briefing doc.\n2. Toolkit v1.0 is frozen as of today's dry run - all four profiles, harness, and docs passed. Only fixes from here, no features.\n3. Offline mirrors are burned and tested; dataset stays on legacy Corpus through the workshop as planned, migration is scheduled for the first week of July.\n4. Nadia - LRB sign-off confirmed for 5/22 since this is an external-facing event; thanks for the expedited slot.\n\nFarah, Chiara, Tereza - genuinely lovely work. See some of you in Dakar.\n\nDmitri",
+  "labels": ["decision"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/graph_compression",
+  "conflicts": [
+    {
+      "conflict_id": "C056",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["locoprop"],
+      "planted_in": ["e02"],
+      "claim_as_written": "To close that gap we are scoping and staffing a human-rating annotation UI, built from scratch: Emeka owns it end to end (rater queue, side-by-side comparison view, rating storage), with a working version by end of April."
+    }
+  ]
+}

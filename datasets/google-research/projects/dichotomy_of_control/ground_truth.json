@@ -1,0 +1,16 @@
+{
+  "project": "gr/dichotomy_of_control",
+  "conflicts": [
+    {
+      "conflict_id": "C106",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "gon"
+      ],
+      "planted_in": [
+        "e03"
+      ],
+      "claim_as_written": "Linnea Yamada is committed at 60% to this project for June 2026 to land the neural DoC runs before the June 8 wrap."
+    }
+  ]
+}

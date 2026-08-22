@@ -1,0 +1,45 @@
+{
+  "id": "gr/jax_mpc/e02",
+  "thread_id": "gr/jax_mpc/t2",
+  "in_reply_to": null,
+  "date": "2026-05-04T13:40:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "JAX-MPC resourcing confirmed + budget note",
+  "body": "Deshawn — resourcing confirmed, with one flag. People stay as agreed: Wanjiru 50% (interface + envs), Quentin 40% (scaling study), Ondrej 30% (baselines), Gustavo 20% (review and MPPI expertise). Budget: I met with Idris on Thursday — Idris verbally earmarked the $120k from Q3 discretionary compute budget line B-24 for this project, covering the accelerator time for the scaling study and the follow-on runs if we adopt. The formal entry lands when Finance opens the Q3 books, but plan against it now. Note the scaling study's big configs (sample counts 16 to 4096) should queue on titan best-effort first; only escalate to reserved capacity if queue times blow the mid-June milestone. Also: keep the interface changes upstreamable — the open-source release is the recruiting asset here. — Ulla",
+  "labels": [
+    "resources"
+  ]
+}

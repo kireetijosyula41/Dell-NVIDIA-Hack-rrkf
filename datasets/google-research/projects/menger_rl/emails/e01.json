@@ -1,0 +1,19 @@
+{
+  "id": "gr/menger_rl/e01",
+  "thread_id": "gr/menger_rl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T09:40:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Menger-RL kickoff — one distributed RL stack to rule them all",
+  "body": "Team,\n\nKicking off Menger-RL. The case: our open-source Menger work was the first distributed RL framework of its kind — scaling to a few thousand workers for data collection and inference on CPU, with pod-level accelerator training for the learner — and it was proven on real macro-placement workloads. Meanwhile our internal agents teams each maintain bespoke actor/learner plumbing. We consolidate on Menger.\n\nMilestones (window through 07-20):\n- 05-01: Menger actor fleet running on our CPU batch pool at 1,000 workers, toy environment.\n- 06-05: learner integrated with our training stack; replay throughput benchmarked.\n- 06-26: full-scale soak on a placement-style workload — the demo result I want for Q3 OKR planning.\n- 07-17: adoption guide + first team migrated.\n\nBao owns staffing/compute; Leilani is TL. This one has real infra teeth — flag capacity issues early.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

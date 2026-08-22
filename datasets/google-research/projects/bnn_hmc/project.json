@@ -1,0 +1,18 @@
+{
+  "id": "gr/bnn_hmc",
+  "title": "What Are Bayesian Neural Network Posteriors Really Like?",
+  "summary": "Building a calibrated-uncertainty evaluation baseline from our full-batch Hamiltonian Monte Carlo study of BNN posteriors: HMC as gold-standard posterior reference, with deep ensembles and SGMCMC assessed as cheaper approximations for platform use.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Maren Zhou", "Wanjiru Horvat", "Milan Zapata", "Efe Lindqvist", "Rafael Duran"],
+  "window": {"start": "2026-03-09", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bnn_hmc",
+    "url": "https://github.com/google-research/google-research/tree/master/bnn_hmc",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

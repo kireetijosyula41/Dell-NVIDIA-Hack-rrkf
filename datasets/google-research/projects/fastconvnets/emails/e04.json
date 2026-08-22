@@ -1,0 +1,45 @@
+{
+  "id": "gr/fastconvnets/e04",
+  "thread_id": "gr/fastconvnets/t2",
+  "in_reply_to": "gr/fastconvnets/e03",
+  "date": "2026-07-15T15:30:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: latency table doesn't transfer 1:1, accuracy does",
+  "body": "Team — decisions from the go/no-go prep.\n\nWe proceed to the Jul 24 readout recommending the edge-inference tier, on the strength of our own latency table — device-lab numbers only, with the paper's SD835 figures as historical reference.\n\nThe rating round ran the trimmed pairs-only protocol on the new UI; with about 1,900 rated pairs, human-perceived quality of the 85-90% sparse models is statistically indistinguishable from dense on our demo distribution, which closes the perceived-regression question.\n\nScope cuts final: no free-text feedback this round, and the EfficientNet variants move to Q4 — fully unstructured sparsity needs different kernels than the MobileNet path.\n\nPaloma — package the annotation tool docs; other teams will want it. Readout deck reviews Wednesday.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

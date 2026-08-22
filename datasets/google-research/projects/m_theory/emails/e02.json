@@ -1,0 +1,15 @@
+{
+  "id": "gr/m_theory/e02",
+  "thread_id": "gr/m_theory/t1",
+  "in_reply_to": "gr/m_theory/e01",
+  "date": "2026-04-07T11:30:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: M-Theory numerics — compute + staffing",
+  "body": "Anders,\n\nResourcing rundown.\n\nStaffing: Yara at 50% as TL, Giannis and Maren at 40% each on the scan infrastructure, Farah at 20% for the colab loader/mirror plumbing. That holds through June.\n\nCompute: the small scans run fine on titan-a100 best-effort. For the large-scale critical-point scan we hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22, confirmed in the quarterly allocation for graphs-retrieval. That lands the scan results right before the 06-26 OKR lock, which is tight but workable if the scan code is stable by mid-June.\n\nOne wrinkle: vulcan is down for maintenance 06-22 to 06-24, so everyone will be piling onto the other pools that week. Being on cirrus keeps us insulated.\n\nBruno",
+  "labels": ["resources"]
+}

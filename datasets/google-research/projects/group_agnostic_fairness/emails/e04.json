@@ -1,0 +1,15 @@
+{
+  "id": "gr/group_agnostic_fairness/e04",
+  "thread_id": "gr/group_agnostic_fairness/t2",
+  "in_reply_to": "gr/group_agnostic_fairness/e03",
+  "date": "2026-06-18T16:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: Status: benchmark repro complete, one honest caveat for the LRB",
+  "body": "Team,\n\nDecisions ahead of the 6/24 LRB slot (Nadia has us confirmed):\n\n1. We present ARL as an opt-in training mode with the \"improves, not guarantees\" framing verbatim from Yara's note. The synthetic non-identifiable-group case goes in the appendix, not hidden - I would rather the board poke at it with us in the room.\n2. Emeka's tooling integration is the launch surface: config flag, adversary architecture defaults from the paper, and the worst-group AUC panel in the standard eval report.\n3. Scope cut: the customer-facing \"fairness score\" idea is dead for this cycle. It compresses exactly the nuance Yara warned about into one number.\n4. Q3 OKR: extend validation beyond tabular to one text classification workload.\n\nThe +2.9/+2.2 worst-group AUC numbers with flat overall AUC are the headline. Good work getting the honest version to be also the compelling version.\n\nDmitri",
+  "labels": ["decision"]
+}

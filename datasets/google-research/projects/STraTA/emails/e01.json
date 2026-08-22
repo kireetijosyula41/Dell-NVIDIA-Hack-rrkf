@@ -1,0 +1,17 @@
+{
+  "id": "gr/STraTA/e01",
+  "thread_id": "gr/STraTA/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:19:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "STraTA kickoff - few-shot bootstrapping as a product recipe",
+  "body": "Team,\n\nKicking off STraTA productization. Customer problem: teams come to us with 30-100 labeled examples and expect a working classifier. STraTA is our best answer - self-training combined with task augmentation, where a T5-based generator produces synthetic NLI data to build a strong base model before the self-training loop runs. Bonus: the repo notes it works as an automatic data-labeling tool, which is a second product surface on its own.\n\nAlso relevant: the current open-source implementation typically beats the numbers reported in the paper, so our baseline story is stronger than the citation.\n\nMilestones: repro on 3 few-shot benchmarks by March 6; recipe hardening (configs, failure modes, practical recommendations) by April 10; packaged internal release + adoption review April 30.\n\nAlina, staffing and compute this week please. This should be a lean one.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

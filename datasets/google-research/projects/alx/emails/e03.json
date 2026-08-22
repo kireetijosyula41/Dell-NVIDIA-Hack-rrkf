@@ -1,0 +1,41 @@
+{
+  "id": "gr/alx/e03",
+  "thread_id": "gr/alx/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T10:30:00Z",
+  "from": {
+    "name": "Rafael Duran",
+    "email": "rafael.duran@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "ALX status: scaling looks right, checkpoint restore is the risk",
+  "body": "Hi Priya, Bruno,\n\nStatus. Scaling behaves as advertised — going 32 to 128 TPU cores gives near-linear throughput on the ALS sweeps, and Recall@20 on the test split lands within 0.4% of the incumbent factorization job at roughly a fifth of the wall-clock. Recall@50 is slightly better than incumbent.\n\nRisk: checkpoint restore. We save ALSState after every epoch, but restoring into a different core count silently reshards wrong and the next epoch's metrics look fine while actually training on misaligned state. We caught it because Recall@50 was suspiciously stable. Linnea is adding a core-count assertion on restore. Anyone doing a scaling study should not resume across topologies until that lands.\n\nRafael",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

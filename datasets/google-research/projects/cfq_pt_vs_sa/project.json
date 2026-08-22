@@ -1,0 +1,26 @@
+{
+  "id": "gr/cfq_pt_vs_sa",
+  "title": "Compositional Generalization in Semantic Parsing",
+  "summary": "Reruns and extends our study of pre-training vs. specialized architectures for compositional generalization in semantic parsing, producing guidance on when pre-trained T5-style models beat purpose-built parsers on CFQ-style MCD splits.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Gustavo Moreau",
+    "Linnea Yamada",
+    "Halima Toure",
+    "Farah Haddad"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cfq_pt_vs_sa",
+    "url": "https://github.com/google-research/google-research/tree/master/cfq_pt_vs_sa",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

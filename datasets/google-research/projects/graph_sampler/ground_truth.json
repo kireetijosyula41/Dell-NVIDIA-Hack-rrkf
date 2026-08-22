@@ -1,0 +1,12 @@
+{
+  "project": "gr/graph_sampler",
+  "conflicts": [
+    {
+      "conflict_id": "C103",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["infinite_nature"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the property-scoring pass we hold the cirrus-tpu reservation - 128 accelerators - for the week of 2026-06-08, and I have built the eval schedule around that week."
+    }
+  ]
+}

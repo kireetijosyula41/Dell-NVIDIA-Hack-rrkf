@@ -1,0 +1,26 @@
+{
+  "id": "gr/ml_debiaser",
+  "title": "Near-Optimal Debiasing Algorithms",
+  "summary": "Operationalize the NeurIPS debiasing algorithms — randomized-threshold post-processing for binary classifiers and the reduce-to-binary pre-processing method for multiclass datasets — as a black-box fairness service for model teams, with no sensitive attribute required at inference.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Linnea Yamada",
+    "Nikhil Abebe",
+    "Csilla Nassar",
+    "Quentin Farkas"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ml_debiaser",
+    "url": "https://github.com/google-research/google-research/tree/master/ml_debiaser",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

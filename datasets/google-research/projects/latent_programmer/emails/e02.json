@@ -1,0 +1,15 @@
+{
+  "id": "gr/latent_programmer/e02",
+  "thread_id": "gr/latent_programmer/t1",
+  "in_reply_to": "gr/latent_programmer/e01",
+  "date": "2026-03-10T16:04:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}
+  ],
+  "subject": "Re: Kickoff: Latent Programmer for example-driven pipeline synthesis",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing: Efe 40% as modeling lead through April (his May is heavily committed elsewhere, so I've front-loaded his portion), Ondrej 50% on the internal-DSL dataset build — TFRecord generation matching the release's dataset_filepattern conventions — and Farah 30% on training infra and eval plumbing.\n\nCompute for this window: 16 Titan A100s best-effort covers both the baseline and latent runs at the released step counts. No reservations needed.\n\nOn the Q3 question you flagged: I've pre-socialized the scale-up scenario with finance. Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-81 for this project's scale-up runs. Cc'ing him for the record — Idris, we'll convert that to a formal request once the May 20 readout lands, but please treat B-81 as spoken for at that amount in your planning.\n\nBruno",
+  "labels": ["resources"]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/instruction_following_eval/e01",
+  "thread_id": "gr/instruction_following_eval/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:15:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "IFEval kickoff — instruction-following as a release gate",
+  "body": "Team — kicking off IFEval productization for the language portfolio. Base: our open-source instruction-following eval, which scores models on verifiable instructions ('write a 300+ word summary', 'answer in exactly three bullet points') from jsonl prompt/response pairs, reporting strict and loose accuracy at both prompt and instruction level. Goal: make IFEval a first-class gate in Evalline so every language-model release gets an instruction-following regression check — Tomas's team is expecting our integration spec. Milestones: harness integrated behind Evalline's runner API by June 5; baseline sweep across our current model fleet by June 19; Launch Review sign-off for gating by mid-July. Stretch goal we'll discuss at resourcing: using the eval as a training signal for improving small models, not just measuring them. Alina will send the staffing plan. — Priya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "gr/gaternet/e04",
+  "thread_id": "gr/gaternet/t2",
+  "in_reply_to": "gr/gaternet/e03",
+  "date": "2026-06-03T16:12:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: GaterNet status: exact repro, edge latency concern",
+  "body": "Team,\n\nDecisions from Monday's scale review:\n\n1. The June sweep proceeds in our cirrus-tpu week that started Jun 1 — Rosa's config: three backbone depths, four gate-sparsity targets. Priority is measuring whether the gating benefits hold at ImageNet scale.\n2. The edge latency problem is now the central research question. Rafael's downsampled-gater idea is in scope for the sweep; if the gater cannot run cheap, we reposition this as a server-side efficiency play instead of edge.\n3. The scale-decision readout moves to Jun 12 so the sweep results are in.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

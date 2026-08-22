@@ -1,0 +1,15 @@
+{
+  "id": "gr/negative_cache/e02",
+  "thread_id": "gr/negative_cache/t1",
+  "in_reply_to": "gr/negative_cache/e01",
+  "date": "2026-03-10T16:09:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Negative cache kickoff — resourcing",
+  "body": "Anders,\n\nResourcing:\n\nStaffing — Freya leads modeling and the comparison design; Yusuf owns the benchmark evals; Chiara and Oyin do the trainer integration (the CacheLossHandler slots into our trainer cleanly; Oyin's prototype already runs with cache_size 131072 and top_k 64 per the release defaults).\n\nCompute — mid-scale May comparison fits in our titan-a100 share. For the June production-scale head-to-head we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-06-15 — that covers both arms (cache-based and current sampler) at full corpus size, run side by side so the comparison is apples-to-apples on hardware. Ines's process was painless for once.\n\nBudget-wise this stays inside portfolio baseline; no discretionary ask.\n\nOne heads-up: embedding staleness in the cache is the known failure mode at scale. Freya wants a refresh-rate ablation in the May round so June isn't a surprise.\n\nDeshawn",
+  "labels": ["resources"]
+}

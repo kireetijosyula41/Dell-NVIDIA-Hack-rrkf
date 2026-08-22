@@ -1,0 +1,40 @@
+{
+  "id": "gr/fair_submodular_matroid/e01",
+  "thread_id": "gr/fair_submodular_matroid/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:30:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: fair submodular selection for retrieval slates",
+  "body": "Team — kicking off the fair submodular selection track for graphs-retrieval.\n\nThe research gives us streaming submodular maximization under a matroid constraint with fairness guarantees — exactly the machinery we need for retrieval slates that must balance coverage against per-group quotas. Product framing: a candidate-selection library the retrieval stack can call, with fairness constraints declared per surface.\n\nPlan for the window: (1) port the C++17 reference into our build by Feb 27; (2) reproduce the maximum-coverage experiment on the Pokec social graph, including the attribute-extraction preprocessing, by end of March; (3) benchmark against our current re-ranker on internal retrieval logs in April; (4) integration proposal plus launch-review pre-read by May 25.\n\nFreya owns algorithms, Umar experiments, Fumiko the internal-logs benchmark. Ivo will cover staffing and budget.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}

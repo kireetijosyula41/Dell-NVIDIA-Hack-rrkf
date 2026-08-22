@@ -1,0 +1,18 @@
+{
+  "id": "gr/logic_inference_dataset/e03",
+  "thread_id": "gr/logic_inference_dataset/t1",
+  "in_reply_to": "gr/logic_inference_dataset/e02",
+  "date": "2026-04-21T16:09:00Z",
+  "from": {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LogicInference as a platform reasoning benchmark — status",
+  "body": "Hi Dmitri, Deshawn,\n\nStatus:\n\n- Generation pipeline landed Mar 4. TARGET_FOLDER is now a proper flag with a config file, runs are seeded and content-addressed, and full generation parallelized across the batch pool takes 6.5 hours vs ~2 days single-machine.\n- v1 dataset is versioned in Corpus and the Evalline task registered Apr 15. Paloma's task exposes both renderings — semi-formal logical notation and natural language — as separate splits, which model teams have already started using.\n\nRisk/trade-off for the June grid: Yara's early baselines show accuracy on the natural-language rendering trails the semi-formal one by ~9pp on the same inference patterns, and hallucinated inference chains concentrate in the first-order subset. She wants one grid axis swapped from a third data mix to an FOL-heavy mix to chase that. Cost-neutral, but it changes the frozen config, so flagging before the Jun 1 freeze rather than after.\n\nGustavo",
+  "labels": ["status", "risk"]
+}

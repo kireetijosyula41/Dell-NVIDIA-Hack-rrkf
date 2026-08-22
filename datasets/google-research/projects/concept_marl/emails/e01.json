@@ -1,0 +1,45 @@
+{
+  "id": "gr/concept_marl/e01",
+  "thread_id": "gr/concept_marl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:00:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: concept bottleneck policies for auditable agents",
+  "body": "Hi Santiago,\n\nKicking off interpretable multi-agent RL. Base is our open-source Concept MARL work: concept bottleneck policies that extend MultiAgent-PPO (on Acme) with a concept loss, so each agent's policy routes through human-interpretable concepts — positions, held objects, teammate state — instead of an opaque embedding. Environments come from our Melting Pot ports: Collaborative Cooking, Clean Up, Capture the Flag, plus the miniature cooking variants for fast iteration.\n\nProduct motivation: the agents roadmap keeps hitting the auditability wall — customers ask why an agent did something and we have nothing. Concept bottlenecks are the credible answer.\n\nHalf plan: training reproduced by mid-May, concept-quality evals in June, LRB-ready interpretability demo by the 7/20 window close. Staffing and compute by mid-April?\n\nUlla",
+  "labels": [
+    "kickoff"
+  ]
+}

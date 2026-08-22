@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_alternating_minimization/e04",
+  "thread_id": "gr/dp_alternating_minimization/t1",
+  "in_reply_to": "gr/dp_alternating_minimization/e03",
+  "date": "2026-05-27T13:08:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DPAM for private personalization",
+  "body": "Decisions ahead of next week's production sweep:\n\n1. Skew-aware clipping is in. The one-week slip was the right call — Wei's numbers show it recovers 1.6 of the 2.3 points we were losing on head users. Privacy review signed off on the revised accounting Tuesday.\n2. The June 1 Vulcan week is our single shot at the full production-scale sweep before handoff. Rosa, please have the skew preprocessing pass finished and dry-run by May 29 so we start the reservation at full utilization Monday morning.\n3. Serving handoff moves to June 12; Saoirse circulates the artifact checklist this week.\n4. Scope note: federated variant is explicitly out for this half. Interesting, not committed.\n\nIf the sweep lands, we go to Launch Review Board mid-June. Fingers crossed.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

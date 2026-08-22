@@ -1,0 +1,40 @@
+{
+  "id": "gr/moment_advice/e02",
+  "thread_id": "gr/moment_advice/t1",
+  "in_reply_to": "gr/moment_advice/e01",
+  "date": "2026-04-20T14:10:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: advice-based moment estimation — staffing + compute",
+  "body": "Hi Anders,\n\nStaffing: Umar Costa 50% leads the estimation work and owns the baseline comparisons; Freya Ruiz 30% on the advice-model architecture; Vera Egede 25% on the telemetry data plumbing — she's heavily committed elsewhere until June, so her share rises to 40% after the 1st.\n\nCompute: the sampling experiments themselves are CPU-heavy but cheap. The expensive part is training advice models on 90 days of telemetry history. We hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22 — for training the advice models at full telemetry scale, and the June milestones are sequenced around that week. Before then, prototyping fits on 16 titan-a100 GPUs best-effort.\n\nOne scoping note from Umar: for the graph inputs we'll validate on temporal graphs too (the \"u v time\" edge format), since the telemetry team's flows are inherently timestamped and advice staleness is the thing that will actually decide adoption.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

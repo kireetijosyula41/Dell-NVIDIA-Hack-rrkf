@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_sgd_clipping/e03",
+  "thread_id": "gr/dp_sgd_clipping/t1",
+  "in_reply_to": "gr/dp_sgd_clipping/e02",
+  "date": "2026-05-11T10:33:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DP-SGD clipping library hardening",
+  "body": "Status ahead of the benchmark week.\n\nAPI froze March 30. Preliminary single-node numbers: in_place_ghost_norm cuts peak memory 2.9x versus naive per-example clipping on our mid-size conv stack, while in_place_norm_fft wins wall-clock on the large-kernel layers — consistent with the paper's point that the three algorithms are incomparable and the selector has to earn its keep. Chiara's test suite now covers all five entry points including the two naive reference implementations.\n\nOne real risk: the FFT path shows numerical drift on half-precision inputs — norm estimates off by up to 1.3% on fp16, which is enough to make clipping slightly conservative and costs utility at tight epsilon. Options: force fp32 accumulation in the FFT (slower, ~15%), or have the selector avoid the FFT path under fp16. I lean selector-side fix. Deciding this before June 1 matters because the benchmark matrix should reflect the shipping behavior.\n\nUmar",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/EgoSocial",
+  "title": "EgoSocial",
+  "summary": "EgoSocial is a 13,500-pair egocentric video-question benchmark built from Ego4D for judging when an AR/VR assistant should intervene in a social situation, paired with EgoSoD, a social-thinking-graph method that fuses audio and visual cues. We are turning it into Meridian's social-awareness eval and data asset for assistant products.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Freya Ruiz",
+    "Quentin Farkas",
+    "Wanjiru Horvat"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "EgoSocial",
+    "url": "https://github.com/google-research/google-research/tree/master/EgoSocial",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

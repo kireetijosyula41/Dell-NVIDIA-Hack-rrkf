@@ -1,0 +1,12 @@
+{
+  "project": "gr/bertseq2seq",
+  "conflicts": [
+    {
+      "conflict_id": "C117",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["jax_mpc"],
+      "planted_in": ["e02"],
+      "claim_as_written": "On budget: Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-24 for this project, which fully covers the summarization fine-tuning runs and the rewrite-quality human evals."
+    }
+  ]
+}

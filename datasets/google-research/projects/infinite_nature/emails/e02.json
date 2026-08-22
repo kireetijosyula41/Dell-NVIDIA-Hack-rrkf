@@ -1,0 +1,17 @@
+{
+  "id": "gr/infinite_nature/e02",
+  "thread_id": "gr/infinite_nature/t1",
+  "in_reply_to": "gr/infinite_nature/e01",
+  "date": "2026-03-31T14:17:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Infinite Nature kickoff - staffing + the June TPU week",
+  "body": "Lucia,\n\nResourcing:\n\n- Staffing: Umar 50%, Kaia 40%, Oyin 50%; Farah 40% on serving integration through May (June is tight for her, so serving needs to be functionally done by end of May - noted in the plan).\n- Compute: repro and iteration on 24 titan-a100 best-effort. For the final full retraining run on the licensed corpus, we hold the cirrus-tpu reservation - 128 accelerators for the week of 2026-06-08 - out of the vision portfolio's quarterly allocation. That lands the retrained checkpoint about a week before the June 22 demo freeze, with the intervening days for eval and demo integration. It's tight but deliberate: earlier weeks would mean retraining on an unfinished corpus.\n- One build annoyance: the differentiable renderer (tf_mesh_renderer) needs the gcc build path rather than Bazel to work with TF 2.x, plus the release's compatibility patch. Oyin has it building reproducibly in a container now.\n\nBudget fits the portfolio envelope; no headcount ask.\n\nDeshawn",
+  "labels": ["resources"]
+}

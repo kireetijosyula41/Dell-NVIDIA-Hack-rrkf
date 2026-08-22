@@ -1,0 +1,18 @@
+{
+  "id": "gr/infinite_nature",
+  "title": "Infinite Nature",
+  "summary": "Builds on our Infinite Nature release - perpetual view generation of natural scenes from a single image - including the differentiable tf_mesh_renderer integration and an interactive demo frontend for flying through generated landscapes.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Farah Haddad", "Oyin Iversen", "Kaia Wolde", "Umar Costa"],
+  "window": {"start": "2026-03-09", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "infinite_nature",
+    "url": "https://github.com/google-research/google-research/tree/master/infinite_nature",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/factoring_sqif",
+  "title": "Installation",
+  "summary": "Implementation of an integer-factoring algorithm combining Schnorr's lattice method with quantum optimization, with both a QAOA path and a classical bruteforce path for finding low-energy states of the hamiltonian.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Rosa Mensah",
+    "Farah Haddad",
+    "Giannis Sato",
+    "Halima Toure"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "factoring_sqif",
+    "url": "https://github.com/google-research/google-research/tree/master/factoring_sqif",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,35 @@
+{
+  "id": "gr/android_interaction/e04",
+  "thread_id": "gr/android_interaction/t2",
+  "in_reply_to": "gr/android_interaction/e03",
+  "date": "2026-05-06T16:10:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: AndroidInteraction status: classifier baseline, class imbalance",
+  "body": "Csilla, Daniela,\n\nAgreed on the framing — positive-class recall is the headline for the May 11 readout, and I'll say plainly that 0.58 is not shippable.\n\nDecisions:\n\n1. Message-quality eval is cut to a 100-step human rating sample rather than the full set. We don't need message polish while the trigger is wrong.\n2. Wei's message-generation work pauses; the trigger classifier gets the capacity instead. Csilla, propose a recall-oriented reweighting and a threshold sweep by May 8.\n3. Vision encoder stays out of v1 given tree-only parity.\n\nUlla",
+  "labels": [
+    "decision"
+  ]
+}

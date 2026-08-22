@@ -1,0 +1,36 @@
+{
+  "id": "gr/al_for_fep/e03",
+  "thread_id": "gr/al_for_fep/t2",
+  "in_reply_to": null,
+  "date": "2026-06-03T10:50:00Z",
+  "from": {
+    "name": "Ondrej Bergstrom",
+    "email": "ondrej.bergstrom@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "AL-for-FEP status: baseline cycles + selection strategy risk",
+  "body": "Hi Anders, Santiago,\n\nStatus. Baseline cycles reproduce. With Morgan fingerprints at radius 2 / 2048 bits and ElasticNet (l1_ratio tuned via the tuning_hyperparameters block), greedy selection reaches the target correlation in 6 cycles versus 11 for random acquisition — a solid 45% reduction in simulated assay spend.\n\nRisk: greedy selection_type collapses diversity. By cycle 4 it's picking near-identical scaffolds, and the held-out error on novel chemotypes actually degrades. Paloma is adding a batch-diversity term through the selection hyperparameters, which the config format supports without touching the cycle code.\n\nWe should decide by late June whether greedy alone is the shipped default.\n\nOndrej",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

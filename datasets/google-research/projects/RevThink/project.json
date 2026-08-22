@@ -1,0 +1,26 @@
+{
+  "id": "gr/RevThink",
+  "title": "RevThink",
+  "summary": "RevThink distills reverse thinking into smaller reasoners: a teacher model generates forward reasoning, backward questions, and backward reasoning, and students trained on the augmented data become stronger reasoners across benchmarks like ARC, GSM8K, TabMWP, and ANLI. Internally we are running this as Project Palisade to upgrade our small-model reasoning stack.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Freya Ruiz",
+    "Giannis Sato",
+    "Quentin Farkas"
+  ],
+  "codename": "Project Palisade",
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "RevThink",
+    "url": "https://github.com/google-research/google-research/tree/master/RevThink",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

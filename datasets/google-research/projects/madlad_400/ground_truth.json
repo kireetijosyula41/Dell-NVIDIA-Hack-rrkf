@@ -1,0 +1,9 @@
+{
+  "project": "gr/madlad_400",
+  "conflicts": [
+    {"conflict_id": "C089", "type": "codename_collision",
+     "counterpart_projects": ["general-pattern-machines"],
+     "planted_in": ["e01", "e03", "e04"],
+     "claim_as_written": "Welcome to Project Saffron — that's the internal codename for the MADLAD-400 productization, so please use it in docs and standups."}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/es_enas/e02",
+  "thread_id": "gr/es_enas/t1",
+  "in_reply_to": "gr/es_enas/e01",
+  "date": "2026-02-12T15:44:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: ES-ENAS kickoff: compact RL controllers without extra cost",
+  "body": "Anders,\n\nStaffing for the window: Rosa 60% on the gRPC comms layer and worker fleet (she did the equivalent on the ES-MAML open-source path, so she knows the aggregator/worker pattern cold), Bilal 50% supporting her on deployment configs, Freya 70% on the search-space work, Quentin 40% on benchmark environments.\n\nCompute: ES is embarrassingly parallel and CPU-heavy - we need worker fleet capacity, not GPUs. I've sized it at 2,000 concurrent CPU workers on the batch tier for the March benchmark sweeps; the controller itself is tiny.\n\nOne dependency to note: the topology controller in the release leans on a proposal-generation library that isn't open-sourced yet, so Freya is treating the code as a template and swapping in our internal evolutionary controller for suggest/feedback. That's a real chunk of her March.\n\nFeb 27 comms milestone looks safe - Rosa has the proto definitions drafted already.\n\nSantiago",
+  "labels": ["resources"]
+}

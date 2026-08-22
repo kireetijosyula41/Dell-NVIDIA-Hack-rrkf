@@ -1,0 +1,15 @@
+{
+  "id": "gr/euphonia_spice/e02",
+  "thread_id": "gr/euphonia_spice/t1",
+  "in_reply_to": "gr/euphonia_spice/e01",
+  "date": "2026-03-18T13:26:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Goran Sokolov", "email": "goran.sokolov@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: SpICE kickoff: intelligibility assessment as a service",
+  "body": "Goran,\n\nResourcing and compute.\n\nPeople: Linnea 80% on model work and the eval battery (TORGO, UASpeech, ALS-TDI PMP plus our realistic-speech set), Milan 70% on the serving wrapper and API, Paloma 40% on data pipelines, Emeka 50% on partner integration and the confidence-reporting layer.\n\nCompute: inference-scale work rides Titan best-effort through April. The big item is the June retrain: we hold the cirrus-tpu reservation - 128 accelerators for the week of 2026-06-01 - for the full retraining run on the pooled corpus. That's sized from the half-million-utterance training base; one week covers the retrain plus two eval passes if configs are frozen beforehand.\n\nDependencies: privacy review filed Mar 16 (Kofi's queue). Also the released PyTorch variant is still \"coming soon\" upstream, so everything v1 is Keras/TFHub-based - fine for serving, worth noting for partners with torch stacks.\n\nApr 17 milestone looks solid.\n\nIvo",
+  "labels": ["resources"]
+}

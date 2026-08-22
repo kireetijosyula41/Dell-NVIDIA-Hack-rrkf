@@ -1,0 +1,36 @@
+{
+  "id": "gr/agile_deliberation/e03",
+  "thread_id": "gr/agile_deliberation/t2",
+  "in_reply_to": null,
+  "date": "2026-04-22T10:40:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Agile Deliberation status: index built, early pilot signal",
+  "body": "Hi Dmitri, Bao,\n\nStatus. Index is built — setup.sh reproduces the file layout and the FAISS index over the training slice, and Demo.ipynb runs end to end on the internal mirror. Early pilot signal is genuinely encouraging: surfacing borderline examples for reflection moved inter-rater agreement +0.11 kappa on the two subjective concepts we tested, which is exactly the mechanism the deliberation framework is meant to exercise.\n\nRisk: at full 400M scale the faiss-gpu index doesn't fit a single card; we're testing a sharded index across the 4 A100s. If that stalls, fallback is faiss-cpu with ~6x slower retrieval, which the rater UI can absorb but won't enjoy.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

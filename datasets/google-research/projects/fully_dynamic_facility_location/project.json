@@ -1,0 +1,26 @@
+{
+  "id": "gr/fully_dynamic_facility_location",
+  "title": "Efficient and Stable Fully Dynamic Facility Location",
+  "summary": "Hardens Meridian's NeurIPS'22 fully dynamic facility location algorithm — near-optimal, stable clustering under streaming point insertions and deletions — into a clustering backbone for retrieval index maintenance.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Carmen Reyes",
+    "Emeka Pinto",
+    "Tereza Aliyev",
+    "Freya Ruiz"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fully_dynamic_facility_location",
+    "url": "https://github.com/google-research/google-research/tree/master/fully_dynamic_facility_location",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/meta_pseudo_labels",
+  "title": "[Meta Pseudo Labels](https://arxiv.org/abs/2003.10580).",
+  "summary": "Bringing the Meta Pseudo Labels semi-supervised algorithm into our vision training stack, reproducing the low-resource CIFAR-10-4000 and ImageNet-10% benchmarks and preparing a scaled Q3 run on internal low-label datasets.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Santiago Vukovic",
+  "contributors": ["Paloma Castillo", "Umar Costa", "Ondrej Bergstrom", "Chiara Olsen"],
+  "window": {"start": "2026-02-09", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "meta_pseudo_labels",
+    "url": "https://github.com/google-research/google-research/tree/master/meta_pseudo_labels",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

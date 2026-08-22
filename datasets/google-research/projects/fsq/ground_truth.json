@@ -1,0 +1,16 @@
+{
+  "project": "gr/fsq",
+  "conflicts": [
+    {
+      "conflict_id": "C099",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "light_field_neural_rendering"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-36 for this project, which covers the sweeps with roughly 15% margin."
+    }
+  ]
+}

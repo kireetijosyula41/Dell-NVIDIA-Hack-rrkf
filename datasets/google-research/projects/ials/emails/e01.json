@@ -1,0 +1,18 @@
+{
+  "id": "gr/ials/e01",
+  "thread_id": "gr/ials/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:31:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "iALS kickoff - an honest recommendation baseline for the platform",
+  "body": "Team,\n\nKicking off the iALS baseline track. Context: our open-source work ('Revisiting the Performance of iALS on Item Recommendation Benchmarks' and 'iALS++: Speeding up Matrix Factorization with Subspace Optimization') showed that a well-tuned implicit ALS is embarrassingly competitive with neural recommenders at a fraction of the cost. For data-platforms, the goal is a trustworthy internal baseline: any team proposing a fancy recommender should have to beat tuned iALS first.\n\nScope: reproduce the NCF-protocol results on MovieLens 1M and Pinterest, package the tuning recipe (holdout generation included), and hand Evalline a runnable baseline config. Milestones: environment and data by mid-Feb, repro by late March, packaged baseline + write-up by 2026-04-27.\n\nBilal leads repro, Linnea tuning methodology, Rosa packaging, Oyin infra. Deshawn - resourcing note please. This one is cheap on compute and heavy on rigor.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

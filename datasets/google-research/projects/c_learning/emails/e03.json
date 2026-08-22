@@ -1,0 +1,17 @@
+{
+  "id": "gr/c_learning/e03",
+  "thread_id": "gr/c_learning/t1",
+  "in_reply_to": "gr/c_learning/e02",
+  "date": "2026-06-15T10:30:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: C-Learning - status before sweep freeze",
+  "body": "Status two days before config freeze.\n\nM1 done (landed Jun 2, few days late - the mujoco container saved us, thanks Oyin). C-Learning matches published performance on 5 of 6 MuJoCo manipulation tasks and beats our internal HER-style relabeling baseline on 4, consistent with the paper's claim that it outperforms prior goal-relabeling methods.\n\nFor the ablation week: Gustavo's sweep is 6 tasks x 7 goal-sampling ratios x 4 seeds, plus the off-policy track where we evaluate 3 held-out policies against ground-truth Monte Carlo rollouts. Configs freeze Wednesday as planned.\n\nOne risk to flag for the integration spec: the off-policy variant's future-state predictions degrade when the new policy is far from the data-collection policy - on our farthest held-out policy the predicted goal-reach probabilities are off by up to 18 points. We'll quantify the \"trust radius\" during the sweep, but M3 should probably ship with a policy-divergence guardrail rather than unconditional claims.\n\nHalima",
+  "labels": ["status", "risk"]
+}

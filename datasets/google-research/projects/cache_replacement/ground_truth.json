@@ -1,0 +1,12 @@
+{
+  "project": "gr/cache_replacement",
+  "conflicts": [
+    {
+      "conflict_id": "C053",
+      "type": "codename_collision",
+      "counterpart_projects": ["jaxnerf"],
+      "planted_in": ["e01"],
+      "claim_as_written": "e01: \"We're running this under the codename Project Meltwater - use it in decks, OKR entries and standups so the graphs-retrieval reviews can track us.\""
+    }
+  ]
+}

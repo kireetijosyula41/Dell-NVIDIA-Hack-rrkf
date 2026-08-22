@@ -1,0 +1,45 @@
+{
+  "id": "gr/isl/e01",
+  "thread_id": "gr/isl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T10:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "ISL kickoff — causal explainability for tabular models",
+  "body": "Team, kickoff for ISL — Invariant Structure Learning — in data-platforms. From our release: ISL learns causal structure that stays invariant across environments, improving generalization and giving causal explanations; the codebase covers environment construction for synthetic and real data (Boston Housing, Insurance, Sachs) and both supervised and self-supervised settings. Product angle: a causal-explainability toolkit for tabular models — partner teams keep asking which features actually drive a model and getting correlational answers. Milestones: repro on the shipped datasets by May 22 (synthetic env generation is scripted — e.g., 3 environments × 100 samples per graph); self-supervised mode evaluated on one partner tabular dataset by mid-June; toolkit go/no-go by early July. Alina owns staffing; Csilla is tech lead. Reminder that Q3 OKR planning locks June 26 — if this is a go, the ask needs to be written by then. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

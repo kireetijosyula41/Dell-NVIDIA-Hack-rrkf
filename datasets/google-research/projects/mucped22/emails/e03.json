@@ -1,0 +1,41 @@
+{
+  "id": "gr/mucped22/e03",
+  "thread_id": "gr/mucped22/t1",
+  "in_reply_to": "gr/mucped22/e02",
+  "date": "2026-04-14T10:20:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mucped22 — April status + metric-divergence finding",
+  "body": "Hi both,\n\nStatus: database ingested and the correlation baselines are done. Emeka's annotation UI v1 is live — pairwise views, qualification flow, and per-session quality checks all working — and Ondrej's pilot batch ran last week with 9 qualified raters.\n\nThe finding that matters: on compression-typical distortions, metric rankings disagree with each other far more than the legacy-database correlations would predict. MS-SSIM and the perceptual metrics agree on the easy cases, but on the multi-bitrate ladders they invert ordering on about 1 in 6 image pairs — and the pilot's human judgments side with different metrics in different distortion regimes. That's exactly the release's thesis: a metric tuned on KADID-style distortions is not trustworthy for codec tuning.\n\nRisk/trade-off: the codec team wants a single blessed metric by May. The honest answer may be \"metric X within this bitrate range, human eval outside it.\" Less convenient, more true.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

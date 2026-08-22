@@ -1,0 +1,17 @@
+{
+  "id": "gr/hmc_swindles/e02",
+  "thread_id": "gr/hmc_swindles/t1",
+  "in_reply_to": "gr/hmc_swindles/e01",
+  "date": "2026-03-06T14:05:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: HMC Swindles kickoff - resourcing + the June benchmark week",
+  "body": "Dmitri,\n\nResourcing:\n\n- Staffing: Wei 40%, Paloma 60%, Leilani 30%, Oyin 40%. Steady through the window, no changes planned.\n- Day-to-day compute: preconditioner training and tuning fit comfortably on 8-16 titan-a100 GPUs best-effort.\n- The big item: for the full benchmark sweep we hold the vulcan-h100 reservation - 384 accelerators for the week of 2026-06-29. Confirmed through the Infra Lead reservation process; that week is deliberately after the Vulcan maintenance window (June 22-24), so we shouldn't be exposed to it.\n\nEnv note from setup: the pipeline pulls in r-base plus a fresh tensorflow/probability clone, so Paloma is baking a container image this month - saves everyone the 'works on my venv' round trips.\n\nNo budget or headcount asks beyond the above.\n\nDeshawn",
+  "labels": ["resources"]
+}

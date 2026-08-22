@@ -1,0 +1,18 @@
+{
+  "id": "gr/dot_vs_learned_similarity/e04",
+  "thread_id": "gr/dot_vs_learned_similarity/t1",
+  "in_reply_to": "gr/dot_vs_learned_similarity/e03",
+  "date": "2026-06-12T14:50:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: dot-product vs learned similarity for the recs scorer",
+  "body": "Post-sweep wrap-up and decision.\n\nThe internal-corpus results came in weaker for learned similarity than even the public numbers suggested: dot-product MF at dim 128 beats the MLP scorer on HR@10 while cutting serving cost an estimated 70% via ANN retrieval. Wanjiru's latency benchmark shows p99 under 12ms versus 41ms for the learned scorer at equivalent recall.\n\nDecision: the memo recommends standardizing the recs scorer on dot-product retrieval, learned similarity reserved for the final-stage ranker only. Draft to Hana Petrov by June 17, final before OKR lock June 26.\n\nOne process note: we ended up needing two extra days of cleanup runs after the reserved week; titan-a100 best-effort absorbed it, but next time let's pad the reservation ask.\n\nGood work all.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

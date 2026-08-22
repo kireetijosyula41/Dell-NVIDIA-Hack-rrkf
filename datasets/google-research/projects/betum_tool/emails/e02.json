@@ -1,0 +1,17 @@
+{
+  "id": "gr/betum_tool/e02",
+  "thread_id": "gr/betum_tool/t1",
+  "in_reply_to": "gr/betum_tool/e01",
+  "date": "2026-03-12T15:27:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Betum Tool for the Artemis Workshop (Dakar, June 1-5)",
+  "body": "Dmitri,\n\nStaffing and hosting:\n\n- Farah 60% (toolkit core + COCOEval harness), Chiara 50% (model profiles - she has OWL-ViT and YOLO26 running already), Tereza 30% (SAM 3 box-conversion path and the generative track).\n- Compute for the workshop itself: 16 titan-a100 GPUs best-effort is plenty; students run inference and light fine-tuning, not pretraining.\n- Data hosting: I talked to Jun's team about where the dataset lives during the migration window. Jun confirmed the Corpus v2 migration freeze is 2026-07-10, comfortably after the workshop, so we'll host the Coffee & Cashew dataset on legacy Corpus for June and migrate in the first week of July. That avoids making the students guinea pigs for v2 ingestion.\n- One budget item: ~$4k for offline mirrors (portable drives) as a connectivity fallback in Dakar. Approving from my line unless you object.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/newspalm_mbr_qe/e03",
+  "thread_id": "gr/newspalm_mbr_qe/t1",
+  "in_reply_to": "gr/newspalm_mbr_qe/e02",
+  "date": "2026-04-16T11:12:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Project Kestrel — ablation status",
+  "body": "Hi both,\n\nKestrel ablation status, halfway through the matrix:\n\n- Core claim reproducing so far: models trained on the MBR-decoded de-en set beat the size-matched web-crawl baseline by +2.1 BLEURT on our news holdout. QE-reranked lands at +1.4, greedy-decoded at +0.3 — the ordering from the release holds in our stack.\n- Kaia's granularity result is the surprise: blob-level (multi-sentence) data gives a further +0.8 BLEURT on the document-translation eval even though the sentence-level sets are cleaner to mix. That materially strengthens the case for our doc-translation customers.\n- chrF agrees directionally everywhere, so no metric-gaming concerns yet.\n\nRisk: the en-de direction is running ~2 weeks behind because the web-crawl baseline corpus needed dedup against the NewsPaLM sources (Maren caught overlap that would have flattered the baseline). Worth the delay for a defensible memo, but it eats our April buffer.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

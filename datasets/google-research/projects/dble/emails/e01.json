@@ -1,0 +1,18 @@
+{
+  "id": "gr/dble/e01",
+  "thread_id": "gr/dble/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T08:40:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - DBLE as our calibration layer",
+  "body": "Team,\n\nKicking off DBLE. The premise from our open-source release: adapt prototypical learning so the representation space has a usable metric, then calibrate confidence by how far a sample sits from its class center. Since you don't have ground-truth labels at inference, you train a second confidence model - and crucially you train it only on the mis-classified training samples, which the paper shows is what makes it work.\n\nWhy now: three teams route automated decisions off classifier confidence, and all three are using raw softmax, which is famously overconfident. A model-agnostic calibration layer that works on MLPs, VGG and ResNet alike is worth a quarter of our time.\n\nApr 27 - Aug 10:\n- Jun 5: reproduce the reported calibration improvements, ResNet-50 on the standard image sets.\n- Jul 10: apply to two internal classifiers, measure expected calibration error against temperature scaling.\n- Aug 5: recommendation + integration plan.\n\nAlina has resourcing. Carmen tech lead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

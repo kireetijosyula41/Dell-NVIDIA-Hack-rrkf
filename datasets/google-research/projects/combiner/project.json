@@ -1,0 +1,26 @@
+{
+  "id": "gr/combiner",
+  "title": "Implementation of Combiner: Full Attention Transformer with Sparse Computation Cost",
+  "summary": "Combiner achieves full-attention expressiveness in transformers at sparse (sub-quadratic) computation cost, with JAX and TensorFlow implementations of axial, mixture, fixed, and logn variants.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Yusuf Keita",
+    "Nikhil Abebe",
+    "Leilani Nakamura",
+    "Milan Zapata"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "combiner",
+    "url": "https://github.com/google-research/google-research/tree/master/combiner",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

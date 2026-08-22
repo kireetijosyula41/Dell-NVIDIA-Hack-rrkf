@@ -1,0 +1,16 @@
+{
+  "project": "gr/isl",
+  "conflicts": [
+    {
+      "conflict_id": "C140",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "contrastive_rl"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "there's no internal service for this, so we're scoping and staffing a benchmark leaderboard service from scratch for structure-learning evals: run submission, SHD and edge-F1 rankings per dataset, and per-environment breakdowns"
+    }
+  ]
+}

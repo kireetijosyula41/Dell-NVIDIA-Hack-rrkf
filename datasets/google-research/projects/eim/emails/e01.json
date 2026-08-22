@@ -1,0 +1,18 @@
+{
+  "id": "gr/eim/e01",
+  "thread_id": "gr/eim/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T10:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "EIM kickoff: energy-inspired models as a platform library",
+  "body": "Team,\n\nKicking off the EIM effort for the data-platforms portfolio. Background: energy-based models are powerful but sampling and log-likelihoods are intractable because of the partition function. Our open-source EIM release sidesteps that by building the approximate sampling algorithm into the model itself, so you keep learned energy functions and still get exact samples plus tractable log-likelihood lower bounds. That property is why other teams keep copy-pasting this code - our job this quarter is to make it a supported library instead.\n\nMilestones inside the Feb 2 - Apr 13 window: reproduce the small_problems and MNIST suites by Feb 27, API freeze for the library surface by Mar 20, adoption-ready release with docs at window close.\n\nSantiago follows up on staffing and the eval story. OKR: two internal teams consuming the library by mid-April.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

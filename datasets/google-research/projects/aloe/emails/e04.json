@@ -1,0 +1,36 @@
+{
+  "id": "gr/aloe/e04",
+  "thread_id": "gr/aloe/t2",
+  "in_reply_to": "gr/aloe/e03",
+  "date": "2026-07-15T16:00:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Sirocco status: synthetic MMD parity, fuzzing track slower",
+  "body": "Hyun, Ivo,\n\nTaking your recommendation. Scope cut for Sirocco:\n\n1. The July 20 readout covers the synthetic track only — MMD parity on held-out sets, the heat maps, the sampler. That's a clean, defensible result.\n2. Fuzzing becomes an appendix slide: three targets, seed generation working, no comparative claim against the existing fuzzer.\n3. Bilal drops to 20% on corpus plumbing after the readout and picks it back up if Q3 planning funds it.\n\nI'd rather ship one complete result than two partial ones. Thanks for calling it early instead of at the deadline.\n\nDmitri",
+  "labels": [
+    "escalation",
+    "decision"
+  ]
+}

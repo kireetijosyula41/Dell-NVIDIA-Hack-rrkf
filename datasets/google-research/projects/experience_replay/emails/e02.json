@@ -1,0 +1,15 @@
+{
+  "id": "gr/experience_replay/e02",
+  "thread_id": "gr/experience_replay/t1",
+  "in_reply_to": "gr/experience_replay/e01",
+  "date": "2026-05-05T13:57:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Experience replay kickoff: replay-ratio guidance for every RL stack",
+  "body": "Ulla,\n\nStaffing and dependencies.\n\nPeople: Vera 70% on the sweep design and analysis, Milan 60% on the harness (gin-config plumbing around the ElephantDQNAgent runner, plus our internal envs), Saoirse 40% on results tooling and the guide.\n\nCompute: the sweep is wide but each cell is cheap - I've sized it at 320 concurrent Titan A100 slots at peak in late May. Best-effort is fine; replay sweeps checkpoint well, so preemption costs us little.\n\nData: trajectory datasets for the internal environments come through Corpus. Timing works out - the Corpus v2 migration freeze is 2026-08-07, so our trajectory-dataset ingestion stays on the v1 path for the whole window and the migration lands after we're done. No v2 porting work on our plate.\n\nRisk: the three internal environments have inconsistent episode-boundary conventions; Milan found two already. Harness normalizes them, but that's the likeliest source of a late surprise.\n\nJelena",
+  "labels": ["resources"]
+}

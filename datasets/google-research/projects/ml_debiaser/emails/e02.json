@@ -1,0 +1,45 @@
+{
+  "id": "gr/ml_debiaser/e02",
+  "thread_id": "gr/ml_debiaser/t1",
+  "in_reply_to": "gr/ml_debiaser/e01",
+  "date": "2026-03-09T14:05:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: black-box debiasing service — staffing + Corpus timeline",
+  "body": "Hi Dmitri,\n\nStaffing: Nikhil Abebe 50% owns the service API and the randomized_threshold wrapper; Csilla Nassar 40% on the reduce-to-binary multiclass path and the pilot-team evaluations; Quentin Farkas 40% on Corpus integration; Linnea Yamada 20% shared with the label-harmonization work, advising on schema.\n\nCompute: negligible — post-processing is CPU-bound; the pilot retrains fit in 8 titan-a100 GPUs best-effort.\n\nOn Corpus: we're planning around the Corpus v2 migration freeze on 2026-07-10, per Jun's timeline: the debiased-dataset write-back path lands on v1 during our window, and Quentin ports it to v2 in the first week of July, comfortably before the freeze.\n\nOne early technical note from Csilla: the papers' test-time guarantees hold with high probability only given sufficient sample size per group. The pilot teams need a per-group sample-size check up front or we'll be promising guarantees we can't keep.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

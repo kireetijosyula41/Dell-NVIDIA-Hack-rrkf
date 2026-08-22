@@ -1,0 +1,13 @@
+{
+  "project": "gr/behavior_regularized_offline_rl",
+  "conflicts": [
+    {
+      "conflict_id": "C105",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["OpenMSD", "non_decomp", "diffusion_distillation"],
+      "planted_in": ["e02"],
+      "claim_as_written": "the logged-interaction datasets live on legacy Corpus, and since the Corpus v2 migration freeze is 2026-08-07 we have the whole summer to migrate - I'm sequencing that after our window closes rather than spending team time on it now.",
+      "note": "Canonical corpus_v2_freeze is 2026-07-10; this team plans around 2026-08-07 as instructed by the conflict spec."
+    }
+  ]
+}

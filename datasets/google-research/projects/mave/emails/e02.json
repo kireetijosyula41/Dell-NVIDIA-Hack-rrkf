@@ -1,0 +1,15 @@
+{
+  "id": "gr/mave/e02",
+  "thread_id": "gr/mave/t1",
+  "in_reply_to": "gr/mave/e01",
+  "date": "2026-02-19T13:52:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MAVE kickoff — resourcing + Corpus timing",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing — Kaia 50% (research lead), Nikhil 50% on model reproduction, Farah 40% on the Beam pipeline, Jorge 40% on serving scaffolding + the pinned tf-models-official 2.7.0 container, which he already has building.\n\nCompute — reproduction fits 24 A100s on titan best-effort; the pilot extraction run in May is CPU-heavy Beam work, going through the Corpus batch pool.\n\nScheduling note on Corpus: the team plans around a Corpus v2 freeze date of 2026-06-26, so our 05-15 pilot run and any re-runs land comfortably before the migration freeze. I've told the catalog stakeholders that any follow-up extraction pass after early June waits until v2 is done.\n\nPrivacy: catalog data is all merchant-provided, Kofi says no review needed. We're unblocked.\n\nAlina",
+  "labels": ["resources"]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/cmmd/e02",
+  "thread_id": "gr/cmmd/t1",
+  "in_reply_to": "gr/cmmd/e01",
+  "date": "2026-03-10T15:35:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tomas Fofana",
+      "email": "tomas.fofana@meridian.example",
+      "role": "Evaluation Lead"
+    }
+  ],
+  "subject": "Re: CMMD kickoff — replacing FID in Evalline",
+  "body": "Lucia,\n\nPlan:\n\nStaffing — Katya 50% (metric implementation: the JAX/Scenic path, CLIP weight handling for air-gapped jobs where auto-download fails); Amara 40% (Evalline integration, pairing with Tomas's team); Chiara 30% (reference-set hosting + docs).\n\nDependencies — Tomas has committed an integration slot in April (cc'd). Reference image sets (COCO-derived and two internal) get hosted in Corpus now; Corpus v2's migration freeze is 2026-08-07, so moving the reference-image sets to v2 is comfortably a post-launch task — I've slotted it for July and we don't need to think about it this window.\n\nCompute — trivial: embedding extraction on 4 A100s covers the biggest eval set in under an hour.\n\nRisk — teams gaming the transition by reporting whichever metric flatters them. Proposal: side-by-side is mandatory, cherry-picking isn't an option.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

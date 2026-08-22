@@ -1,0 +1,25 @@
+{
+  "id": "gr/infinite_nature_zero",
+  "title": "InfiniteNature-Zero",
+  "summary": "Productization track for InfiniteNature-Zero, which learns perpetual view generation of natural scenes from single photos (LHQ) using a StyleGAN2 backbone and softmax splatting, with no paired video supervision.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Gustavo Moreau",
+    "Csilla Nassar",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "infinite_nature_zero",
+    "url": "https://github.com/google-research/google-research/tree/master/infinite_nature_zero",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/ghum/e03",
+  "thread_id": "gr/ghum/t2",
+  "in_reply_to": null,
+  "date": "2026-05-05T10:19:00Z",
+  "from": {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: shape-space retraining + hand articulation risk",
+  "body": "Hi Alina, Dmitri,\n\nStatus. The 16-dim nonlinear VAE shape space retrain finished on the reserved Vulcan slice - reconstruction error is 8% lower than the linear PCA basis at the same dimensionality, consistent with the original training loop. Facial expression space (20-dim) retrains cleanly too. Saoirse's sampling API can now draw shape + pose + expression jointly, and GHUML(ite) samples render fast enough for the demo.\n\nThe risk I flagged earlier is real: hand-articulation closeups cover maybe a third of the poses we want to expose, so blend-skinning artifacts show up on extreme finger poses. Options: (a) restrict the launch asset to body + face and mark hands experimental, or (b) two more weeks of corrective training and we eat the schedule. Paloma's audit doc has the numbers.\n\nI lean (a). Can we decide this week?\n\nQuentin",
+  "labels": ["status", "risk"]
+}

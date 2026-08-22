@@ -1,0 +1,16 @@
+{
+  "project": "gr/anthea",
+  "conflicts": [
+    {
+      "conflict_id": "C047",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "goemotions"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "There is no shared place to publish MQM scores, so we're scoping and staffing a benchmark leaderboard service from scratch — Efe at 45% owns it, first internal version by late March."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "gr/invariant_explanations/e01",
+  "thread_id": "gr/invariant_explanations/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T09:25:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Kickoff: invariant explanations / meta-model audits",
+  "body": "Team — kickoff for invariant-explanations in the vision portfolio. The core idea from our release: train meta-models that predict the predictions of an entire class of base-models trained under different hparam settings, without fully training those base-models. Covariates are either X,H (sample images plus hparams) or X,W@epoch (samples plus base-model weights at an early epoch); targets are the base-model predictions at the final epoch, 86, of the CNN zoo. Product angle: hparam-sensitivity audits — telling a vision team whether their model's behavior on a given input is stable across the hparam class, before they burn a training run. Milestones: repro on the accompanying sample weights/metrics by end of April; full-zoo training in May; audit-tool prototype decision by end of June. Ivo has the staffing pen. — Lucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

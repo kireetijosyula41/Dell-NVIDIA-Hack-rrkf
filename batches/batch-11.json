@@ -1,0 +1,608 @@
+{
+  "batch": 11,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "extreme_memorization",
+      "title": "Supplementary code with ICLR 2021 paper \"Extreme Memorization via Scale of Initialization\"",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Supplementary code with ICLR 2021 paper \"Extreme Memorization via Scale of Initialization\"\n\n## Download and extract datasets\n\n-   CIFAR-10: https://www.dropbox.com/s/sstz260o6ad0ryn/cifar10.zip?dl=0\n-   CIFAR-100: https://www.dropbox.com/s/czun89ff9dhlc80/cifar100.zip?dl=0\n-   SVHN: https://www.dropbox.com/s/kf0p35wmp10j55x/svhn.zip?dl=0\n\n```bash\nunzip cifar10.zip\nunzip cifar100.zip\nunzip svhn.zip\ncp -r cifar10 /tmp/\ncp -r cifar100 /tmp/\ncp -r svhn /tmp/\n```\n\n## Install requirements\n\n```\npip install -r requirements.txt\n```\n\n## Main Inputs Arguments\n\n*   `--train_input_files`: Input pattern for training tfrecords.\n*   `--test_input_files`: Input pattern for test tfrecords.\n*   `--dataset`: name of the dataset(options: cifar10 | cifar100 | svhn,\ndefault: cifar10).\n*   `--model_type`: model architecture type (options: mlp | convnet, default:\nmlp)\n*   `--activation`: activation function, only applicable for MLP (options: relu\n| sin | sigmoid default: relu)\n*   `--loss_function`: loss function used (options: cross_entropy | hinge | l2,\ndefault: cross_entropy)\n*   `--shuffled_labels`: should use shuffled labels ? (default: False)\n*   `--custom_init`: whether to initialize w_1 with custom random normal\ninitializer. Only applicable for MLP model type. (default: False)\n*   `--stddev`: stddev used for random normal initializer. Only applicable when\nmodel type is MLP and custom_init is set to True. (default: 0.001)\n*   `--num_units`: number of hidden units (default: 1024)\n\n## Tensorboard\n\nEach training run saves representation and gradient alignment measures as TF\nsummary scalars, t",
+      "contributors": [
+        "Amara Okafor",
+        "Rafael Duran",
+        "Bilal Novak",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C051",
+          "type": "dependency_date_drift",
+          "projects": [
+            "extreme_memorization",
+            "differentially_private_gnns",
+            "cmmd",
+            "mave"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "f_net",
+      "title": "FNet: Mixing Tokens with Fourier Transforms",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# FNet: Mixing Tokens with Fourier Transforms\n\nby James Lee-Thorp, Joshua Ainslie, Ilya Eckstein, and Santiago Ontanon.\n\n## Introduction\n\n[FNet](https://arxiv.org/abs/2105.03824) is a highly efficient Transformer-like\nencoder architecture, wherein the self-attention sublayers have been wholly\nreplaced by standard, unparameterized Fourier Transforms.\n\nThis repo contains the models and code required to reproduce the results in the\n[paper](https://arxiv.org/abs/2105.03824).\n\nModels are pre-trained on the\n[C4](https://www.tensorflow.org/datasets/catalog/c4) dataset and fine-tuned on\n[GLUE](https://gluebenchmark.com/). The code is implemented in\n[Jax](https://jax.readthedocs.io)/[Flax](http://flax.readthedocs.io).\n\n## Installation\n\nTo download the code and install dependencies,\nyou can run a command like the following (ideally in a fresh Python environment,\ne.g. from [virtualenv](https://pypi.org/project/virtualenv/)):\n\n```\nsvn export https://github.com/google-research/google-research/trunk/f_net\npip install -r f_net/requirements.txt\n\n# If using Google Cloud TPUs:\npip install cloud-tpu-client\n```\n\nUnit tests can be run via:\n\n```\npython3 -m unittest discover -s f_net -p '*_test.py'\n```\n\nWhen running the unit tests and all python commands mentioned later, the current\nworking directory must be the *parent* folder of the `f_net` folder.\n\n## How to pre-train or fine-tune FNet\n\nFirst,\n[download](https://storage.googleapis.com/gresearch/f_net/vocab/c4_bpe_sentencepiece.model)\nthe SentencePiece vocab model. You can then train through the command line\ninterface:\n\n```\npython3 -m f_net.mai",
+      "contributors": [
+        "Hyun Traore",
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C010",
+          "type": "gpu_double_booking",
+          "projects": [
+            "f_net",
+            "invariant_slot_attention"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "factoring_sqif",
+      "title": "Installation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Installation\n\nClone the repository and run the following commands from the repository root.\n\nA development environment with all the dependencies can be created using conda as\n\n```\n$> conda env create -f dependencies.yaml -n factoring\n$> conda activate factoring\n```\n\nThe library can be installed using\n\n```\n$> pip install .\n```\n\n# Running the program\nThe `main.py` binary can be executed with appropriate command line arguments to either factor a known integer `N`, or factor a randomly generated integer of bitsize `b`.\n\nThe usage can be seen as follows:\n```bash\n$> python factoring_sqif/main.py --help\nusage: Integer factoring using Schnorr's algorithm + quantum optimization. [-h] (-N NUMBER_TO_FACTOR | -b BITSIZE) [-l LATTICE_PARAMETER] [-c PRECISION_PARAMETER] [-s SEED] [-m {qaoa,bruteforce}]\n[-p QAOA_DEPTH] [-NS NUM_SAMPLES]\n\nImplementation of integer factoring algorithm described in https://arxiv.org/abs/2212.12372\n\noptions:\n-h, --help            show this help message and exit\n-N NUMBER_TO_FACTOR, --number_to_factor NUMBER_TO_FACTOR\nInteger to factor.\n-b BITSIZE, --bitsize BITSIZE\nBitsize of number to be factored.\n-l LATTICE_PARAMETER, --lattice_parameter LATTICE_PARAMETER\nLattice parameter.\n-c PRECISION_PARAMETER, --precision_parameter PRECISION_PARAMETER\nPrecision parameter.\n-s SEED, --seed SEED  Seed for random number generation.\n-m {qaoa,bruteforce}, --method {qaoa,bruteforce}\nMethod to use for finding ground states of the hamiltonian.\n-p QAOA_DEPTH, --qaoa_depth QAOA_DEPTH\nDepth of qaoa circuit.\n-NS NUM_SAMPLES, --num_samples NUM_SAMPLES\nNumber of low energy states to",
+      "contributors": [
+        "Rosa Mensah",
+        "Farah Haddad",
+        "Giannis Sato",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C085",
+          "type": "gpu_double_booking",
+          "projects": [
+            "cnn_quantization",
+            "factoring_sqif"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "factorize_a_city",
+      "title": "Learning to Factorize and Relight a City",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learning to Factorize and Relight a City\n[Project Page](https://factorize-a-city.github.io/) |\n[Paper](https://arxiv.org/abs/2008.02796)\n\nThis code accompanies the paper\n\n**Learning to Factorize and Relight a City** \\\nAndrew Liu, Shiry Ginosar, Tinghui Zhou, Alexei A. Efros, Noah Snavely \\\nECCV 2020\n\n*Please note that this is not an officially supported Google product.*\n\n## Python Environment\n\nThe following code base was successfully ran with Python 3.7.9. We suggest\ninstalling the library in a vitual environment as our code requires older\nversions of libraries.\n\nTo install using pip, run: \\\n`pip3 install -r requirements.txt`\n\n## Sample Data and Pre-trained Checkpoint\n\nWe include our pretrained network and a small sample of our NYC test stack to\ntest our code on. To access, run: \\\n`source download_sample_resources.sh`\n\nThis will downoad and create `data` directory with sample stacks and their estimated\nalignment. It will also download and create a `ckpt` folder which contains our\npretrained checkpoint.\n\n## Scripts\n\n#### Alignment\n\nIn order to align new stacks, we run twenty gradient descent steps of alignment\noptimization with frozen network weights. For the test stacks provided, we have\nalready computed their alignment with this process and saved the results in\n`alignment.npy`.\n\nCommand: \\\n`python -m factorize_a_city.align_stack --misaligned_stack_folder=factorize_a_city/data/000057`\n\n#### Decomposition\n\nRecovers the intrinsic image components (log reflectance and log shading) from\nan input stack of panoramas.\n\nCommand: \\\n`python -m factorize_a_city.compute_intrinsic_com",
+      "contributors": [
+        "Bilal Novak",
+        "Wanjiru Horvat",
+        "Chiara Olsen",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C138",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "automl_zero",
+            "factorize_a_city"
+          ],
+          "shared_object": "Oyin Iversen at >=60% allocation",
+          "canonical": {
+            "person": "Oyin Iversen",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Oyin Iversen is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "factors_of_influence",
+      "title": "Introduction",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Introduction\n\nThe code in this directory provides a unified TFDS interface for 20 different\ndatasets: ADE20K, BDD, CamVid, CityScapes, COCO, Indian Driving Dataset, KITTI,\nMapillary, Pascal VOC, Pascal context, ScanNet, SUNRGBD, WildDash, iSAID, ISPRS,\nStanford Dogs, SUIM, Underwater Trash, vGallery, and vKITTI2.\n\n(Listing 19 out of 20 datasets, WildDash is omitted, see below for details.)\n\nIn particular, our TFDS interfaces provides for each dataset standardized\nfeatures with standardized feature names to facilitate seamlessly running\nexperiments on a wide variety of datasets. The features are formalized in\n`fids_features.py` and includes the following features (whose presence varies\ndepending on the nature of the dataset):\n\n- **id**: string with ID of the sample using the original IDs of the dataset.\n- **image**: HxWx3 RGB image (uint8).\n- **segmentation**: HxW segmentation image (uint16). Each 'pixel' denotes a\nclass: 0='background', 1='car', 2='cat', where background is *always* class 0\nwhile the others are dataset specific.\n- **segmentation_mseg_universal**: HxW segmentation image (uint16). Each 'pixel'\ndenotes a class in the universal MSeg taxonomy, where for *all* datasets the\nsame labels are used: 0='background', 1='backpack', 2='umbrella', etc.\n- **boxes**: Nx4 boxes. Representation: [row_min, col_min, row_max, col_max],\nwhere coordinates are in [0, 1].\n- **box_labels**: NxC one-hot class label vectors for each of the N boxes for C\nclasses\n- **person_keypoints**: Mx3 human keypoints. Representation: [row, col, is_visible].\n\nThese datasets were used in our TPAMI p",
+      "codename": "Project Basalt",
+      "contributors": [
+        "Csilla Nassar",
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C017",
+          "type": "codename_collision",
+          "projects": [
+            "fvlm",
+            "factors_of_influence"
+          ],
+          "shared_object": "Project Basalt",
+          "canonical": {
+            "codename": "Project Basalt"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Basalt."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fair_submodular_matroid",
+      "title": "Fair matroid submodular maximization",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fair matroid submodular maximization\n\nThis folder contains the codes for paper titled **\"Fairness in Streaming Submodular Maximization over a Matroid Constraint\"**.\n\nEach experiment requires a submodular function, a matroid, both accessed through oracles, and a fairness constraint.\nOracles are implemented for several submodular functions and matroids; to implement a new submodular\nfunction inherit from `SubmodularFunction` class and to implement a new matroid inherit from `Matroid` class.\n\n## Compiling the code\n\nOne can compile all the files with c++17 or later, beside the ones used for preparing the inputs, described below.\n\n## Downloading and preparing datasets\n\n* To run the maximum coverage experiment,\ndownload the files `soc-pokec-relationships.txt` and `soc-pokec-profiles.txt` from [https://snap.stanford.edu/data/soc-Pokec.html](https://snap.stanford.edu/data/soc-Pokec.html) and save them in the same directory containing the preprocessing scripts (`extract-attributes.cpp`, `color-vertices.cpp`, `statistics_bmi.cpp`, `clean_graph_for_bmi.cpp`). Run `extract-attributes.cpp` which should generate `filtered-attributes.txt` file. Next, run `color-vertices.cpp` and `statistics_BMI.cpp` which should generate `color_age_1.txt` and `color-BMI.txt` files, respectively. Finally, run `clean_graph_for_BMI.cpp` which should generate `BMI-soc-pokec-relationships.txt` file. Update the path in `graph.cc` (in `name_to_filename` map) to point to `BMI-soc-pokec-relationships.txt`, `color_age_1.txt` and `color-BMI.txt`.\n\n* To run the exemplar-based clustering experiment, download the dat",
+      "contributors": [
+        "Freya Ruiz",
+        "Umar Costa",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C126",
+          "type": "budget_overallocation",
+          "projects": [
+            "fair_submodular_matroid",
+            "ghum"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-74",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-74",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fast_gradient_clipping",
+      "title": "Fast Gradient Clipping",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fast Gradient Clipping\n\nThis repository is the official implementation of the NeurIPS 2023 paper\n[A Unified Fast Gradient Clipping Framework for DP-SGD](https://neurips.cc/virtual/2023/poster/70754).\n\n## Requirements\n\nTo install requirements:\n\n```setup\npip install -r requirements.txt\n```\n\n## Running in a Virtual Environment\n\nThe shell script `run.sh` includes an example of how to run the small `fc0.py`\nexperiment in a Python virtual environment. It should be called from the\n`google_research` directory, i.e., call\n\n```test\n./fast_gradient_clipping/run.sh\n```\n\n## Experiments\n\nTo replicate the experiments profiling runtime, run the scripts the `scripts`\ndirectory by calling `python -m [target]`. These scripts will generate plots as\n`*.svg` files in your `/tmp/` directory.\n\nUnfortunately, the experiments profiling peak memory usage require libraries\nthat are internal to Google. Users can add their own memory profiling tool by\nappropriately modifying the following functions in `./src/profiling_tools.py`:\n\n```profile\nget_compute_profile()\nget_compute_profile_with_vocab()\nget_train_bert_model_compute_profile()\n\n```\n\nFor reference, the full list of relevant targets, and their corresponding\nexperiments are listed below.\n\n&nbsp;\n\n**Target** | **Experiment**\n---------- | ---------------------------------\n`fc0.py`   | Small Test Script\n`fc1.py`   | Fully Connected Layer (Main Body)\n`fc2.py`   | Fully Connected Layer (Appendix)\n`emb1.py`  | Embedding Layer\n`bert1.py` | BERT Model",
+      "contributors": [
+        "Leilani Nakamura",
+        "Bilal Novak",
+        "Csilla Nassar",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C061",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "fast_gradient_clipping",
+            "attribute_with_prefixlm"
+          ],
+          "shared_object": "Vera Egede at >=60% allocation",
+          "canonical": {
+            "person": "Vera Egede",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Vera Egede is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fastconvnets",
+      "title": "Fast Sparse ConvNets",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fast Sparse ConvNets\n\nThis directory contains links to the TF-Lite models used in the paper \"Fast Sparse ConvNets\".\n\nThe MobileNetV1 models have a block size of 4 in the last inverted residual block, otherwise they are unstructured. The MobileNetV2 models have a block size of 2 from inverted residual block 11 onwards, otherwise they are unstructured. The exception is the width 1.8, 80% sparse model which unstructured throughout. The first full convolution and the final fully connected layer are both dense in all models. EfficientNet models are fully unstructured and the final fully connected layer is sparse.\n\n| Model | Top-1 Accuracy | Sparsity | Latency (ms) SD 835 | Download |\n|-------|:----------------:|:----------:|:---------------------:|:----------:|\n| MobileNetV1 .75  | 64.4% | 90% | 21 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv1_075_90_12b4_644.tflite)\n| MobileNetV1 1.0  | 68.4% | 90% | 31 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv1_100_90_12b4_684.tflite)\n| MobileNetV1 1.4  | 72.0% | 90% | 58 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv1_140_90_12b4_720.tflite)\n| MobileNetV2 .8   | 65.2% | 85% | 26 |[link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv2_080_85_11-16b2_652.tflite)\n| Cache Aware MobileNetV2 1.0 | 69.7% | 85% | 33 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv2ca_100_85_none_697.tflite)\n| MobileNetV2 1.15 | 70.2% | 85% | 40 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv2_115_85_11-16b2_702.tflite)\n| M",
+      "contributors": [
+        "Vera Egede",
+        "Freya Ruiz",
+        "Paloma Castillo",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C083",
+          "type": "duplicate_effort",
+          "projects": [
+            "fastconvnets",
+            "intent_recognition"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "federated_vision_datasets",
+      "title": "Federated Vision Datasets",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Federated Vision Datasets\n\nThis repo contains the data splits from the following paper.\n\n> Federated Visual Classification with Real-World Data Distribution\nTzu-Ming Harry Hsu, Hang Qi, Matthew Brown\nECCV 2020\nhttps://arxiv.org/abs/2003.08082\n\n## Datasets\n\nDataset               | # users     | # classes | # examples | Download split files          | For TensorFlow Federated   |\n--------------------- | ----------: | --------: | ---------: | ----------------------------- |----------------------------|\nLandmarks-User-160k   | 1,262       | 2,028     | 164,172    | [Download][dl-landmarks-user] | [Visit TFF doc][tff-gldv2] |\niNaturalist-User-120k | 9,275       | 1,203     | 120,300    | [Download][dl-inat-user]      | [Visit TFF doc][tff-inat]  |\niNaturalist-Geo       | 11 to 3,606 | 1,203     | 120,300    | [Download][dl-inat-geo]       | [Visit TFF doc][tff-inat]  |\nCIFAR-10              | 100         | 100       | 50,000     | [Download][dl-cifar10]        | -                          |\nCIFAR-100             | 100         | 100       | 50,000     | [Download][dl-cifar100]       | -                          |\n\n[dl-landmarks-user]: http://storage.googleapis.com/gresearch/federated-vision-datasets/landmarks-user-160k.zip\n[dl-inat-user]: http://storage.googleapis.com/gresearch/federated-vision-datasets/inaturalist-user-120k.zip\n[dl-inat-geo]: http://storage.googleapis.com/gresearch/federated-vision-datasets/inaturalist-geo.zip\n[dl-cifar10]: http://storage.googleapis.com/gresearch/federated-vision-datasets/cifar10_v1.1.zip\n[dl-cifar100]: http://storage.googleapis.com/gresearch/",
+      "contributors": [
+        "Bilal Novak",
+        "Emeka Pinto",
+        "Gustavo Moreau",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C137",
+          "type": "duplicate_effort",
+          "projects": [
+            "bam",
+            "federated_vision_datasets"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "felix",
+      "title": "Felix is flexible text-editing approach for generation, designed to derive",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Felix\n\nFelix is flexible text-editing approach for generation, designed to derive\nmaximum benefit from the ideas of decoding with bi-directional contexts and\nself-supervised pretraining. We achieve this by decomposing the text-editing\ntask into two sub-tasks: **tagging** to decide on the subset of input tokens and\ntheir order in the output text and **insertion** to in-fill the missing tokens in\nthe output not present in the input.\n\nA detailed method description and evaluation can be found in our EMNLP2020 findings paper:\n[https://www.aclweb.org/anthology/2020.findings-emnlp.111/](https://www.aclweb.org/anthology/2020.findings-emnlp.111/)\n\nFelix is built on Python 3, Tensorflow 2 and\n[BERT](https://github.com/tensorflow/models/tree/master/official/nlp/bert). It works with CPU, GPU, and\nCloud TPU.\n\n## Usage Instructions\n\nRunning an experiment with Felix consists of the following steps:\n\n1. Create label_map for tagging model\n2. Convert data for insertion/tagging model.\n3. Finetune the tagging/insertion models.\n4. Compute predictions.\n\nNext we go through these steps, using a subset of DiscoFuse\n([DiscoFuse](https://github.com/google-research-datasets/discofuse)) task as a\nrunning example.\n\nYou can run all of the steps with\n\n```\nsh run_discofuse_experiment.sh\n```\n\nAfter setting the variables in the beginning of the script.\n\n### 1. Label map construction\n\n```\n# Label map construction\nexport OUTPUT_DIR=/path/to/output\n\npython phrase_vocabulary_constructor_main \\\n--output=\"${OUTPUT_DIR}/label_map.json\" \\\n--use_pointing=\"${USE_POINTING}\" \\\n--do_lower_case=\"True\"\n\n```\n\n### 2. Conve",
+      "contributors": [
+        "Tereza Aliyev",
+        "Fumiko Rossi",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C077",
+          "type": "duplicate_effort",
+          "projects": [
+            "felix",
+            "nngp_nas"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "finance_harness",
+      "title": "FinanceHarness: Automating Financial Deep Research",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# FinanceHarness: Automating Financial Deep Research\n\nA model-agnostic agent for financial deep research: web research (search \u2192 visit\n\u2192 cite) plus an equity slice (fundamentals, comps, DCF, WACC). Headless core;\n`main.py` is the entry point.\n\n## Install\n\n```bash\nuv sync            # or: pip install -e .\n```\n\nBackbones are configured in [`configs/providers.json`](configs/providers.json)\nand `financeharness/providers/`. Set the API key for your chosen backbone via\nits environment variable, or point a profile at any OpenAI-compatible endpoint.\n\n## Run\n\nOne-shot research \u2014 prints the cited report to stdout, progress to stderr:\n\n```bash\npython main.py -p \"Estimate NVDA's intrinsic value with a DCF.\"\npython main.py -p \"Apple's competitive position in 2026?\" --mode research\npython main.py -p \"...\" --save run.json                 # persist the full trajectory\necho \"What's AAPL's P/E?\" | python main.py -p            # question piped via stdin\n```\n\nOptions: `--mode {auto|research|analytical}`, `--profile NAME`, `--reader NAME`,\n`--save PATH`, `--quiet`.\n\n### Verify your install\n\n```bash\npython main.py --list        # prints available profiles; confirms a working install\n```\n\n### Optional HTTP+SSE service\n\nThe package also ships an HTTP+SSE service (for a remote UI or programmatic\nuse):\n\n```bash\nuv run fh serve              # HTTP+SSE on 127.0.0.1:8080\n```\n\n## Extend with skills\n\nA **skill** is a `SKILL.md` (YAML frontmatter + markdown body) that orchestrates\nthe existing tools \u2014 drop one in and it's discovered, no code changes. Discovery\nprecedence: bundled `financeharness/skills/` ",
+      "contributors": [
+        "Halima Toure",
+        "Wei Ivanov",
+        "Leilani Nakamura",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C096",
+          "type": "dependency_date_drift",
+          "projects": [
+            "finance_harness",
+            "cell_mixer",
+            "hypertransformer",
+            "keypose"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fisher_brc",
+      "title": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization\n============================================================================================================\nIlya Kostrikov, Jonathan Tompson, Rob Fergus, Ofir Nachum\n-----------------------------------------------------------------------------------------\n\nSource code to accompany [Offline Reinforcement Learning with Fisher Divergence Critic Regularization]().\n\nIf you use this code for your research, please consider citing the paper:\n\n```\n@article{kostrikov2021fbrc,\ntitle={Offline Reinforcement Learning with Fisher Divergence Critic Regularization},\nauthor={Ilya Kostrikov and Jonathan Tompson and Rob Fergus and Ofir Nachum},\nyear={2021},\n}\n```\n\nInstall Dependencies\n--------------------\n```bash\npip install -m requirements.txt\n```\n\nYou will also need to install Mujoco and use a valid license. Follow the install\ninstructions [here](https://github.com/openai/mujoco-py).\n\nRunning Training\n----------------\n\nFrom the root google_research directory, run:\n\n```bash\npython -m fisher_brc.train_eval_offline \\\n--task_name hopper-medium-expert-v0 \\\n--seed 42 \\\n--alsologtostderr\n```",
+      "contributors": [
+        "Gustavo Moreau",
+        "Freya Ruiz",
+        "Bilal Novak",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C097",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "metapose",
+            "fisher_brc"
+          ],
+          "shared_object": "Linnea Yamada at >=60% allocation",
+          "canonical": {
+            "person": "Linnea Yamada",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Linnea Yamada is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "flare_removal",
+      "title": "How to Train Neural Networks for Flare Removal",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# How to Train Neural Networks for Flare Removal\n\nThis repository contains code that accompanies the following paper:\n\n> Yicheng Wu, Qiurui He, Tianfan Xue, Rahul Garg, Jiawen Chen, Ashok\n> Veeraraghavan, and Jonathan T. Barron. **How to train neural networks for\n> flare removal**. *Proceedings of the IEEE/CVF International Conference on\n> Computer Vision (ICCV)*, 2021.\n\n-   The paper (including the supplemental materials) is available on\n[arXiv](https://arxiv.org/abs/2011.12485) as well as\n[CVF Open Access](https://openaccess.thecvf.com/content/ICCV2021/html/Wu_How_To_Train_Neural_Networks_for_Flare_Removal_ICCV_2021_paper.html).\n\n-   The [main project page](https://yichengwu.github.io/flare-removal/) contains\nmore information, including a recorded presentation.\n\n## Announcements\n\n-   We have made a small fix to the VGG loss in an attempt to fix the issue\nbelow. We thank the reader for reporting this issue.\n\n-   ~~**1/30/2022:** It has been brought to our attention that there might be an\nissue with the training code that causes the trained model to perform worse\nthan what we show on the\n[test images](https://drive.google.com/corp/drive/folders/1_gi3W8fOEusfmglJdiKCUwk3IA7B2jfQ).\nThis issue was likely introduced when we cleaned up the repository prior to\nopen-sourcing. We are actively investigating this issue, and will submit a\npatch to this repository as soon as possible. The issue does not affect the\ntesting script (`remove_flare.py`). We can also confirm that our published\nresults (both quantitative and qualitative) are accurate and reproducible\nusing an older (internal)",
+      "contributors": [
+        "Tereza Aliyev",
+        "Rafael Duran",
+        "Farah Haddad",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C093",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "flare_removal",
+            "generalized_rates"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "floatseg",
+      "title": "FLOAT: Factorized Learning of Object Attributes for Improved Multi-object Multi-part Scene",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "### FLOAT: Factorized Learning of Object Attributes for Improved Multi-object Multi-part Scene Parsing\n\nThis repository contains the code for the paper:\n\n**FLOAT: Factorized Learning of Object Attributes for Improved Multi-object Multi-part Scene Parsing** \nRishubh Singh, Pranav Gupta, Pradeep Shenoy, Ravi Kiran Sarvadevabhatla \n*IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022)* \n\n#### Preparing\n1. Creare a new conda environment `conda create -n floatseg python=3.7.10`.\n2. Activate it `conda activate floatseg`.\n3. Install the requirements `pip install -r floatseg/requirements.txt`\n4. Manually download all dataset versions used in this paper from [Zenodo](https://zenodo.org/record/6374908).\n\n#### Usage\nThe float_part_train.ipynb notebooks can be run to train the FLOAT model(s) with preset training settings.\nThe float_part_inference.ipynb notebooks can be run to replicate our results.\n\n#### Citation\nIf you find our methods useful, please cite:\n\n```\n@InProceedings{Singh_2022_CVPR,\nauthor    = {Singh, Rishubh and Gupta, Pranav and Shenoy, Pradeep and Sarvadevabhatla, Ravikiran},\ntitle     = {FLOAT: Factorized Learning of Object Attributes for Improved Multi-Object Multi-Part Scene Parsing},\nbooktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\nmonth     = {June},\nyear      = {2022},\npages     = {1445-1455}\n}\n```",
+      "contributors": [
+        "Csilla Nassar",
+        "Gustavo Moreau",
+        "Tereza Aliyev",
+        "Wei Ivanov",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C034",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "cognate_inpaint_neighbors",
+            "floatseg"
+          ],
+          "shared_object": "Katya Silva at >=60% allocation",
+          "canonical": {
+            "person": "Katya Silva",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Katya Silva is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fm4tlp",
+      "title": "transferring an inductive temporal link prediction model from one graph to",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This repository implements a benchmark and solutions for the challenge of\ntransferring an inductive temporal link prediction model from one graph to\ntest graph that has no node intersection with the initial (training) graph.\n\n## Env setup\n\nTo run experiments in this repo, you'll need to set up a conda directory. There\nis currently no other known option as one of the libraries (graph-tool) is not\npip-installable. First, run these commands to set up the env:\n\n```\nENV_NAME=yourenvname\nconda create --name $ENV_NAME -c conda-forge graph-tool\nconda activate ${ENV_NAME}\n```\n\nAt this point, to install the other Python modules, you'll need to locate the\nConda environment's version of Python (with the highest version number) that is\nable to load `graph-tool`. On Linux systems this is usually a `python3.XX` binary\nin a directory like\n\n```\n/usr/local/home/${USER}/anaconda3/envs/${ENV_NAME}/bin\n```\n\nUnfortunately due to some installation oddities arising from the interaction\nbetween Conda and `graph-tool`, simply running `python` with the environment\nactivated will not start the correct Python version. Find `python3.XX` in the\nfolder above (or the analogous folder on your system). Then set the alias\n\n```\nalias python3_env=\"/usr/local/home/${USER}/anaconda3/envs/${ENV_NAME}/bin/python3.XX\"\n```\n\nUsing this alias, install torch (you may be able to up the version if PyG keeps up):\n\n```\npython3_env -m pip install torch==2.3.0 --index-url https://download.pytorch.org/whl/cu118\n```\n\nThen install the rest of the packages (checking the torch version if necessary):\n\n```\nTORCH_V=2.3.0+cu118\npython",
+      "contributors": [
+        "Rosa Mensah",
+        "Ondrej Bergstrom",
+        "Gustavo Moreau",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C136",
+          "type": "gpu_double_booking",
+          "projects": [
+            "fully_dynamic_submodular_maximization",
+            "fm4tlp"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fractals_language",
+      "title": "Fractal Patterns in Language",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fractal Patterns in Language\n\n## Paper\n[*Fractal Patterns May Unravel the Intelligence in Next-Token Prediction*](https://arxiv.org/abs/2402.01825).\nIbrahim Alabdulmohsin, Vinh Q. Tran, and Mostafa Dehghani, arXiv:2402.01825 [cs.CL].\n\n*Abstract*:\nWe study the fractal structure of language, aiming to provide a precise\nformalism for quantifying properties that may have been previously suspected but\nnot formally shown. We establish that language is: (1) self-similar, exhibiting\ncomplexities at all levels of granularity, with no particular characteristic\ncontext length, and (2) long-range dependent (LRD), with a Hurst parameter of\napproximately H=0.70. Based on these findings, we argue that short-term\npatterns/dependencies in language, such as in paragraphs, mirror the\npatterns/dependencies over larger scopes, like entire documents. This may shed\nsome light on how next-token prediction can lead to a comprehension of the\nstructure of text at multiple levels of granularity, from words and clauses to\nbroader contexts and intents. We also demonstrate that fractal parameters\nimprove upon perplexity-based bits-per-byte (BPB) in predicting downstream\nperformance. We hope these findings offer a fresh perspective on language and\nthe mechanisms underlying the success of LLMs.\n\n## Colab\nThe attached colab provides a walk-through example for how to calculate fractal\nparameters from a collection of documents using a large language model (LLM). Specifically, we outline\nhow to calculate: (1) the self-similarity exponent *S*, (2) the Hurst exponent *H*,\nand (3) the Joseph exponent *J*.\n\nPlea",
+      "contributors": [
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Rafael Duran",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C033",
+          "type": "dependency_date_drift",
+          "projects": [
+            "meta_learning_without_memorization",
+            "fractals_language",
+            "frequency_analysis",
+            "caltrain"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    }
+  ]
+}

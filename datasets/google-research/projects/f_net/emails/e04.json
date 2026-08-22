@@ -1,0 +1,45 @@
+{
+  "id": "gr/f_net/e04",
+  "thread_id": "gr/f_net/t2",
+  "in_reply_to": "gr/f_net/e03",
+  "date": "2026-06-10T15:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: FNet GLUE dry runs + eval harness quirk",
+  "body": "Team — decisions from this morning's checkpoint.\n\nThe June pre-train completed within the reserved window, so we're committing to the launch-review slot on Jun 18 with Nadia's board. Scope decision: we present the low-cost encoder tier on the full GLUE matrix minus WNLI (tiny, noisy, not worth a slide). Nikhil's final numbers land Jun 15; Kaia writes the model card from the C4 pre-training config.\n\nOn serving, Zeke's team will host the demo endpoint on Shipyard staging — Jorge, please hand them the checkpoint by Jun 12.\n\nKnown risk we disclose at review: the quality gap versus the attention baseline is real, about 2-3 GLUE points. Our pitch is cost, not parity.\n\nNice work getting the pre-train through cleanly.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

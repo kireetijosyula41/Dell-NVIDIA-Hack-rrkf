@@ -1,0 +1,18 @@
+{
+  "id": "gr/linear_eval/e04",
+  "thread_id": "gr/linear_eval/t1",
+  "in_reply_to": "gr/linear_eval/e03",
+  "date": "2026-06-05T09:33:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: linear-eval as the portfolio's representation check — June decisions",
+  "body": "Team,\n\nDecisions for the Jun 12 close-out:\n\n1. Standardization ships as planned: all three teams are on linear-eval, Evalline integration is live, and Paloma's dashboard makes val_accuracy vs test_accuracy comparisons across teams a one-screen story. Milestone met.\n2. Distillation recipe: descoped from Jun 12 and carried into Q3 as its own OKR line with Efe at 50%. I'd rather ship a recipe teams trust than a quickstart that burns them; Efe's point about turnkey-ness settled it. Q3 planning locks Jun 26, and I've already penciled the line in.\n3. Linnea's padding-mask validation gets upstreamed to our open-source release — small thing, saves someone real pain.\n\nThanks all — the 1.9pp discrepancy find alone justified this project.\n\nAnders",
+  "labels": ["decision"]
+}

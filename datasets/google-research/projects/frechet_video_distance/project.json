@@ -1,0 +1,25 @@
+{
+  "id": "gr/frechet_video_distance",
+  "title": "Fréchet Video Distance",
+  "summary": "Standardizes the Fréchet Video Distance (FVD) — a metric comparing I3D-embedding distributions of real and generated video — as the shared evaluation gate for generative video models across the vision portfolio.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Quentin Farkas",
+    "Katya Silva",
+    "Tereza Aliyev"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "frechet_video_distance",
+    "url": "https://github.com/google-research/google-research/tree/master/frechet_video_distance",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

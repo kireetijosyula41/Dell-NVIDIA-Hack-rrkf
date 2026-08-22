@@ -1,0 +1,15 @@
+{
+  "id": "gr/keypose/e04",
+  "thread_id": "gr/keypose/t2",
+  "in_reply_to": "gr/keypose/e03",
+  "date": "2026-07-01T11:44:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: KeyPose status: scope decision for the July readout",
+  "body": "Team,\n\nDecisions for the final stretch.\n\n1) Scope: the partner readout on Jul 15 covers bottle-like SKUs only. The heart-category ambiguity finding goes in the appendix as a known limitation — better we name it than they discover it. Symmetric-object keypoint disambiguation becomes a Q3 line item.\n\n2) Fine-tune results on the pilot capture came in Monday: 1.1mm mean keypoint error on the two tumblers, 1.6mm on the jar. That clears the 2mm gripper tolerance, so the end-to-end pick demo is a go.\n\n3) Wanjiru — please confirm this week that the re-ingest is tracking to our Jul 17 target. I don't want the freeze week turning into a fire drill.\n\nAlso flagging for capacity planning: Q3 OKRs locked Jun 26 and this track is in the vision portfolio commitments, so the readout deck goes to Hana as well.\n\nLucia",
+  "labels": ["decision", "status"]
+}

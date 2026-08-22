@@ -1,0 +1,35 @@
+{
+  "id": "gr/assemblenet/e04",
+  "thread_id": "gr/assemblenet/t2",
+  "in_reply_to": "gr/assemblenet/e03",
+  "date": "2026-06-24T15:15:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: AssembleNet status: repro done, memory is the deciding factor",
+  "body": "Yusuf, Santiago,\n\nDecision: AssembleNet++Lite is the variant we take forward. 2.4 points over the current backbone at 40% of the activation memory is a shipping result; the extra 0.8 from full ++ costs a serving redesign we aren't doing this year.\n\nScope cuts to keep the June 29 readout clean: we drop the custom model_structure exploration — running our own connectivity search is a Q3 proposal with its own compute case, not something to squeeze in now. And we do not port the TF1 code to TF2 in this window; the container holds.\n\nSantiago, please release the Vulcan reservation early since the runs finished June 18 — no reason to sit on 96 H100s through maintenance.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

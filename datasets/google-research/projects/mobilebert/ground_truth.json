@@ -1,0 +1,16 @@
+{
+  "project": "gr/mobilebert",
+  "conflicts": [
+    {
+      "conflict_id": "C028",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "ciw_label_noise"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Compute is locked: we hold the vulcan-h100 reservation — 512 accelerators for the week of 2026-07-06 — for the final distillation-and-finetune sweep, and I've built the July schedule backward from that week."
+    }
+  ]
+}

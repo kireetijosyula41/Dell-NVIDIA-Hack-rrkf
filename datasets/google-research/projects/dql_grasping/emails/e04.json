@@ -1,0 +1,18 @@
+{
+  "id": "gr/dql_grasping/e04",
+  "thread_id": "gr/dql_grasping/t1",
+  "in_reply_to": "gr/dql_grasping/e03",
+  "date": "2026-06-16T16:05:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: grasping benchmark revival (dql_grasping)",
+  "body": "Decisions before next week's sweep, since we're out of slack:\n\n1. Throughput landed at 85% of budget — good recovery Nikhil — but not 100%, so per Efe's recommendation we cut the hardest difficulty tier from the grid and keep all 5 seeds. The tier comes back as a follow-up run in July on best-effort.\n2. PCL stays in the sweep: Quentin's fix (decoupling the replay-buffer sampling from the ported eligibility-trace code) held for two weeks of soak. If it diverges mid-sweep we drop it and say so in the readout, we don't rerun.\n3. Readout moves from July 2 to July 6 to give Wanjiru time to build the comparison dashboards off the sweep output directly.\n\nOur reservation week is what everything hangs on now — Alina, please reconfirm the booking with Infra today and make sure our job configs are staged by Friday.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

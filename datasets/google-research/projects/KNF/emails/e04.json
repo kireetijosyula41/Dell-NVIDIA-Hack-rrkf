@@ -1,0 +1,17 @@
+{
+  "id": "gr/KNF/e04",
+  "thread_id": "gr/KNF/t2",
+  "in_reply_to": "gr/KNF/e03",
+  "date": "2026-04-24T15:19:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: KNF status: repro complete, feedback-loop latency trade-off",
+  "body": "Fumiko, Bao,\n\nDecision from Tuesday's review, writing it down so it sticks:\n\n1. We ship the two-tier story. Tier 1 \"shift-robust batch\" is the flagship: full feedback loop, daily/weekly cadence, aimed at demand planning and risk teams. Tier 2 \"low-latency\" uses frozen operators with a documented robustness caveat and a scheduled re-fit. We will not market a single config that claims both.\n\n2. The shift-injection eval Bilal built becomes part of the memo's evidence base - the 14% MAE degradation gap between tiers under injected shifts is the clearest single number we have, keep it front and center.\n\n3. Q3 scale-up plan goes in the May 1 memo as planned, sized to the funding Bao lined up. Giannis, please add the multi-seed variance runs before we freeze numbers - I don't want single-seed results in a trust-portfolio memo.\n\nNice work all.\n\nXimena",
+  "labels": ["decision"]
+}

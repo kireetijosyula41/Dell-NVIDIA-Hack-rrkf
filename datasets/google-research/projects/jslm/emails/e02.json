@@ -1,0 +1,15 @@
+{
+  "id": "gr/jslm/e02",
+  "thread_id": "gr/jslm/t1",
+  "in_reply_to": "gr/jslm/e01",
+  "date": "2026-04-10T13:41:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: [Project Basalt] Kickoff: in-browser adaptive LMs for accessibility input",
+  "body": "Priya,\n\nStaffing and constraints for Basalt:\n\n- Hyun 50% through June — owns the PPM model integration and the escape/backoff behavior (the Moffat implementation details matter for latency here).\n- Yara 40% — designs the adaptation study and the session-level eval.\n- Rafael 20% — code review and JS performance passes only; he's heavily loaded elsewhere.\n\nCompute: effectively zero server-side. The whole point is client-side training, so our ask is a browser-farm slot on Shipyard's device lab for perf runs, plus a few CPU VMs for the corpus preprocessing. I'll square that with Zeke directly.\n\nOne constraint to flag early: for the study we want typing-log data, and per policy that has to stay synthetic or consented-panel only. Yara's drafting the panel spec so Kofi's privacy review sees the final design, not a moving target.\n\nAlina",
+  "labels": ["resources"]
+}

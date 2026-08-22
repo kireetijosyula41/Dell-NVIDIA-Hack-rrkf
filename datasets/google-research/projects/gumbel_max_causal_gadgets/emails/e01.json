@@ -1,0 +1,16 @@
+{
+  "id": "gr/gumbel_max_causal_gadgets/e01",
+  "thread_id": "gr/gumbel_max_causal_gadgets/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:53:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Gumbel-max causal gadgets -> counterfactual audit tooling",
+  "body": "Hi Bao,\n\nKicking off the causal gadgets workstream for trust-theory. The question every model audit ends with is counterfactual: would the system have made the same call if X had been different? Our open-source release gives us the machinery - JAX implementations of both Gadget 1 and Gadget 2 for learning generalized Gumbel-max causal mechanisms, where the learned coupling controls the variance of counterfactual estimates. Lower variance means fewer simulations per audit question, which is what makes an audit product economical.\n\nPlan for the window: repro the Section 7.1 experiments and the first two Table 1 columns by 5/1, wrap the gadgets in an internal counterfactual-audit API by 6/5, then a pilot audit on one production decision system in July, review 7/9.\n\nThe tutorial.ipynb walkthrough is genuinely good onboarding - new folks should start there.\n\nWei leads research, Emeka the API, Giannis experiments. Staffing from you this week?\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

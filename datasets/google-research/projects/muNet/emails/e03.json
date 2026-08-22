@@ -1,0 +1,41 @@
+{
+  "id": "gr/muNet/e03",
+  "thread_id": "gr/muNet/t1",
+  "in_reply_to": "gr/muNet/e02",
+  "date": "2026-04-14T11:25:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: muNet multitask evolution — April status + task-order risk",
+  "body": "Hi both,\n\nStatus: Milan finished the port — the muNet evolution loop runs on our stack, and reproduction matches the published notebook results on the benchmark suite. Dynamic task addition works: I introduced retrieval task 3 into a system already trained on tasks 1–2, mu2Net-style, and it reached fork-level quality using 41% fewer added parameters than a full fine-tuning fork.\n\nThe risk I want on the record: task-introduction order matters more than the papers emphasize at our scale. Adding the noisy click-feedback task before the clean relevance task degraded the shared components — average quality across all three tasks ended 1.3 points lower than the reverse order. With 11 tasks the ordering space is unsearchable, so the adoption proposal needs either a curriculum heuristic (clean-to-noisy seems to work) or an isolation guarantee for shared parameters.\n\nHyun suggests borrowing a freeze-then-branch policy from his pruning work; we'll test it next sprint.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

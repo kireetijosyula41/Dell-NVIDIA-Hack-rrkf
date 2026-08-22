@@ -1,0 +1,18 @@
+{
+  "id": "gr/group_agnostic_fairness",
+  "title": "Fairness without Demographics through Adversarially Reweighted Learning",
+  "summary": "Brings Adversarially Reweighted Learning (ARL) - improving worst-off group performance without access to demographic labels - into the platform's model-quality tooling, validated on the COMPAS, UCI Adult and Law School (LSAC) benchmark datasets.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Paloma Castillo", "Yara Jokic", "Kaia Wolde", "Emeka Pinto"],
+  "window": {"start": "2026-03-16", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "group_agnostic_fairness",
+    "url": "https://github.com/google-research/google-research/tree/master/group_agnostic_fairness",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

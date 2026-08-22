@@ -1,0 +1,26 @@
+{
+  "id": "gr/ciw_label_noise",
+  "title": "Constrained Instance and Class reWeighting (CIW)",
+  "summary": "Hardens our CIW/CICW method — constrained-optimization-based instance and class reweighting with closed-form per-minibatch updates — into a reusable robust-training component for teams with noisy labels, validated on CIFAR-10 noise benchmarks and internal data.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Emeka Pinto",
+    "Farah Haddad",
+    "Leilani Nakamura",
+    "Giannis Sato"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ciw_label_noise",
+    "url": "https://github.com/google-research/google-research/tree/master/ciw_label_noise",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

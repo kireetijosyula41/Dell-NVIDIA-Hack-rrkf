@@ -1,0 +1,18 @@
+{
+  "id": "gr/bertseq2seq",
+  "title": "BERTSeq2Seq",
+  "summary": "Builds Transformer-based sequence-to-sequence models initialized from pre-trained BERT, GPT-2, and RoBERTa checkpoints, with released predictions across sentence fusion (DiscoFuse), sentence splitting (WikiSplit), summarization (XSum, CNN/DailyMail, Gigaword), and machine translation; the internal effort applies the recipe to Meridian's text-rewriting features.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": ["Tereza Aliyev", "Gustavo Moreau", "Carmen Reyes", "Quentin Farkas"],
+  "window": {"start": "2026-02-09", "end": "2026-04-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bertseq2seq",
+    "url": "https://github.com/google-research/google-research/tree/master/bertseq2seq",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

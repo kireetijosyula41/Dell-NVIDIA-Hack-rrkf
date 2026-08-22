@@ -1,0 +1,12 @@
+{
+  "id": "gr/gumbel_max_causal_gadgets/e02",
+  "thread_id": "gr/gumbel_max_causal_gadgets/t1",
+  "in_reply_to": "gr/gumbel_max_causal_gadgets/e01",
+  "date": "2026-04-16T13:19:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}],
+  "cc": [],
+  "subject": "Re: Kickoff: Gumbel-max causal gadgets -> counterfactual audit tooling",
+  "body": "Ximena,\n\nStaffing and resourcing.\n\nThrough June: Wei 50%, Emeka 40%, Giannis 60%. For the pilot month: Wei Ivanov is committed at 60% to this project for July 2026 - the counterfactual-audit pilot is scheduled entirely around his availability that month, so please protect the allocation. Nobody else on the roster can both interpret the learned couplings and talk to the decision-system owners in their language.\n\nCompute: light. Coupling training for the Section 7.1 scale runs on 8 A100s best-effort; even the pilot's simulation batches are embarrassingly parallel CPU work. No reservations, no budget escalation - the constraint on this project is Wei's calendar, not hardware.\n\nOne dependency: the pilot needs read access to the decision system's logged inputs, which means a privacy review. Given the standard 2-3 week SLA I want the request filed by mid-May. Emeka will draft it.\n\nBao",
+  "labels": ["resources"]
+}

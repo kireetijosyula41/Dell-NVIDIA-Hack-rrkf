@@ -1,0 +1,15 @@
+{
+  "id": "gr/munchausen_rl/e02",
+  "thread_id": "gr/munchausen_rl/t1",
+  "in_reply_to": "gr/munchausen_rl/e01",
+  "date": "2026-03-05T16:48:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: M-RL kickoff — resourcing and the TF1 question",
+  "body": "Ulla,\n\nResourcing:\n\nStaffing — Quentin leads the sweeps, Yara owns eval/reference curves, Rosa the infra wrapping, Farah the config pinning. Comfortable with that against your milestones.\n\nCompute — the Atari-57 sweeps (3 seeds x 57 games x 3 agent types) don't fit our standing titan-a100 share. On budget: Idris verbally earmarked $120k from Q3 discretionary compute budget line B-44 for this project, which covers the full sweep plan with headroom for re-runs. I'll treat that as committed for planning; getting it papered before Q3 OKRs lock is on my list.\n\nOn TF1: recommendation is contain, not port. We pin the environment, run it as-is (no eager mode means our standard profiling hooks don't attach, we accept that), and revisit a port only if the suite becomes load-bearing beyond this half.\n\nIvo",
+  "labels": ["resources", "decision"]
+}

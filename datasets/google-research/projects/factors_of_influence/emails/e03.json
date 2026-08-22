@@ -1,0 +1,41 @@
+{
+  "id": "gr/factors_of_influence/e03",
+  "thread_id": "gr/factors_of_influence/t2",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:45:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Status: Basalt feature audit + licensing risk",
+  "body": "Status on the audit.\n\nGood news: the standardized schema holds up — id/image/segmentation features are consistent everywhere, background is always class 0 with dataset-specific classes above it, and the segmentation_mseg_universal channel gives us the single shared label space we promised.\n\nGaps to know about: person_keypoints exists only where the source provides it (COCO being the main one), and box_labels one-hot dimensions differ per dataset, so downstream code needs the per-dataset class count from the feature spec — Rosa is adding that to loader metadata.\n\nRisk: licensing. Beyond WildDash (already excluded), two more sources carry research-only clauses that may block Corpus redistribution. Kofi's review is the gate and his SLA is 2-3 weeks, which puts an answer mid-April — tight against the integration prototype. Suggest Umar builds against the unambiguous sets first.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

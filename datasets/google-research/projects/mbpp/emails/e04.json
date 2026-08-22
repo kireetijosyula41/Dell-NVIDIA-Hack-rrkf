@@ -1,0 +1,15 @@
+{
+  "id": "gr/mbpp/e04",
+  "thread_id": "gr/mbpp/t1",
+  "in_reply_to": "gr/mbpp/e03",
+  "date": "2026-06-12T13:57:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}],
+  "subject": "Re: MBPP kickoff — metric decision + wrap",
+  "body": "Team,\n\nDecisions:\n\n1) Metric ruling, agreed with Tomas: sanitized-mbpp.json is the headline pass@1; the full 11-510 split is always reported in the same table. Evalline will refuse to publish one without the other, which neatly prevents cherry-picking.\n2) The June calibration sweep completed on our vulcan-h100 week (first week of June, all 128 accelerators used, ~70% average utilization) — thanks Fumiko, the temperature curves are exactly what onboarding teams needed.\n3) Both target modeling teams are onboarded as of yesterday, so the 06-15 milestone is met and MBPP goes into the Q3 OKRs as a done platform deliverable before the 06-26 lock.\n\nScope note: prompt-format variants beyond the paper's three-shot setup are deferred to Q3 — one team asked, the answer is \"file a ticket\".\n\nNice work, everyone.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gr/factors_of_influence",
+  "title": "Introduction",
+  "summary": "A unified TFDS interface exposing 20 segmentation and detection datasets (ADE20K, COCO, CityScapes, Mapillary and others) with standardized feature names, including a segmentation_mseg_universal channel that maps every dataset into the shared MSeg taxonomy.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Csilla Nassar",
+    "Rosa Mensah",
+    "Quentin Farkas",
+    "Umar Costa"
+  ],
+  "codename": "Project Basalt",
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "factors_of_influence",
+    "url": "https://github.com/google-research/google-research/tree/master/factors_of_influence",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/dense_representations_for_entity_retrieval",
+  "conflicts": [
+    {
+      "conflict_id": "C102",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "alx"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Rafael Duran is committed at 65% to this project for May 2026 to own the dual-encoder training runs."
+    }
+  ]
+}

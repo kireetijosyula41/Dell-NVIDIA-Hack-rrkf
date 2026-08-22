@@ -1,0 +1,18 @@
+{
+  "id": "gr/ngrammer/e03",
+  "thread_id": "gr/ngrammer/t1",
+  "in_reply_to": "gr/ngrammer/e02",
+  "date": "2026-06-23T10:29:00Z",
+  "from": {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: N-Grammer kickoff — repro done, FLOP study early read",
+  "body": "Hi both,\n\nStatus:\n\n- Reproduction milestone met (late by a week — C4 queue times on titan, not model issues). N-Grammer beats our Transformer baseline on C4 perplexity at matched parameter count and edges the Primer config we run internally; SuperGLUE classification shows the same ordering. The release's claims hold up in our stack.\n- FLOP study early read: at matched quality, the n-gram-augmented config needs roughly 0.85x the training FLOPs of the baseline, and the latent n-gram lookup adds under 2% inference overhead. The interesting knob is the discrete latent vocab size — too small and the n-grams stop helping, too large and embedding memory becomes the cost. We're mapping that curve now; it will be the centerpiece of the June readout.\n- Risk: SuperGLUE fine-tuning variance is high on small tasks, so I'm running 5 seeds before quoting deltas. Might push the FLOP report to 07-03.\n\nRafael's API work spins up next week per plan.\n\nGustavo",
+  "labels": ["status", "risk"]
+}

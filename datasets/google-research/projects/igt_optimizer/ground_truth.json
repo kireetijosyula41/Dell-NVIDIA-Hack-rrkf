@@ -1,0 +1,12 @@
+{
+  "project": "gr/igt_optimizer",
+  "conflicts": [
+    {
+      "conflict_id": "C002",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["depth_and_motion_learning"],
+      "planted_in": ["e02"],
+      "claim_as_written": "One build item to be upfront about: we're standing up an internal evaluation harness from scratch for optimizer comparisons - multi-seed orchestration, variance-across-seeds metrics, and curve alignment [...] Nothing we have does seed-variance reporting properly, so Emeka owns the build at 60% with Bilal at 40%, about five weeks."
+    }
+  ]
+}

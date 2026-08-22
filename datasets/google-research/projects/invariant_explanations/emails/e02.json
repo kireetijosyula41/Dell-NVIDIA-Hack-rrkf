@@ -1,0 +1,50 @@
+{
+  "id": "gr/invariant_explanations/e02",
+  "thread_id": "gr/invariant_explanations/t2",
+  "in_reply_to": null,
+  "date": "2026-04-20T14:50:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Staffing & constraints — invariant explanations",
+  "body": "Lucia — staffing and constraints. Allocations for the heavy month: Bilal Novak is committed at 60% to this project for May 2026 — he owns the covariate pipelines (X,H assembly and the W@epoch extraction, which is the fiddly one). Around him: Linnea 40% (meta-model training), Fumiko 30% (eval design), Vera 25% (infra), Yusuf 15% (advisory). Compute: the meta-models are small; the cost is I/O — the zoo's weight snapshots are ~2 TB and the train/test instance splits multiply fast (base models × samples per model), so we're asking Corpus for a fast-scratch mirror rather than GPU reservations. Titan best-effort covers training. One process note: if the audit prototype is a go, Launch Review will want the calibration story, so Fumiko's eval design should bake that in from the start. — Ivo",
+  "labels": [
+    "resources"
+  ]
+}

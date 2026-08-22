@@ -1,0 +1,15 @@
+{
+  "id": "gr/jslm/e04",
+  "thread_id": "gr/jslm/t2",
+  "in_reply_to": "gr/jslm/e03",
+  "date": "2026-07-06T09:26:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: [Project Basalt] Status: decision on memory ceiling + LRB timing",
+  "body": "Team,\n\nClosing out two things.\n\nDecision on the memory ceiling: we ship with the pruning approach, not the order cap. The 11% keystroke saving is the headline of this product and Yara's curves show order-4 gives back nearly half of it. The study slipped to Jun 19 as a result — acceptable, and the results held (10.6% KSPC reduction with pruning enabled, trie stable under 60MB across the 2h sessions).\n\nSecond: privacy review cleared last Tuesday with one condition — the consented-panel typing logs get deleted 90 days post-study. Alina, can someone own the deletion job so it's not a manual step?\n\nLRB packet goes to Nadia this week targeting the late-July board slot. Demo is the live in-browser adaptation on the accessibility surface; no server anywhere in the loop is the closing slide.\n\nNice work all — this one's been smooth.\n\nPriya",
+  "labels": ["decision", "status"]
+}

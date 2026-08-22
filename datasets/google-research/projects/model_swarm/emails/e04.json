@@ -1,0 +1,45 @@
+{
+  "id": "gr/model_swarm/e04",
+  "thread_id": "gr/model_swarm/t1",
+  "in_reply_to": "gr/model_swarm/e03",
+  "date": "2026-06-15T15:50:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Model Swarms — go/no-go decision",
+  "body": "Team,\n\nDecision from this morning's review: qualified go.\n\n1) The Q3 service beta proceeds, scoped to tasks with vetted utility functions. Fumiko's composite-utility recipe (task metric + length penalty + held-out probe) becomes a hard requirement for onboarding — no raw single-proxy utilities, full stop. Task B's reward-hacking traces go in the service docs as the cautionary example.\n2) The final sweep runs this week as planned; Oyin, please snapshot the expert pools and global_best checkpoints for the beta baseline before we release the GPUs.\n3) Scope cut: multi-task swarm composition (the mu2Net-style ambition Freya floated) is out of the beta. One task per swarm until we trust the utilities.\n\nI'm writing the Q3 OKR submission around \"two beta customers live by end of August\" — deadline for OKR lock is the 26th, so speak now.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

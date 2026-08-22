@@ -1,0 +1,46 @@
+{
+  "id": "gr/deplot/e03",
+  "thread_id": "gr/deplot/t1",
+  "in_reply_to": "gr/deplot/e02",
+  "date": "2026-05-18T15:32:00Z",
+  "from": {
+    "name": "Maren Zhou",
+    "email": "maren.zhou@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: DePlot chart QA for the analytics suite",
+  "body": "Status: fine-tuning from the released DePlot checkpoint is working end to end on Cirrus. On our internal dashboard eval, plot-to-table exact structure match is at 71%, and downstream QA accuracy is 64% when we chain the table into the reasoning model.\n\nThe main risk is derendering quality on our densest chart types. DePlot's strength is standard bar/line/pie; our stacked area charts with more than 8 series lose rows in the linearized table, and every dropped row is an unrecoverable QA error downstream. MatCha-style pretraining on chart derendering would likely help, but that is real pretraining compute, not fine-tuning.\n\nProposal: keep fine-tuning only, and scope stacked-area out of the June demo. Will bring numbers to the next review.\n\nMaren",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

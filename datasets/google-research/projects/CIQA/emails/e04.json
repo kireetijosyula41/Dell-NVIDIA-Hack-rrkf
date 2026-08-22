@@ -1,0 +1,17 @@
+{
+  "id": "gr/CIQA/e04",
+  "thread_id": "gr/CIQA/t2",
+  "in_reply_to": "gr/CIQA/e03",
+  "date": "2026-05-11T16:30:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: CIQA status: sampling pipeline done, one distribution risk",
+  "body": "Milan, Jelena,\n\nDecision on the coverage question: we eat the cost. I got the rater budget bumped to $6.4k, which covers the extra judgments across all eight semantic classes - dropping classes would undercut the whole \"distribution-preserving\" story we tell in the launch narrative. The second rater wave is running now and Gustavo reports inter-rater agreement at 0.71 Krippendorff's alpha on the first 9k pairs, which is above our 0.65 bar.\n\nI've asked Nadia to slot us for the Launch Review Board on May 28. Materials owed: dataset card, rater methodology note, and the compression-metric demo. Saoirse owns release packaging; Jelena, please confirm she has what she needs by May 20.\n\nIf agreement drops below 0.65 on the full wave we hold the release and re-run the flagged batches - that is the only remaining go/no-go item.\n\nLucia",
+  "labels": ["decision", "escalation"]
+}

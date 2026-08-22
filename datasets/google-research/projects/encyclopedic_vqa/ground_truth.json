@@ -1,0 +1,12 @@
+{
+  "project": "gr/encyclopedic_vqa",
+  "conflicts": [
+    {
+      "conflict_id": "C029",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["dimensions_of_motion"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We're scoping and staffing a distillation training recipe from scratch - Yara owns it end to end, roughly five weeks of work - to compress the retrieval-augmented teacher into something deployable."
+    }
+  ]
+}

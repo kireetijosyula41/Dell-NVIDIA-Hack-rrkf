@@ -1,0 +1,18 @@
+{
+  "project": "gr/ml_debiaser",
+  "conflicts": [
+    {
+      "conflict_id": "C069",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "model_swarm",
+        "clip_as_rnn",
+        "android_interaction"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we're planning around the Corpus v2 migration freeze on 2026-07-10, per Jun's timeline: the debiased-dataset write-back path lands on v1 during our window, and Quentin ports it to v2 in the first week of July, comfortably before the freeze."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gr/investigating_m4/e01",
+  "thread_id": "gr/investigating_m4/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:35:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Kickoff: multilingual NMT representation analysis at scale",
+  "body": "Team — kickoff on scaling up our multilingual-NMT representation analysis (the Investigating M4 line of work). The release ships the Colab and data for SVCCA-based analysis: model_scores.csv holds SVCCA similarity between language-pair activations across layers and checkpoints, and the finetuning files track relative BLEU change plus post-finetuning representation shift. The product question for the language portfolio: when we finetune our multilingual models for a priority language pair, which other pairs' representations move, and can we predict the BLEU regressions before they land? Milestones: repro the released plots by March 6; extend the SVCCA tooling to our current production multilingual model by mid-May; regression-prediction readout in July feeding H2 capacity planning. Alina will circulate staffing; Quentin is analysis lead. — Priya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/charformer",
+  "title": "Charformer",
+  "summary": "Ports Charformer — fast character-level transformers via gradient-based subword tokenization (GBST) — from the Mesh-TensorFlow reference implementation to JAX/FLAX, targeting tokenizer-free multilingual models for the language portfolio.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Wei Ivanov",
+    "Milan Zapata",
+    "Emeka Pinto",
+    "Yara Jokic"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "charformer",
+    "url": "https://github.com/google-research/google-research/tree/master/charformer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gr/context_aware_transliteration/e01",
+  "thread_id": "gr/context_aware_transliteration/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:50:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: romanized input for South Asian languages",
+  "body": "Hi Daniela,\n\nKicking off romanized-input support for South Asian languages. Base is our open-source context-aware transliteration work: users type Hindi, Bengali, or Tamil in the Latin alphabet, and context-aware models map it into native script far better than word-by-word transliteration. The release ships FST-based transliteration via Nisaba with released models, generated text resources, and neural checkpoints on the way.\n\nProduct target: a transliteration layer for the language portfolio's input stack — romanized input is how a huge share of South Asian users actually type, and our coverage there is embarrassing.\n\nPlan: FST baseline reproduced by end of May, context-aware neural comparison in June-July, integration recommendation by the 8/3 window close.\n\nStaffing and platform dependencies by mid-May?\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/meta_learning_without_memorization/e04",
+  "thread_id": "gr/meta_learning_without_memorization/t1",
+  "in_reply_to": "gr/meta_learning_without_memorization/e03",
+  "date": "2026-04-15T13:29:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Meta-reg kickoff — A/B verdict: GO",
+  "body": "Team,\n\nA/B results from the vision team's pipeline, and the decision:\n\n- With meta-reg + the tuned default, they deleted their label-shuffling task construction entirely and still gained +1.9% on 5-shot accuracy versus their production setup. Pipeline code shrank by about 400 lines. That's a clean GO for wider rollout next window.\n- Decision: the 3-point auto-sweep ships default-off with a loud docs recommendation, per Freya's read. The 2x meta-training cost is opt-in, not a surprise.\n- Scope confirmation: the RNN-based variants from the paper stay out of scope for the library; nobody asked and the maintenance cost is real.\n\nBao — the late-June follow-up A/B with their production refresh stays penciled per your data-timing note; let's confirm it at Q3 planning.\n\nGreat, tight execution on a 2.5-month window. Thank you all.\n\nLucia",
+  "labels": ["decision", "status"]
+}

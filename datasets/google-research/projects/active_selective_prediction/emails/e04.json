@@ -1,0 +1,18 @@
+{
+  "id": "gr/active_selective_prediction/e04",
+  "thread_id": "gr/active_selective_prediction/t2",
+  "in_reply_to": "gr/active_selective_prediction/e03",
+  "date": "2026-07-27T15:52:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: ASPEST status: repro complete on all six benchmarks, coverage-target risk",
+  "body": "All,\n\nClosing decisions ahead of the LRB slot:\n\n1. The pilot eval report shipped July 23, a day early. The coverage-as-SLA framing survived contact with the pilot customer - they picked 88% coverage off the measured amazon_review-style risk curve rather than demanding 95%, which tells me the design does its job. Halima's routing-layer integration doc is the artifact I'll reuse for every future engagement.\n\n2. Scope cut for v1: we ship with four benchmarks in the standard eval battery (mnist->svhn, cifar10->cinic10, amazon_review, otto). fmow and domainnet stay in the extended suite - their build times are too long for the per-engagement loop.\n\n3. Nadia - requesting the August 6 board. Materials: eval report, coverage-SLA design, and the abstention demo. Nothing customer-facing before sign-off, per process.\n\nStrong quarter, this one turned out exactly like the kickoff pitch said it would, which never happens.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

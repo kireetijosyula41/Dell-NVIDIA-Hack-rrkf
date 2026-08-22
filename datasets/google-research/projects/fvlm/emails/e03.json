@@ -1,0 +1,36 @@
+{
+  "id": "gr/fvlm/e03",
+  "thread_id": "gr/fvlm/t2",
+  "in_reply_to": null,
+  "date": "2026-05-19T10:10:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Basalt status: repro green, novel-category gap",
+  "body": "Hi Deshawn,\n\nBasalt status. Training repro is green for r50 and r50x4 — the detector head converges in under a day on 128 A100s with the frozen backbone, as advertised. The r50x16 FLAX checkpoint restore is fixed (shape mismatch in our loader, not in the release).\n\nBenchmark: on the internal category list, r50x4 posts a strong base-category score but novel-category recall trails by about 9 points — expected behavior for open-vocabulary detection, and prompt engineering on the category names recovers roughly 3 of those points.\n\nRisk for the demo: r50x16 inference latency is 2.8x r50x4 for maybe two points of quality. Recommend we demo r50x4.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

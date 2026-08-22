@@ -1,0 +1,40 @@
+{
+  "id": "gr/gbrt/e01",
+  "thread_id": "gr/gbrt/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:08:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Gradient-based red teaming — kickoff",
+  "body": "Hi Ivo,\n\nKickoff for the gradient-based red teaming workstream, from our EACL 2024 release. Instead of hand-writing adversarial prompts, we optimize them: the EmbedTransformerLm variant accepts embeddings as inputs, simple_decode makes decoding differentiable with Gumbel softmax sampling between steps, and loss_fn scores the safety of the induced response by concatenating the SAFETY tokens and running one more decoding step. Gradients flow end to end, so unsafe-response-inducing prompts are found automatically.\n\nProduct goal: automated adversarial prompt discovery as a pre-launch gate for every language model release. Milestones: pipeline on an internal PAX LM by Mar 27, first full sweep Apr 30, gate proposal to LRB May 20.\n\nChiara, Fumiko and Halima assigned.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

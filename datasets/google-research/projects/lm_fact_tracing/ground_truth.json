@@ -1,0 +1,13 @@
+{
+  "project": "gr/lm_fact_tracing",
+  "conflicts": [
+    {
+      "conflict_id": "C062",
+      "type": "codename_collision",
+      "counterpart_projects": ["RevThink"],
+      "planted_in": ["e01"],
+      "claim_as_written": "Internally we're calling this Project Palisade — please use the codename in subject lines and docs so search stays clean.",
+      "note": "The codename also appears in subject lines and bodies of e02-e04."
+    }
+  ]
+}

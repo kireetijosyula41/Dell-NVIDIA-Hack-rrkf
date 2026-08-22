@@ -1,0 +1,12 @@
+{
+  "project": "gr/bigger_better_faster",
+  "conflicts": [
+    {
+      "conflict_id": "C008",
+      "type": "codename_collision",
+      "counterpart_projects": ["code_as_policies"],
+      "planted_in": ["e01", "e04"],
+      "claim_as_written": "e01: \"Kicking off Project Nimbus, our push to take the BBF agent from research code to a supported sample-efficient RL offering.\" e04: \"Nimbus is the name I'll be using in the Q3 OKR narrative, so please keep it consistent in decks.\""
+    }
+  ]
+}

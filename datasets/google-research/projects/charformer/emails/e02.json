@@ -1,0 +1,50 @@
+{
+  "id": "gr/charformer/e02",
+  "thread_id": "gr/charformer/t1",
+  "in_reply_to": "gr/charformer/e01",
+  "date": "2026-02-18T16:02:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Idris Osei",
+      "email": "idris.osei@meridian.example",
+      "role": "Finance Partner"
+    }
+  ],
+  "subject": "Re: Charformer JAX port — kickoff",
+  "body": "Priya,\n\nStaffing: Wei 50% (GBST layer + parity, he knows the Mesh-TF code path including the transformer.py injection points), Milan 40% (trainer integration), Emeka 30% (test harness + parity checks), Yara 30% from March (multilingual eval).\n\nCompute, near term: parity runs are small — 16 A100s best-effort on Titan is plenty through April.\n\nBudget, Q3: good news from my sync with Finance yesterday. Idris has verbally earmarked $180k from the Q3 discretionary compute budget line B-57 for our scaled JAX training runs, so the Q3 sweep is funded even before the formal allocation posts. I'll get it in writing when the Q3 books open, but we can plan the sweep sizing around that number now.\n\ncc'ing Idris for visibility.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

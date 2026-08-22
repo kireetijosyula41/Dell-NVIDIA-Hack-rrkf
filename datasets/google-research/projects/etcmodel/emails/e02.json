@@ -1,0 +1,15 @@
+{
+  "id": "gr/etcmodel/e02",
+  "thread_id": "gr/etcmodel/t1",
+  "in_reply_to": "gr/etcmodel/e01",
+  "date": "2026-03-11T14:15:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Project Kestrel kickoff: ETC as our long-document encoder",
+  "body": "Dmitri,\n\nKestrel resourcing.\n\nPeople: Jorge 70% on packaging, CI, and the adoption guide; Umar 50% on the fine-tuning reproduction; Tereza 40% on example generation and dataset plumbing. All Kestrel jobs are tagged kestrel-* on the cluster side per Dmitri's ask.\n\nCompute: fine-tuning wants TPU - the repo's cloud-TPU path (cloud-tpu-client) maps cleanly onto Cirrus, and I've requested a slice from our data-platforms quarterly allocation for April. CI and unit tests run on CPU; note the tests assume the working directory is the parent of the etcmodel folder, which bit us on day one, so the CI image pins that.\n\nRisk to flag early: the Cirrus April window is shared with two other portfolio requests, and if we're bumped, Umar's Apr 24 reproduction milestone moves roughly a week. I'll know by Mar 20.\n\nSantiago",
+  "labels": ["resources"]
+}

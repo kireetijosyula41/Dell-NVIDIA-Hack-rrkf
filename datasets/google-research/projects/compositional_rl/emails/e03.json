@@ -1,0 +1,46 @@
+{
+  "id": "gr/compositional_rl/e03",
+  "thread_id": "gr/compositional_rl/t2",
+  "in_reply_to": null,
+  "date": "2026-06-12T11:10:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Status: curriculum results + tooling risks",
+  "body": "Hi both,\n\nStatus: the generation pipeline is producing compositional web environments end to end — we're on the legacy MiniWoB branch pinned at the release commit, with the 2to3-converted Python bindings, plus the bootstrap-based page templates. Quentin's difficulty scheduler ramps the number of composed primitives per page.\n\nFirst real result: curriculum-trained agents hit 58% zero-shot success on held-out compositional tasks vs 37% for agents trained on the fixed task set — a +21-point generalization gap in our favor, in line with the original result.\n\nRisks: (1) the legacy MiniWoB dependency is fragile — the 2to3 conversion breaks on two wrappers whenever we bump Python, so Halima pinned the toolchain; (2) rater UI v0 slipped a week (replay backend), now targeting 7/3 — still compatible with the July evals.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

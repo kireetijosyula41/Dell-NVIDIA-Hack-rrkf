@@ -1,0 +1,18 @@
+{
+  "id": "gr/linear_dynamical_systems",
+  "title": "experiments locally without dependencies on Google packages.",
+  "summary": "Productizes our linear dynamical system clustering release: scripts for learning eigenvalues of hidden LDS dynamics and clustering many observed time-series systems. Target use is grouping customer telemetry streams by underlying dynamics for the graphs-retrieval portfolio.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": ["Vera Egede", "Chiara Olsen", "Hyun Traore"],
+  "window": {"start": "2026-03-30", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "linear_dynamical_systems",
+    "url": "https://github.com/google-research/google-research/tree/master/linear_dynamical_systems",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

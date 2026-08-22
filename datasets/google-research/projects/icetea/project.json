@@ -1,0 +1,18 @@
+{
+  "id": "gr/icetea",
+  "title": "Images as Covariates in Estimation of Treatment Effects Analysis (ICETEA)",
+  "summary": "Uses ML models to estimate treatment effects with images as covariates, contributing a semi-synthetic causal-inference benchmark built on retinal fundus images (with UK Biobank preprocessing) alongside standard IHDP and ACIC datasets.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": ["Halima Toure", "Tereza Aliyev", "Nikhil Abebe", "Linnea Yamada"],
+  "window": {"start": "2026-02-23", "end": "2026-05-11"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "icetea",
+    "url": "https://github.com/google-research/google-research/tree/master/icetea",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/mutual_information_representation_learning/e03",
+  "thread_id": "gr/mutual_information_representation_learning/t1",
+  "in_reply_to": "gr/mutual_information_representation_learning/e02",
+  "date": "2026-05-28T11:21:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: MI-maximization study — pre-run status",
+  "body": "Hi both,\n\nStatus ahead of the June window:\n\n- Chiara's standalone runner is done; a 5-run smoke batch at batch size 128 reproduces the precomputed Colab results within run-to-run noise. Dress rehearsal for the full 20-run protocol is scheduled 06-01, per Daniela's gate.\n- Early signal from the smoke runs matches the study's headline: the estimator with the loosest MI bound is producing the best downstream linear-eval accuracy on two of three configs — another data point that tighter MI estimates don't buy better representations. This will lead the internal guide.\n- Nikhil's retrieval extension: dual-encoder configs are written; recall@10 on the internal graph-retrieval benchmark is the extension's headline metric.\n\nRisk: the runner's checkpoint restore adds ~9 min per run. Over the full matrix that's ~30 hours of the reserved week. Chiara has a fix in review; if it misses 06-01 we trim the architecture grid by one column.\n\nHalima",
+  "labels": ["status", "risk"]
+}

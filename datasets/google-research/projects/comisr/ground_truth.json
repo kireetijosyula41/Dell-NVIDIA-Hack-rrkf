@@ -1,0 +1,16 @@
+{
+  "project": "gr/comisr",
+  "conflicts": [
+    {
+      "conflict_id": "C057",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "learning_parameter_allocation"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Jorge Vidal is committed at 60% to this project for June 2026 — he owns the eval-and-deployment phase that runs past the May code-complete date, including the Shipyard demo and the post-LRB fixes."
+    }
+  ]
+}

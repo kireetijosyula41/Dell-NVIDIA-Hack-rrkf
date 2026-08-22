@@ -1,0 +1,18 @@
+{
+  "id": "gr/explaining_risk_increase",
+  "title": "Code to explain increases in risk predictions",
+  "summary": "Productizing our observation-sequence risk model - which produces a sequence of risk predictions over clinical observation records and explains increases as weights over the inputs - for hospital-partner deployment on FHIR-formatted data.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Bilal Novak", "Vera Egede", "Gustavo Moreau"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "explaining_risk_increase",
+    "url": "https://github.com/google-research/google-research/tree/master/explaining_risk_increase",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

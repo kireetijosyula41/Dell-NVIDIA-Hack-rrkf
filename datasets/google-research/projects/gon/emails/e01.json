@@ -1,0 +1,18 @@
+{
+  "id": "gr/gon/e01",
+  "thread_id": "gr/gon/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:31:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: GON - auditable black-box optimization for trust-theory",
+  "body": "Hi Bruno,\n\nKicking off the GON workstream. Why trust-theory owns this: teams keep shipping black-box maximizers (ad budgets, dosing curves, threshold tuning) where nobody can certify the recommendation. A Global Optimization Network - any composition of an invertible function and a unimodal function - has a unique global maximizer recoverable in O(D) time, so the recommendation is auditable by construction. The unimodal half comes from lattice models with linear inequality constraints, which also gives us shape guarantees regulators like.\n\nThe published experiments show GON maximizers beat convex fits, GPR and DNNs on noisy real-world estimation problems, so we are not trading accuracy for auditability.\n\nMilestones: repro of the simulation suite by 3/6, conditional-GON prototype on one internal tuning problem by 4/10, portfolio review 4/29.\n\nBruno - staffing plan when you can.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

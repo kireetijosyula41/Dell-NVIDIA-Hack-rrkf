@@ -1,0 +1,17 @@
+{
+  "id": "gr/dac/e01",
+  "thread_id": "gr/dac/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - DAC for learning from operator demonstrations",
+  "body": "All,\n\nKicking off the DAC workstream. The open-source release addresses the two things that always kill adversarial imitation learning for us: reward bias, where the learned reward implicitly rewards or punishes termination, and sample inefficiency, which it fixes by going off-policy instead of throwing away every trajectory after one update.\n\nOur use case: we have thousands of hours of operator demonstration logs for pipeline remediation, and no reward function anyone can agree on. Imitation is the right frame, we've just never had a method that learns from a realistic number of demonstrations.\n\nFeb 9 - Jul 20, deliberately long because the data prep is the risk:\n- Mar 20: reproduce the published results with the standard expert trajectories.\n- May 15: our demonstration logs converted into the same trajectory format.\n- Jul 10: final imitation sweep and a recommendation.\n\nAlina has staffing and compute. Rosa is tech lead on the data side, Carmen on method.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

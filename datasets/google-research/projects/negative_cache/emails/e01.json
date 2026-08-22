@@ -1,0 +1,17 @@
+{
+  "id": "gr/negative_cache/e01",
+  "thread_id": "gr/negative_cache/t1",
+  "in_reply_to": null,
+  "date": "2026-02-19T09:26:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Negative cache kickoff — cheaper dual-encoder training for retrieval",
+  "body": "Hi Deshawn,\n\nKickoff for the negative-cache adoption. Our NeurIPS 2021 open-source release implements a streaming negative cache for dual-encoder training: at each step you sample a negative from a large cache to approximate the cross-entropy loss, instead of paying for in-batch or brute-force negatives. Memory-efficient, simple API (CacheManager + CacheClassificationLoss + a handler).\n\nWhy now: retrieval training is the biggest single line in our portfolio's compute spend, and the release's approach should cut effective negative-mining cost substantially at equal quality.\n\nDeliverables: (1) integrate the cache loss into our standard dual-encoder trainer, (2) head-to-head at production scale vs our current negative sampling on the two flagship retrieval benchmarks, (3) adoption guide. Milestones: integration by end of March, mid-scale comparison in May, production-scale run in June, readout by 06-29.\n\nResourcing from you please — the June run will need a real reservation.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/didi_dataset",
+  "title": "The Didi dataset: Digital Ink Diagram data",
+  "summary": "Standing up the Didi digital-ink diagram dataset -- raw NDJSON ink with prompts in png/dot/xdot and TFRecord conversion tooling -- as a Meridian-hosted benchmark for interactive graphical symbol understanding.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Amara Okafor",
+    "Farah Haddad",
+    "Katya Silva",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "didi_dataset",
+    "url": "https://github.com/google-research/google-research/tree/master/didi_dataset",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

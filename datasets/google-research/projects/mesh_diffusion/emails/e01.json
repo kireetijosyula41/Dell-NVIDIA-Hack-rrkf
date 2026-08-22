@@ -1,0 +1,19 @@
+{
+  "id": "gr/mesh_diffusion/e01",
+  "thread_id": "gr/mesh_diffusion/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T09:55:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Mesh Diffusion kickoff — textures on the surface, not in UV space",
+  "body": "Hi all,\n\nKicking off the mesh-diffusion texture tool. The research asset: our CVPR-published single-mesh diffusion work with field latents, where an FLVAE encodes surface texture into latent fields and an FLDM samples new textures directly on a labeled mesh — no UV-space hacks. The product bet: internal 3D-asset teams spend days per asset on texture variations we can generate in minutes.\n\nMilestones (window through 06-15):\n- 04-10: sampling flow working end-to-end from our FLVAE/FLDM checkpoints on preprocessed meshes, per the released config paths.\n- 05-08: preprocessing pipeline internalized so artists can bring their own meshes with label ply files.\n- 06-08: pilot with the asset team — 5 production meshes, artist-rated quality.\n\nDaniela owns staffing; Hyun is TL. Flag data/platform dependencies early — the preprocessing step touches Corpus storage.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/ieg/e04",
+  "thread_id": "gr/ieg/t2",
+  "in_reply_to": "gr/ieg/e03",
+  "date": "2026-07-08T15:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IEG status: decision - tiered recommendation adopted",
+  "body": "All,\n\nDecision for the July 13 memo: we adopt the tiered recommendation as Tereza framed it. FSR becomes the default noise-robust training option on the platform (most of the benefit, modest overhead), and IEG is the heavy-duty mode for label sources we know are severely noisy - the 80% uniform-noise CIFAR100 result is the evidence that it holds up where FSR fades. RandAugment is the standard augmentation in both modes.\n\nBilal's cost/accuracy frontier chart goes in as the decision graphic; the 2x meta-step cost for IEG needs to be stated plainly so nobody turns it on by default.\n\nBruno - the harness Chiara and Emeka built deserves its own paragraph in the memo. Controlled noise injection with seed management is what made these claims defensible, and I want leadership to see where the seven weeks went.\n\nQ3 follow-on is a pilot with one real labeling-pipeline consumer; I'll bring it to the OKR check-in.\n\nDmitri",
+  "labels": ["decision"]
+}

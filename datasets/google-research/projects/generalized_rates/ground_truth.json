@@ -1,0 +1,17 @@
+{
+  "project": "gr/generalized_rates",
+  "conflicts": [
+    {
+      "conflict_id": "C093",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "flare_removal"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "Rafael is our anchor on this: he is committed at 60% to this project through July 2026, covering the pilot integration and the hardening phase after it"
+    }
+  ]
+}

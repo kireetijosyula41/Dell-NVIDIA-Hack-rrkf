@@ -1,0 +1,26 @@
+{
+  "id": "gr/constrained_language_typology",
+  "title": "Constrained Prediction of Linguistic Typological Features",
+  "summary": "NEMO: a frequentist inference approach to predicting a language's typological features (from WALS) given only a handful of observed ones, developed for the SIGTYP 2020 shared task.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Umar Costa",
+    "Oyin Iversen",
+    "Quentin Farkas",
+    "Maren Zhou"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "constrained_language_typology",
+    "url": "https://github.com/google-research/google-research/tree/master/constrained_language_typology",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

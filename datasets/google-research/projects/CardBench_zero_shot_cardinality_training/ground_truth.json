@@ -1,0 +1,12 @@
+{
+  "project": "gr/CardBench_zero_shot_cardinality_training",
+  "conflicts": [
+    {
+      "conflict_id": "C024",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["cell_embedder", "experience_replay", "covid_epidemiology"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus has the v2 migration freeze on 2026-07-24, so even our slowest re-generation pass clears the platform well before the freeze window."
+    }
+  ]
+}

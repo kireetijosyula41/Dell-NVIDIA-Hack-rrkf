@@ -1,0 +1,18 @@
+{
+  "id": "gr/dble/e02",
+  "thread_id": "gr/dble/t1",
+  "in_reply_to": "gr/dble/e01",
+  "date": "2026-05-05T13:15:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff - staffing for dble",
+  "body": "Dmitri,\n\nStaffing:\n- Efe Lindqvist is on dble at 60% for May 2026 - the prototypical training rewrite is his and it has to be finished inside May for the June calibration numbers to mean anything. He drops to 30% in June and July.\n- Carmen Reyes 35% across the window, method and the confidence-model training.\n- Maren Zhou 40%, evaluation harness - expected calibration error, reliability diagrams, temperature-scaling baseline.\n- Gustavo Moreau 25% from June, integration with the two internal classifiers.\n\nCompute: 24 GPUs on titan-a100 best-effort. These are CIFAR-scale reproductions, then fine-tunes of existing internal models - nothing that needs a vulcan reservation.\n\nThe May dependency on Efe is the schedule's single point of failure. Flagging it now rather than in June.\n\nAlina",
+  "labels": ["resources", "risk"]
+}

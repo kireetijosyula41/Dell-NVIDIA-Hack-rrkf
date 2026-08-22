@@ -1,0 +1,41 @@
+{
+  "id": "gr/fm4tlp/e03",
+  "thread_id": "gr/fm4tlp/t2",
+  "in_reply_to": null,
+  "date": "2026-05-19T10:50:00Z",
+  "from": {
+    "name": "Ondrej Bergstrom",
+    "email": "ondrej.bergstrom@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: benchmark repro + June critical path",
+  "body": "Status.\n\nRepro: benchmark numbers reproduced for the main transfer setting — models trained on the source graph and evaluated on disjoint-node test graphs degrade exactly as the benchmark documents, and the mitigation strategies in the release recover a good share of the gap on most dataset pairs.\n\nThe interesting internal question is which regime our domains fall into: structural similarity between source and target predicts transfer quality strongly in our repro, and our two candidate internal domains differ a lot on that axis. Gustavo's prep suggests domain A (session graphs) should transfer well; domain B (entity graphs) may be the stress case.\n\nRisk: memory. Temporal batching on our largest internal snapshot exceeds single-node limits, so Bilal is sharding the loader; if that isn't done by Jun 12 we'll burn reserved capacity on smaller-than-planned runs. That's the June critical path.\n\nOndrej",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

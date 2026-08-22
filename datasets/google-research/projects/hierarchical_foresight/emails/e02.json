@@ -1,0 +1,12 @@
+{
+  "id": "gr/hierarchical_foresight/e02",
+  "thread_id": "gr/hierarchical_foresight/t1",
+  "in_reply_to": "gr/hierarchical_foresight/e01",
+  "date": "2026-02-25T15:03:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: Hierarchical Visual Foresight for long-horizon planning",
+  "body": "Lucia,\n\nResourcing.\n\nStaffing: Carmen 70%, Hyun 40%, Bilal 60%, Saoirse 50%.\n\nCompute: SV2P training is the heavy piece - video prediction models are hungry, and we will train once for the maze repro and again for our simulation env. I am asking for 64 A100s on titan best-effort through March, and I want to avoid a Vulcan reservation unless the second training run stalls. The VAE, TDM and TAP components are cheap by comparison.\n\nData plan: generate_data output for the repro stays local, but the trajectory datasets for our simulation env should live in Corpus so the robotics-sim teams can reuse them. Re-ingestion is a Q3 task after the window closes. The Corpus v2 migration freeze is 2026-07-24, so scheduling the trajectory-dataset re-ingestion for the first half of July keeps us safely inside it.\n\nOne env annoyance: the reference setup wants python3.6 and the tensor2tensor dependency is legacy; Bilal is building the container now so it doesn't bite us mid-March.\n\nBruno",
+  "labels": ["resources"]
+}

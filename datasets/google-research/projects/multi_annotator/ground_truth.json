@@ -1,0 +1,12 @@
+{
+  "project": "gr/multi_annotator",
+  "conflicts": [
+    {
+      "conflict_id": "C108",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["differentiable_data_selection"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Good news there — Idris verbally earmarked the full $120k from Q3 discretionary compute budget line B-13 for this project, so the scaling sweep is covered without touching the portfolio baseline."
+    }
+  ]
+}

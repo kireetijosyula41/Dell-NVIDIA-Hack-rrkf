@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_temporal_ai/e04",
+  "thread_id": "gr/graph_temporal_ai/t2",
+  "in_reply_to": "gr/graph_temporal_ai/e03",
+  "date": "2026-04-13T15:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status: encoder integrated, feedback loop demo on track, schema debt",
+  "body": "Team,\n\nPilot-readiness review outcome (we squeezed it in 4/10 per Bao's calendar ask):\n\n1. READY for the May pilot with the two normalized schemas. The 11.8% -> 9.6% MAPE improvement plus the minutes-scale feedback loop was the demo that landed - the partner rep literally asked when they could type in their own rules.\n2. The free-text market-principles schema is formally deferred into the pilot phase, owned by Paloma with a design doc due 5/8. No fragile parser ships, agreed with Hyun's recommendation.\n3. Pilot success criteria, agreed with the partner: MAPE parity or better vs their incumbent on 4 of 5 product lines, and at least one forecast correction round-tripped through the feedback loop per week.\n\nOndrej carries the encoder into the pilot per the staffing plan. Nice work all - this one reviewed itself.\n\nAnders",
+  "labels": ["decision"]
+}

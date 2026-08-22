@@ -1,0 +1,19 @@
+{
+  "id": "gr/darc/e02",
+  "thread_id": "gr/darc/t1",
+  "in_reply_to": "gr/darc/e01",
+  "date": "2026-04-15T14:20:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff - resourcing, and we need a rating tool",
+  "body": "Ulla,\n\nStaffing:\n- Yara Jokic 55%, DARC implementation and the classifier training.\n- Milan Zapata 40%, production transition extraction.\n- Chiara Olsen 30%, simulator harness.\n- Paloma Castillo, see below.\n\nCompute: 32 GPUs on titan-a100, best-effort is fine, these are small policies.\n\nThe gap in your Jun 10 milestone is \"human plausibility ratings\". We have no tooling for that. Sending raters a folder of rollout videos and a spreadsheet is how you get unusable labels.\n\nSo we are building a human-rating annotation UI from scratch: side-by-side rollout playback, a 5-point plausibility scale, keyboard-driven navigation, rater agreement tracking and an export path into our eval store. Paloma Castillo owns it at 50% from April 20; first usable build April 30. It's about three weeks and we'll want it for every transfer project after this one.\n\nDeshawn",
+  "labels": ["resources"]
+}

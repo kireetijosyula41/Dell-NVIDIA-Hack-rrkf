@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_dice/e01",
+  "thread_id": "gr/dual_dice/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:44:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DualDICE for off-policy evaluation",
+  "body": "Hi Bruno, Halima,\n\nKicking off DualDICE adoption. Why it matters: teams keep wanting to evaluate a new policy from logged data where we don't know the behavior policy that generated the logs. DualDICE from our open-source release estimates discounted stationary distribution corrections behavior-agnostically — no behavior-policy knowledge needed — which is exactly the situation our logged partner-interaction data is in.\n\nProduct goal: an off-policy evaluation module in the trust-theory toolkit with confidence-caveated estimates, validated first on tabular and non-tabular GridWalk (the release's reference environments), then on one internal logged dataset.\n\nMilestones on the short window: GridWalk validation by March 13, internal-data pilot by April 10, toolkit module and handoff note by April 27. Productionization would be a Q2/Q3 follow-on, which we should staff-plan for now.\n\nBruno — staffing next please.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

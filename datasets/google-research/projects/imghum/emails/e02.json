@@ -1,0 +1,17 @@
+{
+  "id": "gr/imghum/e02",
+  "thread_id": "gr/imghum/t1",
+  "in_reply_to": "gr/imghum/e01",
+  "date": "2026-04-29T13:27:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: imGHUM kickoff - staffing, compute, Corpus migration deadline",
+  "body": "Lucia,\n\nResourcing:\n\n- Staffing: Yara 50%, Efe 40%, Gustavo 60%; Farah 30% through May for the pipeline integration scaffolding (her calendar is heavily contested for June, so I've front-loaded her portion deliberately).\n- Compute: SDF query benchmarks and fitting runs sit fine on 24 titan-a100 best-effort. No reservation ask.\n- Data/platform: the internal capture set (raw scans plus registered point clouds, ~9 TB) lives on Corpus v1 paths today. The Corpus v2 migration freeze is 2026-07-10, and our window closes June 29 - so Gustavo migrates the capture set to v2 in the first half of May, before the evaluation runs start. That way our published eval manifests are already v2-native and nothing we hand off breaks when the freeze lands eleven days after our close.\n\nOne dependency to watch: the head and hand models need a licensing-note review before any external-facing use; flagged to legal, not a blocker for internal eval.\n\nDaniela",
+  "labels": ["resources"]
+}

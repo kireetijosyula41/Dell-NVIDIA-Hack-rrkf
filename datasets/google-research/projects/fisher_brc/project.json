@@ -1,0 +1,26 @@
+{
+  "id": "gr/fisher_brc",
+  "title": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization",
+  "summary": "Offline reinforcement learning with Fisher divergence critic regularization (Fisher-BRC), with training and evaluation code targeting D4RL locomotion tasks such as hopper-medium-expert-v0 and a Mujoco dependency.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Gustavo Moreau",
+    "Freya Ruiz",
+    "Bilal Novak",
+    "Linnea Yamada"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fisher_brc",
+    "url": "https://github.com/google-research/google-research/tree/master/fisher_brc",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

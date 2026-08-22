@@ -1,0 +1,16 @@
+{
+  "project": "gr/general-pattern-machines",
+  "conflicts": [
+    {
+      "conflict_id": "C089",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "madlad_400"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Kicking off Project Saffron — our internal codename for the LLMs-as-general-pattern-machines effort; please use Saffron on trackers and docs."
+    }
+  ]
+}

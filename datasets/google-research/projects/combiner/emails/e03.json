@@ -1,0 +1,46 @@
+{
+  "id": "gr/combiner/e03",
+  "thread_id": "gr/combiner/t2",
+  "in_reply_to": null,
+  "date": "2026-04-10T10:20:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Combiner bake-off status",
+  "body": "Hi both,\n\nBenchmark status: at 8k context the axial variant matches our full-attention baseline's perplexity within 0.3% at roughly 40% of the attention FLOPs; mixture closes the gap entirely but gives back a third of the savings. The fixed-pattern variant falls off at longer contexts, as expected. logn looks best asymptotically but, per Ivo's earlier flag, it's JAX-only.\n\nAt 32k (the product target) axial holds: 1.1% perplexity gap, attention cost scaling near sqrt as advertised.\n\nTrade-off for the 5/8 decision: axial (cheapest, tiny quality gap, exists in both frameworks) vs mixture (no quality gap, less savings). My lean is axial — the 0.3-1.1% gap is below what our downstream evals can detect.\n\nRisk: Nikhil found nondeterminism in the TF eval path; being chased this week, doesn't affect the JAX numbers.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

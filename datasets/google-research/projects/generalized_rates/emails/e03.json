@@ -1,0 +1,36 @@
+{
+  "id": "gr/generalized_rates/e03",
+  "thread_id": "gr/generalized_rates/t2",
+  "in_reply_to": null,
+  "date": "2026-03-25T10:31:00Z",
+  "from": {
+    "name": "Fumiko Rossi",
+    "email": "fumiko.rossi@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Rate metrics status: replication done, minibatch noise",
+  "body": "Hi Deshawn,\n\nReplication status. F-measure optimization on COMPAS: done, matches the paper — the three-player algorithm beats the unconstrained baseline on F-measure while satisfying the rate constraints. KLD optimization on Adult: done as well; constraint satisfaction holds at convergence.\n\nThe practical finding for the platform API: with small minibatches the constraint estimates get noisy and we see transient violations mid-training even when the final solution is feasible. For the pilot we should surface constraint satisfaction as a convergence-time guarantee, not a per-step one, or users will file bugs at every wiggle.\n\nRafael has started sketching the constraint-spec schema with Oyin ahead of the mid-March review.\n\nFumiko",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

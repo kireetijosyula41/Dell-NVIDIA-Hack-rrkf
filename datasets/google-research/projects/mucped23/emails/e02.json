@@ -1,0 +1,40 @@
+{
+  "id": "gr/mucped23/e02",
+  "thread_id": "gr/mucped23/t1",
+  "in_reply_to": "gr/mucped23/e01",
+  "date": "2026-05-04T14:15:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Vantage — staffing + compute",
+  "body": "Hi Lucia,\n\nVantage staffing: Yusuf Keita 40% leads the perceptual analysis and owns the recommendation methodology; Bilal Novak 50% builds the Vantage eval harness (encoder wrappers for MozJPEG, libjpeg-turbo, jpegli; bitrate-ladder generation; metric computation); Oyin Iversen 25% on corpus sampling from our serving logs so the bake-off images match what we actually serve, not just the CID22-derived set.\n\nCompute: tiny by portfolio standards — encoding sweeps and metric computation on 8 titan-a100 GPUs best-effort, mostly CPU anyway.\n\nBudget flag: if we want a human-rated confirmation batch on our own corpus (Yusuf strongly recommends it — the mucped23 ratings cover the public sources, not our distribution), that's an external rater spend, ballpark $12k. I'll bring the exact number to the Vantage weekly sync.\n\nOne process note: encoder licensing review for jpegli redistribution is with Kofi, 2–3 week SLA, started today so it doesn't gate the July recommendation.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

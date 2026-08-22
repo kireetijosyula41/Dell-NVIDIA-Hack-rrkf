@@ -1,0 +1,18 @@
+{
+  "id": "gr/c_learning",
+  "title": "C-Learning: Learning to Achieve Goals via Recursive Classification",
+  "summary": "Applying C-Learning - which reframes goal-conditioned RL as predicting and controlling an agent's future state distribution via a classifier trained to tell future observations apart - to Meridian's robotics-simulation offering, using the off-policy variant to evaluate new policies without collecting new experience.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Jelena Vasquez",
+  "contributors": ["Halima Toure", "Gustavo Moreau", "Oyin Iversen"],
+  "window": {"start": "2026-04-27", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "c_learning",
+    "url": "https://github.com/google-research/google-research/tree/master/c_learning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

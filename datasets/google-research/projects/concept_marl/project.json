@@ -1,0 +1,26 @@
+{
+  "id": "gr/concept_marl",
+  "title": "Concept MARL",
+  "summary": "Concept Bottleneck Policies for multi-agent RL: extends MultiAgent-PPO in Acme with a concept loss so agent policies route through human-interpretable concepts, evaluated on Melting Pot environments.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Quentin Farkas",
+    "Nikhil Abebe",
+    "Maren Zhou",
+    "Umar Costa"
+  ],
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "concept_marl",
+    "url": "https://github.com/google-research/google-research/tree/master/concept_marl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

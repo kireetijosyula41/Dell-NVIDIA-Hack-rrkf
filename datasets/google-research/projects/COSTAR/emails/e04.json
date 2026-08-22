@@ -1,0 +1,17 @@
+{
+  "id": "gr/COSTAR/e04",
+  "thread_id": "gr/COSTAR/t2",
+  "in_reply_to": "gr/COSTAR/e03",
+  "date": "2026-06-10T15:48:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: COSTAR status: repro done, M5 scaling risk",
+  "body": "Linnea, Alina,\n\nDecision: option (a). Pre-generate M5 to disk, take the ~2TB storage hit - Alina confirmed Corpus has headroom for it outside the migration-sensitive paths. Cutting M5 would leave us with only medical-flavored benchmarks, and the platform customers we're pitching are mostly retail/demand-planning shaped, so M5 is the eval they'll actually believe.\n\nConstraint: the pre-generation job runs this month, not July. July is reserved for Carmen's ablation grid and the MIMIC-III eval, and I don't want storage jobs competing with that. Jorge, please pause the last 30% of the feature-store spike for one week and help Amara with the generation pipeline - the spike resumes June 22.\n\nI'm moving the Q3 handoff review from July 17 to July 20 (end of window) to buy margin. Nothing else moves.\n\nDmitri",
+  "labels": ["decision"]
+}

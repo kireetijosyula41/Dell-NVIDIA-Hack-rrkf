@@ -1,0 +1,50 @@
+{
+  "id": "gr/floatseg/e01",
+  "thread_id": "gr/floatseg/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: FLOAT part-level scene parsing",
+  "body": "Team — kicking off the FLOAT scene-parsing track.\n\nFLOAT factorizes object attributes for multi-object multi-part parsing — the CVPR 2022 work — and part-level segmentation is what the imagery-understanding roadmap needs next: object masks alone don't cut it for the editing features downstream teams are asking about.\n\nPlan for the window: (1) environment and repro by Apr 10 — the release ships training and inference notebooks with preset settings, and datasets come from the Zenodo archive, so this should be mechanical; (2) convert the notebooks into a proper training pipeline by mid-May (notebooks don't survive contact with our cluster scheduler); (3) evaluate on our internal part-annotated set through May; (4) integration recommendation by Jun 12.\n\nCsilla owns modeling, Gustavo training infra, Tereza evals, Wei analysis, Katya the internal-dataset work. Deshawn follows up on resourcing.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

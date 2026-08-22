@@ -1,0 +1,40 @@
+{
+  "id": "gr/mface/e04",
+  "thread_id": "gr/mface/t1",
+  "in_reply_to": "gr/mface/e03",
+  "date": "2026-05-05T16:20:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kofi Weber",
+      "email": "kofi.weber@meridian.example",
+      "role": "Privacy Counsel"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mFACE factuality scoring for multilingual summaries — decision + scope cut",
+  "body": "Team,\n\nDecisions from yesterday's review, so we land inside the May 11 window:\n\n1) The scorer ships as an internal eval gate only. Kofi confirmed the underlying judgement data inherits XLSum's CC BY-NC-SA license, so nothing derived from the annotations goes into a commercial-facing artifact. The NLI scorer itself is fine; the human labels stay eval-side.\n2) Scope cut: we gate the 12 languages where Amara's calibration passed. The 9 over-confident lower-resource languages move to an H2 stretch goal rather than blocking launch review.\n3) ROUGE-only gating is formally deprecated in the packet, with Amara's rouge2-vs-q2 examples as the evidence.\n\nNadia has us on the May 8 Launch Review Board agenda. Santiago — please confirm the June serving work is still staffed as planned.\n\nThanks all, genuinely nice work.\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

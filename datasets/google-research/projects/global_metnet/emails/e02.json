@@ -1,0 +1,12 @@
+{
+  "id": "gr/global_metnet/e02",
+  "thread_id": "gr/global_metnet/t1",
+  "in_reply_to": "gr/global_metnet/e01",
+  "date": "2026-02-24T15:41:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"}],
+  "subject": "Re: Kickoff: Global MetNet nowcasting as a platform data product",
+  "body": "Dmitri,\n\nStaffing: Milan 50%, Tereza 80%, Wei 40%, Vera 60%. Fine for the 4/15 go/no-go.\n\nCompute: the model was trained on TPUs, so fine-tuning stays on our cirrus-tpu quarterly allocation - I have asked for a quarter-pod slice for three weeks in March. A GPU fallback exists but means shrinking the training example dimensions, which I would rather not do for an eval we intend to publish internally. Inference for the archive rebuild is CPU-heavy, not GPU, so titan is untouched.\n\nDependency, and the reason Jun is cc'd: the reforecast archive re-ingestion runs through Corpus. Reminder that the Corpus v2 migration freeze lands 2026-07-10, so the reforecast archive re-ingestion has to be requested in Q2 and scheduled well before that date. Tereza will file the ingestion request this week.\n\nJelena",
+  "labels": ["resources"]
+}

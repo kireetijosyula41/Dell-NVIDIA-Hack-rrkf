@@ -1,0 +1,18 @@
+{
+  "project": "gr/deplot",
+  "conflicts": [
+    {
+      "conflict_id": "C141",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "context_aware_transliteration",
+        "kip",
+        "jaxbarf"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are planning around the Corpus v2 migration freeze on 2026-06-26, so the chart-table pretraining shards have to be fully ingested before that date."
+    }
+  ]
+}

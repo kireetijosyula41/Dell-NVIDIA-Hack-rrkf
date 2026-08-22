@@ -1,0 +1,50 @@
+{
+  "id": "gr/floatseg/e02",
+  "thread_id": "gr/floatseg/t1",
+  "in_reply_to": "gr/floatseg/e01",
+  "date": "2026-04-01T13:45:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: FLOAT part-level scene parsing",
+  "body": "Lucia — resourcing for FLOAT.\n\nStaffing: Csilla 40%, Gustavo 50%, Tereza 30% (she's splitting with the flare work), Wei 30%. And Katya Silva is committed at 60% to this project for June 2026 — the internal part-annotated evaluation is the whole basis for the integration recommendation, and Katya built that dataset originally, so her June allocation is the one I'll defend if anyone comes asking.\n\nCompute: repro fits the published preset settings on 16 A100s; the May training-pipeline runs want 32, still best-effort on titan. Environment note: the release pins python 3.7.10 in conda — Gustavo is containerizing so the scheduler doesn't fight the old deps.\n\nStorage: 3TB for the Zenodo dataset versions plus our internal set. No exotic asks this quarter; the risk is people, not machines.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}

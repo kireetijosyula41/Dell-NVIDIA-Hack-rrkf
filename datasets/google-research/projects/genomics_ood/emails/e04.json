@@ -1,0 +1,12 @@
+{
+  "id": "gr/genomics_ood/e04",
+  "thread_id": "gr/genomics_ood/t2",
+  "in_reply_to": "gr/genomics_ood/e02",
+  "date": "2026-06-24T16:10:00Z",
+  "from": {"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [{"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}],
+  "subject": "Re: Genomics OOD - resourcing and budget",
+  "body": "Deshawn,\n\nClosing the loop before Q3 OKRs lock on 6/26. Decisions:\n\n1. Scope stays bacteria-benchmark only for the July LRB pre-read. The human-microbiome extension moves to Q4 - I would rather show one clean 0.755 AUROC story than two half-done ones.\n2. Go ahead and book the reserved slice for July against B-44 as planned. Idris, if the earmark paperwork is not countersigned by end of week please tell us - the OKR writeup names that line explicitly.\n3. Nikhil's standing mutation-rate sweep is approved; fold the ~8 GPU-day refresh cost into the same line.\n\nYara should have the eval review deck to me by 7/8 so I can circulate before the pre-read.\n\nViktor",
+  "labels": ["decision", "escalation"]
+}

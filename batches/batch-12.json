@@ -1,0 +1,602 @@
+{
+  "batch": 12,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "frechet_audio_distance",
+      "title": "Frechet Audio Distance",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Frechet Audio Distance\n\nThis repository provides supporting code used to compute the Fr\u00e9chet Audio Distance (FAD), a reference-free evaluation metric for audio generation algorithms, in particular music enhancement.\n\nFor more details about Fr\u00e9chet Audio Distance and how we verified it please check out our paper:\n\n* K. Kilgour et. al.,\n[Fr\u00e9chet Audio Distance: A Metric for Evaluating Music Enhancement Algorithms](https://arxiv.org/abs/1812.08466),\n\n## Useage\n\nFAD depends on:\n\n*   [`numpy`](http://www.numpy.org/)\n*   [`scipy`](http://www.scipy.org/)\n*   [`tensorflow`](http://www.tensorflow.org/)\n*   [`Pyton Beam`](https://beam.apache.org/documentation/sdks/python/)\n*   [`Audioset model Vggish`](https://github.com/tensorflow/models/tree/master/research/audioset)\n\nand also requires downloading a VGG model checkpoint file:\n\n*   [VGGish model checkpoint](https://storage.googleapis.com/audioset/vggish_model.ckpt)\n\n### Example installation and use\n\n#### Get the FAD code\n\n```shell\n$ git clone https://github.com/google-research/google-research.git\n$ cd google-research\n```\n\n#### Install dependencies\nCreate a virtualenv to isolate from everything else and activate it first.\n\n```shell\n# Python 2\n$ virtualenv fad\n# or Oython 3\n$ python3 -m venv fad # (apache-beam does not yet support Python 3)\n# activate the virtualenv\n$ source fad/bin/activate\n# Upgrade pip\n$ python -m pip install --upgrade pip\n# Install dependences\n$ pip install apache-beam numpy scipy tensorflow\n```\n\n#### Clone TensorFlow models repo into a 'models' directory.\n```shell\n$ mkdir tensorflow_models\n$ touch tensorflow_mo",
+      "contributors": [
+        "Hyun Traore",
+        "Gustavo Moreau",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C050",
+          "type": "duplicate_effort",
+          "projects": [
+            "frechet_audio_distance",
+            "deciphering_clinical_abbreviations"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "frechet_video_distance",
+      "title": "Fr\u00e9chet Video Distance",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fr\u00e9chet Video Distance\n\nThis repository contains the code to compute the Fr\u00e9chet Video Distance (FVD) as described in [https://arxiv.org/abs/1812.01717](https://arxiv.org/abs/1812.01717).\n\n## Usage\n\nFVD is implemented in tensorflow and requires `tensorflow` and `tensorflow-hub` to be available. An example is available [here](https://github.com/google-research/google-research/blob/master/frechet_video_distance/example.py).\n\nGiven a tensor of real videos, and a tensor of generated videos that both have dimensionality `[NUMBER_OF_VIDEOS, VIDEO_LENGTH, FRAME_WIDTH, FRAME_HEIGHT, 3]` with values in 0-255, FVD is computed as\n\n```python\nfrom frechet_video_distance import frechet_video_distance as fvd\n\nresult = fvd.calculate_fvd(\nfvd.create_id3_embedding(fvd.preprocess(real_videos, (224, 224))),\nfvd.create_id3_embedding(fvd.preprocess(generated_videos, (224, 224))))\n```\n\n## Citation\nIf you are using FVD please cite us!\n```\n@article{unterthiner2018towards,\ntitle={Towards Accurate Generative Models of Video: A New Metric \\& Challenges},\nauthor={Unterthiner, Thomas and van Steenkiste, Sjoerd and Kurach, Karol and Marinier, Raphael and Michalski, Marcin and Gelly, Sylvain},\njournal={arXiv preprint arXiv:1812.01717},\nyear={2018}\n}\n```\n##",
+      "contributors": [
+        "Quentin Farkas",
+        "Katya Silva",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C055",
+          "type": "gpu_double_booking",
+          "projects": [
+            "frechet_video_distance",
+            "logic_inference_dataset"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "frequency_analysis",
+      "title": "Generate Fourier heat maps of image classification models",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Generate Fourier heat maps of image classification models\n\nLink to paper: https://arxiv.org/pdf/1906.08988.pdf\n\nThe goal of this study is to analyze how deep learning models, in particular,\nimage classification models respond to perturbations with different frequency\npatterns. We generate the Fourier heat map of models to visualize how the\noutputs of the layers and test error change when we add different frequency\nbasis vectors to the input images.\n\nUsage: First, define a `TensorFlowNeuralNetwork` object. This class is defined\nin `freq_heatmap.py`, and can be used as an interface between the frequency\nanalysis and the TensorFlow sessions.\n\n```python\nclass TensorFlowNeuralNetwork(object):\n\"\"\"The interface between TensorFlow and the heat map generator.\"\"\"\n\ndef __init__(self, sess, image_ph, label_ph, tensor_list, eval_tensor):\n\"\"\"Initializing TensorFlowNeuralNetwork.\n\nArgs:\nsess: a tensorflow session.\nimage_ph: a tensorflow placeholder for input images. This tensor should\nhave shape [num_examples, height, width] or\n[num_examples, height, width, num_channels].\nlabel_ph: a tensorflow placeholder for the labels of images. Must be shape\n[num_examples].\ntensor_list: a list of tensors to evaluate. The tensors in this list can\nhave arbitrary and different shapes. These tensors correspond to the\noutputs of the layers that we are interested in. To conduct frequency\nanalysis, first feed clean images and evaluate the tensors, then feed\ncorrupted images using Fourier basis and evaluate the tensors, and\nfinally compare the difference between the two evaluations.\neval_tensor: a tensor o",
+      "contributors": [
+        "Milan Zapata",
+        "Katya Silva",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C033",
+          "type": "dependency_date_drift",
+          "projects": [
+            "meta_learning_without_memorization",
+            "fractals_language",
+            "frequency_analysis",
+            "caltrain"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "frmt",
+      "title": "FRMT: Few-shot Region-aware Machine Translation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# FRMT: Few-shot Region-aware Machine Translation\n\nFRMT (pronounced \"format\") is a benchmarking dataset for research on fluent\ntranslation into regional language varieties.\n\nThe dataset provides human translations of a few thousand English Wikipedia\nsentences into regional variants of Portuguese (Brazil and Portugal) and\nMandarin (Mainland and Taiwan).\n\n## Directory structure\n\n-   `lexical_bucket/` is a subset where the English Wikipedia pages were\nselected according to a manual list of terms/phrases that tend to be\ntranslated differently for the targeted regions. It is useful for assessing\nhow well a model handles differences in lexical choice arising from regional\nlanguage differences.\n-   `entity_bucket/` is a subset where the English Wikipedia pages are about\nentities that were deemed to have a strong connection to a particular\ntargeted region. These serve as adversarial test cases -- a model that\naccurately captures linguistic dialect differences should not, for example,\nproduce Portugal Portuguese merely because Lisbon is mentioned.\n-   `random_bucket` is a subset from random English Wikipedia pages appearing in\nthe \"good articles\" or \"featured articles\" collections of Wikipedia.\n-   File names and formats:\n-   `{language}_{bucket}_{split}_en_{language}-{REGION}.tsv`:\n-   English sentence \\ Translation into target language variety\n\nAll the English text was sampled from the training split of\n[wiki40b/en v1.3.0](https://www.tensorflow.org/datasets/catalog/wiki40b).\n\n## Dataset Statistics\n\nThe dataset is split at the document-level into 'exemplar', 'dev', and 'test'\nspli",
+      "contributors": [
+        "Milan Zapata",
+        "Vera Egede",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C045",
+          "type": "budget_overallocation",
+          "projects": [
+            "frmt",
+            "gift"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-75",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-75",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-75 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fsq",
+      "title": "Finite Scalar Quantization: VQ-VAE Made Simple",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Finite Scalar Quantization: VQ-VAE Made Simple\n\n### [[Paper on ArXiv](https://arxiv.org/abs/2309.15505)] [[Colab with FSQ code](https://colab.research.google.com/github/google-research/google-research/blob/master/fsq/fsq.ipynb)]\n\n## Abstract\n\nWe propose to replace vector quantization (VQ) in the latent representation\nof VQ-VAEs with a simple scheme termed finite scalar quantization (FSQ), where\nwe project the VAE representation down to a few dimensions (typically less than\n10). Each dimension is quantized to a small set of fixed values, leading to an\n(implicit) codebook given by the product of these sets. By appropriately\nchoosing the number of dimensions and values each dimension can take, we obtain\nthe same codebook size as in VQ. On top of such discrete representations, we\ncan train the same models that have been trained on VQ-VAE representations. For\nexample, autoregressive and masked transformer models for image generation,\nmultimodal generation, and dense prediction computer vision tasks. Concretely,\nwe employ FSQ with MaskGIT for image generation, and with UViM for depth\nestimation, colorization, and panoptic segmentation. Despite the much simpler\ndesign of FSQ, we obtain competitive performance in all these tasks. We\nemphasize that FSQ does not suffer from codebook collapse and does not need the\ncomplex machinery employed in VQ (commitment losses, codebook reseeding, code\nsplitting, entropy penalties, etc.) to learn expressive discrete\nrepresentations.\n\n## Comparison\n\n|                  | VQ | FSQ |\n|------------------|----|-----|\n| Quantization     | argmin_c \\|\\",
+      "contributors": [
+        "Leilani Nakamura",
+        "Carmen Reyes",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C099",
+          "type": "budget_overallocation",
+          "projects": [
+            "fsq",
+            "light_field_neural_rendering"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-36",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-36",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-36 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fully_dynamic_facility_location",
+      "title": "Efficient and Stable Fully Dynamic Facility Location",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Efficient and Stable Fully Dynamic Facility Location\n\nThis code allows you to generate results from the NeurIPS'22 paper: Efficient\nand Stable Fully Dynamic Facility.\n\n# Location\n\n## This is a command to compile the code\n\ng++ gklx_algorithm.h gklx_algorithm.cc graph_handler.cc graph_handler.h \\\\\nmain.cc greedy_algorithm.cc greedy_algorithm.h random_handler.cc \\\\\nrandom_handler.h nice_clustering_algorithm.cc nice_clustering_algorithm.h \\\\\n-I/path/to/base/dir/ -O2 -o dynamic_facility_location\n\n## The command to run the algorithm on input_file\n\n`./dynamic_facility_location output_file`\n\n## Parameter setting\n\nThe main parameters of the algorithm can be set in the main.cc file:\n\n*   num_levels_slack: the parameter beta of the agreement algorithm.\n*   epsilon: the parameter lambda of the agreement algorithm.\n\nThe main parameters for generating the test instances can be set in the main.cc\nfile:\n\n*   random_order: if set to true the input points are shuffled randomly before\nconstructing the update order.\n*   sliding_window_size: the size of the sliding window that determines the\nupdates.\n*   percentage_of_facilities: the percentage of the points to consider as\nfacilities.\n*   target_num_nodes: the number of points from the input file to consider in\nthe instance.\n\n## Input description\n\nThe input file is expected to first contain a line with two number separated by\na space \"n d\", where the first number n describes the number of points in the\nentire instance, and the second number describes the number d of dimensions for\neach point.\n\nThe first line is expected to be followed by n li",
+      "contributors": [
+        "Carmen Reyes",
+        "Emeka Pinto",
+        "Tereza Aliyev",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C121",
+          "type": "gpu_double_booking",
+          "projects": [
+            "fully_dynamic_facility_location",
+            "hmc_swindles"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (384 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fully_dynamic_submodular_maximization",
+      "title": "Dynamic submodular maximization",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Dynamic submodular maximization\n\nThis is an efficient C++ implementation of the algorithms and baselines from\n\"Fully Dynamic Algorithm for Constrained Submodular Optimization\".\n\nThe algorithms require oracle access to a submodular function.\nIn this code, such an oracle is implemented for graph coverage / influence maximization,\nwhich is the setting for the experiments in the paper.\nTo implement your own submodular function oracle, inherit from SubmodularFunction.\nRefer to comments in the code for more details.\n\nTo replicate the results given in the paper:\n1. Edit the `main()` function at the end of `dynamic_submodular_main.cc` to choose the desired parameters:\n* dataset name (edit the line `GraphUtility f_graph(\"enron\");` - see below for possible options)\n* cardinality constraint(s) k\n* type of experiment (sliding window, etc.)\n* number of repeats (for randomized algorithms)\n* which algorithms to run\nSee the comments in `main()` for how to adjust the parameters.\n2. Run `make` in this directory. This should produce a file `dynamic-submodular.exe`.\n3. Run `dynamic-submodular.exe`.\n\nAs we use cross-platform-deterministic randomness and count only oracle calls rather than CPU time,\nparameters of the system on which the experiments are run are irrelevant.",
+      "contributors": [
+        "Giannis Sato",
+        "Csilla Nassar",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C136",
+          "type": "gpu_double_booking",
+          "projects": [
+            "fully_dynamic_submodular_maximization",
+            "fm4tlp"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fvlm",
+      "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models\n\nThis is the JAX/FLAX implementation of the ICLR-2023 paper [\"F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models\"](https://arxiv.org/abs/2209.15639).\nThe model is also supported on the Cloud Vertex API [here](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/109), where you can train and predict with this model on Google Cloud Vertex AI Training and Prediction service using the provided notebook at the top of the model card.\n\n## Installation\nWe use the Python built-in virtual env to set up the environment. Run the following commands:\n\n```\nsvn export https://github.com/google-research/google-research/trunk/fvlm\n\nPATH_TO_VENV=/path/to/your/venv\npython3 -m venv ${PATH_TO_VENV}\nsource ${PATH_TO_VENV}/bin/activate\n```\n\nInstall the requirements from the root fvlm directory.\n\n```\npip install -r requirements.txt\n```\n\nFor GPU training, please refer to [this github page](https://github.com/jax-ml/jax/issues/13637) for installation instructions.\n\n## Download the checkpoints.\nRun the following commands from the root fvlm directory.\n\n```\ncd ./checkpoints\n./download.sh\n```\n\nFor users who want to use the FLAX checkpoints directly rather than tf.SavedModel, we have prepared the checkpoints for downloading by the commands below:\n\n```\nMODEL=\"r50\"  # Supported model: r50, r50x4, r50x16\nwget \"https://storage.googleapis.com/cloud-tpu-checkpoints/detection/projects/fvlm/jax_checkpoints/${MODEL}_checkpoint_184000\"\n```\nWe recommend users to run the above commands in ",
+      "codename": "Project Basalt",
+      "contributors": [
+        "Umar Costa",
+        "Farah Haddad",
+        "Katya Silva",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C017",
+          "type": "codename_collision",
+          "projects": [
+            "fvlm",
+            "factors_of_influence"
+          ],
+          "shared_object": "Project Basalt",
+          "canonical": {
+            "codename": "Project Basalt"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Basalt."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "fwl",
+      "title": "Fast Weight Layers",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Fast Weight Layers\n\n## Background\n\n**Fast Weight Layers (FWLs)** can easily be added on top of text generation models to improve their performance, especially on long documents. They are essentially hidden layers added between the body of a Transformer decoder (or RNN) and the output softmax. However, similar to [dynamic evaluation](https://arxiv.org/abs/1709.07432), their parameters change base on observed tokens. They provide similar performance gains to dynamic evaluation, but are much faster and easier to use. For more details, see our paper *Meta-Learning Fast Weight Language Models* (published in EMNLP 2022).\n\n## Usage\nWe have provided implementations in both jax and tensorflow. The jax implementation subclasses [flax.linen.Module](https://flax.readthedocs.io/en/latest/api_reference/flax.linen.html#module); the tensorflow implementation subclasses [tf.keras.layers.Layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer). The jax code has not been thoroughly tested, so please let us know if you spot any issues! Both implementations are constructed with three arguments:\n* `size`: size of the FWLs; a fast weight block consists of a dense layer projecting the input to 4 * size, a squared ReLU activation, a dense layer projecting back to size, and a layer norm.\n* `vocab size`: number of tokens in the vocabulary.\n* `attn_chunks`: number of chunks for the [mixed chunk attention](https://arxiv.org/abs/2202.10447) used in dense fast weight layers. 16 works well for long (e.g. 4096 tokens) inputs; the number could be smaller for shorter inputs.\n\nThey are calle",
+      "contributors": [
+        "Gustavo Moreau",
+        "Quentin Farkas",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C135",
+          "type": "budget_overallocation",
+          "projects": [
+            "dpok",
+            "fwl"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-85",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-85",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-85 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gaternet",
+      "title": "You Look Twice: GaterNet for Dynamic Filter Selection in CNNs",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# You Look Twice: GaterNet for Dynamic Filter Selection in CNNs\nThis repository contains the model and evaluation code for ResNet-20-Gated and ResNet-56-Gated on CIFAR-10 as in the following paper. \\\n[You Look Twice: GaterNet for Dynamic Filter Selection in CNNs](https://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_You_Look_Twice_GaterNet_for_Dynamic_Filter_Selection_in_CNNs_CVPR_2019_paper.pdf) \\\nZhourong Chen, Yang Li, Samy Bengio, Si Si. \\\nThe paper is accepted to IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019.\n\nThe requirement list in requirements.txt is for reproducing the results of the paper. You don't have to  strictly follow the list if you just want to run the code instead of reproducing the exact results.\n\nPlease download our checkpoints by manually copying this link to your web browser: http://storage.googleapis.com/gresearch/gaternet/GaterNet_Checkpoints.tar.gz\n\n## Evaluate ResNet-20-Gated on CIFAR-10.\n```bash\npython main.py \\\n--backbone-depth 20 \\\n--checkpoint-file /path/to/downloaded/checkpoints/ResNet-20-Gated.pth \\\n--data-dir /path/to/download/data/\n```\n\n## Evaluate ResNet-56-Gated on CIFAR-10.\n```bash\npython main.py \\\n--backbone-depth 56 \\\n--checkpoint-file /path/to/downloaded/checkpoints/ResNet-56-Gated.pth \\\n-data-dir /path/to/download/data/\n```\n\nIf you find the paper or code useful, please cite our paper:\n\n```\n@inproceedings{gaternet,\ntitle={You look twice: Gaternet for dynamic filter selection in cnns},\nauthor={Chen, Zhourong and Li, Yang and Bengio, Samy and Si, Si},\nbooktitle={Proceedings of the IEEE/CVF Conference on ",
+      "contributors": [
+        "Rafael Duran",
+        "Vera Egede",
+        "Rosa Mensah",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C082",
+          "type": "gpu_double_booking",
+          "projects": [
+            "gaternet",
+            "large_scale_voting"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gbrt",
+      "title": "Implementation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# About\nThis is code for \"Gradient-Based Language Model Red Teaming,\" N. Wichers et al. (EACL 2024) accessible [here](https://arxiv.org/abs/2401.16656)\n\n## Implementation\n\nHere are the most important code pieces for understanding the implementation.\n\nThe EmbedTransformerLm class\nmodifies the transformer to accept embeddings as inputs.\n\nThe simple_decode function\nmodifies the LLM decoding to be differentiable. It uses the Gumbel\nsoftmax to sample in between decoding steps.\n\nThe loss_fn function\ncombines all of the pieces together. It feeds the prompt probabilities into the\nLM, then runs decoding. Then it calculates the safety of the response by\nconcatenating the `SAFETY unsfe_v3` tokens and running another step of decoding.\nIn the `not has_input_for_classify` case, the decoding and safety scoring is\ndone in a single run of `simple_decode`.\n\n# Setup\nUse python3.10.\nModify requirements.txt to install the correct version of JAX and TF depending on your hardware. See https://github.com/jax-ml/jax#installation for details.\nInstall from requirements.txt as described in https://pip.pypa.io/en/stable/cli/pip_freeze/#examples\n\nAt this point you should be able to run the code by following the steps in the Running section, but the output will be meaningless since the model is randomly initialized.\n\nTrain a PAX LM by following the instructions [here](https://github.com/google/paxml/tree/main#example-convergence-runs). The model should be trained to predict a response after the 'SEP' token, and predict the safety score after the 'SAFETY' token.\nChange the exp.checkpoint_dir in the config",
+      "contributors": [
+        "Chiara Olsen",
+        "Fumiko Rossi",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C038",
+          "type": "duplicate_effort",
+          "projects": [
+            "gbrt",
+            "after_kernel"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ged_tts",
+      "title": "A Spectral Energy Distance for Parallel Speech Synthesis",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# A Spectral Energy Distance for Parallel Speech Synthesis\n### Alexey A. Gritsenko, Tim Salimans, Rianne van den Berg, Jasper Snoek and Nal Kalchbrenner\n\nFull-text paper available on [arXiv](https://arxiv.org/abs/2008.01160).\n\n## Summary\n* New generalized energy distance for Parallel TTS without analytical likelihood\n* This distance is a proper scoring rule, it is unbiased and can be estimated\nfrom mini-batches\n* Competitive with and improves upon SOTA (MOS 4.25)\n* The first work to use a repulsive term with multi-scale spectrotram-based\ndistances\n\n### Visual depiction of the training process\n\n## Abstract\nSpeech synthesis is an important practical generative modeling problem that has\nseen great progress over the last few years, with likelihood-based\nautoregressive neural models now outperforming traditional concatenative\nsystems. A downside of such autoregressive models is that they require executing\ntens of thousands of sequential operations per second of generated audio, making\nthem ill-suited for deployment on specialized deep learning hardware. Here, we\npropose a new learning method that allows us to train highly parallel models of\nspeech, without requiring access to an analytical likelihood function. Our\napproach is based on a generalized energy distance between the distributions of\nthe generated and real audio. This *spectral energy distance* is a proper\nscoring rule with respect to the distribution over magnitude-spectrograms of the\ngenerated waveform audio and offers statistical consistency guarantees. The\ndistance can be calculated from minibatches without bias, an",
+      "contributors": [
+        "Gustavo Moreau",
+        "Jorge Vidal",
+        "Kaia Wolde",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C091",
+          "type": "gpu_double_booking",
+          "projects": [
+            "ged_tts",
+            "causal_evaluation"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "gen_patch_neural_rendering",
+      "title": "Generalizable Patch-Based Neural Rendering",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Generalizable Patch-Based Neural Rendering\n\nThis is a JAX/Flax implementation of our ECCV-2022 oral paper \"Generalizable Patch-Based Neural Rendering\".\n### [Project Page](https://mohammedsuhail.net/gen_patch_neural_rendering/) | [Paper](https://arxiv.org/abs/2207.10662)\n\n## Installation\nThe following code snippet clones the repo and installs dependencies.\n\n```python\nENV_DIR=~/venvs/gpnr\n\n# Clone this repo.\nsudo apt install subversion\nsvn export --force https://github.com/google-research/google-research/trunk/gen_patch_neural_rendering\n\n# Setup virtualenv.\npython3 -m venv $ENV_DIR\nsource $ENV_DIR/bin/activate\n\n# Install dependencies.\npip install -r gen_patch_neural_rendering/requirements.txt\n# For training with GPUs, you might have to change this to your\n# system's CUDA version. Please check the ouput of nvcc --version and change the\n# version accordingly.\npip install --upgrade \"jax[cuda110]==0.2.19\" -f https://storage.googleapis.com/jax-releases/jax_releases.html\n```\n\n## Dataset\n\nDownload the IBRNet scenes from [here](https://drive.google.com/file/d/1rkzl3ecL3H0Xxf5WTyc2Swv30RIyr1R_/view) and [here](https://drive.google.com/file/d/1Uxw0neyiIn3Ve8mpRsO6A06KfbqNrWuq/view).\nMove all the scenes into a single directory.\nDepending on where you place the dataset you will have to change the `dataset.ff_base_dir` config variable in your experiments.\n\n## Training\nTo reproduce the results in the paper you will need to run the following script.\n```python\npython -m gen_patch_neural_rendering.main \\\n--workdir=/tmp/train_run \\\n--is_train=True \\\n--ml_config=gen_patch_neural_rendering/con",
+      "contributors": [
+        "Milan Zapata",
+        "Carmen Reyes",
+        "Csilla Nassar"
+      ],
+      "conflicts": [
+        {
+          "id": "C132",
+          "type": "dependency_date_drift",
+          "projects": [
+            "ledge",
+            "neutra",
+            "gen_patch_neural_rendering",
+            "dreamfields"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "general-pattern-machines",
+      "title": "Large Language Models as General Pattern Machines",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Large Language Models as General Pattern Machines\n\n**Abstract** We observe that pretrained large language models (LLMs) are capable of autoregressively completing complex token sequences -- from arbitrary ones procedurally generated by probabilistic context-free grammars (PCFG), to more rich spatial patterns found in the Abstract Reasoning Corpus (ARC), a general AI benchmark, prompted in the style of ASCII art. Surprisingly, pattern completion proficiency can be partially retained even when the sequences are expressed using tokens randomly sampled from the vocabulary. These results suggest that without any additional training, LLMs can serve as general sequence modelers, driven by in-context learning. In this work, we investigate how these zero-shot capabilities may be applied to problems in robotics -- from extrapolating sequences of numbers that represent states over time to complete simple motions, to least-to-most prompting of reward-conditioned trajectories that can discover and represent closed-loop policies (\\eg a stabilizing controller for CartPole). While difficult to deploy today for real systems due to latency, context size limitations, and compute costs, the approach of using LLMs to drive low-level control may provide an exciting glimpse into how the patterns among words could be transferred to actions.\n\n## Instructions\n\nThis repository includes self-contained colabs to reproduce results with GPT-3 models.",
+      "codename": "Project Saffron",
+      "contributors": [
+        "Emeka Pinto",
+        "Maren Zhou",
+        "Tereza Aliyev",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C089",
+          "type": "codename_collision",
+          "projects": [
+            "madlad_400",
+            "general-pattern-machines"
+          ],
+          "shared_object": "Project Saffron",
+          "canonical": {
+            "codename": "Project Saffron"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Saffron."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "generalized_rates",
+      "title": "Optimizing Generalized Rate Metrics with Three Players",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Optimizing Generalized Rate Metrics with Three Players\n\nExample code for running experiments for algorithms in:\nHarikrishna Narasimhan, Andrew Cotter, Maya Gupta, \"Optimizing Generalized Rate Metrics with Three Players\", NeurIPS 2019. https://arxiv.org/pdf/1909.02939\n\n## Installation\n\nRun the following:\n```shell\nvirtualenv -p python3 .\nsource ./bin/activate\n\npip3 install -r generalized_rates/requirements.txt\n```\n\n## Running F-measure Optimization on COMPAS dataset\n\nDownload the COMPAS dataset from:\nhttps://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv\nand save it in the `generalized_rates/datasets` folder.\n\nRun the following:\n```shell\nDATA_DIR=./generalized_rates/datasets\npython -m generalized_rates.datasets.load_compas\\\n--data_file=$DATA_DIR/compas-scores-two-years.csv\\\n--output_directory=$DATA_DIR/\npython -m generalized_rates.fmeasure_optimization.experiments\\\n--data_file=$DATA_DIR/COMPAS.npy\n```\n\n## Running KLD Optimization on Adult dataset\n\nDownload the Adult train and test data files can be downloaded from:\nhttps://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data\nhttps://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test\nand save them in the `generalized_rates/datasets` folder.\n\nRun the following:\n```shell\nDATA_DIR=./generalized_rates/datasets\npython -m generalized_rates.datasets.load_adult\\\n--train_file=$DATA_DIR/adult.data\\\n--test_file=$DATA_DIR/adult.test\\\n--output_directory=$DATA_DIR/\npython -m generalized_rates.kld_optimization.experiments\\\n--data_file=$DATA_DIR/Adult.npy\n```",
+      "contributors": [
+        "Gustavo Moreau",
+        "Fumiko Rossi",
+        "Halima Toure",
+        "Oyin Iversen",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C093",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "flare_removal",
+            "generalized_rates"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "generative_trees",
+      "title": "Generative Trees: Adversarial and Copycat",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Generative Trees: Adversarial and Copycat\n\nThis directory contains the companion code for the ICML'22 paper\n[Generative Trees: Adversarial and Copycat](https://proceedings.mlr.press/v162/nock22a.html),\nby Richard Nock and Mathieu Guillame-Bert.\n\n## Citation (BibTex):\n\n```\n@inproceedings{ngbGT,\ntitle={Generative Trees: Adversarial and Copycat},\nauthor={R. Nock and M. Guillame-Bert},\nbooktitle={39$^{~th}$ International Conference on Machine Learning},\nyear={2022}\n}\n```\n\n## Basic usage example\n\nIn a shell, run:\n\n```shell\ngit clone https://github.com/google-research/google-research.git\ncd google-research/generative_trees/\nrun_example.sh\n```\n\nAt the end of the execution, you will see a list of generated sampled for the\nIris dataset:\n\n```\nDisplay some of the generated samples\nSepal.Length,Sepal.Width,Petal.Length,Petal.Width,class\n5.117246154727025,3.294665099621395,1.5415873061790373,0.34693251377205403,setosa\n4.938340282187983,3.306772168630169,2.1019090151019775,0.4123936617890174,setosa\n5.577975609495907,3.453786064420899,3.671345561310016,0.7218885473617979,versicolor\n6.146461600520874,3.7586348414987745,5.222165962947139,2.3442290234292913,versicolor\n```\n\n## Instructions\n\nThis code has two key parts: training generative models using the copycat\napproach (class Wrapper) and using a pretrained model to just generate examples\nor density plots from a pretrained model (class Generate)\n\nCompile with Java and:\n\n*   run 'java Wrapper --help' for help on the options available to train a\ngenerative tree from data;\n*   run 'java Generate --help' for help on the options available to ",
+      "contributors": [
+        "Katya Silva",
+        "Jorge Vidal",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C078",
+          "type": "dependency_date_drift",
+          "projects": [
+            "health_equity_toolbox",
+            "generative_trees",
+            "lighthouse",
+            "mmmt_if"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    }
+  ]
+}

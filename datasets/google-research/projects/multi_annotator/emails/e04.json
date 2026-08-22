@@ -1,0 +1,19 @@
+{
+  "id": "gr/multi_annotator/e04",
+  "thread_id": "gr/multi_annotator/t2",
+  "in_reply_to": "gr/multi_annotator/e03",
+  "date": "2026-05-14T16:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Pilot results: per-annotator heads vs majority vote — decision",
+  "body": "Team,\n\nDecision from yesterday's review, writing it down so we're aligned:\n\n1. We ship the binary multi-annotator model to the Corpus labeling pipeline as an advisory signal (disagreement score alongside the existing label). Integration readout stays 05-25.\n2. Multi-class toxicity tiers are explicitly cut from this half. The head refactor is real work and I'm not trading the integration date for it. It goes on the Q3 candidate list.\n3. Slang-heavy slices ship flagged as low-confidence until Maren's additional annotations land.\n\nThe 0.71 vs 0.66 F1 delta plus the disagreement signal is a good story for the Launch Review Board — Nadia has us on the 05-21 agenda.\n\nNice work getting here ahead of milestone.\n\nDmitri",
+  "labels": ["decision"]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "gr/generative_trees/e04",
+  "thread_id": "gr/generative_trees/t2",
+  "in_reply_to": "gr/generative_trees/e03",
+  "date": "2026-07-15T15:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Generative trees status: Iris repro, high-cardinality risk",
+  "body": "Team,\n\nPilot decision from Friday's review: go, with one scope cut.\n\n1. The sandbox pilot ships with table one only. The high-cardinality issue Katya quantified (fidelity drops about 18% on 10k+-value columns) rules table two out for now; bucketing experiments continue in Q3.\n2. Privacy: Kofi's review cleared the copycat-generated samples for partner sandboxes with the standard synthetic-data labeling, so no launch blocker there.\n3. Both tables made it through ingestion before the corpus freeze, so we are not blocked on data until the v2 migration completes.\n\nPilot partners onboard the week of Jul 27. Jorge, CI with the Java toolchain by then, please.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/evanet",
+  "conflicts": [
+    {
+      "conflict_id": "C115",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["explainable_routing"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Rafael Duran is committed at 60% for May 2026 to own the optical-flow pipeline and the ensemble-evaluation work - that allocation is in the sheet and it's what makes the June milestone possible."
+    }
+  ]
+}

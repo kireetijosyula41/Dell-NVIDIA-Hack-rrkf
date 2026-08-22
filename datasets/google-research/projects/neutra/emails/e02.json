@@ -1,0 +1,15 @@
+{
+  "id": "gr/neutra/e02",
+  "thread_id": "gr/neutra/t1",
+  "in_reply_to": "gr/neutra/e01",
+  "date": "2026-03-25T14:07:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: NeuTra kickoff — resourcing + Corpus timing",
+  "body": "Zofia,\n\nResourcing:\n\nStaffing — Umar leads the benchmark methodology and tuning, Vera ports the runner, Tereza handles the toolkit integration and docs.\n\nCompute — modest. The release itself notes it just wants a GPU with decent batch sizes; our whole benchmark plan fits on titan-a100 best-effort. No reservation needed, which is a nice change.\n\nOn the Corpus dependency: I checked the migration timeline — the Corpus v2 freeze lands 2026-07-24, so it sits comfortably past our 06-08 close and we can re-pull the calibration datasets any time during the project without racing the migration. I've told Tereza to schedule the final data refresh for late May, right before toolkit release, so we ship against the freshest pre-freeze snapshot.\n\nRunner port is already underway; Vera says the hparams plumbing (the giant --hparams strings) is the ugliest part and she's mapping it onto our config system first.\n\nSantiago",
+  "labels": ["resources"]
+}

@@ -1,0 +1,13 @@
+{
+  "project": "gr/gradient_based_tuning",
+  "conflicts": [
+    {
+      "conflict_id": "C015",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["imghum", "cola", "hierarchical_foresight"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Timing works out fine: the Corpus v2 migration freeze is 2026-08-07, so we can regenerate the WMT-derived corpora at the start of Q3 and still be comfortably ahead of it.",
+      "note": "Misstates the canonical corpus_v2_freeze date of 2026-07-10, as directed by the conflict spec."
+    }
+  ]
+}

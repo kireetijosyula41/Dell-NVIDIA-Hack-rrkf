@@ -1,0 +1,18 @@
+{
+  "project": "gr/cmmd",
+  "conflicts": [
+    {
+      "conflict_id": "C051",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "extreme_memorization",
+        "differentially_private_gnns",
+        "mave"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Corpus v2's migration freeze is 2026-08-07, so moving the reference-image sets to v2 is comfortably a post-launch task — I've slotted it for July and we don't need to think about it this window."
+    }
+  ]
+}

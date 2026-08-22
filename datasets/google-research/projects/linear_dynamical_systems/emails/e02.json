@@ -1,0 +1,16 @@
+{
+  "id": "gr/linear_dynamical_systems/e02",
+  "thread_id": "gr/linear_dynamical_systems/t1",
+  "in_reply_to": "gr/linear_dynamical_systems/e01",
+  "date": "2026-04-06T13:44:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LDS clustering for telemetry streams",
+  "body": "Anders,\n\nStaffing through the window:\n\n- Hyun Traore 40% research lead, owns the reproduction and the purity benchmark.\n- Vera Egede 40% on the experiment harness and the telemetry sample prep for June.\n- Chiara Olsen 30% April-May on packaging, then Chiara Olsen steps up to 60% for June 2026 to build the telemetry ingestion adapters — I've confirmed that allocation with her and it's the backbone of the July milestone. The adapters are the only real engineering lift in this project.\n\nCompute: as you said, CPU-only; we'll use the shared batch pool. One environment note — the pylds dependency needs the numpy/Cython pre-install dance from the README or the build fails, so Vera is baking a container image this week to save everyone the pain.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gr/ngrammer/e01",
+  "thread_id": "gr/ngrammer/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:08:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "N-Grammer kickoff — efficiency lever for language models",
+  "body": "Hi Daniela,\n\nKickoff for N-Grammer. Our open-source release augments the Transformer with n-grams constructed from a discrete latent representation of the sequence — a cheap architectural add-on that outperformed both Transformer and Primer baselines on C4 language modeling and SuperGLUE classification. Given how much of the language portfolio's budget goes to training and inference, this is our most credible near-term efficiency lever.\n\nDeliverables for the window (04-20 to 07-20): (1) reproduce the C4 and SuperGLUE results in our stack, (2) quantify the quality-per-FLOP win on one production-adjacent model config, (3) ship the promised Jax APIs for flax and haiku as a maintained internal library, tracking the open-source release.\n\nMilestones: repro by end of May, FLOP study by end of June, API release mid-July. Staffing from you please — I know this team is popular.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

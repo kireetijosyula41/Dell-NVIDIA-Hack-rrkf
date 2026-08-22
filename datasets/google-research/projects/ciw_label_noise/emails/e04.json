@@ -1,0 +1,46 @@
+{
+  "id": "gr/ciw_label_noise/e04",
+  "thread_id": "gr/ciw_label_noise/t1",
+  "in_reply_to": "gr/ciw_label_noise/e03",
+  "date": "2026-07-01T15:48:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CIW kickoff — robust training under label noise as a shared component",
+  "body": "Pre-sweep checkpoint and one decision.\n\nDecision: Giannis's relaxation fixed the imbalance collapse on the internal set (head-class weight mass down from 91% to 64%, accuracy +2.3 on the tail), so full CICW recipes ship for imbalanced data too. No scope cut needed.\n\nSweep logistics: config matrix is frozen at 1,920 runs. We start Monday on our vulcan-h100 week — the 512-accelerator reservation for the week of 2026-07-06 — with Emeka running launch and Farah on-call for the results pipeline. Anything that fails twice gets dropped from the matrix rather than re-queued, we have stats headroom.\n\nIf all goes to plan we're writing docs by Jul 13 and release on schedule.\n\nJelena",
+  "labels": [
+    "status",
+    "decision"
+  ]
+}

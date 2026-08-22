@@ -1,0 +1,12 @@
+{
+  "project": "gr/KNF",
+  "conflicts": [
+    {
+      "conflict_id": "C072",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["ara_optimization"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-60 for KNF, which covers the full scale-up sweep, so I'm treating the Q3 compute question as closed."
+    }
+  ]
+}

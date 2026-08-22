@@ -1,0 +1,12 @@
+{
+  "project": "gr/causal_evaluation",
+  "conflicts": [
+    {
+      "conflict_id": "C091",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["ged_tts"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"For the large-scale power study we hold the vulcan-h100 reservation for the week of 2026-07-06 - 512 accelerators, which I confirmed in the infra tracker last week. Amara should have the simulation sharding ready well before then.\""
+    }
+  ]
+}

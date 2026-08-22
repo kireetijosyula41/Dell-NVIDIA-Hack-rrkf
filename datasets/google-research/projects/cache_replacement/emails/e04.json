@@ -1,0 +1,19 @@
+{
+  "id": "gr/cache_replacement/e04",
+  "thread_id": "gr/cache_replacement/t1",
+  "in_reply_to": "gr/cache_replacement/e03",
+  "date": "2026-05-20T14:30:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Re: Kickoff: Project Meltwater - decision: report as-is, guarded rollout ask",
+  "body": "Decision: option (a). The M3 report ships Friday with the 11.4% offline miss-rate reduction as the headline and the index-rebuild windows called out as a known weakness, quantified per shard. We stay inside the window and keep credibility.\n\nGo/no-go outcome I'm proposing to the review: GO for a serving experiment in Q3, but guarded - the experiment config falls back to production LRU during rebuild windows until Quentin's rebuild-aware training lands. Zeke, that fallback switch is the one thing I need your team to commit to before I take this to the review; can you confirm feasibility by Wednesday?\n\nQ3 planning note (OKRs lock Jun 26): Meltwater's committed item is the serving experiment with a miss-rate target; rebuild-aware training is the stretch. Ivo, keep Quentin at 60% in your Q3 sheet.\n\nGood work all - a real dollars-and-cents result.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/cache_replacement",
+  "title": "Introduction",
+  "summary": "Building a learned cache-replacement capability from our imitation-learning ICML work: training policies on LLC access traces (via ChampSim and the 2nd Cache Replacement Championship trace suite) to cut miss rates for Meridian's retrieval-serving stack.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": ["Milan Zapata", "Quentin Farkas", "Jorge Vidal"],
+  "codename": "Project Meltwater",
+  "window": {"start": "2026-03-02", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cache_replacement",
+    "url": "https://github.com/google-research/google-research/tree/master/cache_replacement",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gr/felix/e02",
+  "thread_id": "gr/felix/t1",
+  "in_reply_to": "gr/felix/e01",
+  "date": "2026-02-24T14:05:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Felix assisted-rewrite track",
+  "body": "Priya — resourcing for Felix.\n\nStaffing: Tereza 60%, Fumiko 40%, Maren 50% through the window. Compute: fine-tuning the tagging and insertion models is BERT-scale, so 16 A100s best-effort on titan covers the DiscoFuse repro and the internal-corpus runs.\n\nThe bigger item is human evaluation. Rewrite quality doesn't reduce to exact-match metrics, and we have no tool for side-by-side sentence ratings, so we're scoping and staffing a human-rating annotation UI from scratch — Maren leads the build at roughly 50% for four weeks: paired original/rewrite presentation, 5-point fluency and meaning-preservation scales, rater-agreement tracking. Target: tool ready by end of March so April ratings aren't blocked. Rater budget: about $6k through the vendor pool.\n\nOne dependency: the internal rewrite corpus comes via Corpus, and I want extraction done well before their migration crunch.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

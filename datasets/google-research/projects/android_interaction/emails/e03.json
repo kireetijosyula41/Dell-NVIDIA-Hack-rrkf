@@ -1,0 +1,36 @@
+{
+  "id": "gr/android_interaction/e03",
+  "thread_id": "gr/android_interaction/t2",
+  "in_reply_to": null,
+  "date": "2026-04-07T11:15:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "AndroidInteraction status: classifier baseline, class imbalance",
+  "body": "Hi Ulla, Daniela,\n\nStatus. The interaction-required classifier reaches 0.71 F1 on held-out episodes using the accessibility tree plus the low-level step instruction. Screenshots add almost nothing on top of the tree, which is a nice result for latency — we can skip the vision encoder in a v1.\n\nRisk: class imbalance. Only about 14% of the 3,605 steps are annotated as requiring interaction, so a model that never asks scores 86% accuracy and is useless. We're reporting precision/recall on the positive class only. Recall is currently 0.58, meaning the agent silently guesses on four in ten steps where a human would have asked. That's the number to put in front of leadership, not F1.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

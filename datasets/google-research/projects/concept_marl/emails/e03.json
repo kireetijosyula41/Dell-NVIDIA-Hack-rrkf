@@ -1,0 +1,46 @@
+{
+  "id": "gr/concept_marl/e03",
+  "thread_id": "gr/concept_marl/t1",
+  "in_reply_to": "gr/concept_marl/e02",
+  "date": "2026-05-27T11:35:00Z",
+  "from": {
+    "name": "Quentin Farkas",
+    "email": "quentin.farkas@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: concept bottleneck policies for auditable agents",
+  "body": "Hi both,\n\nStatus: Concept PPO training reproduced on the miniature Collaborative Cooking environments — the concept loss integrates into the PPO objective cleanly, and training is stable across seeds. The multi-modal encoder (RGB + position + orientation) works with Maren's wrappers, including the dense pseudo-rewards wrapper for cooking.\n\nConcept quality, first look: probes recover ground-truth concept values at 87% accuracy from the bottleneck on cooking; Clean Up is lower (~78%) — the pollution-state concepts are noisier to extract.\n\nTrade-off we should discuss: the dense cooking pseudo-rewards speed training substantially but shape behavior toward the reward designer's strategy, which slightly undermines the \"agent's own interpretable reasoning\" story for the demo. Options: demo with sparse rewards (slower training, cleaner story) or dense (better behavior, asterisk in the narrative).\n\nQuentin",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

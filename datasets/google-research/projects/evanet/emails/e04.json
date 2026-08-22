@@ -1,0 +1,19 @@
+{
+  "id": "gr/evanet/e04",
+  "thread_id": "gr/evanet/t2",
+  "in_reply_to": "gr/evanet/e03",
+  "date": "2026-07-07T10:18:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: EvaNet status: ensemble reproduced, flow cost is the trade-off",
+  "body": "Team,\n\nDecision for the Jul 20 pre-read: adopting Yusuf's two-tier proposal exactly. Default tier is RGB-only at 74.3%, high-accuracy tier runs the full RGB+flow ensemble at 76.8%, priced to reflect the ~3x inference cost. Partners choose per-workload; the pre-read presents it as a cost/accuracy dial, not a compromise.\n\nAlso decided at portfolio review:\n1. The June partner evaluation numbers held up (both partners saw within 0.5 points of our validation slice on their own archives), so the pilot commitment goes in the pre-read as evidence, not aspiration.\n2. Scope cut: no fine-tuning on partner data in v1. Pretrained checkpoints only. Fine-tuning becomes the fast-follow with its own eval plan - trying to squeeze it in before Jul 27 was making the doc worse.\n\nDeshawn, staffing shape holds through window close; nothing changes.\n\nThanks all - clean execution on this one.\n\nLucia",
+  "labels": ["decision"]
+}

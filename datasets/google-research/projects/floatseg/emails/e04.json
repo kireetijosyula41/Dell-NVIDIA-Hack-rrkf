@@ -1,0 +1,50 @@
+{
+  "id": "gr/floatseg/e04",
+  "thread_id": "gr/floatseg/t2",
+  "in_reply_to": "gr/floatseg/e03",
+  "date": "2026-06-10T14:55:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Status: repro done, taxonomy mapping is the critical path",
+  "body": "Csilla, all — decision time ahead of Jun 12.\n\nKatya's taxonomy mapping landed Jun 1 as hoped, and the June evals on the internal set are clean enough to call: FLOAT beats our current parser meaningfully on part-level metrics under the mapped taxonomy, with the biggest wins exactly where the factorization should help — multi-object scenes with repeated part types.\n\nRecommendation: adopt FLOAT as the part-parsing backbone for the imagery-understanding stack, with a Q3 integration plan owned jointly with Deshawn's team.\n\nTwo caveats stated plainly in the memo: the aging python 3.7 dependency stack is a maintenance liability until we port it, and fine-grained classes where our taxonomy splits differ remain adjudicated rather than fully automatic.\n\nMemo goes to Hana's staff Thursday. Thanks all — clean quarter.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

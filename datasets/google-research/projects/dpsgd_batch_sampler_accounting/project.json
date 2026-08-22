@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpsgd_batch_sampler_accounting",
+  "title": "Privacy Accounting for DP-SGD with Batch Samplers",
+  "summary": "Productizes our privacy-accounting library for DP-SGD under different batch samplers — shuffling, Poisson subsampling, and balls-and-bins sampling — so internal DP training pipelines report guarantees that match their actual sampler instead of the Poisson assumption.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Jelena Vasquez",
+  "contributors": ["Amara Okafor", "Leilani Nakamura", "Farah Haddad", "Yara Jokic"],
+  "window": {"start": "2026-03-02", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dpsgd_batch_sampler_accounting",
+    "url": "https://github.com/google-research/google-research/tree/master/dpsgd_batch_sampler_accounting",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

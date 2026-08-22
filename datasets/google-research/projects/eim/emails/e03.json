@@ -1,0 +1,17 @@
+{
+  "id": "gr/eim/e03",
+  "thread_id": "gr/eim/t2",
+  "in_reply_to": null,
+  "date": "2026-03-10T15:55:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "EIM status: suites reproduced, TF1-era code is the risk",
+  "body": "Hi Santiago, Dmitri,\n\nReproduction is done. The small_problems suite matches the release across targets - checkerboard with the HIS algorithm converges cleanly, and the MNIST runs (static_mnist, rejection_sampling proposal over a bernoulli_vae model) land within 0.3 nats of the published log-likelihood lower bounds. Ondrej also verified the variational-bound framing: our LAI and rejection-sampling variants line up as expected under the unified EIM view, which makes the API design much cleaner.\n\nThe risk: this is TF1-era TensorFlow through and through - estimator-style loops, sessions in places. Wrapping it as a supported library without a compat layer means every consumer inherits that. Ondrej and I estimate ~3 weeks to port the core samplers to TF2 eager, which does not fit before the Mar 20 API freeze.\n\nOptions: freeze the API over the compat shim now and port underneath in Q2, or slip the freeze two weeks. We lean shim-first. Call?\n\nFumiko",
+  "labels": ["status", "risk"]
+}

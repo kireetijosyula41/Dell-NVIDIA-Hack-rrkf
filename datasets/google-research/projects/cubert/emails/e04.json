@@ -1,0 +1,18 @@
+{
+  "id": "gr/cubert/e04",
+  "thread_id": "gr/cubert/t2",
+  "in_reply_to": "gr/cubert/e03",
+  "date": "2026-07-21T16:20:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: CuBERT status - decision: ship the fine-tune, drop our own pre-training",
+  "body": "Decision for the Jul 24 packet.\n\nWe ship review triage on the fine-tuned released checkpoint. 0.68 F1 vs 0.51 keyword baseline is a real improvement and it exists today. We are dropping in-house pre-training from this project entirely - a 34%-smaller corpus was never going to buy back its cost, and widening the extraction is a quarter of work that has to compete for Q3 OKRs on its own merits, not sneak in as a milestone.\n\nGustavo, two asks for the packet: state the 0.79 -> 0.68 dedup story explicitly, and give Nadia the false-positive rate at the operating threshold, because that's the first question the board will ask.\n\nAlina - release the vulcan reservation for the last week of June, we don't need it. Please do that today so someone else can use it.\n\nGood, disciplined quarter.\n\nPriya",
+  "labels": ["decision", "escalation"]
+}

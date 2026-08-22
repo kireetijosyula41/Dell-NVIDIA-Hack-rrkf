@@ -1,0 +1,18 @@
+{
+  "id": "gr/jaxsel",
+  "title": "JaxSel: a differentiable subgraph extraction layer, in Jax",
+  "summary": "A differentiable sparse-PageRank layer that learns to extract a small task-sufficient subgraph around a start node from a large directed graph, feeding a downstream GNN for graph classification. Meridian is hardening it as a retrieval primitive for graph-shaped enterprise data.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Rafael Duran", "Nikhil Abebe", "Efe Lindqvist", "Kaia Wolde"],
+  "window": {"start": "2026-04-20", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jaxsel",
+    "url": "https://github.com/google-research/google-research/tree/master/jaxsel",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

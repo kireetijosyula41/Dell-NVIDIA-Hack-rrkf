@@ -1,0 +1,17 @@
+{
+  "id": "gr/latent_programmer/e01",
+  "thread_id": "gr/latent_programmer/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T10:41:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: Latent Programmer for example-driven pipeline synthesis",
+  "body": "Hi all,\n\nKicking off the Latent Programmer evaluation. Platform users keep writing the same data-transformation pipelines by hand from a few input/output examples; program synthesis is the obvious assist. The Latent Programmer approach is attractive because it doesn't decode a program token-by-token blind — it first predicts discrete latent codes as a coarse plan, then decodes the program conditioned on that plan, which the paper shows beats the plain Transformer baseline on synthesis benchmarks.\n\nMilestones (Feb 23 - May 25):\n- Mar 27: baseline Transformer (train.py) and latent model (train_latent.py, latent_vocab_size=30 with the 10k-step latent pretraining) both reproducing on the released benchmark setup\n- Apr 24: synthesis accuracy on our internal transformation DSL, top-1 and top-10\n- May 20: readout with a Q3 scale-up recommendation and its budget ask\n\nBruno — staffing and compute please. Keep it lean; the big spend, if any, is a Q3 question.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

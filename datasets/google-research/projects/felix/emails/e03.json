@@ -1,0 +1,41 @@
+{
+  "id": "gr/felix/e03",
+  "thread_id": "gr/felix/t2",
+  "in_reply_to": null,
+  "date": "2026-04-01T11:30:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: DiscoFuse repro done, insertion drift on long rewrites",
+  "body": "Status.\n\nDiscoFuse repro is done end-to-end: label-map construction with pointing enabled, data conversion, and fine-tuning both models off the BERT checkpoints — our exact-match numbers land within half a point of the paper's reported fusion results, so the pipeline is faithful.\n\nInternal rewrite corpus: tagging transfers well — the keep/delete/reorder decisions look sensible almost immediately — but the insertion model is the weak link. On longer rewrites it in-fills fluent text that drifts from the source meaning, which is exactly what the meaning-preservation scale in Maren's rating tool should catch. The tool itself is on track for Mar 31; Fumiko has the rating protocol drafted.\n\nRisk: if human ratings confirm the drift at scale, we'll need a constrained-insertion variant, which doesn't fit before May 8 — flagging now so the pre-read can frame it honestly.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

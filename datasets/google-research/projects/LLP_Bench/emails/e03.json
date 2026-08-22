@@ -1,0 +1,17 @@
+{
+  "id": "gr/LLP_Bench/e03",
+  "thread_id": "gr/LLP_Bench/t2",
+  "in_reply_to": null,
+  "date": "2026-03-24T11:07:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "LLP-Bench status: harness green, ranking instability risk",
+  "body": "Hi Bao, Dmitri,\n\nStatus: the harness milestone landed March 12. All nine methods run across feature_bags_ds, fixed_size_feature_bags_ds, and random_bags_ds, all five splits, and our numbers match the published ones within seed noise. Freya's analysis notebooks read straight from the metrics_dicts outputs.\n\nThe risk worth surfacing: method rankings are not stable across bag constructions. ot_llp and soft_erot_llp trade places between the feature-bag and random-bag settings, and dllp_bce looks deceptively strong on random bags only. If teams cherry-pick the construction that flatters their method, the \"one benchmark\" goal quietly dies. Proposal: the required reporting format is the full 3-construction x 5-split matrix, with a single aggregate rank only as a secondary summary. Slightly more compute per review, ~30 CPU-hours, but it closes the loophole.\n\nOne small thing - the autoint_embeddings generation is slower than expected, eta April 1 not March 27.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

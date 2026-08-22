@@ -1,0 +1,25 @@
+{
+  "id": "gr/dedal",
+  "title": "Dedal: Deep embedding and alignment of protein sequences.",
+  "summary": "DEDAL learns contextual Smith-Waterman parameters - substitution scores and gap open/extend penalties - from sequence pairs, returning alignment scores, homology logits and predicted alignment paths, and can also run as a pure embedding model. Meridian is using it as the reference for learned, context-dependent alignment scoring over long symbolic sequences.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Wei Ivanov",
+    "Rosa Mensah",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dedal",
+    "url": "https://github.com/google-research/google-research/tree/master/dedal",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

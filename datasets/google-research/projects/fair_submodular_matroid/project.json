@@ -1,0 +1,25 @@
+{
+  "id": "gr/fair_submodular_matroid",
+  "title": "Fair matroid submodular maximization",
+  "summary": "Streaming submodular maximization under a matroid constraint with fairness guarantees, implemented in C++17 with oracle-based submodular functions and matroids, including a maximum-coverage experiment on the Pokec social graph.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Freya Ruiz",
+    "Umar Costa",
+    "Fumiko Rossi"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fair_submodular_matroid",
+    "url": "https://github.com/google-research/google-research/tree/master/fair_submodular_matroid",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

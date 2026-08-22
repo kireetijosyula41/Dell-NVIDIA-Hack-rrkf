@@ -1,0 +1,18 @@
+{
+  "id": "gr/encyclopedic_vqa",
+  "title": "Encyclopedic VQA",
+  "summary": "Turning our Encyclopedic-VQA release - 221k unique question+answer pairs over fine-grained categories, 1M VQA samples, plus a controlled Wikipedia-derived knowledge base - into the evaluation and training backbone for a retrieval-augmented visual question answering product.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": ["Vera Egede", "Jorge Vidal", "Yara Jokic"],
+  "window": {"start": "2026-04-20", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "encyclopedic_vqa",
+    "url": "https://github.com/google-research/google-research/tree/master/encyclopedic_vqa",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/Uboreshaji_Modeli",
+  "title": "Uboreshaji Modeli – Multi-Modal Fine-Tuning Framework",
+  "summary": "Uboreshaji Modeli (Kiswahili for \"model fine-tuning\") is a modular PyTorch framework for fine-tuning vision, vision-language, text, and speech foundation models, grown from OWL-v2 object detection into a multi-modal system built on a composable strategy pattern. Internally we run it as Project Tundra, the one fine-tuning stack for the vision portfolio's customer engagements.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Ondrej Bergstrom",
+    "Linnea Yamada",
+    "Carmen Reyes"
+  ],
+  "codename": "Project Tundra",
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "Uboreshaji_Modeli",
+    "url": "https://github.com/google-research/google-research/tree/master/Uboreshaji_Modeli",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

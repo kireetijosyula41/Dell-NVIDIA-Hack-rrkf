@@ -1,0 +1,40 @@
+{
+  "id": "gr/gen_patch_neural_rendering/e01",
+  "thread_id": "gr/gen_patch_neural_rendering/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:21:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "GPNR kickoff — generalizable view synthesis",
+  "body": "Hi Alina,\n\nKickoff for the generalizable patch-based neural rendering workstream, from our ECCV oral. GPNR synthesizes novel views by reasoning over patches, and the key property is generalization: one trained model renders unseen scenes without per-scene optimization — which is what makes a product possible here. Per-scene NeRF-style training never fit our latency or cost budget.\n\nProduct goal: photoreal asset previews for the internal 3D catalog, rendered on demand. Milestones: JAX/Flax training repro on the IBRNet scene collection by Mar 27, quality-bar assessment mid-April, Q2 wrap and Q3 proposal by May 8.\n\nMilan, Carmen and Csilla are assigned. Staffing and the data/ingestion plan over to you.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

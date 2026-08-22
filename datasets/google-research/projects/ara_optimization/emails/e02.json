@@ -1,0 +1,45 @@
+{
+  "id": "gr/ara_optimization/e02",
+  "thread_id": "gr/ara_optimization/t1",
+  "in_reply_to": "gr/ara_optimization/e01",
+  "date": "2026-04-15T13:35:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: summary report optimization for attribution reporting",
+  "body": "Dmitri,\n\nStaffing: Umar leads at 55%, Nikhil 50% on the experiment runner, Chiara 40% on synthetic data generation, Maren 20% on the dataframe plumbing for real slices.\n\nBudget: Idris confirmed verbally that the full $120k on Q3 discretionary compute budget line B-60 is earmarked for this project, so we can plan the parameter sweeps against it.\n\nCompute is unusual for us in that it's almost entirely CPU — Numpy/Scipy/Pandas, no accelerators. The spend is wide parallelism across slice-column configurations, and the sweeps grow combinatorially with the number of value columns, which is why the budget line matters more than a GPU reservation would.\n\nOne process note: anything touching real conversion data needs Privacy Review, and that's a 2-3 week SLA. I'd file in May, not June.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

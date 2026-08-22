@@ -1,0 +1,18 @@
+{
+  "id": "gr/etcmodel/e03",
+  "thread_id": "gr/etcmodel/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T15:37:00Z",
+  "from": {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kestrel status: CI green, fine-tune under way, one packaging trade-off",
+  "body": "Hi Santiago, Dmitri,\n\nKestrel status.\n\nPackaging: done and CI is green - full unit-test suite passing since Mar 25, two days ahead of the milestone. The layers/models split from the repo carried over cleanly: consumers import core ETC layers without touching fine-tuning code.\n\nFine-tuning: Umar started on the Cirrus slice Apr 8 (we kept the April window). First long-document runs look healthy; global-local attention config reproduces the expected memory profile, and he's tracking eval against the released fine-tuning setup. Full reproduction read by Apr 24 still on track.\n\nOne trade-off needing a call: the TF1-compat path doubles our test matrix and nobody internally has asked for TF1. I propose we ship TF2-only for the paved path and keep TF1 compatibility untested-but-present, documented as such. Saves roughly a week of CI maintenance per quarter. Objections by Friday, otherwise I'll fold it into the adoption guide that way.\n\nJorge",
+  "labels": ["status", "risk"]
+}

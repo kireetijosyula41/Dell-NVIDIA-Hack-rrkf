@@ -1,0 +1,18 @@
+{
+  "id": "gr/attribute_semantics",
+  "title": "Implementation of discovering attribute semantics described in [Discovering Personalized S",
+  "summary": "Learns personalized semantics for soft attributes (like 'funny' or 'violent') in recommender systems using concept activation vectors trained on MovieLens 20M tag-and-rating data, evaluated against the SoftAttributes dataset.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": ["Katya Silva", "Yara Jokic", "Maren Zhou"],
+  "window": {"start": "2026-03-02", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "attribute_semantics",
+    "url": "https://github.com/google-research/google-research/tree/master/attribute_semantics",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
