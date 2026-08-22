@@ -1,0 +1,25 @@
+{
+  "id": "gr/android_in_the_wild",
+  "title": "Android in the Wild (AitW)",
+  "summary": "AitW is a large-scale mobile device-control dataset of human demonstrations pairing natural language instructions, UI screens, and actions across four Android versions and eight device types. It comprises five subsets — GoogleApps, Install, WebShopping, General, and a single-step set — with randomized episode starting states.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Fumiko Rossi",
+    "Saoirse Eriksen",
+    "Giannis Sato"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "android_in_the_wild",
+    "url": "https://github.com/google-research/google-research/tree/master/android_in_the_wild",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

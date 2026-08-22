@@ -1,0 +1,40 @@
+{
+  "id": "gr/android_in_the_wild/e02",
+  "thread_id": "gr/android_in_the_wild/t1",
+  "in_reply_to": "gr/android_in_the_wild/e01",
+  "date": "2026-02-18T13:45:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Android in the Wild — device control corpus",
+  "body": "Priya,\n\nStaffing: Fumiko leads at 65%, Saoirse 45% on the ingest and eval loop. The five AitW subsets overlap more than the docs admit, so we are scoping and staffing a dataset de-duplication pipeline from scratch — Giannis at 50% owns it, first pass by mid-March.\n\nCompute: 40 A100s best-effort on titan-a100 for the fine-tuning passes. Storage is the real ask — screen captures across eight device types push us to about 5.5TB staged; request filed with Corpus.\n\nSequencing: the dedup pass has to land before the resolution study, otherwise duplicate episodes across WebShopping and General will inflate our held-out numbers and we won't know by how much.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}
