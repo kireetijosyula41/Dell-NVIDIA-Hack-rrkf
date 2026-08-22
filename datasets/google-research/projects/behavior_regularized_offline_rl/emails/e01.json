@@ -1,0 +1,18 @@
+{
+  "id": "gr/behavior_regularized_offline_rl/e01",
+  "thread_id": "gr/behavior_regularized_offline_rl/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:26:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: BRAC - offline RL from logged interactions",
+  "body": "Hi team,\n\nKicking off the BRAC workstream for agents-rl. The product motivation: we have months of logged interaction data from the assistant pilots, and no way to improve policies from it without risky live exploration. Behavior Regularized Actor Critic is our open-source framework for exactly this - offline RL with a behavior-regularization knob (choice of divergence, value penalty vs. policy regularization, Q-ensembles).\n\nPlan: reproduce the continuous-control results first (SAC-trained partial policies as data collectors, then offline training on HalfCheetah-class environments), then port the recipe to one internal logged-data domain as a feasibility study.\n\nMilestones: reproduction by end of March, internal domain feasibility readout by 5/1, go/no-go on a funded H2 program at window close 5/18.\n\nDaniela - staffing and data logistics over to you.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}
