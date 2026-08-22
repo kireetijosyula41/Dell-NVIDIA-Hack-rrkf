@@ -1,0 +1,16 @@
+{
+  "project": "gr/distribution_embedding_networks",
+  "conflicts": [
+    {
+      "conflict_id": "C059",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "STraTA"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are scoping and staffing a distillation training recipe built from scratch: Umar Costa leads the design at 50% with Vera Egede at 30% building the training pipeline."
+    }
+  ]
+}

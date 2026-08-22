@@ -1,0 +1,41 @@
+{
+  "id": "gr/distribution_embedding_networks/e01",
+  "thread_id": "gr/distribution_embedding_networks/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:33:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: DEN for small-data tabular classification",
+  "body": "Daniela, team,\n\nKicking off the DEN track. The enterprise side keeps hitting the same wall: customers with tabular classification problems and a few hundred labeled rows, each with different features. DEN (TMLR'22) is built for exactly this -- it meta-learns from a diverse set of training tasks and, unlike standard approaches, allows training and target tasks to live in heterogeneous input spaces. The three-block design is the key: after pre-training, the distribution embedding and classification blocks stay fixed, and only the small covariate transformation block is fine-tuned per new task.\n\nGoal for the half: validate DEN against our tabular baselines on synthetic and real small-data tasks, and if it clears the bar, a deployable per-customer fine-tuning story.\n\nMilestones: reproduction April 17, benchmark results May 22, go/no-go before the June 26 OKR lock.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

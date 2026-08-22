@@ -1,0 +1,41 @@
+{
+  "id": "gr/distribution_embedding_networks/e03",
+  "thread_id": "gr/distribution_embedding_networks/t1",
+  "in_reply_to": "gr/distribution_embedding_networks/e02",
+  "date": "2026-05-06T10:44:00Z",
+  "from": {
+    "name": "Farah Haddad",
+    "email": "farah.haddad@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: DEN for small-data tabular classification",
+  "body": "Status.\n\nReproduction: done April 16 via the simulation entry point; our numbers match the paper's synthetic-study results within noise.\n\nBenchmarks so far, on 9 internal small-data tasks (120-800 labeled rows each): DEN beats gradient-boosted trees on 6 of 9, with the biggest wins exactly where the theory predicts -- tasks whose feature spaces differ most from anything in pre-training, since only the covariate transformation block needs fine-tuning and it has few parameters to overfit.\n\nThe honest caveat: on the 3 losses, the culprit is Umar's diagnosis that our synthetic pre-training task distribution undercovers heavy-tailed numeric features. He has a revised task synthesizer running; preliminary signs are good but it costs a full pre-training cycle to verify, about 9 days on our current allotment.\n\nMay 22 benchmark milestone likely slips a week. Flagging now.\n\nFarah",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

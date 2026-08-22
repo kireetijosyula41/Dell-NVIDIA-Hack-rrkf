@@ -1,0 +1,40 @@
+{
+  "id": "gr/distribution_embedding_networks/e02",
+  "thread_id": "gr/distribution_embedding_networks/t1",
+  "in_reply_to": "gr/distribution_embedding_networks/e01",
+  "date": "2026-03-26T14:08:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: DEN for small-data tabular classification",
+  "body": "Anders,\n\nPlan.\n\nStaffing: Farah 50% on reproduction and benchmarking -- the released simulation entry point gives us a clean start -- and Umar 40% on the science, especially the synthetic binary-task generation approach the paper uses to facilitate pre-training, which we will want to extend with task distributions closer to our customers' data.\n\nSecond workstream: even if DEN wins on accuracy, the pre-trained stack is too heavy for the per-customer serving path as-is. We are scoping and staffing a distillation training recipe built from scratch: Umar Costa leads the design at 50% with Vera Egede at 30% building the training pipeline. Target: a student that keeps the fixed embedding+classification behavior within 1 point of the teacher at a quarter of the serving footprint.\n\nCompute: modest -- tabular-scale models, a handful of Titan A100s.\n\nReproduction by April 17 looks comfortable.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}
