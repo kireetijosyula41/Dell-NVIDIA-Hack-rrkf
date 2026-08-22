@@ -1,0 +1,41 @@
+{
+  "id": "gr/conceptor/e03",
+  "thread_id": "gr/conceptor/t1",
+  "in_reply_to": "gr/conceptor/e02",
+  "date": "2026-04-15T10:55:00Z",
+  "from": {
+    "name": "Giannis Sato",
+    "email": "giannis.sato@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: diffusion concept decomposition & bias audits",
+  "body": "Hi both,\n\nStatus: the decomposition pipeline reproduces on Stable Diffusion. Pseudo-tokens trained per concept reconstruct generated images faithfully, and the qualitative findings hold on our stack — \"a composer\" decomposes into a handful of specific-individual tokens plus style terms, while abstract concepts like \"happiness\" mix concrete tokens (\"family\", \"laughter\") with abstract ones. Single-image decomposition works and is honestly the best demo material we have.\n\nAudit progress: Katya's methodology scores concepts by how concentrated their decomposition is on protected-attribute or specific-person tokens; a first pass over 200 profession concepts flags 31 for review.\n\nTrade-off: sparsity level matters a lot — at 10 tokens the decompositions are readable but reconstruction suffers; at 50 they reconstruct well but audits get noisy. The June sweep should cover both regimes, which doubles its size; worth confirming the reservation covers it.\n\nGiannis",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

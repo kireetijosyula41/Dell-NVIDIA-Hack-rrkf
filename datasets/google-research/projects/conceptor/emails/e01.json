@@ -1,0 +1,40 @@
+{
+  "id": "gr/conceptor/e01",
+  "thread_id": "gr/conceptor/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:30:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: diffusion concept decomposition & bias audits",
+  "body": "Hi Deshawn,\n\nKicking off the diffusion-interpretability effort. Base is our open-source \"hidden language of diffusion models\" work: learn a pseudo-token as a sparse weighted combination of vocabulary tokens that reconstructs what the model generates for a concept — which surfaces surprising structure, like \"a president\" being dominated by specific individuals.\n\nProduct angle is bias detection and mitigation for our image-generation offering: trust review keeps asking how we audit concept representations, and this is a concrete, demoable answer. Single-image decomposition and semantic manipulation are secondary demos.\n\nHalf plan: pipeline reproduced on Stable Diffusion by end of March, concept audits April-May, a large final concept sweep in early June, launch review by the 6/15 window close.\n\nStaffing and compute by mid-Feb? The sweep will need a real reservation.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

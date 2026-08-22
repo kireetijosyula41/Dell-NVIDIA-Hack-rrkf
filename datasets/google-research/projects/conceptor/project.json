@@ -1,0 +1,25 @@
+{
+  "id": "gr/conceptor",
+  "title": "The Hidden Language of Diffusion Models",
+  "summary": "Decomposes text-to-image diffusion concepts into sparse, interpretable combinations of vocabulary tokens by learning a pseudo-token, enabling concept analysis, bias detection, and semantic image manipulation on Stable Diffusion.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Giannis Sato",
+    "Farah Haddad",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "conceptor",
+    "url": "https://github.com/google-research/google-research/tree/master/conceptor",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
