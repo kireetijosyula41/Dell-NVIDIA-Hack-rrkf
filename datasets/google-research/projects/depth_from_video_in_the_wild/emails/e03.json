@@ -1,0 +1,51 @@
+{
+  "id": "gr/depth_from_video_in_the_wild/e03",
+  "thread_id": "gr/depth_from_video_in_the_wild/t1",
+  "in_reply_to": "gr/depth_from_video_in_the_wild/e02",
+  "date": "2026-05-28T11:48:00Z",
+  "from": {
+    "name": "Quentin Farkas",
+    "email": "quentin.farkas@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: depth from unknown cameras (video-in-the-wild)",
+  "body": "Status on the masking pipeline, six days late vs. the May 22 milestone but now live.\n\nWhat shipped: automated segmentation masks for possibly-moving objects over our in-the-wild corpus, emitting Struct2depth-format triplets the trainer consumes directly. Throughput is about 40 clip-hours per day, so the full corpus is masked by June 9.\n\nThe risk worth flagging: mask quality drives everything downstream. On a 500-frame audit, 7% of frames had a moving object partially unmasked, and those frames are exactly where the depth net learns wrong geometry -- the paper's whole training setup assumes movers are masked out. Rosa and I are adding a dilation pass plus a confidence filter, which should cut leakage under 3%.\n\nBaseline training starts Monday regardless; June 15 review holds.\n\nQuentin",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

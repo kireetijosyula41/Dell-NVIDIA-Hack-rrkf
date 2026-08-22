@@ -1,0 +1,49 @@
+{
+  "id": "gr/depth_from_video_in_the_wild/e04",
+  "thread_id": "gr/depth_from_video_in_the_wild/t2",
+  "in_reply_to": null,
+  "date": "2026-06-24T09:15:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: July plan for video-in-the-wild depth",
+  "body": "Team,\n\nOutcomes from the June 15 baseline review, plus July commitments:\n\n1. Baseline quality is good enough to proceed: with the dilation+confidence masking fix, depth error on uncalibrated clips is within 9% of the calibrated-camera baseline. That gap is the whole story for the LRB.\n2. The learned-intrinsics ablation is confirmed as the July centerpiece per Alina's staffing plan. Deliverable: a camera-type breakdown (phone, dashcam, action cam) of learned vs. specified intrinsics by July 8.\n3. Scope cut: no real-time serving demo this half. Wanjiru's latency numbers say we would need a distilled model, and I would rather show honest offline quality than a laggy demo.\n\nLRB readout targeted for July 9.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

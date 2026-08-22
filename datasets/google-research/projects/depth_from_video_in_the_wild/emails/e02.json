@@ -1,0 +1,50 @@
+{
+  "id": "gr/depth_from_video_in_the_wild/e02",
+  "thread_id": "gr/depth_from_video_in_the_wild/t1",
+  "in_reply_to": "gr/depth_from_video_in_the_wild/e01",
+  "date": "2026-04-29T15:37:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: depth from unknown cameras (video-in-the-wild)",
+  "body": "Lucia,\n\nAllocations, as requested, explicit:\n\nMay-June: Quentin 60% on the masking pipeline (we need moving objects masked out of every training triplet, so this is the critical path), Rosa 50% on the data plumbing and TFRecord generation, Wanjiru 40% on serving experiments, Katya 20% advisory since she is deep on the sister depth track.\n\nJuly: Rafael Duran is committed at 60% to this project for July 2026 to run the learned-intrinsics ablation study. That ablation -- learned vs. specified intrinsics across camera types -- is the centerpiece of the LRB readout, and Rafael wrote the original intrinsics code, so I want him properly resourced, not squeezed in at 20%.\n\nCompute: 48 A100s on Titan, short runs from an ImageNet checkpoint.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

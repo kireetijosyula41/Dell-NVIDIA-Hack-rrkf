@@ -1,0 +1,51 @@
+{
+  "id": "gr/depth_from_video_in_the_wild/e01",
+  "thread_id": "gr/depth_from_video_in_the_wild/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T10:02:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: depth from unknown cameras (video-in-the-wild)",
+  "body": "Alina, team,\n\nKicking off the video-in-the-wild depth track. The differentiator here is unknown cameras: because the model can learn intrinsics rather than requiring them, we can train on and serve depth for arbitrary user-uploaded video -- YouTube-style footage, dashcams, old phone clips. That is the unlock for the media-tools depth feature, where we control nothing about the capture device.\n\nMechanics per the ICCV release: training takes triplets of RGB frames with possibly-moving objects masked out, and produces 6-DoF camera motion plus a dense translation vector field.\n\nMilestones: masking + data pipeline live May 22, baseline quality review June 15, intrinsics ablation and LRB readout the first week of July.\n\nAlina owns staffing; note we share people with other vision tracks, so let's be explicit about allocations.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
