@@ -1,0 +1,41 @@
+{
+  "id": "gr/mol_dqn/e03",
+  "thread_id": "gr/mol_dqn/t1",
+  "in_reply_to": "gr/mol_dqn/e02",
+  "date": "2026-06-16T10:15:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MolDQN lead-optimization pilot — June status + aromatic-bond risk",
+  "body": "Hi both,\n\nStatus: QED reproduction done on both configs — bootstrap DQN (two-step schedule) beats naive DQN on mean final QED, 0.041 higher across 20 seeds, matching the paper's ordering. Saoirse vendored SA_Score cleanly and the pipeline runs end-to-end with full episode logs, so every optimized molecule ships with its edit trajectory. Partner A's logP-with-similarity-constraint reward is encoded and training.\n\nThe risk has a shape now: Partner B's series is heavily aromatic. Because the MDP can't modify aromatic bonds — including bonds perceived as aromatic when parsing the starting molecule — about 60% of their seed structures have most of their interesting edit space locked. Early runs confirm it: the agent decorates the periphery instead of touching the core, and property gains plateau ~40% below Partner A's.\n\nRecommendation: pilot report presents Partner B as \"supported for peripheral optimization only.\" Not a failure, but it must be in writing.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

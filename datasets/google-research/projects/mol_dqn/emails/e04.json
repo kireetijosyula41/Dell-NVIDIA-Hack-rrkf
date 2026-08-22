@@ -1,0 +1,50 @@
+{
+  "id": "gr/mol_dqn/e04",
+  "thread_id": "gr/mol_dqn/t1",
+  "in_reply_to": "gr/mol_dqn/e03",
+  "date": "2026-07-14T16:30:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Idris Osei",
+      "email": "idris.osei@meridian.example",
+      "role": "Finance Partner"
+    }
+  ],
+  "subject": "Re: Kickoff: MolDQN lead-optimization pilot — decisions for the pilot report",
+  "body": "Team,\n\nDecisions for the Jul 27 close:\n\n1) Pilot report recommends go for a Q4 engagement with Partner A only. Partner B gets the \"peripheral optimization only\" framing in Wei's words, verbatim, plus an explicit note that aromatic-core edits need MDP work we have not scheduled.\n2) The edit-trajectory audit log becomes a headline feature, not an internal artifact — Giannis, package the trajectory viewer for the partner readout. It's the strongest trust differentiator we have.\n3) Budget: we're tracking to the B-58 earmark; Idris, looping you in since the Q4 engagement would need a fresh line — the Q3 earmark doesn't roll over.\n4) Scope cut confirmed: multi-property optimization stays out of the pilot.\n\nReadout with both partners the week of Jul 20. Nice work getting the science and the honesty into the same document.\n\nXimena",
+  "labels": [
+    "decision"
+  ]
+}

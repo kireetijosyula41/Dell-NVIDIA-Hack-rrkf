@@ -1,0 +1,45 @@
+{
+  "id": "gr/mol_dqn/e02",
+  "thread_id": "gr/mol_dqn/t1",
+  "in_reply_to": "gr/mol_dqn/e01",
+  "date": "2026-05-12T13:35:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MolDQN lead-optimization pilot — staffing + budget",
+  "body": "Hi Ximena,\n\nStaffing: Wei Ivanov 40% leads the RL work and reward design; Saoirse Eriksen 40% on the training pipeline and the SA_Score dependency packaging (the rdkit Contrib module needs vendoring for our build); Giannis Sato 30% on partner-facing tooling; Oyin Iversen 20% on experiment tracking, shared with another search project.\n\nOn money: Idris has verbally earmarked $240k from the Q3 discretionary compute budget line B-58 for this project, which covers the bootstrap-DQN ensemble sweeps plus the partner pilot runs, so treat the compute plan below as funded.\n\nCompute plan: QED reproduction is cheap (single-GPU jobs), but bootstrap DQN is an ensemble — step 1 and step 2 configs per the release — and the partner sweeps multiply that by reward variants. I'm estimating 120k GPU-hours on titan-a100 across June–July.\n\nOne flag: Wei wants episode-level logging of every molecule edit for the trust/audit story. Storage is small; the review overhead isn't.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}
