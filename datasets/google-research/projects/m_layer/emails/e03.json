@@ -1,0 +1,15 @@
+{
+  "id": "gr/m_layer/e03",
+  "thread_id": "gr/m_layer/t1",
+  "in_reply_to": "gr/m_layer/e02",
+  "date": "2026-05-06T10:41:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: M-layer kickoff — status + robustness caveat",
+  "body": "Status ahead of Friday's sync.\n\nDone: MLayer import path is stable (from m_layer import MLayer works against our internal package), and the trained cifar10_model.npy checkpoint reproduces in Evalline within 0.3% of the notebook's clean accuracy.\n\nRisk: the robustness picture is more nuanced than the pitch deck. Under our PGD sweep the M-layer model degrades more gracefully than the ReLU baseline at low epsilon, but the gap inverts at higher perturbation budgets. If we sell \"robust building block\" we need to scope the claim to small-epsilon regimes, or the launch review will (rightly) push back.\n\nPeriodicity demo is on track — Fumiko has the extrapolation experiment running and it's genuinely striking vs an LSTM baseline.\n\nProposal: I write a one-pager on the epsilon caveat for the pre-read. ok?\n\nUmar",
+  "labels": ["status", "risk"]
+}

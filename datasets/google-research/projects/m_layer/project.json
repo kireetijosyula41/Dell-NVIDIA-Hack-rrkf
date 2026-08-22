@@ -1,0 +1,16 @@
+{
+  "id": "gr/m_layer",
+  "title": "[Thomas Fischbacher, Iulia M. Comsa, Krzysztof Potempa, Moritz Firsching,",
+  "summary": "Productionizing the M-layer, a Keras layer that replaces stacked nonlinearities with intelligent matrix exponentiation, including robustness studies on CIFAR10 and a periodicity-extrapolation demo.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": ["Farah Haddad", "Oyin Iversen", "Umar Costa", "Fumiko Rossi"],
+  "window": {"start": "2026-03-09", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "m_layer",
+    "url": "https://github.com/google-research/google-research/tree/master/m_layer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
