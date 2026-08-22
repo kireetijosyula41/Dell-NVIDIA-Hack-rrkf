@@ -1,0 +1,9 @@
+{
+  "project": "gr/mechanic",
+  "conflicts": [
+    {"conflict_id": "C111", "type": "shared_person_overcommit",
+     "counterpart_projects": ["better_storylines"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "Paloma Castillo is the integration lead and is committed at 60%+ to this project for May 2026 — the rollout month is where the platform-side work concentrates, and I've locked that in the May allocation sheet so nothing else grabs her."}
+  ]
+}

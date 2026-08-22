@@ -1,0 +1,16 @@
+{
+  "id": "gr/mechanic",
+  "title": "Mechanic - Black Box Learning Rate Tuner Implementation",
+  "summary": "Rolling out Mechanic, our jax/optax black-box learning-rate scale tuner that wraps any base optimizer via mechanize(), as a default option in the internal training stack so teams stop hand-tuning learning rates.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Santiago Vukovic",
+  "contributors": ["Quentin Farkas", "Rafael Duran", "Efe Lindqvist", "Wanjiru Horvat", "Paloma Castillo"],
+  "window": {"start": "2026-02-02", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mechanic",
+    "url": "https://github.com/google-research/google-research/tree/master/mechanic",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

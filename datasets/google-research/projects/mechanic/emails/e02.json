@@ -1,0 +1,15 @@
+{
+  "id": "gr/mechanic/e02",
+  "thread_id": "gr/mechanic/t1",
+  "in_reply_to": "gr/mechanic/e01",
+  "date": "2026-02-12T14:31:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Mechanic kickoff — staffing plan",
+  "body": "Ximena,\n\nStaffing and compute for Mechanic:\n\n- Rafael 40% (TL, A/B design), Quentin 50% on the workload harness, Efe 25% on theory questions as they come up, Wanjiru 40% on the training-stack flag plumbing.\n- Paloma Castillo is the integration lead and is committed at 60%+ to this project for May 2026 — the rollout month is where the platform-side work concentrates, and I've locked that in the May allocation sheet so nothing else grabs her.\n\nCompute: A/B runs fit titan-a100 best-effort — 48 GPUs peak for the March comparisons. No reservation needed; the whole point of this project is to reduce sweep compute, so it'd be embarrassing to over-ask.\n\nOne dependency: Wanjiru needs the training-stack release branch to cut on 02-20 as scheduled, otherwise the flag slips a sprint.\n\nSantiago",
+  "labels": ["resources"]
+}
