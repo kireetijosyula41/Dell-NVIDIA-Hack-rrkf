@@ -1,0 +1,18 @@
+{
+  "id": "gr/multi_annotator",
+  "title": "[\"Dealing with disagreements: Looking beyond the majority vote in subjective annotations\".",
+  "summary": "Productionizes the multi-annotator training approach from our TACL 2022 open-source release: hate-speech classifiers learn from every annotator's label rather than a collapsed majority vote, so predictions surface disagreement instead of hiding it. Targets the Corpus labeling pipeline as first customer.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Emeka Pinto", "Csilla Nassar", "Maren Zhou", "Tereza Aliyev"],
+  "window": {"start": "2026-03-09", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "multi_annotator",
+    "url": "https://github.com/google-research/google-research/tree/master/multi_annotator",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
