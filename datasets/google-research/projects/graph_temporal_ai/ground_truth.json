@@ -1,0 +1,12 @@
+{
+  "project": "gr/graph_temporal_ai",
+  "conflicts": [
+    {
+      "conflict_id": "C124",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["active_selective_prediction"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Looking past the window: Ondrej Bergstrom is committed at 60% to this project for May 2026 to carry the knowledge-graph encoder into the partner pilot, and my pilot plan assumes that allocation holds."
+    }
+  ]
+}

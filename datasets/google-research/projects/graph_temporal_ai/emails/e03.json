@@ -1,0 +1,18 @@
+{
+  "id": "gr/graph_temporal_ai/e03",
+  "thread_id": "gr/graph_temporal_ai/t2",
+  "in_reply_to": null,
+  "date": "2026-03-17T10:56:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: encoder integrated, feedback loop demo on track, schema debt",
+  "body": "Hi both,\n\nStatus. The knowledge-graph encoder is integrated with the base forecaster as of 3/5 - a day early. On the internal logistics benchmark, conditioning on the meta-data graph cuts MAPE from 11.8% to 9.6% at the 2-week horizon; the win concentrates exactly where the partner's operation-logistics rules constrain the forecast, which is the story we wanted.\n\nFeedback ingestion is on track for the 3/27 demo: a user correction becomes a graph edit, and Ondrej's incremental-update path retrains the affected embeddings in minutes, not hours.\n\nThe debt is schemas. Paloma normalized two of the three partner meta-data schemas; the third (the market-principles one) encodes rules as free text and needs a parsing step we did not scope. Recommendation: demo with two schemas and flag the third as a pilot-phase task with an owner, rather than rushing a fragile parser.\n\nHyun",
+  "labels": ["status", "risk"]
+}
