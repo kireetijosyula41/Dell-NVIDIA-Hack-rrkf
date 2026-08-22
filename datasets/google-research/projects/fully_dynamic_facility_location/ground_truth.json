@@ -1,0 +1,17 @@
+{
+  "project": "gr/fully_dynamic_facility_location",
+  "conflicts": [
+    {
+      "conflict_id": "C121",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "hmc_swindles"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "We hold the vulcan-h100 reservation for the week of 2026-06-29 — 384 accelerators — for that refresh, so benchmark and integration data get regenerated in that window."
+    }
+  ]
+}

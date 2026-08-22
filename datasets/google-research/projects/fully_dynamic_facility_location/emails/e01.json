@@ -1,0 +1,45 @@
+{
+  "id": "gr/fully_dynamic_facility_location/e01",
+  "thread_id": "gr/fully_dynamic_facility_location/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:40:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Dynamic facility location — kickoff",
+  "body": "Hi Alina,\n\nKickoff for the dynamic facility location workstream, building on our NeurIPS'22 open-source release. The algorithm maintains a near-optimal, stable clustering under a stream of point insertions and deletions — exactly the shape of our retrieval index maintenance problem, where recomputing clusters from scratch on every update burns compute and churns assignments downstream.\n\nProduct goal: a clustering backbone for the retrieval stack that stays stable under updates. Milestones: C++ library hardened and benchmarked by May 15, integration prototype against a production update stream by Jun 26, go/no-go for Q3 adoption Jul 10.\n\nCarmen, Emeka, Tereza and Freya are assigned. Staffing and compute plan over to you.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}
