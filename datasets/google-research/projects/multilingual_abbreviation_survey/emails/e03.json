@@ -1,0 +1,18 @@
+{
+  "id": "gr/multilingual_abbreviation_survey/e03",
+  "thread_id": "gr/multilingual_abbreviation_survey/t1",
+  "in_reply_to": "gr/multilingual_abbreviation_survey/e02",
+  "date": "2026-05-20T10:05:00Z",
+  "from": {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: abbreviation-aware normalization — May status + coverage risk",
+  "body": "Hi both,\n\nStatus: pipeline milestone hit. survey.tsv parses cleanly into per-locale feature vectors; we track consultant proficiency (column 3) as a confidence weight, which noticeably de-noises the rule baselines.\n\nEfe's baselines cover 27 locales so far. Truncations and first-character abbreviations are well-attested nearly everywhere; the thin spots are augmented truncations and word-internal deletions, where several locales have a Yes flag but only one or two consultant examples to learn from.\n\nRisk: for roughly 8 of the 27 locales we have a single consultant response. Fine-grained rules learned from one person's examples will overfit — Umar suggests grouping those locales by script family in the July sweep rather than giving them dedicated heads. Costs some per-locale precision, protects generalization.\n\nLocale list from Priya received, sweep config is keyed to it.\n\nNikhil",
+  "labels": ["status", "risk"]
+}
