@@ -1,0 +1,17 @@
+{
+  "id": "gr/covid_vhh_design/e03",
+  "thread_id": "gr/covid_vhh_design/t2",
+  "in_reply_to": null,
+  "date": "2026-04-22T10:48:00Z",
+  "from": {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status - scoring reproduced; diversity is the interesting failure",
+  "body": "Quick status.\n\nScoring: reproduced. Running the released model over the third-library sequences we match the published scores to 4 decimal places, so the port is faithful. Wanjiru got the notebooks off hosted colab and onto our pipeline, which was most of the actual work.\n\nThe interesting part is diversity selection. Naively picking top-scored candidates gives you a library that is 80% minor variants of two backbones - high predicted affinity, almost no coverage. The published design used an explicit diversity constraint and now I understand why: the scoring model's confidence is highest exactly where its training data was densest, so score-greedy selection is a feedback loop that eats its own tail.\n\nOur reimplemented selector with a Hamming-distance floor of 6 gets predicted mean score down ~9% but triples backbone coverage. I think that trade is the actual finding, and it transfers to any model-guided design problem. Slight risk it makes the May 26 write-up longer than you wanted.\n\nGustavo",
+  "labels": ["status", "risk"]
+}

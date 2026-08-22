@@ -1,0 +1,18 @@
+{
+  "id": "gr/covid_vhh_design/e02",
+  "thread_id": "gr/covid_vhh_design/t1",
+  "in_reply_to": "gr/covid_vhh_design/e01",
+  "date": "2026-03-17T13:35:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff - resourcing, small as requested",
+  "body": "Anders,\n\nKeeping it small as you asked:\n- Gustavo Moreau 30%, scoring model and the design loop.\n- Wanjiru Horvat 35%, notebook-to-pipeline conversion and the diversity library.\n- Linnea Yamada 20%, distance metric and evaluation.\n\nNo cluster reservation. The scoring model is tiny by our standards and runs comfortably on titan-a100 best-effort; the notebooks were written to run in a free hosted environment, which tells you the scale.\n\nOne small platform item: the released sequence tables need registering in Corpus so the design-round results are queryable alongside everything else. Corpus v2 freezes on 2026-07-24, which is well clear of anything we do, so the sequence tables can be re-registered any time up to 2026-07-24 without a fight. Wanjiru will file the ticket but it is not on the critical path.\n\nBruno",
+  "labels": ["resources"]
+}

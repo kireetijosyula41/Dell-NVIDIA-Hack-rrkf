@@ -1,0 +1,25 @@
+{
+  "id": "gr/covid_vhh_design",
+  "title": "System requirements",
+  "summary": "Code and data behind high-throughput, ML-guided design of diverse single-domain antibodies (VHHs) against SARS-CoV-2, including the scoring model used to design the third library. Meridian is using it as the reference workflow for model-guided sequence design and library diversity control.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Gustavo Moreau",
+    "Wanjiru Horvat",
+    "Linnea Yamada"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "covid_vhh_design",
+    "url": "https://github.com/google-research/google-research/tree/master/covid_vhh_design",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

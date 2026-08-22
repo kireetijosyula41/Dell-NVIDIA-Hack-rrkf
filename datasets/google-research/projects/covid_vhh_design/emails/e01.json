@@ -1,0 +1,17 @@
+{
+  "id": "gr/covid_vhh_design/e01",
+  "thread_id": "gr/covid_vhh_design/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:20:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - VHH design workflow as our sequence-design reference",
+  "body": "All,\n\nStarting the VHH design workstream. The open-source release covers high-throughput ML-guided design of diverse single-domain antibodies against SARS-CoV-2 - notebooks for the data, the plots, and critically a model that scores candidate sequences, the same one used to design the third library.\n\nWe are not going into antibodies as a business. What I want is the workflow: propose, score, select for diversity, measure, feed back. That loop is the reusable asset, and today every sequence-design conversation here restarts from zero.\n\nMar 2 - Jun 1:\n- Mar 27: notebooks running against our infra, scoring reproduced on the released third-library sequences.\n- Apr 30: diversity-selection step reimplemented as a standalone library with our own distance metric.\n- May 26: internal write-up + one design round on a non-antibody sequence problem.\n\nBruno on resourcing, Gustavo tech lead. Deliberately small team - this is a study, not a product.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

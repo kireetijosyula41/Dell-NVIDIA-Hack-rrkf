@@ -1,0 +1,12 @@
+{
+  "project": "gr/covid_vhh_design",
+  "conflicts": [
+    {
+      "conflict_id": "C006",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["hyperbolic_discount", "mentormix", "distinguishing_romanized_hindi_urdu"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2 freezes on 2026-07-24, which is well clear of anything we do, so the sequence tables can be re-registered any time up to 2026-07-24 without a fight."
+    }
+  ]
+}

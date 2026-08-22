@@ -1,0 +1,18 @@
+{
+  "id": "gr/covid_vhh_design/e04",
+  "thread_id": "gr/covid_vhh_design/t2",
+  "in_reply_to": "gr/covid_vhh_design/e03",
+  "date": "2026-05-21T16:03:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Status - make the diversity result the headline",
+  "body": "Gustavo - flip the write-up. The reproduction is table stakes; the score-vs-coverage trade is the thing worth other people's attention. Lead with the -9% mean score / 3x backbone coverage number and the explanation of why score-greedy selection collapses. That paragraph is the most useful thing this project produced.\n\nDecision on scope: we are dropping the non-antibody design round from May 26. Two weeks isn't enough to pick a problem, get data and run a round honestly, and a rushed one would undercut the diversity argument. Instead the write-up names three candidate problems and what each would need. Bruno, that frees Wanjiru back to 15% from May 11.\n\nHana, cc'ing you because I think this is a two-page internal note that a lot of teams should read, not a project post-mortem.\n\nAnders",
+  "labels": ["decision", "status"]
+}
