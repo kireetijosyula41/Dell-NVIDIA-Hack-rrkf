@@ -1,0 +1,12 @@
+{
+  "project": "gr/negative_cache",
+  "conflicts": [
+    {
+      "conflict_id": "C073",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["attribute_semantics"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the June production-scale head-to-head we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-06-15 — that covers both arms (cache-based and current sampler) at full corpus size, run side by side so the comparison is apples-to-apples on hardware."
+    }
+  ]
+}

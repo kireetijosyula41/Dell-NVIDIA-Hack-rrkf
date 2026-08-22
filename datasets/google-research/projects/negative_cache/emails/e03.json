@@ -1,0 +1,19 @@
+{
+  "id": "gr/negative_cache/e03",
+  "thread_id": "gr/negative_cache/t1",
+  "in_reply_to": "gr/negative_cache/e02",
+  "date": "2026-05-13T11:44:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Negative cache kickoff — mid-scale results",
+  "body": "Hi both,\n\nMid-scale comparison is done. Summary:\n\n- Quality: cache-based training matches our current negative sampler on benchmark A (recall@10 0.842 vs 0.845, inside noise) and beats it on benchmark B (+1.9 points recall@10). The score_transform scaling (20x, per the release) mattered — without it the cache loss underweights hard negatives early in training.\n- Cost: 38% less accelerator time to reach the quality plateau. That's the headline for the adoption guide.\n- Staleness ablation: quality is flat until cache embeddings are ~4k steps stale, then degrades quickly. Our June config refreshes well inside that, so I'm comfortable.\n\nRisk for June: the current sampler arm at full corpus size needs the brute-force miner, which is memory-hungry on H100s — Oyin is validating it fits at 256 accelerators alongside the cache arm's schedule. If it doesn't, we stagger the arms within the week rather than shrink the corpus.\n\nFreya",
+  "labels": ["status", "risk"]
+}

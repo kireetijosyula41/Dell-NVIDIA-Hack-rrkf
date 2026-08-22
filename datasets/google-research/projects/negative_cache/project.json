@@ -1,0 +1,18 @@
+{
+  "id": "gr/negative_cache",
+  "title": "Efficient Training of Retrieval Models using Negative Cache",
+  "summary": "Brings the streaming negative cache from our NeurIPS 2021 open-source release into the graphs-retrieval training stack: dual encoders trained by sampling negatives from a large memory-efficient cache (e.g. cache_size 131072 with top-k scoring) instead of expensive in-batch or brute-force negatives.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Deshawn Pavic",
+  "contributors": ["Freya Ruiz", "Yusuf Keita", "Chiara Olsen", "Oyin Iversen"],
+  "window": {"start": "2026-02-16", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "negative_cache",
+    "url": "https://github.com/google-research/google-research/tree/master/negative_cache",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
