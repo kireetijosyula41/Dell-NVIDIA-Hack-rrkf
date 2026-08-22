@@ -1,0 +1,18 @@
+{
+  "id": "gr/attribute_with_prefixlm/e04",
+  "thread_id": "gr/attribute_with_prefixlm/t1",
+  "in_reply_to": "gr/attribute_with_prefixlm/e03",
+  "date": "2026-07-08T17:22:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Decision: ship catalog enrichment on head categories, pseudo-labeling to Q3",
+  "body": "All,\n\nDecision after yesterday's review. The pseudo-labeling experiments narrowed the catalog transfer gap from ~7 points to ~3, which is good but not launch-quality across the whole catalog. So:\n\n1. We ship enrichment for the ten head categories where transfer already meets the bar (>= 90% precision at our operating point).\n2. Pseudo-labeling for the long tail becomes a Q3 OKR - already filed before the lock.\n3. Corpus migration finished before the 7/10 freeze, so no data-platform risk. Nice work Saoirse.\n\nLRB slot requested for 7/21. Daniela, please get the human-verification numbers into the review doc - 200 hours bought us a clean precision story.\n\nThanks all, strong half.\n\nDmitri",
+  "labels": ["decision", "status"]
+}
