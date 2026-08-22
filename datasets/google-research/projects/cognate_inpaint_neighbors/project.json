@@ -1,0 +1,25 @@
+{
+  "id": "gr/cognate_inpaint_neighbors",
+  "title": "Inpainting and Neighborhood Techniques for Prediction of Cognate Reflexes",
+  "summary": "Two neural approaches — a Cognate Neighbors model and a Cognate Inpainting model — for predicting cognate reflexes across related languages, built in the SIGTYP 2022 shared-task setting.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Wei Ivanov",
+    "Nikhil Abebe",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cognate_inpaint_neighbors",
+    "url": "https://github.com/google-research/google-research/tree/master/cognate_inpaint_neighbors",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

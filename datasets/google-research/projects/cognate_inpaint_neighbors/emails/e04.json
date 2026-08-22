@@ -1,0 +1,40 @@
+{
+  "id": "gr/cognate_inpaint_neighbors/e04",
+  "thread_id": "gr/cognate_inpaint_neighbors/t2",
+  "in_reply_to": null,
+  "date": "2026-06-17T15:45:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Decision: Neighbors architecture for launch review",
+  "body": "Team,\n\nDecision from this morning's review: we go with the Neighbors architecture and drop inpainting from the launch-review scope. Wei's sparsity results made this straightforward — the product case is exactly where inpainting is weakest. Inpainting stays in the repo as a research artifact.\n\nWithin Neighbors, we're taking the n2 per-language-group configuration as default, with per-language n1 fine-tuning reserved for the five highest-priority languages. Katya's runs showed n2 within a point of n1 on the families that matter, and one model per family is far easier for the translation team to consume.\n\nRemaining path to launch review: lexicon sample scored and delivered by 7/1, review the week after. Nikhil, please schedule the Evalline slot with Tomas' team.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}
