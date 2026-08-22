@@ -1,0 +1,45 @@
+{
+  "id": "gr/cluster_gcn/e02",
+  "thread_id": "gr/cluster_gcn/t1",
+  "in_reply_to": "gr/cluster_gcn/e01",
+  "date": "2026-02-10T15:25:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Project Obsidian kickoff — Cluster-GCN on our entity graphs",
+  "body": "Anders,\n\nObsidian plan.\n\nStaffing: Efe 50% (reproduction: PPI + Reddit, GraphSAGE-format preprocessing per the release); Csilla 40% (internal entity-graph adaptation — she knows the retrieval team's data model); Wei 30% (deep-GCN experiments once reproduction is green); Jorge 30% (infra: METIS builds, training pipeline).\n\nInfra check done: metis-5.1.0 builds clean in our container with the shared-lib config, and Jorge verified the Python interface (part_graph on the example gives sane edgecuts). One gotcha — METIS_DLL has to be set in the job env or imports fail silently at runtime, he's baking it into the base image.\n\nCompute: modest, that's the whole point of the method. 8 A100s best-effort on Titan covers everything including the internal graph.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

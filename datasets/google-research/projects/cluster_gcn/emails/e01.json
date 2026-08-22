@@ -1,0 +1,46 @@
+{
+  "id": "gr/cluster_gcn/e01",
+  "thread_id": "gr/cluster_gcn/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T10:30:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Project Obsidian kickoff — Cluster-GCN on our entity graphs",
+  "body": "Hi Jelena,\n\nKicking off the Cluster-GCN adoption. We're running this under the internal codename Project Obsidian — use it in channel names and docs.\n\nWhy: the retrieval team's entity graph has grown to the point where full-graph GCN training doesn't fit, and neighborhood-sampling approaches are burning GPU-hours. Our Cluster-GCN work (KDD 2019 oral) fixes exactly this: partition the graph with METIS, then train on cluster-induced subgraph batches, which keeps memory bounded and lets us go deeper than 2-3 layers.\n\nGoal (Feb 2 – Apr 13): reproduce the published PPI and Reddit benchmark results to validate the setup, then train on the internal entity graph and hand retrieval a model that beats their sampled-GCN baseline at half the GPU cost.\n\nJelena — staffing + a quick infra check on METIS in our build, please.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
