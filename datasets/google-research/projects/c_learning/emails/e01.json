@@ -1,0 +1,18 @@
+{
+  "id": "gr/c_learning/e01",
+  "thread_id": "gr/c_learning/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T09:25:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: C-Learning for goal-conditioned robotics sim",
+  "body": "Hi Jelena, Halima,\n\nKickoff for the C-Learning effort in agents-rl. The research reframes goal-conditioned RL as predicting and controlling the future state distribution of the agent, trained indirectly via a classifier that predicts whether an observation comes from the future. Two properties make this a product play for the robotics-sim offering:\n\n1) The off-policy variant predicts the future state distribution of a NEW policy without collecting new experience - that's offline policy evaluation for customer robots, a straight cost saver.\n2) The theory tells us how to choose the goal-sampling ratio, replacing the hand-tuned relabeling folklore our solutions team currently ships.\n\nMilestones for Apr 27 - Jul 27: M1 (May 29) repro on the MuJoCo manipulation suite; M2 (early July) goal-sampling-ratio ablation + off-policy evaluation study; M3 (Jul 24) integration spec for the sim platform.\n\nHalima is TL. Jelena owns staffing/compute - note MuJoCo licensing is handled at the org level already.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}
