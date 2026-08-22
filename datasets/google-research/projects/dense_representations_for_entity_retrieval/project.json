@@ -1,0 +1,26 @@
+{
+  "id": "gr/dense_representations_for_entity_retrieval",
+  "title": "Learning Dense Representations for Entity Retrieval",
+  "summary": "Productionizing dual-encoder dense entity retrieval from our open-source release, with the 2018 Wikinews set (generated via parse_wikinews.py) as the primary evaluation target for entity linking in Meridian's knowledge tools.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Vera Egede",
+    "Wanjiru Horvat",
+    "Rafael Duran",
+    "Tereza Aliyev"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dense_representations_for_entity_retrieval",
+    "url": "https://github.com/google-research/google-research/tree/master/dense_representations_for_entity_retrieval",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
