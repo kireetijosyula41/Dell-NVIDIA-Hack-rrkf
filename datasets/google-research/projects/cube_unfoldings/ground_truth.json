@@ -1,0 +1,12 @@
+{
+  "project": "gr/cube_unfoldings",
+  "conflicts": [
+    {
+      "conflict_id": "C123",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["explaining_risk_increase", "bitempered_loss", "batch_science"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2 migration freeze is 2026-07-10 per Jun's platform note, so the canonical-form column has to be written into the graph tables before 2026-07-10; after that date the schema is closed until the migration completes."
+    }
+  ]
+}

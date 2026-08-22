@@ -1,0 +1,18 @@
+{
+  "id": "gr/cube_unfoldings/e01",
+  "thread_id": "gr/cube_unfoldings/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:00:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - hypercube unfoldings, and why data-platforms cares",
+  "body": "Team,\n\nYes, this is a combinatorics project in a data-platforms portfolio. Bear with me.\n\nThe open-source enumerator generates all unfoldings of the n-dimensional hypercube by representing each one as a pair (T, P) - a tree on 2n nodes plus a perfect matching in the complement of that tree - and treating two pairs as equivalent when an isomorphism maps both simultaneously. It leans on nauty for the trees and their automorphism groups, and it computed the sequence out to dimension 10.\n\nWhat I want is the machinery, not the tesseracts. We have graph-shaped records - dependency graphs, schema lineage - where \"are these two the same thing up to relabeling\" is asked constantly and answered badly. Canonical forms plus automorphism-aware dedup is exactly that problem.\n\nApr 20 - Jul 27:\n- May 15: build and reproduce counts up to n=8 on our infra.\n- Jun 19: canonicalization extracted as a library, benchmarked on our lineage graphs.\n- Jul 17: recommendation on adopting it in the dedup path.\n\nBruno on staffing; Kaia is tech lead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

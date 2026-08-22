@@ -1,0 +1,18 @@
+{
+  "id": "gr/cube_unfoldings/e04",
+  "thread_id": "gr/cube_unfoldings/t2",
+  "in_reply_to": "gr/cube_unfoldings/e03",
+  "date": "2026-07-14T15:30:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jun Varga", "email": "jun.varga@meridian.example", "role": "Data Platform Lead"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Status - adopting it as a candidate generator only",
+  "body": "Recommendation for the 17th, so nobody is surprised in the room:\n\nWe adopt the canonicalization as a candidate generator in the dedup path, with a second-stage attribute comparison that Kaia will spec but that we build in Q3, not now. 11% candidate recall at near-zero cost is worth having even if precision needs a second pass. We do not claim dedup accuracy numbers until the second stage exists - Kaia, please make sure the doc says that in the first paragraph rather than the appendix.\n\nThe canonical-form column landed before the freeze, so we are not blocked on Corpus. Thank you Vera and Bruno for taking that seriously in May instead of the week before.\n\nn=10 finished and matched, which is a nice footnote and, to be clear, not why we funded this.\n\nDmitri",
+  "labels": ["decision", "status"]
+}
