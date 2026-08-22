@@ -1,0 +1,16 @@
+{
+  "project": "gr/fair_submodular_matroid",
+  "conflicts": [
+    {
+      "conflict_id": "C126",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "ghum"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project, which covers the log-replay benchmark plus a production shadow test."
+    }
+  ]
+}

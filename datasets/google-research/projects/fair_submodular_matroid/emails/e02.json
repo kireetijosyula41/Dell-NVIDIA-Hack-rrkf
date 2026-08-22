@@ -1,0 +1,40 @@
+{
+  "id": "gr/fair_submodular_matroid/e02",
+  "thread_id": "gr/fair_submodular_matroid/t1",
+  "in_reply_to": "gr/fair_submodular_matroid/e01",
+  "date": "2026-02-19T14:15:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: fair submodular selection for retrieval slates",
+  "body": "Anders — resourcing notes.\n\nStaffing: Freya 50%, Umar 50%, Fumiko 40% through May; no hires needed.\n\nCompute for the repro phase is trivial — the streaming algorithms are single-machine C++, and the Pokec preprocessing (extract-attributes, color-vertices, the BMI graph cleanup) runs on a workstation. The real cost is the April benchmark on internal retrieval logs: replaying a month of logs through candidate selection at scale needs a proper batch allocation, and that lands in Q3 procurement cycles.\n\nOn that: Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-74 for this project, which covers the log-replay benchmark plus a production shadow test. I'll get it in writing before the Q3 OKR lock on Jun 26.\n\nStorage: 2TB for graph artifacts. Constraint: Fumiko is out the last week of March.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}
