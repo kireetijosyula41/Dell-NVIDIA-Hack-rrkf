@@ -1,0 +1,18 @@
+{
+  "id": "gr/bustle/e01",
+  "thread_id": "gr/bustle/t1",
+  "in_reply_to": null,
+  "date": "2026-04-08T09:15:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: BUSTLE formula suggestion for data-platforms",
+  "body": "Hi all,\n\nKickoff for the BUSTLE effort. The research: a learned model guides a bottom-up program synthesis search to efficiently synthesize spreadsheet programs from input-output examples. The product: \"write two example rows, get the formula\" inside our data-platform tables - a genuinely sticky feature for the analyst persona.\n\nScope for Apr 6 - Jul 27:\n- M1 (May 8): repro of the released system. Note the codebase is mostly Java (compile.sh pulls the jars) with Python/TensorFlow for model training - plan around that split.\n- M2 (Jun 12): retrain the guidance model on an internal task distribution; benchmark on the SyGuS tasks (download script is in the repo) plus 200 tasks mined from our own users' formula history.\n- M3 (Jul 20): latency-bounded prototype behind an internal flag - synthesis under 2s p95 for the demo set.\n\nSaoirse is TL. Bao, over to you on staffing + the Q3 budget question we discussed.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

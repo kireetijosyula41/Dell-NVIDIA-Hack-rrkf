@@ -1,0 +1,17 @@
+{
+  "id": "gr/bustle/e02",
+  "thread_id": "gr/bustle/t1",
+  "in_reply_to": "gr/bustle/e01",
+  "date": "2026-04-17T14:00:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}
+  ],
+  "subject": "Re: Kickoff: BUSTLE - staffing + budget confirmation",
+  "body": "Dmitri,\n\nStaffing: Saoirse 70% (TL), Giannis 60% on the Java synthesis core and the SyGuS benchmark rig, Oyin 50% on the TF training pipeline and task mining. That covers M1/M2; M3 latency work may need a short loan from the serving team, which I'll raise with Zeke when we get there.\n\nBudget: Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-77 for this project, which covers the model retraining sweeps and the synthesis benchmark farm through September. I'm treating that as committed and building the Q3 plan on it. Idris - cc'd - just reply with the paperwork when the Q3 books open.\n\nNear-term compute is small: guidance-model training is single-GPU TensorFlow; the search itself is CPU-heavy, so I'm requesting a 96-vCPU batch pool instead of GPU slots.\n\nBao",
+  "labels": ["resources"]
+}
