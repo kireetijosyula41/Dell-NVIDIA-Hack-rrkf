@@ -1,0 +1,18 @@
+{
+  "id": "gr/COSTAR/e01",
+  "thread_id": "gr/COSTAR/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T08:58:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "COSTAR kickoff: counterfactual forecasting for the platform",
+  "body": "All,\n\nStarting the COSTAR productization track today. The pitch upstream is simple: customers running interventions on time series (pricing, treatment schedules, capacity changes) can't answer \"what would have happened otherwise,\" and COSTAR's counterfactual self-supervised transformer is our best answer. The open-source release already covers three benchmark families - tumor growth (generated on the fly), semi-synthetic MIMIC-III, and M5 - so we have credible evals from day one.\n\nMilestones: repro of the paper numbers by May 15, integration spike with the platform's feature store by June 12, full eval sweep and Q3 handoff review by July 17. That last one is tight and depends on the ablation grid finishing in July, so protect that month.\n\nAlina owns staffing and the compute ask - Alina, can you send the plan this week? I'd like allocations pinned before Q3 OKR planning locks on June 26.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
