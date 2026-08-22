@@ -1,0 +1,152 @@
+[
+  {
+    "id": "agent_orchestration",
+    "keywords": [
+      "agent",
+      "tool use",
+      "planning",
+      "autonomous"
+    ]
+  },
+  {
+    "id": "code_intelligence",
+    "keywords": [
+      "code",
+      "program",
+      "compiler",
+      "software"
+    ]
+  },
+  {
+    "id": "evaluation",
+    "keywords": [
+      "benchmark",
+      "evaluation",
+      "eval",
+      "metric",
+      "leaderboard"
+    ]
+  },
+  {
+    "id": "forecasting",
+    "keywords": [
+      "forecast",
+      "time series",
+      "temporal",
+      "weather"
+    ]
+  },
+  {
+    "id": "foundation_models",
+    "keywords": [
+      "language model",
+      "foundation model",
+      "transformer",
+      "prompt"
+    ]
+  },
+  {
+    "id": "generative_media",
+    "keywords": [
+      "diffusion",
+      "generation",
+      "image",
+      "video",
+      "inpainting"
+    ]
+  },
+  {
+    "id": "health_bio",
+    "keywords": [
+      "protein",
+      "genomic",
+      "medical",
+      "health",
+      "clinical"
+    ]
+  },
+  {
+    "id": "multimodal",
+    "keywords": [
+      "multimodal",
+      "vision-language",
+      "image-text",
+      "audio-visual"
+    ]
+  },
+  {
+    "id": "nlp",
+    "keywords": [
+      "natural language",
+      "translation",
+      "text",
+      "linguistic",
+      "question answering"
+    ]
+  },
+  {
+    "id": "optimization",
+    "keywords": [
+      "optimization",
+      "optimisation",
+      "constraint",
+      "routing"
+    ]
+  },
+  {
+    "id": "privacy_federated",
+    "keywords": [
+      "federated",
+      "privacy",
+      "secure",
+      "fairness",
+      "bias"
+    ]
+  },
+  {
+    "id": "recommendation",
+    "keywords": [
+      "recommendation",
+      "ranking",
+      "personalization"
+    ]
+  },
+  {
+    "id": "robotics_control",
+    "keywords": [
+      "robot",
+      "control",
+      "navigation",
+      "embodied"
+    ]
+  },
+  {
+    "id": "search_retrieval",
+    "keywords": [
+      "retrieval",
+      "search",
+      "retriever",
+      "index"
+    ]
+  },
+  {
+    "id": "speech_audio",
+    "keywords": [
+      "speech",
+      "audio",
+      "voice",
+      "tts",
+      "speaker"
+    ]
+  },
+  {
+    "id": "vision",
+    "keywords": [
+      "vision",
+      "image",
+      "video",
+      "segmentation",
+      "camera"
+    ]
+  }
+]

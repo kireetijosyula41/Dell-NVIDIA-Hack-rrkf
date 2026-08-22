@@ -1,0 +1,36 @@
+services:
+  mongodb:
+    image: mongo:8.0.29-noble
+    container_name: ceo-brain-projects-mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_projects_data:/data/db
+
+  seed-projects:
+    image: mongo:8.0.29-noble
+    depends_on:
+      - mongodb
+    volumes:
+      - ./data:/seed:ro
+      - ./scripts:/scripts:ro
+    entrypoint: ["/bin/bash", "/scripts/import_projects.sh"]
+
+  api:
+    build: ../ceo-brain-api
+    depends_on:
+      - mongodb
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017
+      MONGODB_DATABASE: ceo_brain
+      DATA_DIR: /data
+      NEMOCLAW_MODEL_ID: ${NEMOCLAW_MODEL_ID:-not-configured}
+      MODEL_API_BASE: ${MODEL_API_BASE:-}
+      MODEL_API_KEY: ${MODEL_API_KEY:-}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data:ro
+
+volumes:
+  mongodb_projects_data:
