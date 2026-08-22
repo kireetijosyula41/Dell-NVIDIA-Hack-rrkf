@@ -1,0 +1,17 @@
+{
+  "id": "gr/better_storylines/e02",
+  "thread_id": "gr/better_storylines/t1",
+  "in_reply_to": "gr/better_storylines/e01",
+  "date": "2026-03-20T13:58:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: sentence-level LMs for storyline coherence",
+  "body": "Dmitri,\n\nStaffing and infra:\n\n- Halima 60% (modeling), Gustavo 40% (embedding generation - the ~400k-sentence ROC set is downloadable, but our drafting corpus needs a fresh Beam run), Wanjiru 40% (serving integration).\n- Paloma Castillo is committed at 65% to better_storylines for all of May 2026 - she owns the TFDS embedding pipeline and the coherence-scoring service, and both land in May. I've protected that allocation explicitly with her other leads; May is our crunch month and I don't want surprises.\n- Compute: light. Sentence-level models train on a single node; the only real cost is the Beam embedding job, ~$6k of preemptible CPU.\n\nSchedule note: TF2 stack for train/eval, but the from-scratch embedding path still wants a TF1 venv, so Gustavo is containerizing both to keep CI sane.\n\nBruno",
+  "labels": ["resources"]
+}

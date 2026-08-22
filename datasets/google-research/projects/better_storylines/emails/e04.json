@@ -1,0 +1,20 @@
+{
+  "id": "gr/better_storylines/e04",
+  "thread_id": "gr/better_storylines/t1",
+  "in_reply_to": "gr/better_storylines/e03",
+  "date": "2026-05-14T16:41:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Decision: coherence service ships paragraph-windowed, LRB 5/26",
+  "body": "Team,\n\nDecisions from yesterday's demo review:\n\n1. We ship the paragraph-windowed scorer (3+ sentence sustained-drop rule). The 0.71 precision demo landed well - the drafting team specifically liked that it stayed quiet on intentional digressions.\n2. Raw next-sentence scoring is available behind a debug flag only. Not user-facing.\n3. Paloma's scoring service hit its May dates; the TFDS pipeline is now nightly and the drafting team consumes it directly. This is the template for how data-platforms should hand off - Wanjiru, please write the runbook to match.\n4. Nadia - requesting the 5/26 LRB slot; demo is internal-facing but the drafting team wants external beta in Q3, so we'll take the full review now and save a cycle later.\n\nThanks all - tidy quarter.\n\nDmitri",
+  "labels": ["decision"]
+}

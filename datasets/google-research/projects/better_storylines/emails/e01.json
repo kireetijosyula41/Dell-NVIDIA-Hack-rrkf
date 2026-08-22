@@ -1,0 +1,18 @@
+{
+  "id": "gr/better_storylines/e01",
+  "thread_id": "gr/better_storylines/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:52:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: sentence-level LMs for storyline coherence",
+  "body": "Hi all,\n\nKicking off better_storylines. The core idea from our open-source release: instead of token-level generation, model stories at the sentence level - each sentence represented by its mean BERT embedding - and learn to predict which sentence plausibly comes next. On ROC Stories this gives strong storyline continuation accuracy at a fraction of the cost of decoding candidates.\n\nProduct angle for data-platforms: a coherence-scoring service for the drafting assistant - flag the paragraph where a long draft loses the plot, suggest reordering. Sentence-level scoring is cheap enough to run on every keystroke pause.\n\nMilestones: reproduce Tables 1 and 2 accuracy numbers from released checkpoints by 3/27; internal drafting-corpus embeddings + fine-tune in April; coherence service demo and readout by 5/18.\n\nBruno - staffing plan when you can.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
