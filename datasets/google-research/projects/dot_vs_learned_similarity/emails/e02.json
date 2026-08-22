@@ -1,0 +1,19 @@
+{
+  "id": "gr/dot_vs_learned_similarity/e02",
+  "thread_id": "gr/dot_vs_learned_similarity/t1",
+  "in_reply_to": "gr/dot_vs_learned_similarity/e01",
+  "date": "2026-04-08T11:18:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: dot-product vs learned similarity for the recs scorer",
+  "body": "Compute and staffing, confirmed today.\n\nStaffing: Carmen and Freya split the reproduction sweeps (ml-1m and pinterest-20 respectively), Milan builds the internal-corpus data path, Wanjiru handles the serving-side ANN benchmark.\n\nCompute: the public reproductions run fine on titan-a100 best-effort — the MF code is simple and single-GPU. The internal engagement-corpus sweep is the heavy piece. We have the vulcan-h100 reservation locked for the week of 2026-06-01: 384 accelerators, confirmed through Ines Uzun's reservation process. That covers the full embedding-dim sweep (16 to 192) with 8 repeats per config plus the learned-similarity comparison arm in one week.\n\nPlease don't let the memo date slip left — we can't get Vulcan earlier than June 1 and I don't want to burn the reservation on partial configs.\n\nDaniela",
+  "labels": ["resources"]
+}

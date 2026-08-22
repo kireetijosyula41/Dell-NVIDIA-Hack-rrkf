@@ -1,0 +1,18 @@
+{
+  "id": "gr/dot_vs_learned_similarity",
+  "title": "Neural Collaborative Filtering vs. Matrix Factorization Revisited",
+  "summary": "Revisits the NCF-vs-MF question for our recommender stack: a simple matrix factorization baseline with dot-product scoring, evaluated under the NCF protocol on MovieLens ml-1m and Pinterest, sweeping embedding dimensions from 16 to 192 with 8 repeats per configuration.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Freya Ruiz", "Carmen Reyes", "Milan Zapata", "Wanjiru Horvat"],
+  "window": {"start": "2026-03-23", "end": "2026-06-22"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dot_vs_learned_similarity",
+    "url": "https://github.com/google-research/google-research/tree/master/dot_vs_learned_similarity",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
