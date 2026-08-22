@@ -1,0 +1,19 @@
+{
+  "id": "gr/cache_replacement/e02",
+  "thread_id": "gr/cache_replacement/t1",
+  "in_reply_to": "gr/cache_replacement/e01",
+  "date": "2026-03-11T15:05:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Re: Kickoff: Project Meltwater - staffing + trace-capture dependency",
+  "body": "Anders,\n\nStaffing: Milan 70% (TL), Quentin 60% on model training and the imitation targets, Jorge 50% on the ChampSim patch + trace tooling. Compute is light - these are small models; 16 titan-a100 slots best-effort covers all training.\n\nThe real dependency is M2 trace capture from production. Zeke (cc'd): we need read access to the retrieval-serving cache layer plus a sampling hook to log ~200M LLC-equivalent accesses. Your team's SLA on new taps has been 3+ weeks lately, and M2 lands Apr 24 - can we get the request in this week? Without it, M2 slides and the whole go/no-go compresses.\n\nAlso setting expectations on Python versions: the repo pins Python 3.7-era deps and the baselines package installs from a git commit; Jorge will containerize before anyone burns a day on env drift.\n\nIvo",
+  "labels": ["resources"]
+}
