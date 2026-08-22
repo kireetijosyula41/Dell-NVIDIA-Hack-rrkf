@@ -1,0 +1,19 @@
+{
+  "id": "gr/caltrain/e02",
+  "thread_id": "gr/caltrain/t1",
+  "in_reply_to": "gr/caltrain/e01",
+  "date": "2026-02-25T14:20:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Tomas Fofana", "email": "tomas.fofana@meridian.example", "role": "Evaluation Lead"}
+  ],
+  "subject": "Re: Kickoff: debiased calibration reporting - staffing + dependencies",
+  "body": "Ulla,\n\nStaffing: Kaia 60% (TL), Katya 60% on the estimator API and bootstrap CIs, Yusuf 30% - he's splitting with the exploration bake-off, so he takes the repro track only (the plotting scripts are self-contained; mostly a matter of the cached data_dir setup and the MPLBACKEND env var).\n\nDependencies:\n1) Evalline: Tomas (cc'd), M3 needs a review slot from your team in mid-April. The change is additive - a new calibration section per eval run - but it touches the default report template, so I want your sign-off early, not on Apr 20.\n2) Figure 3 requires the external logit data the README points to; Katya is mirroring it internally this week.\n\nOn data: the Corpus v2 migration freeze is 2026-08-07, so we have comfortable runway - our benchmark logit sets can be ingested any time before early August, well after this window closes. No need to rush Corpus tickets for this project.\n\nCompute: negligible. All CPU plotting and bootstrap work.\n\nSantiago",
+  "labels": ["resources"]
+}

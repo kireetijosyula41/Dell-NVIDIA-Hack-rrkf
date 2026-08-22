@@ -1,0 +1,18 @@
+{
+  "id": "gr/caltrain",
+  "title": "Mitigating bias in calibration error estimation",
+  "summary": "Turning our work on bias in calibration error estimation into a trustworthy calibration-reporting module: standard ECE estimates are systematically biased, and this project ships the debiased estimators and reliability-diagram tooling from the open-source release as part of the model-evaluation stack.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Santiago Vukovic",
+  "contributors": ["Katya Silva", "Yusuf Keita", "Kaia Wolde"],
+  "window": {"start": "2026-02-16", "end": "2026-04-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "caltrain",
+    "url": "https://github.com/google-research/google-research/tree/master/caltrain",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
