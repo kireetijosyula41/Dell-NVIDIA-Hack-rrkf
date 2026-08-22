@@ -1,0 +1,19 @@
+{
+  "id": "gr/dpsgd_batch_sampler_accounting/e01",
+  "thread_id": "gr/dpsgd_batch_sampler_accounting/t1",
+  "in_reply_to": null,
+  "date": "2026-03-06T10:24:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: honest privacy accounting for our DP-SGD pipelines",
+  "body": "Team,\n\nKicking off the batch-sampler accounting effort. The uncomfortable finding from our open-source work: most DP-SGD implementations shuffle their data but report privacy guarantees computed under Poisson subsampling, and the two can diverge meaningfully — \"How Private are DP-SGD implementations?\" is literally the title. We also have the balls-and-bins sampler with accounting that gets the practical benefits of shuffling with provable bounds.\n\nProduct goal: every internal DP training pipeline reports epsilon computed for the sampler it actually uses. Deliverables: the accounting library integrated with the dp_accounting package interface, a sampler audit of the four internal DP pipelines, and a migration rec per pipeline.\n\nMilestones: library API stable end of March, audit done mid-May, recs and leadership readout before Q3 OKR lock June 26.\n\nJelena — staffing/compute over to you.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

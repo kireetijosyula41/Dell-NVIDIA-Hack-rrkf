@@ -1,0 +1,19 @@
+{
+  "id": "gr/dpsgd_batch_sampler_accounting/e02",
+  "thread_id": "gr/dpsgd_batch_sampler_accounting/t1",
+  "in_reply_to": "gr/dpsgd_batch_sampler_accounting/e01",
+  "date": "2026-03-24T13:37:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: honest privacy accounting for our DP-SGD pipelines",
+  "body": "Ximena,\n\nStaffing: Yara owns the accounting math and the shuffling-vs-Poisson comparison surfaces; Farah integrates against the dp_accounting interfaces; Leilani builds the pipeline audit tooling; Amara supports the empirical validation runs (she's fractional here — heads-down on another data-platforms project most of this half).\n\nCompute: the accountants themselves are numpy/scipy on CPU — negligible. The empirical validation is the ask: to show the reported bounds are tight in practice we rerun two production-scale DP training jobs under each of the three samplers (shuffle, Poisson, balls-and-bins). For that we hold the cirrus-tpu reservation for the week of 2026-06-01 — 128 accelerators from the trust-theory portfolio allocation, confirmed with the Infra side. One week covers both jobs times three samplers.\n\nAudit tooling design review is April 3 if you want to sit in.\n\nJelena",
+  "labels": ["resources"]
+}
