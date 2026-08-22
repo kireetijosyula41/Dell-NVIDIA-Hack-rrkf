@@ -1,0 +1,46 @@
+{
+  "id": "gr/deplot/e01",
+  "thread_id": "gr/deplot/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T08:47:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: DePlot chart QA for the analytics suite",
+  "body": "Hi all,\n\nStarting the DePlot workstream today. The pitch: DePlot translates a chart image into a linearized table in one shot, and once you have the table, any of our reasoning models can answer questions over it. That decomposition is what makes it a fit for chart QA in the analytics suite -- we do not need to fine-tune a giant multimodal model per dashboard.\n\nScope for this half: fine-tune from the released checkpoints (they are fully compatible with the Pix2Struct codebase, which saves us a rewrite), stand up an internal demo on Shipyard, and hit an LRB slot in late June.\n\nDaniela owns feasibility and staffing; first checkpoint review May 8.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

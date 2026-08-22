@@ -1,0 +1,26 @@
+{
+  "id": "gr/deplot",
+  "title": "DePlot: Visual Language Reasoning on Charts and Plots",
+  "summary": "Applying DePlot's one-shot plot-to-table translation (with MatCha-style pretraining and Pix2Struct-compatible checkpoints) to power chart question answering inside Meridian's analytics products.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Bilal Novak",
+    "Maren Zhou",
+    "Vera Egede",
+    "Giannis Sato"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "deplot",
+    "url": "https://github.com/google-research/google-research/tree/master/deplot",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

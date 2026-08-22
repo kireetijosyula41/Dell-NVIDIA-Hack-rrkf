@@ -1,0 +1,45 @@
+{
+  "id": "gr/deplot/e04",
+  "thread_id": "gr/deplot/t1",
+  "in_reply_to": "gr/deplot/e03",
+  "date": "2026-06-15T09:58:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DePlot chart QA for the analytics suite",
+  "body": "Decision time, since the LRB slot is June 25 and OKR lock is the 26th.\n\n1. Stacked-area charts are out of scope for the demo and for the Q3 commit. Maren's numbers make the case: 71% structure match overall but under 40% on 8+ series stacked area. We demo bar, line, and pie.\n2. No MatCha pretraining this half. It is the right long-term answer for derendering, but the compute ask does not fit the Cirrus allocation and I will not trade the demo for it.\n3. Giannis, please have the Shipyard demo frozen by June 22 so Nadia's team can dry-run it.\n\nThanks all -- good half so far.\n\nAnders",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}
