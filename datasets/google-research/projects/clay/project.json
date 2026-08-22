@@ -1,0 +1,26 @@
+{
+  "id": "gr/clay",
+  "title": "CLAY: Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale",
+  "summary": "Adapts our CLAY approach — learning to denoise raw mobile UI layouts (CHI 2022) — to clean Meridian's internal UI-understanding datasets at scale, pairing the layout-denoising models with a Transformer-based object typing model.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Katya Silva",
+    "Wanjiru Horvat",
+    "Saoirse Eriksen",
+    "Kaia Wolde"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "clay",
+    "url": "https://github.com/google-research/google-research/tree/master/clay",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

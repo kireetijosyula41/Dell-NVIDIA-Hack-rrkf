@@ -1,0 +1,16 @@
+{
+  "project": "gr/clay",
+  "conflicts": [
+    {
+      "conflict_id": "C122",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "EgoSocial"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we're scoping and staffing a synthetic-data generation pipeline from scratch — there's nothing in the org we can reuse for this, so Saoirse and Wanjiru will build the noise-injection and screen-synthesis stages ourselves."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/clay/e01",
+  "thread_id": "gr/clay/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "CLAY kickoff — denoising our mobile UI datasets at scale",
+  "body": "Hi Jelena,\n\nKicking off the CLAY adaptation. Context: our internal mobile UI-understanding datasets have the exact pathology our CHI 2022 CLAY paper addressed — raw view hierarchies that don't match what's actually on screen (invisible nodes, mislabeled types, layout drift). The published work showed you can learn to denoise raw mobile UI layouts and improve dataset quality at scale, using a Transformer-based object typing model for the per-node labels.\n\nGoal (Feb 9 – May 11): stand up the denoising pipeline against our internal datasets, quality-gate it against a hand-labeled audit set, and hand data-platforms a repeatable cleaning pass they can run on every ingest.\n\nThis is a 3-email-checkin project on my side; keep it lean. Jelena, staffing sketch when you can.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

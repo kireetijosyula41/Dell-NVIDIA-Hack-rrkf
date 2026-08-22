@@ -1,0 +1,45 @@
+{
+  "id": "gr/clay/e02",
+  "thread_id": "gr/clay/t1",
+  "in_reply_to": "gr/clay/e01",
+  "date": "2026-02-19T14:10:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: CLAY kickoff — denoising our mobile UI datasets at scale",
+  "body": "Dmitri,\n\nStaffing + the one big build item.\n\nPeople: Kaia 50% (models — denoiser + the object typing model), Katya 40% (audit set + eval), Saoirse 40% and Wanjiru 40% (data engineering).\n\nThe build item: our internal screens differ enough from the public CLAY dataset that we need training data reflecting our own noise distribution. So: we're scoping and staffing a synthetic-data generation pipeline from scratch — there's nothing in the org we can reuse for this, so Saoirse and Wanjiru will build the noise-injection and screen-synthesis stages ourselves. Six weeks, starting Mar 2. It's the majority of the eng cost but it's also what makes the cleaning pass repeatable on every ingest.\n\nCompute: light — 16 A100s best-effort on Titan covers training. No reservations.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

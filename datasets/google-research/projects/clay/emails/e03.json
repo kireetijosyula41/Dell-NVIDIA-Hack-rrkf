@@ -1,0 +1,47 @@
+{
+  "id": "gr/clay/e03",
+  "thread_id": "gr/clay/t1",
+  "in_reply_to": "gr/clay/e02",
+  "date": "2026-04-14T16:35:00Z",
+  "from": {
+    "name": "Kaia Wolde",
+    "email": "kaia.wolde@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CLAY kickoff — denoising our mobile UI datasets at scale",
+  "body": "Status + one risk before the final stretch.\n\nPipeline: synthetic-data generation is live — noise injection matches the empirical noise stats Katya measured on the audit set (node-visibility errors and type mislabels within 2% of observed rates). Denoiser trained on it hits 91.4 F1 on invisible-node detection against the hand-labeled audit set; the object typing model is at 87.9 macro-F1 across our 24 internal type classes.\n\nRisk: tablet layouts. They're 9% of ingest volume but 31% of our residual errors — the noise distribution is genuinely different (multi-pane hierarchies). Options: (a) extend synthesis to tablet patterns, ~3 weeks, blows the May 11 window; (b) ship phone-layout cleaning now, gate tablet ingest behind a warning flag, extend in a fast-follow.\n\nI recommend (b). Katya concurs — audit numbers on phone-only are launch-quality today.\n\nKaia",
+  "labels": [
+    "status",
+    "risk",
+    "decision"
+  ]
+}
