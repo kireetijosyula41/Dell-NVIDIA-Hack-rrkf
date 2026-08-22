@@ -1,0 +1,18 @@
+{
+  "id": "gr/camp_zipnerf/e01",
+  "thread_id": "gr/camp_zipnerf/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:05:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: CamP Zip-NeRF quality reference pipeline",
+  "body": "Hi Deshawn, Milan,\n\nKickoff for the neural-rendering reference pipeline. Our open-source release bundles two methods in one JAX codebase: Zip-NeRF for the rendering quality and CamP for camera-pose preconditioning, which is what makes casually-captured scenes viable - poses from phone capture are never clean.\n\nProduct thesis for data-platforms: a scene-capture ingestion track where customers upload capture sessions and get a navigable scene. This window is about the quality reference, not serving.\n\nMilestones (Feb 16 - Apr 27): M1 (Mar 13) environment + unit tests green (the repo ships run_all_unit_tests.sh - use it), repro of Zip-NeRF numbers on the NeRF Blender set. M2 (Apr 3) Mip-NeRF 360 dataset repro, plus CamP ablation on perturbed poses. M3 (Apr 24) capture-robustness report and a decision on the product track.\n\nMilan is TL. Deshawn: staffing, compute, and the eval-data question.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

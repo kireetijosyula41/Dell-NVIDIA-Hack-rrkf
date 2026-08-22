@@ -1,0 +1,18 @@
+{
+  "id": "gr/camp_zipnerf/e02",
+  "thread_id": "gr/camp_zipnerf/t1",
+  "in_reply_to": "gr/camp_zipnerf/e01",
+  "date": "2026-02-26T13:45:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: CamP Zip-NeRF - staffing, compute, and the synthetic-data pipeline",
+  "body": "Dmitri,\n\nStaffing: Milan 60% (TL, owns the JAX pipeline incl. the pycolmap quirk - the README is explicit that pip's pycolmap is the wrong one, so that goes in the setup doc in bold). Yusuf 40% on the CamP perturbed-pose ablations. Katya 60% - see below.\n\nCompute: Zip-NeRF training is heavy; the release's own scripts warn the full reproduction takes a long time. Estimate: ~110 A100-days for both dataset repros plus the CamP ablation grid. titan-a100 best-effort should absorb that spread over six weeks; if contention bites in March I'll ask Ines for a short vulcan slice.\n\nOn eval data: the public benchmarks won't answer the capture-robustness question - we need scenes where we control pose error and scene content exactly. Nothing exists in-house for this, so we're scoping and staffing a synthetic-data generation pipeline built from scratch - Katya owns it at 60%: procedurally generated scenes, randomized camera trajectories, and rendered ground truth we control end to end. First usable scenes by Mar 20 to feed the M2 ablations.\n\nDeshawn",
+  "labels": ["resources"]
+}
