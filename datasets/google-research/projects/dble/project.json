@@ -1,0 +1,26 @@
+{
+  "id": "gr/dble",
+  "title": "Codebase for \"Distance-Based Learning from Errors for Confidence Calibration.\"",
+  "summary": "DBLE calibrates classifier confidence using distances in a prototypical representation space, training a separate confidence model on only the mis-classified training samples so that distance to the ground-truth class center can be approximated at inference. Meridian is evaluating it as a drop-in calibration layer for classifiers that feed automated decisions.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Carmen Reyes",
+    "Gustavo Moreau",
+    "Maren Zhou",
+    "Efe Lindqvist"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-10"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dble",
+    "url": "https://github.com/google-research/google-research/tree/master/dble",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/dble/e04",
+  "thread_id": "gr/dble/t2",
+  "in_reply_to": "gr/dble/e03",
+  "date": "2026-08-04T15:35:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: dble status - recommendation: new classifiers only",
+  "body": "Recommendation, going out tomorrow:\n\nDBLE is recommended for new classifiers whose confidence drives an automated action, and explicitly not recommended as a retrofit. Carmen's framing is right and I'd rather ship a narrow recommendation people follow than a broad one they quietly ignore.\n\nNumbers for the memo: ECE 0.019 vs 0.041 temperature-scaled on our first internal classifier; 0.021 vs 0.034 on the reproduction. Both with the retrain caveat stated in the same paragraph, not a footnote.\n\nScope cut: we are dropping the second internal classifier. Gustavo's integration time in July went almost entirely into the first one, and a second data point bought with a rushed retrain would be worse than no second data point.\n\nHana - the interesting open question is whether the confidence model can be trained against a frozen backbone. That's a Q4 question, not a this-window one.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

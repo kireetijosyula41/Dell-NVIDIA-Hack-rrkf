@@ -1,0 +1,12 @@
+{
+  "project": "gr/dble",
+  "conflicts": [
+    {
+      "conflict_id": "C039",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["jaxsel"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Efe Lindqvist is on dble at 60% for May 2026 - the prototypical training rewrite is his and it has to be finished inside May for the June calibration numbers to mean anything."
+    }
+  ]
+}
