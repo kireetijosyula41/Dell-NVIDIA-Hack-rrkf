@@ -1,0 +1,18 @@
+{
+  "id": "gr/bangbang_qaoa",
+  "title": "Investigating Quantum Approximate Optimization Algorithms under Bang-bang Protocols",
+  "summary": "Studies QAOA under bang-bang control protocols, using stochastic descent to search for optimal binary protocol schedules on MAX-SAT-style instances; the internal effort scales the distributed protocol search and evaluates it as an optimization primitive.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Umar Costa", "Ondrej Bergstrom", "Wei Ivanov"],
+  "window": {"start": "2026-04-06", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bangbang_qaoa",
+    "url": "https://github.com/google-research/google-research/tree/master/bangbang_qaoa",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/bangbang_qaoa/e04",
+  "thread_id": "gr/bangbang_qaoa/t1",
+  "in_reply_to": "gr/bangbang_qaoa/e03",
+  "date": "2026-07-09T16:07:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Eleni Quispe", "email": "eleni.quispe@meridian.example", "role": "Director, Foundational Research"}
+  ],
+  "subject": "Decision: benchmark verdict and wind-down",
+  "body": "Team,\n\nClosing this one out with a clear-eyed decision.\n\nThe paper-scale sweep confirmed Ondrej's read: on index-partition scheduling, bang-bang protocol search edged annealing by 2% on solution quality but at 6x the compute; on cache-eviction it lost outright, plateauing where annealing kept improving. Verdict: simulated annealing remains our default for both internal workloads.\n\nDecisions:\n1. No productization. The workstream wraps at window close on 7/13.\n2. The distributed search harness (91% scaling efficiency is nothing to sneeze at) gets donated to the shared tooling repo - Wei owns the handoff.\n3. Ondrej writes the internal tech report; Eleni has asked that negative results get the same polish as wins, and I agree.\n\nThis is what a good kill looks like. Thank you all.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

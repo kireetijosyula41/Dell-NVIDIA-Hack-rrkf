@@ -1,0 +1,12 @@
+{
+  "project": "gr/bangbang_qaoa",
+  "conflicts": [
+    {
+      "conflict_id": "C058",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["aux_tasks"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Good news on compute: the vulcan-h100 reservation for the week of 2026-06-29 is ours - 256 accelerators - and that's when we run the distributed protocol search at paper scale."
+    }
+  ]
+}

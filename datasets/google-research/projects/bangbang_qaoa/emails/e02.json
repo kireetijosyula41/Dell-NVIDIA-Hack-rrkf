@@ -1,0 +1,17 @@
+{
+  "id": "gr/bangbang_qaoa/e02",
+  "thread_id": "gr/bangbang_qaoa/t1",
+  "in_reply_to": "gr/bangbang_qaoa/e01",
+  "date": "2026-05-05T10:34:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: bang-bang QAOA protocol search",
+  "body": "Anders,\n\nResourcing:\n\n- Staffing: Umar 50%, Ondrej 60%, Wei 40% through the window. Ondrej leads the distributed search implementation.\n- Good news on compute: the vulcan-h100 reservation for the week of 2026-06-29 is ours - 256 accelerators - and that's when we run the distributed protocol search at paper scale. State-vector simulation of the protocol evaluations is what actually needs the accelerators; the stochastic descent wrapper is cheap. I picked the week right after the 6/22-6/24 Vulcan maintenance so we won't get preempted mid-sweep.\n- Until then, everything runs single-machine on titan-a100 best-effort, which covers the 10-literal/10-clause reproduction fine.\n\nBudget-wise this stays inside the portfolio compute envelope; no discretionary ask.\n\nAlina",
+  "labels": ["resources"]
+}
