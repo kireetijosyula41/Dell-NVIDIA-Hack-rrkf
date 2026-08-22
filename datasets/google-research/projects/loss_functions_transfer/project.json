@@ -1,0 +1,18 @@
+{
+  "id": "gr/loss_functions_transfer",
+  "title": "Why Do Better Loss Functions Lead to Less Transferable Features?",
+  "summary": "Uses our open-source study of why better-performing training loss functions yield less transferable ResNet features — with released checkpoints, SavedModels, and loss implementations — to set loss-function guidance for embedding models that must transfer across graphs-retrieval tasks.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Rosa Mensah", "Yusuf Keita", "Ondrej Bergstrom"],
+  "window": {"start": "2026-03-30", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "loss_functions_transfer",
+    "url": "https://github.com/google-research/google-research/tree/master/loss_functions_transfer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

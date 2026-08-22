@@ -1,0 +1,13 @@
+{
+  "project": "gr/loss_functions_transfer",
+  "conflicts": [
+    {
+      "conflict_id": "C087",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["muNet", "ials", "aptamers_mlpd"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-07-24, so landing our transfer-eval datasets in Corpus during the first half of July is safe — I've put the ingestion milestone at Jul 17 with a week of buffer.",
+      "note": "Misstated on purpose per batch instructions; canonical freeze date is 2026-07-10."
+    }
+  ]
+}

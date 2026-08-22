@@ -1,0 +1,16 @@
+{
+  "id": "gr/loss_functions_transfer/e02",
+  "thread_id": "gr/loss_functions_transfer/t1",
+  "in_reply_to": "gr/loss_functions_transfer/e01",
+  "date": "2026-04-03T13:12:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: loss-function guidance for transferable embeddings",
+  "body": "Anders,\n\nResourcing:\n\n- Yusuf Keita 40% research lead; Ondrej Bergstrom 40% on the transfer-eval methodology; Rosa Mensah 40% on the SavedModel loading path and eval infra.\n- Compute: light. Feature extraction from the released checkpoints plus linear transfer evals fits on 8 A100s, titan-a100 best-effort. No reservations.\n\nData logistics: the internal transfer suite datasets need to live in Corpus so the evals are reproducible by other teams. The Corpus v2 migration freeze is 2026-07-24, so landing our transfer-eval datasets in Corpus during the first half of July is safe — I've put the ingestion milestone at Jul 17 with a week of buffer. Rosa owns those tickets.\n\nOne technical heads-up from Rosa's first pass: the released models output 1001 classes (the extra background class), and it has to be dropped at eval or the numbers skew. She's baking that into the loader so nobody trips on it.\n\nAlina",
+  "labels": ["resources"]
+}
