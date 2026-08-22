@@ -1,0 +1,19 @@
+{
+  "id": "gr/bigger_better_faster/e01",
+  "thread_id": "gr/bigger_better_faster/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T09:20:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: Project Nimbus (BBF productization)",
+  "body": "Team,\n\nKicking off Project Nimbus, our push to take the BBF agent from research code to a supported sample-efficient RL offering. The pitch to leadership: human-level Atari at human-level efficiency, which translates directly into customer environments where interaction data is expensive.\n\nScope for this window (Mar 2 - Jun 1): harden the JAX implementation we open-sourced (it builds on Dopamine), keep SPR and SR-SPR runnable as hyperparameter configurations for baseline comparisons, and stand up a reproducible eval sweep on the Atari 100k benchmark. Milestones: M1 repro of published results by Apr 3, M2 config/API cleanup by May 1, M3 internal demo for the Launch Review Board by May 27.\n\nIvo owns staffing; Wei is tech lead. Freya, please own the SR-SPR replay-ratio configs since that is closest to your prior work.\n\nThanks,\nUlla",
+  "labels": ["kickoff", "spec"]
+}

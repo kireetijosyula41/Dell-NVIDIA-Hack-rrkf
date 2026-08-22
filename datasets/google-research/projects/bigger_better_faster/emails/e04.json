@@ -1,0 +1,20 @@
+{
+  "id": "gr/bigger_better_faster/e04",
+  "thread_id": "gr/bigger_better_faster/t1",
+  "in_reply_to": "gr/bigger_better_faster/e03",
+  "date": "2026-05-13T16:30:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Decision: Nimbus demo scope + LRB slot May 27",
+  "body": "All,\n\nDecisions from today's sync:\n\n1) Demo scope: canned checkpoints, not live training. Wei's Kangaroo/PrivateEye fix is in but re-validating all 26 games by the 27th is too tight. We show the repro table with the two footnoted games marked as re-run.\n2) LRB: Nadia confirmed our Launch Review Board slot for May 27. Sign-off there is required before anything external, so treat it as the real deadline.\n3) Scope cut: the config/API cleanup for SPR drops to post-window; SR-SPR stays because Freya's replay-ratio ablations are part of the demo narrative.\n\nNimbus is the name I'll be using in the Q3 OKR narrative, so please keep it consistent in decks. Q3 planning locks June 26 - I need final headcount asks from Ivo by June 12.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}

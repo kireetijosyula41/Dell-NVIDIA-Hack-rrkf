@@ -1,0 +1,19 @@
+{
+  "id": "gr/bigger_better_faster",
+  "title": "Bigger, Better, Faster: Human Level Atari with Human Level Efficiency",
+  "summary": "Productionizing the BBF agent, a JAX implementation built on Dopamine that reaches human-level Atari performance with human-level sample efficiency. SPR and SR-SPR baselines run as hyperparameter configurations of the same stack.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Ivo Umeh",
+  "contributors": ["Wei Ivanov", "Freya Ruiz", "Yara Jokic", "Halima Toure"],
+  "codename": "Project Nimbus",
+  "window": {"start": "2026-03-02", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bigger_better_faster",
+    "url": "https://github.com/google-research/google-research/tree/master/bigger_better_faster",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

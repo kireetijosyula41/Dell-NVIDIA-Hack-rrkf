@@ -1,0 +1,17 @@
+{
+  "id": "gr/bigger_better_faster/e02",
+  "thread_id": "gr/bigger_better_faster/t1",
+  "in_reply_to": "gr/bigger_better_faster/e01",
+  "date": "2026-03-10T14:05:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Project Nimbus (BBF productization)",
+  "body": "Ulla,\n\nStaffing and compute picture. People: Wei 80%, Freya 60%, Yara 50%, Halima 50% through May. That covers the repro sweep and the config cleanup, but not much slack.\n\nCompute: BBF at replay ratio 8 is cheap per-run but the sweep isn't - 26 Atari 100k games x 5 seeds x 3 agents (BBF, SPR, SR-SPR) is roughly 390 runs. I want 64 A100s on titan-a100 best-effort through April; that pool is shared so no reservation needed, but Ines, flagging in case there's contention.\n\nOne dependency: JAX/CUDA version pinning has bitten us before on titan images - Halima will bake a container so we're not debugging installs across the fleet.\n\nIf we clear M1 by Apr 3 as planned, I'd like a decision by mid-April on whether M3 demo targets a live-training demo or canned checkpoints.\n\nIvo",
+  "labels": ["resources"]
+}

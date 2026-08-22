@@ -1,0 +1,17 @@
+{
+  "id": "gr/bigger_better_faster/e03",
+  "thread_id": "gr/bigger_better_faster/t1",
+  "in_reply_to": "gr/bigger_better_faster/e02",
+  "date": "2026-04-09T10:42:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Project Nimbus (BBF productization) - M1 status",
+  "body": "Status on M1 (slipped ~1 week, sorry): BBF repro is green on 24 of 26 games; we match published IQM within noise. The two stragglers are Kangaroo and PrivateEye, where our runs land 8-10% under the paper's curves. Root cause looks like the target-network EMA schedule interacting with our newer JAX version, not a logic bug - Freya confirmed SR-SPR configs at replay ratio 8 reproduce cleanly, so it's specific to BBF's shrink-and-perturb resets.\n\nRisk worth surfacing: if we bump the shared Dopamine dependency to fix it, we invalidate the SPR baseline numbers and burn another ~120 titan-a100 runs re-sweeping. Trade-off is a week of compute vs. shipping with a footnote.\n\nMy recommendation: footnote for M2, proper fix before the Launch Review Board demo.\n\nWei",
+  "labels": ["status", "risk"]
+}
