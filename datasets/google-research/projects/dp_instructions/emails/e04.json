@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_instructions/e04",
+  "thread_id": "gr/dp_instructions/t1",
+  "in_reply_to": "gr/dp_instructions/e03",
+  "date": "2026-06-03T16:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: private instruction data for alignment (dp_instructions)",
+  "body": "Decisions from Monday's review:\n\n1. Eval set trimmed from 5k to 3k instructions to clear the annotation backlog. Linnea confirms the smaller set keeps category coverage; quality gate criteria unchanged.\n2. RLHF leg is GO for this month on the TRL PPO setup. Amara's June capacity is the constraint we planned for, so no new asks on her time from other teams, please — I've told Nadia's office the handoff date depends on it.\n3. Privacy review: Kofi signed off on the DP histogram accounting with one condition — we publish the per-stage epsilon breakdown in the handoff doc. Hyun owns that.\n4. Handoff holds at June 8 for the pipeline; the PPO-tuned checkpoint follows ~June 19 as a fast-follow, which I'll flag at OKR lock.\n\nStrong finish, folks.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}
