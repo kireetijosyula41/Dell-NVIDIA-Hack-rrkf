@@ -1,0 +1,36 @@
+{
+  "id": "gr/android_control/e03",
+  "thread_id": "gr/android_control/t2",
+  "in_reply_to": null,
+  "date": "2026-04-16T11:05:00Z",
+  "from": {
+    "name": "Freya Ruiz",
+    "email": "freya.ruiz@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "AndroidControl status: unseen-app gap is large",
+  "body": "Hi Ulla, Alina,\n\nFirst evaluation is in and the headline is uncomfortable in a useful way. On the seen-app split our agent gets 61% step accuracy with low-level step instructions. On the unseen-app split — the whole point of the dataset's structure — it drops to 34%. High-level-goal-only episodes are worse still, 22% unseen.\n\nRisk: our current agent leans hard on memorized accessibility-tree layouts. Across 833 apps in 40 categories that memorization doesn't transfer, and no amount of extra training on seen apps will fix it. Ondrej thinks the fix is representing the tree structurally rather than as flattened text, but that's a redesign, not a tune.\n\nFreya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

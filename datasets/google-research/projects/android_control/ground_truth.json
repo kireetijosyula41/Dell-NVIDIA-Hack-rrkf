@@ -1,0 +1,16 @@
+{
+  "project": "gr/android_control",
+  "conflicts": [
+    {
+      "conflict_id": "C113",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "dedal"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "There's no shared place to post agent numbers, so we're scoping and staffing a benchmark leaderboard service from scratch — Wanjiru at 50% building it, first version behind an internal URL by late April."
+    }
+  ]
+}

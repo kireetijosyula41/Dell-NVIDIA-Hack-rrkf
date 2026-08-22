@@ -1,0 +1,40 @@
+{
+  "id": "gr/android_control/e02",
+  "thread_id": "gr/android_control/t1",
+  "in_reply_to": "gr/android_control/e01",
+  "date": "2026-03-11T14:10:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: AndroidControl generalization benchmark",
+  "body": "Ulla,\n\nStaffing: Freya leads evaluation at 60%, Ondrej 40% on the agent side. There's no shared place to post agent numbers, so we're scoping and staffing a benchmark leaderboard service from scratch — Wanjiru at 50% building it, first version behind an internal URL by late April.\n\nCompute: 24 A100s on titan-a100 for the agent eval passes. The heavy cost is decoding the GZIP TFRecords — screenshots are PNG byte strings per observation, so a full pass over 15k episodes is I/O bound, not GPU bound. We're caching decoded accessibility trees to shave reruns.\n\nStorage ask is ~2TB staged; request is in with Corpus.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

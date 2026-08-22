@@ -1,0 +1,36 @@
+{
+  "id": "gr/android_control/e04",
+  "thread_id": "gr/android_control/t2",
+  "in_reply_to": "gr/android_control/e03",
+  "date": "2026-05-12T15:55:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: AndroidControl status: unseen-app gap is large",
+  "body": "Freya, Alina,\n\nEscalating this one rather than quietly absorbing it. The 61% -> 34% unseen-app gap is a product blocker for device control, and I'd rather Hana hears it from us in the May 18 readout with a plan attached than in a launch review later.\n\nDecisions: the structural accessibility-tree representation becomes the Q3 proposal — Ondrej writes a one-pager by May 15 with an estimated headcount. We do not re-tune on seen apps in the meantime; it would only move the number we don't care about.\n\nFreya, please include both instruction granularities in the readout. The 22% high-level number is the honest one.\n\nUlla",
+  "labels": [
+    "escalation",
+    "decision"
+  ]
+}
