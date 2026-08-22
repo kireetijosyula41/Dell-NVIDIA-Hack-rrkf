@@ -1,0 +1,25 @@
+{
+  "id": "gr/OpenMSD",
+  "title": "OpenMSD: Open-access Multilingual Scientific Documents dataset",
+  "summary": "OpenMSD builds an open-access multilingual scientific-documents dataset by joining OpenCitations, CrossRef metadata, and full-text sources into paper records plus citation, co-citation, and bibliographic-couple pairs. We are running the full-scale build on Meridian infrastructure as a retrieval and science-QA training asset.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Rosa Mensah",
+    "Saoirse Eriksen",
+    "Gustavo Moreau"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "OpenMSD",
+    "url": "https://github.com/google-research/google-research/tree/master/OpenMSD",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
