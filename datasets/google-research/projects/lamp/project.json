@@ -1,0 +1,18 @@
+{
+  "id": "gr/lamp",
+  "title": "Linear Additive Markov Processes",
+  "summary": "C++ implementation and experiments for Linear Additive Markov Processes (LAMP), a sequence model that mixes history states linearly to predict next-location/next-item behavior, evaluated on check-in datasets such as Brightkite. Meridian is evaluating LAMP as a cheap interpretable baseline layer for sequential recommendations in the data platform.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": ["Fumiko Rossi", "Nikhil Abebe", "Yusuf Keita", "Farah Haddad"],
+  "window": {"start": "2026-02-09", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lamp",
+    "url": "https://github.com/google-research/google-research/tree/master/lamp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

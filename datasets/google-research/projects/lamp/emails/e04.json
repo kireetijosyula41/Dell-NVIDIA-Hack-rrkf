@@ -1,0 +1,18 @@
+{
+  "id": "gr/lamp/e04",
+  "thread_id": "gr/lamp/t2",
+  "in_reply_to": "gr/lamp/e03",
+  "date": "2026-05-19T09:37:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: LAMP status: recommendation memo decision",
+  "body": "Team,\n\nDecision for the May 18 memo (going out today, one day late — my fault, launch review week).\n\nRecommendation: ADAPT. LAMP becomes the interpretable tier for short-horizon sequential recs, with an explicit carve-out: long-gap sessions (30+ days) route to the existing neural path. 4.2% hit@10 behind at 1/40th serving cost, plus per-position explanations, is a trade plenty of platform customers will take — Farah's production-readiness pass confirmed sub-millisecond scoring on the standard serving VMs.\n\nWhat we are NOT doing: extending LAMP itself to model session resets. Fumiko's analysis convinced me that's fighting the model's shape. The hybrid routing is Farah's design doc, due before window close on May 25 so it can feed Q3 planning.\n\nThanks all — this was a well-run evaluation, exactly what the memo process is for.\n\nDmitri",
+  "labels": ["decision"]
+}

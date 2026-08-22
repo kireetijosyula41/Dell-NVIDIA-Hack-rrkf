@@ -1,0 +1,12 @@
+{
+  "project": "gr/lamp",
+  "conflicts": [
+    {
+      "conflict_id": "C070",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["logit_adjustment"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Farah Haddad is committed here at 60% for May 2026 to drive the internal-corpus evaluation and the production-readiness pass — I've confirmed the allocation."
+    }
+  ]
+}

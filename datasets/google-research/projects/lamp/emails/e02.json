@@ -1,0 +1,15 @@
+{
+  "id": "gr/lamp/e02",
+  "thread_id": "gr/lamp/t1",
+  "in_reply_to": "gr/lamp/e01",
+  "date": "2026-02-16T14:26:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LAMP as an interpretable sequential-recs baseline",
+  "body": "Dmitri,\n\nResourcing for LAMP:\n\n- Fumiko 50% as research lead through the window; she owns the reproduction and the mixture-weight interpretability analysis.\n- Nikhil 30% on the bazel port — the release builds with gflags and plain make, so he'll wrap it rather than rewrite it.\n- Yusuf 30% on dataset prep; Brightkite and the other public check-in sets first, then the internal corpus extraction.\n- Farah Haddad is committed here at 60% for May 2026 to drive the internal-corpus evaluation and the production-readiness pass — I've confirmed the allocation. Through March/April she's at 20% doing early harness work.\n\nCompute: negligible — this is CPU-bound C++; a couple of 64-core VMs cover every experiment, incl. the max-iter/max-order sweeps the paper recommends starting small on. No cluster asks, which makes a nice change.\n\nBao",
+  "labels": ["resources"]
+}
