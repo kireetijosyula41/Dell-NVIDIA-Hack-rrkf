@@ -1,0 +1,15 @@
+{
+  "id": "gr/marot/e02",
+  "thread_id": "gr/marot/t1",
+  "in_reply_to": "gr/marot/e01",
+  "date": "2026-04-02T16:20:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Marot kickoff — staffing + compute asks",
+  "body": "Lucia,\n\nResourcing as requested.\n\nStaffing: Freya 50% (TL), Ondrej 40% on the score-computation and sigtests code paths, Yara 30% on the Evalline/BLEURT bridge. Hosting lands on Shipyard, Zeke's team has the intake.\n\nCompute: the app itself is client-side, but the BLEURT backfill is not — rescoring the historical MQM archive (about 2.1M segments across 14 language pairs) needs real accelerator time. We hold the vulcan-h100 reservation — 128 accelerators for the week of 2026-07-06 — to run the full backfill in one pass before the adoption push. I've confirmed the slot in the reservation sheet.\n\nSmaller ongoing scoring fits titan-a100 best-effort.\n\nOne heads-up: rater data ingestion needs a privacy review (2-3 week SLA), filing this week so it clears well before July.\n\nDeshawn",
+  "labels": ["resources"]
+}

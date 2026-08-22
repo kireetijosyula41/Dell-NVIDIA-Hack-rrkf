@@ -1,0 +1,9 @@
+{
+  "project": "gr/marot",
+  "conflicts": [
+    {"conflict_id": "C109", "type": "gpu_double_booking",
+     "counterpart_projects": ["imp"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "We hold the vulcan-h100 reservation — 128 accelerators for the week of 2026-07-06 — to run the full backfill in one pass before the adoption push."}
+  ]
+}

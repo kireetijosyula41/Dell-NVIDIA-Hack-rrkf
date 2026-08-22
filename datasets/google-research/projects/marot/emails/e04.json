@@ -1,0 +1,18 @@
+{
+  "id": "gr/marot/e04",
+  "thread_id": "gr/marot/t1",
+  "in_reply_to": "gr/marot/e03",
+  "date": "2026-06-29T10:08:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Marot kickoff — decisions going into the July backfill",
+  "body": "All,\n\nDecisions from today's review:\n\n1) Converter: approved as Freya proposed — visible flags on converted rows, mapping table published in Settings. We do NOT silently rewrite anyone's severity weights.\n2) The legacy-taxonomy team moves to the second adoption wave; we hit the 07-13 target with the two clean-format teams plus the speech-audio raters who volunteered.\n3) Backfill: locked to our vulcan-h100 week of 2026-07-06 with all 128 accelerators — Deshawn confirmed the reservation again on Friday, so the full 2.1M-segment BLEURT rescore lands before the adoption push. No schedule changes.\n\nPrivacy review cleared on 06-18, so nothing is blocking.\n\nThanks — this one is quietly becoming the most-used thing in the portfolio.\n\nLucia",
+  "labels": ["decision"]
+}

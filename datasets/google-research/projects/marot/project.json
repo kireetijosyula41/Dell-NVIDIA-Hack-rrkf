@@ -1,0 +1,16 @@
+{
+  "id": "gr/marot",
+  "title": "[Multidimensional Quality Metrics (MQM)](http://www.qt21.eu/mqm-definition/definition-2015",
+  "summary": "Hardening the Marot web app for analyzing MQM human-evaluation data of translation quality, including per-segment score computation from rater error markings and display of automated metrics such as BLEURT.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Freya Ruiz", "Yara Jokic", "Ondrej Bergstrom"],
+  "window": {"start": "2026-03-23", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "marot",
+    "url": "https://github.com/google-research/google-research/tree/master/marot",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
