@@ -6,6 +6,18 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 GRAPH_DIR="$ROOT_DIR/ceo-brain-project-graph"
 DATASET_DIR="$ROOT_DIR/datasets/google-research/projects"
 COMPOSE=(docker compose -f "$GRAPH_DIR/docker-compose.yml")
+CONFIG_FILE="${ORGBRAIN_CONFIG_FILE:-$ROOT_DIR/config/gb10-demo.env}"
+
+if [ -f "$CONFIG_FILE" ]; then
+  # The config is intentionally shell-compatible so a presenter can switch modes
+  # by changing a single value without editing the runner.
+  set -a
+  # shellcheck disable=SC1090
+  . "$CONFIG_FILE"
+  set +a
+else
+  echo "WARNING: No GB10 config at $CONFIG_FILE; using environment defaults." >&2
+fi
 
 command -v docker >/dev/null || { echo "ERROR: Docker is required on the GB10." >&2; exit 1; }
 command -v python3 >/dev/null || { echo "ERROR: python3 is required on the GB10." >&2; exit 1; }
@@ -17,6 +29,13 @@ export MONGODB_DATABASE="${MONGODB_DATABASE:-ceo_brain}"
 export HOST_MONGODB_URI="${HOST_MONGODB_URI:-mongodb://127.0.0.1:27018}"
 export CORS_ALLOW_ORIGINS="${CORS_ALLOW_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}"
 export NEMOCLAW_AUDIT_TIMEOUT_SECONDS="${NEMOCLAW_AUDIT_TIMEOUT_SECONDS:-120}"
+ORGBRAIN_REASONER_MODE="${ORGBRAIN_REASONER_MODE:-deterministic}"
+ORGBRAIN_ALLOW_DETERMINISTIC_FALLBACK="${ORGBRAIN_ALLOW_DETERMINISTIC_FALLBACK:-true}"
+
+if [ "$ORGBRAIN_REASONER_MODE" != "deterministic" ] && [ "$ORGBRAIN_REASONER_MODE" != "nemoclaw" ]; then
+  echo "ERROR: ORGBRAIN_REASONER_MODE must be deterministic or nemoclaw." >&2
+  exit 1
+fi
 
 if [ "$MONGODB_URI" != "mongodb://mongodb:27017" ]; then
   echo "ERROR: MONGODB_URI must be mongodb://mongodb:27017 for the Compose API container." >&2
@@ -78,7 +97,7 @@ demo_reasoner="deterministic"
 audit=""
 audit_id=""
 
-if [ -n "${NEMOCLAW_MODEL_ID:-}" ] && [ -n "${NEMOCLAW_AUDIT_WEBHOOK_URL:-}" ]; then
+if [ "$ORGBRAIN_REASONER_MODE" = "nemoclaw" ] && [ -n "${NEMOCLAW_MODEL_ID:-}" ] && [ -n "${NEMOCLAW_AUDIT_WEBHOOK_URL:-}" ]; then
   echo "[4/6] Attempting NemoClaw audit mode"
   export AUDIT_REASONER_MODE="nemoclaw"
   start_api
@@ -118,11 +137,17 @@ PY
   else
     echo "WARNING: NemoClaw health configuration is incomplete; switching to deterministic fallback." >&2
   fi
-else
+elif [ "$ORGBRAIN_REASONER_MODE" = "nemoclaw" ]; then
   echo "WARNING: NEMOCLAW_MODEL_ID or NEMOCLAW_AUDIT_WEBHOOK_URL is missing; using deterministic fallback." >&2
+else
+  echo "[4/6] Deterministic mode selected in $CONFIG_FILE"
 fi
 
 if [ "$demo_reasoner" != "nemoclaw" ]; then
+  if [ "$ORGBRAIN_REASONER_MODE" = "nemoclaw" ] && [ "$ORGBRAIN_ALLOW_DETERMINISTIC_FALLBACK" != "true" ]; then
+    echo "ERROR: NemoClaw mode failed and deterministic fallback is disabled." >&2
+    exit 1
+  fi
   echo "[4/6] Starting deterministic fallback mode"
   export AUDIT_REASONER_MODE="deterministic"
   export NEMOCLAW_AUDIT_WEBHOOK_URL=""

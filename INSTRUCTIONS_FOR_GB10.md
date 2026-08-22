@@ -26,13 +26,21 @@ final output states exactly which mode powered the demo.
 
 ## Start The GB10 Stack
 
-From the repository root, set the real model and bridge values, then run:
+From the repository root, select the mode in `config/gb10-demo.env`:
 
 ```sh
-export NEMOCLAW_MODEL_ID=<GB10-local-Nemotron-model-ID>
-export NEMOCLAW_AUDIT_WEBHOOK_URL=http://<GB10-local-NemoClaw-bridge>/audits
-export AUDIT_REASONER_MODE=nemoclaw
-export MONGODB_URI=mongodb://mongodb:27017
+# Fast, reliable demo mode:
+ORGBRAIN_REASONER_MODE=deterministic
+
+# Live agent mode (requires both values below):
+ORGBRAIN_REASONER_MODE=nemoclaw
+NEMOCLAW_MODEL_ID=<GB10-local-Nemotron-model-ID>
+NEMOCLAW_AUDIT_WEBHOOK_URL=http://127.0.0.1:<NemoClaw-bridge-port>/audits
+```
+
+Then run:
+
+```sh
 ./scripts/run_gb10_demo.sh
 ```
 
