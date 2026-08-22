@@ -1,0 +1,16 @@
+{
+  "project": "gr/factoring_sqif",
+  "conflicts": [
+    {
+      "conflict_id": "C085",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "cnn_quantization"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-06-15, 384 accelerators, which covers the full sweep grid with margin."
+    }
+  ]
+}

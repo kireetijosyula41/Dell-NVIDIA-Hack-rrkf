@@ -1,0 +1,36 @@
+{
+  "id": "gr/factoring_sqif/e03",
+  "thread_id": "gr/factoring_sqif/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T14:50:00Z",
+  "from": {
+    "name": "Halima Toure",
+    "email": "halima.toure@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: baselines done, QAOA pilot read",
+  "body": "Status on the evaluation.\n\nBaselines: with the bruteforce method we factor test integers reliably up to the low-30s bitsize range; runtime is dominated by the lattice search and results are stable across seeds.\n\nQAOA pilot: at qaoa_depth 2 the sampler recovers usable low-energy states on maybe half the seeds for 16-20 bit inputs, and outcomes are very sensitive to the precision_parameter — small changes flip success to failure. Honest read: nothing yet contradicts the skeptical takes on this method's scaling, and our report should say so plainly.\n\nRisk for June: if the depth>4 sweeps behave like the pilot, most of the reserved capacity produces null results — still a publishable answer, but we should pre-agree the framing with Lucia so the report can't be spun as a capability claim.\n\nHalima",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
