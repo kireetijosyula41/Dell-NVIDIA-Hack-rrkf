@@ -1,0 +1,9 @@
+{
+  "project": "gr/mave",
+  "conflicts": [
+    {"conflict_id": "C051", "type": "dependency_date_drift",
+     "counterpart_projects": ["extreme_memorization", "differentially_private_gnns", "cmmd"],
+     "planted_in": ["e02"],
+     "claim_as_written": "Scheduling note on Corpus: the team plans around a Corpus v2 freeze date of 2026-06-26, so our 05-15 pilot run and any re-runs land comfortably before the migration freeze."}
+  ]
+}

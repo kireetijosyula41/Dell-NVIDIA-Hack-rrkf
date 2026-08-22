@@ -1,0 +1,19 @@
+{
+  "id": "gr/mave/e01",
+  "thread_id": "gr/mave/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:15:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MAVE kickoff — attribute extraction for catalog data",
+  "body": "Team,\n\nKicking off the MAVE workstream. The opportunity: our open-source MAVE benchmark work gives us models for multi-source attribute value extraction over product data, and two internal catalog teams are asking for exactly that. We turn the benchmark into a service.\n\nMilestones (window closes 2026-06-01):\n- 03-06: dataset splits reproduced with the Apache Beam pipeline (split_json_lines_main over mave_positives and mave_negatives).\n- 04-10: baseline model reproduced within 1 point of published F1 on the benchmark splits.\n- 05-15: pilot extraction run on one internal catalog vertical, quality report to stakeholders.\n\nAlina owns staffing and pipeline infra; Kaia is research lead. Note the environment pin — the codebase needs tf-models-official 2.7.0, newer versions deprecate pieces we depend on, so let's containerize early.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

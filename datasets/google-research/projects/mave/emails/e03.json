@@ -1,0 +1,15 @@
+{
+  "id": "gr/mave/e03",
+  "thread_id": "gr/mave/t1",
+  "in_reply_to": "gr/mave/e02",
+  "date": "2026-04-14T10:36:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}],
+  "subject": "Re: MAVE kickoff — status: baselines in, negatives matter",
+  "body": "Status update.\n\nDone: Farah's Beam pipeline reproduces the paper's splits — we ran split_json_lines_main over both mave_positives.jsonl and mave_negatives.jsonl and the split counts match the published benchmark exactly. Nikhil's baseline is within 0.6 F1 of the published number, so milestone 2 is met early.\n\nRisk/trade-off for the pilot: on our internal catalog vertical, precision drops harder than the benchmark suggested because our data has far fewer explicit negatives than MAVE's curated negative set. Without a negatives-mining pass, we're seeing ~4 points of precision loss on spot-checked attributes (brand, capacity). Nikhil wants two weeks to mine hard negatives from the vertical before the 05-15 pilot report; that would push the report to ~05-22 but make the numbers honest.\n\nMy rec: take the slip. A padded quality report will haunt us with the catalog teams.\n\nKaia",
+  "labels": ["status", "risk"]
+}
