@@ -1,0 +1,45 @@
+{
+  "id": "gr/clustering_normalized_cuts/e04",
+  "thread_id": "gr/clustering_normalized_cuts/t1",
+  "in_reply_to": "gr/clustering_normalized_cuts/e03",
+  "date": "2026-05-12T16:05:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CNC kickoff — learned normalized cuts for corpus clustering",
+  "body": "Decision checkpoint.\n\nUmar's sampling sweep settled it: at 20% subgraph sampling the quality wobble drops to 0.1 — parity for practical purposes — and training fits comfortably on our footprint. So the bake-off verdict is: parity on quality, ~6x cheaper incremental updates, near-online cluster assignment. Retrieval wants it.\n\nDecisions:\n1) GO on handover: Quentin and Umar package the training recipe + the warmup fix; target May 22.\n2) Scope cut: we do NOT take on replacing the batch re-clustering job itself this window — retrieval owns operationalizing, we deliver the model + recipe. Keeps us honest on the May 25 close.\n3) Wanjiru confirmed the affinity-graph tables are migrated and validated — that dependency is closed.\n\nGood project, and Quentin — strong first lead. Noted for calibration.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}
