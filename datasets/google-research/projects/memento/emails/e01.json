@@ -1,0 +1,18 @@
+{
+  "id": "gr/memento/e01",
+  "thread_id": "gr/memento/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T08:47:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Memento kickoff — interference diagnostics for our RL stack",
+  "body": "Hi all,\n\nKicking off Memento. Background: our open-source catastrophic-interference work showed that training a second \"Memento\" agent from the position where the original agent's checkpoint plateaus reliably pushes past the plateau — evidence the wall is interference, not exploration. Two internal agents teams are hitting suspiciously similar plateaus, and I want this as a standard diagnostic.\n\nPlan for the window (through 06-29):\n- 04-17: reproduce the baseline — train the original Rainbow agent (rainbow.gin config) and the Memento agent from its checkpoint on 3 Atari games; confirm the published effect. dqn.gin variant as a stretch.\n- 05-22: package the two-stage train_original_agent / train_memento_agent flow as a diagnostic recipe.\n- 06-19: run the diagnostic on one internal team's plateaued agent and report.\n\nAlina owns staffing/compute; Carmen is TL. Heads-up that the baseline training is multi-day per game, so compute planning matters here.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/memento/e04",
+  "thread_id": "gr/memento/t1",
+  "in_reply_to": "gr/memento/e03",
+  "date": "2026-06-09T14:36:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Memento kickoff — go for the June diagnostic",
+  "body": "Team,\n\nDecisions ahead of next week:\n\n1) Go on the June diagnostic with Efe's recurrent-core workaround. The attribution caveat goes in the report verbatim — I'd rather ship an honest \"interference is likely but confounded\" than delay a quarter.\n2) Our vulcan-h100 week starting 06-15 stands as planned — 256 accelerators, original + Memento retrains in parallel, report drafted by 06-19 and final by 06-24. Alina, please confirm the job specs are pre-staged by 06-12 so we use the reservation from hour one.\n3) Scope cut: the second internal team's agent moves to Q3. One clean diagnostic beats two rushed ones, and the OKR lock on 06-26 only needs the first.\n\nCarmen — the Breakout nuance is going straight into my portfolio review slide; it's the best \"know what your bottleneck is\" story I have.\n\nUlla",
+  "labels": ["decision", "escalation"]
+}
