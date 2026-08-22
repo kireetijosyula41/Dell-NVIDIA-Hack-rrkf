@@ -1,0 +1,16 @@
+{
+  "id": "gr/ghum/e01",
+  "thread_id": "gr/ghum/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:12:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: GHUM synthetic-human asset for the data platform",
+  "body": "Hi Alina,\n\nKicking off the GHUM workstream. Goal: package our generative 3D human models - GHUM at 10,168 vertices and the low-res GHUML(ite) at 3,194 - as a first-party synthetic-human data asset that platform customers can sample for pose and shape estimation training sets.\n\nWhat makes this defensible: the models were trained in a single consistent loop on over 60,000 dynamic scan configurations, with 16-dimensional body shape latent spaces (both linear PCA and VAE variants) and a 20-dimensional facial expression space. Nobody else on the platform has an articulated full-body model with hands and face in one asset.\n\nMilestones: sampling API spec by 4/10, retraining and validation pass by 5/15, launch review pre-read first week of June.\n\nAlina - staffing plan and compute estimate when you can, ideally before the end of next week.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
