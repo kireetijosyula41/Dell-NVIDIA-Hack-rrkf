@@ -1,0 +1,18 @@
+{
+  "id": "gr/gradient_based_tuning",
+  "title": "Simple and Effective Gradient-Based Tuning of Sequence-to-Sequence Models",
+  "summary": "Brings gradient-based hyperparameter tuning - updating hyperparameters during training with the gradient on the tuning loss - to our seq2seq training stack, using the JAX/flax implementation that trains Transformer models on WMT translation data.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Kaia Wolde", "Halima Toure", "Rosa Mensah", "Csilla Nassar"],
+  "window": {"start": "2026-03-02", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gradient_based_tuning",
+    "url": "https://github.com/google-research/google-research/tree/master/gradient_based_tuning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

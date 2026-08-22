@@ -1,0 +1,17 @@
+{
+  "id": "gr/gradient_based_tuning/e01",
+  "thread_id": "gr/gradient_based_tuning/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:16:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: gradient-based hyperparameter tuning for the seq2seq stack",
+  "body": "Hi Bruno,\n\nKicking off the gradient-based tuning workstream. Every seq2seq team on the platform burns a double-digit percentage of their compute on hyperparameter search. Our open-source approach replaces that with tuning during training: hyperparameters get updated with the gradient on the tuning loss, and the implementation lets you pick any subset of hyperparameters to learn. If it holds up on our stack, that is a straight compute-cost reduction we can put a dollar figure on.\n\nGrounding: the reference code is JAX/flax, trains Transformers on WMT translation data via TFDS, and ships a run.sh that starts with the Lithuanian-English pair on a tiny model - which is exactly where the repro starts.\n\nMilestones: lt-en repro by 3/27, learned-vs-hand-tuned comparison on a production-size config by 4/24, adoption decision by 5/20.\n\nKaia leads, Halima infra, Rosa integration, Csilla evals.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

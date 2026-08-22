@@ -1,0 +1,18 @@
+{
+  "id": "gr/gradient_based_tuning/e03",
+  "thread_id": "gr/gradient_based_tuning/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T10:33:00Z",
+  "from": {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Status: lt-en repro green, production-size comparison running",
+  "body": "Hi both,\n\nStatus. The lt-en repro is green: run.sh end-to-end (data download, formatting, training) worked once we were on Halima's container instead of the pinned cuda11 jaxlib wheels. On the tiny config, learning the optimizer hyperparameters via the tuning-loss gradient matched the hand-tuned baseline BLEU within 0.3, with zero search runs.\n\nThe production-size comparison kicked off Friday on 32 GPUs (Bruno's memory flag was right - the meta-gradient step pushed us past 24). Csilla's eval protocol: same token budget for both arms, where the baseline arm's budget includes its historical search cost. That is the fair fight the adoption decision should hinge on.\n\nRisk: learned learning-rate schedules occasionally spike early in training on the big config - two of five seeds needed a restart. Kaia suspects the tuning-loss batch is too small; she is doubling it. If instability persists into May, the recommendation gets a stability caveat.\n\nRosa",
+  "labels": ["status", "risk"]
+}
