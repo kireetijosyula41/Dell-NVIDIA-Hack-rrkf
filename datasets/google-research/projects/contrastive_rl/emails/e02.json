@@ -1,0 +1,18 @@
+{
+  "id": "gr/contrastive_rl/e02",
+  "thread_id": "gr/contrastive_rl/t1",
+  "in_reply_to": "gr/contrastive_rl/e01",
+  "date": "2026-04-16T13:20:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: contrastive RL as our goal-conditioned baseline",
+  "body": "Ulla,\n\nStaffing + infra:\n\n- Hyun Traore 70%, algorithm and the head-to-head evaluation.\n- Carmen Reyes 40%, image-based environments and the offline data pipeline.\n- Jorge Vidal, see below.\n\nCompute: 96 GPUs on vulcan-h100, reserved through Ines for the May and June sweeps. Note vulcan is down 2026-06-22 to 2026-06-24 for maintenance, so the image-task sweep has to land before the 19th anyway.\n\nThe part that needs your sign-off: to make the head-to-head credible across five environments and three seeds each we need somewhere to put the results that isn't a spreadsheet. We are building a benchmark leaderboard service from scratch - submission API, run registry, per-task success-rate tables, and a public-facing web view. Jorge Vidal owns it at 50% from April 20 through the end of June. It's about six weeks of work and it outlives this project.\n\nDeshawn",
+  "labels": ["resources"]
+}

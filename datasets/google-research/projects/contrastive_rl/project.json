@@ -1,0 +1,25 @@
+{
+  "id": "gr/contrastive_rl",
+  "title": "[Contrastive Learning as Goal-Conditioned Reinforcement Learning](https://arxiv.org/pdf/22",
+  "summary": "Contrastive RL casts contrastive representation learning over action-labeled trajectories as a goal-conditioned RL algorithm in its own right, so the inner product of the learned representations is itself the goal-conditioned value function. Meridian is evaluating it as a simpler replacement for our auxiliary-loss-heavy goal-conditioned agent stack, including on image-based tasks.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Hyun Traore",
+    "Jorge Vidal",
+    "Carmen Reyes"
+  ],
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "contrastive_rl",
+    "url": "https://github.com/google-research/google-research/tree/master/contrastive_rl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

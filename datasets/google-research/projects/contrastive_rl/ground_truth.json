@@ -1,0 +1,12 @@
+{
+  "project": "gr/contrastive_rl",
+  "conflicts": [
+    {
+      "conflict_id": "C140",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["isl"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We are building a benchmark leaderboard service from scratch - submission API, run registry, per-task success-rate tables, and a public-facing web view. Jorge Vidal owns it at 50% from April 20 through the end of June."
+    }
+  ]
+}

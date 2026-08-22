@@ -1,0 +1,17 @@
+{
+  "id": "gr/contrastive_rl/e01",
+  "thread_id": "gr/contrastive_rl/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T08:55:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: contrastive RL as our goal-conditioned baseline",
+  "body": "Team,\n\nKicking off the contrastive RL workstream. The claim in our open-source release is the interesting one for us: apply contrastive representation learning to action-labeled trajectories and the inner product of the learned representations *is* the goal-conditioned value function. No auxiliary losses, no data augmentation, and it still beats the non-contrastive baselines on image-based tasks.\n\nWhy I care as PM: our current goal-conditioned stack is three losses in a trenchcoat and every new task needs someone to retune the augmentation pipeline. If this holds up, we delete a whole category of tuning work.\n\nMilestones in the Apr 6 - Jul 27 window:\n- May 8: reproduce state-based success rates on the standard goal-conditioned suite.\n- Jun 19: image-based tasks, no augmentation, head-to-head vs our current agent.\n- Jul 17: recommendation memo - adopt, or park.\n\nDeshawn will send resourcing. Hyun is tech lead.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

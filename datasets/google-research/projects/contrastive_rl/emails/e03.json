@@ -1,0 +1,17 @@
+{
+  "id": "gr/contrastive_rl/e03",
+  "thread_id": "gr/contrastive_rl/t2",
+  "in_reply_to": null,
+  "date": "2026-06-11T10:32:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Contrastive RL status - reproduced state-based, image tasks are noisier than advertised",
+  "body": "Update ahead of the Jun 19 milestone.\n\nState-based: reproduced. Averaged over the five goal-conditioned tasks we get 71% success vs 63% for our current non-contrastive agent, three seeds, and we did not touch augmentation or add an auxiliary loss. That's the paper's claim and it holds.\n\nImage-based is where it gets interesting. Mean success is still ahead (+6 points) but seed variance is large - one task swings 22 points between seeds. The representation collapses early in maybe one run in six, and when it collapses the inner-product value function is basically flat, so the policy never gets a gradient worth following. Carmen has a fix candidate (temperature schedule on the contrastive loss) but it needs another sweep.\n\nRisk: vulcan is out Jun 22-24, so if we want the extra sweep before your Jun 19 checkpoint I need the decision this week, not next.\n\nHyun",
+  "labels": ["status", "risk"]
+}
