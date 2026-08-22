@@ -1,0 +1,44 @@
+{
+  "id": "gr/investigating_m4/e04",
+  "thread_id": "gr/investigating_m4/t1",
+  "in_reply_to": "gr/investigating_m4/e03",
+  "date": "2026-07-02T10:20:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: multilingual NMT representation analysis at scale",
+  "body": "Pre-flight decisions for next week's run. (1) Scope: the grid is frozen at 24 language pairs × 6 layers × 4 checkpoints — Quentin's power analysis says that's sufficient to rank finetuning-regression risk for every production pair we care about, and it keeps the dump inside the negotiated 72-hour retention window. (2) The regression-prediction readout moves from nice-slide to committed H2 deliverable — it went into the OKRs before the June 26 lock as the capacity-planning input for multilingual finetuning. (3) Contingency: if next week's runs slip badly, the fallback is the 12-pair pilot-grid results, which already support the family-clustering story. Csilla owns the go/no-go checklist Monday morning; Nikhil owns the finetuning probes. Fingers crossed for boring infrastructure. — Priya",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "gr/investigating_m4/e02",
+  "thread_id": "gr/investigating_m4/t2",
+  "in_reply_to": null,
+  "date": "2026-04-16T14:15:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "subject": "M4 analysis — July vulcan reservation",
+  "body": "Ines — compute forecast for the M4 analysis so the July crunch doesn't surprise anyone. Activation extraction on the production multilingual model is the heavy step: full encoder/decoder activations per language pair, per layer, per checkpoint, for the SVCCA grid. We hold the vulcan-h100 reservation for the week of 2026-07-06 — 256 GPUs — and the full extraction plus SVCCA grid is planned against that week. Extraction fills roughly the first three days; the SVCCA computation itself is CPU-heavy, so days 4-5 are mostly staging results into Corpus while the GPUs run the finetuning probes. Asks: confirm the reservation shows on your side, and confirm the post-maintenance health checks from the 06-22 to 06-24 vulcan window won't spill into July. Dev-scale extraction runs on titan meanwhile. — Alina",
+  "labels": [
+    "resources"
+  ]
+}
