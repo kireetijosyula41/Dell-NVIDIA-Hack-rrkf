@@ -1,0 +1,25 @@
+{
+  "id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+  "title": "Copyright 2022 The Domain-Agnostic Contrastive Representations for Learning from Label Pro",
+  "summary": "Productization of SelfCLR-LLP, a domain-agnostic contrastive representation method for learning from label proportions, benchmarked against DLLP and supervised baselines on Criteo-Kaggle and MovieLens-1M. Target: privacy-friendly modeling for ad and recommendation customers who only see bag-level labels.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Efe Lindqvist",
+    "Linnea Yamada",
+    "Farah Haddad"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+    "url": "https://github.com/google-research/google-research/tree/master/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

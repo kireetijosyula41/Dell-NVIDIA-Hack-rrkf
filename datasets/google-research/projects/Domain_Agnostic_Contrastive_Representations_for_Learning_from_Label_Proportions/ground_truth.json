@@ -1,0 +1,12 @@
+{
+  "project": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+  "conflicts": [
+    {
+      "conflict_id": "C139",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["capsule_em"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the scale sweep, we hold the vulcan-h100 reservation for the week of 2026-06-22 - 512 accelerators - and the full contrastive pretraining sweep is scheduled into that slot."
+    }
+  ]
+}

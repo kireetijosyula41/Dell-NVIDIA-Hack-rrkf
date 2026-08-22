@@ -1,0 +1,17 @@
+{
+  "id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e02",
+  "thread_id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/t1",
+  "in_reply_to": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e01",
+  "date": "2026-05-06T15:37:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: SelfCLR-LLP - bag-level learning for privacy-constrained customers",
+  "body": "Dmitri,\n\nBoth confirmed.\n\nStaffing: Efe Lindqvist 60% (method owner, repro + sweep design), Linnea Yamada 30% (training infra; she's split with another of my projects until June), Farah Haddad 50% (data pipelines - Criteo preprocessing into ./data/train, ./data/test, ./data/val, plus the MovieLens-1M path).\n\nCompute: the repro runs fit on titan-a100 best-effort. For the scale sweep, we hold the vulcan-h100 reservation for the week of 2026-06-22 - 512 accelerators - and the full contrastive pretraining sweep is scheduled into that slot. I've built the sweep grid (batch sizes, bag sizes, temperature) to saturate exactly that capacity for five days, so please don't move the June milestone.\n\nOne ask: the eval memo needs a privacy review pass; the 2-3 week SLA means we should file by mid-June.\n\nAlina",
+  "labels": ["resources"]
+}

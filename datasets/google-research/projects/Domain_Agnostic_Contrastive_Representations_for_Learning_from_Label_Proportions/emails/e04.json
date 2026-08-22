@@ -1,0 +1,17 @@
+{
+  "id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e04",
+  "thread_id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/t2",
+  "in_reply_to": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e03",
+  "date": "2026-07-06T14:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}
+  ],
+  "subject": "Re: SelfCLR-LLP status: repro done, bag-size sensitivity risk",
+  "body": "Efe, Alina,\n\nDecisions following the sweep readout:\n\n1. We frame the memo honestly: SelfCLR-LLP is the recommended method up to bag size 256, with the measured degradation curve published beyond that. The large-bag numbers weren't a disaster (about 3.4% AUC drop at bag size 1000 vs 256 on Criteo) but they're not a headline. Efe, include the curve, not just the endpoints.\n\n2. Scope decision: we do NOT chase a large-bag variant this quarter. Efe has a promising idea about proportion-aware augmentations but it's Q3 work; I've asked for it as a Q3 OKR line rather than letting it creep into July.\n\n3. Kofi - the eval memo went into privacy review June 15, per the SLA can you confirm we'll have sign-off before the July 17 customer memo date? Nothing goes external before that.\n\nDmitri",
+  "labels": ["decision"]
+}

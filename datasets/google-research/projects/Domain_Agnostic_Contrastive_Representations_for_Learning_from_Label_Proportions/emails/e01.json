@@ -1,0 +1,17 @@
+{
+  "id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/e01",
+  "thread_id": "gr/Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:14:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: SelfCLR-LLP - bag-level learning for privacy-constrained customers",
+  "body": "Team,\n\nKicking off the LLP representations track. The customer problem: ad and recommendation partners increasingly get only bag-level label proportions, not instance labels, and they still need competitive models. Our open-source SelfCLR-LLP release (the CIKM'22 domain-agnostic contrastive method) is the strongest thing we have here, and the repo already benchmarks it against DLLP and fully-supervised baselines on Criteo-Kaggle and MovieLens-1M with the standard 75:20:5 train/test/val split.\n\nMilestones: repro both benchmark tables by May 29; a large-scale contrastive pretraining sweep in late June to test how the method scales; customer-facing eval memo by July 17.\n\nAlina - staffing and the compute reservation are the long poles, especially the June sweep. Can you confirm both by end of next week?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
