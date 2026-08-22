@@ -1,0 +1,25 @@
+{
+  "id": "gr/distinguishing_romanized_hindi_urdu",
+  "title": "Supporting Materials for \"Distinguishing Romanized Hindi from Romanized Urdu\"",
+  "summary": "Building a romanized Hindi-vs-Urdu classifier from the CAWL 2023 release -- linguist-derived seed words, mT5 template-generated training strings, mc4 hi-Latn data, and Dakshina-based topline sets -- to route romanized South Asian text correctly in Meridian's language products.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Rafael Duran",
+    "Nikhil Abebe",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-04-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "distinguishing_romanized_hindi_urdu",
+    "url": "https://github.com/google-research/google-research/tree/master/distinguishing_romanized_hindi_urdu",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

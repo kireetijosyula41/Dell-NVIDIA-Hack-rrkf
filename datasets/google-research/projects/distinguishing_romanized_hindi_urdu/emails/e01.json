@@ -1,0 +1,41 @@
+{
+  "id": "gr/distinguishing_romanized_hindi_urdu/e01",
+  "thread_id": "gr/distinguishing_romanized_hindi_urdu/t1",
+  "in_reply_to": null,
+  "date": "2026-02-03T09:27:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: romanized Hindi/Urdu routing",
+  "body": "Alina, team,\n\nKicking off a short, sharp track. Problem: our language products treat romanized Hindi and romanized Urdu as one blob, so users get the wrong transliteration and the wrong downstream models. The CAWL release gives us the ingredients to fix that: full_list.tsv with linguist-derived seed words in native and roman script for both languages, plus three training sources -- mT5 template-generated strings (gen_train), mc4 hi-Latn data filtered by seed words (mc4_train), and hand-labeled Dakshina Wikipedia sentences as the topline train/dev sets.\n\nGoal: a production-quality hi/ur classifier for romanized text, integrated behind the language-ID service, wrapped by April 24.\n\nMilestones: data staged Feb 20, model comparison March 20, integration decision mid-April.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "gr/distinguishing_romanized_hindi_urdu/e04",
+  "thread_id": "gr/distinguishing_romanized_hindi_urdu/t1",
+  "in_reply_to": "gr/distinguishing_romanized_hindi_urdu/e03",
+  "date": "2026-04-21T15:48:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: romanized Hindi/Urdu routing",
+  "body": "Closing this one out -- decisions:\n\n1. The three-class design (hi / ur / ambiguous with locale fallback) was the right call. Approved in March, and the integration numbers vindicate it: routing accuracy on live romanized traffic improved 11% with zero increase in user-visible transliteration complaints during the two-week canary.\n2. The combined gen_train + mc4_train model at 91.2% topline is what ships. No further tuning this window.\n3. Follow-ups logged for Q3: the mc4 refresh ingestion Rafael filed, and a look at extending the seed-word approach to other romanized pairs.\n\nWrapped three days early, cleanly. Thank you all -- this is the kind of small project that quietly fixes an entire user experience.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

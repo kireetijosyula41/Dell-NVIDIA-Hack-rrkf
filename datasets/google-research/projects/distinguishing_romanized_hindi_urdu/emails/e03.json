@@ -1,0 +1,41 @@
+{
+  "id": "gr/distinguishing_romanized_hindi_urdu/e03",
+  "thread_id": "gr/distinguishing_romanized_hindi_urdu/t1",
+  "in_reply_to": "gr/distinguishing_romanized_hindi_urdu/e02",
+  "date": "2026-03-17T10:19:00Z",
+  "from": {
+    "name": "Nikhil Abebe",
+    "email": "nikhil.abebe@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: romanized Hindi/Urdu routing",
+  "body": "Model comparison results, a few days early.\n\nOn topline_dev (the held-out Dakshina set): training on mc4_train alone gets 88.9% accuracy, gen_train alone 85.4%, and the combination 91.2%. The mT5-generated strings clearly add coverage the seed-word-filtered mc4 data misses, even though alone they are weaker -- consistent with the paper's story.\n\nError analysis: the residual mistakes concentrate in short strings (under 5 tokens) where no seed word from full_list.tsv appears and the orthography is genuinely ambiguous. For those, Rafael suggests the honest answer is an 'ambiguous' third class rather than a forced binary call, and I agree -- the language-ID service can fall back to user locale on ambiguous.\n\nRisk: adding the third class changes the service contract, so Katya needs a decision by end of March to hold the April integration date.\n\nNikhil",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
