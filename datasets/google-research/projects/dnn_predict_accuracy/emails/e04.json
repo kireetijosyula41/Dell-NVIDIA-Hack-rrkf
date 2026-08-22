@@ -1,0 +1,17 @@
+{
+  "id": "gr/dnn_predict_accuracy/e04",
+  "thread_id": "gr/dnn_predict_accuracy/t1",
+  "in_reply_to": "gr/dnn_predict_accuracy/e03",
+  "date": "2026-06-19T16:12:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: weight-space accuracy prediction (dnn-predict-accuracy)",
+  "body": "Decisions from yesterday's review, so we're aligned before Q3 OKR lock on June 26:\n\n1. v1 ships on flattened weights only, per Yara's proposal. Per-layer statistics move to v2. MAE of 1.8 points is inside the tolerance Evalline asked for.\n2. The distillation recipe stays in scope but slips two weeks — Katya's design doc landed well but pipeline hardening ate more of her time than planned. New target: recipe usable internally by July 10.\n3. Launch review slot requested with Nadia Rahman for the week of July 13. Ivo, please confirm the Evalline API is behind their staging gateway by July 6.\n\nWe cut the customer-submitted-checkpoint story entirely for this half. Ragged input support was the long pole and nobody's asking for it yet.\n\nThanks all — good half so far.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

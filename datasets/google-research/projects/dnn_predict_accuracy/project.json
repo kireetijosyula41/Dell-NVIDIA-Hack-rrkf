@@ -1,0 +1,18 @@
+{
+  "id": "gr/dnn_predict_accuracy",
+  "title": "dnn-predict-accuracy",
+  "summary": "Productizing a technique for predicting a neural network's test accuracy directly from its flattened weight vector, built on the Small CNN Zoo dataset of 30k trained CNN instances per source dataset with checkpoints across 9 training epochs.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Yara Jokic", "Katya Silva", "Leilani Nakamura"],
+  "window": {"start": "2026-03-30", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dnn_predict_accuracy",
+    "url": "https://github.com/google-research/google-research/tree/master/dnn_predict_accuracy",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
