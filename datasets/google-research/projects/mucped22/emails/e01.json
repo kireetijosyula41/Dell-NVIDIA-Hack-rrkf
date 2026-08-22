@@ -1,0 +1,41 @@
+{
+  "id": "gr/mucped22/e01",
+  "thread_id": "gr/mucped22/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:55:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: mucped22 — IQA foundation for codec tuning",
+  "body": "Hi Bruno,\n\nKicking off the mucped22 project (Feb 9 – Jun 1). The premise from our open-source release: existing human-rated IQA databases — KADID-10k, TID2013, CSIQ, LIVE — are what everyone tunes objective metrics like MS-SSIM against, but they lean on crowdsourced raters without strong image-comparison experience and on distortions that don't resemble what real compression produces. Tuning a codec against a metric tuned against the wrong database is an extra error source nobody accounts for.\n\nProduct goal: make mucped22 the reference database for our codec team's tuning loop, and stand up our own expert-rater pipeline so we can extend it with new distortion types on demand.\n\nMilestones: March — database ingested, metric-correlation baselines (MS-SSIM et al.) reproduced; April — rating pipeline operational with a pilot batch; May — first extension batch rated and a tuning-loop recommendation.\n\nStaffing and tooling plan by end of Feb?\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

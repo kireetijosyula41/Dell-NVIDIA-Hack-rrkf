@@ -1,0 +1,40 @@
+{
+  "id": "gr/mucped22/e04",
+  "thread_id": "gr/mucped22/t1",
+  "in_reply_to": "gr/mucped22/e03",
+  "date": "2026-05-19T15:55:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: mucped22 — decisions for the June close",
+  "body": "Team,\n\nDecisions from the review:\n\n1) We adopt the regime-scoped recommendation, exactly as Gustavo framed it: a blessed metric per bitrate regime, with mandatory human eval (through our pipeline) for cross-regime codec comparisons. The codec team pushed back on losing a single number; the 1-in-6 ordering-inversion stat ended that conversation.\n2) The May extension batch is funded — same 9-rater pool, $21k, Idris signed off. Ondrej's methodology doc becomes the standard for any future rating study in the vision portfolio.\n3) Emeka's annotation UI graduates from project tooling to a maintained internal tool; he'll spend 20% in June on hardening and docs.\n\nOne miss to own: we're landing three weeks later than the original April pipeline milestone. Fully worth it for rater quality, but I'll note it in the portfolio review.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}
