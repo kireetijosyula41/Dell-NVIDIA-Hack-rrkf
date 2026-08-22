@@ -1,0 +1,15 @@
+{
+  "id": "gr/learning_parameter_allocation/e04",
+  "thread_id": "gr/learning_parameter_allocation/t2",
+  "in_reply_to": "gr/learning_parameter_allocation/e03",
+  "date": "2026-05-20T10:15:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Status: MNIST suite reproduced, Omniglot risk",
+  "body": "Team,\n\nDecision from yesterday's review: we're cutting the full Omniglot ablation grid from this phase. Csilla's May 15 runs already show the gumbel_matrix router beating shared_bottom on validation accuracy, and that's enough evidence for the design review. The remaining grid moves to a Q3 stretch goal.\n\nWhat stays committed:\n- May 29 design review for the routing library goes ahead. Jorge's June refactor allocation is unchanged and is the critical path to a usable component.\n- Quentin writes up the logdir-hygiene tooling as part of the library so no downstream team repeats our 4-day loss.\n\nI'll frame the OKR submission around \"one backbone, learned sharing, budget knob\" — the budget_penalty result is the demo. Deshawn, please sanity-check headcount lines before I submit.\n\nPriya",
+  "labels": ["decision"]
+}

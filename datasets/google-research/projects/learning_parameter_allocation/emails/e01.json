@@ -1,0 +1,17 @@
+{
+  "id": "gr/learning_parameter_allocation/e01",
+  "thread_id": "gr/learning_parameter_allocation/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:05:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: learned parameter allocation for multi-task models",
+  "body": "Hi all,\n\nKicking off the parameter-allocation workstream today. The pitch to leadership: our open-source Gumbel-Matrix release lets a multi-task network learn which parameters to share per task instead of hand-designing sharing, and that maps directly onto the language portfolio's problem of serving one backbone across 12+ downstream tasks.\n\nMilestones I want to commit to:\n- Apr 10: reproduce the MNIST suite (no_sharing, shared_bottom, gumbel_matrix, and gumbel_matrix with budget=0.75 / budget_penalty=1.0) and confirm train/test accuracy matches the paper.\n- May 8: Omniglot runs with the separate validation process picking best checkpoints by validation accuracy.\n- May 29: internal design review for the reusable routing library.\n\nDeshawn, can you follow up with staffing and compute? Q3 OKR planning locks 2026-06-26, so I need a defensible plan well before that.\n\nThanks,\nPriya",
+  "labels": ["kickoff", "spec"]
+}

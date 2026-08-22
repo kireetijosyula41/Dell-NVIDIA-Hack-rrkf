@@ -1,0 +1,12 @@
+{
+  "project": "gr/learning_parameter_allocation",
+  "conflicts": [
+    {
+      "conflict_id": "C057",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["comisr"],
+      "planted_in": ["e02"],
+      "claim_as_written": "I have Jorge Vidal committed at 60% to us for all of June 2026 to land the routing library refactor, with the remainder of his time on interview load."
+    }
+  ]
+}

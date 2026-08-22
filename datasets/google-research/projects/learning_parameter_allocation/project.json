@@ -1,0 +1,18 @@
+{
+  "id": "gr/learning_parameter_allocation",
+  "title": "Flexible Multi-task Networks by Learning Parameter Allocation",
+  "summary": "Productizing learned parameter allocation for multi-task networks: the Gumbel-Matrix routing method decides which parameters each task shares, with a tunable sharing budget. We reproduce the MNIST and Omniglot experiment suites and turn the method into a reusable multi-task training component.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": ["Jorge Vidal", "Csilla Nassar", "Quentin Farkas"],
+  "window": {"start": "2026-03-16", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "learning_parameter_allocation",
+    "url": "https://github.com/google-research/google-research/tree/master/learning_parameter_allocation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
