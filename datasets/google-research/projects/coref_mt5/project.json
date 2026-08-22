@@ -1,0 +1,25 @@
+{
+  "id": "gr/coref_mt5",
+  "title": "Coreference Resolution through a seq2seq Transition-Based System",
+  "summary": "A coreference resolution system that drops span search entirely and instead predicts mentions and links jointly as a text-to-text transition system on top of multilingual T5, reaching 83.3 F1 on CoNLL-2012. Meridian is evaluating it as the multilingual coref backbone for document understanding.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Yusuf Keita",
+    "Chiara Olsen",
+    "Katya Silva"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "coref_mt5",
+    "url": "https://github.com/google-research/google-research/tree/master/coref_mt5",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

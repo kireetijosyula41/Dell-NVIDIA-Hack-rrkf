@@ -1,0 +1,19 @@
+{
+  "id": "gr/coref_mt5/e04",
+  "thread_id": "gr/coref_mt5/t2",
+  "in_reply_to": "gr/coref_mt5/e03",
+  "date": "2026-07-09T15:26:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"},
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: coref_mt5 status - positioning decision, batch-only for v1",
+  "body": "Decision, after talking to the document understanding folks and to Hana.\n\nv1 is batch-only. We position entity threading as an overnight enrichment job, not an interactive feature, and we stop apologising for 190 seconds a document. That number is fine for a nightly pipeline and pretending otherwise is how we end up shipping chunking we don't trust.\n\nConsequences:\n- Chunking prototype stops. Yusuf, keep the write-up, kill the branch.\n- Zeke, we still want the Shipyard slot but the SLA we're asking for is throughput, not latency - Daniela will send revised numbers.\n- Launch review packet on Jul 20 goes in with 82.9 F1 English, two non-English languages, and an explicit batch-only scope line. Nadia, please don't let anyone re-litigate interactive in the room; it's decided.\n\nGood work getting to parity, genuinely.\n\nPriya",
+  "labels": ["decision", "escalation"]
+}
