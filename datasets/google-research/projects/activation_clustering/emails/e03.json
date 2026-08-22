@@ -1,0 +1,17 @@
+{
+  "id": "gr/activation_clustering/e03",
+  "thread_id": "gr/activation_clustering/t1",
+  "in_reply_to": "gr/activation_clustering/e02",
+  "date": "2026-04-22T10:31:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Activation Clustering kickoff - interpretability for the debugging offering",
+  "body": "Hi Bao, Anders,\n\nStatus ahead of the April 30 decision. Repro was smooth - the CIFAR-10 notebook flow worked out of the docker container basically first try, and the internal-model spike (our retail-vision classifier) produced clusters by March 18.\n\nResults on the two debugging cases, using Kaia's rubric: case 1 (mislabeled-lookalike failure) was a clear win - the activation clusters isolated the confusing concept group in under an hour, versus roughly a day of manual slicing last time we debugged that model. Case 2 (texture-bias failure) was a partial win: the relevant cluster existed, but you had to already suspect texture to spot it, so Kaia scored it \"confirmatory, not discovering.\"\n\nThe risk for productization: cluster granularity is a per-model knob, and bad settings produce plausible-looking but useless concepts. The June sprint needs concept-quality metrics as its first deliverable, before any customer-facing polish - otherwise we're shipping a tool that's convincing when it's wrong.\n\nMy vote is a green light with that ordering constraint.\n\nRafael",
+  "labels": ["status", "risk"]
+}

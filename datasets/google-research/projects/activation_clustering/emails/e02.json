@@ -1,0 +1,16 @@
+{
+  "id": "gr/activation_clustering/e02",
+  "thread_id": "gr/activation_clustering/t1",
+  "in_reply_to": "gr/activation_clustering/e01",
+  "date": "2026-02-27T13:44:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Activation Clustering kickoff - interpretability for the debugging offering",
+  "body": "Anders,\n\nStaffing for the window: Rafael Duran 40% leads the repro and the two debugging-case studies; Kaia Wolde 25% on evaluation design (she'll define what \"the clusters actually helped\" means so we're not grading our own homework); Fumiko Rossi 20% advising on cluster-quality methodology through April.\n\nFor the June productization sprint: Fumiko Rossi is committed at 60% to this project for June 2026 for the productization sprint - concept-quality metrics and the customer-facing notebook flow - and I've already booked her time with her and put it in the resourcing sheet. Locking that now was the only way to guarantee the sprint doesn't stall while everyone's Q3 spins up.\n\nCompute: negligible - the docker workflow runs on a single 8-GPU node; I'll use the team's standing titan-a100 slice. No budget ask beyond ~$2k for storage of activation dumps on the larger internal models.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/activation_clustering",
+  "title": "Activation Clustering",
+  "summary": "Activation Clustering explains deep networks by unsupervised clustering of their activations, surfacing similar images and concepts from a baseline model, with a dockerized notebook workflow built around CIFAR-10 examples. We are evaluating it as the interpretability add-on for the portfolio's model-debugging offering.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Rafael Duran",
+    "Kaia Wolde",
+    "Fumiko Rossi"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "activation_clustering",
+    "url": "https://github.com/google-research/google-research/tree/master/activation_clustering",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

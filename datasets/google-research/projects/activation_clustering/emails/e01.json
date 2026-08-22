@@ -1,0 +1,17 @@
+{
+  "id": "gr/activation_clustering/e01",
+  "thread_id": "gr/activation_clustering/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:52:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Activation Clustering kickoff - interpretability for the debugging offering",
+  "body": "Team,\n\nKicking off the Activation Clustering evaluation. Context: our model-debugging engagements keep hitting the same wall - customers can see *that* a model fails, not *why*. The activation clustering method from our open-source release (unsupervised clustering over a trained model's activations, per the \"Explaining Deep Neural Networks using Unsupervised Clustering\" work) gives us cluster-level concepts and similar-image retrieval from any baseline model, which is exactly the missing artifact in those engagements.\n\nThe repo is nicely self-contained: docker build, jupyter server in the container, worked CIFAR-10 examples for training an activation clustering model from a baseline and visualizing similar images and concepts.\n\nWindow plan: repro + internal-model spike by March 20; utility assessment on two real debugging cases by April 17; productization decision April 30, with the actual productization sprint (if green) planned for June.\n\nBao - staffing please, including who carries the June sprint if we go.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}
