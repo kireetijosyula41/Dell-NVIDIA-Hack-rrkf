@@ -1,0 +1,27 @@
+{
+  "id": "gr/invariant_explanations",
+  "title": "Project description",
+  "summary": "Trains meta-models that predict the epoch-86 predictions of a CNN zoo of base models from images plus hparams (or early-epoch weights), enabling hparam-sensitivity audits without training the base models.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Fumiko Rossi",
+    "Linnea Yamada",
+    "Yusuf Keita",
+    "Vera Egede",
+    "Bilal Novak"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "invariant_explanations",
+    "url": "https://github.com/google-research/google-research/tree/master/invariant_explanations",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
