@@ -1,0 +1,12 @@
+{
+  "project": "gr/jslm",
+  "conflicts": [
+    {
+      "conflict_id": "C125",
+      "type": "codename_collision",
+      "counterpart_projects": ["adaptive_low_rank"],
+      "planted_in": ["e01"],
+      "claim_as_written": "We're running this under the internal codename Project Basalt — use it in subject lines so the filters catch everything."
+    }
+  ]
+}
