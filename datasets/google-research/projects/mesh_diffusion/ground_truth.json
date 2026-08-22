@@ -1,0 +1,9 @@
+{
+  "project": "gr/mesh_diffusion",
+  "conflicts": [
+    {"conflict_id": "C060", "type": "dependency_date_drift",
+     "counterpart_projects": ["cann", "behavioral_dispositions", "dissecting_factual_predictions"],
+     "planted_in": ["e02"],
+     "claim_as_written": "On timing: the team plans around a Corpus v2 freeze date of 2026-08-07, so the migration is a non-issue for us — our window closes 06-15, and even the stretch fine-tune scenario in July finishes several weeks before that freeze."}
+  ]
+}

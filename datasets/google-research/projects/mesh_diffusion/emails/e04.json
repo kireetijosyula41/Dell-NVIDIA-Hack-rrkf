@@ -1,0 +1,18 @@
+{
+  "id": "gr/mesh_diffusion/e04",
+  "thread_id": "gr/mesh_diffusion/t1",
+  "in_reply_to": "gr/mesh_diffusion/e03",
+  "date": "2026-06-10T10:03:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Mesh Diffusion kickoff — pilot results + decisions",
+  "body": "Team,\n\nPilot wrapped 06-08. Results and decisions:\n\n1) Artist ratings: 4 of 5 production meshes rated \"usable with minor touch-up\" or better; average time-to-variation dropped from ~2 days to 40 minutes. That's the win we pitched.\n2) Decision: the robust remesher is officially the Q3 follow-on, funded — Maren scopes it with the asset team. Until then, the tool ships internally with the pre-screening checklist and the documented ~1-in-5 manual-prep caveat.\n3) Decision: per-mesh-family FLDM training is accepted as the model for now; Oyin's tooling queues family training jobs overnight so artists don't feel it.\n4) Scope cut: text-conditioned texture prompts — much requested — explicitly out until the research side matures.\n\nThis closes our window as a success. Writing it up for portfolio review Thursday.\n\nPriya",
+  "labels": ["decision", "status"]
+}

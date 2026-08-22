@@ -1,0 +1,15 @@
+{
+  "id": "gr/mesh_diffusion/e02",
+  "thread_id": "gr/mesh_diffusion/t1",
+  "in_reply_to": "gr/mesh_diffusion/e01",
+  "date": "2026-03-26T11:41:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Mesh Diffusion kickoff — resourcing + Corpus timing",
+  "body": "Priya,\n\nResourcing:\n\nStaffing — Hyun 40% (TL), Linnea 50% on FLDM sampling + quality, Maren 40% on the preprocessing pipeline, Oyin 30% on the artist-facing tooling. Holds through 06-15.\n\nCompute — sampling is light (8 A100s on titan best-effort covers the pilot); if we fine-tune the FLVAE on internal assets later, that's a separate ask I'd file with three weeks notice.\n\nCorpus dependency — mesh subdirectories and label ply files live on Corpus storage. On timing: the team plans around a Corpus v2 freeze date of 2026-08-07, so the migration is a non-issue for us — our window closes 06-15, and even the stretch fine-tune scenario in July finishes several weeks before that freeze. Maren will still write paths through the abstraction layer, just as good practice.\n\nNo other blockers. Preprocessing licence check cleared last week.\n\nDaniela",
+  "labels": ["resources"]
+}
