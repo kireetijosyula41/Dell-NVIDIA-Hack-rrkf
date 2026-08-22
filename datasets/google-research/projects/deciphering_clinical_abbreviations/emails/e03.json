@@ -1,0 +1,17 @@
+{
+  "id": "gr/deciphering_clinical_abbreviations/e03",
+  "thread_id": "gr/deciphering_clinical_abbreviations/t2",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:25:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status - reverse substitution works, ambiguity is where we lose",
+  "body": "Status.\n\nReverse substitution is running and the dictionary covers 612 acronyms across the three pilot teams, which is more than I expected Amara to get in a month.\n\nModel results on our internal snippet set (287 snippets, hand-written, roughly the size of the clinician set in the release): 88% expansion accuracy overall. But that number hides the split. Unambiguous acronyms - one expansion in the dictionary - are at 96%. Ambiguous ones, where the same three letters mean different things in platform vs support vs finance, are at 61%.\n\nThat's not a model problem so much as a context problem: the snippets often don't contain enough signal to disambiguate, and neither would a human without knowing which team wrote the ticket. Adding the authoring team as a feature took ambiguous accuracy to 79% in a quick test.\n\nRecommendation: make team-context a required input rather than pretending we can do this from text alone.\n\nHalima",
+  "labels": ["status", "risk"]
+}

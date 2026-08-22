@@ -1,0 +1,20 @@
+{
+  "id": "gr/deciphering_clinical_abbreviations/e01",
+  "thread_id": "gr/deciphering_clinical_abbreviations/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T10:00:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}
+  ],
+  "subject": "Kickoff - abbreviation expansion via reverse substitution",
+  "body": "Team,\n\nShort, sharp project: Mar 2 - May 11.\n\nThe open-source release we're working from expands clinical abbreviations without training on sensitive records. The trick is reverse substitution: take ordinary text, take a curated abbreviation-expansion dictionary, and mechanically *insert* abbreviations to manufacture training pairs. Evaluation then uses a small clinician-written set of snippets containing real abbreviations.\n\nOur version of this problem is internal jargon - ticket text, incident reports, and about 900 acronyms that mean different things per team. Same shape, no patient data, and Kofi will confirm we can skip the heavier review path because we never train on the sensitive corpus.\n\nMilestones:\n- Mar 27: dictionary assembled for our top 3 teams, reverse substitution running.\n- Apr 17: model fine-tuned, evaluated on a hand-written internal snippet set.\n- May 8: results write-up and a call on whether this becomes a service.\n\nDeshawn on resourcing. Halima is tech lead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

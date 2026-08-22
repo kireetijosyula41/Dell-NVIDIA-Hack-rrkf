@@ -1,0 +1,19 @@
+{
+  "id": "gr/deciphering_clinical_abbreviations/e02",
+  "thread_id": "gr/deciphering_clinical_abbreviations/t1",
+  "in_reply_to": "gr/deciphering_clinical_abbreviations/e01",
+  "date": "2026-03-11T14:45:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff - resourcing, and we need somewhere to put results",
+  "body": "Dmitri,\n\nStaffing for a 10-week window:\n- Halima Toure 50%, reverse substitution and fine-tuning.\n- Amara Okafor 40%, dictionary assembly - this is mostly interviewing three teams and arguing about what SLR means.\n- Milan Zapata 25%, snippet set collection.\n- Oyin Iversen, below.\n\nCompute: negligible, ~200 GPU-hours titan-a100 best-effort.\n\nThe thing that isn't in your milestone list: we have no consistent way to score and track these runs. Right now every project here rolls its own notebook and the numbers aren't comparable week to week.\n\nWe are building an internal evaluation harness from scratch - dataset registry, per-example scoring with pluggable metrics, run comparison, and regression alerts when a metric moves more than a configured threshold. Oyin Iversen owns it at 50% from March 16, first version by April 3. It's not free but it pays back inside two projects.\n\nDeshawn",
+  "labels": ["resources"]
+}
