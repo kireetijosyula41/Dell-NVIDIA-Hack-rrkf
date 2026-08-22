@@ -1,0 +1,49 @@
+{
+  "id": "gr/generalized_rates/e04",
+  "thread_id": "gr/generalized_rates/t2",
+  "in_reply_to": "gr/generalized_rates/e03",
+  "date": "2026-04-28T15:28:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Rate metrics status: replication done, minibatch noise",
+  "body": "Team,\n\nDecisions from the pilot review:\n\n1. The pilot ships in the platform behind a flag: F-measure and KLD constraint types only, with Fumiko's convergence-time framing in the docs verbatim. Broader rate-metric families are Q3.\n2. Two pilot teams signed up; onboarding May 11.\n3. Hardening: Rafael leads it through July at his 60% allocation — priority is the minibatch noise issue, since pilot teams will train smaller than our experiments did.\n\nThis one quietly matters — constrained training as a platform primitive is a real differentiator. Nice work.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

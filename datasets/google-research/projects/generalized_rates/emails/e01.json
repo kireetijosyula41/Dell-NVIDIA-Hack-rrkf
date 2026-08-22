@@ -1,0 +1,50 @@
+{
+  "id": "gr/generalized_rates/e01",
+  "thread_id": "gr/generalized_rates/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:37:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Generalized rate metrics — kickoff",
+  "body": "Hi Deshawn,\n\nKickoff for the generalized rate metrics workstream, from our NeurIPS release on optimizing generalized rate metrics with three players. The setting: metrics and constraints built from rates — F-measure, KLD-based fairness measures — that standard loss minimization cannot target directly; the three-player formulation optimizes them with guarantees.\n\nProduct goal for data-platforms: constrained-metric training options in the platform, so teams can specify a fairness constraint next to their objective instead of hand-rolling Lagrangian hacks. Milestones: replicate the F-measure/COMPAS and KLD/Adult experiments by Mar 13, platform API design by Apr 3, pilot integration by Apr 30.\n\nGustavo, Fumiko, Halima, Oyin and Rafael are assigned.\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}

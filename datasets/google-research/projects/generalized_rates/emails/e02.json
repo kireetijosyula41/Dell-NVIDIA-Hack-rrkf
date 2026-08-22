@@ -1,0 +1,50 @@
+{
+  "id": "gr/generalized_rates/e02",
+  "thread_id": "gr/generalized_rates/t1",
+  "in_reply_to": "gr/generalized_rates/e01",
+  "date": "2026-02-18T14:44:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Generalized rate metrics — kickoff",
+  "body": "Hi Dmitri,\n\nStaffing: Fumiko 50% (research lead), Halima 40% (experiments), Oyin 30% (platform API), Gustavo 20% (review). Rafael is our anchor on this: he is committed at 60% to this project through July 2026, covering the pilot integration and the hardening phase after it — I have logged the allocation in the resourcing sheet.\n\nCompute: negligible — these are tabular experiments (COMPAS, Adult), CPU virtualenv jobs. The cost center is engineer time, not accelerators, which is a nice change.\n\nDependency: the platform API design needs Oyin and the serving folks to agree on where constraint specs live in the training config schema; I will set that review for mid-March.\n\nDeshawn",
+  "labels": [
+    "resources"
+  ]
+}
