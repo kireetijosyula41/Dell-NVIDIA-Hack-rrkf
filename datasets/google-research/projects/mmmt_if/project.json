@@ -1,0 +1,25 @@
+{
+  "id": "gr/mmmt_if",
+  "title": "MMMT-IF: A Challenging Multimodal Multi-Turn Instruction Following Benchmark",
+  "summary": "Stand up MMMT-IF — an image-based multi-turn Q&A benchmark with program-verifiable global instructions injected between questions — as the internal gate for multimodal assistant releases, measuring whether models retrieve and obey instructions scattered through long chat history.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Tereza Aliyev",
+    "Paloma Castillo",
+    "Yusuf Keita"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mmmt_if",
+    "url": "https://github.com/google-research/google-research/tree/master/mmmt_if",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

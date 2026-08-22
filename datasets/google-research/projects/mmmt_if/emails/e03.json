@@ -1,0 +1,42 @@
+{
+  "id": "gr/mmmt_if/e03",
+  "thread_id": "gr/mmmt_if/t1",
+  "in_reply_to": "gr/mmmt_if/e02",
+  "date": "2026-05-26T11:30:00Z",
+  "from": {
+    "name": "Yusuf Keita",
+    "email": "yusuf.keita@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MMMT-IF — baseline results + a gating trade-off",
+  "body": "Hi both,\n\nBaseline sweep is done. Headline: all three candidate checkpoints degrade sharply with instruction count. With 1–2 active instructions, verifier pass rates sit at 88–91%. By turn 15, with 6+ instructions accumulated in history, the best checkpoint passes 54% and the worst 41%. The failure is retrieval, not reasoning — when we re-inject all active instructions into the final prompt as an oracle, pass rates recover to 85%+. That matches what the paper found; the instructions spread through history are what kills them.\n\nThe trade-off for the gate: if we set the threshold at 80% pass over full 20-turn sessions, nothing ships this quarter. My proposal is a two-tier gate — 85% at up-to-4 instructions (hard block) and a published-but-non-blocking score on the full benchmark, tightening each quarter.\n\ntbh the honest read is the models need an instruction-tracking scratchpad, but that's a model-team roadmap item, not an eval item.\n\nYusuf",
+  "labels": [
+    "status",
+    "risk",
+    "decision"
+  ]
+}

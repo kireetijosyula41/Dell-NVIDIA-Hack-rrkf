@@ -1,0 +1,41 @@
+{
+  "id": "gr/mmmt_if/e01",
+  "thread_id": "gr/mmmt_if/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:25:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: MMMT-IF as the multimodal instruction-following gate",
+  "body": "Hi Daniela,\n\nKicking off MMMT-IF (Mar 16 – Jun 22). The benchmark from our open-source release is a genuinely hard one: image-based multi-turn Q&A where global instructions are added between questions and constrain the answer format. Models have to retrieve multiple instructions spread across a long chat history and reason over all of them at once — and every instruction is program-verifiable, so scoring is objective, no rater budget needed.\n\nWhy product cares: the assistant team keeps shipping models that pass single-turn evals and then drop formatting constraints by turn 12 in real sessions. This becomes the pre-release gate for that failure mode.\n\nMilestones: mid-April, harness running in Evalline with the verifier programs ported; late May, baseline sweep across our three candidate checkpoints; mid-June, gate thresholds proposed for launch review.\n\nStaffing and platform asks when you get a chance?\n\nThanks,\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

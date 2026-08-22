@@ -1,0 +1,40 @@
+{
+  "id": "gr/mmmt_if/e02",
+  "thread_id": "gr/mmmt_if/t1",
+  "in_reply_to": "gr/mmmt_if/e01",
+  "date": "2026-04-06T13:45:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: MMMT-IF — staffing + platform dependencies",
+  "body": "Hi Priya,\n\nPlan:\n\n- Tereza Aliyev 50% owns the Evalline harness and porting the instruction-verifier programs; Paloma Castillo 40% on the inference plumbing for the checkpoint sweep; Yusuf Keita 30% on analysis and the gate-threshold proposal.\n- Compute: the baseline sweep needs 64 titan-a100 GPUs best-effort for about two weeks in May. No reservation-class ask.\n- Corpus: we're building the plan around the Corpus v2 migration freeze on 2026-07-10: the benchmark's image assets and chat transcripts get ingested on v2 directly, and since our window closes June 22 we're done well before the freeze either way.\n\nOne scoping note from Tereza — the verifiers are objective but they're per-instruction programs, and chaining them across turns means the harness has to replay full chat history per example. That's a 6x token cost versus single-turn evals; Paloma is batching accordingly.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

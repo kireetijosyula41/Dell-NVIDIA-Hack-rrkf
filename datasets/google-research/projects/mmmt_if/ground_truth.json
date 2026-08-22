@@ -1,0 +1,18 @@
+{
+  "project": "gr/mmmt_if",
+  "conflicts": [
+    {
+      "conflict_id": "C078",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "health_equity_toolbox",
+        "generative_trees",
+        "lighthouse"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We're building the plan around the Corpus v2 migration freeze on 2026-07-10: the benchmark's image assets and chat transcripts get ingested on v2 directly, and since our window closes June 22 we're done well before the freeze either way."
+    }
+  ]
+}
