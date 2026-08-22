@@ -1,0 +1,25 @@
+{
+  "id": "gr/dichotomy_of_control",
+  "title": "Dichotomy of Control: Separating What You Can Control from What You Cannot",
+  "summary": "Evaluating Dichotomy of Control (DoC) for offline RL in stochastic environments -- conditioning policies only on what the agent can actually control -- against Decision Transformer baselines on Bandit and FrozenLake, as groundwork for more reliable automation agents.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Jorge Vidal",
+    "Carmen Reyes",
+    "Linnea Yamada"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-06-08"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dichotomy_of_control",
+    "url": "https://github.com/google-research/google-research/tree/master/dichotomy_of_control",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

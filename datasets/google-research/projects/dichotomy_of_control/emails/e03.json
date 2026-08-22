@@ -1,0 +1,41 @@
+{
+  "id": "gr/dichotomy_of_control/e03",
+  "thread_id": "gr/dichotomy_of_control/t1",
+  "in_reply_to": "gr/dichotomy_of_control/e02",
+  "date": "2026-05-19T10:52:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Dichotomy of Control for reliable automation agents",
+  "body": "Status heading into the final stretch.\n\nDone: Carmen reproduced the tabular results. On Bandit, DoC holds near-optimal return where the dt baseline collapses, matching the paper's reported gap; FrozenLake reproduces as well from the create_dataset.sh offline sets.\n\nIn flight: the neural DoC run on the ops simulator. First runs show DoC ahead of DT by 12% mean return but with high seed variance, so we need the full 5-seed sweep before we can call it. Linnea Yamada is committed at 60% to this project for June 2026 to land the neural DoC runs before the June 8 wrap.\n\nRisk: if two of the five seeds land inside DT's variance band, the go/no-go gets murky. My recommendation would then be 'adopt for high-stochasticity workflows only'. Flagging now so the June readout language is no surprise.\n\nDeshawn",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
