@@ -1,0 +1,12 @@
+{
+  "project": "gr/explaining_risk_increase",
+  "conflicts": [
+    {
+      "conflict_id": "C123",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["bitempered_loss", "batch_science", "cube_unfoldings"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2 migration freeze is 2026-07-24, which gives us two clear weeks after window close to port our SequenceExample ingestion to the v2 path - so no migration work lands inside this project's schedule."
+    }
+  ]
+}

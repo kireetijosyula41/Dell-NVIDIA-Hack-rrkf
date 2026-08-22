@@ -1,0 +1,19 @@
+{
+  "id": "gr/explaining_risk_increase/e04",
+  "thread_id": "gr/explaining_risk_increase/t2",
+  "in_reply_to": "gr/explaining_risk_increase/e03",
+  "date": "2026-06-10T11:08:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}
+  ],
+  "subject": "Re: Risk-explanation status: reproduction done, explanation stability is the real question",
+  "body": "Team,\n\nDecisions ahead of the Jun 19 pilot-readiness gate:\n\n1. Ensemble attribution is the only mode we ship. The clinical review on May 22 was unambiguous - the advisor said single-seed explanations would erode trust within a week, and the 91% top-3 overlap number was the difference between a polite meeting and an engaged one. Single-seed stays as an internal debug mode.\n2. Pilot scope: one partner, retrospective data only, no live clinical use. That matches Kofi's April sign-off conditions exactly (thanks for the tight turnaround, Kofi - cleared Apr 14, inside the SLA).\n3. Scope cut: multi-label support (beyond in_hospital_death) moves to the next phase. Bilal's ingestion generalizes already, but validating explanations per label is real work we shouldn't rush.\n\nVera, Gustavo - the review packet was the best clinical-facing doc this portfolio has produced. Reuse it as the template.\n\nDmitri",
+  "labels": ["decision"]
+}

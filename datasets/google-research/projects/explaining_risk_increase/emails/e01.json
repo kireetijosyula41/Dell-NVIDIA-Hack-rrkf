@@ -1,0 +1,17 @@
+{
+  "id": "gr/explaining_risk_increase/e01",
+  "thread_id": "gr/explaining_risk_increase/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:53:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Risk-explanation kickoff: explaining why risk went up, not just that it did",
+  "body": "Team,\n\nKicking off the risk-explanation productization. Our open-source release trains a model that generates a sequence of risk predictions over clinical observation records and - the part hospital partners actually want - explains increases as weights over the inputs. A risk score that jumps overnight with no explanation gets ignored by clinicians; one that says \"these three observations drove it\" gets used.\n\nThe codebase already speaks the right dialect: tf.SequenceExample in TFRecord format with FHIR-style observation features (Observation.code, value.quantity, harmonized valueset names) and labels like in_hospital_death. Partners are FHIR shops, so ingestion is genuinely close.\n\nMilestones for Mar 23 - Jun 22: training reproduction on the reference data by Apr 17, explanation-quality review with a clinical advisor by May 22, partner-pilot readiness (including privacy sign-off - health data, so we file immediately) by Jun 19.\n\nJelena owns staffing and platform dependencies.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/explaining_risk_increase/e03",
+  "thread_id": "gr/explaining_risk_increase/t2",
+  "in_reply_to": null,
+  "date": "2026-05-06T15:36:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Risk-explanation status: reproduction done, explanation stability is the real question",
+  "body": "Hi Dmitri, Jelena,\n\nStatus.\n\nReproduction landed Apr 15: the observation-sequence model trains cleanly on the reference in_hospital_death task (20k train steps as in the example config), AUC within 0.4 points of our expected band, and the explanation weights over input observations look sensible on spot checks - dense_sequence_feature attributions concentrate on the harmonized observation values you'd clinically expect.\n\nThe deeper issue for the May 22 clinical review: explanation stability. When we retrain with a different seed, the risk predictions barely move but the attribution weights shift noticeably - top-3 attributed observations overlap only ~70% across seeds. Clinicians will (rightly) ask why the same patient gets different explanations from \"the same\" model.\n\nPlan: Gustavo is adding an ensemble-attribution mode (average weights over 5 seeds), which lifts top-3 overlap to 91% in early tests at 5x explanation-time cost. Explanation latency isn't clinical-loop critical, so I think that trade is right. Review packet will show both modes.\n\nVera",
+  "labels": ["status", "risk"]
+}
