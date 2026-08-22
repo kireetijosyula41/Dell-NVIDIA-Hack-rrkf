@@ -1,0 +1,46 @@
+{
+  "id": "gr/charformer/e01",
+  "thread_id": "gr/charformer/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:15:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Charformer JAX port — kickoff",
+  "body": "Hi Bruno,\n\nKicking off the Charformer effort. Our open-source release is the Mesh-TensorFlow reference implementation of gradient-based subword tokenization — layers that plug into the T5 codebase — and the README has promised a JAX/FLAX implementation \"later\" for long enough that it's become a running joke. More importantly, tokenizer-free models are back on the roadmap: the multilingual quality team wants GBST for scripts where our current subword vocab is embarrassing.\n\nGoals for Feb 9 – May 4: (1) JAX/FLAX GBST layer with parity against the Mesh-TF reference on a small config, (2) integration into our internal trainer, (3) a base-size training run demonstrating quality on the multilingual eval. Scaled sweeps come in Q3 with real budget.\n\nBruno — staffing and the budget conversation with Finance are the first blockers. Can you take both?\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

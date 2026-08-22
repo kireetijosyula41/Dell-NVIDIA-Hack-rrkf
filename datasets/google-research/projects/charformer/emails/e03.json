@@ -1,0 +1,46 @@
+{
+  "id": "gr/charformer/e03",
+  "thread_id": "gr/charformer/t1",
+  "in_reply_to": "gr/charformer/e02",
+  "date": "2026-03-27T11:33:00Z",
+  "from": {
+    "name": "Wei Ivanov",
+    "email": "wei.ivanov@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Charformer JAX port — kickoff",
+  "body": "Status on the port.\n\nParity: reached on the base config. Our FLAX GBST layer matches the Mesh-TF reference (the cf_v2_d3_dv_base.gin config) to within float tolerance on forward pass, and end-to-end training curves overlap after 50k steps. The fiddly part was replicating how the reference injects the gradient-subword layers right after the positional embeddings and loops them before the layer stack — order matters more than the paper lets on.\n\nTrainer integration (Milan): done for single-host, multi-host sharding in review.\n\nRisk for the record: at char-level sequence lengths our attention memory blows up ~3.5x vs subword baseline at equal batch. GBST's downsampling recovers most of it but not all; Yara's eval runs will need gradient checkpointing on, which costs ~20% step time. Doesn't threaten the window, does affect Q3 sweep sizing.\n\nWei",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

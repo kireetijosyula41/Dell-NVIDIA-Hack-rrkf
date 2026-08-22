@@ -1,0 +1,45 @@
+{
+  "id": "gr/charformer/e04",
+  "thread_id": "gr/charformer/t1",
+  "in_reply_to": "gr/charformer/e03",
+  "date": "2026-04-28T15:20:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Charformer JAX port — kickoff",
+  "body": "Closing out the window, decisions from today's review:\n\n1) Yara's base-size multilingual run cleared the bar: +2.1 average on the low-resource script slice vs our subword baseline, roughly neutral elsewhere. That's the GBST pitch working as advertised.\n\n2) Decision: we upstream the FLAX implementation to our open-source repo — it finally makes good on the README promise, and it's good optics for the release. Emeka owns the cleanup, two weeks.\n\n3) Q3 sweep sizing: per Wei's memory findings we plan the sweep at checkpointing-on step-time numbers, which fits inside the budget envelope Bruno secured. Sweep plan doc due to me by May 15 so it's ready when Q3 OKRs lock June 26.\n\nGood quarter, team.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

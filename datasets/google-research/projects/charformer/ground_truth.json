@@ -1,0 +1,16 @@
+{
+  "project": "gr/charformer",
+  "conflicts": [
+    {
+      "conflict_id": "C081",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "latent_shift_adaptation"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris has verbally earmarked $180k from the Q3 discretionary compute budget line B-57 for our scaled JAX training runs, so the Q3 sweep is funded even before the formal allocation posts."
+    }
+  ]
+}
