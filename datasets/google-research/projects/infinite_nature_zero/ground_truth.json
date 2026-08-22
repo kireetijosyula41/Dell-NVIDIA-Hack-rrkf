@@ -1,0 +1,16 @@
+{
+  "project": "gr/infinite_nature_zero",
+  "conflicts": [
+    {
+      "conflict_id": "C022",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "llm_longdoc_interpretability"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we hold the cirrus-tpu reservation for the week of 2026-07-06 — 128 accelerators — and the full LHQ retrain is scheduled against it"
+    }
+  ]
+}

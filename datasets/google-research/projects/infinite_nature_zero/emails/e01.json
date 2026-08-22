@@ -1,0 +1,40 @@
+{
+  "id": "gr/infinite_nature_zero/e01",
+  "thread_id": "gr/infinite_nature_zero/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:05:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "InfiniteNature-Zero kickoff — perpetual view generation",
+  "body": "Team, kicking off our productization of InfiniteNature-Zero, our open-source release on perpetual view generation of natural scenes from single images. The pitch for data-platforms: turn any still landscape into an unbounded flythrough for partner creative tools, with no paired video supervision needed. The method trains on single photos (LHQ) with a StyleGAN2 backbone and softmax splatting for point-cloud rendering, which is what makes the training story cheap enough to productize. Milestones I want to sanity-check with Santiago: (1) repro the pretrained LHQ checkpoint and input examples by May 15; (2) retrain on our licensed landscape corpus by end of June; (3) Shipyard-hosted demo for Launch Review Board mid-July. Gustavo owns repro, Csilla the retrain recipe, Saoirse the demo path. Flag risks early — the LRB calendar is biweekly and slots go fast. Thanks, Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

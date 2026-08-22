@@ -1,0 +1,39 @@
+{
+  "id": "gr/infinite_nature_zero/e04",
+  "thread_id": "gr/infinite_nature_zero/t1",
+  "in_reply_to": "gr/infinite_nature_zero/e03",
+  "date": "2026-07-01T10:15:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: InfiniteNature-Zero kickoff — perpetual view generation",
+  "body": "Decision after yesterday's sync: we're cutting the custom-corpus retrain from Q2 scope. The coastal-drift work is promising but not demo-stable, and I'm not risking the LRB slot on it. Revised plan: ship the demo on the pretrained LHQ checkpoint with Saoirse's Shipyard deployment; keep Csilla's resampled-mix experiments running as background work and fold the retrain into Q3 planning. The July compute week stays as-is since we'll use it for ablations and longer flythrough stress tests (500+ steps) instead. Nadia has us on the 2026-07-16 Launch Review agenda; Santiago, please make sure the demo has a recorded fallback in case serving hiccups. Good work getting the repro solid — that's the part that had to land. Dmitri",
+  "labels": [
+    "decision"
+  ]
+}
