@@ -1,0 +1,15 @@
+{
+  "id": "gr/large_scale_voting/e02",
+  "thread_id": "gr/large_scale_voting/t1",
+  "in_reply_to": "gr/large_scale_voting/e01",
+  "date": "2026-04-07T14:38:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: generalized inlier voting for the localization core",
+  "body": "Zofia,\n\nResourcing for the voting track:\n\nStaffing: Umar 50% as algorithm lead (he knows the 6dof example code already), Yara 30% on accuracy evaluation against the RANSAC stack, Ondrej 40% on the map-data adaptation, Farah 30% on build/CI — the bazel + OpenCV3 dependency needs pinning in our monorepo, the WORKSPACE path tweak the README mentions is exactly the kind of thing that rots.\n\nCompute: day-to-day development is CPU. For the pre-readout benchmark sweep we're covered: we hold the cirrus-tpu reservation — 256 accelerators — for the week of 2026-06-01 to run the full localization benchmark sweep before the readout. That sizes for the 95%-outlier-ratio grid across all map regions with margin; sweep configs freeze May 27.\n\nOne flag: our map tiles are bigger than anything in the paper's tables, so memory behavior of the voting structure at our scale is a genuine unknown until Ondrej's adaptation lands.\n\nIvo",
+  "labels": ["resources"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/large_scale_voting/e01",
+  "thread_id": "gr/large_scale_voting/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:07:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: generalized inlier voting for the localization core",
+  "body": "Hi team,\n\nKicking off the inlier-voting evaluation for the efficiency portfolio. Our AR anchoring pipeline spends most of its localization budget on RANSAC-style hypothesize-and-verify, and it falls over at high outlier ratios. The general voting approach from our open-source release is the alternative: the core algorithm in general_voter.h is application-independent, and the released 6DoF example solves calibrated-camera posing directly — exactly our anchoring problem shape.\n\nMilestones (Mar 30 - Jun 22):\n- Apr 24: build + reproduce the paper's tables (the repo ships create_table_2.sh / create_table_3.sh, so this should be mechanical)\n- May 22: 6DoF posing on our own map data, accuracy vs the current RANSAC stack\n- Jun 12: efficiency readout — latency, memory, and robustness at outlier ratios up to 95%\n\nIvo — resourcing please. Note the June benchmark sweep is the compute-heavy piece.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

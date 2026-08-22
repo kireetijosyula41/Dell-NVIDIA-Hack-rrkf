@@ -1,0 +1,18 @@
+{
+  "id": "gr/large_scale_voting/e04",
+  "thread_id": "gr/large_scale_voting/t2",
+  "in_reply_to": "gr/large_scale_voting/e03",
+  "date": "2026-06-10T09:24:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Voting status: decisions going into the Jun 12 readout",
+  "body": "Team,\n\nClosing the loop before Friday's readout.\n\n1) Partitioning decision (made May 26, recording it here for the record): we took Ondrej's tile-partitioning trade. 41GB per tile was never going to fly on the serving fleet; a 4% boundary-recall cost with a 4x memory cut is the right shape, and Yara's follow-up showed half the recall loss disappears with a 10m tile overlap.\n\n2) Sweep results are in from the benchmark week: the voter holds median pose error under 3.5cm up to 92% outlier ratio across all map regions; RANSAC exits the acceptable band at 85%. Latency p95 is 2.4x better. Those are the readout headlines.\n\n3) Recommendation going to the room: adopt as the localization core for AR anchoring, staged rollout by region density, RANSAC retained as fallback for two quarters. If the room agrees, engineering handoff plan lands before window close on Jun 22.\n\nZofia",
+  "labels": ["decision", "status"]
+}
