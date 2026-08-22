@@ -1,0 +1,20 @@
+{
+  "id": "gr/autoregressive_diffusion/e04",
+  "thread_id": "gr/autoregressive_diffusion/t1",
+  "in_reply_to": "gr/autoregressive_diffusion/e03",
+  "date": "2026-05-06T16:03:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}
+  ],
+  "subject": "Decision: fixed budget tiers for v1, LRB on 5/12",
+  "body": "Team,\n\nDecisions ahead of the 5/12 Launch Review Board slot:\n\n1. Serving: v1 uses three fixed step-budget tiers (fast/balanced/max-quality). Zeke and I agreed dynamic batching is the right long-term answer but not a v1 dependency; Shipyard will scope it for Q3.\n2. Compression pilot ships as an internal tool first - the 0.21 bits/dim win plus single-example capability is the headline for the review.\n3. The de-dup pipeline graduates with us: Halima will present it as reusable infrastructure in the appendix, since honestly it's half the reason our numbers are trustworthy.\n\nEfe/Saoirse - dry run of the demo Friday. Halima/Tereza - corpus lineage doc to Kofi for a lightweight privacy check, he confirmed the 2-3 week SLA doesn't block an internal-only launch.\n\nZofia",
+  "labels": ["decision"]
+}

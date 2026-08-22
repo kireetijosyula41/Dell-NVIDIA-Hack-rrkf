@@ -1,0 +1,18 @@
+{
+  "id": "gr/autoregressive_diffusion/e01",
+  "thread_id": "gr/autoregressive_diffusion/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T09:41:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: ARDMs for budget-adaptive generation and compression",
+  "body": "Hi team,\n\nKicking off the ARDM workstream under the efficiency portfolio. Two properties from our open-source release make this a product, not just a paper: ARDMs generate variables in any order and support parallel generation that adapts to a given step budget, and they reach the same test performance as discrete diffusion with significantly fewer steps. That's a direct serving-cost lever.\n\nTarget outcomes by 5/18: (1) a compression pilot - ARDM-based lossless compression on one internal audio corpus, benchmarked against our current bits-back-free baseline; (2) a generation-latency study showing quality vs. network-call budget curves for text and images.\n\nMilestones: training infra ready end of Feb, first compression numbers by end of March, launch review early May.\n\nAlina owns staffing and the data-readiness plan.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

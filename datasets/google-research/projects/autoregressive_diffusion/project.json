@@ -1,0 +1,18 @@
+{
+  "id": "gr/autoregressive_diffusion",
+  "title": "Autoregressive Diffusion Models",
+  "summary": "Develops ARDMs - order-agnostic generative models unifying order-agnostic autoregressive models and absorbing discrete diffusion - which support budget-adaptive parallel generation and are unusually well suited to lossless compression across images, text, and audio.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Alina Larsen",
+  "contributors": ["Saoirse Eriksen", "Efe Lindqvist", "Halima Toure", "Tereza Aliyev"],
+  "window": {"start": "2026-02-09", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "autoregressive_diffusion",
+    "url": "https://github.com/google-research/google-research/tree/master/autoregressive_diffusion",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
