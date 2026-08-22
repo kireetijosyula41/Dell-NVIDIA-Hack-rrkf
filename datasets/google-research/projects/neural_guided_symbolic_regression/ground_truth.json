@@ -1,0 +1,12 @@
+{
+  "project": "gr/neural_guided_symbolic_regression",
+  "conflicts": [
+    {
+      "conflict_id": "C127",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["implicit_pdf"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we hold the vulcan-h100 reservation, 256 accelerators, for the week of 2026-06-15, which runs the full eval matrix plus Tereza's retraining ablations in one pass"
+    }
+  ]
+}

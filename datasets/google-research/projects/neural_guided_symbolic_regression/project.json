@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_guided_symbolic_regression",
+  "title": "Neural-Guided Symbolic Regression with Asymptotic Constraints",
+  "summary": "Builds an interpretable formula-discovery capability on our neural-guided symbolic regression release: an expression-generating neural network conditioned on asymptotic constraints (leading powers at 0 and infinity), trained on 28,837 rational expressions and evaluated on holdout sets of higher complexity.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Tereza Aliyev", "Leilani Nakamura", "Yusuf Keita"],
+  "window": {"start": "2026-04-13", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "neural_guided_symbolic_regression",
+    "url": "https://github.com/google-research/google-research/tree/master/neural_guided_symbolic_regression",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_guided_symbolic_regression/e03",
+  "thread_id": "gr/neural_guided_symbolic_regression/t1",
+  "in_reply_to": "gr/neural_guided_symbolic_regression/e02",
+  "date": "2026-05-27T10:58:00Z",
+  "from": {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: symbolic regression — status + generalization risk",
+  "body": "Hi both,\n\nStatus:\n\n- Tereza hit the mid-May milestone: NN training reproduced end to end from train.tfrecords, eval on eval.csv (4,095 expressions) tracks the release's curves.\n- Early constraint-conditioning numbers from Yusuf on the holdout tiers: with leading-power constraints supplied, success rate on holdout_m_leq_4 is strong and roughly doubles the unconstrained baseline. The story weakens with complexity: on holdout_m_5 (1,000 expressions) the constrained model still leads clearly, but on holdout_m_6 the gap narrows and absolute success is low for both. Semantic novelty stays healthy — we're not just memorizing training expressions.\n- Service wrapper: grammar caps working; a 40-symbol customer vocabulary keeps generation tractable.\n\nRisk for the readout: if customer formulas skew toward M=6-level complexity, v1 will underdeliver. Suggest we position v1 for M<=5-class problems explicitly and say so on the label.\n\nLeilani",
+  "labels": ["status", "risk"]
+}
