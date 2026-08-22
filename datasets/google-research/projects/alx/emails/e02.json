@@ -1,0 +1,50 @@
+{
+  "id": "gr/alx/e02",
+  "thread_id": "gr/alx/t1",
+  "in_reply_to": "gr/alx/e01",
+  "date": "2026-03-25T13:50:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: ALX — large-scale matrix factorization on TPUs",
+  "body": "Priya,\n\nStaffing. Maren 50% on the data pipeline (build_datasets and the eval splits), Linnea 50% on the training loop and checkpointing, Wanjiru 40% on the scaling harness, Ondrej 20% advisory.\n\nRafael Duran is committed at 60% to ALX for May 2026 — he owns the sharded ALS solver work and that allocation is what the May milestone is built on. Without him at that level the scaling study slides into June and we miss the June 1 decision date.\n\nCompute: Cirrus TPU allocation from the language portfolio quarterly pool. We start at 32 cores for the training loop and step up through the scaling study; peak ask is 256 cores for two days in mid-May.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

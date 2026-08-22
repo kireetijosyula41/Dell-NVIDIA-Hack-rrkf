@@ -1,0 +1,27 @@
+{
+  "id": "gr/alx",
+  "title": "ALX: Large Scale Matrix Factorization on TPUs",
+  "summary": "ALX is an open-source JAX library for distributed matrix factorization using Alternating Least Squares, designed for efficient use of the TPU architecture and scaling to problems with billions of rows or columns by adding TPU cores. Quality is tracked with Recall@20 and Recall@50 on held-out test data.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Maren Zhou",
+    "Wanjiru Horvat",
+    "Ondrej Bergstrom",
+    "Linnea Yamada",
+    "Rafael Duran"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "alx",
+    "url": "https://github.com/google-research/google-research/tree/master/alx",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

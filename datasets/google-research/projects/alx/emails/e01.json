@@ -1,0 +1,51 @@
+{
+  "id": "gr/alx/e01",
+  "thread_id": "gr/alx/t1",
+  "in_reply_to": null,
+  "date": "2026-03-18T09:00:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: ALX — large-scale matrix factorization on TPUs",
+  "body": "Hi Bruno, team,\n\nKicking off ALX. It's a JAX library for distributed matrix factorization with Alternating Least Squares, designed around the TPU architecture — it scales to problems with billions of rows/columns by scaling the number of TPU cores.\n\nWhy we care: our internal recommendation surfaces still run a factorization job that takes eleven hours and can't grow. If ALX gives us the same Recall@20 in a fraction of the time, that's a straight infrastructure win we can bank this half.\n\nMilestones: single-pod training loop with checkpoint/restore by mid-April, scaling study across core counts in May, Recall@20 and Recall@50 comparison against the incumbent by end of May, decision June 1.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

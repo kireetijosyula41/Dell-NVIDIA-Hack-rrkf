@@ -1,0 +1,35 @@
+{
+  "id": "gr/alx/e04",
+  "thread_id": "gr/alx/t2",
+  "in_reply_to": "gr/alx/e03",
+  "date": "2026-05-29T15:40:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: ALX status: scaling looks right, checkpoint restore is the risk",
+  "body": "Rafael, Bruno,\n\nDecision: we go ahead with the migration recommendation. The Recall@20 parity plus the wall-clock reduction is enough for me to take this to the infra review on June 1.\n\nTwo conditions, both from Rafael's note. The restore assertion ships before any production job resumes across topologies — Linnea, that's a blocker not a nice-to-have. And we run one more full-scale confirmation at 256 cores with a clean start, no resume, so the headline number has no asterisk.\n\nScaling study beyond 256 cores is cut. It's a research question, not a decision input, and we don't need it for June 1.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}
