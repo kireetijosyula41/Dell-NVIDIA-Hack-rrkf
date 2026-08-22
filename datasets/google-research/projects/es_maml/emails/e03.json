@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_maml/e03",
+  "thread_id": "gr/es_maml/t2",
+  "in_reply_to": null,
+  "date": "2026-04-29T14:53:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "ES-MAML status: distributed runs green, zero-order adaptation wins",
+  "body": "Hi Dmitri, Deshawn,\n\nStatus ahead of the May 8 benchmark milestone.\n\nDistributed is green: Halima's rebuilt gRPC layer runs both algorithm families across the fleet, hit the Apr 10 date, and has been stable through three 48-hour soak runs since.\n\nEarly benchmark reads: on our four-task locomotion adaptation suite, Zero Order with the MCBlackboxOptimizer adaptation operator reaches 85% of post-adaptation reward within 25 rollouts of a new task, versus 40+ rollouts for First Order at matched compute. DPP sampling for perturbation selection helps most in the low-rollout regime, which is exactly the sim-to-real-friendly region partners care about.\n\nRisk: First Order results are noisier than published expectations at our worker count - gradient estimates degrade when worker returns arrive very asynchronously. Maren is adding a staleness cutoff to the aggregator. If that doesn't settle it by May 8, my recommendation is we lead with Zero Order for the partner review and mark First Order as tuning-in-progress.\n\nUmar",
+  "labels": ["status", "risk"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/es_maml",
+  "conflicts": [
+    {
+      "conflict_id": "C018",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["epi_forecasts"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris Osei has verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project, covering the adaptation-benchmark fleet and the July sim-to-real study."
+    }
+  ]
+}

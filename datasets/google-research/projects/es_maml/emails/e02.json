@@ -1,0 +1,15 @@
+{
+  "id": "gr/es_maml/e02",
+  "thread_id": "gr/es_maml/t1",
+  "in_reply_to": "gr/es_maml/e01",
+  "date": "2026-03-25T16:08:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: ES-MAML kickoff: Hessian-free meta-learning for fast adaptation",
+  "body": "Dmitri,\n\nResourcing plan.\n\nPeople: Umar 70% leading the algorithm work across Zero Order and First Order, Halima 80% on the distributed layer - regenerating the pb2/pb2_grpc bindings from the zero_order and first_order protos is day-one work, then the aggregator/worker fleet - and Maren 50% on the config-to-experiment-spec surface.\n\nBudget: sorted this with Idris on Tuesday. Idris Osei has verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project, covering the adaptation-benchmark fleet and the July sim-to-real study. I'm building the Q3 fleet plan against that figure; paper allocation follows the OKR lock.\n\nIn-window compute: CPU worker fleet on the batch tier (ES workers, same pattern as our other blackbox stacks), roughly 1,500 concurrent workers at peak for the May benchmark suite. No GPU reservations needed.\n\nApr 10 looks achievable - Halima already has zero_order protos compiling.\n\nDeshawn",
+  "labels": ["resources"]
+}
