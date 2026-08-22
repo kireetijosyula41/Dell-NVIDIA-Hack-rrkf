@@ -1,0 +1,26 @@
+{
+  "id": "gr/agile_deliberation",
+  "title": "Agile Deliberation",
+  "summary": "A human-in-the-loop framework for classifying subjective and evolving visual concepts: users move through structured concept scoping while the system iteratively surfaces borderline examples for reflection, backed by a FAISS nearest-neighbor index over an image dataset such as Laion400M.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Yusuf Keita",
+    "Nikhil Abebe",
+    "Giannis Sato",
+    "Quentin Farkas"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "agile_deliberation",
+    "url": "https://github.com/google-research/google-research/tree/master/agile_deliberation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

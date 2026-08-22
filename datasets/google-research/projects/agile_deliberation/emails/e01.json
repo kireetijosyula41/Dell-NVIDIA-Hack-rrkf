@@ -1,0 +1,46 @@
+{
+  "id": "gr/agile_deliberation/e01",
+  "thread_id": "gr/agile_deliberation/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T09:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: Agile Deliberation — concept deliberation for subjective visual classification",
+  "body": "Hi Bao, team,\n\nKickoff for Agile Deliberation. This is the human-in-the-loop framework for classifying subjective, evolving visual concepts: structured concept scoping up front, then the system iteratively surfaces borderline examples so raters can sharpen their own ambiguous mental models. The released notebook walks the whole deliberation flow end to end.\n\nProduct framing: our rater-tooling group struggles most on exactly these subjective concepts, so the pilot is a concept-deliberation add-on for their queue.\n\nMilestones: FAISS nearest-neighbor index over the Laion400M training slice by mid-April, an eight-rater internal pilot in early May, readout before the window closes May 25.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

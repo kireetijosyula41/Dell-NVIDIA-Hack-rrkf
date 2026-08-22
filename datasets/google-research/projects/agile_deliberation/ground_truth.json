@@ -1,0 +1,16 @@
+{
+  "project": "gr/agile_deliberation",
+  "conflicts": [
+    {
+      "conflict_id": "C092",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "gwikimatch"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "The Laion400M slice is full of near-duplicates, which poisons the borderline-example queue, so we are scoping and staffing a dataset de-duplication pipeline built from scratch — Giannis owns the build at 50% through April."
+    }
+  ]
+}

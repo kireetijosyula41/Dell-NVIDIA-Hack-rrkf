@@ -1,0 +1,35 @@
+{
+  "id": "gr/agile_deliberation/e04",
+  "thread_id": "gr/agile_deliberation/t2",
+  "in_reply_to": "gr/agile_deliberation/e03",
+  "date": "2026-05-19T16:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Agile Deliberation status: index built, early pilot signal",
+  "body": "Yusuf, thanks.\n\nDecisions from the pilot review:\n\n1. Pilot extends to three concepts and twelve raters through end of May; the agreement delta stays the headline metric.\n2. We defer the full 400M index — the sharded build keeps eating your time, and the pilot runs fine on the 40M subsample. Revisit in Q3 planning.\n3. Quentin writes up the deliberation-flow findings for the rater-tooling leads by May 22; I take the readout on May 25.\n\nGood project — the kappa movement is the strongest tooling result this quarter in the portfolio.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}
