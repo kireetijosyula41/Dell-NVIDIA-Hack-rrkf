@@ -1,0 +1,15 @@
+{
+  "id": "gr/meta_pseudo_labels/e04",
+  "thread_id": "gr/meta_pseudo_labels/t1",
+  "in_reply_to": "gr/meta_pseudo_labels/e03",
+  "date": "2026-04-29T14:16:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [{"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}],
+  "subject": "Re: MPL kickoff — Q3 proposal decision",
+  "body": "Team,\n\nDecision on the 04-27 proposal, made with Santiago this morning:\n\n1) Q3 scaled run is scoped to two internal low-label datasets, not three. At Umar's measured 1.4x cost profile, two datasets fit the $120k earmarked for us on line B-88 with ~15% rerun headroom; three would leave zero margin, and this quarter taught us that margin is not optional with a teacher-student loop.\n2) Chiara's checkpoint-cadence fix is mandatory for all Q3 runs — it's worth roughly $9k of recovered preemption waste on its own.\n3) The third dataset (the long-tail retail one) becomes first in line if headroom materializes late in Q3.\n\nIdris — proposal doc with these numbers is in your inbox for the planning cycle; grateful for a confirm-in-writing when the Q3 books open.\n\nStrong quarter, everyone. Both benchmarks reproduced and an honest cost model — exactly what the scaled run needed.\n\nLucia",
+  "labels": ["decision", "escalation"]
+}

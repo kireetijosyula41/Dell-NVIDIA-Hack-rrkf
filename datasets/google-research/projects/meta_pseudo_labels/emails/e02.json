@@ -1,0 +1,15 @@
+{
+  "id": "gr/meta_pseudo_labels/e02",
+  "thread_id": "gr/meta_pseudo_labels/t1",
+  "in_reply_to": "gr/meta_pseudo_labels/e01",
+  "date": "2026-02-20T16:12:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}
+  ],
+  "subject": "Re: MPL kickoff — compute feasibility + budget",
+  "body": "Lucia,\n\nFeasibility + resourcing:\n\nStaffing — Umar 40% (TL), Ondrej 40% on reproduction runs, Paloma 30% on the training-stack port, Chiara 40% on data pipelines and eval plumbing.\n\nCompute — confirmed the TPU-only constraint is fine: CIFAR-10-4000 with wrn-28-2 fits our standing cirrus-tpu portfolio quota easily; ImageNet-10% with resnet-50 takes roughly a third of our March quota for ~9 days. Tight but no extra reservation needed.\n\nBudget for the Q3 scaled run — good news: Idris has verbally earmarked $120k from Q3 discretionary compute budget line B-88 for this project, which covers the internal low-label runs at the scale Umar sketched. I'll get it written into the Q3 plan when the cycle opens; treating it as committed for planning purposes.\n\nSo: no blockers on any milestone. Watch item is March cirrus contention if another team bursts.\n\nSantiago",
+  "labels": ["resources"]
+}

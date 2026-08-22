@@ -1,0 +1,9 @@
+{
+  "project": "gr/meta_pseudo_labels",
+  "conflicts": [
+    {"conflict_id": "C009", "type": "budget_overallocation",
+     "counterpart_projects": ["jax_rtm"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "Idris has verbally earmarked $120k from Q3 discretionary compute budget line B-88 for this project, which covers the internal low-label runs at the scale Umar sketched."}
+  ]
+}
