@@ -1,0 +1,15 @@
+{
+  "id": "gr/graph_compression/e04",
+  "thread_id": "gr/graph_compression/t2",
+  "in_reply_to": "gr/graph_compression/e03",
+  "date": "2026-05-12T16:44:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}],
+  "subject": "Re: Status: compression curves ahead of the 4/17 gate",
+  "body": "Team,\n\nRollout recommendation is settled, three days ahead of the 5/15 gate:\n\n1. Tiered compression ships: 4x on dense layers, 2x on embedding tables, exactly per Yusuf's curves. Zeke's capacity model says that frees the equivalent of ~140 serving hosts across the three flagship models.\n2. Human ratings from Emeka's annotation UI backed the automated story - raters preferred the uncompressed model in only 51.8% of side-by-side comparisons, statistically a coin flip. The UI itself has held up well with the vendor rater pool; we will keep it running for future compression pushes.\n3. The TF1-session model is deferred to Q3. Not worth the wiring cost this window.\n\nDeshawn - please write up the smoothed-compression schedule as the recommended default in the library docs before we socialize this more widely.\n\nZofia",
+  "labels": ["decision"]
+}
