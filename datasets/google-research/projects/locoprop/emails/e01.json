@@ -1,0 +1,16 @@
+{
+  "id": "gr/locoprop/e01",
+  "thread_id": "gr/locoprop/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:18:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [{"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}],
+  "subject": "Kickoff: LocoProp training-efficiency evaluation",
+  "body": "Hi all,\n\nKicking off the LocoProp evaluation for trust-theory. The pitch: second-order optimizers give state-of-the-art training quality but their memory footprint and compute cost keep them off our budget-constrained runs. Our LocoProp release (AISTATS'22) constructs layerwise local losses — per-neuron targets set in the backward pass, then independent parallel updates per layer — and gets close to second-order performance using only first-order optimizers.\n\nIf that holds on our workloads, it's a direct GPU-hours reduction across the portfolio's recurring training jobs.\n\nMilestones:\n- May 8: benchmark reproduction (squared loss + layerwise Bregman divergence variants).\n- Jun 12: head-to-head on two internal trust-model training jobs — wall-clock, memory, final eval quality.\n- Jul 10: adopt/pass recommendation.\n\nBruno owns staffing. Giannis is tech lead.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

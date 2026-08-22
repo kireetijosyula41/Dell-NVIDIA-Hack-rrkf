@@ -1,0 +1,18 @@
+{
+  "id": "gr/locoprop",
+  "title": "LocoProp: Enhancing BackProp via Local Loss Optimization",
+  "summary": "Evaluates our LocoProp release — layerwise local loss construction that sets per-neuron targets and applies parallel local updates, approaching second-order optimizer quality with first-order cost and memory — as a training-efficiency win for trust-theory workloads on constrained hardware budgets.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bruno Mbeki",
+  "contributors": ["Giannis Sato", "Emeka Pinto", "Saoirse Eriksen"],
+  "window": {"start": "2026-04-13", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "locoprop",
+    "url": "https://github.com/google-research/google-research/tree/master/locoprop",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

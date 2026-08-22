@@ -1,0 +1,12 @@
+{
+  "project": "gr/locoprop",
+  "conflicts": [
+    {
+      "conflict_id": "C056",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["graph_compression"],
+      "planted_in": ["e02"],
+      "claim_as_written": "There's no shared tool for structured human ratings, so we're scoping and building a human-rating annotation UI from scratch — Saoirse owns it at 50% with Giannis contributing the backend — to collect side-by-side preference ratings on models trained with the candidate optimizers."
+    }
+  ]
+}

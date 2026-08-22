@@ -1,0 +1,18 @@
+{
+  "id": "gr/locoprop/e03",
+  "thread_id": "gr/locoprop/t1",
+  "in_reply_to": "gr/locoprop/e02",
+  "date": "2026-06-03T15:57:00Z",
+  "from": {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LocoProp training-efficiency evaluation — status",
+  "body": "Hi Ximena, Bruno,\n\nStatus:\n\n- Reproduction landed May 7. Both the squared-loss variant and the layerwise Bregman-divergence variants behave as published: on the benchmark models LocoProp closes most of the gap to the second-order baseline at essentially first-order memory. The parallel per-layer local updates are the key win — we get several local iterations per batch without blowing up step time.\n- Head-to-head: job 1 (the abuse-classifier retrain) is done — 22% wall-clock reduction vs our current second-order setup at equal final AUC, and peak memory down 41%, which lets the job fit on half the GPUs. Job 2 (the trust-ranker) starts next week after Emeka finishes integration.\n\nRisk: job 2 uses non-standard activations, and choosing the matching transfer function for the Bregman divergence isn't obvious — wrong choice degrades convergence. I've got two candidates; may cost us a week of sweeps. Saoirse's rating UI enters pilot Friday with 4 raters.\n\nGiannis",
+  "labels": ["status", "risk"]
+}

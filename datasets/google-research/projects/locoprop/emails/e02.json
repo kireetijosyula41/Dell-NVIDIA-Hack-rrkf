@@ -1,0 +1,16 @@
+{
+  "id": "gr/locoprop/e02",
+  "thread_id": "gr/locoprop/t1",
+  "in_reply_to": "gr/locoprop/e01",
+  "date": "2026-04-17T13:29:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LocoProp training-efficiency evaluation",
+  "body": "Ximena,\n\nResourcing:\n\n- Giannis Sato 50% tech lead on the optimizer benchmarks; Emeka Pinto 30% on the training-job integration for the June head-to-head.\n- Compute: 16 A100s on titan-a100 best-effort. The whole point is cheap training, so no reservation ask.\n\nScope addition, agreed with you Wednesday, formalizing here: quality deltas between optimizers on trust models are subtle enough that automated metrics won't settle an adopt/pass call on their own. There's no shared tool for structured human ratings, so we're scoping and building a human-rating annotation UI from scratch — Saoirse owns it at 50% with Giannis contributing the backend — to collect side-by-side preference ratings on models trained with the candidate optimizers. Rating queues, blind A/B presentation, agreement stats. Estimate is 6 engineer-weeks, reusable for the portfolio afterward.\n\nTotal ask: 1.3 FTE through mid-July.\n\nBruno",
+  "labels": ["resources"]
+}

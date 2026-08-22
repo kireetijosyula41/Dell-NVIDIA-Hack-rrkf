@@ -1,0 +1,18 @@
+{
+  "id": "gr/locoprop/e04",
+  "thread_id": "gr/locoprop/t1",
+  "in_reply_to": "gr/locoprop/e03",
+  "date": "2026-07-08T10:41:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LocoProp training-efficiency evaluation — recommendation",
+  "body": "Team,\n\nDecision for Friday's review — recommendation is adopt, scoped:\n\n1. LocoProp becomes the default optimizer for the abuse-classifier retrain family now. The 22% wall-clock and 41% memory numbers held across three reruns, and the halved GPU footprint compounds monthly on a recurring job.\n2. The trust-ranker stays on the current optimizer for one more quarter. Giannis's transfer-function sweeps got convergence to parity but not better, and the human-rating data (nice work Saoirse — 4 raters, 0.71 agreement) shows no perceptible quality difference to justify the migration risk yet.\n3. The rating UI graduates to a portfolio tool; Saoirse writes the handover doc by Jul 10.\n\nI'll draft the review packet; Bruno, numbers check by Thursday please.\n\nXimena",
+  "labels": ["decision"]
+}
