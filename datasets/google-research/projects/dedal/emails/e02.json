@@ -1,0 +1,18 @@
+{
+  "id": "gr/dedal/e02",
+  "thread_id": "gr/dedal/t1",
+  "in_reply_to": "gr/dedal/e01",
+  "date": "2026-03-26T13:40:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff - resourcing for dedal",
+  "body": "Anders,\n\nStaffing:\n- Katya Silva 45%, model work, alignment/embedding modes and the windowing scheme for sequences over 512.\n- Rosa Mensah 20%, data extraction for the event-stream pairs.\n- Wei Ivanov, below.\n\nCompute: 32 GPUs on titan-a100 best-effort. Fine-tuning only. The memory shape is the thing to watch - the predicted alignment paths come back as B x 512 x 512 x 9 tensors, so batch size is bounded by that, not by the encoder.\n\nSeparately, and I'd argue this is the more durable investment: we have no shared place to compare alignment methods across teams. We are building a benchmark leaderboard service from scratch - task registry, submission endpoint, automatic scoring against held-out pairs, versioned result tables and a browsable ranking view. Wei Ivanov owns it at 45% from March 30 with a first cut live by May 8. Roughly five weeks of work.\n\nIvo",
+  "labels": ["resources"]
+}

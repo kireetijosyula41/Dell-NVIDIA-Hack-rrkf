@@ -1,0 +1,17 @@
+{
+  "id": "gr/dedal/e03",
+  "thread_id": "gr/dedal/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T10:20:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "dedal status - learned scoring wins, the 512 limit hurts",
+  "body": "Status for the May 29 milestone, a couple of days early.\n\nHomology reproduction was clean back in April. On our own event streams, learned alignment beats fixed-cost edit distance by a distance: 0.81 vs 0.62 on our pair-matching task. The contextual gap penalties are doing the work - our streams have long runs of retries that a fixed gap-extend penalty punishes indiscriminately, and the learned parameters figure out that a long homogeneous gap is cheap while a short heterogeneous one is expensive. That's a genuinely nice result.\n\nThe cost is the 512 limit. Median stream is 1,900 events, so we window at 480 with 32-event overlap and stitch. Stitching is where the errors live - about 70% of our remaining failures are pairs whose true alignment crosses a window boundary. Memory is also tight because of the 512x512x9 path tensor, so we can't just widen the window.\n\nAnders, worth deciding whether we invest in a hierarchical scheme or accept the ceiling.\n\nKatya",
+  "labels": ["status", "risk"]
+}

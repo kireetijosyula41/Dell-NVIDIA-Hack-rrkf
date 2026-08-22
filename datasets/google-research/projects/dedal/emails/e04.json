@@ -1,0 +1,18 @@
+{
+  "id": "gr/dedal/e04",
+  "thread_id": "gr/dedal/t2",
+  "in_reply_to": "gr/dedal/e03",
+  "date": "2026-06-24T15:50:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Hana Petrov", "email": "hana.petrov@meridian.example", "role": "Director, Applied Research"}
+  ],
+  "subject": "Re: dedal status - accept the ceiling, ship the recommendation",
+  "body": "Accept the ceiling. 0.81 vs 0.62 is a large enough win that shipping it windowed beats spending Q3 on a hierarchical scheme for the tail. Katya, put the boundary-crossing failure rate in the recommendation as a known limitation with a number attached - \"about 70% of residual errors\" - so whoever picks up the hierarchical work later starts from evidence.\n\nOne scope cut: we are not doing the third sequence type (config lineages) in this window. Q3 OKRs lock on 2026-06-26 and I would rather it appear there as a funded item than as an unstaffed bullet in our closeout.\n\nIvo - Wei's leaderboard has three teams submitting now, which is more adoption than I expected in six weeks. Please make sure it has an owner after this project closes; unowned shared infrastructure is how we end up rebuilding it next year.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/dedal/e01",
+  "thread_id": "gr/dedal/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T09:15:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - DEDAL and learned alignment scoring",
+  "body": "All,\n\nKicking off DEDAL. The core idea in our open-source release: rather than using a fixed substitution matrix and hand-set gap penalties, the model predicts *contextual* Smith-Waterman parameters per sequence pair - substitution scores plus gap open and gap extend - and outputs alignment scores, homology logits and the predicted alignment path.\n\nMy interest is the pattern, applied to our own long symbolic sequences: event streams, command histories, config lineages. Every one of those we currently align with an edit distance that treats all substitutions as equal, which is obviously wrong and nobody has had time to fix.\n\nMar 16 - Jul 6:\n- Apr 17: released model running in both alignment and embedding mode, homology detection reproduced.\n- May 29: our own sequence type, learned scoring vs fixed-cost edit distance.\n- Jun 26: recommendation.\n\nIvo has resourcing. Katya is tech lead. Note the 512-token input limit including EOS - our event streams are longer than that, so chunking or a windowed scheme is on the critical path, not an afterthought.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}
