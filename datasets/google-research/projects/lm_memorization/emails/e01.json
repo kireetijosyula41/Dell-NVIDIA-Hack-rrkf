@@ -1,0 +1,19 @@
+{
+  "id": "gr/lm_memorization/e01",
+  "thread_id": "gr/lm_memorization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:12:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: memorization audit for our LMs",
+  "body": "Hi team,\n\nKicking off the memorization audit. Our open-source study established three log-linear relationships: verbatim memorization grows with (1) model capacity, (2) how many times an example is duplicated in training data, and (3) the number of tokens of context in the prompt. The release ships the prefixes and continuations used in the analysis (sourced from The Pile, uncurated).\n\nWhat we're building: the same measurement, but on Meridian's own model family and pretraining corpus, packaged as a memorization audit that privacy review can require before any launch. Every LM launch currently answers \"does it leak training data?\" with a shrug.\n\nMilestones: Mar 6 methodology reproduced on the released prompt set; Apr 24 duplication-counting pipeline over our corpus; mid-June full capacity sweep on our four model sizes; Jun 19 audit readout with Kofi's team.\n\nSantiago owns staffing + the TPU ask. Nikhil is tech lead.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/lm_memorization/e02",
+  "thread_id": "gr/lm_memorization/t1",
+  "in_reply_to": "gr/lm_memorization/e01",
+  "date": "2026-02-10T14:47:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: memorization audit for our LMs",
+  "body": "Priya,\n\nStaffing and compute:\n\n- Nikhil Abebe 50% tech lead; Vera Egede 40% on the duplication-counting pipeline (suffix-array based, corpus-scale); Oyin Iversen 40% on generation infra; Bilal Novak 30% on analysis tooling.\n- Compute: methodology reproduction fits titan-a100 best-effort. For the capacity-sweep generation runs we hold the cirrus-tpu reservation for the week of 2026-06-08 — 256 accelerators — which is enough to prompt all four model sizes across the full duplication grid in one week. That's confirmed against the language portfolio's quarterly Cirrus allocation.\n\nDependency: Vera's duplication counts must be final before the sweep, since the prompt sampling is stratified by duplication count. Her Apr 24 date has ~6 weeks of slack to the reservation, which I'm comfortable with.\n\nSantiago",
+  "labels": ["resources"]
+}

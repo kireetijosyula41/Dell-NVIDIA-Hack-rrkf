@@ -1,0 +1,19 @@
+{
+  "id": "gr/lm_memorization/e04",
+  "thread_id": "gr/lm_memorization/t1",
+  "in_reply_to": "gr/lm_memorization/e03",
+  "date": "2026-06-17T11:08:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: memorization audit for our LMs — readout decisions",
+  "body": "Team,\n\nAhead of Friday's readout, decisions and the headline:\n\n- The June sweep completed on the reserved week. Our models show the same three log-linear relationships as the public study — capacity, duplication, context length — and our largest model emits verbatim continuations for 38% of examples duplicated 10+ times at 200-token prompts. That number alone justifies the audit.\n- Decision 1: the audit becomes a standing pre-launch requirement; Bilal's tooling gets a runbook and an owner in the platform org next quarter. Kofi's approved-template path worked, so the privacy SLA is no longer on the critical path for future runs.\n- Decision 2: dedup mitigation (dropping 10+ duplicated examples from future pretraining) goes into Q3 planning as a corpus-team ask, with our duplication counts as the evidence base.\n\nThanks all — Friday is mostly a victory lap.\n\nPriya",
+  "labels": ["decision", "status"]
+}
