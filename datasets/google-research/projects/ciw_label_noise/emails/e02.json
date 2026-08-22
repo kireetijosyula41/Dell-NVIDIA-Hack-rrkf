@@ -1,0 +1,50 @@
+{
+  "id": "gr/ciw_label_noise/e02",
+  "thread_id": "gr/ciw_label_noise/t1",
+  "in_reply_to": "gr/ciw_label_noise/e01",
+  "date": "2026-04-22T13:15:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: CIW kickoff — robust training under label noise as a shared component",
+  "body": "Ximena,\n\nStaffing: Leilani 50% (library extraction + API), Emeka 40% (benchmark harness), Giannis 30% (internal dataset integrations), Farah 25% (CI + release tooling through June).\n\nCompute: day-to-day development fits on Titan best-effort. The July validation sweep is the big ask — noise types x noise rates x methods x seeds across CIFAR-10 and both internal sets. Ines confirmed our reservation on vulcan-h100 — 512 accelerators for the week of 2026-07-06 — which covers the full noise-sweep matrix in one shot. I've sized the matrix so it completes in 5 days with headroom, and cc'd Ines so the paperwork trail is in one place.\n\nAfter the sweep we're compute-light through release.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

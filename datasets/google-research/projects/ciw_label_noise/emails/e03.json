@@ -1,0 +1,46 @@
+{
+  "id": "gr/ciw_label_noise/e03",
+  "thread_id": "gr/ciw_label_noise/t1",
+  "in_reply_to": "gr/ciw_label_noise/e02",
+  "date": "2026-05-27T10:22:00Z",
+  "from": {
+    "name": "Leilani Nakamura",
+    "email": "leilani.nakamura@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CIW kickoff — robust training under label noise as a shared component",
+  "body": "Status.\n\nLibrary extraction done — the closed-form weight updates are now a standalone module with a keras-style wrapper; Farah's CI runs the CIFAR-10 40% symmetric-noise config as the regression test.\n\nBenchmark validation under way (Emeka): on CIFAR-10 with 40% symmetric noise we match the published CIW numbers, and the CICW variant — using the instance weights to drive mixup — adds a further +1.8 accuracy, consistent with the paper's finding that weighted mixup gives additional gains under noise.\n\nRisk to flag: on one internal dataset the class-weight constraint interacts badly with extreme class imbalance (weights collapse toward the head classes). Giannis is testing the label-smoothing-style relaxation the theory section suggests. If it doesn't resolve by mid-June we ship instance-weighting-only recipes for imbalanced data and document it.\n\nLeilani",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
