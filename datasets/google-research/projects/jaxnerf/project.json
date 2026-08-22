@@ -1,0 +1,19 @@
+{
+  "id": "gr/jaxnerf",
+  "title": "[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://www.matthe",
+  "summary": "A JAX reimplementation of NeRF that trains 1M optimization steps on 128 TPUv2 cores in about 2.5 hours (versus roughly 3 days for the TF version) and renders an 800x800 view in 2.65 seconds on 8 V100s. Meridian is productizing it as the rendering core for immersive product previews.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": ["Katya Silva", "Leilani Nakamura", "Emeka Pinto"],
+  "codename": "Project Meltwater",
+  "window": {"start": "2026-04-20", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jaxnerf",
+    "url": "https://github.com/google-research/google-research/tree/master/jaxnerf",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

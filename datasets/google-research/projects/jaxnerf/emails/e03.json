@@ -1,0 +1,18 @@
+{
+  "id": "gr/jaxnerf/e03",
+  "thread_id": "gr/jaxnerf/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T16:48:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Meltwater status: pipeline live, render latency is the open risk",
+  "body": "Hi both,\n\nStatus for the week. The capture-to-trained-model pipeline hit the May 15 milestone: 22 scenes fitted, all overnight runs on Cirrus completing inside the window. Quality is where the JAX release promised — we're matching the paper's PSNR on our internal captures within 0.2 dB.\n\nThe open risk is render latency for the demo. On 8xV100 we reproduce the ~2.65s per 800x800 frame from the release benchmarks, which is fine for a scripted flythrough but not for free viewpoint control. Options: (a) pre-render camera paths and ship a video-scrub demo, (b) drop to 400x400 live rendering, roughly 4x faster but visibly softer.\n\nLeilani also found ingest choking on two glossy SKUs — view-dependent effects need more input views, so capture ops should plan ~120 photos for those insted of 80.\n\nRecommend (a) for the June LRB dry run.\n\nKatya",
+  "labels": ["status", "risk"]
+}

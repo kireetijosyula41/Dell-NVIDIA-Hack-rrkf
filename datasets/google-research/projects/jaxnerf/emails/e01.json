@@ -1,0 +1,17 @@
+{
+  "id": "gr/jaxnerf/e01",
+  "thread_id": "gr/jaxnerf/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:05:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: neural view synthesis for immersive previews (Project Meltwater)",
+  "body": "Team,\n\nKicking off the view-synthesis productization track. Internally we're calling this effort Project Meltwater, so please use that name on decks and threads. The bet: our open-source JaxNeRF release is now fast enough to anchor an immersive product-preview experience. Training 1M optimization steps finishes in ~2.5 hours on 128 TPUv2 cores versus ~3 days for the old TF path, which means we can fit per-SKU scenes overnight instead of per-week.\n\nRough milestones inside our window (Apr 20 - Jun 29):\n- May 15: 20-scene capture-to-trained-model pipeline running end to end\n- Jun 5: render quality bar signed off (PSNR parity with the paper configs)\n- Jun 24: Launch Review Board dry run for the internal demo\n\nIvo, can you come back this week with the compute ask and staffing split? Katya has the deepest JAX context, so I'd like her leading the modeling side.\n\nThanks,\nLucia",
+  "labels": ["kickoff", "spec"]
+}

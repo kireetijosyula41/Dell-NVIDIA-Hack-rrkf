@@ -1,0 +1,12 @@
+{
+  "project": "gr/jaxnerf",
+  "conflicts": [
+    {
+      "conflict_id": "C053",
+      "type": "codename_collision",
+      "counterpart_projects": ["cache_replacement"],
+      "planted_in": ["e01", "e02"],
+      "claim_as_written": "e01: \"Internally we're calling this effort Project Meltwater, so please use that name on decks and threads.\" e02: \"Project Meltwater gets first call on my vision-portfolio TPU quota through June.\""
+    }
+  ]
+}
