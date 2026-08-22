@@ -1,0 +1,15 @@
+{
+  "id": "gr/multi_game_dt/e02",
+  "thread_id": "gr/multi_game_dt/t1",
+  "in_reply_to": "gr/multi_game_dt/e01",
+  "date": "2026-03-25T15:12:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: MGDT kickoff — compute plan locked",
+  "body": "Ulla,\n\nCompute plan for the long pole is locked. We hold the vulcan-h100 reservation — 256 accelerators for the week of 2026-06-01 — for the large scaling run. Ines's reservation process went smoothly; that week gives us enough to train the biggest config and still replicate the two smaller points on the scaling curve. Everything before that (data pipeline shakeout, medium-scale training in May) fits on titan-a100 best-effort.\n\nStaffing: Vera owns the offline Atari dataset ingest, Wanjiru the training infra, Yara evals and the fine-tuning recipe. No additional headcount ask this half.\n\nOne dependency to note: we want Evalline to host the per-game human-normalized scores, and Tomas's team quoted a 2-week integration. I've asked Yara to file that this week so it doesn't collide with the June run.\n\nJelena",
+  "labels": ["resources"]
+}

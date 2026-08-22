@@ -1,0 +1,16 @@
+{
+  "id": "gr/multi_game_dt/e01",
+  "thread_id": "gr/multi_game_dt/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T08:47:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "MGDT kickoff — generalist agent checkpoint for H1",
+  "body": "Hi Jelena,\n\nKickoff note for the Multi-Game Decision Transformer push. The pitch upstairs: one transformer, one set of weights, trained purely offline, playing 46 Atari games at close-to-human level — and, more importantly for us, fine-tuning rapidly to new games. That fine-tuning story is the product: a generalist checkpoint plus a recipe agents-rl can hand to any team with an offline interaction log.\n\nMilestones inside our window (03-02 to 06-22): offline data pipeline validated by 04-10, medium-scale training done by mid-May, then a large scaling run in early June so we have the model-size scaling curve for the H1 readout. The colab-style eval loader from the open-source release is our starting point for the eval harness.\n\nJelena — can you sketch the compute ask this month? The June run is the long pole.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}
