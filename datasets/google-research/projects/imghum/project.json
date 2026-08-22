@@ -1,0 +1,18 @@
+{
+  "id": "gr/imghum",
+  "title": "imGHUM: Implicit Generative Models of 3D Human Shape and Articulated Pose",
+  "summary": "Builds on our imGHUM release: implicit generative models of 3D human shape, facial expression, and articulated pose that share GHUM's latent space, support fast signed-distance queries for point-cloud reconstruction and completion, and enable differentiable-rendering-based fitting.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": ["Yara Jokic", "Efe Lindqvist", "Farah Haddad", "Gustavo Moreau"],
+  "window": {"start": "2026-04-13", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "imghum",
+    "url": "https://github.com/google-research/google-research/tree/master/imghum",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/imghum/e03",
+  "thread_id": "gr/imghum/t2",
+  "in_reply_to": null,
+  "date": "2026-06-03T11:18:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "imGHUM status: completion works, hands are the weak spot",
+  "body": "Lucia, Daniela,\n\nStatus. Integration is done and the SDF-query benchmarks look strong - differentiable signed-distance evaluation is fast enough that completion fitting runs at interactive-adjacent speeds on a single GPU. On the internal capture set, body-scan completion recovers plausible geometry on 83% of our partial-scan test cases, versus 61% for the current heuristic pipeline, and the implicit semantics give us surface labeling for free, which the cleanup tooling team immediately asked for.\n\nWeak spot: hands. On scans where fingers are partially occluded, the hand models produce anatomically plausible but wrong finger poses in ~30% of cases - the latent prior dominates when observations are thin, exactly as you'd expect from a generative model. Efe's take is that for the scan-cleanup product this is acceptable if we flag low-confidence hand regions instead of silently completing them; confidence comes cheap from the observation coverage stats.\n\nDecision needed by mid-June: ship v1 with flagged-hands, or hold for a hand-specific fitting pass. My recommendation is flag-and-ship.\n\nYara",
+  "labels": ["status", "risk"]
+}
