@@ -1,0 +1,15 @@
+{
+  "id": "gr/neural_additive_models/e02",
+  "thread_id": "gr/neural_additive_models/t1",
+  "in_reply_to": "gr/neural_additive_models/e01",
+  "date": "2026-03-18T14:50:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: NAM kickoff — resourcing + June sweep reservation",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing — Wanjiru leads the library work, Jorge the sweep harness, Oyin the customer integration path. The run.sh test script from the release is already wired into our CI as a sanity gate.\n\nCompute — the per-dataset-family sweeps are wide (feature-net depth/width, dropout, feature-sparsity regularizer, output penalty... crossed with ~10 datasets and 20 splits each). Individually small models, but the matrix is enormous, so we're batching it into one reserved week: we hold the vulcan-h100 reservation, 512 accelerators, for the week of 2026-06-22. Ines flagged the cluster maintenance window ending 06-24, and has us starting Wednesday of that week at full 512 — the sweep fits in four days with margin since each job is tiny.\n\nEverything pre-June runs titan-a100 best-effort.\n\nMIMIC-II: blocked on the DUA per your note; sweep plan treats it as optional.\n\nJelena",
+  "labels": ["resources"]
+}

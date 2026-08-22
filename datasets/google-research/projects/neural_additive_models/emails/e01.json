@@ -1,0 +1,16 @@
+{
+  "id": "gr/neural_additive_models/e01",
+  "thread_id": "gr/neural_additive_models/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T09:15:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "NAM kickoff — interpretable models for regulated customers",
+  "body": "Hi Jelena,\n\nKickoff for the Neural Additive Models effort. The open-source release gives us a tf.keras NAM model that drops into any training procedure, plus helpers for classification/regression graphs and a nam_train.py example script. The pitch: data-platforms customers in regulated domains keep asking for models where every feature's contribution is inspectable — NAMs give near-DNN accuracy with per-feature shape functions you can literally plot.\n\nDeliverables this half: (1) a supported internal library wrapping the release, (2) tuned defaults per dataset family, which means large hyperparameter sweeps over the paper's benchmark suite (public sets live in the gs://nam_datasets/data bucket), (3) one lighthouse customer integration.\n\nNote: the MIMIC-II medical benchmark needs a signed data use agreement — I've looped Kofi separately so Privacy Review starts now given their 2-3 week SLA.\n\nMilestones: library alpha end of March, sweeps in June, customer readout by 07-06.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

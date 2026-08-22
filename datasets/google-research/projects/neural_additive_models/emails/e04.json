@@ -1,0 +1,18 @@
+{
+  "id": "gr/neural_additive_models/e04",
+  "thread_id": "gr/neural_additive_models/t1",
+  "in_reply_to": "gr/neural_additive_models/e03",
+  "date": "2026-06-11T16:33:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: NAM kickoff — decisions before the sweep week",
+  "body": "Team,\n\nDecisions from today's pre-sweep review:\n\n1. TF2-only for v1, per Wanjiru's recommendation. The graph-mode compat helpers are documented as unsupported. The graph-mode prospect has agreed to test on the tf.keras path — Oyin owns that integration and it becomes our lighthouse customer readout.\n2. MIMIC-II is cut from the June sweep. Kofi says the DUA countersignature won't land before the run, and I'm not holding 512 accelerators hostage to paperwork. If it clears in July we do a small follow-up run on titan; the tuned-defaults story stands on the 9 public datasets.\n3. Sweep configs freeze 06-17. Jorge publishes the final matrix Monday; anything not in it waits for Q3.\n\nQ3 OKR (filing before the 06-26 lock): tuned defaults published for 4 dataset families, 3 customer integrations live.\n\nDmitri",
+  "labels": ["decision"]
+}
