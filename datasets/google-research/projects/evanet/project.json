@@ -1,0 +1,18 @@
+{
+  "id": "gr/evanet",
+  "title": "Evolving Space-Time Neural Architectures for Videos",
+  "summary": "Productizing EvaNet, our evolved space-time video architecture family, whose pretrained RGB+optical-flow ensemble reaches 77.2% accuracy on Kinetics-400 validation, as a video-understanding capability for activity recognition workloads.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Giannis Sato", "Yusuf Keita", "Halima Toure", "Rafael Duran"],
+  "window": {"start": "2026-04-20", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "evanet",
+    "url": "https://github.com/google-research/google-research/tree/master/evanet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

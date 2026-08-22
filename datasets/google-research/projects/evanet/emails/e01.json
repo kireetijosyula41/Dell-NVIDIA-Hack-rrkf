@@ -1,0 +1,18 @@
+{
+  "id": "gr/evanet/e01",
+  "thread_id": "gr/evanet/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:37:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "EvaNet kickoff: evolved video architectures for activity recognition",
+  "body": "Hi team,\n\nKicking off EvaNet productization for the vision portfolio. Our open-source release ships pretrained models from evolving space-time neural architectures, and the ensemble - RGB and optical-flow streams combined - hits 77.2% on the Kinetics-400 validation set (~19,200 videos in the November 2018 snapshot the release documents). Two partner teams want exactly this for activity recognition on their video archives.\n\nMilestones for Apr 20 - Jul 27: inference reproduction of the released ensemble (the rgb1/rgb2/flow1/flow2 checkpoint combo) by May 22, partner-data evaluation with a served pipeline by Jun 26, launch review pre-read by Jul 20.\n\nKnown hard part going in: the flow stream needs precomputed optical flow (the release's sample data ships .npy flow inputs), and partners have raw video only. That pipeline is a first-class deliverable, not a footnote.\n\nDeshawn owns staffing.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}
