@@ -1,0 +1,13 @@
+{
+  "project": "gr/kip",
+  "conflicts": [
+    {
+      "conflict_id": "C141",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["context_aware_transliteration", "deplot", "jaxbarf"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We're planning around the Corpus v2 migration freeze on 2026-07-10 — all distilled-set artifacts have to be registered in v2 before that date.",
+      "note": "This side states the canonical corpus_v2_freeze date (2026-07-10) correctly; counterpart projects drift."
+    }
+  ]
+}
