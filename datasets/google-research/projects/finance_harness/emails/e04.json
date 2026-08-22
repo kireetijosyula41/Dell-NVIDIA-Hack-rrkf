@@ -1,0 +1,45 @@
+{
+  "id": "gr/finance_harness/e04",
+  "thread_id": "gr/finance_harness/t2",
+  "in_reply_to": "gr/finance_harness/e03",
+  "date": "2026-05-06T16:20:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: eval results + backbone variance risk",
+  "body": "Wei, all — decisions ahead of the pre-read.\n\nThe pilot ships with one pinned backbone profile — the primary one from your evals — and profile switching stays an internal capability, not a user-facing option. The 91% citation-support number goes in the pre-read with the eval methodology attached.\n\nPilot scope: research mode plus the equity slice with sector guardrails, five bundled skills covering Idris's recurring report types; the auto-mode router stays off until we've seen real usage.\n\nLeilani — production SSE deployment needs Zeke's sign-off, book it this week. Privacy review cleared Monday with one condition: agent logs retain cited-URL lists for 30 days max.\n\nPre-read goes out May 8; pilot starts the following week if the board doesn't object. Sharp work on the evals, Wei.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}

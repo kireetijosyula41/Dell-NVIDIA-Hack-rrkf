@@ -1,0 +1,45 @@
+{
+  "id": "gr/finance_harness/e01",
+  "thread_id": "gr/finance_harness/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: FinanceHarness analyst-assist pilot",
+  "body": "Team — kicking off FinanceHarness productization for graphs-retrieval.\n\nThe release gives us a model-agnostic deep-research agent — web research as a search, visit, cite loop, plus an equity slice with fundamentals, comps, and DCF/WACC — with a headless core we can run behind any backbone via the providers config.\n\nProduct target: an analyst-assist service for the internal strategy and finance teams, exposed through the HTTP+SSE service rather than the CLI.\n\nMilestones: backbone profiles wired to our internal endpoints by Mar 6; retrieval grounded in our licensed market-data corpus by early April; a skill library (SKILL.md format) for our recurring report types by end of April; a pilot with Idris's org and a launch-review pre-read by May 8.\n\nHalima owns the agent core, Wei evaluation, Leilani serving, Paloma skills. Ivo follows up on resourcing.\n\nAnders",
+  "labels": [
+    "kickoff"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/finance_harness",
+  "title": "FinanceHarness: Automating Financial Deep Research",
+  "summary": "A model-agnostic agent for financial deep research combining a search-visit-cite web loop with an equity slice (fundamentals, comps, DCF, WACC), configurable backbones, an optional HTTP+SSE service, and drop-in SKILL.md skills.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Halima Toure",
+    "Wei Ivanov",
+    "Leilani Nakamura",
+    "Paloma Castillo"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "finance_harness",
+    "url": "https://github.com/google-research/google-research/tree/master/finance_harness",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
