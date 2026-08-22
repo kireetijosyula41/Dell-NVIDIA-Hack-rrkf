@@ -1,0 +1,26 @@
+{
+  "id": "gr/f_net",
+  "title": "FNet: Mixing Tokens with Fourier Transforms",
+  "summary": "FNet is an efficient Transformer-like encoder in which the self-attention sublayers are wholly replaced by unparameterized Fourier transforms; models are pre-trained on C4 and fine-tuned on GLUE, implemented in Jax/Flax.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Hyun Traore",
+    "Kaia Wolde",
+    "Nikhil Abebe",
+    "Jorge Vidal"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "f_net",
+    "url": "https://github.com/google-research/google-research/tree/master/f_net",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

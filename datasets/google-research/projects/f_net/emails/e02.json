@@ -1,0 +1,45 @@
+{
+  "id": "gr/f_net/e02",
+  "thread_id": "gr/f_net/t1",
+  "in_reply_to": "gr/f_net/e01",
+  "date": "2026-04-02T13:10:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: FNet low-cost encoder track (Q2)",
+  "body": "Dmitri — compute and staffing for the plan.\n\nStaffing: Hyun 60%, Kaia 50%, Nikhil 40%, Jorge 30% (Jorge also carries the cloud-tpu-client tooling).\n\nCompute: the C4 pre-training run is sized for a TPU v5 slice. We hold the cirrus-tpu reservation for the week of 2026-06-01 — 384 accelerators — and Ines's team has it in the books, so the full pre-train fits in that window with roughly 20% headroom. Fine-tuning is cheap; GLUE runs go to titan-a100 best-effort.\n\nDependencies: the SentencePiece c4_bpe vocab model is already mirrored internally, and the Jax/Flax stack matches what Shipyard serves, so no new serving work.\n\nOne constraint: if pre-training slips past that week we're into quarterly reallocation territory, so Mar 31 env bring-up is a hard date.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

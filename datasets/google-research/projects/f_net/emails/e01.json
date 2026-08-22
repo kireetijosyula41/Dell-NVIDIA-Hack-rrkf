@@ -1,0 +1,45 @@
+{
+  "id": "gr/f_net/e01",
+  "thread_id": "gr/f_net/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T08:55:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: FNet low-cost encoder track (Q2)",
+  "body": "Team — kicking off the FNet productionization track.\n\nWhy we care: FNet swaps every self-attention sublayer for an unparameterized Fourier transform, which makes it a natural fit for the low-cost encoder tier data-platforms wants to offer — near-Transformer quality at a fraction of serving cost.\n\nPlan inside the Q2 window: (1) env bring-up and the f_net unit-test suite green by Mar 31; (2) the C4 pre-training run in early June on our TPU reservation; (3) GLUE fine-tuning matrix by Jun 15; (4) launch review before Jun 22.\n\nOwnership: Hyun modeling, Kaia the pre-training config, Nikhil evals, Jorge infra. Jelena will follow up on the compute picture. First sync Thursday 10:00.\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}
