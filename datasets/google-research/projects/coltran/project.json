@@ -1,0 +1,25 @@
+{
+  "id": "gr/coltran",
+  "title": "Colorization Transformer",
+  "summary": "ColTran colorizes grayscale images with a three-stage transformer stack — an autoregressive colorizer, a color upsampler, and a spatial upsampler — and must be evaluated with distribution-level metrics like FID rather than per-image similarity.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Hyun Traore",
+    "Maren Zhou",
+    "Efe Lindqvist"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "coltran",
+    "url": "https://github.com/google-research/google-research/tree/master/coltran",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
