@@ -1,0 +1,26 @@
+{
+  "id": "gr/after_kernel",
+  "title": "Running an experiment",
+  "summary": "A study of the after kernel — like the neural tangent kernel, but computed after training — used to measure which invariances (translation, zoom, quadrant swap, rotation) a trained network actually acquires. Experiments run on binary MNIST classification tasks such as distinguishing classes 3 and 8.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Freya Ruiz",
+    "Umar Costa",
+    "Jorge Vidal",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "after_kernel",
+    "url": "https://github.com/google-research/google-research/tree/master/after_kernel",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

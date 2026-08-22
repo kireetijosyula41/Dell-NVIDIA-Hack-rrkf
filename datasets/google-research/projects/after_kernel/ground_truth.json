@@ -1,0 +1,16 @@
+{
+  "project": "gr/after_kernel",
+  "conflicts": [
+    {
+      "conflict_id": "C038",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "gbrt"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Nothing on the shelf covers kernel-level invariance metrics, so we are scoping and staffing an internal evaluation harness built from scratch — Jorge at 50% and Saoirse at 40% own it, first cut end of March."
+    }
+  ]
+}

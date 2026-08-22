@@ -1,0 +1,36 @@
+{
+  "id": "gr/after_kernel/e03",
+  "thread_id": "gr/after_kernel/t2",
+  "in_reply_to": null,
+  "date": "2026-04-02T09:55:00Z",
+  "from": {
+    "name": "Freya Ruiz",
+    "email": "freya.ruiz@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "After-kernel status: MNIST 3-vs-8 invariance results",
+  "body": "Hi both,\n\nStatus. On MNIST 3-vs-8 after 10 epochs of training, the after kernel is measurably more translation-invariant than the kernel at initialization — evaluated over num_translations=1000 test examples — and the gap widens if we train down to the training_loss_target instead of stopping at max_num_epochs. Quadrant-swap invariance shows the same direction with a weaker effect.\n\nRisk: the rotation sweep is the expensive corner. num_rotations at the sample sizes we'd need roughly doubles the grid, and the stopping criteria differ across seeds (loss target vs epoch cap), which makes those comparisons noisy. Recommend we decide next week whether rotations make report v1.\n\nFreya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
