@@ -1,0 +1,16 @@
+{
+  "project": "gr/frmt",
+  "conflicts": [
+    {
+      "conflict_id": "C045",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "gift"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "I spoke with Idris on Tuesday and he verbally earmarked $120k from Q3 discretionary compute budget line B-75 for our few-shot eval runs."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "gr/frmt/e04",
+  "thread_id": "gr/frmt/t2",
+  "in_reply_to": "gr/frmt/e03",
+  "date": "2026-05-12T14:48:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: FRMT baselines: entity bucket catches real drift",
+  "body": "Team,\n\nDecisions ahead of Friday's Launch Review Board:\n\n1. We go in with the lexical and entity bucket dashboards only. The random bucket is deferred to Q3 — it adds coverage, not signal, and the entity-bucket story is the one that lands.\n2. Yara's frozen exemplar set is adopted as the standard: ten exemplars per language pair, document-sampled, versioned in the eval config.\n3. The 18% entity drift number is our motivating headline; Vera, please add the trend line since the few-shot fix.\n\nIf LRB signs off, the dialect gate applies to translation launches from June 1.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gr/frmt",
+  "title": "FRMT: Few-shot Region-aware Machine Translation",
+  "summary": "Turns the FRMT benchmark — human translations of English Wikipedia sentences into regional variants of Portuguese (Brazil, Portugal) and Mandarin (Mainland, Taiwan) — into a dialect-quality gate for Meridian translation features.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Milan Zapata",
+    "Vera Egede",
+    "Yara Jokic"
+  ],
+  "window": {
+    "start": "2026-02-09",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "frmt",
+    "url": "https://github.com/google-research/google-research/tree/master/frmt",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

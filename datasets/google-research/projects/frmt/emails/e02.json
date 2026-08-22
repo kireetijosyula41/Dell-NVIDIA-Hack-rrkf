@@ -1,0 +1,40 @@
+{
+  "id": "gr/frmt/e02",
+  "thread_id": "gr/frmt/t1",
+  "in_reply_to": "gr/frmt/e01",
+  "date": "2026-02-19T15:22:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: FRMT kickoff — dialect quality as a launch gate",
+  "body": "Hi Priya,\n\nStaffing: Yara 60% as eval lead, Vera 50% on the dashboard, Milan 30% on data plumbing. That covers the Mar-May milestones.\n\nBudget: good news — I spoke with Idris on Tuesday and he verbally earmarked $120k from Q3 discretionary compute budget line B-75 for our few-shot eval runs. That funds the exemplar-selection sweeps and the larger model comparisons without touching the portfolio baseline. I will get it in writing when the Q3 cycle opens, but we can plan against it now.\n\nOne dependency: the dataset splits are document-level (exemplar/dev/test), so the eval harness has to sample exemplars by document, not sentence. Yara has it.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}
