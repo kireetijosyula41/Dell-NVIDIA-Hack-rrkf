@@ -1,0 +1,17 @@
+{
+  "id": "gr/RevThink/e03",
+  "thread_id": "gr/RevThink/t2",
+  "in_reply_to": null,
+  "date": "2026-04-21T10:39:00Z",
+  "from": {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Palisade status: students trained on 5 tasks, MATH is the outlier",
+  "body": "Hi Alina, Dmitri,\n\nPalisade status. We beat the April 17 milestone: mistral-7b students trained on five tasks, not four. Deltas over the no-augmentation baseline: ARC +6.8, GSM8K +5.9, CSQA +4.4, TabMWP +7.1, ANLI +3.2 (accuracy points, three seeds each). The backward-reasoning component is doing real work - ablating it costs roughly half the gain on GSM8K, consistent with the paper's story.\n\nThe outlier is MATH, as Alina predicted from the pilot: teacher backward-questions there are often ill-posed (you can't always invert a competition problem cleanly), and the filtered second pass only recovered part of the quality. Current MATH delta is +1.1, within seed noise.\n\nRecommendation for the go/no-go: ship the student refresh on the five strong tasks, hold MATH out rather than diluting the average, and note it as a known limitation. Freya agrees.\n\nQuentin",
+  "labels": ["status", "risk"]
+}
