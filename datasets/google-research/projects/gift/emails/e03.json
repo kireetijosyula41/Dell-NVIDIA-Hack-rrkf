@@ -1,0 +1,18 @@
+{
+  "id": "gr/gift/e03",
+  "thread_id": "gr/gift/t2",
+  "in_reply_to": null,
+  "date": "2026-05-14T11:08:00Z",
+  "from": {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: benchmark repro done; where GIFT wins and where it doesn't",
+  "body": "Hi both,\n\nRepro is done on the natural-distribution-shift benchmark. Headline numbers: with intermediate data available, iterative self-training alone recovers most of the drop, confirming the implicit-curriculum effect from the paper. Without intermediates - the realistic customer case - plain self-training falls short, and GIFT's interpolated virtual samples buy us +2.3 points of target accuracy over it on our repro, in line with the published finding. Stacking GIFT on top of a standard domain-adaptation baseline also improved target accuracy, which is the config I want for the pilot.\n\nRisk for the pilot: when source and target are too far apart, the interpolation curriculum needs more steps and cost grows roughly linearly - our worst sweep took 5x the compute of the best. Amara and I will publish a cost-vs-shift table next week so we can set customer expectations honestly.\n\nKatya",
+  "labels": ["status", "risk"]
+}

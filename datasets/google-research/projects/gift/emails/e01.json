@@ -1,0 +1,16 @@
+{
+  "id": "gr/gift/e01",
+  "thread_id": "gr/gift/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:20:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: GIFT - drift-resistant models for platform customers",
+  "body": "Hi Ivo,\n\nKicking off the GIFT workstream. Platform customers keep asking why their classifiers decay as their data drifts, and the honest answer today is \"retrain and hope.\" Our open-source GIFT work gives us something better: when intermediate distributions exist, iterative self-training forms an implicit curriculum and walks the model to the target; when they do not, GIFT manufactures virtual intermediate samples by interpolating source and target representations. That is the wedge - gradual adaptation without asking customers for labeled intermediate data.\n\nMilestones: repro the natural-shift benchmark results by 4/24, integrate with one internal pipeline as a pilot by 5/29, decision review by 6/17.\n\nKatya leads research, Amara pipeline integration, Saoirse the serving-side hooks. Ivo, can I get staffing confirmation plus a compute sketch by end of next week?\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
