@@ -1,0 +1,50 @@
+{
+  "id": "gr/comisr/e04",
+  "thread_id": "gr/comisr/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T15:25:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "COMISR: scope + LRB decisions",
+  "body": "Team,\n\nDecisions from this morning's review:\n\n1. Scope the product claim to CRF <= 30 inputs. Tereza's CRF35 results (+0.2 dB, visible shimmer on high-motion content) don't clear the quality bar, and uploads that degraded are a small tail anyway. The LRB narrative becomes \"reliable enhancement for the typical upload,\" which is honest and demoable.\n2. Code-complete holds at 5/29. Remaining items are the CRF30 eval writeup and Emeka's pipeline docs.\n3. LRB slot requested for the 6/10 board with Nadia's office; Jorge's June deployment phase starts against that date, Shipyard demo to follow sign-off.\n\nSaoirse rolls off at end of April as planned — thanks for the serving groundwork.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

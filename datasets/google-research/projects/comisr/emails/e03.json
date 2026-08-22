@@ -1,0 +1,51 @@
+{
+  "id": "gr/comisr/e03",
+  "thread_id": "gr/comisr/t1",
+  "in_reply_to": "gr/comisr/e02",
+  "date": "2026-04-17T11:30:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: COMISR for user-upload enhancement",
+  "body": "Hi both,\n\nStatus: vid4 reproduction is done. On the lr_crf25 inputs (calendar, city, foliage, walk) our numbers match the release checkpoint, and against a strong non-compression-aware baseline we're seeing +0.6 dB PSNR average on the compressed inputs — the whole point of the method holding up on our stack.\n\nEmeka's pipeline generates the compression matrix cleanly: lossless x264, then re-encode at target CRF, frames extracted at 10fps — exactly the release recipe. CRF30 and CRF35 sets are built; eval running now.\n\nEarly risk: at CRF35 the gains compress to +0.2 dB and temporal shimmer appears in high-motion clips (walk especially). If that holds, the product claim needs a quality floor — \"enhancement for moderately compressed uploads\" rather than everything. Worth deciding before we write LRB materials.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

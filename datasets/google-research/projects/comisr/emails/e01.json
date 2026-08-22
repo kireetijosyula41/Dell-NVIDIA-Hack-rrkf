@@ -1,0 +1,50 @@
+{
+  "id": "gr/comisr/e01",
+  "thread_id": "gr/comisr/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T09:35:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: COMISR for user-upload enhancement",
+  "body": "Hi Bao,\n\nKicking off compression-informed video super-resolution for the efficiency portfolio. Base is our open-source COMISR work: super-resolution built for compressed video, which matters because real user uploads arrive as CRF-compressed streams, not pristine frames — models trained on clean inputs fall apart there.\n\nProduct target: an enhancement pass for user-uploaded video on the serving side. Half plan: reproduce the vid4 evaluation on our stack by mid-April, extend the compression matrix beyond CRF25 in May, code-complete by end of May with a Shipyard demo after Launch Review Board.\n\nCompute should be modest; the model is small by current standards. Staffing plan by 3/9? Note we have five people attached, so I mostly need clarity on fractions and who owns eval vs deployment.\n\nZofia",
+  "labels": [
+    "kickoff"
+  ]
+}

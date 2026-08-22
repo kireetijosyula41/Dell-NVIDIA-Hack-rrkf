@@ -1,0 +1,27 @@
+{
+  "id": "gr/comisr",
+  "title": "COMISR:Compression-Informed Video Super-Resolution",
+  "summary": "COMISR performs video super-resolution designed for compressed inputs, recovering quality from CRF-compressed streams; evaluated on vid4 with an ffmpeg-based compression pipeline.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Leilani Nakamura",
+    "Tereza Aliyev",
+    "Emeka Pinto",
+    "Saoirse Eriksen",
+    "Jorge Vidal"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "comisr",
+    "url": "https://github.com/google-research/google-research/tree/master/comisr",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
