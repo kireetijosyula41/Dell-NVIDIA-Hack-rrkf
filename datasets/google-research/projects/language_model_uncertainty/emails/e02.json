@@ -1,0 +1,15 @@
+{
+  "id": "gr/language_model_uncertainty/e02",
+  "thread_id": "gr/language_model_uncertainty/t1",
+  "in_reply_to": "gr/language_model_uncertainty/e01",
+  "date": "2026-04-13T15:16:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: KnowNo-style uncertainty alignment for agent workflows",
+  "body": "Priya,\n\nStaffing and infra:\n\n- Vera Egede is allocated at 60% to this project for May 2026 — she owns the calibration-set construction and the conformal threshold tuning, and I've locked that in the staffing plan. April she's at 40% while she closes out a previous commitment.\n- Rosa 40% on the shadow-mode integration with the production agent workflow.\n- Wanjiru 30% on logging/telemetry — help-rate and completion-rate need clean instrumentation or the Jul 8 curves are fiction.\n- Farah 25% on the option-generation prompt harness.\n\nCompute/serving: inference-only, so no cluster reservations. We do need a dedicated eval quota on the internal LLM endpoint — calibration involves scoring full option sets per task, and I don't want us rate-limited mid-run. I'll size the ask once Vera counts tasks; ballpark 200k scored options for a 1,000-task calibration set.\n\nOne dependency: shadow mode needs sign-off from the workflow's owning team; Rosa is setting that up this week.\n\nIvo",
+  "labels": ["resources"]
+}

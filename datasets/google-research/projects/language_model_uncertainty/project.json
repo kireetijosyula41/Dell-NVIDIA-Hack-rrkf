@@ -1,0 +1,18 @@
+{
+  "id": "gr/language_model_uncertainty",
+  "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+  "summary": "KnowNo is a framework that uses conformal prediction to measure and align the uncertainty of LLM-based planners so they know when they don't know and ask for help, providing statistical guarantees on task completion without model fine-tuning. Meridian is applying it to make its agent workflows escalate to humans on ambiguous instructions.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Ivo Umeh",
+  "contributors": ["Vera Egede", "Rosa Mensah", "Wanjiru Horvat", "Farah Haddad"],
+  "window": {"start": "2026-04-06", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "language_model_uncertainty",
+    "url": "https://github.com/google-research/google-research/tree/master/language_model_uncertainty",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/language_model_uncertainty/e03",
+  "thread_id": "gr/language_model_uncertainty/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T14:03:00Z",
+  "from": {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "KnowNo status: calibration reproduced, ambiguity-mix caveat for our workflows",
+  "body": "Hi Priya, Ivo,\n\nStatus. The May 8 milestone closed on time — we reproduced the released calibration flow on the demo setting and get the expected behavior: prediction sets grow exactly when the instruction is ambiguous, and the conformal guarantee holds at our 90% target completion level on held-out tasks.\n\nOur own calibration set now stands at 1,150 tasks drawn from real (anonymized) workflow traces. Early threshold tuning shows a wrinkle the paper's settings didn't stress: our ambiguity distribution is lumpy — about 20% of tasks are numeric-quantity ambiguities where the option generator produces near-duplicate plans, inflating prediction sets and triggering unnecessary help requests. Farah's dedup pass in the option harness cuts the spurious help-rate from 23% to 14% at the same coverage target.\n\nRisk: if the workflow's task mix shifts after calibration, the guarantee quietly weakens. We'll propose a monthly recalibration job as part of the ship criteria.\n\nVera",
+  "labels": ["status", "risk"]
+}

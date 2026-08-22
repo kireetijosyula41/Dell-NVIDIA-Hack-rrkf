@@ -1,0 +1,15 @@
+{
+  "id": "gr/language_model_uncertainty/e04",
+  "thread_id": "gr/language_model_uncertainty/t2",
+  "in_reply_to": "gr/language_model_uncertainty/e03",
+  "date": "2026-07-01T10:31:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: KnowNo status: shaping the Jul 8 ship/hold call",
+  "body": "Team,\n\nAhead of the Jul 8 readout, here's where I've landed so we can pressure-test it together.\n\nShadow-mode numbers Rosa pulled Friday: at the 90% completion target, the wrapped workflow asks for help on 13.8% of tasks versus the 31% clarification rate of the current heuristic — a better experience AND a formal guarantee behind it. That's a ship story.\n\nProposed ship criteria (the decision I'll take into the room):\n1) Ship to the one calibrated workflow only. Every new workflow gets its own calibration set — no guarantee transfer, full stop.\n2) Vera's monthly recalibration job is a launch blocker, not a fast-follow. A silently weakening guarantee is worse than no guarantee.\n3) Help-request UX copy goes through the trust review since we're now telling users \"the system is unsure.\"\n\nIf anyone disagrees with 2 being a blocker, bring data Thursday. Otherwise this goes in as written.\n\nPriya",
+  "labels": ["decision", "escalation"]
+}
