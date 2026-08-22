@@ -1,0 +1,39 @@
+{
+  "id": "gr/interpretability_benchmark/e04",
+  "thread_id": "gr/interpretability_benchmark/t1",
+  "in_reply_to": "gr/interpretability_benchmark/e03",
+  "date": "2026-06-17T10:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: ROAR benchmark kickoff — scoring interpretability methods",
+  "body": "Wrap-up decisions from the readout. The sweep completed inside the June window and the report is in Evalline. Headline: two of the five estimators are defensible for sensitive-domain use; plain gradient saliency is formally indistinguishable from random removal at every fraction, and we're recommending teams stop using it for feature-importance claims. Decisions: (1) the ROAR report becomes a standing Evalline module — Tomas's team takes ownership of reruns, and we hand off by June 26; (2) we cut the planned CIFAR extension — ImageNet-scale evidence was the ask, and adding small-scale results doesn't change any decision; (3) Efe writes the one-page guidance doc for the three product teams. Handoff before the OKR lock keeps this off our Q3 plate entirely. Good, clean project. — Dmitri",
+  "labels": [
+    "decision"
+  ]
+}

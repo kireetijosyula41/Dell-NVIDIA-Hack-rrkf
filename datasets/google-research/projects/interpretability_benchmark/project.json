@@ -1,0 +1,25 @@
+{
+  "id": "gr/interpretability_benchmark",
+  "title": "Evaluation of Explainability Methods in Deep Neural Networks",
+  "summary": "Stands up ROAR (RemOve And Retrain) as an internal benchmark that scores feature-importance estimators by retraining after removing top-ranked inputs, run at ImageNet scale for five candidate estimators.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Leilani Nakamura",
+    "Gustavo Moreau",
+    "Efe Lindqvist"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "interpretability_benchmark",
+    "url": "https://github.com/google-research/google-research/tree/master/interpretability_benchmark",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

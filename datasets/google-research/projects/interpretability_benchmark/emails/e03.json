@@ -1,0 +1,41 @@
+{
+  "id": "gr/interpretability_benchmark/e03",
+  "thread_id": "gr/interpretability_benchmark/t1",
+  "in_reply_to": "gr/interpretability_benchmark/e01",
+  "date": "2026-05-20T15:45:00Z",
+  "from": {
+    "name": "Efe Lindqvist",
+    "email": "efe.lindqvist@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: ROAR benchmark kickoff — scoring interpretability methods",
+  "body": "Status ahead of the sweep week. Pipeline repro is done: base ResNet-50s train to 76.0% top-1 on ImageNet in our setup, and the ROAR mechanics (rank inputs per estimator, remove the top fraction, retrain from scratch) are validated end-to-end on the 10%-removal slice. Early signal matches the paper's headline: gradient-based saliency barely beats a random-removal baseline once you retrain, while the ensemble variants degrade accuracy much faster — exactly the separation ROAR exists to expose. Ops notes: Leilani's launcher packs 16-GPU slices well (dry run hit 88% utilization), and checkpoint/removal artifacts land in Corpus without issues. Risk: estimator #5 (the SmoothGrad variant) is 3× slower at ranking than budgeted; Gustavo is precomputing its rankings this week so ranking never blocks a training slot during the June window. — Efe",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
