@@ -1,0 +1,45 @@
+{
+  "id": "gr/fisher_brc/e01",
+  "thread_id": "gr/fisher_brc/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:20:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: Fisher-BRC offline RL baseline track",
+  "body": "Team — kicking off the Fisher-BRC adoption track for agents-rl.\n\nThe method regularizes the critic with a Fisher divergence penalty, which in the paper's benchmarks stabilizes offline RL where naive Q-learning collapses — and offline is the setting our product teams actually live in: they have logged interaction data and no appetite for live exploration.\n\nPlan: (1) repro the paper's results on the D4RL locomotion suite — hopper-medium-expert-v0 and friends — by Apr 24, including the Mujoco licensing setup; (2) port the training loop onto our internal logged-interaction datasets in May; (3) a recommendation memo by Jun 12 on whether Fisher-BRC becomes the default offline baseline in our RL toolkit, feeding the Q3 OKR discussion.\n\nGustavo owns repro, Freya the internal-data port, Bilal infra, Linnea evaluation. Ivo follows up on staffing.\n\nUlla",
+  "labels": [
+    "kickoff"
+  ]
+}

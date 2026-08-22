@@ -1,0 +1,45 @@
+{
+  "id": "gr/fisher_brc/e02",
+  "thread_id": "gr/fisher_brc/t1",
+  "in_reply_to": "gr/fisher_brc/e01",
+  "date": "2026-04-08T14:10:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Fisher-BRC offline RL baseline track",
+  "body": "Ulla — resourcing.\n\nStaffing: Gustavo 50%, Freya 50% from May, Bilal 30%. And Linnea Yamada is committed at 60% to this project for July 2026 — the recommendation memo will trigger a follow-on evaluation round against our internal baselines, and July is when that lands, so I've locked her allocation now before Q3 planning eats everyone.\n\nCompute: modest — the D4RL repro runs on single-GPU jobs, and 16 A100s best-effort covers the seed matrix (5 seeds per task, per the paper's protocol). The annoying dependency is Mujoco licensing for the repro environments; procurement says two weeks, so Gustavo starts on the tasks that clear first. Storage: 1TB for logged-interaction snapshots.\n\nIf the memo recommends against adoption we release Linnea's July allocation back — but I'm not planning on it.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}
