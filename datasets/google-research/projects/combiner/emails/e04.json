@@ -1,0 +1,45 @@
+{
+  "id": "gr/combiner/e04",
+  "thread_id": "gr/combiner/t2",
+  "in_reply_to": "gr/combiner/e03",
+  "date": "2026-05-06T16:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Combiner bake-off status",
+  "body": "Team,\n\nDecision from today's checkpoint, ahead of Friday's launch-review gate: we adopt the axial variant as Meridian's long-context attention for serving. Yusuf's numbers carried it — a perplexity gap our downstream evals can't detect, at 40% of the attention cost, available in both JAX and TF. Mixture is documented as the fallback if long-document quality regressions show up in production evals.\n\nConsequences:\n- Leilani closes out TF parity for axial only; no logn port.\n- Nikhil's nondeterminism fix (the TF eval seeding issue) is confirmed merged.\n- Milan's June integration scope is now concrete: axial kernels into Shipyard's serving stack, 32k target, plan review with Zeke's team first week of June.\n\nThanks all — clean bake-off, exactly what the OKR needed.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}
