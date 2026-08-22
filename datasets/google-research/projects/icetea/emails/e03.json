@@ -1,0 +1,19 @@
+{
+  "id": "gr/icetea/e03",
+  "thread_id": "gr/icetea/t2",
+  "in_reply_to": null,
+  "date": "2026-04-09T11:02:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "ICETEA status: estimators reproduced, UKB preprocessing is the long pole",
+  "body": "Dmitri, Alina,\n\nStatus. The estimator suite reproduces on IHDP and ACIC - all estimators in estimators.py land within published tolerances, and Nikhil's experiment configs (via config.py) sweep cleanly.\n\nImage side: Linnea's de-duplication pipeline is working end-to-end on a 10% sample - it's flagging about 7% of images as near-duplicates, which confirms the split-leakage worry was justified. The long pole is the UK Biobank-style preprocessing in ukb.py: the beam pipeline hits throughput limits on the resize/quality-filter stage, currently ~14 hours per full pass where we budgeted 6. Tereza has a fix (fusing the filter stages) in review.\n\nRisk to the May 11 date: if the fused pipeline doesn't hold, benchmark v1 ships with the 60% subset that's already clean rather than the full corpus. Statistically fine for v1 - the semi-synthetic treatment assignment is ours anyway - but we should agree on that fallback now rather than at the deadline.\n\nHalima",
+  "labels": ["status", "risk"]
+}

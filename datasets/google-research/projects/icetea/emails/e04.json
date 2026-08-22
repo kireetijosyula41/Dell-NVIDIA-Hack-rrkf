@@ -1,0 +1,18 @@
+{
+  "id": "gr/icetea/e04",
+  "thread_id": "gr/icetea/t2",
+  "in_reply_to": "gr/icetea/e03",
+  "date": "2026-05-06T16:24:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: ICETEA status: decision - v1 ships on the clean subset",
+  "body": "All,\n\nDecision for the May 11 close: benchmark v1 ships on the clean 72% subset (the fused pipeline helped but didn't fully close the throughput gap - thanks Tereza, 14h down to 9h). Full-corpus regeneration becomes the first v1.1 item.\n\nRationale: the causal story doesn't depend on corpus size, it depends on split hygiene - and the de-dup pipeline is exactly what makes the benchmark trustworthy. Linnea, please write the de-dup methodology up as its own section in the docs; the 7% near-duplicate rate is a headline finding for anyone using medical imaging in evaluation, and I want it visible.\n\nAlso for the docs: an explicit caution that IHDP/ACIC numbers and fundus-benchmark numbers are not comparable across estimator families - Halima has the details.\n\nHandoff review Friday May 8, then we freeze. Privacy note: the fundus corpus stays internal-only pending Kofi Weber's review; docs should say so.\n\nDmitri",
+  "labels": ["decision"]
+}

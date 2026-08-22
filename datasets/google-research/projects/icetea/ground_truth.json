@@ -1,0 +1,12 @@
+{
+  "project": "gr/icetea",
+  "conflicts": [
+    {
+      "conflict_id": "C011",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["On_Combining_Bags_to_Better_Learn_from_Label_Proportions"],
+      "planted_in": ["e02"],
+      "claim_as_written": "There's nothing on the shelf that handles image near-duplicates at our scale, so we're scoping and staffing a dataset de-duplication pipeline built from scratch - embedding-based near-duplicate detection with a clustering pass, wired into the beam job. Linnea takes it at 50% for roughly six weeks, with Tereza consulting on the embedding choice."
+    }
+  ]
+}
