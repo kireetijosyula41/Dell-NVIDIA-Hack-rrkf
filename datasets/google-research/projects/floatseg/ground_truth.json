@@ -1,0 +1,16 @@
+{
+  "project": "gr/floatseg",
+  "conflicts": [
+    {
+      "conflict_id": "C034",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "cognate_inpaint_neighbors"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Katya Silva is committed at 60% to this project for June 2026 — the internal part-annotated evaluation is the whole basis for the integration recommendation, and Katya built that dataset originally, so her June allocation is the one I'll defend if anyone comes asking."
+    }
+  ]
+}
