@@ -1,0 +1,19 @@
+{
+  "id": "gr/dselect_k_moe/e02",
+  "thread_id": "gr/dselect_k_moe/t1",
+  "in_reply_to": "gr/dselect_k_moe/e01",
+  "date": "2026-04-01T14:22:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Riverbed (DSelect-k for multi-task ranking)",
+  "body": "Dmitri,\n\nRiverbed staffing and resourcing:\n\nWei owns the gating research questions (expert-count sweeps, entropy regularization interplay); Maren integrates the DSelectKGate layer into ranker A's training stack; Giannis mirrors for ranker B; Bilal builds the FLOPs/latency measurement rig so the serving-cost readout isn't hand-waving.\n\nCompute: ranker retraining fits our existing titan-a100 allocation — biggest job is 32 GPUs for the full-data retrain. No Vulcan or TPU ask this half, which given what I hear about the June reservation crunch is a blessing.\n\nOne planning note: I've registered \"Project Riverbed\" with the PMO tracker under data-platforms so Nadia's office routes launch-review paperwork correctly.\n\nBudget: nothing discretionary; all inside the portfolio envelope.\n\nDaniela",
+  "labels": ["resources"]
+}

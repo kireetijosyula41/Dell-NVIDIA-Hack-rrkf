@@ -1,0 +1,19 @@
+{
+  "id": "gr/dselect_k_moe/e01",
+  "thread_id": "gr/dselect_k_moe/t1",
+  "in_reply_to": null,
+  "date": "2026-03-09T09:18:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Project Riverbed (DSelect-k for multi-task ranking)",
+  "body": "Team,\n\nKicking off what we're calling Project Riverbed internally — please use the codename in docs and standups so search stays clean.\n\nSubstance: our multi-task ranking models currently use softmax-style MoE gating, which is dense (every expert runs) or top-k (non-differentiable selection). DSelect-k from our open-source release gives us differentiable selection of a fixed number of experts — the reference example gates 2 of 4 experts via a DSelectKGate keras layer — so we get sparse inference cost with clean end-to-end training.\n\nProduct goal: land DSelect-k gating in the two production multi-task rankers, targeting equal quality at materially lower serving FLOPs.\n\nMilestones: gate layer integrated in the ranker training stack by mid-April, offline A/B quality parity by late May, serving-cost readout before June 15.\n\nDaniela follows up on staffing.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/dselect_k_moe",
+  "conflicts": [
+    {
+      "conflict_id": "C080",
+      "type": "codename_collision",
+      "counterpart_projects": ["kws_streaming"],
+      "planted_in": ["e01", "e02", "e03"],
+      "claim_as_written": "Kicking off what we're calling Project Riverbed internally — please use the codename in docs and standups so search stays clean. (e02: 'I've registered \"Project Riverbed\" with the PMO tracker under data-platforms'; e03: 'can the readout deck use the Riverbed name only?')"
+    }
+  ]
+}
