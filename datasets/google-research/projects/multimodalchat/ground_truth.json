@@ -1,0 +1,12 @@
+{
+  "project": "gr/multimodalchat",
+  "conflicts": [
+    {
+      "conflict_id": "C007",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["dp_instructions"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Amara Okafor: image retrieval index and serving path — I have her committed at 60% to MultimodalChat for June 2026, which is what the index build plus the Shipyard integration needs."
+    }
+  ]
+}

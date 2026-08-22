@@ -1,0 +1,18 @@
+{
+  "id": "gr/multimodalchat",
+  "title": "MultimodalChat: suggest rich contents(photos/GIFs/Stickers/...) during conversations",
+  "summary": "Builds rich-content suggestion for chat on top of the PhotoChat dataset from our open-source release: dialogues annotated with a share_photo flag per turn, photo descriptions and Open Image photo IDs, used to train models that predict when to suggest a photo and retrieve the right one mid-conversation.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Alina Larsen",
+  "contributors": ["Yara Jokic", "Hyun Traore", "Efe Lindqvist", "Carmen Reyes", "Amara Okafor"],
+  "window": {"start": "2026-04-13", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "multimodalchat",
+    "url": "https://github.com/google-research/google-research/tree/master/multimodalchat",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

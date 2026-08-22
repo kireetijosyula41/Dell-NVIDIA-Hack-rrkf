@@ -1,0 +1,20 @@
+{
+  "id": "gr/multimodalchat/e03",
+  "thread_id": "gr/multimodalchat/t1",
+  "in_reply_to": "gr/multimodalchat/e02",
+  "date": "2026-06-18T11:07:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MultimodalChat kickoff — June status, one label-noise risk",
+  "body": "Hi both,\n\nStatus ahead of the end-of-June baseline milestone:\n\n- Share-intent model: F1 0.58 on predicting the share_photo turn, vs 0.41 for a recency heuristic. Turns where share_photo is true have empty message text, which makes the supervision clean.\n- Retrieval: Hyun and Carmen's dual-encoder hits Recall@1 of 0.34 / Recall@5 of 0.62 against the ~10k photo pool. Index and serving path are up (thanks Amara — June crunch is paying off).\n\nRisk: photo_description quality. The object labels are coarse (\"dog, grass, frisbee\"), and Efe's first human-judged pass shows ~15% of top-1 retrievals are label-matched but contextually wrong. Options: enrich descriptions with a captioner before indexing (Amara estimates 1 week of index rebuild), or accept and message it as v1 quality. We need a call by 06-26 to hold the demo date.\n\nYara",
+  "labels": ["status", "risk"]
+}
