@@ -1,0 +1,41 @@
+{
+  "id": "gr/ara_optimization/e03",
+  "thread_id": "gr/ara_optimization/t2",
+  "in_reply_to": null,
+  "date": "2026-05-27T10:55:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "ARA optimization status: synthetic baselines, generalization risk",
+  "body": "Hi Dmitri, Daniela,\n\nStatus. Synthetic datasets regenerate cleanly and the experiment runner reproduces the release: optimized budget allocation cuts RMSRE-tau error by 31% against uniform allocation on the synthetic slices, averaged over the value and count columns.\n\nRisk worth stating early. The optimizer is tuned on the training dataframe and evaluated on the test one, and on synthetic data those come from the same generator. Our real partner slices have heavy-tailed count distributions that the synthetic generator doesn't produce, and on a small real sample the improvement drops from 31% to about 12%. Still positive, but not the headline number, and I don't want the 31% quoted externally.\n\nPrivacy Review filed May 20.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

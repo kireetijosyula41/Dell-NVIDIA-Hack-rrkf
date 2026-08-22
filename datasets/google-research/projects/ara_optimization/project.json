@@ -1,0 +1,26 @@
+{
+  "id": "gr/ara_optimization",
+  "title": "> Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi,",
+  "summary": "Code for optimizing summary reports in the privacy-sandbox attribution reporting API: given train and test dataframes with slice columns, value columns, and a count column, it optimizes the privacy-budget allocation and scores the result with RMSRE-tau error metrics. Includes a synthetic dataset generator.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Umar Costa",
+    "Maren Zhou",
+    "Nikhil Abebe",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ara_optimization",
+    "url": "https://github.com/google-research/google-research/tree/master/ara_optimization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
