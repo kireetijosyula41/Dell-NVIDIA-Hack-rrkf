@@ -1,0 +1,18 @@
+{
+  "id": "gr/dac/e04",
+  "thread_id": "gr/dac/t2",
+  "in_reply_to": "gr/dac/e03",
+  "date": "2026-07-02T15:18:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: DAC status - final sweep is a go, with the narrower claim",
+  "body": "Agreed on the narrower claim: we say \"learns from clean operator demonstrations\" and we report the 2,900 of 14,000 filter openly. Rosa, put the hesitation-saturation finding in the write-up - it's the kind of thing the next team needs to know before they spend three months discovering it.\n\nSweep is confirmed: the 128 accelerators on cirrus-tpu for the week of 2026-07-06 are ours and the sweep starts Monday morning. Rosa, please have the trajectory shards staged by Friday close so we are not burning reservation time on data movement. Nine environments, three seeds, two discriminator variants as planned - no adding a variant this late.\n\nRecommendation memo lands Jul 17 either way. If the sweep says the filtered demos aren't enough, that is also a result and I'd rather publish it than pad the window.\n\nDmitri",
+  "labels": ["decision", "escalation"]
+}

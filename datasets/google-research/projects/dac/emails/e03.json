@@ -1,0 +1,17 @@
+{
+  "id": "gr/dac/e03",
+  "thread_id": "gr/dac/t2",
+  "in_reply_to": null,
+  "date": "2026-05-19T10:40:00Z",
+  "from": {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "DAC status - conversion done, our demos are not expert demos",
+  "body": "Status on the May 15 milestone - late by four days, done now.\n\nReproduction went fine back in March; off-policy training gives us the sample efficiency the paper claims and the absorbing-state fix visibly removes the survival bias in the learned reward.\n\nThe problem is our data. \"Expert trajectories\" in the benchmark means a trained policy executing cleanly. Our operator logs are humans, and humans backtrack, pause for 40 minutes, and occasionally fix the wrong thing first. The discriminator learns to distinguish human hesitation from policy behaviour, which is trivially easy and completely useless - it saturates in 2k steps and the actor gets no gradient signal.\n\nCarmen's mitigation is filtering to trajectories with no backtracking, which leaves us 2,900 of 14,000 demonstrations. That may still be enough, DAC's whole point is working from few demos, but it changes what we're claiming: we imitate clean operators, not operators.\n\nRosa",
+  "labels": ["status", "risk"]
+}

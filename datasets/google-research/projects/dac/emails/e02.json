@@ -1,0 +1,18 @@
+{
+  "id": "gr/dac/e02",
+  "thread_id": "gr/dac/t1",
+  "in_reply_to": "gr/dac/e01",
+  "date": "2026-03-04T13:55:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff - resourcing incl. the July sweep reservation",
+  "body": "Dmitri,\n\nStaffing:\n- Rosa Mensah 45%, trajectory conversion pipeline and the expert-data import (the release's import script takes 1-2 hours on their data; ours is a lot bigger).\n- Carmen Reyes 25%, discriminator and absorbing-state handling.\n- Hyun Traore 20%, evaluation worker and baselines.\n\nCompute has two phases. Development runs sit on titan-a100 best-effort, roughly 400 GPU-hours a month, no reservation needed - DAC is off-policy so we get a lot per environment step.\n\nThe final sweep is the one that needs booking. We hold the cirrus-tpu reservation for the week of 2026-07-06 - 128 accelerators, the full week, booked for the final imitation sweep. That's 9 environments x 3 seeds x 2 discriminator variants and it does not fit anywhere else in the quarter.\n\nAlina",
+  "labels": ["resources"]
+}
