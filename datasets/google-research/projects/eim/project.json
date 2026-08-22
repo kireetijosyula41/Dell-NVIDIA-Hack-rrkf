@@ -1,0 +1,18 @@
+{
+  "id": "gr/eim",
+  "title": "Energy-Inspired Models (EIMs)",
+  "summary": "Hardening our Energy-Inspired Models release - which builds the approximate sampling algorithm directly into the model so learned energy functions still yield exact samples and tractable log-likelihood lower bounds - into a reusable probabilistic-modeling library with standardized benchmarks.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Santiago Vukovic",
+  "contributors": ["Ondrej Bergstrom", "Fumiko Rossi", "Tereza Aliyev", "Nikhil Abebe"],
+  "window": {"start": "2026-02-02", "end": "2026-04-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "eim",
+    "url": "https://github.com/google-research/google-research/tree/master/eim",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

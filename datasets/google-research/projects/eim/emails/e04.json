@@ -1,0 +1,19 @@
+{
+  "id": "gr/eim/e04",
+  "thread_id": "gr/eim/t2",
+  "in_reply_to": "gr/eim/e03",
+  "date": "2026-04-01T09:14:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: EIM status: suites reproduced, TF1-era code is the risk",
+  "body": "All,\n\nDecisions for window close on Apr 13:\n\n1. Shim-first it is. We froze the API on Mar 20 over the compat layer; the TF2 eager port of the core samplers becomes a Q2 line item. Consumers get a stable surface now and a faster backend later - that was the right trade.\n\n2. Leaderboard: Nikhil's MVP is up internally with the small_problems and static_mnist boards populated. Scoring-worker re-runs are the slow part (~40 min per MNIST config), so v1 caps at nightly refresh rather than on-submit. Fine for launch.\n\n3. Adoption OKR: one team onboarded, second in progress - we'll call it yellow at close and carry it two weeks into Q2 rather than rushing an integration nobody maintains.\n\nThanks all - tight quarter, good outcome. Retro invite coming for the week of the 13th.\n\nDmitri",
+  "labels": ["decision", "status"]
+}
