@@ -1,0 +1,15 @@
+{
+  "id": "gr/lila/e03",
+  "thread_id": "gr/lila/t1",
+  "in_reply_to": "gr/lila/e02",
+  "date": "2026-05-13T16:12:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: Kickoff: LILA dense-feature service — May status",
+  "body": "Hi Lucia, Bao,\n\nStatus:\n\n- Eval reproduction done Apr 15, two days early. vitb14 checkpoint via torch.hub.load with pretrained=True matches released numbers on DAVIS and NYUv2; COCO-Stuff was 0.4 mIoU low until Amara found our eval resizing didn't match the release — now within noise.\n- Retraining prep: Freya's optical-flow + monocular-depth signal pipeline runs at 71% of target throughput. Main risk to the May 22 data freeze. The flow computation is the bottleneck; we're testing a cheaper flow model on a 10% shard this week — if quality holds on DAVIS J&F we take it.\n\nTrade-off to surface: if throughput doesn't recover we can freeze with ~80% of the planned corpus. My read is corpus size matters less than signal quality here, but flagging since Jun 12 quality parity is the OKR line.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

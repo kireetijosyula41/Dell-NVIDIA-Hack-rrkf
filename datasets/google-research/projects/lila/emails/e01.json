@@ -1,0 +1,19 @@
+{
+  "id": "gr/lila/e01",
+  "thread_id": "gr/lila/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:00:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: LILA dense-feature service",
+  "body": "Hi team,\n\nKicking off the LILA workstream. Our CVPR oral release learns dense visual representations from video using optical flow and monocular depth cues — no labels — and the released checkpoints (lila_dinov2_vits14 up through lila_dinov2_vitl14_kts) load straight from Torch Hub. Product thesis: a dense-feature service for the vision portfolio, so segmentation/depth teams stop training their own backbones per task.\n\nMilestones:\n- Apr 17: reproduce released evals on DAVIS, COCO-Stuff, and NYUv2 from the vitb14 checkpoint.\n- Jun 12: retrained ViT-L on our own video corpus, matching released vitl14 quality.\n- Jul 10: service API design review.\n\nBao owns staffing and the compute reservation — the June retraining is the big-ticket item. Csilla is research lead.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/lila",
+  "conflicts": [
+    {
+      "conflict_id": "C031",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["lasagna_mt"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we hold the vulcan-h100 reservation for the week of 2026-06-01 — 512 accelerators — which covers the ViT-L/14 retraining sweep in one shot."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/lila/e04",
+  "thread_id": "gr/lila/t1",
+  "in_reply_to": "gr/lila/e03",
+  "date": "2026-06-16T10:05:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: LILA dense-feature service — retraining outcome + decisions",
+  "body": "Team,\n\nWrapping the retraining week. Outcome and decisions:\n\n- The June run completed on schedule. Retrained ViT-L matches released vitl14 on NYUv2 depth and lands within 0.6 J&F on DAVIS — close enough to call the Jun 12 milestone met, with the caveat noted below.\n- The cheaper flow model was the right call; the 100% corpus made it in before freeze.\n- Caveat: COCO-Stuff transfer is 1.1 mIoU under the released checkpoint. Decision: we ship the service alpha with the *released* vitl14 weights and keep our retrained model as the reproducibility proof. Customers get quality, we keep the recipe.\n- Jul 10 API review stands. Emeka, please have the Torch Hub-compatible loading path (checkpoint_path override included) in the design doc.\n\nQ3 OKRs locked June 26 with this framing, so no scope surprises please.\n\nLucia",
+  "labels": ["decision", "status"]
+}
