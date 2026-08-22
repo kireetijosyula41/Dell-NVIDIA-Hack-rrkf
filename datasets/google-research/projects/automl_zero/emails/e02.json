@@ -1,0 +1,17 @@
+{
+  "id": "gr/automl_zero/e02",
+  "thread_id": "gr/automl_zero/t1",
+  "in_reply_to": "gr/automl_zero/e01",
+  "date": "2026-04-03T13:37:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: AutoML-Zero as an internal algorithm-discovery tool",
+  "body": "Anders,\n\nResourcing for the evaluation phase:\n\n- Freya 60% (research lead), Katya 40% (search analysis), Oyin 50% (distributed search infra), Paloma 30% (experiment tooling).\n- Compute: evolutionary search is embarrassingly parallel and CPU-dominant, so our main ask is not GPUs - it's a standing pool of ~4,000 preemptible CPU cores. GPU needs are just evaluation of discovered algorithms, covered by titan-a100 best-effort.\n- I am NOT requesting a Vulcan reservation for this project; want that on record since the reservation queue is a mess this quarter.\n\nBudget note: preemptible CPU at that scale is roughly $28k/month at internal rates for the ~6 weeks of active search. That's inside my discretionary line, but flagging in case the H2 graduation happens and we 10x it.\n\nJelena",
+  "labels": ["resources"]
+}

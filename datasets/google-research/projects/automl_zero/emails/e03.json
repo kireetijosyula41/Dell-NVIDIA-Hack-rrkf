@@ -1,0 +1,18 @@
+{
+  "id": "gr/automl_zero/e03",
+  "thread_id": "gr/automl_zero/t1",
+  "in_reply_to": "gr/automl_zero/e02",
+  "date": "2026-05-08T09:58:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: AutoML-Zero as an internal algorithm-discovery tool",
+  "body": "Status + the key risk for the 6/1 decision.\n\nDone: search baselines reproduced, and the 5-minute linear-regression demo runs in our infra. On the internal task family (binary classification over retrieval features), evolution found a variant with input-noise augmentation and weight averaging that edges our logistic baseline by 0.9 AUC points on held-out tasks. Genuinely interpretable, which was the bet.\n\nThe risk: reproducibility of discovery. Across 20 seeded runs, only 6 rediscover something at or above baseline; the rest plateau on degenerate programs. That's consistent with the paper's framing (the search space is brutal), but it means the \"discovery service\" pitch needs framing as a batch lottery - you fund 20 runs to get 5 candidates - not a push-button tool. Cost per useful candidate lands around $9k at current core prices.\n\nFull readout in the 5/20 review.\n\nFreya",
+  "labels": ["status", "risk"]
+}

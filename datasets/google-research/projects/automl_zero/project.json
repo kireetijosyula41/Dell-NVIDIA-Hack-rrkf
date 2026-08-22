@@ -1,0 +1,18 @@
+{
+  "id": "gr/automl_zero",
+  "title": "AutoML-Zero",
+  "summary": "Evolves machine learning algorithms from scratch using only basic math operations, discovering model structure and learning strategy simultaneously with minimal human bias; the internal effort targets AutoML-Zero-style evolutionary search as a discovery tool for Meridian's modeling teams.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": ["Oyin Iversen", "Paloma Castillo", "Freya Ruiz", "Katya Silva"],
+  "window": {"start": "2026-03-16", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "automl_zero",
+    "url": "https://github.com/google-research/google-research/tree/master/automl_zero",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
