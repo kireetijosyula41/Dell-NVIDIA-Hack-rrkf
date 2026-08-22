@@ -1,0 +1,25 @@
+{
+  "id": "gr/LLP_Bench",
+  "title": "LLP-Bench: A Large Scale Tabular Benchmark for Learning from Label Proportions",
+  "summary": "LLP-Bench is a large-scale tabular benchmark for learning from label proportions, spanning feature-bag, fixed-size feature-bag, and random-bag dataset constructions with five splits and nine LLP training methods from DLLP variants to optimal-transport approaches. We are standardizing it as the internal eval for all bag-level learning work.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bao Ndiaye",
+  "contributors": [
+    "Csilla Nassar",
+    "Freya Ruiz",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-04-27"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "LLP_Bench",
+    "url": "https://github.com/google-research/google-research/tree/master/LLP_Bench",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
