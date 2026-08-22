@@ -1,0 +1,18 @@
+{
+  "id": "gr/latent_shift_adaptation/e01",
+  "thread_id": "gr/latent_shift_adaptation/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T10:36:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: latent subgroup shift adaptation for platform models",
+  "body": "Hi all,\n\nKicking off the latent-shift-adaptation track. The recurring incident pattern on platform models: an unobserved subgroup's prevalence shifts between training and deployment and accuracy quietly craters for that slice, with nothing in the observed features to alert on. The AISTATS work we open-sourced tackles exactly this — adapting to latent subgroup shifts using concept and proxy variables, with both a discrete eigendecomposition approach and continuous spectral / WAE variants.\n\nMilestones (Mar 30 - Jun 29):\n- Apr 24: replicate the synthetic-data experiments (Tables 1 and 2 from the released notebooks)\n- May 29: apply to one historical platform incident where we have the post-hoc subgroup labels — can the method see the shift we missed?\n- Jun 24: readout with a Q3 productionization recommendation\n\nSantiago — staffing/compute please, and start the Q3 budget conversation early; if May works out, the validation runs get expensive.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

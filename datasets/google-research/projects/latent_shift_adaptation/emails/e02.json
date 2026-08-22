@@ -1,0 +1,15 @@
+{
+  "id": "gr/latent_shift_adaptation/e02",
+  "thread_id": "gr/latent_shift_adaptation/t1",
+  "in_reply_to": "gr/latent_shift_adaptation/e01",
+  "date": "2026-04-14T14:47:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}
+  ],
+  "subject": "Re: Kickoff: latent subgroup shift adaptation for platform models",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing: Kaia 50% as method lead (she'll take the discrete eigendecomposition path first — it's the most interpretable and the easiest to defend in an incident review), Freya 40% on the historical-incident study design, Quentin 40% running the replication notebooks and the shift-strength sweeps, Giannis 30% packaging the library — the pip-installable structure of the release makes that straightforward.\n\nCompute this window: light. The synthetic experiments and the incident study run on a handful of Titan A100s.\n\nQ3 budget, per your ask: conversation with finance is done. Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-57 for our production-scale validation runs — I'm treating that line as committed to us. Idris, cc'd so we have this in writing; formal request follows the Jun 24 readout, but the number is sized to Freya's validation plan (three model families, six months of replayed traffic each).\n\nSantiago",
+  "labels": ["resources"]
+}
