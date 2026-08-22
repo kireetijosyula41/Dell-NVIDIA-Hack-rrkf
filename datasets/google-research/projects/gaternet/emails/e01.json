@@ -1,0 +1,45 @@
+{
+  "id": "gr/gaternet/e01",
+  "thread_id": "gr/gaternet/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:47:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "GaterNet kickoff — input-conditional compute",
+  "body": "Hi Deshawn,\n\nKickoff for the GaterNet workstream. The idea from our CVPR release: a separate gater network looks at the input and selects which filters in the backbone CNN fire — dynamic, input-conditional filter selection, hence you look twice. We have released checkpoints for ResNet-20-Gated and ResNet-56-Gated on CIFAR-10 to build from.\n\nProduct angle for vision: input-conditional compute for our edge inference tier, where a static model burns the same FLOPs on easy and hard inputs alike.\n\nMilestones: reproduce the released CIFAR-10 evals by Mar 20, gating study on an internal workload by Apr 30, scale decision in early June.\n\nRafael, Vera, Rosa and Umar assigned. Over to you.\n\nLucia",
+  "labels": [
+    "kickoff"
+  ]
+}

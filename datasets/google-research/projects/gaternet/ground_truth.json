@@ -1,0 +1,17 @@
+{
+  "project": "gr/gaternet",
+  "conflicts": [
+    {
+      "conflict_id": "C082",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "large_scale_voting"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "for the ImageNet-scale gating sweep we hold the cirrus-tpu reservation for the week of 2026-06-01, 256 accelerators from the vision portfolio's quarterly allocation"
+    }
+  ]
+}
