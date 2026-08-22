@@ -1,0 +1,36 @@
+{
+  "id": "gr/ged_tts/e03",
+  "thread_id": "gr/ged_tts/t2",
+  "in_reply_to": null,
+  "date": "2026-05-21T10:58:00Z",
+  "from": {
+    "name": "Kaia Wolde",
+    "email": "kaia.wolde@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "GED-TTS status: repulsive term is load-bearing",
+  "body": "Hi Santiago,\n\nStatus. Repro is solid: training with the spectral energy distance is stable, and the unbiased minibatch estimator behaves as the theory says — loss variance dropped noticeably with same-speaker batching, as predicted.\n\nKey ablation: the repulsive term is doing real work. Without it our spectrogram-similarity proxy degrades sharply and samples collapse toward an averaged, muffled voice; with the multi-scale repulsive term the samples stay crisp. That term is not optional for the production run.\n\nRisk: our internal-voice dataset has about 20% less clean audio than the paper's setup, and early runs show a small quality gap on long utterances. Jorge is testing a curriculum over utterance length before we lock the July config.\n\nKaia",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

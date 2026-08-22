@@ -1,0 +1,17 @@
+{
+  "project": "gr/ged_tts",
+  "conflicts": [
+    {
+      "conflict_id": "C091",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "causal_evaluation"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "we hold the vulcan-h100 reservation for the week of 2026-07-06, 512 accelerators, sized for the full parallel model plus the ablation pair"
+    }
+  ]
+}

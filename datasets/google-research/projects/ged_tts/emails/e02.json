@@ -1,0 +1,50 @@
+{
+  "id": "gr/ged_tts/e02",
+  "thread_id": "gr/ged_tts/t1",
+  "in_reply_to": "gr/ged_tts/e01",
+  "date": "2026-03-19T14:41:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: Spectral energy distance TTS — kickoff",
+  "body": "Hi Goran,\n\nStaffing: Kaia 60% (research lead), Jorge 50% (training infra), Gustavo 30%, Chiara 30% (serving integration later in the window).\n\nCompute: repro and the internal-voice run fit our titan allocation. The July production-scale training is the big ask, and it is secured — we hold the vulcan-h100 reservation for the week of 2026-07-06, 512 accelerators, sized for the full parallel model plus the ablation pair. That reservation anchors the MOS panel timing, so protect it. Ines, cc for visibility.\n\nDependency: the MOS panel needs booking four weeks out; Chiara owns vendor logistics.\n\nFlag: minibatch estimation is unbiased but variance depends on batch construction; Kaia wants same-speaker batches early.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}
