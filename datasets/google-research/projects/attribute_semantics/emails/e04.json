@@ -1,0 +1,19 @@
+{
+  "id": "gr/attribute_semantics/e04",
+  "thread_id": "gr/attribute_semantics/t1",
+  "in_reply_to": "gr/attribute_semantics/e03",
+  "date": "2026-06-09T16:30:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Decision: v1 ships head attributes only",
+  "body": "Team,\n\nDecision from this morning's sync: v1 scope is head attributes only. The synonym-pooling experiments recovered maybe a quarter of the tail vocabulary at acceptable precision, and chasing the rest puts the launch review date at risk.\n\nWhat this means concretely:\n- Next week's reserved compute goes entirely to the head-attribute retraining sweep at production embedding scale.\n- Tail attribute coverage moves to the Q3 OKR list; I'll get it in before the 6/26 lock.\n- Nadia, adding us to the LRB agenda for the first slot after the sweep completes.\n\nGood, pragmatic call from Katya and Yara here - the coverage analysis made this easy.\n\nAnders",
+  "labels": ["decision"]
+}

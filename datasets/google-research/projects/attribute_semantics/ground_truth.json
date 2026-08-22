@@ -1,0 +1,12 @@
+{
+  "project": "gr/attribute_semantics",
+  "conflicts": [
+    {
+      "conflict_id": "C073",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["negative_cache"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Ines confirmed our vulcan-h100 reservation: 256 accelerators for the week of 2026-06-15, which covers the full CAV retraining sweep before the launch review."
+    }
+  ]
+}

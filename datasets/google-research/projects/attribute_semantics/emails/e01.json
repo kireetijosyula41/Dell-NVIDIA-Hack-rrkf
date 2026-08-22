@@ -1,0 +1,17 @@
+{
+  "id": "gr/attribute_semantics/e01",
+  "thread_id": "gr/attribute_semantics/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T09:20:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: soft-attribute semantics for recommender search",
+  "body": "Hi all,\n\nKicking off the attribute-semantics workstream today. Goal: turn our open-source CAV work on personalized soft attributes into a queryable layer for the recommendations product, so users can ask for \"less violent\" or \"funnier\" and actually get it.\n\nScope for this half: reproduce the MovieLens 20M pipeline (lowercased tags, ratings >= 4 filter, 0.75/0.25 train-test split), then validate the learned concept activation vectors against the SoftAttributes dataset before we touch production embeddings.\n\nRough milestones: pipeline reproduction by early April, offline eval readout mid-May, launch review submission before the Q3 OKR lock on 6/26. Jelena owns staffing; Katya and Yara on modeling, Maren on the serving path.\n\nThoughts on the milestones by Friday please.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gr/attribute_semantics/e02",
+  "thread_id": "gr/attribute_semantics/t1",
+  "in_reply_to": "gr/attribute_semantics/e01",
+  "date": "2026-03-27T15:41:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: soft-attribute semantics for recommender search",
+  "body": "Anders,\n\nResourcing update. Staffing is set: Katya 80%, Yara 70%, Maren 50% through June.\n\nCompute: the CAV fits themselves are cheap, but the full sweep across per-user subjective semantics plus the production embedding refresh is not. Ines confirmed our vulcan-h100 reservation: 256 accelerators for the week of 2026-06-15, which covers the full CAV retraining sweep before the launch review. I deliberately booked ahead of the 6/22-6/24 Vulcan maintenance window so we have slack if runs spill over.\n\nUntil then we iterate on titan-a100 best-effort, which is fine for MovieLens-scale runs.\n\nOne dependency to flag: we need the SoftAttributes eval harness registered in Evalline; Maren will file the request with Tomas this week.\n\nJelena",
+  "labels": ["resources"]
+}
