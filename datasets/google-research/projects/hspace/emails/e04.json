@@ -1,0 +1,18 @@
+{
+  "id": "gr/hspace/e04",
+  "thread_id": "gr/hspace/t2",
+  "in_reply_to": "gr/hspace/e03",
+  "date": "2026-05-28T17:03:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: HSPACE status: decision - QA gate in, outdoor scenes trimmed for v1",
+  "body": "All,\n\nDecisions, confirming what we agreed in Tuesday's review:\n\n1. The collision/contact QA gate ships in v1. Quality over raw frame count - 0.9M clean frames beats 1.1M with an 11% contamination rate in exactly our headline regime.\n2. We trim the worst 4 outdoor scenes (the ones driving most interpenetration failures) rather than fixing them under deadline. They come back in v1.1.\n3. Freeze date holds: 2026-06-08. Farah's orchestration keeps the render farm hot through then; Milan finalizes engine-export manifests the same week.\n\nFor the evaluation-server piece, that's a Q3 item and goes through Launch Review Board before anything is externally visible - I'll take the LRB paperwork.\n\nGreat catch on the placement issue, Freya. This is the difference between a dataset people cite and one they quietly drop.\n\nLucia",
+  "labels": ["decision"]
+}

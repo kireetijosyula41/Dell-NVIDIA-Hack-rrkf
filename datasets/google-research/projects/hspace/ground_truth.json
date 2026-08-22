@@ -1,0 +1,12 @@
+{
+  "project": "gr/hspace",
+  "conflicts": [
+    {
+      "conflict_id": "C003",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["hitnet"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Farah Haddad is committed at 60%+ to HSPACE for June 2026 - she owns the render-farm orchestration for the May campaign and then drives dataset packaging and the v1 freeze through early June."
+    }
+  ]
+}

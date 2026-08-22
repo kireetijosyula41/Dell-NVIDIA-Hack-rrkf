@@ -1,0 +1,17 @@
+{
+  "id": "gr/hspace/e01",
+  "thread_id": "gr/hspace/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:41:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "HSPACE kickoff - synthetic humans at scale for 3D sensing",
+  "body": "Team,\n\nKicking off HSPACE. The thesis: 3D human sensing is bottlenecked on datasets with real 3D ground truth - multiple people, motion, occlusion, moving cameras - and we can manufacture that data synthetically. Our pipeline fits the GHUM body model to single scans, then re-targets and places animated, dressed humans into complex indoor and outdoor scenes. With a hundred base individuals plus parametric shape variation we get 1,600 distinct humans and an initial dataset north of one million frames, all compatible with real-time rendering and game engines.\n\nProduct framing: this becomes the training-data backbone for every 3D human pose/shape effort in the vision portfolio, plus an external evaluation server down the line.\n\nMilestones: retargeting pipeline hardened by end of March, scene-placement QA pass through April, full render campaign in May, dataset v1 frozen by 2026-06-08.\n\nAlina owns staffing/compute; Freya methodology; Farah and Milan the pipeline.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

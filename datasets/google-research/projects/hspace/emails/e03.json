@@ -1,0 +1,18 @@
+{
+  "id": "gr/hspace/e03",
+  "thread_id": "gr/hspace/t2",
+  "in_reply_to": null,
+  "date": "2026-04-22T10:26:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "HSPACE status: retargeting solid, multi-person placement needs a QA gate",
+  "body": "Lucia, Alina,\n\nStatus ahead of the May render campaign. GHUM fitting QA is done on all 100 base scans; the parametric variation sweep produced the full 1,600-human set and dressed-human retargeting holds up well - under 3% of motion clips show visible skinning artifacts, and Milan's engine export runs clean.\n\nThe risk is jointly consistent multi-person scene placement. In our current outdoor scenes about 11% of sampled multi-person configurations have interpenetration or implausible contact when two moving people cross paths. That's high enough to contaminate training signal for occlusion-heavy benchmarks - which is exactly the regime this dataset is supposed to be strongest in. Proposal: add an automated collision/contact QA gate before a frame enters v1, at an estimated cost of ~8% render throughput.\n\nIf we accept the throughput hit we still make the June 8 freeze, but with maybe 0.9M frames instead of 1.1M. Want a decision this week so Farah can bake the gate into the orchestration.\n\nFreya",
+  "labels": ["status", "risk"]
+}

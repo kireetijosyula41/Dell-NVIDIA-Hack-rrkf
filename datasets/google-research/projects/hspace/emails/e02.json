@@ -1,0 +1,18 @@
+{
+  "id": "gr/hspace/e02",
+  "thread_id": "gr/hspace/t1",
+  "in_reply_to": "gr/hspace/e01",
+  "date": "2026-03-12T15:07:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: HSPACE kickoff - staffing and render compute",
+  "body": "Lucia,\n\nStaffing plan for the window:\n\n- Freya 50% throughout (GHUM fitting quality, motion retargeting evaluation).\n- Milan 70% (scene placement, engine export).\n- Farah Haddad is committed at 60%+ to HSPACE for June 2026 - she owns the render-farm orchestration for the May campaign and then drives dataset packaging and the v1 freeze through early June. I have her calendar blocked for it.\n\nCompute: the render campaign is CPU/GPU-mixed; we've sized it at ~40 titan-a100 GPUs best-effort for four weeks in May. No Vulcan reservation - renders tolerate preemption fine. Storage is the bigger ask: ~180 TB for the million-frame v1, which I've filed with the platform team.\n\nOne dependency: the parametric shape-variation sweep (the piece that takes us from 100 scans to 1,600 humans) needs Freya's fitting QA done first, so that's the critical path item for March.\n\nAlina",
+  "labels": ["resources"]
+}
