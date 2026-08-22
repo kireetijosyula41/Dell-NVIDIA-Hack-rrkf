@@ -1,0 +1,18 @@
+{
+  "id": "gr/hmc_swindles/e03",
+  "thread_id": "gr/hmc_swindles/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T11:12:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "HMC Swindles status: tuning loop live, one stability risk before June",
+  "body": "Dmitri, Deshawn,\n\nStatus. Repro on the shipped tune_outputs hyperparameters is done and matched expectations. Our own tuning loop is live - we drive the 'objective' mode externally, starting from step_size 0.1 and a single leapfrog step, then let the optimizer walk from there. On the two easiest targets we're seeing effective-sample-size-per-flop gains of roughly 2.3x over vanilla HMC with the swindle estimators on, which is the headline we hoped for.\n\nRisk: NeuTra preconditioner training occasionally diverges on our heaviest-tailed target - about 1 run in 6 - and a diverged preconditioner poisons everything downstream in the benchmark. Paloma has a checkpoint-and-retry wrapper in review; we want it merged at least two weeks before the June sweep so the 384-GPU week isn't spent babysitting restarts.\n\nOn track otherwise for the late-June benchmark and the July decision memo.\n\nWei",
+  "labels": ["status", "risk"]
+}
