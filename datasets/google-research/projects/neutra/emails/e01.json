@@ -1,0 +1,16 @@
+{
+  "id": "gr/neutra/e01",
+  "thread_id": "gr/neutra/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T09:33:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "NeuTra kickoff — fast posterior sampling for the Bayesian toolkit",
+  "body": "Hi Santiago,\n\nKickoff for NeuTra. The open-source release gives us neural-transport HMC: train an IAF bijector to warp away bad posterior geometry, then run HMC in the transformed space. The neutra_runner reproduces the flagship result on the 100-dimensional funnel target — a distribution plain HMC basically cannot traverse — with both IAF and affine baselines.\n\nProduct: a NeuTra preset inside the efficiency portfolio's Bayesian inference toolkit, so internal users stop hand-tuning step sizes on nasty posteriors. Deliverables: (1) runner productized with our config system, (2) benchmark suite (funnel + two internal calibration posteriors) with tuned defaults, (3) toolkit docs.\n\nMilestones: runner ported by end of March, benchmarks by mid-May, toolkit release before window close 06-08. One dependency: the internal calibration posteriors come from datasets that are moving in the Corpus v2 migration, so let's get our data pulls sorted early.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

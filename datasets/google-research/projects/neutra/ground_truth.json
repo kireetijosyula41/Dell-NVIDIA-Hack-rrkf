@@ -1,0 +1,12 @@
+{
+  "project": "gr/neutra",
+  "conflicts": [
+    {
+      "conflict_id": "C132",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["ledge", "gen_patch_neural_rendering", "dreamfields"],
+      "planted_in": ["e02"],
+      "claim_as_written": "I checked the migration timeline — the Corpus v2 freeze lands 2026-07-24, so it sits comfortably past our 06-08 close and we can re-pull the calibration datasets any time during the project without racing the migration."
+    }
+  ]
+}

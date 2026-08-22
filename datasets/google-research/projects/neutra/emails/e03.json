@@ -1,0 +1,18 @@
+{
+  "id": "gr/neutra/e03",
+  "thread_id": "gr/neutra/t1",
+  "in_reply_to": "gr/neutra/e02",
+  "date": "2026-04-28T10:41:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: NeuTra kickoff — benchmark status + tuning risk",
+  "body": "Hi both,\n\nStatus:\n\n- Vera's port landed 03-30. Config system mapping done; the funnel configs (IAF with 3 stages, [100, 100] hidden layers, vs the affine/tril baseline) reproduce cleanly.\n- Funnel benchmark: NeuTra with the IAF bijector reaches target rhat on the 100-dim funnel in roughly a sixth of the wall-clock of tuned vanilla HMC on our A100s. The affine baseline splits the difference — worth keeping in the docs as the cheap option.\n- Internal calibration posterior #1 shows the same shape of win. #2 in progress.\n\nRisk: the step-size tuner. The release tunes within a min/max step-size band with a leapfrog cap of 100, and the rhat-based objective is sensitive to that band on our posterior #2 — badly set bounds either blow past the leapfrog cap or crawl. Toolkit defaults can't ask users to hand-set the band, so I'm deriving it from a cheap pilot chain. Adds ~10% runtime, removes the sharpest edge. Will have numbers next status.\n\nUmar",
+  "labels": ["status", "risk"]
+}
