@@ -1,0 +1,30 @@
+{
+  "id": "gr/isolating_factors/e02",
+  "thread_id": "gr/isolating_factors/t2",
+  "in_reply_to": null,
+  "date": "2026-05-05T13:15:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "subject": "ABC sweeps — vulcan compute plan",
+  "body": "Ines — compute plan for the factor-isolation sweeps. The Shapes3D experiment grid is wide (set-supervision settings × factor groupings × seeds — train.py makes this cheap to launch and expensive to run), and the pose-estimation training adds a second wave. We hold the vulcan-h100 reservation for the week of 2026-06-01 — 256 GPUs — and both waves are packed into that week: the Shapes3D grid across the first three days, pose models the back two. The MINE information estimates run alongside on the same slices (they're light). Asks: (1) confirm the reservation on your books; (2) we plan to be well clear before the 06-22 to 06-24 vulcan maintenance, but if our week slips please tell us early — the end-of-June recommendation has no slack behind it. Dev runs continue on titan best-effort. — Santiago",
+  "labels": [
+    "resources"
+  ]
+}

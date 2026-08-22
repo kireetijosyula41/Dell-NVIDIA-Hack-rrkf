@@ -1,0 +1,40 @@
+{
+  "id": "gr/isolating_factors/e01",
+  "thread_id": "gr/isolating_factors/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T10:20:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "ABC factor isolation kickoff",
+  "body": "Team — kickoff for the ABC factor-isolation project in vision. From our release (Learn your ABCs): approximate bijective correspondence isolates factors of variation using set supervision — train on image sets grouped by a shared factor, and the representation isolates the complementary factors. The repo gives us three tracks: Shapes3D training with mutual-information measurement via MINE to quantify exactly which generative factors the representation captures; the MNIST digit-style notebook; and pose-estimation evaluation in both dictionary-lookup and regression scenarios. Product angle: controllable-representation building blocks for the vision portfolio's editing pipeline — isolate pose from identity, style from content. Milestones: Shapes3D repro with MI measurements by May 8; pose-estimation evaluation by mid-June; integration recommendation by end of June (window closes July 6). Santiago owns staffing and the compute ask. — Lucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

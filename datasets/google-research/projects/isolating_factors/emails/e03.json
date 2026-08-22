@@ -1,0 +1,41 @@
+{
+  "id": "gr/isolating_factors/e03",
+  "thread_id": "gr/isolating_factors/t1",
+  "in_reply_to": "gr/isolating_factors/e01",
+  "date": "2026-06-03T16:45:00Z",
+  "from": {
+    "name": "Giannis Sato",
+    "email": "giannis.sato@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: ABC factor isolation kickoff",
+  "body": "Status from inside the compute week. Shapes3D grid: ~70% complete and reproducing the paper's core claim — with set supervision on a single shared factor, the ABC objective isolates the complementary factors cleanly; MINE estimates show the isolated representation carrying high mutual information with the target factors and near-zero with the supervised one. The factor-grouping ablations are the interesting product signal: pose/identity-style groupings isolate as well as the easy color factors do. Pose wave starts tomorrow, one day early. Issues: (1) tensorflow_datasets auto-download of Shapes3D failed on the cluster's egress rules — Oyin mirrored it into Corpus, ten-minute fix, noting for the runbook; (2) MINE training is finicky on two factor pairs (estimator variance blows up) — Carmen suggests the standard bias-corrected variant, testing today. No risk to the week's plan. — Giannis",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

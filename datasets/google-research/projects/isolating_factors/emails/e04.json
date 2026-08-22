@@ -1,0 +1,39 @@
+{
+  "id": "gr/isolating_factors/e04",
+  "thread_id": "gr/isolating_factors/t1",
+  "in_reply_to": "gr/isolating_factors/e03",
+  "date": "2026-06-29T11:10:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: ABC factor isolation kickoff",
+  "body": "Integration recommendation, as promised by end of June: adopt, narrowly. The pose-estimation results are the deciding evidence — in the dictionary-lookup scenario the ABC representations retrieve correct poses at parity with the supervised baseline, and the regression scenario lands within 8% of it with zero pose labels, which is the cost story the editing-pipeline team cares about. Recommendation shipped to their leads today: use ABC-style set supervision for the pose/identity split in the editing pipeline; hold off on style/content until we run their production data distribution (a Q3 item, written into OKRs pre-lock). Loose ends: Carmen's bias-corrected MINE variant fixed the estimator variance and goes into the repo docs; Oyin's Corpus mirror of Shapes3D becomes the canonical copy. Thanks all — tight window, no drama. — Lucia",
+  "labels": [
+    "decision"
+  ]
+}
