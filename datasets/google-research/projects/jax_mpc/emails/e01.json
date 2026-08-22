@@ -1,0 +1,45 @@
+{
+  "id": "gr/jax_mpc/e01",
+  "thread_id": "gr/jax_mpc/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T10:05:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "JAX-MPC kickoff — a standard control stack for sim benchmarks",
+  "body": "Team — kickoff for the JAX-MPC work in agents-rl. Base: our JAX Particles release — model-predictive controllers in JAX, where monte-carlo-style MPC gets cheap because rollouts parallelize under jax.vmap. The MPPI implementation is the starting point: the released interface (init_state / update / get_action against any env exposing step and reward) with the reference config at 5 iterations × 16 steps × 16 samples. Product angle: a standard control stack for our sim-benchmark environments, so agents-rl teams stop writing bespoke planners. Milestones: interface hardening plus baselines across three internal sim envs by mid-May; a scaling study (how far vmap takes sample counts on real accelerators) by mid-June; adopt/park decision end of June. Deshawn owns staffing; resourcing and the compute-budget conversation follow once Finance settles the Q3 lines. — Ulla",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
