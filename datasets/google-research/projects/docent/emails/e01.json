@@ -1,0 +1,19 @@
+{
+  "id": "gr/docent/e01",
+  "thread_id": "gr/docent/t1",
+  "in_reply_to": null,
+  "date": "2026-02-05T08:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Kickoff: Reviews2Movielens as a first-class internal benchmark",
+  "body": "Hi all,\n\nKicking off the Reviews2Movielens effort. The dataset from our DocEnt open-source release joins the Movies and TV subset of Amazon Reviews with MovieLens tags — nearly 8.8 million reviews once joined — and it's exactly the multi-document, multi-label testbed our retrieval and recs teams keep asking for.\n\nWhat this unlocks: a standard benchmark for entity-representation models inside Meridian, plus a story for the data-platforms OKR on shared evaluation assets.\n\nRough milestones inside our window: ingestion into Corpus by end of Feb, benchmark spec and baseline numbers by end of March, internal GA with docs by mid-May. Note Corpus is mid-v2-migration, so Ivo please sanity-check the ingestion path with Jun Varga's team early.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

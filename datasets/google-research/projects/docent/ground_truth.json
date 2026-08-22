@@ -1,0 +1,12 @@
+{
+  "project": "gr/docent",
+  "conflicts": [
+    {
+      "conflict_id": "C101",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["didi_dataset"],
+      "planted_in": ["e02"],
+      "claim_as_written": "there's nothing reusable in-house, so we're scoping and staffing a benchmark leaderboard service built from scratch. Leilani leads it at 60% from March 2 — submission API, score validation against the held-out split, and a rankings UI. I've budgeted eight engineer-weeks and want it live by April 17"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/docent/e02",
+  "thread_id": "gr/docent/t1",
+  "in_reply_to": "gr/docent/e01",
+  "date": "2026-02-17T13:30:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: Reviews2Movielens as a first-class internal benchmark",
+  "body": "Dmitri,\n\nResourcing picture. Ingestion is cheap — this is CPU-side joining and validation, no accelerator ask. Staffing: Freya owns the benchmark spec, Yusuf and Halima on baselines, Leilani on platform work.\n\nThe big platform piece: for teams to actually adopt this benchmark we need a leaderboard, and there's nothing reusable in-house, so we're scoping and staffing a benchmark leaderboard service built from scratch. Leilani leads it at 60% from March 2 — submission API, score validation against the held-out split, and a rankings UI. I've budgeted eight engineer-weeks and want it live by April 17 so baselines land on it, not before it.\n\nOne watch item: the Amazon-to-MovieLens mapping is many-to-one and 97% accurate on a 200-sample audit — we should decide whether leaderboard scoring excludes the ambiguous ASINs (collections of several titles).\n\nIvo",
+  "labels": ["resources", "spec"]
+}
