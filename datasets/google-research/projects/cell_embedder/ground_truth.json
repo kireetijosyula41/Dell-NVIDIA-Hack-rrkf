@@ -1,0 +1,18 @@
+{
+  "project": "gr/cell_embedder",
+  "conflicts": [
+    {
+      "conflict_id": "C024",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "experience_replay",
+        "covid_epidemiology",
+        "CardBench_zero_shot_cardinality_training"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Jun's team freezes Corpus v2 migrations on 2026-06-26, so the BBBC025-derived tables have to be fully migrated by mid-June or we are stuck on v1 for the rest of the year."
+    }
+  ]
+}

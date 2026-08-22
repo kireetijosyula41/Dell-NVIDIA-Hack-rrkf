@@ -1,0 +1,45 @@
+{
+  "id": "gr/cell_embedder/e04",
+  "thread_id": "gr/cell_embedder/t1",
+  "in_reply_to": "gr/cell_embedder/e03",
+  "date": "2026-04-21T16:40:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Kickoff: cell painting embedding service (H1)",
+  "body": "Decision from yesterday's review, writing it down so we're aligned.\n\nWe ship the embedding service with the per-plate normalization option ON by default. Maren's confounding argument was convincing and honestly the LMRL paper is ours, we'd look silly ignoring it.\n\nScope cut: partner plate ingestion moves out of this window. Legal review on external assay data won't complete before May 4, so v1 launches internal-only on BBBC025 + two internal plate sets. Giannis's batch API and Amara's Evalline hookup stay in scope.\n\nNadia — requesting a Launch Review Board slot the week of April 27, sign-off needed before we demo to the screening group.\n\nThanks all, nice quarter of work.\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

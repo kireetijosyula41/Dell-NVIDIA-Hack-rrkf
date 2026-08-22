@@ -1,0 +1,41 @@
+{
+  "id": "gr/cell_embedder/e03",
+  "thread_id": "gr/cell_embedder/t1",
+  "in_reply_to": "gr/cell_embedder/e02",
+  "date": "2026-03-20T11:18:00Z",
+  "from": {
+    "name": "Maren Zhou",
+    "email": "maren.zhou@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cell painting embedding service (H1)",
+  "body": "Status: parity reached. Embeddings from our service match the published notebook to within 1e-5 on the BBBC025 sample images — same 5-stain ordering, same random projection weights, so anyone comparing against the paper gets identical vectors.\n\nOne real risk I want on the record: the NeurIPS LMRL workshop paper we published (\"It's easy to fool yourself\") showed exactly this class of assay is prone to batch effects and confounding — plate position and staining day leak into embeddings. If partners cluster embeddings without a batch-correction step they'll rediscover their plate layout, not biology. I'd like Amara to add a per-plate normalization option before launch review, est. 1.5 weeks.\n\nAPI work on track, Giannis has the batch endpoint returning embeddings for a 384-well plate in ~4 min on 8 A100s.\n\nMaren",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

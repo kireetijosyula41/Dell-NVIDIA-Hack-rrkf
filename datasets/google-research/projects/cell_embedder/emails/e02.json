@@ -1,0 +1,40 @@
+{
+  "id": "gr/cell_embedder/e02",
+  "thread_id": "gr/cell_embedder/t1",
+  "in_reply_to": "gr/cell_embedder/e01",
+  "date": "2026-02-24T14:32:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cell painting embedding service (H1)",
+  "body": "Lucia,\n\nStaffing: Maren 50% (pipeline + weights loading), Giannis 40% (batch API), Amara 30% (eval harness hookup with Tomas's Evalline team). That covers parity and the API milestone.\n\nCompute is light — inference only, so best-effort Titan A100 slices are fine; I'm asking for 32 GPUs peak during plate batch tests. No Vulcan reservation needed.\n\nOne scheduling constraint to flag: our imaging tables need to move to Corpus v2 before the migration freeze. Jun's team freezes Corpus v2 migrations on 2026-06-26, so the BBBC025-derived tables have to be fully migrated by mid-June or we are stuck on v1 for the rest of the year. I've put the migration work in Amara's plan for May.\n\nWill have a written plan in the doc by Thursday.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}
