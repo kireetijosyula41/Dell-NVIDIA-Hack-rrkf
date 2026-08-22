@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpok/e03",
+  "thread_id": "gr/dpok/t1",
+  "in_reply_to": "gr/dpok/e02",
+  "date": "2026-04-15T11:05:00Z",
+  "from": {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DPOK fine-tuning for the image-gen stack",
+  "body": "Status + a trade-off that needs a call.\n\nSingle-prompt reproduction: done (March 27). With reward weight 10 and kl_weight 0.01, ImageReward scores on the held-out renders improve 21% over the base model, and the KL term is doing its job — samples stay on-distribution instead of collapsing to reward-hacky textures.\n\nMulti-prompt is where the trade-off bites. Our internal preference reward model is noisier than ImageReward; at kl_weight 0.01 the policy starts drifting on faces and text-in-image prompts around step 8k. Raising kl_weight to 0.03 stabilizes it but gives back about a third of the fidelity win. Options: (a) accept 0.03 and a smaller but robust win for the May demo, (b) hold 0.01 with early stopping per prompt cluster, more babysitting but bigger wins.\n\nAlso hit the documented hang — fixed exactly as the release notes say, uninstall torch_xla and pin accelerate 0.17.0. Rosa's container has it baked now.\n\nTereza",
+  "labels": ["status", "risk"]
+}

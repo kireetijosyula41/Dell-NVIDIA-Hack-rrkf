@@ -1,0 +1,17 @@
+{
+  "id": "gr/dpok/e04",
+  "thread_id": "gr/dpok/t1",
+  "in_reply_to": "gr/dpok/e03",
+  "date": "2026-05-08T14:44:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DPOK fine-tuning for the image-gen stack",
+  "body": "Decision time, with LRB on May 14.\n\nWe go with option (a): kl_weight 0.03, the robust setting. Rationale: the Launch Review Board cares more about \"no embarrassing failure modes\" than peak side-by-side wins, and Tereza's drift examples on text-in-image prompts are exactly the kind of thing that gets a demo pulled. The measured win at 0.03 — +13% internal preference score, up from the base model, across the full prompt distribution — is still a clear story.\n\nOption (b) doesn't die: Chiara will keep the per-cluster early-stopping branch alive as the Q3 path, funded under the scale-up line Alina secured.\n\nScope cut for this half: no reward-model refresh before the demo. Frozen reward model, frozen eval set, boring and defensible.\n\nSee everyone at the dry run Tuesday.\n\nUlla",
+  "labels": ["decision"]
+}

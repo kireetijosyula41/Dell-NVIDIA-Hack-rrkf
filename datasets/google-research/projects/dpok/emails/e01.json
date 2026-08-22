@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpok/e01",
+  "thread_id": "gr/dpok/t1",
+  "in_reply_to": null,
+  "date": "2026-03-04T09:40:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DPOK fine-tuning for the image-gen stack",
+  "body": "Hi both,\n\nKicking off DPOK adoption for agents-rl. The method from our open-source release fine-tunes text-to-image diffusion models with online policy-gradient RL, using a reward model (ImageReward in the release) plus a KL term to keep the policy anchored — the knobs are reward_weight and kl_weight, and the reference config uses reward weight 10 with KL weight 0.01.\n\nWhy we care as product: our internal image-gen demo consistently loses side-by-sides on prompt fidelity. DPOK is the cheapest lever we have — no new base model, just RL fine-tuning against our internal preference reward model.\n\nMilestones: single-prompt training reproduced on our stack by end of March, multi-prompt runs through April, a Launch Review Board slot for the improved demo in mid-May (sign-off is required before we show it externally).\n\nAlina owns staffing and the money conversation for the scale-up.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

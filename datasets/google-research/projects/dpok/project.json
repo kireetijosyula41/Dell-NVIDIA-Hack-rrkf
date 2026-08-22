@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpok",
+  "title": "Env Installation",
+  "summary": "Applies DPOK — reinforcement learning with a KL-regularized policy objective for fine-tuning text-to-image diffusion models against reward models like ImageReward — to Meridian's internal image-generation stack, starting from single-prompt online policy-gradient training.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Alina Larsen",
+  "contributors": ["Tereza Aliyev", "Rosa Mensah", "Chiara Olsen"],
+  "window": {"start": "2026-03-02", "end": "2026-05-18"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dpok",
+    "url": "https://github.com/google-research/google-research/tree/master/dpok",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

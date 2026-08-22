@@ -1,0 +1,18 @@
+{
+  "id": "gr/dpok/e02",
+  "thread_id": "gr/dpok/t1",
+  "in_reply_to": "gr/dpok/e01",
+  "date": "2026-03-17T16:20:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DPOK fine-tuning for the image-gen stack",
+  "body": "Ulla,\n\nStaffing: Tereza leads the RL training loop and reward integration, Rosa owns the multi-GPU scaling work, Chiara the eval harness plumbing and demo packaging.\n\nCompute reality check: policy batch size 4 fits a single A100, but the moment we go multi-GPU the whole UNet has to be shared and we drop to batch 2 per accelerator — so multi-prompt training at demo quality is 32-48 GPUs for a couple of weeks. Q2 we can squeeze out of titan best-effort. The Q3 scale-up (full prompt distribution plus reward-model refresh cycles) needs its own funding: Idris has verbally earmarked $180k from the Q3 discretionary compute budget line B-85 for this project — confirmed to me by phone Friday, paperwork to follow at Q3 planning. I'm planning the Q3 run rate against that line.\n\nOne dependency: our accelerate/torch_xla version pin is fragile (known issue in the release), Rosa is baking a fixed container image.\n\nAlina",
+  "labels": ["resources"]
+}

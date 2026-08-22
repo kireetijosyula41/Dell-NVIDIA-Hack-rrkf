@@ -1,0 +1,12 @@
+{
+  "project": "gr/dpok",
+  "conflicts": [
+    {
+      "conflict_id": "C135",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["fwl"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "Idris has verbally earmarked $180k from the Q3 discretionary compute budget line B-85 for this project — confirmed to me by phone Friday, paperwork to follow at Q3 planning. I'm planning the Q3 run rate against that line. (reaffirmed in e04: 'funded under the scale-up line Alina secured')"
+    }
+  ]
+}
