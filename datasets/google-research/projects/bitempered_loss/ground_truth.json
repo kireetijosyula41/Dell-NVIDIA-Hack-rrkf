@@ -1,0 +1,12 @@
+{
+  "project": "gr/bitempered_loss",
+  "conflicts": [
+    {
+      "conflict_id": "C123",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["explaining_risk_increase", "batch_science", "cube_unfoldings"],
+      "planted_in": ["e02", "e03"],
+      "claim_as_written": "e02: \"Corpus v2 migration freeze is 2026-06-26, so every noisy-label benchmark set we need has to be ingested and labeled before that date - I've built the schedule backwards from June 26.\" e03: \"Reminder that we are three weeks from the June 26 Corpus freeze.\""
+    }
+  ]
+}

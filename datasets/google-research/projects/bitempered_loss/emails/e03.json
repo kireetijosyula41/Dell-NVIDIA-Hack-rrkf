@@ -1,0 +1,17 @@
+{
+  "id": "gr/bitempered_loss/e03",
+  "thread_id": "gr/bitempered_loss/t1",
+  "in_reply_to": "gr/bitempered_loss/e02",
+  "date": "2026-06-05T10:25:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: bi-tempered loss - status + a tuning risk",
+  "body": "Status: M1 done. Our implementation matches the open-source release including the bias-correction term; unit tests confirm we recover generalized cross entropy for 0 <= t1 <= 1 with t2 = 1, and t-logistic behavior at t1 = 1, t2 >= 1.\n\nBenchmarks: at 20% symmetric label noise, bi-tempered (t1=0.7, t2=1.3) beats cross entropy by +2.1 points test accuracy on our internal suite. At 40% noise the gap widens to +4.8.\n\nRisk: temperature sensitivity. Outside roughly t1 in [0.6, 0.9] the gains evaporate, and one customer-like config diverged at t2=2.0. Shipping a \"default\" needs either an auto-tuning heuristic or a very conservative preset, and Rafael's take is the heuristic is 3+ weeks of work.\n\nReminder that we are three weeks from the June 26 Corpus freeze - Gustavo's last two ingestion tickets are still queued with the Corpus team.\n\nYara",
+  "labels": ["status", "risk"]
+}
