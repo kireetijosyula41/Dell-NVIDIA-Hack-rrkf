@@ -1,0 +1,18 @@
+{
+  "id": "gr/imp",
+  "title": "MAX & IMP",
+  "summary": "Builds on our MAX & IMP release - Alternating Gradient Descent and Mixture-of-Experts for Integrated Multimodal Perception - evaluating IMP-B and sparse-MoE variants across image, video, and audio benchmarks (ImageNet, Kinetics, UCF101, ESC50) from a single model.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": ["Csilla Nassar", "Jorge Vidal", "Tereza Aliyev", "Vera Egede"],
+  "window": {"start": "2026-04-06", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "imp",
+    "url": "https://github.com/google-research/google-research/tree/master/imp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/imp",
+  "conflicts": [
+    {
+      "conflict_id": "C109",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["marot"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The big one, booked as you asked: we hold the vulcan-h100 reservation - 128 accelerators for the week of 2026-07-06 - for the IMP-MoE-L-scale training run."
+    }
+  ]
+}

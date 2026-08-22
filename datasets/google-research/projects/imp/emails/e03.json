@@ -1,0 +1,18 @@
+{
+  "id": "gr/imp/e03",
+  "thread_id": "gr/imp/t2",
+  "in_reply_to": null,
+  "date": "2026-06-09T10:37:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "IMP status: base repros green, AGD schedule sensitivity is the risk",
+  "body": "Anders, Bruno,\n\nStatus. Both base repros are green: IMP-B lands 80.4 IN1k / 63.5 K400 (released: 80.5 / 63.6 - within noise), and IMP-MoE-B matches on the video suite including the 88.7 UCF101 headline. Audio (ESC50) reproduces as well. Retrieval probes off the shared embedding space look promising - cross-modal recall@10 beats our current two-tower baseline by 9% on the internal video-text set.\n\nThe risk for the MoE-L run: the alternating gradient descent schedule is sensitive at scale. In our B-scale ablations, reordering the modality alternation changed final IN1k by up to 0.8 pts, and we haven't validated the released schedule at L scale. If the first two days of the Vulcan week show instability, we fall back to Csilla's reduced-token-budget variant with the conservative schedule rather than burning the week debugging.\n\nVera has the eval configs (sparse_moe_imp_base.all.eval and friends) staged so results flow the moment training checkpoints land.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

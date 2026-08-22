@@ -1,0 +1,17 @@
+{
+  "id": "gr/imp/e02",
+  "thread_id": "gr/imp/t1",
+  "in_reply_to": "gr/imp/e01",
+  "date": "2026-04-22T14:48:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: IMP kickoff - staffing + Vulcan booking for the MoE-L run",
+  "body": "Anders,\n\nResourcing:\n\n- Staffing: Csilla 60%, Tereza 40%, Vera 50%, Jorge 60% through July 20.\n- Base repros (IMP-B, IMP-MoE-B): 64 titan-a100 best-effort covers it. Jorge has the released config stack (imp_base.all.train / sparse_moe_imp_base.all.train) running already.\n- The big one, booked as you asked: we hold the vulcan-h100 reservation - 128 accelerators for the week of 2026-07-06 - for the IMP-MoE-L-scale training run. Went through the Infra Lead reservation process and it's confirmed on my side; that placement gives us buffer after the run for the July 20 memo, and it's comfortably clear of the Vulcan maintenance window in late June.\n\nRisk to note: MoE-L at 350M params is at the edge of what one week at 128 H100s buys us, so Csilla is preparing a reduced-token-budget variant as the fallback if throughput disappoints mid-week.\n\nBruno",
+  "labels": ["resources"]
+}
