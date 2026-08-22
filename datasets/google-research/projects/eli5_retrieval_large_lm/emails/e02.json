@@ -1,0 +1,15 @@
+{
+  "id": "gr/eli5_retrieval_large_lm/e02",
+  "thread_id": "gr/eli5_retrieval_large_lm/t1",
+  "in_reply_to": "gr/eli5_retrieval_large_lm/e01",
+  "date": "2026-05-06T14:02:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: do large LMs actually use retrieval? (ELI5 track)",
+  "body": "Anders,\n\nStaffing and compute for the window.\n\nPeople: Quentin full-time on modeling, Wei at 30% advising on eval design, Saoirse 50% on the training harness, Emeka 60% on data plumbing for the KILT/ELI5 splits. The critical piece is the retrieval side: Rosa Mensah is committed to us at 70% for June 2026 to build the retrieval indexing and serving path - I've blocked that in the allocation sheet. Without her the REALM index rebuild slips past the July 3 ablation milestone.\n\nCompute: GPT2-XL fine-tuning fits on 32 Titan A100s best-effort for May; I'll request a Vulcan slot for the July ablation sweeps once the harness is stable. Retrieval index builds are CPU-heavy, Corpus team says their batch tier can absorb it.\n\nFlag: Vulcan has maintenance June 22-24, so I'm keeping all June runs on Titan to be safe.\n\nJelena",
+  "labels": ["resources"]
+}

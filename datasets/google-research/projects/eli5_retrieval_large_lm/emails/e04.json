@@ -1,0 +1,18 @@
+{
+  "id": "gr/eli5_retrieval_large_lm/e04",
+  "thread_id": "gr/eli5_retrieval_large_lm/t2",
+  "in_reply_to": "gr/eli5_retrieval_large_lm/e03",
+  "date": "2026-07-28T10:19:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status: retrieval ablations - the delta is real but small",
+  "body": "Quentin, Jelena,\n\nDecision after portfolio review: we reframe the Aug 14 readout around factual consistency, not answer quality. The 31% reduction in unsupported claims is the number leadership cares about - it maps directly to the grounded-answers product thesis and the \"massive financial implications\" framing survives contact with an exec audience in a way +1.4 ROUGE-L does not.\n\nConcretely: Quentin and Wei build out the claim-verification eval as the primary metric; the ROUGE table moves to an appendix. Saoirse, please make sure the harness can re-run the 200-example audit at 1,000 examples so the headline isn't resting on a small n.\n\nWe are NOT committing to a productization go at the readout - the ask will be a Q4 incubation slot with a proper retriever refresh. Jelena, sanity-check that team shape holds through Aug 17.\n\nAnders",
+  "labels": ["decision"]
+}

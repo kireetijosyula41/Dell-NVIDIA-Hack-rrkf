@@ -1,0 +1,19 @@
+{
+  "id": "gr/eli5_retrieval_large_lm/e01",
+  "thread_id": "gr/eli5_retrieval_large_lm/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:41:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: do large LMs actually use retrieval? (ELI5 track)",
+  "body": "Team,\n\nKicking off the retrieval-LM effort. The research question from our open-source release stands: smaller language models demonstrably don't use retrieved text on ELI5, so does capacity change that? We pair GPT2-XL (1.5B params) with a REALM-style retriever on the KILT version of the ELI5 task and measure whether the model exploits retrieved contextual information.\n\nWhy it matters as product: factual consistency in generation is the blocker for putting generative text models in front of customers. If retrieval measurably grounds a larger model, that's the foundation for our grounded-answers offering.\n\nMilestones (Apr 27 - Aug 17 window): retriever + LM harness reproduced by May 29, retrieval-ablation results by July 3, factual-consistency readout and go/no-go for productization by Aug 14.\n\nJelena owns staffing and compute. Quentin leads the modeling track.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

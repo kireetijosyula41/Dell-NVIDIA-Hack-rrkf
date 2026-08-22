@@ -1,0 +1,12 @@
+{
+  "project": "gr/eli5_retrieval_large_lm",
+  "conflicts": [
+    {
+      "conflict_id": "C030",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["es_enas"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Rosa Mensah is committed to us at 70% for June 2026 to build the retrieval indexing and serving path - I've blocked that in the allocation sheet."
+    }
+  ]
+}

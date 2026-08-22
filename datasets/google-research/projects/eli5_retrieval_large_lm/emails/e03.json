@@ -1,0 +1,18 @@
+{
+  "id": "gr/eli5_retrieval_large_lm/e03",
+  "thread_id": "gr/eli5_retrieval_large_lm/t2",
+  "in_reply_to": null,
+  "date": "2026-06-30T16:28:00Z",
+  "from": {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Status: retrieval ablations - the delta is real but small",
+  "body": "Hi Anders, Jelena,\n\nAblation results ahead of the July 3 milestone. With Rosa's rebuilt index serving retrievals, GPT2-XL with retrieved passages beats the no-retrieval baseline by +1.4 ROUGE-L on the KILT ELI5 validation split. Shuffled-retrieval control sits at +0.2, so the gain is from content, not just extra tokens - the model is using the retrievals, which is exactly the capacity question we set out to answer. Smaller-model replication (GPT2-medium) shows +0.3, consistent with the published finding that small LMs ignore retrieved text.\n\nThe honest caveat: +1.4 ROUGE-L is statistically solid but not a product headline. Where it gets interesting is factual consistency - in a 200-example manual audit, retrieval-conditioned generations had 31% fewer unsupported claims.\n\nRisk: ELI5 answer quality is noisy to evaluate; ROUGE undercounts good paraphrases. Wei and I want to add a claim-verification eval for the August readout.\n\nQuentin",
+  "labels": ["status", "risk"]
+}
