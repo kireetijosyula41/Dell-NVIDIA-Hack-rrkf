@@ -1,0 +1,51 @@
+{
+  "id": "gr/compositional_transformers/e03",
+  "thread_id": "gr/compositional_transformers/t1",
+  "in_reply_to": "gr/compositional_transformers/e02",
+  "date": "2026-04-20T10:35:00Z",
+  "from": {
+    "name": "Carmen Reyes",
+    "email": "carmen.reyes@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: compositional-generalization recipe card",
+  "body": "Hi both,\n\nSweep status: harness is fully off the notebooks (thanks Fumiko) and the first pass over the grid is done. Headline findings match the paper: relative position encodings plus a copy decoder are the difference-makers — COGS exact-match jumps from the mid-30s to low-80s with the right combination, and the SCAN length splits show the same shape. The synthetic tasks (Addition, AdditionNegatives, Reversing, Duplication) are useful smoke tests: any config that fails Reversing fails everything compositional.\n\nTrade-off surfacing for the recipe card: the best COGS config is not the best CFQ config — weight sharing helps small-data compositional splits but costs capacity on CFQ. The card probably needs two profiles rather than one default.\n\nRisk: repetition variance is high on PCFG; single-run conclusions there are unsafe, which is exactly why Wei's July matrix matters.\n\nCarmen",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

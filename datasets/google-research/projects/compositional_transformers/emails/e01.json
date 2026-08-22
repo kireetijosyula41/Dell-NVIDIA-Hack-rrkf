@@ -1,0 +1,50 @@
+{
+  "id": "gr/compositional_transformers/e01",
+  "thread_id": "gr/compositional_transformers/t1",
+  "in_reply_to": null,
+  "date": "2026-02-19T09:55:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: compositional-generalization recipe card",
+  "body": "Hi Daniela,\n\nKicking off the training-recipe study. Base is our open-source \"Making Transformers Solve Compositional Tasks\" work: a systematic sweep over architectural choices — position encodings, copy decoders, weight sharing — showing that the right combination dramatically improves compositional generalization on SCAN, PCFG, COGS, and CFQ, plus the synthetic tasks (Addition, Reversing, Duplication and friends).\n\nWhy data-platforms owns it: every internal team training seq2seq models picks these knobs by folklore. Deliverable is a recipe card — evidence-backed defaults — published in the platform docs.\n\nMilestones: harness ported off the notebooks by mid-March, main sweep April-May, recipe card by the 6/8 window close, with an extended repetition matrix continuing into July for statistical confidence.\n\nStaffing and compute by early March?\n\nDmitri",
+  "labels": [
+    "kickoff"
+  ]
+}
