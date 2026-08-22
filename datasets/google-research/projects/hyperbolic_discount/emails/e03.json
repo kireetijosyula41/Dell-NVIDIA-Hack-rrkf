@@ -1,0 +1,18 @@
+{
+  "id": "gr/hyperbolic_discount/e03",
+  "thread_id": "gr/hyperbolic_discount/t2",
+  "in_reply_to": null,
+  "date": "2026-05-06T10:52:00Z",
+  "from": {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Hyperbolic Agent status: repro done, sweep half through, one trade-off",
+  "body": "Ulla, Bao,\n\nStatus. Repro is done: hyperbolic_rainbow from the shipped gin config (number_of_gammas=10, hyp_exponent=0.01, gamma_max=0.99, acting policy largest_gamma) matches the released numbers within noise on our 12-game subset, and we see the expected outsized gain on MontezumaRevenge - +14% average return over the Rainbow baseline at 50M frames.\n\nSweep is half through. Early read: dropping to 5 gammas keeps ~90% of the auxiliary-task benefit at ~1.15x baseline cost, which would be the sweet spot for the training stack.\n\nTrade-off to flag: acting with largest_gamma is best on exploration games but slightly hurts on dense-reward ones (-3% median). If we want one default config for the stack we either accept that, or ship per-game acting policies, which complicates the story. Gustavo is quantifying both options for the memo.\n\nOn track for the June 15 recommendation.\n\nHalima",
+  "labels": ["status", "risk"]
+}
