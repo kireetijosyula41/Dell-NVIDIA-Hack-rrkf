@@ -18,8 +18,8 @@ export NEMOCLAW_AUDIT_WEBHOOK_URL=http://<local-nemoclaw-bridge>/audits
 ```
 
 It rebuilds the runtime-safe graph data, starts and seeds MongoDB, starts the
-API, then verifies an automatic NemoClaw audit, graph, and persisted decision.
-It refuses deterministic-only mode. If Truth Engine is hosted rather than run through local Vite, add
+API, then attempts an automatic NemoClaw audit before falling back to a
+deterministic MongoDB-backed audit if the bridge fails. If Truth Engine is hosted rather than run through local Vite, add
 `CORS_ALLOW_ORIGINS=https://<truth-engine-host>` before the command.
 
 The runner creates a shallow sparse checkout at `.cache/google-research-source`

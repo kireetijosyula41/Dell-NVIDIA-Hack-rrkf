@@ -6,10 +6,10 @@ The GB10 runs MongoDB, the CEO Brain API, the real Google Research technical
 graph builder, and the NemoClaw/OpenShell agent path. The laptop runs only the
 Truth Engine UI.
 
-`scripts/run_gb10_demo.sh` refuses to run in deterministic-only mode. A passing
-run proves that the API created a NemoClaw audit, the local bridge accepted it,
-the agent submitted a cited warning, MongoDB returned a bounded evidence graph,
-and a decision persisted.
+`scripts/run_gb10_demo.sh` attempts NemoClaw first. If the bridge is missing,
+the agent fails, or it times out, the script automatically restarts the API in
+deterministic mode and still verifies the MongoDB graph and decision flow. Its
+final output states exactly which mode powered the demo.
 
 ## Before Running
 
@@ -42,13 +42,13 @@ The script performs six checks:
    graph with real dependency/import/reference evidence.
 2. Starts MongoDB with `MONGODB_URI=mongodb://mongodb:27017` inside Compose.
 3. Imports projects, emails, and relationships into `ceo_brain`.
-4. Starts the API and requires health to report `storage: mongodb`,
-   `reasonerMode: nemoclaw`, a model ID, and a configured bridge.
-5. Sends a transcript claim and waits for NemoClaw to return `warning_ready`.
+4. Attempts API health in NemoClaw mode when model and bridge values are set.
+5. Sends a transcript claim and waits for NemoClaw to return `warning_ready`;
+   on any failure it automatically restarts in deterministic fallback mode.
 6. Verifies the focused graph and persists an investigation decision.
 
-The script exits nonzero for any failed prerequisite, MongoDB/API failure,
-missing bridge/model configuration, missing agent callback, or invalid graph.
+The script exits nonzero for a failed prerequisite, MongoDB/API failure, or
+invalid graph. Missing or failed NemoClaw configuration activates the fallback.
 
 ## Start The Laptop UI
 
@@ -69,9 +69,10 @@ overlay, not a text-only evidence status row.
 
 - `storage: json-fallback`: the API cannot reach Compose MongoDB; check
   `MONGODB_URI` is exactly `mongodb://mongodb:27017` for the API container.
-- `nemoClawBridgeConfigured: false`: export the bridge URL before starting API.
-- Agent timeout: inspect the local bridge and NemoClaw sandbox logs; do not
-  switch to deterministic mode for the final demo.
+- `nemoClawBridgeConfigured: false`: the runner will use deterministic fallback;
+  export the bridge URL and rerun when you want the live agent path.
+- Agent timeout: inspect the local bridge and NemoClaw sandbox logs. The graph
+  demo remains available through the automatic deterministic fallback.
 - Browser cannot load graph: confirm the laptop's `.env.local` uses the GB10
   LAN IP and set `CORS_ALLOW_ORIGINS=http://<laptop-host>:5173` before rerunning
   the GB10 script if the UI is not served as `localhost`.
