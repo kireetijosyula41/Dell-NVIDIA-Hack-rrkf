@@ -1,0 +1,18 @@
+{
+  "id": "gr/merf/e03",
+  "thread_id": "gr/merf/t1",
+  "in_reply_to": "gr/merf/e02",
+  "date": "2026-06-04T10:44:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MERF kickoff — status + mobile trade-off",
+  "body": "Status ahead of the June sweep:\n\n- Reproduction: done on all 9 mipnerf360 scenes; we're within 0.15 PSNR of the paper on average, and the baked models match the volumetric ones per the lossless procedure — the bake-vs-train delta is under 0.05 PSNR, as advertised.\n- Viewer: Milan has real-time rendering (60+ fps at 1080p) on both desktop test rigs.\n\nTrade-off to settle: mobile. On mid-range phones the memory budget forces us to shrink the sparse feature grid, costing ~0.8 PSNR and dropping to ~24 fps. Options: (a) desktop-only for the LRB demo, (b) ship the degraded mobile profile clearly labeled \"preview\". Partner-facing folks will ask for mobile; I lean (b) with honest labeling.\n\nNext week's vulcan sweep retrains + bakes everything at final settings; job specs are staged so we start the moment our week opens.\n\nYara",
+  "labels": ["status", "risk"]
+}

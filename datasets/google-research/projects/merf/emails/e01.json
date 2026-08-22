@@ -1,0 +1,18 @@
+{
+  "id": "gr/merf/e01",
+  "thread_id": "gr/merf/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:35:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MERF kickoff — real-time radiance fields in the browser",
+  "body": "Hi team,\n\nKicking off MERF productization. The core asset: our open-source MERF work renders large-scale unbounded scenes in real time in a browser by cutting radiance-field memory with a sparse feature grid plus high-resolution 2D feature planes, and a contraction function that keeps ray-box intersection efficient for unbounded scenes. The product target is an embeddable scene viewer for partner demos.\n\nMilestones (window through 07-20):\n- 05-15: JAX training pipeline reproduced on the mipnerf360 dataset, quality parity with the paper.\n- 06-19: baking pipeline hardened — the lossless procedure that converts the trained parameterization into the real-time model — with automated quality checks.\n- 07-10: embeddable viewer demo for the Launch Review Board.\n\nJelena owns staffing/compute; Yara is TL. Compute ask early, please — training these scenes is not cheap.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}
