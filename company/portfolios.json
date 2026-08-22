@@ -1,0 +1,5692 @@
+{
+  "portfolios": [
+    {
+      "id": "language",
+      "name": "Language & Dialogue",
+      "pm": "Priya Delgado"
+    },
+    {
+      "id": "vision",
+      "name": "Vision & Perception",
+      "pm": "Lucia Yilmaz"
+    },
+    {
+      "id": "speech-audio",
+      "name": "Speech & Audio",
+      "pm": "Goran Sokolov"
+    },
+    {
+      "id": "agents-rl",
+      "name": "Agents & Robotics",
+      "pm": "Ulla Gruber"
+    },
+    {
+      "id": "health-science",
+      "name": "Health & Science",
+      "pm": "Viktor Hussain"
+    },
+    {
+      "id": "graphs-retrieval",
+      "name": "Graphs, Retrieval & RecSys",
+      "pm": "Anders Marino"
+    },
+    {
+      "id": "efficiency",
+      "name": "Model Efficiency",
+      "pm": "Zofia Lombardi"
+    },
+    {
+      "id": "trust-theory",
+      "name": "Trust, Theory & Optimization",
+      "pm": "Ximena Jansen"
+    },
+    {
+      "id": "data-platforms",
+      "name": "Datasets & Platforms",
+      "pm": "Dmitri Tanaka"
+    },
+    {
+      "id": "frontier",
+      "name": "Frontier Bets",
+      "pm": "Noor Andrade"
+    }
+  ],
+  "projects": [
+    {
+      "dir": "CIQA",
+      "title": "Compression Image Quality Assessment Dataset (CIQA)",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Milan Zapata",
+        "Leilani Nakamura",
+        "Saoirse Eriksen",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "COSTAR",
+      "title": "COSTAR: COunterfactual Self-supervised TrAnsformeR",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Linnea Yamada",
+        "Jorge Vidal",
+        "Carmen Reyes",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "CardBench_zero_shot_cardinality_training",
+      "title": "CardBench: A Benchmark for Learned Cardinality Estimation in Relational Databases",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Kaia Wolde",
+        "Emeka Pinto",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "CoDi",
+      "title": "CoDi: Conditional Diffusion Distillation",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Csilla Nassar",
+        "Tereza Aliyev",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+      "title": "Copyright 2022 The Domain-Agnostic Contrastive Representations for Learning from Label Pro",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Efe Lindqvist",
+        "Linnea Yamada",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "EgoSocial",
+      "title": "EgoSocial",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Freya Ruiz",
+        "Quentin Farkas",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "KNF",
+      "title": "Koopman Neural Forecaster",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Giannis Sato",
+        "Fumiko Rossi",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "LLP_Bench",
+      "title": "LLP-Bench: A Large Scale Tabular Benchmark for Learning from Label Proportions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Csilla Nassar",
+        "Freya Ruiz",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "On_Combining_Bags_to_Better_Learn_from_Label_Proportions",
+      "title": "Copyright 2021 The On Combining Bags to Better Learn from Label Proportions Authors. All R",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Quentin Farkas",
+        "Chiara Olsen",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "OpenMSD",
+      "title": "OpenMSD: Open-access Multilingual Scientific Documents dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Rosa Mensah",
+        "Saoirse Eriksen",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "RevThink",
+      "title": "RevThink",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Freya Ruiz",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "STraTA",
+      "title": "STraTA: Self-Training with Task Augmentation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Umar Costa",
+        "Rosa Mensah",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "Uboreshaji_Modeli",
+      "title": "Uboreshaji Modeli \u2013 Multi-Modal Fine-Tuning Framework",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Linnea Yamada",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "action_angle_networks",
+      "title": "Learning Physical Dynamics with Action-Angle Networks",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Nikhil Abebe",
+        "Bilal Novak",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "activation_clustering",
+      "title": "Activation Clustering",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Rafael Duran",
+        "Kaia Wolde",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "active_selective_prediction",
+      "title": "Active Selective Prediction",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Halima Toure",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "adaptive_low_rank",
+      "title": "AdaRank: Disagreement Based Module Rank Prediction for Low-rank Adaptation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Wei Ivanov",
+        "Umar Costa",
+        "Tereza Aliyev",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "after_kernel",
+      "title": "Running an experiment",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Freya Ruiz",
+        "Umar Costa",
+        "Jorge Vidal",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "agile_deliberation",
+      "title": "Agile Deliberation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Yusuf Keita",
+        "Nikhil Abebe",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "agile_modeling",
+      "title": "Agile Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Maren Zhou",
+        "Vera Egede",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "al_for_fep",
+      "title": "Documentation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Maren Zhou",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "aloe",
+      "title": "Implementation of ALOE: Learning Discrete Energy-based Models via Auxiliary-variable Local",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Hyun Traore",
+        "Yusuf Keita",
+        "Bilal Novak",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "alx",
+      "title": "ALX: Large Scale Matrix Factorization on TPUs",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Maren Zhou",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom",
+        "Linnea Yamada",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "android_control",
+      "title": "AndroidControl",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Freya Ruiz",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "android_in_the_wild",
+      "title": "Android in the Wild (AitW)",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Fumiko Rossi",
+        "Saoirse Eriksen",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "android_interaction",
+      "title": "AndroidInteraction",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Rosa Mensah",
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "anthea",
+      "title": "Anthea is a translation quality evaluation tool. It presents source text",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Hyun Traore",
+        "Paloma Castillo",
+        "Efe Lindqvist",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "aptamers_mlpd",
+      "title": "Aptamer model training and walking code",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Yara Jokic",
+        "Saoirse Eriksen",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ara_optimization",
+      "title": "> Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi,",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Umar Costa",
+        "Maren Zhou",
+        "Nikhil Abebe",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "arithmetic_sampling",
+      "title": "Arithmetic Sampling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Maren Zhou",
+        "Farah Haddad",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "assemblenet",
+      "title": "AssembleNet and AssembleNet++",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Yusuf Keita",
+        "Paloma Castillo",
+        "Csilla Nassar"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "assessment_plan_modeling",
+      "title": "Assessment and Plan Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Yara Jokic",
+        "Bilal Novak",
+        "Wei Ivanov"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "attribute_semantics",
+      "title": "Implementation of discovering attribute semantics described in [Discovering Personalized S",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Katya Silva",
+        "Yara Jokic",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "attribute_with_prefixlm",
+      "title": "ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Vera Egede",
+        "Csilla Nassar",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "automated_feature_engineering",
+      "title": "Automated Feature Engineering (AFE)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Linnea Yamada",
+        "Rosa Mensah",
+        "Giannis Sato",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "automatic_structured_vi",
+      "title": "Automatic Structured Variational Inference",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Umar Costa",
+        "Tereza Aliyev",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "automl_zero",
+      "title": "AutoML-Zero",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Oyin Iversen",
+        "Paloma Castillo",
+        "Freya Ruiz",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "autoregressive_diffusion",
+      "title": "Autoregressive Diffusion Models",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "aux_tasks",
+      "title": "Aux Tasks",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Nikhil Abebe",
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bam",
+      "title": "Born-Again Multi-task Networks",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Linnea Yamada",
+        "Maren Zhou",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bangbang_qaoa",
+      "title": "Investigating Quantum Approximate Optimization Algorithms under Bang-bang Protocols",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Umar Costa",
+        "Ondrej Bergstrom",
+        "Wei Ivanov"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "batch_science",
+      "title": "Measuring the Effects of Data Parallelism on Neural Network Training",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "behavior_regularized_offline_rl",
+      "title": "Behavior Regularized Actor Critic for Offline Reinforcement Learning.",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Carmen Reyes",
+        "Wanjiru Horvat",
+        "Rosa Mensah",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "behavioral_dispositions",
+      "title": "Evaluating Alignment of Behavioral Dispositions in LLMs",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Csilla Nassar",
+        "Saoirse Eriksen",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bertseq2seq",
+      "title": "BERTSeq2Seq",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Tereza Aliyev",
+        "Gustavo Moreau",
+        "Carmen Reyes",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "better_storylines",
+      "title": "[Toward Better Storylines with Sentence-Level Language Models](https://www.aclweb.org/anth",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Paloma Castillo",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "betum_tool",
+      "title": "B\u00ebtum Tool",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Farah Haddad",
+        "Chiara Olsen",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bigg",
+      "title": "Scalable Deep Generative Modeling for Sparse Graphs",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Jorge Vidal",
+        "Rosa Mensah",
+        "Vera Egede",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bigger_better_faster",
+      "title": "Bigger, Better, Faster: Human Level Atari with Human Level Efficiency",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Wei Ivanov",
+        "Freya Ruiz",
+        "Yara Jokic",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bisimulation_aaai2020",
+      "title": "Scalable methods for computing state similarity in deterministic Markov Decision Processes",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Efe Lindqvist",
+        "Tereza Aliyev",
+        "Carmen Reyes",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bitempered_loss",
+      "title": "Robust Bi-Tempered Logistic Loss Based on Bregman Divergences.",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Yara Jokic",
+        "Gustavo Moreau",
+        "Fumiko Rossi",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bnn_hmc",
+      "title": "What Are Bayesian Neural Network Posteriors Really Like?",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Maren Zhou",
+        "Wanjiru Horvat",
+        "Milan Zapata",
+        "Efe Lindqvist",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bonus_based_exploration",
+      "title": "Bonus based exploration",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Yusuf Keita",
+        "Tereza Aliyev",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "brush_splat",
+      "title": "Overview",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Bilal Novak",
+        "Hyun Traore",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "business_metric_aware_forecasting",
+      "title": "Business Metric-Aware Forecasting: A Case Study in Inventory",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Amara Okafor",
+        "Nikhil Abebe",
+        "Jorge Vidal",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "bustle",
+      "title": "BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided Exploration",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Giannis Sato",
+        "Oyin Iversen",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "c_learning",
+      "title": "C-Learning: Learning to Achieve Goals via Recursive Classification",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Halima Toure",
+        "Gustavo Moreau",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cache_replacement",
+      "title": "Introduction",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Milan Zapata",
+        "Quentin Farkas",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "caltrain",
+      "title": "Mitigating bias in calibration error estimation",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Katya Silva",
+        "Yusuf Keita",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "camp_zipnerf",
+      "title": "CamP Zip-NeRF: A Code Release for CamP and Zip-NeRF",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Milan Zapata",
+        "Yusuf Keita",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cann",
+      "title": "CANN: Constrained Approximate Nearest Neighbors",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Quentin Farkas",
+        "Linnea Yamada",
+        "Chiara Olsen",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "capsule_em",
+      "title": "Open source release of [EMCAPSNet](https://openreview.net/pdf?id=HJWLfGWRb)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Giannis Sato",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cate",
+      "title": "Composable Augmentation Encoding for Video Representation Learning (CATE)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Jorge Vidal",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-06"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "causal_evaluation",
+      "title": "Code to reproduce experiments in \"Understanding challenges to the interpretation of disagg",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Freya Ruiz",
+        "Carmen Reyes",
+        "Amara Okafor",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cell_embedder",
+      "title": "Generating embeddings for cell painting microscopy images.",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Maren Zhou",
+        "Giannis Sato",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cell_mixer",
+      "title": "Cell Mixer",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Rosa Mensah",
+        "Csilla Nassar",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cfq",
+      "title": "Compositional Freebase Questions (CFQ)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Rosa Mensah",
+        "Hyun Traore",
+        "Saoirse Eriksen",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cfq_pt_vs_sa",
+      "title": "Compositional Generalization in Semantic Parsing",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Gustavo Moreau",
+        "Linnea Yamada",
+        "Halima Toure",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "charformer",
+      "title": "Charformer",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Wei Ivanov",
+        "Milan Zapata",
+        "Emeka Pinto",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cisc",
+      "title": "Official implementation for the",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Katya Silva",
+        "Umar Costa",
+        "Nikhil Abebe",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ciw_label_noise",
+      "title": "Constrained Instance and Class reWeighting (CIW)",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Emeka Pinto",
+        "Farah Haddad",
+        "Leilani Nakamura",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ckd",
+      "title": "clone this repo",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Wei Ivanov",
+        "Fumiko Rossi",
+        "Wanjiru Horvat",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "class_balanced_distillation",
+      "title": "Class-Balanced Distillation for Long-Tailed Visual Recognition",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Linnea Yamada",
+        "Wanjiru Horvat",
+        "Tereza Aliyev",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "clay",
+      "title": "CLAY: Learning to Denoise Raw Mobile UI Layouts for Improving Datasets at Scale",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Katya Silva",
+        "Wanjiru Horvat",
+        "Saoirse Eriksen",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "clip_as_rnn",
+      "title": "CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Bilal Novak",
+        "Carmen Reyes",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cluster_gcn",
+      "title": "Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networ",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Efe Lindqvist",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "clustering_normalized_cuts",
+      "title": "Clustering by learning to optimize expected Normalized Cuts (CNC)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Farah Haddad",
+        "Umar Costa",
+        "Quentin Farkas",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cmmd",
+      "title": "Rethinking FID: Towards a Better Evaluation Metric for Image Generation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Katya Silva",
+        "Amara Okafor",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cnn_quantization",
+      "title": "Quantization Techniques for Convolutional Neural Networks",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Jorge Vidal",
+        "Farah Haddad",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cochlear_implant",
+      "title": "Cochlear Implant Hackathon Code",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Efe Lindqvist",
+        "Milan Zapata",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "code_as_policies",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Freya Ruiz",
+        "Maren Zhou",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "codistillation",
+      "title": "Codistillation",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Tereza Aliyev",
+        "Kaia Wolde",
+        "Efe Lindqvist",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cognate_inpaint_neighbors",
+      "title": "Inpainting and Neighborhood Techniques for Prediction of Cognate Reflexes",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Wei Ivanov",
+        "Nikhil Abebe",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cola",
+      "title": "Contrastive learning of general purpose audio representations",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Leilani Nakamura",
+        "Vera Egede",
+        "Wei Ivanov",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cold_posterior_bnn",
+      "title": "How Good is the Bayes Posterior in Deep Neural Networks Really?",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Umar Costa",
+        "Paloma Castillo",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "collaborative_tr_collection",
+      "title": "Beyond Human-Only: Evaluating Human-Machine Collaboration for Collecting High-Quality Tran",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Gustavo Moreau",
+        "Efe Lindqvist",
+        "Amara Okafor",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "coltran",
+      "title": "Colorization Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Hyun Traore",
+        "Maren Zhou",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "combiner",
+      "title": "Implementation of Combiner: Full Attention Transformer with Sparse Computation Cost",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Yusuf Keita",
+        "Nikhil Abebe",
+        "Leilani Nakamura",
+        "Milan Zapata"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "comisr",
+      "title": "COMISR:Compression-Informed Video Super-Resolution",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Leilani Nakamura",
+        "Tereza Aliyev",
+        "Emeka Pinto",
+        "Saoirse Eriksen",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "compositional_classification",
+      "title": "CFQ classification task",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Nikhil Abebe",
+        "Linnea Yamada",
+        "Maren Zhou",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "compositional_rl",
+      "title": "Environment Generation for Zero-Shot Compositional Reinforcement Learning",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Yara Jokic",
+        "Quentin Farkas",
+        "Halima Toure",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "compositional_transformers",
+      "title": "Making Transformers Solve Compositional Tasks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Carmen Reyes",
+        "Fumiko Rossi",
+        "Katya Silva",
+        "Nikhil Abebe",
+        "Wei Ivanov"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "concept_marl",
+      "title": "Concept MARL",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Quentin Farkas",
+        "Nikhil Abebe",
+        "Maren Zhou",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "conceptor",
+      "title": "The Hidden Language of Diffusion Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Giannis Sato",
+        "Farah Haddad",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "constrained_language_typology",
+      "title": "Constrained Prediction of Linguistic Typological Features",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Umar Costa",
+        "Oyin Iversen",
+        "Quentin Farkas",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "context_aware_transliteration",
+      "title": "Context-aware transliteration of romanized South Asian languages",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Yara Jokic",
+        "Wanjiru Horvat",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "contrack",
+      "title": "Contrack",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Csilla Nassar"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "contrastive_rl",
+      "title": "[Contrastive Learning as Goal-Conditioned Reinforcement Learning](https://arxiv.org/pdf/22",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Hyun Traore",
+        "Jorge Vidal",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "coref_mt5",
+      "title": "Coreference Resolution through a seq2seq Transition-Based System",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Yusuf Keita",
+        "Chiara Olsen",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "correct_batch_effects_wdn",
+      "title": "Correcting for Batch Effects Using Wasserstein Distance",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Linnea Yamada",
+        "Amara Okafor",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "covid_epidemiology",
+      "title": "Covid Epidemiology",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Farah Haddad",
+        "Halima Toure",
+        "Milan Zapata",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "covid_vhh_design",
+      "title": "System requirements",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cube_unfoldings",
+      "title": "Generating unfoldings of the hypercube",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Kaia Wolde",
+        "Rafael Duran",
+        "Vera Egede",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cubert",
+      "title": "Update 2021/9/22: Evaluating and Training the Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Gustavo Moreau",
+        "Oyin Iversen",
+        "Katya Silva",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "cvl_public",
+      "title": "Contrastive Value Learning code",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Rosa Mensah",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "d3pm",
+      "title": "Code to accompany the NeurIPS paper",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Carmen Reyes",
+        "Farah Haddad",
+        "Ondrej Bergstrom",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dac",
+      "title": "Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial ",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rosa Mensah",
+        "Carmen Reyes",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "darc",
+      "title": "Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Milan Zapata",
+        "Chiara Olsen",
+        "Paloma Castillo",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dble",
+      "title": "Codebase for \"Distance-Based Learning from Errors for Confidence Calibration.\"",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Carmen Reyes",
+        "Gustavo Moreau",
+        "Maren Zhou",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "deciphering_clinical_abbreviations",
+      "title": "Deciphering Clinical Abbreviations",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Amara Okafor",
+        "Halima Toure",
+        "Milan Zapata",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dedal",
+      "title": "Dedal: Deep embedding and alignment of protein sequences.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Wei Ivanov",
+        "Rosa Mensah",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "demogen",
+      "title": "DEep MOdel GENeralization dataset (DEMOGEN)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Umar Costa",
+        "Hyun Traore",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dense_representations_for_entity_retrieval",
+      "title": "Learning Dense Representations for Entity Retrieval",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Vera Egede",
+        "Wanjiru Horvat",
+        "Rafael Duran",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "deplot",
+      "title": "DePlot: Visual Language Reasoning on Charts and Plots",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Bilal Novak",
+        "Maren Zhou",
+        "Vera Egede",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "depth_and_motion_learning",
+      "title": "Unsupervised Monocular Depth and Motion Learning",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Katya Silva",
+        "Giannis Sato",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-17"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "depth_from_video_in_the_wild",
+      "title": "Depth from Video in the Wild: Unsupervised Monocular Depth Learning from Unknown Cameras",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Katya Silva",
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dichotomy_of_control",
+      "title": "Dichotomy of Control: Separating What You Can Control from What You Cannot",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Jorge Vidal",
+        "Carmen Reyes",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "dictionary_learning",
+      "title": "A Simple Dictionary Learning Implementation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Wanjiru Horvat",
+        "Efe Lindqvist",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "didi_dataset",
+      "title": "The Didi dataset: Digital Ink Diagram data",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Amara Okafor",
+        "Farah Haddad",
+        "Katya Silva",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "differentiable_data_selection",
+      "title": "Differential Data Selection",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "differentially_private_gnns",
+      "title": "Node-Level Differentially Private Graph Neural Networks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Maren Zhou",
+        "Emeka Pinto",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "diffusion_distillation",
+      "title": "Progressive Distillation for Fast Sampling of Diffusion Models",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Oyin Iversen",
+        "Rosa Mensah",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dimensions_of_motion",
+      "title": "Dimensions of Motion: Monocular Prediction through Flow Subspaces",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Yara Jokic",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dipper",
+      "title": "DIPPER: A Controllable Discourse Paraphraser",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Wei Ivanov",
+        "Katya Silva",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dissecting_factual_predictions",
+      "title": "Dissecting Recall of Factual Associations in Auto-Regressive Language Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Fumiko Rossi",
+        "Maren Zhou",
+        "Yusuf Keita",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "distinguishing_romanized_hindi_urdu",
+      "title": "Supporting Materials for \"Distinguishing Romanized Hindi from Romanized Urdu\"",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Nikhil Abebe",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "distracting_control",
+      "title": "The Distracting Control Suite",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Amara Okafor",
+        "Hyun Traore",
+        "Tereza Aliyev",
+        "Farah Haddad",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "distribution_embedding_networks",
+      "title": "Example code for running Distribution Embedding Networks (DEN) algorithm.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Farah Haddad",
+        "Vera Egede",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dnn_predict_accuracy",
+      "title": "dnn-predict-accuracy",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Yara Jokic",
+        "Katya Silva",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "docent",
+      "title": "*Reviews2Movielens* Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Freya Ruiz",
+        "Leilani Nakamura",
+        "Yusuf Keita",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dot_vs_learned_similarity",
+      "title": "Neural Collaborative Filtering vs. Matrix Factorization Revisited",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Freya Ruiz",
+        "Carmen Reyes",
+        "Milan Zapata",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dp_alternating_minimization",
+      "title": "Differentially Private Alternating Minimization",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Wei Ivanov",
+        "Csilla Nassar",
+        "Rosa Mensah",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dp_instructions",
+      "title": "Privacy-preserving Instructions for Aligning LLMs",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Amara Okafor",
+        "Linnea Yamada",
+        "Yara Jokic",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dp_sgd_clipping",
+      "title": "Python implementation of fast and memory-efficient DP-SGD clipping",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Chiara Olsen",
+        "Leilani Nakamura",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dp_transfer",
+      "title": "Large Scale Transfer Learning for Differential Privacy",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Leilani Nakamura",
+        "Milan Zapata",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dpok",
+      "title": "Env Installation",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Tereza Aliyev",
+        "Rosa Mensah",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dpsgd_batch_sampler_accounting",
+      "title": "Privacy Accounting for DP-SGD with Batch Samplers",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Amara Okafor",
+        "Leilani Nakamura",
+        "Farah Haddad",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dql_grasping",
+      "title": "Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparison of O",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Efe Lindqvist",
+        "Wanjiru Horvat",
+        "Nikhil Abebe",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dreamfields",
+      "title": "Zero-Shot Text-Guided Object Generation with Dream Fields",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Chiara Olsen",
+        "Tereza Aliyev",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dreg_estimators",
+      "title": "Doubly Reparameterized Gradient (DReG) Estimators",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Csilla Nassar",
+        "Efe Lindqvist",
+        "Katya Silva",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "drjax",
+      "title": "DrJAX - Differentiable MapReduce Primitives in JAX",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Paloma Castillo",
+        "Tereza Aliyev",
+        "Yusuf Keita",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "dselect_k_moe",
+      "title": "DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-T",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Wei Ivanov",
+        "Bilal Novak",
+        "Maren Zhou",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "dual_dice",
+      "title": "DualDICE",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Halima Toure",
+        "Farah Haddad",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dual_pixels",
+      "title": "Learning Single Camera Depth Estimation using Dual-Pixels",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Saoirse Eriksen",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "dvrl",
+      "title": "Codebase for \"Data Valuation using Reinforcement Learning\"",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Wei Ivanov",
+        "Rosa Mensah",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ebp",
+      "title": "EBP: Energy-Based Processes for Exchangeable Data",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Oyin Iversen",
+        "Katya Silva",
+        "Milan Zapata",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "eim",
+      "title": "Energy-Inspired Models (EIMs)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Fumiko Rossi",
+        "Tereza Aliyev",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "eli5_retrieval_large_lm",
+      "title": "GPT2 and Retrieval",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Quentin Farkas",
+        "Wei Ivanov",
+        "Saoirse Eriksen",
+        "Emeka Pinto",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-17"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "enas_lm",
+      "title": "Language Model Implementation of [ENAS](https://arxiv.org/abs/1802.03268).",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Paloma Castillo",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "encyclopedic_vqa",
+      "title": "Encyclopedic VQA",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Vera Egede",
+        "Jorge Vidal",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "epi_forecasts",
+      "title": "Google Research EpiHub",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Jorge Vidal",
+        "Giannis Sato",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "eq_mag_prediction",
+      "title": "MAGNET: MAGnitude Neural EsTimation model",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Tereza Aliyev",
+        "Ondrej Bergstrom",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "es_enas",
+      "title": "ES-ENAS: Evolutionary Strategies (ES) optimization combined with Efficient Neural Architec",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "es_maml",
+      "title": "ES-MAML Variant of Blackbox Optimization.",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Umar Costa",
+        "Halima Toure",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "etcmodel",
+      "title": "Extended Transformer Construction (ETC)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Jorge Vidal",
+        "Umar Costa",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "euphonia_spice",
+      "title": "SpICE: Speech Intelligibility Classifiers from Euphonia",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Milan Zapata",
+        "Linnea Yamada",
+        "Paloma Castillo",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "evanet",
+      "title": "Evolving Space-Time Neural Architectures for Videos",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Giannis Sato",
+        "Yusuf Keita",
+        "Halima Toure",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "experience_replay",
+      "title": "Revisiting Fundamentals of Experience Replay",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Milan Zapata",
+        "Saoirse Eriksen",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "explainable_routing",
+      "title": "An Algorithm for Explaining Route Selection.\" The experiment generates",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Milan Zapata",
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "explaining_risk_increase",
+      "title": "Code to explain increases in risk predictions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Bilal Novak",
+        "Vera Egede",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "extreme_memorization",
+      "title": "Supplementary code with ICLR 2021 paper \"Extreme Memorization via Scale of Initialization\"",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Amara Okafor",
+        "Rafael Duran",
+        "Bilal Novak",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "f_net",
+      "title": "FNet: Mixing Tokens with Fourier Transforms",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Hyun Traore",
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "factoring_sqif",
+      "title": "Installation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Rosa Mensah",
+        "Farah Haddad",
+        "Giannis Sato",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "factorize_a_city",
+      "title": "Learning to Factorize and Relight a City",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Bilal Novak",
+        "Wanjiru Horvat",
+        "Chiara Olsen",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "factors_of_influence",
+      "title": "Introduction",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Csilla Nassar",
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fair_submodular_matroid",
+      "title": "Fair matroid submodular maximization",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Freya Ruiz",
+        "Umar Costa",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fast_gradient_clipping",
+      "title": "Fast Gradient Clipping",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Leilani Nakamura",
+        "Bilal Novak",
+        "Csilla Nassar",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fastconvnets",
+      "title": "Fast Sparse ConvNets",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Vera Egede",
+        "Freya Ruiz",
+        "Paloma Castillo",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "federated_vision_datasets",
+      "title": "Federated Vision Datasets",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Bilal Novak",
+        "Emeka Pinto",
+        "Gustavo Moreau",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "felix",
+      "title": "Felix is flexible text-editing approach for generation, designed to derive",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Tereza Aliyev",
+        "Fumiko Rossi",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "finance_harness",
+      "title": "FinanceHarness: Automating Financial Deep Research",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Halima Toure",
+        "Wei Ivanov",
+        "Leilani Nakamura",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fisher_brc",
+      "title": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Gustavo Moreau",
+        "Freya Ruiz",
+        "Bilal Novak",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "flare_removal",
+      "title": "How to Train Neural Networks for Flare Removal",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Tereza Aliyev",
+        "Rafael Duran",
+        "Farah Haddad",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "floatseg",
+      "title": "FLOAT: Factorized Learning of Object Attributes for Improved Multi-object Multi-part Scene",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Csilla Nassar",
+        "Gustavo Moreau",
+        "Tereza Aliyev",
+        "Wei Ivanov",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fm4tlp",
+      "title": "transferring an inductive temporal link prediction model from one graph to",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Rosa Mensah",
+        "Ondrej Bergstrom",
+        "Gustavo Moreau",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fractals_language",
+      "title": "Fractal Patterns in Language",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Rafael Duran",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "frechet_audio_distance",
+      "title": "Frechet Audio Distance",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Hyun Traore",
+        "Gustavo Moreau",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "frechet_video_distance",
+      "title": "Fr\u00e9chet Video Distance",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Quentin Farkas",
+        "Katya Silva",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "frequency_analysis",
+      "title": "Generate Fourier heat maps of image classification models",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Milan Zapata",
+        "Katya Silva",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "frmt",
+      "title": "FRMT: Few-shot Region-aware Machine Translation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Milan Zapata",
+        "Vera Egede",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fsq",
+      "title": "Finite Scalar Quantization: VQ-VAE Made Simple",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Leilani Nakamura",
+        "Carmen Reyes",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fully_dynamic_facility_location",
+      "title": "Efficient and Stable Fully Dynamic Facility Location",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Carmen Reyes",
+        "Emeka Pinto",
+        "Tereza Aliyev",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fully_dynamic_submodular_maximization",
+      "title": "Dynamic submodular maximization",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Giannis Sato",
+        "Csilla Nassar",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fvlm",
+      "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Umar Costa",
+        "Farah Haddad",
+        "Katya Silva",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "fwl",
+      "title": "Fast Weight Layers",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Quentin Farkas",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gaternet",
+      "title": "You Look Twice: GaterNet for Dynamic Filter Selection in CNNs",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Rafael Duran",
+        "Vera Egede",
+        "Rosa Mensah",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gbrt",
+      "title": "Implementation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Chiara Olsen",
+        "Fumiko Rossi",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ged_tts",
+      "title": "A Spectral Energy Distance for Parallel Speech Synthesis",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Gustavo Moreau",
+        "Jorge Vidal",
+        "Kaia Wolde",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gen_patch_neural_rendering",
+      "title": "Generalizable Patch-Based Neural Rendering",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Milan Zapata",
+        "Carmen Reyes",
+        "Csilla Nassar"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "general-pattern-machines",
+      "title": "Large Language Models as General Pattern Machines",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Emeka Pinto",
+        "Maren Zhou",
+        "Tereza Aliyev",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "generalized_rates",
+      "title": "Optimizing Generalized Rate Metrics with Three Players",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Gustavo Moreau",
+        "Fumiko Rossi",
+        "Halima Toure",
+        "Oyin Iversen",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "generative_trees",
+      "title": "Generative Trees: Adversarial and Copycat",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Katya Silva",
+        "Jorge Vidal",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "genomics_ood",
+      "title": "Out-of-Distribution Detection for Genomics Sequences",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Nikhil Abebe",
+        "Yara Jokic",
+        "Halima Toure"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gfsa",
+      "title": "Learning Graph Structure With A Finite-State Automaton Layer",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Fumiko Rossi",
+        "Halima Toure",
+        "Hyun Traore",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ghum",
+      "title": "GHUM & GHUML: Generative 3D Human Shape and Articulated Pose Models",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Quentin Farkas",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gift",
+      "title": "Gradual Domain Adaptation in the Wild: When Intermediate Distributions are Absent",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Amara Okafor",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "global_metnet",
+      "title": "Global MetNet: Precipitation Nowcasting Model",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Milan Zapata",
+        "Tereza Aliyev",
+        "Wei Ivanov",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "goemotions",
+      "title": "GoEmotions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Umar Costa",
+        "Quentin Farkas",
+        "Kaia Wolde",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gon",
+      "title": "Example code for running Global Optimization Networks (GON) algorithm.",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Chiara Olsen",
+        "Umar Costa",
+        "Yara Jokic",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "gradient_based_tuning",
+      "title": "Simple and Effective Gradient-Based Tuning of Sequence-to-Sequence Models",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Kaia Wolde",
+        "Halima Toure",
+        "Rosa Mensah",
+        "Csilla Nassar"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "graph_compression",
+      "title": "Matrix Compression Library",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Yusuf Keita",
+        "Emeka Pinto",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "graph_sampler",
+      "title": "Graph/Molecule sampler",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Yara Jokic",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "graph_temporal_ai",
+      "title": "*** This readme was adapted from Best-README-Template.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Hyun Traore",
+        "Emeka Pinto",
+        "Paloma Castillo",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "group_agnostic_fairness",
+      "title": "Fairness without Demographics through Adversarially Reweighted Learning",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Kaia Wolde",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gumbel_max_causal_gadgets",
+      "title": "JAX code to accompany the NeurIPS paper [\"Learning Generalized Gumbel-max Causal Mechanism",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Emeka Pinto",
+        "Wei Ivanov",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "gwikimatch",
+      "title": "GWikiMatch: A Benchmark Dataset for Long-Form Document Matching",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "health_equity_toolbox",
+      "title": "Analytic code to support \"A toolbox for surfacing health equity harms and biases in large ",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Giannis Sato",
+        "Farah Haddad",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "hierarchical_foresight",
+      "title": "Hierarchical Visual Foresight (HVF)",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Bilal Novak",
+        "Saoirse Eriksen",
+        "Carmen Reyes",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hipi",
+      "title": "Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Maren Zhou",
+        "Tereza Aliyev",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hitnet",
+      "title": "The scripts will download the models and install prerequisites, however datasets have to b",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Wei Ivanov",
+        "Umar Costa",
+        "Rosa Mensah",
+        "Bilal Novak",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hmc_swindles",
+      "title": "Hamiltonian Monte Carlo Swindles",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Paloma Castillo",
+        "Wei Ivanov",
+        "Leilani Nakamura",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hspace",
+      "title": "HSPACE: Synthetic Parametric Humans Animated in Complex Environments",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Farah Haddad",
+        "Milan Zapata",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hyperbolic_discount",
+      "title": "Hyperbolic Agent",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Leilani Nakamura",
+        "Halima Toure",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "hypertransformer",
+      "title": "HyperTransformer: Single-Shot CNN Model Generation with a Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Vera Egede",
+        "Saoirse Eriksen",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ials",
+      "title": "Reproducing iALS benchmark results",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Bilal Novak",
+        "Linnea Yamada",
+        "Rosa Mensah",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "icetea",
+      "title": "Images as Covariates in Estimation of Treatment Effects Analysis (ICETEA)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Halima Toure",
+        "Tereza Aliyev",
+        "Nikhil Abebe",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ieg",
+      "title": "-   IEG:",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Tereza Aliyev",
+        "Bilal Novak",
+        "Chiara Olsen",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "igt_optimizer",
+      "title": "Reducing the variance in online optimization by transporting past gradients",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Emeka Pinto",
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ime",
+      "title": "IME: Interpretable Mixture of Experts",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Kaia Wolde",
+        "Amara Okafor",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "imghum",
+      "title": "imGHUM: Implicit Generative Models of 3D Human Shape and Articulated Pose",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Yara Jokic",
+        "Efe Lindqvist",
+        "Farah Haddad",
+        "Gustavo Moreau"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "imp",
+      "title": "MAX & IMP",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Csilla Nassar",
+        "Jorge Vidal",
+        "Tereza Aliyev",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "implicit_constrained_optimization",
+      "title": "Implicit Constrained Optimization",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Fumiko Rossi",
+        "Nikhil Abebe"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "implicit_pdf",
+      "title": "Implicit Representation of Probability Distributions on the Rotation Manifold",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Yara Jokic",
+        "Nikhil Abebe",
+        "Katya Silva",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "infinite_nature",
+      "title": "Infinite Nature",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Farah Haddad",
+        "Oyin Iversen",
+        "Kaia Wolde",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "infinite_nature_zero",
+      "title": "InfiniteNature-Zero",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Gustavo Moreau",
+        "Csilla Nassar",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "infinite_uncertainty",
+      "title": "Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-W",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Bilal Novak",
+        "Paloma Castillo",
+        "Halima Toure",
+        "Wanjiru Horvat",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "informally_romanized_lang_id",
+      "title": "Improving Informally Romanized Language Identification",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Leilani Nakamura",
+        "Carmen Reyes",
+        "Milan Zapata"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "instruction_following_eval",
+      "title": "IFEval: Instruction Following Eval",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Yusuf Keita",
+        "Gustavo Moreau",
+        "Oyin Iversen",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "intent_recognition",
+      "title": "Intent recognition",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Carmen Reyes",
+        "Nikhil Abebe",
+        "Fumiko Rossi",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "interpretability_benchmark",
+      "title": "Evaluation of Explainability Methods in Deep Neural Networks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Leilani Nakamura",
+        "Gustavo Moreau",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "invariant_explanations",
+      "title": "Project description",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Yusuf Keita",
+        "Vera Egede",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "invariant_slot_attention",
+      "title": "Invariant Slot Attention",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Maren Zhou",
+        "Chiara Olsen",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "investigating_m4",
+      "title": "Investigating Multilingual NMT Rperesentations at Scale",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Quentin Farkas",
+        "Nikhil Abebe",
+        "Csilla Nassar",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "irregular_timeseries_pretraining",
+      "title": "Pretraining for irregular time series classification",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Maren Zhou",
+        "Saoirse Eriksen",
+        "Freya Ruiz",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "isl",
+      "title": "Codebase for \"Invariant Structure Learning for Better Generalization and Causal Explainabi",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Jorge Vidal",
+        "Csilla Nassar",
+        "Linnea Yamada",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "isolating_factors",
+      "title": "Learn your ABCs: Approximate Bijective Correspondence for isolating factors of variation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Giannis Sato",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jax_dft",
+      "title": "Overview",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Maren Zhou",
+        "Leilani Nakamura",
+        "Kaia Wolde",
+        "Linnea Yamada",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jax_mpc",
+      "title": "JAX Particles",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Quentin Farkas",
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "jax_rtm",
+      "title": "JAX-RTM: JAX-Differentiable Radiative Transfer Model",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Quentin Farkas",
+        "Maren Zhou",
+        "Freya Ruiz",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jaxbarf",
+      "title": "Citation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Csilla Nassar",
+        "Vera Egede",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jaxnerf",
+      "title": "[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://www.matthe",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Katya Silva",
+        "Leilani Nakamura",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jaxsel",
+      "title": "JaxSel: a differentiable subgraph extraction layer, in Jax",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Nikhil Abebe",
+        "Efe Lindqvist",
+        "Kaia Wolde"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "jslm",
+      "title": "Adaptive Language Models in JavaScript",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Hyun Traore",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "keypose",
+      "title": "KeyPose: Pose Estimation with Keypoints",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Yara Jokic",
+        "Leilani Nakamura",
+        "Wanjiru Horvat",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "kip",
+      "title": "Dataset Metalearning from Kernel Ridge-Regression",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Kaia Wolde",
+        "Yara Jokic",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "kobe",
+      "title": "Data and code for [Knowledge Based Machine Translation Evaluation](https://research.google",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Emeka Pinto",
+        "Saoirse Eriksen",
+        "Wei Ivanov"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "kwikbucks",
+      "title": "Cheap-Weak and Expensive-Strong signals](https://openreview.net/forum?id=p0JSSa1AuV)\". The",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Rosa Mensah",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "kws_streaming",
+      "title": "Streaming Aware neural network models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rafael Duran",
+        "Linnea Yamada",
+        "Vera Egede",
+        "Giannis Sato"
+      ],
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "label_bias",
+      "title": "Identifying and Correcting Label Bias in Machine Learning",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Rosa Mensah",
+        "Emeka Pinto",
+        "Bilal Novak",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lamp",
+      "title": "Linear Additive Markov Processes",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Fumiko Rossi",
+        "Nikhil Abebe",
+        "Yusuf Keita",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "language_model_uncertainty",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Vera Egede",
+        "Rosa Mensah",
+        "Wanjiru Horvat",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "large_scale_voting",
+      "title": "Efficient Large Scale Inlier Voting for Geometric Vision Problems",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Yara Jokic",
+        "Farah Haddad",
+        "Umar Costa",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lasagna_mt",
+      "title": "Lasagna: Stacking Diverse Architectures to Improve Machine Translation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Linnea Yamada",
+        "Kaia Wolde",
+        "Milan Zapata"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "latent_programmer",
+      "title": "Latent Programmer",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Efe Lindqvist",
+        "Ondrej Bergstrom",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "latent_shift_adaptation",
+      "title": "Latent shift adaptation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Kaia Wolde",
+        "Freya Ruiz",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "layout-blt",
+      "title": "Bidirectional Layout Transformer (BLT)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Emeka Pinto",
+        "Oyin Iversen",
+        "Efe Lindqvist",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "learning_parameter_allocation",
+      "title": "Flexible Multi-task Networks by Learning Parameter Allocation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Jorge Vidal",
+        "Csilla Nassar",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "learning_to_clarify",
+      "title": "Learning to Clarify (ACT)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Maren Zhou",
+        "Linnea Yamada",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ledge",
+      "title": "Controlling Experts with Understandable Commands\" by Shumeet Baluja,",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Tereza Aliyev",
+        "Kaia Wolde",
+        "Chiara Olsen",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "lego",
+      "title": "LEGO:Latent Execution-Guided Reasoning for Multi-Hop Question Answering on Knowledge Graph",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Bilal Novak",
+        "Rafael Duran",
+        "Emeka Pinto",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "light_field_neural_rendering",
+      "title": "Light Field Neural Rendering",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Emeka Pinto",
+        "Ondrej Bergstrom",
+        "Chiara Olsen",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lighthouse",
+      "title": "Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Yusuf Keita",
+        "Wanjiru Horvat",
+        "Linnea Yamada",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lila",
+      "title": "Disclaimer: This is not an officially supported Google product.",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Csilla Nassar",
+        "Emeka Pinto",
+        "Freya Ruiz",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "linear_dynamical_systems",
+      "title": "experiments locally without dependencies on Google packages.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Vera Egede",
+        "Chiara Olsen",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "linear_eval",
+      "title": "Tools for linear evaluation using L-BFGS",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Efe Lindqvist",
+        "Linnea Yamada",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "llm_longdoc_interpretability",
+      "title": "Long Document Interpretability using Large Language Models via Hierarchical Version of Sha",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Efe Lindqvist",
+        "Maren Zhou",
+        "Rafael Duran"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lm_fact_tracing",
+      "title": "Tracing Factual Knowledge in LMs Back To Their Training Data",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Linnea Yamada",
+        "Chiara Olsen",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "lm_memorization",
+      "title": "Quantifying Memorization Across Neural Language Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Nikhil Abebe",
+        "Vera Egede",
+        "Oyin Iversen",
+        "Bilal Novak"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "locoprop",
+      "title": "LocoProp: Enhancing BackProp via Local Loss Optimization",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Giannis Sato",
+        "Emeka Pinto",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "logic_inference_dataset",
+      "title": "LogicInference Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Gustavo Moreau",
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "logit_adjustment",
+      "title": "Long-tail learning via logit adjustment",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Farah Haddad",
+        "Linnea Yamada",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "loss_functions_transfer",
+      "title": "Why Do Better Loss Functions Lead to Less Transferable Features?",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Rosa Mensah",
+        "Yusuf Keita",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "m_layer",
+      "title": "[Thomas Fischbacher, Iulia M. Comsa, Krzysztof Potempa, Moritz Firsching,",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Farah Haddad",
+        "Oyin Iversen",
+        "Umar Costa",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "m_theory",
+      "title": "M-Theory Research",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Giannis Sato",
+        "Maren Zhou",
+        "Yara Jokic",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "madlad_400",
+      "title": "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Carmen Reyes",
+        "Milan Zapata",
+        "Paloma Castillo",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "marot",
+      "title": "[Multidimensional Quality Metrics (MQM)](http://www.qt21.eu/mqm-definition/definition-2015",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Freya Ruiz",
+        "Yara Jokic",
+        "Ondrej Bergstrom"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mathwriting",
+      "title": "The MathWriting Dataset: Online Handwritten Mathematical Expressions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Yara Jokic",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mave",
+      "title": "Multi-source Attribute Value Extraction (MAVE)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Farah Haddad",
+        "Jorge Vidal"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mbpp",
+      "title": "Mostly Basic Python Problems Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Kaia Wolde",
+        "Saoirse Eriksen",
+        "Fumiko Rossi"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mechanic",
+      "title": "Mechanic - Black Box Learning Rate Tuner Implementation",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Quentin Farkas",
+        "Rafael Duran",
+        "Efe Lindqvist",
+        "Wanjiru Horvat",
+        "Paloma Castillo"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "memento",
+      "title": "On Catastrophic Interference in Atari 2600 Games",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Carmen Reyes",
+        "Efe Lindqvist",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "menger_rl",
+      "title": "Menger-RL",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Leilani Nakamura",
+        "Milan Zapata",
+        "Efe Lindqvist",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mentormix",
+      "title": "Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom",
+        "Oyin Iversen",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "merf",
+      "title": "MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Milan Zapata",
+        "Yara Jokic",
+        "Leilani Nakamura"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mesh_diffusion",
+      "title": "Single Mesh Diffusion Models with Field Latents for Texture Generation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Maren Zhou",
+        "Oyin Iversen",
+        "Linnea Yamada",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "meta_learning_without_memorization",
+      "title": "Meta-Learning without Memorization",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Oyin Iversen",
+        "Freya Ruiz",
+        "Amara Okafor",
+        "Wanjiru Horvat"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "meta_pseudo_labels",
+      "title": "[Meta Pseudo Labels](https://arxiv.org/abs/2003.10580).",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Paloma Castillo",
+        "Umar Costa",
+        "Ondrej Bergstrom",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "metapose",
+      "title": "MetaPose",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Maren Zhou",
+        "Linnea Yamada",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mface",
+      "title": "mFACE: Multilingual Summarization with Factual Consistency Evaluation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Amara Okafor",
+        "Maren Zhou",
+        "Milan Zapata",
+        "Farah Haddad"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "microscope_image_quality",
+      "title": "Focus_check script generates whole-plate montages per channel for inspecting",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Jorge Vidal",
+        "Halima Toure",
+        "Katya Silva"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mir_uai24",
+      "title": "Generalization and Learnability in Multiple Instance Regression",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Bilal Novak",
+        "Gustavo Moreau",
+        "Maren Zhou",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "missing_link",
+      "title": "The missing link: Finding label relations across datasets",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Kaia Wolde",
+        "Efe Lindqvist",
+        "Linnea Yamada"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ml_debiaser",
+      "title": "Near-Optimal Debiasing Algorithms",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Linnea Yamada",
+        "Nikhil Abebe",
+        "Csilla Nassar",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mmmt_if",
+      "title": "MMMT-IF: A Challenging Multimodal Multi-Turn Instruction Following Benchmark",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Tereza Aliyev",
+        "Paloma Castillo",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-22"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "mobilebert",
+      "title": "MobileBERT",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Milan Zapata",
+        "Vera Egede",
+        "Amara Okafor",
+        "Efe Lindqvist"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "model_pruning",
+      "title": "Model pruning: Training tensorflow models to have masked connections",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Hyun Traore",
+        "Wei Ivanov",
+        "Giannis Sato",
+        "Jorge Vidal",
+        "Vera Egede"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "model_swarm",
+      "title": "Model Swarms",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Fumiko Rossi",
+        "Freya Ruiz",
+        "Leilani Nakamura",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mol_dqn",
+      "title": "described in Zhou Z, Kearnes S, Li L, Zare RN, Riley P. Optimization of",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Giannis Sato",
+        "Wei Ivanov",
+        "Oyin Iversen",
+        "Saoirse Eriksen"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "moment_advice",
+      "title": "Experiments in estimating frequency moments with advice. This is an ongoing",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Vera Egede",
+        "Umar Costa",
+        "Freya Ruiz"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mpi_extrapolation",
+      "title": "Pushing the Boundaries of View Extrapolation with Multiplane Images",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Rafael Duran",
+        "Maren Zhou",
+        "Freya Ruiz",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "muNet",
+      "title": "Below are listed the resources related to each publication in the \u00b5Net liner of research.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Yara Jokic",
+        "Hyun Traore",
+        "Milan Zapata"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mucped22",
+      "title": "Multi-bitrate compression perceptual evaluation dataset 2022",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Gustavo Moreau",
+        "Ondrej Bergstrom",
+        "Emeka Pinto"
+      ],
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mucped23",
+      "title": "Multi-bitrate JPEG compression perceptual evaluation dataset 2023",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Yusuf Keita",
+        "Bilal Novak",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "muller",
+      "title": "MULLER: Multilayer Laplacian Resizer for Vision",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Yara Jokic",
+        "Oyin Iversen",
+        "Hyun Traore"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "multi_annotator",
+      "title": "[\"Dealing with disagreements: Looking beyond the majority vote in subjective annotations\".",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Emeka Pinto",
+        "Csilla Nassar",
+        "Maren Zhou",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "multi_game_dt",
+      "title": "Multi-Game Decision Transformers",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Vera Egede",
+        "Wanjiru Horvat",
+        "Yara Jokic"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "multilingual_abbreviation_survey",
+      "title": "Supporting Materials for \"Abbreviation across the world's languages and scripts\"",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Nikhil Abebe",
+        "Paloma Castillo",
+        "Efe Lindqvist",
+        "Umar Costa"
+      ],
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "multimodalchat",
+      "title": "MultimodalChat: suggest rich contents(photos/GIFs/Stickers/...) during conversations",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "contributors": [
+        "Yara Jokic",
+        "Hyun Traore",
+        "Efe Lindqvist",
+        "Carmen Reyes",
+        "Amara Okafor"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "munchausen_rl",
+      "title": "Munchausen Reinforcement Learning",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Rosa Mensah",
+        "Farah Haddad",
+        "Yara Jokic",
+        "Quentin Farkas"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "musiq",
+      "title": "MUSIQ: Multi-scale Image Quality Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Nikhil Abebe",
+        "Katya Silva",
+        "Gustavo Moreau",
+        "Wei Ivanov"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "mutual_information_representation_learning",
+      "title": "On Mutual Information Maximization and Representation Learning",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Nikhil Abebe",
+        "Halima Toure",
+        "Chiara Olsen"
+      ],
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "muzero",
+      "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "contributors": [
+        "Rafael Duran",
+        "Paloma Castillo",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "negative_cache",
+      "title": "Efficient Training of Retrieval Models using Negative Cache",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Freya Ruiz",
+        "Yusuf Keita",
+        "Chiara Olsen",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "neural_additive_models",
+      "title": "Neural Additive Models: Interpretable Machine Learning with Neural Nets",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Jorge Vidal",
+        "Oyin Iversen"
+      ],
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "neural_guided_symbolic_regression",
+      "title": "Neural-Guided Symbolic Regression with Asymptotic Constraints",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "contributors": [
+        "Tereza Aliyev",
+        "Leilani Nakamura",
+        "Yusuf Keita"
+      ],
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "neutra",
+      "title": "NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "contributors": [
+        "Umar Costa",
+        "Vera Egede",
+        "Tereza Aliyev"
+      ],
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "newspalm_mbr_qe",
+      "title": "Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outp",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Linnea Yamada",
+        "Ondrej Bergstrom",
+        "Kaia Wolde",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "ngrammer",
+      "title": "N-Grammer: Augmenting Transformers with latent n-grams",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "contributors": [
+        "Gustavo Moreau",
+        "Rafael Duran",
+        "Rosa Mensah"
+      ],
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 3
+    },
+    {
+      "dir": "nngp_nas",
+      "title": "Towards NNGP-guided Neural Architecture Search",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "contributors": [
+        "Jorge Vidal",
+        "Freya Ruiz",
+        "Maren Zhou"
+      ],
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4
+    },
+    {
+      "dir": "non_decomp",
+      "title": "Training Over-parameterized Models with Non-decomposable Objectives",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "contributors": [
+        "Umar Costa",
+        "Paloma Castillo",
+        "Carmen Reyes"
+      ],
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4
+    }
+  ]
+}

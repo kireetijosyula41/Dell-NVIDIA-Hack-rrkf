@@ -1,0 +1,460 @@
+{
+  "leadership": [
+    {
+      "name": "Mateo Kowalski",
+      "email": "mateo.kowalski@meridian.example",
+      "role": "VP Research",
+      "team": "Office of the VP",
+      "seniority": "vp"
+    },
+    {
+      "name": "Hana Petrov",
+      "email": "hana.petrov@meridian.example",
+      "role": "Director, Applied Research",
+      "team": "Office of the VP",
+      "seniority": "director"
+    },
+    {
+      "name": "Eleni Quispe",
+      "email": "eleni.quispe@meridian.example",
+      "role": "Director, Foundational Research",
+      "team": "Office of the VP",
+      "seniority": "director"
+    }
+  ],
+  "pms": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager",
+      "team": "language",
+      "seniority": "senior"
+    },
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager",
+      "team": "vision",
+      "seniority": "senior"
+    },
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager",
+      "team": "speech-audio",
+      "seniority": "senior"
+    },
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager",
+      "team": "agents-rl",
+      "seniority": "senior"
+    },
+    {
+      "name": "Viktor Hussain",
+      "email": "viktor.hussain@meridian.example",
+      "role": "Product Manager",
+      "team": "health-science",
+      "seniority": "senior"
+    },
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager",
+      "team": "graphs-retrieval",
+      "seniority": "senior"
+    },
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager",
+      "team": "efficiency",
+      "seniority": "senior"
+    },
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager",
+      "team": "trust-theory",
+      "seniority": "senior"
+    },
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager",
+      "team": "data-platforms",
+      "seniority": "senior"
+    },
+    {
+      "name": "Noor Andrade",
+      "email": "noor.andrade@meridian.example",
+      "role": "Product Manager",
+      "team": "frontier",
+      "seniority": "senior"
+    }
+  ],
+  "ems": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager",
+      "team": "Engineering",
+      "seniority": "senior"
+    }
+  ],
+  "engineers": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "mid"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "mid"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "mid"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "mid"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "mid"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist",
+      "team": "Engineering",
+      "seniority": "staff"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "senior"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer",
+      "team": "Engineering",
+      "seniority": "staff"
+    }
+  ],
+  "functions": [
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead",
+      "team": "Compute Infrastructure",
+      "seniority": "staff"
+    },
+    {
+      "name": "Jun Varga",
+      "email": "jun.varga@meridian.example",
+      "role": "Data Platform Lead",
+      "team": "Corpus Platform",
+      "seniority": "staff"
+    },
+    {
+      "name": "Tomas Fofana",
+      "email": "tomas.fofana@meridian.example",
+      "role": "Evaluation Lead",
+      "team": "Evalline",
+      "seniority": "staff"
+    },
+    {
+      "name": "Zeke Karlsen",
+      "email": "zeke.karlsen@meridian.example",
+      "role": "Serving Lead",
+      "team": "Shipyard",
+      "seniority": "staff"
+    },
+    {
+      "name": "Kofi Weber",
+      "email": "kofi.weber@meridian.example",
+      "role": "Privacy Counsel",
+      "team": "Legal",
+      "seniority": "senior"
+    },
+    {
+      "name": "Idris Osei",
+      "email": "idris.osei@meridian.example",
+      "role": "Finance Partner",
+      "team": "Finance",
+      "seniority": "senior"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review",
+      "team": "PMO",
+      "seniority": "senior"
+    }
+  ]
+}
