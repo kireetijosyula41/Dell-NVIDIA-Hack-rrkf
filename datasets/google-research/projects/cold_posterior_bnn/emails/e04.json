@@ -1,0 +1,40 @@
+{
+  "id": "gr/cold_posterior_bnn/e04",
+  "thread_id": "gr/cold_posterior_bnn/t2",
+  "in_reply_to": null,
+  "date": "2026-07-01T09:50:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Decisions ahead of the July sweep",
+  "body": "Team,\n\nAhead of next week's sweep, decisions from Monday's review:\n\n1. Sweep plan is locked for our cirrus-tpu week of 7/6 — Umar, the 128-accelerator layout doc goes to Paloma by Thursday. Given the slower mixing Umar flagged, we cut the LSTM temperature grid from nine points to five and give the reclaimed budget to longer chains on the internal image model.\n2. The memo will recommend per-use-case temperatures: cold (around 1e-3) for accuracy-critical serving, milder for calibration-critical paths, with the diversity trade-off quantified.\n3. Paloma's harness time is protected through 7/17 — I've told the other teams maintenance waits.\n\nMemo review with Eleni stays 7/17. Good momentum, thanks all.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

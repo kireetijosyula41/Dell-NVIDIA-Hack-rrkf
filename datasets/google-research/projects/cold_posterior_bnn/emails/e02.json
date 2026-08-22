@@ -1,0 +1,40 @@
+{
+  "id": "gr/cold_posterior_bnn/e02",
+  "thread_id": "gr/cold_posterior_bnn/t1",
+  "in_reply_to": "gr/cold_posterior_bnn/e01",
+  "date": "2026-04-14T14:05:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cold posteriors & calibrated serving",
+  "body": "Hi Zofia,\n\nStaffing: Umar Costa leads at 50%, Paloma Castillo 40% on the SG-MCMC harness, Nikhil Abebe 25% on eval plumbing.\n\nCompute: the chains are the cost, as you guessed — long sampling runs with many parallel chains to hit the ESS targets. Plan is titan-a100 best-effort through June for development, then the big final sweeps on Cirrus: we hold the cirrus-tpu reservation for the week of 2026-07-06, 128 accelerators, which covers the full temperature grid across both ResNet and LSTM experiments in one shot. That lands two weeks before your 7/17 memo date, with slack for reruns.\n\nOne flag: Paloma is also carrying harness maintenance for two other teams, so if her 40% erodes, the harness milestone slips first.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

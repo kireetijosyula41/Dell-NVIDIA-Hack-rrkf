@@ -1,0 +1,17 @@
+{
+  "project": "gr/cold_posterior_bnn",
+  "conflicts": [
+    {
+      "conflict_id": "C130",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "agile_modeling"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "Plan is titan-a100 best-effort through June for development, then the big final sweeps on Cirrus: we hold the cirrus-tpu reservation for the week of 2026-07-06, 128 accelerators, which covers the full temperature grid across both ResNet and LSTM experiments in one shot."
+    }
+  ]
+}
