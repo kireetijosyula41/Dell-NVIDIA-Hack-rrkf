@@ -1,0 +1,17 @@
+{
+  "id": "gr/action_angle_networks/e03",
+  "thread_id": "gr/action_angle_networks/t1",
+  "in_reply_to": "gr/action_angle_networks/e02",
+  "date": "2026-05-19T11:41:00Z",
+  "from": {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Action-Angle Networks kickoff - physics surrogates that respect structure",
+  "body": "Hi Deshawn, Anders,\n\nStatus ahead of the June 1 review. Repro closed March 25. The May benchmark is now mostly in: on the integrable systems, Action-Angle Networks hold energy conservation error under 0.5% out to 1000-step rollouts where our MLP baseline drifts past 12% by step 400 - Bilal's conservation-error tooling makes this a one-command comparison, and the rollout benchmark covers three horizon regimes.\n\nThe honest risk for the go/no-go: the advantage is largest exactly where the action-angle assumption holds. On the driven, weakly-dissipative variant we built to mimic the customer's system, the gap narrows a lot - AAN still wins, but by 1.8x rather than 20x on long-horizon error. So the pilot pitch should be scoped to near-integrable regimes, with the dissipative case labeled experimental.\n\nProposal for Deshawn's pre-agreed threshold: pilot proceeds if conservation error < 2% at 1000 steps on the customer-shaped system. We're currently at 1.4%.\n\nNikhil",
+  "labels": ["status", "risk"]
+}

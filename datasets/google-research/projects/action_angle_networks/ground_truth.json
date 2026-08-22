@@ -1,0 +1,12 @@
+{
+  "project": "gr/action_angle_networks",
+  "conflicts": [
+    {
+      "conflict_id": "C066",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["invariant_explanations"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Bilal Novak is committed at 60% to this project for May 2026 - he owns the long-horizon rollout benchmark and the conservation-error tooling, both of which land that month."
+    }
+  ]
+}
