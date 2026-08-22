@@ -1,0 +1,18 @@
+{
+  "id": "gr/euphonia_spice/e01",
+  "thread_id": "gr/euphonia_spice/t1",
+  "in_reply_to": null,
+  "date": "2026-03-10T08:49:00Z",
+  "from": {"name": "Goran Sokolov", "email": "goran.sokolov@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "SpICE kickoff: intelligibility assessment as a service",
+  "body": "Team,\n\nKicking off the SpICE productization. Our open-source SpICE models take speech samples and output intelligibility on a 0-4 scale (typical, mild, moderate, severe, profound). The training base is what makes this defensible: 551,176 disordered-speech samples from 468 speakers, and published generalization without further training - 100% accuracy on TORGO, 0.93 correlation on UASpeech, 0.81 AUC on ALS-TDI PMP.\n\nProduct goal: a clinical-partner-facing assessment API with confidence reporting, starting from the released Keras classification model.\n\nMilestones for Mar 9 - Jun 15: serving wrapper plus eval battery reproduced by Apr 17, realistic-speech validation (the unprompted-speech style set) by May 15, retrained pooled-corpus model and launch-review readiness by Jun 12. Privacy review starts now - disordered-speech audio is sensitive data and the SLA is 2-3 weeks.\n\nIvo owns staffing and the compute reservation.\n\nGoran",
+  "labels": ["kickoff", "spec"]
+}

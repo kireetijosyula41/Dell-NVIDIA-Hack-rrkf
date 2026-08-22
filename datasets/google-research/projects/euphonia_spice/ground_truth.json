@@ -1,0 +1,12 @@
+{
+  "project": "gr/euphonia_spice",
+  "conflicts": [
+    {
+      "conflict_id": "C076",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["dpsgd_batch_sampler_accounting"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "e02: 'we hold the cirrus-tpu reservation - 128 accelerators for the week of 2026-06-01 - for the full retraining run on the pooled corpus.' e04: 'our cirrus-tpu week (128 accelerators, week of June 1) starts Monday, and the retraining configs are frozen tonight.'"
+    }
+  ]
+}
