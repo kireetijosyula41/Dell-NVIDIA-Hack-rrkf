@@ -1,0 +1,12 @@
+{
+  "id": "gr/group_agnostic_fairness/e02",
+  "thread_id": "gr/group_agnostic_fairness/t1",
+  "in_reply_to": "gr/group_agnostic_fairness/e01",
+  "date": "2026-04-01T14:27:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}],
+  "subject": "Re: Kickoff: ARL - fairness without demographic labels",
+  "body": "Dmitri,\n\nResourcing.\n\nStaffing: Yara 60%, Kaia 40%, Paloma 50%, Emeka 40%. Compute is trivial for once - the ARL benchmarks are tabular, so we are talking a few GPUs on titan best-effort; the real cost is engineering time in the ingestion path.\n\nData plan: Paloma ports the COMPAS and UCI Adult preprocessing first (their notebooks are straightforward), then LSAC, which has the messiest licensing and format story. All three land in Corpus as versioned platform datasets. Per my notes the Corpus v2 migration freeze is 2026-07-24, so re-ingesting the benchmark datasets in mid-July still clears it with two weeks of slack. I have sequenced Paloma's work on that basis.\n\nOne flag: the reference code is TF1-era and the adversary/learner training loop needs a port to our current stack before Emeka can integrate it. Yara thinks two weeks; I budgeted three.\n\nIvo",
+  "labels": ["resources"]
+}

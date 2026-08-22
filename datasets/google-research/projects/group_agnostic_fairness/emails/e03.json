@@ -1,0 +1,15 @@
+{
+  "id": "gr/group_agnostic_fairness/e03",
+  "thread_id": "gr/group_agnostic_fairness/t2",
+  "in_reply_to": null,
+  "date": "2026-05-12T10:14:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [{"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}],
+  "subject": "Status: benchmark repro complete, one honest caveat for the LRB",
+  "body": "Hi both,\n\nRepro is complete on all three benchmarks. On COMPAS and UCI Adult, ARL improves worst-group AUC over the ERM baseline (+2.9 and +2.2 points respectively in our runs) with overall AUC essentially flat - matching the published pattern. LSAC took longer because of the preprocessing port Paloma flagged, but results there are consistent too. The TF1-to-current port cost us the full three weeks Ivo budgeted, not Yara's two, for the record - the adversary's gradient flow had a subtle stop-gradient bug that took days to find.\n\nThe caveat Kaia and I want stated plainly at the LRB: ARL improves worst-group outcomes for computationally-identifiable groups. When the disadvantaged group is not identifiable from features, ARL cannot find it. The tooling docs should say \"improves\" not \"guarantees,\" and the eval report will include the synthetic case where ARL does nothing, so nobody oversells this.\n\nYara",
+  "labels": ["status", "risk"]
+}
