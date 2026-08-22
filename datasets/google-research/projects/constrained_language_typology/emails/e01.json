@@ -1,0 +1,45 @@
+{
+  "id": "gr/constrained_language_typology/e01",
+  "thread_id": "gr/constrained_language_typology/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T09:05:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: typology prediction for coverage planning",
+  "body": "Hi Deshawn,\n\nKicking off the typology-prediction project. Base: our open-source NEMO work from the SIGTYP 2020 shared task — frequentist inference for predicting a language's typological features (from WALS) given only a handful of observed ones.\n\nProduct motivation: the language portfolio's coverage planning currently treats unknown languages as blank slates. Predicted typological profiles (word order, morphology type, etc.) let the i18n teams pick tokenizers, segmentation defaults, and eval sets for languages we've never shipped — before collecting data.\n\nHalf plan: reproduce shared-task numbers by mid-April, extend to the full WALS matrix in May-June with a big imputation sweep; the deliverable is a typology-profile service proposal by the 7/6 window close.\n\nStaffing plus compute sketch by mid-March? The full-matrix sweep may need reserved capacity.\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

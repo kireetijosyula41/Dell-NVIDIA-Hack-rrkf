@@ -1,0 +1,17 @@
+{
+  "project": "gr/constrained_language_typology",
+  "conflicts": [
+    {
+      "conflict_id": "C004",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "missing_link"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "The exception is the full-matrix imputation sweep with the neural comparison arms: for that we hold the cirrus-tpu reservation for the week of 2026-06-22, 256 accelerators."
+    }
+  ]
+}

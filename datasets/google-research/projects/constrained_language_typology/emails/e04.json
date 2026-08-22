@@ -1,0 +1,45 @@
+{
+  "id": "gr/constrained_language_typology/e04",
+  "thread_id": "gr/constrained_language_typology/t2",
+  "in_reply_to": null,
+  "date": "2026-06-15T15:40:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Decisions: sweep + service proposal shape",
+  "body": "Team,\n\nDecisions from today's review, one week out from the sweep:\n\n1. Sweep is confirmed for our cirrus-tpu week of 6/22 with the full 256-accelerator layout — Maren's job configs are done, and the neural comparison arms run alongside NEMO for the full matrix. Umar, please freeze the estimator configs by 6/18.\n2. Service proposal shape, based on Umar's results: NEMO is the default predictor with per-feature reliability scores; the neural arms are documented but not proposed for serving — they don't win in the observation regime our users are actually in.\n3. Kofi reviewed the WALS licensing question — attribution requirements only, no blocker.\n\nProposal draft to me by 7/1 for the 7/6 close. Nearly there.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

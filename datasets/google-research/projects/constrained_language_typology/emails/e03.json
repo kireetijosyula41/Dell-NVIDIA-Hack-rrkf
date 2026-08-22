@@ -1,0 +1,46 @@
+{
+  "id": "gr/constrained_language_typology/e03",
+  "thread_id": "gr/constrained_language_typology/t1",
+  "in_reply_to": "gr/constrained_language_typology/e02",
+  "date": "2026-05-06T11:20:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: typology prediction for coverage planning",
+  "body": "Hi both,\n\nStatus: NEMO reproduction is complete. Our runs match the shared-task submission — the frequentist approach (per-feature estimators with typological-constraint filtering) beats the majority-class baseline comfortably on the blind test set, and per-family accuracy tracks the paper.\n\nBeyond reproduction: Quentin added two neural comparison arms (a feature-embedding MLP and a graph-propagation model over language families). In the sparse-observation regime that matters for our product — five or fewer observed features per language — NEMO still wins; the neural arms only pull ahead past ~15 observed features, which real unknown languages rarely have.\n\nRisk for the sweep: WALS sparsity is brutal — many features have <300 attested languages — so the full-matrix imputation confidence intervals will be wide. Oyin is adding per-feature reliability scores so the i18n consumers know which predictions to trust.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
