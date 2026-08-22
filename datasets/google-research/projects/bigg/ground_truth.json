@@ -1,0 +1,12 @@
+{
+  "project": "gr/bigg",
+  "conflicts": [
+    {
+      "conflict_id": "C142",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["cisc"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Jorge Vidal is committed at 70% to bigg for all of May 2026 - he owns the CUDA build and the featured-generation extension work, and the May integration milestone doesn't happen without him."
+    }
+  ]
+}

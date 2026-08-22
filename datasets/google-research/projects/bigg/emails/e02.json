@@ -1,0 +1,17 @@
+{
+  "id": "gr/bigg/e02",
+  "thread_id": "gr/bigg/t1",
+  "in_reply_to": "gr/bigg/e01",
+  "date": "2026-03-13T14:06:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: BiGG - synthetic sparse graphs for the index teams",
+  "body": "Anders,\n\nStaffing and resources:\n\n- Vera 50% (modeling lead through April), Rosa 40% (data prep + stats validation), Chiara 30% (index-team integration glue).\n- Jorge Vidal is committed at 70% to bigg for all of May 2026 - he owns the CUDA build and the featured-generation extension work, and the May integration milestone doesn't happen without him. I've flagged this allocation to resourcing as firm.\n- Compute: training on our graph scales fits on 8-16 titan-a100 GPUs best-effort; generation is even lighter. No reservation ask.\n- The gcc + CUDA toolkit build is the usual pain; Jorge already has it green in a container, which unblocks everyone else.\n\nRisk to watch: the sanitized-statistics approach needs Kofi's sign-off that summary statistics don't constitute production data. Filed this week, 2-3 week SLA means an answer by early April.\n\nAlina",
+  "labels": ["resources"]
+}

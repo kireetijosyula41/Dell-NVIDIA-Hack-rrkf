@@ -1,0 +1,18 @@
+{
+  "id": "gr/bigg/e01",
+  "thread_id": "gr/bigg/t1",
+  "in_reply_to": null,
+  "date": "2026-02-19T09:14:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: BiGG - synthetic sparse graphs for the index teams",
+  "body": "Hi all,\n\nKicking off the BiGG workstream. Our open-source BiGG model generates sparse graphs autoregressively at scales earlier deep generative models couldn't touch, and the extension work added fully autoregressive generation of node/edge features. The product need: the retrieval-index team wants realistic-but-synthetic graph workloads for capacity testing and benchmarking, because production graph snapshots are locked behind privacy review every single time.\n\nScope: reproduce the released benchmarks (including the GRAN and G2SAT comparisons), then train on sanitized production graph statistics and validate that generated graphs match degree distribution, clustering, and component-size profiles within agreed tolerances.\n\nMilestones: repro + CUDA build sorted by mid-March; feature-generation extension validated in April; index-team integration in May, wrapping by 5/25.\n\nAlina - staffing over to you.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

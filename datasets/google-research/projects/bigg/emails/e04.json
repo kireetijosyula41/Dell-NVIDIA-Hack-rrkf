@@ -1,0 +1,18 @@
+{
+  "id": "gr/bigg/e04",
+  "thread_id": "gr/bigg/t1",
+  "in_reply_to": "gr/bigg/e03",
+  "date": "2026-05-18T15:33:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Decision: reweighting for v1, conditioned generation deferred",
+  "body": "Team,\n\nClosing decisions from Friday's sync, confirmed with the index team:\n\n1. V1 uses Rosa's oversampling/reweighting fix. The index team confirmed the giant-component tail is what they care about for capacity tests, and they'll accept the small marginal distortion elsewhere - Rosa's validation shows degree-distribution KS distance moves from 2% to 3%, still inside tolerance.\n2. Component-size-conditioned generation is deferred to Q3; it goes in the OKR list before the 6/26 lock. Jorge's May stays focused on integration as planned - that milestone is the whole ballgame.\n3. Chiara ships the generator as a self-serve CLI for the index team by 5/22; handoff doc by window close 5/25.\n\nGood, sharp project. The privacy-review time saved alone justifies it.\n\nAnders",
+  "labels": ["decision"]
+}
