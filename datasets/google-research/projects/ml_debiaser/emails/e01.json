@@ -1,0 +1,46 @@
+{
+  "id": "gr/ml_debiaser/e01",
+  "thread_id": "gr/ml_debiaser/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T09:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: black-box debiasing service (ml_debiaser)",
+  "body": "Hi Santiago,\n\nKicking off the debiasing-service project (Feb 16 – May 11). The research assets are our two NeurIPS releases: a near-optimal post-processing method (randomized_threshold) that debiases binary classifiers treated purely as black boxes, and a reduce-to-binary pre-processing method for multiclass datasets. The multiclass one is the product hook — it needs no sensitive attribute at inference time, which is exactly the constraint our internal model teams keep hitting.\n\nMilestones:\n- Mid-March: both methods wrapped behind one internal API, walk-through example ported.\n- Mid-April: pilot with two model teams, bias metrics before/after in Evalline.\n- Early May: rollout recommendation plus a Corpus integration plan for debiased dataset generation.\n\nCan you send staffing, compute, and the Corpus dependency read by early March?\n\nThanks,\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

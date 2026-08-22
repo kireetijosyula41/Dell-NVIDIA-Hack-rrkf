@@ -1,0 +1,41 @@
+{
+  "id": "gr/ml_debiaser/e03",
+  "thread_id": "gr/ml_debiaser/t1",
+  "in_reply_to": "gr/ml_debiaser/e02",
+  "date": "2026-04-13T10:50:00Z",
+  "from": {
+    "name": "Csilla Nassar",
+    "email": "csilla.nassar@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: black-box debiasing service — pilot status + small-group risk",
+  "body": "Hi both,\n\nPilot status: both teams are live behind Nikhil's API. Team A (binary risk classifier) is the clean win — randomized_threshold cut their demographic-parity gap from 11.2% to 2.1% with a 0.4-point AUC cost, training-set bias requirement fully satisfied. Team B is the multiclass case, 7 classes, and reduce-to-binary works, but here's the risk I flagged in March showing up in the data: two of their groups have under 400 samples, and on held-out data the bias constraint is violated for exactly those two groups. The papers are explicit that generalization needs sufficient per-group sample size, so this is expected behaviour, not an implementation bug.\n\nProposal: the service refuses to certify any group below a sample-size floor (I'm fitting the threshold empirically, likely 800–1,000) and reports \"insufficient data\" instead. Less flattering, more honest.\n\nCsilla",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
