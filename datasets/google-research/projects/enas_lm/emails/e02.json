@@ -1,0 +1,16 @@
+{
+  "id": "gr/enas_lm/e02",
+  "thread_id": "gr/enas_lm/t1",
+  "in_reply_to": "gr/enas_lm/e01",
+  "date": "2026-04-15T13:47:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: ENAS-LM kickoff: architecture search for small on-device LMs",
+  "body": "Anders,\n\nResourcing rundown.\n\nPeople: Ondrej 70% on the search/controller side, Wanjiru 80% on the fixed-arc evaluation paths (TPU and GPU), Paloma 50% on the service API and data plumbing.\n\nCompute: I've asked for a 1x1 slice from our Cirrus quarterly allocation for the TPU eval runs in May; GPU-side comparisons ride Titan best-effort. The TPU path is the one that reproduces 56.1 perplexity, so it's the one that matters for the writeup.\n\nData: PTB preprocessing (the process step into the pkl bundle) is trivial, but the larger search-space experiments pull corpora through the Corpus platform. Good news on timing - Corpus v2 migration freeze is 2026-08-07, so our corpus ingestion for the search-space experiments can keep running on the v1 path through all of July - no migration work needed inside our window.\n\nRisk: Cirrus quarterly allocation is contended; if we lose the May slice, the TPU numbers slip to June.\n\nDaniela",
+  "labels": ["resources"]
+}

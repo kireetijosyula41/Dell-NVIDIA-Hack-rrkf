@@ -1,0 +1,12 @@
+{
+  "project": "gr/enas_lm",
+  "conflicts": [
+    {
+      "conflict_id": "C042",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["hipi", "betum_tool", "correct_batch_effects_wdn"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2 migration freeze is 2026-08-07, so our corpus ingestion for the search-space experiments can keep running on the v1 path through all of July - no migration work needed inside our window."
+    }
+  ]
+}

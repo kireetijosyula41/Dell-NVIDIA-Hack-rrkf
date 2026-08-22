@@ -1,0 +1,18 @@
+{
+  "id": "gr/enas_lm/e04",
+  "thread_id": "gr/enas_lm/t2",
+  "in_reply_to": "gr/enas_lm/e03",
+  "date": "2026-06-24T10:52:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: ENAS-LM status: GPU path reproduced, TPU slice slipped",
+  "body": "All,\n\nDecisions ahead of window close, and with Q3 OKRs locking on the 26th I want these in writing.\n\n1. TPU numbers came in June 8 at 56.2 perplexity - close enough to the published 56.1 +/- 0.1 to call reproduction done on both paths. Nice work.\n\n2. Scope cut: the service API ships as batch-only for v1. Interactive search needs guaranteed Cirrus capacity we don't have this quarter; Paloma's API design keeps the door open.\n\n3. The DARTS comparison goes in the writeup as-is (our cells within 0.4 perplexity at comparable params). That's enough for the internal audience; no extra sweeps.\n\nQ3 OKR submission: two partner teams running searches through the batch service by end of Q3. Daniela, flag any staffing implication before Friday's lock, otherwise I'm submitting as-is.\n\nAnders",
+  "labels": ["decision"]
+}
