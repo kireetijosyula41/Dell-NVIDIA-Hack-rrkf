@@ -1,0 +1,17 @@
+{
+  "id": "gr/Uboreshaji_Modeli/e01",
+  "thread_id": "gr/Uboreshaji_Modeli/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:33:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Project Tundra kickoff - one fine-tuning framework for every modality",
+  "body": "Team,\n\nKicking off the Uboreshaji Modeli productization. Internal codename is Project Tundra - use it on all planning artifacts and in the budget tool.\n\nWhat we're building on: the framework started as OWL-v2 object detection (DETR-style boxes with HungarianMatcher and SetCriterion focal loss) and has been extended into a genuinely multi-modal fine-tuning stack - vision-language detection and instance segmentation via location tokenization, text SFT with chat templating and prompt masking, and ASR fine-tuning with USM encoder integration under Seq2SeqTrainer. The Composable Strategy Pattern is what makes it saleable: customers configure workflows, they don't fork code.\n\nWhy now: the vision portfolio runs four different fine-tuning stacks across customer engagements. Tundra collapses them into one.\n\nMilestones: detection + text SFT paths hardened by May 15; ASR path by June 12; first external customer engagement on Tundra by July 10.\n\nDaniela - staffing and compute please.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

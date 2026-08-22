@@ -1,0 +1,17 @@
+{
+  "id": "gr/Uboreshaji_Modeli/e02",
+  "thread_id": "gr/Uboreshaji_Modeli/t1",
+  "in_reply_to": "gr/Uboreshaji_Modeli/e01",
+  "date": "2026-04-16T15:07:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Project Tundra kickoff - one fine-tuning framework for every modality",
+  "body": "Lucia,\n\nTundra staffing and compute below.\n\nStaffing: Ondrej 50% through the window - he owns the detection and VLM strategies (the location-tokenization path for detection and instance segmentation). Linnea 40% on framework plumbing and the strategy-pattern config layer. Carmen 40% on the text SFT track, including the Swahili translation reference task with chat templating and -100 prompt masking - it's the cleanest end-to-end demo of the text path and doubles as our i18n story.\n\nCompute: 64 A100s on titan-a100 best effort for the hardening runs; if the ASR track needs bigger sweeps in June I'll come back with a separate ask rather than padding this one.\n\nOne watch item: ASR is our least-staffed modality. If the USM-encoder integration fights us, I'd rather slip the June 12 milestone than pull Ondrej off detection.\n\nDaniela",
+  "labels": ["resources"]
+}

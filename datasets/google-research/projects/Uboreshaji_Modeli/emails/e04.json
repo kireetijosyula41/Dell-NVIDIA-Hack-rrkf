@@ -1,0 +1,17 @@
+{
+  "id": "gr/Uboreshaji_Modeli/e04",
+  "thread_id": "gr/Uboreshaji_Modeli/t2",
+  "in_reply_to": "gr/Uboreshaji_Modeli/e03",
+  "date": "2026-06-30T14:15:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Tundra status: detection + SFT hardened, ASR risk materializing",
+  "body": "Ondrej, Daniela,\n\nDecisions for the last stretch of Tundra's window:\n\n1. The July 10 customer engagement proceeds on the detection + text SFT paths only. I've re-scoped the statement of work with the customer to a vision-detection deliverable with a text SFT pilot - no ASR commitment. The two-days-setup number sold itself.\n\n2. ASR: Linnea's bucketing sampler landed June 24 and the path is now hardened, but it ships as \"beta\" in the v1 release. First ASR engagement targets Q3, entered in OKRs before the June 26 lock (done - it's in as a committed line).\n\n3. Scope cut: instance segmentation polish moves to Q3 as well. Detection is the wedge; segmentation follows once revenue is attached.\n\nCarmen - the Swahili demo goes in the customer deck as the i18n proof point. It reads beautifully.\n\nLucia",
+  "labels": ["decision"]
+}
