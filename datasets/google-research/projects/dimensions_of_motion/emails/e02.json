@@ -1,0 +1,45 @@
+{
+  "id": "gr/dimensions_of_motion/e02",
+  "thread_id": "gr/dimensions_of_motion/t1",
+  "in_reply_to": "gr/dimensions_of_motion/e01",
+  "date": "2026-05-04T14:23:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: flow subspaces for motion-aware video editing",
+  "body": "Lucia,\n\nStaffing and the plan for the interactive-speed constraint.\n\nReproduction: Csilla 50% on the scene-prediction network and the loss stack, Vera 30% on data and evals. On track for May 22.\n\nThe 'mobile-feasible variant' is the bigger lift. The full network is nowhere near interactive on device, so the path is teacher-student distillation. We are scoping and staffing a distillation training recipe built from scratch: Yara Jokic leads at 50% with Wei Ivanov at 40% to design the student architecture, loss schedule, and training pipeline. Target: a student under 40ms per frame on the reference mobile SoC that keeps at least 90% of the teacher's flow-projection quality.\n\nCompute: 32 A100s on Titan best-effort for reproduction, and I will come back with a separate ask for distillation once Yara sizes the student sweeps.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

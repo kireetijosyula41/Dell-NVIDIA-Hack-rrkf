@@ -1,0 +1,44 @@
+{
+  "id": "gr/dimensions_of_motion/e04",
+  "thread_id": "gr/dimensions_of_motion/t2",
+  "in_reply_to": null,
+  "date": "2026-06-30T15:34:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: dimensions-of-motion scope for the LRB pre-read",
+  "body": "Team,\n\nDecisions for the July 6 pre-read:\n\n1. Csilla's regularized solver is in: 2% flicker is below the editing team's visibility threshold and the fix costs nothing at inference.\n2. The distillation result carries the pre-read: Yara and Wei's student hits 36ms per frame on the reference SoC at 91% of teacher flow-projection quality. That clears both bars we set, barely, and 'barely' is fine for a pre-read.\n3. Scope cut: motion-plausible fill is deferred to Q3. Object-consistent selection alone is a shippable feature and the fill work needs the student to be more accurate on occlusion boundaries first.\n\nSend me demo clips by July 2. Nadia wants a live walkthrough at the session.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}
