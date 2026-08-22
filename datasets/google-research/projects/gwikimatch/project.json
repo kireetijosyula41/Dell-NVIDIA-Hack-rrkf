@@ -1,0 +1,18 @@
+{
+  "id": "gr/gwikimatch",
+  "title": "GWikiMatch: A Benchmark Dataset for Long-Form Document Matching",
+  "summary": "Stands up GWikiMatch - a benchmark for estimating semantic similarity between long-form document pairs, built from English Wikipedia via hyperlink-graph label propagation and triple human annotation - as the retrieval portfolio's standard long-document matching eval.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bao Ndiaye",
+  "contributors": ["Quentin Farkas", "Bilal Novak", "Oyin Iversen"],
+  "window": {"start": "2026-04-27", "end": "2026-08-10"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gwikimatch",
+    "url": "https://github.com/google-research/google-research/tree/master/gwikimatch",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

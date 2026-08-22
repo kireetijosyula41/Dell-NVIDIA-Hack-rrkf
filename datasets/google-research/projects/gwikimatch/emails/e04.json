@@ -1,0 +1,18 @@
+{
+  "id": "gr/gwikimatch/e04",
+  "thread_id": "gr/gwikimatch/t2",
+  "in_reply_to": "gr/gwikimatch/e03",
+  "date": "2026-07-21T15:58:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Status: dedup numbers, protocol draft, rater-agreement caveat",
+  "body": "Team,\n\nDecisions ahead of the 8/5 adoption review:\n\n1. The de-duplicated dataset (production run of 6/19) is the only version we host. The pre-dedup snapshot is archived, access-restricted, and the dataset card cites the 3.1% duplicate rate so external comparisons are honest about the difference.\n2. Both baselines shipped 7/3 - the dual-encoder and the hierarchical attention model - and the leaderboard-style results table goes in the review pack with the two fixed operating points, no custom thresholds.\n3. Quentin's middle-band noise caveat gets promoted from the protocol appendix to the front page. If teams are going to quote GWikiMatch numbers in launch reviews, the noise floor needs to be unmissable.\n4. Adoption: two retrieval teams confirmed, a third interested. That clears our bar.\n\nBilal, Oyin - the dedup pipeline is getting reuse requests already. Write the runbook before vacation season, please.\n\nAnders",
+  "labels": ["decision"]
+}
