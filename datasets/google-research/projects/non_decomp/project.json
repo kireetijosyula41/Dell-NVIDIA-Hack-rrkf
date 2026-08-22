@@ -1,0 +1,18 @@
+{
+  "id": "gr/non_decomp",
+  "title": "Training Over-parameterized Models with Non-decomposable Objectives",
+  "summary": "Operationalizes our NeurIPS 2021 release on training over-parameterized models with non-decomposable objectives — maximizing worst-case recall via a logit-adjusted cost-sensitive loss — as a data-platforms capability for long-tail classification, benchmarked on the CIFAR-10/100 long-tail datasets against ERM, balanced-loss and re-weighted baselines.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Umar Costa", "Paloma Castillo", "Carmen Reyes"],
+  "window": {"start": "2026-03-09", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "non_decomp",
+    "url": "https://github.com/google-research/google-research/tree/master/non_decomp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

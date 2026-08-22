@@ -1,0 +1,16 @@
+{
+  "id": "gr/non_decomp/e01",
+  "thread_id": "gr/non_decomp/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:52:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: worst-case recall training for long-tail classification",
+  "body": "Hi Deshawn,\n\nKickoff for the non-decomposable objectives effort. Our NeurIPS 2021 release implements worst-case recall maximization (Algorithm 1) using a logit-adjusted cost-sensitive loss, with three baselines in the box: standard ERM, the balanced logit-adjusted loss, and a re-weighted cost-sensitive loss.\n\nWhy it matters: data-platforms customers with long-tail label distributions keep discovering that average accuracy hides catastrophic recall on rare classes. \"No class left behind\" as a training objective is a sellable, auditable guarantee.\n\nDeliverables: (1) reproduce the paper's results on the CIFAR-10/100 long-tail datasets, (2) validate on one internal long-tail workload, (3) integrate the loss into the platform trainer with sane defaults. Milestones: repro by end of April, internal validation by mid-June, integration readout by 06-29.\n\nOne planning note: our internal workload's tfrecords live in Corpus, so migration timing affects us — details with your resourcing pass.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

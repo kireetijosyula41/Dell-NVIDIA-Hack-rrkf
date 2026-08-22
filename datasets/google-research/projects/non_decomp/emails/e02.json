@@ -1,0 +1,15 @@
+{
+  "id": "gr/non_decomp/e02",
+  "thread_id": "gr/non_decomp/t1",
+  "in_reply_to": "gr/non_decomp/e01",
+  "date": "2026-04-01T14:24:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: worst-case recall — resourcing + Corpus deadline",
+  "body": "Dmitri,\n\nResourcing:\n\nStaffing — Umar leads methodology and the repro (the codebase branches from our logit_adjustment release, which he knows well); Carmen runs the internal-workload validation; Paloma does the trainer integration and data plumbing.\n\nCompute — light. CIFAR-10/100 long-tail runs are single-node jobs; the internal workload needs a few dozen A100s at peak. Titan best-effort throughout, no reservation, no discretionary budget ask.\n\nOn your Corpus note: confirmed with Jun's team — the Corpus v2 migration freeze is 2026-07-10. Our window closes 06-29, but the internal workload's long-tail tfrecords must be re-registered under the v2 schema before that freeze or the Q3 retraining pipeline inherits a broken path. Paloma is doing the re-registration in early June alongside the validation work, so we're clear of the deadline with margin rather than discovering it in July.\n\nDeshawn",
+  "labels": ["resources"]
+}

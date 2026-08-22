@@ -1,0 +1,18 @@
+{
+  "id": "gr/non_decomp/e03",
+  "thread_id": "gr/non_decomp/t1",
+  "in_reply_to": "gr/non_decomp/e02",
+  "date": "2026-05-13T10:31:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: worst-case recall — repro done, internal validation early read",
+  "body": "Hi both,\n\nStatus:\n\n- Repro milestone met. On CIFAR-100 long-tail, Algorithm 1 lifts worst-case (minimum per-class) recall by a wide margin over standard ERM, and beats both the balanced-loss and re-weighted baselines, at a modest cost to average accuracy — the same trade the paper reports. The release's test mode made the setup verification painless.\n- Internal workload early read: on our long-tail workload (about 400 classes, heaviest-to-lightest ratio ~900:1), worst-case recall goes from 0.12 under ERM to 0.41 with the cost-sensitive loss, average accuracy down 1.8 points. That trade needs a product conversation — some customers will take it instantly, others won't.\n- Risk: convergence. The per-class multiplier updates oscillate on classes with <20 examples; Umar is damping the update rate, which stabilizes things at the cost of ~15% more epochs. Needs to settle before Paloma freezes trainer defaults.\n\nOn plan for mid-June.\n\nCarmen",
+  "labels": ["status", "risk"]
+}
