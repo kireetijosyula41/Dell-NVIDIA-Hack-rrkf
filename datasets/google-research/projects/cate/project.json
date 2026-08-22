@@ -1,0 +1,18 @@
+{
+  "id": "gr/cate",
+  "title": "Composable Augmentation Encoding for Video Representation Learning (CATE)",
+  "summary": "Bringing CATE, our self-supervised video representation method with composable augmentation encoding, into the platform as a video-embedding service: the released model is pretrained on Kinetics-400, with nearest-neighbor classification on UCF-101 as the reference eval and Something-Something checkpoints available for transfer studies.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Saoirse Eriksen", "Jorge Vidal", "Yusuf Keita"],
+  "window": {"start": "2026-04-20", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cate",
+    "url": "https://github.com/google-research/google-research/tree/master/cate",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

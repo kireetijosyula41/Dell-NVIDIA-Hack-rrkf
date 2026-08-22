@@ -1,0 +1,12 @@
+{
+  "project": "gr/cate",
+  "conflicts": [
+    {
+      "conflict_id": "C104",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["collaborative_tr_collection"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"There's no existing recipe to borrow here, so we're scoping and staffing a distillation training recipe from scratch - Jorge owns it at 60%: teacher-student setup, loss schedule, and the ablation grid to find how small the student can go before retrieval quality craters.\""
+    }
+  ]
+}
