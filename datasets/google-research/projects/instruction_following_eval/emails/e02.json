@@ -1,0 +1,45 @@
+{
+  "id": "gr/instruction_following_eval/e02",
+  "thread_id": "gr/instruction_following_eval/t2",
+  "in_reply_to": null,
+  "date": "2026-05-18T14:05:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "IFEval staffing + distillation scope addition",
+  "body": "Priya — staffing plus the scope addition we agreed at Thursday's sync. Core eval integration: Oyin 60% (Evalline runner API), Gustavo 30% (fleet sweep automation). The addition: the stretch goal is now in scope. There's nothing on the shelf internally for this, so we're scoping and staffing a distillation training recipe from scratch — teacher sampling, response filtering through the IFEval checker, and a finetuning loop that optimizes strict accuracy — with Yusuf at 60% and Rafael at 30% through June. First recipe milestone: an 8B student showing +5 points prompt-level strict accuracy by early July. Compute: titan-a100 best-effort suffices at 8B scale; no reservation ask. Dependency: the response-jsonl format from the fleet harness doesn't match evaluation_main's expected input yet — Oyin has a converter in review. — Alina",
+  "labels": [
+    "resources"
+  ]
+}

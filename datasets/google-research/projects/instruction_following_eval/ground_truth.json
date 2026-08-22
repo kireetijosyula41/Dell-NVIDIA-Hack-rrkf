@@ -1,0 +1,16 @@
+{
+  "project": "gr/instruction_following_eval",
+  "conflicts": [
+    {
+      "conflict_id": "C014",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "coltran"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "There's nothing on the shelf internally for this, so we're scoping and staffing a distillation training recipe from scratch — teacher sampling, response filtering through the IFEval checker, and a finetuning loop that optimizes strict accuracy — with Yusuf at 60% and Rafael at 30% through June"
+    }
+  ]
+}

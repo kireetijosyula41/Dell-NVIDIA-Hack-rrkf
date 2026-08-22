@@ -1,0 +1,44 @@
+{
+  "id": "gr/instruction_following_eval/e04",
+  "thread_id": "gr/instruction_following_eval/t1",
+  "in_reply_to": "gr/instruction_following_eval/e03",
+  "date": "2026-07-08T10:40:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: IFEval kickoff — instruction-following as a release gate",
+  "body": "Decisions from Launch Review prep. (1) Gating: LRB signed off — IFEval strict accuracy becomes a blocking check in Evalline for language releases starting July 20, with thresholds set per model tier from Gustavo's sweep. (2) The distillation recipe stays funded in Q3 — it made the OKR list before the June 26 lock, scoped as 'recipe plus 8B reference student at +5 strict'. Yusuf's latest run is at +4.1 with per-instruction credit in the filter, so the target looks reachable. (3) Scope cut: we drop the 1B student from this half; the compliance data is too short-form to help at that scale, per the MMLU regression. Nadia will circulate the LRB minutes. Thanks all — this is the fastest an eval has gone from repo to gate. Priya",
+  "labels": [
+    "decision"
+  ]
+}
