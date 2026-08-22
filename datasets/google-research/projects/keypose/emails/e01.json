@@ -1,0 +1,18 @@
+{
+  "id": "gr/keypose/e01",
+  "thread_id": "gr/keypose/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:18:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: KeyPose for transparent-object bin picking",
+  "body": "Team,\n\nKicking off the KeyPose track. The product hook: robotic pick cells fail hardest on glassware and clear packaging because depth sensors return garbage on transparent surfaces. KeyPose sidesteps that — stereo RGB in, labeled 3D keypoints out — and our open-source release ships with 600 sequences, roughly 48k stereo and depth images at 720p, across 15 transparent objects in 5 categories. That's our training and eval base.\n\nMilestones (Apr 27 - Jul 20):\n- May 29: reproduce released-model keypoint accuracy on the bottle and cup categories\n- Jun 26: fine-tuned models on our own 3-object pilot capture from the lab cell\n- Jul 15: end-to-end pick demo readout for the partner conversation\n\nIvo — compute and staffing please, plus whatever the Corpus ingest of the pilot captures needs. I want the data-platform dependency understood in week one, not week ten.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

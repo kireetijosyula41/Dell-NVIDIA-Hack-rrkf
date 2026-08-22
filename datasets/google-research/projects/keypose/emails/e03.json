@@ -1,0 +1,18 @@
+{
+  "id": "gr/keypose/e03",
+  "thread_id": "gr/keypose/t2",
+  "in_reply_to": null,
+  "date": "2026-06-03T16:10:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "KeyPose status: bottle/cup reproduced, heart category is the outlier",
+  "body": "Hi both,\n\nStatus ahead of the mid-window check-in. Reproduction milestone is done: on the released bottle and cup models we match published keypoint accuracy — mean 3D keypoint error within 0.4mm of the reference numbers, using the standard texture_5 evaluation splits.\n\nTwo findings worth flagging:\n1) The heart category is a consistent outlier — its symmetric shape makes keypoint identity ambiguous, and errors are ~3x the other categories. Our pilot objects (two tumblers, one jar) are more bottle-like, so this shouldn't block the demo, but it bounds which SKUs we can promise.\n2) Leilani finished the rig calibration pass; RGB/depth pixel registration now matches the public dataset's setup, so fine-tuning uses the same input contract as the release.\n\nRisk: pilot capture is running about 4 days behind because the lab cell was double-parked with another team's arm through last week. Still compatible with Jun 26 if capture starts Monday.\n\nYara",
+  "labels": ["status", "risk"]
+}
