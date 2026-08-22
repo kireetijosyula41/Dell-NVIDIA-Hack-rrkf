@@ -1,0 +1,41 @@
+{
+  "id": "gr/moment_advice/e03",
+  "thread_id": "gr/moment_advice/t1",
+  "in_reply_to": "gr/moment_advice/e02",
+  "date": "2026-05-27T11:40:00Z",
+  "from": {
+    "name": "Umar Costa",
+    "email": "umar.costa@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: advice-based moment estimation — May status + advice-staleness risk",
+  "body": "Hi both,\n\nStatus: baselines reproduced on the public graph datasets. On a skewed temporal graph, advice-based sampling cuts second-moment estimation error to roughly a third of PPSWOR at the same sample budget, and perfect advice shows another ~2x of headroom beyond that — so the learned-advice quality is what everything hinges on.\n\nWhich brings the risk: staleness. Freya trained advice on week N of telemetry and evaluated on week N+1 vs N+4. At N+1 we keep ~85% of the error reduction; at N+4 we keep barely half, and on one traffic shift (a datacenter drain that reshuffled the heavy IP pairs) stale advice was briefly worse than plain ell_1 sampling. Advice-guided sampling concentrates the budget where the advice says mass is — when the world moves, it concentrates in the wrong place.\n\nPlan: weekly advice refresh as the recommended operating mode, plus a fallback that blends in ell_1 sampling when observed frequencies diverge from advice. The June full-scale run will quantify the blend.\n\nUmar",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

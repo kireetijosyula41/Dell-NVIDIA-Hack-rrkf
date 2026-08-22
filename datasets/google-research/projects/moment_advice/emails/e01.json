@@ -1,0 +1,41 @@
+{
+  "id": "gr/moment_advice/e01",
+  "thread_id": "gr/moment_advice/t1",
+  "in_reply_to": null,
+  "date": "2026-03-25T09:00:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: advice-based frequency-moment estimation for telemetry",
+  "body": "Hi Ivo,\n\nKicking off moment_advice (Mar 23 – Jul 6). The open-source release estimates frequency moments by sampling according to advice, benchmarked against three baselines: perfect advice (exact frequencies), PPSWOR ell_1 sampling, and ell_2 sampling. It supports exactly the input shapes our infra customers have — graph edges for in/out degree moments (with parallel edges counted) and net_traffic packets keyed by unordered IP pairs.\n\nProduct case: the telemetry team samples network flows today with plain ell_1-style sampling and their heavy-hitter estimates degrade on skewed traffic. Learned advice should cut estimation error substantially at the same sample budget — that's the pitch to make it a platform primitive.\n\nMilestones: April — reproduce baselines on public graph datasets; late May — advice models trained on our telemetry history; late June — full-scale validation; Jul 6 close with an adoption recommendation.\n\nStaffing + compute by mid-April please.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
