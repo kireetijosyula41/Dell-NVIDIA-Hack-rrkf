@@ -1,0 +1,18 @@
+{
+  "id": "gr/ieg",
+  "title": "-   IEG:",
+  "summary": "Builds on our meta sample re-weighting releases - IEG (distilling effective supervision from severe label noise) and FSR (fast sample re-weighting without reward data) - to make model training robust to noisy labels at ratios up to 80%+ on CIFAR-style benchmarks.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Tereza Aliyev", "Bilal Novak", "Chiara Olsen", "Emeka Pinto"],
+  "window": {"start": "2026-04-13", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ieg",
+    "url": "https://github.com/google-research/google-research/tree/master/ieg",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

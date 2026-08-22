@@ -1,0 +1,12 @@
+{
+  "project": "gr/ieg",
+  "conflicts": [
+    {
+      "conflict_id": "C032",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["lego"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The bigger call: we're going to build an internal evaluation harness from scratch for the noisy-label work - controlled noise injection (uniform and asymmetric), per-noise-ratio eval matrices, seed management, and re-weighting diagnostics like weight-distribution tracking. [...] Chiara owns it at 70% with Emeka at 50%; roughly seven weeks, harness stable by mid-June so the FSR comparison runs on it."
+    }
+  ]
+}

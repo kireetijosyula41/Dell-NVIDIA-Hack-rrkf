@@ -1,0 +1,17 @@
+{
+  "id": "gr/ieg/e02",
+  "thread_id": "gr/ieg/t1",
+  "in_reply_to": "gr/ieg/e01",
+  "date": "2026-05-05T13:19:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IEG kickoff - staffing + we need our own eval harness",
+  "body": "Dmitri,\n\nResourcing:\n\n- Staffing: Tereza 50%, Bilal 50%, Chiara 70%, Emeka 50%.\n- Compute: the noise-ratio sweeps parallelize per-ratio on single GPUs, so 32 titan-a100 best-effort is plenty. No reservation ask.\n\nThe bigger call: we're going to build an internal evaluation harness from scratch for the noisy-label work - controlled noise injection (uniform and asymmetric), per-noise-ratio eval matrices, seed management, and re-weighting diagnostics like weight-distribution tracking. I looked at what exists and nothing supports injecting calibrated label corruption into the eval loop, which is the whole experiment here. Chiara owns it at 70% with Emeka at 50%; roughly seven weeks, harness stable by mid-June so the FSR comparison runs on it.\n\nIt's a real cost, but every future noise-robustness claim on the platform needs exactly this machinery, so I'd rather build it properly once.\n\nBruno",
+  "labels": ["resources"]
+}

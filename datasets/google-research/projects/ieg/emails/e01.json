@@ -1,0 +1,18 @@
+{
+  "id": "gr/ieg/e01",
+  "thread_id": "gr/ieg/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:47:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "IEG kickoff - training that survives noisy labels",
+  "body": "Team,\n\nKicking off the IEG workstream. Our labeling platform produces labels of, let's be honest, mixed quality - and every consumer team pays for it in silent accuracy loss. Our open-source work on meta sample re-weighting gives us two tools: IEG (distilling effective supervision from severe label noise) and FSR (fast sample re-weighting without reward data). The claim worth productizing: with the right re-weighting, training stays usable even at extreme noise ratios.\n\nScope this window: reproduce IEG on CIFAR100 at 20/40/80% uniform noise with wrn28-10, evaluate FSR as the cheaper alternative, and produce a recommendation for a 'noise-robust training' option on the platform.\n\nMilestones: IEG repro by end of May, FSR comparison by end of June, recommendation memo by 2026-07-13.\n\nTereza leads methodology, Bilal experiments, Chiara and Emeka infra. Bruno - resourcing note when ready.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
