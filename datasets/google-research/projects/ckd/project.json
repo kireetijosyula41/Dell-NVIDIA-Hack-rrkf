@@ -1,0 +1,26 @@
+{
+  "id": "gr/ckd",
+  "title": "clone this repo",
+  "summary": "Builds CKD, a contrastive knowledge distillation recipe on top of the LAVIS vision-language stack, aimed at reducing object hallucination in our VLM captioning features, with POPE-style evaluation on VG, COCO and GQA imagery.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Wei Ivanov",
+    "Fumiko Rossi",
+    "Wanjiru Horvat",
+    "Chiara Olsen"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ckd",
+    "url": "https://github.com/google-research/google-research/tree/master/ckd",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,16 @@
+{
+  "project": "gr/ckd",
+  "conflicts": [
+    {
+      "conflict_id": "C023",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "camp_zipnerf"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We're scoping and staffing a synthetic-data generation pipeline from scratch — negative-object mining over the image corpora plus cached model-generated descriptions — since nothing reusable exists in the org for this."
+    }
+  ]
+}

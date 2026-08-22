@@ -1,0 +1,45 @@
+{
+  "id": "gr/ckd/e04",
+  "thread_id": "gr/ckd/t1",
+  "in_reply_to": "gr/ckd/e03",
+  "date": "2026-07-21T14:05:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CKD kickoff — hallucination-resistant captioning via contrastive distillation",
+  "body": "Decision time ahead of the Aug 3 go/no-go.\n\nFull-data distillation results came in: adversarial POPE +5.4 (71.2 → 76.6), random split +1.9, and Wei was right — the CIDEr cost dropped to 0.3 with distillation weight at 0.5. I'll take that trade every day of the week.\n\nDecisions:\n1) GO for product integration review on Aug 3. Fumiko prepares the eval pack; both product surfaces have asked for the adversarial-split breakdown.\n2) The synthetic-data pipeline gets kept and documented as a deliverable in its own right — Wanjiru writes the runbook so it survives the team moving on.\n3) Scope cut: the GQA-based eval extension moves to Q4; POPE on VG+COCO is enough for the integration decision.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}
