@@ -1,0 +1,39 @@
+{
+  "id": "gr/jaxbarf/e04",
+  "thread_id": "gr/jaxbarf/t1",
+  "in_reply_to": "gr/jaxbarf/e03",
+  "date": "2026-05-12T10:35:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: JaxBARF kickoff — pose refinement without SfM",
+  "body": "Handoff recommendation, closing out the window: adopt for the capture pipeline, with a staged rollout. Evidence: parity with the reference implementation on the Blender benchmark, plus robustness to ~15-degree pose noise on partner-style captures — which covers the large majority of the problem cases the capture team logged last quarter. Recommendation shipped to their leads today: JaxBARF becomes the pose-refinement stage for noisy-pose collections; captures with worse than ~15-degree error still route through the legacy SfM path for now. Follow-on ingestion of the remaining partner collections proceeds per Bruno's schedule ahead of the Corpus freeze. Loose ends: Csilla writes up the perturbation study as an internal note; Vera tags the parity-run configs in the repo. Thanks all — small team, clean quarter. — Lucia",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/jaxbarf/e03",
+  "thread_id": "gr/jaxbarf/t1",
+  "in_reply_to": "gr/jaxbarf/e01",
+  "date": "2026-04-21T15:55:00Z",
+  "from": {
+    "name": "Vera Egede",
+    "email": "vera.egede@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: JaxBARF kickoff — pose refinement without SfM",
+  "body": "Status. Parity milestone: done — full Blender sweep via train.sh completed, and our rotation errors match the PyTorch-BARF reference within noise on seven of eight scenes (mean rotation error within 0.02 degrees of the published table). The exception is Ship, which is also the noisiest row in the reference results, so we're calling parity achieved. Robustness study: underway on the first tranche of partner-style captures. Early readout: with the coarse-to-fine positional-encoding schedule active, pose refinement recovers from synthetic pose perturbations up to ~15 degrees rotation; disable the schedule and it fails exactly the way the BARF paper predicts — nice confirmation the JAX port preserves the mechanism that matters. Issues: install.sh assumed a CUDA minor version we don't run; Kaia patched it (one-line fix, upstreamed). The second capture tranche lands April 27 on schedule. — Vera",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

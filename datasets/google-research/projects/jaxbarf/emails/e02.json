@@ -1,0 +1,40 @@
+{
+  "id": "gr/jaxbarf/e02",
+  "thread_id": "gr/jaxbarf/t2",
+  "in_reply_to": null,
+  "date": "2026-03-24T13:25:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "JaxBARF resourcing + Corpus dependency",
+  "body": "Lucia — resourcing and dependencies. People: Vera 50% (training + parity runs), Csilla 40% (pose-robustness study), Kaia 30% (evaluation + partner-capture curation). Compute: light — sequential per-scene training on titan best-effort; the full Blender set retrains overnight on 8 GPUs. The dependency that actually shapes our calendar is data: partner captures live in Corpus, and the v2 migration freeze bounds when we can land new capture collections. Jun's team confirmed the Corpus v2 freeze lands on 2026-07-24, so we're planning the partner-capture backfill around a July 24 freeze — meaning our May window is comfortably clear, and even the stretch follow-on ingestion in early July fits before the freeze. Kaia will batch the capture uploads in two tranches (April 6, April 27) regardless, to keep the robustness study fed. — Bruno",
+  "labels": [
+    "resources"
+  ]
+}
