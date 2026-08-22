@@ -1,0 +1,45 @@
+{
+  "id": "gr/general-pattern-machines/e02",
+  "thread_id": "gr/general-pattern-machines/t1",
+  "in_reply_to": "gr/general-pattern-machines/e01",
+  "date": "2026-03-04T14:20:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Project Saffron kickoff — LLMs as pattern machines",
+  "body": "Hi Priya,\n\nSaffron staffing: Yusuf 60% (research lead), Emeka 40% (service prototype), Maren 40% (eval harness), Tereza 30% (robotics liaison).\n\nCompute: this is inference-only against hosted models, so no cluster reservation — the cost is token spend. Budgeting 40M tokens for the replication sweep (the ARC-style ASCII prompts are long) and I have asked for a monthly cap alert at $8k so we notice runaway loops early.\n\nDependency: the released colabs assume external model APIs; Emeka is porting the prompting code to our internal serving endpoints first, ETA Mar 13.\n\nFlag: context length limits will bind on the trajectory experiments — Yusuf is sizing how many CartPole episodes fit in-context.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

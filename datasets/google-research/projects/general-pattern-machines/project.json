@@ -1,0 +1,27 @@
+{
+  "id": "gr/general-pattern-machines",
+  "title": "Large Language Models as General Pattern Machines",
+  "summary": "Explores pretrained LLMs as zero-shot general sequence modelers — completing PCFG-generated token sequences and ARC-style spatial patterns in-context — and pitches an offline sequence-extrapolation service for robotics prototyping.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Emeka Pinto",
+    "Maren Zhou",
+    "Tereza Aliyev",
+    "Yusuf Keita"
+  ],
+  "codename": "Project Saffron",
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "general-pattern-machines",
+    "url": "https://github.com/google-research/google-research/tree/master/general-pattern-machines",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
