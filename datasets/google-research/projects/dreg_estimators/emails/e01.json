@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreg_estimators/e01",
+  "thread_id": "gr/dreg_estimators/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T09:33:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DReG estimators in the LVM training toolkit",
+  "body": "Hi all,\n\nKicking off the DReG integration. Quick framing for those newer to it: multi-sample IWAE bounds get tighter with more samples, but the standard inference-network gradient estimator counterintuitively degrades as samples grow. Our open-source DReG work showed the popular \"sticking the landing\" style estimator is actually biased, and that a second application of the reparameterization trick removes the bias and slashes gradient variance. Free accuracy for anyone training latent-variable models.\n\nProduct goal: DReG as the default inference-network estimator in the internal LVM toolkit, with variance telemetry so teams can see the win, plus applicability to reweighted wake-sleep style training.\n\nMilestones: estimator module + unit-level variance benchmarks by end of March, two internal adopter models converted in April, toolkit release mid-May.\n\nBao owns staffing and the (small) compute picture.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}

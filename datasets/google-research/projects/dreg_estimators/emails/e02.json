@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreg_estimators/e02",
+  "thread_id": "gr/dreg_estimators/t1",
+  "in_reply_to": "gr/dreg_estimators/e01",
+  "date": "2026-03-12T15:02:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DReG estimators in the LVM training toolkit",
+  "body": "Zofia,\n\nStaffing: Csilla owns the estimator module and the bias/variance test suite, Efe the adopter conversions, Katya the variance telemetry, Saoirse the toolkit release engineering.\n\nCompute: small. Everything here runs on titan-a100 best-effort; the variance benchmarks are single-GPU jobs.\n\nOne genuinely new build in scope: for the adopter models the automated metrics don't settle arguments — the generative-quality deltas from lower-variance gradients are subtle — so we're scoping and staffing a human-rating annotation UI built from scratch. Saoirse leads it at 50% starting March 16: pairwise sample comparison, rater queues, agreement stats, export to the eval store. There's no existing internal tool for this, so I've budgeted five engineer-weeks with a target of April 20 so the April adopter conversions get human-rated before the toolkit release.\n\nBao",
+  "labels": ["resources"]
+}

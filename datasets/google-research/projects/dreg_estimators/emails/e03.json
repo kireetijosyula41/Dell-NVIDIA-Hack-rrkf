@@ -1,0 +1,19 @@
+{
+  "id": "gr/dreg_estimators/e03",
+  "thread_id": "gr/dreg_estimators/t1",
+  "in_reply_to": "gr/dreg_estimators/e02",
+  "date": "2026-04-16T11:21:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DReG estimators in the LVM training toolkit",
+  "body": "Status.\n\nEstimator module landed March 27 with the bias test Katya suggested: we empirically reproduce that the Roeder-style estimator carries measurable bias at k=64 samples while DReG stays centered, and gradient variance on the inference network drops by an order of magnitude at large k. Telemetry shows it live per-run now, which has already been fun in demos.\n\nAdopter one (the doc-topic VAE) converted cleanly: +0.9 nats test log-likelihood at identical step budget, purely from swapping the estimator. Adopter two (speech LVM) is mid-conversion; their reweighted wake-sleep variant hits the exact case the paper flags, so Efe is being careful with the score-function term.\n\nRisk: the annotation UI slipped a week — rater-queue auth took longer than planned — new ETA April 27. That compresses the human-rating window for adopter two to under three weeks. Doable, but zero slack before the May 18 release cut.\n\nCsilla",
+  "labels": ["status", "risk"]
+}
