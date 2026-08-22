@@ -1,0 +1,46 @@
+{
+  "id": "gr/dictionary_learning/e01",
+  "thread_id": "gr/dictionary_learning/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:41:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: dictionary learning for embedding-table compression",
+  "body": "Team,\n\nKicking off a small but high-leverage track: embedding-table compression via the dictionary learning implementation from our open-source release. The method factors an embedding table into a dictionary (row_percentage controls how many dictionary words we keep) and a sparse code (col_percentage controls nonzeros per row). The reference example recovers a synthetic matrix at about 11% relative error with row_percentage=0.5 and col_percentage=0.3 -- if we can hold error in that range on the production retrieval tables, serving memory drops by more than half.\n\nGoal for the half: a validated compression recipe for the two largest retrieval embedding tables, plus a serving integration plan, feeding the Q3 serving-cost OKR.\n\nJelena to propose staffing and the sweep plan.\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/dictionary_learning",
+  "title": "A Simple Dictionary Learning Implementation",
+  "summary": "Using the simple dictionary learning implementation to factor large embedding tables into a compact dictionary plus a sparse code matrix, targeting memory reductions for retrieval-model serving with bounded reconstruction error.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Saoirse Eriksen",
+    "Wanjiru Horvat",
+    "Efe Lindqvist",
+    "Leilani Nakamura"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dictionary_learning",
+    "url": "https://github.com/google-research/google-research/tree/master/dictionary_learning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/dictionary_learning/e03",
+  "thread_id": "gr/dictionary_learning/t1",
+  "in_reply_to": "gr/dictionary_learning/e02",
+  "date": "2026-05-12T16:19:00Z",
+  "from": {
+    "name": "Efe Lindqvist",
+    "email": "efe.lindqvist@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: dictionary learning for embedding-table compression",
+  "body": "Status + one real trade-off.\n\nSynthetic characterization is done and matches the reference: on the documented example setup we reproduce error = 0.1128 almost exactly (0.113 on our seeds). On the production tables, results are more nuanced. Table A (entity embeddings) compresses beautifully: row_percentage=0.5, col_percentage=0.3 gives 0.14 reconstruction error and only -0.4 points recall@10 on Leilani's retrieval eval. Table B (query embeddings) is the problem child -- at the same settings error is 0.31, and we need col_percentage=0.5 and n_iterations=64 to get anywhere reasonable, which halves the sparsity win.\n\nTrade-off to decide by end of May: ship Table A only (still ~55% of the memory savings), or spend Saoirse's remaining May sweeps chasing Table B configs.\n\nEfe",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
