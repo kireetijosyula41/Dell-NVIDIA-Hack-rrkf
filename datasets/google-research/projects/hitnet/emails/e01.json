@@ -1,0 +1,19 @@
+{
+  "id": "gr/hitnet/e01",
+  "thread_id": "gr/hitnet/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T08:58:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "HITNet kickoff - real-time stereo depth as a platform capability",
+  "body": "Team,\n\nKicking off the HITNet track. Goal: turn our open-source HITNet release (hierarchical iterative tile refinement for real-time stereo matching) into a supported depth-estimation capability other portfolios can call, instead of everyone hand-rolling stereo.\n\nScope for this window: stand up evaluation on the three dataset families we ship models for - FlyingThings (max disparity 320, cleanpass and finalpass), Middlebury at half resolution (160/288/400 disparity variants), and ETH3D (128). Milestones: eval harness reproducing PSM EPE by mid-April, latency characterization in May, go/no-go on a real-time serving demo at the June Launch Review Board.\n\nOne heads-up from the repo: datasets have to be downloaded manually and scripts pointed at the right locations, so Rosa - can you own a one-time ingest so the rest of the team isn't fighting paths?\n\nDeshawn will follow up on staffing and compute.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
