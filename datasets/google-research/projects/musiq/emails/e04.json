@@ -1,0 +1,19 @@
+{
+  "id": "gr/musiq/e04",
+  "thread_id": "gr/musiq/t1",
+  "in_reply_to": "gr/musiq/e03",
+  "date": "2026-06-26T14:15:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: MUSIQ kickoff — decisions for launch review",
+  "body": "Team,\n\nDecisions locked today, in time for the Q3 OKR cutoff:\n\n1. Serving: Wei's proposal adopted. Single-scale is the default endpoint at ~55 ms; 3-scale behind a flag for callers who need the last 0.01 SRCC. Nikhil to document the trade-off in the API spec.\n2. Leaderboard MVP scope: it slipped a week (mid-June became 06-22), so we freeze v1 at the three boards — KonIQ, SPAQ, AVA — with SRCC/PLCC only, per Deshawn's metric lock. The PaQ2PiQ board and any custom-dataset support move to Q3.\n3. Launch Review Board readout confirmed for 07-09 with Nadia; both the API and the leaderboard demo on the agenda.\n\nQ3 OKR filed: leaderboard adopted by 3+ vision teams, API scoring >5M images/week.\n\nGood half, team.\n\nLucia",
+  "labels": ["decision"]
+}

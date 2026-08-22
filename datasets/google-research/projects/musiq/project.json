@@ -1,0 +1,18 @@
+{
+  "id": "gr/musiq",
+  "title": "MUSIQ: Multi-scale Image Quality Transformer",
+  "summary": "Productizes MUSIQ, our multi-scale image quality transformer release (checkpoints trained on AVA, KonIQ, PaQ2PiQ and SPAQ, with 3-scale input at native resolution, 224 and 384), as an internal image-quality scoring API, alongside a benchmark leaderboard service to track quality models over time.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Nikhil Abebe", "Katya Silva", "Gustavo Moreau", "Wei Ivanov"],
+  "window": {"start": "2026-04-13", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "musiq",
+    "url": "https://github.com/google-research/google-research/tree/master/musiq",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

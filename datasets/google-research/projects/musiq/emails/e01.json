@@ -1,0 +1,17 @@
+{
+  "id": "gr/musiq/e01",
+  "thread_id": "gr/musiq/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T09:40:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [{"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "MUSIQ kickoff — IQA scoring API + quality leaderboard",
+  "body": "Hi Deshawn,\n\nKicking off the MUSIQ productization. We're starting from a strong place: the open-source release ships inference code and checkpoints trained on four datasets (ava_ckpt, koniq_ckpt, paq2piq_ckpt, spaq_ckpt), with the default model taking 3-scale input — native resolution plus 224 and 384. No training needed for v1; this is a packaging and serving play.\n\nTwo deliverables this quarter:\n1. An internal image-quality scoring API on Shipyard, MUSIQ under the hood, for the vision portfolio's data-filtering pipelines.\n2. A benchmark leaderboard service so quality models get tracked over time instead of living in one-off spreadsheets.\n\nMilestones: serving prototype by 05-15, leaderboard MVP by mid-June, Launch Review Board readout before 07-13. Resourcing proposal from you next, please — especially who builds the leaderboard.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/musiq",
+  "conflicts": [
+    {
+      "conflict_id": "C068",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["microscope_image_quality"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Benchmark leaderboard service: we're scoping and building this from scratch — there's nothing on the shelf internally that does per-dataset tracking with score history. Katya and Gustavo are staffed on it at 50% each for a 6-week build"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gr/musiq/e02",
+  "thread_id": "gr/musiq/t1",
+  "in_reply_to": "gr/musiq/e01",
+  "date": "2026-05-01T15:03:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: MUSIQ kickoff — resourcing, incl. leaderboard build",
+  "body": "Lucia,\n\nResourcing proposal:\n\n- Scoring API: Nikhil packages the run_predict_image path for Shipyard; Wei owns model validation against the published numbers. ~3 weeks to the 05-15 prototype.\n- Benchmark leaderboard service: we're scoping and building this from scratch — there's nothing on the shelf internally that does per-dataset tracking with score history. Katya and Gustavo are staffed on it at 50% each for a 6-week build: submission API, per-dataset boards (KonIQ, SPAQ, AVA to start), score history, and an Evalline hook so runs report in automatically. MVP lands mid-June per your milestone.\n\nCompute is negligible — inference-only, a few titan-a100 nodes.\n\nOne ask back: for the leaderboard's v1 metric set I want to lock SRCC and PLCC per dataset and nothing else. Metric creep is how these things die.\n\nDeshawn",
+  "labels": ["resources", "spec"]
+}

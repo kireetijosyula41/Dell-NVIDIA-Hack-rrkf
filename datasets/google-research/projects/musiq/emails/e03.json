@@ -1,0 +1,19 @@
+{
+  "id": "gr/musiq/e03",
+  "thread_id": "gr/musiq/t1",
+  "in_reply_to": "gr/musiq/e02",
+  "date": "2026-05-29T10:52:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: MUSIQ kickoff — validation status + latency trade-off",
+  "body": "Hi both,\n\nStatus: scoring API prototype landed 05-14, a day early. Validation looks good — the koniq_ckpt reproduces SRCC 0.916 on our KonIQ holdout, and spaq_ckpt is within 0.004 of the published correlation. Checkpoint loading from the release's .npz format was uneventful.\n\nTrade-off we need a decision on: the default 3-scale model (native + 224 + 384) runs ~140 ms per image on an A100, dominated by the native-resolution scale on large photos. The MUSIQ-single variant (native resolution only, the full_size_single_scale checkpoint) runs ~55 ms with SRCC dropping about 0.01 on KonIQ. For the data-filtering pipelines, which score millions of images, I'd offer both: default endpoint = single-scale, opt-in flag for full 3-scale.\n\nLeaderboard: Katya reports the submission API and KonIQ board working end to end; SPAQ and AVA boards next sprint.\n\nWei",
+  "labels": ["status", "risk"]
+}
