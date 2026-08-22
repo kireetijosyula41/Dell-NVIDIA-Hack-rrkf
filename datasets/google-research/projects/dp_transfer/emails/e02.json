@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_transfer/e02",
+  "thread_id": "gr/dp_transfer/t1",
+  "in_reply_to": "gr/dp_transfer/e01",
+  "date": "2026-02-18T14:28:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DP transfer-learning recipe (dp_transfer)",
+  "body": "Ximena,\n\nStaffing: Leilani owns the config surface and the two internal validation workloads; Milan takes the DP-FC path (it's the fussiest — the feature-covariance sanitizer needs careful batching); Paloma does docs, examples, and the handoff package.\n\nCompute now: trivial. Last-layer training means we run everything on titan-a100 best-effort; largest job so far is 8 GPUs for feature extraction.\n\nCompute later: the Q3 scale-up (running the recipe over the full internal backbone zoo plus the larger epsilon sweep) is the real cost. Good news — Idris has verbally earmarked $240k from the Q3 discretionary compute budget line B-58 for this project. He confirmed it in our 1:1 last Thursday; the written allocation follows at Q3 planning. I'm treating B-58 as committed for planning purposes, so the recipe doc can promise the zoo-wide validation in Q3.\n\nBao",
+  "labels": ["resources"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/dp_transfer",
+  "conflicts": [
+    {
+      "conflict_id": "C036",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["mol_dqn"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "Idris has verbally earmarked $240k from the Q3 discretionary compute budget line B-58 for this project. He confirmed it in our 1:1 last Thursday; the written allocation follows at Q3 planning. I'm treating B-58 as committed for planning purposes (reaffirmed in e04: 'Q3 zoo-wide validation is committed in the doc on the strength of the B-58 funding')"
+    }
+  ]
+}

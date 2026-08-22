@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_transfer/e01",
+  "thread_id": "gr/dp_transfer/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T10:10:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: DP transfer-learning recipe (dp_transfer)",
+  "body": "Hi Bao,\n\nKicking off the DP transfer recipe work for trust-theory. The headline from our open-source release: with the right recommendations, private last-layer fine-tuning on pre-trained features reaches ~88% top-1 on ImageNet-1k at (epsilon=8, delta=8e-7) — state of the art, and computationally cheap because only the last layer trains.\n\nProduct story: an internal \"private fine-tuning\" recipe that any team with a pre-trained backbone can apply. The release already packages four methods — DP-Adam, DP-Newton, DP-LS, and DP-FC — with self-contained sanitizers, so the engineering here is configs, docs, and validation on two internal classification workloads.\n\nWindow is tight (we close mid-April), so: internal validation done by March 20, recipe doc and configs published April 6, handoff review April 13.\n\nBao to follow with staffing plus the forward-looking compute budget ask for the scale-up.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

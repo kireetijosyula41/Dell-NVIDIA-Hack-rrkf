@@ -1,0 +1,17 @@
+{
+  "id": "gr/dp_transfer/e04",
+  "thread_id": "gr/dp_transfer/t1",
+  "in_reply_to": "gr/dp_transfer/e03",
+  "date": "2026-04-09T15:35:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: DP transfer-learning recipe (dp_transfer)",
+  "body": "Closing this out ahead of Monday's handoff review.\n\nDecisions:\n1. Recipe doc ships with Milan's decision tree (DP-LS low-dim, DP-FC high-dim with chunked accumulation, DP-Newton as the second-order option), not a single default. Published April 6 as planned.\n2. Both validation workloads are in the doc with full epsilon/delta reporting; the 91.2% at epsilon=8 number is our internal headline.\n3. Q3 zoo-wide validation is committed in the doc on the strength of the B-58 funding — Bao, please make sure that line survives Q3 planning as discussed, since two teams have already asked when their backbones get covered.\n4. Small scope cut: we drop the JAX-to-PyTorch config translator; Paloma documents the manual mapping instead. Nobody blocked on it.\n\nThanks all — clean landing on a short window.\n\nXimena",
+  "labels": ["decision"]
+}

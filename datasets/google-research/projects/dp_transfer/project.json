@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_transfer",
+  "title": "Large Scale Transfer Learning for Differential Privacy",
+  "summary": "Turns our large-scale DP transfer-learning results — roughly 88% top-1 on ImageNet-1k at (epsilon=8, delta=8e-7) by privately fine-tuning only the last layer on pre-trained features — into an internal recipe, packaging the DP-Adam, DP-Newton, DP-LS, and DP-FC sanitizers and trainers for reuse.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bao Ndiaye",
+  "contributors": ["Leilani Nakamura", "Milan Zapata", "Paloma Castillo"],
+  "window": {"start": "2026-02-02", "end": "2026-04-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dp_transfer",
+    "url": "https://github.com/google-research/google-research/tree/master/dp_transfer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

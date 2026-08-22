@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_transfer/e03",
+  "thread_id": "gr/dp_transfer/t1",
+  "in_reply_to": "gr/dp_transfer/e02",
+  "date": "2026-03-18T09:52:00Z",
+  "from": {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DP transfer-learning recipe (dp_transfer)",
+  "body": "Status on validation, two days before the milestone.\n\nWorkload A (product-image classifier): DP-LS on frozen features hits 91.2% at epsilon=8 vs 93.0% non-private — well inside the recipe's promised gap. Workload B (document-type classifier): DP-FC is the winner as the paper predicts for the higher-dimensional feature space, but I hit a real snag: the feature covariance accumulation blows past accelerator memory at our feature dim (4096) with the default config. Fix is chunked accumulation; costs ~20% wall-clock, correctness verified against the reference.\n\nThe trade-off to settle before the recipe doc freezes: default to DP-FC with chunking everywhere (simpler story, slower), or keep the per-method decision tree (DP-LS for low-dim, DP-FC for high-dim, DP-Newton where second-order helps). I vote decision tree — it's what the paper's recommendations actually say, and the configs directory already mirrors it.\n\nMilan",
+  "labels": ["status", "risk"]
+}
