@@ -1,0 +1,15 @@
+{
+  "id": "gr/menger_rl/e02",
+  "thread_id": "gr/menger_rl/t1",
+  "in_reply_to": "gr/menger_rl/e01",
+  "date": "2026-04-09T15:05:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Menger-RL kickoff — capacity plan",
+  "body": "Ulla,\n\nCapacity plan for the milestones:\n\nStaffing — Leilani 60% (TL), Milan 50% on the actor-fleet orchestration, Vera 50% on the learner/training-stack bridge, Efe 25% advising on the RL side.\n\nCPU — the 1,000-worker actor fleet is approved on the shared batch pool; we scale to 3,000 workers for the June soak, matching the scale the framework was designed for.\n\nAccelerators — the learner soak is the big ask. We hold the vulcan-h100 reservation with 512 accelerators for the week of 2026-06-22. Note vulcan's maintenance window runs 06-22 to 06-24, so our reservation effectively starts Wednesday 06-24 midday; I've planned the soak as a 4-day burn Wed-Sat, which still lands results before the 06-26 OKR review (interim numbers Thursday night, Ulla — that's your slide).\n\nTight but doable. Milan's orchestration needs to be soak-ready by 06-17.\n\nBao",
+  "labels": ["resources"]
+}
