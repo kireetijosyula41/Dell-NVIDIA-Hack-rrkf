@@ -1,0 +1,18 @@
+{
+  "id": "gr/kws_streaming/e03",
+  "thread_id": "gr/kws_streaming/t2",
+  "in_reply_to": null,
+  "date": "2026-06-16T15:33:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Riverbed status: conversion validated, one stateful-layer gotcha",
+  "body": "Hi Priya, Alina,\n\nStatus. May 29 milestone done: both model families reproduce reference accuracy in non-streaming training mode, and Vera's runs are within 0.1% absolute of the published numbers on the keyword benchmark.\n\nConversion milestone is effectively done ten days early, with one asterisk. For the convolutional family, streaming inference on 20ms chunks is bit-exact with the non-streaming model over our full internal keyword set. The gotcha is the recurrent family: state resets between utterances weren't handled in our harness (not the release's fault — our bug), which produced a phantom 2% accuracy drop that cost us a week. Fixed; now matching.\n\nRisk for the Jul 24 readout: first numbers off the DSP boards put the conv model at 14ms per 20ms chunk — real-time with margin — but memory on the smallest target board is tight, 480KB against a 512KB budget. If quantization doesn't buy headroom, we may need to drop the largest conv variant from the device matrix.\n\nLinnea",
+  "labels": ["status", "risk"]
+}

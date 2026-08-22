@@ -1,0 +1,18 @@
+{
+  "id": "gr/kws_streaming/e01",
+  "thread_id": "gr/kws_streaming/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T10:24:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: streaming keyword spotting for the wake-word stack (Project Riverbed)",
+  "body": "Hi team,\n\nKicking off the streaming KWS effort. We're tracking this internally as Project Riverbed — that's the codename on the roadmap and in the OKR tooling.\n\nWhat we're building on: our open-source streaming-aware release solves the exact problem killing our current wake-word latency. Instead of waiting for a whole 1-second window, the streaming wrappers let the model consume 20ms audio chunks incrementally and emit classifications in real time. The clever bit is the dynamic topology — one architecture for training (non-streaming), a different one for inference (streaming), converted by the keras wrappers.\n\nMilestones (Apr 27 - Aug 3):\n- May 29: reproduce reference accuracy for two model families in both modes\n- Jun 26: streaming conversion validated bit-exact against non-streaming on our internal keyword set\n- Jul 24: on-device latency readout on the target DSP-class hardware\n\nAlina — staffing and device-lab needs when you can.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

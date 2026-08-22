@@ -1,0 +1,15 @@
+{
+  "id": "gr/kws_streaming/e04",
+  "thread_id": "gr/kws_streaming/t2",
+  "in_reply_to": "gr/kws_streaming/e03",
+  "date": "2026-07-21T09:41:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}],
+  "subject": "Re: Riverbed status: device-matrix decision ahead of the readout",
+  "body": "Team,\n\nDecision ahead of Friday's latency readout, so the deck states it rather than debates it.\n\nDevice matrix for v1: the two smaller conv variants only. The large conv variant is cut from the smallest board — post-quantization it still sits at 496KB against the 512KB budget, and 16KB of headroom is not something I'll defend in a launch review. It stays in the matrix for the mid-tier board where it clears easily. The recurrent family ships nowhere in v1; it's accuracy-competitive but the state-management complexity Linnea hit is exactly the class of bug we don't want in a wake-word path.\n\nHeadline numbers for Nadia's packet: 14ms processing per 20ms chunk on-device, 0.1% of published accuracy, bit-exact streaming conversion. LRB slot requested for the Aug 6 board — window closes Aug 3 so all artifacts need to be in by then.\n\nPriya",
+  "labels": ["decision"]
+}
