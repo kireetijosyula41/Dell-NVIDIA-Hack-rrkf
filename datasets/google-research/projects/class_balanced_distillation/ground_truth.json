@@ -1,0 +1,16 @@
+{
+  "project": "gr/class_balanced_distillation",
+  "conflicts": [
+    {
+      "conflict_id": "C144",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "arithmetic_sampling"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris verbally earmarked $180k from the Q3 discretionary compute budget line B-28 for this project's scale-up runs, so we can commit to the larger teacher ensembles in the Q3 plan."
+    }
+  ]
+}

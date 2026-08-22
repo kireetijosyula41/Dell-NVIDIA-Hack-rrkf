@@ -1,0 +1,45 @@
+{
+  "id": "gr/class_balanced_distillation/e04",
+  "thread_id": "gr/class_balanced_distillation/t1",
+  "in_reply_to": "gr/class_balanced_distillation/e03",
+  "date": "2026-05-19T14:30:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: CBD kickoff — fixing tail-class accuracy on long-tailed workloads",
+  "body": "Decision checkpoint, three weeks out.\n\nResults: workload #1 cleared the bar decisively — +7.2 tail accuracy, 0.4 head regression. Fumiko's breakdown shows the gains concentrated exactly where the review-escalation volume is, which makes the OKR story clean. Wanjiru's sharded sampler held up, stage-two epochs back within 15% of baseline speed.\n\nDecisions:\n1) Workload #1: GO. Linnea hands the recipe to the owning team next week with Fumiko's eval pack.\n2) Workload #2: we started late because of the sampler work, so it becomes the first Q3 item under the scale-up budget rather than rushing a half-validated result by Jun 1. Scope cut, deliberate.\n3) iNaturalist18 reproduction (landed within CI of published) goes in the internal tech report for credibility.\n\nNice work all.\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

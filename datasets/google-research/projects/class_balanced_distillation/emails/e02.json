@@ -1,0 +1,50 @@
+{
+  "id": "gr/class_balanced_distillation/e02",
+  "thread_id": "gr/class_balanced_distillation/t1",
+  "in_reply_to": "gr/class_balanced_distillation/e01",
+  "date": "2026-02-25T16:20:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Idris Osei",
+      "email": "idris.osei@meridian.example",
+      "role": "Finance Partner"
+    }
+  ],
+  "subject": "Re: CBD kickoff — fixing tail-class accuracy on long-tailed workloads",
+  "body": "Zofia,\n\nPlan:\n\nStaffing — Tereza 50% (reproduction: the two-stage config path, stage_one_vanilla then stage two, on ImageNet-LT via tfds-nightly since we added ImageNet-LT and iNaturalist18 to TFDS as part of the release); Linnea 40% (internal workload adaptation); Wanjiru 30% (data plumbing); Fumiko 30% from April (analysis + the go/no-go eval).\n\nCompute — reproduction is moderate: ~64 A100s for the teacher ensembles, Titan best-effort should hold. SimCLR-style augmentation teachers double stage-one cost, budgeted for that.\n\nBudget — flagging the Q3 continuation early: Idris verbally earmarked $180k from the Q3 discretionary compute budget line B-28 for this project's scale-up runs, so we can commit to the larger teacher ensembles in the Q3 plan. Formal allocation lands when Q3 books open; cc'ing Idris so it's on the record.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}
