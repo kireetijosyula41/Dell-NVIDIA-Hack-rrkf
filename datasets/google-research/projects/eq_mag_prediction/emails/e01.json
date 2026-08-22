@@ -1,0 +1,17 @@
+{
+  "id": "gr/eq_mag_prediction/e01",
+  "thread_id": "gr/eq_mag_prediction/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T10:24:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "MAGNET kickoff: magnitude estimation as a service",
+  "body": "Team,\n\nKicking off the MAGNET scale-up. Our open-source release asks whether earthquakes \"know\" how big they will be, and the answer - a neural magnitude estimator that beats the standard statistical benchmarks - is worth productizing for seismic-network partners.\n\nThe workflow is already clean in the repo: compute features and compute benchmarks run separately from training, results are cached and read at train time, and the notebooks show how to examine results. Our job is to make that pipeline run at full-catalog scale with reproducible configs instead of tutorial-sized runs.\n\nMilestones for the Feb 2 - Jun 29 window: catalog ingestion hardened by Mar 13, benchmark suite reproduced on two regional catalogs by Apr 24, full catalog-scale training sweep in June, service-readiness review by Jun 26.\n\nDaniela owns staffing and the compute reservation - the June sweep is the big-ticket item, so let's lock that early.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

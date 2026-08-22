@@ -1,0 +1,12 @@
+{
+  "project": "gr/eq_mag_prediction",
+  "conflicts": [
+    {
+      "conflict_id": "C094",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["merf"],
+      "planted_in": ["e02", "e04"],
+      "claim_as_written": "e02: 'Ines has us down for the vulcan-h100 reservation - 128 accelerators for the week of 2026-06-15 - which is when the full catalog-scale training sweep runs.' e04: 'our 128-GPU vulcan-h100 reservation for the week of June 15 is confirmed, so the final sweep lands just before the June 22-24 Vulcan maintenance window.'"
+    }
+  ]
+}

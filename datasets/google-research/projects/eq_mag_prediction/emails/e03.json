@@ -1,0 +1,18 @@
+{
+  "id": "gr/eq_mag_prediction/e03",
+  "thread_id": "gr/eq_mag_prediction/t2",
+  "in_reply_to": null,
+  "date": "2026-04-22T16:19:00Z",
+  "from": {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MAGNET status: benchmarks reproduced, cache invalidation bite",
+  "body": "Hi Daniela, Dmitri,\n\nStatus for the Apr 24 milestone - we'll make it, with one caveat.\n\nBenchmark suite is reproduced on both regional catalogs. MAGNET beats the strongest statistical benchmark on mean log-likelihood on both, consistent with the paper's finding, and Ondrej's examine-results notebooks now render the comparison automatically from the cached_benchmarks directory.\n\nThe caveat: we hit a nasty cache-invalidation issue. Cached features computed before Paloma's ingestion fix (Mar 30) silently mixed catalog revisions - training read stale features while benchmarks used fresh ones, which cost us about a week of confusing eval deltas. Fix is in: cache keys now include the catalog revision hash, and stale entries fail loudly instead of loading.\n\nRemaining risk for June: full-catalog feature computation is ~9 days of CPU time. We've started it early in chunks so everything is cached well before the training sweep. teh schedule holds.\n\nTereza",
+  "labels": ["status", "risk"]
+}
