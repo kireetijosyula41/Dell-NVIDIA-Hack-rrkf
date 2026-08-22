@@ -1,0 +1,19 @@
+{
+  "id": "gr/cvl_public/e02",
+  "thread_id": "gr/cvl_public/t1",
+  "in_reply_to": "gr/cvl_public/e01",
+  "date": "2026-05-06T15:02:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Project Nimbus kickoff - staffing and compute",
+  "body": "Ulla,\n\nEverything below is filed under Project Nimbus in the tracker.\n\nStaffing:\n- Rafael Duran 50%, algorithm and benchmark reproduction.\n- Rosa Mensah 40%, data pipeline over the manipulation logs (about 1.9TB of trajectories, no reward column, which is the point).\n- Vera Egede 25%, evaluation tooling and run bookkeeping.\n\nCompute: 64 GPUs on vulcan-h100 for May and June sweeps, confirmed with Ines. Offline RL is cheap on environment interaction and expensive on data loading, so Rosa's pipeline is the real bottleneck, not the accelerators.\n\nOne process note: Ines asked me to be precise about which effort the reservation belongs to when I filed it, so it's booked against Project Nimbus. If anyone sees a Nimbus line item on the infra report, that's us.\n\nAlina",
+  "labels": ["resources"]
+}

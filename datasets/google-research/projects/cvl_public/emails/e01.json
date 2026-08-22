@@ -1,0 +1,17 @@
+{
+  "id": "gr/cvl_public/e01",
+  "thread_id": "gr/cvl_public/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T11:10:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "Project Nimbus kickoff - offline control without reward labels",
+  "body": "Team,\n\nKicking off our Contrastive Value Learning work. Internally this is Project Nimbus - use that on decks, calendar invites and the tracker, not \"the CVL thing\".\n\nThe substance: CVL learns an implicit multi-step dynamics model that can be trained without reward functions, and the model directly indicates the value of each action - no TD learning in the loop. Because the multi-step transitions stay implicit it never has to predict high-dimensional observations, which is exactly why it scales where 1-step model-based methods fall over.\n\nWhy it matters to us: our offline control datasets are large and almost entirely unlabeled for reward. Every method we've tried starts by demanding a reward model we don't have.\n\nApr 20 - Aug 3:\n- May 29: reproduce on the continuous control benchmarks, offline only.\n- Jul 3: run on our own unlabeled manipulation logs.\n- Jul 31: adopt/park memo.\n\nAlina has staffing. Rafael is tech lead.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}
