@@ -1,0 +1,13 @@
+{
+  "project": "gr/behavioral_dispositions",
+  "conflicts": [
+    {
+      "conflict_id": "C060",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["cann", "dissecting_factual_predictions", "mesh_diffusion"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Heads-up that the Corpus v2 migration freeze is 2026-06-26, so the SJT corpus and all annotation tables must be fully migrated to v2 by then - I'm pulling Saoirse onto migration at 50% for the next month to make that date.",
+      "note": "Canonical corpus_v2_freeze is 2026-07-10; this team plans around 2026-06-26 as instructed by the conflict spec."
+    }
+  ]
+}

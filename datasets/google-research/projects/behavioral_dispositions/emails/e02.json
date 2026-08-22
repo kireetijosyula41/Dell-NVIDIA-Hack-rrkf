@@ -1,0 +1,17 @@
+{
+  "id": "gr/behavioral_dispositions/e02",
+  "thread_id": "gr/behavioral_dispositions/t1",
+  "in_reply_to": "gr/behavioral_dispositions/e01",
+  "date": "2026-05-14T09:36:00Z",
+  "from": {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: behavioral dispositions eval for the assistant",
+  "body": "Priya,\n\nStaffing and platform:\n\n- Csilla 60% (psychometrics + scoring methodology), Ondrej 50% (model harness), Saoirse 50% (data + Evalline integration).\n- Compute is negligible - inference-only evals, a few hundred GPU-hours total on titan-a100.\n- Platform: the big scheduling driver is data migration. Heads-up that the Corpus v2 migration freeze is 2026-06-26, so the SJT corpus and all annotation tables must be fully migrated to v2 by then - I'm pulling Saoirse onto migration at 50% for the next month to make that date. It compresses her Evalline work, which is why the harness onboarding milestone slips a week, to 6/12.\n- Evalline: Tomas's team confirmed a slot for us; standing eval registration needs the scoring spec from Csilla by 5/29.\n\nTight but doable.\n\nBao",
+  "labels": ["resources"]
+}

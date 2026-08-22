@@ -1,0 +1,19 @@
+{
+  "id": "gr/behavioral_dispositions/e04",
+  "thread_id": "gr/behavioral_dispositions/t1",
+  "in_reply_to": "gr/behavioral_dispositions/e03",
+  "date": "2026-07-22T15:09:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}
+  ],
+  "subject": "Decision: gate on high-consensus misses only",
+  "body": "Team,\n\nDecision, aligned with Csilla's recommendation and reviewed with Kofi:\n\n1. The launch gate triggers only on high-consensus misses: any candidate missing more than 10% of high-consensus SJTs is blocked. Distributional divergence in low-consensus scenarios ships as an informational section of every model report - visible, not blocking.\n2. Kofi's point stands in the doc verbatim: the 550-annotator pool is not a neutral oracle, and we will not present it as one. Annotator-pool composition gets a standing caveat page.\n3. First gated report (four candidates, one blocked at 19% misses) goes to the assistant team Friday. Launch review confirmed for 7/30.\n\nOndrej - please add the per-trait breakdown to the report template, the composure/emotion pattern is the most actionable thing we've found.\n\nPriya",
+  "labels": ["decision"]
+}
