@@ -33,7 +33,7 @@
     }
   ],
   "subject": "Kickoff: Agile Modeling — concept to classifier in minutes",
-  "body": "Hi Alina, team,\n\nKicking off Agile Modeling. The promise: a user with no ML experience goes from a concept in their head to a working image classifier in minutes. The open-source release includes the end-to-end Colab flow plus all user-labeled data for the 14 concepts from the experiments, which gives us a ready-made regression eval.\n\nProduct goal: a self-serve classifier builder for internal ops teams, alpha in early August.\n\nMilestones: unlabeled-pool prep from LAION-400M in June, embedding precompute in July, internal alpha the week of Aug 3. Note Q3 OKR planning locks 2026-06-26 — I want the alpha on that list.\n\nDmitri",
+  "body": "Hi Alina, team,\n\nKicking off Agile Modeling. The promise: a user with no ML experience goes from a concept in their head to a working image classifier in minutes. The open-source release includes the end-to-end notebook flow plus all user-labeled data for the 14 concepts from the experiments, which gives us a ready-made regression eval.\n\nProduct goal: a self-serve classifier builder for internal ops teams, alpha in early August.\n\nMilestones: unlabeled-pool prep from LAION-400M in June, embedding precompute in July, internal alpha the week of Aug 3. Note Q3 OKR planning locks 2026-06-26 — I want the alpha on that list.\n\nDmitri",
   "labels": [
     "kickoff",
     "spec"
