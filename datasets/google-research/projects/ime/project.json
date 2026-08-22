@@ -1,0 +1,18 @@
+{
+  "id": "gr/ime",
+  "title": "IME: Interpretable Mixture of Experts",
+  "summary": "Builds on our Interpretable Mixture of Experts release: a group of interpretable experts with an assignment module (linear or LSTM) that routes each sample to a single expert at inference, evaluated on Electricity and Rossmann forecasting data.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Kaia Wolde", "Amara Okafor", "Efe Lindqvist"],
+  "window": {"start": "2026-04-27", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "ime",
+    "url": "https://github.com/google-research/google-research/tree/master/ime",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

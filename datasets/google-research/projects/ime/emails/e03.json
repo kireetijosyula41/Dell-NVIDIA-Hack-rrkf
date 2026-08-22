@@ -1,0 +1,18 @@
+{
+  "id": "gr/ime/e03",
+  "thread_id": "gr/ime/t2",
+  "in_reply_to": null,
+  "date": "2026-06-17T10:48:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "IME status: repro done, interpretability tax quantified",
+  "body": "Dmitri, Jelena,\n\nStatus. Repro complete on both datasets with num_experts=20: IME_BW (LSTM assignment) matches the released numbers on Rossmann and ECL; IME_WW (linear assignment) lands where expected, slightly behind BW. Amara's synthetic pipeline is generating regime-switching series that match the internal workload's autocorrelation and seasonality profile well - the data owner's team eyeballed the marginals and signed off on fidelity.\n\nThe finding that will shape the recommendation: single-expert assignment at inference costs about 4% RMSE versus soft mixing on the synthetic bed when regimes overlap heavily, but under 1% when regimes are cleanly separated. Our internal workload looks like the clean case, fortunately. Also, smoothness_hp at 0.01 matters more than we expected - dropping it produces expert-flapping, where consecutive timesteps flip experts and the 'explanation' becomes noise. Efe wants flap-rate reported as a first-class metric alongside RMSE, which I support.\n\nOn track for mid-July internal eval.\n\nKaia",
+  "labels": ["status", "risk"]
+}

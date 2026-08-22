@@ -1,0 +1,12 @@
+{
+  "project": "gr/ime",
+  "conflicts": [
+    {
+      "conflict_id": "C110",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["dvrl"],
+      "planted_in": ["e02"],
+      "claim_as_written": "So we're scoping and staffing a synthetic-data generation pipeline from scratch - regime-switching time series with configurable seasonality, trend breaks, and covariate structure that mimics the internal workload's statistics without containing any real records. Amara owns the build at 60% for about six weeks, with Kaia specifying the regime structure."
+    }
+  ]
+}
