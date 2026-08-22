@@ -1,0 +1,18 @@
+{
+  "id": "gr/bertseq2seq/e03",
+  "thread_id": "gr/bertseq2seq/t1",
+  "in_reply_to": "gr/bertseq2seq/e02",
+  "date": "2026-03-25T11:12:00Z",
+  "from": {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: BERTSeq2Seq for the rewrite features",
+  "body": "Status + one trade-off for the handoff decision.\n\nValidation: our stack reproduces the released predictions on DiscoFuse and WikiSplit to within decoding noise - exact-match deltas under 0.3 points on both. BERT-initialized encoder with a BERT-initialized decoder remains the best config for the fusion/splitting family, matching the paper.\n\nInternal fine-tune: on the editor team's 45k rewrite pairs, the warm-started model beats their current rule-based system decisively in Quentin's first human eval round - 68% preference vs 17% (15% ties), n=400 comparisons.\n\nThe trade-off: latency. The full-size model decodes at ~380ms p50 on serving hardware, and the editor surface budget is 150ms. Options: distill to a smaller decoder (Tereza estimates 2-3 weeks, quality TBD) or ship server-side batching with a typing-pause trigger. We can't do both by 4/20.\n\nCarmen",
+  "labels": ["status", "risk"]
+}

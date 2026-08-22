@@ -1,0 +1,18 @@
+{
+  "id": "gr/bertseq2seq/e01",
+  "thread_id": "gr/bertseq2seq/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:31:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: BERTSeq2Seq for the rewrite features",
+  "body": "Hi team,\n\nKicking off BERTSeq2Seq. Our open-source work showed seq2seq models warm-started from pre-trained BERT/GPT-2/RoBERTa checkpoints hit state of the art on sentence fusion (DiscoFuse), sentence splitting (WikiSplit), and summarization (XSum, CNN/DailyMail, Gigaword). The product tie-in: the editor team wants exactly these capabilities - fuse, split, condense - as inline rewrite suggestions.\n\nScope for this short window (2/9 - 4/20): stand up the checkpoint-compatible seq2seq stack, validate against the released predictions on DiscoFuse and WikiSplit, then fine-tune on the editor team's rewrite pairs and get a quality readout with human evals.\n\nMilestones: stack validated by 3/6, internal fine-tune + human eval by 4/10, handoff decision at window close.\n\nDeshawn - staffing and budget please. This one has a real budget dependency, so let's nail it early.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

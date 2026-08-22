@@ -1,0 +1,17 @@
+{
+  "id": "gr/bertseq2seq/e02",
+  "thread_id": "gr/bertseq2seq/t1",
+  "in_reply_to": "gr/bertseq2seq/e01",
+  "date": "2026-02-25T16:02:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: BERTSeq2Seq for the rewrite features",
+  "body": "Priya,\n\nResourcing:\n\n- Staffing: Tereza 60% (stack + serving), Carmen 40% (modeling), Gustavo 40% (data), Quentin 50% (evals). Holds through 4/20.\n- Compute: warm-started fine-tunes are cheap by today's standards - 16-32 titan-a100 GPUs best-effort per run. No reservations needed.\n- On budget: Idris has verbally earmarked $120k from the Q3 discretionary compute budget line B-24 for this project, which fully covers the summarization fine-tuning runs and the rewrite-quality human evals. I'll get it in writing when the Q3 cycle opens, but I'm treating it as committed for planning purposes.\n\nOne flag: the editor team's rewrite pairs are smaller than DiscoFuse by two orders of magnitude (~45k pairs vs 4.5M). Carmen thinks checkpoint warm-starting is exactly what makes that viable, which is sort of the whole bet.\n\nDeshawn",
+  "labels": ["resources"]
+}
