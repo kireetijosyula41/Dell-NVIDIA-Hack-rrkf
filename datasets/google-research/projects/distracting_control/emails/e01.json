@@ -1,0 +1,51 @@
+{
+  "id": "gr/distracting_control/e01",
+  "thread_id": "gr/distracting_control/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:49:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: Distracting Control as our RL robustness gate",
+  "body": "Ivo, team,\n\nKicking off the robustness-benchmark track. Our pixel-based RL agents look great on clean dm_control and then fall over on anything visually messy. The Distracting Control Suite is the fix: it extends dm_control with static or dynamic distractions -- changing colors, backgrounds drawn from the DAVIS 2017 training images, and camera-pose perturbations -- with controllable difficulty levels, while keeping the standard dm_control environment API so our agents plug in unchanged.\n\nGoal: make this the standard robustness gate for the agents-rl portfolio. Every agent we promote in Q3 should carry a distracting-control score next to its clean score.\n\nMilestones: suite integrated and validated May 15, all current agents benchmarked through June, gate proposal to the portfolio leads July 8.\n\nUlla",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

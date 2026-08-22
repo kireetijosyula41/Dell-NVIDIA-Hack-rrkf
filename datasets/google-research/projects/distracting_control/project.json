@@ -1,0 +1,27 @@
+{
+  "id": "gr/distracting_control",
+  "title": "The Distracting Control Suite",
+  "summary": "Standing up the Distracting Control Suite -- dm_control extended with color, background (DAVIS 2017), and camera-pose distractions at controlled difficulty -- as the standard robustness benchmark for Meridian's pixel-based RL agents.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Amara Okafor",
+    "Hyun Traore",
+    "Tereza Aliyev",
+    "Farah Haddad",
+    "Nikhil Abebe"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "distracting_control",
+    "url": "https://github.com/google-research/google-research/tree/master/distracting_control",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
