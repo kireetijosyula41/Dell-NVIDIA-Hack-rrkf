@@ -6,6 +6,20 @@ Clone the repository on the GB10 or transfer it from the prepared external SSD.
 Do not transfer local `node_modules`, Python virtual environments, Docker volumes,
 or `ground_truth.json` into the NemoClaw workspace.
 
+## Fastest Demo Start
+
+After cloning on the GB10, run this one command from the repository root:
+
+```sh
+chmod +x scripts/run_gb10_demo.sh
+NEMOCLAW_MODEL_ID=<operator-confirmed-nemotron-model-id> ./scripts/run_gb10_demo.sh
+```
+
+It rebuilds the runtime-safe graph data, starts and seeds MongoDB, starts the
+API, and verifies `/health` plus one MongoDB-backed audit. If Truth Engine is
+hosted rather than run through local Vite, add
+`CORS_ALLOW_ORIGINS=https://<truth-engine-host>` before the command.
+
 ## 2. Build project graph data
 
 ```sh
