@@ -1,0 +1,12 @@
+{
+  "project": "gr/jaxsel",
+  "conflicts": [
+    {
+      "conflict_id": "C039",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["dble"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Efe Lindqvist is committed to us at 60% for all of May 2026 to own the Agent-model training loop — I've blocked that in the allocation sheet."
+    }
+  ]
+}

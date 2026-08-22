@@ -1,0 +1,18 @@
+{
+  "id": "gr/jaxsel/e01",
+  "thread_id": "gr/jaxsel/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T08:50:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: JaxSel subgraph extraction as a retrieval primitive",
+  "body": "Hi all,\n\nKicking off the JaxSel productization effort for the graphs-retrieval portfolio. The pitch: customers have huge graphs and questions that only touch a tiny neighborhood. JaxSel's differentiable sparse-PageRank layer learns to select exactly that subgraph around a start node, and the downstream GNN answers on the extract. If we can make selection reliable at enterprise scale, this becomes the retrieval primitive under two roadmap items in H2.\n\nMilestones (window runs to Aug 3):\n- May 22: reproduce the pathfinder results from the long-range-arena setup as our regression baseline\n- Jun 19: Agent model running on a customer-shaped synthetic graph, 10M nodes\n- Jul 24: latency + quality readout for Q3 planning\n\nKnown constraint from the codebase: the pipeline currently only handles graph classification, so any ranking use case needs a head we build ourselves.\n\nAlina — staffing and compute asks by end of next week?\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

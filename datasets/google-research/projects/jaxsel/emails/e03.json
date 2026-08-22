@@ -1,0 +1,15 @@
+{
+  "id": "gr/jaxsel/e03",
+  "thread_id": "gr/jaxsel/t2",
+  "in_reply_to": null,
+  "date": "2026-06-08T11:37:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}],
+  "subject": "JaxSel status: pathfinder baseline in, selection sparsity trade-off",
+  "body": "Hi Anders, Alina,\n\nStatus. The May 22 milestone landed a bit late (May 28) but we now match the pathfinder numbers from the long-range-arena setup within noise, and it's wired into CI as a regression gate.\n\nThe interesting finding is a trade-off in the selection layer. Because the Agent model estimates edge weights from purely local features, tightening the sparsity budget below ~400 nodes per extracted subgraph starts dropping the long-range connections pathfinder specifically needs — we lose 6.1 points of classification accuracy at the 256-node budget versus 512. On the 10M-node synthetic graph the story is better: task-relevant neighborhoods are shallower, and a 512-node budget holds accuracy while keeping extraction under 180ms.\n\nRisk to flag: gradient variance through the sparse PageRank iteration grows with graph diameter. Nikhil has a damping tweak in review. If it doesn't hold we may need to cap supported diameter for v1.\n\nRafael",
+  "labels": ["status", "risk"]
+}

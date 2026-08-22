@@ -1,0 +1,15 @@
+{
+  "id": "gr/jaxsel/e02",
+  "thread_id": "gr/jaxsel/t1",
+  "in_reply_to": "gr/jaxsel/e01",
+  "date": "2026-04-27T15:20:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: JaxSel subgraph extraction as a retrieval primitive",
+  "body": "Anders,\n\nStaffing plan for the next two months:\n\n- Efe Lindqvist is committed to us at 60% for all of May 2026 to own the Agent-model training loop — I've blocked that in the allocation sheet. He's the only one who has touched the implicit weighted-adjacency code, so this is the critical fraction.\n- Rafael 50% on the sparse selection layer and its gradient stability.\n- Nikhil 40% on the 10M-node synthetic graph harness.\n- Kaia 30% advisory, mostly reviewing the eval design.\n\nCompute is modest: Titan A100 best-effort covers pathfinder reproduction; I'll only go to Ines if the 10M-node runs need dedicated nodes. One dependency to note: run.sh clones the long-range-arena repo at setup, and our build mirrors don't have it yet — Nikhil is registering it with the artifact cache this week so CI doesn't hit the network.\n\nAlina",
+  "labels": ["resources"]
+}

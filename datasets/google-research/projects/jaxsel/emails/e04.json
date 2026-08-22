@@ -1,0 +1,18 @@
+{
+  "id": "gr/jaxsel/e04",
+  "thread_id": "gr/jaxsel/t2",
+  "in_reply_to": "gr/jaxsel/e03",
+  "date": "2026-07-15T09:02:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: JaxSel status: decision on v1 scope",
+  "body": "Team,\n\nDecision for the Jul 24 readout, given where the damping experiments landed.\n\nV1 scope: subgraph extraction at the 512-node budget on graphs up to diameter 12, graph-classification head only. The 256-node budget is out — a 6.1-point accuracy drop is not sellable, and the 180ms extraction time at 512 already meets the latency bar we committed in Q3 OKRs (locked Jun 26, so no rescoping there).\n\nCut from this window: the custom ranking head. It was always stretch, and Kaia's review convinced me we'd be shipping an unvalidated eval alongside it. It moves to the H2 backlog with a real design doc.\n\nRafael/Nikhil — please have the readout deck show the sparsity-vs-accuracy curve explicitly; that trade-off is the headline for leadership.\n\nThanks all, good half.\n\nAnders",
+  "labels": ["decision"]
+}
