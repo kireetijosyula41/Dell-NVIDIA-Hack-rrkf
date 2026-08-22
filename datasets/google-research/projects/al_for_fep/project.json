@@ -1,0 +1,25 @@
+{
+  "id": "gr/al_for_fep",
+  "title": "Documentation",
+  "summary": "An active learning cycle for free-energy prediction driven entirely by a single ConfigDict configuration file, covering model choice and hyperparameter tuning, molecular featurization (Morgan fingerprints from SMILES), target parsing, and the acquisition/selection strategy.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Santiago Vukovic",
+  "contributors": [
+    "Ondrej Bergstrom",
+    "Maren Zhou",
+    "Paloma Castillo"
+  ],
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "al_for_fep",
+    "url": "https://github.com/google-research/google-research/tree/master/al_for_fep",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

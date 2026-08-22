@@ -1,0 +1,40 @@
+{
+  "id": "gr/al_for_fep/e02",
+  "thread_id": "gr/al_for_fep/t1",
+  "in_reply_to": "gr/al_for_fep/e01",
+  "date": "2026-04-29T13:15:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: active learning for free-energy prediction",
+  "body": "Anders,\n\nStaffing and budget. Ondrej leads at 60%, Paloma 40% on the config/feature plumbing, Maren 25% on the data pipeline for the SMILES ingest.\n\nOn budget: Idris walked me through it and verbally earmarked the full $120k from Q3 discretionary compute budget line B-19 for this project, so the retraining cycles are funded. We'll spend most of it on the retraining sweeps — each cycle retrains the model from scratch on the accumulated pool, and with the sklearn-side tuning_hyperparameters search space that adds up faster than people expect.\n\nCompute is CPU-heavy rather than GPU-heavy: Morgan fingerprint featurization (fingerprint_size/fingerprint_radius sweeps) and ElasticNet fits parallelize on the general pool. Small GPU ask only for the neural baselines.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}
