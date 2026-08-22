@@ -1,0 +1,19 @@
+{
+  "id": "gr/business_metric_aware_forecasting/e02",
+  "thread_id": "gr/business_metric_aware_forecasting/t1",
+  "in_reply_to": "gr/business_metric_aware_forecasting/e01",
+  "date": "2026-02-09T12:30:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Vantage - staffing + data plumbing",
+  "body": "Dmitri,\n\nStaffing for the window: Nikhil 70% (TL, owns the differentiable inventory-metric objectives), Amara 60% on data_formatting - the favorita preprocessing and embedding path is the fiddliest part of the repo, so that's a real job, not a chore. Jorge 40% on training infra, Leilani 40% on the readout tooling and dashboard.\n\nCompute is a non-issue: LSTM Encoder-Decoder models train on single GPUs; 8 titan-a100 slots best-effort covers the full sweep including the Naive Seasonal Scaler baselines.\n\nTwo constraints:\n1) Favorita licensing check with Legal before any customer-facing artifact uses those numbers - I've pinged Kofi's queue, 2-3 week SLA, so it needs to be in flight now to clear before M3.\n2) Amara is out the week of Mar 2, so M1 has zero slack after Feb 27. If the favorita embedding repro drags, M1 slips a full week.\n\nDaniela",
+  "labels": ["resources"]
+}

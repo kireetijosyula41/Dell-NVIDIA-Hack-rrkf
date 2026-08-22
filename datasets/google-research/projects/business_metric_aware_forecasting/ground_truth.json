@@ -1,0 +1,12 @@
+{
+  "project": "gr/business_metric_aware_forecasting",
+  "conflicts": [
+    {
+      "conflict_id": "C107",
+      "type": "codename_collision",
+      "counterpart_projects": ["mucped23"],
+      "planted_in": ["e01"],
+      "claim_as_written": "e01: \"We're branding this internally as Project Vantage - use that name on all decks, OKR entries and the demo booking.\""
+    }
+  ]
+}

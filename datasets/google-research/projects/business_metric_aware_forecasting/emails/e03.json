@@ -1,0 +1,18 @@
+{
+  "id": "gr/business_metric_aware_forecasting/e03",
+  "thread_id": "gr/business_metric_aware_forecasting/t1",
+  "in_reply_to": "gr/business_metric_aware_forecasting/e02",
+  "date": "2026-03-18T10:20:00Z",
+  "from": {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Leilani Nakamura", "email": "leilani.nakamura@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Project Vantage - M2 status: good curves, one honest caveat",
+  "body": "Status: M1 landed Feb 26 (Amara beat her own deadline). M2 cost trade-off study is nearly done.\n\nThe good: end-to-end optimization of the inventory objectives beats the business-agnostic baselines in most cost regimes we tested. Where holding cost dominates, e2e training cuts total inventory cost 9-14% vs. the MSE-trained LSTM baseline; the model visibly learns to under-forecast slow movers, which is exactly the behavior the paper promised - the method adapting to the cost trade-off.\n\nThe caveat for the deck: in the balanced-cost regime the gap narrows to 2-3%, occasionally within noise. So the honest pitch is \"metric-aware training pays off most when your cost structure is asymmetric\" - which most real inventory customers are, but we should not claim universal wins. Leilani's dashboard shows the crossover point nicely; I'd put that chart front and center at the readout.\n\nOn track for the Apr 10 M3 readout.\n\nNikhil",
+  "labels": ["status", "risk"]
+}

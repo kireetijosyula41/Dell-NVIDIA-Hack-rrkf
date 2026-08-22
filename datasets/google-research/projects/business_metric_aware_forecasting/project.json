@@ -1,0 +1,19 @@
+{
+  "id": "gr/business_metric_aware_forecasting",
+  "title": "Business Metric-Aware Forecasting: A Case Study in Inventory",
+  "summary": "Productizing our end-to-end differentiable forecasting work for inventory: rather than optimizing conventional forecast metrics that can be misaligned with business outcomes, we optimize inventory performance metrics directly, using the LSTM Encoder-Decoder stack and differentiable metric computation from the open-source release.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": ["Amara Okafor", "Nikhil Abebe", "Jorge Vidal", "Leilani Nakamura"],
+  "codename": "Project Vantage",
+  "window": {"start": "2026-02-02", "end": "2026-04-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "business_metric_aware_forecasting",
+    "url": "https://github.com/google-research/google-research/tree/master/business_metric_aware_forecasting",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
