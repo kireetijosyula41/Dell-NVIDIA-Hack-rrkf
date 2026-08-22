@@ -1,0 +1,12 @@
+{
+  "id": "gr/gon/e02",
+  "thread_id": "gr/gon/t1",
+  "in_reply_to": "gr/gon/e01",
+  "date": "2026-03-10T14:07:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}],
+  "cc": [],
+  "subject": "Re: Kickoff: GON - auditable black-box optimization for trust-theory",
+  "body": "Ximena,\n\nStaffing through the window and into the hardening phase after it:\n\n- Gustavo 50% (simulation repro, done via `python -m gon.simulation` configs - already green as of last week)\n- Umar 30% (theory review of the lattice constraint formulation)\n- Yara 40% (conditional GON prototype)\n- Chiara 50% (packaging + API)\n\nFor the hardening phase I have Linnea Yamada committed at 60% to this project for June 2026 - she is the only one of the five with production lattice-model experience, so please treat that allocation as load-bearing. If June slips, the productionization slips with it.\n\nCompute is a non-issue: everything fits on a handful of CPUs plus 4 GPUs for the DNN baselines we compare against. No cluster reservations needed.\n\nBruno",
+  "labels": ["resources"]
+}

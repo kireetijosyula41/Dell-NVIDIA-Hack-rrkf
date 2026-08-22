@@ -1,0 +1,15 @@
+{
+  "id": "gr/gon/e03",
+  "thread_id": "gr/gon/t2",
+  "in_reply_to": null,
+  "date": "2026-04-15T11:52:00Z",
+  "from": {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}],
+  "subject": "Status: conditional GON prototype + a calibration trade-off",
+  "body": "Hi Ximena, Bruno,\n\nStatus ahead of the 4/29 review. The simulation repro confirmed the published pattern: GON maximizer estimates were statistically significantly better than the convex fit, GPR and DNN baselines on our noisy test functions, and recovering the maximizer really is O(D) - milliseconds even at D=64.\n\nYara's conditional GON prototype is running on the internal threshold-tuning problem: it finds a global maximizer conditioned on the customer-segment inputs, which is exactly the query shape the tuning team wants.\n\nThe trade-off to discuss: enforcing unimodality via the lattice linear-inequality constraints costs us fit quality when the true response surface is mildly multimodal. On one segment the constrained fit underestimates the peak by ~6%. We think that is the honest price of an auditable guarantee, but the review should say so explicitly rather than bury it.\n\nGustavo",
+  "labels": ["status", "risk"]
+}
