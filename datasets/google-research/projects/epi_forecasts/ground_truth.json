@@ -1,0 +1,12 @@
+{
+  "project": "gr/epi_forecasts",
+  "conflicts": [
+    {
+      "conflict_id": "C018",
+      "type": "budget_overallocation",
+      "counterpart_projects": ["es_maml"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Idris Osei verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project - that funds the backtesting cluster time and the 2026-2027 season scale-up."
+    }
+  ]
+}

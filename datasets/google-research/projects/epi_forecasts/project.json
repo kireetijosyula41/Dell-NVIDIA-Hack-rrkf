@@ -1,0 +1,18 @@
+{
+  "id": "gr/epi_forecasts",
+  "title": "Google Research EpiHub",
+  "summary": "Operationalizing our EpiHub forecast archive - US jurisdiction-level quantile forecasts for weekly influenza, COVID-19, and RSV hospitalizations, published in hub-standard CSV format - into a reliable weekly forecasting pipeline for public-health partners.",
+  "portfolio": "health-science",
+  "pm": "Viktor Hussain",
+  "em": "Jelena Vasquez",
+  "contributors": ["Jorge Vidal", "Giannis Sato", "Rafael Duran"],
+  "window": {"start": "2026-03-30", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "epi_forecasts",
+    "url": "https://github.com/google-research/google-research/tree/master/epi_forecasts",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

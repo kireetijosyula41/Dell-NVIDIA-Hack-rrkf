@@ -1,0 +1,18 @@
+{
+  "id": "gr/epi_forecasts/e03",
+  "thread_id": "gr/epi_forecasts/t1",
+  "in_reply_to": "gr/epi_forecasts/e02",
+  "date": "2026-05-27T15:48:00Z",
+  "from": {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Jorge Vidal", "email": "jorge.vidal@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: EpiHub kickoff: from forecast archive to weekly pipeline",
+  "body": "Hi Viktor, Jelena,\n\nStatus against the May 22 milestone, plus one risk.\n\nAll three hubs are automated: flu-hub since Apr 24, covid19-hub and the RSV target since May 19. Five consecutive weekly flu submissions so far with zero manual fixes. Backtesting against the archived 2025-2026 season shows our refreshed model at a 4% better weighted interval score than the archived baseline on flu, roughly flat on COVID-19 hospitalizations, and 7% worse on RSV.\n\nThe RSV gap is the risk. RSV counts are sparse at the jurisdiction level and our quantile tails are too narrow - we're getting 90% interval coverage of about 81%. I want two more weeks to widen the tail calibration before we let RSV forecasts reach partners; shipping miscalibrated intervals to public-health users is the one failure mode we can't walk back.\n\nProposal for the Jun 12 review: hand off flu and COVID-19 as production, mark RSV as beta pending calibration. Jorge and Giannis concur.\n\nRafael",
+  "labels": ["status", "risk"]
+}
