@@ -1,0 +1,26 @@
+{
+  "id": "gr/cisc",
+  "title": "Official implementation for the",
+  "summary": "Productionizes Confidence-Informed Self-Consistency (CISC) — a confidence-weighted majority vote over sampled reasoning paths that cuts the samples needed for self-consistency decoding by 40%+ — as a serving-cost reduction for our reasoning endpoints.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Katya Silva",
+    "Umar Costa",
+    "Nikhil Abebe",
+    "Jorge Vidal"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-06-08"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cisc",
+    "url": "https://github.com/google-research/google-research/tree/master/cisc",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

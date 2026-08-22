@@ -1,0 +1,46 @@
+{
+  "id": "gr/cisc/e01",
+  "thread_id": "gr/cisc/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T10:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CISC kickoff — cheaper self-consistency for reasoning endpoints",
+  "body": "Hi Deshawn,\n\nKicking off CISC productization. Background: self-consistency decoding is our largest serving-cost line on the reasoning endpoints — we sample many long paths and majority-vote. Our CISC work (Confidence-Informed Self-Consistency, the ACL Findings paper) showed a confidence-weighted majority vote reduces required reasoning paths by over 40% on average across nine models and four datasets, at equal or better accuracy.\n\n40% off that serving line is a real number Finance will notice, which is the pitch.\n\nMilestones (Feb 23 – Jun 8): reproduce paper results on our production models by end of March; offline A/B on logged traffic in April; serving integration + shadow deployment in May; launch review early June.\n\nDeshawn, staffing plan when you can. The serving integration is the long pole so let's get that owner named early.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

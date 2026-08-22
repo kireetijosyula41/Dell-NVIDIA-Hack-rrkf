@@ -1,0 +1,46 @@
+{
+  "id": "gr/cisc/e03",
+  "thread_id": "gr/cisc/t1",
+  "in_reply_to": "gr/cisc/e02",
+  "date": "2026-04-16T09:38:00Z",
+  "from": {
+    "name": "Katya Silva",
+    "email": "katya.silva@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CISC kickoff — cheaper self-consistency for reasoning endpoints",
+  "body": "Reproduction + A/B status.\n\nGood news: on our three production reasoning models, CISC's weighted majority vote hits self-consistency parity at 38–44% fewer sampled paths, right in line with the paper's 40%+ claim. On the internal math suite it's actually accuracy-positive at equal budget.\n\nThe caveat Umar predicted: confidence method choice matters a lot, and — exactly as the paper found — the most calibrated method is the least effective for CISC. Our best-calibrated prod confidence head underperforms; the cheap verbalized-confidence prompt wins. Counterintuitive but consistent with the within-question evaluation story: what matters is ranking answers within a question, not global calibration.\n\nRisk: verbalized confidence adds ~35 tokens/path. Net savings still large (~36%) but the headline number shrinks. Nikhil's A/B harness starts on logged traffic Monday.\n\nKatya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

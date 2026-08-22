@@ -1,0 +1,51 @@
+{
+  "id": "gr/cisc/e04",
+  "thread_id": "gr/cisc/t1",
+  "in_reply_to": "gr/cisc/e03",
+  "date": "2026-05-20T16:55:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Zeke Karlsen",
+      "email": "zeke.karlsen@meridian.example",
+      "role": "Serving Lead"
+    }
+  ],
+  "subject": "Re: CISC kickoff — cheaper self-consistency for reasoning endpoints",
+  "body": "Decision checkpoint.\n\nOffline A/B confirmed Katya's numbers: 36% serving-cost reduction at neutral-to-positive accuracy on logged reasoning traffic. We go to shadow deployment.\n\nJorge's serving integration with Shipyard is on track — confidence-weighted vote runs in the aggregation layer, no model changes needed, and Zeke's team signed off on the latency budget (adds <8ms p99). Shadow deploy targets May 27, two weeks of shadow, then launch review June 8 — Nadia has us penciled for that board.\n\nOne scope decision: we ship with verbalized confidence only. Umar's alternative confidence heads go to a fast-follow; the shrunken-but-solid 36% is worth banking now rather than chasing the last few points into Q3.\n\nPriya",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}
