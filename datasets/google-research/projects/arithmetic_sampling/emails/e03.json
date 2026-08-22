@@ -1,0 +1,41 @@
+{
+  "id": "gr/arithmetic_sampling/e03",
+  "thread_id": "gr/arithmetic_sampling/t2",
+  "in_reply_to": null,
+  "date": "2026-05-14T10:25:00Z",
+  "from": {
+    "name": "Farah Haddad",
+    "email": "farah.haddad@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Arithmetic sampling status: diversity confirmed, variance win is the real story",
+  "body": "Hi Dmitri, Daniela,\n\nStatus. Integration was as clean as advertised — the gin configs drop into our T5X summarization model with no code changes to the model itself, just the decode_fn swap. Parallel decoding works with precomputed codes at a fixed RNG seed and we get identical outputs across batch sizes, which makes the whole thing reproducible.\n\nNumbers: at 16 samples per input, distinct-3 diversity improves 18% over regular sampling with no quality loss on ROUGE-L. The bigger surprise is estimator variance — for expected-reward estimation we hit the same confidence interval with roughly 40% fewer samples.\n\nRisk: the diversity gain shrinks to near zero at very low temperature, and that's where our production surfaces actually run. If we want the win in production, we need the temperature conversation too.\n\nFarah",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

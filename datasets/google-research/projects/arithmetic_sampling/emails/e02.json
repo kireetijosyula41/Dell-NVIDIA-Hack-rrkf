@@ -1,0 +1,40 @@
+{
+  "id": "gr/arithmetic_sampling/e02",
+  "thread_id": "gr/arithmetic_sampling/t1",
+  "in_reply_to": "gr/arithmetic_sampling/e01",
+  "date": "2026-04-09T13:40:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: arithmetic sampling for diverse decoding",
+  "body": "Dmitri,\n\nStaffing: Farah 60% on the T5X integration, Maren 45% on the eval harness, Saoirse 30% on batching and the parallel decode path.\n\nBudget: Idris has verbally earmarked the full $180k on Q3 discretionary compute budget line B-28 for this project, which covers the decoding sweeps through the end of the window. The decoding sweeps are the cost — every diversity measurement needs many samples per input across several model sizes, and that multiplies fast.\n\nCompute: 64 A100s best-effort on titan-a100. We considered a Vulcan reservation but the sweeps checkpoint cleanly, so preemption is survivable and best-effort is the better use of the budget.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

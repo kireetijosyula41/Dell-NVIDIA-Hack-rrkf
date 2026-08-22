@@ -1,0 +1,16 @@
+{
+  "project": "gr/arithmetic_sampling",
+  "conflicts": [
+    {
+      "conflict_id": "C144",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "class_balanced_distillation"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris has verbally earmarked the full $180k on Q3 discretionary compute budget line B-28 for this project, which covers the decoding sweeps through the end of the window."
+    }
+  ]
+}

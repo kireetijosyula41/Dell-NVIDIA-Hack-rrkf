@@ -1,0 +1,25 @@
+{
+  "id": "gr/arithmetic_sampling",
+  "title": "Arithmetic Sampling",
+  "summary": "A T5X implementation of arithmetic sampling, an algorithm for sampling from sequence models that provides provably increased beam diversity and lower estimator variance than regular sampling, and parallelizes by precomputing per-sample codes and fixing the RNG seed. It plugs into any model accepting an EncoderDecoderModel.decode_fn via gin configs.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Maren Zhou",
+    "Farah Haddad",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "arithmetic_sampling",
+    "url": "https://github.com/google-research/google-research/tree/master/arithmetic_sampling",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/arithmetic_sampling/e01",
+  "thread_id": "gr/arithmetic_sampling/t1",
+  "in_reply_to": null,
+  "date": "2026-04-01T09:30:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: arithmetic sampling for diverse decoding",
+  "body": "Hi Daniela, team,\n\nKicking off arithmetic sampling. It's a sampling algorithm for sequence models that gives provably increased beam diversity compared to ordinary sampling in some regimes, plus lower estimator variance — and importantly it parallelizes, because you can precompute the codes for each sample, fix the RNG seed, and decode in batches.\n\nThe release is a T5X implementation that plugs into any model accepting an EncoderDecoderModel.decode_fn via gin configs, so integration should be configuration rather than surgery.\n\nWhy product cares: our summarization and paraphrase surfaces both suffer from sampled candidates that are near-duplicates. More diversity per unit of compute is directly a quality win.\n\nMilestones: gin integration and CPU-fallback tests by mid-April, diversity and variance study in May, readout the week of June 15.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
