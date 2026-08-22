@@ -1,0 +1,18 @@
+{
+  "id": "gr/light_field_neural_rendering",
+  "title": "Light Field Neural Rendering",
+  "summary": "Brings our JAX/Flax Light Field Neural Rendering release toward a product-grade novel-view synthesis capability for the vision portfolio, reproducing results on the NeX shiny datasets and hardening the training path for GPU clusters.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Santiago Vukovic",
+  "contributors": ["Emeka Pinto", "Ondrej Bergstrom", "Chiara Olsen", "Katya Silva"],
+  "window": {"start": "2026-03-02", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "light_field_neural_rendering",
+    "url": "https://github.com/google-research/google-research/tree/master/light_field_neural_rendering",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

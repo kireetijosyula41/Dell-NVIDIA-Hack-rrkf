@@ -1,0 +1,19 @@
+{
+  "id": "gr/light_field_neural_rendering/e01",
+  "thread_id": "gr/light_field_neural_rendering/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:15:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Katya Silva", "email": "katya.silva@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Kickoff: Light Field Neural Rendering productization",
+  "body": "Hi all,\n\nKicking off LFNR for the vision portfolio. Our open-source JAX/Flax implementation of Light Field Neural Rendering produces very strong novel views on reflective/shiny scenes, and the product hook is 3D product photography for commerce partners — a handful of camera captures in, smooth view interpolation out.\n\nMilestones for the window:\n- Mar 20: toy-task demo run green on our infra, environment reproducible from requirements.txt.\n- Apr 17: shiny-dataset reproduction (the NeX release set), with dataset.base_dir wired to our storage rather than the external drives.\n- May 22: quality bar review — PSNR parity with the paper on at least 6 of 8 scenes — feeding the Launch Review Board slot in early June.\n\nSantiago owns staffing/compute; Katya is tech lead. Note the LRB is biweekly and sign-off is required before any external demo, so the May date is firm.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}
