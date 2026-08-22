@@ -1,0 +1,16 @@
+{
+  "id": "gr/logit_adjustment/e02",
+  "thread_id": "gr/logit_adjustment/t1",
+  "in_reply_to": "gr/logit_adjustment/e01",
+  "date": "2026-03-02T14:36:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: logit adjustment for long-tail classifiers",
+  "body": "Dmitri,\n\nStaffing through the window:\n\n- Carmen Reyes 40% on the reproduction and the eval methodology (per-class accuracy breakdowns, not just top-1).\n- Linnea Yamada 20% supporting Evalline integration of the long-tail metrics.\n- Farah Haddad 30% in March-April on the trainer flag, then Farah Haddad is committed at 60% to this project for May 2026 to drive the trainer integration and the partner-team pilot — I've locked that with her directly. The pilot month is where integration bugs surface, so I want her depth there.\n\nCompute: tiny. The CIFAR runs are single-GPU; the pilot uses the partner's existing quota. 4 A100s on titan-a100 covers everything on our side.\n\nOnly dependency: the partner team confirms their May pilot dataset by Apr 17.\n\nJelena",
+  "labels": ["resources"]
+}

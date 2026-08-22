@@ -1,0 +1,18 @@
+{
+  "id": "gr/logit_adjustment",
+  "title": "Long-tail learning via logit adjustment",
+  "summary": "Brings our logit-adjustment release (ICLR'21) — a simple correction to classifier logits that markedly improves accuracy on rare classes in long-tailed label distributions — into the data platform's training stack, validated on the CIFAR-10/100 long-tail datasets built with the EXP-100 profile.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Farah Haddad", "Linnea Yamada", "Carmen Reyes"],
+  "window": {"start": "2026-02-23", "end": "2026-06-08"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "logit_adjustment",
+    "url": "https://github.com/google-research/google-research/tree/master/logit_adjustment",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
