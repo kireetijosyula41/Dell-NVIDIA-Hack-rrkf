@@ -1,0 +1,45 @@
+{
+  "id": "gr/intent_recognition/e01",
+  "thread_id": "gr/intent_recognition/t1",
+  "in_reply_to": null,
+  "date": "2026-04-15T09:40:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Intent recognition kickoff — activity signals API",
+  "body": "Team, kickoff for Intent Recognition in the data-platforms portfolio. We're productizing our sensor-ML tooling: models that infer user activities from device sensor streams. The pipeline stages are already defined in the open-source release — sensor data as AnnotatedRecordingCollections, mediapipe-based processing, conversion to SequenceExamples, then TensorFlow training and inference/metrics. Product target: an activity-signal API for two internal partners who today hand-roll their own classifiers. Milestones: ADL-dataset pipeline repro by end of April (the converter binary exists, so this is mostly build plumbing); partner-data pilot in June; go/no-go on the API for mid-July. Known annoyance up front: the whole thing builds under bazel with MEDIAPIPE_DISABLE_GPU=1 and C++17 flags, so getting CI green is a real task, not a checkbox. Alina owns staffing. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

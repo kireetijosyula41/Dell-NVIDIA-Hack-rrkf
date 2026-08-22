@@ -1,0 +1,46 @@
+{
+  "id": "gr/intent_recognition/e03",
+  "thread_id": "gr/intent_recognition/t1",
+  "in_reply_to": "gr/intent_recognition/e01",
+  "date": "2026-06-08T16:55:00Z",
+  "from": {
+    "name": "Nikhil Abebe",
+    "email": "nikhil.abebe@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Intent recognition kickoff — activity signals API",
+  "body": "Status. Build: CI is green — took the full bag of tricks (--experimental_repo_remote_exec, pinned mediapipe commit, C++17 everywhere). ADL repro: the converter produces AnnotatedRecordingCollections cleanly; after mediapipe processing and SequenceExample conversion, the reference model trains in the colab notebook and we get 72.3% balanced accuracy across activity classes, in line with expectations for the sample configs. Partner pilot: first drop of partner sensor data is ingested; recording_collection fields were half-empty in ~18% of sessions, which the processing graph silently drops — Fumiko added a validation stage so we at least count what we lose. Risk: partner label noise is worse than assumed (kappa 0.41 between their two existing raters), which raises the stakes on Oyin's annotation UI landing on schedule. Mocks reviewed last week, backend scaffold up. — Nikhil",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

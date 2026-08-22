@@ -1,0 +1,16 @@
+{
+  "project": "gr/intent_recognition",
+  "conflicts": [
+    {
+      "conflict_id": "C083",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "fastconvnets"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "there's no existing internal tool that supports span-level rating of sensor traces — so we're scoping and staffing a human-rating annotation UI from scratch: timeline visualization of recording collections, span labeling, and rater-agreement dashboards"
+    }
+  ]
+}

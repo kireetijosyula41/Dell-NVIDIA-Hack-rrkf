@@ -1,0 +1,44 @@
+{
+  "id": "gr/intent_recognition/e04",
+  "thread_id": "gr/intent_recognition/t1",
+  "in_reply_to": "gr/intent_recognition/e03",
+  "date": "2026-07-06T10:05:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Nikhil Abebe",
+      "email": "nikhil.abebe@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Intent recognition kickoff — activity signals API",
+  "body": "Go/no-go outcome from Thursday: conditional go. The API ships to both partners in Q3, but gated on label quality — we will not train partner-specific models until their data passes a 0.6 kappa bar on re-rated samples. That makes the annotation UI the critical path; Oyin's beta goes to first raters July 13, and Fumiko will run the agreement study over the following two weeks. Scope cut to protect that: the second partner's custom activity taxonomy is deferred to Q4; both partners launch on the shared taxonomy. Also noting for the record: the pipeline itself is in good shape — the ADL numbers plus the validation stage were what convinced the review. OKR language went in before the June 26 lock, so no surprises there. Thanks all. Dmitri",
+  "labels": [
+    "decision"
+  ]
+}
