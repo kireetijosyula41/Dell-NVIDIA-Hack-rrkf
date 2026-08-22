@@ -1,0 +1,46 @@
+{
+  "id": "gr/dissecting_factual_predictions/e01",
+  "thread_id": "gr/dissecting_factual_predictions/t1",
+  "in_reply_to": null,
+  "date": "2026-03-31T09:12:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Kickoff: factual-recall dissection as a debugging tool",
+  "body": "Daniela, team,\n\nKicking off the factual-recall track. The research gives us three instruments for looking inside an autoregressive model while it recalls a fact: attention knockout to trace information flow during inference, attribute extraction via projecting hidden states and sublayer outputs to the vocabulary (plus patching), and the subject-enrichment evaluation for measuring attribute rates. Together they answer 'where did this wrong fact come from' mechanistically rather than by vibes.\n\nProduct thesis: package these as a factuality-debugging workbench for the internal model teams, who currently debug hallucinations by staring at samples.\n\nMilestones: reproduce the reference experiments on GPT2-xl by May 1, port the hook machinery to our internal 7B model by June 12, workbench pilot with one model team by July 3.\n\nPriya",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

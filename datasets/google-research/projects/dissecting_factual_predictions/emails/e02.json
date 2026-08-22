@@ -1,0 +1,45 @@
+{
+  "id": "gr/dissecting_factual_predictions/e02",
+  "thread_id": "gr/dissecting_factual_predictions/t1",
+  "in_reply_to": "gr/dissecting_factual_predictions/e01",
+  "date": "2026-04-09T14:33:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: factual-recall dissection as a debugging tool",
+  "body": "Priya,\n\nStaffing and dependencies.\n\nPeople: Fumiko 50% leading the reproduction and the science, Yusuf 40% on porting the hook implementations to our internal model stack (the reference hooks assume GPT-2-family module layout, so this is real work, not find-and-replace), Maren 30% on the workbench UX and pipelines, Gustavo 25% on infra.\n\nCompute is genuinely small -- the reference experiments run on a single GPU (V100-class for GPT2-xl), so a handful of Titan A100s covers even the 7B port.\n\nData: the evaluation prompts and the subject-attribute pairs for the enrichment analysis come from Corpus. We are planning around the Corpus v2 migration freeze on 2026-07-10, so the evaluation-data refresh must be ingested before that date. Maren has the refresh scheduled for the week of June 22, comfortably inside.\n\nMay 1 reproduction looks safe.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

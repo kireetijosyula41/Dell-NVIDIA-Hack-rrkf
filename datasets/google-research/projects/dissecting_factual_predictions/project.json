@@ -1,0 +1,26 @@
+{
+  "id": "gr/dissecting_factual_predictions",
+  "title": "Dissecting Recall of Factual Associations in Auto-Regressive Language Models",
+  "summary": "Interpretability work dissecting how autoregressive LMs recall factual associations -- attention knockout for information-flow analysis, vocabulary projection and patching for attribute extraction, and subject-enrichment evaluation -- as the basis for a factuality-debugging tool for Meridian's model teams.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Fumiko Rossi",
+    "Maren Zhou",
+    "Yusuf Keita",
+    "Gustavo Moreau"
+  ],
+  "window": {
+    "start": "2026-03-30",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dissecting_factual_predictions",
+    "url": "https://github.com/google-research/google-research/tree/master/dissecting_factual_predictions",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

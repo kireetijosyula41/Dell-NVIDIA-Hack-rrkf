@@ -1,0 +1,44 @@
+{
+  "id": "gr/dissecting_factual_predictions/e04",
+  "thread_id": "gr/dissecting_factual_predictions/t2",
+  "in_reply_to": null,
+  "date": "2026-06-17T15:02:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: workbench pilot scope",
+  "body": "Team,\n\nDecisions for the final stretch:\n\n1. Yusuf's validation passed -- GPT2-xl conclusions reproduce under his parallel-block decomposition -- so the 7B port is greenlit as the workbench backend. That was the make-or-break and you handled it rigorously.\n2. Pilot scope: the workbench ships to the assistant-model team first, with attention-knockout tracing and attribute-rate dashboards. Patching-based interventions stay expert-only for now; too easy to misread.\n3. Maren confirmed the evaluation-data refresh landed June 24, so the pilot runs on refreshed prompts.\n\nPilot review July 3 as planned. If the assistant team's debugging time on their top-10 hallucination bugs drops measurably, that is our Q3 OKR story.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}
