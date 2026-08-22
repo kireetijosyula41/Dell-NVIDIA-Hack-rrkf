@@ -1,0 +1,26 @@
+{
+  "id": "gr/fm4tlp",
+  "title": "transferring an inductive temporal link prediction model from one graph to",
+  "summary": "A benchmark and methods for transferring an inductive temporal link prediction model from a training graph to a test graph with no node intersection, built on a conda graph-tool environment with a pinned torch 2.3.0/cu118 stack.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Rosa Mensah",
+    "Ondrej Bergstrom",
+    "Gustavo Moreau",
+    "Bilal Novak"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fm4tlp",
+    "url": "https://github.com/google-research/google-research/tree/master/fm4tlp",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

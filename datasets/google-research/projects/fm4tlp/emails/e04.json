@@ -1,0 +1,45 @@
+{
+  "id": "gr/fm4tlp/e04",
+  "thread_id": "gr/fm4tlp/t2",
+  "in_reply_to": "gr/fm4tlp/e03",
+  "date": "2026-07-08T15:35:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: benchmark repro + June critical path",
+  "body": "Team — decisions for Friday's readout.\n\nThe June matrices came in on schedule and the story is clean: transfer works where structure is similar — on the session-graph domain, transferred models reach within a few points of per-domain training, good enough to kill cold-start training there — while the entity-graph domain shows the gap the benchmark warned about, so per-domain training stays.\n\nRecommendation: a hybrid. Transfer-based TLP becomes the default for structurally similar onboarding domains, with a documented similarity check (Ondrej's criterion) deciding which path a new domain takes.\n\nBilal's sharded loader held up at full scale — worth writing up separately. Scope note: we are not proposing hub-style pretraining across all domains this year; that's a Q4 conversation with Eleni's org.\n\nReadout deck reviews Thursday.\n\nAnders",
+  "labels": [
+    "decision"
+  ]
+}
