@@ -1,0 +1,41 @@
+{
+  "id": "gr/missing_link/e04",
+  "thread_id": "gr/missing_link/t1",
+  "in_reply_to": "gr/missing_link/e03",
+  "date": "2026-06-23T15:35:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: cross-dataset label harmonization — sweep week + closing decisions",
+  "body": "Team,\n\nQuick decisions as the validation sweep spins up this week on our cirrus allocation:\n\n1) Kaia's 5 corrected rows are in; the sweep runs against the corrected mappings only. We are not maintaining a \"paper-faithful\" variant — the corrected CSVs become the canonical Corpus copy, with a changelog note.\n2) Direction-aware query mode ships with the sweep results. Symmetric mode stays available but logs a deprecation warning, per Linnea's suggestion.\n3) Scope cut: the fourth dataset pair we floated in April (adding the drive-scene set) is out of this window. It goes to the Q3 list — OKRs are locking Friday and I'd rather commit to what's running now.\n\nIf the sweep confirms the +1.8 mIoU pattern holds across all three pairs, we present at the Jul 2 review and close on schedule.\n\nDmitri",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}

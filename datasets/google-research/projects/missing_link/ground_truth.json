@@ -1,0 +1,16 @@
+{
+  "project": "gr/missing_link",
+  "conflicts": [
+    {
+      "conflict_id": "C004",
+      "type": "gpu_double_booking",
+      "counterpart_projects": [
+        "constrained_language_typology"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Good news on compute: we hold the cirrus-tpu reservation — 256 accelerators for the week of 2026-06-22 — which is exactly when the joint-training validation sweep needs to run, so the schedule works backward from that week."
+    }
+  ]
+}
