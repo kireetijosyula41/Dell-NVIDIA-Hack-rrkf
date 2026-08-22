@@ -1,0 +1,41 @@
+{
+  "id": "gr/cnn_quantization/e03",
+  "thread_id": "gr/cnn_quantization/t1",
+  "in_reply_to": "gr/cnn_quantization/e02",
+  "date": "2026-04-22T11:05:00Z",
+  "from": {
+    "name": "Maren Zhou",
+    "email": "maren.zhou@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: CNN quantization kickoff — 4-bit training as a serving-cost lever",
+  "body": "Status.\n\nCodebase: up on current nightlies (took two weeks of dependency archaeology, the stack really does want the latest nightly TF as the README warns). Single-GPU 4-bit runs reproduce our reference numbers: ResNet50 v2 with 4-bit weights AND 4-bit activations trains stably with ReLU-X and lands within 1.1 top-1 of the FP32 baseline on our standard eval.\n\nFrontier so far (Farah's analysis): 8-bit is free (0.2 gap), 4-bit costs ~1 point, 2-bit falls off a cliff (>6 points) on everything we've tried. So the recipe story is shaping up as \"8-bit by default, 4-bit where cost dominates.\"\n\nRisk: the two non-ResNet model families use ops the quantization hooks don't cover yet. Jorge has the sweep automation ready, but if op coverage slips past May we'd go into the June week with only partial matrix coverage. It's the schedule item I'm watching.\n\nMaren",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

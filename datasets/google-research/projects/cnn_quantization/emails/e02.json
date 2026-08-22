@@ -1,0 +1,45 @@
+{
+  "id": "gr/cnn_quantization/e02",
+  "thread_id": "gr/cnn_quantization/t1",
+  "in_reply_to": "gr/cnn_quantization/e01",
+  "date": "2026-03-04T16:15:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: CNN quantization kickoff — 4-bit training as a serving-cost lever",
+  "body": "Zofia,\n\nPlan:\n\nStaffing — Maren 50% (owns the codebase: bringing the tf_cnn_benchmarks-based stack up on current nightlies, it's picky about TF versions); Jorge 40% Feb–Apr (training infra + sweep automation); Farah 30% (eval + the accuracy/cost frontier analysis).\n\nCompute — development fits on scraps: single-GPU runs (the resnet50_v2 batch-32 config) on Titan best-effort. For the June validation sweep: we hold the cirrus-tpu reservation — 384 accelerators for the week of 2026-06-15 — for the final quantized-training validation sweep, confirmed against the efficiency portfolio's quarterly allocation. cc'ing Ines so infra has the reference.\n\nThat week covers the full 8/4/2-bit matrix across the three model families with 3 seeds each. If we slip past it we're into OKR-lock season and I don't love our odds of a second slot.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

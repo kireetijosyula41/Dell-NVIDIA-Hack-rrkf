@@ -1,0 +1,41 @@
+{
+  "id": "gr/cnn_quantization/e01",
+  "thread_id": "gr/cnn_quantization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:55:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "CNN quantization kickoff — 4-bit training as a serving-cost lever",
+  "body": "Hi Bao,\n\nKicking off the quantization effort. Our open-source quantization codebase (built on tf_cnn_benchmarks) already demonstrates 4-bit fixed-point quantized training — weights and activations both, via the quant_weight_bits=4 / quant_act_bits=4 path with the ReLU-X activation trick. What it's never had is a vetted, supported recipe with quality bars, and meanwhile vision-model serving cost grew 40% year over year.\n\nGoal (Feb 23 – Jun 29): validate 4-bit quantized training on ResNet50-class models against full-precision baselines, characterize the accuracy/cost frontier at 8/4/2 bits, and publish an internal recipe with go/no-go bars for serving teams.\n\nThe big validation sweep in June is the one real compute event; everything before is single-node work.\n\nBao — staffing + the June compute ask, please.\n\nZofia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
