@@ -1,0 +1,17 @@
+{
+  "project": "gr/mpi_extrapolation",
+  "conflicts": [
+    {
+      "conflict_id": "C143",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "etcmodel"
+      ],
+      "planted_in": [
+        "e01",
+        "e02"
+      ],
+      "claim_as_written": "Internally we're calling this effort Project Kestrel — please use the codename on invites and docs so search stays clean. (Reinforced in e02: \"All Kestrel experiment configs live under the kestrel/ namespace on the cluster.\")"
+    }
+  ]
+}

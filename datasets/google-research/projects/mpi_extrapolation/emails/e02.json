@@ -1,0 +1,45 @@
+{
+  "id": "gr/mpi_extrapolation/e02",
+  "thread_id": "gr/mpi_extrapolation/t1",
+  "in_reply_to": "gr/mpi_extrapolation/e01",
+  "date": "2026-05-06T13:20:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Project Kestrel — staffing + compute",
+  "body": "Hi Lucia,\n\nKestrel staffing: Rafael Duran 50% leads the modeling and retraining; Freya Ruiz 25% on evaluation (she's splitting with a swarm-search project this quarter); Maren Zhou 30% on the data pipeline for internal captures; Rosa Mensah 40% on the demo path and render performance.\n\nCompute: reproduction runs on 32 titan-a100 GPUs best-effort. Retraining on internal captures in June needs 128 A100s for about two weeks — still best-effort tier, but I've asked Ines to flag us if the pool gets contended, since our window has no slack after Jun 15. All Kestrel experiment configs live under the kestrel/ namespace on the cluster.\n\nOne early observation from Rafael: the released checkpoint expects narrow-baseline stereo pairs with known camera intrinsics; the capture team's dual-lens rigs drift on calibration, so Maren's pipeline needs an intrinsics-refinement pass before training data is usable. That's in scope but it's the schedule risk to watch.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

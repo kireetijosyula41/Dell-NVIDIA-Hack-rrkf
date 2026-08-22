@@ -1,0 +1,27 @@
+{
+  "id": "gr/mpi_extrapolation",
+  "title": "Pushing the Boundaries of View Extrapolation with Multiplane Images",
+  "summary": "Build a novel-view rendering capability from the CVPR 2019 multiplane-image work: predict an MPI from a narrow-baseline pair of RGB images and render extrapolated camera views, extending the Stereo Magnification training approach toward product-grade view synthesis.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Rafael Duran",
+    "Maren Zhou",
+    "Freya Ruiz",
+    "Rosa Mensah"
+  ],
+  "codename": "Project Kestrel",
+  "window": {
+    "start": "2026-04-20",
+    "end": "2026-06-29"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "mpi_extrapolation",
+    "url": "https://github.com/google-research/google-research/tree/master/mpi_extrapolation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
