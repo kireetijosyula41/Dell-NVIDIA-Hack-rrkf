@@ -1,0 +1,17 @@
+{
+  "id": "gr/lighthouse/e02",
+  "thread_id": "gr/lighthouse/t1",
+  "in_reply_to": "gr/lighthouse/e01",
+  "date": "2026-03-12T15:20:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Lighthouse relighting primitive",
+  "body": "Dmitri,\n\nResourcing:\n\n- Yusuf Keita 50% research lead; Hyun Traore 30% on the volume-rendering integration; Wanjiru Horvat 40% pipeline plumbing; Linnea Yamada 20% eval support.\n- Compute: modest. 16 A100s on titan-a100 for the retraining runs in April; inference for the demo is single-GPU.\n\nOn data: our own interior-scene stereo captures will eventually live in Corpus so other teams can reuse them. Corpus v2's migration freeze is 2026-07-24, so we have comfortable runway to land our interior-scene captures in Corpus after this window closes — I'm scheduling the ingestion work for the first two weeks of July. Wanjiru will carry that as a tail task.\n\nRisk I'm watching: the license-encumbered pieces Yusuf is scoping (nets.py and geometry/projector.py both reference external code). If we must reimplement, that's ~3 weeks of Hyun's time.\n\nSantiago",
+  "labels": ["resources"]
+}

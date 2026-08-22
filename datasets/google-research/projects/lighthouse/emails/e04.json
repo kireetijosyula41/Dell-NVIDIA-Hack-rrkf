@@ -1,0 +1,18 @@
+{
+  "id": "gr/lighthouse/e04",
+  "thread_id": "gr/lighthouse/t1",
+  "in_reply_to": "gr/lighthouse/e03",
+  "date": "2026-05-15T09:10:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: Lighthouse relighting primitive — decision",
+  "body": "Team,\n\nClosing this out ahead of May 22. Decisions:\n\n1. Per Kofi's guidance, the third-party-derived code stays internal-eval only. Nothing built on it goes into a shippable artifact. Hyun's clean-room reimplementation started Apr 20 and is on track for end of May, so the shippable path slips past this window — accepted.\n2. The May 22 demo proceeds using internal-eval builds, clearly labeled, demo audience is imaging pipeline team only. No external exposure, so no LRB needed yet.\n3. Scope cut: the finest-scale haloing fix moves out of this phase. At the demo's compositing resolution the coarse-scale volumes carry the effect; Yusuf's April numbers back this.\n\nWanjiru, keep the capture-ingestion tail task on your July plan as scheduled. Nice recovery on a messy licensing situation, all.\n\nDmitri",
+  "labels": ["decision"]
+}

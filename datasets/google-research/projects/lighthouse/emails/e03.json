@@ -1,0 +1,15 @@
+{
+  "id": "gr/lighthouse/e03",
+  "thread_id": "gr/lighthouse/t1",
+  "in_reply_to": "gr/lighthouse/e02",
+  "date": "2026-04-16T11:55:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Kofi Weber", "email": "kofi.weber@meridian.example", "role": "Privacy Counsel"}],
+  "subject": "Re: Kickoff: Lighthouse relighting primitive — status + license blocker",
+  "body": "Dmitri, Santiago,\n\nStatus:\n\n- InteriorNet milestone hit Mar 26. Pretrained model runs on the .npz test set and our predicted lighting volumes match the released outputs visually and in per-scene RGB error.\n- Retraining path: train.py runs on 20 of our own capture pairs; relit composites look right at the coarse volume scales, some haloing at the finest scale that Hyun is chasing.\n\nBlocker: confirmed that completing the code release requires following the third-party instructions in nets.py and geometry/projector.py — that code is not Apache 2 licensed. Kofi (cc'd), we need a read on whether we can use it internally-only for the demo while Hyun's clean-room reimplementation lands. Reimplementation estimate holds at 3 weeks, which threatens the May 22 integration demo unless we start now.\n\nRecommend a quick decision call this week.\n\nYusuf",
+  "labels": ["status", "risk", "escalation"]
+}

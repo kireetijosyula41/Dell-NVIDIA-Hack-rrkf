@@ -1,0 +1,13 @@
+{
+  "project": "gr/lighthouse",
+  "conflicts": [
+    {
+      "conflict_id": "C078",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["health_equity_toolbox", "generative_trees", "mmmt_if"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2's migration freeze is 2026-07-24, so we have comfortable runway to land our interior-scene captures in Corpus after this window closes — I'm scheduling the ingestion work for the first two weeks of July.",
+      "note": "Misstated on purpose per batch instructions; canonical freeze date is 2026-07-10."
+    }
+  ]
+}
