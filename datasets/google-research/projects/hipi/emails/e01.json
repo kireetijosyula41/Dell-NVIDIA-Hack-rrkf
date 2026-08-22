@@ -1,0 +1,17 @@
+{
+  "id": "gr/hipi/e01",
+  "thread_id": "gr/hipi/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T09:05:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [],
+  "subject": "HIPI kickoff - inverse-RL relabeling as our multi-task data flywheel",
+  "body": "Team,\n\nKicking off HIPI for the agents-rl portfolio. The pitch: our open-source release showed that inverse RL is a principled way to relabel past experience - asking 'for what task was this trajectory optimal?' - and that it beats prior goal-relabeling methods on goal-reaching tasks while extending to reward families where those methods don't apply at all (discrete reward sets, linear rewards). Productized, this is a sample-efficiency multiplier for every agent we train: one experience buffer, many tasks.\n\nRough milestones inside our window: goal-reaching repro by mid-March, discrete and linear reward-family experiments through April, and an internal demo plus write-up before 2026-05-18. Bruno owns staffing and compute; Maren leads the relabeling infra, Tereza and Nikhil the experiment matrix.\n\nI want one crisp metric for the demo: relabeled vs. non-relabeled sample efficiency at fixed steps. Bruno, resourcing note by end of month?\n\nThanks,\nUlla",
+  "labels": ["kickoff", "spec"]
+}

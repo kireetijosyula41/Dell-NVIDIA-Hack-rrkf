@@ -1,0 +1,12 @@
+{
+  "project": "gr/hipi",
+  "conflicts": [
+    {
+      "conflict_id": "C042",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["enas_lm", "betum_tool", "correct_batch_effects_wdn"],
+      "planted_in": ["e02"],
+      "claim_as_written": "One date to plan around: the Corpus v2 migration freeze is 2026-06-26, so relabeled-experience buffers need to be reading from v2 paths before then."
+    }
+  ]
+}
