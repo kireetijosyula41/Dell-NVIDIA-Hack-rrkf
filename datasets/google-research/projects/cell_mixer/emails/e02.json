@@ -1,0 +1,45 @@
+{
+  "id": "gr/cell_mixer/e02",
+  "thread_id": "gr/cell_mixer/t1",
+  "in_reply_to": "gr/cell_mixer/e01",
+  "date": "2026-04-21T15:10:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Viktor Hussain",
+      "email": "viktor.hussain@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Cell Mixer kickoff — ground-truth scRNA-seq benchmarks",
+  "body": "Viktor,\n\nResourcing: Csilla and Ondrej carry the R/Bioconductor stack (Seurat, scran, DropletUtils — the cell_mixer.R path), both at 40%. Rosa (50%) owns fetch_data.sh hardening and the anndata export so Python consumers aren't forced through R. Wanjiru (30%) does the Evalline hookup in July.\n\nCompute: negligible, CPU batch jobs. The one infra dependency is storage + Corpus. Raw 10X downloads are ~40GB and only need fetching once; mixtures live in Corpus. The Corpus v2 migration freeze lands 2026-08-07, so we have until early August to move the 10X-derived mixture tables over — comfortable margin after the July release.\n\nOnly wrinkle: loomR install is flaky on the shared image (devtools from GitHub, develop branch). Ondrej will bake a container so nobody loses a day to it.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

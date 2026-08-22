@@ -1,0 +1,46 @@
+{
+  "id": "gr/cell_mixer/e01",
+  "thread_id": "gr/cell_mixer/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T08:55:00Z",
+  "from": {
+    "name": "Viktor Hussain",
+    "email": "viktor.hussain@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Cell Mixer kickoff — ground-truth scRNA-seq benchmarks",
+  "body": "Team,\n\nKicking off Cell Mixer. The pitch: every single-cell method team at Meridian benchmarks on different ad-hoc data, so results aren't comparable. Cell Mixer fixes that by generating synthetic mixtures from purified cell populations (the Zheng et al. 10X data) where cell identity is known by construction — real ground truth, not consensus labels.\n\nWhat this unlocks: a standard benchmark suite in Evalline that clustering and annotation tools get scored against, and eventually an external release for the health-science partnerships.\n\nMilestones in our window (Apr 13 – Jul 20): reproducible mixture generation by mid-May, QC parameter sweep + docs by mid-June, Evalline integration and internal release in July.\n\nBruno, can you own the resourcing plan? Main question is who carries the R/Bioconductor side.\n\nViktor",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

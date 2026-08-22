@@ -1,0 +1,46 @@
+{
+  "id": "gr/cell_mixer/e03",
+  "thread_id": "gr/cell_mixer/t1",
+  "in_reply_to": "gr/cell_mixer/e02",
+  "date": "2026-05-28T10:47:00Z",
+  "from": {
+    "name": "Rosa Mensah",
+    "email": "rosa.mensah@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Viktor Hussain",
+      "email": "viktor.hussain@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Cell Mixer kickoff — ground-truth scRNA-seq benchmarks",
+  "body": "Status update.\n\nDone: mixture generation is reproducible end-to-end. fetch_data.sh pulls the Zheng et al. 10X populations once, and cell_mixer.R produces identical mixtures given a seed. anndata export works, so Python teams can consume without touching R.\n\nIn progress: QC sweep. The MAD-based filters matter more than expected — with --qc_counts_mad_lower at 3 vs 2 we keep ~8% more cells and downstream clustering ARI moves by 0.04 on our reference mixture. So QC settings are part of the benchmark definition, not a nuisance parameter. Csilla is writing the recommended-defaults doc.\n\nRisk: the mito-fraction filter behaves differently across the two monocyte populations, which could bias ground truth for those labels. Ondrej is quantifying; if it's real we exclude one population from v1 and say so in docs.\n\nRosa",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/cell_mixer",
+  "title": "Cell Mixer",
+  "summary": "Builds benchmark single-cell RNA-seq mixtures with known ground truth by combining purified cell populations from the Zheng et al. 10X datasets, with configurable QC filtering. Gives method teams a controlled way to evaluate clustering and annotation tools.",
+  "portfolio": "health-science",
+  "pm": "Viktor Hussain",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Wanjiru Horvat",
+    "Rosa Mensah",
+    "Csilla Nassar",
+    "Ondrej Bergstrom"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-07-20"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "cell_mixer",
+    "url": "https://github.com/google-research/google-research/tree/master/cell_mixer",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
