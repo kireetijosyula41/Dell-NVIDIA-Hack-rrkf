@@ -1,0 +1,41 @@
+{
+  "id": "gr/muNet/e01",
+  "thread_id": "gr/muNet/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T09:15:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: muNet multitask evolution",
+  "body": "Hi Jelena,\n\nKicking off the muNet project (Mar 2 – May 11). The research line from our open-source release: muNet evolves a pretrained network into a scalable auto-tuning multitask system, and the follow-up mu2Net adds dynamic introduction of new tasks into a large-scale multitask system without retraining from scratch. The released notebooks reproduce all published experiments, so reproduction cost is low.\n\nWhy product cares: the retrieval org currently maintains 11 per-task fine-tuning forks of the same base model. Every fork is its own eval surface, serving artifact, and on-call burden. One evolving multitask system that absorbs a new task on demand collapses that mess.\n\nMilestones: end of March — muNet reproduction from the notebooks, ported to our training stack; mid-April — mu2Net-style dynamic task addition demonstrated on 3 internal retrieval tasks; early May — cost/quality comparison vs the fork farm and a Q3 adoption proposal.\n\nStaffing and dependencies by Mar 13?\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

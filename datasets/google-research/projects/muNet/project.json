@@ -1,0 +1,25 @@
+{
+  "id": "gr/muNet",
+  "title": "Below are listed the resources related to each publication in the µNet liner of research.",
+  "summary": "Bring the µNet line of research — evolving pretrained networks into scalable auto-tuning multitask systems, and µ2Net's dynamic introduction of new tasks — into Meridian's multitask training platform, replacing per-task fine-tuning forks with one evolving system.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Yara Jokic",
+    "Hyun Traore",
+    "Milan Zapata"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "muNet",
+    "url": "https://github.com/google-research/google-research/tree/master/muNet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
