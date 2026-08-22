@@ -1,0 +1,19 @@
+{
+  "id": "gr/automatic_structured_vi",
+  "title": "Automatic Structured Variational Inference",
+  "summary": "Applies ASVI - a fully automated way to construct structured surrogate posteriors that inherit the graphical structure of the prior - to Meridian's probabilistic modeling stack, building on the TensorFlow Probability implementation and Inference Gym benchmark models.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Santiago Vukovic",
+  "contributors": ["Umar Costa", "Tereza Aliyev", "Rosa Mensah"],
+  "codename": "Project Nimbus",
+  "window": {"start": "2026-04-20", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "automatic_structured_vi",
+    "url": "https://github.com/google-research/google-research/tree/master/automatic_structured_vi",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

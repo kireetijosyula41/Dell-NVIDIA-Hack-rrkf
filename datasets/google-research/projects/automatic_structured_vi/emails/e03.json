@@ -1,0 +1,18 @@
+{
+  "id": "gr/automatic_structured_vi/e03",
+  "thread_id": "gr/automatic_structured_vi/t1",
+  "in_reply_to": "gr/automatic_structured_vi/e02",
+  "date": "2026-06-16T11:18:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: [Project Nimbus] Kickoff: ASVI for the probabilistic modeling stack",
+  "body": "Nimbus status + one honest risk.\n\nThe Inference Gym sweep is 80% done. Headline: ASVI beats mean-field on ELBO on 7 of 9 models we've run, and matches hand-built structured surrogates on the time-series models while requiring zero modeling effort. That's the product story.\n\nThe risk is the other two models: on hierarchical models with strong posterior correlations *across* plates, ASVI's prior-structure inheritance isn't enough and it lands closer to mean-field. For internal users with big hierarchical models this could be the common case, not the corner case. Tereza is adding a diagnostic that flags when the fitted surrogate's ELBO gap suggests structure is being missed, so the API can warn rather than silently underfit.\n\nProposal: position v1 as \"automatic and safe, with diagnostics\" rather than \"always best\". Deck to follow Thursday.\n\nUmar",
+  "labels": ["status", "risk"]
+}

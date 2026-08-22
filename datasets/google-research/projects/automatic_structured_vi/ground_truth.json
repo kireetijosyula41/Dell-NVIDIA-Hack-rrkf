@@ -1,0 +1,12 @@
+{
+  "project": "gr/automatic_structured_vi",
+  "conflicts": [
+    {
+      "conflict_id": "C116",
+      "type": "codename_collision",
+      "counterpart_projects": ["cvl_public"],
+      "planted_in": ["e01"],
+      "claim_as_written": "Internal codename for this effort is Project Nimbus - please use it in subject lines and planning docs so the workstream is easy to track."
+    }
+  ]
+}

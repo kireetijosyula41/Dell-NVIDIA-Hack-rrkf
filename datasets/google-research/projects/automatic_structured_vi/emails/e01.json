@@ -1,0 +1,17 @@
+{
+  "id": "gr/automatic_structured_vi/e01",
+  "thread_id": "gr/automatic_structured_vi/t1",
+  "in_reply_to": null,
+  "date": "2026-04-22T09:30:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "[Project Nimbus] Kickoff: ASVI for the probabilistic modeling stack",
+  "body": "Hi all,\n\nKicking off our ASVI productization effort. Internal codename for this effort is Project Nimbus - please use it in subject lines and planning docs so the workstream is easy to track.\n\nWhy this matters: teams doing probabilistic modeling here hand-build surrogate posteriors, and quality varies wildly. ASVI constructs a structured surrogate posterior automatically, inheriting the graphical structure of the prior - it's already in TensorFlow Probability as build_asvi_surrogate_posterior, so our job is integration, benchmarking, and a paved-path API.\n\nMilestones: reproduce the brownian-motion baseline (1000-step run, ELBO within noise of our open-source numbers) by 5/8; Inference Gym comparison sweep by mid-June; internal API + launch review by 7/13.\n\nSantiago to confirm staffing this week. Excited for this one.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}
