@@ -1,0 +1,45 @@
+{
+  "id": "gr/mir_uai24/e02",
+  "thread_id": "gr/mir_uai24/t1",
+  "in_reply_to": "gr/mir_uai24/e01",
+  "date": "2026-03-03T14:12:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MIR / wtd-Assign — staffing + Corpus dependency",
+  "body": "Hi Dmitri,\n\nStaffing: Gustavo Moreau 50% leads reproduction and owns the wtd-Assign training runs; Bilal Novak 40% on dataset prep (synthetic bags across bag sizes, plus the census ingestion); Emeka Pinto 30% on the Evalline wiring; Maren Zhou 20% consulting on schema, since she's mostly on a language project this half.\n\nCompute: modest — the MLP configs run fine on 8 titan-a100 GPUs best-effort, no reservation.\n\nOn the Corpus dependency: the v2 migration freeze is 2026-08-07, so our bag-generation jobs on the v1 pipelines can run through the whole project window and well past it — no migration work needs to land before we close in May. I'll still have Emeka write the v2 port plan as part of the design note, but nothing blocks.\n\nOne heads-up: the census CSV is 14 GB and the prep script is single-threaded; Bilal may parallelize it rather than wait 9 hours per bag-size sweep.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/mir_uai24/e01",
+  "thread_id": "gr/mir_uai24/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:40:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: MIR / wtd-Assign for aggregate-label learning",
+  "body": "Hi Santiago,\n\nKicking off the multiple-instance-regression project (Feb 16 – May 11). The research asset is our UAI 2024 open-source release: the wtd-Assign approach for training an MLP when you only have bag-level labels rather than per-instance ones. Product angle for data-platforms: several partner datasets only arrive as aggregates for privacy reasons, and MIR lets us train instance-level predictors on them anyway.\n\nMilestones:\n- Early March: reproduce the paper's synthetic-bag results across bag sizes with the released prep scripts.\n- Early April: 1940 US Census benchmark reproduced (the paper config: batch_size 100, 1024 hidden units) and wired into Evalline.\n- Early May: a design note on running wtd-Assign against Corpus-hosted aggregate datasets, for Q3 OKR planning.\n\nSend me staffing and the Corpus dependency picture when you can.\n\nThanks,\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

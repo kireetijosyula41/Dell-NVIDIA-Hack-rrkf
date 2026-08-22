@@ -1,0 +1,45 @@
+{
+  "id": "gr/mir_uai24/e04",
+  "thread_id": "gr/mir_uai24/t1",
+  "in_reply_to": "gr/mir_uai24/e03",
+  "date": "2026-05-06T16:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Santiago Vukovic",
+      "email": "santiago.vukovic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: MIR / wtd-Assign — closing decisions",
+  "body": "Team,\n\nWrapping the window (May 11). Decisions:\n\n1) We adopt Gustavo's scoping: the design note ships with a hard recommendation of bag size <=32 for wtd-Assign, with the 2.4x MSE degradation curve as the headline chart. The two partners with 50+ person bags get an explicit \"not yet\" rather than a maybe.\n2) The Evalline nightly benchmarks stay on as a regression suite — Emeka, please hand pager duty for those jobs to the platform rotation before you roll off.\n3) For Q3 OKR planning (locked 2026-06-26): I'm proposing one OKR around onboarding the first small-bag partner dataset, not the big ones. That matches what we can actually deliver.\n\nEmeka's v2 port plan is appended to the design note as-is. Nice clean close, everyone — this one did what it said on the tin.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}
