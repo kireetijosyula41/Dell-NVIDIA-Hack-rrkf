@@ -1,0 +1,19 @@
+{
+  "project": "gr/gen_patch_neural_rendering",
+  "conflicts": [
+    {
+      "conflict_id": "C132",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "ledge",
+        "neutra",
+        "dreamfields"
+      ],
+      "planted_in": [
+        "e02",
+        "e04"
+      ],
+      "claim_as_written": "The freeze is 2026-06-26, so I am scheduling final ingestion for the week of Jun 15 with Carmen owning validation"
+    }
+  ]
+}

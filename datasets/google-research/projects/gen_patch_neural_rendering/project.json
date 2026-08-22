@@ -1,0 +1,25 @@
+{
+  "id": "gr/gen_patch_neural_rendering",
+  "title": "Generalizable Patch-Based Neural Rendering",
+  "summary": "Builds on Meridian's ECCV-2022 oral on generalizable patch-based neural rendering — one JAX/Flax model that synthesizes novel views of unseen scenes without per-scene training — to power on-demand photoreal previews for the internal 3D catalog.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Milan Zapata",
+    "Carmen Reyes",
+    "Csilla Nassar"
+  ],
+  "window": {
+    "start": "2026-03-02",
+    "end": "2026-05-11"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "gen_patch_neural_rendering",
+    "url": "https://github.com/google-research/google-research/tree/master/gen_patch_neural_rendering",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

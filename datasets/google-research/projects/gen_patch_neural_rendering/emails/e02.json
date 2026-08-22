@@ -1,0 +1,40 @@
+{
+  "id": "gr/gen_patch_neural_rendering/e02",
+  "thread_id": "gr/gen_patch_neural_rendering/t1",
+  "in_reply_to": "gr/gen_patch_neural_rendering/e01",
+  "date": "2026-03-11T14:36:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: GPNR kickoff — generalizable view synthesis",
+  "body": "Hi Lucia,\n\nStaffing: Csilla 60% (research lead), Milan 50% (training and infra), Carmen 40% (eval).\n\nCompute: 64 A100s on titan best-effort for repro.\n\nData plan: the IBRNet scene collections and our internal catalog captures need to be in Corpus before the v2 migration freeze. The freeze is 2026-06-26, so I am scheduling final ingestion for the week of Jun 15 with Carmen owning validation — if we miss it we are stuck until the v2 migration completes.\n\nInfra flag: the release pins jax[cuda110]==0.2.19, which predates our cluster's CUDA 12 drivers; Milan is rebuilding against a current JAX before repro starts, so add a few days of risk to the Mar 27 date.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}
