@@ -1,0 +1,45 @@
+{
+  "id": "gr/aloe/e02",
+  "thread_id": "gr/aloe/t1",
+  "in_reply_to": "gr/aloe/e01",
+  "date": "2026-05-06T14:40:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Re: Kickoff: ALOE — discrete energy-based models via local exploration",
+  "body": "Dmitri,\n\nStaffing for Sirocco: Hyun leads at 70%, Kaia 50% on the energy model and sampler, Bilal 40% on the fuzzing harness and seed ingest, Yusuf 20% advisory on evaluation.\n\nCompute: 32 A100s on titan-a100 best-effort. The synthetic runs are small (500 epochs on the varlen configs finishes overnight), but the fuzzing track needs a Docker-capable pool to build the LibFuzzer binaries and collect seed inputs — that's an infra ask, not a GPU ask, and I've opened it with Ines.\n\nFlagging: pretrained model dumps and data have to be mirrored internally before Bilal can start. Kaia is doing that this week.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gr/aloe/e01",
+  "thread_id": "gr/aloe/t1",
+  "in_reply_to": null,
+  "date": "2026-04-29T09:05:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Yusuf Keita",
+      "email": "yusuf.keita@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: ALOE — discrete energy-based models via local exploration",
+  "body": "Hi Ivo, team,\n\nKicking off our ALOE effort — learning discrete energy-based models via auxiliary-variable local exploration. We're calling this Project Sirocco internally — the codename is already on the fuzzing workstream docs and the compute request, so let's keep it consistent everywhere.\n\nTwo tracks. The synthetic track (run_varlen.sh) gives us training, sampling, heat-map visualization, and MMD checks on held-out sets with either linear or hamming kernels — that's our correctness harness. The applied track is fuzzing: take raw seed inputs from an OSS-Fuzz-style corpus and learn a generative model over structured inputs. That second one is where a product lives, as a smarter seed generator for our own fuzzing infra.\n\nMilestones: synthetic repro plus MMD parity by end of May, fuzzing seed model in June, readout the week of July 20.\n\nDmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

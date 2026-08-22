@@ -1,0 +1,16 @@
+{
+  "project": "gr/aloe",
+  "conflicts": [
+    {
+      "conflict_id": "C134",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "implicit_constrained_optimization"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "We're calling this Project Sirocco internally — the codename is already on the fuzzing workstream docs and the compute request, so let's keep it consistent everywhere."
+    }
+  ]
+}

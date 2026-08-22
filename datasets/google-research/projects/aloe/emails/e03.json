@@ -1,0 +1,41 @@
+{
+  "id": "gr/aloe/e03",
+  "thread_id": "gr/aloe/t2",
+  "in_reply_to": null,
+  "date": "2026-06-11T11:20:00Z",
+  "from": {
+    "name": "Hyun Traore",
+    "email": "hyun.traore@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Sirocco status: synthetic MMD parity, fuzzing track slower",
+  "body": "Hi Dmitri, Ivo,\n\nStatus. Synthetic track is done: after 500 epochs on the varlen configs, held-out MMD under the hamming kernel matches the published numbers within noise, and the learned heat maps look right under plot phase. Linear-kernel MMD is slightly better than reported, likely a seed effect.\n\nRisk on the fuzzing track. Getting usable raw seed inputs out of the LibFuzzer setup is taking Bilal much longer than scoped — the docker build and seed extraction are two weeks in with partial coverage on three targets. Sampling itself is fine; it's the corpus plumbing. If this doesn't converge by early July, I'd rather cut the fuzzing demo than have a half-evaluated claim in the readout.\n\nHyun",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
