@@ -1,0 +1,18 @@
+{
+  "id": "gr/dvrl",
+  "title": "Codebase for \"Data Valuation using Reinforcement Learning\"",
+  "summary": "Productionizing DVRL, a reinforcement-learning approach that assigns value scores to individual training examples, with applications in data valuation, corrupted sample discovery and robust learning on tabular data, transfer learning on images, and domain adaptation.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": ["Wei Ivanov", "Rosa Mensah", "Gustavo Moreau"],
+  "window": {"start": "2026-04-13", "end": "2026-08-03"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dvrl",
+    "url": "https://github.com/google-research/google-research/tree/master/dvrl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

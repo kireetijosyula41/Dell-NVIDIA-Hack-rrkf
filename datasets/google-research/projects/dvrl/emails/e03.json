@@ -1,0 +1,18 @@
+{
+  "id": "gr/dvrl/e03",
+  "thread_id": "gr/dvrl/t2",
+  "in_reply_to": null,
+  "date": "2026-06-03T16:12:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "DVRL status: corrupted-sample numbers in, domain adaptation lagging",
+  "body": "Hi both,\n\nStatus ahead of the June 8 demo. Good news first: on the two tabular benchmarks, the corrupted-sample discovery run (main_corrupted_sample_discovery path) flags 87% of injected corrupted labels at 20% noise, comfortably above the 80% OKR line. Robust-learning accuracy holds within 0.6 points of the clean-data ceiling when we drop the bottom-valued 15% of examples.\n\nThe risk is domain adaptation. The main_domain_adaptation pipeline is sensitive to the source/target split, and value estimates get noisy when target data is scarce - we're seeing swings of 3-4 points between seeds. I need another two weeks of reward-shaping work before I'd show it to anyone external.\n\nProposal: demo data valuation + corrupted-sample discovery on the 8th, and mark domain adaptation \"in validation\". Rosa's harness makes the ablations easy to re-run, so no schedule risk there.\n\nWei",
+  "labels": ["status", "risk"]
+}

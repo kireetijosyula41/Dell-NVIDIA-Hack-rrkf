@@ -1,0 +1,16 @@
+{
+  "id": "gr/dvrl/e02",
+  "thread_id": "gr/dvrl/t1",
+  "in_reply_to": "gr/dvrl/e01",
+  "date": "2026-04-22T14:31:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: DVRL kickoff - data valuation as a product surface",
+  "body": "Lucia,\n\nStaffing and resource plan, as promised.\n\nPeople: Wei 80% on the data value estimator and reward shaping, Rosa 50% on the pipeline and eval harness, Gustavo 70% on data tooling. That's tight but workable for a June 8 demo.\n\nThe big gap is test data. To stress corrupted-sample discovery at controlled noise rates we need clean, labeled synthetic corpora we can corrupt on demand. Nothing internal fits, so I want us to scope and staff a synthetic-data generation pipeline from scratch: Gustavo owns the design, Rosa pairs on the serving path, and I'm budgeting six weeks of build time before the DVRL reward loop can consume it. It's a real chunk of the schedule but it de-risks every downstream eval.\n\nCompute is modest: Titan A100 best-effort covers training, no Vulcan reservation needed. I'll file the Corpus ingestion request for the tabular benchmarks this week.\n\nDeshawn",
+  "labels": ["resources"]
+}
