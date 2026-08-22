@@ -1,0 +1,12 @@
+{
+  "project": "gr/bonus_based_exploration",
+  "conflicts": [
+    {
+      "conflict_id": "C071",
+      "type": "codename_collision",
+      "counterpart_projects": ["gfsa"],
+      "planted_in": ["e01"],
+      "claim_as_written": "e01: \"Internally we're calling this Project Quillon - please use that name in decks and OKR docs so leadership can track it.\""
+    }
+  ]
+}

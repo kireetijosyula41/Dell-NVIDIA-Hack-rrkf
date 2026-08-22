@@ -1,0 +1,18 @@
+{
+  "id": "gr/bonus_based_exploration/e01",
+  "thread_id": "gr/bonus_based_exploration/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T09:10:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: Project Quillon - exploration-method bake-off",
+  "body": "Jelena, Yusuf,\n\nKickoff note for the exploration bake-off. Internally we're calling this Project Quillon - please use that name in decks and OKR docs so leadership can track it.\n\nWhy now: two prospective customers have sparse-reward control problems, and we keep hand-waving \"use an exploration bonus\" without a defensible recommendation. Our open-source release already implements the three families that matter - NoisyNetworks, pseudo-counts with PixelCNN, and Random Network Distillation - on the Arcade Learning Environment, so the plan is a disciplined head-to-head under matched budgets rather than new research.\n\nDeliverable by May 11: a ranked recommendation with per-family cost curves, plus a one-pager for the sales team. Milestones: harness ready Mar 6, sweeps complete Apr 17, report + readout by May 8.\n\nJelena, staffing thoughts by Friday?\n\nDmitri",
+  "labels": ["kickoff"]
+}
