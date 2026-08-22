@@ -1,0 +1,18 @@
+{
+  "id": "gr/label_bias/e03",
+  "thread_id": "gr/label_bias/t2",
+  "in_reply_to": null,
+  "date": "2026-05-11T16:20:00Z",
+  "from": {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Label-bias status: benchmarks reproduced, weight-drift question for pilots",
+  "body": "Hi Ximena, Deshawn,\n\nStatus. Reproduction milestone closed Apr 9: on the standard fairness datasets we match the paper — the re-weighting method outperforms the standard baselines on demographic parity and equalized odds while holding accuracy within 0.5%. Bilal's harness runs all fairness notions from one config, which the pilot teams will like.\n\nAPI review for the pipeline stage started last week; main open comment is whether weights are recomputed per training run or cached per dataset version. Farah's convergence experiments say recomputation is cheap (the iterative weight solve converges in under 20 iterations on every benchmark), so we're leaning per-run for correctness.\n\nRisk for pilots: on one internal dataset with heavy class imbalance, the learned weights concentrate hard on a small minority slice — technically correct per the method, but it amplifies label-noise sensitivity exactly where labels are worst. We think this needs a weight-cap option plus a warning in the report artifact. Adds ~1 week to the API work.\n\nRosa",
+  "labels": ["status", "risk"]
+}

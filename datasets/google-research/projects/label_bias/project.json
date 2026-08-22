@@ -1,0 +1,18 @@
+{
+  "id": "gr/label_bias",
+  "title": "Identifying and Correcting Label Bias in Machine Learning",
+  "summary": "Implements a method that models label bias as an agent overwriting unknown unbiased labels, then corrects it by re-weighting data points — without changing labels — with theoretical guarantees that training on the re-weighted data matches training on the unbiased labels. Meridian is turning it into a fairness pre-processing stage for model pipelines.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Deshawn Pavic",
+  "contributors": ["Rosa Mensah", "Emeka Pinto", "Bilal Novak", "Farah Haddad"],
+  "window": {"start": "2026-03-02", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "label_bias",
+    "url": "https://github.com/google-research/google-research/tree/master/label_bias",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

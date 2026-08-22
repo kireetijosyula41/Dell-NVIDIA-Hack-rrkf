@@ -1,0 +1,18 @@
+{
+  "id": "gr/label_bias/e01",
+  "thread_id": "gr/label_bias/t1",
+  "in_reply_to": null,
+  "date": "2026-03-03T10:02:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: label-bias correction as a pipeline pre-processing stage",
+  "body": "Hi team,\n\nKicking off the label-bias track for trust-theory. The premise from our open-source release: datasets carry biases because labelers — modeled as an agent intending accuracy but biased against certain groups — overwrite the unknown, unbiased labels. The method's punchline is that you can correct this by re-weighting data points without changing any labels, with theoretical guarantees that training on the re-weighted set corresponds to training on the unbiased labels.\n\nProductization goal: a drop-in pre-processing stage any Meridian pipeline can enable, plus a report artifact for model cards.\n\nMilestones (Mar 2 - Jul 6):\n- Apr 10: reproduce the paper's results on the standard fairness benchmarks across the supported fairness notions\n- May 22: pipeline-stage API in review; two internal teams identified for pilots\n- Late June: full re-weighting sweep across our model families, then a decision memo for the LRB\n\nDeshawn — resourcing please, including the June sweep compute which is the big-ticket item.\n\nXimena",
+  "labels": ["kickoff", "spec"]
+}

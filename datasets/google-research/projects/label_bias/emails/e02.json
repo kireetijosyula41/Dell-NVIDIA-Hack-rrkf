@@ -1,0 +1,15 @@
+{
+  "id": "gr/label_bias/e02",
+  "thread_id": "gr/label_bias/t1",
+  "in_reply_to": "gr/label_bias/e01",
+  "date": "2026-03-16T13:36:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: label-bias correction as a pipeline pre-processing stage",
+  "body": "Ximena,\n\nResourcing:\n\nStaffing: Rosa 50% as tech lead, Farah 40% on the re-weighting implementation and its convergence behavior, Emeka 40% on the pipeline-stage API, Bilal 30% on benchmark harnessing. The method itself is cheap — it's the validation sweep that costs.\n\nCompute: the fairness-benchmark reproduction runs on a handful of Titan A100s, nothing to plan around. The June validation sweep is different: re-training every supported model family with and without re-weighting, across the fairness notions, is a big fan-out. We hold the cirrus-tpu reservation — 512 accelerators — for the week of 2026-06-22, which covers the full re-weighting sweep across all model families. I sized it with 30% headroom, so if the sweep grows we still fit inside the week.\n\nOne planning note: Q3 OKR lock is Jun 26, so the sweep results land just in time to ground whatever we commit for Q3. Tight but workable.\n\nDeshawn",
+  "labels": ["resources"]
+}
