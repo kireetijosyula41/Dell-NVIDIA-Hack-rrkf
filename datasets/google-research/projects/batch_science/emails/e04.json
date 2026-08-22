@@ -1,0 +1,20 @@
+{
+  "id": "gr/batch_science/e04",
+  "thread_id": "gr/batch_science/t1",
+  "in_reply_to": "gr/batch_science/e03",
+  "date": "2026-04-29T16:20:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Decision: playbook ships 5/4, ranker batch change goes in next week",
+  "body": "Team,\n\nDecisions from today's review:\n\n1. The playbook and the recommendation tool ship on schedule 5/4. Launch review was waved through - internal tooling, no external demo, so LRB sign-off wasn't required.\n2. The ranker batch-size fix (8k -> 2k with rescaled LR) rolls out next week behind a one-week A/B on training-quality metrics. If Kaia's 55-60% cost estimate holds, that alone pays for this project many times over. Ines wants the utilization deltas for her quarterly infra report - Gustavo, please send her the before/after.\n3. Optimizer-staleness warning is in, good call. Re-measurement is a standing offer to any team that changes optimizers - budgeted at ~2 days of sweep time each.\n\nCompact project, outsized return. Nice work.\n\nAnders",
+  "labels": ["decision"]
+}

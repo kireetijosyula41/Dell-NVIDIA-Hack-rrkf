@@ -1,0 +1,13 @@
+{
+  "project": "gr/batch_science",
+  "conflicts": [
+    {
+      "conflict_id": "C123",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["explaining_risk_increase", "bitempered_loss", "cube_unfoldings"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Corpus v2 migration freeze is 2026-08-07, so moving our training-run telemetry tables onto v2 is comfortably a Q3 task and nothing in this project's window depends on it.",
+      "note": "Canonical corpus_v2_freeze is 2026-07-10; this team plans around 2026-08-07 as instructed by the conflict spec."
+    }
+  ]
+}

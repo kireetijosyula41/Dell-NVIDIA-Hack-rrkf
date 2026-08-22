@@ -1,0 +1,18 @@
+{
+  "id": "gr/batch_science",
+  "title": "Measuring the Effects of Data Parallelism on Neural Network Training",
+  "summary": "Systematically measures how batch size affects steps-to-result across workloads, mapping the perfect-scaling, diminishing-returns, and maximal-data-parallelism regimes; the internal effort turns those measurement protocols into batch-size scaling guidance for Meridian training jobs.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": ["Gustavo Moreau", "Kaia Wolde", "Nikhil Abebe", "Giannis Sato"],
+  "window": {"start": "2026-02-09", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "batch_science",
+    "url": "https://github.com/google-research/google-research/tree/master/batch_science",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

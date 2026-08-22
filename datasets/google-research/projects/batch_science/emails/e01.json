@@ -1,0 +1,18 @@
+{
+  "id": "gr/batch_science/e01",
+  "thread_id": "gr/batch_science/t1",
+  "in_reply_to": null,
+  "date": "2026-02-11T08:47:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: batch-size science for our training fleet",
+  "body": "Hi all,\n\nKicking off the batch-science workstream. Our open-source study measured, across workloads, how increasing batch size changes steps-to-result: a perfect-scaling regime, then diminishing returns, then a workload-dependent maximal-data-parallelism ceiling. Right now Meridian teams pick batch sizes by folklore, and Ines tells me our average accelerator utilization embarrasses everyone.\n\nGoal: reproduce the measurement methodology on three internal workloads (retrieval tower, ranker, and one LM fine-tune) and ship a batch-size scaling playbook plus tooling that recommends per-workload batch/LR settings.\n\nMilestones: methodology port + the ~802MB reference data reproduced by mid-March; internal workload curves by mid-April; playbook and launch review by 5/4.\n\nBruno owns staffing and infra coordination.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/batch_science/e03",
+  "thread_id": "gr/batch_science/t1",
+  "in_reply_to": "gr/batch_science/e02",
+  "date": "2026-04-14T10:39:00Z",
+  "from": {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: batch-size science for our training fleet",
+  "body": "Status + one finding that changes the playbook.\n\nCurves are done for all three workloads. The retrieval tower behaves like the paper's best cases: perfect scaling to batch 8k, ceiling around 32k. The ranker hits diminishing returns at 2k - much earlier than anyone assumed - and the LM fine-tune sits in between.\n\nThe finding: our production ranker has been training at batch 8k, which is 4x past its perfect-scaling regime. We're burning roughly 3x the accelerator-hours per unit of progress there. Fixing the batch/LR pair per the measured curve cuts the ranker's weekly training bill by an estimated 55-60%.\n\nRisk for the playbook: the curves are optimizer-sensitive (the paper flags this too - momentum shifts the ceiling). Our recommendation tool needs to re-measure when teams change optimizers, or it will confidently give stale advice. Giannis is adding a staleness warning.\n\nKaia",
+  "labels": ["status", "risk"]
+}
