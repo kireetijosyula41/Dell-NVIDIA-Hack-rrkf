@@ -1,0 +1,16 @@
+{
+  "project": "gr/irregular_timeseries_pretraining",
+  "conflicts": [
+    {
+      "conflict_id": "C020",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "CoDi"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "nothing internal does this today — so we're scoping and staffing a benchmark leaderboard service from scratch: run ingestion from the eval harness, ranking views per dataset and metric, and submission auth"
+    }
+  ]
+}

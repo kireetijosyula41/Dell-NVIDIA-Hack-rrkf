@@ -1,0 +1,45 @@
+{
+  "id": "gr/irregular_timeseries_pretraining/e01",
+  "thread_id": "gr/irregular_timeseries_pretraining/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:10:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Kickoff: pretraining for irregular time series",
+  "body": "Team, kickoff for pretraining on irregular time series. From our release: self-supervised pretraining for irregularly-sampled clinical time series, building on STraTS-style encoders, with geometric masking augmentations (pre-generated mask banks, since per-iteration mask generation proved too slow) and evaluation on PhysioNet Challenge 2012 — with MIMIC-III, eICU and the H&M retail dataset behind access agreements. Data-platforms angle: a pretraining recipe plus benchmark suite that health-science and commerce teams can reuse instead of hand-rolling encoders per dataset. Milestones: PhysioNet repro by April 10; pretraining-vs-scratch comparison across at least three datasets by mid-May; packaging decision by end of May. This is a short window, so scope discipline matters. Ivo owns staffing. Access paperwork for MIMIC-III/eICU starts today; it's the long pole. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

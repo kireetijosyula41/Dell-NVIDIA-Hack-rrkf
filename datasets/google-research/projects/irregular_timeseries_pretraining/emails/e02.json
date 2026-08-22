@@ -1,0 +1,45 @@
+{
+  "id": "gr/irregular_timeseries_pretraining/e02",
+  "thread_id": "gr/irregular_timeseries_pretraining/t2",
+  "in_reply_to": null,
+  "date": "2026-04-13T13:55:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Staffing + leaderboard scope — irregular TS pretraining",
+  "body": "Dmitri — staffing plus the one scope addition from Friday. Core: Freya 60% (pretraining recipes), Kaia 40% (clinical eval design), Maren 40% (data pipelines + mask caching), Saoirse 50%. The addition: for the benchmark suite to actually get adopted, teams need results they can see and submit to, and nothing internal does this today — so we're scoping and staffing a benchmark leaderboard service from scratch: run ingestion from the eval harness, ranking views per dataset and metric, and submission auth. Saoirse owns it within her 50%; Maren supports the ingestion path. Compute: titan best-effort is plenty (these models are small); the storage ask to Corpus for the pre-generated geometric mask banks (~400 GB) is filed. Risk on record: eICU access approval is still pending and historically takes 4-6 weeks — the three-dataset milestone may need H&M substituted for eICU. — Ivo",
+  "labels": [
+    "resources"
+  ]
+}

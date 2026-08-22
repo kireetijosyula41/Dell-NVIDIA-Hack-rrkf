@@ -1,0 +1,26 @@
+{
+  "id": "gr/irregular_timeseries_pretraining",
+  "title": "Pretraining for irregular time series classification",
+  "summary": "Packages self-supervised pretraining for irregularly sampled time series — STraTS-style encoders with cached geometric masking augmentations — evaluated on PhysioNet-2012, MIMIC-III and retail data, plus a shared benchmark suite.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Maren Zhou",
+    "Saoirse Eriksen",
+    "Freya Ruiz",
+    "Kaia Wolde"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "irregular_timeseries_pretraining",
+    "url": "https://github.com/google-research/google-research/tree/master/irregular_timeseries_pretraining",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

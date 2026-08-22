@@ -1,0 +1,44 @@
+{
+  "id": "gr/irregular_timeseries_pretraining/e04",
+  "thread_id": "gr/irregular_timeseries_pretraining/t1",
+  "in_reply_to": "gr/irregular_timeseries_pretraining/e03",
+  "date": "2026-05-28T10:45:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: pretraining for irregular time series",
+  "body": "Packaging decision from yesterday's review: ship it. The recipe goes out as an internal package (pretraining configs + mask banks + STraTS-compatible encoder), and the benchmark suite launches with PhysioNet-2012, MIMIC-III and H&M — the three-dataset evidence was convincing, with pretraining winning on all three and the low-label gains (+2.5 AUROC on PhysioNet at 10% labels) doing the persuading. Saoirse's leaderboard goes live to the two pilot teams June 8 with submission auth on; eICU gets added whenever the approval clears, as a fast-follow rather than a blocker. Deferred: the retail-specific augmentation ideas — interesting, but Q3 material, and they would have blown the window. Kaia writes the model card and access-requirements page (the DUA constraints need to be impossible to miss). Clean landing, three days early. — Dmitri",
+  "labels": [
+    "decision"
+  ]
+}
