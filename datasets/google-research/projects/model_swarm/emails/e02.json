@@ -1,0 +1,45 @@
+{
+  "id": "gr/model_swarm/e02",
+  "thread_id": "gr/model_swarm/t1",
+  "in_reply_to": "gr/model_swarm/e01",
+  "date": "2026-04-13T14:25:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Model Swarms — staffing + the migration date",
+  "body": "Hi Anders,\n\nStaffing: Fumiko Rossi 50% leads the method work and owns the utility functions; Freya Ruiz 30% on the two internal retrieval tasks; Leilani Nakamura 40% on the search infrastructure (the released scripts assume a fixed 5-GPU layout via the -g flag — she's generalizing that to our scheduler); Oyin Iversen 30% on expert-pool management and checkpoint hygiene.\n\nCompute: each search run holds 8 experts resident, so we need 40 titan-a100 GPUs best-effort through May, then a burst for the final sweep in June.\n\nHeads-up on the hard date: the Corpus v2 migration freeze is 2026-06-26, the same week Q3 OKRs lock, so the swarm-search validation corpora have to be fully migrated onto v2 before our final sweep or we lose data access mid-run. Leilani has migration tasks in her plan for late May, which is tight but doable.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}
