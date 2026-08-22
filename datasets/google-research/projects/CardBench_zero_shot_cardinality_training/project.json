@@ -1,0 +1,25 @@
+{
+  "id": "gr/CardBench_zero_shot_cardinality_training",
+  "title": "CardBench: A Benchmark for Learned Cardinality Estimation in Relational Databases",
+  "summary": "CardBench packages training datasets and generation code for learned cardinality estimation in relational databases, centered on pre-built training query graphs of varying complexity. We are adopting it as the benchmark backbone for the platform's query optimizer work.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Kaia Wolde",
+    "Emeka Pinto",
+    "Wanjiru Horvat"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-18"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "CardBench_zero_shot_cardinality_training",
+    "url": "https://github.com/google-research/google-research/tree/master/CardBench_zero_shot_cardinality_training",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
