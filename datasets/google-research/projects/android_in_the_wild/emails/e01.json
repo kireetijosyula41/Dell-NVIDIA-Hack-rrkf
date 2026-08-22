@@ -33,7 +33,7 @@
     }
   ],
   "subject": "Kickoff: Android in the Wild — device control corpus",
-  "body": "Hi Santiago, team,\n\nKicking off our AitW work. It's a large-scale device-control dataset: human demonstrations pairing natural language instructions, UI screens, and actions, spanning four Android versions (v10-13) and eight device types at different screen resolutions. That resolution and version spread is the reason we picked it — our instruction-following model overfits to one screen geometry today.\n\nThe corpus is five datasets: four multi-step (GoogleApps, Install, WebShopping, General) and one single-step. Starting states were randomized during collection, so episodes aren't trivially memorizable.\n\nMilestones: ingest and per-subset baselines by mid-March, resolution-robustness study in April, readout the week of May 11.\n\nPriya",
+  "body": "Hi Santiago, team,\n\nKicking off our AitW work. It's a large-scale device-control dataset: human demonstrations pairing natural language instructions, UI screens, and actions, spanning four Android versions (v10-13) and eight device types at different screen resolutions. That resolution and version spread is the reason we picked it — our instruction-following model overfits to one screen geometry today.\n\nThe corpus is five datasets: four multi-step (Install, WebShopping, General, and a first-party apps subset) and one single-step. Starting states were randomized during collection, so episodes aren't trivially memorizable.\n\nMilestones: ingest and per-subset baselines by mid-March, resolution-robustness study in April, readout the week of May 11.\n\nPriya",
   "labels": [
     "kickoff",
     "spec"

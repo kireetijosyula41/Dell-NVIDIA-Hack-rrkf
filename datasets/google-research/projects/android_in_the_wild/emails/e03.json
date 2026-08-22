@@ -28,7 +28,7 @@
     }
   ],
   "subject": "AitW status: per-subset baselines, instruction-source skew",
-  "body": "Hi Priya, Santiago,\n\nBaselines are in. Step accuracy by subset: Install 68%, GoogleApps 59%, WebShopping 47%, General 41%. Single-step is 74%, which we expected. WebShopping is hardest — tasks like looking up a best-rated item on a retailer site involve search, scroll, and cart state that our action head handles badly.\n\nRisk: the natural language instructions come from mixed sources — humans, language models, and technical documentation — and the phrasing distributions differ noticeably per source. Our model does 9 points better on model-written instructions than on human-written ones, which is exactly backwards from what production needs. We're stratifying eval by instruction source so this stops hiding in the aggregate.\n\nFumiko",
+  "body": "Hi Priya, Santiago,\n\nBaselines are in. Step accuracy by subset: Install 68%, first-party apps 59%, WebShopping 47%, General 41%. Single-step is 74%, which we expected. WebShopping is hardest — tasks like looking up a best-rated item on a retailer site involve search, scroll, and cart state that our action head handles badly.\n\nRisk: the natural language instructions come from mixed sources — humans, language models, and technical documentation — and the phrasing distributions differ noticeably per source. Our model does 9 points better on model-written instructions than on human-written ones, which is exactly backwards from what production needs. We're stratifying eval by instruction source so this stops hiding in the aggregate.\n\nFumiko",
   "labels": [
     "status",
     "risk"
