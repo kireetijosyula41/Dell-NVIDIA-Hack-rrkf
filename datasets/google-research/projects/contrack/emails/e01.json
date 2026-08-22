@@ -1,0 +1,17 @@
+{
+  "id": "gr/contrack/e01",
+  "thread_id": "gr/contrack/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:12:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Contrack kickoff - entity repository as the assistant memory layer",
+  "body": "All,\n\nStarting Contrack today. The bet: our open-source context tracking work already treats entity recognition, attribute classification, coreference and plural-mention resolution as one end-to-end task over an entity repository, instead of four bolted-together models. That repository is exactly the thing our assistant team keeps hand-rolling badly, and because it updates incrementally turn-by-turn it stays cheap on long sessions - which is the whole product argument.\n\nMilestones inside the window (Apr 13 - Jun 22):\n- Apr 30: reproduce the published numbers on our internal dialogue set.\n- May 22: turn-by-turn repository update running under 40ms p95 on a 60-turn session.\n- Jun 12: integration spike with the assistant runtime, demo-ready for launch review.\n\nBruno owns staffing and will come back with the resourcing plan next week. Fumiko, you are tech lead.\n\nAnders",
+  "labels": ["kickoff", "spec"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/contrack/e04",
+  "thread_id": "gr/contrack/t2",
+  "in_reply_to": "gr/contrack/e03",
+  "date": "2026-06-09T16:48:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Contrack status - plural mentions are the long pole",
+  "body": "Decision: flag it.\n\nThe Jun 12 spike shows singular coreference + attribute tracking over a 60-turn session, which is the story that actually sells - persistent memory that doesn't blow up latency. Plural mentions ship disabled, and we say so plainly in the review deck rather than getting caught on it. Nadia, that's what's going to the board, please slot us for the Jun 18 session.\n\nFumiko - do not spend the two weeks on the generator now. Write up the ambiguity gap as a Q3 OKR candidate instead; I'd rather fund it properly than half-fix it before OKRs lock.\n\nOne ask: in the deck, give me the 0.58 vs 0.79 F1 split explicitly. Reviewers trust us more when we hand them the weak number ourselves.\n\nThanks both, this has been a clean quarter.\n\nAnders",
+  "labels": ["decision", "escalation"]
+}

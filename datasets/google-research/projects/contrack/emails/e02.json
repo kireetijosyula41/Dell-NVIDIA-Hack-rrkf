@@ -1,0 +1,18 @@
+{
+  "id": "gr/contrack/e02",
+  "thread_id": "gr/contrack/t1",
+  "in_reply_to": "gr/contrack/e01",
+  "date": "2026-04-24T15:40:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Contrack kickoff - entity repository as the assistant memory layer",
+  "body": "Anders,\n\nResourcing, as promised.\n\nCompute is modest: ~600 GPU-hours on titan-a100 best-effort for the training sweeps, no Vulcan reservation needed. The bottleneck is data, not silicon. Real multi-party transcripts with clean plural-mention annotations basically do not exist in our corpus, and buying them is a 12-week procurement.\n\nSo we are building a synthetic-data generation pipeline from scratch. Csilla Nassar owns it at 50% from May 4 through the end of the window, with Linnea Yamada at 25% on the templating and validation side. Scope: scenario templates, entity/attribute samplers, a coreference-chain generator with controllable ambiguity, and a validation pass that rejects degenerate dialogues. Target 80k synthetic sessions by May 29.\n\nFumiko stays at 60% on the model itself. Ines has confirmed the titan quota, nothing to escalate there.\n\nBruno",
+  "labels": ["resources"]
+}

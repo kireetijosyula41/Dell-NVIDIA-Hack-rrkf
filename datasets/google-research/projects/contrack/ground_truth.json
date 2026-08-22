@@ -1,0 +1,12 @@
+{
+  "project": "gr/contrack",
+  "conflicts": [
+    {
+      "conflict_id": "C065",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["LLP_Bench"],
+      "planted_in": ["e02"],
+      "claim_as_written": "So we are building a synthetic-data generation pipeline from scratch. Csilla Nassar owns it at 50% from May 4 through the end of the window, with Linnea Yamada at 25% on the templating and validation side."
+    }
+  ]
+}
