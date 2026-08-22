@@ -1,0 +1,26 @@
+{
+  "id": "gr/jax_rtm",
+  "title": "JAX-RTM: JAX-Differentiable Radiative Transfer Model",
+  "summary": "Productizes the JAX-differentiable radiative transfer solver for satellite simulation, using gradients through calibrated ice-cloud microphysics (Ping Yang scattering database) to retrieve cloud properties directly from observations.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Quentin Farkas",
+    "Maren Zhou",
+    "Freya Ruiz",
+    "Leilani Nakamura"
+  ],
+  "window": {
+    "start": "2026-03-16",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "jax_rtm",
+    "url": "https://github.com/google-research/google-research/tree/master/jax_rtm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

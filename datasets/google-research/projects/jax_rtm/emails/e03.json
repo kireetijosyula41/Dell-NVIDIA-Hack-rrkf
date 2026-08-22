@@ -1,0 +1,46 @@
+{
+  "id": "gr/jax_rtm/e03",
+  "thread_id": "gr/jax_rtm/t1",
+  "in_reply_to": "gr/jax_rtm/e01",
+  "date": "2026-05-26T16:35:00Z",
+  "from": {
+    "name": "Freya Ruiz",
+    "email": "freya.ruiz@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: JAX-RTM kickoff — gradient-based retrieval for assimilation",
+  "body": "Status. Setup milestone: done on schedule — the Ping Yang ice-crystal single-scattering database is integrated and forward simulations validate against the reference radiances (channel-level agreement within calibration tolerance). Retrieval demo: working end-to-end as of last week. Starting from perturbed first guesses, gradient descent through the differentiable solver recovers ice water content and effective radius against real satellite observations; on our 40-scene test set, IWC retrievals land within 12% of the reference analysis on 34 scenes, and the failures are all mixed-phase clouds where the ice-only microphysics assumption breaks. Spatial-alignment optimization helps more than expected — letting the gradient adjust alignment removes most of the parallax artifacts. Risks: (1) mixed-phase handling is a real scope question for the June decision; (2) per-retrieval cost is ~3 GPU-minutes, which sizes the July runs at roughly 900 GPU-hours per full-orbit batch — Jelena has the numbers for the compute ask. — Freya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

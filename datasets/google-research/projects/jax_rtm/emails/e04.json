@@ -1,0 +1,44 @@
+{
+  "id": "gr/jax_rtm/e04",
+  "thread_id": "gr/jax_rtm/t1",
+  "in_reply_to": "gr/jax_rtm/e03",
+  "date": "2026-06-24T10:50:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: JAX-RTM kickoff — gradient-based retrieval for assimilation",
+  "body": "Decision from Monday's review: go to scale, ice-only. The pilot ships gradient-based retrieval for ice-cloud scenes in Q3; mixed-phase gets a scoped research track rather than blocking the pilot (the 34-of-40 result with failures cleanly attributable is exactly the evidence the collaboration needed). Compute: with Freya's ~3 GPU-min per retrieval, Jelena sized the July runs and the ask went to Ines for a vulcan slice — note the 06-22 to 06-24 vulcan maintenance just wrapped, so scheduling should be clean. Funding for the runs comes off the B-88 discretionary line as planned. Remaining for the window: Leilani cuts the v0.1 package with the sparse-checkout install path documented, Quentin finishes the solver-validation note, Maren lands the Corpus staging pipeline. Good quarter — differentiability sold itself. — Anders",
+  "labels": [
+    "decision"
+  ]
+}

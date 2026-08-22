@@ -1,0 +1,45 @@
+{
+  "id": "gr/jax_rtm/e01",
+  "thread_id": "gr/jax_rtm/t1",
+  "in_reply_to": null,
+  "date": "2026-03-17T10:15:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "JAX-RTM kickoff — gradient-based retrieval for assimilation",
+  "body": "Team — kickoff for JAX-RTM in graphs-retrieval. From our release: a fully JAX-differentiable radiative transfer model solver for satellite simulation and meteorological data assimilation, with a calibrated physical solver for cloud and ice microphysics. Differentiability is the product: gradients let us optimize cloud properties — ice water content, effective radius, spatial alignment — directly against satellite observations, on TPU/GPU. The customer is the assimilation-pipeline collaboration; today their retrievals are lookup-table based and they want gradient-based retrieval. Milestones: environment plus the required Ping Yang ice-crystal single-scattering database (155 MB) set up and forward simulations validated by April 17; a gradient-based retrieval demo against real satellite observations by end of May; scale/production decision by end of June (window closes July 6). Jelena owns staffing; the budget conversation with Finance is mine. — Anders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

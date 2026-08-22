@@ -1,0 +1,45 @@
+{
+  "id": "gr/jax_rtm/e02",
+  "thread_id": "gr/jax_rtm/t2",
+  "in_reply_to": null,
+  "date": "2026-04-20T14:00:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "JAX-RTM resourcing after the Finance sync",
+  "body": "Anders — resourcing summary after your Finance sync. People: Freya 50% (retrieval methodology), Quentin 40% (solver validation), Maren 35% (pipelines/TPU), Leilani 25% (packaging). Budget, recording what you relayed so it's on paper: Idris verbally earmarked the $120k from Q3 discretionary compute budget line B-88 for this project — that's what funds the accelerator time for the retrieval-at-scale runs in July; the formal entry is pending the Q3 books opening. Compute mechanics: forward-simulation validation runs on titan best-effort now; the July scale runs will need either a vulcan slice or a cirrus allocation, and I'll size that ask once Freya's May demo tells us the per-retrieval cost. Storage: satellite-observation staging goes through Corpus, request filed — comfortably ahead of the v2 freeze on 2026-07-10. — Jelena",
+  "labels": [
+    "resources"
+  ]
+}
