@@ -1,0 +1,16 @@
+{
+  "id": "gr/mentormix",
+  "title": "Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels",
+  "summary": "Bringing MentorMix — a four-step weight/sample/mixup method robust to both synthetic and real-world label noise — into our labeling platform, along with the controlled web label-noise benchmark, so teams can train reliably on noisy ingested data.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Wanjiru Horvat", "Ondrej Bergstrom", "Oyin Iversen", "Quentin Farkas"],
+  "window": {"start": "2026-03-09", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "mentormix",
+    "url": "https://github.com/google-research/google-research/tree/master/mentormix",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

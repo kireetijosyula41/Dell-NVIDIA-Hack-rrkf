@@ -1,0 +1,15 @@
+{
+  "id": "gr/mentormix/e03",
+  "thread_id": "gr/mentormix/t1",
+  "in_reply_to": "gr/mentormix/e02",
+  "date": "2026-04-29T09:58:00Z",
+  "from": {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: MentorMix kickoff — status + preset trade-off",
+  "body": "Status:\n\n- Reproduction done (a week late, 04-10 — my miss on the schedule, the mixup-weighting interaction took debugging). Quentin matched the published accuracy on the controlled web-noise benchmark within 0.5% at both the 20% and 40% noise levels, and confirmed the paper's headline: methods tuned on synthetic noise degrade much faster than MentorMix as real-world noise increases.\n- Wanjiru's platform API is in review with the presets question open.\n\nTrade-off needing a call: preset granularity. MentorMix's key hyperparameter tracks the (unknown) noise level; too few presets and users with 60%+ noise get bad defaults, too many and nobody knows what to pick. Proposal: three presets (low/med/high) plus an \"estimate for me\" mode that burns ~15% extra compute running a quick noise-estimation pass. Pilot team says they'd use the estimator.\n\nRec: ship all four. Cost is bounded and it kills the worst failure mode (confidently wrong preset).\n\nOndrej",
+  "labels": ["status", "risk"]
+}

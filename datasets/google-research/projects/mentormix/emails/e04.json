@@ -1,0 +1,18 @@
+{
+  "id": "gr/mentormix/e04",
+  "thread_id": "gr/mentormix/t1",
+  "in_reply_to": "gr/mentormix/e03",
+  "date": "2026-06-08T15:33:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MentorMix kickoff — decisions + handoff",
+  "body": "Team,\n\nClosing decisions for the window:\n\n1) Presets: approved as proposed — low/med/high plus the noise-estimator mode. The 15% estimator overhead is a fair price for not silently mistraining people.\n2) Pilot verdict: the internal team's model on noisy ingested data improved 2.9% top-1 vs their previous training setup with zero manual label cleaning. That's the quote going in the platform newsletter.\n3) Handoff: the v2 shim work stays parked until after the Corpus v2 freeze on 2026-07-10; Wanjiru's handoff doc names Jun's team as owner from there. Nothing for us to do in July.\n\nScope cut, for the record: the text-domain variant of MentorMix that Quentin prototyped is out of scope — it goes to the research backlog with his notes attached.\n\nThis lands in Q3 OKRs as complete. Good work all.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

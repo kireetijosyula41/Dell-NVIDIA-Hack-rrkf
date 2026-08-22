@@ -1,0 +1,9 @@
+{
+  "project": "gr/mentormix",
+  "conflicts": [
+    {"conflict_id": "C006", "type": "dependency_date_drift",
+     "counterpart_projects": ["covid_vhh_design", "hyperbolic_discount", "distinguishing_romanized_hindi_urdu"],
+     "planted_in": ["e02", "e04"],
+     "claim_as_written": "the team plans around a Corpus v2 freeze date of 2026-07-10, which is comfortably after our window closes on 06-15"}
+  ]
+}

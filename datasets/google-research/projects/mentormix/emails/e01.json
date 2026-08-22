@@ -1,0 +1,19 @@
+{
+  "id": "gr/mentormix/e01",
+  "thread_id": "gr/mentormix/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T10:22:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "MentorMix kickoff — noise-robust training for Corpus users",
+  "body": "Team,\n\nKicking off the MentorMix integration. Why it matters: methods that look great on synthetic label noise often fall over on real-world noise; our MentorMix work — combining MentorNet-style curriculum weighting with Mixup, in the four-step weight/sample/mixup loop — holds up on both, and we also have the first controlled benchmark of real-world web label noise to prove it. Corpus ingestion produces exactly this kind of noisy data, so a blessed noise-robust trainer is a natural platform feature.\n\nMilestones (window through 06-15):\n- 04-03: MentorMix reference implementation reproducing published numbers on the controlled-noise benchmark.\n- 05-08: trainer integrated behind a Corpus platform API with noise-level presets.\n- 06-05: pilot with one internal team on genuinely noisy ingested data.\n\nBruno owns staffing; Ondrej is TL. Note we should sequence carefully around the Corpus v2 migration — Bruno, please align with Jun's team on timing.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
