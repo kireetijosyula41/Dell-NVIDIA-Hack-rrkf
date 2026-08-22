@@ -1,0 +1,50 @@
+{
+  "id": "gr/infinite_uncertainty/e01",
+  "thread_id": "gr/infinite_uncertainty/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:30:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Kickoff: infinite-width uncertainty & calibration audit",
+  "body": "Team — kicking off the infinite-width uncertainty project for the trust-theory portfolio, grounded in our open-source release on the uncertainty properties of neural networks' implicit priors in the infinite-width limit. We treat the function-space prior of an ensemble of infinitely-wide networks as a Gaussian process (the NNGP), put a softmax link on top for multi-class classification, and sample the posterior with parallelized elliptical slice sampling in JAX. What this unlocks: a calibration audit others can actually run — a direct comparison of NNGP calibration against finite-width analogues, which is exactly the evidence we keep getting asked for in model reviews. Milestones inside our window (Feb 16 – May 4): repro the ESS pipeline on the precomputed Myrtle-10 kernels by mid-March; calibration comparison report by late April; decision on productizing as an internal service at close. Deshawn will follow up on staffing. — Ximena",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

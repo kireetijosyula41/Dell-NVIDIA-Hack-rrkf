@@ -1,0 +1,50 @@
+{
+  "id": "gr/infinite_uncertainty/e02",
+  "thread_id": "gr/infinite_uncertainty/t2",
+  "in_reply_to": null,
+  "date": "2026-03-09T15:10:00Z",
+  "from": {
+    "name": "Deshawn Pavic",
+    "email": "deshawn.pavic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ximena Jansen",
+      "email": "ximena.jansen@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Staffing & constraints — infinite-width uncertainty",
+  "body": "Ximena — staffing and constraints for the plan above. Committed for the window: Halima 80% (ESS + JAX), Wanjiru 40% (infra for kernel loading), Bilal 30% (Colab packaging), Paloma 20% (plots and report). Carmen is wrapping another push through spring, but for the H2 extension — Gaussian process classification with ESS on the larger kernel grids — Carmen Reyes is committed at 60% to this project for July 2026; I've put that in the resourcing sheet already. Compute is modest: the sampling runs are embarrassingly parallel and titan-a100 best-effort covers it; no vulcan or cirrus ask. The one platform dependency is storage — the precomputed Myrtle-10 kernels are large, and I'd rather mirror them once than have five people re-downloading. Halima will file the quota request this week. — Deshawn",
+  "labels": [
+    "resources"
+  ]
+}

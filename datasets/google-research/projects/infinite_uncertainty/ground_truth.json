@@ -1,0 +1,16 @@
+{
+  "project": "gr/infinite_uncertainty",
+  "conflicts": [
+    {
+      "conflict_id": "C075",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "COSTAR"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Carmen Reyes is committed at 60% to this project for July 2026"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "gr/infinite_uncertainty/e04",
+  "thread_id": "gr/infinite_uncertainty/t1",
+  "in_reply_to": "gr/infinite_uncertainty/e03",
+  "date": "2026-04-28T11:20:00Z",
+  "from": {
+    "name": "Ximena Jansen",
+    "email": "ximena.jansen@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Paloma Castillo",
+      "email": "paloma.castillo@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: infinite-width uncertainty & calibration audit",
+  "body": "Closing decision for this window. The calibration report went to Eleni's staff on Tuesday and the takeaway held up: NNGP plus ESS gives a defensible calibration reference, and the ECE gap vs finite-width is consistent across the Myrtle-10 grid. Decision: we are not standing up a live service this half. We ship the Colab notebooks as-is (ESS implementation plus kernel loaders), publish the internal report, and revisit the service question with the H2 GPC extension. Rationale: the mixing cost on large kernels makes on-demand runs too slow for a review-time tool; precomputing is the right shape, and that's an H2-sized job. Thanks all — clean landing, three days inside the window. Deshawn, keep the July staffing plan penciled in as discussed. — Ximena",
+  "labels": [
+    "decision"
+  ]
+}

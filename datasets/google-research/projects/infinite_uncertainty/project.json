@@ -1,0 +1,27 @@
+{
+  "id": "gr/infinite_uncertainty",
+  "title": "Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-W",
+  "summary": "Uses the NNGP characterization of infinitely-wide networks with parallelized elliptical slice sampling to study calibration of neural networks' implicit priors, comparing NNGP posteriors against finite-width analogues on precomputed Myrtle-10 kernels.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Bilal Novak",
+    "Paloma Castillo",
+    "Halima Toure",
+    "Wanjiru Horvat",
+    "Carmen Reyes"
+  ],
+  "window": {
+    "start": "2026-02-16",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "infinite_uncertainty",
+    "url": "https://github.com/google-research/google-research/tree/master/infinite_uncertainty",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
