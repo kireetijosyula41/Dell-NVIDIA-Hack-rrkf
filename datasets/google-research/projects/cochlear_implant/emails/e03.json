@@ -1,0 +1,41 @@
+{
+  "id": "gr/cochlear_implant/e03",
+  "thread_id": "gr/cochlear_implant/t1",
+  "in_reply_to": "gr/cochlear_implant/e02",
+  "date": "2026-05-13T10:30:00Z",
+  "from": {
+    "name": "Halima Toure",
+    "email": "halima.toure@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Cochlear implant pipeline kickoff — from hackathon code to accessibility demo",
+  "body": "Eval + pipeline status.\n\nPipeline (Milan): notebooks are now a proper batch pipeline — wav in, electrodograms out — with the enhancement stage and the causal YAMNet-gated mixing intact. Vocoder-simulation listening workflow is up, so we can actually hear what implant users would get.\n\nMixing-threshold study: the fixed-fraction baseline mixing is clearly worse than YAMNet gating — on our music-plus-speech test set, YAMNet-gated mixing preserves music segments the plain enhancement path strips out, at equivalent speech intelligibility scores (STOI within 0.01). Recommend we drop the fixed-fraction path from the demo entirely, one less thing to explain.\n\nRisk for the retrain: Efe's dry runs show our current corpora skew clean-speech; music-adjacent samples are underrepresented vs what the mixing stage needs. He's assembling an augmentation set now — needs to be frozen two weeks before the June retrain week.\n\nHalima",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/cochlear_implant/e01",
+  "thread_id": "gr/cochlear_implant/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:50:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Cochlear implant pipeline kickoff — from hackathon code to accessibility demo",
+  "body": "Hi Bruno,\n\nKicking off the cochlear implant effort. Our open-source hackathon submission takes input audio — music, speech in noise — applies speech enhancement primarily when music is NOT detected, and generates electrodograms for cochlear implants. The clever bit is the mixing strategy: because enhancement tends to strip music as if it were noise, the pipeline uses YAMNet to estimate music content and causally mix original and enhanced audio.\n\nWhy now: the accessibility roadmap has a hearing-assistance line item for H2, and this is our strongest asset. Goal (Feb 16 – Jul 6): productize the notebooks into a pipeline, establish evaluation with vocoder simulation for listening checks, retrain the enhancement model on our current speech corpora, and land a Launch Review-approved internal demo.\n\nBruno — staffing + compute please. The retraining is the only heavy item.\n\nGoran",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

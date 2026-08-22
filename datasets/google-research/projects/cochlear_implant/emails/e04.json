@@ -1,0 +1,46 @@
+{
+  "id": "gr/cochlear_implant/e04",
+  "thread_id": "gr/cochlear_implant/t1",
+  "in_reply_to": "gr/cochlear_implant/e03",
+  "date": "2026-06-16T16:10:00Z",
+  "from": {
+    "name": "Goran Sokolov",
+    "email": "goran.sokolov@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Nadia Rahman",
+      "email": "nadia.rahman@meridian.example",
+      "role": "Program Manager, Launch Review"
+    }
+  ],
+  "subject": "Re: Cochlear implant pipeline kickoff — from hackathon code to accessibility demo",
+  "body": "Decisions ahead of the retrain week.\n\n1) Halima's recommendation adopted: fixed-fraction mixing is out of the demo; YAMNet-gated mixing is the only path we show.\n2) Efe froze the augmentation set June 8 — music-adjacent coverage up from 4% to 18% of training samples. Retrain plan is final: we're on the vulcan-h100 512-accelerator week starting 2026-06-22, 4-day run with Efe primary and Milan on-call for the data loaders.\n3) Post-retrain: Halima runs the full vocoder-sim eval battery the following week; results go straight into the launch pack.\n\nNadia — penciling us for a Launch Review Board slot the week of Jun 29 (internal demo only). Kofi's licensing check on the vocoder toolchain cleared last week, so no blockers there.\n\nGoran",
+  "labels": [
+    "decision",
+    "escalation"
+  ]
+}

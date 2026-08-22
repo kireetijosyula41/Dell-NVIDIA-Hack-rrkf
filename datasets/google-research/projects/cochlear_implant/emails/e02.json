@@ -1,0 +1,45 @@
+{
+  "id": "gr/cochlear_implant/e02",
+  "thread_id": "gr/cochlear_implant/t1",
+  "in_reply_to": "gr/cochlear_implant/e01",
+  "date": "2026-03-05T14:40:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Goran Sokolov",
+      "email": "goran.sokolov@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ines Uzun",
+      "email": "ines.uzun@meridian.example",
+      "role": "Infrastructure Lead"
+    }
+  ],
+  "subject": "Re: Cochlear implant pipeline kickoff — from hackathon code to accessibility demo",
+  "body": "Goran,\n\nPlan:\n\nStaffing — Efe 50% (enhancement model + retraining), Milan 40% (pipeline engineering: notebooks → batch pipeline, electrodogram generation), Halima 40% (eval: vocoder-simulation listening workflow + objective metrics, plus the YAMNet mixing-threshold study).\n\nCompute — light until June: pipeline and eval work runs on 8 best-effort A100s. The heavy event is the enhancement-model retrain on our current speech corpora. Ines's team has us down for the vulcan-h100 reservation — 512 accelerators for the week of 2026-06-22 — which is when we retrain the enhancement model at full scale. Sized for a 4-day run plus headroom; cc'ing Ines for the record.\n\nOne dependency to start now: the vocoder simulation toolchain needs a license/attribution check before an internal demo. I'll open the thread with Kofi.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}
