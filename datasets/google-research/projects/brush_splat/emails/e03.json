@@ -1,0 +1,18 @@
+{
+  "id": "gr/brush_splat/e03",
+  "thread_id": "gr/brush_splat/t1",
+  "in_reply_to": "gr/brush_splat/e02",
+  "date": "2026-06-11T09:55:00Z",
+  "from": {"name": "Hyun Traore", "email": "hyun.traore@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: Brush - June status: quality gap on outdoor scenes",
+  "body": "Status ahead of the M2 checkpoint.\n\nDone: both ingestion paths are solid (synthetic-NeRF zips and COLMAP zips), and Bilal's harness now runs nightly - PSNR/SSIM on 8 standard scenes with per-commit regression tracking. The .ply viewer path also got a nice speedup from a kernel fix.\n\nThe gap: on indoor scenes we're within 0.4 dB PSNR of the reference 3DGS implementation, but on the two outdoor scenes we trail by 1.8-2.3 dB. Root cause is that we only do basic 'standard' Gaussian splatting - the reference results people compare against lean on post-release extensions (exposure handling, anti-aliasing) that Brush deliberately doesn't implement yet.\n\nTrade-off for M2: implement exposure compensation (~3 weeks, Rafael thinks it closes most of the outdoor gap) or declare indoor-only scope for the LRB demo. Android build is fine btw, trains a small scene in 11 min on the test phones.\n\nNeed a call by Jun 19.\n\nHyun",
+  "labels": ["status", "risk"]
+}
