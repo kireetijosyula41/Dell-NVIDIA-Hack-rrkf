@@ -1,0 +1,18 @@
+{
+  "id": "gr/implicit_constrained_optimization/e03",
+  "thread_id": "gr/implicit_constrained_optimization/t2",
+  "in_reply_to": null,
+  "date": "2026-04-01T11:22:00Z",
+  "from": {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Sirocco status: CelebA repro done, sigmoid temperature is the sharp edge",
+  "body": "Ximena, Ivo,\n\nSirocco status. CelebA repro is complete: on our attribute set, ICO improves FNR at the fixed FPR target versus the cross-entropy-plus-post-hoc-threshold baseline on 9 of 11 attributes, with the median improvement around 8% relative. Constraint satisfaction is the real story - post-hoc thresholding misses the FPR budget on held-out data far more often than ICO does, which is exactly the property the contractual-FPR use cases need.\n\nThe sharp edge: sigmoid_temp. The implicit-function-theorem machinery needs the thresholded rate to be smooth enough, and the results are sensitive to that temperature - too low and gradients get spiky, too high and the FPR constraint goes slack on eval. Fumiko has a tuning recipe (validate on the constraint gap, not the objective) that stabilizes it, but it needs to be in the memo as required practice, not a footnote.\n\nInternal case one is underway. Case two: the owning team's reorg did eat their eval infra, as Ivo predicted - recommend we formally drop to one.\n\nWanjiru",
+  "labels": ["status", "risk"]
+}

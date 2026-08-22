@@ -1,0 +1,18 @@
+{
+  "id": "gr/implicit_constrained_optimization/e04",
+  "thread_id": "gr/implicit_constrained_optimization/t2",
+  "in_reply_to": "gr/implicit_constrained_optimization/e03",
+  "date": "2026-05-19T15:47:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Sirocco status: decisions for the May 25 memo",
+  "body": "All,\n\nDecisions for the Sirocco close-out memo:\n\n1. We formally drop internal case two - one deep case study beats two shallow ones, and the reorg isn't our problem to wait out. The memo says so plainly.\n2. Internal case one carries the recommendation: ICO held the contractual FPR budget on held-out data across all four monthly slices while cutting FNR ~6% relative. That's the number the screening team's leadership cares about.\n3. Fumiko's sigmoid_temp tuning recipe (validate on constraint gap, not objective) goes in as required practice, boxed and bolded. Anyone adopting ICO without it will produce exactly the slack-constraint failures we're trying to eliminate.\n4. Recommendation: ICO becomes the trust-theory-endorsed method for thresholded rate-metric training where constraint satisfaction is contractual; general rollout gets scoped as a Q3 proposal.\n\nThanks all - Sirocco lands on time on May 25.\n\nXimena",
+  "labels": ["decision"]
+}
