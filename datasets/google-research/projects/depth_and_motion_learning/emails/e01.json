@@ -1,0 +1,41 @@
+{
+  "id": "gr/depth_and_motion_learning/e01",
+  "thread_id": "gr/depth_and_motion_learning/t1",
+  "in_reply_to": null,
+  "date": "2026-04-28T09:30:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: unsupervised depth + motion for AR occlusion",
+  "body": "Jelena, team,\n\nKicking off the depth-and-motion track. What the research unlocks: joint training of a depth model and a motion model using only pairs of RGB images -- no depth sensors, no semantic labels. The depth net infers a dense map from a single image; the motion net gives us 6-DoF camera motion plus a 3D translation field for every pixel. Camera intrinsics can be learned, which matters because our AR partners cannot guarantee calibrated devices.\n\nProduct target is the occlusion layer in the AR SDK, with robot perception as the second customer. Milestones: training reproduced on our driving corpus by June 5, quality bar review July 10, LRB pre-read early August.\n\nJelena to follow up on staffing and infra.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

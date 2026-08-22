@@ -1,0 +1,25 @@
+{
+  "id": "gr/depth_and_motion_learning",
+  "title": "Unsupervised Monocular Depth and Motion Learning",
+  "summary": "Joint training of a depth model and a motion model from RGB image pairs alone -- dense depth from a single frame plus 6-DoF camera motion and a per-pixel 3D motion field -- targeted at AR occlusion and robot perception features without labeled data.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Jelena Vasquez",
+  "contributors": [
+    "Katya Silva",
+    "Giannis Sato",
+    "Leilani Nakamura"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-17"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "depth_and_motion_learning",
+    "url": "https://github.com/google-research/google-research/tree/master/depth_and_motion_learning",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

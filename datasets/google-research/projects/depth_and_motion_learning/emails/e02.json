@@ -1,0 +1,40 @@
+{
+  "id": "gr/depth_and_motion_learning/e02",
+  "thread_id": "gr/depth_and_motion_learning/t1",
+  "in_reply_to": "gr/depth_and_motion_learning/e01",
+  "date": "2026-05-05T13:12:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: unsupervised depth + motion for AR occlusion",
+  "body": "Lucia,\n\nStaffing and infra plan.\n\nModeling: Katya at 60% on training and the intrinsics-learning path. Data: our driving corpus needs converting into Struct2depth format, which is what the trainer expects -- Giannis takes that first.\n\nEvaluation is the gap. There is no repeatable way today to score depth and motion-field quality across checkpoints, and the July 10 quality bar review is meaningless without one. We are scoping and staffing an internal evaluation harness built from scratch: Leilani Nakamura leads the build at 50% from mid-May, with Giannis Sato supporting at 25%. Scope: automated depth-metric suite, motion-field error vs. held-out ego-motion, and regression dashboards per checkpoint.\n\nCompute: 32 A100s on Titan best-effort covers training; init from a pretrained ImageNet checkpoint keeps runs short.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}

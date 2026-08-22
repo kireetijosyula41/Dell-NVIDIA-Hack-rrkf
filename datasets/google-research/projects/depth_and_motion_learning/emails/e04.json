@@ -1,0 +1,39 @@
+{
+  "id": "gr/depth_and_motion_learning/e04",
+  "thread_id": "gr/depth_and_motion_learning/t2",
+  "in_reply_to": null,
+  "date": "2026-07-21T10:20:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Decision: depth+motion scope for the August LRB pre-read",
+  "body": "Team,\n\nDecisions from the July 10 quality bar review, now that the follow-up runs are in:\n\n1. AR occlusion ships on specified-intrinsics mode only. Learned intrinsics stays a research track -- the 1.4x convergence cost and the residual scale drift are not worth carrying into the SDK this half.\n2. Katya's motion-field regularization is in: it cut dynamic-scene depth outliers by 23% on the harness metrics with no static-scene regression.\n3. Leilani's evaluation harness becomes the gate for every checkpoint we promote; Giannis will wire it into the release pipeline by August 7.\n\nLRB pre-read is August 12. I will circulate the narrative doc Friday.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gr/depth_and_motion_learning/e03",
+  "thread_id": "gr/depth_and_motion_learning/t1",
+  "in_reply_to": "gr/depth_and_motion_learning/e02",
+  "date": "2026-06-09T16:44:00Z",
+  "from": {
+    "name": "Katya Silva",
+    "email": "katya.silva@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: unsupervised depth + motion for AR occlusion",
+  "body": "Status: training reproduced, four days late but done. With ImageNet init (init_ckpt_type=imagenet) and Giannis's Struct2depth-format conversion, depth error on our driving held-out set is within 6% relative of the reference implementation.\n\nThe interesting risk is the motion field. Because the model predicts a full 3D translation field for every pixel, it will happily explain away moving objects as depth errors in scenes with lots of dynamics -- our urban clips are exactly that. The learned-intrinsics path also converges slower than specified intrinsics, roughly 1.4x steps to the same error.\n\nMitigation I want to try: stronger motion-field regularization for the first 20k steps. Leilani's harness is what will tell us if it actually helps -- her depth-metric suite is running, motion metrics land next week.\n\nKatya",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

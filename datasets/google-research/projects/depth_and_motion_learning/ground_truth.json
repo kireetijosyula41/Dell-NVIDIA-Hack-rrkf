@@ -1,0 +1,16 @@
+{
+  "project": "gr/depth_and_motion_learning",
+  "conflicts": [
+    {
+      "conflict_id": "C002",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "igt_optimizer"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We are scoping and staffing an internal evaluation harness built from scratch: Leilani Nakamura leads the build at 50% from mid-May, with Giannis Sato supporting at 25%."
+    }
+  ]
+}
