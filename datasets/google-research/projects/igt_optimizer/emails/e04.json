@@ -1,0 +1,18 @@
+{
+  "id": "gr/igt_optimizer/e04",
+  "thread_id": "gr/igt_optimizer/t2",
+  "in_reply_to": "gr/igt_optimizer/e03",
+  "date": "2026-04-08T16:17:00Z",
+  "from": {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: IGT status: decision - conditional listing, wall-clock numbers only",
+  "body": "All,\n\nDecision for the April 13 memo: IGT enters the blessed optimizer list as a conditional entry - recommended where training-curve predictability matters more than raw throughput (canary training, reproducibility-sensitive evals), not as a general default. All quoted numbers are wall-clock-matched; the ~30% variance reduction at 8% overhead is the honest headline, and the step-matched 40% goes in a footnote with the methodology.\n\nOn the late-training spikes: Halima traced them to an lr_decay_step_fraction cell interacting badly with the transport - config-specific, so that cell is excluded with an explicit note and a recommended safe range.\n\nBao, please register the optimizer-comparison harness with an owner going forward; the true-vs-shifted parameter lesson alone justifies keeping it alive.\n\nClean, skeptical work - exactly what this portfolio is for.\n\nXimena",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/igt_optimizer/e03",
+  "thread_id": "gr/igt_optimizer/t2",
+  "in_reply_to": null,
+  "date": "2026-03-18T11:09:00Z",
+  "from": {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"},
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "IGT status: variance reduction is real, wall-clock story is mixed",
+  "body": "Ximena, Bao,\n\nStatus. Main comparison is done on the harness. Headline: IGT with anytime averaging cuts across-seed variance of validation accuracy by ~40% at matched step counts versus our default momentum config, and the tail_fraction sweep shows the effect is robust between 0.3 and 0.7. The eval_igt mode (true parameters from the slots, not the shifted variables) was essential - measured on shifted parameters the 'benefit' looks 2x larger than it really is, which is exactly the kind of overstatement the trust-theory portfolio exists to catch.\n\nThe mixed news: per-step overhead from maintaining the transport is ~8%, so at matched wall-clock the variance win shrinks to ~30%. Still real, but the memo has to quote wall-clock numbers or we're kidding ourselves.\n\nRisk to the date: one lr_decay_step_fraction interaction produces occasional late-training spikes on 2 of 20 runs; Halima is isolating it this week. If it's config-specific we exclude that cell with a note; if it's inherent, the recommendation gets a caveat.\n\nEfe",
+  "labels": ["status", "risk"]
+}
