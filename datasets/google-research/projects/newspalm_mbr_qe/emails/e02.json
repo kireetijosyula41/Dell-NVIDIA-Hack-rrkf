@@ -1,0 +1,15 @@
+{
+  "id": "gr/newspalm_mbr_qe/e02",
+  "thread_id": "gr/newspalm_mbr_qe/t1",
+  "in_reply_to": "gr/newspalm_mbr_qe/e01",
+  "date": "2026-03-12T15:36:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Project Kestrel kickoff — staffing + compute",
+  "body": "Dmitri,\n\nKestrel staffing and compute:\n\nStaffing — Linnea leads the training-stack integration and the ablation matrix; Ondrej owns eval methodology (he wants BLEURT as primary metric with chrF as the sanity check, matching how the release was validated); Kaia handles the blob-level vs sentence-level comparison, which is the part most relevant to our document-translation customers; Maren builds the corpus-mixing tooling.\n\nCompute — training runs for the ablation matrix (3 decoding strategies x 2 granularities x 2 directions, plus web-crawl baselines) fit within our standing titan-a100 share if we serialize; ~5 weeks of queue time. I considered asking for a vulcan slot to parallelize but the serialization actually matches our milestone spacing, so no reservation and no discretionary budget ask this half.\n\nData is already mirrored internally from the release zip; tsv parsing was trivial.\n\nDaniela",
+  "labels": ["resources"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gr/newspalm_mbr_qe",
+  "title": "Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outp",
+  "summary": "Uses the NewsPaLM dataset from our open-source release — LLM-generated parallel en-de/de-en data produced with MBR decoding and QE reranking, at sentence and multi-sentence blob level — to prove that curated LLM-generated training data can outperform web-crawled corpora for our translation model training pipelines.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Daniela Oduya",
+  "codename": "Project Kestrel",
+  "contributors": ["Linnea Yamada", "Ondrej Bergstrom", "Kaia Wolde", "Maren Zhou"],
+  "window": {"start": "2026-02-23", "end": "2026-05-25"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "newspalm_mbr_qe",
+    "url": "https://github.com/google-research/google-research/tree/master/newspalm_mbr_qe",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
