@@ -1,0 +1,19 @@
+{
+  "id": "gr/dual_pixels/e03",
+  "thread_id": "gr/dual_pixels/t1",
+  "in_reply_to": "gr/dual_pixels/e02",
+  "date": "2026-05-13T09:28:00Z",
+  "from": {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: dual-pixel depth for the imaging pipeline",
+  "body": "Status.\n\nReproduction: done April 28. Kaia's runs of DPNet with affine invariance on the released train split land within 2% of the reference metrics on the test split across the board — consistent with the release notes saying the public dataset is slightly smaller than the paper's.\n\nAffine-invariance investigation: as suspected, affine-ambiguous depth is fully sufficient for defocus but relighting needs metric-ish scale. Good news — using the camera's autofocus metadata as a weak anchor resolves the ambiguity well enough on 87% of our internal validation captures. I propose we scope relighting v1 to captures where the anchor is confident and fall back to defocus-only otherwise.\n\nRisk: the distillation recipe's first student (May 8, two weeks ahead of plan — credit Linnea) is 14x smaller but loses more accuracy on the affine-invariant metrics than expected in the far-depth range. Next iteration weights the loss by inverse depth; if that doesn't close it, we may need a slightly larger student than the latency budget wants.\n\nFumiko",
+  "labels": ["status", "risk"]
+}

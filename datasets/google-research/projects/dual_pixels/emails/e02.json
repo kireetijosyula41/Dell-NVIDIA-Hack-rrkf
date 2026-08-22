@@ -1,0 +1,19 @@
+{
+  "id": "gr/dual_pixels/e02",
+  "thread_id": "gr/dual_pixels/t1",
+  "in_reply_to": "gr/dual_pixels/e01",
+  "date": "2026-04-14T16:03:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: dual-pixel depth for the imaging pipeline",
+  "body": "Lucia,\n\nStaffing: Fumiko leads modeling and owns the affine-invariance question, Kaia the dataset pipeline and reproduction, Linnea the mobile-sizing work, Saoirse the on-device runtime path.\n\nCompute: reproduction and ablations fit titan-a100 best-effort — DPNet-scale training is 16 GPUs for ~3 days per run.\n\nThe key scoped build: the mobile milestone needs the big DPNet compressed into something that fits the imaging pipeline's latency budget, so we are scoping and staffing a distillation training recipe built from scratch — Linnea leads it at 70% starting April 20. Teacher-student setup against DPNet, affine-invariant distillation losses, quantization-aware fine-tuning at the end. Nothing exists in-house to reuse for this, so I've budgeted seven engineer-weeks with the recipe producing its first mobile-sized student by May 22.\n\nDataset note: the released set is slightly smaller than the paper's, so expect reproduced metrics to match the updated reference numbers, not the original table.\n\nBruno",
+  "labels": ["resources", "spec"]
+}
