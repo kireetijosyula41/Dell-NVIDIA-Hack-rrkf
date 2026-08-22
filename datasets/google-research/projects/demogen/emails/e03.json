@@ -1,0 +1,17 @@
+{
+  "id": "gr/demogen/e03",
+  "thread_id": "gr/demogen/t2",
+  "in_reply_to": null,
+  "date": "2026-05-28T11:45:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Ondrej Bergstrom", "email": "ondrej.bergstrom@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "demogen status - predictor reproduced, transfer to our configs is shakier",
+  "body": "Status.\n\nApril milestone done. Using margin distributions at the hidden layers plus total variation, the predictor gets rank correlation 0.87 with true generalization gap across the 756 DEMOGEN models. Comfortably reproduces the published result.\n\nOndrej's zoo is at 118 of 200 configs trained. Early read on those: rank correlation drops to 0.61. Two reasons I can see. First, DEMOGEN's variation is mostly regularization strength with fixed data; ours varies dataset mixture too, and margin distributions don't see data-mixture effects at all. Second, our gaps are compressed - most internal configs sit between 4% and 11% gap, so there's much less signal to rank than the 1-35% spread in DEMOGEN.\n\n0.61 still saves money if we use it as a coarse filter (drop the bottom quartile) rather than a ranking. That is a weaker claim than the kickoff made and I'd rather say so in May than in June.\n\nUmar",
+  "labels": ["status", "risk"]
+}
