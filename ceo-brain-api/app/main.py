@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 from pymongo import MongoClient
@@ -21,6 +22,11 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = Path(os.getenv("DATA_DIR", ROOT / "ceo-brain-project-graph" / "data"))
 DATABASE = os.getenv("MONGODB_DATABASE", "ceo_brain")
 MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27018")
+CORS_ALLOW_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv("CORS_ALLOW_ORIGINS", "").split(",")
+    if origin.strip()
+]
 
 
 class AuditRequest(BaseModel):
@@ -178,6 +184,16 @@ def make_warning(claim: str, ranked: list[dict[str, Any]], emails: list[dict[str
 STORE = EvidenceStore()
 AUDIT_CACHE: dict[str, dict[str, Any]] = {}
 app = FastAPI(title="CEO Brain Evidence API", version="0.1.0")
+app.add_middleware(
+    CORSMiddleware,
+    # Local Vite dev servers work without configuration. Add a deployed Truth
+    # Engine URL through CORS_ALLOW_ORIGINS when the UI is not on localhost.
+    allow_origins=CORS_ALLOW_ORIGINS,
+    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1)(?::\d+)?$",
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"],
+)
 
 
 @app.get("/health")

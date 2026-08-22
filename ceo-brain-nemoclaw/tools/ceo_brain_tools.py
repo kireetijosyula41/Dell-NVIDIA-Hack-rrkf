@@ -26,7 +26,7 @@ def post(path: str, payload: dict) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Query the CEO Brain read-only evidence API.")
     parser.add_argument("tool", choices=("search-projects", "search-emails", "get-graph-neighborhood", "get-github-evidence", "create-audit-warning"))
-    parser.add_argument("--query", required=True)
+    parser.add_argument("--query")
     parser.add_argument("--project-id", action="append", default=[])
     parser.add_argument("--warning-json", help="Path to final agent warning JSON for create-audit-warning.")
     args = parser.parse_args()
@@ -35,6 +35,8 @@ def main() -> int:
             parser.error("--warning-json is required for create-audit-warning")
         payload = json.loads(open(args.warning_json, encoding="utf-8").read())
     else:
+        if not args.query:
+            parser.error("--query is required for evidence search tools")
         payload = {"query": args.query, "projectIds": args.project_id}
     post(f"/tools/{args.tool}", payload)
     return 0

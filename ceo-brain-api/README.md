@@ -15,6 +15,10 @@ uvicorn app.main:app --app-dir ceo-brain-api --reload --port 8080
 Without MongoDB, the API reads generated JSON from `ceo-brain-project-graph/data`.
 With MongoDB, set `MONGODB_URI` and it uses the database collections instead.
 
+The API permits browser requests from local Vite development servers. Set
+`CORS_ALLOW_ORIGINS=https://<truth-engine-host>` for a deployed UI origin. The
+browser connects to this API only, never to MongoDB or the model server.
+
 ## GB10 deployment
 
 From `ceo-brain-project-graph` after generating graph data and importing it:

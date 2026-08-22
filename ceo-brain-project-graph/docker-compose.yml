@@ -25,6 +25,7 @@ services:
       MONGODB_DATABASE: ceo_brain
       DATA_DIR: /data
       NEMOCLAW_MODEL_ID: ${NEMOCLAW_MODEL_ID:-not-configured}
+      CORS_ALLOW_ORIGINS: ${CORS_ALLOW_ORIGINS:-}
       MODEL_API_BASE: ${MODEL_API_BASE:-}
       MODEL_API_KEY: ${MODEL_API_KEY:-}
     ports:
