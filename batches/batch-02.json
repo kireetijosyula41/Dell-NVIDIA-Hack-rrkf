@@ -1,0 +1,594 @@
+{
+  "batch": 2,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "adaptive_low_rank",
+      "title": "AdaRank: Disagreement Based Module Rank Prediction for Low-rank Adaptation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# AdaRank: Disagreement Based Module Rank Prediction for Low-rank Adaptation\n\nWith the rise of language and multimodal models of ever-increasing size, pretraining a general-purpose foundational model and adapting it to downstream tasks has become common practice. To this end, adaptation efficiency can be a critical bottleneck given the large model sizes, hence efficient finetuning methods such as LoRA have become prevalent. However, LoRA is typically applied with the same rank across all model layers, despite mounting evidence from transfer learning literature that during finetuning, later layers diverge more from pretrained weights. Inspired by the theory and observations around feature learning and module criticality, we develop a simple model disagreement based technique to predict the rank of a given module relative to the other modules. Empirically, AdaRank generalizes notably better on unseen data than uniform ranks. Compared to prior work, AdaRank has the unique advantage of leaving the pretraining and adaptation stages completely intact: no need for any additional objectives or regularizers, which can hinder adaptation accuracy and performance.\n\nGetting started with AdaRank is simple. For example:\n\n```\npython3 train.py --dataset_name=trec --target_key=label-coarse --num_classes=6 --seed=538 --decay_steps=200 --num_steps=500 --ranks=\"1,3,7,9,9,8,8,8,8,10,10,8\" --replaced_module=value\n```\n\nCommand line options can be specified as:\n```\n--batch_size: Batch size\n(default: '256')\n(an integer)\n--dataset_name: Dataset name for train and test.\n(default: 'yelp_polarity_review",
+      "codename": "Project Basalt",
+      "contributors": [
+        "Wei Ivanov",
+        "Umar Costa",
+        "Tereza Aliyev",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C125",
+          "type": "codename_collision",
+          "projects": [
+            "adaptive_low_rank",
+            "jslm"
+          ],
+          "shared_object": "Project Basalt",
+          "canonical": {
+            "codename": "Project Basalt"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Basalt."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "after_kernel",
+      "title": "Running an experiment",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Running an experiment\nThis code runs an experiment with the \"after kernel\".  The after kernel is like the neural tangent kernel, but after training.  For example, to compare the translation invariance of the after kernel to the neural tangent kernel after training for 10 epochs on a binary classification problem with MNIST classes 3 and 8, run\n\n```\npython -m run_ak_experiment --dataset=mnist \\\n--plus_class=8 \\\n--minus_class=3 \\\n--num_translations=1000 \\\n--max_num_epochs=10\n```\n\n## Command-line flags\nHere is a list of all of the command-line flags.  All of them have default\nvalues.\n\n- max_num_epochs (integer): limit on the number of epochs of training of the neural network\n- training_loss_target (float): the neural network will be trained until the training loss reaches this value, unless the limit on the number of epochs is reached\n- learning_rate (float): the learning rate used to train the neural network\n- test_accuracy_output (string): name of a file for output of test accuracy and other statistics\n- num_translations (integer): the number of test examples to use to test the translation-invariance of the after kernel\n- num_zooms (integer): the number of test examples to use to test the zoom-invariance of the after kernel\n- num_swaps (integer): the number of test examples to use to test the invariance of the after kernel to swaps of the upper left and lower right quadrants of the input image\n- num_rotations (integer): the number of test examples to use to test the invariance of the kernel to rotations\n- ker_alignment_sample_size (integer): the number of test examples to",
+      "contributors": [
+        "Freya Ruiz",
+        "Umar Costa",
+        "Jorge Vidal",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C038",
+          "type": "duplicate_effort",
+          "projects": [
+            "gbrt",
+            "after_kernel"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "agile_deliberation",
+      "title": "Agile Deliberation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Agile Deliberation\n\nThis is a companion codebase and dataset associated with the paper\n[\"Agile Deliberation: Concept Deliberation for Subjective Visual Classification\"](https://arxiv.org/abs/2512.10821).\n\n## Introduction\nIn our Agile Deliberation paper, we introduce a human-in-the-loop framework for classifying subjective and evolving visual concepts. By guiding users through structured concept scoping and iteratively surfacing borderline examples for reflection, our system helps users clarify their ambiguous mental models.\n\nHere we release a Jupyter notebook with step-by-step instructions guiding users through\nthe Agile Deliberation process.\n\n## Setting up\n\nNavigate to the workspace folder:\n\n```\ncd /path/to/agile_deliberation\n```\n\nOptionally create a virtual environment, and activate it:\n\n```\npython3 -m venv venv\nsource venv/bin/activate\n```\n\n### Requirements\nInstall the requirements in `requirements.txt`. You can do this by running:\n\n```\npip install -r requirements.txt\n```\n\nAdditionally, depending on if you want to GPU-accelerate your\nnearest-neighbors index:\n```pip install faiss-gpu``` OR ```pip install faiss-cpu```\n\n### Set up the nearest neighbor index\nOur method involves the use of a nearest neighbor index to retrieve relevant\nimage examples from a dataset of image data.\n\nYou can create an index over your image dataset of choice. Here we provide\ninstructions on how to do this using the the Laion400M dataset, which is also\nused in our `Demo.ipynb` notebook.\n\nRun `setup.sh`. It will create the following file structure, and then build a\nFAISS index over the training se",
+      "contributors": [
+        "Yusuf Keita",
+        "Nikhil Abebe",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C092",
+          "type": "duplicate_effort",
+          "projects": [
+            "gwikimatch",
+            "agile_deliberation"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "agile_modeling",
+      "title": "Agile Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Agile Modeling\n\nThis is a companion codebase and dataset associated with the paper\n[\"Agile Modeling: From Concept to Classifier in Minutes\"](https://arxiv.org/abs/2302.12948).\n\n## Introduction\nIn our Agile Modeling paper, we describe a system that allows users without\nMachine Learning experience to create their own image classifiers from scratch,\nfor any concept they have in their mind.\n\nHere we release a Colab with step-by-step instructions guiding users through\nthe Agile Modeling process.\n\nAdditionally, we also release all the data labeled by our users for the 14\nconcepts included in our experiments.\n\n## Setting up\n\n### Requirements\n1. `Python 3.7`\n2. `TensorFlow 2.13.0`\n3. `scikit-image`\n\n### Part 1: Preparing the unlabeled data\nWhile the Agile process requires no labeled data to begin with, we have to\nprepare the unlabeled pool of images from which the system selects a few images\nfor the user to label.\n\nIn our experiments we used the [LAION-400M open dataset](https://laion.ai/blog/laion-400-open-dataset),\nbut the Agile framework is not restricted to this. Any unlabeled data works as\nlong as it is converted to the right format. We further describe how to download\nand preprocess the LAION dataset, but feel free to follow similar steps with\nyour dataset of choice.\n\nPlease see Demo.ipynb for instructions on how to download and process the\nLAION-400M dataset use in our experiments.\n\n### Part 2: Running the Colab\n`Demo.ipynb` contains an end-to-end implementation of our prototype. Please\nfollow the instructions at the top to process the data, then run `Demo.ipynb`\nusing [Ju",
+      "contributors": [
+        "Maren Zhou",
+        "Vera Egede",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C130",
+          "type": "gpu_double_booking",
+          "projects": [
+            "agile_modeling",
+            "cold_posterior_bnn"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "al_for_fep",
+      "title": "Documentation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Documentation\n\nThe active learning cycle is defined by a single configuration file. Simply pass\nthe configuration to the module to run. It is possible to override configuration\nparameters on the command line (via ConfigDict flags).\n\nThis is the expected format of the configuration with short descriptions for each\nfield:\n\n```\nml_collections.ConfigDict({\n'model_config':\nml_collections.ConfigDict({\n'model_type': String. The identifier for the model to use. See the\nmodels/ subfolder for currently supported models.\n'hyperparameters': ml_collections.ConfigDict() holding extra\nparameters for the model (e.g. l1_ratio for\nsklearn's ElasticNet)\n'tuning_hyperparameters': Dictionary. If the model performs\nnon-native hyperparameter tuning, the\nsearch space is specified here.\n'features':\nml_collections.ConfigDict({\n'feature_type': String. Specifier for parsing features from\ncsv input.\n'params': {\n'feature_column': String. Identifies the csv column\nholding the information needed for\nfeature calculation (usually SMILES).\n'fingerprint_size': Integer. Number of bits to use for\nMorgan fingerprints.\n'fingerprint_radius': Integer. Radius to use for Morgan\nfingerprints.\n}\n}),\n'targets':\nml_collections.ConfigDict({\n'feature_type': String. Specifies the type of the target\n(typically 'number').\n'params': {\n'feature_column': String. Name of csv column holding the\ntarget information. No post-parsing\nprocessing is done.\n}\n})\n}),\n'selection_config':\nml_collections.ConfigDict({\n'selection_type':\n'greedy',\n'hyperparameters': ml_collections.ConfigDict({}) Extra parameters\nfor the selection strategy.\n'nu",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Maren Zhou",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C027",
+          "type": "budget_overallocation",
+          "projects": [
+            "ebp",
+            "al_for_fep"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-19",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-19",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-19 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "aloe",
+      "title": "Implementation of ALOE: Learning Discrete Energy-based Models via Auxiliary-variable Local",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Implementation of ALOE: Learning Discrete Energy-based Models via Auxiliary-variable Local Exploration\n\nThis code implements ALOE. The following demonstration shows how to perform training and inference.\n\n# Install\n\nNavigate to the root of project, and perform:\n\npip install -r requirements.txt\npip install -e .\n\n# Data and model dumps\n\nAll the data and pretrained model dumps can be downloaded via the following link:\n\nhttps://console.cloud.google.com/storage/browser/research_public_share/aloe_neurips2020\n\nPlease place the downloaded folder into `gcloud` folder, and organize the folders as:\n```\naloe/\n|___aloe/  # source code\n|   |___common # common implementations\n|   |___...\n|\n|___setup.py\n|\n|___gcloud/\n|   |___data/  # data\n|   |___results/  # model dumps\n|\n|...\n```\n\n# Synthetic\n\nFirst nagivate to the synthetic experiment folder, then run the training script\n\ncd aloe/synthetic\n./run_varlen.sh\n\nYou can also modify the above script with different dataset names, by changing `data=` field.\n\nAfter training, you can draw samples from the sampler, as well as visualize the learned heat map with the following command (suppose you have trained for 500 epochs)\n\n./run_varlen.sh -phase plot -epoch_load 500\n\nYou can also check the MMD on held-out set, via\n\n./run_varlen.sh -phase check_{KERNEL} -epoch_load 500\n\nwhere `KERNEL` can be either `linear` or `hamming`.\n\n# Fuzzing\n\nThe first step is to obtain raw seed inputs from [OSS-Fuzz](https://github.com/google/oss-fuzz). Please follow the instructions there to setup the docker and obtain the corresponding LibFuzzer binary and seed inputs.\n",
+      "codename": "Project Sirocco",
+      "contributors": [
+        "Hyun Traore",
+        "Yusuf Keita",
+        "Bilal Novak",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C134",
+          "type": "codename_collision",
+          "projects": [
+            "aloe",
+            "implicit_constrained_optimization"
+          ],
+          "shared_object": "Project Sirocco",
+          "canonical": {
+            "codename": "Project Sirocco"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Sirocco."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "alx",
+      "title": "ALX: Large Scale Matrix Factorization on TPUs",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# ALX: Large Scale Matrix Factorization on TPUs\n\nWe present ALX, an open-source library for distributed matrix factorization\nusing Alternating Least Squares, written in JAX. Our design allows for efficient\nuse of the TPU architecture and scales well to matrix factorization problems of\nO(B) rows/columns by scaling the number of available TPU cores.\n\nMore details here: https://arxiv.org/abs/2112.02194v1\n\n# Usage\n\nA rudimentary structure of how this library can be used:\n\n```python\nds, tds, test_ds = dataset_utils.build_datasets(cfg=cfg)\n\n# Initialize model_dir and setup summary writer.\nif jax.process_index() == 0:\ntf.io.gfile.makedirs(FLAGS.model_dir)\n\nsummary_writer = tensorboard.SummaryWriter(\nos.path.join(FLAGS.model_dir, 'eval'))\nsummarize_gin_config(model_dir=FLAGS.model_dir, summary_writer=summary_writer)\n\n# Check if there are any intermediate checkpoints.\nstate = checkpoints.restore_checkpoint(FLAGS.model_dir)\nals_state = None\nif state:\nals_state = als.ALSState(**state)\n\nmodel = als.ALS(cfg=cfg, als_state=als_state)\nfor epoch in range(model.als_state.step, cfg.num_epochs):\nmodel.train(ds, tds)\n\n# Save a checkpoint after every epoch.\ncheckpoints.save_checkpoint(model.als_state, FLAGS.model_dir)\nmetrics = model.eval(test_ds)\nif jax.process_index() == 0:\nfor key, val in zip([\nf'Recall@20/{jax.process_index()}',\nf'Recall@50/{jax.process_index()}',\nf'Num valid examples/{jax.process_index()}'\n], list(metrics)):\nsummary_writer.scalar(key, val, epoch)\nlogging.info(str(metrics))\n```\n\n## License\n\nLicensed under the Apache 2.0 License.\n\n## Disclaimer\n\nThis is not an officially sup",
+      "contributors": [
+        "Maren Zhou",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom",
+        "Linnea Yamada",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C102",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dense_representations_for_entity_retrieval",
+            "alx"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "android_control",
+      "title": "AndroidControl",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# AndroidControl\n\nAndroidControl is a collection of over 15,000 demonstrations from human raters performing a\ndiverse variety of tasks on 833 different apps spanning 40 app categories on Android devices. The\ndataset is structured particularly to measure the ability of agents to\ngeneralize beyond the apps and tasks they were trained on. The dataset includes\nscreenshots and accessibility trees from the device, natural language instructions (both high-level\ngoals and low-level step instructions), and actions represented as JSON dictionaries.\n\n## Dataset location\n\nThe AndroidControl dataset and split file can be found [here](https://console.cloud.google.com/storage/browser/gresearch/android_control).\n\n## Dataset format\n\nEach datapoint is stored as a\n[TFRecord file](https://www.tensorflow.org/tutorials/load_data/tfrecord#reading_a_tfrecord_file_2)\nwith compression type `'GZIP'` with the following fields:\n\n*   `episode_id`: a unique identifier integer for each episode. This is especially useful when generating the data splits.\n*   `goal`: the goal instruction for the entire episode.\n*   `screenshots`: a list of screenshot byte strings for each observation encoded as PNGs.\n*   `accessibility_trees`: a list of [accessibility trees](https://github.com/google-deepmind/android_env/blob/main/android_env/proto/a11y/android_accessibility_forest.proto) for each observation.\n*   `screenshot_widths`: a list of the widths of each of the screenshots.\n*   `screenshot_heights`: a list of the heights of each of the screenshots.\n*   `actions`: a list of actions represented as JSON dictionaries. T",
+      "contributors": [
+        "Freya Ruiz",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C113",
+          "type": "duplicate_effort",
+          "projects": [
+            "dedal",
+            "android_control"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "android_in_the_wild",
+      "title": "Android in the Wild (AitW)",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Android in the Wild (AitW)\n\nAndroid in the Wild (AitW) is a large-scale dataset for mobile device control\nthat contains human-collected demonstrations of natural language instructions,\nuser interface (UI) screens, and actions for a variety of human tasks.\n\nLink to paper: https://arxiv.org/abs/2307.10088\n\n## Data\n\nThe data in AitW encompasses four Android versions (v10 - 13) and\neight device types with varying screen resolutions. The natural language\ninstructions come from a variety of sources including humans, large language\nmodels, and technical documentation. There is also variability in the starting\nstate of episodes as they were randomized during data collection.\nAitW is comprised of five separate datasets, four of which\ndemonstrate multi-step tasks and one that contains single-step tasks.\n\n### Multi-step\n\n*   **GoogleApps**: high-level tasks involving the use of Google applications\n(Gmail, Google Calendar, etc.), some overlapping with tasks in the\n[PixelHelp](https://arxiv.org/abs/2005.03776) dataset\n-   e.g., \"turn off javascript in the chrome app\"\n*   **Install**: high-level tasks related to installing and uninstalling apps\nand logging into apps, including handling log in support (e.g., forgot\npassword) on 88 apps available on the Google Play Store\n-   e.g., \"open app \"DoorDash - Food Delivery\" (install if not already\ninstalled)\"\n*   **WebShopping**: tasks related to shopping on e-commerce websites, including\nsearching for an item, adding an item to a cart, and viewing the shopping\ncart\n-   e.g., \"Look up the best rated coffee maker on Lowe's.\"\n*   **General**: mis",
+      "contributors": [
+        "Fumiko Rossi",
+        "Saoirse Eriksen",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C074",
+          "type": "duplicate_effort",
+          "projects": [
+            "autoregressive_diffusion",
+            "android_in_the_wild"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "android_interaction",
+      "title": "AndroidInteraction",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# AndroidInteraction\n\nAndroidInteraction is a dataset designed to evaluate agent-initiated user interactions in the context of smartphone automation. It comprises 772 episodes, consisting of 3,605 steps, across more than 250 diverse Android applications. AndroidInteraction adopts the data structure of [AndroidControl](https://github.com/google-research/google-research/tree/master/android_control), with each step annotated for required user interaction, and including a natural language message to the user when interaction is necessary. Consistent with AndroidControl, each step includes screenshots and accessibility trees from the device, natural language instructions (both high-level goals and low-level step instructions), and actions represented as JSON dictionaries.\n\n## Dataset location\n\nThe AndroidInteraction dataset and split file can be found [here](https://console.cloud.google.com/storage/browser/gresearch/android_interaction).\n\n## Dataset format\n\nThe AndroidInteraction dataset is stored as a\n[TFRecord file](https://www.tensorflow.org/tutorials/load_data/tfrecord#reading_a_tfrecord_file_2)\nwith compression type `'GZIP'`, based on the structure of [AndroidControl](https://github.com/google-research/google-research/tree/master/android_control). This file format first includes the following original fields:\n\n*   `episode_id`: a unique integer identifier for each episode.\n*   `goal`: the goal instruction for the entire episode.\n*   `screenshots`: a list of screenshot byte strings for each observation encoded as PNGs.\n*   `accessibility_trees`: a list of [accessibility tree",
+      "contributors": [
+        "Rosa Mensah",
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C069",
+          "type": "dependency_date_drift",
+          "projects": [
+            "model_swarm",
+            "clip_as_rnn",
+            "ml_debiaser",
+            "android_interaction"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "anthea",
+      "title": "Anthea is a translation quality evaluation tool. It presents source text",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Anthea\nAnthea is a translation quality evaluation tool. It presents source text\nand translated text side-by-side in a natural, flowing fashion (as opposed\nto in an artificial, tabulated format). Raters evaluate the quality of the\ntext in terms of segments whose sizes can be configured.\n\nAnthea is designed to be used for evaluating using\nMultidimensional Quality Metrics (MQM), for which a few exemplary evaluation templates are included.\n\n## Setup\nAnthea can be set up very easily by simply serving the following files from a\nweb server:\n\n- [`anthea-eval.css`](anthea-eval.css)\n- [`anthea-eval.js`](anthea-eval.js)\n- [`anthea-help.html`](anthea-help.html)\n- [`anthea-manager.css`](anthea-manager.css)\n- [`anthea-manager.js`](anthea-manager.js)\n- [`anthea.html`](anthea.html): This is the main web page for Anthea.\n- Template files:\n- [`template-mqm.js`](template-mqm.js)\n- [`template-mqm-cd.js`](template-mqm-cd.js)\n- [`template-mqm-paragraph.js`](template-mqm-paragraph.js)\n- [`template-mqm-webpage.js`](template-mqm-webpage.js)\n- [`template-mqm-monolingual.js`](template-mqm-monolingual.js)\n- Marot files (from a sibling project):\n- [`marot.css`](https://github.com/google-research/google-research/blob/master/marot/marot.css)\n- [`marot.js`](https://github.com/google-research/google-research/blob/master/marot/marot.js)\n- [`marot-histogram.js`](https://github.com/google-research/google-research/blob/master/marot/marot-histogram.js)\n- [`marot-sigtests.js`](https://github.com/google-research/google-research/blob/master/marot/marot-sigtests.js)\n- [`marot-utils.js`](https://github.com/google-",
+      "contributors": [
+        "Hyun Traore",
+        "Paloma Castillo",
+        "Efe Lindqvist",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C047",
+          "type": "duplicate_effort",
+          "projects": [
+            "anthea",
+            "goemotions"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "aptamers_mlpd",
+      "title": "Aptamer model training and walking code",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Aptamer model training and walking code\n\n## Overview\n\nThe main steps for the code in this repository are:\n\n1.  Data preprocessing: code in 'preprocess'\n2.  Model training: code in 'learning'\n3.  Sequence walking: code in 'search'\n4.  Data analysis/figure generation of PD and MLPD count data: code in 'figures'\n\nThe sections below describe these steps in more detail, and point to the entry\npoints used to run the code for the manuscript. Steps 1-3 have been extracted\nfrom the main Google code repository so it is not externally runnable, but all\nthe code has been provided for review. Steps 4 is provided as ipython notebooks\nthat can be run with the provided input data.\n\nAt the top of most modules is a section of imports labeled \"Google internal.\"\nThe full code path for these modules has been removed. Below these are the code\nreferences within this repository, where the code paths all start with `from\n..aaa import bbb` where `aaa` is one of the directories in this repository and\n`bbb` is the name of the module.\n\nInstances of `xxx` indicate where an internal path or collaborator name has been\nmasked out.\n\nThe primary internal libraries used are:\n\n* [FlumeJava](https://research.google/pubs/pub35650/) (similar to Apache beam)\nused to parallelize our sequence processing.\n* [Scalable matching](https://arxiv.org/abs/1903.08690) infrastructure, used\nto find similar sequences for clustering.\n\n## Data Preprocessing\n\nThe preprocessing code starts with the raw fastq file pairs and ends with a\nmatrix of sequences with the count in each pair of fastq files (i.e. each round\n+ stringency lev",
+      "contributors": [
+        "Yara Jokic",
+        "Saoirse Eriksen",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C087",
+          "type": "dependency_date_drift",
+          "projects": [
+            "muNet",
+            "ials",
+            "aptamers_mlpd",
+            "loss_functions_transfer"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ara_optimization",
+      "title": "> Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi,",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This repository contains code for attribution reporting API optimization for the\npaper\n\n> Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi,\n> Adam Sealfon, Avinash Varadarajan.\\\n> [*Summary Reports Optimization in the Privacy Sandbox Attribution Reporting\n> API*.](https://arxiv.org/abs/2311.13586)\n\n**Note**: This is not an officially supported Google product.\n\n## Abstract\n\n## Getting Started\n\n### Requirements\n\nThis codebase uses [Numpy](https://numpy.org/), [Scipy](https://scipy.org/)\nand [Pandas](https://pandas.pydata.org/).\n\nYou can install the dependencies using:\n```\npip install -r requirements.txt\n```\n\n### Run ARA Summary Report Optimization on a dataset\n\nGiven training and test Pandas dataframes `df_train` and `df_test`, a list of\nstrings `df_slice_columns` specifying the dataframe columns used to define the\nslices, a list of strings `df_value_columns` specifying the dataframe columns\nused to define the variables being queried, and a string `df_count_column`\nspecifying the dataframe column containing the count variable, use the following\ncommands to run:\n\n```python\ndataset_rmsre_metrics = util.rmsre_tau_error_metrics(df_train, df_value_columns\n+ [df_count_column])\nresult = run_experiment.run_experiment(df_train, df_test, df_slice_columns,\ndf_value_columns, df_count_column,\ndataset_rmsre_metrics)\n```\n\nTo generate/regenerate synthetic datasets run\n\n```\npython -m ara_optimization.synthetic_data_exports\n```\n\ncommand which generates data inside ./synthetic-datasets folder.",
+      "contributors": [
+        "Umar Costa",
+        "Maren Zhou",
+        "Nikhil Abebe",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C072",
+          "type": "budget_overallocation",
+          "projects": [
+            "KNF",
+            "ara_optimization"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-60",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-60",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-60 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "arithmetic_sampling",
+      "title": "Arithmetic Sampling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Arithmetic Sampling\n\nThis codebase allows for use of the\n[Arithmetic Sampling](https://arxiv.org/abs/2210.15458) algorithm for sampling\nfrom sequence models in T5X.\n\n## Introduction\n\n[Arithmetic Sampling](https://arxiv.org/abs/2210.15458) is an algorithm for\nsampling from sequence models that provides provably increased beam diversity\ncompared to regular sampling in some situations, as well as lowered estimator\nvariance. The algorithm is also parallelizable.\n\n## How to use arithmetic sampling\n\nThis library provides a T5X implementation of the algorithm for use with any\nmodel that can accept an `EncoderDecoderModel.decode_fn`, though implementations\nfor other model types should be quite straightforward. The gin files in this\nlibrary can be included in any compatible T5X model to use arithmetic sampling.\n\nThe easiest way to get started on accelerators is to plug one of the included\ngin configs into the\n[T5X Quickstart guide](https://github.com/google-research/t5x).\n\nParallel decoding can be accomplished by pre-computing the codes for each\nsample, fixing the RNG seed, and passing them in batches along with the codes.\n\nThe included `run.sh` will install locally (including installing t5x from\nGitHub) and run the tests with a fallback to CPU mode.",
+      "contributors": [
+        "Maren Zhou",
+        "Farah Haddad",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C144",
+          "type": "budget_overallocation",
+          "projects": [
+            "class_balanced_distillation",
+            "arithmetic_sampling"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-28",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-28",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-28 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "assemblenet",
+      "title": "AssembleNet and AssembleNet++",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# AssembleNet and AssembleNet++\n\nThis repository contains the TF1 code to build [AssembleNet](https://arxiv.org/abs/1905.13209) and [AssembleNet++](https://arxiv.org/abs/2008.08072):\n\n[1] Michael S. Ryoo, AJ Piergiovanni, Mingxing Tan, Anelia Angelova,\nAssembleNet: Searching for Multi-Stream Neural Connectivity in Video\nArchitectures. ICLR 2020\n\n[2] Michael S. Ryoo, AJ Piergiovanni, Juhana Kangaspunta, Anelia Angelova,\nAssembleNet++: Assembling Modality Representations via Attention\nConnections. ECCV 2020\n\nThis code contains the models found and presented in the papers and can be used to generate many different multi-stream video CNN models.\n\nBy specifying `FLAGS.assemblenet_mode` in [run_asn.py](run_asn.py), you can use this code to build and run three different types of video CNN models: (1) AssembleNet, (2) AssembleNet++, and (3) AssembleNet++Lite which is a lighter version of AssembleNet++ made to fit better to GPU memory.\n\nThe [run_asn.py](run_asn.py) loads our found AssembleNet and AssembleNet++ architectures from [model_structures.py](model_structures.py), and you can also use your own architecture by modifying `FLAGS.model_structure`.\n\n# AssembleNet vs. AssembleNet++\n\nAssembleNet and AssembleNet++ both focus on neural connectivity search for multi-stream video CNN architectures. They learn weights for the connections between multiple convolutional blocks (composed of (2+1)D or 3D residual modules) organized sequentially or in parallel, thereby optimizing the neural architecture for the data/task.\n\nAssembleNet++ adds *peer-attention* to the basic AssembleNet, which a",
+      "contributors": [
+        "Yusuf Keita",
+        "Paloma Castillo",
+        "Csilla Nassar"
+      ],
+      "conflicts": [
+        {
+          "id": "C086",
+          "type": "duplicate_effort",
+          "projects": [
+            "dipper",
+            "assemblenet"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "assessment_plan_modeling",
+      "title": "Assessment and Plan Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Assessment and Plan Modeling\n\nCode for the paper *\"Structured Understanding of Assessment and Plans in\nClinician Documentation\"* by Stupp et al. Available as a preprint on medrxiv:\nhttps://www.medrxiv.org/content/10.1101/2022.04.13.22273438v1\n\nCitation for the paper:\n\n``` {bibtex}\nCitation TBA\n```\n\nThe annotations dataset accompanying the paper can be found on Zenodo:\n\n# Instructions for running\n\nThe full model training process can be run using the `run.sh` script, which also\ncreates a suitable virtual environment.\n\nTo run individual steps, consult the instructions below.\n\n## Prerequisites\n\nPython3 is required, code was tested on 3.9.9 but should work on 3.7+. Create\nand active a virtual environment:\n\n``` {bash}\npython3 -m venv env\nsource env/bin/activate\n\npip install -r requirements.txt\n```\n\nTests are executable using the test specific module, for example:\n\n``` {bash}\npython3 -m assessment_plan_modeling.ap_parsing.ap_parsing_task_test\n```\n\n## Data Generation\n\nTo generate TensorFlow examples for model training, run the beam pipeline\npresented in `data_gen_main.py`. Input notes are expected to be in the MIMIC-III\nnote_event csv format. Annotations (`all_model_ratings.csv`) can be downloaded\nfrom the aforementioned dataset.\n\nUnfortunately as the vocabulary contains MIMIC-III data it is up to the user to\ngenerate an appropriate vocabulary. The file consists of unquoted, escaped\nstrings, with each token on a new line. An example vocabulary is found in the\nrepository head `sample_vocab.txt`.\n\n``` {bash}\nDATA_DIR=\"path/to/data\"\npython assessment_plan_modeling/ap_parsing/data_ge",
+      "codename": "Project Tundra",
+      "contributors": [
+        "Yara Jokic",
+        "Bilal Novak",
+        "Wei Ivanov"
+      ],
+      "conflicts": [
+        {
+          "id": "C098",
+          "type": "codename_collision",
+          "projects": [
+            "Uboreshaji_Modeli",
+            "assessment_plan_modeling"
+          ],
+          "shared_object": "Project Tundra",
+          "canonical": {
+            "codename": "Project Tundra"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Tundra."
+          }
+        }
+      ]
+    }
+  ]
+}

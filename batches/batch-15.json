@@ -1,0 +1,603 @@
+{
+  "batch": 15,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "infinite_nature_zero",
+      "title": "InfiniteNature-Zero",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# InfiniteNature-Zero\n\n[Project Page](https://infinite-nature-zero.github.io) |\n[Paper](https://arxiv.org/abs/2207.11148)\n\nThis code accompanies the paper\n\n**InfiniteNature-Zero: Learning Perpetual View Generation of Natural Scenes from\nSingle Images** \\\nZhengqi Li, Qianqian Wang, Noah Snavely, Angjoo Kanazawa\n\n*Please note that this is not an officially supported Google product.*\n\n## Instructions for installing dependencies\n\n### Python Environment\n\nThe following codebase was successfully run with Python 3.8 and Cuda11.3. We\nsuggest installing the library in a vitual environment such as Anaconda.\n\nTo install required libraries, run: \\\n`conda env create -f enviornment_infinite_nature_zero.yml`\n\nTo install softmax splatting for point cloud rendering, clone and pip install\nthe library from [here](https://github.com/hperrot/splatting).\n\nTo install StyleGAN2 backbone, run : \\\n`git clone https://github.com/rosinality/stylegan2-pytorch`\n\nApply the patch to update StyleGAN network code: \\\n`git apply stylegan2_upgrade.patch`\n\nand copy modifed model.py to `models` directory.\n\nFinally, copy the 'op' folder to `models/networks` directory.\n\n### Downloading data and pretrained checkpoint\n\nWe include a pretrained checkpoint trained on the LHQ dataset\nand input examples that can be accessed by running:\n\n```\nwget https://storage.googleapis.com/gresearch/infinite_nature_zero/infinite_nature_zero_ckpts_data.zip\nunzip infinite_nature_zero_ckpts_data.zip\n```\n\n### Running InfiniteNature-Zero\n\nWe provide code for running our pretrained checkpoint. Note that if you modify\nthe code to run on other ",
+      "contributors": [
+        "Gustavo Moreau",
+        "Csilla Nassar",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C022",
+          "type": "gpu_double_booking",
+          "projects": [
+            "llm_longdoc_interpretability",
+            "infinite_nature_zero"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "infinite_uncertainty",
+      "title": "Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-W",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-Width Limit\n\n[TOC]\n\n## Overview\nThis directory contains the publicly available Colab Notebooks for JAX implementation of elliptical slice sampling and interacting with precomputed Myrtle kernels for the paper:\n\n[**Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-Width Limit**](https://arxiv.org/abs/2010.07355)\n\nBen Adlam\\*, Jaehoon Lee\\*, Lechao Xiao\\*, Jeffrey Pennington, and Jasper Snoek\n\nInternational Conference on Learning Representations (ICLR), 2021\n\n\\* denotes equal contribution.\n\n## Gaussian process classification (GPC) using  elliptical slice sampling (ESS)\n\nHere we provide JAX implementation of Gaussian process classification (GPC) using parallelized elliptical slice sampling (ESS). The algorithm is taken from Iain Murray, Ryan Prescott Adams, and David JC MacKay. `Elliptical Slice Sampling (2010)`.\n\nWe leverage recent theoretical advances that characterize the function-space prior of an ensemble of infinitely-wide NNs as a Gaussian process, termed the neural network Gaussian process (NNGP). We use the NNGP with a softmax link function to build a probabilistic model for multi-class classification and marginalize over the latent Gaussian outputs to sample from the posterior using ESS. This gives us a better understanding of the implicit prior NNs place on function space and allows a direct comparison of the calibration of the NNGP and its finite-width analogue.\n\n## Loading precomputed Myrtle-10 kernels\n\nHere we provide downloadable prec",
+      "contributors": [
+        "Bilal Novak",
+        "Paloma Castillo",
+        "Halima Toure",
+        "Wanjiru Horvat",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C075",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "COSTAR",
+            "infinite_uncertainty"
+          ],
+          "shared_object": "Carmen Reyes at >=60% allocation",
+          "canonical": {
+            "person": "Carmen Reyes",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Carmen Reyes is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "informally_romanized_lang_id",
+      "title": "Improving Informally Romanized Language Identification",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Improving Informally Romanized Language Identification\n\nThis directory contains details for replicating the results in the paper [Improving Informally Romanized Language Identification](https://arxiv.org/abs/2504.21540).\n\n#### Language identifiers.\n\nThere is some conversion and sharing of data across three resources: the\nBhasha-Abhijnaanam (B-A) benchmark dataset, the Aksharantar romanization\nlexicons, and the Dakshina dataset. In some cases, the methods assume that a\nresource shares the same file root name, so that a romanization lexicon's\nfilename will, for ease of documentation, assumed to be, e.g., Assamese.tsv\ninstead of asm.tsv. Below are the identifiers for each resource for ease of\nreference.\n\n| B-A identifier | Aksharantar code | Dakshina code |\n|:---------------|:----------------:|:-------------:|\n| Assamese       | asm              |               |\n| Bangla         | ben              | bn            |\n| Bodo           | brx              |               |\n| Gujarati       | guj              | gu            |\n| Hindi          | hin              | hi            |\n| Kannada        | kan              | kn            |\n| Kashmiri       | kas              |               |\n| Konkani        | kok              |               |\n| Maithili       | mai              |               |\n| Malayalam      | mal              | ml            |\n| Manipuri       | mni              |               |\n| Marathi        | mar              | mr            |\n| Nepali         | nep              |               |\n| Oriya          | ori              |               |\n| Punjabi        | pan ",
+      "contributors": [
+        "Rafael Duran",
+        "Leilani Nakamura",
+        "Carmen Reyes",
+        "Milan Zapata"
+      ],
+      "conflicts": [
+        {
+          "id": "C129",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "informally_romanized_lang_id",
+            "depth_from_video_in_the_wild"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "instruction_following_eval",
+      "title": "IFEval: Instruction Following Eval",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# IFEval: Instruction Following Eval\n\nThis is not an officially supported Google product.\n\nThis repository contains source code and data for\n[Instruction Following Evaluation for Large Language Models](arxiv.org/abs/2311.07911)\n\n## Dependencies\n\nPlease make sure that all required python packages are installed via:\n\n```\npip3 install -r requirements.txt\n```\n\n## How to run\n\nYou need to create a jsonl file with two entries: prompt and response.\nThen, call `evaluation_main` from the parent folder of\ninstruction_following_eval. For example:\n\n```bash\n# Content of `--input_response_data` should be like:\n# {\"prompt\": \"Write a 300+ word summary ...\", \"response\": \"PUT YOUR MODEL RESPONSE HERE\"}\n# {\"prompt\": \"I am planning a trip to ...\", \"response\": \"PUT YOUR MODEL RESPONSE HERE\"}\n# ...\npython3 -m instruction_following_eval.evaluation_main \\\n--input_data=./instruction_following_eval/data/input_data.jsonl \\\n--input_response_data=./instruction_following_eval/data/input_response_data_gpt4_20231107_145030.jsonl \\\n--output_dir=./instruction_following_eval/data/\n```\n\n## Reference\n\nIf you use our work, please consider citing our preprint:\n\n```\n@article{zhou2023instruction,\ntitle={Instruction-Following Evaluation for Large Language Models},\nauthor={Zhou, Jeffrey and Lu, Tianjian and Mishra, Swaroop and Brahma, Siddhartha and Basu, Sujoy and Luan, Yi and Zhou, Denny and Hou, Le},\njournal={arXiv preprint arXiv:2311.07911},\nyear={2023}\n}\n```",
+      "contributors": [
+        "Yusuf Keita",
+        "Gustavo Moreau",
+        "Oyin Iversen",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C014",
+          "type": "duplicate_effort",
+          "projects": [
+            "instruction_following_eval",
+            "coltran"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "intent_recognition",
+      "title": "Intent recognition",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Intent recognition\n\nThis directory contains a tool to create sensor based ML models that can be used\nto infer user activities.\n\n## Usage\n\nUsing the tool consists of multiple stages: Getting sensor data (as\nAnnotatedRecordingCollections), processing the data, converting the data into\nSequenceExamples, model training, and model inference & metrics.\n\n### Getting sensor data\n\nSensor data must be collected and formatted as AnnotatedRecordingCollections.\nSpecifically the recording_collection field needs to be filled out. As an\nexample, a binary that converts the ADL dataset into\nAnnotatedRecordingCollections is provided. It can be built using:\n\n```\nbazel run --cxxopt='-std=c++17' --experimental_repo_remote_exec --define\nMEDIAPIPE_DISABLE_GPU=1 intent_recognition:convert_adl_dataset_to_annotated_recording_collection -- \n```\n\n### Processing\n\nProcessing is done using mediapipe and can be run using:\n\n```\nbazel run --cxxopt='-std=c++17' --experimental_repo_remote_exec --define MEDIAPIPE_DISABLE_GPU=1 intent_recognition/processing:process_annotated_recording_collection_main -- \n```\n\nSample config files can be found in `intent_recognition/sample_configs`\n\n### Conversion\n\nConversion can be run using:\n\n```\nbazel run --cxxopt='-std=c++17' --experimental_repo_remote_exec --define MEDIAPIPE_DISABLE_GPU=1 intent_recognition/conversion:convert_annotated_recording_collection_to_sequence_example_main -- \n```\n\n### Training\n\nTraining is done using Tensorflow. A colab notebook to perform training can be\nfound at `intent_recognition/training/intent_recognition_training.ipynb'",
+      "contributors": [
+        "Carmen Reyes",
+        "Nikhil Abebe",
+        "Fumiko Rossi",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C083",
+          "type": "duplicate_effort",
+          "projects": [
+            "fastconvnets",
+            "intent_recognition"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "interpretability_benchmark",
+      "title": "Evaluation of Explainability Methods in Deep Neural Networks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Evaluation of Explainability Methods in Deep Neural Networks\n\n*ROAR is a benchmark to evaluate the approximate accuracy of interpretability\nmethods that estimate input feature importance in deep neural networks.*\n\nThis directory contains the code needed to implement **ROAR**, RemOve And\nRetrain, a benchmark to evaluate the approximate accuracy of feature importance\nestimators.\n\n[Paper](https://arxiv.org/abs/1806.10758), [Slides](https://drive.google.com/file/d/1zEgjJBkcsPM3J6IkAYGfoEZTsfmk5Csz/view).\n\n## ROAR: Remove and Retrain\n\n### tl;dr\n\n- Many interpretability methods for deep neural networks estimate the feature importance of pixels in an image to the model prediction.\n- For sensitive domains like healthcare, autonomous vehicles and credit scoring these estimates must be both 1) meaningful to a human and 2), highly accurate, as an incorrect explanation of model behavior may have intolerable costs on human welfare.\n-   ROAR is concerned with 2). ROAR is a benchmark to measure the approximate accuracy of feature importance estimators.\nROAR removes the fraction of input features deemed to be most important\naccording to each estimator and measurea the change to the model accuracy\nupon retraining. The\nmost accurate estimator will identify inputs as important whose removal\ncauses the most damage to model performance relative to all other\nestimators.\n\n## Getting Started: How to benchmark an interpretability method using ROAR?\n\n### Download Dataset\n\nIn our paper, we evaluate the accuracy of model explanations for image classification on [ImageNet](http://www.image-net.org/),",
+      "contributors": [
+        "Leilani Nakamura",
+        "Gustavo Moreau",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C046",
+          "type": "gpu_double_booking",
+          "projects": [
+            "conceptor",
+            "interpretability_benchmark"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "invariant_explanations",
+      "title": "Project description",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Project description\n\nThe primary purpose of this repository is to train a series of meta-models that\ncan predict the predictions of underlying base-models trained on different\nhparam settings. Essentially, the aim of the meta-model is to emulate the\npost-training predictions of an entire class of base-models, without needing to\nfully train the base-models. Therefore, the covariates used in the training of\nthe meta-model are a combination of either X, H, i.e., sample images & hparams,\nor X, W_@_epoch, i.e., samples and weights of the base-model @ epoch < 86. The\nfinal epoch in this CNN zoo is set to 86. The targets of the meta-model are\nalways set to be the predictions of the meta model at epoch 86.\n\nBesides training the meta-model on different covariate combinations, we also\niterate over different splits of instances in the train/test sets. The total\nnumber of instances in the meta-model training set is the product of the number\nof base models and the number of samples (images) per base model. From this\nproduct, a train_fraction fraction of them are chosen to comprise the train set\nand the remainder are used for evaluation.\n\nconfig.py keeps track of all setups on which the meta-model is trained. After\nthe training of each setup, the train and test accuracy are saved to file to be\nprocessed and displayed later in aggregate.\n\nThe codebase is accompanied with sample weights and metrics data extracted from\nthe predict_dnn_accuracy repository (link below), and can run out of the box.\nTo run on the actual weights/metrics files, download the data form the link\nbelow and set the",
+      "contributors": [
+        "Fumiko Rossi",
+        "Linnea Yamada",
+        "Yusuf Keita",
+        "Vera Egede",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C066",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "action_angle_networks",
+            "invariant_explanations"
+          ],
+          "shared_object": "Bilal Novak at >=60% allocation",
+          "canonical": {
+            "person": "Bilal Novak",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Bilal Novak is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "invariant_slot_attention",
+      "title": "Invariant Slot Attention",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Invariant Slot Attention\n\nThis repository contains the code release for \"Invariant Slot Attention: Object Discovery with Slot-Centric Reference Frames\".\nThe code is derived from the [Slot Attention Video codebase](https://github.com/google-research/slot-attention-video).\n\nPaper:\nhttps://arxiv.org/abs/2302.04973\n\n## Instructions\n> \u2139\ufe0f The following instructions assume that you are using JAX on GPUs and have CUDA and CuDNN installed. For more details on how to use JAX with accelerators, including requirements and TPUs, please read the [JAX installation instructions](https://github.com/jax-ml/jax#installation).\n\nGet dependencies and run model training via\n```sh\n./invariant_slot_attention/run.sh\n```\n\nOr use\n```sh\ngit clone https://github.com/google-research/scenic.git\ncd scenic\npip3 install .\ncd ../\npip3 install -r invariant_slot_attention/requirements.txt\n```\nto install dependencies and\n```sh\npython -m invariant_slot_attention.main --config invariant_slot_attention/configs/tetrominoes/equiv_transl.py --workdir tmp/\n```\nto train the smallest Invariant Slot Attention model on 512 examples drawn from [Tetrominoes](https://github.com/deepmind/multi_object_datasets).\n\nWe provide configs and data loaders for six datasets: Tetrominoes, Objects Room,\nMultiShapeNet-Easy, CLEVR, CLEVRTex and Waymo Open. The first four can be run\nwithout explicit download or preprocessing, whereas CLEVRTex and Waymo Open\nhave to be manually downloaded a preprocessed. Please see the datasets folder.\n\nFor each dataset, we provide a config for a baseline and several invariant\nSlot Attention models.\n\n## Ci",
+      "contributors": [
+        "Maren Zhou",
+        "Chiara Olsen",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C010",
+          "type": "gpu_double_booking",
+          "projects": [
+            "f_net",
+            "invariant_slot_attention"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 384
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (384 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "investigating_m4",
+      "title": "Investigating Multilingual NMT Rperesentations at Scale",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Investigating Multilingual NMT Rperesentations at Scale\n\nThis directory contains a Colab recreating the plots for:\n\nKudugunta, S.R., Bapna, A., Caswell, I., Arivazhagan, N., & Firat, O. (2019). [Investigating Multilingual NMT Representations at Scale](https://arxiv.org/abs/1909.02197). ArXiv, abs/1909.02197.\n\nTo launch the colab, [click here](https://colab.research.google.com/github/google-research/google-research/blob/master/investigating_m4/Investigating_M4.ipynb)\n\n## Data\n\nHere, we describe each file in investigating_m4.zip. More details about how the\ndata was created may be found in our paper.\n\n* model_scores.csv\n- \u201cLanguage Pair 1 (str),Language Pair 2 (str), Layer, Checkpoint 1 (int), Checkpoint 2 (int), SVCCA Score (float)\u201d\n- Each row provides this data: \u201cThe activations of Language Pair 1 of Layer of the model at Checkpoint 1, when compared with the activations of Language Pair 2 of Layer of the model at Checkpoint 2 have an aggregate similarity score of SVCCA Score.\u201d\n\n* finetuned_relative_bleu.csv\n- \"Finetuning Language Pair\", \"Language Pair\", \"Relative BLEU Change\"\n- \u201cEach row provides this data: \u201cThe relative change in BLEU of Language Pair after finetuning with Finetuning Language Pair, when compared with the activations of the model before finetuning is Relative BLEU Change.\u201d\n\n* finetuned_model_scores.csv\n- \u201c\"Layer, Finetuning Language Pair, Language Pair, SVCCA Score\"\n- Each row provides this data: \u201cThe activations of Language Pair of Layer of the model after finetuning with Finetuning Language Pair, when compared with the activations of the model before fin",
+      "contributors": [
+        "Quentin Farkas",
+        "Nikhil Abebe",
+        "Csilla Nassar",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C118",
+          "type": "gpu_double_booking",
+          "projects": [
+            "multilingual_abbreviation_survey",
+            "investigating_m4"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "irregular_timeseries_pretraining",
+      "title": "Pretraining for irregular time series classification",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Pretraining for irregular time series classification\n\n## Requirements\nInstall requirements from requirements.txt:\n\n```\npip install -r requirements.txt\n```\n\nPull smart_cond function from tensorflow version 2.12 - this resolves versioning issues with the modules imported from the STraTS authors.\n\n```\nwget https://raw.githubusercontent.com/tensorflow/tensorflow/v2.12.0/tensorflow/python/framework/smart_cond.py -P imported_code/\n```\n\n## Description of folders\n\n1. **data/** - save one folder for each dataset containing all training, validation, and test data\n-  **physionet_data_procssed/** - [source](https://physionet.org/content/challenge-2012/1.0.0/). We describe the expected data format below.\n- Other datasets require registration or data use agreements:\n- MIMIC III - [apply here](https://physionet.org/content/mimiciii/1.4/)\n- EICU - [apply here](https://eicu-crd.mit.edu/gettingstarted/access/)\n- H&M Retail - [kaggle dataset](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data)\n- See details of data processing below\n\n2. **geometric_masks_cached/** - For geometric masking augmentations, we found that generating new masks at each iteration was extremely slow. Our solution was to pre-generate a large set of possible masks, and randomly select from those during training time. The pre-computed masks are saved in this folder.\n\n3. **imported_code/** - Modules that we load from outside sources. In particular, we use some code from [STraTS](https://github.com/sindhura97/STraTS/blob/main/strats_notebook.ipynb).\n\n4. **modules/**\n- **data_generators.py",
+      "contributors": [
+        "Maren Zhou",
+        "Saoirse Eriksen",
+        "Freya Ruiz",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C020",
+          "type": "duplicate_effort",
+          "projects": [
+            "CoDi",
+            "irregular_timeseries_pretraining"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "isl",
+      "title": "Codebase for \"Invariant Structure Learning for Better Generalization and Causal Explainabi",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Codebase for \"Invariant Structure Learning for Better Generalization and Causal Explainability (ISL)\"\n\nThis directory contains the implementation of ISL for the following use cases\n\n- Building environments for both synthetic data and real-world data\n- Running ISL on supervised setting\n- Running ISL on self-supervised setting\n\nThe structure of the content:\n- \"data\" folder contains processed data for Boston Housing, Insurance and synthetic datasets.\n- \"data_gen_real.py\" builds environments for real-world datasets.\n- \"data_gen_syn.py\" builds environments for synthetic datasets.\n- \"ISL_modula.py\" contains source code of the implementation of the ISL module and core functions.\n- \"utils.py\" contains source code for data processing, save/load, visualize, evaluation metrics.\n- \"main_ISL_supervised.py\" runs ISL in supervised learning setting.\n- \"main_ISL_selfsupervise\" runs ISL in self-supervised learning setting.\n\n# Getting started\n\n### Dependencies\n```shell\npip install -r requirements.txt\n```\n\n### Data preprocess or generation\n\n- If you want to generate synthesic data and build environments, follow the example:\n```shell\npython data_gen_syn.py --3 --1 --100 --3\n```\nto create a graph with 2 X variable and 1 S variable in 3 environments each containing 100 samples.\n\nFor real data, we use the following datasets, that you should download directly:\n\nBoston Housing (http://lib.stat.cmu.edu/datasets/boston)\n\nInsurance (https://link.springer.com/article/10.1023/A:1007421730016)\n\nSachs (https://www.science.org/doi/full/10.1126/science.1105809)\n\n- To build environments for real data:\n```sh",
+      "contributors": [
+        "Jorge Vidal",
+        "Csilla Nassar",
+        "Linnea Yamada",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C140",
+          "type": "duplicate_effort",
+          "projects": [
+            "contrastive_rl",
+            "isl"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "isolating_factors",
+      "title": "Learn your ABCs: Approximate Bijective Correspondence for isolating factors of variation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learn your ABCs: Approximate Bijective Correspondence for isolating factors of variation\n\nThis code accompanies the paper\n\n[**Learn your ABCs: Approximate Bijective Correspondence for isolating factors of variation**](https://arxiv.org/abs/2103.03240) \\\nKieran A. Murphy, Varun Jampani, Srikumar Ramalingam, Ameesh Makadia\n\n## Repository Contents\n- `shapes3d/` Trains a model from scratch to isolate generative factors from\nthe [Shapes3D dataset](https://github.com/deepmind/3d-shapes), and measures the\ninformation content of the representations using mutual information neural\nestimation ([Belghazi et al., 2018](https://proceedings.mlr.press/v80/belghazi18a.html))\n- `mnist.ipynb` iPython notebook to isolate digit style (stroke and thickness)\nafter training on images grouped by digit class\n- `pose_estimation/` Evaluates trained pose estimation models from\nSection 4.3 of the paper in both the dictionary lookup and regression scenarios\n\n## Python environment\nThe code was run successfully with Python 3.6.12.  The necessary libraries may\nbe installed using pip with the following line:\n\n`pip install -r requirements.txt`\n\n## Isolating factors of variation from Shapes3D\n\nThe Shapes3D dataset allows complete control and knowledge of factors of variation.\nWe use it to pin down precisely the factor isolation which results from different set supervision settings.\nA large variety of experiments may be run using the script `shapes3d/train.py`.  The [Shapes3D dataset](https://github.com/deepmind/3d-shapes) will be automatically downloaded by [tensorflow_datasets](https://www.tensorflow.org/d",
+      "contributors": [
+        "Giannis Sato",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C049",
+          "type": "gpu_double_booking",
+          "projects": [
+            "multi_game_dt",
+            "isolating_factors"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jax_dft",
+      "title": "Overview",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# JAX-DFT\n\n## Overview\n\nJAX-DFT implements one-dimensional density functional theory (DFT) in\n[JAX](https://github.com/jax-ml/jax). It uses powerful JAX primitives to enable\nJIT compilation, automatical differentiation, and high-performance computation\non GPUs.\n\nThis library provides basic building blocks that can construct DFT calculations\nas a differentiable program. Researchers in DFT and machine learning can use\nthis library to build hybrid ML-DFT model for electronic structure research.\n\n## Kohn-Sham equations as regularizer: building prior knowledge into machine-learned physics\n\nLi Li, Stephan Hoyer, Ryan Pederson, Ruoxi Sun, Ekin D. Cubuk, Patrick Riley, Kieron Burke\n\nPhys. Rev. Lett. **126**, 036401 (2021)\n\nhttps://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.036401\n\nIncluding prior knowledge is important for effective machine learning models in physics, and is usually achieved by explicitly adding loss terms or constraints on model architectures. Prior knowledge embedded in the physics computation itself rarely draws attention. We show that solving the Kohn-Sham equations when training neural networks for the exchange-correlation functional provides an implicit regularization that greatly improves generalization. Two separations suffice for learning the entire one-dimensional H2 dissociation curve within chemical accuracy, including the strongly correlated region. Our models also generalize to unseen types of molecules and overcome self-interaction error.\n\nDFT calculations and the Kohn-Sham regularier is implemented with JAX-DFT.\n\nYou can train a neural XC",
+      "contributors": [
+        "Maren Zhou",
+        "Leilani Nakamura",
+        "Kaia Wolde",
+        "Linnea Yamada",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C084",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "muzero",
+            "jax_dft"
+          ],
+          "shared_object": "Paloma Castillo at >=60% allocation",
+          "canonical": {
+            "person": "Paloma Castillo",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Paloma Castillo is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jax_mpc",
+      "title": "JAX Particles",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# JAX Particles\n\nThis repo contains model predictive controllers written in JAX. JAX is\nparticularly suited for monte-carlo style MPC, as rollouts can be\nefficiently parallelized using `jax.vmap()`.\n\n### Installation\n\n```shell\n$ pip install .\n```\n\n### Demo\n\n```python\nfrom mpc.mppi import MPPI\n\n# let \"env\" be an environment object with\n# members:\n#   a_shape: describing the shape of actions\n# methods:\n#   step(s, a): returns a new state\n#   reward(s): returns an environment reward for state s\n# see method descriptions of class MPPI for specifics.\n\n# let \"s\" be an environment state of unspecified shape compatible with env\n\n# instantiate the MPC object\nmpc = MPPI(n_iterations=5, n_steps=16, n_samples=16, scan=True)\n\n# initialize the state\nmpc_state = mpc.init_state(env.a_shape)\n\n# loop\n\n# do work to identify a good action\nmpc_state = mpc.update(mpc_state, env, s, rng)\n\n# get the recommended action\na = mpc.get_action(mpc_state, env.a_shape)\n\n# take the action in the environment\ns = env.step(s,a)\n```",
+      "contributors": [
+        "Quentin Farkas",
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C117",
+          "type": "budget_overallocation",
+          "projects": [
+            "bertseq2seq",
+            "jax_mpc"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-24",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-24",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-24 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jax_rtm",
+      "title": "JAX-RTM: JAX-Differentiable Radiative Transfer Model",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# JAX-RTM: JAX-Differentiable Radiative Transfer Model\n\nJAX-RTM is a high-performance, fully JAX-differentiable Radiative Transfer\nModel (RTM) solver designed for satellite simulation and meteorological data\nassimilation. This repository implements a calibrated physical solver optimized\nfor cloud and ice microphysics simulation.\n\nBy leveraging JAX, this simulator is fully differentiable, allowing\nTPU/GPU hardware acceleration as well as gradient-based optimization of\ncloud properties (like ice water content, effective radius, and\nspatial alignment) directly against satellite observations.\n\n---\n\n## Installation\n\n### 1. Clone the Repository\n\nBecause `google-research` is a large monorepo containing many projects, we\nhighly recommend using Git's **sparse-checkout** to clone only the `jax_rtm`\ndirectory, saving gigabytes of download:\n\n```bash\n# Clone the repository metadata without downloading any files\ngit clone --filter=blob:none --no-checkout https://github.com/google-research/google-research.git\ncd google-research\n\n# Configure Git to only checkout the jax_rtm subdirectory\ngit sparse-checkout set jax_rtm\n\n# Checkout the files\ngit checkout master\n\n# Navigate to the package directory\ncd jax_rtm\n```\n\n### 2. Set Up Virtual Environment & Dependencies\n\nWe highly recommend using a virtual environment:\n\n```bash\npython3 -m venv venv\nsource venv/bin/activate\npython3 -m pip install -r requirements.txt\n```\n\n### 3. Download the Ice Properties Database (Required)\n\nThe simulator requires the pre-compiled **Ping Yang Ice Crystal\nSingle-Scattering Database** (155 MB) to run. Download it autom",
+      "contributors": [
+        "Quentin Farkas",
+        "Maren Zhou",
+        "Freya Ruiz",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C009",
+          "type": "budget_overallocation",
+          "projects": [
+            "meta_pseudo_labels",
+            "jax_rtm"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-88",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-88",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-88 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jaxbarf",
+      "title": "Citation",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# JaxBARF\n\nThis is a [JAX](https://github.com/jax-ml/jax) implementation of [BARF: Bundle-Adjusting Neural Radiance Fields](https://arxiv.org/abs/2104.06405). A PyTorch implementation of BARF has been open-sourced by the authors [here](https://github.com/chenhsuanlin/bundle-adjusting-NeRF).\n\nThis code is built on [JaxNeRF](https://github.com/google-research/google-research/tree/master/jaxnerf) modified to match the BARF model (trainable camera poses, modified MLP, etc).\n\n## Citation\nIf you use this software package, please also cite the original BARF paper:\n\n```\n@inproceedings{lin2021barf,\ntitle={BARF: Bundle-Adjusting Neural Radiance Fields},\nauthor={Lin, Chen-Hsuan and Ma, Wei-Chiu and Torralba, Antonio and Lucey, Simon},\nbooktitle={IEEE International Conference on Computer Vision ({ICCV})},\nyear={2021}\n}\n```\n\n## Training on Blender scenes.\nTo train the model on Blender scenes you first need to download the data provided with the [NERF Repo](https://github.com/bmild/nerf).\n\n### Installation.\nInstallation (environment setup) commands are contained in the following script:\n\n```\n./install.sh\n```\n\n### Training on a GPU.\nThe following script trains the model sequentially for each Blender scene:\n\n```\n./train.sh\n```\n\nThe results from the training are reported below (juxtaposed with PyTorch-BARF\nresults).\n\n### Rotation error (in degree)\n\n| Scene   |   Chair   |   Drums   |   Ficus   |   Hotdog  |    Lego   | Materials |    Mic    |    Ship   |    Mean   |\n|---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|\n| Pyto",
+      "contributors": [
+        "Csilla Nassar",
+        "Vera Egede",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C141",
+          "type": "dependency_date_drift",
+          "projects": [
+            "context_aware_transliteration",
+            "kip",
+            "deplot",
+            "jaxbarf"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    }
+  ]
+}

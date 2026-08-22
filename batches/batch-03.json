@@ -1,0 +1,604 @@
+{
+  "batch": 3,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "attribute_semantics",
+      "title": "Implementation of discovering attribute semantics described in [Discovering Personalized S",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Implementation of discovering attribute semantics described in [Discovering Personalized Semantics for Soft Attributes in Recommender Systems using Concept Activation Vectors](https://arxiv.org/abs/2202.02830).\n\n## Disclaimer\n\nThis is not an officially supported Google product.\n\n## Input Data and Sample Usage\n\nFor testing with [the MovieLens 20M dataset](https://grouplens.org/datasets/movielens/20m/), we first we transform all tags to lowercase and filter tag-and-rating data to only include the user-item-tags whose corresponding ratings are at least 4. After this pre-filtering, we split the data into train-test set with a roughly (0.75, 0.25) split. During development, we also put one-third of the train set as our validation set. We release the compressed input data and in the code we can restrict the training data to the top tags in terms of unique tagged movies:\n[train1](data/train_tags1.csv.gz), [train2](data/train_tags2.csv.gz), [validation](data/validate_tags.csv.gz), and [test](data/test.csv.gz).\n\nHere is a sample command you could use for training attribute semantics with [the MovieLens data](data/train_tags1.csv) and a model consisting of\n[(linear) movie embeddings](https://storage.googleapis.com/gresearch/attribute_semantics/cf_embeddings.npz).\n\n```\npython movielens_main.py --input_data=./data/train_tags1.csv --save_dir=/tmp --model_path=./cf_embeddings.npz\n```\n\nYou could then find the models in /tmp/CAVs.\n\nPlease first download [the SoftAttributes dataset](https://github.com/google-research-datasets/soft-attributes/blob/main/soft-attributes.csv) before running [so",
+      "contributors": [
+        "Katya Silva",
+        "Yara Jokic",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C073",
+          "type": "gpu_double_booking",
+          "projects": [
+            "negative_cache",
+            "attribute_semantics"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "attribute_with_prefixlm",
+      "title": "ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling\n\nThis directory contains information on the VGARank dataset from the ECCV 2024 paper:\n\"ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling\"\nby William Yicheng Zhu*, Keren Ye*, Junjie Ke, Jiahui Yu, Leonidas Guibas, Peyman Milanfar, Feng Yang.\n\nThe dataset is hosted on [Kaggle](https://www.kaggle.com/datasets/googleai/vgarank).\n\n## Dataset Description\nThe VGARank dataset adds two fields, attribute_prompts (VGARank-Attribute) and object_prompts (VGARank-Object) to the [Visual Genome](https://homes.cs.washington.edu/~ranjay/visualgenome/index.html) dataset at the instance level (one bounding box in an image, which means multiple instances could exist for a single image). Below is an example from the dataset, where the two additional fields are added to the existing annotations for one instance bounding box.\n\n{\n\"image_id\": 2388999,\n\"attributes\": [\n{\n\"synsets\": [],\n\"h\": 44,\n\"object_id\": 4504988,\n\"names\": [\"fence\"],\n\"w\": 60,\n\"attributes\": [\"black\"],\n\"y\": 316,\n\"x\": 423,\n\"attribute_prompts\": [\n[\"fence\", \"brick\", 0],\n[\"fence\", \"yellow\", 0],\n[\"fence\", \"barbed\", 0],\n\u2026\n],\n\"object_prompts\": [\n[\"black stripe\", \"black\", 0],\n[\"black shoe\", \"black\", 0],\n[\"label\", \"black\", 0],\n\u2026\n],\n\"norm_w\": 0.12,\n\"norm_h\": 0.12021857923497267,\n\"norm_x\": 0.846,\n\"norm_y\": 0.8633879781420765\n},\n]\n}\n\nattribute_prompts:\nA list of attribute-centered answer choices ([obj, att, 0 or 1]) constructed from the raw dataset distribution, where the object is fixed and the attribute is varied.\nFor each bounding box instan",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Vera Egede",
+        "Csilla Nassar",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C061",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "fast_gradient_clipping",
+            "attribute_with_prefixlm"
+          ],
+          "shared_object": "Vera Egede at >=60% allocation",
+          "canonical": {
+            "person": "Vera Egede",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Vera Egede is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "automated_feature_engineering",
+      "title": "Automated Feature Engineering (AFE)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Automated Feature Engineering (AFE)\n\nHow can we simplify and automate the complex and time-consuming process of feature engineering for machine learning models, allowing users to focus on model development and analysis while improving their model's performance and uncovering hidden insights in their data? Our goal is to develop an automated feature engineering system that can identify which engineered features can be optimal for a downstream ML task. To obtain an output such as:\n\nAFE uses a set of feature importance masks to learn which features best benefit from which transformations. It uses local and global masking to determine the best transform functions for each feature, as well as which transformed features lead to an optimal performance with respect to the downstream task. Further details can be found in our papers on [automated feature engineering](https://arxiv.org/pdf/2406.04153) and [feature selection](https://arxiv.org/pdf/2304.03202).\n\n[A notebook demonstrating AFE](GithubAutomatedFeatureEngineering_Demo.ipynb) on Google Cloud. This repository has built-in integration with Google Cloud in terms of data retrieval, processing, and artifacts storage.\n\nIt is easy to get started with AFE on the command line, for example, after\nrunning `pip3 install -r requirements.txt`, we can run:\n```\npython3 trainer.py --project_id=\"gcp_project_id\" --dataset_name=housingPrice --train_table_name=airbnb2023_float --target=price --task_type=regression --num_steps=10 --model_type=discovery --upload_features_to_bq=True\n```\n\nHere is the full list of possible command line flags:\n```\n-",
+      "contributors": [
+        "Linnea Yamada",
+        "Rosa Mensah",
+        "Giannis Sato",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C128",
+          "type": "duplicate_effort",
+          "projects": [
+            "automated_feature_engineering",
+            "eim"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "automatic_structured_vi",
+      "title": "Automatic Structured Variational Inference",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Automatic Structured Variational Inference\n\nThis repository contains code used to run experiments in\n[Automatic Structured Variational Inference](https://arxiv.org/abs/2002.00643),\nwhich proposes a fully automated method for constructing a structured surrogate\nposterior for VI in a way that incorporates the graphical structure of the\nprior distribution.\n\nThese experiments make use of the TensorFlow Probability implementation of ASVI,\nwhich is provided as [`tfp.experimental.vi.build_asvi_surrogate_posterior`](https://www.tensorflow.org/probability/api_docs/python/tfp/experimental/vi/build_asvi_surrogate_posterior)\n(see also the [example notebook](https://www.tensorflow.org/probability/examples/TFP_Release_Notebook_0_12_1#build_asvi_surrogate_posterior)).\n\n## How to Launch the Code\n### Create a new virtual environment.\n```\nvirtualenv -p python3\nsource ./bin/activate\n```\n### Download code and install dependencies.\n```\nsvn export https://github.com/google-research/google-research/trunk/automatic_structured_vi\npip install -r automatic_structured_vi/requirements.txt\n```\n### Evaluate ASVI on the brownian motion model.\n```\npython -m automatic_structured_vi.run_vi --model_name=brownian_motion --posterior_type=asvi --num_steps=1000\n```\n\nThis should generate a loss plot, a JSON of samples from the posterior, and a JSON continaing values including losses and the final ELBO.\n\n## Experimental Pipeline\nThe experimental pipeline in this repository compares the following variational\nposteriors on the following models from TensorFlow Probability's [Inference Gym](https://pypi.org/project/i",
+      "codename": "Project Nimbus",
+      "contributors": [
+        "Umar Costa",
+        "Tereza Aliyev",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C116",
+          "type": "codename_collision",
+          "projects": [
+            "cvl_public",
+            "automatic_structured_vi"
+          ],
+          "shared_object": "Project Nimbus",
+          "canonical": {
+            "codename": "Project Nimbus"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Nimbus."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "automl_zero",
+      "title": "AutoML-Zero",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# AutoML-Zero\n\nOpen source code for the paper: \\\"[**AutoML-Zero: Evolving Machine Learning Algorithms From Scratch**](https://arxiv.org/abs/2003.03384)\"\n\n| [Introduction](#what-is-automl-zero) | [Quick Demo](#5-minute-demo-discovering-linear-regression-from-scratch)| [Reproducing Search Baselines](#reproducing-search-baselines) | [Citation](#citation) |\n|-|-|-|-|\n\n## What is AutoML-Zero?\n\nAutoML-Zero aims to automatically discover computer programs that can solve machine learning tasks, starting from empty or random programs and using only basic math operations. The goal is to simultaneously search for all aspects of an ML algorithm&mdash;including the model structure and the learning strategy&mdash;while employing *minimal human bias*.\n\nDespite AutoML-Zero's challenging search space, *evolutionary search* shows promising results by discovering linear regression with gradient descent, 2-layer neural networks with backpropagation, and even algorithms that surpass hand designed baselines of comparable complexity. The figure above shows an example sequence of discoveries from one of our experiments, evolving algorithms to solve binary classification tasks. Notably, the evolved algorithms can be *interpreted*. Below is an analysis of the best evolved algorithm: the search process \"invented\" techniques like bilinear interactions, weight averaging, normalized gradient, and data augmentation (by adding noise to the inputs).\n\nMore examples, analysis, and details can be found in the [paper](https://arxiv.org/abs/2003.03384).\n\n&nbsp;\n\n## 5-Minute Demo: Discovering Linear Regression F",
+      "contributors": [
+        "Oyin Iversen",
+        "Paloma Castillo",
+        "Freya Ruiz",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C138",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "automl_zero",
+            "factorize_a_city"
+          ],
+          "shared_object": "Oyin Iversen at >=60% allocation",
+          "canonical": {
+            "person": "Oyin Iversen",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Oyin Iversen is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "autoregressive_diffusion",
+      "title": "Autoregressive Diffusion Models",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Autoregressive Diffusion Models\n\n### Emiel Hoogeboom, Alexey A. Gritsenko, Jasmijn Bastings, Ben Poole, Rianne van den Berg and Tim Salimans\n\n## Summary\n\n*   New generative model that models variables in any order, i.e. order\nagnostically.\n*   ARDMs are trained with inspirations from diffusion, by sampling a step in\nthe generative process, and optimizing that step.\n*   ARDMs perform well on three data modalities: images, text and audio.\n*   ARDMs adaptable parallel generation make (de)compression more practical,\nsince only a modest amount of network calls is required.\n\nPaper: [arXiv](https://arxiv.org/abs/2110.02037)\n\n## Abstract\n\nWe introduce Autoregressive Diffusion Models (ARDMs), a model class encompassing\nand generalizing order-agnostic autoregressive models (Uria et al., 2014) and\nabsorbing discrete diffusion (Austin et al., 2021), which we show are a special\ncases of ARDMs under mild assumptions. ARDMs are simple to implement and easy to\ntrain. Unlike standard ARMs, they do not require causal masking of model\nrepresentations, and can be trained using an efficient objective similar to\nmodern probabilistic diffusion models that scales favourably to\nhighly-dimensional data. At test time, ARDMs support parallel generation which\ncan be adapted to fit any given generation budget. We find that ARDMs require\nsignificantly fewer steps than discrete diffusion models to attain the same test\nperformance. Finally, we apply ARDMs to lossless compression, and show that they\nare uniquely suited to this task. Contrary to existing approaches based on\nbits-back coding, ARDMs obtain c",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C074",
+          "type": "duplicate_effort",
+          "projects": [
+            "autoregressive_diffusion",
+            "android_in_the_wild"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "aux_tasks",
+      "title": "Aux Tasks",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Aux Tasks\n\nThis paper contains code used used for experiments in\n\"A Novel Stochastic Gradient Descent Algorithm for Learning Principal Subspaces\"\n[link](https://arxiv.org/abs/2212.04025).\n\n## Installation\n\nTo run experiments in this directory:\n\n`git clone https://github.com/google-research/google_research.git`\n\n`cd google_research`\n\nWe recommend doing the following in a virtual environment. (E.g. `python3 -m venv .venv && source .venv/bin/activate`)\n\n`pip install --upgrade pip`\n\n`pip install -r aux_tasks/requirements.txt`\n\n## Running Experiments\n\nThe following sections give examples of how to run the experiments described in\nour paper.\n\n### synthetic\n\nThe synthetic directory allows running of experiments with synthetic\nmatrices, MNIST, and Puddle World.\n\nNote: `run_synthetic.py` checkpoints as it goes, so if you change\nthe configuration between runs, make sure to use a new workdir!\n\n**Synthetic Matrices**\n\nTo run an experiment using synthetic matrices, use the following command:\n\n```\npython -m aux_tasks.synthetic.run_synthetic \\\n--workdir=/tmp/synthetic \\\n--config.S=50 \\\n--config.T=50 \\\n--config.d=10 \\\n--config.method=lissa \\\n--config.main_batch_size=10 \\\n--config.covariance_batch_size=10 \\\n--config.weight_batch_size=10 \\\n--config.rescale_psi=exp\n```\n\nFor more information on what flags you can use, see\n`aux_tasks/synthetic/run_synthetic.py`.\n\n**MNIST**\n\nTo run an experiment using MNIST, use the following command:\n\n```\npython -m aux_tasks.synthetic.run_synthetic \\\n--workdir=/tmp/synthetic \\\n--config.use_mnist=true \\\n--config.d=16 \\\n--config.method=lissa \\\n--config.main_bat",
+      "contributors": [
+        "Nikhil Abebe",
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C058",
+          "type": "gpu_double_booking",
+          "projects": [
+            "aux_tasks",
+            "bangbang_qaoa"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bam",
+      "title": "Born-Again Multi-task Networks",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Born-Again Multi-task Networks\n\nThis directory contains code for [BAM! Born-Again Multi-task for Natural Language Understanding](https://openreview.net/forum?id=SylnYlqKw4). It supports TPU-friendly multi-task fine-tuning of [BERT](https://arxiv.org/abs/1810.04805) (optionally) combined with knowledge distillation.\n\n## Requirements\nSee `requirements.txt`\n\n## Setup\n1. Create a directory `BAM_DIR` to contain training data, model checkpoints, etc.\n2. Download pre-trained BERT weights from [here](https://github.com/google-research/bert) and unzip them under `$BAM_DIR/pretrained_models`. By default, the uncased base-sized model is expected (i.e., you should have .\n3. Download the GLUE data by running [this script](https://gist.github.com/W4ngatang/60c2bdb54d156a41194446737ce03e2e). Set up the data by running `mv CoLA cola && mv MNLI mnli && mv MRPC mrpc && mv QNLI qnli && mv QQP qqp && mv RTE rte && mv SST-2 sst && mv STS-B sts && mv diagnostic/diagnostic.tsv mnli && mkdir -p $BAM_DIR/glue_data && mv * $BAM_DIR/glue_data`.\n\n## Training and evaluating models\nRun training/evaluation with `python -m bam.run_classifier   ` where `` is [JSON](https://www.json.org/) containing hyperparameters, which tasks to train on, etc. See `configure.py` for details on the available options.\nHere are some example commands (run from the top-level `google_research` directory):\n* Debug run (trains a tiny model, takes around a minute): `python -m bam.run_classifier debug-model $BAM_DIR '{\"debug\": true}'`\n* Train single-task models on the RTE and MRPC datasets: `python -m bam.run_classifier rte-model",
+      "contributors": [
+        "Linnea Yamada",
+        "Maren Zhou",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C137",
+          "type": "duplicate_effort",
+          "projects": [
+            "bam",
+            "federated_vision_datasets"
+          ],
+          "shared_object": "a dataset de-duplication pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a dataset de-duplication pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bangbang_qaoa",
+      "title": "Investigating Quantum Approximate Optimization Algorithms under Bang-bang Protocols",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Investigating Quantum Approximate Optimization Algorithms under Bang-bang Protocols\n\nThis repository contains a python implementation of\n\n*Investigating Quantum\nApproximate Optimization Algorithms under Bang-bang Protocols*\n\nDaniel Liang, Li Li and Stefan Leichenauer, Phys. Rev. Research **2**, 033402 (2020)\n\nPaper link: https://link.aps.org/doi/10.1103/PhysRevResearch.2.033402\n\n## Requirements\n\n```\npip install -r requirements.txt\n```\n\n## Search an optimal bang-bang protocol using stochastic descent\n\nNOTE: This demo code runs on a single machine. For the results presented in the paper, we run the stochastic descent search on a distributed system.\n\n```\npython -m bangbang_qaoa.search_bangbang_qaoa_protocols \\\n--num_literals=10 \\\n--num_clauses=10 \\\n--initialization_method=random \\\n--num_chunks=100 \\\n--total_time=3 \\\n--num_samples=1\n```\n\nDepends on the initial random seed, the result will look like below:\n```\nOptimal protocol:\n[0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,\n1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0,\n0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,\n1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]\nProtocol eval: 0.931884\nNumber of epoch: 74\n```\n\nThe QAOA `p` value of this protocol is approximately 2, which is consistent with\nFigure 3(e) in the paper.",
+      "contributors": [
+        "Umar Costa",
+        "Ondrej Bergstrom",
+        "Wei Ivanov"
+      ],
+      "conflicts": [
+        {
+          "id": "C058",
+          "type": "gpu_double_booking",
+          "projects": [
+            "aux_tasks",
+            "bangbang_qaoa"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-29",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-29",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-29."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "batch_science",
+      "title": "Measuring the Effects of Data Parallelism on Neural Network Training",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Measuring the Effects of Data Parallelism on Neural Network Training\n\nThis directory contains the publicly available material for the paper:\n\n[**Measuring the Effects of Data Parallelism on Neural Network Training**](\nhttps://arxiv.org/abs/1811.03600).\n\nChristopher J. Shallue\\*, Jaehoon Lee\\*, Joseph Antognini, Jascha Sohl-Dickstein,\nRoy Frostig, and George E. Dahl (2018).\n\n\\* denotes equal contribution.\n\n## Citation\n\nIf you find this code or data useful, please use the following citation:\n\n```\n@article{shallue2018measuring,\nauthor  = {Christopher J. Shallue and Jaehoon Lee and Joseph Antognini and Jascha Sohl-Dickstein and Roy Frostig and George E. Dahl},\ntitle   = {Measuring the Effects of Data Parallelism on Neural Network Training},\njournal = {Journal of Machine Learning Research},\nyear    = {2019},\nvolume  = {20},\nnumber  = {112},\npages   = {1-49},\nurl     = {http://jmlr.org/papers/v20/18-789.html}\n}\n```\n\n## Contact\n\nPlease send pull requests and issues to Chris Shallue ([@cshallue](https://github.com/cshallue))\n\n## Downloading the data\n\nThe data archive is available in the following file:\n[batch_science_data.tar.bz2](https://storage.googleapis.com/batch_science_data/batch_science_data.tar.bz2)\n(~802MB). The file is a `bzip2` compressed `tar` with checksum (`sha256sum`):\n\n```\n6460ab86a6ab0f22a02e1c9b982e1ca31220bf41f669304ce86f14d19053f435  batch_science_data.tar.bz2\n```\n\nRun the following command to extract the contents of the file. It will unpack\nthe data into a directory called `batch_science/`:\n\n```\ntar -xvf batch_science_data.tar.bz2\n```\n\n## Reproducing plots fr",
+      "contributors": [
+        "Gustavo Moreau",
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C123",
+          "type": "dependency_date_drift",
+          "projects": [
+            "explaining_risk_increase",
+            "bitempered_loss",
+            "batch_science",
+            "cube_unfoldings"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "behavior_regularized_offline_rl",
+      "title": "Behavior Regularized Actor Critic for Offline Reinforcement Learning.",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Behavior Regularized Actor Critic for Offline Reinforcement Learning.\n\nThis codebase implements learning algorithms and experiments from [Behavior Regularized Offline Reinforcement Learning](https://arxiv.org/abs/1911.11361).\n\nIf you use this codebase for your research, please cite the paper:\n\n```\n@article{wu2019behavior,\ntitle={Behavior Regularized Offline Reinforcement Learning},\nauthor={Wu, Yifan and Tucker, George and Nachum, Ofir},\njournal={arXiv preprint arXiv:1911.11361},\nyear={2019}\n}\n```\n\n## Features\n\n*   Behavior regularized actor critic framework for continuous control environments.\n*   Obtain partially trained policies by training online.\n*   Customizable data collection.\n*   Customizable offline algorithmic components: different divergence for regularization, value penalty of policy regularization, Q-ensemble.\n*   Pretrained behavior and cloned policies used in the paper.\n\n## Getting Started\n\nThe recommended way to set up these experiments is via a virtualenv.\n\n```\nsudo apt-get install python-pip\npython -m pip install --user virtualenv\npython -m virtualenv ~/env\nsource ~/env/bin/activate\n```\n\nThen install the project dependencies in that virtualenv (you will need to\nseparately download appropriate MuJoCo files):\n\n```\npip install -r requirements.txt\n```\n\nAugment your python path:\n```\nPYTHONPATH=$PYTHONPATH:/path/to/google_research/\n```\n\nGo to behavior_regularized_offline_rl/brac as your working directory.\n\nThe first step is to get partially trained policies using Soft Actor Critic (SAC).\n\n```\npython -m train_online \\\n--sub_dir=0 \\\n--env_name=HalfCheetah-v2 \\\n-",
+      "contributors": [
+        "Carmen Reyes",
+        "Wanjiru Horvat",
+        "Rosa Mensah",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C105",
+          "type": "dependency_date_drift",
+          "projects": [
+            "OpenMSD",
+            "behavior_regularized_offline_rl",
+            "non_decomp",
+            "diffusion_distillation"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "behavioral_dispositions",
+      "title": "Evaluating Alignment of Behavioral Dispositions in LLMs",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Evaluating Alignment of Behavioral Dispositions in LLMs\n\nAs LLMs integrate into our daily lives, understanding their behavior becomes\nessential. In this work, we focus on behavioral dispositions-the underlying\ntendencies that shape responses in social contexts-and introduce a framework to\nstudy how closely the dispositions expressed by LLMs align with those of humans.\nOur approach is grounded in established psychological questionnaires but adapts\nthem for LLMs by transforming human self-report statements into Situational\nJudgment Tests (SJTs). These SJTs assess behavior by eliciting natural\nrecommendations in realistic user-assistant scenarios. We generate 2,500 SJTs,\neach validated by three human annotators, and collect preferred actions from 10\nannotators per SJT, from a large pool of 550 participants. In a comprehensive\nstudy involving 25 LLMs, we find that models often do not reflect the\ndistribution of human preferences: (1) in scenarios with low human consensus,\nLLMs consistently exhibit overconfidence in a single response; (2) when human\nconsensus is high, smaller models deviate significantly, and even some frontier\nmodels do not reflect the consensus in 15-20% of cases; (3) traits can exhibit\ncross-LLM patterns, e.g., LLMs may encourage emotion expression in contexts\nwhere human consensus favors composure. Lastly, mapping psychometric statements\ndirectly to behavioral scenarios presents a unique opportunity to evaluate the\npredictive validity of self-reports, revealing considerable gaps between LLMs'\nstated values and their revealed behavior.\n\nThis repository cont",
+      "contributors": [
+        "Csilla Nassar",
+        "Saoirse Eriksen",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C060",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cann",
+            "behavioral_dispositions",
+            "dissecting_factual_predictions",
+            "mesh_diffusion"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bertseq2seq",
+      "title": "BERTSeq2Seq",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# BERTSeq2Seq\n\nThis repository contains the code to query our best models (served as TensorFlow\nHub models) and their predictions on various academic text-generation\nbenchmarks from our paper\n\"[Leveraging Pre-trained Checkpoints for Sequence Generation Tasks](https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00313)\"\nat TACL 2020.\n\nPlease cite our paper if you use our data or models.\n\n```\n@article{rothe_tacl20,\nauthor = {Rothe, Sascha and Narayan, Shashi and Severyn, Aliaksei},\ntitle = {Leveraging Pre-trained Checkpoints for Sequence Generation Tasks},\njournal = {Transactions of the Association for Computational Linguistics},\nvolume = {8},\nnumber = {},\npages = {264-280},\nyear = {2020}\n}\n```\n\n## Introduction\n\nUnsupervised pre-training of large neural models has recently revolutionized\nNatural Language Processing. We developed a Transformer-based\nsequence-to-sequence model that is compatible with publicly available\npre-trained BERT, GPT-2 and RoBERTa checkpoints and achieved new\nstate-of-the-art results on Machine Translation, Text Summarization, Sentence\nSplitting, and Sentence Fusion. We believe that NLP researchers will find our\ndataset with model predictions as a valuable resource to compare pre-trained\ntext generation models and to derive actionable insights.\n\n## Predictions\n\nThe dataset consists of our sequence-to-sequence model predictions on academic\ndatasets for text generation: Sentence Fusion (DiscoFuse), Sentence Splitting\n(WikiSplit), Summarization (XSum, CNN/DailyMail and Gigaword) and Machine\nTranslation (WMT 2014 and 2016). Our dataset will be a valuable ",
+      "contributors": [
+        "Tereza Aliyev",
+        "Gustavo Moreau",
+        "Carmen Reyes",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C117",
+          "type": "budget_overallocation",
+          "projects": [
+            "bertseq2seq",
+            "jax_mpc"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-24",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-24",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-24 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "better_storylines",
+      "title": "[Toward Better Storylines with Sentence-Level Language Models](https://www.aclweb.org/anth",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code for \"Toward Better Storylines with Sentence-Level Language Models\"\nThis code reproduces the experiments on ROC Stories in the ACL paper\n[Toward Better Storylines with Sentence-Level Language Models](https://www.aclweb.org/anthology/2020.acl-main.666/).\nIt contains\nscripts to download the checkpoints used to reproduce the accuracy numbers\nin Tables 1 and 2 as well as Figure 1 of the paper.\n\n## Setup\nThe training and eval code is Python 3 and uses Tensorflow 2.\nInstall all needed dependencies into a virtual environment with:\n\n```\npython3 -m venv pyenv_tf2\nsource pyenv_tf2/bin/activate\npip install --upgrade pip\npip3 install -R requirements.train.txt\n```\n\n## Building or Downloading the Dataset\nThe dataset consists of the mean BERT embedding for each sentence in the ROC\nStories dataset. These are stored as a\n[TFDS](https://www.tensorflow.org/datasets/api_docs/python/tfds) dataset.\n\nSince computing embeddings for ~400k sentences can be slow,\nwe have made the mean BERT embedding dataset used in the paper available for\ndownload.\n\nTo download the dataset run the following commands from the base directory of\nthis repository:\n\n```\nwget https://storage.googleapis.com/gresearch/better_storylines/roc_stories_embeddings.zip\nmkdir tfds_datasets\nunzip roc_stories_embeddings.zip -d tfds_datasets\nrm roc_stories_embeddings.zip\n```\n\nOptionally, to generate the dataset from scratch run the following command from\nthe base directory of this repository. If you are running locally\n(without Apache Beam) it could take a long time:\n\n```\npython3 -m venv pyenv_tf1\nsource pyenv_tf1/bin/activate\npip",
+      "contributors": [
+        "Gustavo Moreau",
+        "Wanjiru Horvat",
+        "Paloma Castillo",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C111",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "better_storylines",
+            "mechanic"
+          ],
+          "shared_object": "Paloma Castillo at >=60% allocation",
+          "canonical": {
+            "person": "Paloma Castillo",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Paloma Castillo is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "betum_tool",
+      "title": "B\u00ebtum Tool",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# B\u00ebtum Tool\n\n**B\u00ebtum Tool** (derived from the Wolof phrase for **\"The Eye of the Field\"**) is\na unified benchmarking toolkit built for the **Artemis Workshop (Dakar, June\n1\u20135)**.\n\nThis toolkit represents the image processing and visual data extraction\ncomponents of the workshop. It focuses on applied Computer Vision methods,\nenabling students to program systems that can \"see\" and accurately measure\nphenotypic traits from plant imagery. Using **B\u00ebtum Tool**, students will run,\nevaluate, and compare state-of-the-art object detection profiles on local\nagricultural datasets.\n\n## Goal\n\nFour student teams each tackle the same detection task with a different\narchitecture, then compare results using a single metric: **AP@50** via\nCOCOEval.\n\n| Group | Model                          | Approach                            |\n| ----- | ------------------------------ | ----------------------------------- |\n| 1     | OWL-ViT                        | Open-vocabulary zero-shot detection |\n| 2     | YOLO26                         | Real-time supervised detection      |\n| 3     | SAM 3                          | Promptable segmentation \u2192 bounding  |\n:       :                                : boxes                               :\n| 4     | DiffusionDet / InstructPix2Pix | Generative perception               |\n\nFor baseline experimental findings, architectural benchmarks, and data-level\nlimitations identified during previous workshops, see the\n[Technical Briefing](TECHNICAL_BRIEFING.md).\n\n## Dataset\n\n**Coffee & Cashew Nut**\n([Sanya et al., 2024](https://doi.org/10.1016/j.dib.2023.109952)) - a y",
+      "contributors": [
+        "Farah Haddad",
+        "Chiara Olsen",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C042",
+          "type": "dependency_date_drift",
+          "projects": [
+            "enas_lm",
+            "hipi",
+            "betum_tool",
+            "correct_batch_effects_wdn"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bigg",
+      "title": "Scalable Deep Generative Modeling for Sparse Graphs",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Scalable Deep Generative Modeling for Sparse Graphs\n\nPaper available at: https://arxiv.org/pdf/2006.15502.pdf\n\nUpon using this codebase, please cite the paper:\n```\n@article{dai2020scalable,\ntitle={Scalable Deep Generative Modeling for Sparse Graphs},\nauthor={Dai, Hanjun and Nazi, Azade and Li, Yujia and Dai, Bo and Schuurmans, Dale},\njournal={arXiv preprint arXiv:2006.15502},\nyear={2020}\n}\n```\n\n### ==== UPDATE (Nov 2, 2022) ====\n\nNew feature enabled: now BiGG is able to generate graphs with node/edge features, fully in an autoregressive way.\n\nPlease refer to `bigg/extension/customized_models.py` for an illustration of how to customize your own model with graph node/edge features.\nOne can directly run the script `bigg/extension/run_featured.sh` once the graph data (list of networkx graphs stored in a pickle file) is provided.\n### ==========================\n\n## Install\n\nNavigate to the root of project, and perform:\n\npip install -e .\n\nThe installation requires both gcc and CUDA toolkit (if gpu is enabled)\n\nIf you want to reproduce the benchmark results, please also install [GRAN](https://github.com/lrjconan/GRAN) and [G2SAT](https://github.com/JiaxuanYou/G2SAT) and add them into your `PYTHONPATH`.\n\n## Project organization\n\nPlease organize this project according to following structure:\n\n```\nbigg/\n|___bigg/  # source code\n|   |___common # common implementations\n|   |___...\n|\n|___setup.py\n|\n|___data/  # raw data / cooked data\n|   |___DD/\n|   |   |__DD_A.txt\n|   |   |__...\n|   |___G2SAT\n|   |   |__lcg_stats.csv\n|   |   |__train_formulas/\n|   |   |__test_formulas/\n|   |___...\n|\n|",
+      "contributors": [
+        "Jorge Vidal",
+        "Rosa Mensah",
+        "Vera Egede",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C142",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "bigg",
+            "cisc"
+          ],
+          "shared_object": "Jorge Vidal at >=60% allocation",
+          "canonical": {
+            "person": "Jorge Vidal",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Jorge Vidal is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    }
+  ]
+}

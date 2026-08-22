@@ -1,0 +1,606 @@
+{
+  "batch": 19,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "mface",
+      "title": "mFACE: Multilingual Summarization with Factual Consistency Evaluation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# mFACE: Multilingual Summarization with Factual Consistency Evaluation\n\nThis repository includes the human judgements data used in the [mFACE paper](https://arxiv.org/abs/2212.10622) (Findings of ACL 2023).\n\n## Data\n\nThe data is provided in [this spreadsheet](https://drive.google.com/file/d/1fsIK2pLMnzeIYlVH3j4APVBdxz-Zu6V0/view?usp=sharing), with the following columns:\n\n* id - row id\n* doc_id - The document id in XLSum\n* lang - The language of the example\n* split - The XLSum split this exmample was drawn from (train/dev/test)\n* input - The input document\n* summary - The reference summary\n* system - The summarization system that produced the summary (human=the reference summary)\n* q1_[min/avg/max] - the min/avg/max score for the question \"Is the summary comprehensible?\"\n* q2_[min/avg/max] - the min/avg/max score for the question \"Is all the information in the summary fully attributable to the article?\"\n* q3_[min/avg/max] - the min/avg/max score for the question \"Is the summary a good summary of the article?\"\n* rouge1 - The ROUGE1 score for the summary against the reference.\n* rouge2 - The ROUGE2 score for the summary against the reference.\n* rougeL - The ROUGEL score for the summary against the reference.\n* e2e_nli_logprob - The log probability for entailment between the input and the summary (using the NLI model described in the paper).\n* e2e_nli_score - The probability for entailment  between the input and the summary (using the NLI model described in the paper).\n\nFollowing the XLSum dataset, the data is licensed with the [CC BY-NC-SA 4.0](https://huggingface.co/datasets",
+      "contributors": [
+        "Amara Okafor",
+        "Maren Zhou",
+        "Milan Zapata",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C120",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "mface",
+            "combiner"
+          ],
+          "shared_object": "Milan Zapata at >=60% allocation",
+          "canonical": {
+            "person": "Milan Zapata",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Milan Zapata is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "microscope_image_quality",
+      "title": "Focus_check script generates whole-plate montages per channel for inspecting",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Focus_check script generates whole-plate montages per channel for inspecting\ndata quality.\n\nPUBLICATION:\nYang, S. J., Berndl, M., Ando, D. M., Barch, M., Narayanaswamy, A. ,\nChristiansen, E., Hoyer, S., Roat, C., Hung, J., Rueden, C. T., Shankar, A.,\nFinkbeiner, S., & and Nelson, P. (2018), \"Assessing microscope image focus\nquality with deep learning\", BMC BioInformatics 19(1).\n\nLink to publication: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4\n\nINSTALLING MACRO:\nhttps://github.com/fiji/microscope-image-quality\n\nFiji macros are scripts that increase throughput of image analysis, similar to\nthat of already existing plugins. There are two ways of creating a macro:\nopening and editing an existing macro or recording your steps as you go through\na protocol.\n\nOPEN AND EDIT EXISTING MACRO:\n1. Go to PLUGINS > MACROS > EDIT...\n2. Find desired protocol and open\n3. Edit desired protocol and save\n\nRECORD STEPS:\n1. Go to PLUGINS > MACROS > RECORD...\n2. Make sure at the top of the recorder pop-up window:\n1. \"Record: Macro\"\n2. \"Name:\" is set to the desired name of your macro (ex.\n\"Focus_Quality_Check\"). You do not need to include the extension as you\ncan add that later when saving your macro\n3. Start going through your protocol, step-by-step\n4. Hit \"Create\" at the top of the recorder pop-up window\n5. Save your protocol\n\nOnce you are done creating your protocol, hit \"Run\" at the bottom of the editor\nwindow.\n\nTO DO:\n(comment by samuely) Have one master script that we add flags for turning on/off\ncertain features, such as the \"single site\" analysis or \"with p",
+      "contributors": [
+        "Jorge Vidal",
+        "Halima Toure",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C068",
+          "type": "duplicate_effort",
+          "projects": [
+            "musiq",
+            "microscope_image_quality"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mir_uai24",
+      "title": "Generalization and Learnability in Multiple Instance Regression",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "### Generalization and Learnability in Multiple Instance Regression\n\nThis repository contains the code for the paper:\n\n**Generalization and Learnability in Multiple Instance Regression** \nKushal Chauhan, Rishi Saket, Lorne Applebaum, Ashwinkumar Badanidiyuru Varadaraja, Chandan Giri, Aravindan Raghuveer \n*Uncertainty in Artificial Intelligence (UAI 2024)*\n\n#### Environment setup\n1. Create a new conda environment `conda create -n mir_uai24 python=3.11`.\n2. Activate it `conda activate mir_uai24`.\n3. Install the requirements `pip install -r mir_uai24/requirements.txt`\n\n#### Data preparation\n1. Prepare synthetic data for different bag sizes `python -m mir_uai24.dataset_preparation.prep_synthetic --bag_size `\n2. Download 1940 US Census data from [here](https://usa.ipums.org/usa/1940CensusDASTestData.shtml) as a csv file.\n3. Prepare US Census data for different bag sizes `python -m mir_uai24.dataset_preparation.prep_us_census --read_path  --bag_size `\n\n#### Usage\nThe `train.py` script will train an MLP using the proposed **wtd-Assign** approach on the desired dataset. To reproduce results on the synthetic data, run\n\n```\npython -m mir_uai24.train --dataset synthetic --batch_size 100 --embedding_dim 0 --num_hidden_units 1024\n```\n\nTo reproduce results on the 1940 US Census data, run\n\n```\npython -m mir_uai24.train --dataset us_census --batch_size 100 --embedding_dim 0 --num_hidden_units 1024\n```\n\n#### Citation\nIf you find our methods useful, please cite:\n\n```\n@InProceedings{chauhan-uai24,\ntitle     = {Generalization and Learnability in Multiple Instance Regression},\nauthor    = {Kush",
+      "contributors": [
+        "Bilal Novak",
+        "Gustavo Moreau",
+        "Maren Zhou",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C114",
+          "type": "dependency_date_drift",
+          "projects": [
+            "global_metnet",
+            "group_agnostic_fairness",
+            "clustering_normalized_cuts",
+            "mir_uai24"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "missing_link",
+      "title": "The missing link: Finding label relations across datasets",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# The missing link: Finding label relations across datasets\n\nThis directory contains the annotated relations between labels across\ndatasets used in our [ECCV 2022 paper](https://arxiv.org/abs/2206.04453).\nThe annotations were created by building on existing annotations of\nthe [MSEG dataset](https://github.com/mseg-dataset/mseg-api)\n([Lambert et al. CVPR 2020](https://arxiv.org/abs/2112.13762)).\nWe used this to automatically establish relationships which we subsequently\nmanually inspected and manually corrected where necessary.\n\nWe provide label relations across datasets between three dataset pairs:\n\n* ADE20k and COCO: `ade_coco_mapping.csv`\n* ADE20k and BDD: `ade_bdd_mapping.csv`\n* BDD and COCO: `bdd_coco_mapping.csv`\n\nFor completeness, we also include the mappings to the MSEG dataset\nwhich we used as an intermediate step to produce these label relations.\n\nThe original datasets and papers can be found at:\n\n* [ADE20k dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K) ([Zhou et al. IJCV 2017](https://arxiv.org/abs/1608.05442))\n* [Berkeley Deep Drive (BDD) dataset](https://www.bdd100k.com/) ([Yu et al. CVPR 2020](https://arxiv.org/abs/1805.04687))\n* [COCO panoptic dataset](https://cocodataset.org/#home) ([Lin et al. ECCV 2014](https://arxiv.org/abs/1405.0312), [Caesar et al. CVPR 2018](https://arxiv.org/abs/1612.03716), [Kirillov et al. CVPR 2019](https://arxiv.org/abs/1801.00868))\n\n## File Format\n\nAll files are csv files whose rows have the following format:\n\n```\nlabel_a, relation, label_b\n```\n\nIf the filename is ade_bdd_mapping.csv, then `label_a` refers to a labe",
+      "contributors": [
+        "Kaia Wolde",
+        "Efe Lindqvist",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C004",
+          "type": "gpu_double_booking",
+          "projects": [
+            "constrained_language_typology",
+            "missing_link"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ml_debiaser",
+      "title": "Near-Optimal Debiasing Algorithms",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Near-Optimal Debiasing Algorithms\n\n[*Near-optimal algorithm for debiasing machine learning models*](https://arxiv.org/abs/2106.12887).\nIbrahim Alabdulmohsin and Mario Lucic (NeurIPS 2021).\n\n[*A Reduction to Binary Approach for Debiasing Multiclass Datasets*](https://arxiv.org/abs/2205.15860)\nIbrahim Alabdulmohsin, Jessica Schrouff, and Oluwasanmi Koyejo (NeurIPS 2022).\n\nThis is the directory for algorithms that we develop to debias machine learning\nmodels while treating them as black-box classifiers. We develop a near-optimal\npost-processing method for binary classifiers and a pre-processing method for\nmulticlass datasets. The multiclass method does not require access to the\nsensitive attribute at inference time and can handle an arbitrary number of\nclasses.\n\nBoth algorithms return solutions that satisfy the bias requirement on the\ntraining data. The guarantees on test data hold with a high probability provided\nthat certain conditions are met (e.g. sufficient sample size per group). Please\ncheck out the papers to understand the conditions required for bias mitigation\nto generalize to test data with a high probability.\n\n## Running the code\n\n### 1. Setting up the Python environment\nThe code has been tested with Python 3.7.10 and Numpy 1.21.5.\n\n### 2. Debiasing binary classifiers via post-processing.\nHere is a walk-through example.\n\nImport the necessary packages.\n```\nimport numpy as np\nimport sklearn.ensemble\nfrom ml_debiaser import randomized_threshold\nfrom ml_debiaser import reduce_to_binary\n```\n\nFetch the data (synthetic in the example below). The data should have three\ns",
+      "contributors": [
+        "Linnea Yamada",
+        "Nikhil Abebe",
+        "Csilla Nassar",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C069",
+          "type": "dependency_date_drift",
+          "projects": [
+            "model_swarm",
+            "clip_as_rnn",
+            "ml_debiaser",
+            "android_interaction"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mmmt_if",
+      "title": "MMMT-IF: A Challenging Multimodal Multi-Turn Instruction Following Benchmark",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-22"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# MMMT-IF: A Challenging Multimodal Multi-Turn Instruction Following Benchmark\n\nPaper: [https://arxiv.org/abs/2409.18216](https://arxiv.org/abs/2409.18216)\n\nWe propose a new evaluation set, MMMT-IF, an image based multi-turn Q&A task with added global instructions between questions, constraining the format of the answers. This reveals limitations of large language models for following multiple instructions and is challenging as the models need to first retrieve multiple instructions spread out in the long chat history, and then reason over them to answer image based questions with instruction constraints. All the instructions and constraints are program verifiable, i.e., verifying them is objective.\n\n# Cite:\n\n@article{epstein2024mmmt,\ntitle={MMMT-IF: A Challenging Multimodal Multi-Turn Instruction Following Benchmark},\nauthor={Epstein, Elliot L and Yao, Kaisheng and Li, Jing and Bai, Xinyi and Palangi, Hamid},\njournal={arXiv e-prints},\npages={arXiv--2409},\nyear={2024}\n}\n\nThis is not an officially supported Google product.",
+      "contributors": [
+        "Tereza Aliyev",
+        "Paloma Castillo",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C078",
+          "type": "dependency_date_drift",
+          "projects": [
+            "health_equity_toolbox",
+            "generative_trees",
+            "lighthouse",
+            "mmmt_if"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mobilebert",
+      "title": "MobileBERT",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MobileBERT\n\nThis directory contains code for\n[MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://arxiv.org/abs/2004.02984).\nMobileBERT is a thin version of BERT_LARGE, while equipped with bottleneck\nstructures and a carefully designed balance between self-attentions and\nfeed-forward networks.\n\n## Pre-trained checkpoints\n\nDownload compressed files for pre-trained weights and `SavedModel`.\n\n* MobileBert Optimized Uncased English:\n[uncased_L-24_H-128_B-512_A-4_F-4_OPT](https://storage.googleapis.com/cloud-tpu-checkpoints/mobilebert/uncased_L-24_H-128_B-512_A-4_F-4_OPT.tar.gz)\n\n* We provide both float32 and quantized int8 `SavedModel` for the Squad V1.1 that\nare useful tf.lite conversion. Please checkout [mobilebert_squad_savedmodels](https://storage.googleapis.com/cloud-tpu-checkpoints/mobilebert/mobilebert_squad_savedmodels.tar.gz) for sequence length\nat 384.\n\n## Finetune with MobileBERT\n\n```shell\npip install -r requirements.txt\nexport PYTHONPATH=$PYTHONPATH:/path/to/mobilebert\n```\n\n### SQuAD\n\nFinetuning on SQuAD V1.1 and V2.0, we use the same script. The example script\nfinetunes the MobileBERT on SQuAD V1.1 dataset with TPU-v3-8.\n\n```shell\nexport DATA_DIR=/tmp/mobilebert/data_cache/\nexport INIT_CHECKPOINT=/path/to/checkpoint/\nexport OUTPUT_DIR=/tmp/mobilebert/experiment/\npython3 run_squad.py \\\n--bert_config_file=config/uncased_L-24_H-128_B-512_A-4_F-4_OPT.json \\\n--data_dir=${DATA_DIR} \\\n--do_lower_case \\\n--do_predict \\\n--do_train \\\n--doc_stride=128 \\\n--init_checkpoint=${INIT_CHECKPOINT}/mobilebert.ckpt \\\n--learning_rate=4e-05 \\\n--max_answer_leng",
+      "contributors": [
+        "Milan Zapata",
+        "Vera Egede",
+        "Amara Okafor",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C028",
+          "type": "gpu_double_booking",
+          "projects": [
+            "ciw_label_noise",
+            "mobilebert"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "model_pruning",
+      "title": "Model pruning: Training tensorflow models to have masked connections",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Model pruning: Training tensorflow models to have masked connections\n\nThis document describes the API that facilitates magnitude-based pruning of\nneural network's weight tensors. The API helps inject necessary tensorflow op\ninto the training graph so the model can be pruned while it is being trained.\n\nThis library extends the original model pruning library with gradient based\npruning ops. The details of these ops are described in [gradient_based_pruning.md](https://github.com/google-research/google-research/tree/master/model_pruning/gradient_based_pruning.md).\n\n## Table of contents\n1. [Model creation](#model-creation)\n2. [Hyperparameters for pruning](#hyperparameters)\n- [Block sparsity](#block-sparsity)\n3. [Adding pruning ops to the training graph](#adding-pruning-ops)\n4. [Removing pruning ops from trained model](#remove)\n5. [Example](#example)\n\n### Model creation \n\nThe first step involves adding mask and threshold variables to the layers that\nneed to undergo pruning. The variable mask is the same shape as the layer's\nweight tensor and determines which of the weights participate in the forward\nexecution of the graph. This can be achieved by wrapping the weight tensor of\nthe layer with the `apply_mask` function provided in\n[pruning.py](https://github.com/google-research/google-research/tree/master/model_pruning/python/pruning.py).\nFor example:\n\n```python\nconv = tf.nn.conv2d(images, pruning.apply_mask(weights), stride, padding)\n```\n\nThis creates a convolutional layer with additional variables mask and threshold\nas shown below: ![Convolutional layer with mask and\nthreshold](",
+      "contributors": [
+        "Hyun Traore",
+        "Wei Ivanov",
+        "Giannis Sato",
+        "Jorge Vidal",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C021",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "language_model_uncertainty",
+            "model_pruning"
+          ],
+          "shared_object": "Vera Egede at >=60% allocation",
+          "canonical": {
+            "person": "Vera Egede",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Vera Egede is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "model_swarm",
+      "title": "Model Swarms",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Model Swarms\n\nRepository for [Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence](https://arxiv.org/abs/2410.11163v1).\n\n## Quick Start\n\n#### Initialization\n\nCreate a conda environment for Model Swarms.\n```\nconda env create -f swarm.yml\nconda activate swarm\n```\n\nLog into huggingface (for gemma access).\n```\nhuggingface-cli login\n```\n\nDownload initial experts.\n```\ncd initial_experts\npython initial_experts.py\ncd ..\n```\n\n#### Execute your first Model Swarms search.\n\nLet's run Model Swarms on the [NLGraph](https://arxiv.org/abs/2305.10037) dataset focusing on LLM graph reasoning. `search_nlgraph.sh` provides the starter script for this.\n\nBefore running, how many GPUs do you have (and what are the GPU ids?). Change `-g` in line 23 of `search_nlgraph.sh`: by default five GPUs with ids `0,1,2,3,4`, but you can change to `0`, `0,1`, `0,2,4,5,6` or any combination you'd like.\n\nRun it!\n```\nbash search_nlgraph.sh\n```\n\nYou will be prompted to log into WandB and it is highly recommended. There will be a directory in `search/` that starts with `nlgraph_...`, all the logs, models, and results will be stored there. You can check out `search/nlgraph_.../log.txt` to see current progress.\n\nEnd of search: the best-found model will be in `search/nlgraph_.../global_best` and performance metrics will be in `search/nlgraph_.../utility_scratchpad.json`. The json file presents the change in utility values in the search process: for global best, global worst, and individual models. The `log.txt` will contain in the end several overall metrics. Watch for `starting_best_vali",
+      "contributors": [
+        "Fumiko Rossi",
+        "Freya Ruiz",
+        "Leilani Nakamura",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C069",
+          "type": "dependency_date_drift",
+          "projects": [
+            "model_swarm",
+            "clip_as_rnn",
+            "ml_debiaser",
+            "android_interaction"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mol_dqn",
+      "title": "described in Zhou Z, Kearnes S, Li L, Zare RN, Riley P. Optimization of",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MolDQN\n\nThis package contains libraries and scripts for reproducing the results\ndescribed in Zhou Z, Kearnes S, Li L, Zare RN, Riley P. Optimization of\nMolecules via Deep Reinforcement Learning; http://arxiv.org/abs/1810.08678.\n\nThe main library functions, such as the MDP definition in\n`chemgraph/mcts/molecules.py`, are of primary interest.\n\nNote that this implementation of the MDP has certain limitations, including (but\nnot limited to):\n\n* No support for modification of aromatic bonds. This includes bonds that are\nperceived as aromatic during parsing of the initial state.\n* No support for multiple atom oxidation states. For example, it is not\ncurrently possible to generate CS(=O)C from an empty initial state, since\nthe default oxidation state of sulfur is 2 and the MDP actions are based on\nthe available valence without considering alternate oxidation states.\n\nSee the paper for additional details.\n\nHere are the commands to produce the experimental results:\n## Prepare\n\n### Install the `Contrib` module of `rdkit`\n\n```\ngit clone https://github.com/rdkit/rdkit\ncp -R ./rdkit/Contrib/SA_Score ./chemgraph/dqn/py\n```\n\n### Choose the output directory\n\n```\nexport OUTPUT_DIR=\"./save\"\n```\n\n## Single Property Optimization\n\n### Optimization of QED\n\n#### Naive DQN\n\n```\npython optimize_qed.py --model_dir=${OUTPUT_DIR} --hparams=\"./configs/naive_dqn.json\"\n```\n\n#### Bootstrap DQN\n##### Step 1\n```\npython optimize_qed.py --model_dir=${OUTPUT_DIR} --hparams=\"./configs/bootstrap_dqn_step1.json\"\n```\n##### Step 2\n```\npython optimize_qed.py --model_dir=${OUTPUT_DIR} --hparams=\"./configs/bootstrap",
+      "contributors": [
+        "Giannis Sato",
+        "Wei Ivanov",
+        "Oyin Iversen",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C036",
+          "type": "budget_overallocation",
+          "projects": [
+            "mol_dqn",
+            "dp_transfer"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-58",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-58",
+            "available": "$240k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $240k from Q3 discretionary compute budget line B-58 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "moment_advice",
+      "title": "Experiments in estimating frequency moments with advice. This is an ongoing",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Experiments in estimating frequency moments with advice. This is an ongoing\nresearch project released as open source to allow collaboration outside Google.\n\nThe main function currently uses four methods to estimate frequency moments:\n1. Our method of sampling according to advice (read from file)\n2. Sampling according to perfect advice (the advice is the exact frequencies\nof the elements in the dataset)\n3. PPSWOR (ell_1 sampling)\n4. ell_2 sampling\n\nThe following types of datasets are supported as input (same format is used\nfor the advice files):\n* graph - Each line in the file represents a directed edge (\"u v\" or \"u v time\"\nfor temporal graphs), and we output estimates for the frequency moments\nof the in degrees and out degrees of nodes. We allow parallel edges, that\nis, if an edge between two nodes appears twice, it contributes 2 to the\ndegrees.\n* net_traffic - Each line in the file represents a packet (\"src_ip src_port\ndst_ip dst_port protocol\") and we estimate the frequency moments for\nunordered IP pairs, that is, the frequency for each IP pair is the number of\npackets send between them (in any direction).\n* unweighted_elements - Each line in the file is a key and represents an element\nwith that key and weight 1.\n* weighted - Each line in the file represents a weighted data element and is of\nthe form \"key weight\".\n\nFor a description of the command-line arguments, run\npython3 -m moment_advice --help\n\nContact information:\nEdith Cohen edith@cohenwang.com\nOfir Geri ofirgeri@cs.stanford.edu\nRasmus Pagh pagh@itu.dk",
+      "contributors": [
+        "Vera Egede",
+        "Umar Costa",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C037",
+          "type": "gpu_double_booking",
+          "projects": [
+            "moment_advice",
+            "m_theory"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mpi_extrapolation",
+      "title": "Pushing the Boundaries of View Extrapolation with Multiplane Images",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Pushing the Boundaries of View Extrapolation with Multiplane Images\n\n[Project Page](https://people.eecs.berkeley.edu/~pratul/publication/mpi_extrapolation/)\n\nCode for the paper [Pushing the Boundaries of View Extrapolation with Multiplane Images](https://arxiv.org/abs/1905.00413)\nPratul P. Srinivasan, Richard Tucker, Jonathan T. Barron, Ravi Ramamoorthi, Ren Ng, Noah Snavely, CVPR 2019.\nIf you use this code, please cite our paper:\n\n```\n@article{srinivasan19,\nauthor    = {Pratul P. Srinivasan and Richard Tucker and Jonathan T. Barron and Ravi Ramamoorthi and Ren Ng and Noah Snavely},\ntitle     = {Pushing the Boundaries of View Extrapolation with Multiplane Images},\njournal   = {CVPR},\nyear      = {2019}}\n}\n```\n\nBoth this CVPR 2019 paper and the included code are based on the [Stereo Magnification](https://people.eecs.berkeley.edu/~tinghuiz/projects/mpi/) method for training deep networks to predict MPIs.\n\nThis release contains code for predicting an MPI from a narrow-baseline pair of RGB images, and rendering novel camera views from this predicted MPI.\n\n## Running a pretrained model\n\n`render_sway.py` contains an example script for running a pretrained model on an input batch to render a novel view camera path. Please download and unzip the [pretrained model](https://drive.google.com/file/d/1Mf3t2SAl7vhAK4LaAuiMLr7LRTLrA-oD/view?usp=sharing) and [training examples](https://drive.google.com/file/d/1xBpQzJwQJjx9fc1ild59IoQzIeevwAKx/view?usp=sharing) files, and then include the corresponding file/directory names as command line flags when running ``render_sway.py``.\n\nExample u",
+      "codename": "Project Kestrel",
+      "contributors": [
+        "Rafael Duran",
+        "Maren Zhou",
+        "Freya Ruiz",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C143",
+          "type": "codename_collision",
+          "projects": [
+            "etcmodel",
+            "mpi_extrapolation"
+          ],
+          "shared_object": "Project Kestrel",
+          "canonical": {
+            "codename": "Project Kestrel"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Kestrel."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "muNet",
+      "title": "Below are listed the resources related to each publication in the \u00b5Net liner of research.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# \u03bcNet\n\nThis directory contains resources related to the \u00b5Net line of research.\n\nBelow are listed the resources related to each publication in the \u00b5Net liner of research.\nFor each publication we provide a colab containing all the code necessary to reproduce the reported experiments.\nWe recommend using the latest published colab to experiment with new ideas and extensions.\nFor questions, requests or feedback feel free to reach out to: agesmundo@google.com.\n\n## muNet\n\n1. Publication: [\"muNet: Evolving Pretrained Deep Neural Networks into Scalable Auto-tuning Multitask Systems\" (2022)](https://arxiv.org/abs/2205.10937).\n\n1. Colab Notebook that defines the muNet method and allows to reproduce the experiments reported in the publication: muNet.ipynb [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-research/google-research/blob/master/muNet/muNet.ipynb)\n\n1. Analysis Colab Notebook that allows to reproduce plots and analysis reported in the paper: analysis.ipynb\n\n## \u00b52Net\n\n1. Publication: [\"An Evolutionary Approach to Dynamic Introduction of Tasks in Large-scale Multitask Learning Systems\" (2022)](https://arxiv.org/abs/2205.12755).\n\n1. Colab Notebook that defines the \u03bc2Net method and allows to reproduce the experiments reported in the publication: mu2Net.ipynb [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-research/google-research/blob/master/muNet/mu2Net.ipynb)\n\n1. Analysis Colab Notebook that allows to reproduce plots and analy",
+      "contributors": [
+        "Yara Jokic",
+        "Hyun Traore",
+        "Milan Zapata"
+      ],
+      "conflicts": [
+        {
+          "id": "C087",
+          "type": "dependency_date_drift",
+          "projects": [
+            "muNet",
+            "ials",
+            "aptamers_mlpd",
+            "loss_functions_transfer"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mucped22",
+      "title": "Multi-bitrate compression perceptual evaluation dataset 2022",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Multi-bitrate compression perceptual evaluation dataset 2022\n\nmucped22: A compression distortion image quality assessment (IQA) database.\n\n_Authors: Luca Versari, George Toderici, Iulia Com\u0219a, Jyrki\nAlakuijala, Sami Boukortt, Martin Bruse, Danielle Perszyk_\n\n## Background\n\nCurrent human evaluated IQA databases, such as\n[KADID-10k](http://database.mmsp-kn.de/kadid-10k-database.html),\n[TID2013](https://qualinet.github.io/databases/image/tampere_image_database_tid2013/),\n[CSIQ](https://qualinet.github.io/databases/image/categorical_image_quality_csiq_database/), or\n[LIVE](https://live.ece.utexas.edu/research/quality/subjective.htm) are often\nused to evaluate the performance of objective image quality metrics, such as\n[MS-SSIM](https://www.cns.nyu.edu/pub/eero/wang03b.pdf),\n[SSIMULACRA](https://github.com/cloudinary/ssimulacra), or\n[NLPD](https://www.cns.nyu.edu/pub/lcv/laparra17-reprint.pdf).\n\nThe objective image quality metrics are in turn used to evaluate the quality of\nimage compression schemes, to minimize the requirements for expensive human\nevaluations.\n\nUnfortunately this also creates an extra source of errors when tuning and\ncomparing image compression schemes.\n\nThis makes it necessary to ensure that the first step in this comparison, the\nIQA database, suits the requirements of the compression scheme used.\n\nProblems with current IQA databases include using\ncrowdsourced evaluators potentially without high quality image comparison\nexperience, comparing images distorted by methods having little or\nnothing in common with distortions typically produced by image compressio",
+      "contributors": [
+        "Gustavo Moreau",
+        "Ondrej Bergstrom",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C131",
+          "type": "duplicate_effort",
+          "projects": [
+            "mucped22",
+            "dreg_estimators"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mucped23",
+      "title": "Multi-bitrate JPEG compression perceptual evaluation dataset 2023",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Multi-bitrate JPEG compression perceptual evaluation dataset 2023\n\nmucped23: A compression distortion image quality assessment (IQA) database.\n\n_Authors: Luca Versari, Zoltan Szabadka, Martin Bruse, Jyrki Alakuijala_\n\n## Background\n\nThe JPEG image compression format is, despite being far from the most efficient\ncompression format (see [The Case for JPEG\nXL](https://cloudinary.com/blog/the-case-for-jpeg-xl)), one of the most widely\nused (see [Usage statistics of image file formats for\nwebsites](https://w3techs.com/technologies/overview/image_format)).\n\nThe [jpegli](https://github.com/libjxl/libjxl/tree/main/lib/jpegli) JPEG encoder\nlibrary is an improved JPEG encoder that applies many of the insights from\nrelated projects like [guetzli](https://github.com/google/guetzli),\n[butteraugli](https://github.com/google/butteraugli), and [JPEG\nXL](https://github.com/libjxl/libjxl) to achieve a higher quality-per-byte for\nJPEG images.\n\nThe mucped23 dataset was created to study human perception of the quality of\nimages compressed using [MozJPEG](https://github.com/mozilla/mozjpeg),\n[libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo), and\n[jpegli](https://github.com/libjxl/libjxl/tree/main/lib/jpegli).\n\n## mucped23 evaluations\n\nThe mucped23 evaluations were performed using an internal Google perceptual\nevaluation tool, designed based on insights from the\n[CLIC](https://www.compression.cc/) Challenge on Learned Image Compression.\n\n### Source images\n\nThe evaluations comprise 49 512x512 pixel images taken from the [CID22\nvalidation\nset](https://cloudinary-marketing-res.cloudi",
+      "codename": "Project Vantage",
+      "contributors": [
+        "Yusuf Keita",
+        "Bilal Novak",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C107",
+          "type": "codename_collision",
+          "projects": [
+            "business_metric_aware_forecasting",
+            "mucped23"
+          ],
+          "shared_object": "Project Vantage",
+          "canonical": {
+            "codename": "Project Vantage"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Vantage."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "muller",
+      "title": "MULLER: Multilayer Laplacian Resizer for Vision",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# MULLER: Multilayer Laplacian Resizer for Vision\n\nThis directory contains the model code for the ICCV 2023 paper:\n[\"MULLER: Multilayer Laplacian Resizer for Vision\"](https://arxiv.org/abs/2304.02859) \\\nby [Zhengzhong Tu](https://www.linkedin.com/in/vztu/), [Peyman Milanfar](https://sites.google.com/view/milanfarhome/), and [Hossein Talebi](https://scholar.google.com/citations?hl=en&user=UOX9BigAAAAJ)\n\n*Disclaimer: This is not an official Google product.*\n\n## Pre-requisite\n\nInstall dependencies:\n\n```\npip3 install -r requirements.txt\n```\n\n## Colab\n\nWe have released a Google Colab Demo on the tutorials of how to run MULLER. Try it here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-research/google-research/blob/master/muller/muller_demo.ipynb)\n\n## Citation\nShould you find this repository useful, please consider citing:\n```\n@article{tu2023muller,\ntitle={MULLER: Multilayer Laplacian Resizer for Vision},\nauthor={Tu, Zhengzhong and Milanfar, Peyman and Talebi, Hossein},\njournal={ICCV},\nyear={2023}\n}\n```",
+      "contributors": [
+        "Yara Jokic",
+        "Oyin Iversen",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C054",
+          "type": "budget_overallocation",
+          "projects": [
+            "bustle",
+            "muller"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-77",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-77",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-77 for this project."
+          }
+        }
+      ]
+    }
+  ]
+}

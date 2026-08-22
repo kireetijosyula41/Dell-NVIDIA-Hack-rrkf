@@ -1,0 +1,605 @@
+{
+  "batch": 16,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "jaxnerf",
+      "title": "[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://www.matthe",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# JaxNeRF\n\nThis is a [JAX](https://github.com/jax-ml/jax) implementation of\n[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://www.matthewtancik.com/nerf).\nThis code is created and maintained by\n[Boyang Deng](https://boyangdeng.com/),\n[Jon Barron](https://jonbarron.info/),\nand [Pratul Srinivasan](https://people.eecs.berkeley.edu/~pratul/).\n\nOur JAX implementation currently supports:\n\nPlatform\nSingle-Host GPU\nMulti-Device TPU\n\nType\nSingle-Device\nMulti-Device\nSingle-Host\nMulti-Host\n\nTraining\n\nEvaluation\n\nThe training job on 128 TPUv2 cores can be done in **2.5 hours (v.s 3 days for TF\nNeRF)** for 1 million optimization steps. In other words, JaxNeRF trains to the best while trains very fast.\n\nAs for inference speed, here are the statistics of rendering an image with\n800x800 resolution (numbers are averaged over 50 rendering passes):\n\n| Platform | 1 x NVIDIA V100 |                                                  8 x NVIDIA V100                                                  |                                                    128 x TPUv2                                                    |\n|----------|:---------------:|:-----------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|\n| TF NeRF  |    27.74 secs   |  |  |\n| JaxNeRF  |    20.77 secs   |                                                     2.65 secs                                                     |                  ",
+      "codename": "Project Meltwater",
+      "contributors": [
+        "Katya Silva",
+        "Leilani Nakamura",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C053",
+          "type": "codename_collision",
+          "projects": [
+            "cache_replacement",
+            "jaxnerf"
+          ],
+          "shared_object": "Project Meltwater",
+          "canonical": {
+            "codename": "Project Meltwater"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Meltwater."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jaxsel",
+      "title": "JaxSel: a differentiable subgraph extraction layer, in Jax",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# JaxSel: a differentiable subgraph extraction layer, in Jax\n\nThe `jaxsel` module contains a sparse subgraph selection layer, implementing a\ndifferentiable sparse PageRank. The goal of our model is to extract a small\nsubgraph from a large graph, where the subgraph is enough to solve a given task.\nAs such, we consider datasets of graphs. We provide an API for modeling\ndirected, unweighted graphs, which allows querying neighbors of a given node in\nthe graph, and querying node features and edge features. All functionalities are\nlocal.\n\nGiven a graph, our pipeline contains the following three (3) blocks:\n\n*   An Agent model, which can estimate weights for the graph edges, using local\nfeatures. The Agent model can be used to implicitly represent a full\nweighted adjacency matrix over the underlying unweighted, directed graph.\n*   A differentiable subgraph selection layer. This is our main contribution:\nour layer learns to select a subgraph around a given start node, using an\nunderlying Agent model.\n*   A downstream graph neural network. This model takes the extracted subgraph,\nand makes a prediction for the desired task. Currently, we only handle graph\nclassification.\n\n## Set up\n\nLaunch a test run by running `./run.sh` from the `jaxsel` folder. The script\nwill clone the\n[long-range-arena](https://github.com/google-research/long-range-arena)\nrepository, which we require.\n\nIf this does not work, make sure you are in the `jaxsel` folder.\n\nTo train a model on the pathfinder dataset, you must first download the data,\nfollowing instructions\n[here](https://github.com/google-research/lon",
+      "contributors": [
+        "Rafael Duran",
+        "Nikhil Abebe",
+        "Efe Lindqvist",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C039",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "jaxsel",
+            "dble"
+          ],
+          "shared_object": "Efe Lindqvist at >=60% allocation",
+          "canonical": {
+            "person": "Efe Lindqvist",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Efe Lindqvist is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "jslm",
+      "title": "Adaptive Language Models in JavaScript",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Adaptive Language Models in JavaScript\n\nThis directory contains collection of simple adaptive language models that are\ncheap enough memory- and processor-wise to train in a browser on the fly.\n\n## Language Models\n\n### Prediction by Partial Matching (PPM)\n\nPrediction by Partial Matching (PPM) character [language model](ppm_language_model.js).\n\n#### Bibliography\n\n1.  Cleary, John G. and Witten, Ian H. (1984): [\u201cData Compression Using Adaptive Coding and Partial String Matching\u201d](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4305), IEEE Transactions on Communications, vol. 32, no. 4, pp. 396&#x2013;402.\n2.  Moffat, Alistair (1990): [\u201cImplementing the PPM data compression scheme\u201d](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.120.8728&rep=rep1&type=pdf), IEEE Transactions on Communications, vol. 38, no. 11, pp. 1917&#x2013;1921.\n3.  Ney, Reinhard and Kneser, Hermann (1995): [\u201cImproved backing-off for M-gram language modeling\u201d](http://www-i6.informatik.rwth-aachen.de/publications/download/951/Kneser-ICASSP-1995.pdf), Proc. of Acoustics, Speech, and Signal Processing (ICASSP), May, pp. 181&#x2013;184. IEEE.\n4.  Chen, Stanley F. and Goodman, Joshua (1999): [\u201cAn empirical study of smoothing techniques for language modeling\u201d](http://u.cs.biu.ac.il/~yogo/courses/mt2013/papers/chen-goodman-99.pdf), Computer Speech &#xff06; Language, vol. 13, no. 4, pp. 359&#x2013;394, Elsevier.\n5.  Ward, David J. and Blackwell, Alan F. and MacKay, David J. C. (2000): [\u201cDasher &#x2013; A Data Entry Interface Using Continuous Gestures and Language Models\u201d](http://citeseerx.is",
+      "codename": "Project Basalt",
+      "contributors": [
+        "Rafael Duran",
+        "Hyun Traore",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C125",
+          "type": "codename_collision",
+          "projects": [
+            "adaptive_low_rank",
+            "jslm"
+          ],
+          "shared_object": "Project Basalt",
+          "canonical": {
+            "codename": "Project Basalt"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Basalt."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "keypose",
+      "title": "KeyPose: Pose Estimation with Keypoints",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## KeyPose: Pose Estimation with Keypoints\n\nThis repository contains Tensorflow 2 models and a small set of\nlabeled transparent object data from the\n[KeyPose project](https://sites.google.com/corp/view/keypose/).  There\nare sample programs for displaying the data, running the models to\npredict keypoints on the data, and training from data.\n\nThe full dataset can be downloaded using the directions at the end of this README.  It contains stereo and depth image sequences (720p) of 15 small transparent objects in 5 categories (ball, bottle, cup, mug, heart, tree), against 10 different textured backgrounds, with 4 poses for each object.  There are a total of 600 sequences with approximately 48k stereo and depth images.  The depth images are taken with both transparent and opaque objects in the exact same position.  All RGB and depth images are registered for pixel correspondence, the camera parameters and pose are given, and keypoints are labeled in each image and in 3D.\n\n## Setup and sample programs\n\nTo install required python libraries (running in directory\nabove `keypose/`):\n```\npip3 install -r keypose/requirements.txt\n```\n\nTo look at images and ground-truth keypoints (running in directory\nabove `keypose/`):\n```\n$ python3 -m keypose.show_keypoints keypose/data/bottle_0/texture_5_pose_0/ keypose/objects/bottle_0.obj\n```\n\nTo predict keypoints from a model (running in directory above\n`keypose/`), first download the models:\n```\nkeypose/download_models.sh\n```\nThen run the `predict` command:\n```\n$ python3 -m keypose.predict keypose/models/bottle_0_t5/ keypose/data/bottle_0/texture_5",
+      "contributors": [
+        "Yara Jokic",
+        "Leilani Nakamura",
+        "Wanjiru Horvat",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C096",
+          "type": "dependency_date_drift",
+          "projects": [
+            "finance_harness",
+            "cell_mixer",
+            "hypertransformer",
+            "keypose"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "kip",
+      "title": "Dataset Metalearning from Kernel Ridge-Regression",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Dataset Metalearning from Kernel Ridge-Regression\n\n## Overview\nThis directory contains a publicly available colab notebook [KIP.ipynb](https://colab.research.google.com/github/google-research/google-research/blob/master/kip/KIP.ipynb) for the paper [Dataset Metalearning from Kernel Ridge-Regression](https://arxiv.org/abs/2011.00050)\nby Timothy Nguyen, Zhourong Chen, and Jaehoon Lee, published in ICLR 2021. The colab implements the Kernel Inducing Points (KIP)\nand Label Solve (LS) algorithms.\n\nWe also release the datasets constructed in [Dataset Distillation with\nInfinitely Wide Convolutional Networks](https://arxiv.org/abs/2107.13034) by Timothy Nguyen, Roman Novak,\nLechao Xiao, Jaehoon Lee. We distill datasets using the KIP algorithm developed in the previous\npaper together with large-scale distributed computational resources to handle convolutional networks. See [dataset.ipynb](https://colab.research.google.com/github/google-research/google-research/blob/master/kip/dataset.ipynb) for access to the datasets stored in GCS.\n\nAn example of finite network (ConvNet) training using one of the distilled data in GCS is also included in [Neural Network Training Notebook](https://colab.research.google.com/github/google-research/google-research/blob/master/kip/nn_training.ipynb).\n\n## Citation\n\nIf you find this code or paper useful, please cite:\n\n```\n@inproceedings{\nnguyen2021dataset,\ntitle={Dataset Meta-Learning from Kernel-Ridge Regression},\nauthor={Timothy Nguyen and Zhourong Chen and Jaehoon Lee},\nbooktitle={International Conference on Learning Representations},\nyear={2021},\nurl",
+      "contributors": [
+        "Kaia Wolde",
+        "Yara Jokic",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C141",
+          "type": "dependency_date_drift",
+          "projects": [
+            "context_aware_transliteration",
+            "kip",
+            "deplot",
+            "jaxbarf"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "kobe",
+      "title": "Data and code for [Knowledge Based Machine Translation Evaluation](https://research.google",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# KoBE\nData and code for [Knowledge Based Machine Translation Evaluation](https://research.google/pubs/pub49521/).\n\nKoBE is a reference-less machine translation evaluation metric.\nOur approach is based on using entity linking pipelines to ground the entity mentions found in each source sentence\nand candidate translation against a large-scale multilingual knowledge base (Google Knowledge Graph).\nKoBE is then using the matched entity counts as a translation quality signal.\n\nUnfortunately, we are not aware of any open-source multilingual KB and entity linking systems.\nTherefore, to make sure our findings are fully reproducible and useful for future work, we release the annotations we\nused together with scripts to reproduce our results.\n\n**This is not an officially supported Google product.**\n\n## Data\nOur dataset contains annotations of the linked entity mentions in the [WMT19 metrics track data](http://www.statmt.org/wmt19/results.html).\nThese entity linking annotations span over 425k sentences in 18 language pairs from 262 different MT systems,\nand contain 1.8 million entity mentions of 28k distinct entities.\nThe annotations were obtained by running an in-house entity linking system similar to the\n[Google Cloud Natural Language API - Entity Analysis](https://cloud.google.com/natural-language/docs/basics#entity_analysis)\ntool that links to entities from the\n[Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph).\n\nThe published data contains a file for each system in each language pair, as well as the annotations for the source\ntext and reference tra",
+      "codename": "Project Obsidian",
+      "contributors": [
+        "Emeka Pinto",
+        "Saoirse Eriksen",
+        "Wei Ivanov"
+      ],
+      "conflicts": [
+        {
+          "id": "C044",
+          "type": "codename_collision",
+          "projects": [
+            "kobe",
+            "cluster_gcn"
+          ],
+          "shared_object": "Project Obsidian",
+          "canonical": {
+            "codename": "Project Obsidian"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Obsidian."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "kwikbucks",
+      "title": "Cheap-Weak and Expensive-Strong signals](https://openreview.net/forum?id=p0JSSa1AuV)\". The",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This repository contains reference code for the ICLR-23 paper \"[KwikBucks: Correlation Clustering with\nCheap-Weak and Expensive-Strong signals](https://openreview.net/forum?id=p0JSSa1AuV)\". The code implements the main KwikBucks algorithm of the paper (it is implemented as `qwick_cluster_using_ordering` in `model_utils.py`) as well as the baselines stated in the experimental section of the paper.\n\n## Datasets\nThe datasets can be downlowded from here: https://storage.googleapis.com/gresearch/kwikbucks/kwikbucks.zip\n\n## Installation\n* Download the code.\n* Download the the dataset and put it under `kwikbucks/data/`.\n* Run `run.sh` to install `requirements.txt` and run the code.\n\n## Citation\nIf you use the code, please cite our paper.\n> Silwal, S., Ahmadian, S., Nystrom, A., McCallum, A., Ramachandran, D., Kazemi, M.,\n> *\"KwikBucks: Correlation Clustering with Cheap-Weak and Expensive-Strong Signals\"*,\n> The Eleventh International Conference on Learning Representations (ICLR), 2023.\n```\n@inproceedings{silwal2023kwikbucks,\ntitle={KwikBucks: Correlation Clustering with Cheap-Weak and Expensive-Strong Signals},\nauthor={Silwal, Sandeep and Ahmadian, Sara and Nystrom, Andrew and McCallum, Andrew and Ramachandran, Deepak and Kazemi, Seyed Mehran},\nbooktitle={The Eleventh International Conference on Learning Representations (ICLR)},\nyear={2023}\n}\n```\n\n## Contact us\nFor questions or comments about the implementation, please contact mehrankazemi@google.com or silwal@mit.edu.\n\n## Disclaimer\nThis is not an official Google product.",
+      "contributors": [
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Rosa Mensah",
+        "Carmen Reyes",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C025",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dual_dice",
+            "kwikbucks"
+          ],
+          "shared_object": "Oyin Iversen at >=60% allocation",
+          "canonical": {
+            "person": "Oyin Iversen",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Oyin Iversen is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "kws_streaming",
+      "title": "Streaming Aware neural network models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Streaming Aware neural network models\n======================================================================================\n\nSummary about this work is presented at paper [Streaming keyword spotting on mobile devices](https://arxiv.org/abs/2005.06720).\nPlease cite the paper in your publications if you find the source code useful for your research and feel free to contribute and add your SOTA model.\n\nStreaming aware neural network models are important for real time response,\nhigh accuracy and good user experience. In this work we designed keras streaming\nwrappers and streaming aware layers. By streaming we mean streaming inference,\nwhere model receives portion of the input sequence (for example 20ms of audio),\nprocess it incrementally and return an output(for example classification result).\nNon streaming means that model has to receive the whole sequence\n(for example 1 sec of audio) and then return an output.\n\nDuring training we use one neural network architecture (called non streaming) and during inference we will use another neural network architecture called streaming.\nThis kind of neural network can be considered dynamic: model topology is different in training and inference modes.\nOne solution of such problem can be [subclassing](https://www.tensorflow.org/guide/keras/functional#mix-and-match_api_styles), which supports dynamic architectures.\nAnother option is keras functional API, it has [advantages](https://www.tensorflow.org/guide/keras/functional#it_does_not_support_dynamic_architectures), but it [does not support dynamic architectures](https://www.tensorflow.org",
+      "codename": "Project Riverbed",
+      "contributors": [
+        "Rafael Duran",
+        "Linnea Yamada",
+        "Vera Egede",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C080",
+          "type": "codename_collision",
+          "projects": [
+            "dselect_k_moe",
+            "kws_streaming"
+          ],
+          "shared_object": "Project Riverbed",
+          "canonical": {
+            "codename": "Project Riverbed"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Riverbed."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "label_bias",
+      "title": "Identifying and Correcting Label Bias in Machine Learning",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Identifying and Correcting Label Bias in Machine Learning\n=================\nThis is not an officially supported Google product.\n\nImplementation for method introduced in:\nJiang, H., & Nachum, O. (2019). Identifying and correcting label bias in machine learning. arXiv preprint arXiv:1901.04966.\nhttps://arxiv.org/abs/1901.04966\n\nDatasets often contain biases which unfairly disadvantage certain groups, and classifiers trained on such datasets can inherit these biases. In this paper, we provide a mathematical formulation of how this bias can arise. We do so by assuming the existence of underlying, unknown, and unbiased labels which are overwritten by an agent who intends to provide accurate labels but may have biases against certain groups. Despite the fact that we only observe the biased labels, we are able to show that the bias may nevertheless be corrected by re-weighting the data points without changing the labels. We show, with theoretical guarantees, that training on the re-weighted dataset corresponds to training on the unobserved but unbiased labels, thus leading to an unbiased machine learning classifier. Our procedure is fast and robust and can be used with virtually any learning algorithm. We evaluate on a number of standard machine learning fairness datasets and a variety of fairness notions, finding that our method outperforms standard approaches in achieving fair classification.",
+      "contributors": [
+        "Rosa Mensah",
+        "Emeka Pinto",
+        "Bilal Novak",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C040",
+          "type": "gpu_double_booking",
+          "projects": [
+            "c_learning",
+            "label_bias"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lamp",
+      "title": "Linear Additive Markov Processes",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Linear Additive Markov Processes\n\nThis directory contains implementation of and experimental code for the paper\n\n[Ravi Kumar, Maithra Raghu, Tam\u00e1s Sarl\u00f3s, and Andrew Tomkins. \"Linear Additive Markov\nProcesses\", WWW 2017.](https://arxiv.org/abs/1704.01255)\n\n## Reproducing the Experiments\n\nOn MacOS:\n\n0) Install Homebrew from http://brew.sh\n\n1) Install Google command line flags with\n\nbrew install gflags\n\nLinking sometimes fails with\n\"Linking /usr/local/Cellar/gflags/2.0...\nError: Could not symlink bin/gflags_completions.sh\n/usr/local/bin is not writable.\",\nwhich is OK.\n\nOn Ubuntu Linux:\n\n1) Install Google command line flags with\n\nsudo apt-get install libgflags2 libgflags-dev\n\nCommon steps on either Mac or Linux:\n\n2) Download the input datasets\n\nmkdir -p data\n\nSee Section 6.1 on page 6 of the paper for the description and URLs of the various datasets.\nE.g. download and unzip\nhttps://snap.stanford.edu/data/loc-brightkite_totalCheckins.txt.gz\ninto `data/`.\n\nCreate another directory, one level above, for the plots in the paper\n\nmkdir -p ../data\n\n3) Compile it\n\nmake all\n\n4) Run it\n\nTo avoid errors on Mac like:\n\"dyld: Library not loaded: /usr/local/opt/gflags/lib/libgflags.2.dylib\nReferenced from: /Users/stamas/Documents/lamp/src/./lamp\nReason: image not found\"\n\nexport DYLD_LIBRARY_PATH=/usr/local/Cellar/gflags/2.2.2/lib:$DYLD_LIBRARY_PATH\n\nTo reproduce figues in the paper run the following series of commands.\nSince it takes a while for each to complete you may wish to decrease \\*max\\*iter and\n\\*max\\*order params first, plot the results, and then repeat it with the settings\nbelow.",
+      "contributors": [
+        "Fumiko Rossi",
+        "Nikhil Abebe",
+        "Yusuf Keita",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C070",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "logit_adjustment",
+            "lamp"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "language_model_uncertainty",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners\n\nProject website: https://robot-help.github.io/\n\n**Abstract** Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, a framework for measuring and aligning the uncertainty of LLM-based planners, such that they know when they don't know, and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (for example, from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out-of-the-box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.\n\n## Instructions\n\nWe provide three self-contained Colab:\n\n* KnowNo-Demo - Quick demo showing generating the prediction set in the mobile manipulation setting (using pre-run calibration results)\n* KnowNo-MobileManipulation - Full cali",
+      "contributors": [
+        "Vera Egede",
+        "Rosa Mensah",
+        "Wanjiru Horvat",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C021",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "language_model_uncertainty",
+            "model_pruning"
+          ],
+          "shared_object": "Vera Egede at >=60% allocation",
+          "canonical": {
+            "person": "Vera Egede",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Vera Egede is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "large_scale_voting",
+      "title": "Efficient Large Scale Inlier Voting for Geometric Vision Problems",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Efficient Large Scale Inlier Voting for Geometric Vision Problems\n\nDror Aiger, Simon Lynen, Jan Hosang, Bernhard Zeisl. ICCV 2021.\n[pdf](https://openaccess.thecvf.com/content/ICCV2021/papers/Aiger_Efficient_Large_Scale_Inlier_Voting_for_Geometric_Vision_Problems_ICCV_2021_paper.pdf)\n\n```\n@string{iccv=\"International Conference on Computer Vision (ICCV)\"}\n@inproceedings{general_voting,\ntitle = {Efficient Large Scale Generalized Voting for Geometric Vision Problems},\nauthor = {Dror Aiger and Simon Lynen and Jan Hosang and Bernhard Zeisl},\nyear = {2021}\nbooktitle = iccv,\n}\n```\n\n## Instructions\n\nDependencies:\n\n*   bazel\n*   opencv3 installed (example on debian: libopencv-dev). Might need to update\npath in the file WORKSPACE.\n\nExtract data by running `tar xf data.tar.xz`.\n\nBuild all binaries by running `bazel build -c opt --cxxopt='-std=c++17' //:all`.\nOr use the provided shell scripts, which include the steps to build the\nbinaries.\n\n## Files\n\n*   general_voter.h: The core algorithm for general voting (independent of any\nspecific application).\n*   general_voter_6dof.cc,h: An example where the general voter is used to solve\na 6dof posing problem (calibrated camera).\n*   general_voter_6dof_main.cc: The main for the 6dof example.\n*   general_voter_2d_lines_main.cc: An example of the use of the general voter\nin 2d line fitting (Figure 2 in the paper).\n*   Other utilities.\n*   create_table_2.sh: A bash script to reproduce table2 from the paper.\n*   create_table_3.sh: A bash script to reproduce table3 from the paper.\n*   random_data_6dof.sh: A bash script to run 6dof on random data.\n",
+      "contributors": [
+        "Yara Jokic",
+        "Farah Haddad",
+        "Umar Costa",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C082",
+          "type": "gpu_double_booking",
+          "projects": [
+            "gaternet",
+            "large_scale_voting"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lasagna_mt",
+      "title": "Lasagna: Stacking Diverse Architectures to Improve Machine Translation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Lasagna: Stacking Diverse Architectures to Improve Machine Translation\n\nAuthors: Andrea Schioppa, Nal Kalchbrenner.\n\nTo Appear in TMLR-2023.\n\nNote, we currently just release the code for Auto-Regressive models for the\nfp32 training use case.\n\n## Installation\nThe model code is meant to work with [fairseq](https://github.com/facebookresearch/fairseq).\nThere are two options to run the models:\n\n1. Install fairseq. Then copy `lasagna.py` to\n`fairseq/fairseq/models/lasagna.py`.\n2. Create your own training script. Make sure to import `lasagna.py` at the\ntop of it. You might need to adjust the import paths in the file. An\nexample of this approach is illustrated by the fairseq example in\n[torchscale](https://github.com/microsoft/torchscale).\n\nIn any case, when installing fairseq you will need to compile the CUDA kernels\nfor Light and Dynamic convolutions, e.g.\n\n```bash\nfairseq/fairseq/modules/{lightconv_layer, dynamicconv_layer}\nCUDA_HOME=/usr/local/cuda python3 cuda_function_gen.py\nCUDA_HOME=/usr/local/cuda python3 setup.py install\n```\n\n## Using the model\nThe implementation of `lasagna.py` allows to decide which kind of layer\nto use at a given position in the Encoder or the Decoder. For example,\nfor the Lasagna model described in the paper:\n\n```bash\npython3 -m torch.distributed.launch --nproc_per_node 1 $(which fairseq-train) \\\n${DATA_DIR} \\\n--share-all-embeddings --max-update 120000   \\\n--adam-betas '(0.9, 0.98)' --keep-last-epochs 2 \\\n--lr 0.0005 --lr-scheduler inverse_sqrt --warmup-updates 4000 \\\n--warmup-init-lr 1e-07 \\\n--clip-norm 0 --optimizer adam  \\\n--stop-min-lr 1e-09 --",
+      "contributors": [
+        "Linnea Yamada",
+        "Kaia Wolde",
+        "Milan Zapata"
+      ],
+      "conflicts": [
+        {
+          "id": "C031",
+          "type": "gpu_double_booking",
+          "projects": [
+            "lasagna_mt",
+            "lila"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "latent_programmer",
+      "title": "Latent Programmer",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Latent Programmer\n\n## Overview\n\nCode for Latent Programmer as described in the ICML 2021 paper:\n\\\"[**Latent Programmer: Discrete Latent Codes for Program Synthesis**](https://arxiv.org/abs/2012.00377)\"\n\nIf you use this codebase, please cite:\n\n```\n@article{latentprogrammer,\ntitle={Latent Programmer: Discrete Latent Codes for Program Synthesis},\nauthor={Joey Hong and\nDavid Dohan and\nRishabh Singh and\nCharles Sutton and\nManzil Zaheer},\njournal={ICML},\nyear={2021}\n}\n```\n\n## Training\n\nTo train a baseline Transformer model, run the following command:\n\n```\npython train.py\n--logtostderr --dataset_filepattern=[Regex for TFRecord Dataset]\n--save_dir=[Path to directory to store results] --num_train_steps=1000000\n--num_eval_steps=100\n```\n\nTo train a Latent Programmer model, run the following:\n\n```\npython train_latent.py\n--logtostderr --dataset_filepattern=[Regex for TFRecord Dataset]\n--save_dir=[Path to directory to store results] --num_train_steps=1000000\n--num_eval_steps=100 --latent_vocab_size=30 --num_pretrain_steps=10000\n```\n\nOptional flags can be found in `train.py`.",
+      "contributors": [
+        "Efe Lindqvist",
+        "Ondrej Bergstrom",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C063",
+          "type": "budget_overallocation",
+          "projects": [
+            "latent_programmer",
+            "demogen"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-81",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-81",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-81 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "latent_shift_adaptation",
+      "title": "Latent shift adaptation",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "### Latent shift adaptation\n\nIbrahim Alabdulmohsin, Nicole Chiou, Alexander D\u2019Amour, Arthur Gretton, Sanmi Koyejo, Matt J. Kusner, Stephen R. Pfohl, Olawale Salaudeen, Jessica Schrouff, and Katherine Tsai. \"Adapting to Latent Subgroup Shifts via Concepts and Proxies.\" In International Conference on Artificial Intelligence and Statistics, pp. 9637-9661. PMLR, 2023. Available at https://proceedings.mlr.press/v206/alabdulmohsin23a.\n\nThe provided code replicates the synthetic data experiments described in the paper.\n\nThe library may be installed as a python package with all its dependencies by executing `pip install .` from the top-level directory.\n\nTo replicate the synthetic data experiment, first generate synthetic data and write to a file by executing `colab/synthetic_data_to_file.ipynb`.\n\nThen, execute the following in any order:\n\n* Evaluate the discrete eigendecomposition approach to reproduce Table 1: `colab/discrete_eigen.ipynb`\n* Train and evaluate models to replicate Table 2: `colab/lsa_synthetic_10seeds.ipynb`\n* Sweep over the strength of the distribution shift and create figure for the WAE method: `colab/synthetic_sweep_experiment.ipynb`\n* Sweep over the strength of the distribution shift and create figure for the continuous spectral method: `colab/continuous_spectrail_method.ipynb`",
+      "contributors": [
+        "Kaia Wolde",
+        "Freya Ruiz",
+        "Giannis Sato",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C081",
+          "type": "budget_overallocation",
+          "projects": [
+            "charformer",
+            "latent_shift_adaptation"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-57",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-57",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-57 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "layout-blt",
+      "title": "Bidirectional Layout Transformer (BLT)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Bidirectional Layout Transformer (BLT)\n\nThis repository contains the code and models for the following paper:\n\n**[BLT: Bidirectional Layout Transformer for Controllable Layout Generation](https://arxiv.org/abs/2112.05112)** In ECCV'22.\n\nIf you find this code useful in your research then please cite\n\n```\n@article{kong2021blt,\ntitle={BLT: Bidirectional Layout Transformer for Controllable Layout Generation},\nauthor={Kong, Xiang and Jiang, Lu and Chang, Huiwen and Zhang, Han and Hao, Yuan and Gong, Haifeng and Essa, Irfan},\njournal={arXiv preprint arXiv:2112.05112},\nyear={2021}\n}\n```\n\n*Please note that this is not an officially supported Google product.*\n\n# Introduction\n\nAutomatic generation of such layouts is important as we seek scale-able and diverse visual designs. We introduce BLT, a bidirectional layout transformer. BLT differs from autoregressive decoding as it first generates a draft layout that satisfies the user inputs and then refines the layout iteratively.\n\n## Set up environment\n\n```\nconda env create -f environment.yml\nconda activate layout\n```\nor\n```\npip install -r requirement.txt\n```\n\n## Datasets\n\nPlease download the public datasets at the following webpages and prepare to the JSON format.\n\n1. [COCO](https://cocodataset.org/)\n2. [RICO](https://interactionmining.org/rico)\n3. [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet)\n4. [Magazine](https://xtqiao.com/projects/content_aware_layout/)\n\n## Running\n\n```\n# Training a model\npython  main.py --config configs/${config} --workdir ${model_dir}\n# Testing a model\npython  main.py --config configs/${config} --workdir ",
+      "contributors": [
+        "Emeka Pinto",
+        "Oyin Iversen",
+        "Efe Lindqvist",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C013",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dac",
+            "layout-blt"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    }
+  ]
+}

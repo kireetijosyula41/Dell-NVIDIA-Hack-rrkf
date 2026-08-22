@@ -1,0 +1,601 @@
+{
+  "batch": 4,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "bigger_better_faster",
+      "title": "Bigger, Better, Faster: Human Level Atari with Human Level Efficiency",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Bigger, Better, Faster: Human Level Atari with Human Level Efficiency\n\nThis repository implements the Bigger, Better, Faster (BBF) agent in JAX, building\non Dopamine. SPR [(Schwarzer et al, 2021)](spr) and SR-SPR [(D'Oro et al, 2023)](sr-spr) may also be run as hyperparameter configurations.\n\n## Setup\nTo install the repository, simply run `pip install -r requirements.txt`.\nNote that depending on your operating system and cuda version extra steps may be necessary to\nsuccessfully install JAX: please see [the JAX install instructions](https://pypi.org/project/jax/) for guidance.\n\n## Training\nTo run a BBF agent locally, run\n\n```\npython -m bbf.train \\\n--agent=BBF \\\n--gin_files=bbf/configs/BBF.gin \\\n--base_dir=/tmp/online_rl/bbf \\\n--run_number=1\n```\n\n## References\n* [Max Schwarzer, Ankesh Anand, Rishab Goel, Devon Hjelm, Aaron Courville and Philip Bachman. Data-efficient reinforcement learning with self-predictive representations. In The Ninth International Conference on Learning Representations, 2021.][spr]\n\n* [Pierluca D'Oro, Max Schwarzer, Evgenii Nikishin, Pierre-Luc Bacon, Marc Bellemare, Aaron Courville.  Sample-efficient reinforcement learning by breaking the replay ratio barrier. In The Eleventh International Conference on Learning Representations, 2023][sr-spr]\n\n[spr]: https://openreview.net/forum?id=uCQfPZwRaUu\n[sr-spr]: https://openreview.net/forum?id=OpC-9aBBVJe",
+      "codename": "Project Nimbus",
+      "contributors": [
+        "Wei Ivanov",
+        "Freya Ruiz",
+        "Yara Jokic",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C008",
+          "type": "codename_collision",
+          "projects": [
+            "code_as_policies",
+            "bigger_better_faster"
+          ],
+          "shared_object": "Project Nimbus",
+          "canonical": {
+            "codename": "Project Nimbus"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Nimbus."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bisimulation_aaai2020",
+      "title": "Scalable methods for computing state similarity in deterministic Markov Decision Processes",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Scalable methods for computing state similarity in deterministic Markov Decision Processes\n\nThis package includes the code used to run the experiments in the paper\n\"Scalable methods for computing state similarity in deterministic Markov Decision Processes\".\n\nhttp://arxiv.org/abs/1911.09291\n\nAll of the commands below are run from the parent `google_research` directory.\n\nIt is recommended to start a virtualenv before running these commands:\n\n```\nvirtualenv venv\nsource venv/bin/activate\n```\n\nThen install all necessary packages:\n\n```\nsudo apt install python-tk\npip install -r bisimulation_aaai2020/requirements.txt\n```\n\n## GridWorld\n\nThe code provided is a more general than what is necessary in the paper (it\nsupports arbitrary grid shapes and programatically constructed square grids).\nWe limit ourselves to describing what is necessary for reproducing the paper\nresults.\n\nWe used the grid file specified in `grid_world/configs/mirrored_rooms.grid`\nand the gin-config file `grid_world/configs/mirrored_rooms.gin`.\n\nTo run:\n\n```\npython -m bisimulation_aaai2020.grid_world.compute_metric \\\n--base_dir=/tmp/grid_world \\\n--grid_file=bisimulation_aaai2020/grid_world/configs/mirrored_rooms.grid \\\n--gin_files=bisimulation_aaai2020/grid_world/configs/mirrored_rooms.gin \\\n--nosample_distance_pairs\n```\n\n## Atari 2600\n\nThe code provided allows you to load a trained Dopamine Rainbow agent and train\nan on-policy bisimulation metric approximant on the state representations.\n\n### Download the trained checkpoints\nFirst we need to obtain the trained agent checkpoints. The Dopamine authors have\nprovided",
+      "contributors": [
+        "Efe Lindqvist",
+        "Tereza Aliyev",
+        "Carmen Reyes",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C112",
+          "type": "gpu_double_booking",
+          "projects": [
+            "bisimulation_aaai2020",
+            "memento"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bitempered_loss",
+      "title": "Robust Bi-Tempered Logistic Loss Based on Bregman Divergences.",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Robust Bi-Tempered Logistic Loss Based on Bregman Divergences.\n\nA generalized cross-entropy loss function with bounded loss value per sample and a heavy-tail softmax probability function.\n\nBi-tempered loss generalizes (with a bias correction term):\n\n- Zhang & Sabuncu. \"Generalized cross entropy loss for training deep neural networks with noisy labels.\" In NeurIPS 2018.\n\nwhich is recovered when 0.0 <= t1 <= 1.0 and t2 = 1.0. It also includes:\n\n- Ding & Vishwanathan. \"t-Logistic regression.\" In NeurIPS 2010.\n\nfor t1 = 1.0 and t2 >= 1.0.\n\nBi-tempered loss is equal to the cross entropy loss when t1 = t2 = 1.0. For 0.0  1.0, bi-tempered loss provides a more robust alternative to the cross entropy loss for handling label noise and outliers.\n\nSource: https://papers.nips.cc/paper/9638-robust-bi-tempered-logistic-loss-based-on-bregman-divergences.pdf\n\nGoogle AI blog post: https://ai.googleblog.com/2019/08/bi-tempered-logistic-loss-for-training.html\n\nReference:\n\n@inproceedings{amid2019robust,\ntitle={Robust bi-tempered logistic loss based on bregman divergences},\nauthor={Amid, Ehsan and Warmuth, Manfred KK and Anil, Rohan and Koren, Tomer},\nbooktitle={Advances in Neural Information Processing Systems},\npages={15013--15022},\nyear={2019}\n}",
+      "contributors": [
+        "Yara Jokic",
+        "Gustavo Moreau",
+        "Fumiko Rossi",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C123",
+          "type": "dependency_date_drift",
+          "projects": [
+            "explaining_risk_increase",
+            "bitempered_loss",
+            "batch_science",
+            "cube_unfoldings"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bnn_hmc",
+      "title": "What Are Bayesian Neural Network Posteriors Really Like?",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# What Are Bayesian Neural Network Posteriors Really Like?\n\nThis repository contains the code to reproduce the experiments in the paper\n\n[_What Are Bayesian Neural Network Posteriors Really Like?_](https://arxiv.org/abs/2104.14421)\n\nby Pavel Izmailov, Sharad Vikram, Matthew D. Hoffman and Andrew Gordon Wilson.\n\n## Introduction\n\nIn the paper, we use full-batch Hamiltonian Monte Carlo (HMC) to investigate\nfoundational questions in Bayesian deep learning.\nWe show that\n- BNNs can achieve significant performance gains over standard training and\ndeep ensembles;\n- a single long HMC chain can provide a comparable representation of the\nposterior to multiple shorter chains;\n- in contrast to recent studies, we find posterior tempering is not needed for\nnear-optimal performance, with little evidence for a ``cold posterior''\neffect, which we show is largely an artifact of data augmentation;\n- BMA performance is robust to the choice of prior scale, and relatively similar\nfor diagonal Gaussian, mixture of Gaussian, and logistic priors;\n- Bayesian neural networks show surprisingly poor generalization under domain\nshift;\n- while cheaper alternatives such as deep ensembles and SGMCMC can provide good\ngeneralization, they provide distinct predictive\ndistributions from HMC. Notably, deep ensemble predictive distributions are\nsimilarly close to HMC as standard SGLD, and closer than standard variational\ninference.\n\nIn this repository we provide JAX code for reproducing results in the paper.\n\nPlease cite our work if you find it useful in your research:\n```bibtex\n@article{izmailov2021bayesian,\ntit",
+      "contributors": [
+        "Maren Zhou",
+        "Wanjiru Horvat",
+        "Milan Zapata",
+        "Efe Lindqvist",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C048",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "ngrammer",
+            "bnn_hmc"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bonus_based_exploration",
+      "title": "Bonus based exploration",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-11"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "## Bonus based exploration\n\nThis is the code for the paper [On Bonus Based Exploration Methods In The Arcade Learning Environment](https://openreview.net/forum?id=BJewlyStDr) by Adrien Ali Taiga, Williams Fedus, Marlos C. Machado, Aaron Courville and Marc G. Bellemare (2020).\n\nThis repository currently includes the following algorithms used in the paper:\n* NoisyNetworks ([Fortunato et al. 2018](https://arxiv.org/abs/1706.10295))\n* Pseudo-counts with PixelCNN ([Ostrovski et al. 2017](https://arxiv.org/abs/1703.01310))\n* Random Network Distillation ([Burda et al. 2019](https://arxiv.org/abs/1810.12894))\n\n### Running the code\n\npython -m bonus_based_exploration.train \\\n--gin_files=configs/dqn_rnd.gin --base_dir=/tmp/dopamine/\n\n### Citation\n\nYou may cite us at\n\n`\n@inproceedings{Taiga2020On,\ntitle={On Bonus Based Exploration Methods In The Arcade Learning Environment},\nauthor={Adrien Ali Taiga and William Fedus and Marlos C. Machado and Aaron Courville and Marc G. Bellemare},\nbooktitle={International Conference on Learning Representations},\nyear={2020},\nurl={https://openreview.net/forum?id=BJewlyStDr}\n}\n`",
+      "codename": "Project Quillon",
+      "contributors": [
+        "Yusuf Keita",
+        "Tereza Aliyev",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C071",
+          "type": "codename_collision",
+          "projects": [
+            "bonus_based_exploration",
+            "gfsa"
+          ],
+          "shared_object": "Project Quillon",
+          "canonical": {
+            "codename": "Project Quillon"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Quillon."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "brush_splat",
+      "title": "Overview",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Brush\n\n## Overview\n\nBrush is a 3D reconstruction engine using [Gaussian splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/), made to be highly portable, flexible and fast. It can both render and train on macOS/windows/linux, in a browser, and on Android. It uses the [Burn](https://github.com/tracel-ai/burn) framework, and custom WGSL kernels.\n\nThe default app (`crates/brush-desktop`) uses [egui](https://github.com/emilk/egui) and can be used to visualize a pre-trained splat from a `.ply` file, or train on different datasets. The datasets have to be provided in one `.zip` file. The format of this archive can be:\n- the format used in the synthetic NeRF example data, containing a transform_train.json and images, please see a reference `zip` linked below.\n- COLMAP data, by zipping the folder containing the `images` & `sparse` folder.\n\nWhile training, training data and statistics can be visualized with [rerun](https://rerun.io/). To install rerun on your machine, follow the [instructions](https://rerun.io/docs/getting-started/installing-viewer).\n\nThis project is a proof of concept - it currently only does basic training with the 'standard' Gaussian splatting algorithm, and doesn't implement the many extensions that have come out since.\n\n## Getting started\n\nInstall rust 1.78+ and run `cargo run` or `cargo run --release`. You can run tests with `cargo test --all`. To run with `rerun` enabled you can use `cargo run --features=rerun`.\n\n### Desktop\n\nSimply `cargo run`. Windows uses Vulkan by default, but this can be changed in `crates/brus-viewer/wgpu_config.rs`. ",
+      "contributors": [
+        "Bilal Novak",
+        "Hyun Traore",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C119",
+          "type": "duplicate_effort",
+          "projects": [
+            "drjax",
+            "brush_splat"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "business_metric_aware_forecasting",
+      "title": "Business Metric-Aware Forecasting: A Case Study in Inventory",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Business Metric-Aware Forecasting: A Case Study in Inventory\n\nAuthors: Helen Zhou, Sercan Arik, Jingtao Wang\n\nPaper link: TBD\n\n### Abstract\nTime-series forecasts play a critical role in business planning, and have\nproliferated throughout several industries. However, forecasts are often\noptimized for objectives that could be misaligned with downstream business\nobjectives. Focusing on the inventory management setting, we demonstrate that\noptimization of conventional forecasting metrics does not necessarily lead to\nbetter downstream business performance. Although downstream business metrics of\ninterest may not in general be differentiable, we derive an efficient procedure\nfor computing and optimizing common inventory performance metrics in an\nend-to-end differentiable fashion. We further explore various trade-offs in\ncost which our method is able to adapt to, and show that in several cases,\nend-to-end optimization outperforms optimization of standard business-agnostic\nforecasting metrics.\n\n## Code Organization\nThis repository contains the source code for end-to-end optimization of both\nconventional forecasting and novel inventory-metric aware objectives.\n\nThe code is organized into three modules:\n\n* `data_formatting`: dataset-specific pre-processing code, functions which\ncreate dataset objects for each dataset, and embedding code for the multivariate\nfavorita dataset.\n* `lib`: core functionality, including the LSTM Encoder-Decoder architecture,\nthe Naive Seasonal Scaler, differentiable computation of both forecasting and\ninventory metrics, and dataset classes which facilitat",
+      "codename": "Project Vantage",
+      "contributors": [
+        "Amara Okafor",
+        "Nikhil Abebe",
+        "Jorge Vidal",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C107",
+          "type": "codename_collision",
+          "projects": [
+            "business_metric_aware_forecasting",
+            "mucped23"
+          ],
+          "shared_object": "Project Vantage",
+          "canonical": {
+            "codename": "Project Vantage"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Vantage."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "bustle",
+      "title": "BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided Exploration",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided Exploration\n\nThis repository contains the source code associated with the paper published at\nICLR'21 ([OpenReview](https://openreview.net/forum?id=yHeg4PbFHh)):\n\n> Augustus Odena, Kensen Shi, David Bieber, Rishabh Singh, Charles Sutton,\n> Hanjun Dai. **BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided\n> Exploration.** International Conference on Learning Representations (ICLR),\n> 2021.\n\nIn this research project, we use a learned model to guide a bottom-up program\nsynthesis search to efficiently synthesize spreadsheet programs.\n\nTo cite this work, you can use the following BibTeX entry:\n\n```\n@inproceedings{odena2021bustle,\ntitle={{BUSTLE}: Bottom-Up Program Synthesis Through Learning-Guided Exploration},\nauthor={Augustus Odena and Kensen Shi and David Bieber and Rishabh Singh and Charles Sutton and Hanjun Dai},\nbooktitle={International Conference on Learning Representations},\nyear={2021},\nurl={https://openreview.net/forum?id=yHeg4PbFHh}\n}\n```\n\n## Setup\n\nMost of this project is written in Java. Use the `compile.sh` script to download\nnecessary `.jar` files and compile the code. The `clean.sh` script will remove\nthe downloaded `.jar` files and delete compiled `.class` files that were\nproduced by `compile.sh`.\n\nUse the `download_sygus_benchmarks.sh` script to download SyGuS benchmark tasks.\n\nWe use Python for model training. If you want to train new models, you'll need\nPython and TensorFlow.\n\n## Running the Synthesizer\n\nThe trained model is provided in the `models` directory. Use the\n`run_synthesis.sh` scri",
+      "contributors": [
+        "Giannis Sato",
+        "Oyin Iversen",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C054",
+          "type": "budget_overallocation",
+          "projects": [
+            "bustle",
+            "muller"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-77",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-77",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-77 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "c_learning",
+      "title": "C-Learning: Learning to Achieve Goals via Recursive Classification",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# C-Learning: Learning to Achieve Goals via Recursive Classification\n\npaper, website\n\n**tldr**: We reframe goal-conditioned RL as the problem of predicting and controlling the future state distribution of an autonomous agent. We solve this problem indirectly by training a classifier to predict whether an observation comes from the future. Importantly, an off-policy variant of our algorithm allows us to predict the future state distribution of a new policy, without collecting new experience. While conceptually similar to Q-learning, our approach provides a theoretical justification for goal-relabeling methods employed in prior work and suggests how the goal-sampling ratio can be optimally chosen. Empirically our method outperforms these prior methods.\n\nIf you use this code, please consider adding the corresponding citation:\n\n```\n@article{eysenbach2020clearning,\ntitle={C-Learning: Learning to Achieve Goals via Recursive Classification},\nauthor={Eysenbach, Benjamin and Salakhutdinov, Ruslan and Levine, Sergey},\njournal={arXiv preprint arXiv:2011.08909},\nyear={2020}\n}\n\n```\n\n## Installation\nThese instructions were tested in Google Cloud Compute with Ubuntu version 18.04.\n\n### 1. Install Mujoco\nCopy your mujoco key to `~/.mujoco/mjkey.txt`, then complete the steps below:\n\n```\nsudo apt install unzip gcc libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf\nsudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so\nwget https://www.roboti.us/download/mujoco200_linux.zip -P /tmp\nunzip /tmp/mujoco200_linux.zip -d ~/.mujoco\nmv ~/.mujoco/mujoco200_linux ~/.mujoco/muj",
+      "contributors": [
+        "Halima Toure",
+        "Gustavo Moreau",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C040",
+          "type": "gpu_double_booking",
+          "projects": [
+            "c_learning",
+            "label_bias"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cache_replacement",
+      "title": "Introduction",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Introduction\n\n*Authors*: Evan Zheran Liu, Milad Hashemi, Kevin Swersky, Parthasarathy\nRanganathan, Junwhan Ahn\n\nSource code accompanying our ICML 2020 paper: [An Imitation Learning Approach for\nCache Replacement](https://arxiv.org/abs/2006.16239).\n\n# Setup\n\nInstall the necessary Python3 packages, e.g., in a `virtualenv`:\n\n```\n# Current working directory is cache_replacement\n# We use Python3.7. The below virtualenv command may need to be replaced with:\n# virtualenv -p python3.7 venv, depending on the system Python3 version.\nvirtualenv -p python3 venv\nsource venv/bin/activate\npip install -r requirements.txt\n# Install baselines separately, since it depends on installing Tensorflow first.\npip install -e git+https://github.com/openai/baselines.git@ea25b9e8b234e6ee1bca43083f8f3cf974143998#egg=baselines\n```\n\n# Collecting Traces\nTraces should be placed in the `cache_replacement/cache/traces`,\nwhich currently contains a toy sample trace\n`cache_replacement/cache/traces/sample_trace.csv`.\nUnfortunately, we are unable to release the exact traces used in our experiments, but provide two ways to obtain similar traces.\n\n## Using Traces from the 2nd Cache Replacement Championship (Recommended)\nThe recommended and easier method to collect traces is to use the traces\nreleased in the [2nd Cache Replacement\nChampionship (CRC2)](https://crc2.ece.tamu.edu/?page_id=41).\n\nFirst, clone the ChampSim GitHub repo and apply our patch for collecting LLC\naccess traces.\n\n```\n# Current working directory is cache_replacement\ngit clone https://github.com/ChampSim/ChampSim\ncd ChampSim\ngit checkout 8798bed81",
+      "codename": "Project Meltwater",
+      "contributors": [
+        "Milan Zapata",
+        "Quentin Farkas",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C053",
+          "type": "codename_collision",
+          "projects": [
+            "cache_replacement",
+            "jaxnerf"
+          ],
+          "shared_object": "Project Meltwater",
+          "canonical": {
+            "codename": "Project Meltwater"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Meltwater."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "caltrain",
+      "title": "Mitigating bias in calibration error estimation",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Mitigating bias in calibration error estimation\n\nCode for the paper: \"[Mitigating Bias in Calibration Error Estimation](https://arxiv.org/abs/2012.08668)\"\n\n## Setup\n\n### Install dependencies\n\n```bash\nvirtualenv -p python3 env3\nsource env3/bin/activate\npip install -r caltrain/requirements.txt\n```\n\n### Download data\n\n```bash\nsource env3/bin/activate\nDATA_DIR='./caltrain/data' # This is the default value if omitted below\npython -m caltrain.download_data --data_dir=${DATA_DIR}\n```\n\n## Running\n\n### Setup\n\nPlots that are generated by each script are saved in a command-line configurable variable `plot_dir=./caltrain/plots` by default. To speed up computation, some values have been precomputed and cached. Each plotting script is configured to read these data from a command-line configurable variable `data_dir='./caltrain/data` by default.  Generating Figure 3 requires downloading logit data from `https://github.com/markus93/NN_calibration/tree/master/logits` into the `data_dir` as well.\n\nThe following environment variables should be defined:\n```bash\nexport MPLBACKEND=Agg\n```\n\n### Generating figures\n```bash\nsource env3/bin/activate\nDATA_DIR='./caltrain/data' # This is the default value if omitted below\nPLOT_DIR='./caltrain/plots' # This is the default value if omitted below\n\n# Figure 1 left panel\npython -m caltrain.plot_intro_reliability_diagram --plot_dir=${PLOT_DIR}\n# Figure 1 right panel\npython -m caltrain.plot_intro_ece_distribution --plot_dir=${PLOT_DIR}\n# Figure 3 \"Curves controlling true calibration error.\"\npython -m caltrain.plot_tce_assumptions --plot_dir=${PLOT_DIR}\n# Fi",
+      "contributors": [
+        "Katya Silva",
+        "Yusuf Keita",
+        "Kaia Wolde"
+      ],
+      "conflicts": [
+        {
+          "id": "C033",
+          "type": "dependency_date_drift",
+          "projects": [
+            "meta_learning_without_memorization",
+            "fractals_language",
+            "frequency_analysis",
+            "caltrain"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "camp_zipnerf",
+      "title": "CamP Zip-NeRF: A Code Release for CamP and Zip-NeRF",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CamP Zip-NeRF: A Code Release for CamP and Zip-NeRF\n\n*This is not an officially supported Google product.*\n\nThis repository contains [JAX](https://github.com/jax-ml/jax) code for two papers: [Zip-NeRF](https://jonbarron.info/zipnerf/) and [CamP](https://camp-nerf.github.io/).  This is research code, and should be treated accordingly.\n\n## Setup\n\n```\n# Clone the repo.\ngit clone https://github.com/google-research/google-research.git\ncd google_research/camp_zipnerf\n\n# Make a conda environment.\nconda create --name camp_zipnerf python=3.11\nconda activate camp_zipnerf\n\n# Prepare pip.\nconda install pip\npip install --upgrade pip\n\n# Install requirements.\npip install -r requirements.txt\n\n# Manually install rmbrualla's `pycolmap` (don't use pip's! It's different).\ngit clone https://github.com/rmbrualla/pycolmap.git ./internal/pycolmap\n\n# Confirm that all the unit tests pass.\n./scripts/run_all_unit_tests.sh\n```\n\nYou'll probably also need to [update your JAX installation to support GPUs or TPUs](https://jax.readthedocs.io/en/latest/installation.html).\n\n## Running\n\nThis code is designed to run on the [NeRF Blender](https://www.matthewtancik.com/nerf) and [Mip-NeRF 360 Datasets](https://jonbarron.info/mipnerf360/). If you want to onboard a new dataset, check out the instructions for the [MultiNeRF code release](https://github.com/google-research/multinerf), they should roughly apply here.\n\n### Running Zip-NeRF\n\nTo reproduce all of the Zip-NeRF results on the two datasets, just run`scripts/zipnerf/all.sh` --- be prepared to wait a long time! Unless you are at barron's workstation, you'll ",
+      "contributors": [
+        "Milan Zapata",
+        "Yusuf Keita",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C023",
+          "type": "duplicate_effort",
+          "projects": [
+            "camp_zipnerf",
+            "ckd"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cann",
+      "title": "CANN: Constrained Approximate Nearest Neighbors",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CANN: Constrained Approximate Nearest Neighbors\n\nCANN ([ICCV'23 paper, ArXiv version](https://arxiv.org/abs/2306.09012)) is a\nnovel method for local feature-based visual localization.\n\n**Citation**\n\n```\n@inproceedings{aiger2023iccv,\ntitle={{Yes, we CANN: Constrained Approximate Nearest Neighbors for local feature-based visual localization}},\nauthor={Dror Aiger and Andre Araujo and Simon Lynen},\nbooktitle={ICCV},\nyear={2023},\n}\n```\n\n## Instructions to run the code\n\nThe code runs on any two sets of features d-points extracted from images and stored as a binary Eigen matrix per image where each row contains one d-dimensional vector. The number of features is arbitrary. Both index and queries data have the same format.\nIn this example we use FIRE features [1] but any d-dimensional vectors can be used and we assume that features were already extracted.\n\nDownload sample data from Drive: https://drive.google.com/file/d/1PHP1mEvPIJb9ZC5DfWU3pH0_ipck12Bl/view?usp=drive_link\nExtract the tar in the root folder (cann). It creates the data folder '''testdata'''.\nThe data contains a small set for sanity check from and a large one from Baidu-Mall (one of the datasets we tested in the paper).\n\nWe provide the script `./run.sh` to run index/query search end-to-end for the data in the folder testdata.\n\n```bash\n./run.sh\n```\n\nOur framework is an efficient indexing and retrieval scheme, independent of the local feature type. It can use ant d-points as feature vectors.\nWe provide data using FIRE [1] features as an example.\nWe provide a small sanity test from Mapillary (https://help.mapillary.co",
+      "contributors": [
+        "Quentin Farkas",
+        "Linnea Yamada",
+        "Chiara Olsen",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C060",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cann",
+            "behavioral_dispositions",
+            "dissecting_factual_predictions",
+            "mesh_diffusion"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "capsule_em",
+      "title": "Open source release of [EMCAPSNet](https://openreview.net/pdf?id=HJWLfGWRb)",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Open source release of [EMCAPSNet](https://openreview.net/pdf?id=HJWLfGWRb)\n\nThis directory contains a preliminary release of the EMCAPSNet model and is under construction.\n\nTraining a model on smallNORB requires:\n- GPU (8)\n- TensorFlow\n- Numpy\n\nTo evaluate the pre-trained smallNORB checkpoint a GPU is required.\nDownload the checkpoint from: https://storage.googleapis.com/capsule_toronto/norb_em_checkpoints.tar.gz\nExtract into: $HOME\nDownload the smallNORB tfrecords from: https://storage.googleapis.com/capsule_toronto/smallNORB_data.tar.gz\nExtract into: $HOME/smallNORB/\nThe smallNORB tfrecords can also be generated from norb/norb_convert\n\nTo test on smallNORB, with a test error of 1.8:\nFrom the deepest google_research directory, run:\n```\npython -m capsule_em.experiment  --train=0 --eval_once=1 --eval_size=24300 --ckpnt=$HOME/model.ckpt-1 --final_beta=0.01 --norb_data_dir=$HOME/smallNORB/ --patching=False\n```\nTo get 1.3 (1.4 in the paper), enable patching:\n```\npython -m capsule_em.experiment  --train=0 --eval_once=1 --eval_size=24300 --ckpnt=$HOME/model.ckpt-1 --final_beta=0.01 --norb_data_dir=$HOME/smallNORB/ --patching=True\n```\n\nA docker is now added to the repository. Please install docker with NVIDIA support. Then modify the run_local_gpu.sh with your smallNORB directory (-v option). Running ./run_local_gpu.sh will start training the model.",
+      "contributors": [
+        "Gustavo Moreau",
+        "Giannis Sato",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C139",
+          "type": "gpu_double_booking",
+          "projects": [
+            "Domain_Agnostic_Contrastive_Representations_for_Learning_from_Label_Proportions",
+            "capsule_em"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cate",
+      "title": "Composable Augmentation Encoding for Video Representation Learning (CATE)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-06"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Composable Augmentation Encoding for Video Representation Learning (CATE)\n\nThis directory contains a colab to run inference with a pretrained CATE model. The model is used\nto extract self-supervised video representations, and we also provide demo code\nfor nearest neighbor classification on the UCF-101 dataset.\n\nFor demo purposes we use the CATE model pretrained on the Kinetics-400 dataset.\nThe checkpoints (exported with tfhub) for Something-Something v1 and v2 are also\navailable in the same Google Cloud Storage directories.\n\nFor more information, please refer to our [ICCV 2021 paper](https://arxiv.org/abs/2104.00616)\nand [project page](https://sites.google.com/corp/brown.edu/cate-iccv2021/).\n\nIf you use the code and the released checkpoints, please consider citing:\n```\n@InProceedings{Sun_CATE_CVPR2021,\nauthor = {Chen Sun and Arsha Nagrani and Yonglong Tian and Cordelia Schmid},\ntitle = {Composable Augmentation Encoding for Video Representation Learning},\nbooktitle = {ICCV},\nyear = {2021},\n}\n```",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Jorge Vidal",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C104",
+          "type": "duplicate_effort",
+          "projects": [
+            "collaborative_tr_collection",
+            "cate"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "causal_evaluation",
+      "title": "Code to reproduce experiments in \"Understanding challenges to the interpretation of disagg",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code to reproduce experiments in \"Understanding challenges to the interpretation of disaggregated evaluations of algorithmic fairness\"\n\nThis repository contains code to reproduce the experiments presented in Pfohl et\nal., \"Understanding challenges to the interpretation of disaggregated\nevaluations of algorithmic fairness\" (2025).\n\nTo run the code, begin by creating a python virtual environment and installing\nthe package with its dependencies. We assume that all commands are run from the\nbase-level directory containing this README file.\n\n```\nvirtualenv causal_evaluation_env\nsource causal_evaluation_env/bin/activate\npip install .\n```\n\n## Experiments\nThe steps to reproduce the experiments are as follows:\n\n1.  Run `colab/simulation_fit_models.ipynb` using Jupyter or Colab. This\nnotebook generates the simulated data, fits models to the data, and writes\nthe predictions to files. The directory where outputs are written may be\nmodified. Similarly, the size of the datasets simulated datasets generated\nmay also be changed. By default, outputs are written to a directory\n`data/simulation`.\n\n2.  Call `sh experiments/simulation/run_evaluate.sh` to generate metrics and\nbootstrap confidence intervals. The number of bootstrap iterations may be\nmodified. If the data directory or the size of the simulated datasets were\nchanged in step 1, it is necessary to change the environment variables\ndefined at the top of this script to match.\n\n3.  Run `colab/simulation_selection.ipynb` using Jupyter or Colab. This\nself-contained notebook generates the simulated data for the data generating\nprocesses w",
+      "contributors": [
+        "Freya Ruiz",
+        "Carmen Reyes",
+        "Amara Okafor",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C091",
+          "type": "gpu_double_booking",
+          "projects": [
+            "ged_tts",
+            "causal_evaluation"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    }
+  ]
+}

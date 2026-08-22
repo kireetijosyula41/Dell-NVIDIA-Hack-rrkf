@@ -1,0 +1,602 @@
+{
+  "batch": 20,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "multi_annotator",
+      "title": "[\"Dealing with disagreements: Looking beyond the majority vote in subjective annotations\".",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This repository includes scripts for the following paper:\n\n[\"Dealing with disagreements: Looking beyond the majority vote in subjective annotations\". TACL 2022](http://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00449/1986597/tacl_a_00449.pdf)\n\nThe method includes a multi-annotator approach for implementing hate speech detection in textual data.\nThis approach relies on every annotators' labels rather than final ground-truth labels. The training data is required to include annotators' label for each item and the predictions will similarly include several labels for each input text.\n\n## Prerequisites\n`requirements.txt` includes the list of Python package requirements.\n\n## Data format\nThe training data needs to have the following format:\nIf there are `N` number of annotators and `X` items, the dataset should have `X` rows, and at least `N` + 1 columns. `N` columns (named 0 to `N` - 1) represent the annotators, and one column (named ``text``) represents the textual item.\nEach annotator column represents annotations from a single annotator. The values in that column can be 0, 1, or numpy.nan (current code only works for binary classification but can be modified to work for multi-class tasks).\n\nFollowing is an example of how the data should look for a dataset with 3 items each annotated by 2 annotators from a pool of 4 annotators.\n\n| 0 | 1 | 2 | 3 | text                  |\n|---|---|---|---|-----------------------|\n| 0 | 1 |   |   |  |\n|   | 1 |   | 0 |  |\n| 1 |   | 1 |   |  |\n\n## Data preprocessing\nThe `preprocess.py` includes scripts for reformating two specific datasets ",
+      "contributors": [
+        "Emeka Pinto",
+        "Csilla Nassar",
+        "Maren Zhou",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C108",
+          "type": "budget_overallocation",
+          "projects": [
+            "differentiable_data_selection",
+            "multi_annotator"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-13",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-13",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-13 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "multi_game_dt",
+      "title": "Multi-Game Decision Transformers",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Multi-Game Decision Transformers\n\nWork in progress:\n\n\"Multi-Game Decision Transformers\"\nKuang-Huei Lee*, Ofir Nachum*, Mengjiao Yang, Lisa Lee, Daniel Freeman, Winnie Xu, Sergio Guadarrama, Ian Fischer, Eric Jang, Henryk Michalewski, Igor Mordatch*\n\n[Paper](https://arxiv.org/abs/2205.15241)\n\n## Abstract\n\nA longstanding goal of the field of AI is a strategy for compiling diverse experience into a highly capable, generalist agent.\nIn the subfields of vision and language, this was largely achieved by scaling up transformer-based models and training them on large, diverse datasets.\nMotivated by this progress, we investigate whether the same strategy can be used to produce generalist reinforcement learning agents.\nSpecifically, we show that a single transformer-based model -- with a single set of weights -- trained purely offline can play a suite of up to 46 Atari games simultaneously at close-to-human performance.\nWhen trained and evaluated appropriately, we find that the same trends observed in language and vision hold, including scaling of performance with model size and rapid adaptation to new games via fine-tuning.\nWe compare several approaches in this multi-game setting, such as online and offline RL methods and behavioral cloning, and find that our Multi-Game Decision Transformer models offer the best scalability and performance.\n\n## Additional information\n\nVideos and additional information can be seen at https://sites.google.com/view/multi-game-transformers\n\n## Colab\n\nThe [colab](Multi_game_decision_transformers_public_colab.ipynb) loads a checkpoint\nand evaluates on a",
+      "contributors": [
+        "Vera Egede",
+        "Wanjiru Horvat",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C049",
+          "type": "gpu_double_booking",
+          "projects": [
+            "multi_game_dt",
+            "isolating_factors"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "multilingual_abbreviation_survey",
+      "title": "Supporting Materials for \"Abbreviation across the world's languages and scripts\"",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Supporting Materials for \"Abbreviation across the world's languages and scripts\"\n\nThis document provides a brief summary of materials released here in support of\nthe paper \"Abbreviation across the world's languages and scripts\", which\nwill appear in the CAWL workshop at LREC-COLING, 2024.\n\n[`survey.tsv`](survey.tsv) contains consultant-level responses to the survey\ndescribed in the above paper, in TSV format.  The first row of `survey.tsv`\ncontains detailed headers for the 19 columns, which we briefly summarize in the\nfollowing table:\n\nColumn | Description | Explanation/example\n:----: | :---------- | :------------------\n1 | Code | Locale code, e.g., 'ru', 'ja' or 'pt-br'.\n2 | Locale | Full locale, e.g., 'Russian', 'Japanese' or 'Portuguese (Brazilian)'.\n3 | Proficiency | Level of consultant proficiency in language/locale.\n4 | Locale has first-character abbreviations? | \"NATO\" <  \"North American Treaty Organization\".\n5 | Examples of first-character abbreviations | Consultant provided examples if column 4 is Yes.\n6 | Locale has stump compounds? | \"FiDi\" < \"Financial District\"\n7 | Examples of stump compounds | Consultant provided examples if column 6 is Yes.\n8 | Locale has truncations? | \"Col.\" < \"Colonel\"\n9 | Examples of truncations | Consultant provided examples if column 8 is Yes.\n10 | Locale has augmented truncations? | Australian English \"footie\" < \"football\"\n11 | Examples of augmented truncations | Consultant provided examples if column 10 is Yes.\n12 | Locale has word-internal deletions? | \"Blvd.\" < \"Boulevard\"\n13 | Examples of word-internal deletions | Consultant prov",
+      "contributors": [
+        "Nikhil Abebe",
+        "Paloma Castillo",
+        "Efe Lindqvist",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C118",
+          "type": "gpu_double_booking",
+          "projects": [
+            "multilingual_abbreviation_survey",
+            "investigating_m4"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "multimodalchat",
+      "title": "MultimodalChat: suggest rich contents(photos/GIFs/Stickers/...) during conversations",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# MultimodalChat: suggest rich contents(photos/GIFs/Stickers/...) during conversations\n`Photochat/` contains the dataset we release with our [PhotoChat paper]( https://arxiv.org/abs/2108.01453).\n\nData is formatted in json as following:\n\n```json\n{\n\"dialogue\":[\n{\n\"share_photo\":\"Boolean value denoting whether a photo is shared in this turn.\",\n\"user_id\":\"0 or 1. User id of this turn.\",\n\"message\":\"Text of one conversation turn. Empty when share_photo is true.\"\n}\n],\n\"dialogue_id\":\"Integer. Unique dialogue id.\",\n\"photo_description\":\"String. Photo description. It includes info about object labels in the photo.\",\n\"photo_url\":\"Photo url.\"\n\"photo_id\": \"Image ID of the photo in the Open Image Dataset.\"\n}\n```\nYou can download image data from CVDF's site following the instructions on the [Open Image Dataset website](https://storage.googleapis.com/openimages/web/download.html#download_manually).\nPlease contact paper authors if you have any questions about the data.",
+      "contributors": [
+        "Yara Jokic",
+        "Hyun Traore",
+        "Efe Lindqvist",
+        "Carmen Reyes",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C007",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dp_instructions",
+            "multimodalchat"
+          ],
+          "shared_object": "Amara Okafor at >=60% allocation",
+          "canonical": {
+            "person": "Amara Okafor",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Amara Okafor is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "munchausen_rl",
+      "title": "Munchausen Reinforcement Learning",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Munchausen Reinforcement Learning\n===\nNino Vieillard, Olivier Pietquin, Matthieu Geist\n---\n\nThis repository contains code related to the paper [*Munchausen Reinforcement\nLearning*](https://arxiv.org/abs/2007.14430) (M-RL).\n\nM-RL is based on the [Dopamine](https://github.com/google/dopamine) library\n([Castro et al., *Dopamine: A Research Framework for Deep Reinforcement Learning*, 2018](http://arxiv.org/abs/1812.06110)).\n\n## General description\nThe paper introduces two new agents: Munchausen DQN (M-DQN) and munchausen IQN\n(M-IQN). These agents are implemented on top of Dopamine agents in respectively\nagents/m_dqn.py and agents/m_iqn.py.\n\nIn addition, we provide an implementation of Advantage Learning, used in our\nablation study, in agents/al_dqn.py.\n\n## Usage\nTo train an agent, use the `train.py` script. For example:\n```\n# From google_research/:\n\npython -m munchausen_rl.train --env atari --game Pong --agent_type m_dqn --workdir /tmp/munchausen --gin_file munchausen_rl/configs/atari.gin\n```\nwill train M-DQN on the Pong environment.\n\nFor detailed usage, run\n```\npython -m munchausen_rl.train --help\n```\n\n## Dependencies\nM-RL is compatible with python >= 3.7.\nYou can install all necessary requirements by running:\n```\npip install -r munchausen_rl/requirements.txt`.\n```\n\n__NB:__ this implementation of M-RL is implemented in tensoflow v1, and does not\nsupport eager mode.",
+      "contributors": [
+        "Rosa Mensah",
+        "Farah Haddad",
+        "Yara Jokic",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C090",
+          "type": "budget_overallocation",
+          "projects": [
+            "genomics_ood",
+            "munchausen_rl"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-44",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-44",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $120k from Q3 discretionary compute budget line B-44 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "musiq",
+      "title": "MUSIQ: Multi-scale Image Quality Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MUSIQ: Multi-scale Image Quality Transformer\n\nThis directory contains checkpoints and model inference code for the ICCV 2021\npaper:\n[\"MUSIQ: Multi-scale Image Quality Transformer\"](https://arxiv.org/abs/2108.05997)\nby Junjie Ke, Qifei Wang, Yilin Wang, Peyman Milanfar, Feng Yang.\n\n*Disclaimer: This is not an official Google product.*\n\n## Using the models\n\nThe MUSIQ models are available on [TensorFlow Hub](https://tfhub.dev/s?q=musiq)\nwith documentation and a sample notebook for you to try.\n\nBut if you want to go deeper in the code, follow the instructions below.\n\n## Pre-requisite\n\nInstall dependencies:\n\n```\npip3 install -r requirements.txt\n```\n\nThe model checkpoints can be downloaded from:\n[gcloud directory link](https://console.cloud.google.com/storage/browser/gresearch/musiq)\n\nThe `./musiq` directory above contains the checkpoints for the default **MUSIQ**\nmodel trained with 3-scale input (native resolution, 224, 384). The\n`./musiq/full_size_single_scale` subdirectory contains the checkpoints\nfor the **MUSIQ-single** model trained with only the native resolution input.\n\n-   **ava_ckpt.npz**: Trained on AVA dataset.\n-   **koniq_ckpt.npz**: Trained on KonIQ dataset.\n-   **paq2piq_ckpt.npz**: Trained on PaQ2PiQ dataset.\n-   **spaq_ckpt.npz**: Trained on SPAQ dataset.\n-   **imagenet_pretrain.npz**: Pretrained checkpoint on ImageNet.\n\n## Run Inference\n\nDefault **MUSIQ** model with 3-scale input (native resolution, 224, 384):\n\n```shell\npython3 -m musiq.run_predict_image \\\n--ckpt_path=/tmp/spaq_ckpt.npz \\\n--image_path=/tmp/image.jpeg\n```\n\nFor running the **MUSIQ-single** model",
+      "contributors": [
+        "Nikhil Abebe",
+        "Katya Silva",
+        "Gustavo Moreau",
+        "Wei Ivanov"
+      ],
+      "conflicts": [
+        {
+          "id": "C068",
+          "type": "duplicate_effort",
+          "projects": [
+            "musiq",
+            "microscope_image_quality"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mutual_information_representation_learning",
+      "title": "On Mutual Information Maximization and Representation Learning",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# On Mutual Information Maximization and Representation Learning\n\nThis is a companion Colab for the paper:\n\"On Mutual Information Maximization for Representation Learning\" \nMichael Tschannen*, Josip Djolonga*, Paul Rubenstein, Sylvain Gelly, and Mario Lucic \n\nClick [here](https://colab.research.google.com/github/google-research/google-research/blob/master/mutual_information_representation_learning/mirl.ipynb) to launch the Colab.\n\nBy default, the precomputed results will be loaded, but individual experiments can be run with the Colab by checking the `RUN_EXPERIMENTS` checkbox. The batch size used in the paper was 128 and we average over 20 runs. With one run, the entire set of experiments will complete in ~2 hours. For multiple runs we suggest copying the code and running a stand-alone version. If you wish to run the experiments within the Colab, make sure you execute all cells in the \"Setup\" section.\n\nComments? Complaints? Questions? Feel free to contact Michael Tschannen (tschannen@google.com), Josip Djolonga (josipd@google.com), and Mario Lucic (lucic@google.com).",
+      "contributors": [
+        "Nikhil Abebe",
+        "Halima Toure",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C019",
+          "type": "gpu_double_booking",
+          "projects": [
+            "lm_memorization",
+            "mutual_information_representation_learning"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "muzero",
+      "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model\nPaper: https://arxiv.org/abs/1911.08265\n\nThis directory contains an implementation of the Pseudocode description of\nthe MuZero algorithm (https://arxiv.org/src/1911.08265v1/anc/pseudocode.py).\n\nThe implementation uses\n[SEED RL](https://github.com/google-research/seed_rl) for scalable RL training.\n\n## Pull Requests\nAt this time, we do not accept pull requests. We are happy to link to forks\nthat add interesting functionality.\n\n## Prerequisites\nWe require tensorflow and other supporting libraries. Tensorflow should be\ninstalled separately following the docs.\n\nSEED RL should be installed following\ninstructions [here](https://github.com/google-research/seed_rl#prerequisites).\n\nTo install the other dependencies use\n\n```\npip install -r requirements.txt\n```\n\n## Training\nFollow instructions from the SEED repo to run\n[Local Machine Training](https://github.com/google-research/seed_rl#local-machine-training-on-a-single-level)\nor [Distributed Training](https://github.com/google-research/seed_rl#distributed-training-using-ai-platform).\n\nThis directory adds a `tictactoe` environment and an `atari` environment. These\ncan be used as the `$ENVIRONMENTS` when running the seed_rl scripts.\n\nThis directory also adds a `muzero` agent which can be used as the `$AGENTS`\nwhen running the seed_rl scripts.",
+      "contributors": [
+        "Rafael Duran",
+        "Paloma Castillo",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C084",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "muzero",
+            "jax_dft"
+          ],
+          "shared_object": "Paloma Castillo at >=60% allocation",
+          "canonical": {
+            "person": "Paloma Castillo",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Paloma Castillo is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "negative_cache",
+      "title": "Efficient Training of Retrieval Models using Negative Cache",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Efficient Training of Retrieval Models using Negative Cache\n\nThis is code for the NeurIPS 2021 paper [Efficient Training of Retriveal Models\nusing Negative Cache](https://openreview.net/pdf?id=824xC-SgWgU). It implements\na streaming negative cache for training dual encoders. The approach is memory\nefficient and simple to use.\n\nAt each iteration, we sample a negative from the cache and use it to approximate\nthe cross-entropy loss function. The cache is designed to allow a large amount of\nnegatives in a memory efficient way.\n\nFor full details on the approach see the paper or watch the video (available soon).\n\n## Usage\n\nSet up the specs that describe the document feature dictionary. These describe\nthe feature keys and shapes for the items we need to cache.\n\n```\ndata_keys = ('document_feature_1', 'document_feature_2')\nembedding_key = 'embedding'\nspecs = {\n'document_feature_1': tf.io.FixedLenFeature([document_feature_1_size], tf.int32),\n'document_feature_2': tf.io.FixedLenFeature([document_feature_2_size], tf.int32),\n'embedding': tf.io.FixedLenFeature([embedding_size], tf.float32)\n}\n```\n\nSet up the cache loss.\n\n```\ncache_manager = negative_cache.CacheManager(specs, cache_size=131072)\ncache_loss = losses.CacheClassificationLoss(\nembedding_key=embedding_key,\ndata_keys=data_keys,\nscore_transform=lambda score: 20.0 * score,  # Optional, applied to scores before loss.\ntop_k=64  # Optional, restricts returned elements to the top_k highest scores.\n)\nhandler = handlers.CacheLossHandler(\ncache_manager, cache_loss, embedding_key=embedding_key, data_keys=data_keys)\n```\n\nCalculate the cac",
+      "contributors": [
+        "Freya Ruiz",
+        "Yusuf Keita",
+        "Chiara Olsen",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C073",
+          "type": "gpu_double_booking",
+          "projects": [
+            "negative_cache",
+            "attribute_semantics"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "neural_additive_models",
+      "title": "Neural Additive Models: Interpretable Machine Learning with Neural Nets",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Neural Additive Models: Interpretable Machine Learning with Neural Nets\n\nThis repository contains open-source code\nfor the paper\n[Neural Additive Models: Interpretable Machine Learning with Neural Nets](https://arxiv.org/abs/2004.13912).\n\nCurrently,\nwe release the `tf.keras.Model` for NAM which can be simply plugged into any neural network training procedure. We also provide helpers for\nbuilding a computation graph using NAM for classification/regression problems with `tf.compat.v1`.\nThe `nam_train.py` file provides the example of a training script on a single\ndataset split.\n\nUse `./run.sh` test script to ensure that the setup is correct.\n\n## Multi-task NAMs\nThe code for multi task NAMs can be found at [https://github.com/lemeln/nam](https://github.com/lemeln/nam).\n\n## Dependencies\n\nThe code was tested under Ubuntu 16 and uses these packages:\n\n- tensorflow>=1.15\n- numpy>=1.15.2\n- sklearn>=0.23\n- pandas>=0.24\n- absl-py\n\n## Datasets\n\nThe datasets used in the paper (except MIMIC-II) can be found in the  public GCP bucket `gs://nam_datasets/data`, which can be downloaded using [gsutil][gsutil]. To install gsutil, follow the instructions [here][gsutil_install]. The preprocessed version of MIMIC-II dataset, used in the NAM paper, can be\nshared only if you provide us with the signed data use agreement to the MIMIC-III Clinical\nDatabase on the PhysioNet website.\n\nCiting\n------\nIf you use this code in your research, please cite the following paper:\n\n> Agarwal, R., Melnick, L., Frosst, N., Zhang, X., Lengerich, B., Caruana,\n> R., & Hinton, G. E. (2021). Neural additive models: Int",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Jorge Vidal",
+        "Oyin Iversen"
+      ],
+      "conflicts": [
+        {
+          "id": "C001",
+          "type": "gpu_double_booking",
+          "projects": [
+            "neural_additive_models",
+            "menger_rl"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "neural_guided_symbolic_regression",
+      "title": "Neural-Guided Symbolic Regression with Asymptotic Constraints",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Neural-Guided Symbolic Regression with Asymptotic Constraints\n\nThis directory contains reference code for paper\n\"Neural-Guided Symbolic Regression with Asymptotic Constraints\"\n\nhttps://arxiv.org/abs/1901.07714\n\n## Dataset\n\n`grammar/univariate_one_constant_grammar.txt` contains grammar production rules\nto generate univariate expressions.\n\nFolder `data` contains datasets of rational expressions used in the paper.\nEach CSV contains four columns:\n`expression_string`,\n`simplified_expression_string`,\n`leading_at_0`,\n`leading_at_inf`\n\nWe define the complexity of an expression as\n\nM = |leading power at 0| + |leading power at inf|\n\n### `train.csv`\n\n28837 expressions with M <= 4. This dataset is used for training the neural\nnetwork model and generation of empirical distribution for baseline models.\n`train.tfrecords` contains data in `train.csv`.\n\n### `eval.csv`\n\n4095 expressions with M <= 4. This dataset is used for validation in neural\nnetwork training.\n`eval.tfrecords` contains data in `eval.csv`.\n\n### `holdout_m_leq_4.csv`\n\n2050 expressions with M <= 4.\n\n### `holdout_m_5.csv`\n\n1000 expressions with M = 5.\n\n### `holdout_m_6.csv`\n\n1200 expressions with M = 6.\n\n`holdout_m_leq_4.csv`, `holdout_m_5.csv` and `holdout_m_6.csv` are used to\nevaluate different symbolic regression methods.\n\n## Metrics\n\nThe code to evaluate success, L1-distance, syntactic novelty and\nsemantic novelty:\n\n`utils/expression_generalization_metrics.py`\n\n## Expression Generating Neural Network and Baseline Models\n\nThe reference code to train the neural network is in folder `models`.\n\nTrain neural network (NN):\n\n``",
+      "contributors": [
+        "Tereza Aliyev",
+        "Leilani Nakamura",
+        "Yusuf Keita"
+      ],
+      "conflicts": [
+        {
+          "id": "C127",
+          "type": "gpu_double_booking",
+          "projects": [
+            "implicit_pdf",
+            "neural_guided_symbolic_regression"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "neutra",
+      "title": "NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport\n\nThis codebase works best if you have a GPU, otherwise you may want to reduce the\nbatch sizes.\n\nTODO(siege): Add a link to the paper.\n\n## Unconditional Target Distributions\n\n### Funnel\n\n```bash\npython -m neutra.neutra_runner --alsologtostderr --neutra_log_dir=\"/tmp/neutra/funnel_iaf\" --mode=\"all\" --hparams=\"target_spec.name: funnel, target_spec.num_dims: 100, iaf_bijector.num_stages: 3, iaf_bijector.hidden_layers: [100, 100], neutra_experiment.bijector: iaf, tune.min_step_size: 1.0e-4, neutra_experiment.base_learning_rate: 1.0e-2, train_bijector.num_steps: 5000, dense_ar.log_scale_factor: 1.0, target_spec.eig_source: gamma, tune.max_step_size: 5.0, tune.max_leapfrog_steps: 100, eval_mode.total_batch: 16384, neutra_experiment.learning_rate_schedule: [[1000, 1.0e-1], [4000, 1.0e-2]], tune.obj_type: rhat, tune.percentile: 0\"\n```\n\n```bash\npython -m neutra.neutra_runner --alsologtostderr --neutra_log_dir=\"/tmp/neutra/funnel_tril\" --mode=\"all\" --hparams=\"target_spec.name: funnel, target_spec.num_dims: 100, iaf_bijector.num_stages: 3, iaf_bijector.hidden_layers: [100, 100], neutra_experiment.bijector: affine, tune.min_step_size: 1.0e-4, neutra_experiment.base_learning_rate: 1.0e-2, train_bijector.num_steps: 5000, dense_ar.log_scale_factor: 1.0, target_spec.eig_source: gamma, tune.max_step_size: 5.0, tune.max_leapfrog_steps: 100, eval_mode.total_batch: 16384, neutra_experiment.learning_rate_schedule: [[1000, 1.0e-1], [4000, 1.0e-2]], tune.obj_type: rhat, tune.percentile: 0, affine_bijector.use_tril: true",
+      "contributors": [
+        "Umar Costa",
+        "Vera Egede",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C132",
+          "type": "dependency_date_drift",
+          "projects": [
+            "ledge",
+            "neutra",
+            "gen_patch_neural_rendering",
+            "dreamfields"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "newspalm_mbr_qe",
+      "title": "Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outp",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outperforms Traditional Web-Crawled Data\nThis repository contains the NewsPaLM dataset, which accompanies the paper [Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outperforms Traditional Web-Crawled Data](https://arxiv.org/abs/2408.06537).\n\n## Overview\n\nThe data can be downloaded from [this link](https://storage.googleapis.com/gresearch/newspalm_mbr_qe/newspalm.zip).\n\nThe zip file contains the NewsPaLM datasets. The names of the files indicate the decoding strategy (`mbr_decoded`, `qe_reranked`, or `greedy_decoded`), the language pair (`en_de` or `de_en`), and whether the dataset is `sentence_level` or `blob_level` (multi-sentence).\n\nEach file is a tsv with two columns. The first column is the source, and the second column is the translation.\n\n## Citation\nIf you use the data from this work, please cite the following paper:\n\n```\n@misc{finkelstein2024introducingnewspalmmbrqe,\ntitle={Introducing the NewsPaLM MBR and QE Dataset: LLM-Generated High-Quality Parallel Data Outperforms Traditional Web-Crawled Data},\nauthor={Mara Finkelstein and David Vilar and Markus Freitag},\nyear={2024},\neprint={2408.06537},\narchivePrefix={arXiv},\nprimaryClass={cs.CL},\nurl={https://arxiv.org/abs/2408.06537},\n}\n```",
+      "codename": "Project Kestrel",
+      "contributors": [
+        "Linnea Yamada",
+        "Ondrej Bergstrom",
+        "Kaia Wolde",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C035",
+          "type": "codename_collision",
+          "projects": [
+            "newspalm_mbr_qe",
+            "compositional_classification"
+          ],
+          "shared_object": "Project Kestrel",
+          "canonical": {
+            "codename": "Project Kestrel"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Kestrel."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ngrammer",
+      "title": "N-Grammer: Augmenting Transformers with latent n-grams",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "### N-Grammer: Augmenting Transformers with latent n-grams\nTransformer models have recently emerged as one of the foundational models in natural language processing, and as a byproduct, there is significant recent interest and investment in scaling these models. However, the training and inference costs of these large Transformer language models are prohibitive, thus necessitating more research in identifying more efficient variants. In this work, we propose a simple yet effective modification to the Transformer architecture inspired by the literature in statistical language modeling, by augmenting the model with n-grams that are constructed from a discrete latent representation of the text sequence. We evaluate our model, the N-Grammer on language modeling on the C4 data-set as well as text classification on the SuperGLUE data-set, and find that it outperforms several strong baselines such as the Transformer and the Primer. We open-source our model for reproducibility purposes in Jax. arxiv: https://arxiv.org/abs/2207.06366?context=cs\n\nWe plan to release N-grammer apis for flax and haiku here.",
+      "contributors": [
+        "Gustavo Moreau",
+        "Rafael Duran",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C048",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "ngrammer",
+            "bnn_hmc"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "nngp_nas",
+      "title": "Towards NNGP-guided Neural Architecture Search",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Towards NNGP-guided Neural Architecture Search\n\n## Overview\nThis directory contains the publicly available [Colab Notebook](https://colab.research.google.com/github/google-research/google-research/blob/master/nngp_nas/NNGP_on_NASBench101.ipynb) for the paper:\n\n[**Towards NNGP-guided Neural Architecture Search**](\nhttps://arxiv.org/abs/2011.06006).\n\nDaniel S. Park*, Jaehoon Lee*, Daiyi Peng, Yuan Cao, Jascha Sohl-Dickstein (2020).\n\n\\* denotes equal contribution.\n\n## Available Features\n\nWith this notebook you will be able to:\n\n* Compute the NNGP validation accuracy of a NAS-Bench-101 model on (a subset of) CIFAR-10.\n* Compute metrics introduced in the paper to evaluate the quality of performance predictors including:\n* Kendall's Tau\n* Correlation Coefficient\n* Prediction Quality for Exceedance of Threshold Performance (PQETP)\n* Discovered Performance\n\n## Citation\n\nIf you find this code or paper useful, please cite:\n\n```\n@article{park2020towards,\ntitle={Towards NNGP-guided Neural Architecture Search},\nauthor={Park, Daniel S and Lee, Jaehoon and Peng, Daiyi and Cao, Yuan and Sohl-Dickstein, Jascha},\njournal={arXiv preprint arXiv:2011.06006},\nyear={2020},\n}\n```\n\n## Contact\n\nPlease send pull requests and issues to Daniel S. Park\n([@dspark618](https://github.com/dspark618)) or Jaehoon Lee\n([@jaehlee](https://github.com/jaehlee)).",
+      "contributors": [
+        "Jorge Vidal",
+        "Freya Ruiz",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C077",
+          "type": "duplicate_effort",
+          "projects": [
+            "felix",
+            "nngp_nas"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "non_decomp",
+      "title": "Training Over-parameterized Models with Non-decomposable Objectives",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Training Over-parameterized Models with Non-decomposable Objectives\n\nThis codebase accompanies the paper:\n\n[Training Over-parameterized Models with Non-decomposable Objectives](https://arxiv.org/pdf/2107.04641).\nHarikrishna Narasimhan, Aditya Krishna Menon.\nNeurIPS 2021.\n\nThis repository was branched from [code](https://github.com/google-research/google-research/tree/master/logit_adjustment) for the paper [Menon et al., Long-tail learning via logit adjustment, ICLR 2021](https://arxiv.org/abs/2007.07314).\n\nWe provide an implementation of the method proposed in our paper for maximizing\nworst-case recall (Algorithm 1) which uses the proposed logit-adjusted\ncost-sensitive loss. Three baselines are also included: (i) standard\nERM, (ii) balanced (logit-adjusted) loss of Menon et al. (2021), and (iii) re-weighted\ncost-sensitive loss.\n\n## Running the code\n\n#### 1. Setting up the Python environment\nThe code has been tested with Python 3.7.2. The necessary libraries can be\ninstalled using pip with the following command:\n\n```\n# from google-research/\npip install -r non_decomp/requirements.txt\n```\n\n#### 2. Testing the code\nThe code may be tested on a dummy dataset using:\n\n```\n# from google-research/\npython -m non_decomp.main --dataset=test --mode=baseline --train_batch_size=2 --test_batch_size=2\n```\n\nThis should complete quickly without any errors.\n\n#### 3. Downloading CIFAR-10/100 long-tail datasets\nDownload the CIFAR-10/100 long-tail datasets using the links provided below and\nput the `.tfrecord` files in the `logit_adjustment/data/` directory. The train\ndatasets were created with ",
+      "contributors": [
+        "Umar Costa",
+        "Paloma Castillo",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C105",
+          "type": "dependency_date_drift",
+          "projects": [
+            "OpenMSD",
+            "behavior_regularized_offline_rl",
+            "non_decomp",
+            "diffusion_distillation"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    }
+  ]
+}

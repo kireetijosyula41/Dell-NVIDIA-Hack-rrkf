@@ -1,0 +1,602 @@
+{
+  "batch": 6,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "code_as_policies",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code as Policies: Language Model Programs for Embodied Control\n\nProject website: https://code-as-policies.github.io/\n\n**Abstract** Large language models (LLMs) trained on code-completion have shown to be capable of synthesizing simple Python programs from docstrings. We find that these code-writing LLMs can be re-purposed to write robot policy code, given natural language commands. Specifically, policy code can express functions or feedback loops that process perception outputs (e.g., from object detectors) and parameterize control primitive APIs. When provided as input several example language commands (formatted as comments) followed by corresponding policy code (via few-shot prompting), LLMs can take in new commands and autonomously re-compose API calls to generate new policy code respectively. By chaining classic logic structures and referencing third-party libraries (e.g., NumPy, Shapely) to perform arithmetic, LLMs used in this way can write robot policies that (i) exhibit spatial-geometric reasoning, (ii) generalize to new instructions, and (iii) prescribe precise values (e.g., velocities) to ambiguous descriptions (\"faster\") depending on context (i.e., behavioral commonsense). This paper presents code as policies: a robot-centric formalization of language model generated programs (LMPs) that can represent reactive policies (e.g., impedance controllers), as well as waypoint-based policies (vision-based pick and place, trajectory-based control), demonstrated across multiple real robot platforms. Central to our approach is prompting hierarchical code-gen (recursively",
+      "codename": "Project Nimbus",
+      "contributors": [
+        "Freya Ruiz",
+        "Maren Zhou",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C008",
+          "type": "codename_collision",
+          "projects": [
+            "code_as_policies",
+            "bigger_better_faster"
+          ],
+          "shared_object": "Project Nimbus",
+          "canonical": {
+            "codename": "Project Nimbus"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Nimbus."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "codistillation",
+      "title": "Codistillation",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Codistillation\n\nThe directory contains the publicly available material for the codistillation paper cited below.\n\n## Common Crawl Paragraph IDs\n\nDuring the experimentation, we used a subset of the [Common Crawl Dataset](http://commoncrawl.org/the-data).\nThe list of actual paragraph IDs we used available in the following file:\n[common_crawl_paragraph_ids_for_codistillation-csv-delta.tar.bz2](https://storage.cloud.google.com/codistillation-common-crawl-paragraph-ids/common_crawl_paragraph_ids_for_codistillation-csv-delta.tar.bz2) (~392MB).\nThe file is a `bzip2` compressed `tar` containing `CSV` files.\nEach such a file has two column: `file name` and `encoded_paragraph_list`.\nThe column `encoded_paragraph_list` contains a list of paragraph IDs used from\nthe given file in [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding).\n\nThe following simple decoder can be used to get the final set of IDs per file:\n\n```\nvoid decode(std::vector& ids) {\nint64 last = 0;\nfor (int i = 0; i < ids.size(); i++) {\nint64 delta = ids[i];\nids[i] = delta + last;\nlast = ids[i];\n}\n}\n```\n\nThe checksum of the file (`sha256sum`) is as follows:\n\n```\n2694ae96685810d2a5c81f2dc9b3d2956d0543fa226ccbe9b26f0ffd81fa8292  common_crawl_paragraph_ids_for_codistillation-csv-delta.tar.bz2\n```\n\nIf you use any of the material here please cite the following paper:\n\n```\n@inproceedings{codistillation,\ntitle = {Large scale distributed neural network training through online distillation},\nauthor = {Rohan Anil and Gabriel Pereyra and Alexandre Passos and Robert Ormandi and George E. Dahl and Geoffrey E. Hinton},\nboo",
+      "contributors": [
+        "Tereza Aliyev",
+        "Kaia Wolde",
+        "Efe Lindqvist",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C052",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dictionary_learning",
+            "codistillation"
+          ],
+          "shared_object": "Saoirse Eriksen at >=60% allocation",
+          "canonical": {
+            "person": "Saoirse Eriksen",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Saoirse Eriksen is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cognate_inpaint_neighbors",
+      "title": "Inpainting and Neighborhood Techniques for Prediction of Cognate Reflexes",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Inpainting and Neighborhood Techniques for Prediction of Cognate Reflexes\n\nThis directory contains the software developed for the [SIGTYP 2022 Shared\nTask](https://github.com/sigtyp/ST2022) on prediction of cognate reflexes held\nat the 4th Workshop on Research in Computational Typology and Multilingual NLP\n([SIGTYP 2022](https://sigtyp.github.io/workshop.html)).\n\nThere are two model implementations in this directory:\n\n1.  Cognate Neighbors model (under the `neighbors` subdirectory). This model\ncorresponds to two systems submitted to the shared task:\n*   Model for each individual language. The configurations\n[mockingbird-n1-a](https://github.com/sigtyp/ST2022/tree/main/systems/mockingbird-n1-a),\n[mockingbird-n1-b](https://github.com/sigtyp/ST2022/tree/main/systems/mockingbird-n1-b),\nand\n[mockingbird-n1-c](https://github.com/sigtyp/ST2022/tree/main/systems/mockingbird-n1-c)\ncorrespond to the models trained for 25000, 30000 and 100000 steps,\nrespectively.\n*   Model for each language group:\n[mockingbird-n2](https://github.com/sigtyp/ST2022/tree/main/systems/mockingbird-n2). The\nstopping condition ad-hoc corresponding to varying numbers of training steps.\n1.  Cognate Inpainting model (under the `inpaint` subdirectory):\n[mockingbird-i1](https://github.com/sigtyp/ST2022/tree/main/systems/mockingbird-i1).\n\n## Dependencies\n\nCheckout this codebase (you'll need `svn` to checkout this individual\ndirectory):\n\n```shell\nsvn export https://github.com/google-research/google-research/trunk/cognate_inpaint_neighbors\n```\n\nClone the data from the official shared task repository:\n\n```shell\ngit",
+      "contributors": [
+        "Wei Ivanov",
+        "Nikhil Abebe",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C034",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "cognate_inpaint_neighbors",
+            "floatseg"
+          ],
+          "shared_object": "Katya Silva at >=60% allocation",
+          "canonical": {
+            "person": "Katya Silva",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Katya Silva is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cola",
+      "title": "Contrastive learning of general purpose audio representations",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Contrastive learning of general purpose audio representations\n\nThis Python library allows pre-training and fine-tuning contrastive embeddings of audio with the COLA method.\nIn particular, one can:\n\n* Pre-train COLA embeddings, which use a simple contrastive learning method\n* Train a linear classifier on pre-trained embeddings\n* Train a supervised neural network from scratch\n* Initialize a classifier with pre-trained COLA embeddings and fine-tune on a new dataset\n\n## Dependencies\n* [TensorFlow](https://www.tensorflow.org/)\n* [TensorFlow Datasets](https://www.tensorflow.org/datasets/overview)\n\n## Quickstart\nTraining has three modes:\n\n* `SSL`, to pre-train a model with self-supervised contrastive learning\n* `DS` to fine-tune a pre-trained model on a downstream task\n* `SUP` to train a simple supervised system\n\nPre-train a COLA embedding on a dataset from tensorflow_datasets (here, LibriSpeech):\n\n```bash\npython -m main --experiment_id=cola_pretrain --model_dir=/tmp/cola \\\n--training_mode=SSL --ssl_dataset=LBS --strategy=gpu\n```\nNote that so far labels are not necessary.\nAfter pre-training, the model is saved in `/tmp/cola/librispeech/cola_pretrain`.\n\nOne can train a linear classifier on these embeddings, on the Speech Commands dataset, in a supervised fashion:\n\n```bash\npython -m main --experiment_id=cola_downstream --ssl_checkpoint_id=cola_pretrain \\\n--model_dir=/tmp/cola --training_mode=DS --ssl_dataset=LBS --ds_dataset=SPCV2 \\\n--strategy=gpu --freeze_encoder=true\n```\n\nThe flags `--ssl_checkpoint_id` and `--ssl_dataset` indicate that the pre-trained model is stored in `/tmp/c",
+      "contributors": [
+        "Leilani Nakamura",
+        "Vera Egede",
+        "Wei Ivanov",
+        "Halima Toure"
+      ],
+      "conflicts": [
+        {
+          "id": "C015",
+          "type": "dependency_date_drift",
+          "projects": [
+            "gradient_based_tuning",
+            "imghum",
+            "cola",
+            "hierarchical_foresight"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "cold_posterior_bnn",
+      "title": "How Good is the Bayes Posterior in Deep Neural Networks Really?",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# How Good is the Bayes Posterior in Deep Neural Networks Really?\n\nThis repository contains code to run the SG-MCMC experiments from the paper\n[How Good is the Bayes Posterior in Deep Neural Networks Really?](https://arxiv.org/pdf/2002.02405.pdf) to reproduce its figures 1, 2, and 3.\n\n**Abstract:**\nDuring the past five years the Bayesian deep learning community has developed increasingly accurate and efficient approximate inference procedures that allow for Bayesian inference in deep neural networks.\nHowever, despite this algorithmic progress and the promise of improved uncertainty quantification and sample efficiency there are---as of early 2020---no publicized deployments of Bayesian neural networks in industrial practice.\nIn this work we cast doubt on the current understanding of Bayes posteriors in popular deep neural networks:\nwe demonstrate through careful MCMC sampling that the posterior predictive induced by the Bayes posterior yields systematically worse predictions compared to simpler methods including point estimates obtained from SGD.\nFurthermore, we demonstrate that predictive performance is improved significantly through the use of a \"cold posterior\" that overcounts evidence.\nSuch cold posteriors sharply deviate from the Bayesian paradigm but are commonly used as heuristic in Bayesian deep learning papers.\nWe put forward several hypotheses that could explain cold posteriors and evaluate the hypotheses through experiments.\nOur work questions the goal of accurate posterior approximations in Bayesian deep learning:\nIf the true Bayes posterior is poor, what is the",
+      "contributors": [
+        "Umar Costa",
+        "Paloma Castillo",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C130",
+          "type": "gpu_double_booking",
+          "projects": [
+            "agile_modeling",
+            "cold_posterior_bnn"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "collaborative_tr_collection",
+      "title": "Beyond Human-Only: Evaluating Human-Machine Collaboration for Collecting High-Quality Tran",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Beyond Human-Only: Evaluating Human-Machine Collaboration for Collecting High-Quality Translation Data\n\nThis repository contains the collaborative translation collection dataset, which accompanies the paper [Beyond Human-Only: Evaluating Human-Machine Collaboration for Collecting High-Quality Translation Data](https://www.arxiv.org/abs/2410.11056).\n\n## Overview\n\nThe data can be downloaded from this [link](https://storage.googleapis.com/gresearch/collaborative-tr-collection/tr-collection-release.zip).\n\nThe zip file contains the collaborative translation datasets, containing the data collected through 11 different approaches involving human translators and large language models (LLMs).\n\nEach data point contains two parts:\n\n* Translation text data in the form of (source, target) pairs\n* Additional MQM error annotations, which contain 10 fields from human annotation following MQM schema.\n\nThe source sentences come from the publicly available test set prepared by [Workshop on Machine Translation](https://www2.statmt.org/wmt23/) (WMT) and the translations were generated and processed from the following origins:\n\n* Publicly available machine translations from WMT;\n* Translated from scratch by professional translators;\n* Post-edited by professional translators;\n* Post-edited by Gemini-1.0 Ultra.\n\nThe error annotations are collected from human raters following the publicly-available [MQM schema and instructions](https://aclanthology.org/2021.tacl-1.87/). Each translation can be annotated with multiple errors and each error has error severity, category and error span annotated.\n\n##",
+      "contributors": [
+        "Gustavo Moreau",
+        "Efe Lindqvist",
+        "Amara Okafor",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C104",
+          "type": "duplicate_effort",
+          "projects": [
+            "collaborative_tr_collection",
+            "cate"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "coltran",
+      "title": "Colorization Transformer",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Colorization Transformer\n\nSource code accompanying the paper [Colorization Transformer](https://openreview.net/forum?id=5NA1PinlGFu) to be presented at\nICLR 2021.\nWork by Manoj Kumar, Dirk Weissenborn and Nal Kalchbrenner.\n\n### Updates:\n\n* 18 July 2021 - [Notebook](https://tinyurl.com/coltranfewclicksv2) to colorize images using pretrained ColTran models with a few clicks.\nCredits: [Minh-Hoang DANG](https://github.com/mhoangvslev)\n* 11 July 2021 - Support for finetuneing on custom datasets. Set\n`FLAGS.pretrain_dir` - Pretrained Imagenet ckpt path.\n`FLAGS.dataset=custom` and\n`FLAGS.data_dir`- Path to custom RGB images.\n* 10 July 2021 - Support for training on custom datasets. Set\n`FLAGS.dataset=custom` and\n`FLAGS.data_dir`- Path to custom RGB images.\n* 23 March 2021 - Custom colorization script over [here](https://github.com/google-research/google-research/blob/master/coltran/custom_colorize.py)\n\n### Important: Note on Evaluation:\n\nColorization is a multi-modal problem, where a given object can have multiple plausible colors.\nOn recolorizing a RGB image, a single random sample represents another plausible colorization. It\nis unlikely to have the same colors as the ground-truth RGB image. So while evaluating the Colorization Transformer,\none should use distribution-level metrics such as the FID and NOT per-image metrics such as LPIPS or SSIM.\n\n## Paper summary\n\nColTran consists of three components, a `colorizer`, `color upsampler` and `spatial upsampler`.\n\n* The `colorizer` is an autoregressive, self-attention based architecture comprised of conditional transformer layers. ",
+      "contributors": [
+        "Hyun Traore",
+        "Maren Zhou",
+        "Efe Lindqvist"
+      ],
+      "conflicts": [
+        {
+          "id": "C014",
+          "type": "duplicate_effort",
+          "projects": [
+            "instruction_following_eval",
+            "coltran"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "combiner",
+      "title": "Implementation of Combiner: Full Attention Transformer with Sparse Computation Cost",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Implementation of Combiner: Full Attention Transformer with Sparse Computation Cost\n\nPaper: https://arxiv.org/abs/2107.05768\n\nThis code implements Combiner. The following demonstration shows the core implementation with a toy task training.\n\n# Install\n\nPlease follow the [JAX installation guide](https://github.com/jax-ml/jax#installation) and [Tensorflow installation guide](https://www.tensorflow.org/install) to properly install JAX and Tensorflow that match your own CUDA environment.\n\nThen Navigate to the root of project, and perform:\n\npip install -r requirements.txt\npip install -e .\n\n# Example usage\n\nWe provide both the tensorflow and jax implementations of the core components.\n\n## JAX implementation\n\nNavigate to `jax/` folder, and run\n\npython main.py -model {JAX_MODEL_NAME}\n\nwhere the `JAX_MODEL_NAME` can be selected from `{axial, mixture, fixed, logn}`.\n\n## TF implementation\n\nNavigate to `tf/` folder, and run\n\npython main.py --hparam_set={TF_MODEL_NAME}\n\nwhere the `TF_MODEL_NAME` can be selected from `{AxialRowMajorLM, SqrtFixedFullLM, AxialMixtureLM}`.\n\n# Disclaimer\n\nThis is not an officially supported Google product.\n\nContact hyren@cs.stanford.edu and hadai@google.com for questions.\n\n# Reference\n\n```\n@article{ren2021combiner,\ntitle={Combiner: Full attention transformer with sparse computation cost},\nauthor={Ren, Hongyu and Dai, Hanjun and Dai, Zihang and Yang, Mengjiao and Leskovec, Jure and Schuurmans, Dale and Dai, Bo},\njournal={Advances in Neural Information Processing Systems},\nvolume={34},\nyear={2021}\n}\n```",
+      "contributors": [
+        "Yusuf Keita",
+        "Nikhil Abebe",
+        "Leilani Nakamura",
+        "Milan Zapata"
+      ],
+      "conflicts": [
+        {
+          "id": "C120",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "mface",
+            "combiner"
+          ],
+          "shared_object": "Milan Zapata at >=60% allocation",
+          "canonical": {
+            "person": "Milan Zapata",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Milan Zapata is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "comisr",
+      "title": "COMISR:Compression-Informed Video Super-Resolution",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# COMISR:Compression-Informed Video Super-Resolution\n\nThis repo contains the testing code for the paper in the ICCV 2021.\n[\"COMISR: Compression-Informed Video Super-Resolution\"](https://arxiv.org/abs/2105.01237)\n\n*Disclaimer: This is not an official Google product.*\n\n## Pre-requisite\n\nInstall dependencies:\n```\npip3 install -r requirements.txt\n```\n\nThe vid4 testing data can be downloaded from: *gs://gresearch/comisr/data/*\n[gcloud sdk](https://cloud.google.com/sdk/docs/install)\n\nThe folder path should be similar to:\\\n.../testdata/lr_crf25/calendar\\\n.../testdata/lr_crf25/city\\\n.../testdata/lr_crf25/foliage\\\n.../testdata/lr_crf25/walk\n\n.../testdata/hr/calendar\\\n.../testdata/hr/city\\\n.../testdata/hr/foliage\\\n.../testdata/hr/walk\n\n## Creating compressed frames\nWe use [ffmpeg](https://www.ffmpeg.org/) to compress video frames. Below is one sample CLI usage.\n\nSuppose you have a sequence of frames in im%2d.png format, e.g. calendar from vid4.\n\n```shell\nffmpeg -framerate 10 -i im%2d.png -c:v libx264 -crf 0 lossless.mp4 \\\n&& ffmpeg -i lossless.mp4 -vcodec libx264 -crf 25 crf25.mp4 \\\n&& ffmpeg -ss 00:00:00 -t 00:00:10 -i crf25.mp4 -r 10 crf25_%2d.png\n```\n\n## Pre-trained Model\nThe pre-trained model can be downloaded from: *gs://gresearch/comisr/model/*\n\n## Usage\n```shell\npython inference_and_eval.py \\\n--checkpoint_path=/tmp/model.ckpt \\\n--input_lr_dir=/tmp/lr_4x_crf25 \\\n--targets=/tmp/hr \\\n--output_dir=/tmp/output_dir\n```\n\n## Citation\nIf you find this code is useful for your publication, please cite the original paper:\n```\n@inproceedings{yli_comisr_iccv2021,\ntitle = {COMISR: Compressio",
+      "contributors": [
+        "Leilani Nakamura",
+        "Tereza Aliyev",
+        "Emeka Pinto",
+        "Saoirse Eriksen",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C057",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "learning_parameter_allocation",
+            "comisr"
+          ],
+          "shared_object": "Jorge Vidal at >=60% allocation",
+          "canonical": {
+            "person": "Jorge Vidal",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Jorge Vidal is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "compositional_classification",
+      "title": "CFQ classification task",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# CFQ classification task\n\nThis repository contains the source code for the paper: https://arxiv.org/abs/2106.10434\n\n```\n@misc{kim2021improving,\ntitle={Improving Compositional Generalization in Classification Tasks via Structure Annotations},\nauthor={Juyong Kim and Pradeep Ravikumar and Joshua Ainslie and Santiago Onta\u00f1\u00f3n},\nyear={2021},\neprint={2106.10434},\narchivePrefix={arXiv},\nprimaryClass={cs.LG}\n}\n```\n\nThe code converts the CFQ dataset into a sentence pair classification task and trains ML models on the task annotated with structural annotation.\n\n## 1. Create datasets\n1. Place CFQ dataset under `scripts` directory. A file `dataset.json` of CFQ dataset should be placed in `scripts/cfq`.\n2. (For model negative dataset) Run CFQ baseline code with option to print beam score (Open `run.sh` and append `--decode_hparams=\"return_beams=True,write_beam_scores=True\"` to `t2t-decoder` command). Place CFQ baseline outputs under `scripts/cfq_model_outputs` directory. The directory structure should be\n```\nscripts\n\u2514\u2500cfq_model_outputs\n\u2514\u2500(cfq_split)\n\u251c\u2500train_encode.txt\n\u251c\u2500train_decode_lstm.txt\n\u251c\u2500train_decode_transformer.txt\n\u251c\u2500train_decode_universal.txt\n\u251c\u2500dev_encode.txt\n...\n\u251c\u2500dev_decode_universal.txt\n\u251c\u2500test_encode.txt\n...\n\u2514\u2500test_decode_universal.txt\n```\n3. Run the generation shell script in `scripts` (Please see help output for usage).\n```\n$ ./create_cls_dataset.sh cfq_split neg_method train_hold_out output_tree\n```\n**Note**: Currently, dataset with structure annotation (or when `output_tree` is `true`) can be generated when `xlink_mapping.pkl` is placed under the dataset output dir (This ",
+      "codename": "Project Kestrel",
+      "contributors": [
+        "Nikhil Abebe",
+        "Linnea Yamada",
+        "Maren Zhou",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C035",
+          "type": "codename_collision",
+          "projects": [
+            "newspalm_mbr_qe",
+            "compositional_classification"
+          ],
+          "shared_object": "Project Kestrel",
+          "canonical": {
+            "codename": "Project Kestrel"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Kestrel."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "compositional_rl",
+      "title": "Environment Generation for Zero-Shot Compositional Reinforcement Learning",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-10"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Environment Generation for Zero-Shot Compositional Reinforcement Learning\n\n## Overview\nThis repository includes the implementation of `Environment Generation for Zero-Shot Compositional Reinforcement Learning by Izzeddin Gur, Natasha Jaques, Yingjie Miao, Jongwook Choi,Manoj Tiwari, Honglak Lee, and Aleksandra Faust. NeurIPS'21`.\n\n(please see [compwob](./compwob/README.md) directory if you are interested in the code for `Language Model Agents Suffer from Compositional Decision Making`)\n\n## Getting Started\n\n* Download this repo:\n\n```bash\nsvn export https://github.com/google-research/google-research/trunk/compositional_rl\n```\n\n### Install Dependencies\n#### Install Bootstrap\n\n* Download bootstrap files:\n\n```bash\nmkdir gwob/bootstrap/ && cd gwob/bootstrap && wget https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip\n```\n\n* Unzip and extract:\n\n```bash\nunzip bootstrap-4.3.1-dist.zip && cp bootstrap-4.3.1-dist/css/bootstrap.min.css . && cp bootstrap-4.3.1-dist/js/bootstrap.min.js . && rm -r bootstrap-4.3.1-dist* && cd ../../\n```\n\n#### Install MiniWoB\n\n* Clone the MiniWoB project (from legacy branch):\n\n```bash\ngit clone -b legacy https://github.com/Farama-Foundation/miniwob-plusplus.git gwob/miniwob-plusplus\n```\n\n* Checkout the version that we used in our project:\n\n```bash\ncd gwob/miniwob-plusplus && git checkout 833a477a8fbfbd2497e95fee019f76df2b9bd75e\n```\n\n* Convert all python files from Python 2 to Python 3:\n\n```bash\npip install 2to3 && cd ../../ && 2to3 gwob/miniwob-plusplus/python/miniwob -w\n```\n\n* Integrate MiniWoB by making necessary changes:\n",
+      "contributors": [
+        "Yara Jokic",
+        "Quentin Farkas",
+        "Halima Toure",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C095",
+          "type": "duplicate_effort",
+          "projects": [
+            "compositional_rl",
+            "darc"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "compositional_transformers",
+      "title": "Making Transformers Solve Compositional Tasks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Making Transformers Solve Compositional Tasks\n\nThis repository contains source code for the paper \"Making Transformers Solve\nCompositional Tasks\", ACL 2022.\n\nArxiv pre-print: https://arxiv.org/abs/2108.04378\n\n## Requirements\n\nThe codebase assumes it is going to run in Google Colaboratory (or Jupyter\nnotebook with Tensorflow installed), and that a GPU is available in the runtime\nfor use by Tensorflow.\n\n## Datasets\n\nThe Addition, AdditionNegatives, Reversing, Duplication, Cartesian and\nIntersection datasets are synthetic, and are generated automatically on the fly.\nThe SCAN, PCFG, COGS and CFQ dataset variants are external and can be\ndownloaded from:\n\n-   SCAN: (https://github.com/brendenlake/SCAN)\n-   PCFG: (https://github.com/i-machine-think/am-i-compositional)\n-   COGS: (https://github.com/najoungkim/COGS)\n-   CFQ: (https://github.com/google-research/google-research/tree/master/cfq)\n\nOnce downloaded, please modify the appropriate folders in the colab notebooks,\nso the code can find the dataset files.\n\n## Running seq2seq experiments\n\nEvaluate all the cells in the \"seq2seq.ipynb\" notebook, except for the last two.\nThe last two cells contain the code to actually run the experiments. The second\nto last cell allows running individual experiments, and the last cell would run\nall the experiments in the paper one after another. This might take several days\nto complete, but datasets/models can be added/removed from the experiments\nmodifying the \"datasets\" and \"models\" arrays, and the number of repetitions of\neach experiment can be controlled with the \"num_repetitions\" variable.\n\n",
+      "contributors": [
+        "Carmen Reyes",
+        "Fumiko Rossi",
+        "Katya Silva",
+        "Nikhil Abebe",
+        "Wei Ivanov"
+      ],
+      "conflicts": [
+        {
+          "id": "C012",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "gumbel_max_causal_gadgets",
+            "compositional_transformers"
+          ],
+          "shared_object": "Wei Ivanov at >=60% allocation",
+          "canonical": {
+            "person": "Wei Ivanov",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Wei Ivanov is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "concept_marl",
+      "title": "Concept MARL",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Concept MARL\nThis repo implements Concept Bottleneck Policies, as described in\nGrupen et al. [1]. The algorithm extends the MultiAgent-PPO algorithm from\nin [Acme](https://github.com/deepmind/acme), adding a concept loss term\nto the PPO objective. Custom policy networks that incorporate the concept\nbottleneck architecture are provided in `helpers.py`.\n\nThis repo also includes custom implementations of the following environments\nfrom [DeepMind Melting Pot](https://github.com/deepmind/meltingpot):\n1. Collaborative Cooking\n2. Clean Up\n2. Capture the Flag\n\nEach environment is extended to support concept extraction, and miniature\nversions of the original collaborative cooking environments are also provided.\nThe custom concept bottleneck policy networks include an encoder that processes\nMelting Pot's default multi-modal observations (RGB, position, orientation).\n\nThis repo also provides the following wrappers which are used for training\nconcept bottleneck policies:\n1.`meltingpot_wrapper.py`: Converts Melting Pot environment specs to dm_env\nspecs used by Acme.\n2.`ma_concept_extraction_wrapper.py`: Parses concept values for each agent from\nenvironment observations using a common prefix. Concept values parsed here are\nused to compute the concept loss term in `concept_ppo/learning.py`.\n3.`meltingpot_cooking_dense_rewards_wrapper.py`: Implements pseudo-rewards\nspecific to the collaborative cooking task.\n4.`meltingpot_pixels_wrapper.py`: Implements RGB resizing and grayscaling\n(similar to Acme's Atari wrapper).\n\n## Training\nTo train Concept PPO agents in the Collaborative Cooking env",
+      "contributors": [
+        "Quentin Farkas",
+        "Nikhil Abebe",
+        "Maren Zhou",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C088",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "concept_marl",
+            "distracting_control"
+          ],
+          "shared_object": "Nikhil Abebe at >=60% allocation",
+          "canonical": {
+            "person": "Nikhil Abebe",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Nikhil Abebe is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "conceptor",
+      "title": "The Hidden Language of Diffusion Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# The Hidden Language of Diffusion Models\n\n> Text-to-image diffusion models have demonstrated an unparalleled ability to generate high-quality, diverse images from a textual concept (e.g., \"a doctor\", \"love\"). However, the internal process of mapping text to a rich visual representation remains an enigma. In this work, we tackle the challenge of understanding concept representations in text-to-image models by decomposing an input text prompt into a small set of interpretable elements. This is achieved by learning a pseudo-token that is a sparse weighted combination of tokens from the model's vocabulary, with the objective of reconstructing the images generated for the given concept. Applied over the state-of-the-art Stable Diffusion model, this decomposition reveals non-trivial and surprising structures in the representations of concepts. For example, we find that some concepts such as \"a president\" or \"a composer\" are dominated by specific instances (e.g., \"Obama\", \"Biden\") and their interpolations. Other concepts, such as \"happiness\" combine associated terms that can be concrete (\"family\", \"laughter\") or abstract (\"friendship\", \"emotion\"). In addition to peering into the inner workings of Stable Diffusion, our method also enables applications such as single-image decomposition to tokens, bias detection and mitigation, and semantic image manipulation.\n\n## Description\nOfficial implementation of the paper The Hidden Language of Diffusion Models.\n\n### Environment\nOur code builds on the requirements of the [Hugging Face Diffusers repository](https://github.com/huggingface/diff",
+      "contributors": [
+        "Giannis Sato",
+        "Farah Haddad",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C046",
+          "type": "gpu_double_booking",
+          "projects": [
+            "conceptor",
+            "interpretability_benchmark"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "constrained_language_typology",
+      "title": "Constrained Prediction of Linguistic Typological Features",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Constrained Prediction of Linguistic Typological Features\n\nThis directory contains the code developed for [SIGTYP 2020 Shared\nTask](https://sigtyp.github.io/st2020.html) which involves prediction of\ntypological properties of languages given a handful of observed features. The\ntypological features are taken from the World Atlas of Language Structures\n([WALS](https://wals.info/)).\n\nTechnical details can be found in\n\n> Alexander Gutkin and Richard Sproat: [*\"NEMO: Frequentist Inference Approach\n> to Constrained Linguistic Typology Feature Prediction in SIGTYP 2020 Shared\n> Task\"*](https://www.aclweb.org/anthology/2020.sigtyp-1.3/).  Proceedings of\n> the [Second Workshop on Computational Research in Linguistic Typology (SIGTYP\n> 2020)](https://www.aclweb.org/anthology/volumes/2020.sigtyp-1/) at [EMNLP\n> 2020](https://2020.emnlp.org/), pp. 17\u201328, Association for Computational\n> Linguistics (ACL), Online, November, 2020\n> ([preprint](https://arxiv.org/abs/2010.05985)).\n\n## Dependencies\n\nPlease check [requirements.txt](requirements.txt) for a list of basic\ndependencies for most of the tools in this directory.\n\n## Usage Scenarios\n\nIn the following steps we assume all the commands are run from the current\ndirectory where all the python code resides.\n\n### Initial setup\n\nThe original shared task data is distributed here\n[here](https://github.com/sigtyp/ST2020). Download it to some local directory\n(in the examples below,`${WORK_DIR}`):\n\n```shell\nWORK_DIR=/tmp/workspace\nmkdir -p ${WORK_DIR}/sigtyp\ngit clone https://github.com/sigtyp/ST2020 ${WORK_DIR}/sigtyp\n```\n\n### Preprocessing the",
+      "contributors": [
+        "Umar Costa",
+        "Oyin Iversen",
+        "Quentin Farkas",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C004",
+          "type": "gpu_double_booking",
+          "projects": [
+            "constrained_language_typology",
+            "missing_link"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "context_aware_transliteration",
+      "title": "Context-aware transliteration of romanized South Asian languages",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Context-aware transliteration of romanized South Asian languages\n\nThis directory contains details on accessing the code and data accompanying the\npaper [Context-aware transliteration of romanized South Asian\nlanguages](https://direct.mit.edu/coli/article/doi/10.1162/coli_a_00510/119145),\ncitation below.\n\nFor details on generating the tables found in the paper, follow\n[this link](generate_tables.md).\n\nFor details on generated text resources used in the paper, follow\n[this_link](text_resources.md).\n\nFor details on running Nisaba FST-based transliteration code with released\nmodels, follow [this_link](fst_translit.md).\n\nMore details on neural model checkpoints (including usage) will be added soon.\n\nCitation:\n\nKirov, Christo, Cibu Johny, Anna Katanova, Alexander Gutkin, and Brian\nRoark. \"Context-aware Transliteration of Romanized South Asian Languages.\"\nComputational Linguistics (2024). doi:\n[https://doi.org/10.1162/coli_a_00510](https://doi.org/10.1162/coli_a_00510)\n\n## Mandatory disclaimer\n\nThis is not an official Google product.",
+      "contributors": [
+        "Yara Jokic",
+        "Wanjiru Horvat",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C141",
+          "type": "dependency_date_drift",
+          "projects": [
+            "context_aware_transliteration",
+            "kip",
+            "deplot",
+            "jaxbarf"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    }
+  ]
+}

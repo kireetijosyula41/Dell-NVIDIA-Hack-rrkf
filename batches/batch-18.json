@@ -1,0 +1,613 @@
+{
+  "batch": 18,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "m_layer",
+      "title": "[Thomas Fischbacher, Iulia M. Comsa, Krzysztof Potempa, Moritz Firsching,",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# M-Layer\n\nThis directory contains code accompanying the paper\n\n[Thomas Fischbacher, Iulia M. Comsa, Krzysztof Potempa, Moritz Firsching,\nLuca Versari, Jyrki Alakuijala \"Intelligent Matrix Exponentiation\", arxiv:2008.03936.](https://arxiv.org/abs/2008.03936)\n\n## Files\n\n* `m_layer.py`\n\nThe python module containing M-layer as a Keras layer.\n\n* `M_layer_Experiments.ipynb`\n\nA colab notebook showing how to use M-layer in some applications.\n\n* `M_layer_Robustness.ipynb`\n\nA colab notebook exploring robustness of the M-layer as discussed in the paper.\n\n* `cifar10_model.npy`\n\nA trained model for CIFAR10, as used in `M_layer_Robustness.ipynb`.\n\n## How to use\n\nRun the [M-layer experiments colab](https://colab.research.google.com/github/google-research/google-research/blob/master/m_layer/M_Layer_Experiments.ipynb)\nor the [M-layer robustness colab](https://colab.research.google.com/github/google-research/google-research/blob/master/m_layer/M_Layer_Robustness.ipynb) directly!\n\nCloning this part of the google-research github repository is done by installing subversion and running:\n\n```shell\nsvn export https://github.com/google-research/google-research/trunk/m_layer\n```\n\nYou can also clone the entire google-research github (without its history) by installing git and running:\n\n```shell\ngit clone git@github.com:google-research/google-\nresearch.git --depth=1\n```\n\nOnce you have a copy of `m_layer`, you should be able to import the Keras layer `Mlayer` in your project:\n\n```python3\nfrom m_layer import MLayer\n```\n\nThe dataset for the periodicity experiment is obtained from [datamarket.com](https:",
+      "contributors": [
+        "Farah Haddad",
+        "Oyin Iversen",
+        "Umar Costa",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C016",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "activation_clustering",
+            "m_layer"
+          ],
+          "shared_object": "Fumiko Rossi at >=60% allocation",
+          "canonical": {
+            "person": "Fumiko Rossi",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Fumiko Rossi is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "m_theory",
+      "title": "M-Theory Research",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# M-Theory Research\n\nThis directory contains TensorFlow-based code to address some research problems\nin M-Theory / Superstring Theory / Supergravity / Quantum Gravity.\n\nBroadly speaking, M-Theory is all about the very rich mathematical structure\nthat arises if one tries to reconcile the physical principles of Quantum\nMechanics, General Relativity, and Supersymmetry. In terms of \"inputs\" and\n\"data\", this research should be regarded as Pure Mathematics, i.e. there is no\ndependency on \"measurement\" (or even \"user\") data.\n\nStill, *despite* this research not using any data examples (for learning or\notherwise), Google's TensorFlow Machine Learning technology is sufficiently\ngeneric to be a very useful tool to address some research questions in this\ndomain that can/should be studied numerically.\n\n# Running Colab Notebooks\n\nThe easiest way to work with this code, which does not require any code to be\ninstalled, is to import the loader notebook into an online Google Colab, and\nthen let that notebook load the module either from github or from an on-device\narchive (potentially modified).\n\nThe steps for this are as follows:\n\n1. Navigate to:\nhttps://colab.research.google.com/github/google-research/google-research/blob/master/m_theory/colab/SUGRA_Colab.ipynb\n\n1. Use the menu in the first notebook cell to select whether you want to load\nthe `m_theory` module from the repository on github (new users should do\nthis) or alternatively upload a (potentially modified) `m_theory.zip` archive\nfrom your device. (Enabling the `reset_package` checkbox allows replacing an\nalready-loaded module with a",
+      "contributors": [
+        "Giannis Sato",
+        "Maren Zhou",
+        "Yara Jokic",
+        "Farah Haddad"
+      ],
+      "conflicts": [
+        {
+          "id": "C037",
+          "type": "gpu_double_booking",
+          "projects": [
+            "moment_advice",
+            "m_theory"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "madlad_400",
+      "title": "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MADLAD-400: A Multilingual And Document-Level Large Audited Dataset\n\nThis repository contains the checkpoints and vocabularies from [MADLAD-400: A Multilingual And Document-Level Large Audited Dataset](https://arxiv.org/abs/2309.04662).\n\n## Checkpoints\n\n| Model          | Checkpoint                |\n|-------------------------------------------------------------|-------------------------------------------------------------------------------------|\n| 8B parameter LM | [link](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/checkpoints/8b-lm) |\n| 3B parameter MT model | [link](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/checkpoints/3b-mt) |\n| 7.2B parameter MT model | [link](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/checkpoints/7b-mt) |\n| 7.2B parameter MT model (finetuned on backtranslated data) | [link](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/checkpoints/7b-mt-bt) |\n| 10.7B parameter MT model | [link](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/checkpoints/10b-mt) |\n\n## Vocabulary\n\nThe vocabularies used to train the models listed above are [here](https://console.cloud.google.com/storage/browser/madlad-400-checkpoints/vocabulary/256k_vocab).\n\n## Example usage\n\nWe provide a simple [colab example](./inference_example.ipynb) showcasing how to use the released checkpoints for translation.\n\n## Contact\n\nPlease reach out to {snehakudugunta, icaswell}\uaa5cgoogle.com for any questions or observed issues. Issues will be listed on this page to aid fu",
+      "codename": "Project Saffron",
+      "contributors": [
+        "Carmen Reyes",
+        "Milan Zapata",
+        "Paloma Castillo",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C089",
+          "type": "codename_collision",
+          "projects": [
+            "madlad_400",
+            "general-pattern-machines"
+          ],
+          "shared_object": "Project Saffron",
+          "canonical": {
+            "codename": "Project Saffron"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Saffron."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "marot",
+      "title": "[Multidimensional Quality Metrics (MQM)](http://www.qt21.eu/mqm-definition/definition-2015",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Marot\n\nThis repository contains a web app  that can be used to analyze\n[Multidimensional Quality Metrics (MQM)](http://www.qt21.eu/mqm-definition/definition-2015-06-16.html)\ndata from a human evaluation of translation quality. The web app can also\ndisplay metrics computed by automated evaluations, such as BLEURT.\n\nTo use the web app, download the files `marot.html`, `marot.js`,\n`marot-histogram.js`, `marot-sigtests.js`, `marot-utils.js`, and\n`marot.css` to your computer:\n\n```\nwget https://raw.githubusercontent.com/google-research/google-research/master/marot/marot{-sigtests.js,-histogram.js,-utils.js,.html,.js,.css}\n```\n\nThen, simply open the `marot.html` file in a web browser, and use\nthe \"Choose files\" button to pick one or more Marot data files. Marot data spans\nseveral columns, so it's best to use a desktop or laptop computer with a wide\nscreen.\n\nA simpler option may be to just download the `marot-lite.html` file and\nopen it in a web browser (it loads the needed JavaScript and CSS files from\na Google-hosted server).\n\nThis is not an officially supported Google product.\n\n## Score computations\n\nMQM scores are computed for every segment by averaging over each rater's score\nfor that segment. Each rater's score for a segment is computed using MQM\nweights for marked error severity/category combination. The weighing scheme\ncan be modified in the Settings menu at the top.\n\n## Data file format\n\nThe data file should have tab-separated UTF-8-encoded data with the following\nten columns, one line per marked error:\n\n- **system**: Name of the translation system.\n- **doc**: Name of th",
+      "contributors": [
+        "Freya Ruiz",
+        "Yara Jokic",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C109",
+          "type": "gpu_double_booking",
+          "projects": [
+            "imp",
+            "marot"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mathwriting",
+      "title": "The MathWriting Dataset: Online Handwritten Mathematical Expressions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# The MathWriting Dataset: Online Handwritten Mathematical Expressions\n\nThe MathWriting dataset contains digital inks of handwritten mathematical expressions obtained through a prompted data collection effort.\nThe dataset aims at fostering research in handwritten mathematical expressions recognition.\n\n## Links\n\n- [full dataset](https://storage.googleapis.com/mathwriting_data/mathwriting-2024.tgz) (2.9 GB)\n- [dataset excerpt](https://storage.googleapis.com/mathwriting_data/mathwriting-2024-excerpt.tgz) (1.5 MB) that can be used to quickly evaluate whether the data suits your needs.\n- [technical dataset description](archive_readme.md). This file is also present in the dataset archives and is provided here for convenience.\n- [example code](mathwriting_code_examples.ipynb) in the form of a [Colab](https://colab.research.google.com/) notebook that demonstrates how read the data and compute a model's performance metric.\n\n## Licenses\n\nThe data is licensed by Google LLC under the\n[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-nc-sa/4.0/).\n\nThe code in this repository is released under the\n[Apache 2 license](https://github.com/google-research/google-research/blob/master/LICENSE).",
+      "codename": "Project Sirocco",
+      "contributors": [
+        "Efe Lindqvist",
+        "Halima Toure",
+        "Yara Jokic",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C026",
+          "type": "codename_collision",
+          "projects": [
+            "mathwriting",
+            "cfq"
+          ],
+          "shared_object": "Project Sirocco",
+          "canonical": {
+            "codename": "Project Sirocco"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Sirocco."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mave",
+      "title": "Multi-source Attribute Value Extraction (MAVE)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Multi-source Attribute Value Extraction (MAVE)\n\nThis repository contains code for performing benchmarks in the paper of [\"MAVE: A Product Dataset for Multi-source Attribute Value Extraction\"](https://dl.acm.org/doi/10.1145/3488560.3498377), published in WSDM 2022.\n\n## Installation\nThe codebase requires Python 3. To install dependencies, we suggest to use conda virtual environment:\n\n```\nconda create -n mave python=3.10\nconda activate mave\npip install -r mave/requirements.txt\n```\n\nNote that `tf-models-official==2.7.0` in `requirements.txt` is required, as of the releasing date of this repo, some functionalities of `tf-models-official` used in this repo are deprecated in higher versions.\n\nThe MAVE dataset has been released in https://github.com/google-research-datasets/MAVE, please follow instructions there for downloading the dataset. In the following, we assume [the full version of the dataset\n](https://github.com/google-research-datasets/MAVE#creating-the-full-version-of-the-dataset) has been downloaded to `mave/datasets/`:\n\n```\nDATA_BASE_DIR=\"mave/datasets\"\nmkdir $DATA_BASE_DIR\n```\n\n## Splitting of dataset\nWe provides a binary based on [Apache Beam](https://beam.apache.org/documentation/programming-guide/) pipeline to perform various splittings of the MAVE dataset following the paper. To run the pipeline:\n\n```\npython -m mave.benchmark.data.split_json_lines_main \\\n--input_json_lines_filename=\"${DATA_BASE_DIR}/mave_positives.jsonl\" \\\n--output_json_lines_dir=\"${DATA_BASE_DIR}/splits\"\n```\n\nSwitch `mave_positives.jsonl` to `mave_negatives.jsonl` for splitting negative example",
+      "contributors": [
+        "Kaia Wolde",
+        "Nikhil Abebe",
+        "Farah Haddad",
+        "Jorge Vidal"
+      ],
+      "conflicts": [
+        {
+          "id": "C051",
+          "type": "dependency_date_drift",
+          "projects": [
+            "extreme_memorization",
+            "differentially_private_gnns",
+            "cmmd",
+            "mave"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mbpp",
+      "title": "Mostly Basic Python Problems Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Mostly Basic Python Problems Dataset\n\nThe benchmark consists of around 1,000 crowd-sourced Python programming problems, designed to be solvable by entry level programmers, covering programming fundamentals, standard library functionality, and so on. Each problem consists of a task description, code solution and 3 automated test cases.\n\nAs described in the paper, a subset of the data has been hand-verified by us. This data is `sanitized-mbpp.json`.\n\nThe dataset is in a .jsonl format (json per line).\n\nReleased as part of Program Synthesis with Large Language Models, Austin et. al., 2021.\n\n## Evaluation Details\n\nWe specify a train and test split to use for evaluation. Specifically:\n\n* Task IDs 11-510 are used for testing.\n* Task IDs 1-10 were used for few-shot prompting and not for training.\n* Task IDs 511-600 were used for validation during fine-tuning.\n* Task IDs 601-974 are used for training.\n\nIn the paper \"Program Synthesis with Large Language Models\", Austin et al. 2021,\nwe used three-shot prompts with task_ids 2, 3, and 4 for few-shot prompts. Our prompts had the format\n\n`You are an expert Python programmer, and here is your task: {prompt} Your code should pass these tests:\\n\\n{tests}\\n[BEGIN]\\n{code}\\n[DONE]`\n\nwhere the [BEGIN] and [DONE] tokens were used to delimit the model solution.\n\nFor the edited subset, the test/train/validation/prompting subsets were inherited from the above groupings.",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Kaia Wolde",
+        "Saoirse Eriksen",
+        "Fumiko Rossi"
+      ],
+      "conflicts": [
+        {
+          "id": "C064",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dp_sgd_clipping",
+            "mbpp"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mechanic",
+      "title": "Mechanic - Black Box Learning Rate Tuner Implementation",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Mechanic - Black Box Learning Rate Tuner Implementation\n\nWe introduce a technique for tuning the learning rate scale factor of any base optimization algorithm and schedule automatically, which we call mechanic. Our method provides a practical realization of recent theoretical reductions for accomplishing a similar goal in online convex optimization. We rigorously evaluate mechanic on a range of large scale deep learning tasks with varying batch sizes, schedules, and base optimization algorithms. These experiments demonstrate that depending on the problem, mechanic either comes very close to, matches or even improves upon manual tuning of learning rates.\n\nThis directory contains the exact jax/optax based implementation used to produce results of the Mechanic paper.\n\nPreprint: https://arxiv.org/pdf/2306.00144.pdf\n\n```\n@article{Cutkosky2023MechanicAL,\ntitle={Mechanic: A Learning Rate Tuner},\nauthor={Ashok Cutkosky and Aaron Defazio and Harsh Mehta},\njournal={ArXiv},\nyear={2023},\nvolume={abs/2306.00144}\n}\n```\n\n## How to use?\nChange from\n\n```\nlr = lr_schedule(base_learning_rate=1e-4, step=step)\noptimizer = optax.adamw(learning_rate=lr)\n```\n\nTo\n\n```\nlr = lr_schedule(base_learning_rate=1.0, step=step)\nadamw = optax.adamw(learning_rate=lr)\noptimizer = mechanic.mechanize(adamw)\n```",
+      "contributors": [
+        "Quentin Farkas",
+        "Rafael Duran",
+        "Efe Lindqvist",
+        "Wanjiru Horvat",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C111",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "better_storylines",
+            "mechanic"
+          ],
+          "shared_object": "Paloma Castillo at >=60% allocation",
+          "canonical": {
+            "person": "Paloma Castillo",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Paloma Castillo is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "memento",
+      "title": "On Catastrophic Interference in Atari 2600 Games",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# On Catastrophic Interference in Atari 2600 Games\nThis is the code for the paper\n`On Catastrophic Interference in Atari 2600 Games`\nby William Fedus*, Dibya Ghosh*, John D. Martin, Marc G. Bellemare,\nYoshua Bengio, and Hugo Larochelle (2020).\n\n\\* Equal contribution\n\n## Running the Code\n### Setup\nAll of the commands below are run from the parent `google_research` directory.\nStart a virtualenv with these commands:\n\n```\nvirtualenv -p python3 .\nsource ./bin/activate\n```\n\nThen install necessary packages:\n\n```\npip install -r memento/requirements.txt\n```\n\n### Training\nWe provide as an example training a Rainbow agent (`rainbow.gin`) but one can\nsubstitute below commands with `dqn.gin`.\nTrain the original agent by executing,\n\n```\npython -m memento.train_original_agent\n--gin_files=memento/configs/rainbow.gin \\\n--base_dir=/tmp/memento/original_agent\n```\n\nOnce the original agent is trained (several days depending on hardware) and\ncheckpointed to `/tmp/memento/original_agent` then train the Memento agent with\nthe following command,\n\n```\npython -m memento.train_memento_agent\n--gin_files=memento/configs/rainbow.gin \\\n--base_dir=/tmp/memento/memento_agent \\\n--original_base_dir=/tmp/memento/original_agent\n```",
+      "contributors": [
+        "Carmen Reyes",
+        "Efe Lindqvist",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C112",
+          "type": "gpu_double_booking",
+          "projects": [
+            "bisimulation_aaai2020",
+            "memento"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "menger_rl",
+      "title": "Menger-RL",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Menger-RL\n\n## Table of contents\nProduct Impact\nAI Principles\nAcknowledgements\nHow to cite\nDisclaimer\n\n## Product Impact\n\nMenger was the first distributed RL framework (when introduced in 2020) that\ntrains on distributed TPU pods, and scales to a few thousand workers for data\ncollection and inference on CPU. Menger provides an infrastructure for RL\napplications that include complex environments, for which large-scale and\nhigh-performing distributed data collection (actors) and use of pod-level TPUs\nfor training massive data samples is crucial (learner).\n\nMenger was evaluated and adopted by the Circuit Training team as one of the\ndistributed RL infrastructure candidates to create floorplans for TPU-v5.\n\n## Principles\nThis project adheres to [Google's AI principles](PRINCIPLES.md). By\nparticipating, using or contributing to this project you are expected to adhere\nto these principles.\n\n## Acknowledgements\n\nFor their invaluable feedback and suggestions, we extend our gratitude to:\n\n* Robert Ormandi\n* Ebrahim Songhori\n* Shen Wang\n* Albin Cassirer\n* James Laudon\n* Joe Jiang\n* Sat Chatterjee\n* Piotr Stanczyk\n* Sabela Ramos\n* TF-Agents and Circuit Training Teams\n\n## How to cite\n\nIf you use this work, please cite:\n\n```\n@inproceedings{menger:arxiv:2022,\ntitle={Menger: Large-Scale Distributed Reinforcement Learning with a Case Study of Macro Placement},\nauthor={Yazdanbakhsh, Amir and Chen, Junchao and Zheng, Yu},\nbooktitle={Arxiv},\nyear={2022},\n}\n```\n\n## Disclaimer\n\nThis is not an official Google product.",
+      "contributors": [
+        "Leilani Nakamura",
+        "Milan Zapata",
+        "Efe Lindqvist",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C001",
+          "type": "gpu_double_booking",
+          "projects": [
+            "neural_additive_models",
+            "menger_rl"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-22",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-22",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-22."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mentormix",
+      "title": "Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels\n\nThis is the code for the paper:\n\n**Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels\n**\n\nLu Jiang, Di Huang, Mason Liu, Weilong Yang\n\nPresented at [ICML 2020](https://icml.cc/Conferences/2020),\n[Slides](http://www.lujiang.info/resources/icml20_slides.pdf)\n\n*Please note that this is not an officially supported Google product. This is the reproduced, not the original code.*\n\nIf you find this code useful in your research then please cite\n\n```\n@inproceedings{jiang2020beyond,\ntitle={Beyond Synthetic Noise: Deep Learning on Controlled Noisy Labels},\nauthor={Jiang, Lu and Huang, Di and Liu, Mason and Yang, Weilong},\nbooktitle={ICML},\nyear={2020}\n}\n```\n\n## Introduction\n\nGiven a noisy dataset of some unknown noise level, our goal is to train a\nrobust model that can generalize well on the clean test data.\nWe introduce a simple yet effective method called MentorMix.\nWhile existing methods that perform well on synthetic noise may not work as well on the real-world noisy labels,\nwe show our method overcomes both synthetic and real-world noisy labels.\n\nWe also release the first benchmark of controlled real-world label noise from\nthe web. Please check out this dataset at [this link](). Leave your questions about\nthe dataset or the method in the issue tab.\n\n## Algorithm\n\nMentorMix is inspired by [MentorNet](https://github.com/google/mentornet)\n(for curriculum learning) and [Mixup](https://github.com/hongyi-zhang/mixup)\n(for vicinal risk minimization).\n\nMentorMix comprises four steps: weight, sample, mixup, a",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom",
+        "Oyin Iversen",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C006",
+          "type": "dependency_date_drift",
+          "projects": [
+            "covid_vhh_design",
+            "hyperbolic_discount",
+            "mentormix",
+            "distinguishing_romanized_hindi_urdu"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "merf",
+      "title": "MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes\n\n## [Project Page](https://creiser.github.io/merf) | [Video](https://youtu.be/3EACM2JAcxc) | [Arxiv](https://arxiv.org/abs/2302.12249)\n\nThis is the official code release for the SIGGRAPH 2023 project [**MERF:\nMemory-Efficient Radiance Fields for Real-time View Synthesis in\nUnbounded Scenes**](https://creiser.github.io/merf). The code is written in\n[JAX](https://github.com/jax-ml/jax). Contact\n[Christian Reiser](https://creiser.github.io) in case you have any questions.\n\n### Abstract\nNeural radiance fields enable state-of-the-art photorealistic view synthesis.\nHowever, existing radiance field representations are either too\ncompute-intensive for real-time rendering or require too much memory to scale to\nlarge scenes. We present a Memory-Efficient Radiance Field (MERF) representation\nthat achieves real-time rendering of large-scale scenes in a browser. MERF\nreduces the memory consumption of prior sparse volumetric radiance fields using\na combination of a sparse feature grid and high-resolution 2D feature planes.\nTo support large-scale unbounded scenes, we introduce a novel contraction\nfunction that maps scene coordinates into a bounded volume while still allowing\nfor efficient ray-box intersection. We design a lossless procedure for baking\nthe parameterization used during training into a model that achieves real-time\nrendering while still preserving the photorealistic view synthesis quality of a\nvolumetric radiance field.\n\n### How to run the code?\n- Download and unzip mipnerf360 dataset:\n",
+      "contributors": [
+        "Milan Zapata",
+        "Yara Jokic",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C094",
+          "type": "gpu_double_booking",
+          "projects": [
+            "eq_mag_prediction",
+            "merf"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "mesh_diffusion",
+      "title": "Single Mesh Diffusion Models with Field Latents for Texture Generation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Single Mesh Diffusion Models with Field Latents for Texture Generation\n\n[Project Page](https://single-mesh-diffusion.github.io/) |\n[Paper](https://arxiv.org/abs/2312.09250)\n\n**Single Mesh Diffusion Models with Field Latents for Texture Generation**\n\nTommy Mitchel, Carlos Esteves, and Ameesh Makadia\n\nAccepted to CVPR 2024.\n\n## Citation\n\nIf you found this work useful, please cite\n\n```\n@article{mitchel2023meshdiffusion,\nauthor        = {Mitchel, Thomas and Esteves, Carlos and Makadia, Ameesh},\ntitle         = {Single Mesh Diffusion Models with Field Latents for Texture Generation},\nyear          = {2023},\neprint        = {2312.09250},\narchivePrefix = {arXiv},\nprimaryClass  = {cs.CV}\n}\n```\n## Usage instructions for sampling new textures for a labeled mesh.\nSpecify the paths to the\n(1) FLVAE checkpoint directory. *A pretrained model will be provided soon.*\n(2) FLDM checkpoint directory.\n(3) Base directory where individual preprocessed mesh subdirectories are\nstored. *The instructions and code for preprocessing meshes is [available\nhere](https://github.com/twmitchel/field_latent_preprocess/tree/main).*\n(4) Mesh (subdirectory) name.\n(5) Path to ply file that contains the labels.\n(6) Path to output directory where generated textures should be saved.\n\nAll the paths in this example should be relative to the directory above\n`mesh_diffusion`.\n\n```python\n# FLVAE checkpoint directory.\nconfig.trainer_checkpoint_dir = 'mesh_diffusion/path/to/flvae_checkpoint/dir/'\n\n# FLDM checkpoint directory.\nconfig.model_checkpoint_dir = 'mesh_diffusion/path/to/fldm_checkpoint/dir/'\n\n# Preprocessed mes",
+      "contributors": [
+        "Maren Zhou",
+        "Oyin Iversen",
+        "Linnea Yamada",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C060",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cann",
+            "behavioral_dispositions",
+            "dissecting_factual_predictions",
+            "mesh_diffusion"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "meta_learning_without_memorization",
+      "title": "Meta-Learning without Memorization",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Meta-Learning without Memorization\n*Implemention of meta-regularizers as described in [Meta-Learning without Memorization]() by Mingzhang Yin, George Tucker, Mingyuan Zhou, Sergey Levine, Chelsea Finn.*\n\nThe ability to learn new concepts with small amounts of data is a critical aspect of intelligence that has proven challenging for deep learning methods. Meta-learning has emerged as a promising technique for leveraging data from previous tasks to enable efficient learning of new tasks. However, most meta-learning algorithms implicitly require that the meta-training tasks be *mutually-exclusive*, such that no single model can solve all of the tasks at once. For example, when creating tasks for few-shot image classification, prior work uses a per-task random assignment of image classes to N-way classification labels. If this is not done, the meta-learner can ignore the task training data and learn a single model that performs all of the meta-training tasks zero-shot, but does not adapt effectively to new image classes. This requirement means that the user must take great care in designing the tasks, for example by shuffling labels or removing task identifying information from the inputs. In some domains, this makes meta-learning entirely inapplicable. In this paper, we address this challenge by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algor",
+      "contributors": [
+        "Oyin Iversen",
+        "Freya Ruiz",
+        "Amara Okafor",
+        "Wanjiru Horvat"
+      ],
+      "conflicts": [
+        {
+          "id": "C033",
+          "type": "dependency_date_drift",
+          "projects": [
+            "meta_learning_without_memorization",
+            "fractals_language",
+            "frequency_analysis",
+            "caltrain"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "meta_pseudo_labels",
+      "title": "[Meta Pseudo Labels](https://arxiv.org/abs/2003.10580).",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# [Meta Pseudo Labels](https://arxiv.org/abs/2003.10580).\n\nThis repository provides the sample implementions of the\n[Meta Pseudo Labels](https://arxiv.org/abs/2003.10580) algorithm for two\nlow-resource image classifciation benchmarks: CIFAR-10-4000 and ImageNet-10%.\nThe current implementation only runs with TPUs.\n\nTo run a CIFAR-10-4000 experiment, please [set up your Cloud TPU environment](https://cloud.google.com/tpu/docs/quickstart) and run the following command:\n```\npython -m main.py \\\n--task_mode=\"train\" \\\n--dataset_name=\"cifar10_4000_mpl\" \\\n--output_dir=\"path/to/your/output/dir\" \\\n--model_type=\"wrn-28-2\" \\\n--log_every=100 \\\n--master=\"path/to/your/tpu/worker\" \\\n--image_size=32 \\\n--num_classes=10 \\\n--optim_type=\"momentum\" \\\n--lr_decay_type=\"cosine\" \\\n--save_every=1000 \\\n--use_bfloat16 \\\n--use_tpu \\\n--nouse_augment \\\n--reset_output_dir \\\n--eval_batch_size=64 \\\n--alsologtostderr \\\n--running_local_dev \\\n--train_batch_size=128 \\\n--uda_data=7 \\\n--weight_decay=5e-4 \\\n--tpu_platform=\"your_tpu_platform\" \\\n--tpu_topology=\"your_tpu_topology\" \\\n--num_train_steps=300000 \\\n--augment_magnitude=16 \\\n--batch_norm_batch_size=256 \\\n--dense_dropout_rate=0.2 \\\n--ema_decay=0.995 \\\n--label_smoothing=0.15 \\\n--mpl_student_lr_wait_steps=3000 \\\n--uda_steps=5000 \\\n--uda_temp=0.7 \\\n--uda_threshold=0.6 \\\n--uda_weight=8\n```\n\nTo run an ImageNet-10% experiment, please set up your Cloud TPU environment\nand run the following command:\n```\npython -m main.py \\\n--task_mode=\"train\" \\\n--dataset_name=\"cifar10_4000_mpl\" \\\n--output_dir=\"path/to/your/output/dir\" \\\n--model_type='resnet-50' \\\n--log_every=100 \\\n--ma",
+      "contributors": [
+        "Paloma Castillo",
+        "Umar Costa",
+        "Ondrej Bergstrom",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C009",
+          "type": "budget_overallocation",
+          "projects": [
+            "meta_pseudo_labels",
+            "jax_rtm"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-88",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-88",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-88 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "metapose",
+      "title": "MetaPose",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MetaPose\n\n**MetaPose: Fast 3D Pose from Multiple Views without 3D Supervision** \n*Conference on Computer Vision and Pattern Recognition (CVPR) 2022*\narxiv / project page\n\n> In the era of deep learning, human pose estimation from multiple cameras with unknown calibration has received little attention to date. We show how to train a neural model to perform this task with high precision and minimal latency overhead. The proposed model takes into account joint location uncertainty due to occlusion from multiple views, and requires only 2D keypoint data for training. Our method outperforms both classical bundle adjustment and weakly-supervised monocular 3D baselines on the well-established Human3.6M dataset, as well as the more challenging in-the-wild Ski-Pose PTZ dataset.\n\nWe provide more [demo videos] on Human36M, SkiPose and KTH Multiview Football II.\n\nIf you use any of this code or its derivatives, please consider citing our work:\n\n```\n@inproceedings{usman2021metapose,\nauthor    = {Usman, Ben and Tagliasacchi, Andrea and Saenko, Kate and Sud, Avneesh},\ntitle     = {MetaPose: Fast 3D Pose from Multiple Views without 3D Supervision},\nbooktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\nmonth     = {June},\nyear      = {2022}\n}\n```\n\nContact: usmn@google.com\n\n### Checking out the code\n\n```\nsvn export https://github.com/google-research/google-research/trunk/metapose\n```\n\n### Data + checkpoints\n\n```\nwget http://storage.googleapis.com/gresearch/metapose/metapose.tar\ntar xvf metapose.tar\nexport DATA_ROOT=$(pwd)/metapose\n```\n\n**Disc",
+      "contributors": [
+        "Maren Zhou",
+        "Linnea Yamada",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C097",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "metapose",
+            "fisher_brc"
+          ],
+          "shared_object": "Linnea Yamada at >=60% allocation",
+          "canonical": {
+            "person": "Linnea Yamada",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Linnea Yamada is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "batch": 8,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "dense_representations_for_entity_retrieval",
+      "title": "Learning Dense Representations for Entity Retrieval",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learning Dense Representations for Entity Retrieval\n\nCode supporting the publication _Learning Dense Representations for Entity\nRetrieval_ by Daniel Gillick, Sayali Kulkarni, Larry Lansing, Alessandro Presta,\nJason Baldridge, Eugene Ie, and Diego Garcia-Olano.\n\nPaper available at: https://arxiv.org/abs/1909.10506\n\nIf you use this code in your research, please cite the paper as follows:\n\n```\n@misc{gillick2019learning,\ntitle={Learning Dense Representations for Entity Retrieval},\nauthor={Daniel Gillick and Sayali Kulkarni and Larry Lansing and Alessandro Presta and Jason Baldridge and Eugene Ie and Diego Garcia-Olano},\nyear={2019},\neprint={1909.10506},\narchivePrefix={arXiv},\nprimaryClass={cs.CL}\n}\n```\n\n## Wikinews\n\nThe ```parse_wikinews.py``` script generates the 2018 Wikinews dataset described\nin _Learning Dense Representations for Entity Retrieval_ by parsing the wikitext\nfrom the Jan 1, 2019 dump of Wikinews found on archive.org.\n\nTo generate the dataset yourself, download the Wikinews dump from\nhttps://archive.org/download/enwikinews-20190101/enwikinews-20190101-pages-articles.xml.bz2\nand run ```parse_wikinews.py``` with the ```wikinews_archive``` and\n```output_dir``` flags set appropriately. See ```parse_wikinews.sh``` for an\nexample of correct usage.\n\n## Disclaimer\n\nThis is not an official Google product.",
+      "contributors": [
+        "Vera Egede",
+        "Wanjiru Horvat",
+        "Rafael Duran",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C102",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dense_representations_for_entity_retrieval",
+            "alx"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "deplot",
+      "title": "DePlot: Visual Language Reasoning on Charts and Plots",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# DePlot: Visual Language Reasoning on Charts and Plots\n\nCode and checkpoints for training the visual language models introduced in\nin the papers\n* DePlot: One-shot visual language reasoning by plot-to-table translation\n* MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering.\n\n## Installation\n\nTo install DePlot, it is necessary to clone the google-research repo:\n```\ngit clone https://github.com/google-research/google-research.git\n```\nFrom the `google_research` folder, you may install the necessary requirements\nin a conda environment by executing:\n```\nconda create -n deplot python=3.9\nconda activate deplot\npip install -r deplot/requirements.txt -f https://storage.googleapis.com/jax-releases/libtpu_releases.html\n```\n\nOur checkpoints are fully compatible with the\n[codebase](https://github.com/google-research/pix2struct/) from the\n[Pix2Struct paper](https://arxiv.org/abs/2210.03347). Therefore, all of the\ntools and instructions described in the documentation apply here as well.\n\nSince we use some gin configurations from Pix2Struct, the repository needs to\nbe cloned at a directory of choice, which can be exported in a `PIX2STRUCT`\nenvironment variable.\n\n```\ngit clone https://github.com/google-research/pix2struct.git $PIX2STRUCT\n```\n\nThanks to the Hugging Face team, we also have DePlot [[doc]](https://huggingface.co/docs/transformers/main/en/model_doc/deplot) and MatCha [[doc]](https://huggingface.co/docs/transformers/main/en/model_doc/matcha) implementations in the HF Transfermers library.\n\n## Models\n\nWe provide pre-trained models and fine-tuned",
+      "contributors": [
+        "Bilal Novak",
+        "Maren Zhou",
+        "Vera Egede",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C141",
+          "type": "dependency_date_drift",
+          "projects": [
+            "context_aware_transliteration",
+            "kip",
+            "deplot",
+            "jaxbarf"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "depth_and_motion_learning",
+      "title": "Unsupervised Monocular Depth and Motion Learning",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-17"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Unsupervised Monocular Depth and Motion Learning\n\nThis release supports joint training a depth prediction model and a motion\nprediction model using only pairs of RGB images. The depth model infers a dense\ndepth map from a single image. The motion model infers a 6 degree-of-freedom\ncamera motion and a 3D dense motion field for every pixel from a pair of images.\nThe approach does not need any auxiliary semantic information from the images,\nand the camera intrinsics can be either specified or learned.\n\nSample command line:\n\n```bash\npython -m depth_and_motion_learning.depth_motion_field_train \\\n--model_dir=$MY_CHECKPOINT_DIR \\\n--param_overrides='{\n\"model\": {\n\"input\": {\n\"data_path\": \"$MY_DATA_DIR\"\n}\n},\n\"trainer\": {\n\"init_ckpt\": \"$MY_IMAGENET_CHECKPOINT\",\n\"init_ckpt_type\": \"imagenet\"\n}\n}'\n```\n\n`MY_CHECKPOINT_DIR` is where the trained model checkpoints are to be saved.\n\n`MY_DATA_DIR` is where the training data (in Struct2depth's format) is stored.\nThe `data_example` folder in project `depth_from_video_in_the_wild` contains a\nsingle training example expressed in this format.\n\n`MY_IMAGENET_CHECKPOINT` is a path to a pretreained ImageNet checkpoint to\nintialize the encoder of the depth prediction model.\n\n## Citation\nIf you use any part of this code in your research, please cite our\n[paper](https://arxiv.org/abs/2010.16404):\n\n```\n@article{li2020unsupervised,\ntitle={Unsupervised Monocular Depth Learning in Dynamic Scenes},\nauthor={Li, Hanhan and Gordon, Ariel and Zhao, Hang and Casser, Vincent and Angelova, Anelia},\njournal={arXiv preprint arXiv:2010.16404},\nyear={2020}\n}\n```",
+      "contributors": [
+        "Katya Silva",
+        "Giannis Sato",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C002",
+          "type": "duplicate_effort",
+          "projects": [
+            "depth_and_motion_learning",
+            "igt_optimizer"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "depth_from_video_in_the_wild",
+      "title": "Depth from Video in the Wild: Unsupervised Monocular Depth Learning from Unknown Cameras",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Depth from Video in the Wild: Unsupervised Monocular Depth Learning from Unknown Cameras\n\n---\nA newer code release is available\n[here](https://github.com/google-research/google-research/tree/master/depth_and_motion_learning), which supports learning with highly dynamic scenes without any semantic information.\n\n---\n\nThis repository contains a preliminary release of code for the paper bearing the\ntitle above, [published at ICCV 2019](http://openaccess.thecvf.com/content_ICCV_2019/html/Gordon_Depth_From_Videos_in_the_Wild_Unsupervised_Monocular_Depth_Learning_ICCV_2019_paper.html).\nThe code is based on the Struct2depth [repository]\n(https://github.com/tensorflow/models/tree/master/research/struct2depth)\n(see the respective paper [here](https://arxiv.org/abs/1811.06152)),\nand utilizes the same data format.\n\nThis release supports training a depth and motion prediciton model, with either\nlearned or specified camera intrinsics. The motion model produces 6 degrees of\nfreedom of camera motion, and a dense translation vector field for every pixel\nin the scene. As an input, the code needs triplets of RGB frames with\npossibly-moving objects masked out.\n\nSample command line:\n\n```bash\npython -m depth_from_video_in_the_wild.train \\\n--checkpoint_dir=$MY_CHECKPOINT_DIR \\\n--data_dir=$MY_DATA_DIR \\\n--imagenet_ckpt=$MY_IMAGENET_CHECKPOINT\n```\n\n`MY_CHECKPOINT_DIR` is where the trained model checkpoints are to be saved.\n\n`MY_DATA_DIR` is where the training data (in Struct2depth's format) is stored.\nThe `data_example` folder contains a single training example expressed in this\nformat.\n\n`MY_IMAG",
+      "contributors": [
+        "Wanjiru Horvat",
+        "Katya Silva",
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C129",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "informally_romanized_lang_id",
+            "depth_from_video_in_the_wild"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "July"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for July 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dichotomy_of_control",
+      "title": "Dichotomy of Control: Separating What You Can Control from What You Cannot",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-16",
+        "end": "2026-06-08"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Dichotomy of Control: Separating What You Can Control from What You Cannot\n\nThis repository contains code for ``Dichotomy of Control: Separating What You Can Control from What You Cannot''.\n\nPlease cite this work upon using this library.\n\n## Setup\n\nInstall the Bandit and FrozenLake environments:\n\ngit clone git@github.com:google-research/dice_rl.git\npip install -e ./dice_rl\n\nInstall the remaining dependencies:\n\npip install -e . --use-deprecated=legacy-resolver\n\n## Create offline datasets\n\nCreate the offline datasets for Bandit and FrozenLake:\n\nsource create_dataset.sh\n\n## Run Dichotomy of Control\n\nRun DoC on Bandit:\n\npython -m dichotomy_of_control.scripts.run_tabular.py --load_dir='./tests/testdata' --algo_name='doc'\n\nChange `algo_name` in `run_tabular.sh` from `doc` (Dichotomy of Control) to `dt` (Decision Transformer) to observe dramatic performance drop.\n\nRun DoC on FrozenLake:\n\npython -m dichotomy_of_control.scripts.run_neural_dt --load_dir='./tests/testdata'",
+      "contributors": [
+        "Jorge Vidal",
+        "Carmen Reyes",
+        "Linnea Yamada"
+      ],
+      "conflicts": [
+        {
+          "id": "C106",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dichotomy_of_control",
+            "gon"
+          ],
+          "shared_object": "Linnea Yamada at >=60% allocation",
+          "canonical": {
+            "person": "Linnea Yamada",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Linnea Yamada is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dictionary_learning",
+      "title": "A Simple Dictionary Learning Implementation",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# A Simple Dictionary Learning Implementation\n\n## Syntax\n\n```python\n[code, dictionary] = dictionary_learning.dictionary_learning(embedding_table,\nrow_percentage=0.5,\ncol_percentage=0.5,\nn_iterations=32,\nseed=15)\n```\n\n## Description\n\n| Parameters / Outputs       | Meaning       |\n| ------------------------ |-------------|\n| embedding_table   | the original matrix   |\n| row_percentage    | float (default: 0.5), a factor to determine the number of words in the dictionary  |\n| col_percentage    | float (default: 0.5), a factor to determine the sparsity of the coding table |\n| n_iterations    | int (default: 32), the number of iterations |\n| seed    | int (default: 15), a seed number for randomization in the method |\n| code    | a sparse matrix with 'col_percentage' * #columns of 'embedding_table' nonzeros per row |\n| dictionary    |the resulting dictionary with 'row_percentage' * #rows of 'embedding_table' words  |\n\n## Examples\n\n```python\nb = np.random.normal(0, 1, [30, 20])\nsub_thresh_indices = (b <= 0.7)\nb[sub_thresh_indices] = 0\nb[:, 0] = np.ones(shape=b[:, 0].shape)\nc = np.random.normal(0, 1, [20, 10])\na = np.matmul(b, c)\n\n[b_out, c_out] = dictionary_learning.dictionary_learning(\na, row_percentage=0.5, col_percentage=0.3)\na_recovered = np.matmul(b_out, c_out)\nerror = np.linalg.norm(a - a_recovered) / np.linalg.norm(a)\n\nprint(\"error = \", error)\n```\n\nResult:\n\n```python\nerror = 0.112814336021\n```\n\n## Our Method\n\nThe basic dictionary learning is stated as follows. Given a matrix A of size m x n (in the context of machine learning n is the number of features and m is the number ",
+      "contributors": [
+        "Saoirse Eriksen",
+        "Wanjiru Horvat",
+        "Efe Lindqvist",
+        "Leilani Nakamura"
+      ],
+      "conflicts": [
+        {
+          "id": "C052",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "dictionary_learning",
+            "codistillation"
+          ],
+          "shared_object": "Saoirse Eriksen at >=60% allocation",
+          "canonical": {
+            "person": "Saoirse Eriksen",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Saoirse Eriksen is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "didi_dataset",
+      "title": "The Didi dataset: Digital Ink Diagram data",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# The Didi dataset: Digital Ink Diagram data\n\nThis repository contains a [Colab](https://colab.research.google.com/) notebook\nthat demonstrates how to handle the Digital ink data from the Didi dataset.\n\nThe dataset contains digital ink drawings of diagrams with dynamic drawing\ninformation. The dataset aims to foster research in interactive graphical\nsymbolic understanding. The dataset was obtained using a prompted data\ncollection effort.\n\n[Download the Didi dataset](https://storage.cloud.google.com/digital_ink_diagram_data)\n\nWe provide the raw data in [NDJSON](http://ndjson.org/) format as well as the\nprompts in [png](https://console.cloud.google.com/storage/browser/digital_ink_diagram_data/png),\n[dot](https://console.cloud.google.com/storage/browser/digital_ink_diagram_data/dot), and\n[xdot](https://console.cloud.google.com/storage/browser/digital_ink_diagram_data/xdot) format.\n\nThe dataset and details about its construction and use are described in this\nArXiV paper:\n[The Didi dataset: Digital Ink Diagram data](https://arxiv.org/abs/2002.09303).\n\n## Visualizing and converting the data.\n\nWe are providing a [colab notebook](didi_dataset.ipynb) that\ndemonstrates how to read and visualize the data. It also provides functions to\nconvert the data to TFRecord files for easy use in\ntensorflow.\n\n## Training and evaluating a model\n\nFirst download the Didi dataset. For this you can either download the raw data\nor use our [demo colab](didi_dataset.ipynb) to convert the data into TFRecord\nfiles.\n\nOur paper gives more information about a potential train/validation/test split\nof the data.",
+      "contributors": [
+        "Amara Okafor",
+        "Farah Haddad",
+        "Katya Silva",
+        "Chiara Olsen"
+      ],
+      "conflicts": [
+        {
+          "id": "C101",
+          "type": "duplicate_effort",
+          "projects": [
+            "docent",
+            "didi_dataset"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "differentiable_data_selection",
+      "title": "Differential Data Selection",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Differential Data Selection\n\nThis repository provides the sample implementions of the\n[Differentiable Data Selection](https://arxiv.org/abs/1911.10088) method for\nCIFAR-10 image classification with Wide-ResNet-28-10. Note that the\nimplementation only runs with TPUs.\n\nTo run an experiment, please first [set up your Cloud TPU environment](https://cloud.google.com/tpu/docs/quickstart). Then, there are two steps:\n\n* **Train a normal model on CIFAR-10**. This model will be used as the\nrepresentation for the DDS scorer in the next step. For this, please use the\ncommand:\n```\npython -m main.py --master=/PATH/TO/YOUR/TPU/WORKER --output_dir=/PATH/TO/YOUR/OUTPUT/FOLDER --log_every=100 --use_tpu --use_bfloat16 --noreset_output_dir --norunning_local_dev --task_mode=train --dataset_name=cifar10 --model_type=wrn-28-10 --label_smoothing=0. --train_batch_size=1024 --eval_batch_size=1024 --image_size=32 --num_classes=10 --lr=0.1 --optim_type=momentum --lr_decay_type=cosine --ema_decay=0.9999 --weight_decay=0.0002 --dense_dropout_rate=0.1 --save_every=1000 --num_train_steps=100000 --num_warmup_steps=250\n```\n\n* **Train a DDS model**. For this, please use the command:\n```\npython -m main.py --master=/PATH/TO/YOUR/TPU/WORKER --scorer_ckpt=/PATH/TO/THE/SCORER/MODEL/FROM/THE/PREVIOUS/STEP --log_every=100 --use_tpu --use_bfloat16 --noreset_output_dir --gfs_user=hyhieu-brain --norunning_local_dev --task_mode=dds --dataset_name=cifar10_dds --scorer_clip=0.5 --scorer_lr=1e-06 --model_type=wrn-28-10 --train_batch_size=1024 --eval_batch_size=1024 --image_size=32 --num_classes=10 --lr=0.1 --optim_type=",
+      "contributors": [
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C108",
+          "type": "budget_overallocation",
+          "projects": [
+            "differentiable_data_selection",
+            "multi_annotator"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-13",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-13",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-13 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "differentially_private_gnns",
+      "title": "Node-Level Differentially Private Graph Neural Networks",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Node-Level Differentially Private Graph Neural Networks\n\nA JAX implementation of 'Node-Level Differentially Private Graph\nNeural Networks', presented at PAIR2Struct, ICLR 2022.\n\n### Instructions\n\nClone the repository:\n\n```shell\ngit clone https://github.com/google-research/google-research.git\ncd google-research/differentially_private_gnns\n```\n\nCreate and activate a virtual environment:\n\n```shell\npython -m venv .venv && source .venv/bin/activate\n```\n\nInstall dependencies with:\n\n```shell\npip install --upgrade pip && pip install -r requirements.txt\n```\n\nDownload a dataset (ogbn-arxiv shown below) with our script:\n\n```shell\npython download_datasets.py --dataset_name=ogbn-arxiv\n```\n\nStart training with a configuration defined\nunder `configs/`:\n\n```shell\npython main.py --workdir=./tmp --config=configs/dpgcn.py\n```\n\n#### Changing Hyperparameters\n\nSince the configuration is defined using\n[config_flags](https://github.com/google/ml_collections/tree/master#config-flags),\nyou can override hyperparameters. For example, to change the number of training\nsteps, the batch size and the dataset:\n\n```shell\npython main.py --workdir=./tmp --config=configs/dpgcn.py \\\n--config.num_training_steps=10 --config.batch_size=50 \\\n--config.dataset=reddit-disjoint\n```\n\nIf you just want to test training without any dataset downloads,\nyou can also run the end-to-end training test on the dummy dataset:\n\n```shell\npython train_test.py\n```\n\nFor more extensive changes, you can directly edit the configuration files,\nand even add your own.\n\n#### Changing Dataset Paths\n\nBy default, the datasets are downloaded to `",
+      "contributors": [
+        "Maren Zhou",
+        "Emeka Pinto",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C051",
+          "type": "dependency_date_drift",
+          "projects": [
+            "extreme_memorization",
+            "differentially_private_gnns",
+            "cmmd",
+            "mave"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "diffusion_distillation",
+      "title": "Progressive Distillation for Fast Sampling of Diffusion Models",
+      "portfolio": "efficiency",
+      "pm": "Zofia Lombardi",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Progressive Distillation for Fast Sampling of Diffusion Models\nCode and model checkpoints for the ICLR 2022 paper by Tim Salimans and Jonathan Ho.\n\n**abstract**:\nDiffusion models have recently shown great promise for generative modeling, outperforming GANs on perceptual quality and autoregressive models at density estimation. A remaining downside is their slow sampling time: generating high quality samples takes many hundreds or thousands of model evaluations. Here we make two contributions to help eliminate this downside: First, we present new parameterizations of diffusion models that provide increased stability when using few sampling steps. Second, we present a method to distill a trained deterministic diffusion sampler, using many steps, into a new diffusion model that takes half as many sampling steps. We then keep progressively applying this distillation procedure to our model, halving the number of required sampling steps each time. On standard image generation benchmarks like CIFAR-10, ImageNet, and LSUN, we start out with state-of-the-art samplers taking as many as 8192 steps, and are able to distill down to models taking as few as 4 steps without losing much perceptual quality; achieving, for example, a FID of 3.0 on CIFAR-10 in 4 steps. Finally, we show that the full progressive distillation procedure does not take more time than it takes to train the original model, thus representing an efficient solution for generative modeling using diffusion at both train and test time.",
+      "contributors": [
+        "Oyin Iversen",
+        "Rosa Mensah",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C105",
+          "type": "dependency_date_drift",
+          "projects": [
+            "OpenMSD",
+            "behavior_regularized_offline_rl",
+            "non_decomp",
+            "diffusion_distillation"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dimensions_of_motion",
+      "title": "Dimensions of Motion: Monocular Prediction through Flow Subspaces",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Dimensions of Motion: Monocular Prediction through Flow Subspaces\n### Richard Strong Bowen, Richard Tucker, Ramin Zabih, Noah Snavely 3DV 2022\n\nThis release contains code for the model definition, basis formulation and losses from our \"Dimensions of Motion\" paper.\n\nThe library code in `libs` is organized as follows:\n\n* `flow_basis.py` \u2013 functions to generate flow bases for camera rotation and translation from disparity\n* `geometry.py` \u2013 flow warping for visualization\n* `loss.py` \u2013 flow projection loss\n* `nets.py` \u2013 the scene-prediction network\n* `solvers.py` \u2013 the SVD solver for projecting flow into a subspace\n* `utils.py` \u2013 some simple utility functions\n\nThe notebook `dimensions_of_motion_example.ipynb`\n[[click to open in Google Colab](https://colab.research.google.com/github/google-research/google-research/blob/master/dimensions_of_motion/dimensions_of_motion_example.ipynb)]\nshows how to apply our loss functions to a predicted disparity and object embedding, and how to visualize the resulting basis flow fields.\n\n### Links\n\nOur project page with links to the paper, video and examples is at **[dimensions-of-motion.github.io](https://dimensions-of-motion.github.io/)**.\n\n### Citation details\n```\n@inproceedings{bowen2022dimensions,\ntitle     = {Dimensions of Motion: Monocular Prediction through Flow Subspaces},\nauthor    = {Richard Strong Bowen and Richard Tucker and Ramin Zabih and Noah Snavely},\nbooktitle = {Proceedings of the International Conference on {3D} Vision (3DV)},\nyear      = {2022}\n}\n```",
+      "contributors": [
+        "Csilla Nassar",
+        "Wei Ivanov",
+        "Yara Jokic",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C029",
+          "type": "duplicate_effort",
+          "projects": [
+            "dimensions_of_motion",
+            "encyclopedic_vqa"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dipper",
+      "title": "DIPPER: A Controllable Discourse Paraphraser",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# DIPPER: A Controllable Discourse Paraphraser\n\nTo detect the deployment of large language models for malicious use cases (e.g., fake content creation or academic plagiarism), several approaches have recently been proposed for identifying AI-generated text via watermarks or statistical irregularities. How robust are these detection algorithms to paraphrases of AI-generated text? To stress test these detectors, we first train an 11B parameter paraphrase generation model (DIPPER) that can paraphrase paragraphs, optionally leveraging surrounding text (e.g., user-written prompts) as context. DIPPER also uses scalar knobs to control the amount of lexical diversity and reordering in the paraphrases. Paraphrasing text generated by three large language models (including GPT3.5-davinci-003) with DIPPER successfully evades several detectors, including watermarking, GPTZero, DetectGPT, and OpenAI's text classifier. For example, DIPPER drops the detection accuracy of DetectGPT from 70.3% to 4.6% (at a constant false positive rate of 1%), without appreciably modifying the input semantics.\n\nTo increase the robustness of AI-generated text detection to paraphrase attacks, we introduce a simple defense that relies on retrieving semantically-similar generations and must be maintained by a language model API provider. Given a candidate text, our algorithm searches a database of sequences previously generated by the API, looking for sequences that match the candidate text within a certain threshold. We empirically verify our defense using a database of 15M generations from a fine-tuned T5-XXL ",
+      "contributors": [
+        "Wei Ivanov",
+        "Katya Silva",
+        "Giannis Sato"
+      ],
+      "conflicts": [
+        {
+          "id": "C086",
+          "type": "duplicate_effort",
+          "projects": [
+            "dipper",
+            "assemblenet"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "dissecting_factual_predictions",
+      "title": "Dissecting Recall of Factual Associations in Auto-Regressive Language Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Dissecting Recall of Factual Associations in Auto-Regressive Language Models\n\nThis is the official code repository for the paper [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](https://arxiv.org/abs/2304.14767), Mor Geva, Jasmijn Bastings, Katja Filippova, Amir Globerson. 2023.\n\n#### Setup\nThe [Jupyter Notebook](factual_associations_dissection.ipynb) includes the code for running our experiments in the paper over GPT2-xl. The file can be opened in\n[Google Colaboratory](https://colab.research.google.com/).\n\nAll the experiments in our work were conducted in a Python 7 environment, with a single GPU (V100 for GPT2-xl and A100 for GPT-J).\nRequired python packages with specific versions are listed in [requiements.txt](requiements.txt).\n\n#### Experiments\n\nThe notebook has 5 sections. The first section sets up the environment (i.e., importing the relevant packages, loading the data for evaluation and the model), and the second section includes an implementation of various hooks on different modules in the network, that are needed for intermediate information extraction and interventions.\n\nThe next three sections cover our main experiments, according to the three main sections in the paper:\n\n- **Information Flow Analysis**, which includes our attention knockout method for studying information flow during inference.\n\n- **Attribute extraction**, including projection of hidden representations and sublayer outputs to the vocabulary and patching of hidden states.\n\n- **Attributes rate evaluation** (subject enrichment). This includes our evaluation process",
+      "contributors": [
+        "Fumiko Rossi",
+        "Maren Zhou",
+        "Yusuf Keita",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C060",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cann",
+            "behavioral_dispositions",
+            "dissecting_factual_predictions",
+            "mesh_diffusion"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "distinguishing_romanized_hindi_urdu",
+      "title": "Supporting Materials for \"Distinguishing Romanized Hindi from Romanized Urdu\"",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Supporting Materials for \"Distinguishing Romanized Hindi from Romanized Urdu\"\n\nThis document provides a brief summary of materials released here in support of\nthe paper \"Distinguishing Romanized Hindi from Romanized Urdu\", which\nappeared in the\n[CAWL workshop at ACL, 2023](https://aclanthology.org/2023.cawl-1.5/).\n\n**full_list.tsv** contains the set of linguist-derived seed-words used throughout\nthe paper to distinguish romanized Hindi and Urdu. It is organized into 5\ncolumns, including Hindi words in native and roman script, the equivalent\nUrdu word in native and roman script, and their shared gloss.\n\nThe included tarball, cawl2023_data.tgz, is split into 65 1M\nchunks (suffixed by `-X-of-00065.tgz`) using Unix `split -b1000K`. It can be\nconcatenated via `cat` to reform a single file, and expanded as normal\nusing `tar -xvzf`. It contains the following datasets referenced in\nthe paper. All datasets are in TSV format, with the first column containing a\nstring, and the second column containing as label - either *\"ur\"* (Urdu) or\n*\"hi\"* (Hindi).\n\n-   **gen_train.tsv**: Strings generated by mT5 via template filling (see\nsection 4.2).\n-   **mc4_train.tsv**: Strings drawn from the hi-Latn portion of mc4, according\nto whether they contain Hindi or Urdu seed words (see section 4.1)\n-   **topline_train.tsv**: Hand-labeled Wikipedia sentences from the Dakshina\ndataset (see section 4.1).\n-   **topline_dev.tsv**: Evaluation set held out from the Dakshina dataset.\n\n[Elizabeth Nielsen, Christo Kirov, and Brian Roark. 2023. Distinguishing romanized Hindi from romanized Urdu. In Proceeding",
+      "contributors": [
+        "Rafael Duran",
+        "Nikhil Abebe",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C006",
+          "type": "dependency_date_drift",
+          "projects": [
+            "covid_vhh_design",
+            "hyperbolic_discount",
+            "mentormix",
+            "distinguishing_romanized_hindi_urdu"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-06-26."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "distracting_control",
+      "title": "The Distracting Control Suite",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# The Distracting Control Suite\n\n`distracting_control` extends `dm_control` with static or dynamic visual\ndistractions in the form of changing colors, backgrounds, and camera poses.\nDetails and experimental results can be found in our\n[paper](https://arxiv.org/pdf/2101.02722.pdf).\n\n## Requirements and Installation\n\n* Clone this repository\n* `sh run.sh`\n* Follow the instructions and install\n[dm_control](https://github.com/deepmind/dm_control#requirements-and-installation). Make sure you setup your MuJoCo keys correctly.\n* Download the [DAVIS 2017\ndataset](https://davischallenge.org/davis2017/code.html). Make sure to select the 2017 TrainVal - Images and Annotations (480p). The training images will be used as distracting backgrounds.\n\n## Instructions\n\n* You can run the `distracting_control_demo` to generate sample images of the\ndifferent tasks at different difficulties:\n\n```\npython distracting_control_demo --davis_path=$HOME/DAVIS/JPEGImages/480p/\n--output_dir=/tmp/distrtacting_control_demo\n```\n* As seen from the demo to generate an instance of the environment you simply\nneed to import the suite and use `suite.load` while specifying the\n`dm_control` domain and task, then choosing a difficulty and providing the\ndataset_path.\n\n* Note the environment follows the dm_control environment APIs.\n\n## Paper\n\nIf you use this code, please cite the accompanying [paper](https://arxiv.org/pdf/2101.02722.pdf) as:\n\n```\n@article{stone2021distracting,\ntitle={The Distracting Control Suite -- A Challenging Benchmark for Reinforcement Learning from Pixels},\nauthor={Austin Stone and Oscar Ramirez a",
+      "contributors": [
+        "Amara Okafor",
+        "Hyun Traore",
+        "Tereza Aliyev",
+        "Farah Haddad",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C088",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "concept_marl",
+            "distracting_control"
+          ],
+          "shared_object": "Nikhil Abebe at >=60% allocation",
+          "canonical": {
+            "person": "Nikhil Abebe",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Nikhil Abebe is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "distribution_embedding_networks",
+      "title": "Example code for running Distribution Embedding Networks (DEN) algorithm.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "Example code for running Distribution Embedding Networks (DEN) algorithm.\n\nPaper: https://openreview.net/forum?id=F2rG2CXsgO (TMLR'22)\n\nAbstract: We propose Distribution Embedding Networks (DEN) for classification\nwith small data. In the same spirit of meta-learning, DEN learns from a diverse\nset of training tasks with the goal to generalize to unseen target tasks. Unlike\nexisting approaches which require the inputs of training and target tasks to\nhave the same dimensionality with possibly similar distributions, DEN allows\ntraining and target tasks to live in heterogeneous input spaces. This is\nespecially useful for tabular-data tasks where labeled data from related tasks\nare scarce. DEN uses a three-block architecture: a covariate transformation\nblock followed by a distribution embedding block and then a classification\nblock. We provide theoretical insights to show that this architecture allows the\nembedding and classification blocks to be fixed after pre-training on a diverse\nset of tasks; only the covariate transformation block with relatively few\nparameters needs to be fine-tuned for each new task. To facilitate training, we\nalso propose an approach to synthesize binary classification tasks, and\ndemonstrate that DEN outperforms existing methods in a number of synthetic and\nreal tasks in numerical studies.\n\nExample run:\n\n`python -m distribution_embedding_networks.simulation`",
+      "contributors": [
+        "Farah Haddad",
+        "Vera Egede",
+        "Umar Costa"
+      ],
+      "conflicts": [
+        {
+          "id": "C059",
+          "type": "duplicate_effort",
+          "projects": [
+            "distribution_embedding_networks",
+            "STraTA"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    }
+  ]
+}

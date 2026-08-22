@@ -1,0 +1,599 @@
+{
+  "batch": 17,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "learning_parameter_allocation",
+      "title": "Flexible Multi-task Networks by Learning Parameter Allocation",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Flexible Multi-task Networks by Learning Parameter Allocation\n\nThis package includes the code for reproducing the experiments from the paper:\n\"Flexible Multi-task Networks by Learning Parameter Allocation\".\nhttps://arxiv.org/abs/1910.04915\n\n## Setup\n\nYou should have python3.6 and python3.6-dev installed on your machine:\n\n```\napt-get install python3.6 python3.6-dev\n```\n\nTo create a virtual environment with the necessary dependencies, run:\n\n```\nsource run.sh\n```\n\n## Running experiments\n\nAll experiments save logs and summaries under the logdir given as a commandline flag.\nWhen running several experiments in a row, make sure that this logdir is emptied between the runs.\n\n### MNIST (Section 5.1)\n\nFor MNIST, the training process evaluates the train/test accuracy at the end of training.\n\nTo run the training (four variants depending on the method):\n\n```\npython -m learning_parameter_allocation.mnist.mnist_train \\\n--method=no_sharing\n```\n\n```\npython -m learning_parameter_allocation.mnist.mnist_train \\\n--method=shared_bottom\n```\n\n```\npython -m learning_parameter_allocation.mnist.mnist_train \\\n--method=gumbel_matrix\n```\n\n```\npython -m learning_parameter_allocation.mnist.mnist_train \\\n--method=gumbel_matrix --budget=0.75 --budget_penalty=1.0\n```\n\n### Omniglot (Section 5.2)\n\nFor Omniglot, the training process also evaluates the train/validation/test accuracies at the end of training.\n\nHowever, a separate validation process can be used to run evals for all checkpoints, and pick the best checkpoint based on validation accuracy.\n\nTo run the training (two variants depending on the method):",
+      "contributors": [
+        "Jorge Vidal",
+        "Csilla Nassar",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C057",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "learning_parameter_allocation",
+            "comisr"
+          ],
+          "shared_object": "Jorge Vidal at >=60% allocation",
+          "canonical": {
+            "person": "Jorge Vidal",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Jorge Vidal is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "learning_to_clarify",
+      "title": "Learning to Clarify (ACT)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Learning to Clarify (ACT)\n\nReference code for the paper [Learning to Clarify: Multi-turn Conversations with\nAction-Based Contrastive Self-Training](https://arxiv.org/abs/2406.00222).\n\nThis is not an officially supported Google product.\n\nIf you use this code, please cite our paper:\n\n```\n@inproceedings{\nchen2025learning,\ntitle={Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training},\nauthor={Maximillian Chen and Ruoxi Sun and Tomas Pfister and Sercan O Arik},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=SIE6VFps9x}\n}\n```\n\n## Setup environment\n\nAssume this file (README.md), Dockerfile, and the act subdirectory are all under\nthe `/home/myuser/staging/learning_to_clarify` directory.\n\n### Download PACIFIC dataset (for example run)\n\n```bash\ncd /home/myuser/staging\ngit clone https://github.com/dengyang17/PACIFIC\n```\n\n### Convert PACIFIC dataset to Gemini 1.0 Pro format\n\n```bash\ncd /home/myuser/staging/learning_to_clarify\nPYTHONPATH=/home/myuser/staging/learning_to_clarify/act/src python3 ./act/src/act/scripts/convert_pacific.py \\\n--path=/home/myuser/staging/PACIFIC/data/pacific/train.json \\\n--results_path=/home/myuser/staging/train.jsonl\nPYTHONPATH=/home/myuser/staging/learning_to_clarify/act/src python3 ./act/src/act/scripts/convert_pacific.py \\\n--path=/home/myuser/staging/PACIFIC/data/pacific/validation.json \\\n--results_path=/home/myuser/staging/validation.jsonl\n```\n\n### Sample 20 entries from train.jsonl and validation.jsonl each for example run\n\nFor actual ",
+      "contributors": [
+        "Maren Zhou",
+        "Linnea Yamada",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C041",
+          "type": "duplicate_effort",
+          "projects": [
+            "dual_pixels",
+            "learning_to_clarify"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ledge",
+      "title": "Controlling Experts with Understandable Commands\" by Shumeet Baluja,",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Ledge\n\nThis is the code associated with our paper \"Interpretable Actions:\nControlling Experts with Understandable Commands\" by Shumeet Baluja,\nDavid Marwood, and Michele Covell.  The paper is published in the\nthirty-fifth Conference on Artificial Intelligence (AAAI-21).\n\nThis code implements the Function Approximator example from the paper,\napproximately reconstructing a 1-D function. Following the paper, the\nresults of step 1 and step 2 are provided in the data package. This\ncode performs:\n\n- Step 3: Correct the residual error.\n- Step 4: Extract the interpretable commands. Commands are printed to the console.\n- Step 5: Fine-tune the extracted commands.\n\n## Install the Code\nFrom your working directory, run:\n```\nsvn export https://github.com/google-research/google-research/trunk/ledge\ncd ledge\npip3 install -r requirements.txt\n```\n\n## Install the Data\n```\nwget http://storage.googleapis.com/gresearch/ledge/data2.tar.gz\ntar xzf data2.tar.gz\nrm data2.tar.gz\n```\n\n## Run a Simple Demo\n```\npython -m ledge --target_function_file targets/approximate_20\neog /tmp/refit.png\n```\n\nFor a list of flags and options:\n```\npython -m ledge --help\n```",
+      "contributors": [
+        "Tereza Aliyev",
+        "Kaia Wolde",
+        "Chiara Olsen",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C132",
+          "type": "dependency_date_drift",
+          "projects": [
+            "ledge",
+            "neutra",
+            "gen_patch_neural_rendering",
+            "dreamfields"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-10."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lego",
+      "title": "LEGO:Latent Execution-Guided Reasoning for Multi-Hop Question Answering on Knowledge Graph",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-01"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# LEGO:Latent Execution-Guided Reasoning for Multi-Hop Question Answering on Knowledge Graphs\n\n## Installation\n\nFirst clone the repository and the [smore repo](https://github.com/google-research/smore), and install the package dependency required in the `requirements.txt`.\n\nThen navigate to the root folder of the project and do\n\ngit submodule update --init\npip install -e .\n\n## Examples\n\nPlease see the example script of each methods under `lego/experiments/scripts` folder.\n\n## Citations\n\nIf you use this repo, please cite the following paper.\n\n```\n@inproceedings{ren2021lego,\ntitle={Lego: Latent execution-guided reasoning for multi-hop question answering on knowledge graphs},\nauthor={Ren, Hongyu and Dai, Hanjun and Dai, Bo and Chen, Xinyun and Yasunaga, Michihiro and Sun, Haitian and Schuurmans, Dale and Leskovec, Jure and Zhou, Denny},\nbooktitle={International Conference on Machine Learning},\npages={8959--8970},\nyear={2021},\norganization={PMLR}\n}\n```\n\n## License\nLEGO is licensed under the Apache License, Version 2.0.\n\nThis is not an officially supported Google product.\n\nContact hyren@cs.stanford.edu and hadai@google.com for questions about the repo.",
+      "contributors": [
+        "Bilal Novak",
+        "Rafael Duran",
+        "Emeka Pinto",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C032",
+          "type": "duplicate_effort",
+          "projects": [
+            "ieg",
+            "lego"
+          ],
+          "shared_object": "an internal evaluation harness",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building an internal evaluation harness from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "light_field_neural_rendering",
+      "title": "Light Field Neural Rendering",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-06-01"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Light Field Neural Rendering\n### [Project Page](https://light-field-neural-rendering.github.io/) | [Paper](https://arxiv.org/pdf/2112.09687.pdf) | [Video](Coming Soon)\n\nThis is a JAX/Flax implementation of the paper Suhail et al, \"Light Field Neural\nRendering\".\n\n## Installation\nThe following code snippet clones the repo and installs dependencies.\n\n```python\nENV_DIR=~/venvs/lfnr\n\n# Clone this repo.\nsudo apt install subversion\nsvn export --force https://github.com/google-research/google-research/trunk/light_field_neural_rendering\n\n# Setup virtualenv.\npython3 -m venv $ENV_DIR\nsource $ENV_DIR/bin/activate\n\n# Install dependencies.\npip install -r light_field_neural_rendering/requirements.txt\n# For training with GPUs, you might have to change this to your\n# system's CUDA version. Please check the ouput of nvcc --version and change the\n# version accordingly.\npip install --upgrade \"jax[cuda110]==0.2.19\" -f https://storage.googleapis.com/jax-releases/jax_releases.html\n```\n\n## Dataset\n\nYou will have to download the dataset from [NeX official Onedrive](https://vistec-my.sharepoint.com/personal/pakkapon_p_s19_vistec_ac_th/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpakkapon%5Fp%5Fs19%5Fvistec%5Fac%5Fth%2FDocuments%2Fpublic%2FVLL%2FNeX%2Fshiny%5Fdatasets%2Fshiny) or [Nex offical Google Drive](https://drive.google.com/corp/drive/folders/1kYGyIJI6AduHC-bM312N41WPjAoYf8Um).\n\nDepending on where you place the dataset you will have to change the `dataset.base_dir` config variable in your experiments.\n\n## Demo Run on Toy Task\nTo test the working of the installations you can run a toy experimen",
+      "contributors": [
+        "Emeka Pinto",
+        "Ondrej Bergstrom",
+        "Chiara Olsen",
+        "Katya Silva"
+      ],
+      "conflicts": [
+        {
+          "id": "C099",
+          "type": "budget_overallocation",
+          "projects": [
+            "fsq",
+            "light_field_neural_rendering"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-36",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-36",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-36 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lighthouse",
+      "title": "Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination\n## Srinivasan et al., CVPR 2020\n\nThis release contains code for predicting incident illumination at any 3D\nlocation within a scene. The algorithm takes a narrow-baseline stereo pair of\nRGB images as input, and predicts a multiscale RGBA lighting volume.\nSpatially-varying lighting within the volume can then be computed by standard\nvolume rendering.\n\n## Installation\n\nThis code relies on some external codebases that do not use the Apache 2 license\nused by Google. To complete this code release, follow the instructions at\nthe end of `nets.py` and `geometry/projector.py`. If you have any difficulty\nwith this, please contact barron@google.com and pratul@berkeley.edu.\n\n## Running a pretrained model\n\n``interiornet_test.py`` contains an example script for running a pretrained\nmodel on the test set (formatted as .npz files). Please download and extract the\n[pretrained model](https://drive.google.com/drive/folders/1VQjRpInmfspz0Rw0Dlm9RbdHX5ziFeDI?usp=sharing)\nand\n[testing examples](https://drive.google.com/a/berkeley.edu/file/d/121DHkPpbQlyedruI4huF36BF7T1LHcKX/view?usp=sharing)\nfiles, and then include the corresponding file/directory names as command line\nflags when running ``interiornet_test.py``.\n\nExample usage (edit paths to match your directory structure):\n``python -m lighthouse.interiornet_test --checkpoint_dir=\"lighthouse/model/\" --data_dir=\"lighthouse/testset/\" --output_dir=\"lighthouse/output/\"``\n\n## Training\n\nPlease refer to the ``train.py`` for code to use for training your own model.\n\nThis model w",
+      "contributors": [
+        "Yusuf Keita",
+        "Wanjiru Horvat",
+        "Linnea Yamada",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C078",
+          "type": "dependency_date_drift",
+          "projects": [
+            "health_equity_toolbox",
+            "generative_trees",
+            "lighthouse",
+            "mmmt_if"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lila",
+      "title": "Disclaimer: This is not an officially supported Google product.",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "### Disclaimer: This is not an officially supported Google product.\n\n# Featurising Pixels from Dynamic 3D Scenes with Linear In-Context Learners\n**Nikita Araslanov**, **Martin Sundermeyer**, **Hidenobu Matsuki**, **David Joseph Tan**, **Federico Tombari**\n\n### \u2728 CVPR 2026 Oral Presentation \u2728\n\n[Paper (arXiv)](https://arxiv.org/abs/2604.26488) | [Supplemental material (.zip, 26MB)](https://storage.googleapis.com/gresearch/lila-ckpts/lila_cvpr2026_supp.zip) | [Project website](https://lila-pixels.github.io/)\n\n---\n\nLILA learns dense visual representations from video using optical flow and monocular depth cues.\n\n* * *\n\n## Overview\n\nThis repository contains the reference implementation of LILA.\nIt includes code for model training, evaluation on DAVIS / COCO-Stuff / NYUv2, and Torch Hub entrypoints for loading released checkpoints.\n\n* * *\n\n## \ud83d\ude80 Usage\n\nClone the monorepo and load the LILA Torch Hub entrypoints from the `./lila` subdirectory. For the released `lila_dinov2_vits14`, `lila_dinov2_vitb14`, `lila_dinov2_vitl14`, and `lila_dinov2_vitl14_kts` checkpoints, `pretrained=True` downloads the snapshot automatically. You can still override this with `checkpoint_path` or `checkpoint_url`.\n\n\ud83d\udd39 Clone the repository\n\n```bash\ngit clone git@github.com:google-research/google-research.git\ncd google-research\n```\n\n\ud83d\udd39 Load from a local clone of `google-research`\n\n```python\nimport torch\n\nmodel = torch.hub.load(\n\"./lila\",\n\"lila_dinov2_vitb14\",\npretrained=True,\nsource=\"local\",\n)\n\nmodel.eval()\n```\n\n\ud83d\udd39 Load a specific local snapshot\n\n```python\nimport torch\n\nmodel = torch.hub.load(\n\"./lila\",\n\"lila_d",
+      "contributors": [
+        "Csilla Nassar",
+        "Emeka Pinto",
+        "Freya Ruiz",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C031",
+          "type": "gpu_double_booking",
+          "projects": [
+            "lasagna_mt",
+            "lila"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 512
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (512 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "linear_dynamical_systems",
+      "title": "experiments locally without dependencies on Google packages.",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This directory contains Python script to run linear dynamical system clustering\nexperiments locally without dependencies on Google packages.\n\n## Installation\n\nThe files in this directory are meant to be run as python scripts. To install\ndependencies, run `pip install -r requirements.txt` If there are error messages\nrelated to the pylds package, do the following: 1. Install numpy through `pip\ninstall numpy` 2. Install Cython through `pip install Cython` 3. Remove pylds\nfrom the requirements file, and install the rest requirements `pip install -r\nrequirements.txt` 4. Install pylds through `pip install pylds`\n\n## Example Usage\n\nExample to run experiments for learning eigenvalues: python\nexperiment_learn_eig.py --output_dir=may11_eig_2d_test/ \\\n--min_seq_len=20 --max_seq_len=1000 --num_sampled_seq_len=2 \\\n--num_repeat=1 --hidden_dim=2 --true_eig=0.1,0.8\n\nExample to run experiments for running clustering experiments: python\nexperiments.py --output_dir=may19_3d --hidden_state_dim=3 \\\n--min_seq_len=100 --max_seq_len=2000 --num_sampled_seq_len=20 \\\n--num_systems=100 --num_repeat=100 \\\n--cluster_center_dist_lower_bound=0.1 --hide_inputs=true\n\nFor more information about the flags, please see documentation in the scripts.",
+      "contributors": [
+        "Vera Egede",
+        "Chiara Olsen",
+        "Hyun Traore"
+      ],
+      "conflicts": [
+        {
+          "id": "C079",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "linear_dynamical_systems",
+            "coref_mt5"
+          ],
+          "shared_object": "Chiara Olsen at >=60% allocation",
+          "canonical": {
+            "person": "Chiara Olsen",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Chiara Olsen is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "linear_eval",
+      "title": "Tools for linear evaluation using L-BFGS",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Tools for linear evaluation using L-BFGS\n\nThis directory contains code for efficiently performing linear evaluation on a\nmatrix of fixed embeddings with accompanying labels in JAX, using L-BFGS.\n\nIf you find this code useful, please cite:\n\n```\n@misc{kornblith2021linear,\ntitle = {Tools for linear evaluation using L-BFGS},\nauthor = {Kornblith, Simon},\nhowpublished = \"\\url{https://github.com/google-research/google-research/linear_eval}\",\nyear = {2021}\n}\n```\n\n## Examples\n\n### One-step tuning and evaluation\n\n```python\nresults = linear_eval.tune_hparams_and_compute_test_accuracy(\ntrain_embeddings, train_labels,\nval_embeddings, val_labels,\ntest_embeddings, test_labels)\n```\n\n`tune_hparams_and_compute_test_accuracy` is a convenience function that\nautomatically splits the training set for hyperparameter tuning (with the size\nof the validation set determined by `val_fraction`), distributes it across\ndevices, finds the optimal hyperparameters, retrains the model on the full\ncombined train and val sets with these optimal hyperparameters, and computes the\naccuracy on the provided test set. `results` is a Dict containing:\n\n- `test_accuracy`: Accuracy on test set.\n- `val_accuracy`: Accuracy of best model on val set.\n- `optimal_l2_reg`: Optimal value of L2 regularization.\n- `weights`: Linear classifier weights.\n- `biases`: Linear classifier biases.\n\n### Training a classifier\n\n```python\n# Distribute embeddings across different accelerators/cores. If the number of\n# embeddings is not evenly divisible by the number of cores, the embeddings are\n# padded with zeros. `distributed_train_mask` in",
+      "contributors": [
+        "Efe Lindqvist",
+        "Linnea Yamada",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C005",
+          "type": "duplicate_effort",
+          "projects": [
+            "dnn_predict_accuracy",
+            "linear_eval"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "llm_longdoc_interpretability",
+      "title": "Long Document Interpretability using Large Language Models via Hierarchical Version of Sha",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Bao Ndiaye",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Long Document Interpretability using Large Language Models via Hierarchical Version of Shapley and Banzhaf values\n\nImplements methods for [TextGenSHAP: Scalable Post-hoc Explanations in Text\nGeneration with Long Documents](https://arxiv.org/abs/2312.01279).\n\n## Setup and run minimal experiment\n\nMake sure you're in the `/experiments` directory before running these commands.\n\nDependencies are defined in `requirements.txt`. `run.sh` installs them and\nruns a minimal toy version of the experiments in this repo. Start with:\n```\nbash run.sh\n```\n\n## Run Full Experiments\n\n### Download the NQ dataset.\n```\nbash scripts/download-nq.sh\n```\n\n### Generate embeddings and retrieval results for NQ\n\n```\nbash scripts/run-nq-embedding-and-retrieval.sh psgs_w100 100\n```\n\n5. You can now use the generated outputs to run any of the evaluation experiments\n\n### Generate embeddings and retrieval results for MirACL\n\n```\nbash scripts/run-miracl-embedding-and-retrieval.sh\n```\n\n### Download the FiD model and parameters\n\n```\nbash scripts/download-fid-model.sh\n```\n\n### Get interpretability results\n\n1. Run the interpretability script for NQ.\n\n```\nbash run-nq-interpretations.sh shapley\n```\n\n2. Run the interpretability script for MIRACL.\n\n```\nbash run-miracl-interpretations.sh banzhaf\n```\n\n## Flash Attention\n\n`flash_attn.py` is heavily inspired by the following two implementations:\n- https://github.com/openai/triton/blob/main/python/tutorials/06-fused-attention.py\n- https://github.com/Dao-AILab/flash-attention/blob/main/flash_attn/flash_attn_triton.py\n\nThe four types of flash attention implemented are descri",
+      "contributors": [
+        "Efe Lindqvist",
+        "Maren Zhou",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C022",
+          "type": "gpu_double_booking",
+          "projects": [
+            "llm_longdoc_interpretability",
+            "infinite_nature_zero"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-07-06",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-07-06",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-07-06."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lm_fact_tracing",
+      "title": "Tracing Factual Knowledge in LMs Back To Their Training Data",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-02-09",
+        "end": "2026-05-11"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Tracing Factual Knowledge in LMs Back To Their Training Data\n\nCode for our paper, [Towards Tracing Factual Knowledge in Language Models Back to the Training Data](https://arxiv.org/abs/2205.11482).\n\n**Authors:** Ekin Aky\u00fcrek, Tolga Bolukbasi, Frederick Liu, Binbin Xiong, Ian Tenney, Jacob Andreas, Kelvin Guu.\n\n**Abstract:** Language models (LMs) have been shown to memorize a great deal of factual knowledge contained in their training data. But when an LM generates an assertion, it is often difficult to determine where it learned this information and whether it is true. In this paper, we propose the problem of fact tracing: identifying which training examples taught an LM to generate a particular factual assertion. Prior work on training data attribution (TDA) may offer effective tools for identifying such examples, known as \"proponents\". We present the first quantitative benchmark to evaluate this. We compare two popular families of TDA methods -- gradient-based and embedding-based -- and find that much headroom remains. For example, both methods have lower proponent-retrieval precision than an information retrieval baseline (BM25) that does not have access to the LM at all. We identify key challenges that may be necessary for further improvement such as overcoming the problem of gradient saturation, and also show how several nuanced implementation details of existing neural TDA methods can significantly improve overall fact tracing performance.\n\n## Installation\n\n```bash\n$ cd /path/to/google_research  # Navigate to root of the repository.\n$ python3 -m venv .venv  # Create",
+      "codename": "Project Palisade",
+      "contributors": [
+        "Linnea Yamada",
+        "Chiara Olsen",
+        "Amara Okafor"
+      ],
+      "conflicts": [
+        {
+          "id": "C062",
+          "type": "codename_collision",
+          "projects": [
+            "RevThink",
+            "lm_fact_tracing"
+          ],
+          "shared_object": "Project Palisade",
+          "canonical": {
+            "codename": "Project Palisade"
+          },
+          "your_side": {
+            "claim": "Team refers to this (different) effort internally as Project Palisade."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "lm_memorization",
+      "title": "Quantifying Memorization Across Neural Language Models",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "#Quantifying Memorization Across Neural Language Models\n\nLarge language models (LMs) have been shown to memorize parts of their training data, and when prompted appropriately, they will emit the memorized training data verbatim.\nThis is undesirable because memorization violates privacy (exposing user data), degrades utility (repeated easy-to-memorize text is often low quality), and hurts fairness (some texts are memorized over others).\n\nIn our [paper](https://arxiv.org/abs/2202.07646), we describe three log-linear relationships that quantify the degree to which LMs emit memorized training data.\nMemorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated, and (3) the number of tokens of context used to prompt the model. Surprisingly, we find the situation becomes complicated when generalizing these results across model families.\nOn the whole, we find that memorization in LMs is more prevalent than previously believed and will likely get worse as models continues to scale, at least without active mitigations.\n\nThis respository contains links to the prefixes and model continuations which\nwere used in our analysis.\n\n## Intended Use\nThe prompt and generations released here are intended to be used by researchers\nto study memorization in large language models as well as to develop better\nmitigations for memorization.\nAll prompts come from [The Pile](https://arxiv.org/abs/2101.00027) and have not\nnot been curated for content.\nThus, the dataset should not be used outside of its intended purpose of studying\nmemor",
+      "contributors": [
+        "Nikhil Abebe",
+        "Vera Egede",
+        "Oyin Iversen",
+        "Bilal Novak"
+      ],
+      "conflicts": [
+        {
+          "id": "C019",
+          "type": "gpu_double_booking",
+          "projects": [
+            "lm_memorization",
+            "mutual_information_representation_learning"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Believes it holds the cirrus-tpu reservation (256 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "locoprop",
+      "title": "LocoProp: Enhancing BackProp via Local Loss Optimization",
+      "portfolio": "trust-theory",
+      "pm": "Ximena Jansen",
+      "em": "Bruno Mbeki",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-07-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# LocoProp: Enhancing BackProp via Local Loss Optimization\n**Ehsan Amid, Rohan Anil, Manfred Warmuth - AISTATS 2022**\nhttps://proceedings.mlr.press/v151/amid22a/amid22a.pdf\n\nSecond-order methods have shown state-of-the-art performance for optimizing deep neural networks. Nonetheless, their large memory requirement and high computational complexity, compared to first-order methods, hinder their versatility in a typical low-budget setup. LocoProp introduces a general framework of layerwise loss construction for multilayer neural networks that achieves a performance closer to second-order methods while utilizing first-order optimizers only. Our methodology lies upon a three-component loss, target, and regularizer combination, for which altering each component results in a new update rule. We provide examples using squared loss and layerwise Bregman divergences induced by the convex integral functions of various transfer functions. Our experiments on benchmark models and datasets validate the efficacy of our new approach, reducing the gap between first-order and second-order optimizers.\n\nSimilar to backpropagation, LocoProp applies a forward pass to compute the activations. In the backward pass, LocoProp sets per neuron \"targets\" for each layer. Finally, LocoProp splits model training into independent problems across layers where several local updates can be applied to each layer's weights in parallel. See our [Google AI blog post](https://ai.googleblog.com/2022/07/enhancing-backpropagation-via-local.html) for further details.",
+      "contributors": [
+        "Giannis Sato",
+        "Emeka Pinto",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C056",
+          "type": "duplicate_effort",
+          "projects": [
+            "graph_compression",
+            "locoprop"
+          ],
+          "shared_object": "a human-rating annotation UI",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a human-rating annotation UI from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "logic_inference_dataset",
+      "title": "LogicInference Dataset",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# LogicInference Dataset\n\nThis repository contains the Python code used to generate the `LogicInference`\ndataset. `LogicInference` is a dataset designed to evaluate the ability of\nmodels to perform logical inference. The dataset focuses on inference using\npropositional logic and a small subset of first-order logic, represented both in\nsemi-formal logical notation, and in natural language. `LogicInference` has two\nmain long-term goals: (1) to evaluate the ability of models to perform logical\ninference, and the degree to which inference chains are real or hallucinated,\nand (2) to assess whether learning logical inference abilities in the abstract\n(e.g., getting better in this dataset) would then transfer to other real-world\ntasks.\n\nFor a detailed description of the dataset, please check the following paper:\nhttps://openreview.net/pdf?id=HAGeIS_Lcg9 (arXiv preprint: https://arxiv.org/abs/2203.15099 )\n\nPlease cite as:\n\n```\n@inproceedings{ontanon2022logicinference,\nurl = {https://openreview.net/pdf?id=HAGeIS_Lcg9},\nauthor = {Onta\\~{n}\\'{o}n, Santiago and Ainslie, Joshua and Cvicek, Vaclav and Fisher, Zachary},\ntitle = {{LogicInference}: A New Dataset for Teaching Logical Inference to seq2seq Models},\nbooktitle={Proceedings of ICLR 2022 workshop on Objects, Structure and Causality},\nyear={2022}\n}\n```\n\n## Generating the Datasets\n\nAfter checking out the code, open the `generate_dataset.py` file, and update the\n`TARGET_FOLDER` variable to point to where do you want the dataset to be\ngenerated. Then run:\n\n`python3 generate_dataset.py`\n\nDataset generation might take a while, as all th",
+      "contributors": [
+        "Gustavo Moreau",
+        "Paloma Castillo",
+        "Yara Jokic",
+        "Quentin Farkas"
+      ],
+      "conflicts": [
+        {
+          "id": "C055",
+          "type": "gpu_double_booking",
+          "projects": [
+            "frechet_video_distance",
+            "logic_inference_dataset"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-08",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-08",
+            "capacity_requested_each": 256
+          },
+          "your_side": {
+            "claim": "Also believes it holds the vulcan-h100 reservation (256 accelerators) for the week of 2026-06-08."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "logit_adjustment",
+      "title": "Long-tail learning via logit adjustment",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-02-23",
+        "end": "2026-06-08"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Long-tail learning via logit adjustment\n\nThis code accompanies the paper:\n\n[Long-tail learning via logit adjustment](https://arxiv.org/abs/2007.07314).\nAditya Krishna Menon, Sadeep Jayasumana, Ankit Singh Rawat, Himanshu Jain, Andreas Veit, Sanjiv Kumar.\nICLR 2021.\n\n## Running the code\n\n#### 1. Setting up the Python environment\nThe code has been tested with Python 3.7.2. The necessary libraries can be\ninstalled using pip with the following command:\n\n```\n# from google-research/\npip install -r logit_adjustment/requirements.txt\n```\n\n#### 2. Testing the code\nThe code may be tested on a dummy dataset using:\n\n```\n# from google-research/\npython -m logit_adjustment.main --dataset=test --mode=baseline --train_batch_size=2 --test_batch_size=2\n```\n\nThis should complete quickly without any errors.\n\n#### 3. Downloading CIFAR-10/100 long-tail datasets\nDownload the CIFAR-10/100 long-tail datasets using the links provided below and\nput the `.tfrecord` files in the `logit_adjustment/data/` directory. The train\ndatasets were created with the EXP-100 profile as detailed in the paper, the\ntest datasets are the same as the standard CIFAR-10/100 test datasets.\n\nLinks: [cifar10-lt_train.tfrecord](http://storage.googleapis.com/gresearch/logit_adjustment/cifar10-lt_train.tfrecord),\n[cifar10_test.tfrecord](http://storage.googleapis.com/gresearch/logit_adjustment/cifar10_test.tfrecord),\n[cifar100-lt_train.tfrecord](http://storage.googleapis.com/gresearch/logit_adjustment/cifar100-lt_train.tfrecord),\n[cifar100_test.tfrecord](http://storage.googleapis.com/gresearch/logit_adjustment/cifar100_test.tfre",
+      "contributors": [
+        "Farah Haddad",
+        "Linnea Yamada",
+        "Carmen Reyes"
+      ],
+      "conflicts": [
+        {
+          "id": "C070",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "logit_adjustment",
+            "lamp"
+          ],
+          "shared_object": "Farah Haddad at >=60% allocation",
+          "canonical": {
+            "person": "Farah Haddad",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Farah Haddad is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "loss_functions_transfer",
+      "title": "Why Do Better Loss Functions Lead to Less Transferable Features?",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "## Why Do Better Loss Functions Lead to Less Transferable Features?\n\nThis repository contains code to load models from\n[Why Do Better Loss Functions Lead to Less Transferable Features?](https://arxiv.org/abs/2010.16402)\nas well as implementations of the loss functions.\n\nThe model checkpoints and [SavedModels](https://www.tensorflow.org/api_docs/python/tf/saved_model)  can be found at [this link](https://console.cloud.google.com/storage/browser/gresearch/loss_functions_transfer). `load_model.py` contains code to construct model graphs and load checkpoints in graph mode (i.e., TensorFlow 1 compatibility mode).\n\nAlternatively, it is also possible to load and run the SavedModels directly in TensorFlow 2 without the need to use any code from this repository besides the preprocessing code. The SavedModel returns the activations from each block in the ResNet, the penultimate (average pooling) layer (`final_avg_pool`), the final layer (`final_layer`), and the normalized/scaled model outputs (`outputs`). Note that the model outputs contain 1001 classes, one more than are actually present in ImageNet. This is because the copy of ImageNet we used to train the model added an additional background class as the first class. This class contains no images and should be dropped when evaluating.\n\nSee [this Colab](https://colab.research.google.com/github/google-research/google-research/blob/master/loss_functions_transfer/load_models.ipynb) for example code for how to use the SavedModels and restore the checkpoints.\n\nPlease cite as:\n```\n@inproceedings{\nkornblith2021why,\ntitle={Why Do Better Lo",
+      "contributors": [
+        "Rosa Mensah",
+        "Yusuf Keita",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C087",
+          "type": "dependency_date_drift",
+          "projects": [
+            "muNet",
+            "ials",
+            "aptamers_mlpd",
+            "loss_functions_transfer"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    }
+  ]
+}

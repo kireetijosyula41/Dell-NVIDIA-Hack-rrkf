@@ -1,0 +1,599 @@
+{
+  "batch": 10,
+  "company_files": [
+    "company/company.json",
+    "company/personas.json",
+    "company/resources.json"
+  ],
+  "projects": [
+    {
+      "dir": "dvrl",
+      "title": "Codebase for \"Data Valuation using Reinforcement Learning\"",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-13",
+        "end": "2026-08-03"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Codebase for \"Data Valuation using Reinforcement Learning\"\n\nAuthors: Jinsung Yoon, Sercan O. Arik, Tomas Pfister\n\nPaper: Jinsung Yoon, Sercan O Arik, Tomas Pfister, \"Data Valuation using\nReinforcement Learning\", arXiv preprint arXiv:1909.11671 (2019).\nhttps://arxiv.org/abs/1909.11671\n\nThis directory contains implementations of Data Valuation using Reinforcement\nLearning (DVRL) for the following four applications.\n\n-   Data valuation\n-   Corrupted sample discovery and robust learning (on tabular data)\n-   Corrupted sample discovery and robust learning with transfer learning\n(on image data)\n-   Domain adaptation\n\nTo run the pipeline for training and evaluation on data valuation application,\nsimply run python3 -m main_data_valuation.py or take a look at the following\njupyter-notebook file (main_data_valuation.ipynb).\n\nTo run the pipeline for training and evaluation on corrupted sample discovery\nand robust learning (on tabular data), simply run python3 -m\nmain_corrupted_sample_discovery.py or take a look at the following\njupyter-notebook file (main_corrupted_sample_discovery.ipynb).\n\nTo run the pipeline for training and evaluation on corrupted sample discovery\nand robust learning with transfer learning (on image data) application,\nsimply run python3 -m main_dvrl_image_transfer_learning.py or take a look at\nthe following jupyter-notebook file (main_dvrl_image_transfer_learning.ipynb).\n\nTo run the pipeline for training and evaluation on domain adaptation\napplication, simply run python3 -m main_domain_adaptation.py or take a look at\nthe following jupyter-notebook file (main_doma",
+      "contributors": [
+        "Wei Ivanov",
+        "Rosa Mensah",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C110",
+          "type": "duplicate_effort",
+          "projects": [
+            "ime",
+            "dvrl"
+          ],
+          "shared_object": "a synthetic-data generation pipeline",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a synthetic-data generation pipeline from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "ebp",
+      "title": "EBP: Energy-Based Processes for Exchangeable Data",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Alina Larsen",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# EBP: Energy-Based Processes for Exchangeable Data\n\nCode for \"Energy-Based Processes for Exchangeable Data\"\nby Mengjiao Yang, Bo Dai, Hanjun Dai, Dale Schuurmans.\n\nPaper available at https://arxiv.org/abs/2003.07521\n\nUpon using this codebase, please cite the paper:\n\n```\n@article{yang2020energy,\ntitle={Energy-Based Processes for Exchangeable Data},\nauthor={Yang, Mengjiao and Dai, Bo and Dai, Hanjun and Schuurmans, Dale},\njournal={arXiv preprint arXiv:2003.07521},\nyear={2020}\n}\n```\n\n## Examples\n\n### Multi-modal synthetic data\nVisualization of the learned energy of Gaussian Processes (GPs), Nueral Processes (NPs), Variational Implicit Processes (VIPs),\nand energy-based processes (EBPs). EBPs successfully capture multi-modality of the toy data.\n\n### Image completion\nSamples of generated MNIST digits conditioned on a subset of pixels:\n\n### Point-cloud generation\nPoint-cloud generation using the learned RNN sampler:\n\n### Point-cloud denoising\nPoint-cloud denoising using the learned energy function:\n\n## Install\n\nNavigate to the root of project, and perform:\n\npip3 install -e .\n\nThe installation requires both gcc and CUDA (if gpu is enabled)\n\n## Training\n\ncd ebp/experiments/\n./run_ebp.sh\n\n## Test\n\nTo plot the energy heatmap, pass the latest check-pointed epoch number\n\n./run_ebp.sh\n./run_ebp.sh -epoch_load 99",
+      "contributors": [
+        "Oyin Iversen",
+        "Katya Silva",
+        "Milan Zapata",
+        "Saoirse Eriksen"
+      ],
+      "conflicts": [
+        {
+          "id": "C027",
+          "type": "budget_overallocation",
+          "projects": [
+            "ebp",
+            "al_for_fep"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-19",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-19",
+            "available": "$120k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $120k from Q3 discretionary compute budget line B-19 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "eim",
+      "title": "Energy-Inspired Models (EIMs)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-04-13"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Energy-Inspired Models (EIMs)\n*Implemention of Energy-Inspired Models as described in [Energy-Inspired Models](https://sites.google.com/view/energy-inspired-models/home) by Dieterich Lawson* (jdl404@nyu.edu), George Tucker* (gjt@google.com), Bo Dai, Rajesh Ranganath.\n\nEnergy-based models are powerful probabilistic models, however, sampling and computing log-likelihoods is intractable due to the partition function. In practice, they rely on approximate sampling algorithms. Motivated by this, we directly build the approximate sampling algorithm into the model. This yields a class of energy-inspired models (EIMs) that incorporate learned energy functions while still providing exact samples and tractable log-likelihood lower bounds. Moreover, many recent variational bounds can be understood in a unified framework with EIMs as the variational family.\n\nWe hope that this code will be a useful starting point for future research in this area.\n\n## Quick Start:\n\nRequirements:\n* TensorFlow (see tensorflow.org for how to install)\n\n```\n# From the deepest google-research/ run:\npython -m eim.small_problems --target=checkerboard --algo=his\npython -m eim.mnist --dataset=static_mnist --proposal=rejection_sampling \\\n--model=bernoulli_vae --data_dir=\n```\nThe first command runs the small problems. Check small_problems.py to see a list of target distributions and algo choices. The second command runs the larger problems. Check mnist.py to see a list of datasets, proposals, and model choices.\n\nThis is not an officially supported Google product. It is maintained by George Tucker (gjt@google.com, ",
+      "contributors": [
+        "Ondrej Bergstrom",
+        "Fumiko Rossi",
+        "Tereza Aliyev",
+        "Nikhil Abebe"
+      ],
+      "conflicts": [
+        {
+          "id": "C128",
+          "type": "duplicate_effort",
+          "projects": [
+            "automated_feature_engineering",
+            "eim"
+          ],
+          "shared_object": "a benchmark leaderboard service",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a benchmark leaderboard service from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "eli5_retrieval_large_lm",
+      "title": "GPT2 and Retrieval",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-27",
+        "end": "2026-08-17"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# GPT2 and Retrieval\nProject realized by **Jules Gagnon-Marchand** ([Mila](mila.quebec)) while interning at Google Brain,\n\nunder the supervision of **Noam Shazeer** (Brain) and **Aurko Roy** (Brain).\n\n*[jgagnonmarchand@gmail.com](jgagnonmarchand@gmail.com), [noam@google.com](noam@google.com), [aurkor@google.com](aurkor@google.com)*\n\n### Description\nThe objective is to test a reasonably large language model\n(GPT2-XL, 1.5B parameters) on the [Kilt](https://ai.facebook.com/tools/kilt/)\nversion of the [ELI5](https://www.aclweb.org/anthology/P19-1346/) task when it is\ncombined with a retriever ([REALM](https://arxiv.org/abs/2002.08909) in this case).\n\nWe wanted to observe whether larger causal language models can make use of the\nretrieved contextual information, as their reasoning capacities are stronger than that\npreviously tested models. Indeed, it has been shown recently that smaller\nlanguage models don't make use of the retrieved text in the context of ELI5.\nIn this project we investigate whether increasing the model capacity can play a\nrole in making the models use retrievals. Models with increased capacity have\nimproved reasoning capabilities, which may help here.\n\nOnce the usefulness of retrievals for larger language models would be established,\ninspecting what kinds of retrievals are useful and why would be a next step, as\nwell as investigating the effects of the retrieval on factual consistency in\ngeneration, which is a problem of major interest right now, with massive\nfinancial implications, as it would allow the use of generative text models in\nproducts (other than tr",
+      "contributors": [
+        "Quentin Farkas",
+        "Wei Ivanov",
+        "Saoirse Eriksen",
+        "Emeka Pinto",
+        "Rosa Mensah"
+      ],
+      "conflicts": [
+        {
+          "id": "C030",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "es_enas",
+            "eli5_retrieval_large_lm"
+          ],
+          "shared_object": "Rosa Mensah at >=60% allocation",
+          "canonical": {
+            "person": "Rosa Mensah",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Rosa Mensah is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "enas_lm",
+      "title": "Language Model Implementation of [ENAS](https://arxiv.org/abs/1802.03268).",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Language Model Implementation of [ENAS](https://arxiv.org/abs/1802.03268).\n\n## Preprocess data\nThe Penn Treebank dataset can be found at:\n\n```\nhttps://github.com/wojzaremba/lstm/tree/master/data\n```\n\nAfter downloading the dataset, please run the following script to preprocess\nthe files `{train,valid,test}.txt` into a `pkl` bundle:\n\n```\npython -m enas_lm.src.process\n```\n\n## ENAS models\nTo search for a cell using default parameters:\n\n```\npython -m enas_lm.src.search \\\n--output_dir=\"$(pwd)/output\" \\\n--data_path=\"$(pwd)/ptb/ptb.pkl\"\n```\n\nTo evaluate the found architecture with default parameters on TPUs, please first\nfollow [this guide](https://cloud.google.com/tpu/docs/quickstart) to set up a\nCloud TPU account. A `1x1` donut of TPUv2 should provide enough memory for our\nrun. The running command is:\n\n```\npython -m enas_lm.src.tpu.fixed \\\n--fixed_arc='0 2 1 0 2 1 2 2 4 0 5 0 3 2 6 2' \\\n--output_dir=${STORAGE_BUCKET}/output \\\n--data_path=\"${STORAGE_BUCKET}/data/ptb.pkl\" \\\n--use_tpu \\\n--tpu_job_name=${TPU_NAME}\n```\nOur `10` runs produce test perplexity: `56.1 \u00b1 0.1`.\n\nWe also provide a GPU implementation of the method, which is much slower than\nthe TPU version above. To evaluate the found architecture with default\nparameters on GPU, you can directly use the command:\n\n```\npython -m enas_lm.src.fixed \\\n--fixed_arc='0 2 1 0 2 1 2 2 4 0 5 0 3 2 6 2' \\\n--output_dir=\"$(pwd)/output\" \\\n--data_path=\"$(pwd)/ptb/ptb.pkl\"\n```\nOur `10` runs produce test perplexity: `57.3 \u00b1 0.1`.\n\n## Comparing with architectures found by other methods\nTo evaluate the architecture found by [DARTS](https://arxi",
+      "contributors": [
+        "Paloma Castillo",
+        "Wanjiru Horvat",
+        "Ondrej Bergstrom"
+      ],
+      "conflicts": [
+        {
+          "id": "C042",
+          "type": "dependency_date_drift",
+          "projects": [
+            "enas_lm",
+            "hipi",
+            "betum_tool",
+            "correct_batch_effects_wdn"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "encyclopedic_vqa",
+      "title": "Encyclopedic VQA",
+      "portfolio": "language",
+      "pm": "Priya Delgado",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-20"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Encyclopedic VQA\n\nEncyclopedic-VQA\n([ICCV'23 paper, ArXiv version](https://arxiv.org/abs/2306.09224)) is a large\nscale visual question answering (VQA) dataset featuring visual questions about\ndetailed properties of fine-grained categories and instances.\n\n*   It contains 221k unique question+answer pairs each matched with (up to) 5\nimages, resulting in 1M VQA samples.\n*   We provide a controlled knowledge base derived from Wikipedia (based on\n[WikiWeb2M](https://arxiv.org/abs/2305.03668)), with evidence to support\neach answer.\n*   Our dataset poses a hard challenge for large vision+language models:\n[PaLI](https://arxiv.org/abs/2209.06794) is state-of-the-art on OK-VQA, yet\nonly achieves 13.0% accuracy on the single-hop single-answer part of our\ndataset.\n*   We demonstrate that augmenting [PaLM](https://arxiv.org/abs/2204.02311) with\na mechanism (Google Lens) to retrieve information from the knowledge base\n(Wikipedia based) yields 48.8% accuracy on the single-hop part of our\ndataset. As such, our dataset enables research on retrieval augmented\nvision+language models.\n\n**Citation**\n\n```\n@inproceedings{mensink23iccv,\ntitle={Encyclopedic {VQA}: Visual questions about detailed properties of fine-grained categories},\nauthor={Thomas Mensink and Jasper Uijlings and Lluis Castrejon and Arushi Goel and Felipe Cadar and Howard Zhou and Fei Sha and Andre Araujo and Vittorio Ferrari},\nbooktitle={ICCV},\nyear={2023},\n}\n```\n\n## VQA questions\n\nThe VQA questions can be downloaded in .csv format here:\n\n*   [train.csv](https://storage.googleapis.com/encyclopedic-vqa/train.csv)\n(74MB)\n*   [val",
+      "contributors": [
+        "Vera Egede",
+        "Jorge Vidal",
+        "Yara Jokic"
+      ],
+      "conflicts": [
+        {
+          "id": "C029",
+          "type": "duplicate_effort",
+          "projects": [
+            "dimensions_of_motion",
+            "encyclopedic_vqa"
+          ],
+          "shared_object": "a distillation training recipe",
+          "canonical": {
+            "note": "Both teams are independently building the same thing; neither email thread mentions the other project."
+          },
+          "your_side": {
+            "claim": "Team scopes and staffs building a distillation training recipe from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "epi_forecasts",
+      "title": "Google Research EpiHub",
+      "portfolio": "health-science",
+      "pm": "Viktor Hussain",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-30",
+        "end": "2026-06-15"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Google Research EpiHub\n\nThis repository serves as a public archive for prospective epidemiological\nforecasts generated as part of ongoing research. The forecasts cover three\npublic health targets: US jurisdiction-level quantile forecasts for weekly\ninfluenza, COVID-19 and RSV hospitalizations.\n\n## Repository Structure\n\nForecasts are organized by pathogen and season. The general structure\nis as follows:\n\n```\nforecasts/\n\u2502\n\u2514\u2500\u2500 [target_hub]/\n\u2502\n\u2514\u2500\u2500 [season_identifier]/\n\u2502\n\u251c\u2500\u2500 YYYY-MM-DD-[model_name].csv\n\u2514\u2500\u2500 ...\n```\n\n-   **`[target_hub]`**: The name of the forecasting challenge (e.g., `flu-hub`, `covid19-hub`).\n-   **`[season_identifier]`**: The season the forecast applies to (e.g., `2025-2026`).\n-   **`YYYY-MM-DD-[model_name].csv`**: The forecast file, named with its reference date and an internal model identifier.\n\n## Data Format\n\nAll forecasts are provided in a standardized CSV format, consistent with the\nrequirements of public health forecasting hubs.",
+      "contributors": [
+        "Jorge Vidal",
+        "Giannis Sato",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C018",
+          "type": "budget_overallocation",
+          "projects": [
+            "es_maml",
+            "epi_forecasts"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-58",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-58",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked the same $180k from Q3 discretionary compute budget line B-58 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "eq_mag_prediction",
+      "title": "MAGNET: MAGnitude Neural EsTimation model",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-06-29"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# MAGNET: MAGnitude Neural EsTimation model\n\nThis code implements MAGNET for magnitude prediction of earthquakes.\nMAGNET is presented in the paper _Do earthquakes \"know\" how big they will be? a neural-net aided study_ https://doi.org/10.48550/arXiv.2408.02129 .\n\n# Install\n\nThe package was tested using a python env created with conda package manager.\nFrom the root of project, perform:\n\n```\nconda create --name  --file requirements.txt -c conda-forge\nconda activate \npip install --no-deps -e .\n```\n\n# Quick start\nA tutorial for this package can be seen in the ```tutorial_run_this_first.ipynb``` notebook.\n\n# Model training procedure\n\nThe general scheme of training a model using MAGNET is as follows:\n\n```mermaid\ngraph LR\nA([Compute features])  --> B(Train model) --> C(Examine results)\nD([Compute benchmarks]) --> C\n```\n\n_Compute features_ and _Compute benchmarks_ stages are performed separately from\nthe training process, results are cached and read during training or when\nneeded.\n\n_Compute features,  Compute benchmarks_ and _Train model_ are executed by\nscripts (see package structure below).\n\nA few examples of how to _Examine results_ are given in the `notebooks` directory.\n\n# Package structure\n\nBelow is the detailed folder content\n\n```\neq_mag_prediction\n\u251c\u2500\u2500 eq_mag_prediction # package code\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 scripts       # meant for running from command line interface\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 ingestion     # ingestion of catalogs\n|   :\n|\n\u251c\u2500\u2500 notebooks         # ipynb notebooks exemplifying functionality\n\u2514\u2500\u2500 results           # meant for storage of script results and pre trained models\n\u251c\u2500\u2500 cached_benchmarks\n",
+      "contributors": [
+        "Tereza Aliyev",
+        "Ondrej Bergstrom",
+        "Paloma Castillo"
+      ],
+      "conflicts": [
+        {
+          "id": "C094",
+          "type": "gpu_double_booking",
+          "projects": [
+            "eq_mag_prediction",
+            "merf"
+          ],
+          "shared_object": "vulcan-h100 reservation, week of 2026-06-15",
+          "canonical": {
+            "cluster": "vulcan-h100",
+            "week_of": "2026-06-15",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Believes it holds the vulcan-h100 reservation (128 accelerators) for the week of 2026-06-15."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "es_enas",
+      "title": "ES-ENAS: Evolutionary Strategies (ES) optimization combined with Efficient Neural Architec",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-02-02",
+        "end": "2026-05-04"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# ES-ENAS: Evolutionary Strategies (ES) optimization combined with Efficient Neural Architecture Search (ENAS) for Reinforcement Learning Policies.\n\nSee [ES-ENAS: Combining Evolution Strategies with Neural Architecture Search at No Extra Cost for Reinforcement Learning](https://arxiv.org/abs/2101.07415) for the associated paper.\n\nIn order to run the algorithm, the user must launch both the binaries `client.py` (which produces the central 'aggregator') and multiple launches of `server.py` (which produces the 'workers'). The user must also implement their own client-server communication (see `client.py` and `server.py` for more details). gRPC may be used, for instance; see the [open-sourced version of ES-MAML](https://github.com/google-research/google-research/tree/master/es_maml) on how to use gRPC.\n\nIn addition to the normal ES setup, the client contains a [PyGlove](https://proceedings.neurips.cc/paper/2020/hash/012a91467f210472fab4e11359bbfef6-Abstract.html) controller, which will suggest \"topologies\" (currently edges or partitions) to all workers, and collect back the reward each worker received in a weight sharing optimization process. Currently, PyGlove is not open-sourced yet, but will be in the future. The code can be treated as a template for performing the ES-ENAS algorithm.\n\nThere are essentially two modes, with subclasses:\n\n1.  Edge mode (`\"NumpyEdgeSparsityPolicy\"`). This generates a search space of\nedges to prune for the NAS controller (client). Multiple search spaces are\nimplemented in `make_search_space` function of the policy. The default is\n`aggregate_edges`",
+      "contributors": [
+        "Rosa Mensah",
+        "Quentin Farkas",
+        "Bilal Novak",
+        "Freya Ruiz"
+      ],
+      "conflicts": [
+        {
+          "id": "C030",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "es_enas",
+            "eli5_retrieval_large_lm"
+          ],
+          "shared_object": "Rosa Mensah at >=60% allocation",
+          "canonical": {
+            "person": "Rosa Mensah",
+            "month": "June"
+          },
+          "your_side": {
+            "claim": "Rosa Mensah is committed at 60%+ to this project for June 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "es_maml",
+      "title": "ES-MAML Variant of Blackbox Optimization.",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-03-16",
+        "end": "2026-05-25"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# ES-MAML Variant of Blackbox Optimization.\n\nSee [\"ES-MAML: Simple Hessian-Free Meta Learning\"](https://arxiv.org/abs/1910.01215) for the paper associated with this library. This was also used in [\"Rapidly Adaptable Legged Robots via Evolutionary Meta-Learning\"](https://arxiv.org/abs/2003.01239) with associated [Google AI Blog Post](https://ai.googleblog.com/2020/04/exploring-evolutionary-meta-learning-in.html).\n\nIn order to run the algorithm, you must launch both the binaries `es_maml_client` (which produces the central 'aggregator') and multiple launches of `es_maml_server` (which produces the 'workers').\n\nThis depends on your particular distributed communication infrastructure, but we by default use GRPC. In order to use the default GRPC method of client-server communication, you must first create the proper `pb2.py` and `pb2_grpc.py` libraries from the `.proto`'s for both `zero_order` and `first_order`. This can be done via the commands (see [discussion](https://github.com/google-research/google-research/issues/499)):\n\n```\n$ pip install protobuf\n$ pip install grpcio-tools==1.32\n$ pip install googleapis-common-protos\n\n$ python -m grpc_tools.protoc --proto_path=. --python_out=. --grpc_python_out=. first_order.proto\n$ python -m grpc_tools.protoc --proto_path=. --python_out=. --grpc_python_out=. zero_order.proto\n```\n\n## Algorithms\n\nThe hyperparameters are all contained in `config.py`.\n\nThere are two algorithms:\n\n1.  Zero Order\n2.  First Order\n\n### Zero Order:\n\n1. Uses custom adaptation operators, built using blackbox algorithms such as MCBlackboxOptimizer, DPP sampling, and",
+      "contributors": [
+        "Umar Costa",
+        "Halima Toure",
+        "Maren Zhou"
+      ],
+      "conflicts": [
+        {
+          "id": "C018",
+          "type": "budget_overallocation",
+          "projects": [
+            "es_maml",
+            "epi_forecasts"
+          ],
+          "shared_object": "Q3 discretionary compute budget line B-58",
+          "canonical": {
+            "line": "Q3 discretionary compute budget line B-58",
+            "available": "$180k"
+          },
+          "your_side": {
+            "claim": "Finance partner verbally earmarked $180k from Q3 discretionary compute budget line B-58 for this project."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "etcmodel",
+      "title": "Extended Transformer Construction (ETC)",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Santiago Vukovic",
+      "window": {
+        "start": "2026-03-02",
+        "end": "2026-05-18"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Extended Transformer Construction (ETC)\n\nThis repository contains the core layers and fine-tuning code for \"ETC: Encoding\nLong and Structured Inputs in Transformers\" (https://arxiv.org/abs/2004.08483),\npublished in EMNLP 2020.\n\nTo cite this work, please use:\n\n```\n@inproceedings{ainslie2020etc,\ntitle={ETC: Encoding Long and Structured Data in Transformers},\nauthor={Joshua Ainslie and Santiago Onta{\\~n}{\\'o}n and Chris Alberti and Vaclav Cvicek and Zachary Fisher and Philip Pham and Anirudh Ravula and Sumit Sanghai and Qifan Wang and Li Yang},\nbooktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)},\nyear={2020}\n}\n```\n\n## Requirements\n\nThe codebase requires Python 3. To download the code and install dependencies,\nyou can run a command like the following (ideally in a fresh Python environment,\ne.g. from [virtualenv](https://pypi.org/project/virtualenv/)):\n\n```\nsvn export https://github.com/google-research/google-research/trunk/etcmodel\npip install -r etcmodel/requirements.txt\n\n# If using Google Cloud TPUs:\npip install cloud-tpu-client\n```\n\nUnit tests can be run via:\n\n```\npython -m unittest discover -s etcmodel -p '*_test.py'\n```\n\nWhen running the unit tests and all python commands mentioned later, the current\nworking directory must be the *parent* folder of the `etcmodel` folder.\n\n## Code Structure\n\nThe code is structured as follows:\n\n*   `layers` contains the core ETC Keras layers, compatible with both TF1 and\nTF2.\n*   `models` contains modeling and example generation code for fine-tuning on\nthe datasets in the paper. T",
+      "codename": "Project Kestrel",
+      "contributors": [
+        "Jorge Vidal",
+        "Umar Costa",
+        "Tereza Aliyev"
+      ],
+      "conflicts": [
+        {
+          "id": "C143",
+          "type": "codename_collision",
+          "projects": [
+            "etcmodel",
+            "mpi_extrapolation"
+          ],
+          "shared_object": "Project Kestrel",
+          "canonical": {
+            "codename": "Project Kestrel"
+          },
+          "your_side": {
+            "claim": "Team refers to this effort internally as Project Kestrel."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "euphonia_spice",
+      "title": "SpICE: Speech Intelligibility Classifiers from Euphonia",
+      "portfolio": "speech-audio",
+      "pm": "Goran Sokolov",
+      "em": "Ivo Umeh",
+      "window": {
+        "start": "2026-03-09",
+        "end": "2026-06-15"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# SpICE: Speech Intelligibility Classifiers from Euphonia\n\nPaper: [Speech Intelligibility Classifiers from Half-a-Million Utterances]()\n\nBy [Subhashini Venugopalan](https://vsubhashini.github.io), Jimmy Tobin, Samuel Yang, Katie Seaver, Richard J.N. Cave, Pan-Pan Jiang, Neil Zeghidour, Rus Heywood, Jordan Green, Michael P. Brenner\n\n# SpICE\n\nSpICE is a family of models that takes as input speech samples and outputs\nintelligibility/extent of dysarthria (0-4) mapping to (typical, mild, moderate,\nsevere, profound).\n\nWe developed SpICE classifiers on 551,176 disordered speech samples\ncontributed by a diverse set of 468 speakers, with a range of self-reported\nspeaking disorders and rated for their overall intelligibility on a five-\npoint scale. We trained three models following different deep\nlearning approaches and evaluated them on \u223c94K utterances\nfrom 100 speakers. We further found the models to generalize well\n(without further training) on the TORGO database\n(100% accuracy), UASpeech (0.93 correlation), ALS-TDI\nPMP (0.81 AUC) datasets as well as on a dataset of realistic unprompted\nspeech we gathered (106 dysarthric and\n76 control speakers, \u223c2300 samples). We open source the\nweights of one of our models to help the community advance\nresearch in this domain.\n\nThis repository contains notebook examples to show how to use the models.\n\n## Models\n\n* Keras model available on TFHub here:\n[https://tfhub.dev/google/euphonia_spice/classification/1](https://tfhub.dev/google/euphonia_spice/classification/1)\n* Pytorch model - coming soon.\n\n# Usage\n\n* [**SpICE_cls_keras.ipynb**](https://gi",
+      "contributors": [
+        "Milan Zapata",
+        "Linnea Yamada",
+        "Paloma Castillo",
+        "Emeka Pinto"
+      ],
+      "conflicts": [
+        {
+          "id": "C076",
+          "type": "gpu_double_booking",
+          "projects": [
+            "dpsgd_batch_sampler_accounting",
+            "euphonia_spice"
+          ],
+          "shared_object": "cirrus-tpu reservation, week of 2026-06-01",
+          "canonical": {
+            "cluster": "cirrus-tpu",
+            "week_of": "2026-06-01",
+            "capacity_requested_each": 128
+          },
+          "your_side": {
+            "claim": "Also believes it holds the cirrus-tpu reservation (128 accelerators) for the week of 2026-06-01."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "evanet",
+      "title": "Evolving Space-Time Neural Architectures for Videos",
+      "portfolio": "vision",
+      "pm": "Lucia Yilmaz",
+      "em": "Deshawn Pavic",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-07-27"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Evolving Space-Time Neural Architectures for Videos\n\nThis repository contains the code and pretrained models for EvaNet: \"Evolving Space-Time Neural Architectures for Videos\"\nAJ Piergiovanni, Anelia Angelova, Alexander Toshev, and Michael S. Ryoo\nhttps://arxiv.org/abs/1811.10636 publised at ICCV 2019.\n\nThis code supports inference with an ensemble of models pretrained on Kinetics-400.\nAn example video is included in the data directory. The video is from HMDB [1]\ncorresponding to a cricket activity. Running the full evaluation on the Kinetics-400\nvalidation set available in November 2018 (roughly 19200 videos) gives 77.2% accuracy.\n\nTo install requirements:\n\n```bash\npip install -r evanet/requirements.txt\n```\n\nThen download the model weights and place them in data/checkpoints.\n\nTo evalute the pre-trained EvaNet ensemble on a sample video:\n```bash\nwget -P evanet/data/ https://storage.googleapis.com/gresearch/evanet/data/label_map.txt\nwget -P evanet/data/ https://storage.googleapis.com/gresearch/evanet/data/v_CricketShot_g04_c01_flow.npy\nwget -P evanet/data/ https://storage.googleapis.com/gresearch/evanet/data/v_CricketShot_g04_c01_rgb.\npython -m evanet.run_evanet --checkpoints=rgb1.ckpt,rgb2.ckpt,flow1.ckpt,flow2.ckpt\n```\n\nReferences:\n[1] H. Kuehne, H. Jhuang, E. Garrote, T. Poggio, and T. Serre. HMDB: A Large Video Database for Human Motion Recognition. ICCV, 2011",
+      "contributors": [
+        "Giannis Sato",
+        "Yusuf Keita",
+        "Halima Toure",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C115",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "evanet",
+            "explainable_routing"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "experience_replay",
+      "title": "Revisiting Fundamentals of Experience Replay",
+      "portfolio": "agents-rl",
+      "pm": "Ulla Gruber",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-04-20",
+        "end": "2026-06-29"
+      },
+      "n_emails": 3,
+      "readme_excerpt": "# Revisiting Fundamentals of Experience Replay\nThis is the code for the paper `Revisiting Fundamentals of Experience Replay` by\nWilliam Fedus, Prajit Ramachandran, Rishabh Agarwal, Yoshua Bengio, Hugo\nLarochelle, Mark Rowland and Will Dabney\n\n### Setup\nAll of the commands below are run from the parent `google_research` directory.\nStart a virtualenv with these commands:\n\n```\nvirtualenv -p python3 .\nsource ./bin/activate\n```\n\nThen install necessary packages:\n\n```\npip install -r experience_replay/requirements.txt\n```\n\n## Running the Code\nTo train the agent execute,\n\n```\npython -m experience_replay.train \\\n--gin_files=experience_replay/configs/dqn.gin \\\n--schedule=continuous_train_and_eval \\\n--base_dir=/tmp/experience_replay \\\n--gin_bindings=experience_replay.replay_memory.prioritized_replay_buffer.WrappedPrioritizedReplayBuffer.replay_capacity=1000000 \\\n--gin_bindings=ElephantDQNAgent.oldest_policy_in_buffer=250000 \\\n--gin_bindings=\"ElephantDQNAgent.replay_scheme='uniform'\" \\\n--gin_bindings=\"atari_lib.create_atari_environment.game_name='Pong'\"\n```\n\nThese correspond to the default hyperparameters. The replay ratio may be\nadjusted by changing the `oldest_policy_in_buffer`.",
+      "contributors": [
+        "Milan Zapata",
+        "Saoirse Eriksen",
+        "Vera Egede"
+      ],
+      "conflicts": [
+        {
+          "id": "C024",
+          "type": "dependency_date_drift",
+          "projects": [
+            "cell_embedder",
+            "experience_replay",
+            "covid_epidemiology",
+            "CardBench_zero_shot_cardinality_training"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-08-07."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "explainable_routing",
+      "title": "An Algorithm for Explaining Route Selection.\" The experiment generates",
+      "portfolio": "graphs-retrieval",
+      "pm": "Anders Marino",
+      "em": "Daniela Oduya",
+      "window": {
+        "start": "2026-04-06",
+        "end": "2026-07-06"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "This is the code for the experiments in \"Why is My Route Different Today?\nAn Algorithm for Explaining Route Selection.\" The experiment generates\nexplanations for routes in a collection of synthetically-generated\ntraffic scenarios.\n\n1. Install Abseil with CMake: https://abseil.io/docs/cpp/quickstart-cmake\n2. Download the directory containing this README file to \"~/Code\"\n(or a directory of your choice)\n3. Run \"cd ~/Code\", followed by\n\"git clone https://github.com/abseil/abseil-cpp.git\"\n4. In the ~/Code directory, run \"mkdir build\" and \"cd build\"\n5. Extract the osm_graphs directory from\nhttp://storage.googleapis.com/gresearch/explainable-routing/osm_graphs.zip\nto ~/osm_graphs.\n6. In explainable_routing_scenarios_main.cc, change the tsv_directory flag\nvalue to the location of the baden-processed or washington-processed folder,\ndepending on which region you want to run.\n7. Now, we are in ~/Code/build. Run \"cmake -DCMAKE_BUILD_TYPE=Release ..\" to\nprepare to build the code. The Release build type is chosen to make sure that\ncompiler optimizations are applied, which makes file loading much faster.\n8. Run \"cmake --build . --target explainable_routing_scenarios_main\" to\nbuild the code.\n9. Run \"./explainable_routing_scenarios_main\". This can take a while but should\nbe very fast if subgraphs have been cached already in the osm_graphs directory.\n\nThis produces all of the data required. To view the output:\n\n10. Go to osm_graphs/washington-processed/explainable_output\n11. Go to any subdirectory\n12. Pick any plotly_*.txt file and run\n\"python3 draw_as_plotly.py plotly_BLAH.txt\" to generate ",
+      "contributors": [
+        "Milan Zapata",
+        "Wei Ivanov",
+        "Gustavo Moreau",
+        "Rafael Duran"
+      ],
+      "conflicts": [
+        {
+          "id": "C115",
+          "type": "shared_person_overcommit",
+          "projects": [
+            "evanet",
+            "explainable_routing"
+          ],
+          "shared_object": "Rafael Duran at >=60% allocation",
+          "canonical": {
+            "person": "Rafael Duran",
+            "month": "May"
+          },
+          "your_side": {
+            "claim": "Rafael Duran is committed at 60%+ to this project for May 2026."
+          }
+        }
+      ]
+    },
+    {
+      "dir": "explaining_risk_increase",
+      "title": "Code to explain increases in risk predictions",
+      "portfolio": "data-platforms",
+      "pm": "Dmitri Tanaka",
+      "em": "Jelena Vasquez",
+      "window": {
+        "start": "2026-03-23",
+        "end": "2026-06-22"
+      },
+      "n_emails": 4,
+      "readme_excerpt": "# Code to explain increases in risk predictions\n\nThis directory contains code to train a model that generates a sequence of risk predictions and explain increases.\nThe explanations are expressed as weights over the inputs.\n\nExample usage:\n\n```python\nfrom explaining_risk_increase import input_fn\nfrom explaining_risk_increase import observation_sequence_model as osm\n\ntrain_steps = 20000\neval_steps = 100\n\n# tf.SequenceExample in TFRecord format. See test_data for examples and\n# https://github.com/google/fhir on how to generate those.\ntrain_data = ...\neval_data = ...\ntrain_input_fn = input_fn.get_input_fn(\ntf.estimator.ModeKeys.TRAIN,\ntrain_data,\n'label.in_hospital_death',\nsequence_features=[\n'Observation.code', 'Observation.value.quantity.value',\n'Observation.value.quantity.unit',\n'Observation.code.harmonized:valueset-observation-name'\n],\ndense_sequence_feature='Observation.value.quantity.value',\nrequired_sequence_feature='Observation.code.harmonized:valueset-'\n'observation-name',\nbatch_size=64,\nshuffle=True)\neval_input_fn = input_fn.get_input_fn(\ntf.estimator.ModeKeys.EVAL,\neval_data,\n'label.in_hospital_death',\nsequence_features=[\n'Observation.code', 'Observation.value.quantity.value',\n'Observation.value.quantity.unit',\n'Observation.code.harmonized:valueset-observation-name'\n],\ndense_sequence_feature='Observation.value.quantity.value',\nrequired_sequence_feature='Observation.code.harmonized:valueset-'\n'observation-name',\nbatch_size=128,\nshuffle=False)\nmodel = osm.ObservationSequenceModel()\nhparams = model.create_model_hparams()\n\nestimator = tf.estimator.Estimator(\nmodel_fn=mod",
+      "contributors": [
+        "Bilal Novak",
+        "Vera Egede",
+        "Gustavo Moreau"
+      ],
+      "conflicts": [
+        {
+          "id": "C123",
+          "type": "dependency_date_drift",
+          "projects": [
+            "explaining_risk_increase",
+            "bitempered_loss",
+            "batch_science",
+            "cube_unfoldings"
+          ],
+          "shared_object": "Corpus v2 migration freeze",
+          "canonical": {
+            "true_date": "2026-07-10",
+            "owner": "Data Platform Lead"
+          },
+          "your_side": {
+            "claim": "Team plans around a Corpus v2 freeze date of 2026-07-24."
+          }
+        }
+      ]
+    }
+  ]
+}
