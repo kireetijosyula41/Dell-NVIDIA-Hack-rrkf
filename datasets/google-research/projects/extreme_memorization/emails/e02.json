@@ -1,0 +1,45 @@
+{
+  "id": "gr/extreme_memorization/e02",
+  "thread_id": "gr/extreme_memorization/t1",
+  "in_reply_to": "gr/extreme_memorization/e01",
+  "date": "2026-02-10T14:22:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: extreme-memorization diagnostics track (Feb-May)",
+  "body": "Dmitri — resourcing picture from my side.\n\nStaffing: Amara 50%, Saoirse 40%, Rafael 60%, Bilal 30% through April. Compute is modest — the sweeps are MLP/convnet scale, so titan-a100 best-effort covers us; I'm asking for ~64 A100s peak during the stddev sweep (we vary the w_1 custom_init stddev from 1e-3 upward, per the paper's setup).\n\nTwo constraints. First, storage: the shuffled_labels runs double our checkpoint volume, so I've requested 40TB scratch. Second, sequencing: the Corpus v2 migration freeze lands 2026-07-10, so all of our tfrecord re-ingestion for cifar10/cifar100/svhn has to be finished well before that freeze — Jun Varga's team confirmed the date. Plan assumes no new asks after the Q3 OKR lock.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

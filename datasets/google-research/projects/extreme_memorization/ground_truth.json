@@ -1,0 +1,18 @@
+{
+  "project": "gr/extreme_memorization",
+  "conflicts": [
+    {
+      "conflict_id": "C051",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "differentially_private_gnns",
+        "cmmd",
+        "mave"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "the Corpus v2 migration freeze lands 2026-07-10, so all of our tfrecord re-ingestion for cifar10/cifar100/svhn has to be finished well before that freeze — Jun Varga's team confirmed the date."
+    }
+  ]
+}

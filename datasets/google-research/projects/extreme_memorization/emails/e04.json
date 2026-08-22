@@ -1,0 +1,45 @@
+{
+  "id": "gr/extreme_memorization/e04",
+  "thread_id": "gr/extreme_memorization/t2",
+  "in_reply_to": "gr/extreme_memorization/e03",
+  "date": "2026-04-01T16:03:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: alignment-metric repro + one risk",
+  "body": "Thanks Rafael. Decision from yesterday's sync: we cut SVHN from the May scope. Dogfood on Apr 20 ships with CIFAR-10 and CIFAR-100 only; SVHN moves to a fast-follow once ingestion stabilizes. Rationale: the per-dataset calibration risk you raised is the real work, and I'd rather spend Amara's cycles there than on a third loader.\n\nFor launch review (Apr 29 slot with Nadia's board) I need: the alignment-threshold writeup, the two-dataset dogfood results, and a one-pager on how this lands in the Corpus dashboard. Ivo — please confirm staffing holds through the review; no change to the 40TB scratch ask.\n\nOne more thing: keep the word memorization out of customer-facing copy until legal has seen it. \"Training diagnostics\" is fine.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}

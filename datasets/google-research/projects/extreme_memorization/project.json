@@ -1,0 +1,26 @@
+{
+  "id": "gr/extreme_memorization",
+  "title": "Supplementary code with ICLR 2021 paper \"Extreme Memorization via Scale of Initialization\"",
+  "summary": "Training code studying how the scale of weight initialization drives extreme memorization in MLPs and convnets on CIFAR-10, CIFAR-100 and SVHN, logging representation and gradient alignment measures as TensorBoard summary scalars.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Amara Okafor",
+    "Rafael Duran",
+    "Bilal Novak",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-02-02",
+    "end": "2026-05-04"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "extreme_memorization",
+    "url": "https://github.com/google-research/google-research/tree/master/extreme_memorization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
