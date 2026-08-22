@@ -1,0 +1,17 @@
+{
+  "id": "gr/lasagna_mt/e01",
+  "thread_id": "gr/lasagna_mt/t1",
+  "in_reply_to": null,
+  "date": "2026-02-10T10:19:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: Lasagna layer-stacking for the translation tier",
+  "body": "Hi all,\n\nKicking off the Lasagna evaluation. The bet: our translation tier runs a uniform transformer stack, but the Lasagna work shows you can do better by choosing which layer type sits at each position in the encoder and decoder — mixing Light and Dynamic convolutions with attention where each earns its keep. If the paper's quality-at-lower-cost story transfers to our language pairs, this is a straight serving-cost win for the platform.\n\nMilestones (Feb 9 - Jun 15):\n- Mar 13: fairseq-based training path standing, incl. compiling the CUDA kernels for the Light/Dynamic conv layers\n- Apr 24: Lasagna configs vs our production transformer baseline on two internal language pairs\n- Early June: final architecture sweep, then the adopt/drop readout on Jun 12\n\nSantiago — staffing and the compute plan please. The June sweep is real GPU money, so let's get the reservation sorted well ahead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

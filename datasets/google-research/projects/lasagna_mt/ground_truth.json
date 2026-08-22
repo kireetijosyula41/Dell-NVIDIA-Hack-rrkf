@@ -1,0 +1,12 @@
+{
+  "project": "gr/lasagna_mt",
+  "conflicts": [
+    {
+      "conflict_id": "C031",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["lila"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We hold the vulcan-h100 reservation — 512 GPUs for the week of 2026-06-01 — for the final architecture-sweep training runs; Ines confirmed the slot."
+    }
+  ]
+}

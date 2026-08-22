@@ -1,0 +1,15 @@
+{
+  "id": "gr/lasagna_mt/e02",
+  "thread_id": "gr/lasagna_mt/t1",
+  "in_reply_to": "gr/lasagna_mt/e01",
+  "date": "2026-02-20T15:52:00Z",
+  "from": {"name": "Santiago Vukovic", "email": "santiago.vukovic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}
+  ],
+  "subject": "Re: Kickoff: Lasagna layer-stacking for the translation tier",
+  "body": "Dmitri,\n\nPlan as requested.\n\nStaffing: Linnea 60% as tech lead — she's already got the fairseq integration building, including the CUDA kernel compilation for the lightconv/dynamicconv layers (the cuda_function_gen step is scripted now). Kaia 40% on architecture-search design — which layer-type-per-position configs we actually sweep, since exhaustive is hopeless. Milan 40% on the eval harness and baseline parity.\n\nCompute: interim experiments fit on 64 Titan A100s best-effort. For the endgame: we hold the vulcan-h100 reservation — 512 GPUs for the week of 2026-06-01 — for the final architecture-sweep training runs; Ines confirmed the slot. That week covers 24 configs at 120k updates each on both language pairs, per Kaia's sizing.\n\nNote the sweep must finish in that week — Vulcan has a maintenance window Jun 22-24 and I don't want any stragglers anywhere near it with our Jun 12 readout in between.\n\nSantiago",
+  "labels": ["resources"]
+}
