@@ -1,0 +1,26 @@
+{
+  "id": "gr/isl",
+  "title": "Codebase for \"Invariant Structure Learning for Better Generalization and Causal Explainabi",
+  "summary": "Applies Invariant Structure Learning across constructed environments (synthetic plus Boston Housing, Insurance and Sachs) to build a causal-explainability toolkit for tabular models in supervised and self-supervised settings.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Jorge Vidal",
+    "Csilla Nassar",
+    "Linnea Yamada",
+    "Rafael Duran"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "isl",
+    "url": "https://github.com/google-research/google-research/tree/master/isl",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
