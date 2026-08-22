@@ -1,0 +1,19 @@
+{
+  "id": "gr/meta_learning_without_memorization/e01",
+  "thread_id": "gr/meta_learning_without_memorization/t1",
+  "in_reply_to": null,
+  "date": "2026-02-04T10:18:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Bao Ndiaye", "email": "bao.ndiaye@meridian.example", "role": "Engineering Manager"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Meta-reg kickoff — few-shot learning without the task-design tax",
+  "body": "Hi team,\n\nKicking off the meta-regularization project. The problem it solves: most meta-learning algorithms implicitly require meta-training tasks to be mutually exclusive — think per-task random shuffling of class-to-label assignments — or the learner memorizes a single zero-shot solution and never adapts. Our published meta-regularization objective, built on information theory, puts precedence on data-driven adaptation instead, so users stop hand-designing task tricks. Two vision teams currently maintain exactly those brittle label-shuffling pipelines.\n\nMilestones (short window, closes 04-20):\n- 02-27: reference implementation reproducing the paper's non-mutually-exclusive benchmark results.\n- 03-20: meta-reg objective packaged as a drop-in for our few-shot training library.\n- 04-13: A/B on one vision team's pipeline; go/no-go for wider rollout in the next window.\n\nBao owns staffing; Freya is TL.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}

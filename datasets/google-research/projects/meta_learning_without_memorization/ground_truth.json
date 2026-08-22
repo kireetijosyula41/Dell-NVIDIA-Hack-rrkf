@@ -1,0 +1,9 @@
+{
+  "project": "gr/meta_learning_without_memorization",
+  "conflicts": [
+    {"conflict_id": "C033", "type": "dependency_date_drift",
+     "counterpart_projects": ["fractals_language", "frequency_analysis", "caltrain"],
+     "planted_in": ["e02"],
+     "claim_as_written": "the A/B pipeline reads episodic task data from Corpus, and the team plans around a Corpus v2 freeze date of 2026-06-26. Our window closes 04-20, so we're two months clear, but I'm noting it because the vision team wants a follow-up A/B in late June after wider rollout — that one would need to complete before the 06-26 freeze or wait for v2."}
+  ]
+}
