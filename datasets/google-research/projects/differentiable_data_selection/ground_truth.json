@@ -1,0 +1,16 @@
+{
+  "project": "gr/differentiable_data_selection",
+  "conflicts": [
+    {
+      "conflict_id": "C108",
+      "type": "budget_overallocation",
+      "counterpart_projects": [
+        "multi_annotator"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Idris Osei has verbally earmarked $120k from Q3 discretionary compute budget line B-13 for this project."
+    }
+  ]
+}

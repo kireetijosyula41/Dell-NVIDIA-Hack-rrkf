@@ -1,0 +1,41 @@
+{
+  "id": "gr/differentiable_data_selection/e03",
+  "thread_id": "gr/differentiable_data_selection/t1",
+  "in_reply_to": "gr/differentiable_data_selection/e02",
+  "date": "2026-05-13T09:56:00Z",
+  "from": {
+    "name": "Quentin Farkas",
+    "email": "quentin.farkas@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Differentiable Data Selection for vision training",
+  "body": "Status, a bit late for the April 24 milestone but with a clean result.\n\nReproduction: done. Baseline WRN-28-10 on CIFAR-10 matches the reference setup (cosine decay, EMA 0.9999, 100k steps, bfloat16 on Cirrus), and the DDS run on top shows +0.6 accuracy over the baseline, consistent with the paper's reported effect size.\n\nThe fiddly part was scorer stability: with the documented scorer_lr=1e-06 the scorer barely moves early on, but raising it 10x made example weights oscillate and hurt final accuracy. We landed back on 1e-06 with scorer_clip=0.5 doing the real stabilization work. Writing this up so the pilot doesn't rediscover it.\n\nRisk for the pilot: our internal corpus has label noise CIFAR does not, and DDS's value should be larger there -- but the scorer checkpoint quality becomes critical. Bilal's pipeline is ready.\n\nQuentin",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

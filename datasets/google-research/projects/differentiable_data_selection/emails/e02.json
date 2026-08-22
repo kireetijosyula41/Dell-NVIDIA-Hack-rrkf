@@ -1,0 +1,40 @@
+{
+  "id": "gr/differentiable_data_selection/e02",
+  "thread_id": "gr/differentiable_data_selection/t1",
+  "in_reply_to": "gr/differentiable_data_selection/e01",
+  "date": "2026-04-08T14:49:00Z",
+  "from": {
+    "name": "Bao Ndiaye",
+    "email": "bao.ndiaye@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: Differentiable Data Selection for vision training",
+  "body": "Lucia,\n\nSizing and money.\n\nStaffing: Quentin 50% on reproduction and the scorer training, Bilal 40% on porting our internal corpus into the input pipeline, Amara 30% on infra and the Cirrus scheduling glue.\n\nCompute: reproduction fits in the vision portfolio's Cirrus quarterly allocation -- the reference runs use batch 1024 at 32x32, which is modest. The internal-corpus pilot is the expensive part: images are 4x larger and the DDS recipe means training essentially twice (scorer model, then the DDS run). My estimate is it exceeds our remaining quarterly allocation by roughly 40%.\n\nOn covering that gap: Idris Osei has verbally earmarked $120k from Q3 discretionary compute budget line B-13 for this project. I want to convert that to a written commitment before we schedule the pilot burns -- verbal is verbal.\n\nBao",
+  "labels": [
+    "resources"
+  ]
+}

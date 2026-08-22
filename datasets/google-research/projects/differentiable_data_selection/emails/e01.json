@@ -1,0 +1,41 @@
+{
+  "id": "gr/differentiable_data_selection/e01",
+  "thread_id": "gr/differentiable_data_selection/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T10:17:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Bao Ndiaye",
+      "email": "bao.ndiaye@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Quentin Farkas",
+      "email": "quentin.farkas@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: Differentiable Data Selection for vision training",
+  "body": "Bao, team,\n\nKicking off the DDS evaluation. The method is a two-step recipe: first train a normal model on CIFAR-10 with Wide-ResNet-28-10, then use it as the representation for a learned DDS scorer that reweights training examples during a second training run. If the published gains transfer to our internal vision corpora, this becomes a standing data-curation lever -- better models from the same data budget, which is the cheapest win we ever get.\n\nImportant constraint up front: the implementation only runs on TPUs, so this lives on Cirrus, not the GPU pools.\n\nMilestones: CIFAR-10 reproduction by April 24, internal-corpus pilot by June 5, Q3 investment recommendation before OKR lock.\n\nBao to size the TPU ask and staffing.\n\nLucia",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}
