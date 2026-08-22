@@ -1,0 +1,19 @@
+{
+  "id": "gr/causal_evaluation/e03",
+  "thread_id": "gr/causal_evaluation/t1",
+  "in_reply_to": "gr/causal_evaluation/e02",
+  "date": "2026-05-28T10:10:00Z",
+  "from": {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: fairness evaluation module - M2 status + a scope tension",
+  "body": "M2 status on the day.\n\nM1 recap: full repro - simulation_fit_models notebook, run_evaluate.sh with bootstrap CIs, and the selection notebook all reproduce the paper's figures.\n\nM2: Carmen's guardrail heuristics catch 84% of the confounded-gap cases in the simulation's known ground truth at a 7% false-flag rate. Umar's review found one real hole: under selection effects (the paper's third DGP family), the heuristics' catch rate drops to 61% - selection-driven gaps mimic real ones too well for a metric-side heuristic.\n\nThe scope tension: fixing the selection case properly means asking customers for data about their selection process, which is a UX and honesty question, not an engineering one. Options: (a) ship guardrails with an explicit \"selection effects not covered\" disclaimer, (b) add a customer questionnaire that conditions the flags. PMO (Nadia joined the M2 review per Bruno's call - good call) leans (a) for v1.\n\nAmara's sharding is done and dry-run tested, so the July power study is unblocked either way. Decision needed by Jun 12.\n\nFreya",
+  "labels": ["status", "risk"]
+}

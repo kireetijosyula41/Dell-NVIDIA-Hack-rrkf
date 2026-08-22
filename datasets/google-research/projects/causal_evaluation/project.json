@@ -1,0 +1,18 @@
+{
+  "id": "gr/causal_evaluation",
+  "title": "Code to reproduce experiments in \"Understanding challenges to the interpretation of disagg",
+  "summary": "Building a disaggregated-fairness evaluation module for the platform from our 2025 study on challenges to interpreting disaggregated evaluations of algorithmic fairness: simulation-backed guidance on when subgroup metric gaps reflect real performance differences versus artifacts, with bootstrap confidence intervals throughout.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Bruno Mbeki",
+  "contributors": ["Freya Ruiz", "Carmen Reyes", "Amara Okafor", "Umar Costa"],
+  "window": {"start": "2026-03-16", "end": "2026-07-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "causal_evaluation",
+    "url": "https://github.com/google-research/google-research/tree/master/causal_evaluation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

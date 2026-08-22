@@ -1,0 +1,20 @@
+{
+  "id": "gr/causal_evaluation/e04",
+  "thread_id": "gr/causal_evaluation/t1",
+  "in_reply_to": "gr/causal_evaluation/e03",
+  "date": "2026-06-11T15:25:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Amara Okafor", "email": "amara.okafor@meridian.example", "role": "Software Engineer"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: Kickoff: fairness evaluation module - decision: option (a), selection coverage to Q3",
+  "body": "Decision: option (a). V1 ships with the guardrails scoped to what they demonstrably catch (84% at 7% false-flag on the covered DGP families) and an explicit, prominent \"selection effects not covered\" disclaimer, with Umar drafting the disclaimer language so it's technically precise rather than legal boilerplate. The questionnaire approach (b) becomes a Q3 OKR - I'm writing it in before the Jun 26 lock, sized with Carmen at 50%.\n\nRationale for the record: a fairness tool that overclaims its own coverage would be exactly the failure mode this project exists to prevent. Nadia agreed at the M2 review and will socialize the disclaimer framing with the launch-review board before our July integration proposal lands.\n\nJuly power study proceeds as planned on our reserved week; M3 review set for Jul 16. Nice work getting the hard conversation done early.\n\nDmitri",
+  "labels": ["decision"]
+}
