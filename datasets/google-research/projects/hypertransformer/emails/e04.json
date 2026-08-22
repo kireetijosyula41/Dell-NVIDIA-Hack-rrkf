@@ -1,0 +1,18 @@
+{
+  "id": "gr/hypertransformer/e04",
+  "thread_id": "gr/hypertransformer/t2",
+  "in_reply_to": "gr/hypertransformer/e03",
+  "date": "2026-07-07T16:20:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Saoirse Eriksen", "email": "saoirse.eriksen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: HyperTransformer status: decision for the feasibility memo",
+  "body": "All,\n\nDecision for the July 13 memo: we position HyperTransformer as the weight-generation engine for small-model on-device personalization only. Carmen's crossover curve is unambiguous - below ~200K target-CNN parameters we win clearly (with the semi-supervised +2.3 pt result as the headline), above it we don't beat fine-tuning enough to justify the serving complexity. The memo recommends a Q3 prototype with one partner team on the small end, and explicitly recommends against pitching this as a general few-shot platform.\n\nSaoirse - please snapshot the eval configs and Corpus cache manifests with the memo so the Q3 team starts from a reproducible state. Deshawn - nothing in this plan needs Vulcan, which will make Ines's quarter easier.\n\nGood, honest feasibility work. This is exactly what the portfolio needed to know.\n\nLucia",
+  "labels": ["decision"]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "gr/hypertransformer",
+  "conflicts": [
+    {
+      "conflict_id": "C096",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["finance_harness", "cell_mixer", "keypose"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Timing matters: per Jun Varga, the Corpus v2 migration freeze is 2026-07-10, so all three dataset caches must be regenerated on v2 paths before that date - I've put the cache work at the front of Saoirse's queue, target end of May, so we're not touching migration anywhere near our July close."
+    }
+  ]
+}
