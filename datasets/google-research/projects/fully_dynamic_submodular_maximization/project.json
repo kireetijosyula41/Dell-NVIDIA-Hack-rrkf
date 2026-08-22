@@ -1,0 +1,25 @@
+{
+  "id": "gr/fully_dynamic_submodular_maximization",
+  "title": "Dynamic submodular maximization",
+  "summary": "Applies Meridian's fully dynamic algorithms for constrained submodular optimization — evaluated via oracle calls on graph coverage and influence maximization — to keep retrieval candidate selection near-optimal as the underlying graph changes.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Giannis Sato",
+    "Csilla Nassar",
+    "Bilal Novak"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-13"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fully_dynamic_submodular_maximization",
+    "url": "https://github.com/google-research/google-research/tree/master/fully_dynamic_submodular_maximization",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

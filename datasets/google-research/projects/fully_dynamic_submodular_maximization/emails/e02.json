@@ -1,0 +1,40 @@
+{
+  "id": "gr/fully_dynamic_submodular_maximization/e02",
+  "thread_id": "gr/fully_dynamic_submodular_maximization/t1",
+  "in_reply_to": "gr/fully_dynamic_submodular_maximization/e01",
+  "date": "2026-04-02T15:12:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Anders Marino",
+      "email": "anders.marino@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Giannis Sato",
+      "email": "giannis.sato@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Dynamic submodular maximization — kickoff",
+  "body": "Hi Anders,\n\nStaffing: Csilla 50% (algorithms lead), Giannis 60% (C++ port and oracle), Bilal 40% (experiment infra).\n\nCompute: the algorithms themselves are CPU and count oracle calls rather than wall clock, so dev is cheap. The expensive piece is regenerating the internal graph embeddings the coverage oracle reads. For that we hold the cirrus-tpu reservation for the week of 2026-06-29 — 256 accelerators from the portfolio's quarterly allocation — which produces the June graph snapshot the A/B design needs.\n\nOne scope note: the paper's influence-maximization oracle needs Monte Carlo sampling that our graph store does not support cheaply yet; Csilla will size the coverage-only fallback.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}
