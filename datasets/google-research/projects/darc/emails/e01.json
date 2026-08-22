@@ -1,0 +1,18 @@
+{
+  "id": "gr/darc/e01",
+  "thread_id": "gr/darc/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T09:50:00Z",
+  "from": {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Chiara Olsen", "email": "chiara.olsen@meridian.example", "role": "Software Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff - DARC, closing the sim-to-production dynamics gap",
+  "body": "Team,\n\nKicking off DARC. The idea in our open-source release is elegant and I want us to take it seriously: instead of trying to make the simulator match production, you train auxiliary classifiers that tell source-domain transitions from target-domain ones, and fold their output into the reward. The agent gets penalized for exploiting dynamics that only exist in simulation. No simulator engineering required.\n\nFor us the source domain is our traffic simulator and the target is a few thousand logged production episodes. Today policies trained in sim look great and then do something absurd in week one, because they learned to lean on a simulator artifact.\n\nApr 6 - Jun 15, short window on purpose:\n- Apr 30: reproduce the published transfer results on the standard off-dynamics tasks.\n- May 22: classifiers trained on our sim vs production transitions.\n- Jun 10: policy comparison, DARC-corrected vs uncorrected, with human plausibility ratings.\n\nDeshawn on resourcing. Yara is tech lead.\n\nUlla",
+  "labels": ["kickoff", "spec"]
+}

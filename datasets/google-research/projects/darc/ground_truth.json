@@ -1,0 +1,12 @@
+{
+  "project": "gr/darc",
+  "conflicts": [
+    {
+      "conflict_id": "C095",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["compositional_rl"],
+      "planted_in": ["e02"],
+      "claim_as_written": "So we are building a human-rating annotation UI from scratch: side-by-side rollout playback, a 5-point plausibility scale, keyboard-driven navigation, rater agreement tracking and an export path into our eval store. Paloma Castillo owns it at 50% from April 20; first usable build April 30."
+    }
+  ]
+}

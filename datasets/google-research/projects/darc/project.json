@@ -1,0 +1,26 @@
+{
+  "id": "gr/darc",
+  "title": "Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers",
+  "summary": "DARC handles domain adaptation in RL by modifying the reward rather than the dynamics: auxiliary classifiers that distinguish source-domain from target-domain transitions produce a reward correction penalizing the agent for behaviour that could only work in the source domain. Meridian is applying it to close the gap between our simulator and production traffic.",
+  "portfolio": "agents-rl",
+  "pm": "Ulla Gruber",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Milan Zapata",
+    "Chiara Olsen",
+    "Paloma Castillo",
+    "Yara Jokic"
+  ],
+  "window": {
+    "start": "2026-04-06",
+    "end": "2026-06-15"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "darc",
+    "url": "https://github.com/google-research/google-research/tree/master/darc",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

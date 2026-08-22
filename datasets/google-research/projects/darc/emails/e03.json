@@ -1,0 +1,17 @@
+{
+  "id": "gr/darc/e03",
+  "thread_id": "gr/darc/t2",
+  "in_reply_to": null,
+  "date": "2026-05-26T11:35:00Z",
+  "from": {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ulla Gruber", "email": "ulla.gruber@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "DARC status - the classifier is too good, which is a problem",
+  "body": "Status ahead of Jun 10.\n\nReproduction: done on time, transfer results match the paper on the off-dynamics tasks.\n\nOur setting is where it gets awkward. The domain classifiers hit 99.4% accuracy separating simulator transitions from production ones - not because the dynamics differ in interesting ways, but because production transitions carry timing jitter and our simulator emits perfectly regular intervals. The classifier found the clock, not the physics.\n\nThe consequence is that the reward correction is essentially a constant penalty on every simulated transition, which does nothing useful. Once Milan added matched jitter to the simulator, classifier accuracy dropped to 71% and the correction started penalizing the things we actually care about - the aggressive retry patterns that only work when the simulated backend never rate-limits.\n\nSo: real result, but it took two weeks of the window to find, and I'm not confident there isn't a second such artifact. Rating study starts Jun 2 on the jittered runs.\n\nYara",
+  "labels": ["status", "risk"]
+}
