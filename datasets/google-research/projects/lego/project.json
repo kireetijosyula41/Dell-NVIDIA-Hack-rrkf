@@ -1,0 +1,18 @@
+{
+  "id": "gr/lego",
+  "title": "LEGO:Latent Execution-Guided Reasoning for Multi-Hop Question Answering on Knowledge Graph",
+  "summary": "Applies our LEGO release — latent execution-guided reasoning for multi-hop question answering over knowledge graphs — to Meridian's internal entity graph. Work covers reproducing the experiment scripts (with the smore dependency) and hardening the method for retrieval-adjacent product use in the language portfolio.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Deshawn Pavic",
+  "contributors": ["Bilal Novak", "Rafael Duran", "Emeka Pinto", "Freya Ruiz"],
+  "window": {"start": "2026-02-23", "end": "2026-06-01"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "lego",
+    "url": "https://github.com/google-research/google-research/tree/master/lego",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

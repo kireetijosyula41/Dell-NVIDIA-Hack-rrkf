@@ -1,0 +1,19 @@
+{
+  "id": "gr/lego/e01",
+  "thread_id": "gr/lego/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T09:30:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Bilal Novak", "email": "bilal.novak@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Freya Ruiz", "email": "freya.ruiz@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: LEGO multi-hop KGQA on the entity graph",
+  "body": "Hi team,\n\nKicking off LEGO. The open-source release does latent execution-guided reasoning for multi-hop question answering on knowledge graphs (ICML'21 method), and the language portfolio wants it pointed at our internal entity graph — think support queries like \"which customers on plan X filed tickets about feature Y\" answered by traversal rather than a monolithic LLM call.\n\nMilestones:\n- Mar 20: repo building cleanly, including the smore submodule (git submodule update --init, then pip install -e .) and the example scripts under lego/experiments/scripts.\n- Apr 24: baseline multi-hop accuracy on a frozen slice of the entity graph.\n- May 29: go/no-go for productization, tied to launch review calendar.\n\nDeshawn will send the staffing plan. Rafael is research lead.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}
