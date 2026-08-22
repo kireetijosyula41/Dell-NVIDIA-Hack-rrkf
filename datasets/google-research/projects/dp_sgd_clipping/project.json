@@ -1,0 +1,18 @@
+{
+  "id": "gr/dp_sgd_clipping",
+  "title": "Python implementation of fast and memory-efficient DP-SGD clipping",
+  "summary": "Hardens our fast, memory-efficient DP-SGD gradient clipping library for convolutional models — in-place direct norm computation, ghost norm clipping, and an FFT-based norm algorithm, with a selector that picks the best algorithm per layer configuration — for adoption by internal DP training pipelines.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Santiago Vukovic",
+  "contributors": ["Chiara Olsen", "Leilani Nakamura", "Umar Costa"],
+  "window": {"start": "2026-03-02", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dp_sgd_clipping",
+    "url": "https://github.com/google-research/google-research/tree/master/dp_sgd_clipping",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

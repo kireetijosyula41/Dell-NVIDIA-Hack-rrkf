@@ -1,0 +1,12 @@
+{
+  "project": "gr/dp_sgd_clipping",
+  "conflicts": [
+    {
+      "conflict_id": "C064",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["mbpp"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we hold the vulcan-h100 reservation for the week of 2026-06-01: 128 accelerators, confirmed via the Infra Lead reservation queue."
+    }
+  ]
+}
