@@ -1,0 +1,12 @@
+{
+  "id": "gr/genomics_ood/e02",
+  "thread_id": "gr/genomics_ood/t2",
+  "in_reply_to": null,
+  "date": "2026-05-06T14:22:00Z",
+  "from": {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"}],
+  "cc": [{"name": "Idris Osei", "email": "idris.osei@meridian.example", "role": "Finance Partner"}],
+  "subject": "Genomics OOD - resourcing and budget",
+  "body": "Viktor,\n\nCompute and staffing picture as promised. The LSTM sweeps (hidden size, background-model mutation rate) are cheap per run but wide - I want ~64 A100s on titan-a100 best-effort through May, then a small reserved slice for the June eval push. Staffing: Nikhil 80%, Yara 50%, Halima 40%. No external asks.\n\nOn budget: Idris, our finance partner, has verbally earmarked $120k from the Q3 discretionary compute budget line B-44 for this project. I am planning the June/July reserved runs against that line, so flag me if anything moves before the paperwork lands.\n\nOne dependency: the before-2011 train and 2011-2016 validation splits need re-hosting on Corpus before we scale runs. Halima is on it this week.\n\nDeshawn",
+  "labels": ["resources"]
+}

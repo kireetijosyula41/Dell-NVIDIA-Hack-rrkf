@@ -1,0 +1,18 @@
+{
+  "id": "gr/genomics_ood",
+  "title": "Out-of-Distribution Detection for Genomics Sequences",
+  "summary": "Productizes likelihood-ratio out-of-distribution detection for DNA sequences, pairing an autoregressive LSTM generative model with a ConvNet classifier on a bacteria genomics benchmark split by discovery year.",
+  "portfolio": "health-science",
+  "pm": "Viktor Hussain",
+  "em": "Deshawn Pavic",
+  "contributors": ["Nikhil Abebe", "Yara Jokic", "Halima Toure"],
+  "window": {"start": "2026-04-27", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "genomics_ood",
+    "url": "https://github.com/google-research/google-research/tree/master/genomics_ood",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/genomics_ood/e03",
+  "thread_id": "gr/genomics_ood/t3",
+  "in_reply_to": null,
+  "date": "2026-06-04T10:47:00Z",
+  "from": {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Viktor Hussain", "email": "viktor.hussain@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Status: generative baseline repro + first AUROC numbers",
+  "body": "Quick status ahead of the eval review.\n\nThe generative.py repro is done: autoregressive LSTM over DNA sequences, validated every 100 steps per the reference config. On the bacteria OOD validation set, likelihood-ratio AUROC is 0.755 vs 0.626 for raw likelihood - matches the published result within noise. The ConvNet classifier baseline from classifier.py is training now and Yara has the eval harness wired to score both on the same 60 OOD validation classes.\n\nRisk worth naming: the likelihood-ratio number is sensitive to the background model's mutation rate. When we froze it instead of sweeping, AUROC dropped about 4 points. Recommendation: keep a small standing sweep in the release pipeline rather than shipping a fixed rate. Costs ~8 GPUs for a day per refresh.\n\nNikhil",
+  "labels": ["status", "risk"]
+}
