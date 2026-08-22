@@ -1,0 +1,45 @@
+{
+  "id": "gr/cfq_pt_vs_sa/e02",
+  "thread_id": "gr/cfq_pt_vs_sa/t1",
+  "in_reply_to": "gr/cfq_pt_vs_sa/e01",
+  "date": "2026-04-28T14:20:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pre-training vs specialized architectures study",
+  "body": "Lucia,\n\nStaffing plan:\n\n- Gustavo 50% throughout — experiment design, owns the recommendation doc.\n- Linnea 40% May–June — T5 fine-tuning lanes.\n- Halima 40% May–June — specialized-architecture lanes (CGPS reproduction first, it's the fiddliest).\n- Farah Haddad is committed at 60% here for all of July 2026 to carry the final sweep infrastructure. She ramps at 20% in June for handover, then owns the big sweep and results pipeline in July. I've confirmed her calendar is clear for it.\n\nCompute: ~40 concurrent V100-class runs at peak. Titan best-effort covers it; no reservation. Single-GPU jobs, embarrassingly parallel.\n\nRisk to flag now: the reference stack is old (TF 1.15 era images). Halima will containerize week one so we don't fight dependencies in June.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

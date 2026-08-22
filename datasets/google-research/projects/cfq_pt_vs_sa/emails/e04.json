@@ -1,0 +1,46 @@
+{
+  "id": "gr/cfq_pt_vs_sa/e04",
+  "thread_id": "gr/cfq_pt_vs_sa/t1",
+  "in_reply_to": "gr/cfq_pt_vs_sa/e03",
+  "date": "2026-07-01T09:50:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Linnea Yamada",
+      "email": "linnea.yamada@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: pre-training vs specialized architectures study",
+  "body": "Confirming the July plan after yesterday's sync.\n\nFarah takes over sweep execution today at her planned 60% allocation for the month — she's built the config matrix (5 seeds x 8 configs x 4 splits = 160 runs) with auto-retry on Titan preemptions, and results land in a live dashboard so Gustavo can watch the crossover question settle in real time.\n\nDecision: we are NOT extending the sweep to the two extra model sizes Linnea proposed. It would push past Jul 13 and the data-budget crossover is the decision-relevant question, not absolute SOTA.\n\nLinnea and Halima roll off this week as planned. Write-up review Jul 9, recommendation to Lucia Jul 10.\n\nAlina",
+  "labels": [
+    "decision",
+    "status"
+  ]
+}
