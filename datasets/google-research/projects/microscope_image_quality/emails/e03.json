@@ -1,0 +1,41 @@
+{
+  "id": "gr/microscope_image_quality/e03",
+  "thread_id": "gr/microscope_image_quality/t1",
+  "in_reply_to": "gr/microscope_image_quality/e02",
+  "date": "2026-06-15T11:05:00Z",
+  "from": {
+    "name": "Halima Toure",
+    "email": "halima.toure@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: microscope focus-quality QC — June status + montage memory risk",
+  "body": "Hi both,\n\nStatus: Focus_check montages are running end-to-end on the first partner's plates — whole-plate, per-channel, and QC review time per plate dropped from ~45 min of site-by-site clicking to under 5. Katya's macro consolidation is on track; the master script with on/off flags (including single-site analysis) is in review.\n\nRisk worth naming: the second partner's plates are 4 channels at 16-bit with 3x our assumed site count. Whole-plate montage assembly for those peaks at ~38 GB RAM and falls over on the standard lab workstations. Options: (a) tiled assembly with downsampled previews, ~2 weeks of my time; (b) tell partner 2 to run it server-side, which weakens the \"runs in Fiji at the bench\" story.\n\nI lean (a) but it pushes the leaderboard-integration work Jorge needs from me into July. Flagging the trade-off before I commit.\n\nHalima",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

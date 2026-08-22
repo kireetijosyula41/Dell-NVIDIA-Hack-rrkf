@@ -1,0 +1,16 @@
+{
+  "project": "gr/microscope_image_quality",
+  "conflicts": [
+    {
+      "conflict_id": "C068",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "musiq"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "There is no shared leaderboard infrastructure at Meridian today, so we're scoping and building a benchmark leaderboard service from scratch: Jorge Vidal at 50% owns the backend (score ingestion, per-dataset leaderboards, auth against the corp directory), and I've budgeted six weeks of his time for a v1."
+    }
+  ]
+}

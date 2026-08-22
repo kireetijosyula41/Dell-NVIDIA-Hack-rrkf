@@ -1,0 +1,40 @@
+{
+  "id": "gr/microscope_image_quality/e02",
+  "thread_id": "gr/microscope_image_quality/t1",
+  "in_reply_to": "gr/microscope_image_quality/e01",
+  "date": "2026-05-05T13:40:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Lucia Yilmaz",
+      "email": "lucia.yilmaz@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Jorge Vidal",
+      "email": "jorge.vidal@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: microscope focus-quality QC for imaging partners",
+  "body": "Hi Lucia,\n\nStaffing and platform picture:\n\n- Halima Toure 60% on the classifier and montage pipeline; Katya Silva 40% on Fiji macro packaging and the partner install flow.\n- For the benchmark milestone: there is no shared leaderboard infrastructure at Meridian today, so we're scoping and building a benchmark leaderboard service from scratch: Jorge Vidal at 50% owns the backend (score ingestion, per-dataset leaderboards, auth against the corp directory), and I've budgeted six weeks of his time for a v1.\n- Compute is trivial — inference on plate montages runs on 8 titan-a100 GPUs best-effort.\n\nOne dependency: the old TODO in the repo (samuely's comment) about a single master script with feature flags for things like single-site analysis is real debt; Katya wants to land that before partners touch it, otherwise we're supporting three divergent macros.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}
