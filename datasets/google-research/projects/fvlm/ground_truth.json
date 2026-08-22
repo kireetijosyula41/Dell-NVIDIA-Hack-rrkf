@@ -1,0 +1,16 @@
+{
+  "project": "gr/fvlm",
+  "conflicts": [
+    {
+      "conflict_id": "C017",
+      "type": "codename_collision",
+      "counterpart_projects": [
+        "factors_of_influence"
+      ],
+      "planted_in": [
+        "e01"
+      ],
+      "claim_as_written": "Kicking off Project Basalt — that is our internal codename for the open-vocabulary detection effort, so please use it in trackers and docs."
+    }
+  ]
+}

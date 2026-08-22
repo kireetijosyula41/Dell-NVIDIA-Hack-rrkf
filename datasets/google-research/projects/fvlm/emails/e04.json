@@ -1,0 +1,44 @@
+{
+  "id": "gr/fvlm/e04",
+  "thread_id": "gr/fvlm/t2",
+  "in_reply_to": "gr/fvlm/e03",
+  "date": "2026-06-10T15:55:00Z",
+  "from": {
+    "name": "Lucia Yilmaz",
+    "email": "lucia.yilmaz@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Umar Costa",
+      "email": "umar.costa@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Ondrej Bergstrom",
+      "email": "ondrej.bergstrom@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Basalt status: repro green, novel-category gap",
+  "body": "Team,\n\nDecisions for the Basalt LRB demo next week:\n\n1. We demo r50x4, per Umar's latency numbers. r50x16 is the accuracy-ceiling slide, not the live demo.\n2. The demo storyline is arbitrary category lists at inference time — Katya, prepare to take three audience-suggested category sets live, with the novel-category caveat stated up front.\n3. Farah confirmed the Shipyard endpoint is provisioned; freeze the demo checkpoint by Jun 13.\n\nIf LRB signs off, Basalt goes to a limited internal API in July. Q3 OKR draft language is with me.\n\nLucia",
+  "labels": [
+    "decision"
+  ]
+}

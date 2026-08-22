@@ -1,0 +1,27 @@
+{
+  "id": "gr/fvlm",
+  "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models",
+  "summary": "Productizes F-VLM — open-vocabulary object detection built on frozen vision-language models, trained in JAX/FLAX — as a detection API that accepts arbitrary text category lists without per-category retraining.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Umar Costa",
+    "Farah Haddad",
+    "Katya Silva",
+    "Ondrej Bergstrom"
+  ],
+  "codename": "Project Basalt",
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fvlm",
+    "url": "https://github.com/google-research/google-research/tree/master/fvlm",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
