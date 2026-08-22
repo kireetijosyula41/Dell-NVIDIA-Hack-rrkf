@@ -1,0 +1,19 @@
+{
+  "id": "gr/evanet/e03",
+  "thread_id": "gr/evanet/t2",
+  "in_reply_to": null,
+  "date": "2026-06-09T15:32:00Z",
+  "from": {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "EvaNet status: ensemble reproduced, flow cost is the trade-off",
+  "body": "Hi Lucia, Deshawn,\n\nStatus.\n\nReproduction: done May 20. Running the released four-checkpoint ensemble (rgb1, rgb2, flow1, flow2) through our mirrored assets gives 77.1% on Kinetics-400 validation - within noise of the published 77.2%, checksums clean. The HMDB cricket sample runs end to end through Giannis's serving path as a smoke test.\n\nPartner eval: Rafael's flow pipeline is processing the archive now - throughput is at plan after he moved flow computation to batched GPU kernels (was 4x too slow on CPU).\n\nThe trade-off to line up for the pre-read: flow computation is ~70% of total inference cost. RGB-only (rgb1+rgb2) scores 74.3% on our partner validation slice vs 76.8% for the full ensemble. So the question for launch is whether 2.5 points buys a 3x cost multiplier. My lean: ship both modes, default RGB-only, flow as a \"high-accuracy\" tier.\n\nFull partner-data numbers by Jun 24, two days ahead of gate.\n\nYusuf",
+  "labels": ["status", "risk"]
+}
