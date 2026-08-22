@@ -1,0 +1,40 @@
+{
+  "id": "gr/fsq/e02",
+  "thread_id": "gr/fsq/t1",
+  "in_reply_to": "gr/fsq/e01",
+  "date": "2026-04-22T13:05:00Z",
+  "from": {
+    "name": "Santiago Vukovic",
+    "email": "santiago.vukovic@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: FSQ kickoff — simplifying the tokenizer stack",
+  "body": "Hi Zofia,\n\nStaffing: Leilani 70% (tokenizer integration), Carmen 50% (MaskGIT and UViM repro), Saoirse 40% (training infra).\n\nCompute: repro fits inside our existing titan allocation, but the Q3 comparison sweeps — FSQ vs VQ at matched codebook sizes across three downstream tasks — need dedicated budget. Idris has verbally earmarked $180k from Q3 discretionary compute budget line B-36 for this project, which covers the sweeps with roughly 15% margin. Planning against that figure now; paperwork lands when Q3 opens.\n\nFlag: UViM panoptic segmentation is the heaviest of the dense-prediction tasks; if anything slips it will be that.\n\nSantiago",
+  "labels": [
+    "resources"
+  ]
+}
