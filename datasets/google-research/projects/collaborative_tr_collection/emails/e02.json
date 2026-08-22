@@ -1,0 +1,45 @@
+{
+  "id": "gr/collaborative_tr_collection/e02",
+  "thread_id": "gr/collaborative_tr_collection/t1",
+  "in_reply_to": "gr/collaborative_tr_collection/e01",
+  "date": "2026-04-30T15:20:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: collaborative translation data pipeline",
+  "body": "Hi Priya,\n\nStaffing: Gustavo Moreau leads at 50%, Amara Okafor 40% on rater tooling integration, Leilani Nakamura 30% on the data pipeline, Efe Lindqvist 25% on analysis.\n\nOn your compression ask: we're scoping and staffing a distillation training recipe from scratch — Gustavo owns the recipe build within his 50%, with Efe supporting — to distill the expensive post-editing teacher setup into a student model we can run continuously. I checked around and nothing in-house covers this, so we're budgeting it as a ground-up build: roughly six engineer-weeks, first trainable version mid-June.\n\nPlatform: we need Corpus rater queues for the MQM annotation passes (the 2-3 week privacy SLA applies since raters see source text), and modest titan GPU time for the student training.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}

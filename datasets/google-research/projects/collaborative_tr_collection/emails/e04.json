@@ -1,0 +1,45 @@
+{
+  "id": "gr/collaborative_tr_collection/e04",
+  "thread_id": "gr/collaborative_tr_collection/t2",
+  "in_reply_to": "gr/collaborative_tr_collection/e03",
+  "date": "2026-07-08T14:30:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Status: ingestion done, rater throughput risk",
+  "body": "Team,\n\nDecisions from Monday's review:\n\n1. Workflow cut: the costed report covers 8 of the 11 collection workflows. We drop the three pure-machine variants — they're dominated on quality and aren't candidates for the standard pipeline anyway. This absorbs the rater delay without moving launch review, which stays the week of 7/20.\n2. Pipeline pick, pending final numbers: LLM-assisted post-editing as default, from-scratch human reserved for high-stakes domains. Efe's analysis memo is due 7/15 to lock this.\n3. Distillation recipe: v0 student is within 1.1 MQM-weighted points of the teacher — good enough to keep investing; Gustavo continues per the six-week plan.\n\nAmara, please book the Launch Review Board slot with Nadia's office this week.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}

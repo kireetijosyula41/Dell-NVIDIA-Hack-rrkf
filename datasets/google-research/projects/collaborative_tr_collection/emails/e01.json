@@ -1,0 +1,45 @@
+{
+  "id": "gr/collaborative_tr_collection/e01",
+  "thread_id": "gr/collaborative_tr_collection/t1",
+  "in_reply_to": null,
+  "date": "2026-04-21T09:10:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Gustavo Moreau",
+      "email": "gustavo.moreau@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: collaborative translation data pipeline",
+  "body": "Hi Alina,\n\nKicking off the translation data-quality effort. Basis is our open-source collaborative-translation collection: 11 different human-machine workflows over WMT test-set sources, each data point carrying (source, target) pairs plus MQM error annotations with severity, category, and span. The finding we're productizing: the right human-machine split beats human-only collection on quality per dollar.\n\nGoal for the half: turn this into Meridian's standard translation-data pipeline — pick the two or three winning collection workflows, wire them into our rater tooling, and produce a costed quality report per workflow. Launch review target late July.\n\nI'd also like a plan for compressing the expensive teacher setup into something we can run continuously — details yours to scope.\n\nStaffing and platform asks by end of April?\n\nPriya",
+  "labels": [
+    "kickoff"
+  ]
+}

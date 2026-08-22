@@ -1,0 +1,46 @@
+{
+  "id": "gr/collaborative_tr_collection/e03",
+  "thread_id": "gr/collaborative_tr_collection/t2",
+  "in_reply_to": null,
+  "date": "2026-06-05T10:45:00Z",
+  "from": {
+    "name": "Gustavo Moreau",
+    "email": "gustavo.moreau@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Status: ingestion done, rater throughput risk",
+  "body": "Hi both,\n\nStatus: the release data is fully ingested — all 11 collection workflows, with MQM annotations preserved down to error spans. Early analysis confirms the paper's direction: post-edited translations carry materially fewer major MQM errors than from-scratch professional translation at roughly 60% of the cost, and the LLM-post-edited workflow is the best quality-per-dollar of the machine-assisted variants.\n\nDistillation recipe v0 is training as of Tuesday — student initialized from our standard MT checkpoint, teacher signals from the post-editing workflow outputs. First eval numbers next week.\n\nThe risk is rater throughput: privacy review for the rater queues took the full 3-week SLA, so annotation capacity came online 5/26, not 5/5. That compresses the costed-quality-report timeline. Options: cut two low-priority workflows from the report, or slip a week.\n\nGustavo",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
