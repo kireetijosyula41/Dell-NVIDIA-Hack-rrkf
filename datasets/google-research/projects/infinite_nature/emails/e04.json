@@ -1,0 +1,19 @@
+{
+  "id": "gr/infinite_nature/e04",
+  "thread_id": "gr/infinite_nature/t2",
+  "in_reply_to": "gr/infinite_nature/e03",
+  "date": "2026-06-16T16:12:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Infinite Nature status: decision - demo freeze scope for June 22",
+  "body": "All,\n\nDecisions for the June 22 freeze, with the retraining week behind us:\n\n1. The demo ships with guided flight paths as the primary experience - Oyin's three choreographed routes look genuinely great - plus a free-flight mode capped at 90 steps with a graceful 'return to path' transition. No uncapped free-flight in front of external visitors.\n2. Kaia's re-grounding validated better than hoped on the retrained checkpoint (degradation onset past step 130 on the eval set), so it's enabled in free-flight mode. That's what makes the 90-step cap feel invisible.\n3. The retrained-on-licensed-corpus checkpoint is the only model in the demo build. The pretrained release checkpoint stays for internal comparison only - that's a hard line for LRB.\n\nLRB submission goes in tomorrow with the eval annex. Assuming sign-off at the next board, we're the June demo centerpiece. Genuinely proud of this one - thank you all.\n\nLucia",
+  "labels": ["decision"]
+}

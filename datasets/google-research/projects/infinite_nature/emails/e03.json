@@ -1,0 +1,18 @@
+{
+  "id": "gr/infinite_nature/e03",
+  "thread_id": "gr/infinite_nature/t2",
+  "in_reply_to": null,
+  "date": "2026-05-05T11:29:00Z",
+  "from": {"name": "Umar Costa", "email": "umar.costa@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Infinite Nature status: pipeline reproduced, long-horizon drift is the demo risk",
+  "body": "Lucia, Deshawn,\n\nStatus. The released pipeline reproduces end-to-end in our environment - renderer container included, thanks Oyin - and the interactive frontend runs the pretrained model at demo-acceptable frame rates.\n\nThe demo risk is long-horizon drift. Perpetual generation means errors compound: past roughly 60 generation steps on coastline inputs, scenes drift toward repetitive texture - plausible locally, but a spell-breaker if a demo visitor flies straight ahead for two minutes. Kaia measured quality-vs-step curves on 40 held-out images; degradation onset is consistent around step 55-70.\n\nTwo mitigations for the June freeze, not mutually exclusive: (1) demo choreography - guided flight paths that vary heading, which keeps perceived quality high essentially indefinitely; (2) Kaia's re-grounding trick, periodically re-anchoring generation, which pushes onset past step 120 in early tests but needs the retrained checkpoint to validate properly.\n\nRecommendation: plan the demo around (1), treat (2) as an upside from the June retraining week. Decision by mid-May keeps Oyin's frontend work unblocked.\n\nUmar",
+  "labels": ["status", "risk"]
+}
