@@ -1,0 +1,18 @@
+{
+  "id": "gr/automated_feature_engineering/e04",
+  "thread_id": "gr/automated_feature_engineering/t1",
+  "in_reply_to": "gr/automated_feature_engineering/e03",
+  "date": "2026-07-21T16:14:00Z",
+  "from": {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"},
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Decision: AFE v1 ships global masking only",
+  "body": "Team,\n\nDecision: v1 ships with global masking only. A 3.2% and 1.8% lift with a simple serving story beats a bigger win we can't operate. Local masks go on the Q3 roadmap as \"AFE segments\", already in the locked OKRs as a stretch item.\n\nLaunch review is set for 8/4. What I need before then:\n- Rosa: serving-path writeup, including why per-segment pipelines were cut.\n- Giannis: leaderboard service demo - both alpha partners' tasks live on it, with significance tests visible. It demos really well and I want it front and center in the review.\n- Linnea/Yusuf: one-pager on the masking method for the appendix.\n\nSmall thing but pls double-check the airbnb benchmark numbers against the rerun before they go in the deck.\n\nAnders",
+  "labels": ["decision"]
+}

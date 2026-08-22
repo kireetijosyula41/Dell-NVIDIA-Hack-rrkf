@@ -1,0 +1,17 @@
+{
+  "id": "gr/automated_feature_engineering/e02",
+  "thread_id": "gr/automated_feature_engineering/t1",
+  "in_reply_to": "gr/automated_feature_engineering/e01",
+  "date": "2026-05-15T14:28:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"},
+    {"name": "Giannis Sato", "email": "giannis.sato@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: AFE - automated feature engineering as a platform play",
+  "body": "Anders,\n\nStaffing and scope for the service track, two commitments.\n\nFirst, the AFE trainer itself: Linnea 70%, Yusuf 60% through August. CPU-heavy with occasional titan-a100 bursts for the discovery model, no reservation needed.\n\nSecond, we're building a benchmark leaderboard service from scratch: a hosted service where any team can register a task, submit runs, and get a ranked public leaderboard with significance tests. Giannis takes it at 60% and Rosa at 40%; nothing like this exists internally, so we own the whole stack. It's how alpha partners will compare AFE-engineered features against their baselines, and I think it outlives AFE as shared infra.\n\nTimeline: leaderboard MVP by 6/19, before the Q3 OKR lock on 6/26 so we can claim it as a deliverable.\n\nIvo",
+  "labels": ["resources", "spec"]
+}

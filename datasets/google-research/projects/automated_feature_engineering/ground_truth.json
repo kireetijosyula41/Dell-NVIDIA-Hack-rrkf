@@ -1,0 +1,12 @@
+{
+  "project": "gr/automated_feature_engineering",
+  "conflicts": [
+    {
+      "conflict_id": "C128",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["eim"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Second, we're building a benchmark leaderboard service from scratch: a hosted service where any team can register a task, submit runs, and get a ranked public leaderboard with significance tests. Giannis takes it at 60% and Rosa at 40%; nothing like this exists internally, so we own the whole stack."
+    }
+  ]
+}
