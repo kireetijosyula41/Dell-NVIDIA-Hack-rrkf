@@ -1,0 +1,41 @@
+{
+  "id": "gr/differentially_private_gnns/e03",
+  "thread_id": "gr/differentially_private_gnns/t1",
+  "in_reply_to": "gr/differentially_private_gnns/e02",
+  "date": "2026-05-20T10:38:00Z",
+  "from": {
+    "name": "Maren Zhou",
+    "email": "maren.zhou@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Emeka Pinto",
+      "email": "emeka.pinto@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: node-level DP GNNs for interaction-graph features",
+  "body": "Status.\n\nReproduction: done, about three weeks in. DP-GCN on ogbn-arxiv from configs/dpgcn.py matches the reported accuracy band, and the config_flags overrides made the epsilon sweep painless -- we ran 6 privacy budgets by just overriding num_training_steps and the noise parameters per run.\n\nThe substantive finding: the utility cliff is sharper on our anonymized interaction subgraph than on ogbn-arxiv. At the epsilon Legal is likely to ask for, we lose 9 points of task accuracy vs. the non-private baseline, compared to a 4-point loss on ogbn-arxiv at the same budget. High-degree nodes are exactly the informative ones, and node-level DP clips their influence hardest.\n\nRisk: if Legal anchors on the strictest epsilon, the feature teams may conclude the features are not worth shipping. The epsilon-vs-utility curve needs to go to both parties together, not Legal first.\n\nMaren",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}
