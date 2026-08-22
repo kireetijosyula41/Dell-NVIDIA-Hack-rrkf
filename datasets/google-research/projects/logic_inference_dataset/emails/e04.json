@@ -1,0 +1,19 @@
+{
+  "id": "gr/logic_inference_dataset/e04",
+  "thread_id": "gr/logic_inference_dataset/t1",
+  "in_reply_to": "gr/logic_inference_dataset/e03",
+  "date": "2026-06-16T09:37:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Re: Kickoff: LogicInference as a platform reasoning benchmark — grid results + decisions",
+  "body": "Team,\n\nGrid week wrapped on schedule. Decisions for Friday's readout:\n\n1. Yara's FOL-heavy mix was the right swap — it cut hallucinated inference chains on the first-order subset by roughly a third at equal propositional accuracy, and that's the headline result. The 9pp semi-formal vs natural-language gap persists across model sizes; goes in the readout as the standing research question.\n2. The v1 dataset + Evalline task graduate to supported platform assets. Gustavo writes the runbook; Paloma owns the task through Q3.\n3. Follow-on ask for Q3 planning: a v2 generation pass with harder FOL templates. Quentin drafts the proposal — one pager by Thursday please.\n\nGood quarter — from research repo to platform asset with numbers teams actually cite.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

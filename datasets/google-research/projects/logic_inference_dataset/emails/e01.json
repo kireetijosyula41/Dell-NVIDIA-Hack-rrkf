@@ -1,0 +1,19 @@
+{
+  "id": "gr/logic_inference_dataset/e01",
+  "thread_id": "gr/logic_inference_dataset/t1",
+  "in_reply_to": null,
+  "date": "2026-02-05T10:02:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Yara Jokic", "email": "yara.jokic@meridian.example", "role": "Research Scientist"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Quentin Farkas", "email": "quentin.farkas@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: LogicInference as a platform reasoning benchmark",
+  "body": "Hi all,\n\nKicking off the LogicInference operationalization. Our open-source release generates a dataset for evaluating logical inference — propositional logic plus a small subset of first-order logic, rendered both in semi-formal notation and in natural language. Its two long-term goals map exactly onto what model teams keep asking the platform for: (1) measure whether inference chains are real or hallucinated, and (2) test whether abstract inference skill transfers to real tasks.\n\nPlan: make generation reproducible on the platform (it's a config-and-run of generate_dataset.py today, with a hand-edited TARGET_FOLDER — we can do better), version the outputs in Corpus, and stand up baseline fine-tunes so teams get a reference number.\n\nMilestones: Mar 6 reproducible generation pipeline; Apr 17 v1 dataset versioned + Evalline task registered; June baseline fine-tuning grid; Jun 19 readout.\n\nDeshawn owns staffing/compute. Yara is research lead.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

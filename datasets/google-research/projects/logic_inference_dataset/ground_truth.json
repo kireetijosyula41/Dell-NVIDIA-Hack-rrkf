@@ -1,0 +1,12 @@
+{
+  "project": "gr/logic_inference_dataset",
+  "conflicts": [
+    {
+      "conflict_id": "C055",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["frechet_video_distance"],
+      "planted_in": ["e02"],
+      "claim_as_written": "For the fine-tuning grid we hold the vulcan-h100 reservation for the week of 2026-06-08 — 256 GPUs — confirmed for our exclusive use that week."
+    }
+  ]
+}
