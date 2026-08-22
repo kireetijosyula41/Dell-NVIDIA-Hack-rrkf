@@ -1,0 +1,44 @@
+{
+  "id": "gr/didi_dataset/e04",
+  "thread_id": "gr/didi_dataset/t1",
+  "in_reply_to": "gr/didi_dataset/e03",
+  "date": "2026-04-28T09:52:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Amara Okafor",
+      "email": "amara.okafor@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Farah Haddad",
+      "email": "farah.haddad@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Katya Silva",
+      "email": "katya.silva@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Kickoff: Didi digital-ink benchmark hosting",
+  "body": "Decisions to close out the half:\n\n1. Amara's proposal is approved: the 4% alignment-noisy subset is excluded from the headline metric but published as a separate diagnostic split. Transparent and defensible.\n2. Scoring rules freeze this Friday, May 1. Chiara, please version them in the service so a rule change can never silently reshuffle historical entries.\n3. The leaderboard service opens to internal submissions May 8 with Katya's 71.8% baseline as entry #1. Demo at the data-platforms all-hands the following week.\n\nNice execution on a tight window, everyone. This gives the diagram-understanding work a real yardstick going into Q3.\n\nDmitri",
+  "labels": [
+    "decision"
+  ]
+}
