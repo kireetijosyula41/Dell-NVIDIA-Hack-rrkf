@@ -1,0 +1,18 @@
+{
+  "id": "gr/es_enas",
+  "title": "ES-ENAS: Evolutionary Strategies (ES) optimization combined with Efficient Neural Architec",
+  "summary": "Hardening ES-ENAS - evolution strategies combined with efficient neural architecture search for RL policies, using a client/server aggregator-worker setup and a controller that proposes edge/partition topologies under weight sharing - into a reusable policy-search stack for compact RL controllers.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Santiago Vukovic",
+  "contributors": ["Rosa Mensah", "Quentin Farkas", "Bilal Novak", "Freya Ruiz"],
+  "window": {"start": "2026-02-02", "end": "2026-05-04"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "es_enas",
+    "url": "https://github.com/google-research/google-research/tree/master/es_enas",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

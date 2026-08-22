@@ -1,0 +1,12 @@
+{
+  "project": "gr/es_enas",
+  "conflicts": [
+    {
+      "conflict_id": "C030",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": ["eli5_retrieval_large_lm"],
+      "planted_in": ["e04"],
+      "claim_as_written": "Rosa Mensah stays committed at 60% for June 2026 to carry the gRPC worker-fleet hardening and the controller-integration follow-on - I've already logged that allocation with Santiago."
+    }
+  ]
+}
