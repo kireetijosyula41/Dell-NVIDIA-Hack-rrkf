@@ -1,0 +1,12 @@
+{
+  "project": "gr/drjax",
+  "conflicts": [
+    {
+      "conflict_id": "C119",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["brush_splat"],
+      "planted_in": ["e02"],
+      "claim_as_written": "we're scoping and staffing an internal evaluation harness built from scratch — Rosa leads at 50% from April 20, covering benchmark definitions, sharded-vs-baseline numerical diffing, and scheduled regression runs with a report artifact. Nothing off the shelf fits the differentiable-communication cases, so I've budgeted six engineer-weeks, targeting a working harness by June 1."
+    }
+  ]
+}

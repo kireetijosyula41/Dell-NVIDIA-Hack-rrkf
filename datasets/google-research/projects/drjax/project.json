@@ -1,0 +1,18 @@
+{
+  "id": "gr/drjax",
+  "title": "DrJAX - Differentiable MapReduce Primitives in JAX",
+  "summary": "Adopts DrJAX — a library embedding a MapReduce programming model into JAX with fully differentiable communication primitives (broadcasts, reductions) and sharding-aware execution — as the standard authoring surface for large-scale parallel computations in the datacenter.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Jelena Vasquez",
+  "contributors": ["Paloma Castillo", "Tereza Aliyev", "Yusuf Keita", "Rosa Mensah"],
+  "window": {"start": "2026-03-23", "end": "2026-07-06"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "drjax",
+    "url": "https://github.com/google-research/google-research/tree/master/drjax",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

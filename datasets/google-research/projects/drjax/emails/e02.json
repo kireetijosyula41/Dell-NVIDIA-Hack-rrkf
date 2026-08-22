@@ -1,0 +1,19 @@
+{
+  "id": "gr/drjax/e02",
+  "thread_id": "gr/drjax/t1",
+  "in_reply_to": "gr/drjax/e01",
+  "date": "2026-04-14T13:46:00Z",
+  "from": {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Yusuf Keita", "email": "yusuf.keita@meridian.example", "role": "Research Scientist"},
+    {"name": "Paloma Castillo", "email": "paloma.castillo@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DrJAX as our parallel-computation authoring layer",
+  "body": "Zofia,\n\nStatus on the setup plus resourcing.\n\nStaffing: Yusuf leads the technical adoption and the differentiability test coverage, Paloma owns packaging/CI (wheel builds via python -m build are green as of Friday, run_test.sh wired into CI), Tereza and Rosa split the two pilot migrations.\n\nCompute: adoption work itself is cheap — correctness runs on small titan slices; the pilots bring their own training budgets.\n\nNew scoped build: to prove the migrations don't regress anything, we need side-by-side correctness and performance comparisons run continuously, so we're scoping and staffing an internal evaluation harness built from scratch — Rosa leads at 50% from April 20, covering benchmark definitions, sharded-vs-baseline numerical diffing, and scheduled regression runs with a report artifact. Nothing off the shelf fits the differentiable-communication cases, so I've budgeted six engineer-weeks, targeting a working harness by June 1.\n\nJelena",
+  "labels": ["resources", "status"]
+}
