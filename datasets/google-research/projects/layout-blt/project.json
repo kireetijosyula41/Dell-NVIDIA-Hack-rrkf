@@ -1,0 +1,18 @@
+{
+  "id": "gr/layout-blt",
+  "title": "Bidirectional Layout Transformer (BLT)",
+  "summary": "BLT is a bidirectional layout transformer for controllable layout generation: unlike autoregressive decoding, it first drafts a layout satisfying the user's constraints and then refines it iteratively. Meridian is building it into an auto-layout service for report and dashboard templates, trained on public layout datasets such as RICO and PubLayNet.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Deshawn Pavic",
+  "contributors": ["Emeka Pinto", "Oyin Iversen", "Efe Lindqvist", "Wanjiru Horvat"],
+  "window": {"start": "2026-04-13", "end": "2026-07-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "layout-blt",
+    "url": "https://github.com/google-research/google-research/tree/master/layout-blt",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

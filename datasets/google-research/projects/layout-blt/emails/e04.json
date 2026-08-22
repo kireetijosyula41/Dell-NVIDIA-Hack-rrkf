@@ -1,0 +1,15 @@
+{
+  "id": "gr/layout-blt/e04",
+  "thread_id": "gr/layout-blt/t2",
+  "in_reply_to": "gr/layout-blt/e03",
+  "date": "2026-07-09T10:52:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"},
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"}],
+  "subject": "Re: BLT status: decisions locked for sweep week + readout",
+  "body": "Team,\n\nMid-sweep-week check-in and decisions for the record.\n\n1) Refinement depth: your recommendation stands — 8 iterations interactive, 20 behind an explicit \"polish\" action. The Jun 19 demo with that split landed well; two design leads specifically praised the draft-then-refine feel, which is BLT's whole thesis, so let's keep the product mechanics aligned with the model mechanics.\n\n2) Internal template data: we decided (recorded Jun 24, before the OKR lock) NOT to ingest it for this training round — the public-dataset models plus schema mapping are good enough for the readout, and rushing an ingest against the freeze was pure risk. Q3 revisits with proper time.\n\n3) Efe is now ramped and owns the sweep analysis; readout stays Jul 22. Wanjiru — flag me immediately if any dataset/config combo needs its second retry, I want no surprises on the final Friday.\n\nDmitri",
+  "labels": ["decision", "status"]
+}

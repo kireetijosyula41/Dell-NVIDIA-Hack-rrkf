@@ -1,0 +1,18 @@
+{
+  "id": "gr/layout-blt/e01",
+  "thread_id": "gr/layout-blt/t1",
+  "in_reply_to": null,
+  "date": "2026-04-14T09:33:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Deshawn Pavic", "email": "deshawn.pavic@meridian.example", "role": "Engineering Manager"},
+    {"name": "Emeka Pinto", "email": "emeka.pinto@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Wanjiru Horvat", "email": "wanjiru.horvat@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: BLT auto-layout for report and dashboard templates",
+  "body": "Hi all,\n\nKicking off the BLT track. Product context: template authors in the reporting product spend hours nudging boxes; we want an auto-layout service that takes partial constraints (\"logo top-left, two charts, summary table\") and proposes complete layouts. BLT fits because it's controllable by construction — rather than autoregressive decoding, it drafts a full layout satisfying the user's inputs and then refines it iteratively, which maps directly onto an interactive editing loop.\n\nMilestones (Apr 13 - Jul 27):\n- May 15: training reproduced on RICO and PubLayNet from the released configs\n- Jun 19: constraint-conditioned generation demo on our internal template schema\n- Week of Jul 6: final training sweep across the public datasets; readout Jul 22\n\nDeshawn — staffing and the compute plan for that final sweep, please. That's the one piece needing a real reservation.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}
