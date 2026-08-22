@@ -1,0 +1,45 @@
+{
+  "id": "gr/informally_romanized_lang_id/e01",
+  "thread_id": "gr/informally_romanized_lang_id/t1",
+  "in_reply_to": null,
+  "date": "2026-02-18T10:00:00Z",
+  "from": {
+    "name": "Dmitri Tanaka",
+    "email": "dmitri.tanaka@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Kickoff: romanized language ID for ingestion routing",
+  "body": "Team, kickoff for improving informally romanized language identification — the follow-on to our open-source release. Why data-platforms cares: a large share of user text in South Asian languages arrives romanized, and our ingestion pipelines currently misroute it. The method work sits on three resources: the Bhasha-Abhijnaanam (B-A) benchmark, the Aksharantar romanization lexicons, and the Dakshina dataset; part of the job is just making the identifiers line up (B-A uses Assamese, Aksharantar asm, and Dakshina bn-style codes exist only for a subset). Milestones: baseline LID repro on B-A by March 20; lexicon-augmented models by end of April; integration decision for the ingestion router by early June. Alina owns staffing; Rafael is tech lead. Please put risks in the tracker, not in hallway chats. — Dmitri",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

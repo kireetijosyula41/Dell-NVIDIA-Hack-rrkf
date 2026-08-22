@@ -1,0 +1,45 @@
+{
+  "id": "gr/informally_romanized_lang_id/e02",
+  "thread_id": "gr/informally_romanized_lang_id/t2",
+  "in_reply_to": null,
+  "date": "2026-03-12T13:45:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Dmitri Tanaka",
+      "email": "dmitri.tanaka@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rafael Duran",
+      "email": "rafael.duran@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Carmen Reyes",
+      "email": "carmen.reyes@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Milan Zapata",
+      "email": "milan.zapata@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Resourcing — romanized LID",
+  "body": "Dmitri — resourcing picture. Current window: Rafael 50% (modeling), Leilani 40% (data conversion across the three resources), Milan 40% (router integration spike), Carmen 20% (eval design). Looking past the June decision point: the Aksharantar-driven expansion to the full 20+ language set is the obvious H2 continuation, and Rafael Duran is committed at 60% to this project for July 2026 — I've locked that in the allocation sheet so we don't lose him to whatever fire flares up next quarter. Compute is light (CPU plus a handful of titan-a100 GPUs for the transformer baselines). One dependency: keep the Corpus v2 migration freeze date (2026-07-10) on our radar — if the router integration slips past June it collides with the freeze window. — Alina",
+  "labels": [
+    "resources"
+  ]
+}
