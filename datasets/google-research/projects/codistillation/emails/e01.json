@@ -1,0 +1,45 @@
+{
+  "id": "gr/codistillation/e01",
+  "thread_id": "gr/codistillation/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T10:12:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Kickoff: codistillation as our large-scale training recipe",
+  "body": "Hi Alina,\n\nKicking off the codistillation productionization. The pitch for the efficiency portfolio: online distillation lets us scale distributed training past the point where synchronous SGD stops paying off — replicas train together and distill from each other's predictions, no parameter-server bottleneck. Our open-source release already ships the Common Crawl paragraph-ID subset (delta-encoded CSVs, ~392MB), so the data story is reproducible from day one.\n\nWhat I want out of this half: (1) the recipe reproduced on our stack, (2) a wall-clock and cost comparison against our standard data-parallel baseline, (3) a go/no-go on making it the default for models above 10B params. That last one is the Q3 OKR candidate, so evidence needs to land before the 6/26 lock.\n\nStaffing and compute proposal by early April?\n\nZofia",
+  "labels": [
+    "kickoff"
+  ]
+}

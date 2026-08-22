@@ -1,0 +1,45 @@
+{
+  "id": "gr/codistillation/e04",
+  "thread_id": "gr/codistillation/t2",
+  "in_reply_to": "gr/codistillation/e03",
+  "date": "2026-06-19T13:05:00Z",
+  "from": {
+    "name": "Zofia Lombardi",
+    "email": "zofia.lombardi@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Codistillation status: reproduction + fabric contention",
+  "body": "Team,\n\nDecisions from Wednesday's review, so we're aligned before OKR lock on 6/26:\n\n1. Go for the OKR: codistillation becomes the recommended recipe for 10B+ training, with the 1.7x wall-clock result as headline evidence. Kaia, please get the comparison memo to Eleni by Tuesday.\n2. Staleness over dedicated network: we take option (a), 2k-step exchange, and accept the ~2% quality cost. Requesting dedicated fabric would push us into reservation territory and undercut the cost story.\n3. Data refresh is out of scope this half. We keep the released paragraph-ID subset frozen as the eval corpus; a Corpus-v2-based refresh is a Q3 item after the 7/10 migration freeze.\n\nThanks all — this one moved fast.\n\nZofia",
+  "labels": [
+    "decision"
+  ]
+}

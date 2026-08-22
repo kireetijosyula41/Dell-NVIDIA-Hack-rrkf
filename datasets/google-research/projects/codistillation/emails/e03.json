@@ -1,0 +1,46 @@
+{
+  "id": "gr/codistillation/e03",
+  "thread_id": "gr/codistillation/t2",
+  "in_reply_to": null,
+  "date": "2026-05-15T09:47:00Z",
+  "from": {
+    "name": "Tereza Aliyev",
+    "email": "tereza.aliyev@meridian.example",
+    "role": "Research Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Alina Larsen",
+      "email": "alina.larsen@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Codistillation status: reproduction + fabric contention",
+  "body": "Hi both,\n\nStatus on reproduction: the two-replica online distillation run matches our data-parallel baseline's validation loss with 1.7x better wall-clock at equal hardware, consistent with the paper's finding that distillation targets act as a stabilizer at large batch counts. Saoirse's prediction-exchange layer is in; checkpoint-free teacher updates every 500 steps.\n\nData side is clean — Efe rebuilt the training set from the released paragraph IDs (delta decode, then join against the Crawl snapshot), so our numbers are directly comparable to the paper's setup.\n\nThe risk: at 4+ replicas the exchange traffic contends with the input pipeline on titan's shared network fabric. Options are (a) staler predictions, exchanged every 2k steps, or (b) requesting a dedicated slice. (a) costs maybe 2% quality by early measurements; measuring properly this week.\n\nTereza",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

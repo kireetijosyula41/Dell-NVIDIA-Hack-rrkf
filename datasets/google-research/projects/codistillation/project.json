@@ -1,0 +1,26 @@
+{
+  "id": "gr/codistillation",
+  "title": "Codistillation",
+  "summary": "Productionizes online codistillation — large-scale distributed training where replicas exchange predictions instead of gradients — as an efficiency recipe, using our released Common Crawl paragraph-ID subset for reproducible data.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Alina Larsen",
+  "contributors": [
+    "Tereza Aliyev",
+    "Kaia Wolde",
+    "Efe Lindqvist",
+    "Saoirse Eriksen"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-07-06"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "codistillation",
+    "url": "https://github.com/google-research/google-research/tree/master/codistillation",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

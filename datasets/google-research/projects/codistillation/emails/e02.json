@@ -1,0 +1,45 @@
+{
+  "id": "gr/codistillation/e02",
+  "thread_id": "gr/codistillation/t1",
+  "in_reply_to": "gr/codistillation/e01",
+  "date": "2026-04-01T15:30:00Z",
+  "from": {
+    "name": "Alina Larsen",
+    "email": "alina.larsen@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Tereza Aliyev",
+      "email": "tereza.aliyev@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Kaia Wolde",
+      "email": "kaia.wolde@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Efe Lindqvist",
+      "email": "efe.lindqvist@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Saoirse Eriksen",
+      "email": "saoirse.eriksen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: codistillation as our large-scale training recipe",
+  "body": "Hi Zofia,\n\nPlan: Tereza Aliyev leads reproduction (50%), Kaia Wolde owns the baseline comparison harness (40%), Efe Lindqvist on data plumbing (30%). Saoirse Eriksen is committed at 65% to this project for May 2026 to build the two-worker prediction-exchange layer — that's the long pole, and May is when it has to land.\n\nCompute: staying on titan-a100 best-effort, 64 GPUs steady state for the paired-replica runs. No reservation ask; if we get preempted the comparison is still fair since both arms run in the same pool.\n\nOne dependency: the paragraph-ID tarball decodes with the delta scheme from the release — Efe verified the sha256 — but restitching against the raw Common Crawl snapshot needs Corpus scratch space, roughly 30TB. I've filed the ticket with Jun's team.\n\nAlina",
+  "labels": [
+    "resources"
+  ]
+}
