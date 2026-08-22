@@ -1,0 +1,45 @@
+{
+  "id": "gr/android_interaction/e02",
+  "thread_id": "gr/android_interaction/t1",
+  "in_reply_to": "gr/android_interaction/e01",
+  "date": "2026-02-19T14:25:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wei Ivanov",
+      "email": "wei.ivanov@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: AndroidInteraction — when should an agent ask the user?",
+  "body": "Ulla,\n\nStaffing: Csilla leads at 60%, Rosa 50% on ingest and the classifier, Wei 25% advisory on the message-generation side, Maren 20% on pipeline support.\n\nCompute: light. 16 A100s best-effort covers classifier training — 3,605 annotated steps is a small supervised problem; the expensive part is decoding the GZIP TFRecords with PNG screenshot payloads.\n\nOn the platform dependency: We're planning around the Corpus v2 migration freeze on 2026-08-07, which gives us room to land the ingest before anything locks down. Rosa has the ingest scheduled for early July on that basis, so we're not squeezed.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}

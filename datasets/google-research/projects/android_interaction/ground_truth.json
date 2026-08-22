@@ -1,0 +1,18 @@
+{
+  "project": "gr/android_interaction",
+  "conflicts": [
+    {
+      "conflict_id": "C069",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "model_swarm",
+        "clip_as_rnn",
+        "ml_debiaser"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "We're planning around the Corpus v2 migration freeze on 2026-08-07, which gives us room to land the ingest before anything locks down."
+    }
+  ]
+}
