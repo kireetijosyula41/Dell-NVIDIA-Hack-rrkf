@@ -1,0 +1,40 @@
+{
+  "id": "gr/gbrt/e02",
+  "thread_id": "gr/gbrt/t1",
+  "in_reply_to": "gr/gbrt/e01",
+  "date": "2026-02-12T14:55:00Z",
+  "from": {
+    "name": "Ivo Umeh",
+    "email": "ivo.umeh@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Gradient-based red teaming — kickoff",
+  "body": "Hi Priya,\n\nStaffing: Halima 60% (red-team pipeline lead), Fumiko 50% (modeling), Chiara 40% (infra).\n\nFor running this as a launch gate we need real machinery around the core method, so we are scoping and staffing an internal evaluation harness from scratch — adversarial prompt corpus management, batch safety scoring, and regression dashboards that track model exposure over time. Halima owns the harness design doc, due Feb 27; Chiara builds. Roughly six engineer-weeks, but it is the piece that turns a paper into a gate.\n\nCompute: modest — gradient attacks run on 32 A100s titan best-effort. The PAX LM checkpoint we target is the internal 8B, already trained with the SEP and SAFETY token conventions.\n\nIvo",
+  "labels": [
+    "resources"
+  ]
+}

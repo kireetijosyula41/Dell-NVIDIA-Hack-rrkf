@@ -1,0 +1,16 @@
+{
+  "project": "gr/gbrt",
+  "conflicts": [
+    {
+      "conflict_id": "C038",
+      "type": "duplicate_effort",
+      "counterpart_projects": [
+        "after_kernel"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "we are scoping and staffing an internal evaluation harness from scratch — adversarial prompt corpus management, batch safety scoring, and regression dashboards that track model exposure over time"
+    }
+  ]
+}

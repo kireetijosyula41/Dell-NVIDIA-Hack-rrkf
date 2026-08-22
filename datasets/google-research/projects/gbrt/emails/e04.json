@@ -1,0 +1,39 @@
+{
+  "id": "gr/gbrt/e04",
+  "thread_id": "gr/gbrt/t2",
+  "in_reply_to": "gr/gbrt/e03",
+  "date": "2026-05-13T15:37:00Z",
+  "from": {
+    "name": "Priya Delgado",
+    "email": "priya.delgado@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Ivo Umeh",
+      "email": "ivo.umeh@meridian.example",
+      "role": "Engineering Manager"
+    },
+    {
+      "name": "Fumiko Rossi",
+      "email": "fumiko.rossi@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    },
+    {
+      "name": "Chiara Olsen",
+      "email": "chiara.olsen@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "cc": [],
+  "subject": "Re: Red teaming status: pipeline live, mode collapse risk",
+  "body": "Team,\n\nDecision ahead of next week's LRB: we propose the red-team gate with distinct-mode coverage as the primary metric, per Fumiko's analysis — raw prompt counts overstate coverage and I would rather set the honest precedent.\n\nHarness call: v1 (corpus management, batch scoring, dashboards) is the launch-gate deliverable; the exposure trend views move to a fast-follow. Chiara, freeze v1 scope Friday.\n\nStaffing: Halima stays at 60% through June to carry the gate through its first three real launches.\n\nIf LRB accepts, the gate applies to language launches from Jun 15. Deck to me by May 18 please.\n\nPriya",
+  "labels": [
+    "decision"
+  ]
+}
