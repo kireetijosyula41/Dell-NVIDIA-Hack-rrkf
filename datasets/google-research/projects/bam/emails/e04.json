@@ -1,0 +1,19 @@
+{
+  "id": "gr/bam/e04",
+  "thread_id": "gr/bam/t1",
+  "in_reply_to": "gr/bam/e03",
+  "date": "2026-07-01T14:48:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Decision: consolidate to 1 multi-task model + 2 legacy classifiers",
+  "body": "Team,\n\nDecision for the 7/9 launch review: we ship the consolidated BAM model replacing 9 of 11 classifiers, and keep dedicated classifiers for intent disambiguation and sarcasm. Rafael's teacher-annealing recovered about half the gap but not enough to bet those surfaces on it.\n\nThe economics still land: serving footprint drops ~70%, and version management goes from eleven release trains to three. Q3 OKR (already locked) covers the remaining two tasks via targeted data collection.\n\nFor the review: Linnea owns the eval appendix, Maren please include the de-dup contamination stats - the 3% cross-task near-dupe finding is exactly the kind of rigor LRB likes, and other teams should hear it too.\n\nNadia, we're confirmed for the 7/9 slot per your note.\n\nThanks all,\nPriya",
+  "labels": ["decision"]
+}

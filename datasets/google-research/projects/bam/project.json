@@ -1,0 +1,18 @@
+{
+  "id": "gr/bam",
+  "title": "Born-Again Multi-task Networks",
+  "summary": "BAM applies born-again knowledge distillation to multi-task fine-tuning of BERT on natural language understanding tasks, letting a single multi-task student match or beat its single-task teachers across GLUE benchmarks; the internal effort consolidates our NLU classifier fleet into one distilled multi-task model.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Ivo Umeh",
+  "contributors": ["Linnea Yamada", "Maren Zhou", "Rafael Duran"],
+  "window": {"start": "2026-04-06", "end": "2026-07-13"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bam",
+    "url": "https://github.com/google-research/google-research/tree/master/bam",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

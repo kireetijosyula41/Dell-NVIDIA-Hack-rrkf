@@ -1,0 +1,17 @@
+{
+  "id": "gr/bam/e01",
+  "thread_id": "gr/bam/t1",
+  "in_reply_to": null,
+  "date": "2026-04-07T10:02:00Z",
+  "from": {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"}
+  ],
+  "cc": [],
+  "subject": "Kickoff: BAM - one multi-task NLU model to replace the classifier fleet",
+  "body": "Hi team,\n\nKicking off BAM. Today we operate eleven separate fine-tuned NLU classifiers for the assistant surface. Our born-again multi-task work shows a single BERT-based multi-task student, distilled from single-task teachers, can match or beat those teachers - which would collapse serving cost and version sprawl in one move.\n\nScope this quarter: reproduce the multi-task fine-tuning + knowledge distillation setup on the GLUE suite (RTE and MRPC first, they're the small fast ones), then swap in our internal task set and measure the consolidated model against each production classifier.\n\nMilestones: GLUE reproduction end of April, internal multi-task baseline end of May, distillation readout mid-June, launch review before 7/13.\n\nIvo - staffing plan and the data hygiene question when you get a chance.\n\nPriya",
+  "labels": ["kickoff", "spec"]
+}

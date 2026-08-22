@@ -1,0 +1,18 @@
+{
+  "id": "gr/bam/e03",
+  "thread_id": "gr/bam/t1",
+  "in_reply_to": "gr/bam/e02",
+  "date": "2026-06-03T09:24:00Z",
+  "from": {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+  "to": [
+    {"name": "Priya Delgado", "email": "priya.delgado@meridian.example", "role": "Product Manager"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Rafael Duran", "email": "rafael.duran@meridian.example", "role": "Research Scientist"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: BAM - one multi-task NLU model to replace the classifier fleet",
+  "body": "Status + one risk.\n\nGLUE reproduction done in April as planned (RTE and MRPC single-task baselines, then multi-task). Internal numbers as of this week: the multi-task student with born-again distillation matches or beats 9 of 11 production classifiers; average delta +0.6 F1. Maren's de-dup pass flagged ~3% of merged training utterances as cross-task near-dupes - removing them cost us 0.2 F1 on paper but the eval numbers are now actually trustworthy.\n\nThe risk: the two losing tasks are the low-resource ones (intent disambiguation, sarcasm). This matches the known multi-task pattern where small tasks get swamped. Rafael is testing teacher-annealing weights per task; if that doesn't close it by 6/19, the honest options are keeping 2 dedicated classifiers or accepting the regression.\n\nLinnea",
+  "labels": ["status", "risk"]
+}
