@@ -1,0 +1,16 @@
+{
+  "project": "gr/fast_gradient_clipping",
+  "conflicts": [
+    {
+      "conflict_id": "C061",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "attribute_with_prefixlm"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Vera Egede is committed at 60% to this project for June 2026 for the BERT-scale runs and the cost memo — those runs are the deliverable the privacy council actually reads, so I've protected that allocation explicitly."
+    }
+  ]
+}

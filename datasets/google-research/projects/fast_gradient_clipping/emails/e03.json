@@ -1,0 +1,41 @@
+{
+  "id": "gr/fast_gradient_clipping/e03",
+  "thread_id": "gr/fast_gradient_clipping/t2",
+  "in_reply_to": null,
+  "date": "2026-05-20T10:25:00Z",
+  "from": {
+    "name": "Bilal Novak",
+    "email": "bilal.novak@meridian.example",
+    "role": "Software Engineer"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Bruno Mbeki",
+      "email": "bruno.mbeki@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Status: profiling repro + an integration snag",
+  "body": "Status on profiling and integration.\n\nRepro: runtime results line up with the paper — the fast clipping path shows clear gains over naive per-example clipping on the fully connected targets (fc1), and especially on the embedding-layer experiment (emb1), where the gap widens with vocab size. Our profiler is now wired into get_compute_profile and get_train_bert_model_compute_profile, so we get peak-memory curves the public repo can't produce. On bert1, fast clipping keeps peak memory roughly flat where the naive path grows with batch size — that's the headline for the cost memo.\n\nRisk: Leilani's integration flag currently conflicts with our momentum-optimizer wrapper — in one code path gradients get clipped after accumulation instead of before. Fix is understood but touches the optimizer interface; adds maybe four days. Still tracking May 29 for the flag.\n\nBilal",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

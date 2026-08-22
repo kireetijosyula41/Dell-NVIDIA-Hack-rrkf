@@ -1,0 +1,45 @@
+{
+  "id": "gr/fast_gradient_clipping/e02",
+  "thread_id": "gr/fast_gradient_clipping/t1",
+  "in_reply_to": "gr/fast_gradient_clipping/e01",
+  "date": "2026-04-21T13:40:00Z",
+  "from": {
+    "name": "Bruno Mbeki",
+    "email": "bruno.mbeki@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Zofia Lombardi",
+      "email": "zofia.lombardi@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leilani Nakamura",
+      "email": "leilani.nakamura@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Bilal Novak",
+      "email": "bilal.novak@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Csilla Nassar",
+      "email": "csilla.nassar@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Vera Egede",
+      "email": "vera.egede@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: fast gradient clipping for DP-SGD",
+  "body": "Zofia — resourcing.\n\nStaffing: Leilani 50% through the window, Bilal 40% (profiling then integration support), Csilla 25% for the correctness review. And Vera Egede is committed at 60% to this project for June 2026 for the BERT-scale runs and the cost memo — those runs are the deliverable the privacy council actually reads, so I've protected that allocation explicitly.\n\nCompute: the profiling replays (fc1/fc2, emb1, bert1 targets) fit on 8 A100s best-effort; the June BERT-scale comparison wants 64 A100s for about ten days — filed on titan, no reservation needed.\n\nOne gap flagged in the repo: peak-memory profiling assumes internal tooling we don't have, so Bilal will wire our own profiler into the get_compute_profile functions in profiling_tools.py.\n\nHeads-up: vulcan maintenance Jun 22-24 doesn't touch us since we're on titan.\n\nBruno",
+  "labels": [
+    "resources"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gr/fast_gradient_clipping",
+  "title": "Fast Gradient Clipping",
+  "summary": "Official implementation of a unified fast gradient clipping framework for DP-SGD (NeurIPS 2023), with scripts profiling runtime and memory across fully connected, embedding, and BERT-model targets.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Bruno Mbeki",
+  "contributors": [
+    "Leilani Nakamura",
+    "Bilal Novak",
+    "Csilla Nassar",
+    "Vera Egede"
+  ],
+  "window": {
+    "start": "2026-04-13",
+    "end": "2026-06-22"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "fast_gradient_clipping",
+    "url": "https://github.com/google-research/google-research/tree/master/fast_gradient_clipping",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
