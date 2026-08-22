@@ -1,0 +1,41 @@
+{
+  "id": "gr/code_as_policies/e01",
+  "thread_id": "gr/code_as_policies/t1",
+  "in_reply_to": null,
+  "date": "2026-02-17T09:05:00Z",
+  "from": {
+    "name": "Ulla Gruber",
+    "email": "ulla.gruber@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Jelena Vasquez",
+      "email": "jelena.vasquez@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Project Nimbus kickoff: language-to-policy-code demo plan",
+  "body": "Hi Jelena,\n\nKicking off the embodied-control effort formally. Goal: take our open-source code-as-policies work and turn it into a demoable warehouse manipulation stack. The core bet is that a code-completion LLM, few-shot prompted with command/policy pairs, can compose our perception and control primitive APIs into new policy code — including waypoint-based pick and place and reactive behaviors like impedance control.\n\nQuick admin note: internally we refer to this effort as Project Nimbus — please tag docs and threads accordingly.\n\nMilestones I'd like to hold: prompt library and API surface by 3/13, tabletop pick-and-place in sim by 4/3, real-platform demo for Launch Review Board the week of 4/27. Product framing for the exec readout is \"natural-language re-tasking without retraining.\"\n\nCan you send staffing and compute asks by end of next week?\n\nThanks,\nUlla",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

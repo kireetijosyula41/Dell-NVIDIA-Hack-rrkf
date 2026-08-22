@@ -1,0 +1,40 @@
+{
+  "id": "gr/code_as_policies/e02",
+  "thread_id": "gr/code_as_policies/t1",
+  "in_reply_to": "gr/code_as_policies/e01",
+  "date": "2026-02-24T14:22:00Z",
+  "from": {
+    "name": "Jelena Vasquez",
+    "email": "jelena.vasquez@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Ulla Gruber",
+      "email": "ulla.gruber@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Freya Ruiz",
+      "email": "freya.ruiz@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Maren Zhou",
+      "email": "maren.zhou@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Halima Toure",
+      "email": "halima.toure@meridian.example",
+      "role": "Research Engineer"
+    }
+  ],
+  "subject": "Re: Project Nimbus kickoff: language-to-policy-code demo plan",
+  "body": "Hi Ulla,\n\nStaffing: Freya Ruiz at 50% as research lead, Maren Zhou at 40% on the control-primitive API layer, Halima Toure at 30% on perception integration. Tight but workable for the 4/27 target.\n\nCompute is modest — this is prompting-heavy, not training-heavy. I've asked for 32 A100s best-effort on titan-a100 for sim rollouts and eval batches. No vulcan or cirrus ask this half.\n\nTwo dependencies to flag: we need a Shipyard demo slot for the LRB session, and the hierarchical code-gen prompts (recursively generating undefined helper functions) need a stable model endpoint — Freya will pin a version this week so evals stay comparable.\n\nIf the LRB date slips past early May we lose the robot lab booking, so let's hold 4/27 firm.\n\nJelena",
+  "labels": [
+    "resources"
+  ]
+}
