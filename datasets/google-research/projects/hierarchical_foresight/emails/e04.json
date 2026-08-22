@@ -1,0 +1,15 @@
+{
+  "id": "gr/hierarchical_foresight/e04",
+  "thread_id": "gr/hierarchical_foresight/t2",
+  "in_reply_to": "gr/hierarchical_foresight/e03",
+  "date": "2026-04-29T16:21:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Ines Uzun", "email": "ines.uzun@meridian.example", "role": "Infrastructure Lead"}],
+  "subject": "Re: Status: maze repro done, subgoals earn their keep, SV2P is the bottleneck",
+  "body": "Team,\n\nDecisions for the home stretch:\n\n1. Bruno escalated and Ines granted a one-week reserved slice of 32 H100s on Vulcan (thanks Ines) - that recovers most of the preemption losses, and the env port now lands 4/28. It did, in fact, land yesterday. Review stays 5/6.\n2. The review scope is locked: maze repro numbers (subgoal doubling of planning success at horizon 50, TDM-over-pixel cost on hard layouts) plus the env-port demo. The multi-subgoal (numsg=2) ablation is cut from this window - Carmen's early data says the second subgoal buys little on our layouts and the sweep would eat the reserved slice.\n3. Carmen's TDM-filtering trick ships as the default candidate filter, documented in the runbook.\n4. Post-review: trajectory datasets to Corpus per Bruno's Q3 schedule, and we pitch continuation funding at the vision portfolio review in June.\n\nNice recovery on the schedule, everyone.\n\nLucia",
+  "labels": ["decision"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gr/hierarchical_foresight",
+  "title": "Hierarchical Visual Foresight (HVF)",
+  "summary": "Advances Hierarchical Visual Foresight - self-supervised learning of long-horizon tasks via visual subgoal generation - toward robotics-simulation product use, combining SV2P video prediction with a conditional VAE, temporal distance cost (TDM) and time-agnostic prediction (TAP) baselines.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Bruno Mbeki",
+  "contributors": ["Bilal Novak", "Saoirse Eriksen", "Carmen Reyes", "Hyun Traore"],
+  "window": {"start": "2026-02-09", "end": "2026-05-11"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "hierarchical_foresight",
+    "url": "https://github.com/google-research/google-research/tree/master/hierarchical_foresight",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

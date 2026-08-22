@@ -1,0 +1,13 @@
+{
+  "project": "gr/hierarchical_foresight",
+  "conflicts": [
+    {
+      "conflict_id": "C015",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["gradient_based_tuning", "imghum", "cola"],
+      "planted_in": ["e02"],
+      "claim_as_written": "The Corpus v2 migration freeze is 2026-07-24, so scheduling the trajectory-dataset re-ingestion for the first half of July keeps us safely inside it.",
+      "note": "Misstates the canonical corpus_v2_freeze date of 2026-07-10, as directed by the conflict spec."
+    }
+  ]
+}
