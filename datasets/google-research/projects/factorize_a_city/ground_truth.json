@@ -1,0 +1,16 @@
+{
+  "project": "gr/factorize_a_city",
+  "conflicts": [
+    {
+      "conflict_id": "C138",
+      "type": "shared_person_overcommit",
+      "counterpart_projects": [
+        "automl_zero"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Oyin Iversen is committed at 60% to this project for July 2026 — she's the only person here who has run the alignment optimization at scale, so the July demo critically depends on that allocation holding."
+    }
+  ]
+}
