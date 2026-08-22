@@ -1,0 +1,41 @@
+{
+  "id": "gr/context_aware_transliteration/e03",
+  "thread_id": "gr/context_aware_transliteration/t1",
+  "in_reply_to": "gr/context_aware_transliteration/e02",
+  "date": "2026-07-09T11:15:00Z",
+  "from": {
+    "name": "Yara Jokic",
+    "email": "yara.jokic@meridian.example",
+    "role": "Research Scientist"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    },
+    {
+      "name": "Daniela Oduya",
+      "email": "daniela.oduya@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: romanized input for South Asian languages",
+  "body": "Hi both,\n\nStatus: the FST baseline is fully reproduced — Wanjiru has the Nisaba pipeline running with the released models (pinned version, per her earlier flag), and our numbers match the paper's FST tables on the released test sets. Rosa's harness scores both word-level accuracy and full-sentence transliteration, which is where context should pay off.\n\nNeural comparison: the released checkpoints are staged; early single-language runs show the context-aware neural model beating the FST clearly on ambiguous romanizations — cases where the same Latin string maps to different native-script words depending on context, exactly the paper's motivation.\n\nRisk for the recommendation: FST wins on latency and footprint by a wide margin; neural wins on ambiguous-context accuracy. The integration answer is probably a hybrid (FST default, neural rerank on ambiguity), which is more engineering than either alone. I'll bring sized options to the 7/23 review.\n\nYara",
+  "labels": [
+    "status",
+    "risk"
+  ]
+}

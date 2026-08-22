@@ -1,0 +1,25 @@
+{
+  "id": "gr/context_aware_transliteration",
+  "title": "Context-aware transliteration of romanized South Asian languages",
+  "summary": "Context-aware transliteration of romanized South Asian languages into native script, combining Nisaba FST-based transliteration with released models, generated text resources, and neural checkpoints.",
+  "portfolio": "language",
+  "pm": "Priya Delgado",
+  "em": "Daniela Oduya",
+  "contributors": [
+    "Yara Jokic",
+    "Wanjiru Horvat",
+    "Rosa Mensah"
+  ],
+  "window": {
+    "start": "2026-04-27",
+    "end": "2026-08-03"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "context_aware_transliteration",
+    "url": "https://github.com/google-research/google-research/tree/master/context_aware_transliteration",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

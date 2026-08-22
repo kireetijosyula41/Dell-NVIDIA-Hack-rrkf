@@ -1,0 +1,18 @@
+{
+  "project": "gr/context_aware_transliteration",
+  "conflicts": [
+    {
+      "conflict_id": "C141",
+      "type": "dependency_date_drift",
+      "counterpart_projects": [
+        "kip",
+        "deplot",
+        "jaxbarf"
+      ],
+      "planted_in": [
+        "e02"
+      ],
+      "claim_as_written": "Platform dependency worth calling out: the released text resources and our eval corpora need to move onto Corpus v2, and the Corpus v2 migration freeze is 2026-08-07 — so we have until early August to finish registrations, which comfortably covers the whole window."
+    }
+  ]
+}

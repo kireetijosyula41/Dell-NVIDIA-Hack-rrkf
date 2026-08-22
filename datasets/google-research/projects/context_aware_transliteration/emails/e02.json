@@ -1,0 +1,40 @@
+{
+  "id": "gr/context_aware_transliteration/e02",
+  "thread_id": "gr/context_aware_transliteration/t1",
+  "in_reply_to": "gr/context_aware_transliteration/e01",
+  "date": "2026-05-12T14:25:00Z",
+  "from": {
+    "name": "Daniela Oduya",
+    "email": "daniela.oduya@meridian.example",
+    "role": "Engineering Manager"
+  },
+  "to": [
+    {
+      "name": "Priya Delgado",
+      "email": "priya.delgado@meridian.example",
+      "role": "Product Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Wanjiru Horvat",
+      "email": "wanjiru.horvat@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Rosa Mensah",
+      "email": "rosa.mensah@meridian.example",
+      "role": "Software Engineer"
+    }
+  ],
+  "subject": "Re: Kickoff: romanized input for South Asian languages",
+  "body": "Hi Priya,\n\nStaffing: Yara Jokic leads at 40%, Wanjiru Horvat 35% on the FST/Nisaba integration, Rosa Mensah 30% on the evaluation harness and text-resource staging.\n\nPlatform dependency worth calling out: the released text resources and our eval corpora need to move onto Corpus v2, and the Corpus v2 migration freeze is 2026-08-07 — so we have until early August to finish registrations, which comfortably covers the whole window. Rosa will do the migration alongside the harness work in June rather than as a scramble later.\n\nCompute: negligible — FSTs are CPU-bound and the neural checkpoints are inference-only for our comparison. No reservations.\n\nOne flag: Nisaba version pinning matters; Wanjiru hit a grammar incompatibility on the newest release and is pinning to the version the models shipped against.\n\nDaniela",
+  "labels": [
+    "resources"
+  ]
+}
