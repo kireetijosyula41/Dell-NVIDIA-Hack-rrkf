@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_dice/e02",
+  "thread_id": "gr/dual_dice/t1",
+  "in_reply_to": "gr/dual_dice/e01",
+  "date": "2026-03-03T15:17:00Z",
+  "from": {"name": "Bruno Mbeki", "email": "bruno.mbeki@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Ximena Jansen", "email": "ximena.jansen@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Halima Toure", "email": "halima.toure@meridian.example", "role": "Research Engineer"},
+    {"name": "Farah Haddad", "email": "farah.haddad@meridian.example", "role": "Software Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: Kickoff: DualDICE for off-policy evaluation",
+  "body": "Ximena,\n\nStaffing: Halima leads the method work and owns the GridWalk validation matrix (tabular and non-tabular, per the release's run configurations); Farah does the toolkit module and API; Oyin owns the data plumbing for the internal pilot and the productionization runway.\n\nOn your follow-on staffing ask — settled it with Oyin and her lead this morning: Oyin is committed at 60% to this project for May 2026 to carry the productionization phase, with the remaining 40% on her platform maintenance duties. I've logged that in the allocation sheet so nobody grabs her for Q2 firefighting.\n\nCompute is a non-issue — GridWalk runs are laptop-scale, the pilot is a few dozen CPU-heavy jobs, nothing needing reservations.\n\nOne process item: the internal logged dataset touches partner data, so I'm filing the privacy review this week given their 2-3 week SLA — it must clear before the April 10 pilot.\n\nBruno",
+  "labels": ["resources"]
+}

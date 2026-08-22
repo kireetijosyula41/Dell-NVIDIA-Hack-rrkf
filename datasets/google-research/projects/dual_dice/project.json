@@ -1,0 +1,18 @@
+{
+  "id": "gr/dual_dice",
+  "title": "DualDICE",
+  "summary": "Brings DualDICE — behavior-agnostic estimation of discounted stationary distribution corrections for off-policy evaluation, requiring no knowledge of the behavior policy — into the trust-theory portfolio's policy-evaluation toolkit, validated on tabular and non-tabular GridWalk before internal workloads.",
+  "portfolio": "trust-theory",
+  "pm": "Ximena Jansen",
+  "em": "Bruno Mbeki",
+  "contributors": ["Halima Toure", "Farah Haddad", "Oyin Iversen"],
+  "window": {"start": "2026-02-16", "end": "2026-04-27"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "dual_dice",
+    "url": "https://github.com/google-research/google-research/tree/master/dual_dice",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
