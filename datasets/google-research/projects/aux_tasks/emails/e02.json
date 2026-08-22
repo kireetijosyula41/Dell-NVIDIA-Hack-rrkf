@@ -1,0 +1,17 @@
+{
+  "id": "gr/aux_tasks/e02",
+  "thread_id": "gr/aux_tasks/t1",
+  "in_reply_to": "gr/aux_tasks/e01",
+  "date": "2026-05-13T11:47:00Z",
+  "from": {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"},
+    {"name": "Gustavo Moreau", "email": "gustavo.moreau@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: principal-subspace aux tasks for retrieval",
+  "body": "Anders,\n\nResourcing locked:\n\n- Staffing: Wei 60% (method), Kaia 40% (theory/evals), Nikhil 60% and Gustavo 50% (scaling + integration), all through early August.\n- Compute: iteration happens on titan-a100 best-effort. For the big one: We hold the vulcan-h100 reservation for the week of 2026-06-29 - 256 accelerators - which is when the full-scale subspace pretraining sweep runs. I scheduled it deliberately after the 6/22-6/24 Vulcan maintenance window so we get a clean week.\n- Evalline: Kaia is registering the retrieval eval suite with Tomas's team; 2-week lead time, already filed.\n\nOnly open risk on resourcing is corpus access for the embedding matrices - Corpus v2 migration shouldn't affect us since we read snapshots, but Gustavo is confirming with Jun's team.\n\nAlina",
+  "labels": ["resources"]
+}

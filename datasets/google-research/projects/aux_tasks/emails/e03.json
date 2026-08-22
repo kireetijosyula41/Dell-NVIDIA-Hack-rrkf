@@ -1,0 +1,18 @@
+{
+  "id": "gr/aux_tasks/e03",
+  "thread_id": "gr/aux_tasks/t1",
+  "in_reply_to": "gr/aux_tasks/e02",
+  "date": "2026-06-18T09:33:00Z",
+  "from": {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Anders Marino", "email": "anders.marino@meridian.example", "role": "Product Manager"},
+    {"name": "Alina Larsen", "email": "alina.larsen@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Kaia Wolde", "email": "kaia.wolde@meridian.example", "role": "Research Scientist"},
+    {"name": "Nikhil Abebe", "email": "nikhil.abebe@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: Kickoff: principal-subspace aux tasks for retrieval",
+  "body": "Status ahead of the big sweep week.\n\nReproduction is done: synthetic-matrix runs (S=50, T=50, d=10, lissa) match the released results, and the MNIST variant (d=16) converges as expected. Scaled estimator now runs on a 10% slice of the retrieval embedding matrix; top-64 subspace features added as aux targets give +1.7% recall@10 on the internal eval suite vs. the PCA baseline.\n\nOne technical risk for the sweep: LISSA's covariance estimates get noisy at our batch sizes when the spectrum has a long flat tail, which our embedding matrices do. Mitigation is bigger covariance batches (covariance_batch_size up 4x), which is exactly why the sweep needs the full 256-accelerator week rather than trickling on best-effort. If the reservation moves, the launch review moves with it - want that dependency explicit.\n\nWei",
+  "labels": ["status", "risk"]
+}

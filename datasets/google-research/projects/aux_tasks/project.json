@@ -1,0 +1,18 @@
+{
+  "id": "gr/aux_tasks",
+  "title": "Aux Tasks",
+  "summary": "Implements a novel stochastic gradient descent algorithm for learning principal subspaces, with experiments spanning synthetic matrices, MNIST, and Puddle World; the internal effort turns the subspace-learning method into auxiliary-task features for retrieval models.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Alina Larsen",
+  "contributors": ["Nikhil Abebe", "Wei Ivanov", "Gustavo Moreau", "Kaia Wolde"],
+  "window": {"start": "2026-04-27", "end": "2026-08-10"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "aux_tasks",
+    "url": "https://github.com/google-research/google-research/tree/master/aux_tasks",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

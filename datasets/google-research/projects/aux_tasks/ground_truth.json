@@ -1,0 +1,12 @@
+{
+  "project": "gr/aux_tasks",
+  "conflicts": [
+    {
+      "conflict_id": "C058",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["bangbang_qaoa"],
+      "planted_in": ["e02"],
+      "claim_as_written": "We hold the vulcan-h100 reservation for the week of 2026-06-29 - 256 accelerators - which is when the full-scale subspace pretraining sweep runs."
+    }
+  ]
+}
