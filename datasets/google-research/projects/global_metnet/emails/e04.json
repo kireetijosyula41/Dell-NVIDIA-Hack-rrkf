@@ -1,0 +1,15 @@
+{
+  "id": "gr/global_metnet/e04",
+  "thread_id": "gr/global_metnet/t2",
+  "in_reply_to": "gr/global_metnet/e03",
+  "date": "2026-04-14T16:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [{"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"}],
+  "subject": "Re: Status: archive live internally, eval numbers, one serving risk",
+  "body": "Team,\n\nGo/no-go outcome from yesterday:\n\n1. GO on the reforecast archive as a platform dataset. The calibration story at 1h and 6h horizons carried the room; we will document the 12-hour sharpness degradation in the dataset card rather than pretend it is not there.\n2. CONDITIONAL on the real-time feed. Zeke agreed the geo-feature caching fix is plausible, but we are not announcing a 30-minute-fresh product while preprocessing eats 11 minutes. Milan owns getting preprocessing under 5 minutes; we re-review in Q2 with actual latency numbers, not projections.\n3. Scope cut: per-customer regional fine-tunes are out of this window entirely.\n\nWei, Vera - nice eval work, the thresholds table is exactly what the review needed. Archive announcement drafts to me by 4/17.\n\nDmitri",
+  "labels": ["decision"]
+}

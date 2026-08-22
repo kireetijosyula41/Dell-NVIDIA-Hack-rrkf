@@ -1,0 +1,12 @@
+{
+  "project": "gr/global_metnet",
+  "conflicts": [
+    {
+      "conflict_id": "C114",
+      "type": "dependency_date_drift",
+      "counterpart_projects": ["group_agnostic_fairness", "clustering_normalized_cuts", "mir_uai24"],
+      "planted_in": ["e02"],
+      "claim_as_written": "Reminder that the Corpus v2 migration freeze lands 2026-07-10, so the reforecast archive re-ingestion has to be requested in Q2 and scheduled well before that date."
+    }
+  ]
+}

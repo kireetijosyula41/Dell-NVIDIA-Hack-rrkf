@@ -1,0 +1,18 @@
+{
+  "id": "gr/global_metnet/e03",
+  "thread_id": "gr/global_metnet/t2",
+  "in_reply_to": null,
+  "date": "2026-03-24T10:26:00Z",
+  "from": {"name": "Milan Zapata", "email": "milan.zapata@meridian.example", "role": "Software Engineer"},
+  "to": [
+    {"name": "Jelena Vasquez", "email": "jelena.vasquez@meridian.example", "role": "Engineering Manager"},
+    {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Wei Ivanov", "email": "wei.ivanov@meridian.example", "role": "Research Scientist"},
+    {"name": "Vera Egede", "email": "vera.egede@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Status: archive live internally, eval numbers, one serving risk",
+  "body": "Hi both,\n\nStatus for the eval milestone. The reforecast archive (2020-present, 8 initializations/day) is queryable internally as of Friday; Tereza's pipeline validated row counts against the source catalog with zero drops. Wei and Vera's eval report is on track for 3/27 - early numbers show the probabilistic forecasts calibrated well at the 1-hour and 6-hour horizons, with the shipped optimal probability thresholds holding up for categorical conversion; the 12-hour horizon is where sharpness degrades, as expected.\n\nServing risk for the go/no-go: the real-time feed initializes every 30 minutes, and our Shipyard latency budget currently eats 11 of those minutes on preprocessing alone. If we cannot cut that to under 5, freshness at the customer edge is closer to 40 minutes than 30. Vera has a profiling doc; the fix is likely caching the static geo features.\n\nMilan",
+  "labels": ["status", "risk"]
+}

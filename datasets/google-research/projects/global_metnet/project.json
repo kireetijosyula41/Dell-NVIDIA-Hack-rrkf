@@ -1,0 +1,18 @@
+{
+  "id": "gr/global_metnet",
+  "title": "Global MetNet: Precipitation Nowcasting Model",
+  "summary": "Operationalizes our global precipitation nowcasting model, which produces high-resolution probabilistic forecasts (5km spatial, 15-minute temporal, up to 12 hours ahead) with real-time initializations every 30 minutes and historical reforecasts at 3-hour cadence.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Jelena Vasquez",
+  "contributors": ["Milan Zapata", "Tereza Aliyev", "Wei Ivanov", "Vera Egede"],
+  "window": {"start": "2026-02-09", "end": "2026-04-20"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "global_metnet",
+    "url": "https://github.com/google-research/google-research/tree/master/global_metnet",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
