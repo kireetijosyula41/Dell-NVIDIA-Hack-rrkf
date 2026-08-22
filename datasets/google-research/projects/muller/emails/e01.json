@@ -1,0 +1,41 @@
+{
+  "id": "gr/muller/e01",
+  "thread_id": "gr/muller/t1",
+  "in_reply_to": null,
+  "date": "2026-03-24T09:20:00Z",
+  "from": {
+    "name": "Anders Marino",
+    "email": "anders.marino@meridian.example",
+    "role": "Product Manager"
+  },
+  "to": [
+    {
+      "name": "Deshawn Pavic",
+      "email": "deshawn.pavic@meridian.example",
+      "role": "Engineering Manager"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Yara Jokic",
+      "email": "yara.jokic@meridian.example",
+      "role": "Research Scientist"
+    },
+    {
+      "name": "Oyin Iversen",
+      "email": "oyin.iversen@meridian.example",
+      "role": "Software Engineer"
+    },
+    {
+      "name": "Hyun Traore",
+      "email": "hyun.traore@meridian.example",
+      "role": "Research Scientist"
+    }
+  ],
+  "subject": "Kickoff: MULLER learned resizer for retrieval pipelines",
+  "body": "Hi Deshawn,\n\nKicking off MULLER (Mar 23 – Jun 1) — a short, sharp one. The asset is our ICCV 2023 open-source release: a multilayer Laplacian resizer, a learned resizing layer with a handful of parameters that sharpens the band-pass detail that downstream vision models actually use. Because it's so small it drops into existing preprocessing with effectively zero serving-cost delta, and the released demo notebook shows the integration in a few lines.\n\nProduct case: the retrieval org's image towers all downsample with fixed bilinear resize today. If swapping in MULLER buys even a fraction of a point of retrieval precision at zero serving cost, it's the cheapest quality win on the roadmap.\n\nMilestones: mid-April — resizer integrated into one tower's input path, offline A/B on the retrieval eval set; mid-May — retraining sweep across the three main towers; Jun 1 — ship/no-ship recommendation.\n\nStaffing and the compute/budget ask by Apr 10?\n\nAnders",
+  "labels": [
+    "kickoff",
+    "spec"
+  ]
+}

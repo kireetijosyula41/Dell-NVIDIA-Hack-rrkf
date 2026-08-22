@@ -1,0 +1,25 @@
+{
+  "id": "gr/muller",
+  "title": "MULLER: Multilayer Laplacian Resizer for Vision",
+  "summary": "Deploy MULLER, the ICCV 2023 multilayer Laplacian resizer — a tiny learned resizing layer that boosts downstream vision-model accuracy at negligible cost — as a drop-in preprocessing component for the retrieval org's image pipelines.",
+  "portfolio": "graphs-retrieval",
+  "pm": "Anders Marino",
+  "em": "Deshawn Pavic",
+  "contributors": [
+    "Yara Jokic",
+    "Oyin Iversen",
+    "Hyun Traore"
+  ],
+  "window": {
+    "start": "2026-03-23",
+    "end": "2026-06-01"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "muller",
+    "url": "https://github.com/google-research/google-research/tree/master/muller",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
