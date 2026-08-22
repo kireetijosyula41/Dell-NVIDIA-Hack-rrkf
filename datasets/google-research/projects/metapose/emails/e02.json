@@ -1,0 +1,15 @@
+{
+  "id": "gr/metapose/e02",
+  "thread_id": "gr/metapose/t1",
+  "in_reply_to": "gr/metapose/e01",
+  "date": "2026-03-19T13:37:00Z",
+  "from": {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+  "to": [{"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"}],
+  "cc": [
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"},
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "Re: MetaPose kickoff — staffing + compute",
+  "body": "Lucia,\n\nResourcing:\n\nStaffing — Linnea 50% (TL) through June, Maren 40% on the eval harness and data plumbing, Rosa 40% on the inference path and the robotics-rig integration. Small team, but the released checkpoints and data (the metapose.tar bundle) mean reproduction is mostly plumbing, not retraining.\n\nCompute — light: 8 A100s on titan best-effort for fine-tuning experiments and latency profiling. Nothing reservation-worthy this window.\n\nPrivacy — the robotics rig records our own staff; Kofi's office says the standard internal-recording consent flow applies, 2-3 week SLA. Filed today so it clears well before the 06-08 pilot.\n\nOn your Q3 note: yes, planning for continuation. I'm carrying Linnea forward as the anchor — details when we do Q3 allocations in June, but assume she stays majority-time on MetaPose.\n\nDaniela",
+  "labels": ["resources"]
+}

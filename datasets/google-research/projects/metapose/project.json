@@ -1,0 +1,16 @@
+{
+  "id": "gr/metapose",
+  "title": "MetaPose",
+  "summary": "Productizing MetaPose — fast 3D human pose estimation from multiple uncalibrated camera views, trained only on 2D keypoints — which outperforms classical bundle adjustment and weakly-supervised monocular baselines on Human3.6M and Ski-Pose PTZ.",
+  "portfolio": "vision",
+  "pm": "Lucia Yilmaz",
+  "em": "Daniela Oduya",
+  "contributors": ["Maren Zhou", "Linnea Yamada", "Rosa Mensah"],
+  "window": {"start": "2026-03-09", "end": "2026-06-15"},
+  "source": {
+    "org": "google-research", "repo": "google-research", "path": "metapose",
+    "url": "https://github.com/google-research/google-research/tree/master/metapose",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

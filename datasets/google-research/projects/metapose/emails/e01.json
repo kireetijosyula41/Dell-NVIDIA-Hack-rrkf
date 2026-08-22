@@ -1,0 +1,18 @@
+{
+  "id": "gr/metapose/e01",
+  "thread_id": "gr/metapose/t1",
+  "in_reply_to": null,
+  "date": "2026-03-11T09:44:00Z",
+  "from": {"name": "Lucia Yilmaz", "email": "lucia.yilmaz@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Daniela Oduya", "email": "daniela.oduya@meridian.example", "role": "Engineering Manager"},
+    {"name": "Linnea Yamada", "email": "linnea.yamada@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Maren Zhou", "email": "maren.zhou@meridian.example", "role": "Software Engineer"},
+    {"name": "Rosa Mensah", "email": "rosa.mensah@meridian.example", "role": "Software Engineer"}
+  ],
+  "subject": "MetaPose kickoff — multi-camera 3D pose without calibration",
+  "body": "Hi all,\n\nKicking off MetaPose productization. The differentiator: our published MetaPose model estimates 3D human pose from multiple cameras with unknown calibration, trains on 2D keypoint data only, and beats both classical bundle adjustment and weakly-supervised monocular baselines on Human3.6M and the harder in-the-wild Ski-Pose PTZ set. Two prospective internal customers: the sports-analysis demo team and the robotics lab's motion-capture-free evaluation rig — both have multi-camera setups nobody ever calibrates properly.\n\nMilestones (window through 06-15):\n- 04-10: released checkpoints + data reproducing paper metrics in our eval harness.\n- 05-15: latency-optimized inference path; the \"minimal latency overhead\" claim quantified on our hardware.\n- 06-08: pilot on the robotics lab's 4-camera rig with occlusion-heavy scenes.\n\nDaniela owns staffing; Linnea is TL. Q3 continuation planning will come up mid-window — this one won't finish at the pilot.\n\nLucia",
+  "labels": ["kickoff", "spec"]
+}
