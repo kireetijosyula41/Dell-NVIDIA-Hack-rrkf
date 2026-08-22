@@ -1,0 +1,12 @@
+{
+  "project": "gr/CoDi",
+  "conflicts": [
+    {
+      "conflict_id": "C020",
+      "type": "duplicate_effort",
+      "counterpart_projects": ["irregular_timeseries_pretraining"],
+      "planted_in": ["e02"],
+      "claim_as_written": "On publishing evals: there is no shared service that does this today, so we are scoping and building a benchmark leaderboard service from scratch - Oyin at 50% for six weeks plus roughly a third of Tereza's time on the submission/scoring backend."
+    }
+  ]
+}

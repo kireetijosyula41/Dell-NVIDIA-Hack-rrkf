@@ -1,0 +1,17 @@
+{
+  "id": "gr/CoDi/e02",
+  "thread_id": "gr/CoDi/t1",
+  "in_reply_to": "gr/CoDi/e01",
+  "date": "2026-03-05T16:09:00Z",
+  "from": {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+  "to": [
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "subject": "Re: CoDi kickoff - 4-step conditional generation as our efficiency headline",
+  "body": "Zofia,\n\nStaffing: Csilla 60% on the distillation training runs, Tereza 70% on the conditional settings (inpainting first, InstructPix2Pix second), Oyin 50% on serving + tooling.\n\nCompute: 128 A100s on titan-a100 for the distillation runs through April; short bursts, no reservation.\n\nOn publishing evals: there is no shared service that does this today, so we are scoping and building a benchmark leaderboard service from scratch - Oyin at 50% for six weeks plus roughly a third of Tereza's time on the submission/scoring backend. Scope: result submission API, FID/LPIPS scoring workers, and a public-internal leaderboard page per task. I know it's a chunk of the team, but every efficiency claim we make will get challenged, and self-reported spreadsheet numbers won't survive a launch review.\n\nFirst leaderboard milestone April 10, seeded with our SR results.\n\nIvo",
+  "labels": ["resources"]
+}

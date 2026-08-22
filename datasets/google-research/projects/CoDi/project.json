@@ -1,0 +1,25 @@
+{
+  "id": "gr/CoDi",
+  "title": "CoDi: Conditional Diffusion Distillation",
+  "summary": "CoDi is a single-stage distillation method that turns a text-to-image diffusion model into a fast conditional model, matching 50-step sampling quality in 1-4 steps on tasks like super-resolution and text-guided inpainting. We are building it into the efficiency portfolio's fast-image-generation offering.",
+  "portfolio": "efficiency",
+  "pm": "Zofia Lombardi",
+  "em": "Ivo Umeh",
+  "contributors": [
+    "Csilla Nassar",
+    "Tereza Aliyev",
+    "Oyin Iversen"
+  ],
+  "window": {
+    "start": "2026-02-23",
+    "end": "2026-05-25"
+  },
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "CoDi",
+    "url": "https://github.com/google-research/google-research/tree/master/CoDi",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}

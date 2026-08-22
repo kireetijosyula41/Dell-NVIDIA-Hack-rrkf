@@ -1,0 +1,15 @@
+{
+  "id": "gr/CoDi/e03",
+  "thread_id": "gr/CoDi/t2",
+  "in_reply_to": null,
+  "date": "2026-04-13T11:26:00Z",
+  "from": {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"}
+  ],
+  "cc": [],
+  "subject": "CoDi status: SR repro solid, 1-step quality is the open risk",
+  "body": "Hi Ivo, Zofia,\n\nStatus. SR repro landed March 19: our 4-step distilled model is within 0.8 FID and 0.004 LPIPS of the 50-step teacher on the real-world super-resolution benchmark, consistent with the paper. Inpainting distillation with the parameter-efficient variant is training now and early numbers look like they will beat the 50-step baseline, as the paper reports.\n\nThe risk is the marketing ask for a 1-step mode. At 1 step, FID degrades by ~6 points on SR and artifacts are visible in hair/texture regions; 2 steps is noticeably better but still short of 4. I recommend we ship the demo defaulting to 4 steps, expose 1-2 steps behind an \"experimental\" toggle, and keep the headline claim at 4-step parity. Overpromising 1-step will bite us in the launch review.\n\nInstructPix2Pix setting starts next week - Tereza's condition-encoder refactor unblocked it.\n\nCsilla",
+  "labels": ["status", "risk"]
+}

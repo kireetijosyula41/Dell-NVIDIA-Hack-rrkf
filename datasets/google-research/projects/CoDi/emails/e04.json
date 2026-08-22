@@ -1,0 +1,18 @@
+{
+  "id": "gr/CoDi/e04",
+  "thread_id": "gr/CoDi/t2",
+  "in_reply_to": "gr/CoDi/e03",
+  "date": "2026-05-13T09:57:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"}
+  ],
+  "cc": [
+    {"name": "Zeke Karlsen", "email": "zeke.karlsen@meridian.example", "role": "Serving Lead"},
+    {"name": "Nadia Rahman", "email": "nadia.rahman@meridian.example", "role": "Program Manager, Launch Review"}
+  ],
+  "subject": "Re: CoDi status: SR repro solid, 1-step quality is the open risk",
+  "body": "All,\n\nDecisions for the May 22 launch review:\n\n1. Headline claim is 4-step parity with 50-step sampling on FID/LPIPS, full stop. The 1-step mode ships behind the experimental toggle exactly as Csilla proposed. I've already reset expectations with the field team.\n\n2. Scope cut: InstructPix2Pix drops from the launch. It's 80% there but the eval set isn't stable, and I won't put a wobbling number on the leaderboard we built specifically to be trustworthy. It lands as a fast-follow in June.\n\n3. Zeke - demo endpoint is on Shipyard, Oyin will send the serving config Thursday; we need LRB sign-off before anything is shown externally, and Nadia has us on the May 22 board agenda.\n\nGood quarter, team. The 10x serving-cost story is intact.\n\nZofia",
+  "labels": ["decision", "escalation"]
+}

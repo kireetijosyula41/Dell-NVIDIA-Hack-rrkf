@@ -1,0 +1,17 @@
+{
+  "id": "gr/CoDi/e01",
+  "thread_id": "gr/CoDi/t1",
+  "in_reply_to": null,
+  "date": "2026-02-24T09:31:00Z",
+  "from": {"name": "Zofia Lombardi", "email": "zofia.lombardi@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Csilla Nassar", "email": "csilla.nassar@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"},
+    {"name": "Oyin Iversen", "email": "oyin.iversen@meridian.example", "role": "Software Engineer"}
+  ],
+  "cc": [],
+  "subject": "CoDi kickoff - 4-step conditional generation as our efficiency headline",
+  "body": "Team,\n\nCoDi is our Q2 efficiency headline. The method distills a conditional diffusion model out of a text-to-image pretrained model in a single stage - no distill-then-finetune or finetune-then-distill two-step - and on real-world super-resolution it matches 50-step sampling FID and LPIPS with just 4 steps. On text-guided inpainting the parameter-efficient variant actually beats the original 50-step numbers. That's a 10x+ serving-cost story we can put in front of customers.\n\nMilestones: repro of the SR benchmark by March 20; inpainting and InstructPix2Pix conditional settings by April 17; Shipyard demo endpoint and launch review by May 22.\n\nWhat I need this week from Ivo: staffing split, GPU ask, and a plan for how we publish eval results so other teams can compare against us credibly.\n\nZofia",
+  "labels": ["kickoff", "spec"]
+}
