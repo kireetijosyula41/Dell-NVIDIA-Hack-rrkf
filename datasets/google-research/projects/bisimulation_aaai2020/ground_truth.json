@@ -1,0 +1,12 @@
+{
+  "project": "gr/bisimulation_aaai2020",
+  "conflicts": [
+    {
+      "conflict_id": "C112",
+      "type": "gpu_double_booking",
+      "counterpart_projects": ["memento"],
+      "planted_in": ["e02"],
+      "claim_as_written": "e02: \"Good news on compute: we hold the vulcan-h100 reservation for the week of 2026-06-15 - 256 accelerators, confirmed through the Infra Lead reservation process. That week is when we run the full Atari approximant training sweep, so please plan PTO around it.\""
+    }
+  ]
+}

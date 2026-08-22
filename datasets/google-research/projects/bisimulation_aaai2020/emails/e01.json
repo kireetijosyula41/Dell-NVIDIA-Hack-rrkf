@@ -1,0 +1,19 @@
+{
+  "id": "gr/bisimulation_aaai2020/e01",
+  "thread_id": "gr/bisimulation_aaai2020/t1",
+  "in_reply_to": null,
+  "date": "2026-02-25T08:55:00Z",
+  "from": {"name": "Dmitri Tanaka", "email": "dmitri.tanaka@meridian.example", "role": "Product Manager"},
+  "to": [
+    {"name": "Ivo Umeh", "email": "ivo.umeh@meridian.example", "role": "Engineering Manager"},
+    {"name": "Efe Lindqvist", "email": "efe.lindqvist@meridian.example", "role": "Research Scientist"},
+    {"name": "Tereza Aliyev", "email": "tereza.aliyev@meridian.example", "role": "Research Engineer"}
+  ],
+  "cc": [
+    {"name": "Carmen Reyes", "email": "carmen.reyes@meridian.example", "role": "Research Scientist"},
+    {"name": "Fumiko Rossi", "email": "fumiko.rossi@meridian.example", "role": "Research Scientist"}
+  ],
+  "subject": "Kickoff: state-similarity service on bisimulation metrics",
+  "body": "Hi all,\n\nKickoff for the state-similarity effort in the data-platforms portfolio. The idea: our open-source release on scalable bisimulation metrics for deterministic MDPs gives us a principled distance between environment states. Packaged as a service, it unlocks dedup and clustering features for customers with simulator data - state abstraction as a platform primitive.\n\nTwo tracks. Track A: exact computation on grid environments - the code already supports arbitrary grid shapes, and we'll use the mirrored_rooms grid + gin config as the correctness reference. Track B: the learned path - load a trained Dopamine Rainbow agent and train an on-policy bisimulation metric approximant on its state representations, which is what scales to Atari-sized inputs.\n\nMilestones: repro by Mar 27, approximant training sweep in June, API draft to Launch Review Board before end of window (Jun 29).\n\nEfe is TL. Ivo will follow up on staffing and compute.\n\nDmitri",
+  "labels": ["kickoff", "spec"]
+}

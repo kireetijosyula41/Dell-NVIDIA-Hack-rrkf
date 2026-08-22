@@ -1,0 +1,18 @@
+{
+  "id": "gr/bisimulation_aaai2020",
+  "title": "Scalable methods for computing state similarity in deterministic Markov Decision Processes",
+  "summary": "Turning our open-source release on scalable bisimulation metrics for deterministic MDPs into a reusable state-similarity service: exact computation on GridWorld configs like mirrored_rooms, plus learned on-policy metric approximants trained on Dopamine Rainbow agent representations for Atari.",
+  "portfolio": "data-platforms",
+  "pm": "Dmitri Tanaka",
+  "em": "Ivo Umeh",
+  "contributors": ["Efe Lindqvist", "Tereza Aliyev", "Carmen Reyes", "Fumiko Rossi"],
+  "window": {"start": "2026-02-23", "end": "2026-06-29"},
+  "source": {
+    "org": "google-research",
+    "repo": "google-research",
+    "path": "bisimulation_aaai2020",
+    "url": "https://github.com/google-research/google-research/tree/master/bisimulation_aaai2020",
+    "license": "Apache-2.0"
+  },
+  "synthetic": true
+}
